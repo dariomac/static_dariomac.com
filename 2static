@@ -38,7 +38,7 @@ function renderToHtml(inputFilePath, outputFilePath) {
       //Check if the path already exists and warn
       fs.stat(outputFilePath, function(err, stats){
         if(err){
-          fs.writeFile(outputFilePath, finalHTML, 'utf8');
+          fs.writeFileSync(outputFilePath, finalHTML, 'utf8');
           console.log("converted: "+inputFilePath+"->"+outputFilePath);
         }
         else{
