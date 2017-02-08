@@ -1,0 +1,126 @@
+{
+  "title": "Workshop on Software Requirements Management",
+  "date": "2014-11-27",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#fff",
+    "columnid": "done_3",
+    "content": "Workshop on Software Requirements Management",
+    "datebox": "Nov 2014",
+    "extlink": "http://www.wbagadion.com",
+    "laneid": "Experience",
+    "leftbox": "Bogotá - Colombia",
+    "leftmsg": "",
+    "linkto": "/workshop-on-software-requirements-management",
+    "position": "4",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "WBagadion Consulting, Inc.",
+    "type":"Experience"
+  }
+}
+
+---
+
+[duration:string]
+Nov 10th-22th, 2014 (80 hs)
+
+
+[place_url:string]
+http://www.wbagadion.com
+
+
+[place:string]
+WBagadion Consulting, Inc.
+
+
+[content:md]
+  This workshop was held in Bogotá (Colombia) on November 10th to 22th, 2014 as a part of a Special International Cooperation Agreement between the Colombian government's technical-vocational training agency and [WBagadion Consulting, Inc.](http://www.wbagadion.com), a private consultancy firm headquartered in the Philippines. The goal was to train Colombian professionals in technical areas identified as important for and by their software industry. The workshop was delivered in English to 40 teachers of a recognized public educational entity focused on technical-vocational training and entrepreneurship. The knowledge transfer during the training had to be enough to let those teachers develop and deliver a 880hrs. training course on Requirement Engineering in the near future.
+
+  The project included two phases. The first one was a pre-workshop stage, where we had to build the teaching guides for each “Requirement Engineering + Soft Skills" topics, writing them and referencing up-to-date bibliography.
+
+  The second was the workshop itself. I was one of the three foreign members of the working group who carried out the workshop. Two of us were specialists in Requirement Engineering while the third was in soft skills and cultural training.
+
+
+[projects:md]
+
+  ### The Workshop covered the following topics:
+
+  **Software requirement management**
+
+  Fundamentals, Development Lifecycle and Requirements Project / Software Product, problematic, technical debt, types (Self-directed, oriented objectives / goals, based on scenarios) Techniques, processes, activities, trends (eg. Crowdsourcing in requirements engineering). Software development methodologies.
+
+  **Quality software engineering principles**
+
+  * Business concepts: organizational structures, business processes (eg Human Resources, Accounting and Finance, Sales and Marketing.), Risk Management, Business Models.
+  * The Importance of Feasibility Study in managing software requirements
+
+  **Identification and requirements elicitation**
+
+  * Differences between collection and requirements elicitation
+  * Techniques and practices of requirements elicitation (interviews, questionnaires, user observation, workshops, brainstorming, use of cases, role playing and prototyping)
+  * Type and characteristics of the requirements
+
+  **Analysis requirements**
+
+  * Domain Analysis of scenarios, focusing on goals, safety requirements, business requirements, focusing on views, focused on methods.
+
+  **Prioritization of requirements**
+
+  * The art of requirements triage (IEEE Computer Society)
+  * Method Weiger
+  * Binary Tree Search
+  * Numeral assignment technique
+  * Set planning
+  * Method 100 Points
+  * Theory W
+  * Setting requirements prioritization
+  * AHP
+
+  **Requirements Specification**
+
+  * Requirements and Specifications
+  * Document software requirements specification (SRS)
+  * Tools and SRS formats
+  * Best practices in the requirements specification (eg. IEEE Recommended Practices and Standards)
+  * Designs UX / UI in SRS
+  * Language Features of SRS
+  * Measures of quality SRS results
+
+  **Modeling Systems**
+
+  * Types of models used in information systems and software development
+  * Models used in analysis
+  * Models used in design
+  * Data modeling and reuse of established data models.
+  * Modeling repetitive
+  * Social Modeling
+  * "Events" in the context of system modeling
+  * "Things" in the context of system modeling
+  * Count modeling languages
+  * Modeling Language I * (Istar)
+  * Unified Modeling Language (UML)
+  * Lattice service-oriented modeling (FOBT)
+  * Modeling Language Virtual Reality (VMRL).
+  * Review of general software patterns for assigning responsibilities (GRASP)
+  * Usability (UX)
+
+  **Verification and Validation Requirements**
+
+  * Difference between verification and validation (V & V)
+  * Difference between validation and verification requirements, and requirements analysis
+  * Verification and validation techniques
+  * Simple Checks
+      * Prototyping
+      * Double check and inspections
+      * Formal V & V or based on models
+  * Designs functional tests
+  * Development of user manuals
+  * Analysis and evaluation of performance
+
+  After the end of the workshop (and out of its scope), the attendees were trained and evaluated on the [Certified Professional for Requirements Engineering (CPRE)](http://www.ireb.org/en/home.html) of the [International Requirements Engineering Board (IREB)](http://www.ireb.org/).
