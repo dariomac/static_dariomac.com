@@ -1,5 +1,5 @@
 {
-  "name": "dmbuild",
+  "name": "build",
   "version": "0.0.1",
   "description": "Super Simple Site generator for dariomac.com.",
   "keywords": [ "static site generator", "generator", "static", "markdown", "website", "generator" ],
@@ -12,5 +12,5 @@
   "homepage": "",
   "author": "Dario Macchi <dariomac@gmail.com>",
   "license": "ISC",
-  "bin": { "dmbuild": "./dmbuild" }
+  "bin": { "build": "./build" }
 }
