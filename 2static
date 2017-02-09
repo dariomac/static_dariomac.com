@@ -4,11 +4,12 @@ var fs = require('fs'),
     commonmark = require('commonmark'),
     moment = require('moment'),
     ssiParser = require('tiny-ssi'),
-    //hairlip = require('hairlip'),
+    hb = require('handlebars'),
     path = require('path');
 
 var args = process.argv.slice(2);
 var layoutPathPrefix = path.resolve(args[2]); //expect it to have trailing slash
+var compiledLayouts = {};
 
 if(layoutPathPrefix.slice(-1) !== '/') layoutPathPrefix += '/';
 
@@ -21,18 +22,23 @@ function renderToHtml(inputFilePath, outputFilePath) {
     var res = processMarkupContent(fileContent);
     if(res.frontmatter) {
       res.frontmatter.date = res.frontmatter.date ? moment(res.frontmatter.date).format('MMMM Do YYYY') : moment().format('MMMM Do YYYY');
-      res.frontmatter.layout = res.frontmatter.layout || "layout"; //default to page layout
-      var layoutHTML = fs.readFileSync(layoutPathPrefix+res.frontmatter.layout+".html", 'utf8');
-      //first pull in all includes in html
-      layoutHTML = ssiParser(layoutPathPrefix+"/dummy", layoutHTML); //needs file path not just dir, hence dummy
 
-      //var parser   = new commonmark.Parser();
-      //var renderer = new commonmark.HtmlRenderer();
-      //res.frontmatter.contents = renderer.render(parser.parse(res.content));
+      res.frontmatter.layout = res.frontmatter.layout || "layout"; //default to page layout
+
+      var layoutHTML = compiledLayouts[res.frontmatter.layout];
+      if (!layoutHTML){
+        layoutHTML = fs.readFileSync(layoutPathPrefix+res.frontmatter.layout+".html", 'utf8');
+        //first pull in all includes in html
+        layoutHTML = ssiParser(layoutPathPrefix+"/dummy", layoutHTML); //needs file path not just dir, hence dummy
+        layoutHTML = hb.compile(layoutHTML);
+
+        compiledLayouts[res.frontmatter.layout] = layoutHTML;
+      }
+
       res.frontmatter.contents = res.content;
 
-      //and then parse through for "mustache-y" syntax...
-      var finalHTML = hairlip(res.frontmatter, String(layoutHTML));
+      //and then parse through for "mustache-y" syntax...using handlebars
+      var finalHTML = layoutHTML(res.frontmatter);
       //finalHTML = finalHTML.replace(/\r?\n|\r/g, '');
 
       //Check if the path already exists and warn
@@ -94,7 +100,7 @@ function processMarkupContent(data) {
       var [fullKey, iContent] = contentArr[i].split(']');
 
       var [key, type] = fullKey.slice(1).split(':');
-      if (type){
+      if (type == 'md'){
         var parser   = new commonmark.Parser();
         var renderer = new commonmark.HtmlRenderer();
         jsonFM[key] = renderer.render(parser.parse(iContent));
@@ -113,20 +119,5 @@ function processMarkupContent(data) {
     content: parts.join('---') // creo que es lo mismo que hacer toString()
   };
 }
-
-// Hairlip is
-// a very tiny version of mustache that only does variable replacement
-// and nothing else.
-// src: https://gist.github.com/Breton/6027591
-// Hairlip is
-// a very tiny version of mustache that only does variable replacement
-// and nothing else.
-function hairlip(o, s) {
-    return s.replace(/{{([^{}]*)}}/g,
-        function (a, b) {
-            return {string:true,number:true}[typeof o[b]] ? o[b] : "";
-        }
-    );
-};
 
 convertFilesInPath(args[0], args[1]);
