@@ -9,7 +9,14 @@ var fs = require('fs'),
 
 var args = process.argv.slice(2);
 var layoutPathPrefix = path.resolve(args[2]); //expect it to have trailing slash
+var forced = args[3]=="--force" || false;
 var compiledLayouts = {};
+var collectionPages = [];
+var collectionJson = [];
+
+hb.registerHelper('json', function(obj) {
+  return JSON.stringify(obj);
+});
 
 if(layoutPathPrefix.slice(-1) !== '/') layoutPathPrefix += '/';
 
@@ -18,42 +25,56 @@ function stripExtension(fileName) {
 }
 
 function renderToHtml(inputFilePath, outputFilePath) {
-  fs.readFile(inputFilePath, 'utf8', function(fileErr, fileContent) {
-    var res = processMarkupContent(fileContent);
-    if(res.frontmatter) {
-      res.frontmatter.date = res.frontmatter.date ? moment(res.frontmatter.date).format('MMMM Do YYYY') : moment().format('MMMM Do YYYY');
-
-      res.frontmatter.layout = res.frontmatter.layout || "layout"; //default to page layout
-
-      var layoutHTML = compiledLayouts[res.frontmatter.layout];
-      if (!layoutHTML){
-        layoutHTML = fs.readFileSync(layoutPathPrefix+res.frontmatter.layout+".html", 'utf8');
-        //first pull in all includes in html
-        layoutHTML = ssiParser(layoutPathPrefix+"/dummy", layoutHTML); //needs file path not just dir, hence dummy
-        layoutHTML = hb.compile(layoutHTML);
-
-        compiledLayouts[res.frontmatter.layout] = layoutHTML;
-      }
-
-      res.frontmatter.contents = res.content;
-
-      //and then parse through for "mustache-y" syntax...using handlebars
-      var finalHTML = layoutHTML(res.frontmatter);
-      //finalHTML = finalHTML.replace(/\r?\n|\r/g, '');
-
-      //Check if the path already exists and warn
-      fs.stat(outputFilePath, function(err, stats){
-        if(err){
-          fs.writeFileSync(outputFilePath, finalHTML, 'utf8');
-          console.log("converted: "+inputFilePath+"->"+outputFilePath);
-        }
-        else{
-          console.log("WARNING: file "+outputFilePath+" already exists.");
-        }
+  var fileContent = fs.readFileSync(inputFilePath, 'utf8');
+  var res = processMarkupContent(fileContent);
+  if(res.frontmatter) {
+    if (res.frontmatter.mode == 'collection'){
+      collectionPages.push({
+        inputFilePath: inputFilePath,
+        outputFilePath: outputFilePath,
+        content: res
       });
+    }
+    else{
+      processContentAndSaveFile(inputFilePath, outputFilePath, res);
+      if(res.frontmatter.json){
+        collectionJson.push(res.frontmatter.json);
+      }
+    }
+  } else {
+    console.warn(inputFilePath + " is missing the Frontmatter section!")
+  }
+}
 
-    } else {
-      console.warn(inputFilePath + " is missing the Frontmatter section!")
+function processContentAndSaveFile(inputFilePath, outputFilePath, sourceContent){
+  sourceContent.frontmatter.date = sourceContent.frontmatter.date ? moment(sourceContent.frontmatter.date).format('MMMM Do YYYY') : moment().format('MMMM Do YYYY');
+
+  sourceContent.frontmatter.layout = sourceContent.frontmatter.layout || "layout"; //default to page layout
+
+  var layoutHTML = compiledLayouts[sourceContent.frontmatter.layout];
+  if (!layoutHTML){
+    layoutHTML = fs.readFileSync(layoutPathPrefix+sourceContent.frontmatter.layout+".html", 'utf8');
+    //first pull in all includes in html
+    layoutHTML = ssiParser(layoutPathPrefix+"/dummy", layoutHTML); //needs file path not just dir, hence dummy
+    layoutHTML = hb.compile(layoutHTML);
+
+    compiledLayouts[sourceContent.frontmatter.layout] = layoutHTML;
+  }
+
+  sourceContent.frontmatter.contents = sourceContent.content;
+
+  //and then parse through for "mustache-y" syntax...using handlebars
+  var finalHTML = layoutHTML(sourceContent.frontmatter);
+  //finalHTML = finalHTML.replace(/\r?\n|\r/g, '');
+
+  //Check if the path already exists and warn
+  fs.stat(outputFilePath, function(err, stats){
+    if(err || forced){
+      fs.writeFileSync(outputFilePath, finalHTML, 'utf8');
+      console.log("converted: "+inputFilePath+"->"+outputFilePath);
+    }
+    else{
+      console.log("WARNING: file "+outputFilePath+" already exists.");
     }
   });
 }
@@ -63,21 +84,20 @@ function convertFilesInPath(inputPath, outputPath) {
   inputPath = (inputPath.lastIndexOf('/') === inputPath.length -1) ? inputPath : inputPath + '/' ;
   outputPath = (outputPath.lastIndexOf('/') === outputPath.length -1) ? outputPath : outputPath + '/' ;
 
-  fs.readdir(path.resolve(inputPath), function(pathErr, files) {
-    files.forEach(function(file) {
-      if(fs.lstatSync(inputPath + file).isDirectory()) {
-        convertFilesInPath(inputPath + file, outputPath);
-        return;
-      } else if (file.substr(-2) != 'md') {
-        return;
-      }
+  files = fs.readdirSync(path.resolve(inputPath));
+  files.forEach(function(file) {
+    if(fs.lstatSync(inputPath + file).isDirectory()) {
+      convertFilesInPath(inputPath + file, outputPath);
+      return;
+    } else if (file.substr(-2) != 'md') {
+      return;
+    }
 
-      if(!fs.existsSync(outputPath)) {
-        fs.mkdirSync(outputPath);
-      }
+    if(!fs.existsSync(outputPath)) {
+      fs.mkdirSync(outputPath);
+    }
 
-      renderToHtml(inputPath+ file, outputPath + stripExtension(file) + '.html');
-    });
+    renderToHtml(inputPath+ file, outputPath + stripExtension(file) + '.html');
   });
 }
 
@@ -121,3 +141,10 @@ function processMarkupContent(data) {
 }
 
 convertFilesInPath(args[0], args[1]);
+
+var outputPath = (args[1].lastIndexOf('/') === args[1].length -1) ? args[1] : args[1] + '/';
+for(var i=0; i<collectionPages.length; i++){
+  var cPage = collectionPages[i];
+  cPage.content.frontmatter.jsons = collectionJson;
+  processContentAndSaveFile(cPage.inputFilePath, cPage.outputFilePath, cPage.content);
+}
