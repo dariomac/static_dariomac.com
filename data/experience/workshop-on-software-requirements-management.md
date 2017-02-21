@@ -47,6 +47,24 @@ WBagadion Consulting, Inc.
   The second was the workshop itself. I was one of the three foreign members of the working group who carried out the workshop. Two of us were specialists in Requirement Engineering while the third was in soft skills and cultural training.
 
 
+[attachments:json]
+  [{
+    "filename": "blablabla.pdf",
+    "description": "This is the description of the filename."
+  },{
+    "filename": "blablabla2.pdf",
+    "description": "This is the description of the filename2."
+  }]
+
+
+[related_images:json]
+  [{
+    "filename": "art_cibse2013_1.jpg"
+  },{
+    "filename": "edu_CSM_2.jpg"
+  }]
+
+
 [projects:md]
 
   ### The Workshop covered the following topics:

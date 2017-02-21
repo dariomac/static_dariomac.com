@@ -1,0 +1,24 @@
+{{#if attachments}}
+  <table cellpadding="0" cellspacing="0" border="0" class="details_table attachment_table">
+    <tbody>
+      <tr>
+        <th>Icon</th>
+        <th>File</th>
+        <th>Description</th>
+      </tr>
+      {{#each related_images}}
+      <tr>
+        <td>
+          <span class="file_icon {{icon}}">&nbsp;</span>
+        </td>
+        <td>
+          <a href="<%= comfile.file.url %>"><%= comfile.file_file_name %></a>
+        </td>
+        <td>
+          <%= comfile.description %>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{/if}}

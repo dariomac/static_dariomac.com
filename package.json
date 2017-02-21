@@ -8,7 +8,9 @@
       "moment": "2.8.3",
       "commonmark": "0.25.1",
       "tiny-ssi" : "0.0.2",
-      "handlebars": "4.0.6"
+      "handlebars": "4.0.6",
+      "fs-extra": "2.0.0",
+      "command-line-args": "4.0.1"
   },
   "homepage": "",
   "author": "Dario Macchi <dariomac@gmail.com>",

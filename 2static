@@ -5,11 +5,24 @@ var fs = require('fs'),
     moment = require('moment'),
     ssiParser = require('tiny-ssi'),
     hb = require('handlebars'),
-    path = require('path');
+    path = require('path'),
+    fsx = require('fs-extra'),
+    cmdArgs = require('command-line-args');
+
+const argsDef = [
+  { name: 'clear-all', alias: 'c', type: Boolean},
+  { name: 'verbose', alias: 'v', type: Boolean }];
+
+const argOptions = cmdArgs(argsDef);
 
 var args = process.argv.slice(2);
-var layoutPathPrefix = path.resolve(args[2]); //expect it to have trailing slash
-var forced = args[3]=="--force" || false;
+
+//make sure paths are slash terminated
+var inputPath = (args[0].lastIndexOf('/') === args[0].length -1) ? args[0] : args[0] + '/';
+var outputPath = (args[1].lastIndexOf('/') === args[1].length -1) ? args[1] : args[1] + '/';
+var layoutPathPrefix = (args[2].lastIndexOf('/') === args[2].length -1) ? args[2] : args[2] + '/';
+var assetsPath = outputPath + 'assets/';
+
 var compiledLayouts = {};
 var collectionPages = [];
 var collectionJson = [];
@@ -69,32 +82,45 @@ function processContentAndSaveFile(inputFilePath, outputFilePath, sourceContent)
 
   //Check if the path already exists and warn
   fs.stat(outputFilePath, function(err, stats){
-    if(err || forced){
+    if(err){
       fs.writeFileSync(outputFilePath, finalHTML, 'utf8');
-      console.log("converted: "+inputFilePath+"->"+outputFilePath);
+      console.log("converted: " + inputFilePath + '->' + outputFilePath);
     }
     else{
-      console.log("WARNING: file "+outputFilePath+" already exists.");
+      console.warn("WARNING: file " + outputFilePath + " already exists.");
     }
   });
 }
 
 function convertFilesInPath(inputPath, outputPath) {
-  //make sure paths are slash terminated
-  inputPath = (inputPath.lastIndexOf('/') === inputPath.length -1) ? inputPath : inputPath + '/' ;
-  outputPath = (outputPath.lastIndexOf('/') === outputPath.length -1) ? outputPath : outputPath + '/' ;
+  if(!fs.existsSync(outputPath)) {
+    fs.mkdirSync(outputPath);
+  }
 
   files = fs.readdirSync(path.resolve(inputPath));
+
   files.forEach(function(file) {
     if(fs.lstatSync(inputPath + file).isDirectory()) {
-      convertFilesInPath(inputPath + file, outputPath);
+
+      if (file == 'assets'){
+        if(!fs.existsSync(assetsPath)) {
+          fs.mkdirSync(assetsPath);
+        }
+
+        try {
+          fsx.copySync(inputPath + file, assetsPath, {'overwrite': false, 'errorOnExist': true});
+        }
+        catch(e){
+          console.warn("WARNING: file " + e + '.');
+        }
+      }
+      else{
+        convertFilesInPath(inputPath + file + '/', outputPath);
+      }
       return;
+
     } else if (file.substr(-2) != 'md') {
       return;
-    }
-
-    if(!fs.existsSync(outputPath)) {
-      fs.mkdirSync(outputPath);
     }
 
     renderToHtml(inputPath+ file, outputPath + stripExtension(file) + '.html');
@@ -117,20 +143,32 @@ function processMarkupContent(data) {
 
     contentArr = parts[1].trim().split(/(?=\[[a-z:_]+\]+)/);
     for (var i=0; i<contentArr.length; i++){
-      var [fullKey, iContent] = contentArr[i].split(']');
 
-      var [key, type] = fullKey.slice(1).split(':');
-      if (type == 'md'){
-        var parser   = new commonmark.Parser();
-        var renderer = new commonmark.HtmlRenderer();
-        jsonFM[key] = renderer.render(parser.parse(iContent));
+      var endFullKeyIdx = contentArr[i].indexOf("]");
+      var fullKey = contentArr[i].slice(1, endFullKeyIdx);
+      var iContent = contentArr[i].substr(endFullKeyIdx+1);
+
+      var [key, type] = fullKey.split(':');
+
+      var keyVal = '';
+      switch(type){
+        case 'md':
+          var parser   = new commonmark.Parser();
+          var renderer = new commonmark.HtmlRenderer();
+          keyVal = renderer.render(parser.parse(iContent));
+          break;
+
+        case 'json':
+          keyVal = JSON.parse(iContent);
+          break;
+
+        default:
+          keyVal = iContent;
       }
-      else{
-        jsonFM[key] = iContent;
-      }
+      jsonFM[key] = keyVal;
     }
   } catch(e) {
-    console.error("[frontmatter] err parsing json:"+parts[0], e);
+    console.error("[frontmatter] err parsing file:" + parts[0], e);
   }
   parts.shift();
 
@@ -140,9 +178,12 @@ function processMarkupContent(data) {
   };
 }
 
-convertFilesInPath(args[0], args[1]);
+if (argOptions['clear-all']){
+  fsx.removeSync(outputPath);
+}
 
-var outputPath = (args[1].lastIndexOf('/') === args[1].length -1) ? args[1] : args[1] + '/';
+convertFilesInPath(inputPath, outputPath);
+
 for(var i=0; i<collectionPages.length; i++){
   var cPage = collectionPages[i];
   cPage.content.frontmatter.jsons = collectionJson;
