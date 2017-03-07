@@ -103,10 +103,6 @@ function convertFilesInPath(inputPath, outputPath) {
     if(fs.lstatSync(inputPath + file).isDirectory()) {
 
       if (file == 'assets'){
-        if(!fs.existsSync(assetsPath)) {
-          fs.mkdirSync(assetsPath);
-        }
-
         try {
           fsx.copySync(inputPath + file, assetsPath, {'overwrite': false, 'errorOnExist': true});
         }
@@ -178,14 +174,31 @@ function processMarkupContent(data) {
   };
 }
 
+function copyWebsiteAssets(){
+  if(!fs.existsSync(assetsPath)) {
+    fs.mkdirSync(assetsPath);
+  }
+  try {
+    fsx.copySync('./assets/', assetsPath, {'overwrite': false, 'errorOnExist': false});
+  }
+  catch(e){
+    console.warn("ERROR: file " + e + '.');
+  }
+}
+
+function convertCollectionFiles(){
+  for(var i=0; i<collectionPages.length; i++){
+    var cPage = collectionPages[i];
+    cPage.content.frontmatter.jsons = collectionJson;
+    processContentAndSaveFile(cPage.inputFilePath, cPage.outputFilePath, cPage.content);
+  }
+}
+
 if (argOptions['clear-all']){
   fsx.removeSync(outputPath);
+  fs.mkdirSync(outputPath);
 }
 
+copyWebsiteAssets();
 convertFilesInPath(inputPath, outputPath);
-
-for(var i=0; i<collectionPages.length; i++){
-  var cPage = collectionPages[i];
-  cPage.content.frontmatter.jsons = collectionJson;
-  processContentAndSaveFile(cPage.inputFilePath, cPage.outputFilePath, cPage.content);
-}
+convertCollectionFiles();

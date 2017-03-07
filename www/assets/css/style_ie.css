@@ -1,0 +1,21 @@
+/* CSS IE */
+.clearfix,
+.content,
+.stage,
+#login_form,
+#login_form form,
+label,
+.teasers,
+.features,
+.footer ul {
+	zoom: 1;
+}
+
+#login_form div.clearfix {
+	padding-bottom: 12px;
+}
+
+.custom_select div.select_inner {
+	padding: 0;
+	height: 31px;
+}

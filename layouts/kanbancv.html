@@ -1,4 +1,371 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Darío Macchi | Home ( KanbanCV )</title>
+    <style>
+      @charset "UTF-8";
+      html {
+        height: 100%;
+      }
+
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Open Sans", arial, sans-serif;
+        color: #414141;
+        font-size: 11px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      a img {
+        border: 0px;
+      }
+
+      th {
+        border: #d8d7d7 1px solid;
+      }
+
+      td {
+        border: #d8d7d7 1px solid;
+      }
+
+      tbody td {
+        background-color: #ffffff;
+        vertical-align: top;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      .footer {
+        display: none;
+      }
+
+      .wrapper {
+        position: relative;
+      }
+
+      .breadcrumb {
+        line-height: 20px;
+        margin: 0px 0px 0px 35px;
+        color: #004f89;
+        font-size: 10px;
+        padding-top: 18px;
+      }
+
+      .breadcrumb-items {
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .submenu {
+        float: right;
+        padding-top: 7px;
+      }
+
+      .orange_box {
+        padding: 0px 0px 0px 10px;
+        border: #ff922c 1px solid;
+        border-radius: 12px;
+        float: left;
+        color: #fff;
+        margin-right: 10px;
+      }
+
+      .orange_box div.username {
+        padding: 0px 10px 0px 26px;
+        background: url('data:image/png;base64,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') no-repeat 0px 6px;
+        float: left;
+        height: 35px;
+        line-height: 35px;
+      }
+
+      .orange_box ul {
+        border-left: #ec6100 1px solid;
+        padding: 0px 10px 0px 5px;
+        float: left;
+        overflow: hidden;
+        list-style-type: none;
+        list-style-image: none;
+        margin: 0px;
+      }
+
+      .orange_box ul li {
+        padding: 7px 0px 8px 0px;
+        float: left;
+        height: 20px;
+      }
+
+      .orange_box ul li strong {
+        border-left: #ff922c 1px solid;
+        padding: 0px 5px 0px 5px;
+        line-height: 20px;
+        float: left;
+      }
+
+      .orange_box ul li:first-child strong {
+        border: 0px;
+      }
+
+      .btn_feedback {
+        margin: 2px 3px 0px 0px;
+        padding-left: 8px;
+        float: left;
+      }
+
+      .btn_feedback strong {
+        padding: 7px 8px 7px 0px;
+        line-height: 16px;
+        float: left;
+        color: #000000;
+        font-size: 10px;
+      }
+
+      .btn_feedback span {
+        width: 17px;
+        display: inline-block;
+        height: 16px;
+        margin-left: 3px;
+      }
+
+      .btn_feedback span {
+        background: url(<%= image_url("images/sprite_icons.png") %>) no-repeat -25px -71px;
+      }
+
+      .clearfix:after {
+          display: block;
+          height: 0pt;
+          visibility: hidden;
+          clear: both;
+          content: ".";
+      }
+
+      /* Footer style {*/
+      .footer {
+        background-color: #00445c; height: 20px; color: #ffffff; overflow: hidden;
+      }
+      .footer a {
+        color: #ffffff
+      }
+      .footer a:hover {
+        text-decoration: underline
+      }
+      .footer ul {
+        float: right;
+        list-style-type: none;
+        margin-top: 2px;
+      }
+      .footer li {
+        border-left: #ffffff 1px solid; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; float: left; padding-top: 0px; height:16px; margin-top:1px;
+      }
+      .footer li:first-child {
+        border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px; height:16px; margin-top:1px;
+      }
+      .clearfix:after {
+        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+      }
+      .footer ul:after {
+        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+      }
+      .board_filter input {
+        line-height: 12px;
+        width: 200px;
+        height: 12px;
+        float: left;
+      }
+      .board_filter span {
+        padding: 1px 4px 0px 2px;
+        float: left;
+      }
+      input, textarea {
+        border: #d1d1d1 1px solid;
+        vertical-align: middle;
+      }
+      /* } */
+
+    </style>
+    <meta name="author" content="Darío Macchi" />
+    <meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
+    <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+
+    <link rel="dns-prefetch" href="//dariomac.com"/>
+    <link rel="dns-prefetch" href="//translate.googleapis.com"/>
+    <link rel="dns-prefetch" href="//gstatic.com"/>
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
+    <link rel="dns-prefetch" href="//google-analytics.com"/>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+    <link rel="dns-prefetch" href="//translate.google.com"/>
+    <link rel="dns-prefetch" href="//google.com"/>
+    <link rel="dns-prefetch" href="//c.statcounter.com"/>
+    <link rel="dns-prefetch" href="//statcounter.com"/>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+    <link rel="dns-prefetch" href="//yui.yahooapis.com"/>
+
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" type="text/css" href="/assets/css/style_ie.css">
+    <![endif]-->
+
+    <!--#include virtual="../common/_common_html_header.html" -->
+
+    <meta name="GENERATOR" content="MSHTML 8.00.7601.17622">
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <!--<div class="wrapper">
+    <div class="header">
+      <div class="center"></div>
+    </div>-->
+    <div class="board_view">
+      <!--#include virtual="../common/_page_header.html" -->
+      <div id="board_container"></div>
+    </div>
+    <!--</div>-->
+
+    <%= render "layouts/page_footer" %>
+
+    <script type="text/javascript">
+      $(function(){
+        draw_kanban_board(boardArray, false, tasksArray, false);
+        afterContentDraw();
+        $('.footer').show();
+      });
+    </script>
+
+    <%= javascript_include_tag "isotope.pkgd" %>
+    <%= javascript_include_tag "kanbancv" %>
+
+    <!--[if lt IE 8]>
+      <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      configs.globalVars.baseUrl = "http://www.dariomac.com";
+      var boardArray = {
+          "backlogarchive": {
+              "archiveid": "archive_6",
+              "backlogid": "backlog_5"
+          },
+          "lanes":
+              [{
+                  "color": "#F0F0F0",
+                  "lcid": "Me",
+                  "lcname": "Me"
+              },
+              {
+                  "color": "#F0F0F0",
+                  "lcid": "Experience",
+                  "lcname": "Experience"
+              },
+              {
+                  "color": "#F0F0F0",
+                  "lcid": "Education",
+                  "lcname": "Education"
+              },
+              {
+                  "color": "#F0F0F0",
+                  "lcid": "Research",
+                  "lcname": "Research"
+              },
+              {
+                  "color": "#F0F0F0",
+                  "lcid": "Article",
+                  "lcname": "Articles"
+              },
+              {
+                  "color": "#F0F0F0",
+                  "lcid": "Essay",
+                  "lcname": "Essays"
+              },
+              {
+                  "color": "#F0F0F0",
+                  "lcid": "Project",
+                  "lcname": "Projects / Products"
+              },
+              {
+                  "color": "#F0F0F0",
+                  "lcid": "Quote",
+                  "lcname": "Quotes"
+              }
+          ],
+          "rows":
+              [[
+                  [{
+                      "colspan": "1",
+                      "columnlimit": "0",
+                      "columntasksnow": "0",
+                      "lcname": "Interests - Ideas",
+                      "path": "requested_1",
+                      "position": "0"
+                  }],
+                  [{
+                      "colspan": "1",
+                      "columnlimit": "0",
+                      "columntasksnow": "0",
+                      "lcname": "Speculations - Prototypes",
+                      "path": "progress_2",
+                      "position": "1"
+                  }],
+                  [{
+                      "colspan": "1",
+                      "columnlimit": "0",
+                      "columntasksnow": "0",
+                      "lcname": "Knowledge - Products - Facts",
+                      "path": "done_3",
+                      "position": "2"
+                  }]
+              ]
+          ]
+      }
+
+      var tasksArray = [
+        {{#each jsons}}
+          {{{json this}}}
+          {{~#unless @last}}, {{/unless}}
+        {{/each}}
+      ];
+
+      if (location.href.indexOf('file://') == 0)
+        $.each(tasksArray, function(i, v){
+          v.linkto = v.linkto.substr(1, v.linkto.length) + '.html';
+        });
+
+      var typesArray = [];
+      configs.globalVars.isAdmin = 1;
+      configs.globalVars.isPM = 1;
+      configs.globalVars.taskViewsMask = 3261;//2237; //2303; //2193; //2064;
+      configs.globalVars.boardId = 2;
+      configs.globalVars.rolesMask = 4648893;
+      configs.globalVars.defaultTemplate = "None";
+      configs.globalVars.defaultAssignee = "None";
+      configs.globalVars.refreshInterval = "60";
+
+      loadCSS("<%= stylesheet_url('ddsmoothmenu') %>", null, null);
+    </script>
+  </body>
+</html>
+
+
+
 <!doctype html>
+
 <html>
   <head>
     <link rel="stylesheet" href="style.css">

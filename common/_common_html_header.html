@@ -1,0 +1,156 @@
+<meta name=viewport content="width=device-width, initial-scale=1">
+
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="/assets/vendor/jquery/jquery.min.js"></script>
+<!--<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>-->
+<script type="text/javascript" src="/assets/js/colors.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28220054-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  function afterContentDraw(){
+    setTimeout(function(){
+      var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+      aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+      $.each(aList,
+        function(k, v){
+          var $v = $(v);
+
+          $v.click(function(){
+            _gaq.push(['_trackPageview', $v.attr('href')]);
+          });
+            //$v.css('color','red');
+          });
+
+      ddsmoothmenu.init({
+                    mainmenuid: "contentmenu", //menu DIV id
+                    orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+                    classname: 'ddsmoothmenu', //class added to menu's outer DIV
+                    //customtheme: ["#1c5a80", "#18374a"],
+                    contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+                  });
+
+      preloadImages($('a.fancybox'));
+
+    }, 1000);
+  }
+
+  function preloadImages(array) {
+    if (!preloadImages.list) {
+      preloadImages.list = [];
+    }
+    for (var i = 0; i < array.length; i++) {
+      var img = new Image();
+      img.src = $(array[i]).attr('href');
+      preloadImages.list.push(img);
+    }
+  }
+
+  function loadCSS( href, before, media ){
+    // Arguments explained:
+    // `href` [REQUIRED] is the URL for your CSS file.
+    // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+      // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+    // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+    var doc = this.document;
+    var ss = doc.createElement( "link" );
+    var newMedia = media || "all";
+    var ref;
+    if( before ){
+      ref = before;
+    }
+    else {
+      var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+      ref = refs[ refs.length - 1];
+    }
+
+    var sheets = doc.styleSheets;
+    ss.rel = "stylesheet";
+    ss.href = href;
+    // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+    ss.media = "only x";
+
+    // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+    function ready( cb ){
+      if( doc.body ){
+        return cb();
+      }
+      setTimeout(function(){
+        ready( cb );
+      });
+    }
+    // Inject link
+      // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+      // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+    ready( function(){
+      ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+    });
+    // A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+    var onloadcssdefined = function( cb ){
+      var resolvedHref = ss.href;
+      var i = sheets.length;
+      while( i-- ){
+        if( sheets[ i ].href === resolvedHref ){
+          return cb();
+        }
+      }
+      setTimeout(function() {
+        onloadcssdefined( cb );
+      });
+    };
+
+    // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+    if( ss.addEventListener ){
+      ss.addEventListener( "load", function(){
+        this.media = newMedia;
+      });
+    }
+    ss.onloadcssdefined = onloadcssdefined;
+    onloadcssdefined(function() {
+      if( ss.media !== newMedia ){
+        ss.media = newMedia;
+      }
+    });
+    return ss;
+  };
+</script>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+  var sc_project=9186547;
+  var sc_invisible=1;
+  var sc_security="dce954c9";
+  var scJsHost = (("https:" == document.location.protocol) ?
+    "https://secure." : "http://www.");
+  document.write("<sc"+"ript type='text/javascript' src='" +
+    scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript>
+  <div class="statcounter">
+    <a title="web analytics" href="http://statcounter.com/" target="_blank">
+      <img class="statcounter" src="http://c.statcounter.com/9186547/0/dce954c9/1/" alt="web analytics"></a>
+  </div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+<script type="text/javascript">
+  var baseUrl = "http://www.dariomac.com";
+</script>
+
+<link rel="shortcut icon" href="/assets/favicon.ico" />
+
+<link href="https://plus.google.com/101333970265292795022" rel="publisher" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="/assets/images/d.png">
+<meta property="og:image:type" content="image/png">

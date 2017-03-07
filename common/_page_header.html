@@ -1,0 +1,88 @@
+<div class="clearfix top_menu" style="border-bottom: #D8D7D7 1px solid">
+  <div style="float:right; padding-top: 8px; padding-left: 15px;">
+      <a class="btn_feedback" title="Contact me" href="/messages/new">
+      <strong>Contact me<span>&nbsp;</span></strong>
+      </a>
+  </div>
+  <div class="submenu">
+    <div class="orange_box" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <a class="url" href="/about-me">
+          <div class="username">
+              <span>
+                <strong>
+                  <span itemprop="name">Darío</span> <span itemprop="familyName">Macchi</span>
+                </strong>
+              </span>
+          </div>
+      </a>
+      <ul>
+        <li id="link_manage_team">
+          <strong>
+            <span itemscope itemtype="http://schema.org/City">
+              <a target="_blank" href="http://maps.google.com/maps?q=montevideo+city+uruguay&hl=en&sll=-32.522779,-55.765835&sspn=5.325828,9.876709&t=v&hnear=Montevideo,+Montevideo+Dept,+Uruguay&z=11" itemprop="url">
+                <span itemprop="name">
+                  Montevideo</span>,
+              </a>
+            </span>
+            <span itemprop="nationality" itemscope itemtype="http://schema.org/Country">
+              <span itemprop="name">
+                <a href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&ie=UTF-8&hq=&hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&gl=uy&ei=KiKjU6fpE-HNsQSlqYGoCg&ved=0CBsQ8gEwAA" itemprop="url">
+                  Uruguay
+                </a>
+              </span>
+            </span>
+          </strong>
+        </li>
+        <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
+      </ul>
+    </div>
+  </div>
+  <%= link_to "/" do %>
+    <img style="float:left;" width="50" height="50" src="/assets-cv/images/d.png" alt="Orange D inside a circle">
+  <% end %>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-items" itemprop="breadcrumb">
+    <strong><%= link_to "Home ( KanbanCV ) / ", "/" %></strong>
+    <% if @cms_page.layout.label != "KanbanCV" %>
+      <strong><%= @cms_page.layout.label %></strong>
+    <% end %>
+    <% #else %>
+      <div style="padding-left: 20px; display: inline;">
+        <div id="new_essay" style="display: inline; color:red;">
+          <span class="transition">
+            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+            <% last_essay = essays_by_date.first %>
+            <%= raw "<a href='#{last_essay[:full_path]}' style='text-decoration: underline;'>#{last_essay[:label]}</a>" %>
+          </span>
+          |
+          <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
+        </div>
+      </div>
+    <% #end %>
+  </div>
+  <div id="contentmenu" class="ddsmoothmenu" style="margin-top:-4px">
+    <ul>
+        <li>
+          <img src="/assets-cv/images/content.gif" width="30" height="15" style="cursor:pointer">
+          <ul style="left: 27px !important;">
+            <% Comfy::Cms::Site.first.categories.each do |c| %>
+              <% unless c.label == 'admin' %>
+                <li itemscope itemtype="http://schema.org/ItemList">
+                  <%= link_to c.label.capitalize, "javascript:void(0);", {itemprop: "name"} %>
+                  <ul>
+                    <% Comfy::Cms::Page.for_category(c.label).each do |page| %>
+                      <li>
+                        <%= link_to page.label, page.url(:relative), {itemprop: "itemListElement"} %>
+                      </li>
+                    <% end %>
+                  </ul>
+                </li>
+              <% end %>
+            <% end %>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
