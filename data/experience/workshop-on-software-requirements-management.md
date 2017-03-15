@@ -5,7 +5,7 @@
   "json": {
     "assignee": "",
     "blocked": "0",
-    "color": "#fff",
+    "color": "#FF6E19",
     "columnid": "done_3",
     "content": "Workshop on Software Requirements Management",
     "datebox": "Nov 2014",
@@ -47,21 +47,27 @@ WBagadion Consulting, Inc.
   The second was the workshop itself. I was one of the three foreign members of the working group who carried out the workshop. Two of us were specialists in Requirement Engineering while the third was in soft skills and cultural training.
 
 
-[attachments:json]
-  [{
-    "filename": "blablabla.pdf",
-    "description": "This is the description of the filename."
-  },{
-    "filename": "blablabla2.pdf",
-    "description": "This is the description of the filename2."
-  }]
-
-
 [related_images:json]
   [{
-    "filename": "art_cibse2013_1.jpg"
+    "filename": "exp_wbc_class.jpg"
   },{
-    "filename": "edu_CSM_2.jpg"
+    "filename": "exp_wbc_course0.jpg"
+  },{
+    "filename": "exp_wbc_course1.jpg"
+  },{
+    "filename": "exp_wbc_course2.jpg"
+  },{
+    "filename": "exp_wbc_course3.jpg"
+  },{
+    "filename": "exp_wbc_course4.jpg"
+  },{
+    "filename": "exp_wbc_course5.jpg"
+  },{
+    "filename": "exp_wbc_course6.jpg"
+  },{
+    "filename": "exp_wbc_course7.jpg"
+  },{
+    "filename": "exp_wbc_course8.jpg"
   }]
 
 

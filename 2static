@@ -31,6 +31,20 @@ hb.registerHelper('json', function(obj) {
   return JSON.stringify(obj);
 });
 
+hb.registerHelper('ifEq', function(v1, v2, options) {
+  if(v1 === v2) {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+});
+
+hb.registerHelper('ifNotEq', function(v1, v2, options) {
+  return hb.helpers.ifEq(v1, v2, {
+    'fn': options.inverse,
+    'inverse': options.fn
+  });
+});
+
 if(layoutPathPrefix.slice(-1) !== '/') layoutPathPrefix += '/';
 
 function stripExtension(fileName) {
@@ -179,10 +193,10 @@ function copyWebsiteAssets(){
     fs.mkdirSync(assetsPath);
   }
   try {
-    fsx.copySync('./assets/', assetsPath, {'overwrite': false, 'errorOnExist': false});
+    fsx.copySync('./assets/', assetsPath, {'overwrite': true, 'errorOnExist': false});
   }
   catch(e){
-    console.warn("ERROR: file " + e + '.');
+    console.warn("ERROR: " + e + '.');
   }
 }
 

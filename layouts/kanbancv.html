@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Darío Macchi | Home ( KanbanCV )</title>
+    <title>{{title}}</title>
     <style>
       @charset "UTF-8";
       html {
@@ -194,39 +194,9 @@
       /* } */
 
     </style>
-    <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
-    <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
-    <link rel="dns-prefetch" href="//dariomac.com"/>
-    <link rel="dns-prefetch" href="//translate.googleapis.com"/>
-    <link rel="dns-prefetch" href="//gstatic.com"/>
-    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
-    <link rel="dns-prefetch" href="//google-analytics.com"/>
-    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
-    <link rel="dns-prefetch" href="//translate.google.com"/>
-    <link rel="dns-prefetch" href="//google.com"/>
-    <link rel="dns-prefetch" href="//c.statcounter.com"/>
-    <link rel="dns-prefetch" href="//statcounter.com"/>
-    <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
-    <link rel="dns-prefetch" href="//yui.yahooapis.com"/>
-
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-
-    <!--[if lt IE 8]>
-      <link rel="stylesheet" type="text/css" href="/assets/css/style_ie.css">
-    <![endif]-->
-
     <!--#include virtual="../common/_common_html_header.html" -->
-
-    <meta name="GENERATOR" content="MSHTML 8.00.7601.17622">
   </head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <!--<div class="wrapper">
@@ -239,7 +209,7 @@
     </div>
     <!--</div>-->
 
-    <%= render "layouts/page_footer" %>
+    <!--#include virtual="../common/_page_footer.html" -->
 
     <script type="text/javascript">
       $(function(){
@@ -249,8 +219,8 @@
       });
     </script>
 
-    <%= javascript_include_tag "isotope.pkgd" %>
-    <%= javascript_include_tag "kanbancv" %>
+    <script type="text/javascript" src="/assets/vendor/isotope/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
 
     <!--[if lt IE 8]>
       <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
@@ -357,30 +327,6 @@
       configs.globalVars.defaultAssignee = "None";
       configs.globalVars.refreshInterval = "60";
 
-      loadCSS("<%= stylesheet_url('ddsmoothmenu') %>", null, null);
-    </script>
-  </body>
-</html>
-
-
-
-<!doctype html>
-
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <title>{{title}}</title>
-    <!--#include virtual="../common/header.html" -->
-  </head>
-  <body>
-    <h1>{{title}}</h1>
-    <script>
-      var a = [
-        {{#each jsons}}
-          {{{json this}}}
-          {{~#unless @last}}, {{/unless}}
-        {{/each}}
-      ];
     </script>
   </body>
 </html>

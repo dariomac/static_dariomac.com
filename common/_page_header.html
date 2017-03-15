@@ -37,17 +37,16 @@
       </ul>
     </div>
   </div>
-  <%= link_to "/" do %>
-    <img style="float:left;" width="50" height="50" src="/assets-cv/images/d.png" alt="Orange D inside a circle">
-  <% end %>
+  <a href="/">
+    <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+  </a>
 
-<div class="breadcrumb">
-  <div class="breadcrumb-items" itemprop="breadcrumb">
-    <strong><%= link_to "Home ( KanbanCV ) / ", "/" %></strong>
-    <% if @cms_page.layout.label != "KanbanCV" %>
-      <strong><%= @cms_page.layout.label %></strong>
-    <% end %>
-    <% #else %>
+  <div class="breadcrumb">
+    <div class="breadcrumb-items" itemprop="breadcrumb">
+      <strong><a href="/">Home ( KanbanCV ) / </a></strong>
+      {{#ifNotEq layout 'kanbancv'}}
+        <strong>{{title}}</strong>
+      {{/ifNotEq}}
       <div style="padding-left: 20px; display: inline;">
         <div id="new_essay" style="display: inline; color:red;">
           <span class="transition">
@@ -59,30 +58,6 @@
           <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
         </div>
       </div>
-    <% #end %>
-  </div>
-  <div id="contentmenu" class="ddsmoothmenu" style="margin-top:-4px">
-    <ul>
-        <li>
-          <img src="/assets-cv/images/content.gif" width="30" height="15" style="cursor:pointer">
-          <ul style="left: 27px !important;">
-            <% Comfy::Cms::Site.first.categories.each do |c| %>
-              <% unless c.label == 'admin' %>
-                <li itemscope itemtype="http://schema.org/ItemList">
-                  <%= link_to c.label.capitalize, "javascript:void(0);", {itemprop: "name"} %>
-                  <ul>
-                    <% Comfy::Cms::Page.for_category(c.label).each do |page| %>
-                      <li>
-                        <%= link_to page.label, page.url(:relative), {itemprop: "itemListElement"} %>
-                      </li>
-                    <% end %>
-                  </ul>
-                </li>
-              <% end %>
-            <% end %>
-          </ul>
-        </li>
-      </ul>
     </div>
   </div>
 </div>
