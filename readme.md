@@ -1,5 +1,23 @@
 editor online para pasar html a commonmark markdown: https://domchristie.github.io/to-markdown/
 
+Lanes
+-----
+
+requested_1, progress_2, done_3
+
+
+
+Colors
+------
+
+colors['ort_light'] = '#AD4647';
+colors['ort']       = '#8C0202';
+colors['soft']      = '#77D477';
+colors['dm']        = '#FF6E19';
+colors['vairix']    = '#00A651';
+
+
+
 Image gallery
 -------------
 
@@ -25,6 +43,8 @@ Image gallery
   },{
     "filename": "exp_wbc_course8.jpg"
   }]
+
+
 
 Attachments
 -----------
