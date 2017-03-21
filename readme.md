@@ -1,9 +1,14 @@
 editor online para pasar html a commonmark markdown: https://domchristie.github.io/to-markdown/
 
-Lanes
+Columns
 -----
 
 requested_1, progress_2, done_3
+
+Lanes
+-----
+
+Article, Education, Me, Experience, Quote
 
 
 
