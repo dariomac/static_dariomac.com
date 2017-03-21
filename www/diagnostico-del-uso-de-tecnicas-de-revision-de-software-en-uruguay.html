@@ -1,200 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Darío Macchi | Home ( KanbanCV )</title>
-    <style>
-      @charset "UTF-8";
-      html {
-        height: 100%;
-      }
-
-      body {
-        height: 100%;
-      }
-
-      body {
-        margin: 0px;
-        padding: 0px;
-        font-family: "Open Sans", arial, sans-serif;
-        color: #414141;
-        font-size: 11px;
-      }
-
-      a {
-        text-decoration: none;
-        color: #000;
-      }
-
-      a img {
-        border: 0px;
-      }
-
-      th {
-        border: #d8d7d7 1px solid;
-      }
-
-      td {
-        border: #d8d7d7 1px solid;
-      }
-
-      tbody td {
-        background-color: #ffffff;
-        vertical-align: top;
-      }
-
-      table {
-        border-collapse: collapse;
-      }
-
-      .footer {
-        display: none;
-      }
-
-      .wrapper {
-        position: relative;
-      }
-
-      .breadcrumb {
-        line-height: 20px;
-        margin: 0px 0px 0px 35px;
-        color: #004f89;
-        font-size: 10px;
-        padding-top: 18px;
-      }
-
-      .breadcrumb-items {
-        white-space: nowrap;
-        overflow: hidden;
-      }
-
-      .submenu {
-        float: right;
-        padding-top: 7px;
-      }
-
-      .orange_box {
-        padding: 0px 0px 0px 10px;
-        border: #ff922c 1px solid;
-        border-radius: 12px;
-        float: left;
-        color: #fff;
-        margin-right: 10px;
-      }
-
-      .orange_box div.username {
-        padding: 0px 10px 0px 26px;
-        background: url('data:image/png;base64,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') no-repeat 0px 6px;
-        float: left;
-        height: 35px;
-        line-height: 35px;
-      }
-
-      .orange_box ul {
-        border-left: #ec6100 1px solid;
-        padding: 0px 10px 0px 5px;
-        float: left;
-        overflow: hidden;
-        list-style-type: none;
-        list-style-image: none;
-        margin: 0px;
-      }
-
-      .orange_box ul li {
-        padding: 7px 0px 8px 0px;
-        float: left;
-        height: 20px;
-      }
-
-      .orange_box ul li strong {
-        border-left: #ff922c 1px solid;
-        padding: 0px 5px 0px 5px;
-        line-height: 20px;
-        float: left;
-      }
-
-      .orange_box ul li:first-child strong {
-        border: 0px;
-      }
-
-      .btn_feedback {
-        margin: 2px 3px 0px 0px;
-        padding-left: 8px;
-        float: left;
-      }
-
-      .btn_feedback strong {
-        padding: 7px 8px 7px 0px;
-        line-height: 16px;
-        float: left;
-        color: #000000;
-        font-size: 10px;
-      }
-
-      .btn_feedback span {
-        width: 17px;
-        display: inline-block;
-        height: 16px;
-        margin-left: 3px;
-      }
-
-      .btn_feedback span {
-        background: url(<%= image_url("images/sprite_icons.png") %>) no-repeat -25px -71px;
-      }
-
-      .clearfix:after {
-          display: block;
-          height: 0pt;
-          visibility: hidden;
-          clear: both;
-          content: ".";
-      }
-
-      /* Footer style {*/
-      .footer {
-        background-color: #00445c; height: 20px; color: #ffffff; overflow: hidden;
-      }
-      .footer a {
-        color: #ffffff
-      }
-      .footer a:hover {
-        text-decoration: underline
-      }
-      .footer ul {
-        float: right;
-        list-style-type: none;
-        margin-top: 2px;
-      }
-      .footer li {
-        border-left: #ffffff 1px solid; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; float: left; padding-top: 0px; height:16px; margin-top:1px;
-      }
-      .footer li:first-child {
-        border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px; height:16px; margin-top:1px;
-      }
-      .clearfix:after {
-        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
-      }
-      .footer ul:after {
-        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
-      }
-      .board_filter input {
-        line-height: 12px;
-        width: 200px;
-        height: 12px;
-        float: left;
-      }
-      .board_filter span {
-        padding: 1px 4px 0px 2px;
-        float: left;
-      }
-      input, textarea {
-        border: #d1d1d1 1px solid;
-        vertical-align: middle;
-      }
-      /* } */
-
-    </style>
-    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+    <title>Darío Macchi | Diagnóstico del Uso de Técnicas de  Revisión de Software en Uruguay</title>
 
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -373,14 +181,30 @@
 <meta property="og:image" content="/assets/images/d.png">
 <meta property="og:image:type" content="image/png">
 
+
+    <script type="text/javascript" src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        //board_dimensions.init(); //draw_kanban_board(boardArray, false, tasksArray, false);
+        afterContentDraw();
+
+        $(".fancybox").fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none'
+        });
+      });
+    </script>
+
   </head>
   <body itemscope itemtype="http://schema.org/WebPage">
-    <!--<div class="wrapper">
-    <div class="header">
-      <div class="center"></div>
-    </div>-->
-    <div class="board_view">
-      <div class="clearfix top_menu" style="border-bottom: #D8D7D7 1px solid">
+    <div class="wrapper">
+      <div class="header">
+        <div class="center"></div>
+      </div>
+      <div class="board_view">
+        <div class="clearfix top_menu" style="border-bottom: #D8D7D7 1px solid">
   <div style="float:right; padding-top: 8px; padding-left: 15px;">
       <a class="btn_feedback" title="Contact me" href="/messages/new">
       <strong>Contact me<span>&nbsp;</span></strong>
@@ -426,6 +250,7 @@
   <div class="breadcrumb">
     <div class="breadcrumb-items" itemprop="breadcrumb">
       <strong><a href="/">Home ( KanbanCV ) / </a></strong>
+        <strong></strong>
       <div style="padding-left: 20px; display: inline;">
         <div id="new_essay" style="display: inline; color:red;">
           <span class="transition">
@@ -441,10 +266,94 @@
   </div>
 </div>
 
-      <div id="board_container"></div>
-    </div>
-    <!--</div>-->
+        <div id="board_container">
+          <div class="content entry">
+            <br>
+            <div itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Article">
+              <table cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td class="swimlane_inner">
+                      <strong>Details</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="details_cell">
+                      <h1 itemprop="name">Diagnóstico del Uso de Técnicas de  Revisión de Software en Uruguay</h1>
+                      <div>
+                        <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                          by: <span itemprop="name">
+Darío Macchi, Martín Solari
 
+
+</span>
+                        </div>
+                        <div>
+                          
+Darío Macchi, Martín Solari (2013) Diagnóstico del Uso de Técnicas de  Revisión de Software en Uruguay. In XVI Ibero-American Conference on Software Engineering (CibSE 2013).
+
+
+
+                        </div>
+
+                        <div style="margin-top:24px; border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #D4D4D4">Abstract</div>
+                        <div itemprop="description" class="details_content">
+                          <p>There are different <a href="http://en.wikipedia.org/wiki/Fault_detection_and_isolation" title="Fault detection and isolation">fault detection</a> static techniques, but the reviews are specials because they don't require the execution of the artifact to be evaluated. The objective of this research is to understand how different artifacts are being reviewed during the <a href="http://en.wikipedia.org/wiki/Software_development_process" title="Software development process">software development process</a>. It performs a survey for software development professionals who do activities related to <a href="http://en.wikipedia.org/wiki/Quality_assurance" title="Quality assurance">quality assurance</a> and process definition. The survey results show that no formal review techniques are used, but different software artifacts are checked using less formal and systematic techniques (<a href="http://en.wikipedia.org/wiki/Ad_hoc" title="Ad hoc">ad-hoc</a> and <a href="http://en.wikipedia.org/wiki/Peer_review" title="Peer review">peer review</a> techniques). Regarding the artifacts, the most reviewed are those which are key to the development process, highly risky for project success and highly visible for the user. These are the requirements specifications and design documents, code and <a href="http://en.wikipedia.org/wiki/User_interface" title="User interface">user interface</a> respectively. Since the use of non-formal revisions are large, you can search for process quality improvements by the adoption of practices from more formal techniques such as the use of reading techniques and support tools through ongoing training.</p>
+<p><em>Spanish version</em></p>
+<p>Existen distintas técnicas estáticas de detección de defectos entre las que se diferencian las revisiones por no requerir de la ejecución del artefacto a evaluar. El objetivo de esta investigación es conocer de qué manera están siendo revisados los distintos artefactos generados durante el proceso de desarrollo de software en Uruguay. Se realiza una encuesta online dirigida a profesionales en desarrollo de software, vinculados a actividades de aseguramiento de calidad o definición de procesos. Los resultados de la encuesta indican que no se utilizan técnicas formales de revisión aunque distintos artefactos de software son revisados mediante técnicas menos formales y sistemáticas (técnicas ad-hoc y revisiones de pares). Respecto a los artefactos, los más revisados son claves para el proceso de desarrollo, de alto riesgo para el éxito del proyecto y de alta visibilidad de cara al usuario. Estos son las especificaciones de requerimientos y documentos de diseño, el código y la interfaz de usuario respectivamente. Dado que el uso de revisiones no formales es amplio, se pueden buscar mejoras en la calidad de dichos procesos adoptando prácticas de técnicas más formales como el uso de técnicas de lectura y herramientas de apoyo a través de la capacitación permanente.</p>
+
+                        </div>
+                      </div>
+                        <div style="margin-top:24px; border-bottom-width:1px; border-bottom-style:solid; border-bottom-color:#D4D4D4">Additional information</div>
+                        <div itemprop="description" class="details_content">
+                          <p>You can download the full text version from <a href="/assets/diagnostico-del-uso-de-tecnicas-de-revision-de-software-en-uruguay.pdf">here</a>.</p>
+<p>This article was presented at the XVI Ibero-American Conference on Software Engineering (CibSE 2013) held in Montevideo, Uruguay on April 9, 2013.</p>
+<p>The Powerpoint file used to that conference can be downloaded <a href="http://www.slideshare.net/dariomac/macchi-cibseis20cibse2013">here</a>.</p>
+
+                        </div>
+
+  <div class="image_gallery">
+    <a itemprop="image" href="/assets/art_cibse2013_1.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/art_cibse2013_1.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/art_cibse2013_2.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/art_cibse2013_2.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/art_cibse2013_3.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/art_cibse2013_3.jpg" />
+    </a>
+  </div>
+
+  <table cellpadding="0" cellspacing="0" border="0" class="details_table attachment_table">
+    <tbody>
+      <tr>
+        <th>Icon</th>
+        <th>File</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <span class="file_icon ">&nbsp;</span>
+        </td>
+        <td>
+          <a href="/assets/diagnostico-del-uso-de-tecnicas-de-revision-de-software-en-uruguay.pdf">diagnostico-del-uso-de-tecnicas-de-revision-de-software-en-uruguay.pdf</a>
+        </td>
+        <td>
+          This is my self hosted version of the article.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="footer" style="text-align:center; width:100%;">
   <div style="text-align:center; width:100%">
   <ul>
@@ -509,121 +418,5 @@
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
-    <script type="text/javascript">
-      $(function(){
-        draw_kanban_board(boardArray, false, tasksArray, false);
-        afterContentDraw();
-        $('.footer').show();
-      });
-    </script>
-
-    <script type="text/javascript" src="/assets/vendor/isotope/isotope.pkgd.js"></script>
-    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
-
-    <!--[if lt IE 8]>
-      <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
-    <![endif]-->
-
-    <script type="text/javascript">
-      configs.globalVars.baseUrl = "http://www.dariomac.com";
-      var boardArray = {
-          "backlogarchive": {
-              "archiveid": "archive_6",
-              "backlogid": "backlog_5"
-          },
-          "lanes":
-              [{
-                  "color": "#F0F0F0",
-                  "lcid": "Me",
-                  "lcname": "Me"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Experience",
-                  "lcname": "Experience"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Education",
-                  "lcname": "Education"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Research",
-                  "lcname": "Research"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Article",
-                  "lcname": "Articles"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Essay",
-                  "lcname": "Essays"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Project",
-                  "lcname": "Projects / Products"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Quote",
-                  "lcname": "Quotes"
-              }
-          ],
-          "rows":
-              [[
-                  [{
-                      "colspan": "1",
-                      "columnlimit": "0",
-                      "columntasksnow": "0",
-                      "lcname": "Interests - Ideas",
-                      "path": "requested_1",
-                      "position": "0"
-                  }],
-                  [{
-                      "colspan": "1",
-                      "columnlimit": "0",
-                      "columntasksnow": "0",
-                      "lcname": "Speculations - Prototypes",
-                      "path": "progress_2",
-                      "position": "1"
-                  }],
-                  [{
-                      "colspan": "1",
-                      "columnlimit": "0",
-                      "columntasksnow": "0",
-                      "lcname": "Knowledge - Products - Facts",
-                      "path": "done_3",
-                      "position": "2"
-                  }]
-              ]
-          ]
-      }
-
-      var tasksArray = [
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Diagnóstico del Uso de Técnicas de  Revisión de Software en Uruguay","datebox":null,"extlink":"http://cibse2013.ort.edu.uy/en/Presentation.php","laneid":"Article","leftbox":0,"leftmsg":null,"linkto":"/diagnostico-del-uso-de-tecnicas-de-revision-de-software-en-uruguay","position":"1","priority":"Average","subtaskdetails":[{"taskid":"1","title":"Submitted to CIbSE 2013.","assignee":"None","completiondate":"2012-20-12","assignedtome":0},{"taskid":"1","title":"Accepted in CIbSE 2013.","assignee":"None","completiondate":"2013-02-04","assignedtome":0},{"taskid":"1","title":"Presented in CIbSE 2013.","assignee":"None","completiondate":"2013-04-05","assignedtome":0}],"subtasks":"3","subtaskscomplete":"0","tags":null,"title":"Darío Macchi, Martín Solari","type":"Article"}, 
-          {"assignee":"","blocked":"0","color":"#fff","columnid":"done_3","content":"Inspection bla bla bla","datebox":"Nov 2014","extlink":"http://www.wbagadion.com","laneid":"Experience","leftbox":"Bogotá - Colombia","leftmsg":"","linkto":"/inspection-bla-bla-bla","position":"4","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"WBagadion Consulting, Inc.","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#FF6E19","columnid":"done_3","content":"Workshop on Software Requirements Management","datebox":"Nov 2014","extlink":"http://www.wbagadion.com","laneid":"Experience","leftbox":"Bogotá - Colombia","leftmsg":"","linkto":"/workshop-on-software-requirements-management","position":"4","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"WBagadion Consulting, Inc.","type":"Experience"}
-      ];
-
-      if (location.href.indexOf('file://') == 0)
-        $.each(tasksArray, function(i, v){
-          v.linkto = v.linkto.substr(1, v.linkto.length) + '.html';
-        });
-
-      var typesArray = [];
-      configs.globalVars.isAdmin = 1;
-      configs.globalVars.isPM = 1;
-      configs.globalVars.taskViewsMask = 3261;//2237; //2303; //2193; //2064;
-      configs.globalVars.boardId = 2;
-      configs.globalVars.rolesMask = 4648893;
-      configs.globalVars.defaultTemplate = "None";
-      configs.globalVars.defaultAssignee = "None";
-      configs.globalVars.refreshInterval = "60";
-
-    </script>
   </body>
 </html>
