@@ -1,6 +1,6 @@
 {
   "title": "Workshop on Software Requirements Management",
-  "date": "2014-11-27",
+  "date": "2017-03-17",
   "layout": "experience",
   "json": {
     "assignee": "",
