@@ -151,7 +151,7 @@ function processMarkupContent(data) {
   try {
     jsonFM = JSON.parse(parts[0]);
 
-    contentArr = parts[1].trim().split(/(?=\[[a-z:_]+\]\n+)/);
+    contentArr = parts[1].trim().split(/(?=\[[a-z:_]+\]\s+)/);
     for (var i=0; i<contentArr.length; i++){
 
       var endFullKeyIdx = contentArr[i].indexOf("]");
