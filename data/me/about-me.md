@@ -1,0 +1,82 @@
+{
+  "title": "About me",
+  "date": "2017-03-22",
+  "layout": "me",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "progress_2",
+    "content": "Strong industry background. Interested in doing scientific research.",
+    "datebox": "",
+    "extlink": "http://uy.linkedin.com/in/dariomac",
+    "laneid": "Me",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/about-me",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "About me",
+    "type":"Me"
+  }
+}
+
+---
+
+[short_description:string]
+Strong industry background. Interested in doing scientific research.
+
+[content:md]
+<table itemscope="itemscope" itemtype="http://schema.org/AboutPage">
+  <tbody class="summary">
+    <tr itemprop="author" itemtype="http://schema.org/Person" itemscope="itemscope">
+      <td style="width: 255px;">
+        <p style="text-align: center; width: 100%;">
+          <img src="/assets/aboutme-me.jpg" alt="My photograph">
+        </p>
+        <p>
+          <strong>Full name: </strong><span itemprop="name">Darío </span><span itemprop="additionalName">Alejandro </span><span itemprop="familyName">Macchi </span><span itemprop="familyName">Heins</span><br>
+          <strong>Date of birth: </strong><a itemprop="birthDate" href="http://www.dariomac.com/Document/What-happened-on-august-12-1981">1981-08-12</a><br>
+          <strong> Place of birth: </strong><a itemtype="http://schema.org/City" itemscope="itemscope" href="http://maps.google.com/maps?q=paysand%C3%BA+department+uruguay&amp;hl=en&amp;ie=UTF8&amp;sll=-32.301658,-58.069376&amp;sspn=0.166861,0.308647&amp;t=v&amp;hnear=Paysandu,+Uruguay&amp;z=9" target="_blank"><span itemprop="name">Paysandú</span></a>, <a itemprop="nationality" itemtype="http://schema.org/Country" itemscope="itemscope" href="http://maps.google.com/maps?q=uruguay+country&amp;hl=en&amp;sll=-32.22166,-57.462726&amp;sspn=1.336054,2.469177&amp;t=v&amp;hnear=Uruguay&amp;z=7" target="_blank"> <span itemprop="name">Uruguay</span></a><br>
+          <strong>Nationality: </strong>Uruguayan
+        </p>
+        <div>
+        </div>
+      </td>
+      <td>
+        <div>
+          <div>
+            My profile can be defined as an elastic one, mostly because of my adaptive capacity.
+          </div>
+          <div>
+            I can lead projects (as <strong>PM </strong>or <strong>Scrum Master</strong>) following agile methodologies (<strong>Scrum</strong>, <strong>Extreme </strong><strong>Programming</strong>) or more traditional ones, taking care of the complete <strong>SLDC </strong>(mainly requirement elicitation/specification and <strong>quality </strong><strong>assurance</strong>).
+          </div>
+          <div>
+            Also, I love coding. My management skills are complemented with a deep technical background ranging between backend technologies (<strong>Java</strong>, <strong>.Net</strong>), databases (<strong>Oracle</strong>, <strong>SQL </strong><strong>Server</strong>, <strong>MySql</strong>, <strong>Postgres</strong>), OSs (<strong>Linux</strong>, <strong>Windows</strong>), web frameworks (<strong>ASP.NET MVC</strong>, <strong>Ruby on Rails</strong>) and frontend (<strong>Javascript</strong>, <strong>jQuery</strong>, <strong>Highcharts</strong>, <strong>SVG</strong>, <strong>Angular</strong>).
+          </div>
+          <div>
+            Besides this, and because I teach software engineering at Universidad ORT Uruguay, I feel comfortable talking in public. For this reason, I contribute to the visibility of companies participating in <strong>conferences as a speaker</strong>, writing <strong>blog posts</strong> and even adding contents to twitter (and other <strong>social networks</strong>).
+          </div>
+          <div>
+            Finally, I am interested in doing <strong>scientific research</strong> in software engineering to add value to its body of knowledge. At the same time, I want to satisfy some practical needs of the industry, especially those related to quality assurance &amp; <strong>decision making</strong>. I think it would be helpful to bring more tools from scientific research environments to the daily activities of software development companies. To achieve this goal and make a first approach to the scientific field, I have done a Master of Engineering at Universidad ORT Uruguay.
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p style="text-align: justify;">
+          I think that curriculum vitae (CV) or resume must be something alive more than a static document that looks as a biography.
+        </p>
+        <p style="text-align: justify;">
+          For these reason I decide to make my own resume in a way that I called
+          <a href="http://www.dariomac.com/KanbanCV">KanbanCV</a>. Here I introduce myself, write about experiences, education, other activities, just as in a regular resume but with additional information.
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
