@@ -1,0 +1,31 @@
+{
+  "title": "Lead from the back and let others believe they are in front",
+  "date": "2017-04-01",
+  "layout": "quote",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Lead from the back and let others believe they are in front",
+    "datebox": null,
+    "extlink": "http://www.goodreads.com/quotes/74368-lead-from-the-back-and-let-others-believe-they",
+    "laneid": "Quote",
+    "leftbox": 0,
+    "leftmsg": null,
+    "linkto": "/lead-from-the-back-and-let-others-believe-they-are-in-front",
+    "position": "1",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Nelson Mandela",
+    "type": "Quote"
+  }
+}
+
+---
+
+[authors:string]
+Nelson Mandela
