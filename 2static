@@ -45,6 +45,21 @@ hb.registerHelper('ifNotEq', function(v1, v2, options) {
   });
 });
 
+hb.registerHelper('isOrWasInProgress', function(columnId, options) {
+  console.log(columnId);
+  if(columnId === 'progress_2' || columnId === 'done_3') {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+});
+
+hb.registerHelper('ifDone', function(columnId, options) {
+  if(columnId === 'done_3') {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+});
+
 if(layoutPathPrefix.slice(-1) !== '/') layoutPathPrefix += '/';
 
 function stripExtension(fileName) {
@@ -158,6 +173,8 @@ function processMarkupContent(data) {
       var fullKey = contentArr[i].slice(1, endFullKeyIdx);
       var iContent = contentArr[i].substr(endFullKeyIdx+1);
 
+      iContent = iContent.trim();
+
       var [key, type] = fullKey.split(':');
 
       var keyVal = '';
@@ -171,6 +188,9 @@ function processMarkupContent(data) {
         case 'json':
           keyVal = JSON.parse(iContent);
           break;
+
+        case 'string':
+
 
         default:
           keyVal = iContent;
