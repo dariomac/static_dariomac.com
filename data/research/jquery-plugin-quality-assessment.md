@@ -1,0 +1,56 @@
+{
+  "title": "JQuery Plugin Quality Assessment",
+  "date": "2017-04-09",
+  "layout": "research",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "progress_2",
+    "content": "JQuery plugins saves development time, but poor quality plugin are destabilizing factor. How to evaluate the quality of JQuery plugins?",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Research",
+    "leftbox": 0,
+    "leftmsg": null,
+    "linkto": "/jquery-plugin-quality-assessment",
+    "position": "1",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#picoresearchs",
+    "title": "JQuery Plugin Quality Assessment",
+    "type":"Research"
+  }
+}
+
+---
+
+[summary:string]
+JQuery plugins saves development time, but poor quality plugin are destabilizing factor. How to evaluate the quality of JQuery plugins?
+
+
+
+[idea:md]
+The following are quotes from people asking for or suggesting some kind of JQuery plugin evaluation method.
+
+_"There are thousands of jQuery plugins on web. The objective is, always, to get plugins, which perform better and efficiently, and will not take time more than developing the functionality from scratch. While designing any website, you must investigate before using a good jQuery plugin. So, we will go through step-by-step process to evaluate the quality, credibility and performance of any jQuery plugin before picking it."_ [[ref]](http://rockingcode.com/tips/evaluating-the-quality-credibility-and-performance-of-the-jquery-plugin/)
+
+_"jQuery plug-in provides a good way to save time and simplify the development, programmers don't need to write each component from scratch. However, the plug-in will also be a destabilizing factor in your code library. A plug-in saves countless development time, but a poor quality plug-in will cost more than the actual time to write your own component from scratch."_ [[ref]](http://www.pixelstech.net/article/1351327879_How_to_choose_a_jQuery_plug-in_)
+
+Our idea is build some systematic quality assessment in order to help practitioners choosing the right plugin looking at:
+
+*   Problem domain
+*   Feature comparison
+*   Plugin quality indicators (e.g. options, parameter syntax, api access, community size)
+
+
+
+[speculations:md]
+For this research, the methodology will be:
+
+1.  Find<del>/Build/adapt</del> a framework to make it easy the selection <del>through feature comparison of JQuery plugins</del> of some technology through feature comparison.</span>
+2.  Adapt the framework found (descriptive framework) for JQuery plugin selection, making some part of it more prescriptive.
+
+*   Now we are making a checklist with attributes that are present in a "good" JQuery plugin. To make this checklist we make a light literature research using the Constant Comparison method to extract hypothesis from different sources. This step may be replaced later with a formal literature review.
