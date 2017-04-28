@@ -1,0 +1,67 @@
+{
+  "title": "i.e vs. e.g",
+  "date": "2017-04-28",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "When do you use i.e., and when do you use e.g., and what do they mean?",
+    "datebox": "2013-05-10",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": 0,
+    "leftmsg": null,
+    "linkto": "/ie-vs-eg",
+    "position": "20130510",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "i.e vs. e.g",
+    "type":"Document"
+  }
+}
+
+---
+
+[title:string]
+i.e vs. e.g
+
+
+[pub_date:string]
+2013-05-10 12:00
+
+
+[short_description:string]
+When do you use i.e., and when do you use e.g., and what do they mean?
+
+
+[body:md]
+Answer: The Latin abbreviations "i.e." and "e.g." come up very frequently in writing and would probably come up more often if people were more sure of when it is right to use "i.e." and when "e.g." is required. To me, the only way to figure it out is to remember that "i.e.", which starts with i, means "in other words," and "e.g.", which starts with e, means "for example." I = in other words. E= example ( [source](http://grammar.quickanddirtytips.com/ie-eg-oh-my.aspx)).
+
+## I.E. - What Does i.e. Mean?
+
+"i.e." stands simply for "that is," which written out fully in Latin is 'id est'. "i.e." is used in place of "in other words," or "it/that is." It specifies or makes more clear.
+
+> **I.E. _(Id Est)_**
+
+> The most beautiful human in Greek mythology, i.e., Leda's daughter Helen, may have had a unibrow, according to a 2009 book on Helen I'm reading.
+
+> [Helen, whose beauty launched the Trojan War, is considered the most beautiful woman from Greek mythology. There is no contender.]
+
+## E.G. - What Does e.g. Mean?
+
+"e.g." means "for example" and comes from the Latin expression exempli gratia, "for the sake of an example," with the noun exemplum in the genitive (possessive case) and singular to go with gratia in the ablative (prepositional case) singular. "e.g." is used in expressions similar to "including," when you are not intending to list everything that is being discussed.
+
+> **E.G. _(Exempli Gratia)_**
+
+> The children of Leda, e.g., Castor and Pollux, were born in pairs.
+
+> [The pair of boys, who are named Castor and Pollux, might be called twins, but it's not so clear about another set of Leda's offspring. Helen was said to have been hatched from an egg; Clytemnestra, born. Despite this distinction in manner of birth, Leda gestated/brooded multiple "pairs" of children, so Castor and Pollux are an example.]
+
+_source:_ [about.com](http://ancienthistory.about.com/od/abbreviations/f/ievseg.htm)
+

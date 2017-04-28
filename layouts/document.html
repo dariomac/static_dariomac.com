@@ -1,74 +1,3 @@
-editor online para pasar html a commonmark markdown:
-https://domchristie.github.io/to-markdown/
-
-Columns
------
-
-requested_1, progress_2, done_3
-
-Lanes
------
-
-Article, Education, Me, Experience, Quote
-
-
-
-Colors
-------
-
-colors['ort_light'] = '#AD4647';
-colors['ort']       = '#8C0202';
-colors['soft']      = '#77D477';
-colors['dm']        = '#FF6E19';
-colors['vairix']    = '#00A651';
-
-
-
-Image gallery
--------------
-
-[related_images:json]
-  [{
-    "filename": "exp_wbc_class.jpg"
-  },{
-    "filename": "exp_wbc_course0.jpg"
-  },{
-    "filename": "exp_wbc_course1.jpg"
-  },{
-    "filename": "exp_wbc_course2.jpg"
-  },{
-    "filename": "exp_wbc_course3.jpg"
-  },{
-    "filename": "exp_wbc_course4.jpg"
-  },{
-    "filename": "exp_wbc_course5.jpg"
-  },{
-    "filename": "exp_wbc_course6.jpg"
-  },{
-    "filename": "exp_wbc_course7.jpg"
-  },{
-    "filename": "exp_wbc_course8.jpg"
-  }]
-
-
-
-Attachments
------------
-
-[attachments:json]
-  [{
-    "filename": "blablabla.pdf",
-    "description": "This is the description of the filename."
-  },{
-    "filename": "blablabla2.pdf",
-    "description": "This is the description of the filename2."
-  }]
-
-
-
-EntryDetail Template
---------------------
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
@@ -101,9 +30,33 @@ EntryDetail Template
       <div class="board_view">
         <!--#include virtual="../common/_page_header.html" -->
         <div id="board_container">
-          <div class="content entry">
-            <%= yield %>
+          {{#if has_code}}
+            <!--#include virtual="../common/_code-styler.html" -->
+          {{/if}}
+          <div class="content document">
+          <h1>{{ title }}</h1>
+          <div>
+            <p class="date">{{ pub_date }}</p>
           </div>
+          <div class="description">{{ short_description }}</div>
+          {{{ body }}}
+          {{#if acknowledgments}}
+            <h2 id="Acknowledgments">Acknowledgments</h2>
+              {{{ acknowledgments }}}
+            <br>
+          {{/if}}
+          {{#if further_reading}}
+            <h2 id="FurtherReading">Further Reading</h2>
+            {{{ further_reading }}}
+            <br>
+          {{/if}}
+          {{#if significant_revisions}}
+            <h2>Significant Revisions</h2>
+            {{{ significant_revisions }}}
+            <br>
+          {{/if}}
+          {{ cms:snippet:entry-attachments }}
+        </div>
         </div>
       </div>
     </div>
@@ -111,4 +64,3 @@ EntryDetail Template
 
   </body>
 </html>
-
