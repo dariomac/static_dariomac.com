@@ -30,8 +30,6 @@
 [summary:string]
 JQuery plugins saves development time, but poor quality plugin are destabilizing factor. How to evaluate the quality of JQuery plugins?
 
-
-
 [idea:md]
 The following are quotes from people asking for or suggesting some kind of JQuery plugin evaluation method.
 
@@ -44,8 +42,6 @@ Our idea is build some systematic quality assessment in order to help practition
 *   Problem domain
 *   Feature comparison
 *   Plugin quality indicators (e.g. options, parameter syntax, api access, community size)
-
-
 
 [speculations:md]
 For this research, the methodology will be:

@@ -30,22 +30,18 @@
 [duration:string]
 Nov 10th-22th, 2014 (80 hs)
 
-
 [place_url:string]
 http://www.wbagadion.com
-
 
 [place:string]
 WBagadion Consulting, Inc.
 
-
 [content:md]
-  This workshop was held in Bogotá (Colombia) on November 10th to 22th, 2014 as a part of a Special International Cooperation Agreement between the Colombian government's technical-vocational training agency and [WBagadion Consulting, Inc.](http://www.wbagadion.com), a private consultancy firm headquartered in the Philippines. The goal was to train Colombian professionals in technical areas identified as important for and by their software industry. The workshop was delivered in English to 40 teachers of a recognized public educational entity focused on technical-vocational training and entrepreneurship. The knowledge transfer during the training had to be enough to let those teachers develop and deliver a 880hrs. training course on Requirement Engineering in the near future.
+This workshop was held in Bogotá (Colombia) on November 10th to 22th, 2014 as a part of a Special International Cooperation Agreement between the Colombian government's technical-vocational training agency and [WBagadion Consulting, Inc.](http://www.wbagadion.com), a private consultancy firm headquartered in the Philippines. The goal was to train Colombian professionals in technical areas identified as important for and by their software industry. The workshop was delivered in English to 40 teachers of a recognized public educational entity focused on technical-vocational training and entrepreneurship. The knowledge transfer during the training had to be enough to let those teachers develop and deliver a 880hrs. training course on Requirement Engineering in the near future.
 
-  The project included two phases. The first one was a pre-workshop stage, where we had to build the teaching guides for each “Requirement Engineering + Soft Skills" topics, writing them and referencing up-to-date bibliography.
+The project included two phases. The first one was a pre-workshop stage, where we had to build the teaching guides for each “Requirement Engineering + Soft Skills" topics, writing them and referencing up-to-date bibliography.
 
-  The second was the workshop itself. I was one of the three foreign members of the working group who carried out the workshop. Two of us were specialists in Requirement Engineering while the third was in soft skills and cultural training.
-
+The second was the workshop itself. I was one of the three foreign members of the working group who carried out the workshop. Two of us were specialists in Requirement Engineering while the third was in soft skills and cultural training.
 
 [related_images:json]
   [{
@@ -70,9 +66,7 @@ WBagadion Consulting, Inc.
     "filename": "exp_wbc_course8.jpg"
   }]
 
-
 [projects:md]
-
   ### The Workshop covered the following topics:
 
   **Software requirement management**

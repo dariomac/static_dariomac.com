@@ -1,3 +1,4 @@
+
 {
   "title": "Raphaël Utils",
   "date": "2017-03-23",
@@ -30,18 +31,14 @@
 [download_link:string]
 /assets-cv/projects/raphael-utils/raphael-utils.js
 
-
 [platform:string]
 Javascript
-
 
 [link:string]
 http://www.dariomac.com/Document/Raphael-Utils
 
-
 [short_description:string]
 SVG importer (and other utilities)
-
 
 [description:md]
 Mar 14, 2013

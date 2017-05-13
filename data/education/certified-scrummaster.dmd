@@ -24,23 +24,20 @@
         "type":"Education"
     }
 }
+
 ---
 
 [duration:string]
 June 2th-3th, 2014 (16 hs)
 
-
 [dictated_by:string]
 Alan Cyment
-
 
 [place_url:string]
 http://www.cpainnovation.com/
 
-
 [place:string]
 CPA Innovation (Hotel Palladium)
-
 
 [content:md]
 The Certified ScrumMaster Training (CSM) course consists of two days of presentation, group discussion and experiential/interactive exercises designed to effectively teach Scrum principles and practices. The value of Scrum comes from doing it, so the class focuses on action. At the end of the training the participants will have the confidence and understanding to begin to socialize Scrum at their own organization and support development teams in improving their processes.
