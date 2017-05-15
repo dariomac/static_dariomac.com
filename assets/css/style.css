@@ -800,6 +800,15 @@ ol {
 	}
 
 	/* Detail main content style { */
+		.details_cell .details_content img[src*="#center"] {
+		    display: block;
+		    margin: 0 auto;
+		}
+
+		.details_cell .details_content img[src*="#right"] {
+		    float: right;
+		}
+
 		.entry .details_content{
 			margin-left: 4px;
 		}

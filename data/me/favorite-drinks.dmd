@@ -1,0 +1,56 @@
+{
+    "title": "About me",
+    "date": "2017-05-13",
+    "layout": "me",
+    "json": {
+        "assignee": "Favorite drinks",
+        "blocked": "0",
+        "color": "#99b399",
+        "columnid": "done_3",
+        "content": "These are my favorite drinks (just in case you want to invite me)",
+        "datebox": "",
+        "extlink": "",
+        "laneid": "Me",
+        "leftbox": 0,
+        "leftmsg": null,
+        "linkto": "/favorite-drinks",
+        "position": "1",
+        "priority": "Average",
+        "subtaskdetails": [],
+        "subtasks": "0",
+        "subtaskscomplete": "0",
+        "tags": null,
+        "title": "Favorite drinks",
+        "type":"Me"
+    }
+}
+
+---
+
+[short_description:string]
+These are my favorite drinks (just in case you want to invite me)
+
+[content:md]
+## [Jack Daniel's](http://www.jackdaniels.com/whiskey/jack-daniels-old-no-7)
+
+Everybody knows Jack Daniel's. Simply, is not the best whiskey that I ever tasted... is something different, not comparable. A good friend of mine introduced me to this jewel and then I couldn't abandon it any more.
+
+On the nose, Jack Daniel's Black Label offers gentle aromas of caramel, vanilla, and butterscotch. A hint of wood is apparent and toffee notes begin to appear in the glass as it opens up. On the palate, Jack Daniel's has a smooth smoky sweetness.
+
+![Jack Daniel's bottle](/assets/jack-daniels.gif#center)
+
+## [Legendario - Elixir de Cuba](http://www.legendario.com/productos/elixir-de-cuba)
+
+In my honeymoon I've bought a bottle of this rum and I regret not having bought more of it.
+
+In the glass is a dark, rich and heavy rum. I find oriental spices, nutmeg, dark molasses, and sweet honey when I smell it. In the mouth is really rich and very very sweet (although it may be too sweet for some). Is more like a rum liqueur than a true rum. It has a hazelnut accent that reminds me a bit the Frangelico except that the rum is heavier in the mouth, less viscous and of course tastes much more of molasses and caramel. I would have to describe this rum as almost honey like in its texture. The flavour stays in the mouth long after the drink is gone, but the throat receives just a gentle burn.
+
+![Legendario Rum's bottle](/assets/legendario-rum.jpg#center)
+
+## [Agua Ardiente de Arándanos (Blueberry Schnapps)](http://www.larosada.com.uy/boutique.php)
+
+Recently, in a vegetables market in Montevideo, I saw a bottle of this schnapps and I couldn't resist to buy it.
+
+Inside there is a clear liquid with a light syrup density. On the nose the sweet notes are present as well as fresh blueberry and white flowers appear. On the palate, the attack is sweet, silky and warm, with well integrated alcohol despite its 40°. Staying in mouth is persistent, and that's where the flavors of the fruit skin appear. Best served in drinking glasses of grappa and a 10° C accompanying coffee after a good meal.
+
+![Agua Ardiente's bottle](/assets/aguardiente.png#center)
