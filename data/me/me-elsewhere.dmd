@@ -1,0 +1,200 @@
+{
+  "title": "Me elsewhere",
+  "date": "2017-05-15",
+  "layout": "me",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "progress_2",
+    "content": "These are links to my profile on several online services.",
+    "datebox": "",
+    "extlink": "",
+    "laneid": "Me",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/me-elsewhere",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Me elsewhere",
+    "type":"Me"
+  }
+}
+
+---
+
+[short_description:string]
+These are links to my profile on several online services.
+
+[content:md]
+<style>
+  tr > td {
+    vertical-align: middle !important;
+  }
+  tr > td > a {
+    margin-right: 16px !important;
+    background: none !important;
+    padding-right: 0px !important;
+  }
+  .details_cell > table {
+    margin:0px auto;
+  }
+</style>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <img src="/assets/storify.png">
+            </td>
+            <td>
+                <a href="http://storify.com/dariomac" target="_blank">Storify</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/assets/tumblr.png">
+            </td>
+            <td>
+                <a href="http://dariomac.tumblr.com/" target="_blank">Tumblrising myself</a>
+            </td>
+            <td>
+                <img src="/assets/twitter.png" alt="View my twitter">
+            </td>
+            <td>
+                <a href="http://twitter.com/_dariomac" target="_blank">Twitter</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/assets/evernote.png">
+            </td>
+            <td>
+                <a href="https://www.evernote.com/pub/dariomac/DailyNotes#b=8ec5400b-cadc-41a9-a39a-13e0e7307bae&amp;n=9bd9afe1-b2bf-49c5-a2c7-40f51ae2bbb4" target="_blank">Daily notes on Evernote</a>
+            </td>
+            <td>
+                <img src="/assets/slideshare.png">
+            </td>
+            <td>
+                <a href="http://www.slideshare.net/dariomac/" target="_blank">Slideshare</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/assets/stumbleupon.gif">
+            </td>
+            <td>
+                <a href="http://www.stumbleupon.com/stumbler/dariomac" target="_blank">Stumbleupon</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/assets/diigo.png" alt="View my Diigo bookmarks library">
+            </td>
+            <td>
+                <a href="http://www.diigo.com/user/Dariomac" target="_blank">Diigo bookmarks </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/assets/linkedin.png" alt="View Darío Macchi's LinkedIn profile">
+            </td>
+            <td>
+                <a href="http://uy.linkedin.com/in/dariomac" target="_blank"> Linkedin</a>
+            </td>
+            <td>
+                <img src="/assets/gplus.png" alt="View Darío Macchi's Google+ profile" style="border: 0; ">
+            </td>
+            <td>
+                <a rel="author" href="https://plus.google.com/101333970265292795022?prsrc=3" target="_blank">Google+</a>
+            </td>
+            <td>
+                <img src="/assets/careers.png">
+            </td>
+            <td>
+                <a href="http://careers.stackoverflow.com/cv/edit/83227" target="_blank">Careers 2.0</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/assets/researchgate.png" alt="View my ResearchGate profile">
+            </td>
+            <td>
+                <a href="http://www.researchgate.net/profile/Dario_Macchi/" target="_blank">Researchgate</a>
+            </td>
+            <td>
+                <img src="/assets/academia.png" style="border: 0; " rel="border: 0; ">
+            </td>
+            <td>
+                <a href="http://ort-uy.academia.edu/Dar%C3%ADoMacchi" target="_blank">Academia</a>
+            </td>
+            <td>
+                <img src="/assets/mendeley.gif" style="border: 0; " rel="border: 0; ">
+            </td>
+            <td>
+                <a href="http://www.mendeley.com/profiles/dario-macchi/" target="_blank">Mendeley</a>
+            </td>
+            <td>
+                <img src="/assets/google-scholar.png" style="border: 0; width: 16px; height: 16px;" rel="border: 0; width: 16px; height: 16px;">
+            </td>
+            <td>
+                <a href="http://scholar.google.com/citations?user=EHDOvH8AAAAJ&amp;hl=en" target="_blank">Google Scholar</a>
+            </td>
+            <td>
+                <img src="/assets/dblp.jpeg" style="border: 0; width: 16px; height: 16px;" rel="border: 0; width: 16px; height: 16px;">
+            </td>
+            <td>
+                <a href="http://www.informatik.uni-trier.de/~ley/pers/hd/m/Macchi:Dario" target="_blank">dblp</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/assets/humans-txt.png">
+            </td>
+            <td>
+                <a href="http://humanstxt.org/humans/dario-macchi/" target="_blank">Humans-txt</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/assets/lastfm.png">
+            </td>
+            <td>
+                <a href="http://www.last.fm/user/darmac" target="_blank">Last.fm</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/assets/facebook.png">
+            </td>
+            <td>
+                <a href="http://www.facebook.com/TheOneAndOnlyDarmac" target="_blank">Facebook</a>
+            </td>
+            <td>
+                <img src="/assets/vkontakte.png">
+            </td>
+            <td>
+                <a href="http://vk.com/id131885308" target="_blank">В Контакте</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/assets/stackoverflow.png">
+            </td>
+            <td>
+                <a href="http://stackoverflow.com/users/126519/dariomac" target="_blank">Stackoverflow</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/assets/coursera.png">
+            </td>
+            <td>
+                <a href="https://www.coursera.org/user/i/dfa42e319a2862178c78f4fc24806473" target="_blank">Coursera</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
