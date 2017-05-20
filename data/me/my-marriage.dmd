@@ -1,0 +1,33 @@
+{
+  "title": "My marriage",
+  "date": "2017-05-20",
+  "layout": "me",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "I got married on March 17, 2012",
+    "datebox": "",
+    "extlink": "http://www.youtube.com/watch?v=4Kaa7gPT9XE",
+    "laneid": "Me",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/my-marriage",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "My marriage",
+    "type":"Me"
+  }
+}
+
+---
+
+[short_description:string]
+I got married on March 17, 2012
+
+[content:md]
