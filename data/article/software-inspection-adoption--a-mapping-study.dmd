@@ -1,0 +1,68 @@
+{
+  "title": "Software inspection adoption: A mapping study",
+  "date": "2017-05-25",
+  "layout": "article",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Software inspection adoption: A mapping study",
+    "datebox": null,
+    "extlink": "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6427197&contentType=Conference+Publications&queryText%3Dsoftware+inspection+adoption",
+    "laneid": "Article",
+    "leftbox": 0,
+    "leftmsg": null,
+    "linkto": "/software-inspection-adoption--a-mapping-study",
+    "position": "0",
+    "priority": "Average",
+    "subtaskdetails": [{
+      "taskid": "1",
+      "title": "Submitted to CIbSE 2012. Rejected.",
+      "assignee": "None",
+      "completiondate": "2012-02-29 18:13:33",
+      "assignedtome": 0
+    }, {
+      "taskid": "2",
+      "title": "Accepted in CLEI 2012.",
+      "assignee": "None",
+      "completiondate": "2012-07-17 17:41:33",
+      "assignedtome": 0
+    }, {
+      "taskid": "3",
+      "title": "Presented in CLEI 2012.",
+      "assignee": "None",
+      "completiondate": "2012-10-03",
+      "assignedtome": 0
+    }],
+    "subtasks": "3",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Darío Macchi, Martín Solari",
+    "type":"Article"
+  }
+}
+
+---
+
+[authors:string]
+Darío Macchi, Martín Solari
+
+[publication_metadata:string]
+Darío Macchi, Martín Solari (2012). Software inspection adoption: A mapping study. In Conferencia Latinoamericana de Informática (CLEI 2012).
+
+[abstract:md]
+In [Software Engineering](http://en.wikipedia.org/wiki/Software_engineering "Software engineering") technical literature the references about the benefits of [software inspections](http://en.wikipedia.org/wiki/Software_inspection "Software inspection") are abundant. In contrast, some authors raise the problem of low adoption of this process. From this issue a [literature review](http://en.wikipedia.org/wiki/Literature_review "Literature review") is made to produce a map on most researched topics in the area, factors causing low adoption and possible solutions. Results showed a list of 64 articles selected using a search protocol, which were classified according to a defined taxonomy. The founded factors were codified and a list of solutions founded in the reviewed papers was made. The main conclusion was that most of the factors causing low adoption are related to developers perceptions about the process, lack of training and some characteristics of the process as the rigidity, complexity and the difficulty of connecting the effort made with the final product quality. These factors should be studied in future works.
+
+_Spanish version_
+
+En la literatura técnica de Ingeniería de Software las referencias sobre los beneficios de las inspecciones de software son abundantes. En contraposición, algunos autores plantean el problema de la baja adopción de este proceso. A partir de este problema se realiza una revisión de la literatura para elaborar un mapa sobre los temas más investigados en el área, factores causantes de la baja adopción y posibles soluciones. Como resultados se obtuvo una lista de 64 artículos seleccionados utilizando un protocolo de búsqueda, los cuales fueron clasificados según una taxonomía definida. Se elaboró una codificación de los factores encontrados y una lista de soluciones mencionadas en los trabajos revisados. Como principal conclusión se obtuvo que la mayoría de los factores causantes de baja adopción se encuentran relacionados con la percepción que tienen los desarrolladores respecto al proceso, la falta de capacitación y algunas características propias del proceso como la rigidez, la complejidad y la dificultad de conectar el esfuerzo realizado con la calidad del producto final. Estos factores deberían de ser objeto de estudio en futuros trabajos.
+
+[more_info:md]
+You can download the full text version from [here](http://fi.ort.edu.uy/innovaportal/file/2231/2/clei2012_submission_167.pdf) or from [IEEEXplore](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6427197&contentType=Conference+Publications&queryText%3Dsoftware+inspection+adoption).
+
+This article was presented at the XXXVIII Conferencia Latinoamericana en Informática (CLEI) held in Medellín, Colombia on October 3, 2012 and it can be seen [here](http://youtu.be/ZKuuDuCuquc).
+
+<iframe src="http://www.youtube.com/embed/ZKuuDuCuquc#center" width="560" height="315" frameborder="0"></iframe>
+
+The PowerPoint file used to that conference can be downloaded [here](http://www.slideshare.net/dariomac/mapeo-sistemtico-de-la-literatura-sobre-la-adopcin-de-inspecciones-de-software-clei2012#).

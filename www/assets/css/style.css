@@ -800,7 +800,8 @@ ol {
 	}
 
 	/* Detail main content style { */
-		.details_cell .details_content img[src*="#center"] {
+		.details_cell .details_content img[src*="#center"],
+		.details_cell .details_content iframe[src*="#center"] {
 		    display: block;
 		    margin: 0 auto;
 		}
