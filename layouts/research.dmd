@@ -1,0 +1,47 @@
+{
+  "title": "The_Title",
+  "date": "Creation_date",
+  "layout": "research",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "%{column}",
+    "content": "%{summary}",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "%{lane}",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "%{link_to}",
+    "position": "%{position}",
+    "priority": "Average",
+    "subtaskdetails": [],
+    /*"subtaskdetails": [{
+      "taskid": "1",
+      "title": "Submitted to CIbSE 2013.",
+      "assignee": "None",
+      "completiondate": "2012-20-12",
+      "assignedtome": 0
+    }, {
+      ...
+      ...
+      ...
+    }],*/
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#picoresearchs",
+    "title": "%{title}",
+    "type": "0"
+  }
+}
+
+---
+
+[summary:string]
+
+[idea:md]
+
+[speculations:md]
+
+[knowledge:md]

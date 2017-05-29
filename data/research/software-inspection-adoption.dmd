@@ -1,0 +1,124 @@
+{
+  "title": "Software Inspection Adoption",
+  "date": "2017-05-26",
+  "layout": "research",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Factors that difficult the adoption and how to avoid or overcome them",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Research",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/software-inspection-adoption",
+    "position": "1",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#MSc",
+    "title": "Software Inspection Adoption",
+    "type":"Research"
+  }
+}
+
+---
+
+[summary:string]
+Factors that difficult the adoption and how to avoid or overcome them
+
+[idea:md]
+Feb, 2012
+
+*   [Peer reviews](http://en.wikipedia.org/wiki/Peer_review "Peer review") have been identified as one of the [best practices](http://en.wikipedia.org/wiki/Best_practice "Best practice") in [requirements engineering](http://en.wikipedia.org/wiki/Requirements_analysis "Requirements analysis") [[Komssi _et al._, 2010](http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5636543)].
+*   Software inspections ([Fagan Inspection](http://en.wikipedia.org/wiki/Fagan_inspection)) (the most formal peer review technique) has been found to be effective for the discovery of defects in documents, but many software companies practice inspections infrequently or not at all [[Komssi _et al._, 2010]](http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5636543).
+*   In software, we generally leave inspections to companies that are quite advanced in their process maturity [[O'Neill, 1997]](http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=566420). <span style="color: #ff0000;">(this is correct? what about small companies?)</span>
+*   Why do most companies skip inspections when there is so much to gain? [[O'Neill, 1997](http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=566420)]
+*   It is a static verification technique and one of its main benefits is that it can be **applied to any artifact produced** during software development. It is probably one of the few methods that people actually agree will help in improving software quality, although it is not always applied [[Aurum _et al._, 2002]](http://www.wohlin.eu/Articles/STVR02-2.pdf).
+*   One common problem is that, the terminology used for different types of software review processes is often imprecise and leads to confusion. In particular, there is no universal agreement on what a software inspection process is and how it is different from the other types of software review processes such as a walkthrough, a formal technical review or a management review [[Aurum _et al._, 2002](http://www.wohlin.eu/Articles/STVR02-2.pdf)]. <span style="color: #ff0000;">(this could be a problem if I want to search for related literature)</span>
+
+[speculations:md]
+Oct, 2012
+
+*   More experimental activities should be done to check which of these [factors](../Document/Factors-causing-low-adoption-of-software-inspections.html "List of factors") are more important and if avoiding them helps to improve inspections adoption.
+    <span style="color: #ff0000;">Now</span> **we are making some survey in order to know if in our country ([Uruguay](http://maps.google.com/maps?ll=-34.8833333333,-56.1666666667&spn=10.0,10.0&q=-34.8833333333,-56.1666666667%20(Uruguay)&t=h "Uruguay")) software companies are using [software inspections](http://en.wikipedia.org/wiki/Software_inspection "Software inspection") ([Fagan](http://en.wikipedia.org/wiki/Fagan_inspection "Fagan inspection") or other [formal/informal method](http://www.processimpact.com/articles/seven_truths.html "Formal methods")), how they are performing [static analysis](http://en.wikipedia.org/wiki/Static_program_analysis "Static program analysis") and if some of the factors founded in the mapping study also apply to our country**.
+*   It would be interesting to know whether there is any relationship between the perceived factors causing the low adoption of inspection process and the factors related to bad experiences or failed experiences unreported.
+*   It would be interesting to find a relationship between the volume of work in what we called "technical view" in our taxonomy and the causes of the problem under research. One possible way could be to discover if the problems have been tried to resolve creating or modifying inspection techniques instead of trying to understand what happened with the existing ones. This suspicion may be supported by the lack of [empirical data](http://en.wikipedia.org/wiki/Scientific_method "Scientific method") to validate theoretical proposals [[Kollanus & Koskinen, 2009]](http://www.benthamscience.com/open/tosej/articles/V003/15TOSEJ.pdf) [[Shull _et al._, 2003]](http://dl.acm.org/citation.cfm?id=899837).
+
+[knowledge:md]
+Oct, 2012
+
+*   The result of this research is in [this article](../Article/Estudio-de-mapeo-sobre-adopción-de-Inspecciones-de-Software-en-la-industria.html), but this are the main conclusions:
+
+*   The results of software inspections are generally known and accepted, being present in many publications. For example it is claimed that this method has up to 85% efficiency in removal of defects, with an average of 65% [[Jones, 2008]](http://www.crosstalkonline.org/storage/issue-archives/2008/200806/200806-Jones.pdf). It also indicates that, combined with practices of testing, it can reduce by a factor of 10 the number of defects detected [8].
+*   I've asked to [Karl Wiegers](http://www.karlwiegers.com/) about his definition of"Team Review" and if it may be the same as the [IEEE1028](http://en.wikipedia.org/wiki/Software_review#IEEE_1028_generic_process_for_formal_reviews) "[Technical Review](http://en.wikipedia.org/wiki/Software_technical_review "Software technical review")". He said _"I think you can equate my team reviews with the [IEEE](http://www.ieee.org "Institute of Electrical and Electronics Engineers")'s technical reviews. The roles are not as well defined as in inspection, but the idea of a review leader (or moderator) and a scribe (or recorder) is common to both team reviews and technical reviews. Also, the inclusion of a meeting and the need for individual preparation prior to the meeting is common to both. There are other similarities, too."_
+*   [Mapping Study](http://www.dur.ac.uk/ebse/biblio.php?id=86 "Using Mapping Studies in Software Engineering") about Software Inspections Adoption, evidence, factors and proposed solutions. See more [here](../Article/Estudio-de-mapeo-sobre-adopción-de-Inspecciones-de-Software-en-la-industria.html "Estudio de mapeo sobre adopción de Inspecciones de Software en la industria") (spanish) or [here](http://fi.ort.edu.uy/innovaportal/file/2038/1/macchi_mapeoadopcioninspecciones.pdf) if you are looking the complete list of analyzed articles-
+    These are the main questions answered through this study:
+    *   Is there evidence for the low adoption of software inspection techniques? (see the [evidence](/evidence-of-the-low-adoption-of-software-inspection "Evidences of low adoption"))
+    *   What factors are referred as the main causes of low adoption?(list of [factors](/factors-causing-the-low-adoption-of-software-inspection "List of factors")).
+    *   What solutions have been proposed about this? (List of suggested [solutions](/solutions-suggested-for-the-low-software-inspection-adoption "Suggested solutions")).
+    *   The following tables is some codification made over the complete list of factors (previous bullet)
+
+      <table>
+          <tbody>
+              <tr>
+                  <th>Factors that made adoption difficult</th>
+                  <th>Frecuency</th>
+              </tr>
+              <tr>
+                  <td>Characteristics of the process or perceived as typical of it</td>
+                  <td>19</td>
+              </tr>
+              <tr>
+                  <td>Lack of knowledge to perform effective inspection, to avoid confusion betweenprocesses and make the training of inspectors.</td>
+                  <td>9</td>
+              </tr>
+              <tr>
+                  <td>Inspections are considered expensive (upfront cost increase)</td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>Lack of adaptation and improvement of the process according to the context where applicable</td>
+                  <td>4</td>
+              </tr>
+              <tr>
+                  <td>Lack of management tools, support, process analysis and results</td>
+                  <td>4</td>
+              </tr>
+              <tr>
+                  <td>Lack of time allotted for planning inspections</td>
+                  <td>4</td>
+              </tr>
+              <tr>
+                  <td>Lack of monitoring and recording of process execution and results</td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                  <td>Bad past experiences and experiences of failures without reporting</td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                  <td>Missing resources or resource-intensive consumption</td>
+                  <td>2</td>
+              </tr>
+              <tr>
+                  <td>Resistance to change</td>
+                  <td>2</td>
+              </tr>
+              <tr>
+                  <td>Distributed Development</td>
+                  <td>1</td>
+              </tr>
+              <tr>
+                  <td>Role of facilitator</td>
+                  <td>1</td>
+              </tr>
+              <tr>
+                  <td>Others</td>
+                  <td>7</td>
+              </tr>
+          </tbody>
+      </table>
