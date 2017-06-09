@@ -46,7 +46,6 @@ hb.registerHelper('ifNotEq', function(v1, v2, options) {
 });
 
 hb.registerHelper('isOrWasInProgress', function(columnId, options) {
-  console.log(columnId);
   if(columnId === 'progress_2' || columnId === 'done_3') {
     return options.fn(this);
   }
