@@ -1,0 +1,41 @@
+{
+  "title": "How small software companies are reviewing their software artifacts",
+  "date": "2017-06-08",
+  "layout": "research",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "We are worried about how small software companies are performing their reviews over the software artifacts generated during the development cycle",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Research",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/how-small-software-companies-are-reviewing-their-software-artifacts",
+    "position": "0",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#MSc",
+    "title": "How small software companies are reviewing their software artifacts",
+    "type":"Research"
+  }
+}
+
+---
+
+[summary:string]
+We are worried about how small software companies are performing their reviews over the software artifacts generated during the development cycle
+
+[idea:md]
+*   We know that software inspections (the most formal review technique) has a low adoption in the industry (see more [here](/software-inspection-adoption--a-mapping-study)).
+*   We also know from the work of [[Ciolkowski, Laitenberger & Biffl, 2003]](http://www.computer.org/portal/web/csdl/doi/10.1109/MS.2003.1241366), [[Ciolkowski, Laitenberger & Vegas, 2003]](http://www.springerlink.com/content/2t8u4bue0mxlmxv5/) and [[Laitenberger, Vegas & Ciolkowski, 2002]](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCMQFjAA&url=http%3A%2F%2Fwwwagse-old.informatik.uni-kl.de%2Fpubs%2Frepository%2Flaitenberger2002%2FViSEK_Report_011E_public.pdf&ei=ufKCUOuxH4Wi8ATPiYGgAw&usg=AFQjCNEUjdpnkhzbhyOsXblj-tiv3ql7vQ&sig2=B1YGml64z5fRF5VqTC0bAg) that the industry are performing software reviews unsistematically.
+
+[speculations:md]
+
+[knowledge:md]
+*   Now we are making some survey in order to know if in our country (Uruguay) software companies are using software inspections (Fagan or other formal method), how they are performing static analysis and if some of the factors founded in the mapping study also apply to our country.
+*   We will be using the work of Seaman [[Seaman, 1999]](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=799955&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F32%2F17384%2F00799955.pdf%3Farnumber%3D799955) about qualitative methods for data collection and analysis to get some answers from the results of this survey.
