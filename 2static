@@ -45,8 +45,15 @@ hb.registerHelper('ifNotEq', function(v1, v2, options) {
   });
 });
 
-hb.registerHelper('isOrWasInProgress', function(columnId, options) {
-  if(columnId === 'progress_2' || columnId === 'done_3') {
+hb.registerHelper('ifIsOrWasInProgress', function(columnId, options) {
+  if(columnId === 'progress_2' || columnId === 'done_3' || columnId === 'archive_6') {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+});
+
+hb.registerHelper('ifOrWasDone', function(columnId, options) {
+  if(columnId === 'done_3' || columnId === 'archive_6') {
     return options.fn(this);
   }
   return options.inverse(this);
