@@ -58,7 +58,7 @@
                         </tr>
                       {{/if}}
 
-                      {{#isOrWasInProgress json.columnid }}
+                      {{#ifIsOrWasInProgress json.columnid }}
                         {{#if speculations}}
                         <tr>
                             <td class="swimlane_inner">
@@ -73,9 +73,9 @@
                             </td>
                         </tr>
                         {{/if}}
-                      {{/isOrWasInProgress}}
+                      {{/ifIsOrWasInProgress}}
 
-                      {{#ifDone json.columnid }}
+                      {{#ifOrWasDone json.columnid }}
                         {{#if knowledge }}
                         <tr>
                             <td class="swimlane_inner">
@@ -90,7 +90,7 @@
                             </td>
                         </tr>
                         {{/if}}
-                      {{/ifDone}}
+                      {{/ifOrWasDone}}
                       <tr class="details_cell">
                         <td>
                           <!--#include virtual="../common/_entry-gallery.html" -->
