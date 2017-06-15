@@ -1,0 +1,220 @@
+{
+  "title": "Solutions suggested for the low Software Inspection adoption",
+  "date": "2017-06-14",
+  "layout": "research",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "archive_6",
+    "content": "Solutions suggested for the low software inspection adoption",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Me",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/solutions-suggested-for-the-low-software-inspection-adoption",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#inspection, #review, #adoption",
+    "title": "Solutions suggested for the low Software Inspection adoption",
+    "type":"Research"
+  }
+}
+
+---
+
+[summary:string]
+Solutions suggested for the low software inspection adoption
+
+[idea:md]
+
+[speculations:md]
+
+[knowledge:md]
+<table class="tableizer-table">
+   <tbody>
+      <tr class="tableizer-firstrow">
+         <th>
+            Quoted text
+         </th>
+         <th>
+            Reference (inside the source document)
+         </th>
+         <th>
+            Source document
+         </th>
+      </tr>
+      <tr>
+         <td>
+            ...new simplified inspection process which is easy to implement, requires fewer resource and almost no documentation.
+         </td>
+         <td>
+         </td>
+         <td>
+            Mishra, D., &amp; Mishra, A. (2009). Simplified software inspection process in compliance with international standards. Computer Standards &amp; Interfaces, 31(4), 763-771. Elsevier B.V. doi: 10.1016/j.csi.2008.09.018.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Participants ranked their system understanding and ability to modify the code as higher than if they had not performed the inspection.
+         </td>
+         <td>
+         </td>
+         <td>
+            Mcmeekin, D. A., Konsky, B. R. V., Chang, E., &amp; Cooper, D. J. A. (n.d.). Checklist Based Reading ' s Influence on a Developer ' s Understanding. Communications.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            An important factor in obtaining better results is the use of information gained from an inspection to better understand the outcomes of the inspection
+         </td>
+         <td>
+         </td>
+         <td>
+            Shull, F., Feldmann, R. L., Seaman, C., Regardie, M., &amp; Godfrey, S. (2010). Fully employing software inspections data. Innovations in Systems and Software Engineering. doi: 10.1007/s11334-010-0132-1.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Inspections can thus help the identification of “test smells", which are symptoms that something might be wrong in test code [11] and refactoring can be needed [23]
+         </td>
+         <td>
+            Meszaros, G.: XUnit Test Patterns: Refactoring Test Code. Addison Wesley, New York, NY, USA (to appear in 2007). Also available online at http://xunitpatterns.com/
+         </td>
+         <td>
+            Lanubile, F., Mallardo, T., &amp; Informatica, D. (2007). Inspecting Automated Test Code : A Preliminary Study. Society, 115-122.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Inspections can thus help the identification of “test smells", which are symptoms that something might be wrong in test code [11] and refactoring can be needed [23]
+         </td>
+         <td>
+            van Deursen, A., Moonen, L., van den Bergh, A., Kok, G.: Refactoring Test Code. In: Pro- ceedings of the 2nd International Conference on eXtreme Programming and Agile Proc- esses in Software Engineering (XP'01) (2001)
+         </td>
+         <td>
+            Lanubile, F., Mallardo, T., &amp; Informatica, D. (2007). Inspecting Automated Test Code : A Preliminary Study. Society, 115-122.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...the widespread use of inspection is more a leadership issue than a technical one.
+         </td>
+         <td>
+            Grady RB, Van Slack T, “Key Lessons in Achieving Widespread Inspection Use," IEEE Software 11, 4, 1994, 46–57.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            management support for innovation
+         </td>
+         <td>
+            Shull F, Seaman C, “Inspecting the History of Inspections: An Example of Evidence-Based Technology Diffusion,". IEEE Software 25, 1, 2008, 88–90.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            a dedicated champion
+         </td>
+         <td>
+            Shull F, Seaman C, “Inspecting the History of Inspections: An Example of Evidence-Based Technology Diffusion,". IEEE Software 25, 1, 2008, 88–90.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            support material for engineers
+         </td>
+         <td>
+            Shull F, Seaman C, “Inspecting the History of Inspections: An Example of Evidence-Based Technology Diffusion,". IEEE Software 25, 1, 2008, 88–90.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            data showing success from a similar context
+         </td>
+         <td>
+            Shull F, Seaman C, “Inspecting the History of Inspections: An Example of Evidence-Based Technology Diffusion,". IEEE Software 25, 1, 2008, 88–90.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            tailoring the practice to the target context without eliminating its important parts
+         </td>
+         <td>
+            Shull F, Seaman C, “Inspecting the History of Inspections: An Example of Evidence-Based Technology Diffusion,". IEEE Software 25, 1, 2008, 88–90.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            TAQtIC
+         </td>
+         <td>
+         </td>
+         <td>
+            Denger, C., &amp; Shull, F. (2007). A Practical Approach for Quality-Driven Inspections. IEEE Software, 24(2), 79-86. doi:10.1109/MS.2007.31
+         </td>
+      </tr>
+      <tr>
+         <td>
+            source of support for the inspection regimen came from process champions who believed strongly in the practice's benefits and in making time on projects to apply it.
+         </td>
+         <td>
+         </td>
+         <td>
+            Shull, F., &amp; Seaman, C. (2008). Inspecting the History of Inspections: An Example of Evidence-Based Technology Diffusion. Software, IEEE.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Companies must integrate the review process into the development process and execute it regularly. This requires a defined, nonoptional review process.
+         </td>
+         <td>
+         </td>
+         <td>
+            Ciolkowski, M., Laitenberger, O., &amp; Biffl, S. (2003). Software reviews: The state of the practice. IEEE software, 46–51. IEEE Computer Society. Retrieved from http://www.computer.org/portal/web/csdl/doi/10.1109/MS.2003.1241366
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Sistematic reading techniques
+         </td>
+         <td>
+         </td>
+         <td>
+            Ciolkowski, M., Laitenberger, O., &amp; Biffl, S. (2003). Software reviews: The state of the practice. IEEE software, 46–51. IEEE Computer Society. Retrieved from http://www.computer.org/portal/web/csdl/doi/10.1109/MS.2003.1241366
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Optimization (tailoring)
+         </td>
+         <td>
+         </td>
+         <td>
+            Ciolkowski, M., Laitenberger, O., &amp; Biffl, S. (2003). Software reviews: The state of the practice. IEEE software, 46–51. IEEE Computer Society. Retrieved from http://www.computer.org/portal/web/csdl/doi/10.1109/MS.2003.1241366
+         </td>
+      </tr>
+   </tbody>
+</table>
