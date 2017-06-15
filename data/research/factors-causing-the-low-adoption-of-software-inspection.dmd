@@ -1,0 +1,709 @@
+{
+  "title": "Factors causing the low adoption of Software Inspection",
+  "date": "2017-06-14",
+  "layout": "research",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "archive_6",
+    "content": "Factors causing low adoption of software inspections",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Me",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/factors-causing-the-low-adoption-of-software-inspection",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#inspection, #factors, #adoption",
+    "title": "Factors causing the low adoption of Software Inspection",
+    "type":"Research"
+  }
+}
+
+---
+
+[summary:string]
+Factors causing low adoption of software inspections
+
+[idea:md]
+
+[speculations:md]
+
+[knowledge:md]
+Aug, 2012
+
+<table class="tableizer-table">
+   <tbody>
+      <tr class="tableizer-firstrow">
+         <th>
+            Quoted text
+         </th>
+         <th>
+            Reference <br>
+            (inside the source document)
+         </th>
+         <th>
+            Source document
+         </th>
+      </tr>
+      <tr>
+         <td>
+            As companies have begun to turn to distributed software development, meeting in a room has become impractical.
+         </td>
+         <td>
+         </td>
+         <td>
+            Calefato, F., Lanubile, F., &amp; Mallardo, T. (2007). A Controlled Experiment on the Effects of Synchronicity in Remote Inspection Meetings. First International Symposium on Empirical Software Engineering and Measurement (ESEM 2007), 473-475. Ieee. doi: 10.1109/ESEM.2007.61.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ... the problem here is that not a lot of companies know how to use these things.
+         </td>
+         <td>
+            Jones, Capers. “Interview." Computer Aid Inc. July 2005
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Lack of supportive SDLC infrastructure
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Poor management understanding of the Inspection Process, its benefits, and their responsibilities
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Poor management understanding of the Inspection Process, its benefits, and their responsibilities
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Poor management understanding of the Inspection Process, its benefits, and their responsibilities
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            No computerized management-planning tools
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Too little schedule time for inspections
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            No computerized inspector tools
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Inadequate monitoring of inspection execution and tracking of results
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Inadequate monitoring of inspection execution and tracking of results
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Computerized tools… performing analysis to identify how future inspections can be improved.
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Computerized tools… performing analysis to identify how future inspections can be improved.
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            No inspection facilitator/ project champion
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Slow inspection implementation by project teams
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            No inspection process capture
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Software inspection process should be made simple and easy to implement with limited resources to promote its use in small and medium size organizations
+         </td>
+         <td>
+         </td>
+         <td>
+            Mishra, D., &amp; Mishra, A. (2009). Simplified software inspection process in compliance with international standards. Computer Standards &amp; Interfaces, 31(4), 763-771. Elsevier B.V. doi: 10.1016/j.csi.2008.09.018.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Software inspection process should be made simple and easy to implement with limited resources to promote its use in small and medium size organizations
+         </td>
+         <td>
+         </td>
+         <td>
+            Mishra, D., &amp; Mishra, A. (2009). Simplified software inspection process in compliance with international standards. Computer Standards &amp; Interfaces, 31(4), 763-771. Elsevier B.V. doi: 10.1016/j.csi.2008.09.018.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...for others, inspections never succeeded aswell as expected, primarily because these organizations did not learn how to make inspections both effective and low cost.
+         </td>
+         <td>
+            Ron Radice, High Quality Low Cost Software Inspections, Paradoxicon Publishing, Andover, MA, 2002.
+         </td>
+         <td>
+            Mishra, D., &amp; Mishra, A. (2009). Simplified software inspection process in compliance with international standards. Computer Standards &amp; Interfaces, 31(4), 763-771. Elsevier B.V. doi: 10.1016/j.csi.2008.09.018.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...most of the organizations are not able to use inspections in software development process as these are too rigorous to follow…
+         </td>
+         <td>
+         </td>
+         <td>
+            Mishra, D., &amp; Mishra, A. (2009). Simplified software inspection process in compliance with international standards. Computer Standards &amp; Interfaces, 31(4), 763-771. Elsevier B.V. doi: 10.1016/j.csi.2008.09.018.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...these evolutions in areas such as strongly typed languages, automated tools and improved testing environments, many defect groupings no longer exist.
+         </td>
+         <td>
+            H. Siy and L. Votta. Does the modern code inspection have value? icsm, 00:281, 2001
+         </td>
+         <td>
+            Mcmeekin, D. A., Konsky, B. R. V., Chang, E., &amp; Cooper, D. J. A. (n.d.). Checklist Based Reading ' s Influence on a Developer ' s Understanding. Communications.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            It can even sometimes be difficult for projects to get the resources to keep a sufficient number of inspections in place at all…
+         </td>
+         <td>
+         </td>
+         <td>
+            Shull, F., Feldmann, R. L., Seaman, C., Regardie, M., &amp; Godfrey, S. (2010). Fully employing software inspections data. Innovations in Systems and Software Engineering. doi: 10.1007/s11334-010-0132-1.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            There is a learning curve involved, meaning that it takes some time for developers to understand how to effectively find defects
+         </td>
+         <td>
+         </td>
+         <td>
+            Shull, F., Feldmann, R. L., Seaman, C., Regardie, M., &amp; Godfrey, S. (2010). Fully employing software inspections data. Innovations in Systems and Software Engineering. doi: 10.1007/s11334-010-0132-1.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            It's hard to make connections between inspection effort and specific final product qualities…
+         </td>
+         <td>
+         </td>
+         <td>
+            Denger, C., &amp; Shull, F. (2007). A Practical Approach for Quality-Driven Inspections. IEEE Software, 24(2), 79-86. doi:10.1109/MS.2007.31
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Largely dependent on individual experience
+         </td>
+         <td>
+         </td>
+         <td>
+            Xu, B. (2010). Cost Efficient Software Review in an E-Business Software Development Project. 2010 International Conference on E-Business and E-Government, 2680-2683. Ieee. doi:10.1109/ICEE.2010.677
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Current review processes face these obstacles due to their rigid and time consuming nature.
+         </td>
+         <td>
+         </td>
+         <td>
+            Nazir, S., Fatima, N., &amp; Malik, S. (2008). Effective Hybrid Review Process (EHRP). 2008 International Conference on Computer Science and Software Engineering, 763-771. Ieee. doi:10.1109/CSSE.2008.1417
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...some engineers consider inspections to be uncreative work that adds costs.
+         </td>
+         <td>
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            The reason may be that the original software inspection process, as described by Fagan [8], or its later variations are very rigorous
+         </td>
+         <td>
+         </td>
+         <td>
+            Mishra, D., &amp; Mishra, A. (2007). Efficient software review process for small and medium enterprises. Engineering and Technology, (4), 132 -142. doi:10.1049/iet-sen
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...inspections are low tech and are not the most enjoyable engineering tasks...
+         </td>
+         <td>
+            Radice, R. (2002). High Quality Low Cost Software Inspections. Andover: Paradoxicon Publishing.
+         </td>
+         <td>
+            Poulin, L. (2003). High Quality , Low Cost Software Inspections. Quality, (January), 2003-2003.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...inspections are low tech and are not the most enjoyable engineering tasks...
+         </td>
+         <td>
+            Radice, R. (2002). High Quality Low Cost Software Inspections. Andover: Paradoxicon Publishing.
+         </td>
+         <td>
+            Poulin, L. (2003). High Quality , Low Cost Software Inspections. Quality, (January), 2003-2003.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...it is difficult to maintain the interest of software developers in performing inspections, even when management supports their usage
+         </td>
+         <td>
+            Freimut B, Briand LC, Vollei F, “Determining Inspection Cost- Effectiveness by Combining Project Data and Expert Opinion," IEEE Transactions on Software Engineering 31, 12, 2005, 1074–1092.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Inspections can be perceived as a heavyweight process that does not address the real issues of concern to the team
+         </td>
+         <td>
+         </td>
+         <td>
+            Shull, F., Feldmann, R. L., Seaman, C., Regardie, M., &amp; Godfrey, S. (2010). Fully employing software inspections data. Innovations in Systems and Software Engineering. doi: 10.1007/s11334-010-0132-1.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            The failed applications of document inspections have typically not been reported.
+         </td>
+         <td>
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...bad previous experiences and a stagnant inspection process seemed to be the main reasons for the deterioration of the use of inspections or their bad quality...
+         </td>
+         <td>
+            Grady RB, Van Slack T, “Key Lessons in Achieving Widespread Inspection Use," IEEE Software 11, 4, 1994, 46–57.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...bad previous experiences and a stagnant inspection process seemed to be the main reasons for the deterioration of the use of inspections or their bad quality...
+         </td>
+         <td>
+            Grady RB, Van Slack T, “Key Lessons in Achieving Widespread Inspection Use," IEEE Software 11, 4, 1994, 46–57.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            No post-class practitioner refresher
+         </td>
+         <td>
+         </td>
+         <td>
+            Ebert, C., Stewart, R., &amp; Priven, L. (2008). How to Avoid Software Inspection Failure and Achieve Ongoing Benefits. CrossTalk: The Journal for Defense Software Engineering, 23-27.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Technology transition/improvement is not easy
+         </td>
+         <td>
+         </td>
+         <td>
+            Brykczynski, B., Meeson, R., &amp; Wheeler, D. (1994). Software Inspection: Eliminating Software Defects. In Proceedings of the Sixth Annual Software Technology Conference. doi: 10.1.1.50.612.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Upfront cost
+         </td>
+         <td>
+         </td>
+         <td>
+            Brykczynski, B., Meeson, R., &amp; Wheeler, D. (1994). Software Inspection: Eliminating Software Defects. In Proceedings of the Sixth Annual Software Technology Conference. doi: 10.1.1.50.612.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Confusion with other review processes
+         </td>
+         <td>
+         </td>
+         <td>
+            Brykczynski, B., Meeson, R., &amp; Wheeler, D. (1994). Software Inspection: Eliminating Software Defects. In Proceedings of the Sixth Annual Software Technology Conference. doi: 10.1.1.50.612.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            The alligator syndrome. An ongoing project that has many problems may not be receptive to introducing a new process.
+         </td>
+         <td>
+         </td>
+         <td>
+            Brykczynski, B., Meeson, R., &amp; Wheeler, D. (1994). Software Inspection: Eliminating Software Defects. In Proceedings of the Sixth Annual Software Technology Conference. doi: 10.1.1.50.612.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Bad prior experience.
+         </td>
+         <td>
+         </td>
+         <td>
+            Brykczynski, B., Meeson, R., &amp; Wheeler, D. (1994). Software Inspection: Eliminating Software Defects. In Proceedings of the Sixth Annual Software Technology Conference. doi: 10.1.1.50.612.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Improved quality not beneficial to the bottom line. For this particular product or set of products, quality is desired but is traded for other goals
+         </td>
+         <td>
+         </td>
+         <td>
+            Brykczynski, B., Meeson, R., &amp; Wheeler, D. (1994). Software Inspection: Eliminating Software Defects. In Proceedings of the Sixth Annual Software Technology Conference. doi: 10.1.1.50.612.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Inspections can be perceived as a heavyweight process that does not address the real issues of concern to the team
+         </td>
+         <td>
+         </td>
+         <td>
+            Shull, F., Feldmann, R. L., Seaman, C., Regardie, M., &amp; Godfrey, S. (2010). Fully employing software inspections data. Innovations in Systems and Software Engineering. doi: 10.1007/s11334-010-0132-1.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...upfront investment appears too large…
+         </td>
+         <td>
+         </td>
+         <td>
+            Denger, C., &amp; Shull, F. (2007). A Practical Approach for Quality-Driven Inspections. IEEE Software, 24(2), 79-86. doi:10.1109/MS.2007.31
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Inspections are insufficiently tailored to a given context…
+         </td>
+         <td>
+         </td>
+         <td>
+            Denger, C., &amp; Shull, F. (2007). A Practical Approach for Quality-Driven Inspections. IEEE Software, 24(2), 79-86. doi:10.1109/MS.2007.31
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Lack official review standards
+         </td>
+         <td>
+         </td>
+         <td>
+            Xu, B. (2010). Cost Efficient Software Review in an E-Business Software Development Project. 2010 International Conference on E-Business and E-Government, 2680-2683. Ieee. doi:10.1109/ICEE.2010.677
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Un-clear goal in practice
+         </td>
+         <td>
+         </td>
+         <td>
+            Xu, B. (2010). Cost Efficient Software Review in an E-Business Software Development Project. 2010 International Conference on E-Business and E-Government, 2680-2683. Ieee. doi:10.1109/ICEE.2010.677
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...some engineers consider inspections to be uncreative work that adds costs.
+         </td>
+         <td>
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...regardless of its importance, some practitioners perceive any review as a disturbance of their valuable time.
+         </td>
+         <td>
+            Freimut B, Briand LC, Vollei F, “Determining Inspection Cost- Effectiveness by Combining Project Data and Expert Opinion," IEEE Transactions on Software Engineering 31, 12, 2005, 1074–1092.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Current review processes face these obstacles due to their rigid and time consuming nature.
+         </td>
+         <td>
+         </td>
+         <td>
+            Nazir, S., Fatima, N., &amp; Malik, S. (2008). Effective Hybrid Review Process (EHRP). 2008 International Conference on Computer Science and Software Engineering, 763-771. Ieee. doi:10.1109/CSSE.2008.1417
+         </td>
+      </tr>
+      <tr>
+         <td>
+            industry practitioners experience inspections as being ineffective and difficult
+         </td>
+         <td>
+            Ciolkowski, M., Laitenberger, O., &amp; Biffl, S. (2003). Software reviews: The state of the practice. IEEE software, 46–51. IEEE Computer Society. Retrieved June 7, 2011, from http://www.computer.org/portal/web/csdl/doi/10.1109/MS.2003.1241366.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...inspections have proved to be resource intensive pertaining to tedious tasks by the inspectors…
+         </td>
+         <td>
+         </td>
+         <td>
+            Suma, V., &amp; Nair, T. R. G. (2008). Enhanced Approaches in Defect Detection and Prevention Strategies in Small and Medium Scale Industries. 2008 The Third International Conference on Software Engineering Advances, 389-393. Ieee. doi:10.1109/ICSEA.2008.79
+         </td>
+      </tr>
+      <tr>
+         <td>
+            industry practitioners experience inspections as being ineffective and difficult
+         </td>
+         <td>
+            Ciolkowski, M., Laitenberger, O., &amp; Biffl, S. (2003). Software reviews: The state of the practice. IEEE software, 46–51. IEEE Computer Society. Retrieved June 7, 2011, from http://www.computer.org/portal/web/csdl/doi/10.1109/MS.2003.1241366.
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...inspection is considered an effective method but perceived as boring work…
+         </td>
+         <td>
+         </td>
+         <td>
+            Komssi, M., Kauppinen, M., Pyhajarvi, M., Talvio, J., &amp; Mannisto, T. (2010). Persuading Software Development Teams to Document Inspections: Success Factors and Challenges in Practice. 2010 18th IEEE International Requirements Engineering Conference, 283-288. Ieee. doi: 10.1109/RE.2010.40.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...is the belief that inspections can only be done one way
+         </td>
+         <td>
+            Radice, R. (2002). High Quality Low Cost Software Inspections. Andover: Paradoxicon Publishing.
+         </td>
+         <td>
+            Poulin, L. (2003). High Quality , Low Cost Software Inspections. Quality, (January), 2003-2003.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...inspections are not easy to do well, given the psychology that permeates them.
+         </td>
+         <td>
+            Radice, R. (2002). High Quality Low Cost Software Inspections. Andover: Paradoxicon Publishing.
+         </td>
+         <td>
+            Poulin, L. (2003). High Quality , Low Cost Software Inspections. Quality, (January), 2003-2003.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...inspections have proved to be resource intensive pertaining to tedious tasks by the inspectors…
+         </td>
+         <td>
+         </td>
+         <td>
+            Suma, V., &amp; Nair, T. R. G. (2008). Enhanced Approaches in Defect Detection and Prevention Strategies in Small and Medium Scale Industries. 2008 The Third International Conference on Software Engineering Advances, 389-393. Ieee. doi:10.1109/ICSEA.2008.79
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Manual inspections are considered too laborious for widespread adoption.
+         </td>
+         <td>
+         </td>
+         <td>
+            Albayrak, Ö., &amp; Davenport, D. (2010). Impact of Maintainability Defects on Code Inspections. Computer Engineering, 9-12.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...the perception that inspections represent an added cost to software development is still widely prevalent.
+         </td>
+         <td>
+            Radice, R. (2002). High Quality Low Cost Software Inspections. Andover: Paradoxicon Publishing.
+         </td>
+         <td>
+            Poulin, L. (2003). High Quality , Low Cost Software Inspections. Quality, (January), 2003-2003.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            (When asked about obstacles...) cited time pressure (75 %)
+         </td>
+         <td>
+         </td>
+         <td>
+            Ciolkowski, M., Laitenberger, O., &amp; Biffl, S. (2003). Software reviews: The state of the practice. IEEE software, 46–51. IEEE Computer Society. Retrieved from http://www.computer.org/portal/web/csdl/doi/10.1109/MS.2003.1241366
+         </td>
+      </tr>
+      <tr>
+         <td>
+            (When asked about obstacles...) cost (56 %)
+         </td>
+         <td>
+         </td>
+         <td>
+            Ciolkowski, M., Laitenberger, O., &amp; Biffl, S. (2003). Software reviews: The state of the practice. IEEE software, 46–51. IEEE Computer Society. Retrieved from http://www.computer.org/portal/web/csdl/doi/10.1109/MS.2003.1241366
+         </td>
+      </tr>
+      <tr>
+         <td>
+            (When asked about obstacles...) lack of training in introducing reviews (50 %)
+         </td>
+         <td>
+         </td>
+         <td>
+            Ciolkowski, M., Laitenberger, O., &amp; Biffl, S. (2003). Software reviews: The state of the practice. IEEE software, 46–51. IEEE Computer Society. Retrieved from http://www.computer.org/portal/web/csdl/doi/10.1109/MS.2003.1241366
+         </td>
+      </tr>
+      <tr>
+         <td>
+            ...especially when developers see them as disconnected from their normal day-to-day development activities
+         </td>
+         <td>
+         </td>
+         <td>
+            Shull, F., Feldmann, R. L., Seaman, C., Regardie, M., &amp; Godfrey, S. (2010). Fully employing software inspections data. Innovations in Systems and Software Engineering. doi: 10.1007/s11334-010-0132-1.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            (Un-clear) schedule in practice
+         </td>
+         <td>
+         </td>
+         <td>
+            Xu, B. (2010). Cost Efficient Software Review in an E-Business Software Development Project. 2010 International Conference on E-Business and E-Government, 2680-2683. Ieee. doi:10.1109/ICEE.2010.677
+         </td>
+      </tr>
+   </tbody>
+</table>
