@@ -165,14 +165,15 @@ function convertFilesInPath(inputPath, outputPath) {
 function processMarkupContent(data) {
   //strip out json front-matter
   var parts = data.split(/---/);
-  var jsonFM, jsonContent;
+  var jsonFM, dmdContent;
   if (parts[0].length < 1) {
     throw new Error("missing frontmatter");
   }
   try {
     jsonFM = JSON.parse(parts[0]);
+    dmdContent = parts[1].trim()+'\n'; //Trim to remove initial \n's and later add \n to make EOF explicit
 
-    contentArr = parts[1].trim().split(/(?=\[[a-z:_]+\][ ]*\n)/);
+    contentArr = dmdContent.split(/(?=\[[a-z:_]+\][ ]*\n)/);
     for (var i=0; i<contentArr.length; i++){
 
       var endFullKeyIdx = contentArr[i].indexOf("]");
