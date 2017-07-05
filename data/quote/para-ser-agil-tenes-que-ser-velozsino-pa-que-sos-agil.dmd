@@ -1,0 +1,35 @@
+{
+  "title": "Para ser ágil tenés que ser veloz...sino pa' que sos “ágil“?",
+  "date": "2017-07-04",
+  "layout": "quote",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Para ser ágil tenés que ser veloz...sino pa' que sos “ágil“?",
+    "datebox": null,
+    "extlink": "http://www.innovaportal.com",
+    "laneid": "Quote",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Gustavo Gretter",
+    "type":"Quote"
+  }
+}
+
+---
+
+[authors:string]
+Gustavo Gretter
+
+[publication_metadata:string]
+
+[context:md]
