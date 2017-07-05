@@ -1,0 +1,35 @@
+{
+  "title": "Your mobile phone has more computing power than all of NASA in 1969. NASA launched a man to the moon. We launch a bird into pigs.",
+  "date": "2017-07-05",
+  "layout": "quote",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Your mobile phone has more computing power than all of NASA in 1969. NASA launched a man to the moon. We launch a bird into pigs.",
+    "datebox": null,
+    "extlink": "https://twitter.com/#!/GeorgeBray/status/50318850218131456",
+    "laneid": "Quote",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/your-mobile-phone-has-more-computing-power-than-all-of-nasa-in-1969-nasa-launched-a-man-to-the-moon-we-launch-a-bird-into-pigs",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "George Bray",
+    "type":"Quote"
+  }
+}
+
+---
+
+[authors:string]
+George Bray
+
+[publication_metadata:string]
+
+[context:md]
