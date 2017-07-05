@@ -75,7 +75,7 @@ function stripExtension(fileName) {
 function renderToHtml(inputFilePath, outputFilePath) {
   var fileContent = fs.readFileSync(inputFilePath, 'utf8');
   var res = processMarkupContent(fileContent);
-  if(res.frontmatter) {
+  if(res.frontmatter && res.frontmatter.date.length > 0) {
     if (res.frontmatter.mode == 'collection'){
       collectionPages.push({
         inputFilePath: inputFilePath,
