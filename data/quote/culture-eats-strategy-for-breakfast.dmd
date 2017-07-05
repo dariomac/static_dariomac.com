@@ -1,0 +1,35 @@
+{
+  "title": "Culture eats strategy for breakfast.",
+  "date": "2017-07-04",
+  "layout": "quote",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Culture eats strategy for breakfast.",
+    "datebox": null,
+    "extlink": "http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html",
+    "laneid": "Quote",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/culture-eats-strategy-for-breakfast",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Peter Drucker",
+    "type":"Quote"
+  }
+}
+
+---
+
+[authors:string]
+Peter Drucker
+
+[publication_metadata:string]
+
+[context:md]
