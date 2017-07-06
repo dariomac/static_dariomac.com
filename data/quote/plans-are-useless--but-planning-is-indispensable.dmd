@@ -1,0 +1,35 @@
+{
+  "title": "Plans are useless, but planning is indispensable",
+  "date": "2017-05-07",
+  "layout": "quote",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Plans are useless, but planning is indispensable",
+    "datebox": null,
+    "extlink": "https://www.brainyquote.com/quotes/quotes/d/dwightdei164720.html",
+    "laneid": "Quote",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/plans-are-useless--but-planning-is-indispensable",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Dwight Eisenhower",
+    "type":"Quote"
+  }
+}
+
+---
+
+[authors:string]
+Dwight Eisenhower
+
+[publication_metadata:string]
+
+[context:md]
