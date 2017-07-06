@@ -1,0 +1,35 @@
+{
+  "title": "A poor idea well written is more likely to be accepted than a good idea poorly written.",
+  "date": "2017-05-07",
+  "layout": "quote",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "A poor idea well written is more likely to be accepted than a good idea poorly written.",
+    "datebox": null,
+    "extlink": "http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html",
+    "laneid": "Quote",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/a-poor-idea-well-written-is-more-likely-to-be-accepted-than-a-good-idea-poorly-written",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Isaac Asimov",
+    "type":"Quote"
+  }
+}
+
+---
+
+[authors:string]
+Isaac Asimov
+
+[publication_metadata:string]
+
+[context:md]
