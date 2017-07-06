@@ -46,35 +46,3 @@
 [abstract:md]
 
 [more_info:md]
-
-[related_images:json]
-  [{
-    "filename": "exp_wbc_class.jpg"
-  },{
-    "filename": "exp_wbc_course0.jpg"
-  },{
-    "filename": "exp_wbc_course1.jpg"
-  },{
-    "filename": "exp_wbc_course2.jpg"
-  },{
-    "filename": "exp_wbc_course3.jpg"
-  },{
-    "filename": "exp_wbc_course4.jpg"
-  },{
-    "filename": "exp_wbc_course5.jpg"
-  },{
-    "filename": "exp_wbc_course6.jpg"
-  },{
-    "filename": "exp_wbc_course7.jpg"
-  },{
-    "filename": "exp_wbc_course8.jpg"
-  }]
-
-[attachments:json]
-  [{
-    "filename": "blablabla.pdf",
-    "description": "This is the description of the filename."
-  },{
-    "filename": "blablabla2.pdf",
-    "description": "This is the description of the filename2."
-  }]
