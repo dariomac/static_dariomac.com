@@ -3,7 +3,10 @@
   "title": "The_Title",
   "date": "Creation_date",
   "layout": "project",
-  "json":     "color": "#99b399",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
     "columnid": "%{column}",
     "content": "%{short_description}",
     "datebox": null,
