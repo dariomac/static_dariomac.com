@@ -1,0 +1,73 @@
+
+{
+  "title": "DM-Pixie",
+  "date": "2017-07-07",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "It's a color picker with extra goodies.",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/dm-pixie",
+    "position": "0",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "DM-Pixie (Windows)",
+    "type":"Project"
+  }
+}
+
+---
+
+[download_link:string]
+/assets/DM-Pixie.zip
+
+[platform:string]
+Windows
+
+[link:string]
+
+[short_description:string]
+It's a color picker with extra goodies.
+
+[description:md]
+May, 2010
+
+DM-Pixie was built especially for webmasters and designers. Just point to a color and DM-Pixie will tell you the hex, RGB, HTML, CMYK and HSB values of the color. These values can be used to reproduce the selected color in your other programs. DM-Pixie will also show the current coordinates of your mouse pointer.
+
+This is the definitely tool for you to work with colors.
+
+![Main window of the application](/assets/DM-Pixie-Main.png#center)
+
+**How to use DM-Pixie**
+
+Simply run DM-Pixie and move the mouse cursor around the screen - you will see all the necessary information in DM-Pixie's window. That is it.
+
+There are few additional features available to make your work with DM-Pixie more comfortable.
+
+_Copy HTML_
+
+Press Ctrl+Shift+C to copy a HTML value of a current color to Windows clipboard.
+
+_Magnifier_
+
+If you have to work with a complex image then point to the area around a pixel that you want and press Ctrl+Shift+Z. A static snapshot of this area will be open in the magnifier. The working area for a snapshot is 32x32 pixels with the magnification of 1:7.
+
+![Main features](/assets/DM-Pixie-Magnifier.png#center)
+
+**Tips and tricks**
+
+Move the mouse cursor over Pixie's window to see information about configured hotkeys.
+Click and hold the left mouse button anywhere on the Pixie's window to drag it around the screen.
+When you open the color mixer, it will automatically select the current color.
+
+The easiest way to aim at the magnify area is move the cursor with the arrow keys.
