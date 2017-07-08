@@ -1,0 +1,72 @@
+
+{
+  "title": "SwingImprover",
+  "date": "2017-07-07",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "Software that allows the analysis of a golf player swing movement against theory and professionals.",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/swingimprover",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "R.I.P",
+    "title": "SwingImprover (Windows)",
+    "type":"Project"
+  }
+}
+
+---
+
+[download_link:string]
+
+[platform:string]
+Windows
+
+[link:string]
+
+[short_description:string]
+Software that allows the analysis of a golf player swing movement against theory and professionals.
+
+[description:md]
+Mar, 2006
+
+The project was about the development of a software prototype (called SwingImprover) that allows the analysis of a golf player swing movement (using personal videos). The software has to let the user study their moves during the various stages of the swing, allowing the comparison with theoretical measures and with movements of professional players.
+
+![SwingImprover main interface](/assets/SI_Annex-F-2.gif#center)
+
+To set important aspects of these movements, the software ask the user to mark important points in successive video frames. Based on these information and additional data inputted by the user (such as dimensions of the player, etc.), the system display a report that show the corrections to be done in every swing stage.
+
+SwingImprover development was splitted into several stages, each one with it's own technological challenges. Some of these are the use of DirectX technology and VMR9 libraries to manage video files and draw sketches over them, 3D modeling technologies and the development of custom reusable controls to improve usability.
+
+The software was completely developed in C # using the Framework 1.1 according to customer specifications.
+
+Due to the characteristics listed above, the project was done using Extreme Programming methodology. This allowed us to reduce technological risks,control quality attributes and "feel" customer satisfaction in a more closer way.
+
+Our client was a Canadian company called NUJIT (New Just in Time), which makes software to interconnect industrial machinery for companies.
+
+Su gerente, quién a su vez es instructor de golf y jugador profesional en Canadá fue el principal propulsor del proyecto debido al hecho de encontrarse familiarizado con el deporte y la tecnología.
+
+His manager, who was golf instructor and professional player in Canada, was the main proponent of the project due to the fact of being familiar with the sport and the technology.
+
+The following are some chapters of the official project documentation that I wan't to remark.
+
+- [Universidad ORT Uruguay library reference](http://biblio.ort.edu.uy/bibid/61315)
+- [Presentation used in the project defense - 2006 (spanish)](http://www.slideshare.net/dariomac/swingimprover-end-of-career-project-defense-2006)
+- [Annex E - Research on 3D modeling of the human body](http://www.dariomac.com/Research/Research-on-3D-modeling-of-the-human-body)
+- [Annex F - Usage manual](http://www.dariomac.com/Document/SwingImprover-manual)
+- [Annex G - Test Driven Development Failures](http://www.dariomac.com/Research/Test-Driven-Development-Failures)
+- [Annex J - Video playback - DirectX - AudioVideoPlayback - Hardware (PDF)](http://www.dariomac.com/Cms_Data/Contents/dariomac_db/Media/PDFs/SwingImprover-Anexo_J.pdf)
+- [Annex M - Alpha Channel (PDF)](http://www.dariomac.com/Cms_Data/Contents/dariomac_db/Media/PDFs/SwingImprover-Anexo_M.pdf)
+- [Annex N - SwingImproverControls (PDF)](http://www.dariomac.com/Cms_Data/Contents/dariomac_db/Media/PDFs/SwingImprover-Anexo_N.pdf)
+- [Annex R - Theoretical knowledge of golf (PDF)](http://www.dariomac.com/Cms_Data/Contents/dariomac_db/Media/PDFs/SwingImprover-Anexo_R.pdf)
