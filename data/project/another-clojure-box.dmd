@@ -1,0 +1,158 @@
+
+{
+  "title": "The_Title",
+  "date": "Creation_date",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#767782",
+    "columnid": "done_3",
+    "content": "SciTE + WinCommand  + Tools = kind of \"Clojure IDE\"",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/another-clojure-box",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "R.I.P",
+    "title": "Another Clojure Box (Windows)",
+    "type":"Project"
+  }
+}
+
+---
+
+[download_link:string]
+http://code.google.com/p/anotherclojurebox/downloads/list
+
+[platform:string]
+Windows
+
+[link:string]
+
+[short_description:string]
+SciTE + WinCommand  + Tools = kind of \"Clojure IDE\"
+
+[description:md]
+Sep, 2009
+
+**Why Another Clojure Box?**
+
+Well, I love Scite, so I use it to experiment with Clojure. Later I integrate WinCommand and <del>JSwat</del> to the set so I thought to share this "package" with everybody.
+
+All the source code of the tools are in the package, so you can hack every tool in order to make it more useful for you (or report bugs!!).
+
+![ACB Workplace](/assets/ACB_1.3_full-workplace.jpg)
+
+**Features**
+
+*   REPL (WinCommand)
+    *   Can work with any version of clojure (stable 1.0.0 or any alpha like 1.1.0, etc.).
+    *   REPL history.
+    *   Select enclosing form pressing Ctrl+B inside a clojure form. Continue pressing Ctrl+B if you want to select the form that is inmediately outside the first selection.
+    *   expand-resource attribute in WinCommand.ini useful when you have a lot of jars inside lib folder and want to add it to the classpath without specify one by one.
+    *   Snippets manager.
+    *   Call editor from the REPL using function (ed "filename-without-clj").
+    *   Call debugger from the REPL using function (dbg "filename-without-clj" true), where the third parameter set if you want to load the file first.
+*   Editor (Customized version of Scite 2.01)
+    *   Syntax highlighting, brace/paren/bracket matching
+    *   Code completion
+    *   Inline help while you are writing clojure form (function arguments, etc).
+    *   Select enclosing form pressing Ctrl+B inside a clojure form. Continue pressing Ctrl+B if you want to select the form that is inmediately outside the first selection.
+    *   Other tools specially developed to work with lisp like languages (through "Tools" menu).
+    *   Help form Clojure website pressing F1 over a form (now it run locally).
+    *   Send selection to REPL selecting and pressing Ctrl+Alt+E.
+    *   Form documentation (where available) in the Outout Window pressing Ctrl+1 over a form.
+    *   Form source (where available) in the Ouput Window pressing Ctrl+2 over a form.
+    *   Simple file explorer.
+    *   Bookmarks manager.
+*   <del>Debbuger</del>
+    *   <del>Use JSwat to debug clojure code.</del>
+*   Other
+    *   SciTE API file regeneration through (make-api) function defined in user.clj (needed for code completion and inline help).
+    *   SciTE keyword list regeneration through (make-keywords) function defined in user.clj (needed for keyword detection inside the editor).
+    *   SciTE help regeneration through (make-help) function defined in user.clj.
+
+**Screenshots**
+
+*   ACB Launcher
+    ![IMG](/assets/ACB_1.3_acb_3.jpg)
+
+    *   You can drag and drop files over ACB logo to open it with scite.
+    *   If you click over the logo you will open WinCommand REPL.
+    *   You can set your JDK Path through context menu instead of modifying configurations files manually.
+*   **Code completion (Ctrl-I)**
+    ![IMG](/assets/ACB_code-completion.jpg)
+*   **Inline form arguments
+    ![IMG](/assets/ACB_parameters.jpg)**
+*   **Inline help
+    ![IMG](/assets/ACB_1.3_inline_help.jpg)**
+*   **Show form documentation
+    ![IMG](/assets/ACB_show-doc.jpg)**
+*   **Simple file explorer
+    ![IMG](/assets/ACB_file-explorer.jpg)**
+*   **Bookmarks manager
+    ![IMG](/assets/ACB_bookmarks.jpg)**
+*   **Other tools
+    ![IMG](/assets/ACB_clj-tools.jpg)**
+*   **REPL
+    ![IMG](/assets/ACB_repl.gif)
+    **
+
+<div>**Configuration**</div>
+
+<div>
+
+1.  Download [ACB.zip](http://code.google.com/p/anotherclojurebox/downloads/list "Download ACB v1.0")
+2.  Unzip anywhere (preferably in the root of C: o D:. White spaces could break some paths inside the box. I'll fix this in the next version!!!)
+3.  Config with right click over ACB logo, Select JDK Path or do it manually
+    1.  _Config Wincommand.ini_
+        WinCommand.ini is the file that let you configure WinCommand.
+        First you have an application area that let you add more applications to WinCommand. [applications]
+        Ex.:
+        Clojure|$JAVA_HOME\bin\java.exe|-server -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8888 -cp $BOX-HOME\usr\bin\clojure\clojure.jar;$BOX-HOME\usr\etc\;$BOX-HOME\usr\lib\clojure-contrib.jar;$BOX-HOME\usr\src\ clojure.lang.Repl|(System/exit 0)
+
+        This is the format of each application line definition:
+        App Name | App executable path | App parameters | internal command to leave the repl environment and exit the App
+
+        The next area that you will find is the environment area.[environment]
+        Here you can add environment variables that will be set to the Application environment only. For example, BOX-HOME is set with the value $WCMD-HOME that is an internal variable defined in runtime that contains WinCommand execution path.
+
+        You can change JAVA_HOME=C:\Sun\SDK\jdk to your J2SE JDK default location.
+
+        If you want to use some of this variables in you Application definition you must put the "main.system.command-prefix" before the variable name.
+
+        Finally you will find the setup area that let you change the global behaviour of WinCommand.[setup]
+    2.  <del>Change the following line in ACB\bin\jswat-4.4\etc\jswat.conf to your JS2E JDK default location
+        # default location of J2SE JDK, can be overridden by using --jdkhome <dir> switch
+        netbeans_jdkhome="C:\Sun\SDK\JDK"</del>
+
+</div>
+
+**Directory Structure**
+
+.\
+
+.\bin - global applications, like WinCommand, Scite, etc. Used for all the WinCommand applications.
+
+.\etc - global configuration files
+
+.\src - global applications sources
+
+.\usr\
+
+.\usr\bin\ - path of each application that you want to run in the box (Clojure, CLisp, etc)
+
+.\usr\doc\ - documentation related to the applications and libraries
+
+.\usr\etc\ - application configuration files (like user.clj for Clojure)
+
+.\usr\lib\ - libraries to be used inside the applications (like clojure-contrib)
+
+.\usr\src\ - the place where you will put your source code (remember to add to the classpath for Clojure). Also you can put the applications source that are inside \usr\bin (like clojure) or the libraries inside \usr\lib (like clojure-contrib)

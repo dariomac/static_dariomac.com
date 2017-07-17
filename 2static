@@ -173,7 +173,7 @@ function processMarkupContent(data) {
     jsonFM = JSON.parse(parts[0]);
     dmdContent = parts[1].trim()+'\n'; //Trim to remove initial \n's and later add \n to make EOF explicit
 
-    contentArr = dmdContent.split(/(?=\[[a-z:_]+\][ ]*\n)/);
+    contentArr = dmdContent.split(/(?=^\[[a-z:_]+\][ ]*\n)/gm);
     for (var i=0; i<contentArr.length; i++){
 
       var endFullKeyIdx = contentArr[i].indexOf("]");
