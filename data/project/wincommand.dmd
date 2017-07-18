@@ -1,0 +1,127 @@
+
+{
+  "title": "WinCommand",
+  "date": "2017-07-17",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Run console apps (e.g. CLisp or cmd) in a window to work more confortable.",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/wincommand",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "WinCommand (Windows)",
+    "type":"Project"
+  }
+}
+
+---
+
+[download_link:string]
+#
+
+[platform:string]
+Windows
+
+[link:string]
+
+[short_description:string]
+Run console apps (e.g. CLisp or cmd) in a window to work more confortable.
+
+[description:md]
+Sep, 2006
+
+WinCommand is an application that can run a console (like CLisp or cmd) inside a window. For example you can run CLisp inside a window so you can work more confortable.
+
+The program can be configured for any (I hope) console application, like others implementations of lisp (Corman Lisp, GCL,...).
+
+You can save the history of command typed inside the console and save the whole text of the console.
+
+Enjoy it, and send comments!!!
+
+Internal Commands:
+
+- $cls: clear the console.
+- $exit: exit WinCommand shutting down the running application.
+- $history: print the command history inside the console.
+- $restart: restart the current application.
+- $save-history: save command history to a file.
+- Ctrl+B inside this simbols ( '(',')','['']','{','}' ) select the text inside it (usefull in lisp-syntax languages when you want to select an expression)
+- Ctrl+Up, Ctrl+Down, Ctrl+Right are for editing and viewing the input history.
+
+Global command execution:
+
+![IMG](/assets/wincommand.gif)
+
+If you put some command inside this textbox and press Ctrl+Enter, or click in the green arrow or click in Tools - Exec Global Cmd. Useful when you want to execute the same command continuously, like a function defintion or, in my situation, repetitive commands like (load "foo") when you are working foo.clj
+
+  WinCommand.ini is the file that let you configure WinCommand.
+
+  First you have an application area that let you add more applications to WinCommand.
+
+  [applications]
+
+  e.g.:
+
+  Clojure|$JAVA_HOME\bin\java.exe|-server -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8888 -cp $BOX-HOME\usr\bin\clojure\clojure.jar;$BOX-HOME\usr\etc\;$BOX-HOME\usr\lib\clojure-contrib.jar;$BOX-HOME\usr\src\ clojure.lang.Repl|(System/exit 0)
+
+  This is the format of each application line definition:
+
+  App Name | App executable path | App parameters | internal command to leave the repl environment and exit the App
+
+  The next area that you will find is the environment area.
+
+  [environment]
+
+  Here you can add environment variables that will be set to the Application environment only. For example, BOX-HOME is set with the value $WCMD-HOME that is an internal variable defined in runtime that contains WinCommand execution path.
+
+  You can change JAVA_HOME=C:\Sun\SDK\jdk to your J2SE JDK default location.
+
+  If you want to use some of this variables in you Application definition you must put the "main.system.command-prefix" before the variable name.
+
+  Finally you will find the setup area that let you change the global behaviour of WinCommand.
+
+  [setup]
+
+History:
+Version 1.2.2:
+- Add expand-resource in wincommand.ini.
+
+Version 1.2.1:
+- Many internal improvements.
+- Snippets manager
+- Clojure updates to handle array and hash delimiters ([,],{,})
+
+Version 1.2.0:
+- Run any application configured in WinCommand.ini file.
+- Prompt for differents application can be configured.
+- Internal commands prefix can be configured.
+- Environment variables can be set in configuration file.
+- Remember the position of the window.
+- Console text can be saved to a file.
+- History can be saved to a file.
+- History can be cleaned.
+- $history command added.
+
+Version 1.1.0:
+- Stability was improved.
+- Can execute commands with any number if lines.
+- Standard output redirected to Status console.
+- $exit command added.
+- Bugs fixed.
+
+Version 1.0.0:
+- Only run CLisp.
+- Show colorized parenthesis when match.
+- Can execute one line commands.
