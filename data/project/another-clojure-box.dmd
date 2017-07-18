@@ -1,7 +1,7 @@
 
 {
-  "title": "The_Title",
-  "date": "Creation_date",
+  "title": "Another Clojure Box",
+  "date": "2017-07-16",
   "layout": "project",
   "json": {
     "assignee": "",
@@ -29,7 +29,7 @@
 ---
 
 [download_link:string]
-http://code.google.com/p/anotherclojurebox/downloads/list
+http://www.dariomac.com/assets/ACB.zip
 
 [platform:string]
 Windows
@@ -105,35 +105,40 @@ All the source code of the tools are in the package, so you can hack every tool 
     ![IMG](/assets/ACB_repl.gif)
     **
 
-<div>**Configuration**</div>
+**Configuration**
 
-<div>
-
-1.  Download [ACB.zip](http://code.google.com/p/anotherclojurebox/downloads/list "Download ACB v1.0")
+1.  Download [ACB.zip](/assets/ACB.zip "Download ACB v1.0")
 2.  Unzip anywhere (preferably in the root of C: o D:. White spaces could break some paths inside the box. I'll fix this in the next version!!!)
 3.  Config with right click over ACB logo, Select JDK Path or do it manually
-    1.  _Config Wincommand.ini_
-        WinCommand.ini is the file that let you configure WinCommand.
-        First you have an application area that let you add more applications to WinCommand. [applications]
-        Ex.:
-        Clojure|$JAVA_HOME\bin\java.exe|-server -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8888 -cp $BOX-HOME\usr\bin\clojure\clojure.jar;$BOX-HOME\usr\etc\;$BOX-HOME\usr\lib\clojure-contrib.jar;$BOX-HOME\usr\src\ clojure.lang.Repl|(System/exit 0)
+    1. _Config Wincommand.ini_
 
-        This is the format of each application line definition:
-        App Name | App executable path | App parameters | internal command to leave the repl environment and exit the App
+       WinCommand.ini is the file that let you configure WinCommand.
 
-        The next area that you will find is the environment area.[environment]
-        Here you can add environment variables that will be set to the Application environment only. For example, BOX-HOME is set with the value $WCMD-HOME that is an internal variable defined in runtime that contains WinCommand execution path.
+       First you have an application area that let you add more applications to WinCommand.
 
-        You can change JAVA_HOME=C:\Sun\SDK\jdk to your J2SE JDK default location.
+       [applications]
 
-        If you want to use some of this variables in you Application definition you must put the "main.system.command-prefix" before the variable name.
+       e.g.:
 
-        Finally you will find the setup area that let you change the global behaviour of WinCommand.[setup]
-    2.  <del>Change the following line in ACB\bin\jswat-4.4\etc\jswat.conf to your JS2E JDK default location
-        # default location of J2SE JDK, can be overridden by using --jdkhome <dir> switch
-        netbeans_jdkhome="C:\Sun\SDK\JDK"</del>
+       Clojure|$JAVA_HOME\bin\java.exe|-server -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8888 -cp $BOX-HOME\usr\bin\clojure\clojure.jar;$BOX-HOME\usr\etc\;$BOX-HOME\usr\lib\clojure-contrib.jar;$BOX-HOME\usr\src\ clojure.lang.Repl|(System/exit 0)
 
-</div>
+       This is the format of each application line definition:
+
+       App Name | App executable path | App parameters | internal command to leave the repl environment and exit the App
+
+       The next area that you will find is the environment area.
+
+       [environment]
+
+       Here you can add environment variables that will be set to the Application environment only. For example, BOX-HOME is set with the value $WCMD-HOME that is an internal variable defined in runtime that contains WinCommand execution path.
+
+       You can change JAVA_HOME=C:\Sun\SDK\jdk to your J2SE JDK default location.
+
+       If you want to use some of this variables in you Application definition you must put the "main.system.command-prefix" before the variable name.
+
+       Finally you will find the setup area that let you change the global behaviour of WinCommand.
+
+       [setup]
 
 **Directory Structure**
 
