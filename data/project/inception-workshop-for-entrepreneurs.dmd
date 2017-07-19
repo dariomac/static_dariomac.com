@@ -1,0 +1,68 @@
+
+{
+  "title": "Inception Workshop for Entrepreneurs",
+  "date": "2017-07-18",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#00A651",
+    "columnid": "done_3",
+    "content": "Short workshop with the goal of identify essential software features, technological risks and get an idea of  size & effort involved in its development.",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/inception-workshop-for-entrepreneurs",
+    "position": "1",
+    "priority": "Average",
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#entrepreneurship",
+    "title": "Inception Workshop for Entrepreneurs",
+    "type":"Project"
+  }
+}
+
+---
+
+[download_link:string]
+
+[platform:string]
+
+[link:string]
+
+[short_description:string]
+Short workshop with the goal of identify essential software features, technological risks and get an idea of  size & effort involved in its development.
+
+[description:md]
+The Inception Workshop is a short workshop which has the goal of identify the essential software features for a venture, their technological risks and get an idea of the size & effort involved in its development.
+
+Many entrepreneurs have problems when they think about a software development for their business, so they quickly go to software development houses without a complete previous analysis. It is clear the entrepreneur doesn't always have the tools to do this analysis; often neither the development provider has them or just his business is build software and nothing more. So this situation generates:
+
+*   Waste of money because the developed software doesn't meet the entrepreneur needs (or doesn't take into account some technological risks).
+*   Bad choice of the company that develops the software, maybe because of the ignorance about technical requirements that this provider should meet.
+*   Products that aren't validated against the market, which delays the success of them, loss of opportunity windows and above all, money.
+
+In contrast, our workshop allows the entrepreneur to:
+
+*   Define the list of functions they really need in their software and rank them.
+*   Discover the technical risks associated with the software they want to build.
+*   Generate list of skills that the software provider/developer must meet.
+*   Build a validation plan for their business in stages (proportionally with their investment possibilities) toward the final product.
+*   Get an initial idea of the required volume of work to develop the software (the estimation translates to possible cost ranges).
+
+<div style="float: left; width: 470px; padding: 10px;">
+
+The workshop is held with the team responsible for the entrepreneurship (1-6 people max.) and can be done remotely or in person. There are 3 sessions (at least) of 3 hours each, separated by at least 1 day. Each session has activities/games (specially chosen for each group) to generate the expected outputs of the workshop. These outputs will be write down in a collaborative way (between all the participants) in a document accessible from the first day.
+
+Out of the workshop hours, the participants may discuss the activities carried out, get additional information and maturate concepts which then can be added to the document. After the end of the workshop, participants will take a copy of the generated document so nothing ties them to us in any way. Obviously we will be very happy to continue working with them in the following stages if they want.
+
+I prepare the workshop using my experience in business/enterprises, many years of software development and my [university professor](/software-engineering-professor) knowledge for which I had developed a collection of games and activities. About the cost of the workshop, it has a base price and then it grows according to the mode (remotely/in person) and the number of sessions.
+
+This workshop was done several times during 2015, online and in presence to several [VAIRIX Software Development](http://www.vairix.com/) clients.
+
+</div>
+
+![Inception output example](/assets/inception-workshop-service.png)
