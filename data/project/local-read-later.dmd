@@ -1,0 +1,59 @@
+{
+  "title": "Local Read Later",
+  "date": "2017-07-18",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Similar as Read It Later service but runs locally.",
+    "datebox": null,
+    "extlink": "https://chrome.google.com/webstore/detail/gkonjlhfjnlgikjfknnfcalimclipnck",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/local-read-later",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Local Read Later (Google Chrome Extension)",
+    "type":"Project"
+  }
+}
+
+---
+
+[download_link:string]
+
+[platform:string]
+Google Chrome Extension
+
+[link:string]
+#
+
+[short_description:string]
+Similar as Read It Later service but runs locally.
+
+[description:md]
+Jun 6, 2011
+
+This extension provide the same service as Read It Later (http://readitlaterlist.com) but it save the data in your machine (so you don't need any account). I wrote this extension because I do a lot of reading in a single day, but sometimes I see something that really interests me, but I don't have time to read it right then. I had tried with bookmarks, txt file in desktop, etc. but anything worked for me. Read It Later that is useful in that cases, but it's involve making an account and save that information in the web.
+
+When you come across a webpage you want to read, instead of interrupting the flow of your work, hit Ctrl+Alt+R and you will see that the counter increment by one. Also you can set your own shortcut.
+
+If you click the icon, all saved pages will be displayed. If the proper option is checked in options page, once you click in some of the unreaded links it will be removed. Otherwise you need to hit Ctrl+Alt+R again (or click in the "Remove..." button) in the tab of the page that you want to remove. Remember that when you change shortcut definition you must reload any page in order to use the new shortcut. This is a must and maybe it's the main reason of some "bug" reports about it.
+
+This is my first extension so I hope that you enjoy it!!
+
+Articles written about this extension:
+
+*   [Local Read Later - Save Articles You Want to Read Later in Google Chrome](http://voices.yahoo.com/local-read-later-save-articles-want-read-later-7192930.html?cat=15) (english)
+*   [Create Read Later Lists in Google Chrome](http://www.howtogeek.com/howto/8553/create-read-later-lists-in-google-chrome/) (english)
+*   [How To Save Pages And Read Them Later in Chrome](http://manikarum.com/2010/01/local-read-later/) (english)
+*   [Local Read Later è una estensione di Chrome per contrassegnare le pagine da leggere in un secondo momento.](http://www.ideepercomputeredinternet.com/2010/01/local-read-later-e-una-estensione-di.html) (italian)
+*   [Local Read Later: Read It Later per Chrome](http://computer-acquisti.com/blog/local-read-later-read-it-later-google-chrome/) (italian)
+*   [Google Chrome Extension – Local Read Later](http://manikarum.com/2010/01/local-read-later/) (indonesian)
