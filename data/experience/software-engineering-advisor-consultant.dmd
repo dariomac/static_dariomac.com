@@ -1,0 +1,44 @@
+{
+  "title": "Software Engineering Advisor/Consultant",
+  "date": "2017-07-20",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#FF6E19",
+    "columnid": "progress_2",
+    "content": "Software Engineering Advisor/Consultant",
+    "datebox": "Mar 2013 – Now",
+    "extlink": "",
+    "laneid": "Experience",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/software-engineering-advisor-consultant",
+    "position": "0",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Self-Employed",
+    "type":"Experience"
+  }
+}
+
+---
+
+[duration:string]
+Mar 2013 – Present
+
+[place_url:string]
+
+[place:string]
+Self-Employed
+
+[content:md]
+An advisor is a problems definer. Usually I serve as an impartial sounding board, a partner that helps test ideas and then identify pros and cons of proposed courses of action. Usually I provide my clients with new and broader perspectives, strengthening their capacity to solve their own problems. I'm used to do early-warnings about emerging problems (Doomsayer role), signals often missed by a consultant's sharpened focus on eliminating the problem at hand.
+
+A consultant is a problem solver, so I'm a bit of that too. I can be a great simplifier, discovering root causes of software engineering/business problems, and help fixing it.
+
+[projects:md]
+*   [Workshop on Software Requirements Management](/workshop-on-software-requirements-management)
