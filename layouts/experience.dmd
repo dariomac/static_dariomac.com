@@ -1,0 +1,49 @@
+{
+  "title": "The_Title",
+  "date": "Creation_date",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#00A651",
+    "columnid": "%{column}",
+    "content": "%{title}",
+    "datebox": "Mar 2015",
+    "extlink": "%{place_url}",
+    "laneid": "%{lane}",
+    "leftbox": "Medellín - Colombia",
+    "leftmsg": "",
+    "linkto": "%{link_to}",
+    "position": "%{position}",
+    "priority": "Average",
+    "subtaskdetails": [],
+    /*"subtaskdetails": [{
+      "taskid": "1",
+      "title": "Submitted to CIbSE 2013.",
+      "assignee": "None",
+      "completiondate": "2012-20-12",
+      "assignedtome": 0
+    }, {
+      ...
+      ...
+      ...
+    }],*/
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "%{place}",
+    "type": "0"
+  }
+}
+
+---
+
+[duration:string]
+
+[place_url:string]
+
+[place:string]
+
+[content:md]
+
+[projects:md]
