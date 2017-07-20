@@ -1,0 +1,63 @@
+{
+  "title": "9° Entrepreneurship Summer Camp",
+  "date": "2017-07-19",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#00A651",
+    "columnid": "done_3",
+    "content": "9° Entrepreneurship Summer Camp",
+    "datebox": "Mar 2015",
+    "extlink": "http://www.eafit.edu.co/institucional/eafit-llanogrande/Paginas/presentacion.aspx",
+    "laneid": "Experience",
+    "leftbox": "Medellín - Colombia",
+    "leftmsg": null,
+    "linkto": "/9-entrepreneurship-summer-camp",
+    "position": "6",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Universidad EAFIT",
+    "type":"Experience"
+  }
+}
+
+---
+
+[duration:string]
+March 25th-27th, 2015 (24 hs)
+
+[place_url:string]
+http://www.eafit.edu.co/institucional/eafit-llanogrande/Paginas/presentacion.aspx
+
+[place:string]
+Universidad EAFIT
+
+[content:md]
+On March 25-27, VAIRIX was invited to be part of the '[9th Summer Camp on Entrepreneurship](http://www.eafit.edu.co/cice/emprendedores-eafit/Paginas/campamento-de-verano-en-empresarismo.aspx#.VXzGXvlVizA)' held in Medellín, Colombia. It is organized each year by the EAFIT University, one of the most recognized universities and pioneer in the entrepreneurship topic. The organization asked us to go there in representation of Uruguay to show the state of the uruguayan entrepreneurship & innovation ecosystem. My talk representing VAIRIX was done in the section "Innovation and Entrepreneurship in LATAM countries: international guests".
+
+The experience of being in Medellín is always a pleasure in all senses. People are great, the city is awesome and most important, you feel the innovation and the desire to improve the city in every person you came across. The whole country is being doing a terrific work to improve the entrepreneurship environment, with mature decisions and a bunch of programs, courses and meetings related to these topics.
+
+About the camp, there was people from several departments of Colombia; from the north of the country (Cartagena) to the south (Pasto, Popayán, Florencia) passing through Medellín, Pereira, Bogotá, Cali, etc. Also there was people from other LATAM countries as Chile, Ecuador and Panamá. Due to the intimate nature of the event, we had the opportunity to develop close ties with many participants, brewing partnerships with them.
+
+This is the second time I'm in an EAFIT event ([this was the first one](/software-inspection-adoption--a-mapping-study)) and it's enjoyable to see they are managed by students working as a very coupled team and solving the most different and unusual kind of problems with the solvency of a professional. I think that this kind of student's empowerment is the secret sauce for the success of the Medellín entrepreneurial ecosystem.
+
+[projects:md]
+
+[related_images:json]
+  [{
+    "filename": "exp_summer_1.jpg"
+  },{
+    "filename": "exp_summer_2.jpg"
+  },{
+    "filename": "exp_summer_3.jpg"
+  },{
+    "filename": "exp_summer_5.jpg"
+  },{
+    "filename": "exp_summer_6.jpg"
+  },{
+    "filename": "exp_summer_4.jpg"
+  }]
