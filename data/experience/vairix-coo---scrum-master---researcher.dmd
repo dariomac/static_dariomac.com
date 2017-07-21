@@ -1,0 +1,90 @@
+{
+  "title": "Vairix COO - Scrum Master - QA",
+  "date": "2017-07-20",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#00A651",
+    "columnid": "done_3",
+    "content": "Vairix COO - Scrum Master - QA",
+    "datebox": "Mar 2014 – Now",
+    "extlink": "http://www.vairix.com/",
+    "laneid": "Experience",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/vairix-coo---scrum-master---researcher",
+    "position": "9",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "VAIRIX Software Development",
+    "type":"Experience"
+  }
+}
+
+---
+
+[duration:string]
+Mar 2014 – Nov 2016
+
+[place_url:string]
+http://www.vairix.com/
+
+[place:string]
+VAIRIX Software Development
+
+[content:md]
+At VAIRIX I'm performing different roles. For one side I'm the COO of the company and, in that role, I help with the overall strategy and the sales. Because of the Scrum tradition of the company, one of my operational functions is to be the Scrum Master of different projects. Other operational functions are the development and implementation of strategies to align personnel with company goals. Also, I make continuous improvements in the public visibility of the company, taking care of the blog, the social networks engagement and participating in conferences as speaker.
+
+[projects:md]
+## Research projects
+
+*   Small research about one-week scrum sprint duration and advantages/disadvantages of it. This research was used to take the decision of make the sprint shorter because of the lack of user stories at that moment of the project. The decision was taken based on the evidence gathered during the research. The research output was the post "[One-week scrum sprint evaluation for prevent sprint backlog changes during sprint](/Sprint-backlog-changes-and-one-week-sprint-as-temporal-solution)".
+
+## Writing projects
+
+*   Elastic Technologies (Aug, 2016)
+*   Presentation of the Inception Workshop for Entrepreneurs (CIE-ORT) (Jun, 2015)
+*   VAIRIX on Summer Camp on Entrepreneurship (Apr, 2015)
+*   [Mobile MVPs using Cordova](/Mobile%20MVPs%20using%20Cordova) (Dic, 2014)
+*   [Customer.io service and how to use it from Ruby](/Customer.io%20service%20and%20how%20to%20use%20it%20from%20Ruby) (Nov, 2014)
+*   [Swagger: easy API interface](/Swagger%20-%20easy%20API%20interface) (Nov, 2014)
+*   [Better Errors & RailsPanel: development aids](/Better%20Errors%20-%20RailsPanel.%20Development%20aids) (Sep, 2014)
+*   [Lessons learned about Google Places](/Lessons%20learned%20about%20Google%20Places) (Sep, 2014)
+*   [Helping a startup in troubles to reach on time to an investors meeting](/Helping%20a%20startup%20in%20troubles%20to%20reach%20on%20time%20to%20an%20investors%20meeting) (Jun, 2014)
+*   [What is an MVP?](/What%20is%20an%20MVP) (May, 2014)
+*   [JQuery append into heavy loaded DOM trees](/JQuery-append-into-heavy-loaded-DOM-trees) (Apr, 2014)
+*   [One-week scrum sprint evaluation for prevent sprint backlog changes during sprint](/Sprint-backlog-changes-and-one-week-sprint-as-temporal-solution) (Apr, 2014)
+
+## Company visibility tasks
+
+*   [8 Hours as VAIRIX Developer](/8-hours-as-vairix-developer) - Escuela de Tecnología - Universidad ORT Uruguay (Apr, 2016)
+*   [Seminario Spa Manager Punta del Este](/seminario-spa-manager-punta-del-este) - Hotel Conrad Punta del Este (Oct, 2015)
+*   [Introduction to the practice of Inception](/introduction-to-the-practice-of-inception) - CIE - Universidad ORT Uruguay (Jun, 2015)
+*   [9° Entrepreneurship Summer Camp](/9-entrepreneurship-summer-camp) - Universidad EAFIT - Medellín - Colombia (Mar, 2015)
+*   Review and editing of "Discourse setup" (Sep, 2014)
+*   Review and editing of "Testing AngularJS with Karma-Jasmine (part 1)" (Sep, 2014)
+*   Review and editing of "AngularJS CRUD Operations over a REST service (NodeJS)" (Jul, 2014)
+*   [Agile Open Space - Montevideo - May 17, 2014 (May, 2014)](/AgileOpenSpace2014)
+*   [RailsConf 2014 Virtual Covering - Chicago - United States](/RailsConf2014) (Apr, 2014)
+*   [JSConf 2014 Virtual Covering - Montevideo - Uruguay](/JSConf2014) (Mar, 2014)
+
+## Development projects
+
+*   **Web application to automate SAP offerings**
+    Web application to make it easy the development of bids that currently take an enormous amount of time due to the limited flexibility offered by the SAP system to transform the information provided by the client (can be dozens of unstructured Excel pages) in a valued bid in SAP.
+*   **Medical video conference service**
+    Medical video conference service for male sexual problems. This online service provides access to the best professionals in the specialty of urology via video conference, with prior coordination, always helped by personal assistance by chat.
+*   **Assessment tool for entrepreneurs**
+    Assessment Tool to measure the maturity level of high-impact entrepreneurship. This information system is used by different roles as entrepreneurs, mentors, universities, investors and government entities. The rationale of the software relies on a series of models created by researchers (PhDs) in the entrepreneurship field.
+*   **Drug logistic management system**
+    The system allows patients to receive drugs directly to their home in the right moment they need them. The software coordinate hospitals, warehouses and pharmacies. Coordination is done through call-center operators that access the system and connect the different actors. In addition, other roles have access to the system (e.g. pharmacists, transporters, store managers and patients). Not only ensures the access of patients to prescribed doses at home but also allows pharmaco-vigilance with an alert system paying attention to negative effects (changes in the dose, frequency of administration, etc.)
+*   **PLNyze**
+    A real estate website aimed to provide information about apartments from multiple sources. Mostly front-end development, it makes intensive use of Google Maps & Places API, besides doing some scrapping over other sources. For data display, it uses several charts showing different representations of the gathered information.
+*   **CommunityScore**
+    A real estate website aimed to provide information about apartments from multiple sources. Mostly front-end development, it makes intensive use of Google Maps & Places API, besides doing some scrapping over other sources. For data display, it uses several charts showing different representations of the gathered information.
+*   **Fuzzrocket**
+    Fuzzrocket is a social network focused on musicians, composers, singers and dancers, where they can get unprecedented exposure to fans. The platform let present their music, play original songs and find perfect musical partners. Also let them show to the world what they can do through live performances, plus all the basic features of a social network.
