@@ -164,7 +164,7 @@ function convertFilesInPath(inputPath, outputPath) {
   */
 function processMarkupContent(data) {
   //strip out json front-matter
-  var parts = data.split(/---/);
+  var parts = data.split(/^---/m);
   var jsonFM, dmdContent;
   if (parts[0].length < 1) {
     throw new Error("missing frontmatter");
