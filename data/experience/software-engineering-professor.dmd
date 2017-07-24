@@ -1,0 +1,57 @@
+{
+  "title": "Software Engineering Professor",
+  "date": "2017-07-23",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#8C0202",
+    "columnid": "progress_2",
+    "content": "Software Engineering Professor",
+    "datebox": "Mar 2013 - Now",
+    "extlink": "http://fi.ort.edu.uy/innovaportal/v/3399/5/fi.ort.front/ingenieria_de_software.html",
+    "laneid": "Experience",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/software-engineering-professor",
+    "position": "0",
+    "priority": "Average",
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Universidad ORT Uruguay",
+    "type":"Experience"
+  }
+}
+
+---
+
+[duration:string]
+Mar 2013 - Now
+
+[place_url:string]
+http://fi.ort.edu.uy/innovaportal/v/3399/5/fi.ort.front/ingenieria_de_software.html
+
+[place:string]
+Universidad ORT Uruguay
+
+[content:md]
+The objective of this course is to provide students with the basic theoretical and practical concepts of software engineering. The main areas of software engineering body of knowledge are studied in two courses.
+
+The first one focuses on the understanding and application of specific methods for requirements engineering, usability issues, change control and software testing. The emphasis is placed on the understanding and application of concepts and processes of traditional life cycles projects, aimed at medium and large size projects. The second course focuses on project management, quality assurance, metrics, software models improvement and maintenance.
+
+Both courses follow the spirit of the SWEBOK in its intention and rationale.
+
+[projects:md]
+Additional to my curricular classes, I coach teams of students working on their final grade projects, involving real clients, disruptive challenges and bleeding edge technology.
+
+*   This project consists of a comprehensive system in which all purchases of the company can be planned and managed. This implies working with supplies in different countries and a wide range of different inputs.The main tasks that this software should do:
+    *   Plan purchases in different categories
+    *   Make comparisons of budgets.
+    *   Information from other databases should be available.
+    *   Charge base budget and allow to adjust it as the negotiations or project progress.
+    *   Manage alerts.
+    *   Enter purchase orders in the existing accounting system.
+    *   Have a database of providers with information on past experiences.
+    *   Carry historical budgets and execute purchases.
+    *   See similar purchases planned by other areas of the company.
