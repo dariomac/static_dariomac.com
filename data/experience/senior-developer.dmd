@@ -1,0 +1,86 @@
+{
+  "title": "Senior Developer",
+  "date": "2017-07-24",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Senior Developer",
+    "datebox": "Jul 2003 – Nov 2004",
+    "extlink": "http://www.innovaage.com/",
+    "laneid": "Experience",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/senior-developer",
+    "position": "1",
+    "priority": "Average",
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "InnovaAge",
+    "type":"Experience"
+  }
+}
+
+---
+
+[duration:string]
+Jul 2003 – Nov 2004 (1 year 5 months)
+
+[place_url:string]
+http://www.innovaage.com/
+
+[place:string]
+InnovaAge
+
+[content:md]
+This was my first work in a software development company. Here I worked with **Innovaportal**, a **CMS** that can handle various types of content (surveys, forms, discussion forums, rich text, banners, courses, newsletters, etc) with granular permissions to edit/approve/review for users and groups. It was developed using **JSPs** and **Javascript** to display dynamic pages, servlets for communication between pages and a robust set of domain classes that support the services described above. Related with InnovaPortal, we develop a user-level course as well as a manual to guide them in the use of the tool.
+
+Also I worked with a medical visitor management system that let them register what they have been sold in **HP-Jornada 720** portable equipment (also in **HP IPAQ-2210**) and developed in Embedded **Visual Basic 3.0**, **Visual Basic 6.0** and **SQL Server**.
+
+During the time where I worked at InnovaAge I proved my knowledge in the following areas:
+
+*   **Java, Java Servlets, Javascript**.
+*   Web servers web and application servers (**Apache**, **Tomcat**, **Jetty**, **JBOSS**, **JRun**, **IIS**).
+*   **Visual Studio 6.0**, **Embedded Visual Studio**, **.Net**.
+*   **SQL**, **MySQL**, **SQLServer**.
+*   **Windows 9x**, **Windows 2000**, **Windows XP**, **Mandrake**, **SuSE**, **RedHat**.
+*   **MySQL** Front, **WebSphere**, **Visual Age**.
+
+The working method followed for many of the projects described above were as follows:
+
+*   Requirement elicitation either through meetings with stakeholders or through **JADs** with them.
+*   Use of static **HTML prototypes** to simulate the real system and evaluate the acceptability of the client taking it for the develop of the solution.
+*   Management of changes requested by the different stakeholders involved through identified tickets which made possible the trace of the requests.
+*   Classes and variables names in English, taking care of **simplicity** and considering the **maintainability** of systems.
+*   Documentation of the source code in a clear and short way.
+*   Very close relationship with customers so they felt treated in a personalized way.
+
+[projects:md]
+*   Maintenance of **CMVisit** that is a medical visitors management system that let them register their sells in a **HP-Jornada 720** portable equipment. This system was developed in **Embedded Visual Basic 3.0** and **Visual Basic 6.0** (for the PC version of the system and data replication). We used **SQLServer** as database.
+*   Maintenance of **CMVisit** in **Glaxo SmithKline** laboratory. In this place I made some customizations of this product in order to satisfy the client requirements.
+*   **Maintenance** and management of **QEIP** that is a content management system. This let the user manage their sites through an easy to use interface without advanced computer knowledges. This system was developed in **Java**, with **JSP** pages and **Javascript**. **JSP** pages let the system communicate with the business classes and with the persistence layer for multiple databases.
+*   **Management** and **maintenance** of the following websites:
+    [http://www.montevideoshopping.com.uy](http://www.montevideoshopping.com.uy "http://www.montevideoshopping.com.uy"),
+    [http://www.trescruces.com.uy](http://www.trescruces.com.uy "http://www.trescruces.com.uy"),
+    [http://www.portones.com.uy](http://www.portones.com.uy "http://www.portones.com.uy"),
+    which, based on the previously described software (**QEIP**) allow e-commerce management of these malls. These are the different tasks performed during this period: Publication of virtual goods, retail, sales, promotions, online sweepstakes sales, sending video greetings from customers, telephone support staff of the shopping malls, email support. Those portals use **JRun 4** as a web server and application server. (Currently these systems are working on the latest version of **[InnovaPortal](http://www.innovaportal.com/ "http://www.innovaportal.com/")**).
+*   **Maintenance** and **management** of **InnovaPortal** portals, which is the successor to **QEIP**. It can handle various types of content (**surveys**, **forms**, **discussion forums**, **rich text**, **banners**, **courses**, **newsletters**, etc) and also has an advanced **permissions system** for **users** and **groups**.
+    It uses **JSPs** and **Javascript** to display dynamic pages and **servlets** for communication between these and the robust set of **domain classes** that support the services described above.
+    I created only one type of content that let you manage **Flash** movies and helped in the development of a **Newsletter** content type. Also I've helped in the **writing** of a **user-level course** as well as in a **manual** to guide them in the use of the tool.
+*   Small **maintenance tasks** of [**InnovaNet**](http://www.innovaportal.com/innovaportal/v/16/1/innova.front/innovanet.html "InnovaNet") software for intranets, InnovaPortal product that works and allows the management and operation of an intranet using the management of permissions and content types supplied by InnovaPortal.
+*   **Requirements**, **analysis**, **design** and **implementation** of some services on the portal http://dhl.innovaportal.com, which represents the various services provided by **DHL Uruguay**.
+    This site lets the people **follow packages**, **complete** commercial **invoices**, get hours, information about offices, see the directory of customers, browse the site in two **languages supported** natively by **InnovaPortal**.
+    After the introduction of the main product along with the specific adaptations made for the customer, I did a **complete training** in the use of the product as well as provided **online support** for them.
+*   **Installation** of **InnovaPortal** and **Innovanet** for the portal [http://www.ghmuruguay.com](http://www.ghmuruguay.com "http://www.ghmuruguay.com").
+    The installation of the same was done in a **Mandrake Linux** distribution, with a **MySQL** database. The web and application server was **JBOSS version 3.2.1**. Lately I installed a newer version of the product using the web and application server **Jetty version 4.2.15.**
+*   Small **maintenance** of the site http://www.tuchoza.com as well as phone and email support.
+*   **Requirement elicitation**, **analysis**, **design** and **implementation** of **CMVisit** in [Andromaco](http://www.andromaco.com) laboratory.
+    We made several meetings in order to coordinate how to interface with their systems, methods of implantation of the device, software, hardware that could be used, etc.. Some adjustments on the original product were made being the most notable the change of platform from the **HP-Jornada 720** to the **HP IPAQ-2210**.
+    The system had a replication mechanism to synchronize the mobile device with the server but should be used in a PC with the cradle.
+    For this project I implement a system for remote replication, which allows the pharmaceutical sales people both in Montevideo and the rest of the country replicate information from anywhere via the telephone line. Was also strengthened everything related to business management of the visitors to enhance activities related to sales.
+    Besides these activities, we performed data migration from multiple sources to the main database for the purpose of reuse most of the existing information.
+    After the period of implantation of the device I made an step by step training, which takes place in three **workshops** with different groups of visitors for a week.I also wrote a user manual for the main activities of the mobile software and documentation for the maintenance of the entire system.
+*   Installation of **Innovaportal** and **Innovanet** at Branaa tannery for the development of their intranet over a **SuSE Linux** platform. **Jetty v.4.2.15** was used as webserver.
