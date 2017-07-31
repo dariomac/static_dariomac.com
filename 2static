@@ -113,6 +113,7 @@ function processContentAndSaveFile(inputFilePath, outputFilePath, sourceContent)
 
   //and then parse through for "mustache-y" syntax...using handlebars
   var finalHTML = layoutHTML(sourceContent.frontmatter);
+  finalHTML = hb.compile(finalHTML)(sourceContent.frontmatter);
   //finalHTML = finalHTML.replace(/\r?\n|\r/g, '');
 
   //Check if the path already exists and warn
@@ -184,7 +185,7 @@ function processMarkupContent(data) {
 
       var [key, type] = fullKey.split(':');
 
-      var keyVal = '';
+      var keyVal = null;
       switch(type){
         case 'md':
           var parser   = new commonmark.Parser();
@@ -193,16 +194,40 @@ function processMarkupContent(data) {
           break;
 
         case 'json':
-          keyVal = JSON.parse(iContent);
+          var jsonEntry = JSON.parse(iContent);
+
+          if (jsonEntry.constructor === Object){
+            var htmlTemplate = null;
+            if (key === 'related_images'){
+              var htmlTemp = fs.readFileSync("common/_entry-gallery.html", 'utf8');
+              htmlTemplate = hb.compile(htmlTemp);
+            }
+            else{
+              throw(new Error('Key "' + key + '" not handled!'));
+            }
+            for (var property in jsonEntry) {
+              if (jsonEntry.hasOwnProperty(property)) {
+                jsonFM[property] = htmlTemplate({'related_images': jsonEntry[property]});
+              }
+            }
+          }
+          else{
+            keyVal = jsonEntry;
+          }
           break;
 
         case 'string':
 
-
         default:
           keyVal = iContent;
       }
-      jsonFM[key] = keyVal;
+      if (keyVal)
+        jsonFM[key] = keyVal;
+    }
+    if(jsonFM['fields_with_mustaches']){
+      jsonFM['fields_with_mustaches'].forEach(function(v, i){
+        jsonFM[v] = hb.compile(jsonFM[v])(jsonFM);
+      });
     }
   } catch(e) {
     console.error("[frontmatter] err parsing file:" + parts[0], e);
