@@ -6,6 +6,8 @@ Columns
 
 requested_1, progress_2, done_3
 
+
+
 Lanes
 -----
 
@@ -22,6 +24,10 @@ colors['soft']      = '#77D477';
 colors['dm']        = '#FF6E19';
 colors['vairix']    = '#00A651';
 
+
+Center images with commonmark and css class
+-------------------------------------------
+![Legendario Rum's bottle](/assets/legendario-rum.jpg#center)
 
 
 Image gallery

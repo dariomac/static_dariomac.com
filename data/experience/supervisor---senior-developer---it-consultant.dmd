@@ -1,0 +1,182 @@
+{
+  "title": "Supervisor - Senior Developer - IT Consultant",
+  "date": "2017-08-01",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Supervisor - Senior Developer - IT Consultant",
+    "datebox": "Nov 2004 – Mar 2014",
+    "extlink": "http://www.pwc.com",
+    "laneid": "Experience",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/supervisor---senior-developer---it-consultant",
+    "position": "3",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "PricewaterhouseCoopers",
+    "type":"Experience"
+  }
+}
+
+---
+
+[duration:string]
+Nov 2004 – Mar 2014 (9 years 5 months)
+
+[place_url:string]
+http://www.pwc.com
+
+[place:string]
+PricewaterhouseCoopers
+
+[content:md]
+I worked as a **Software Engineer** in **.NET** technologies during many years, gaining experience in software development using Microsoft® environments. During those 10 years, I used my skills with **.NET MVC**, **C#**, **SQL Server** and **TFS**, my sharp eye for details & **quality** and my knowledge to work throughout all the **software life cycle**. Finally, in the last four years at PwC, I helped in project management and **cost estimation** tasks.
+
+[projects:md]
+## Web development & support for PwC US online marketing team, PwC Global and PwC UK
+
+Development of web projects that includes intensive **[Javascript](http://en.wikipedia.org/wiki/JavaScript "JavaScript")** usage, **[JQuery](http://jquery.com/ "JQuery")**, **[SVG](http://www.w3.org/Graphics/SVG/ "Scalable Vector Graphics")** interaction and animations. Some of these projects are benchmark tools and small surveys with animated charts (almost always **[Highcharts](http://www.highcharts.com/ "Highcharts")** charts). Other projects have complex interfaces with **SVG** maps with different layers of information over it. Those complex solutions usually interact with other page elements, so most of the time they are a mix of **SVG** , **JQuery** , **[Raphaël](http://raphaeljs.com/ "Raphaël (JavaScript library)")** all together glued by Javascript. As this kind of projects are client side and usually involve some kind of external data, they are based in **[JSON](http://json.org/ "JSON")** data files. This data files may be rendered as a chart or in some cases, binded to [**HTML** elements](http://en.wikipedia.org/wiki/HTML_element "HTML element") through **[KnockoutJS](http://knockoutjs.com/ "KnockoutJS")**.
+
+### Marketing Calendar
+
+Application to show marketing activities filtered by event type, month, line of service and economic sector. Also let the user sort the activities by title and date. Lead to high profile users inside the firm. ( **jQuery, UnderscoreJs, FilterJs**)
+
+{{{ exp_pwc-mam }}}
+
+### US CBG Corporate Director Survey (Benchmarking tool)
+
+Collaboration in the development of this tool that allow users to compare themselves with the results of the [PwC's 2012 Annual Corporate Directors Survey](http://www.pwc.com/us/en/corporate-governance/publications/annual-corporate-directors-survey.jhtml). Users select the desired theme/subject and their company size, and then can compare their answers to some of the questions to the corresponding results. (**jQuery, HighchartsJs**)
+
+{{{ exp_pwc-us-cbg1 }}}
+
+### Benchmarking Tool
+
+Requirement elicitation, design and implementation of a Data driven benchmarking tool which was developed for the Digital IQ publication. This application allows the creation of complex online benchmarks based on standard templates. ( **KnockoutJs**, **jQuery, ASP.NET MVC, eXpress Persistent Objects, DevExpress Snap Report**)
+
+{{{ exp_pwc-bench }}}
+
+### PwC Gage
+
+Collaboration in the development of a tool that helps with the creation of gauge charts inside the PwC CMS. It was designed as a wrapper plugin for [justgage](http://www.justgage.com/) to create gauges following PwC branding guidelines displaying correctly on a wide variety of browsers and devices. The editor was intended to provide basic configuration options for the gauge, although further customization can be done editing the generated code. (**jQuery, JustGageJs**)
+
+{{{ exp_pwc-gage }}}
+
+### TIMM Scenario Wheel
+
+Requirement elicitation, design and implementation of a "Polar chart" animation that shows twenty impact values of one of two available options. This interactive scenario model shows the [PwC TIMM Framework](http://www.youtube.com/watch?v=CyE5BC1B3y0#t=113) in action. Under the hood it's a SVG animation with a set of value (positives or negatives) with smooth animated transitions between the two options. The animation was built with a SVG/HTML animation engine also developed by me. (**jQuery, RaphaëlJs, SVG**)
+
+{{{ exp_pwc-timm }}}
+
+### Paying Taxes homepage animation - 2013
+
+Requirement elicitation, design and implementation of the Paying Taxes homepage animation which shows one indicator at a time using local determination to define the values for each indicator per location.
+Depending on local determination, some paying taxes indicators are loaded and then displayed to the user. It's an SVG animation in the background (calculator, clock, money) with a layer of HTML animated through a jQuery plugin. The animation was built with our own SVG/HTML animation engine. (**jQuery, HighchartsJs, RaphaëlJs, SVG**)
+
+{{{ exp_pwc-ptanim }}}
+
+### Aviation Paper Data Modeler
+
+Colaboration in the development of a tool to show the commercial aircraft manufacturing attractiveness ranking indices for US states using weighted averages of different variables.
+The states of the map are shaded according to their overall manufacturing attractiveness ranking composed of the three variables described above of it. The toolbar of the right is to explore the US aviation manufacturing attractiveness index by selecting US states to find rankings in each of the three variables, plus an overall composite ranking. ( **jQuery, **jQueryUI, TimJs,** RaphaëlJs, SVG**)
+
+{{{ exp_pwc-aviation }}}
+
+### Tweetable content
+
+Requirement elicitation, design and implementation of a reusable module that enable site users to share via twitter paragraphs/phrases previously tagged as tweetable by site developers. This module transform paragraphs or phrases tagged into tweetable chunks of texts. There are two styles, one inline, suitable for short phrases, and other for paragraphs with a quote style. ( **jQuery**)
+
+{{{ exp_pwc-tweetable }}}
+
+### Cities of Opportunity 2012: ' Where the jobs are…'
+
+Requirement elicitation, design and implementation of an interactive map, which allows users to navigate the data results from a survey. This tool integrates both SVG mapping capabilities with the PwC Charting tool. Users can select up to three cities from a world map, then they can select the indicators they want to compare, and finally they can access an animated chart with the results. ( **KnockoutJs**, **JQuery**, **HighchartsJs**, **RaphaëlJs**, **SVG**)
+
+{{{ exp_pwc-cityof }}}
+
+### Paying Taxes: Comparative modeller 2012-2013
+
+Requirement elicitation, design and implementation of a tool to make PwC latest comparative global tax study available for the user. It lets explore nearly a decade of data through a powerful and interactive modeller, analysing and comparing the differents business tax systems, across numerous geographies, themes and trends of 189 global economies. The user can choose between economies or regions and compare their on total tax rate, the time to comply and number and types of payments. ( **KnockoutJs**, **jQuery**, **HighchartsJs**, **RaphaëlJs**, **SVG**)
+
+{{{ exp_pwc-pt-modeller }}}
+
+### US Careers Maps
+
+Requirement elicitation, design and implementation of an interactive maps for the US careers site. Simple SVG map interaction, allowing the users to expand information from different states. ( **jQuery**, **RaphaëlJs**, **SVG**)
+
+{{{ exp_pwc-uscareers }}}
+
+### Health insurance rate map
+
+Coaching and collaboration in the development of a US map that shows the health insurance cost. The interactive US map lets the user change between two options in order to see different datasets using a suitable color codification. ( **jQuery, RaphaëlJs, TimJs, SVG**)
+
+{{{ exp_pwc-health }}}
+
+## eSirem - Salary survey
+
+Requirement elicitation, architecture, design and implementation of a **Salary Survey** system that provides comprehensive measures of **occupational wages**; employment cost **trends**, benefit incidence and detailed plan provisions. Also detailed the occupational earnings that are available for metropolitan and non-metropolitan areas, broad geographic regions, and on a national basis. Salaries are provided only as means of reference taking in consideration a wide range of factors that affect the salary that a professional is entitled to, including prior experience and education, industry, and specific skills and attributes. The system let the users **perform comparisons** between their companies and the rest of it market sector. Now it's used by **several south american countries** because it has the flexibility to adapt to the standards and pay rules for every country being very highly configurable due to its versatile architecture. (**ASP.NET**, **Oracle 10**).
+
+[related_images:json]
+  {"exp_pwc-mam":
+    [{
+      "filename": "exp_pwc-mam.gif"
+    }],
+  "exp_pwc-us-cbg1":
+    [{
+      "filename": "exp_pwc-us-cbg1.jpg"
+    },{
+      "filename": "exp_pwc-us-cbg2.jpg"
+    }],
+  "exp_pwc-bench":
+    [{
+      "filename": "exp_pwc-bench1.jpg"
+    },{
+      "filename": "exp_pwc-bench2.jpg"
+    },{
+      "filename": "exp_pwc-bench3.jpg"
+    }],
+  "exp_pwc-gage":
+    [{
+      "filename": "exp_pwc-gage.gif"
+    }],
+  "exp_pwc-timm":
+    [{
+      "filename": "exp_pwc-timm.gif"
+    }],
+  "exp_pwc-ptanim":
+    [{
+      "filename": "exp_pwc-ptanim1.gif"
+    },{
+      "filename": "exp_pwc-ptanim2.gif"
+    }],
+  "exp_pwc-aviation":
+    [{
+      "filename": "exp_pwc-aviation.gif"
+    }],
+  "exp_pwc-tweetable":
+    [{
+      "filename": "exp_pwc-tweetable.gif"
+    }],
+  "exp_pwc-cityof":
+    [{
+      "filaname": "exp_pwc-cityof.gif"
+    }],
+  "exp_pwc-pt-modeller":
+    [{
+      "filename": "exp_pwc-pt-modeller.gif"
+    }],
+  "exp_pwc-uscareers":
+    [{
+      "filename": "exp_pwc-uscareers.gif"
+    }],
+  "exp_pwc-health":
+    [{
+      "filename": "exp_pwc-health.gif"
+    }]
+  }

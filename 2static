@@ -224,11 +224,11 @@ function processMarkupContent(data) {
       if (keyVal)
         jsonFM[key] = keyVal;
     }
-    if(jsonFM['fields_with_mustaches']){
+    /*if(jsonFM['fields_with_mustaches']){
       jsonFM['fields_with_mustaches'].forEach(function(v, i){
         jsonFM[v] = hb.compile(jsonFM[v])(jsonFM);
       });
-    }
+    }*/
   } catch(e) {
     console.error("[frontmatter] err parsing file:" + parts[0], e);
   }
