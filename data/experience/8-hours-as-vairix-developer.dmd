@@ -1,0 +1,42 @@
+{
+  "title": "8 Hours as VAIRIX Developer",
+  "date": "2017-09-17",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#00A651",
+    "columnid": "archive_6",
+    "content": "8 Hours as VAIRIX Developer",
+    "datebox": "Abr 2016",
+    "extlink": "http://fi.ort.edu.uy/30816/17/postgrado_y_carreras.html#tecnicas",
+    "laneid": "Me",
+    "leftbox": "Universidad ORT Uruguay",
+    "leftmsg": "",
+    "linkto": "/8-hours-as-vairix-developer",
+    "position": "1",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Escuela de Tecnología",
+    "type":"Experience"
+  }
+}
+
+---
+
+[duration:string]
+April 6th 2016 (2 hs)
+
+[place_url:string]
+http://fi.ort.edu.uy/30816/17/postgrado_y_carreras.html#tecnicas
+
+[place:string]
+Escuela de Tecnología
+
+[content:md]
+We do a talk to software engineering students about how is a day of work as a developer in our company (VAIRIX). We discussed our methodological approach (scrum, ticket task and time management tools, etc.) and showed the development of a particular user story as a sample, taking it from the backlog (showing the agile management software we used), coding it in Ruby on Rails and finally adding it to the code repository using GIT.
+
+[projects:md]

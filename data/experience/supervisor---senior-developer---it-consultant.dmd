@@ -22,7 +22,8 @@
     "tags": null,
     "title": "PricewaterhouseCoopers",
     "type":"Experience"
-  }
+  },
+  "custom_header": "<style>.details_content img { border: 1px solid #ccc; margin: 6px 0px !important; } </style>"
 }
 
 ---
@@ -122,6 +123,70 @@ Coaching and collaboration in the development of a US map that shows the health 
 
 Requirement elicitation, architecture, design and implementation of a **Salary Survey** system that provides comprehensive measures of **occupational wages**; employment cost **trends**, benefit incidence and detailed plan provisions. Also detailed the occupational earnings that are available for metropolitan and non-metropolitan areas, broad geographic regions, and on a national basis. Salaries are provided only as means of reference taking in consideration a wide range of factors that affect the salary that a professional is entitled to, including prior experience and education, industry, and specific skills and attributes. The system let the users **perform comparisons** between their companies and the rest of it market sector. Now it's used by **several south american countries** because it has the flexibility to adapt to the standards and pay rules for every country being very highly configurable due to its versatile architecture. (**ASP.NET**, **Oracle 10**).
 
+## Client profitability and financial information report system
+
+Development and maintenance of a regional **[business intelligence](http://en.wikipedia.org/wiki/Business_intelligence "Business intelligence") tool** to support a [client](http://en.wikipedia.org/wiki/Client_%28computing%29 "Client (computing)") centric approach strategy that allow **partners** and **managers** to: i) measure client profitability within various business dimensions (LoS; Industries; Offices; individual portfolios; [CRM](http://en.wikipedia.org/wiki/Customer_relationship_management "Customer relationship management") programs; etc.) under a consistent pattern; ii) analyze clients by size and **profitability**; iii) access to all client's basic and contact information; and iv) project opportunities profitability
+
+The system is based on two main modules:
+
+1.  the public site, available to most partners and managers from most south american countries, allow them to analyze their [business management](http://en.wikipedia.org/wiki/Management "Management") data in a series of drill-down reports. It also provides an advanced clients/deals search engine and a proposal fees calculator. This site has a strong **security schema** based on roles, so the access to data is defined according to the user's role under the premise that each user must have access only to the data of his/her responsibility. Users have at least one role by default for all engagement partners and managers. Users that have more than one role are able to switch between them on the site home page. The reports are displayed for each chosen role, allowing him/her to concentrate the attention on that of his/her interest at the time.
+2.  a back-end application which is used to normalize the data entered by the participating countries. It provides **data quality** management tools and [access control list](http://en.wikipedia.org/wiki/Access_control_list "Access control list") management, among others. The database is based on each client's project/job initially stored in their local [accounting systems](http://en.wikipedia.org/wiki/Accounting_software "Accounting software") and then exported to a file to be synchronized with the main system (using the [backend](http://en.wikipedia.org/wiki/Front_and_back_ends "Front and back ends") application) (**ASP.NET**, **Oracle 10**).
+
+{{{ exp_pwc-icpr }}}
+
+## Client Feedback management tool
+
+Collaboration in the development of Client Feedback, a software for managing [PwC](http://maps.google.com/maps?ll=51.5079833333,-0.124663888889&spn=0.01,0.01&q=51.5079833333,-0.124663888889%20(PricewaterhouseCoopers)&t=h "PricewaterhouseCoopers") client satisfaction surveys cycle. Based on the [Net Promoter Score](http://en.wikipedia.org/wiki/Net_Promoter "Net Promoter") approach, it allows mailing survey's requests to relevant PwC clients avoiding duplicate requests for each client. It also provides a simple to dashboard for managers and partners to review their promoters/detractors information. Clients receive their email requests together with access information to an online form which automatically updates our internal databases. Today it is used mainly in [Brazil](http://maps.google.com/maps?ll=-15.7833333333,-47.8666666667&spn=10.0,10.0&q=-15.7833333333,-47.8666666667%20(Brazil)&t=h "Brazil") and [Argentina](http://maps.google.com/maps?ll=-34.6,-58.3833333333&spn=10.0,10.0&q=-34.6,-58.3833333333%20(Argentina)&t=h "Argentina") . (**ASP.NET**, **Oracle 10**)
+
+## Charting Tool
+
+Collaboration in the development of PwC Charting Tool, a web charts creation tool for webmaster. PwC Charting Tool allows webmasters to easily create web animated/interactive charts to be embedded in web pages. The user is able to copy data from an Excel spreadsheet, paste it into the tool and configure the chart in minutes. User can create charts from a list of available chart types, customize them, share and get the source code needed for the chart to work in PwC internal CMS or other similar environments. The charts are generated following PwC branding guidelines and have been developed so they display correctly on an ample variety of browsers and devices. ( **ASP.NET**, **eXpress Persistent Objects**, **SQL Server**, **HighchartsJs**, **jQuery**)
+
+{{{ exp_pwc-charting }}}
+
+## Twitter Cache
+
+Requirement elicitation, design and implementation of a service that supports an internal cache for Twitter widgets on PwC sites. We created what we call a Twitter cache, using the new Twiter API (v.2) because old Twitter API (v.1) was discontinued by Twitter after a series of previous "blackouts". They encourage users to use their new embeded timelines, which are huge, and cannot be styled to make it comply with PwC brand guidelines.
+
+In simple terms, our cache service runs on one of our own servers, updating from Twitter the latest tweets of our accounts. On the other side, the twitter widget connect to that cache instead of connecting to the Twitter API solveing the API limit of request per hour. ( **ASP.NET MVC**, **LinkToTwitter**, **eXpress** **Persistent** **Object**, **jQuery**)
+
+## Penca
+
+Collaboration in the development of an online football (soccer) fixture game. This game was used during the last FIFA World Cup, where PwC staff could predict matches' results. The game shows stats for each game and player, providing a global ranking. ( **ASP.NET**, **eXpress Persistent Objects**, **SQL Server**, **jQuery**)
+
+{{{ exp_pwc-penca }}}
+
+## Experience Challenge
+
+Collaboration in the development of an online quiz-like game and ranking. This game let users prove and communicate the PwC Experience precepts. The game consisted of a quiz, which calculated points for each correct answer and time between user's responses. It had several stages (races), and the winner of each stage competed for a major prize. ( **ASP.NET**, **eXpress Persistent Objects,** **SQL Server**, **jQuery**)
+
+{{{ exp_pwc-challenge }}}
+
+## Online survey manager
+
+Architecture, design and implementation of a fully configurable **online survey manager** with many different surveys co-existing, separate lists of users, different **authentication methods** and **statistical information** generated for the subsequent analysis of data from the survey. It was flexible and **scalable** enough to meet the needs of a wide range of people. Today it is used in **Argentina**, **Perú**, **Chile** and **Uruguay**. ( **ASP.NET** , **SQLServer** )
+
+## Image bank
+
+Architecture, design and implementation of an image bank for the **marketing department across Latin America**. It has several forms for search, great detail in the presentation of the photographs (intensive use of **AJAX**), handling of different formats depending on the final use of the photos (print, PowerPoint, etc.). As a added value, the system automatically categorize the photographs to the more precise approximation of the corporate visual identity, which allows you to find photos that match the colors used in proposals, banners, etc.. (**ASP.NET** , **Oracle 10**, **AJAX**)
+
+## Alumni
+
+Development and maintenance of a basic **CMS** with multiple users for several south american countries (**[Brazil](http://maps.google.com/maps?ll=-15.7833333333,-47.8666666667&spn=10.0,10.0&q=-15.7833333333,-47.8666666667%20(Brazil)&t=h "Brazil")**, **[Chile](http://maps.google.com/maps?ll=-33.4333333333,-70.6666666667&spn=10.0,10.0&q=-33.4333333333,-70.6666666667%20(Chile)&t=h "Chile")**, **[Colombia](http://maps.google.com/maps?ll=4.58333333333,-74.0666666667&spn=10.0,10.0&q=4.58333333333,-74.0666666667%20(Colombia)&t=h "Colombia")**, **[Perú](http://maps.google.com/maps?ll=-12.0433333333,-77.0283333333&spn=10.0,10.0&q=-12.0433333333,-77.0283333333%20(Peru)&t=h "Peru")**) aimed to provide content for the PwC [alumni](http://en.wikipedia.org/wiki/Alumnus "Alumnus") network to keep in touch with their former colleagues and friends. Also they can stay in touch with the firm through learning and networking programs, social media and newsletters. (**ASP.NET**, **SQLServer**)
+
+## BCPOOrganizer
+
+Collaboration in the development of BCPOrganizer, a tool to assists companies in the integrated management of their [business continuity](http://en.wikipedia.org/wiki/Business_continuity "Business continuity") . It's a centralized repository that allows controlled access to [contingency plans](http://en.wikipedia.org/wiki/Contingency_plan "Contingency plan") and preventive plans, while at the same time it automates most of the administration and maintenance tasks for these plans. It make it easy the communication between different teams and outside entities because of an automated [notification system](http://en.wikipedia.org/wiki/Notification_system "Notification system") . This software was commercialized by PwC Uruguay Advisory IT area ( **ASP.NET** , **eXpress Persistent Objects** , **AJAX** )
+
+## RiskOrganizer
+
+Collaboration in the development of a risk evaluation software. RiskOrganizer provides a streamlined solution to document, evaluate and report risks for any unit, project or component within an organization.
+Following the international COSO II standard, the system lets multiple users record objectives, risks and controls in matrices, and document action and monitoring plans based on risk exposures. Reporting functions include risk consolidation, color/heat maps and detailed risk reports, with powerful filtering and analysis tools. This oftware is commercialized by PwC Uruguay's Advisory IT area. ( **ASP.NET**, **eXpress Persistent Objects**, **AJAX**)
+
+## MetricsOrganizer
+
+Collaboration in the development and project management of **MetricsOrganizer**, which allows the registration of values and the subsequent analysis of a configurable number of metrics in a controlled environment. It has a standard output of information as tables and graphics showing different indicators. (**ASP.NET**, **eXpress Persistent Objects**, **AJAX**)
+
 [related_images:json]
   {"exp_pwc-mam":
     [{
@@ -165,7 +230,7 @@ Requirement elicitation, architecture, design and implementation of a **Salary S
     }],
   "exp_pwc-cityof":
     [{
-      "filaname": "exp_pwc-cityof.gif"
+      "filename": "exp_pwc-cityof.gif"
     }],
   "exp_pwc-pt-modeller":
     [{
@@ -178,5 +243,61 @@ Requirement elicitation, architecture, design and implementation of a **Salary S
   "exp_pwc-health":
     [{
       "filename": "exp_pwc-health.gif"
+    }],
+  "exp_pwc-icpr":
+    [{
+      "filename": "exp_pwc-icpr1.jpg"
+    },{
+      "filename": "exp_pwc-icpr2.jpg"
+    },{
+      "filename": "exp_pwc-icpr3.jpg"
+    },{
+      "filename": "exp_pwc-icpr4.jpg"
+    },{
+      "filename": "exp_pwc-icpr5.jpg"
+    }],
+  "exp_pwc-charting":
+    [{
+      "filename": "exp_pwc-charting1.jpg"
+    },{
+      "filename": "exp_pwc-charting2.jpg"
+    },{
+      "filename": "exp_pwc-charting3.jpg"
+    },{
+      "filename": "exp_pwc-charting4.jpg"
+    },{
+      "filename": "exp_pwc-charting5.jpg"
+    }],
+  "exp_pwc-penca":
+    [{
+      "filename": "exp_pwc-penca1.jpg"
+    },{
+      "filename": "exp_pwc-penca2.jpg"
+    },{
+      "filename": "exp_pwc-penca3.jpg"
+    },{
+      "filename": "exp_pwc-penca4.jpg"
+    },{
+      "filename": "exp_pwc-penca5.jpg"
+    },{
+      "filename": "exp_pwc-penca6.jpg"
+    },{
+      "filename": "exp_pwc-penca7.jpg"
+    }],
+  "exp_pwc-challenge":
+    [{
+      "filename": "exp_pwc-challenge1.jpg"
+    },{
+      "filename": "exp_pwc-challenge2.jpg"
+    },{
+      "filename": "exp_pwc-challenge3.jpg"
+    },{
+      "filename": "exp_pwc-challenge4.jpg"
+    },{
+      "filename": "exp_pwc-challenge5.jpg"
+    },{
+      "filename": "exp_pwc-challenge6.jpg"
+    },{
+      "filename": "exp_pwc-challenge7.jpg"
     }]
   }

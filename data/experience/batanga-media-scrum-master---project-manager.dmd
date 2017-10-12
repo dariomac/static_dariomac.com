@@ -1,0 +1,42 @@
+{
+  "title": "Batanga Media - Scrum Master - Project Manager",
+  "date": "2017-09-17",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#6EA4D4",
+    "columnid": "progress_2",
+    "content": "Scrum Master - Project Manager",
+    "datebox": "Nov 2016 - Now",
+    "extlink": "batangamedia.com",
+    "laneid": "Experience",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/batanga-media-scrum-master---project-manager",
+    "position": "10",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Batanga Media",
+    "type":"Experience"
+  }
+}
+
+---
+
+[duration:string]
+Mar 2014 – Present
+
+[place_url:string]
+batangamedia.com
+
+[place:string]
+Batanga Media
+
+[content:md]
+Batanga Media Scrum Master - Project Manager - QA
+
+[projects:md]

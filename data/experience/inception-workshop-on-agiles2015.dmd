@@ -1,0 +1,94 @@
+{
+  "title": "Inception Workshop on Agiles2015",
+  "date": "2017-10-09",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#00A651",
+    "columnid": "done_3",
+    "content": "Inception Workshop on Agiles2015",
+    "datebox": "Oct 2015",
+    "extlink": "http://agiles2015.agiles.org/es/?page_id=1957",
+    "laneid": "Experience",
+    "leftbox": "Radisson Victoria Plaza",
+    "leftmsg": "",
+    "linkto": "/inception-workshop-on-agiles2015",
+    "position": "8",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Agiles2015",
+    "type":"Experience"
+  }
+}
+
+---
+
+[duration:string]
+Oct 22-24, 2015
+
+[place_url:string]
+http://agiles2015.agiles.org/es/?page_id=1957
+
+[place:string]
+Agiles2015 - Hotel Radisson
+
+[content:md]
+We show our Inception Workshop in the annual conference of the lationoamerican community of agile methodologies. It was three days of learning and sharing experiences on new ways of doing our work, with regional and international experts and apprentices. Conferences, workshops, Open Spaces and more.
+
+What happens when an entrepreneur needs to develop the technology platform for your business? Do you know what to ask a supplier or agile development team? Do the agile team has tools to guide the entrepreneur and maximize both earnings? In this talk we will see what is the Inception Deck and how it can be adapted for entrepreneurs to set/prioritize the technology needs and technical risks associated. The talk show examples of activities/games, success stories and experiences.
+
+This is the introduction of the talk:
+<div class="container">
+  <iframe class="video" src="//www.youtube.com/embed/kcgCEWmIHQ8" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+[projects:md]
+
+[related_images:json]
+  [{
+    "filename": "agiles2015_1.jpg"
+  },{
+    "filename": "agiles2015_2.jpg"
+  },{
+    "filename": "agiles2015_3.jpg"
+  },{
+    "filename": "agiles2015_4.jpg"
+  },{
+    "filename": "agiles2015_5.jpg"
+  },{
+    "filename": "agiles2015_6.jpg"
+  },{
+    "filename": "agiles2015_7.jpg"
+  },{
+    "filename": "agiles2015_8.jpg"
+  },{
+    "filename": "agiles2015_9.jpg"
+  },{
+    "filename": "agiles2015_10.jpg"
+  },{
+    "filename": "agiles2015_11.jpg"
+  },{
+    "filename": "agiles2015_12.jpg"
+  },{
+    "filename": "agiles2015_13.jpg"
+  },{
+    "filename": "agiles2015_14.jpg"
+  },{
+    "filename": "agiles2015_15.jpg"
+  }]
+
+[attachments:json]
+  [{
+    "filename": "699_agiles_2015.pdf",
+    "description": ""
+  },{
+    "filename": "17620701994-457869436-ticket.pdf",
+    "description": ""
+  },{
+    "filename": "OpenCall_699.pdf",
+    "description": ""
+  }]

@@ -1,0 +1,64 @@
+{
+  "title": "Introduction to the practice of Inception",
+  "date": "2017-10-06",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#00A651",
+    "columnid": "done_3",
+    "content": "Introduction to the practice of Inception",
+    "datebox": "Jun 2015",
+    "extlink": "http://cie.ort.edu.uy/",
+    "laneid": "Experience",
+    "leftbox": "Universidad ORT Uruguay",
+    "leftmsg": "",
+    "linkto": "/introduction-to-the-practice-of-inception",
+    "position": "7",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Universidad ORT Uruguay - CIE",
+    "type":"Experience"
+  }
+}
+
+---
+
+[duration:string]
+June 10th 2015 (2 hs)
+
+[place_url:string]
+http://cie.ort.edu.uy/
+
+[place:string]
+Universidad ORT Uruguay - CIE
+
+[content:md]
+This was a presentation organized by the Centro de Innovación y Emprendimientos (CIE) at ORT University. The idea was to let innovators know about our inception workshop and how we use it to help startups to build their MVPs.
+
+[projects:md]
+
+[related_images:json]
+  [{
+    "filename": "Inception_CIE_0.jpg"
+  },{
+    "filename": "Inception_CIE_1.jpg"
+  },{
+    "filename": "Inception_CIE_2.jpg"
+  },{
+    "filename": "Inception_CIE_3.jpg"
+  },{
+    "filename": "Inception_CIE_4.jpg"
+  }]
+
+[attachments:json]
+  [{
+    "filename": "Inception_CIE_redistributable.pdf",
+    "description": "Slides used in the presentation."
+  },{
+    "filename": "Inception_CIE_press_note.pdf",
+    "description": "Event invitationZ."
+  }]
