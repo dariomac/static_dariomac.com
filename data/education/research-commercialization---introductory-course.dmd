@@ -1,0 +1,96 @@
+{
+  "title": "Research Commercialization - Introductory Course",
+  "date": "2017-10-12",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#77D477",
+    "columnid": "done_3",
+    "content": "Research Commercialization - Introductory Course",
+    "datebox": "May 21 - Jun 18, 2013",
+    "extlink": "http://center.ncet2.org/index.php?option=com_joomla_lms&Itemid=53&task=details_course&id=112",
+    "laneid": "Education",
+    "leftbox": 0,
+    "leftmsg": null,
+    "linkto": "/research-commercialization---introductory-course",
+    "position": 14,
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#research, #commercialization",
+    "title": "NCET2.org (online)",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+May 21 - Jun 18, 2013 (13.5 hours, twice a week)
+
+[dictated_by:string]
+NCET2.org
+
+[place_url:string]
+http://center.ncet2.org/index.php?option=com_joomla_lms&Itemid=53&task=details_course&id=112
+
+[place:string]
+NCET2.org (online)
+
+[content:md]
+The Research Commercialization Introductory Course is a very popular online course designed to help science and engineering researchers better understand how research commercialization works. Over 4000 researchers from across the US take the course each time it is offered.
+
+Research commercialization involves taking articles, documentation, know-how, patents, and copyrights, which are created during research activities and getting them to users and patients for real societal impacts.
+
+In some cases, commercialization involved taking patents based on the research and licensing them to a company. This usually involves also having the researchers consult to the company. In other cases, commercialization involves forming of creating a startup and applying to federally funded commercialization programs. In all cases, though, research commercialization typically involves defining the nature of the research being commercialized (e.g., in a patent or intellectual property agreement), establishing a commercial relationship with another party (e.g., employment, a sale or license), and negotiating a contract (e.g., compensation).
+
+![Edu Ncet2 Certificate](/assets/edu_ncet2_certificate.png#center)
+
+[lessons:md]
+<pre>
+Lecture 1: The Importance of Commercializing Research
+Tuesday, May 21, 2013 , 1:00 to 2:30 pm ET
+Steve Ferguson
+Henry Wixon
+Frank Barros
+
+Lecture 2: Patents
+Thursday, May 23, 2013 , 1:00 to 2:30 pm ET
+Henry Wixon
+
+Lecture 3: Copyright, Trademarks and Trade Secrets
+Tuesday, May 28, 2013 , 1:00 to 2:30 pm ET
+Nagesh Rao
+Paul Rapp
+
+Lecture 4: Employment and Consulting Agreements
+Thursday, May 30, 2013 , 1:00 to 2:30 pm ET
+Scott Watson
+Fred Grants
+
+Lecture 5: Tech Transfer and Licensing Agreements
+Tuesday, June 04, 2013 , 1:00 to 2:30 pm ET
+Barry Rosenbaum
+John Fraser
+
+Lecture 6: Small Business Innovation Research (SBIR) Grants
+Thursday, June 06, 2013 , 1:00 to 2:30 pm ET
+Robert Vinson
+Kurt Marek
+
+Lecture 7: Introduction to Early Stage Funding
+Tuesday, June 11, 2013 , 1:00 to 2:30 pm ET
+Tania Fernandez
+Nandini Tandon
+
+Lecture 8: Introduction to Structuring and Leading the Research-Intensive Company
+Thursday, June 13, 2013 , 1:00 to 2:30 pm ET
+Art Gooray
+Jim Hawkins
+
+Lecture 9: Moving from R&D to Manufacturing
+Tuesday, June 18, 2013 , 1:00 to 2:30 pm ET
+Clara Asmail
+</pre>
