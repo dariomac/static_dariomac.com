@@ -1,0 +1,51 @@
+{
+  "title": "The_Title",
+  "date": "Creation_date",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99B399",
+    "columnid": "%{column}",
+    "content": "%{title}",
+    "datebox": "Jun 2, 2014 - Jun 3, 2014",
+    "extlink": "%{place_url}",
+    "laneid": "%{lane}",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "%{link_to}",
+    "position": '%{position}',
+    "priority": "Average",
+    "subtaskdetails": [],
+    /*"subtaskdetails": [{
+      "taskid": "1",
+      "title": "Submitted to CIbSE 2013.",
+      "assignee": "None",
+      "completiondate": "2012-20-12",
+      "assignedtome": 0
+    }, {
+      ...
+      ...
+      ...
+    }],*/
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#research, #commercialization",
+    "title": "%{place}",
+    "type": "0"
+  }
+}
+
+---
+
+[duration:string]
+
+[dictated_by:string]
+
+[place_url:string]
+
+[place:string]
+
+[content:md]
+
+[lessons:md]
