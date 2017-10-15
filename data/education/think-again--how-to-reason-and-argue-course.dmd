@@ -1,0 +1,68 @@
+{
+  "title": "“Think Again: How to Reason and Argue” course",
+  "date": "2017-10-14",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#77D477",
+    "columnid": "requested_1",
+    "content": "“Think Again: How to Reason and Argue” course.",
+    "datebox": "12 weeks",
+    "extlink": "http://www.coursera.org/course/thinkagain",
+    "laneid": "Education",
+    "leftbox": 0,
+    "leftmsg": null,
+    "linkto": "/think-again--how-to-reason-and-argue-course",
+    "position": 12,
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#soft_skills, #humanities",
+    "title": "Coursera (online)",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+12 weeks
+
+[dictated_by:string]
+Walter Sinnott-Armstrong, Ram Neta
+
+[place_url:string]
+http://www.coursera.org/course/thinkagain
+
+[place:string]
+Coursera (online)
+
+[content:md]
+Reasoning is important. This course will teach you how to do it well. You will learn some simple but vital rules to follow in thinking about any topic at all and some common and tempting mistakes to avoid in reasoning. We will discuss how to identify, analyze, and evaluate arguments by other people (including politicians, used car salesmen, and teachers) and how to construct arguments of your own in order to help you decide what to believe or what to do. These skills will be useful in dealing with whatever matters most to you.
+
+[lessons:md]
+PART I: HOW TO ANALYZE ARGUMENTS (or identify, simplify, and arrange their parts to show how they are connected in a structure)
+
+*   Week One: How to Spot an Argument
+*   Week Two: How to Untangle an Argument
+*   Week Three: How to Reconstruct an Argument
+
+PART II: HOW TO EVALUATE DEDUCTIVE ARGUMENTS (or determine whether their premises validly imply their conclusions)
+
+*   Week Four: Propositional Logic and Truth Tables
+*   Week Five: Categorical Logic and Syllogisms
+
+PART III: HOW TO EVALUATE INDUCTIVE ARGUMENTS (or determine whether their premises provide enough reason to believe their conclusions)
+
+*   Week Six: What are Inductive Arguments?
+*   Week Seven: Causal Reasoning
+*   Week Eight: Probability and Decisions
+
+PART IV: HOW TO MESS UP ARGUMENTS (or commit common but tempting fallacies)
+
+*   Week Nine: Fallacies of Vagueness and Ambiguity
+*   Week Ten: Fallacies of Relevance and Vacuity
+*   Week Eleven: How to Refute an Argument
+*   Week Twelve: How to Apply these Methods to Everyday Arguments
