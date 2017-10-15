@@ -1,0 +1,65 @@
+{
+  "title": "“Systematic Literature Reviews“ tutorial",
+  "date": "2017-10-14",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "“Systematic Literature Reviews“ tutorial",
+    "datebox": "Dec 3-6, 2012 (12hs)",
+    "extlink": "http://fi.ort.edu.uy/innovaportal/v/6416/5/fi.ort.front/curso_revisiones_sistematicas_de_la_literatura.html",
+    "laneid": "Education",
+    "leftbox": "by M. Genero",
+    "leftmsg": null,
+    "linkto": "/systematic-literature-reviews-tutorial",
+    "position": 11,
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#empirical, #evidence",
+    "title": "Universidad ORT Uruguay",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+Dec 3-6, 2012 (12hs)
+
+[dictated_by:string]
+Marcela Genero
+
+[place_url:string]
+http://fi.ort.edu.uy/innovaportal/v/6416/5/fi.ort.front/curso_revisiones_sistematicas_de_la_literatura.html
+
+[place:string]
+Universidad ORT Uruguay
+
+[content:md]
+This seminar is aimed at researchers and doctoral students who wants to know the state of the art on any topic for their research and how to validate the results of their proposals.
+
+*   Exploring mechanisms to validate Software Engineering proposals applying the experimental process steps.
+*   Define what a [systematic reviews](http://en.wikipedia.org/wiki/Systematic_review "Systematic review") is and what they are for.
+*   Learn the steps to undertake a systematic review rigorously.
+*   Analyze procedures for the synthesis of primary studies.
+
+While we focus on experimentation and conducting systematic reviews in the context of software engineering, most concepts presented are applicable to other disciplines.
+
+[lessons:md]
+*   Empirical studies in software engineering
+
+*   Experimental process
+*   Examples of experiments
+*   Guidelines for conducting and reporting experiments
+
+*   Systematic Literature Reviews
+
+*   Process for SLR
+*   Examples of SLR
+*   Quantitative and qualitative synthesis
+*   Practice: discussion of proposed topics for SLR
+*   Practice: developing a review protocol
