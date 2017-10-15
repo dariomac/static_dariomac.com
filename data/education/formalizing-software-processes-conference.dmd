@@ -1,0 +1,45 @@
+{
+  "title": "“Formalizing software processes” conference",
+  "date": "2017-10-14",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "“Formalizing software processes” conference",
+    "datebox": "Oct 25, 2012",
+    "extlink": "http://fi.ort.edu.uy/innovaportal/v/5782/5/fi.ort.front/conferencia_formalizacion_de_procesos_de_software.html",
+    "laneid": "Education",
+    "leftbox": 0,
+    "leftmsg": "by M.C. Bastarrica",
+    "linkto": "/formalizing-software-processes-conference",
+    "position": 10,
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#experimental, #statistics",
+    "title": "Universidad ORT Uruguay",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+Oct 25, 2012 (1:30hs)
+
+[dictated_by:string]
+María Cecilia Bastarrica
+
+[place_url:string]
+http://fi.ort.edu.uy/innovaportal/v/5782/5/fi.ort.front/conferencia_formalizacion_de_procesos_de_software.html
+
+[place:string]
+Universidad ORT Uruguay
+
+[content:md]
+Most of the software development companies are [SMEs](http://en.wikipedia.org/wiki/Small_and_medium_enterprises "Small and medium enterprises") and, in general, develops short projects of medium complexity. They aim essentially to build software, minimizing possible activities related to the management of the development process. The formal definition of software process brings benefits such as eliminating ambiguity, the possibility of having computational support for storage and evolution allowing [formal analysis](http://en.wikipedia.org/wiki/Formal_analysis "Formal analysis"). In the last years the ADAPTE project funded by the chilean government have made experiments about formalizing and analyzing software processes for a group of chilean companies.
+
+[lessons:md]
