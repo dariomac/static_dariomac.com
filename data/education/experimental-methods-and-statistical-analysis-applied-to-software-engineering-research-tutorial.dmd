@@ -1,0 +1,56 @@
+{
+  "title": "“Experimental Methods and Statistical Analysis Applied to Software Engineering Research” tutorial",
+  "date": "2017-10-16",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "“Experimental Methods and Statistical Analysis Applied to Software Engineering Research” tutorial",
+    "datebox": "Jun 25-27, 2012",
+    "extlink": "http://www.ort.edu.uy/index.php?id=AAAHAFAF&h=&noticias=1&id_noticia=5975&m=0&a=2012&pub=0&publishers=",
+    "laneid": "Education",
+    "leftbox": "by M.A. Araújo",
+    "leftmsg": null,
+    "linkto": "/experimental-methods-and-statistical-analysis-applied-to-software-engineering-research-tutorial",
+    "position": 8,
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#experimental, #statistics",
+    "title": "Universidad ORT Uruguay",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+Jun 25-27, 2012 (9hs)
+
+[dictated_by:string]
+Marco Antonio Pereira Araujo
+
+[place_url:string]
+http://www.ort.edu.uy/index.php?id=AAAHAFAF&h=&noticias=1&id_noticia=5975&m=0&a=2012&pub=0&publishers=
+
+[place:string]
+Universidad ORT Uruguay
+
+[content:md]
+Dr. Marco Antonio Pereira Araujo, [Postdoctoral Researcher](http://en.wikipedia.org/wiki/Postdoctoral_research "Postdoctoral research") of "Alberto Luiz [Coimbra](http://en.wikipedia.org/wiki/Coimbra "Coimbra") de Pós-Graduação e Pesquisa de Engenharia (COPPE)" insitute of the university "Universidade Federal de [Rio de Janeiro](http://en.wikipedia.org/wiki/Rio_de_Janeiro "Rio de Janeiro") ([UFRJ](http://www.ufrj.br "Federal University of Rio de Janeiro"))", make an academic visit to Universidad ORT Uruguay.
+
+This seminar was dictated to the Master in Engineering students by Dr. Pereira Araujo. He has a Ph.D. and a Master in [Software Engineering](http://en.wikipedia.org/wiki/Software_engineering "Software engineering") and Computer Science by COPPE of UFRJ. He is an expert in computational [statistical methods](http://en.wikipedia.org/wiki/Statistics "Statistics"). He graduated in Mathematics with specialization in Computer in "[Universidade Federal de Juiz de Fora](http://en.wikipedia.org/wiki/Universidade_Federal_de_Juiz_de_Fora "Universidade Federal de Juiz de Fora")".
+
+[lessons:md]
+
+[related_images:json]
+  [{
+    "filename": "edu_araujo_1.jpg"
+  },{
+    "filename": "edu_araujo_2.jpg"
+  },{
+    "filename": "edu_araujo_3.jpg"
+  }]
