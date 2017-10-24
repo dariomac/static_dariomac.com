@@ -1,0 +1,56 @@
+{
+  "title": "“Six Sigma Applied to Software Process Improvement” tutorial",
+  "date": "2017-10-23",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "“Six Sigma Applied to Software Process Improvement” tutorial",
+    "datebox": "Apr 4-8, 2011",
+    "extlink": "",
+    "laneid": "Education",
+    "leftbox": "by T. San Feliu",
+    "leftmsg": "",
+    "linkto": "/six-sigma-applied-to-software-process-improvement-tutorial",
+    "position": 6,
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#research, #SPI, #six-sigma",
+    "title": "Universidad ORT Uruguay",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+Apr 4-8, 2011 (20hs)
+
+[dictated_by:string]
+Tomás San Feliu
+
+[place_url:string]
+
+[place:string]
+Universidad ORT Uruguay
+
+[content:md]
+The seminar "[Six Sigma](http://en.wikipedia.org/wiki/Six_Sigma "Six Sigma") Applied to Software Process Improvement" seeks to understand the philosophy and quantitative concepts behind Six Sigma and its application to software engineering.
+
+[Six Sigma](http://en.wikipedia.org/wiki/Six_Sigma "Six Sigma") is between a methodology, a philosophy and a set of techniques and practices to improve processes. Its aim to achieve a systematic improvement of the quality of products and services by [statistical control](http://en.wikipedia.org/wiki/Statistical_process_control "Statistical process control") of the productive process. In this [seminar](http://en.wikipedia.org/wiki/Seminar "Seminar") we will be introducing the main concepts of Six Sigma and reviewing its application to the [software industry](http://en.wikipedia.org/wiki/Software_industry "Software industry"). The seminar is organized around playful exercises where participants will interact in different situations aimed at manipulating and learn the concepts of Six Sigma.
+
+It was dictated by Dr. Tomás San Feliu, PhD in [Computer Science](http://en.wikipedia.org/wiki/Computer_science "Computer science") from [Universidad de Castilla-La Mancha](http://www.uclm.es "University of Castile-La Mancha") and Mr. Santiago Matalonga, PhD student in Computer Engineering at the [Universidad Politécnica de Madrid](http://www.upm.es/ "Technical University of Madrid") and [Software Engineering](http://en.wikipedia.org/wiki/Software_engineering "Software engineering") professor at Universidad ORT Uruguay.
+
+[lessons:md]
+1.  Introduction to Six Sigma
+2.  Cycle [DMAIC](http://en.wikipedia.org/wiki/DMAIC) (Define, Measure, Analyze, Improve and Control)
+
+#### Bibliography
+
+*   Wheeler, Donald, J. Understanding Variation: The key to managing Chaos. SPC Press, Inc.; 2 Revised edition (January 2000). 187 p
+*   Pyzdek, T. [The Six Sigma Handbook](http://www.amazon.com/Six-Sigma-Handbook-Greenbelts-Blackbelts/dp/0071410155%3FSubscriptionId%3D0G81C5DAZ03ZR9WH9X82%26tag%3Dzem-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0071410155 "The Six Sigma Handbook: The Complete Guide for Greenbelts, Blackbelts, and Managers at All Levels, Revised and Expanded Edition"): The Complete Guide for Greenbelts, Blackbelts, and Managers at All Levels. (Second Edition). [McGraw-Hill](http://companies.findthecompany.com/l/9046/The-Mcgraw-Hill-Companies-Inc "The McGraw-Hill Companies"): 2003.
+*   [Hambleton](http://en.wikipedia.org/wiki/Hambleton "Hambleton"), L. Treasure chest of [Six Sigma](http://en.wikipedia.org/wiki/Six_Sigma "Six Sigma") growth models, tools & best practices: a desk reference book for innovation and growth. [Upper Saddle River](http://en.wikipedia.org/wiki/Upper_Saddle_River%2C_New_Jersey "Upper Saddle River, New Jersey"). [New Jersey](http://en.wikipedia.org/wiki/New_Jersey "New Jersey"): [Prentice Hall](http://prenticehall.com "Prentice Hall"): 2008.
