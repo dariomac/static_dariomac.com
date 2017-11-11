@@ -1,0 +1,63 @@
+{
+  "title": "Software Engineer",
+  "date": "2017-11-10",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "Software Engineer",
+    "datebox": "2000 - 2008",
+    "extlink": "http://www.ort.edu.uy/index.php?id=AAAHAGAC",
+    "laneid": "Education",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/software-engineer",
+    "position": "2",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#computer, #software",
+    "title": "Universidad ORT Uruguay",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+2000 - 2008
+
+[dictated_by:string]
+
+[place_url:string]
+http://www.ort.edu.uy/index.php?id=AAAHAGAC
+
+[place:string]
+Universidad ORT Uruguay
+
+[content:md]
+This undergraduate program provides solid knowledge of advanced programming, databases, operating systems, software engineering, networks and the latest technologies applied to distributed systems.
+
+The balance between theory and practice, and the resolution and implementation of real cases from the beginning of the program, ensure the effective application of the acquired knowledge.
+
+Graduates of this program are prepared to:
+
+*   design and develop large and complex systems in diverse areas such as real-time management, geographic information, games, industrial control and management information systems;
+*   perform successfully as software developers, independent consultants, project leaders or system managers;
+*   get inserted into the regional and international market in any area where computing is considered a competitive factor.
+*   adapt to the constantly changing computer and software industry and integrate multidisciplinary R&D teams for the development of new technologies.
+
+The curriculum provides students with a solid knowledge of advanced programming, databases, operating systems, software engineering, networks and the latest technologies applied to distributed systems.
+
+By choosing elective courses and the topic for their final project, students can customize their academic or professional education in various fields of specialization, such as information systems, software engineering, telematics, development of systems involving hardware and software, telecommunications and management.
+
+Systems Engineering was licensed as a university degree program by the Ministry of Education and Culture in September 17, 1996.
+
+Graduates of the Engineering programs offered by Universidad ORT are accepted as members of the Association of Engineers of Uruguay.
+
+See my [academic marks](http://www.dariomac.com/Computer-Software-Engineer-Courses).
+
+[lessons:md]
