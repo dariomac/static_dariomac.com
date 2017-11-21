@@ -1,0 +1,41 @@
+{
+  "title": "Doctorado (Ph.D)",
+  "date": "2017-11-10",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "progress_2",
+    "content": "Doctorado (Ph.D)",
+    "datebox": "Sep 9, 2015 - ",
+    "extlink": "",
+    "laneid": "Education",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/doctorado-phd",
+    "position": "0",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#phd, #research",
+    "title": "Universidad ORT Uruguay - PEDECIBA",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+
+[dictated_by:string]
+
+[place_url:string]
+
+[place:string]
+Universidad ORT Uruguay - PEDECIBA
+
+[content:md]
+
+[lessons:md]

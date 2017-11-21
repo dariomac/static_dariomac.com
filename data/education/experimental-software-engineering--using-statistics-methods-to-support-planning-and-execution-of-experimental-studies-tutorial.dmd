@@ -1,0 +1,60 @@
+{
+  "title": "“Experimental Software Engineering: using statistics methods to support planning and execution of experimental studies” tutorial",
+  "date": "2017-10-16",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "“Experimental Software Engineering: using statistics methods to support planning and execution of experimental studies” tutorial",
+    "datebox": "Jun 13, 2011",
+    "extlink": "http://www.ort.edu.uy/index.php?id=AAALAC&h=&noticias=1&id_noticia=4994&m=6&a=2011&pub=0&publishers=",
+    "laneid": "Education",
+    "leftbox": "by G.H. Travassos",
+    "leftmsg": null,
+    "linkto": "/experimental-software-engineering--using-statistics-methods-to-support-planning-and-execution-of-experimental-studies-tutorial",
+    "position": 7,
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#experimental, #statistics",
+    "title": "Universidad ORT Uruguay",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+Jun 13, 2011 (4hs)
+
+[dictated_by:string]
+Guilherme Horta Travassos
+
+[place_url:string]
+http://www.ort.edu.uy/index.php?id=AAALAC&h=&noticias=1&id_noticia=4994&m=6&a=2011&pub=0&publishers=
+
+[place:string]
+Universidad ORT Uruguay
+
+[content:md]
+For a long time scientists have been committed to describe and organize information obtained by observations from the field. The ideas regarding experimentation have been explored and evolved into different scientific areas, including physics, agriculture, medicine, engineering and social sciences among others. We can observe similar behavior in [Software Engineering](http://en.wikipedia.org/wiki/Software_engineering "Software engineering"). Software engineers have intensively worked to understand the application and evolution of software processes and technologies by applying the [scientific method](http://en.wikipedia.org/wiki/Scientific_method "Scientific method")(experimentation) to support their researches.
+
+Nowadays, experimentation has demonstrated to be a need for the evolution of the field, representing a cardinal tool to allow the transference of software technologies to the industry; improve software processes and evidence behaviors in Software Engineering. The [Experimental Software Engineering](http://en.wikipedia.org/wiki/Experimental_software_engineering "Experimental software engineering")Group at COPPE/UFRJ (ese.cos.ufrj.br) promotes experimentation in the building of software technologies to the industry.
+
+This tutorial intends to discuss the principles regarding experimental software engineering, presenting its main concepts and illustrating how statistical methods can be used to support the analysis of data collected through experimental studies.
+
+It was dictated by Guilherme Horta Travassos, Professor of Software Engineering with the Systems Engineering and Computer Science Department at COPPE/Federal University of [Rio de Janeiro](http://www.rio.rj.gov.br/ "Rio de Janeiro")- Brazil. He received his doctorate degree from COPPE/UFRJ in 1994 and spent 2 years with the Experimental Software Engineering Group at the [University of Maryland - College Park](http://www.umd.edu "University of Maryland, College Park"), in a post-doctoral position (1998/2000). He leads the Experimental Software Engineering Group at COPPE/UFRJ. His current research interests include experimental software engineering, e-science and non-conventional [Web applications](http://en.wikipedia.org/wiki/Web_application "Web application"), software quality, and VV&T concerned with object-oriented software. He is a member of ISERN, [ACM](http://www.acm.org "Association for Computing Machinery"), SBC ( [Brazilian Computer Society](http://en.wikipedia.org/wiki/Brazilian_Computer_Society "Brazilian Computer Society")) and Information & Software Technology (Elsevier) editorial board.
+
+[lessons:md]
+
+[related_images:json]
+  [{
+    "filename": "edu_travassos_1.jpg"
+  },{
+    "filename": "edu_travassos_2.jpg"
+  },{
+    "filename": "edu_travassos_3.jpg"
+  }]

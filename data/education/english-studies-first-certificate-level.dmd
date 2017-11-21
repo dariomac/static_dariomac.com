@@ -1,0 +1,48 @@
+{
+  "title": "English studies (First Certificate Level)",
+  "date": "2017-11-10",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "English studies (First Certificate Level)",
+    "datebox": "1993 - 1999",
+    "extlink": "http://www.anglo.edu.uy/portal/hgxpp001.aspx?101",
+    "laneid": "Education",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/english-studies-first-certificate-level",
+    "position": "1",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#english",
+    "title": "Instituto Cultural Anglo Uruguayo",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+1993 - 1999
+
+[dictated_by:string]
+
+[place_url:string]
+http://www.anglo.edu.uy/portal/hgxpp001.aspx?101
+
+[place:string]
+Instituto Cultural Anglo Uruguayo
+
+[content:md]
+6 years of courses designed to introduce young students to the language through carefully planned classes to acquire knowledge of the most natural way possible.
+
+The cycle consisted of 6 courses, 3 Juniors (J1, J2, JL) and 3 Senior (S4, S5, S6). Each course was of one year and the 2:30 weekly working hours were divided into 2 classes.
+
+Once finished this cycle I was able to prepare the renowned First Certificate exam, for which I made a preparation course for 1 year (5 hours per week).
+
+[lessons:md]

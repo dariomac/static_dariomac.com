@@ -1,0 +1,51 @@
+{
+  "title": "Formal Methods and Unified Modeling Language (UML)",
+  "date": "2017-11-20",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "Formal Methods and Unified Modeling Language (UML)",
+    "datebox": "Nov 2015",
+    "extlink": "https://www.fing.edu.uy/evento/alexander-knapp-towards-institutional-framework-heterogeneous-formal-development-uml",
+    "laneid": "Education",
+    "leftbox": "INCO - FING UY",
+    "leftmsg": "",
+    "linkto": "/formal-methods-and-unified-modeling-language-uml",
+    "position": "16",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "INCO - FING UY",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+Nov 25-27, 2015
+
+[dictated_by:string]
+Alexander Knapp
+
+[place_url:string]
+https://www.fing.edu.uy/evento/alexander-knapp-towards-institutional-framework-heterogeneous-formal-development-uml
+
+[place:string]
+INCO - FING UY
+
+[content:md]
+The Unified Modeling Language (UML), the lingua franca of software engineering, has been criticized many times and generally reason for the lack of precise meaning. The absence of a formal semantics has prevented the use of UML for the development of critical software. The objectives of this course are: to explore the capabilities of UML language and its possible semantics, analyze existing model-checking as a formal method for verifying properties of designs based on UML software, and introduce an algebraic Theory based approach Institutions to assign a meaning to a system based on UML to consider it as a mixed language design.
+
+[lessons:md]
+*   **Part I: UML**
+    Different elements of the family of UML languages are discussed: class diagrams, state machines and interactions, as well as the Object Constraint Language (OCL). using the translation tool Hugo/RT models for verification of design properties based on UML study using SPIN and UPPAAL model checkers.
+*   **Part II: Model checking**
+    Two basic approaches are presented: symbolic model checking based on Binary Decision Diagrams (BDDs) for Computation Tree Logic (CTL), and cheking model based on Linear Temporal Logic automata (LTL) as is done in SPIN. It also presents temporal model checking using timed automata as is done in UPPAAL.
+*   **Part III: UML as a heterogeneous language**
+    It provides a brief introduction to the theory of institutions for the representation of the semantics of UML models and institutions are discussed for various UML diagrams: class diagrams, state machines and OCL.

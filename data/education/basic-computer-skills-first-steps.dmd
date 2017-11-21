@@ -1,0 +1,78 @@
+{
+  "title": "Basic computer skills (first steps)",
+  "date": "2017-10-23",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "Basic computer skills (first steps)",
+    "datebox": "Jun 2, 2014 - Jun 3, 2014",
+    "extlink": "",
+    "laneid": "Education",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/basic-computer-skills-first-steps",
+    "position": 0,
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#computer",
+    "title": "IAC-CTC-ORT",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+1994 - 2000
+
+[dictated_by:string]
+
+[place_url:string]
+
+[place:string]
+IAC-CTC-ORT
+
+[content:md]
+*   Linux Advanced (Servers Administration) at IAC (American Institute of Computation).
+
+    July 12, 2002 – Montevideo
+    10 months
+*   Linux Introduction Course at IAC (American Institute of Computation).
+    October 27, 2000 – Montevideo
+    3 months
+*   Microsoft Access certificate at IAC (American Institute of Computation).
+    December 15, 1999 – Tacuarembó
+    2 months
+*   Microsoft Office User Specialist – Microsoft Word97-Proficient Oficial Certification by Microsoft.
+    December 15, 1999 – Utah (E.E.U.U)
+    1 month
+*   Certificate from Participation to the Photographs Seminary by Eastman Kodak Co.
+    August 1999
+*   Corel Draw Certificate by CTC (Cidi Training Center) con with technical attendance of ORT
+    November 21, 1998 – Tacuarembó
+    4 months
+*   Adobe Photoshop Certificate by CTC (Cidi Training Center) con with technical attendance of ORT.
+    November 21, 1998 – Tacuarembó
+    3 months
+*   DOS 6.22 Certificate by by CTC (Cidi Training Center) con with technical attendance of ORT.
+    November 21, 1998 – Tacuarembó
+    1 year
+*   Basic Internet course at CTC (Cidi Training Center) with technical attendance of ORT.
+    August 1997 – Tacuarembó
+    8 months
+*   Windows95 at CTC (Cidi Training Center) with technical attendance of ORT.
+    August 1997 – Tacuarembó
+    2 months
+*   Windows (Versión 3.11) (Word, Excel and Access included) at CTC (Cidi Training Center) with technical attendance of ORT.
+    October 1996 – Tacuarembó
+    6 months
+*   Didáctica Computada I (Basic) at ITEM (Technical Institute of Modern Education).
+    December 1994 – Paysandú
+    1 year
+
+[lessons:md]

@@ -1,0 +1,64 @@
+{
+  "title": "“Software Engineering Experimentation” tutorial",
+  "date": "2017-10-16",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "“Software Engineering Experimentation” tutorial",
+    "datebox": "Mar 21-25, 2011",
+    "extlink": "http://www.google.com/url?q=http%3A%2F%2Fwww.ort.edu.uy%2Findex.php%3Fid%3DAAAHBA%26h%3DAAAH%26noticias%3D1%26id_noticia%3D4769%26m%3D%26a%3D%26pub%3D0%26publishers%3D&sa=D&sntz=1&usg=AFQjCNEPh79hYj38pVVU6SG2LzRa7-_cTA",
+    "laneid": "Education",
+    "leftbox": "by N. Juristo",
+    "leftmsg": "",
+    "linkto": "/software-engineering-experimentation-tutorial",
+    "position": 5,
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#research, #empirical #studies",
+    "title": "Universidad ORT Uruguay",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+Mar 21-25, 2011 (20hs)
+
+[dictated_by:string]
+Natalia Juristo
+
+[place_url:string]
+http://www.google.com/url?q=http%3A%2F%2Fwww.ort.edu.uy%2Findex.php%3Fid%3DAAAHBA%26h%3DAAAH%26noticias%3D1%26id_noticia%3D4769%26m%3D%26a%3D%26pub%3D0%26publishers%3D&sa=D&sntz=1&usg=AFQjCNEPh79hYj38pVVU6SG2LzRa7-_cTA
+
+[place:string]
+Universidad ORT Uruguay
+
+[content:md]
+Content: This seminar aims to understand and improve the use of [evidence based](http://en.wikipedia.org/wiki/Evidence-based_medicine "Evidence-based medicine") methods in [Software Engineering](http://en.wikipedia.org/wiki/Software_engineering "Software engineering") Research. The focus is learn about the design and analysis of controlled experiments in order to compare different software engineering techniques. Most of the widespread knowledge on building software systems is based on proposals from authors, theoretical deductions or [proofs of concept](http://en.wikipedia.org/wiki/Proof_of_concept "Proof of concept") with no empirical basis formalized. In contrast, in other scientifics fields or engineering branches, [experimentation](http://en.wikipedia.org/wiki/Experiment "Experiment") is the usual way to support the generated knowledge. This course intends to apply formal testing techniques to validate what we know about building software. It also set the relationship of experimentation with the theoretical framework for generalizing results and contribute to the body of knowledge of this area.
+
+It was dictated by Dr. Natalia Juristo, PhD in [Computer Science](http://en.wikipedia.org/wiki/Computer_science "Computer science") at [Universidad Politécnica de Madrid](http://www.upm.es/ "Technical University of Madrid") and Martín Solari, Associate Professor of Software Engineering Department of the Universidad [ORT Uruguay](http://www.ort.edu.uy/ "ORT Uruguay").
+
+[lessons:md]
+1.  Introduction to [empirical methods](http://en.wikipedia.org/wiki/Empirical_method "Empirical method").
+2.  Status of [empirical research](http://en.wikipedia.org/wiki/Empirical_research "Empirical research") in [software engineering](http://en.wikipedia.org/wiki/Software_engineering "Software engineering").
+3.  [Case studies](http://en.wikipedia.org/wiki/Case_study "Case study") and surveys methods.
+4.  Experimental concepts: hypothesis, factors, parameters.
+5.  Design of controlled experiments.
+6.  Methods of [statistical analysis](http://en.wikipedia.org/wiki/Statistics "Statistics").
+7.  Replication of exeperiments
+8.  Construction laboratory packet.
+9.  Aggregation of results and [meta-analysis](http://en.wikipedia.org/wiki/Meta-analysis "Meta-analysis").
+10.  Relationship between theory and generalization.
+
+#### Bibliography
+
+*   Juristo, N., Moreno, A. 2001\. Basics of Software Engineering Experimentation. [Springer](http://www.springer.com "Springer Science+Business Media").
+*   Wohlin, Claes, et al. 1999\. [Experimentation in Software Engineering: An Introduction](http://www.amazon.com/Experimentation-Software-Engineering-Introduction-International/dp/0792386825%3FSubscriptionId%3D0G81C5DAZ03ZR9WH9X82%26tag%3Dzem-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0792386825 "Experimentation in Software Engineering: An Introduction (International Series in Software Engineering)"). Springer.
+*   Antony, J. 2005\. [Design of Experiments](http://en.wikipedia.org/wiki/Design_of_experiments "Design of experiments") for Engineers and Scientists. [Butterworth-Heinemann](http://www.elsevierdirect.com/imprint.jsp?iid=30 "Butterworth–Heinemann")
+*   Shull, F. et al. 2007\. [Guide to Advanced Empirical Software Engineering](http://www.amazon.com/Guide-Advanced-Empirical-Software-Engineering/dp/184800043X%3FSubscriptionId%3D0G81C5DAZ03ZR9WH9X82%26tag%3Dzem-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D184800043X "Guide to Advanced Empirical Software Engineering"). Springer.

@@ -1,0 +1,49 @@
+{
+  "title": "“Software Product Lines” tutorial",
+  "date": "2017-10-16",
+  "layout": "education",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#45A9F2",
+    "columnid": "done_3",
+    "content": "“Software Product Lines” tutorial",
+    "datebox": "Oct 1, 2012",
+    "extlink": "http://www.clei2012.org/",
+    "laneid": "Education",
+    "leftbox": "by J. D. Herrera",
+    "leftmsg": "",
+    "linkto": "/software-product-lines-tutorial",
+    "position": 9,
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#SPL, #reuse",
+    "title": "Universidad EAFIT (Medellín - Colombia)",
+    "type":"Education"
+  }
+}
+
+---
+
+[duration:string]
+Oct 1, 2012 (4hs)
+
+[dictated_by:string]
+Jorge Diaz Herrera
+
+[place_url:string]
+http://www.clei2012.org/
+
+[place:string]
+Universidad EAFIT (Medellín - Colombia)
+
+[content:md]
+Maintaining leadership in software-intensive organizations depends increasingly on the ability to improve their design and development processes faster than its competitors. One promising approach is to move the focus of building individual systems to orchestrate system families in a "range" or similar products by identifying "reusable" solutions to support the future development of multiple systems. Therefore, it could take advantage of [economies of scope](http://en.wikipedia.org/wiki/Economies_of_scope "Economies of scope"), a benefit that comes from developing an asset used in multiple contexts.
+
+A related group of software intensive systems sharing a common managed set of features is considered a [software product line](http://en.wikipedia.org/wiki/Software_product_line "Software product line") (SPL). SPL requires large scale planification and systematic reuse of software to make derived systems rather than create individual systems in a prescribed manner. This may produce predictable and consistent quality.
+
+It was dictated by Jorge Diaz Herrera, PhD. and Distinguished Visitors Program (DVP) -IEEE Computer Society.
+
+[lessons:md]
