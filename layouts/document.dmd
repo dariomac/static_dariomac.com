@@ -1,0 +1,53 @@
+{
+  "title": "The_Title",
+  "date": "Creation_date",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "%{column}",
+    "content": "%{short_description}",
+    "datebox": "%{pub_date}",
+    "extlink": null,
+    "laneid": "%{lane}",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "%{link_to}",
+    "position": "%{position}",
+    "priority": "Average",
+    "subtaskdetails": [],
+    /*"subtaskdetails": [{
+      "taskid": "1",
+      "title": "Submitted to CIbSE 2013.",
+      "assignee": "None",
+      "completiondate": "2012-20-12",
+      "assignedtome": 0
+    }, {
+      ...
+      ...
+      ...
+    }],*/
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "%{title}",
+    "type": "0"
+  }
+}
+
+---
+
+[short_description:string]
+
+[pub_date:string]
+
+[body:md]
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+
