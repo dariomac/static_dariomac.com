@@ -39,9 +39,9 @@
 
 ---
 
-[short_description:string]
-
 [pub_date:string]
+
+[short_description:string]
 
 [body:md]
 
