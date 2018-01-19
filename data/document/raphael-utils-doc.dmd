@@ -1,0 +1,115 @@
+{
+  "title": "Raphaël Utilities",
+  "date": "2018-01-14",
+  "layout": "document",
+  "has_code": true,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "I've made/adapted this library to import SVG directly from file and scale.",
+    "datebox": "2013-03-14",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/raphael-utils-doc",
+    "position": "20130314",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Raphaël Utilities",
+    "type":"Document"
+  }
+}
+
+---
+
+[pub_date:string]
+2013-03-14 05:30
+
+[short_description:string]
+I've made/adapted this library to import SVG directly from file and scale.
+
+[body:md]
+I've made/adapted this library because I was looking for an automatic way to convert SVG tag elements to [Raphaël](http://raphaeljs.com/ "Raphaël (JavaScript library)") primitives to draw elements. All of the converters that are out there works in this way: you paste SVG tags into some textarea, clicks in convert and then you get all the javascript-raphaël code need it to build the SVG image. If you only need to display a [SVG file](http://www.w3.org/Graphics/SVG/ "Scalable Vector Graphics") (compatible with non-SVG browsers), this converters are for you.
+
+But, what about parsing the file in real time, client-side, reading the SVG directly from the file? Well, I took [Jonas Olmstead version](https://github.com/sanojian/raphael-svg-import) of his SVG importer and made many changes to it in order to fit all my different scenarios.
+
+This is the template that I use in many of my SVG projects as you can see in [demo1](/assets/map01.html), [demo2](/assets/map02.html) and [demo3](/assets/map03.html).
+
+<pre class="brush: javascript; toolbar: false;">
+$(function() {
+    var paper;
+    jQuery.ajax({
+        type: 'GET',
+        url: 'picture.xml', //this is the svg file loaded as xml
+        dataType: 'xml',
+        success: function(svgXML) {
+            var svg = svgXML.getElementsByTagName('svg')[0];
+            var width = svg.getAttribute('width'), height = svg.getAttribute('height');
+            //'board' is the id of the SVG container (div in this case)
+            paper = ScaleRaphael('board', width, height); //This create a scalable svg (changeSize function can be used as you see in next line)
+            //Tricky way to adjust picture size to fill container width
+            $('#board').css('width', '100%');
+            paper.changeSize($('#board').width(), $('#board').width(), false, true);
+            paper.importSVG(svg, {
+                path: {
+                    fill: '#fff'
+                }
+            });
+        }
+    });
+});
+</pre>
+
+I've added the following functions to this library so it can be more useful:
+
+<style>
+    .codeUl > li {
+        padding-top: 10px;
+    }
+</style>
+
+*   You can change rendered SVG size in runtime (thx [ScaleRaphaël](http://www.shapevent.com/scaleraphael/))
+    <pre class="brush: javascript; toolbar: false;">
+        function resizePaper(){
+            var win = $(this);
+            paper.changeSize($('#board').width(), $('#board').width(), false, true);
+        }
+        $(window).resize(resizePaper);
+    </pre>
+*   Multiple event bindings to Raphaël objects (mostly to handle the case of mobile support).
+
+    <pre class="brush: javascript; toolbar: false;">
+        paper.bindEvents(svgCity, 'mouseover,touchstart', function(el){
+            this.attr({'fill': '#E0301E'});
+        });
+    </pre>
+*   moveScaledTo is a Raphael canvas extension to move a shape and scale it too.
+    <pre class="brush: javascript; toolbar: false;">
+        paper.moveScaledTo(elShape, newX, newY, 1.5); //scale 1.5 times
+    </pre>
+*   moveTo is a Raphael canvas extension to move a shape (keeping the same scale).
+    <pre class="brush: javascript; toolbar: false;">
+        paper.moveTo(elShape, newX, newY);
+    </pre>
+*   getLikeId is a Raphael canvas extension to returns you element by its internal ID (using like instead of equals as getById).
+    <pre class="brush: javascript; toolbar: false;">
+        paper.getLikeId(someIdOrPartOfIt);
+    </pre>
+*   chrome is a Raphael canvas extension to fix small issue with texts in chrome.
+    <pre class="brush: javascript; toolbar: false;">
+        paper.chrome();
+    </pre>
+*   beforeFn and afterFn events to be executed in each shape (more on [demo3](/assets-cv/documents/raphael-utils/map03.html)).
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+
