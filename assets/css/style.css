@@ -935,9 +935,13 @@ ol {
 	.document li {
 		font-size: 14px;
 	}
-	.document .reference {
+	.document blockquote p {
 		text-align: left;
 		font-size: 12px;
+	}
+
+	.document blockquote {
+		margin-left: 0px;
 	}
 
 	/* Essays style { */

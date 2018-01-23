@@ -1,0 +1,229 @@
+{
+  "title": "Sprint backlog changes and one-week sprint as temporal solution",
+  "date": "2018-01-22",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "One-week scrum sprint evaluation for prevent sprint backlog changes during sprint",
+    "datebox": "2014-04-07",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/sprint-backlog-changes-and-one-week-sprint-as-temporal-solution",
+    "position": "20140407",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "One-week scrum sprint evaluation for prevent sprint backlog changes during sprint",
+    "type":"Document"
+  }
+}
+
+---
+
+[pub_date:string]
+2014-04-07
+
+[short_description:string]
+One-week scrum sprint evaluation for prevent sprint backlog changes during sprint
+
+[body:md]
+There are some cases where ideal or recommended practices are not what a team needs. Let me explain this a bit further. Imagine a scrum team that has worked for several months with two-weeks sprints. According to the literature and the opinion of many experienced authors, this sprint length is the ideal [\[1\]]. Now, what happens to this team if the client, for reasonable business causes, slow down the rhythm of story generation? What happens with this team if they find themselves without the number of stories needed to fill the next sprint? What if this team decided to start the next sprint anyway and, once the client start again to write down stories, add them to the current sprint backlog?
+
+Although the sprint backlog change during the sprint should be resisted, the whole point of scrum is to allow you to adapt to the situation [\[2\]], so this was taken as an one-time solution. Anyway, the scrum master and the managers have to start to think about a more long-time solution if the situation repeats again in a following sprint. Now, one of the managers suggested that if the team makes the sprint shorter (one week sprint), then the new stories could being added to the next sprint and current sprint backlog will keep unchanged. Although this idea sounds promising, we decided to make a little research before making the decision.
+
+About the sprint backlog change, we have found that others professionals have done the same questions as us and have reached to similar thoughts about this. The sprint backlog change (during the sprint) have to be exceptional, and should be taken as a learning moment for the team. As Andrej Ruckij said, this is a common problem for teams who are new to agile and it's ok to reduce the length of a the sprint [\[3\]]. About the one week sprint we have found the following pros and cons.
+
+Pros:
+
+*   Fast turnaround time. Worst case, a new idea has to wait just a week to start development and a week after that for the first product output. That first week will fly by just trying to flesh out the idea and confirm its prioritization. Most of the time you'll have scant days or hours to plan an idea before the next sprint starts.
+*   Ideal for early-stage startups. The fast iteration is exactly what you need to turbocharge your learning cycle when looking for product-market fit.
+*   The energy is high because the deadline is always this Friday. Every week is an end-of-sprint rush to the finish line and that is fun.
+*   Scrum team members are less prone to fall into the procrastination trap.
+
+Cons:
+
+*   Hasty planning. You won't have time for several customer interviews with mockups and feedback before going to code. The feel of one-week sprints is a frenzied “near realtime".
+*   What roadmap? When your horizon is a week don't even bother looking out a year. It's infinity away.
+*   Story chunking. Every story should ship code by the end of the sprint. But it can be awkward to chop up large projects into chunks that are small enough to fit into a week.
+*   one-week sprint still needs estimation, tasking, demo, etc. Relative to the size of the sprint those fixed time costs will now be high so they have to get rushed.
+
+Also, we have found the following table which compares one to four weeks sprint lengths showing several challenges for each one [\[4\]].
+
+#### Sprint length comparison
+
+<table class="table_blog" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr>
+    <th>
+      Challenges
+    </th>
+    <th>
+      1 week
+    </th>
+    <th>
+      2 weeks
+    </th>
+    <th>
+      3 weeks
+    </th>
+    <th>
+      4 weeks
+    </th>
+  </tr>
+  <tr>
+    <td>
+      In a four-month project, "ceremonial days" for sprint planning, review and retrospective
+    </td>
+    <td>
+      32 days
+    </td>
+    <td>
+      16 days
+    </td>
+    <td>
+      11 days
+    </td>
+    <td>
+      8 days
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Impact on other team members when a member fails absent in the middle of the sprint - length of the "endurance test"
+    </td>
+    <td>
+      A couple of days
+    </td>
+    <td>
+      Several days
+    </td>
+    <td>
+      More than a week
+    </td>
+    <td>
+      A couple of weeks
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Unbroken thinking time, allowing for the team to address challenges as the arise
+    </td>
+    <td>
+      3 days
+    </td>
+    <td>
+      7 days
+    </td>
+    <td>
+      12 days
+    </td>
+    <td>
+      16 days
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Likelihood of falling into the "procrastination trap"
+    </td>
+    <td>
+      None
+    </td>
+    <td>
+      Low
+    </td>
+    <td>
+      Medium
+    </td>
+    <td>
+      High
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Adaptation to uncertainty in story creation
+    </td>
+    <td>
+      Many stories cross sprint boundary
+    </td>
+    <td>
+      Some stories cross sprint boundary
+    </td>
+    <td>
+      Few stories cross sprint boundary
+    </td>
+    <td>
+      Rare for stories cross sprint boundary
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Application feedback
+    </td>
+    <td>
+      Best
+    </td>
+    <td>
+      Better
+    </td>
+    <td>
+      Good
+    </td>
+    <td>
+      Fair
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Process improvement cycle
+    </td>
+    <td>
+      Fastest
+    </td>
+    <td>
+      Fast
+    </td>
+    <td>
+      Frequent
+    </td>
+    <td>
+      Slow
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+Although this is not a systematic research about the topic, it should be taken as a better approach than making decisions only guided by guts. In later posts we will be telling you the results of working with one week sprint and maybe the results of a more detailed research.
+
+[\[1\]]: http://goodagile.com/scrumprimer/scrumprimer.pdf "Deemer, P., Benefield, G., & Larman, C. (2010). The Scrum Primer. (J. Sutherland, Ed.) Development, 1285931497(1.2), 1-22. The Scrum Training Institute."
+[\[2\]]: http://programmers.stackexchange.com/a/149892 "Loki Astari. (2012). Confused about modifying the sprint backlog during a sprint."
+[\[3\]]: https://groups.google.com/forum/#!topic/scrumalliance/nw7GJ_UPkxs "ScrumAlliance forum at groups.google.com. (2010). Can Sprint backlog change during Sprint?"
+[\[4\]]: http://www.cognizant.com/InsightsWhitepapers/Agile-Scrum-Sprint-Length-Whats-Right-for-You.pdf "Haughton, B. (2011). Cognizant. Agile Scrum Sprint Length: What's Right for You? Cognizant 20-20 Insights."
+
+> \[1\] Deemer, P., Benefield, G., & Larman, C. (2010). The Scrum Primer. (J. Sutherland, Ed.) Development, 1285931497(1.2), 1-22. The Scrum Training Institute. Retrieved from [http://goodagile.com/scrumprimer/scrumprimer.pdf](http://goodagile.com/scrumprimer/scrumprimer.pdf)
+
+> \[2\] Loki Astari. (2012). Confused about modifying the sprint backlog during a sprint. [http://programmers.stackexchange.com/a/149892](http://programmers.stackexchange.com/a/149892)
+
+> \[3\] ScrumAlliance forum at groups.google.com. (2010). Can Sprint backlog change during Sprint? [https://groups.google.com/forum/#!topic/scrumalliance/nw7GJ_UPkxs](https://groups.google.com/forum/#!topic/scrumalliance/nw7GJ_UPkxs)
+
+> \[4\] Haughton, B. (2011). Cognizant. Agile Scrum Sprint Length: What's Right for You? Cognizant 20-20 Insights. Retrieved from [http://www.cognizant.com/InsightsWhitepapers/Agile-Scrum-Sprint-Length-Whats-Right-for-You.pdf](http://www.cognizant.com/InsightsWhitepapers/Agile-Scrum-Sprint-Length-Whats-Right-for-You.pdf)
+
+[acknowledgments:md]
+[This post](http://vairix.com/blog/sprint-backlog-changes-and-one-week-sprint-as-temporal-solution) was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Apr 7, 2014_: Original Publication on vairix.com
+
+_Apr 13, 2014_:  Original Publication on dariomac.com
+
+_Apr 14, 2014_: I've found this article that is related with the research topic (although I didn't find earlier maybe because it wasn't a systematic review). [http://agilepainrelief.com/notesfromatooluser/2013/07/choosing-sprint-length-shorter-trumps-longer.html](http://agilepainrelief.com/notesfromatooluser/2013/07/choosing-sprint-length-shorter-trumps-longer.html)
+
