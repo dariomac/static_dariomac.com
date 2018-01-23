@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Darío Macchi | Software Engineering and Strandbeests</title>
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Darío Macchi" />
+<meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
+<meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
+
+<link rel="dns-prefetch" href="//dariomac.com"/>
+<link rel="dns-prefetch" href="//translate.googleapis.com"/>
+<link rel="dns-prefetch" href="//gstatic.com"/>
+<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
+<link rel="dns-prefetch" href="//google-analytics.com"/>
+<link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+<link rel="dns-prefetch" href="//translate.google.com"/>
+<link rel="dns-prefetch" href="//google.com"/>
+<link rel="dns-prefetch" href="//c.statcounter.com"/>
+<link rel="dns-prefetch" href="//statcounter.com"/>
+<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+<link rel="dns-prefetch" href="//yui.yahooapis.com"/>
+
+<link rel="stylesheet" type="text/css" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+<!--[if lt IE 8]>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style_ie.css">
+  <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+<![endif]-->
+
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="/assets/vendor/jquery/jquery.min.js"></script>
+<!--<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28220054-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  function afterContentDraw(){
+    setTimeout(function(){
+      var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+      aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+      $.each(aList,
+        function(k, v){
+          var $v = $(v);
+
+          $v.click(function(){
+            _gaq.push(['_trackPageview', $v.attr('href')]);
+          });
+            //$v.css('color','red');
+          });
+
+      preloadImages($('a.fancybox'));
+    }, 1000);
+  }
+
+  function preloadImages(array) {
+    if (!preloadImages.list) {
+      preloadImages.list = [];
+    }
+    for (var i = 0; i < array.length; i++) {
+      var img = new Image();
+      img.src = $(array[i]).attr('href');
+      preloadImages.list.push(img);
+    }
+  }
+
+  function loadCSS( href, before, media ){
+    // Arguments explained:
+    // `href` [REQUIRED] is the URL for your CSS file.
+    // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+      // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+    // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+    var doc = this.document;
+    var ss = doc.createElement( "link" );
+    var newMedia = media || "all";
+    var ref;
+    if( before ){
+      ref = before;
+    }
+    else {
+      var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+      ref = refs[ refs.length - 1];
+    }
+
+    var sheets = doc.styleSheets;
+    ss.rel = "stylesheet";
+    ss.href = href;
+    // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+    ss.media = "only x";
+
+    // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+    function ready( cb ){
+      if( doc.body ){
+        return cb();
+      }
+      setTimeout(function(){
+        ready( cb );
+      });
+    }
+    // Inject link
+      // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+      // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+    ready( function(){
+      ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+    });
+    // A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+    var onloadcssdefined = function( cb ){
+      var resolvedHref = ss.href;
+      var i = sheets.length;
+      while( i-- ){
+        if( sheets[ i ].href === resolvedHref ){
+          return cb();
+        }
+      }
+      setTimeout(function() {
+        onloadcssdefined( cb );
+      });
+    };
+
+    // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+    if( ss.addEventListener ){
+      ss.addEventListener( "load", function(){
+        this.media = newMedia;
+      });
+    }
+    ss.onloadcssdefined = onloadcssdefined;
+    onloadcssdefined(function() {
+      if( ss.media !== newMedia ){
+        ss.media = newMedia;
+      }
+    });
+    return ss;
+  };
+</script>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+  var sc_project=9186547;
+  var sc_invisible=1;
+  var sc_security="dce954c9";
+  var scJsHost = (("https:" == document.location.protocol) ?
+    "https://secure." : "http://www.");
+  document.write("<sc"+"ript type='text/javascript' src='" +
+    scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript>
+  <div class="statcounter">
+    <a title="web analytics" href="http://statcounter.com/" target="_blank">
+      <img class="statcounter" src="http://c.statcounter.com/9186547/0/dce954c9/1/" alt="web analytics"></a>
+  </div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+<script type="text/javascript">
+  var baseUrl = "http://www.dariomac.com";
+</script>
+
+<link rel="shortcut icon" href="/assets/favicon.ico" />
+
+<link href="https://plus.google.com/101333970265292795022" rel="publisher" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="/assets/images/d.png">
+<meta property="og:image:type" content="image/png">
+
+
+    <script type="text/javascript" src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        //board_dimensions.init(); //draw_kanban_board(boardArray, false, tasksArray, false);
+        afterContentDraw();
+
+        $(".fancybox").fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none'
+        });
+      });
+    </script>
+
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div class="wrapper">
+      <div class="header">
+        <div class="center"></div>
+      </div>
+      <div class="board_view">
+        <div class="clearfix top_menu" style="border-bottom: #D8D7D7 1px solid">
+  <div style="float:right; padding-top: 8px; padding-left: 15px;">
+      <a class="btn_feedback" title="Contact me" href="/messages/new">
+      <strong>Contact me<span>&nbsp;</span></strong>
+      </a>
+  </div>
+  <div class="submenu">
+    <div class="orange_box" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <a class="url" href="/about-me">
+          <div class="username">
+              <span>
+                <strong>
+                  <span itemprop="name">Darío</span> <span itemprop="familyName">Macchi</span>
+                </strong>
+              </span>
+          </div>
+      </a>
+      <ul>
+        <li id="link_manage_team">
+          <strong>
+            <span itemscope itemtype="http://schema.org/City">
+              <a target="_blank" href="http://maps.google.com/maps?q=montevideo+city+uruguay&hl=en&sll=-32.522779,-55.765835&sspn=5.325828,9.876709&t=v&hnear=Montevideo,+Montevideo+Dept,+Uruguay&z=11" itemprop="url">
+                <span itemprop="name">
+                  Montevideo</span>,
+              </a>
+            </span>
+            <span itemprop="nationality" itemscope itemtype="http://schema.org/Country">
+              <span itemprop="name">
+                <a href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&ie=UTF-8&hq=&hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&gl=uy&ei=KiKjU6fpE-HNsQSlqYGoCg&ved=0CBsQ8gEwAA" itemprop="url">
+                  Uruguay
+                </a>
+              </span>
+            </span>
+          </strong>
+        </li>
+        <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
+      </ul>
+    </div>
+  </div>
+  <a href="/">
+    <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+  </a>
+
+  <div class="breadcrumb">
+    <div class="breadcrumb-items" itemprop="breadcrumb">
+      <strong><a href="/">Home ( KanbanCV ) / </a></strong>
+        <strong></strong>
+      <div style="padding-left: 20px; display: inline;">
+        <div id="new_essay" style="display: inline; color:red;">
+          <span class="transition">
+            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+            <% last_essay = essays_by_date.first %>
+            <%= raw "<a href='#{last_essay[:full_path]}' style='text-decoration: underline;'>#{last_essay[:label]}</a>" %>
+          </span>
+          |
+          <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div id="board_container">
+          <div class="content document">
+          <h1>Software Engineering and Strandbeests</h1>
+          <div>
+            <p class="date">2013-08-07</p>
+          </div>
+          <div class="description">How to expose students to the multidimensional nature of Software Engineering processes? May be making an analogy with the Strandbeests, an ingenious blending of art and engineering.</div>
+          <p><img src="/assets/doc_strandbeest.jpg#center" alt="Strandbeest featured" /></p>
+<p>As a Software Engineering (SE) teacher I've to think about the planning of the course. Many times, this lead to ask myself how to make young practitioners experience a genuine software development process and appreciate the relations and tradeoffs between all the processes of SE. <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=4908981&amp;url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F13%2F5191288%2F04908981.pdf%3Farnumber%3D4908981">SE is a multidimensional field</a> that involve many overlapping and complementary processes from many <a href="https://en.wikipedia.org/wiki/Software_engineering#Subdisciplines">subdisciplines</a>.</p>
+<p><a href="http://wordnetweb.princeton.edu/perl/webwn?s=multidimensional">Adjective</a>: (adj) multidimensional (having or involving or marked by several dimensions or aspects) <em>&quot;multidimensional problems&quot;; &quot;a multidimensional proposition&quot;; &quot;a multidimensional personality&quot;</em></p>
+<p>Due to time and other resource limitations, most of the SE courses are organized in a linear way, having to make a selection and prioritization of topics following some arbitrary order. This artificial order may lead the student to think that in real projects those processes must be executed following that order, perhaps influenced by their algorithmic and mathematical backgrounds. Although there are good courses for specific SE topics, an advanced summary course that relates these topics to one other <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=4908981&amp;url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F13%2F5191288%2F04908981.pdf%3Farnumber%3D4908981">is still missing</a>.</p>
+<p>In short, the problem that we face as SE teachers is <strong>how to teach each SE subdiscipline, their processes and the multidimensional relationships between them in a linear way like in a university course</strong>.</p>
+<p>While I was thinking about this problem, I remembered this photo of me with a Strandbeest and the analogy between SE and <a href="http://strandbeest.com/">&quot;this new forms of life&quot;</a> came to my head.</p>
+<p><img src="/assets/doc_strandebeest1.jpg#center" alt="Me with a Strandbeest" /> <span class="credit">Strandbeest on ArtFutura 2012, Montevideo, Dec 2012</span></p>
+<h2>The Strandbeests</h2>
+<p><a href="http://en.wikipedia.org/wiki/Theo_Jansen">Theo Jansen</a> has been creating <em>Strandbeest</em> (Dutch: <em>strand</em>=beach; <em>beest</em>=beast), wind-walking examples of <a href="http://en.wikipedia.org/wiki/Artificial_life">artificial life</a>, since 1990. What was at first a rudimentary breed has slowly evolved into a generation of machines that are able to react to their environment: &quot;over time, these skeletons have become increasingly better at surviving the <a href="http://en.wikipedia.org/wiki/Weather">elements</a> such as storms and water, and eventually I want to put these animals out in herds on the beaches, so they will live their own lives.&quot;</p>
+<p>Constructed as intricate assemblages of <a href="http://www.theguardian.com/science/grrlscientist/2012/mar/24/1">PVC pipes, wood, zip ties, rubber rings, recycled plastic bottles</a> and wing-like sails, Jansen's creations are constantly being improved and have become excellently adapted to their sandy beach environment. They are an <a href="http://redtreetimes.com/tag/strandbeest/">ingenious blending of art and engineering</a>.</p>
+<iframe src="http://www.youtube.com/embed/3_eY22R0TWE" style="display: block; margin-left: auto; margin-right: auto;" width="420" height="315" frameborder="0">
+  </iframe>
+<h2>Software Engineering</h2>
+<p>Software engineering (SE) is the application of a systematic, disciplined, quantifiable approach to the design, development, operation, and maintenance of <a href="https://en.wikipedia.org/wiki/Software">software</a>, and the study of these approaches; that is, the application of <a href="https://en.wikipedia.org/wiki/Engineering">engineering</a> to software.</p>
+<p>In order to consistently develop software well engineered, the development must be conducted in an orderly process going from conception phase through to the delivery of a final software product. This process connects all the SE subdisciplines through their own processes, adding more complexity to the whole system.</p>
+<h2>The analogy</h2>
+<p>Strandbeest and SE processes have more in common than meets the eye.</p>
+<h3>Both are complex, multidimensional systems that initially seem to behave chaotically</h3>
+<p>Where would you start if you want to build a Strandbeest? Maybe you can start making some of the leg triangles connecting the rods with the joints; after making all the legs, they will be attached to the crankshaft. But why don't you start to put the crankshaft in the center (it seem to be a core part of the beast) and then attach every piece to it, joining this pieces by their joints?</p>
+<p>Now think about SE subdiscipline processes... Which one will be the first to be teached? Maybe you can start with Software Requirement processes because they represent a logical first step to build software, and then continue with the other processes. But why don't you start with Software Quality processes, that traverse all the SE subdisciplines, and then continue with some of the main processes implicated in the software development itself?</p>
+<p>For me, the answer to this question is that no matter where you start to teach (or build), you have to expose how the whole system works if you want your students pay attention to the small details of every small component. You have to show the relationships, how each part articulate with the other and how each one trusts in the designed behaviour of the other. As teachers we must develop cross subdiscipline activities and excercises in order to expose the relationships between their processes.</p>
+<h3>Internally, they are made of simple components that can be analyzed individually</h3>
+<p>The Strandbeest, no matter it size, can be divided into small and simple parts. Once you have that small part you can analyze how to join with the next sibling understanding how they work together.</p>
+<p><img src="/assets/doc_strandebeest2.jpg#center" alt="Strandbeest piece (plastic)" /></p>
+<p>You can do the same with the SE discipline. No matter how complex it appear to be, you can divide it in subdisciplines, each one with their own processes. We must teach a this granular level but we can't forget that this small parts work together with others and this collaborative work is the key to the success of the whole system.</p>
+<h3>The whole system works as expected if all components do their job in the right moment</h3>
+<p>Coordination. The Strandbeest is collosal example of it. Thanks to a supple coordination of 12 identical legs, the body of the machine moves smoothly forward as though the legs were simply complicated wheels. For every foot that lifts off the ground there's another that touches back down, and the flurry of trading steps produces a centipede's gait that's simultaneously enchanting and intimidating.</p>
+<p>The same happens with SE!. It is based on many <a href="http://dl.acm.org/citation.cfm?id=338577">interdependent processes</a> involving many interacting stakeholders with conflicting interests and points of view. The management of dependencies between stakeholders activities corresponds to the coordination process.</p>
+<p><img src="/assets/doc_strandebeest3.gif#center" alt="Strandbeest movement animation" /></p>
+<h3>You can't describe how the system works as a sequence of simple steps</h3>
+<p>As I said before, in both cases that is completely true. Maybe this is not too bad, because it push you to think about how to explain the complexity of this systems in easier ways. Moreover, it push you away of the &quot;kitchen recipes&quot; courses and ask you to teach more about the scientific basis of each piece what make them interact gently. This is the way that will let your students ask you, and to themselves, better ways to accomplish the same using better (or simpler) processes.</p>
+<h3>Both are blends of art and engineering</h3>
+<p>Finally, many discussions about if SE is an art or an engineering field have taken place. We don't want to enter in that discussion, but in the sake of continue with our comparison, maybe you can't say that Strandbeest are only art. You only have to think about all the math and physic concepts that are around each of these beasts.</p>
+<p>Jansen says: &quot;The walls between art and engineering exist only in our minds.&quot;</p>
+
+            <h2 id="Acknowledgments">Acknowledgments</h2>
+              <p>Over the last years I've picked up and stolen many good ideas from many good people. Most of these are lost in the dimness of my memory. But I do remember that my photograph with the Strandbeest was taken by my friend <a href="http://www.linkedin.com/profile/view?id=170119427&amp;locale=es_ES&amp;trk=tyah">Alejandro</a> (Lalo) on the <a href="https://www.facebook.com/ArtfuturaMontevideo">ArtFutura 2012</a> held on Montevideo.</p>
+
+            <br>
+            <h2>Significant Revisions</h2>
+            <p><em>Aug 7, 2013</em>: Original Publication on dariomac.com</p>
+
+            <br>
+
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" style="text-align:center; width:100%;">
+  <div style="text-align:center; width:100%">
+  <ul>
+    <li style="margin-top: 0px;">
+      <a href="javascript:void(0);" onclick="window.open('http://www.copyscape.com/?q=' + escape(window.location) + '&src=front'); return false;">
+        <IMG src="/assets/images/cs-wh-3d-234x16.gif" alt="Protected by Copyscape Duplicate Content Detector" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." width="234" height="16" border="0">
+      </A>
+    </li>
+    <li><a style="padding-top:1px" href="/kanbancv">KanbanCV</a> © 2011-<%= Time.now.year %> <a style="padding-top:1px" href="/sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap</a></li>
+    <li>
+      <a href="http://uy.linkedin.com/in/dariomac" style="text-decoration:none;" target="_blank">
+        <img src="/assets/images/linkedin.png" width="17" height="16" alt="View Darío Macchi's LinkedIn profile" border="0" />
+      </a>
+    </li>
+    <li>
+      <a rel="author" href="https://plus.google.com/101333970265292795022?prsrc=3" style="text-decoration:none;" target="_blank">
+        <img src="/assets/images/gplus-16.png" alt="View Darío Macchi's Google+ profile" width="15" height="15" style="border:0;"/>
+      </a>
+    </li>
+    <li>
+      <a href="http://twitter.com/_dariomac" target="_blank">
+        <img src="/assets//images/twitter-16.png" width="15" height="15" alt="View my twitter"/>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.researchgate.net/profile/Dario_Macchi/" target="_blank">
+        <img src="/assets/images/researchgate.png" width="15" height="15" alt="View my ResearchGate profile"/>
+      </a>
+    </li>
+    <li style="padding-right: 2px;">
+      <a href="http://www.diigo.com/user/Dariomac" target="_blank">
+        <img src="/assets/images/diigo.png" width="41" height="15" alt="View my Diigo bookmarks library"/>
+      </a>
+    </li>
+    <li style="margin-top: 0px;">
+      <div class="board_filter">
+      <span>Filter: </span>
+      <input id="filter" type="text" />
+      </div>
+    </li>
+    <li style="margin-top: 0px">
+      <a href="http://humanstxt.org/humans/dario-macchi/" target="_black">
+        <img src="/assets/images/humanstxt-transparent-color.png" width="84" height="15" />
+      </a>
+    </li>
+    <li>Powered by <a style="padding-top:1px" href="http://github.com/comfy/comfortable-mexican-sofa">Comfy</a></li>
+  </ul>
+  </div>
+</div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      multilanguagePage: true,
+      gaTrack: true,
+      gaId: 'UA-28220054-1',
+      floatPosition: google.translate.TranslateElement.FloatPosition.BOTTOM_LEFT
+    });
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  </body>
+</html>

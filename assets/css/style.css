@@ -814,10 +814,13 @@ ol {
 	}
 
 	/* Detail main content style { */
+		#board_container img[src*="#center"],
+		#board_container iframe[src*="#center"],
 		.details_cell .details_content img[src*="#center"],
 		.details_cell .details_content iframe[src*="#center"] {
 		    display: block;
 		    margin: 0 auto;
+		    max-width: 500px;
 		}
 
 		.details_cell .details_content img[src*="#right"] {
@@ -974,12 +977,14 @@ h3 > a:hover{
 }
 
 .credit {
-	font-size: .9em;
+	font-size: .8em;
 	line-height: 1.223em;
-	float: right;
 	color: #909090;
-	margin-bottom: 3px;
-  	clear: both;
+  clear: both;
+  margin: 0 auto;
+  display: block;
+  width: 500px;
+  text-align: right;
 }
 
 .hsplitter {
