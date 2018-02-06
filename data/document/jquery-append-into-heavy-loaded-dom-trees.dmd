@@ -1,0 +1,68 @@
+{
+  "title": "JQuery append into heavy loaded DOM trees",
+  "date": "2018-05-02",
+  "layout": "document",
+  "has_code": true,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Describe odd behaviour when you append DOM element into heavy loaded DOM tree",
+    "datebox": "2014-04-14",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/jquery-append-into-heavy-loaded-dom-trees",
+    "position": "20140414",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "JQuery append into heavy loaded DOM trees",
+    "type":"Document"
+  }
+}
+
+---
+
+[pub_date:string]
+2014-04-14
+
+[short_description:string]
+Describe odd behaviour when you append DOM element into heavy loaded DOM tree
+
+[body:md]
+Last week we have found an odd behaviour in some website that drove us crazy for a while. The bug was related with the append of jQuery that is used to insert content to the end of the matched elements and the height method used to get the computed height of an element. Look at this code:
+
+<pre class="brush: javascript; toolbar: false;">
+//divSong is created with jQuery, added to the (DOM) in the next line
+$('.song-list .songs').append(divSong);
+currentPlaying.css('height', divSong.height());
+</pre>
+
+This piece of code normally works without any problem, or should work, because In our case randomly the computed height of the dynamic div (divSong) returns 0px. It seems like the append sometimes behave asynchronously, so when we ask for the divs height it is still 0px due to the fact that it hasn't been added to the DOM tree yet. To test this we code the following workaround:
+
+<pre class="brush: javascript; toolbar: false;">
+//divSong is a div created using jQuery added to the DOM in the next line
+$('.song-list .songs').append(divSong);
+// Although JS is single thread, setTimeout lets the browser re-render the page after running the
+// height code.
+setTimeout(function(){
+    currentPlaying.css('height', divSong.height());
+}, 0);
+</pre>
+
+Because in Vairix we have an “always look for evidence" culture we made a search looking for something that supports (or not) this theory. We have found that many people reports similar situations, although most of them were related with other problems like asynchronous ajax callbacks or other environmental errors. Besides those false positive results, we found two questions in StackOverflow ([link1](http://www.google.com/url?q=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F5017923%2Fdiv-width-immediately-after-append-is-calculating-wrong&sa=D&sntz=1&usg=AFQjCNHCjQ70kysaH3Bu04VtKaQsOJ41Fw), [link2](http://www.google.com/url?q=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F6132141%2Fjquery-why-does-width-sometimes-return-0-after-inserting-elements-with-html&sa=D&sntz=1&usg=AFQjCNHelN_XY-QE0yf0KbANE4WI0UTt6Q)) that describe the same situation that we have. Both answers lead to the same solution as we had found (we rocks!).
+
+Remember: this solutions works, but it is not due to the fact of running in a different thread (JavaScript runs in a single thread); it is because setTimeout let the browser continue with the next execution block in the queue that is the html render one.
+
+[acknowledgments:md]
+[This post](http://www.vairix.com/blog/jquery-append-into-heavy-loaded-dom-trees) was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Apr 14, 2014_: Original Publication on vairix.com and dariomac.com
