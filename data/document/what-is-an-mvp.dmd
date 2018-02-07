@@ -1,0 +1,77 @@
+{
+  "title": "What is an MVP?",
+  "date": "2018-02-05",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "MVP means Minimum Viable Product and it’s a core component of Lean Startup methodology",
+    "datebox": "2014-05-20",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/what-is-an-mvp",
+    "position": "20140520",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "What is an MVP?",
+    "type":"Document"
+  }
+}
+
+---
+
+[pub_date:string]
+2014-05-20
+
+[short_description:string]
+MVP means Minimum Viable Product and it’s a core component of Lean Startup methodology
+
+[body:md]
+MVP means Minimum Viable Product and it's a core component of [Lean Startup methodology](http://theleanstartup.com/principles) [\[1\]]. An MVP is not a minimal product [\[2\]]. The technique involves the development of a product or website with the sufficient features to satisfy [early adopters](http://en.wikipedia.org/wiki/Early_adopter).This subset of possible customers are thought to be more forgiving, more likely to give feedback, and able to grasp a product vision from an early prototype or marketing information [\[3\]].
+
+The final, complete set of features is only designed and developed after considering feedback from the product's initial users [\[4\]].
+
+An MVP has three key characteristics:
+
+*   It has enough value that people are willing to use it or buy it initially
+*   It demonstrates enough future benefit to retain early adopters
+*   It provides a feedback loop to guide future development
+
+Purposes
+
+*   Be able to test a product hypothesis with minimal resources
+*   Accelerate learning
+*   Reduce wasted engineering hours
+*   Get the product to early customers as soon as possible
+
+[\[1\]]: http://theleanstartup.com/principles "The lean startup methodology."
+[\[2\]]: http://radoff.com/blog/2010/05/04/minimum-viable-product-rant "Radoff, Jon, 'Minimum Viable Product Rant', May 4, 2010."
+[\[3\]]: http://en.wikipedia.org/wiki/Minimum\_viable\_product "Wikipedia, Minimum viable product. 2014."
+[\[4\]]: http://www.techopedia.com/definition/27809/minimum-viable-product-mvp "Cory Janssen (2010-2014). Techopedia. Minimum Viable Product (MVP)."
+
+> \[1\] The lean startup methodology. [http://theleanstartup.com/principles](http://theleanstartup.com/principles)
+
+> \[2\] Radoff, Jon, "Minimum Viable Product Rant", May 4, 2010, [http://radoff.com/blog/2010/05/04/minimum-viable-product-rant/](http://radoff.com/blog/2010/05/04/minimum-viable-product-rant/)
+
+> \[3\] Wikipedia, Minimum viable product. 2014. [http://en.wikipedia.org/wiki/Minimum\_viable\_product](http://en.wikipedia.org/wiki/Minimum_viable_product)
+
+> \[4\] [Cory Janssen](http://www.techopedia.com/contributors/cory-janssen). (2010-2014). Techopedia. Minimum Viable Product (MVP). [http://www.techopedia.com/definition/27809/minimum-viable-product-mvp](http://www.techopedia.com/definition/27809/minimum-viable-product-mvp)
+
+[acknowledgments:md]
+[This post](http://www.vairix.com/blog/what-is-an-mvp) was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_May 20, 2014:_ Original Publication on vairix.com
+
+_Dec 9, 2014__:_ Original Publication on dariomac.com
+
