@@ -1,0 +1,59 @@
+{
+  "title": "Helping a startup in troubles to reach on time to an investors meeting",
+  "date": "2018-02-06",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "The title of this case study should be 'Pulling startup’s chestnuts out of the fire'... let us see why.",
+    "datebox": "2014-06-11",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/helping-a-startup-in-troubles-to-reach-on-time-to-an-investors-meeting",
+    "position": "20140611",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Helping a startup in troubles to reach on time to an investors meeting",
+    "type":"Document"
+  }
+}
+
+---
+
+[pub_date:string]
+2014-06-11
+
+[short_description:string]
+The title of this case study should be 'Pulling startup’s chestnuts out of the fire'... let us see why.
+
+[body:md]
+Thinking about the following story, the title of this case study should be "Pulling startup's chestnuts out of the fire"... let us see why.
+
+Couple of days ago a local web designer company called us since they have received very good references about our work.
+
+They were calling us (Thursday, 5pm) because they had designed a webpage for some startup, but the RoR developer hired by the startup didn't finish the work and disappeared. The real challenge is that the website needed to be shown to investors in a demo on next Friday (in less than 24 hours!). We took a moment to think about it, asked few more questions and then we jumped in. We started calming them, telling them that by the end of the next day their software would be up and running. After that Gastón and Alvaro, Vairix CEO & CTO , started to work together to reach that deadline.
+
+Immediately we asked for all the necessary access (git, servers, hosting) and after setting up the environment, we were in good shape to start solving the problem. 3 hours later (with the invaluable help of our team), we had the server running with a working version of the product. Obviously that it wasn't finished and many of the main functionalities were missing or were not working at all.
+
+Next day Alvaro and Gastón, helped from time to time by other developers, started to work on the buggy code and the missing functionalities. They get their hands dirty, adding and removing pieces of rails code so, slowly but firmly, every functionality started to work by the lunch time. The demo was done in the afternoon with excellent results getting very good feedbacks. Finally, we ended the day with a new client (a very grateful website owner) and a new company friend (the ones who called initially to us).
+
+This is an example of how seriously Vairix takes the commitment with startups (even in stressful situations) and how empathy builds strong and more loyal relationships.
+
+[acknowledgments:md]
+[This post](http://vairix.com/blog/helping-a-startup-in-troubles-to-reach-on-time-to-an-investors-meeting) was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Jun 11, 2014_: Original Publication on vairix.com
+
+_Dic 9, 2014_: Original Publication on dariomac.com
+
