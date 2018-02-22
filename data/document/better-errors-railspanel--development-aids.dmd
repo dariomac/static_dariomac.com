@@ -1,0 +1,99 @@
+{
+  "title": "Better Errors & RailsPanel: development aids",
+  "date": "2018-02-21",
+  "layout": "document",
+  "has_code": true,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Here we take a look at two tools to aid us in Ruby on Rails development process.",
+    "datebox": "2014-09-29",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/better-errors-railspanel--development-aids",
+    "position": "20140929",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Better Errors & RailsPanel: development aids",
+    "type":"Document"
+  }
+}
+
+---
+
+[pub_date:string]
+2014-09-29
+
+[short_description:string]
+Here we take a look at two tools to aid us in Ruby on Rails development process.
+
+[body:md]
+## Better Errors
+
+The default Rails error page is completely hideous and hurts to look at. [Better Errors](https://github.com/charliesome/better_errors) replaces the standard Rails error page with a much better and more useful error page.
+
+This is how the "Better Errors" error page looks:
+![Better Errors interface](/assets/essays_better_errors.png#center)
+
+It is clearly more visually appealing, but it also provides much more detailed debug information (also the error page page is even responsive!).
+
+Intalling the gem is very easy. You just have to add the following to your gemfile:
+
+<pre>
+group :development do
+  gem "better_errors"
+end
+</pre>
+
+Better errors has an optional dependency to another gem. If you add the [binding\_of\_caller](https://github.com/banister/binding_of_caller) gem to the gemfile then you could use Better Errors' **advanced features** (REPL, local/instance variable inspection, pretty stack frame names).
+
+If you are debugging a Rails API, AJAX, want to investigate a non-critical error like missing images, `better_errors` provides a page accessible via the url "/\_\_better\_errors" which contains the error page for the last error on the server. Another awesome part of `better_errors` is that it can open up files in your editor! Out-of-the-box it support textmate, vim, etc. but if you are like us and enjoy using Sublime Text, you have to download [sublime-handler](https://github.com/asuth/subl-handler). Then you have to configure an initializer for `better_errors` like this:
+
+<pre>
+BetterErrors.editor = :sublime if defined? BetterErrors
+</pre>
+
+Remember to add Better Errors gem inside a `:development` section. **Do NOT run better_errors in production, or on Internet facing hosts.**
+
+## RailsPanel
+
+[RailsPanel](https://github.com/dejan/rails_panel) is a Chrome extension for Rails development that will end your tailing of development.log. Have all information about your Rails app requests in the browser - in the Developer Tools panel. Provides insight to db/rendering/total times, parameter list, rendered views and more.
+
+![RailsPanel interface](/assets/essays_rails_panel.png#center)
+
+The installation is as simple as going to the [Chrome WebStore](https://chrome.google.com/webstore/detail/railspanel/gjpfobpafnhjhbajcjgccbbdofdckggg) and install RailsPanel extension from there. This is recommended way of installing extension, since it will auto-update on every new version. Then you have to add this to the gemfile:
+
+<pre>
+group :development do
+  gem 'meta_request'
+end
+</pre>
+
+You can even choose your editor on the extension options page: chrome://extensions. Following editors are supported:
+
+*   MacVim
+*   TextMate
+*   Sublime
+*   Emacs
+*   RubyMine
+
+## Better Errors & RailsPanel RailsCasts
+
+If you want to see both in action and learn a bit more about each of them, don't miss [this RailsCasts](http://railscasts.com/episodes/402-better-errors-railspanel)!
+
+[acknowledgments:md]
+[This post](http://www.vairix.com/blog/better-errors-railspanel-development-aids) was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Sep 29, 2014__:_ Original Publication on dariomac.com
+
+_Dic 10, 2014_: Original Publication on dariomac.com
