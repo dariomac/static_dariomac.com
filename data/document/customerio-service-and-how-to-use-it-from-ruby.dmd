@@ -1,0 +1,78 @@
+{
+  "title": "Customer.io service and how to use it from Ruby",
+  "date": "2018-02-25",
+  "layout": "document",
+  "has_code": true,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Customer.io is a SaaS which enables you to easily manage all the emails you send to your users.",
+    "datebox": "2014-11-13",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/customerio-service-and-how-to-use-it-from-ruby",
+    "position": "20141113",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Customer.io service and how to use it from Ruby",
+    "type":"Document"
+  }
+}
+
+---
+
+[pub_date:string]
+2014-11-13
+
+[short_description:string]
+Customer.io is a SaaS which enables you to easily manage all the emails you send to your users.
+
+[body:md]
+### What is Customer.io?
+
+[customer.io](http://customer.io/) is a SaaS which enables you to easily manage all the emails you send to your users: from your newsletters to transactionnal and behavioral emails.
+
+The concept is simple: you send to customer.io data about your users, it creates a custom userbase, on your customer.io dashboard, which you can segment in order to send the good emails to the good users at the good time.
+
+You can, for examples, decide to automatically send a welcome email to all new users, to send a reminder email for users who registered but didn't come back after 2 weeks or simply send a newsletter to specific users. We often hear that emails are dead (with mobile notification, social networks inbox etc...) but we can doubt it, emails are here to stay. Emailing is one of the most important communication channel to reach people. The startup fulfills the need of email management with a more “personalized/CRM" approach than classical emailing tools.
+
+### How to use it from Rails?
+
+The first way is using the [Javascript Snippet](http://customer.io/docs/javascript-quick-start.html). This is the easiest way to start sending data to Customer.io. You copy and paste your Customer.io tracking code in to the footer of your website. Then you identify logged in users and any important information about them. You'll then be able to email everyone who logs in to the website.
+
+The other way is using a client library or a gem in Ruby case. At VAIRIX we use [Customerio gem](https://github.com/customerio/customerio-ruby) as a client for the Customer.io [event API](https://app.customer.io/api/docs/index.html). To install it just add `gem 'customerio'` and execute `bundle`. Then you can identify your customers when they sign up for your app and any time their key information changes. This keeps Customer.io up to date with your customer information.
+
+<pre>
+customerio.identify(
+ :id =&gt; 5,
+ :email =&gt; "bob@example.com",
+ :created_at =&gt; customer.created_at.to_i,
+ :first_name =&gt; "Bob",
+ :plan =&gt; "basic"
+)
+</pre>
+
+Also, you can track custom events from your users allowing to more specifically target your users with automated emails.
+
+<pre>
+customerio.track(5, "purchase", :type =&gt; "socks", :price =&gt; "13.99")
+</pre>
+
+That said customer.io is a great SaaS with a well conceived product and which offer a lot of value when you start a website/app. You should definitively try it.
+
+[acknowledgments:md]
+[This post](http://vairix.com/blog/customer-io-service-and-how-to-use-it-from-ruby) was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Nov 13, 2014__:_ Original Publication on dariomac.com
+
+_Dic 10, 2014_: Original Publication on dariomac.com
