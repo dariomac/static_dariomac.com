@@ -1,0 +1,120 @@
+{
+  "title": "SwingImprover manual",
+  "date": "2018-02-28",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "archive_6",
+    "content": "The purpose of this annex is to guide the user through a series of software use cases, so the user can become familiar with the tool and its features prior to use of it.",
+    "datebox": "2008-11-13",
+    "extlink": null,
+    "laneid": "Me",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/swingimprover-manual",
+    "position": "20081113",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#swingimprover, #manual",
+    "title": "SwingImprover manual",
+    "type":"Document"
+  }
+}
+
+---
+
+[pub_date:string]
+2008-11-13
+
+[short_description:string]
+The purpose of this annex is to guide the user through a series of software use cases, so the user can become familiar with the tool and its features prior to use of it.
+
+[body:md]
+SwingImprover provides the user with two types of work modes for the study of the swing. According to the theoretical user knowledge of golf, he can choose the free mode (advanced users) or the assisted mode (for the average user).
+The first one frees up the control over the tools of analysis, being able to conduct an independent study while the second lead the user during the successive stages of the swing asking to mark relevant points to achieve efficient measurement.
+
+The application interface was designed considering the standard functionality of video editing applications, so that the process of familiarization with the same does not imply a larger effort by the user.
+
+As an introduction we will start seeing a description of the tools available on the home screen.
+
+![SwingImprover UI](/assets/SI_Annex-F-1.gif#center)
+
+1 - Video playback controls. In conjunction with the trackbar this group of controls handles video playback. Allows the user to play, pause and move frame by frame through the video.
+
+2 - Control of the frames positions of the video. This control allows you to go directly to a desired frame number; also keeps track of all the frames on which the user made a measurement so you can have a direct access to relevant video frames.
+
+3 - Toolbar Here are the tools to work with video frames. During the analysis the user can:
+
+*   Select a shape from video.
+*   Conduct Zoom In / Out to vary the precision in marking points
+*   Choose color and thickness of the figures
+*   Delete an unwanted figure
+*   Identify a real distance on the video
+
+4 - Sketch Tools This is one of the most important controls. It let the user identify points, lines, ellipses and angles. There are two ways to use these tools. According to the user's need, it can make the sketch to belong to a particular frame or it will be there throughout the video. This is determined by selecting the tab "frame" or the tab "video".
+
+5 - Views SwingImprover allows the study of two-dimensional swing. Therefore it is necessary that the user can see both dimensions of the videos simultaneously. Selecting multiple view video space split the screen and enable the option from the file menu to load the new video (second dimension). As a result you can edit and play videos from the view "face on" and "down the line". Another possibility is that the user wants to compare the evolution of their swings against the previous, or compare it against a video of a professional. This is also possible using multiple views.
+
+6 - Selection of camera position Switch between the two possible positions of the camera: "face on" and "down the line". This is necessary because the measurements are made on the basis of coordinates selected from two views. 7 - Stages of swing Here are the stages of the swing. The user can select one depending on what it need to study. 8 - Measures of swing Within each stage of the swing there is a set of relevant measures that the user can select according to your needs.
+
+## Free Mode
+
+As shown in the picture below, this mode allows the user to perform measurements on their swing, having the opportunity to compare with another video at the same time. This opens the possibility to choose whether the user wants to see your progress in the game or compare the swing against a professional player.
+
+View of two videos simultaneously:
+
+![Comparative view](/assets/SI_Annex-F-2.gif#center)
+
+Independent study of the swing:
+
+![Angle analysis](/assets/SI_Annex-F-3.gif#center)
+
+## Assisted mode
+
+The use of the assisted mode is very simple. After opening the video to study, using the controls in sides of the trackbar (as seen above items 7, 8 and 9) the user can choose the measurement that the user want to perform.
+
+After completing the different measurements, it can get a list of all the results as seen in the picture.
+
+![Measure results](/assets/SI_Annex-F-4.gif#center)
+
+This list gives details of the score obtained in each stage of the swing, and a final score that serves as a benchmark to evaluate each swing.
+
+The scores are calculated giving some specific "weight" to each one. This allows evaluating them according to their importance in the full swing.
+
+## Data persistence
+
+The information entered by the user of the video is stored in an xml file in the same location and with the same name as the video in which you are working.
+
+You can also save a screenshot of a frame with all the study information (sketch) over it, for example, to share it with a golf instructor via email.
+
+## On DirectX device configuration
+
+DirectX is Microsoft's technology for handling multimedia. Video adapters require a certain configuration depending on the capabilities of each PC, which is why SwingImprover provides the possibility of setting the adapter for better graphics performance.
+
+![Adapters configuration](/assets/SI_Annex-F-5.gif#center)
+
+## On error handling
+
+Since graphic handling applications mostly have compatibility issues with older drivers or operating systems errors, SwingImprover provides overall management of exceptions.
+
+There is an option to send an email with an automatically generated report to SwingImprover site in order to be solved in future releases.
+
+![Error handling](/assets/SI_Annex-F-6.gif#center)
+
+## On application installer
+
+The application has an installation wizard created especially for the application. This generates a group of shortcuts and registry entries in Windows to correct automatically uninstall.
+
+![Installation wizard](/assets/SI_Annex-F-7.gif#center)
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Feb 8, 2016_: Original Publication on dariomac.com
