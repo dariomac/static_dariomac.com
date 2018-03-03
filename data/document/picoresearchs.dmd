@@ -1,0 +1,66 @@
+{
+  "title": "Pico-Researchs (p-researchs)",
+  "date": "2018-03-03",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "progress_2",
+    "content": "Practical industry researchs with a scientific approach to take better decisions.",
+    "datebox": "2014-05-01",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/picoresearchs",
+    "position": "20140501",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Pico-Researchs (p-researchs)",
+    "type":"Document"
+  }
+}
+
+---
+
+[pub_date:string]
+2014-05-01
+
+[short_description:string]
+Practical industry researchs with a scientific approach to take better decisions.
+
+[body:md]
+On one hand the [software industry](http://en.wikipedia.org/wiki/Software_industry "Software industry"), in order to improve the quality of its products, decides to adopt new technologies without sufficient evidence about their effectiveness. This is because expert opinion, biased marketing, similar experiences, intuition, among others things that increase the risk of projects and makes difficult to justify decisions.
+
+On the other hand, [academic research](http://en.wikipedia.org/wiki/Research "Research") has generated a lot of knowledge and tools that do not always reach the hands of professional or if they do, they seem to be unpractical.
+
+With this kind of small researches (that I called **p-researchs**) I want to take the best of both worlds, providing reports with the rigor and objectivity that provides a [scientific approach](http://en.wikipedia.org/wiki/Scientific_method "Scientific method") but with the practical view that the industry needs for [decision-making](http://en.wikipedia.org/wiki/Decision_making "Decision making").
+
+The research presentation format have a clear description of what is the goal of it, in wich context it can be used and a self-content **[Executive Summary](http://en.wikipedia.org/wiki/Executive_summary "Executive summary")**. This will allow the reader to understand the generalities of the topic and the most relevant results, findings and recommendations that can be key pieces to make decisions. Also it is append the **Experimental Protocol** that can be used to understand and validate how the empirical activity was carried out, and even can be used to perform the activity again. This protocol will have all the additional material (work documents called assets) used during the activities serving as supplementary information.
+
+## List of p-researchs:
+
+*   [PicoResearch N°1 - Evidence based research of JavaScript Grids according to a set of expected attributes](PicoResearchs.html#Evidence-based-research-of-JavaScript-Grids-according-to-a-set-of-expected-attributes)
+*   PicoResearch N°2 - A Framework for jQuery Plugin Evaluation
+
+* * *
+
+### PicoResearch N°1 - Evidence based research of JavaScript Grids according to a set of expected attributes
+
+**Abstract:**_"Tabular presentation of data is used in almost every website to place results in an organized way, making easy the dialogue between text and exact numbers. There are many JavaScript grids implementations, some of them dedicated to accomplish specific goals and others for general use. This study identifies which are the grids that have some attributes defined apriori by the team and do not pretend to be an exhaustive study about JavaScript grids. Although there are others grids that partially fits, DataTable, dhtmlxGrid, jqxGrid and KendoUI were selected as the ones that fill our requirements."_
+
+**Additional comments:** This first [research](http://en.wikipedia.org/wiki/Research "Research") was more a "[proof of concept](http://en.wikipedia.org/wiki/Proof_of_concept "Proof of concept")" than a formal research. I tried to make a "finished product" to be consumed by managers and technical people, thinking that this research presentation format ([executive summary](http://en.wikipedia.org/wiki/Executive_summary "Executive summary") for the managers, experimental protocol and assets for the more technical people) can be very useful in industrial scenarios. However the methodology has the enough formality to let me reach the results showed in the conclusions of the research.
+
+[Go to research page](/evidence-based-research-of-javascript-grids-according-to-a-set-of-expected-attributes)
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+
