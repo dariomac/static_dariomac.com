@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Darío Macchi | Code Review: What Is It and Why Is It Important?</title>
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Darío Macchi" />
+<meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
+<meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
+
+<link rel="dns-prefetch" href="//dariomac.com"/>
+<link rel="dns-prefetch" href="//translate.googleapis.com"/>
+<link rel="dns-prefetch" href="//gstatic.com"/>
+<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
+<link rel="dns-prefetch" href="//google-analytics.com"/>
+<link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+<link rel="dns-prefetch" href="//translate.google.com"/>
+<link rel="dns-prefetch" href="//google.com"/>
+<link rel="dns-prefetch" href="//c.statcounter.com"/>
+<link rel="dns-prefetch" href="//statcounter.com"/>
+<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+<link rel="dns-prefetch" href="//yui.yahooapis.com"/>
+
+<link rel="stylesheet" type="text/css" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+<!--[if lt IE 8]>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style_ie.css">
+  <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+<![endif]-->
+
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="/assets/vendor/jquery/jquery.min.js"></script>
+<!--<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28220054-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  function afterContentDraw(){
+    setTimeout(function(){
+      var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+      aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+      $.each(aList,
+        function(k, v){
+          var $v = $(v);
+
+          $v.click(function(){
+            _gaq.push(['_trackPageview', $v.attr('href')]);
+          });
+            //$v.css('color','red');
+          });
+
+      preloadImages($('a.fancybox'));
+    }, 1000);
+  }
+
+  function preloadImages(array) {
+    if (!preloadImages.list) {
+      preloadImages.list = [];
+    }
+    for (var i = 0; i < array.length; i++) {
+      var img = new Image();
+      img.src = $(array[i]).attr('href');
+      preloadImages.list.push(img);
+    }
+  }
+
+  function loadCSS( href, before, media ){
+    // Arguments explained:
+    // `href` [REQUIRED] is the URL for your CSS file.
+    // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+      // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+    // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+    var doc = this.document;
+    var ss = doc.createElement( "link" );
+    var newMedia = media || "all";
+    var ref;
+    if( before ){
+      ref = before;
+    }
+    else {
+      var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+      ref = refs[ refs.length - 1];
+    }
+
+    var sheets = doc.styleSheets;
+    ss.rel = "stylesheet";
+    ss.href = href;
+    // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+    ss.media = "only x";
+
+    // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+    function ready( cb ){
+      if( doc.body ){
+        return cb();
+      }
+      setTimeout(function(){
+        ready( cb );
+      });
+    }
+    // Inject link
+      // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+      // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+    ready( function(){
+      ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+    });
+    // A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+    var onloadcssdefined = function( cb ){
+      var resolvedHref = ss.href;
+      var i = sheets.length;
+      while( i-- ){
+        if( sheets[ i ].href === resolvedHref ){
+          return cb();
+        }
+      }
+      setTimeout(function() {
+        onloadcssdefined( cb );
+      });
+    };
+
+    // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+    if( ss.addEventListener ){
+      ss.addEventListener( "load", function(){
+        this.media = newMedia;
+      });
+    }
+    ss.onloadcssdefined = onloadcssdefined;
+    onloadcssdefined(function() {
+      if( ss.media !== newMedia ){
+        ss.media = newMedia;
+      }
+    });
+    return ss;
+  };
+</script>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+  var sc_project=9186547;
+  var sc_invisible=1;
+  var sc_security="dce954c9";
+  var scJsHost = (("https:" == document.location.protocol) ?
+    "https://secure." : "http://www.");
+  document.write("<sc"+"ript type='text/javascript' src='" +
+    scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript>
+  <div class="statcounter">
+    <a title="web analytics" href="http://statcounter.com/" target="_blank">
+      <img class="statcounter" src="http://c.statcounter.com/9186547/0/dce954c9/1/" alt="web analytics"></a>
+  </div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+<script type="text/javascript">
+  var baseUrl = "http://www.dariomac.com";
+</script>
+
+<link rel="shortcut icon" href="/assets/favicon.ico" />
+
+<link href="https://plus.google.com/101333970265292795022" rel="publisher" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="/assets/images/d.png">
+<meta property="og:image:type" content="image/png">
+
+
+    <script type="text/javascript" src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        //board_dimensions.init(); //draw_kanban_board(boardArray, false, tasksArray, false);
+        afterContentDraw();
+
+        $(".fancybox").fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none'
+        });
+      });
+    </script>
+
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div class="wrapper">
+      <div class="header">
+        <div class="center"></div>
+      </div>
+      <div class="board_view">
+        <div class="clearfix top_menu" style="border-bottom: #D8D7D7 1px solid">
+  <div style="float:right; padding-top: 8px; padding-left: 15px;">
+      <a class="btn_feedback" title="Contact me" href="/messages/new">
+      <strong>Contact me<span>&nbsp;</span></strong>
+      </a>
+  </div>
+  <div class="submenu">
+    <div class="orange_box" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <a class="url" href="/about-me">
+          <div class="username">
+              <span>
+                <strong>
+                  <span itemprop="name">Darío</span> <span itemprop="familyName">Macchi</span>
+                </strong>
+              </span>
+          </div>
+      </a>
+      <ul>
+        <li id="link_manage_team">
+          <strong>
+            <span itemscope itemtype="http://schema.org/City">
+              <a target="_blank" href="http://maps.google.com/maps?q=montevideo+city+uruguay&hl=en&sll=-32.522779,-55.765835&sspn=5.325828,9.876709&t=v&hnear=Montevideo,+Montevideo+Dept,+Uruguay&z=11" itemprop="url">
+                <span itemprop="name">
+                  Montevideo</span>,
+              </a>
+            </span>
+            <span itemprop="nationality" itemscope itemtype="http://schema.org/Country">
+              <span itemprop="name">
+                <a href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&ie=UTF-8&hq=&hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&gl=uy&ei=KiKjU6fpE-HNsQSlqYGoCg&ved=0CBsQ8gEwAA" itemprop="url">
+                  Uruguay
+                </a>
+              </span>
+            </span>
+          </strong>
+        </li>
+        <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
+      </ul>
+    </div>
+  </div>
+  <a href="/">
+    <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+  </a>
+
+  <div class="breadcrumb">
+    <div class="breadcrumb-items" itemprop="breadcrumb">
+      <strong><a href="/">Home ( KanbanCV ) / </a></strong>
+        <strong></strong>
+      <div style="padding-left: 20px; display: inline;">
+        <div id="new_essay" style="display: inline; color:red;">
+          <span class="transition">
+            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+            <% last_essay = essays_by_date.first %>
+            <%= raw "<a href='#{last_essay[:full_path]}' style='text-decoration: underline;'>#{last_essay[:label]}</a>" %>
+          </span>
+          |
+          <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div id="board_container">
+          <div class="content document">
+          <h1>Code Review: What Is It and Why Is It Important?</h1>
+          <div>
+            <p class="date">2015-09-22</p>
+          </div>
+          <div class="description">New to the concept of code review? This post explains what code review is and why it’s important.</div>
+          <p>New to the concept of code review? This post explains what code review is and why it's important.</p>
+<p>Disclaimer: The following document is heavily based on the Mozilla Code Review FAQ <a href="http://ifipwg213.org/system/files/Rigby2006TR.pdf" title="Rigby, C., German, D. (2006). &quot;A preliminary examination of code review processes in open source projects.&quot; University of Victoria Technical Report: DCS-305-IR. Retrieved from http://ifipwg213.org/system/files/Rigby2006TR.pdf.">[1]</a>. But my team at <a href="http://vairix.com/" title="VAIRIX">VAIRIX</a> has made many adaptations in order to reflect the two-level review process that is part of our development methodology.</p>
+<h2>What is code review?</h2>
+<p>As Wikipedia puts it, “ <a href="https://en.wikipedia.org/wiki/Code_review" title="What is code review?">Code review</a> is systematic examination … of computer source code. It is intended to find and fix mistakes overlooked in the initial development phase, improving both the overall quality of software and the developers' skills.&quot;</p>
+<h2>What is the purpose of code review?</h2>
+<p>Code review is the most commonly used procedure for validating the design and implementation of features. It helps developers to maintain consistency between design and implementation “styles&quot; across many team members and between various projects on which the company is working.</p>
+<p>We perform code review in two levels. The first is known as <strong>peer review</strong> and the second is <strong>external review</strong>.</p>
+<p>The code review process doesn't begin working instantaneously (especially with external review), and our process is far from being perfect — although we have done some serious research around the topic <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197" title="Macchi, D., &amp; Solari, M. (2012). Software inspection adoption: A mapping study - http://dariomac.com/Article/Mapeo-sistem%C3%A1tico-de-la-literatura-sobre-la-Adopci%C3%B3n-de-Inspecciones-de-Software. In Conferencia Latinoamericana de Informática (CLEI 2012).">[3]</a>. So, we are always open to suggestions for improvement.</p>
+<p>Having said that, let's dig into peer reviews.</p>
+<p><img src="/assets/20150819_162103-1.jpg" alt="Code reviewing at Vairix" /></p>
+<h2>What is a peer review?</h2>
+<p>A peer review is mainly focused on functionality, design, and the implementation and usefulness of proposed fixes for stated problems.</p>
+<p>The peer reviewer should be someone with business knowledge in the problem area. Also, he or she may use other areas of expertise to make comments or suggest possible improvements.</p>
+<p>In our company, this is necessary because we don't do design reviews prior to code reviews. Instead, we expect developers to talk to each other about their design intentions and get feedback throughout the (usually non-linear) design/implementation process.</p>
+<p>Accordingly, we don't put limitations on what comments a reviewer might make about the reviewed code.</p>
+<h2>What do peer reviewers look for?</h2>
+<h3>Feature Completion</h3>
+<p>The reviewer will make sure that the code meets the requirements, pointing out if something has been left out or has been done without asking the client.</p>
+<h3>Potential Side Effects</h3>
+<p>The reviewer will check to see whether the changed code causes any issues in other features.</p>
+<h3>Readability and Maintenance</h3>
+<p>The reviewer will make sure the code is readable and is not too complicated for someone completely new to the project. Model and variable names should be immediately obvious (again, even to new developers) and as short as possible without <a href="http://thinkapps.com/blog/development/mobile-app-development-glossary-for-founders-and-product-managers/" title="Mobile App Development Glossary">using abbreviations</a>.</p>
+<h3>Consistency</h3>
+<p>Conducting peer reviews is the best approach for achieving consistency across all company projects. Define a code style with the team and then stick to it.</p>
+<h3>Performance</h3>
+<p>The reviewer will assess whether code that will be executed more often (or the most critical functionalities) can be optimized.</p>
+<h3>Exception Handling</h3>
+<p>The reviewer will make sure bad inputs and exceptions are handled in the way that was pre-defined by the team (it must be visible/accessible to everyone).</p>
+<h3>Simplicity</h3>
+<p>The reviewer will assess whether there are any simpler or more elegant alternatives available.</p>
+<h3>Reuse of Existing Code</h3>
+<p>The reviewer will check to see if the functionality can be implemented using some of the existing code. Code has to be aggressively “DRYed&quot; (as in, Don't Repeat Yourself) during development.</p>
+<h3>Test Cases</h3>
+<p>Finally, the reviewer will ensure the presence of enough test cases to go through all the possible execution paths. All tests have to pass before the code can be merged into the shared repository.</p>
+<p><img src="/assets/Peer-Review-1.gif" alt="Code review process" /></p>
+<h2>What is an external review?</h2>
+<p>An external review addresses different issues than peer reviews. Specifically, external reviews focus on how to increase code quality, promote best practices, and remove “code smells.&quot;</p>
+<p>This level of review will look at the quality of the code itself, its potential effects on other areas of the project, and its adherence with company coding guidelines.</p>
+<p>Although external reviewers may not have domain expertise, they do have discretion to raise red flags related to both the design and code and to suggest ways to solve problems and refactor code as necessary.</p>
+<h2>What do external reviewers look for?</h2>
+<h3>Readability and Maintenance</h3>
+<p>Similar to above, the reviewer will make sure the code is readable and is not too complicated for someone completely new. Again, all model and variable names have to be immediately obvious (even to new developers) and as short as possible without using abbreviations.</p>
+<h3>Coding Style</h3>
+<p>The reviewer will ensure that everyone adheres to a strict coding style and will use code editors' built-in helpers to format the code.</p>
+<h3>Code Smells</h3>
+<p>Finally, the reviewer will keep an eye out (or should that be a nose out?) for code smells and make suggestions for how to avoid them.</p>
+<p>In case the term is new to you, a <a href="http://c2.com/cgi/wiki?CodeSmell" title="What is a code smell?">code smell</a> is “a hint that something has gone wrong somewhere in your code. Use the smell to track down the problem.&quot;</p>
+<h2>Must external reviewers be &quot;domain experts&quot;?</h2>
+<p>External reviewers don't have to have domain knowledge of the code that they will be reviewing. <a href="http://www.mozilla.org/hacking/reviewers.html" title="Mozilla (2012). Retrieved from http://www.mozilla.org/hacking/reviewers.html.">[4]</a>.</p>
+<p>If they know about the domain, they will feel tempted to review it at a functional level, which could lead to burnout. However, if they have some business knowledge, they can estimate more easily how complex the review will be and can quickly complete the review, providing a more comprehensive evaluation of the code.</p>
+<p>So, domain expertise is a bonus, not a requirement.</p>
+<p><img src="/assets/20150819_162034-1.jpg" alt="Code reviewing at Vairix" /></p>
+<h2>What if an external reviewer misses something?</h2>
+<p>We do not expect an external reviewer to make everything perfect. Something will most likely be missed. <strong>The external reviewer does not become responsible for the developer's work by reviewing it.</strong></p>
+<h2>How fast should developers receive a response from the external reviewer?</h2>
+<p>If a developer has requested an external review, he can expect some type of response within two hours. At the very least, the response should tell him a timeframe for completion.</p>
+<p>In some cases, the external reviewers might not respond. They're not perfect and might have too much work to do. Developers should feel free to ping them again if they don't hear back within two hours or try with another external reviewer.</p>
+<h2>Why can't developers simply merge their code into the main branch now and ask for an external review later?</h2>
+<p>There are many reasons this is a bad idea, but here are two of the most important:</p>
+<ol>
+<li>External reviews catch problems that would affect everyone if the code were merged into the main repository. It doesn't make sense to cause everyone to suffer for problems that could have been caught by anexternal review.</li>
+<li>The process of merging code causes the developer to feel that the work is done, and it's time to go on to the next thing. It's silly to have people feeling like something is checked off the task list when it's really not.</li>
+</ol>
+<h2>Can the external reviewer ask the developer to do something that is not precisely related to the code?</h2>
+<p>Yes, the external reviewer has some discretion here.</p>
+<p>We don't think that continuously making auxiliary changes that are unrelated to the core functionality is the right thing to do on reviews. On the other hand, small changes (or changes that help the code maintain a consistent style) may be requested.</p>
+<p>There should be a reasonable relationship between the scope of the developed functionality and the scope of the requested change.</p>
+<h2>References</h2>
+<blockquote>
+<p>[1] Knous, M. &amp; Dbaron, A. (2005). Code Review FAQ. Mozilla Development Network. Retrieved from <a href="https://developer.mozilla.org/en/docs/Code_Review_FAQ">https://developer.mozilla.org/en/docs/Code_Review_FAQ</a>.</p>
+</blockquote>
+<blockquote>
+<p>[2] Rigby, C., German, D. (2006). “A preliminary examination of code review processes in open source projects.&quot; University of Victoria Technical Report: DCS-305-IR. Retrieved from <a href="http://ifipwg213.org/system/files/Rigby2006TR.pdf">http://ifipwg213.org/system/files/Rigby2006TR.pdf</a>.</p>
+</blockquote>
+<blockquote>
+<p>[3] Macchi, D., &amp; Solari, M. (2012). <a href="http://dariomac.com/Article/Mapeo-sistem%C3%A1tico-de-la-literatura-sobre-la-Adopci%C3%B3n-de-Inspecciones-de-Software">Software inspection adoption: A mapping study</a>. In Conferencia Latinoamericana de Informática (CLEI 2012).<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197">http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197</a>.</p>
+</blockquote>
+<blockquote>
+<p>[4] Mozilla (2012). Retrieved from <a href="http://www.mozilla.org/hacking/reviewers.html">http://www.mozilla.org/hacking/reviewers.html</a>.</p>
+</blockquote>
+
+            <h2 id="Acknowledgments">Acknowledgments</h2>
+              <p><a href="http://thinkapps.com/blog/development/what-is-code-review/">This post</a> was written as a guest post for ThinkApps, so I want say thanks to them for let me share this with you in my homepage.</p>
+
+            <br>
+            <h2>Significant Revisions</h2>
+            <p><em>Set 22, 2015</em>: Original Publication on dariomac.com and thinkapps.com</p>
+
+            <br>
+
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" style="text-align:center; width:100%;">
+  <div style="text-align:center; width:100%">
+  <ul>
+    <li style="margin-top: 0px;">
+      <a href="javascript:void(0);" onclick="window.open('http://www.copyscape.com/?q=' + escape(window.location) + '&src=front'); return false;">
+        <IMG src="/assets/images/cs-wh-3d-234x16.gif" alt="Protected by Copyscape Duplicate Content Detector" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." width="234" height="16" border="0">
+      </A>
+    </li>
+    <li><a style="padding-top:1px" href="/kanbancv">KanbanCV</a> © 2011-<%= Time.now.year %> <a style="padding-top:1px" href="/sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap</a></li>
+    <li>
+      <a href="http://uy.linkedin.com/in/dariomac" style="text-decoration:none;" target="_blank">
+        <img src="/assets/images/linkedin.png" width="17" height="16" alt="View Darío Macchi's LinkedIn profile" border="0" />
+      </a>
+    </li>
+    <li>
+      <a rel="author" href="https://plus.google.com/101333970265292795022?prsrc=3" style="text-decoration:none;" target="_blank">
+        <img src="/assets/images/gplus-16.png" alt="View Darío Macchi's Google+ profile" width="15" height="15" style="border:0;"/>
+      </a>
+    </li>
+    <li>
+      <a href="http://twitter.com/_dariomac" target="_blank">
+        <img src="/assets//images/twitter-16.png" width="15" height="15" alt="View my twitter"/>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.researchgate.net/profile/Dario_Macchi/" target="_blank">
+        <img src="/assets/images/researchgate.png" width="15" height="15" alt="View my ResearchGate profile"/>
+      </a>
+    </li>
+    <li style="padding-right: 2px;">
+      <a href="http://www.diigo.com/user/Dariomac" target="_blank">
+        <img src="/assets/images/diigo.png" width="41" height="15" alt="View my Diigo bookmarks library"/>
+      </a>
+    </li>
+    <li style="margin-top: 0px;">
+      <div class="board_filter">
+      <span>Filter: </span>
+      <input id="filter" type="text" />
+      </div>
+    </li>
+    <li style="margin-top: 0px">
+      <a href="http://humanstxt.org/humans/dario-macchi/" target="_black">
+        <img src="/assets/images/humanstxt-transparent-color.png" width="84" height="15" />
+      </a>
+    </li>
+    <li>Powered by <a style="padding-top:1px" href="http://github.com/comfy/comfortable-mexican-sofa">Comfy</a></li>
+  </ul>
+  </div>
+</div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      multilanguagePage: true,
+      gaTrack: true,
+      gaId: 'UA-28220054-1',
+      floatPosition: google.translate.TranslateElement.FloatPosition.BOTTOM_LEFT
+    });
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  </body>
+</html>
