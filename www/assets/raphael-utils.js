@@ -1,8 +1,25 @@
 /*
- * Raphael SVG Import 0.0.1 - Extension to Raphael JS
+ * Raphael SVG Import 0.1.0 - Extension to Raphael JS
  *
  * Copyright (c) 2009 Wout Fierens
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
+ *
+ * 2013-10-20 modifications by Darío Macchi
+ * - matrix issue (getMatrixFromStr)
+ *
+ * 2013-10-15 modifications by Darío Macchi
+ * - line SVG tag support
+ *
+ * 2013-09-30 modifications by Darío Macchi
+ * - Groups IDs
+ * - getById for groups
+ * - Text and tspan support
+ *
+ *
+ *
+ * 2013-03-14 modifications by Darío Macchi
+ * - bug fixed in bindEvents (change paper for this)
+ * - bug fixed in ScaleRaphael (some duplicated id's)
  *
  * 2012-12-13 modifications by Darío Macchi
  * - added moveScaledTo function
@@ -34,18 +51,17 @@ Raphael.fn.importSVG = function (elSVG, options) {
         //create a set to return (the complete svg image will be inside this set)
         var fullSvgSet = this.set();
 		var groupCounter = 0;
-        var strSupportedShapes = '|rect|circle|ellipse|path|image|text|polygon|';
-		var specialSupportedShapes = '|g|tspan|'
+        var strSupportedShapes = '|rect|circle|ellipse|path|image|text|polygon|g|tspan|line|';
 
         // collect all gradient colors
         var linGrads = elSVG.getElementsByTagName('linearGradient');
         var radGrads = elSVG.getElementsByTagName('radialGradient');
 
 		var elShape;
-        var m_font;
         //elSVG.normalize();
 
         this.init = function(){
+        	this.sets = [];
         	for (var i = 0; i < elSVG.childNodes.length; i++) {
 	            elShape = elSVG.childNodes.item(i);
 				this.parseElement(elShape, fullSvgSet);
@@ -56,7 +72,7 @@ Raphael.fn.importSVG = function (elSVG, options) {
             var node = elShape.nodeName.toLowerCase();
 			var shape;
 
-            if (node && (strSupportedShapes+specialSupportedShapes).indexOf('|' + node + '|') >= 0) {
+            if (node && strSupportedShapes.indexOf('|' + node + '|') >= 0) {
 				var attr = $.extend(null, {
 						/* attributes to override in each shape*/
 					}, options[node], moreAttr);
@@ -65,15 +81,28 @@ Raphael.fn.importSVG = function (elSVG, options) {
                 if (options[node] && options[node].beforeFn != null)
                 	options[node].beforeFn.apply(elShape,[attr]);
 
-                m_font = '';
+                var m_font = '';
+                var matrix = attr['matrix'] || Raphael.matrix();
+                var mPrimitives = matrix.split();
+
                 for (var k = 0; k < elShape.attributes.length; k++) {
                     var attrNode = elShape.attributes[k];
 
+                    //if don't have any attribute
 					if (attr[attrNode.nodeName] != undefined) 
 						continue;
 
 					//if there is an attribute of the SVG to be overriden, override it.
                     switch (attrNode.nodeName) {
+                    	case 'transform':
+                    		if (attrNode.nodeValue.indexOf('matrix')==0){
+	                    		matrix = this.getMatrixFromStr(this.getMatrixStrFromAttr(attrNode.nodeValue));
+	                    		mPrimitives = matrix.split();
+                    		}
+                    		else
+                    			attr[attrNode.nodeName] = attrNode.nodeValue;
+                    		
+                    		break;
 						case 'stroke-dasharray':
 							attr[attrNode.nodeName] = "- ";
 							break;
@@ -89,28 +118,31 @@ Raphael.fn.importSVG = function (elSVG, options) {
 						case 'fill':
 							this.doFill(node, attr, attrNode.nodeName, attrNode.nodeValue);
 							break;
-						case 'font-size':
-							m_font = attrNode.nodeValue + 'px ' + m_font;
-							attr[attrNode.nodeName] = attrNode.nodeValue;
-							break;
-						case 'font-family':
-							var nodeValue = attrNode.nodeValue.match(/'(.*?)'/);
+						// case 'font-size':
+						// 	m_font = attrNode.nodeValue + 'px ' + m_font;
+						// 	attr[attrNode.nodeName] = attrNode.nodeValue;
+						// 	break;
+						// case 'font-family':
+						// 	var nodeValue = attrNode.nodeValue.match(/'(.*?)'/);
 
-							if (nodeValue != null && nodeValue.length > 1)
-								nodeValue = nodeValue[1];
-							else
-								nodeValue = attrNode.nodeValue;
+						// 	if (nodeValue != null && nodeValue.length > 1)
+						// 		nodeValue = nodeValue[1];
+						// 	else
+						// 		nodeValue = attrNode.nodeValue;
 
-							m_font = m_font + nodeValue;
-							break;
+						// 	m_font = m_font + nodeValue;
+						//	break;
 						case 'x':
-						case 'y':
 						case 'cx':
-						case 'cy':
 						case 'rx':
+							// use numbers for location coords
+							attr[attrNode.nodeName] = parseFloat(attrNode.nodeValue) + mPrimitives.dx;
+							break;
+						case 'y':
+						case 'cy':
 						case 'ry':
 							// use numbers for location coords
-							attr[attrNode.nodeName] = parseFloat(attrNode.nodeValue);
+							attr[attrNode.nodeName] = parseFloat(attrNode.nodeValue) + mPrimitives.dy;
 							break;
 						case 'text-anchor':
 							// skip these due to bug in text scaling
@@ -122,37 +154,34 @@ Raphael.fn.importSVG = function (elSVG, options) {
                 }
 
                 switch (node) {
-					case 'tspan':
+					case "tspan":
 					case "text":
-						if (elShape.firstChild.nodeType == 3){ //text
-							shape = this.text(attr["x"], attr["y"], elShape.text || elShape.textContent || elShape.innerText);
-							shape.attr("font", m_font);
-							shape.attr("stroke", "none");
-							shape.origFontPt = parseInt(attr["font-size"]);
-							break;
+						if (elShape.firstChild.nodeType == 3){ //This is a text tag with simple text or tspan
+							shape = this.text(attr["x"] || mPrimitives.dx, attr["y"] || mPrimitives.dy, elShape.text || elShape.textContent || elShape.innerText);
+							
+							shape.attr('stroke', 'none');
+							//shape.origFontPt = parseInt(attr["font-size"]);
 						}
+						else{
+							var textSet = this.set();
+
+							for (var o = 0; o < elShape.childNodes.length; o++)
+								this.parseElement(elShape.childNodes.item(o), textSet, {'matrix': matrix});
+
+							// textSet.data('tag', 'text');
+							shape = textSet;
+						}
+
+						break;
 					case 'g':
-						groupCounter++;
 						// this is a group, parse the children and add to set
 						var groupSet = this.set();
 
-						if (!attr['parentId'])
-							attr['parentId'] = '';
-						if (!attr['id'])
-							if (node == 'g')
-								attr['id'] = 'g' + groupCounter;
-							else
-								attr['id'] = '';
-
-						var newChildParent = attr['parentId'] + attr['id'];
-
 						for (var o = 0; o < elShape.childNodes.length; o++){
-							rpChild = this.parseElement(elShape.childNodes.item(o), groupSet, {parentId: newChildParent + '_' + groupSet.length});
-							if (rpChild){
-								this.setShapeId(rpChild, {id: newChildParent + '_' + (rpChild.id && rpChild.id != ''? rpChild.id : groupSet.length)});
-							}
+							this.parseElement(elShape.childNodes.item(o), groupSet, {'setId': attr['id']});
 						}
 
+						// groupSet.data('tag', 'g');
 						shape = groupSet;
 
 						break;
@@ -178,6 +207,10 @@ Raphael.fn.importSVG = function (elSVG, options) {
 						shape = this.path(attr["d"]);//this.convertToAbsolute(this.path(attr["d"]));
 
 						break;
+					case "line":
+						shape = this.path('M' + attr['x1'] + ' ' + attr['y1'] + 'L' + attr['x2'] + ' ' + attr['y2']);
+						
+						break;
 					case "polygon":
 						// convert polygon to a path
 						var point_string = attr["points"].trim();
@@ -201,36 +234,49 @@ Raphael.fn.importSVG = function (elSVG, options) {
 				// set shape id
 				this.setShapeId(shape, attr);
 
-				//Execute the after shape created
-                if (options[node] && options[node].afterFn != null)
-                	options[node].afterFn.apply(shape,[elShape, attr]);
-
-				for(var evNames in attr.events){
-					paper.bindEvents(shape, evNames, attr.events[evNames]);
-				}
+				if (attr['setId'])
+					shape.data('setId', attr['setId']);
 
                 // apply attributes (if node is a set it will override child values)
 				if (node != 'g')
 					shape.attr(attr);
 
+				// apply transforms
+				if (attr['transform']){
+					if(transformAttr.indexOf('matrix')==0)
+						shape.transform(Raphael.matrix(matrix.a, matrix.b, matrix.c, matrix.d, 0, 0).toTransformString());
+					else
+						eval('shape.' + transformAttr);
+                }
+
+				//this was under afterFn (2012-03-14)
+				for(var evNames in attr.events){
+					this.bindEvents(shape, evNames, attr.events[evNames]);
+				}
+
+				//Execute the after shape created (I've moved from line after "set shape id") (2012-03-14)
+                if (options[node] && options[node].afterFn != null)
+                	options[node].afterFn.apply(shape,[elShape, attr]);
+
 				// put shape into set
                 myNewSet.push(shape);
-
-                // apply transforms
-				if (attr['transform'] != null && shape.transform){
-					var transformAttr = attr['transform'];
-					if(transformAttr.indexOf('matrix')==0){
-						var matrix = transformAttr.match(/matrix\((.*?)\)/)[1];
-						shape.transform('m' + matrix);
-					}
-					else{
-						eval('shape.' + transformAttr);
-					}
-                }
             }
 
 			return shape;
         };
+
+        this.getMatrixStrFromAttr = function(transformAttr){
+        	return transformAttr.match(/matrix\((.*?)\)/)[1];
+        }
+
+        this.getMatrixFromStr = function(str){
+        	var splitChar = ' ';
+        	if (str.indexOf(',')>-1)
+        		splitChar = ',';
+
+        	var matrix = str.split(splitChar);
+			return Raphael.matrix(parseFloat(matrix[0]), parseFloat(matrix[1]), parseFloat(matrix[2]), parseFloat(matrix[3]), parseFloat(matrix[4]), parseFloat(matrix[5]));
+        }
 
         this.doFill = function (strNode, attr, mNodeName, mNodeValue) {
 			//override fill value with default if it present
@@ -319,11 +365,17 @@ Raphael.fn.importSVG = function (elSVG, options) {
 			var tagId = attr['id'];
 
 			if (typeof tagId != 'undefined') {
-				if (this.getById(tagId) != null) throw new Error('ID <' + tagId + '> already defined in SVG data. The ID value must be unique.');
+				if (this.getById(tagId) != null) {
+					throw new Error('ID <' + tagId + '> already defined in SVG data. The ID value must be unique.');
+				}
 				shape.id = tagId;
 				// sets don't have node
-				if (shape.type != 'set')
+				if (shape.type != 'set'){
 					shape.node.id = shape.id;
+				}
+				else
+					if(!this.sets[attr['id']])
+						this.sets[attr['id']] = shape;
 			}
 		};
 
@@ -362,6 +414,19 @@ Raphael.fn.importSVG = function (elSVG, options) {
 		  oldPath.node = path;
 		  return oldPath;
 		};
+
+		var oldGetById = this.getById;
+		this.getById = function(id){
+			var bot = this.bottom;
+	        while (bot) {
+	            if (bot.id == id) {
+	                return bot;
+	            }
+	            bot = bot.next;
+	        }
+	        
+			return this.sets[id];
+		}
 
 		this.init();
     } 
@@ -405,7 +470,7 @@ Raphael.fn.moveTo = function(el, x, y){
 };
 
 //Raphael canvas extension to returns you element by its internal ID (using like instead of equals as getById).
-//Usage: paper.moveTo(elShape, newX, newY);
+//Usage: paper.getLikeId(id);
 Raphael.fn.getLikeId = function(id){
 	var bot = this.bottom;
     while (bot) {
@@ -415,6 +480,80 @@ Raphael.fn.getLikeId = function(id){
         bot = bot.next;
     }
     return null;
+};
+
+Raphael.el.bringForward = function(el){
+	if (this.paper.top === this) {
+        return;
+    }
+    
+    if (this.paper.bottom != this)
+    	this.prev.next = this.next;
+
+    this.next.prev = this.prev;
+    this.prev = null;
+    this.next = null;
+
+    this.prev = el;
+    this.next = el.next;
+    if (el.next == null)
+    	this.paper.top = this;
+    else
+    	el.next.prev = this;
+    el.next = this;
+};
+
+/*
+ * raphael.backward-forward 0.0.3
+ *
+ * Copyright (c) 2010 Wout Fierens
+ * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
+ */
+
+// get all elements in the paper
+Raphael.fn.elements = function() {
+  var b = this.bottom,
+      r = []; 
+  while (b) { 
+    r.push(b); 
+    b = b.next; 
+  }
+  return r;
+};
+
+// move an element in the stack
+Raphael.fn.arrange = function(shape, steps, scope) {
+  if (!parseInt(steps)) return;
+  var elements  = scope || this.elements(),
+      pos       = $.inArray(elements,shape),
+      lastPos   = elements.length - 1,
+      newPos    = pos + steps;
+  if (newPos > lastPos)
+    newPos = lastPos;
+  if (newPos <= 0)
+    newPos = 0;
+  if (steps > 0)
+    shape.insertAfter(elements[newPos]);
+  else if (steps < 0)
+    shape.insertBefore(elements[newPos]);
+  if (scope) {
+    scope.splice(pos, 1);
+    scope.splice(newPos, 0, shape);
+  }
+};
+
+// move an element one step backward in the stack
+Raphael.el.backward = function(steps, scope) {
+  steps = parseInt(steps) || 1;
+  this.paper.arrange(this, -steps, scope);
+  return this;
+};
+
+// move an element one step forward in the stack
+Raphael.el.forward = function(steps, scope) {
+  steps = parseInt(steps) || 1;
+  this.paper.arrange(this, steps, scope);
+  return this;
 };
 
 /*
@@ -434,11 +573,11 @@ Raphael.fn.getLikeId = function(id){
         var nestedWrapper;
 
         if (Raphael.type == "VML") {
-            wrapper.innerHTML = "<rvml:group style='position : absolute; width: 1000px; height: 1000px; top: 0px; left: 0px' coordsize='1000,1000' class='rvml' id='vmlgroup'><\/rvml:group>";
-            nestedWrapper = document.getElementById("vmlgroup");
+            wrapper.innerHTML = "<rvml:group style='position : absolute; width: 1000px; height: 1000px; top: 0px; left: 0px' coordsize='1000,1000' class='rvml' id='vmlgroup-" + container + "'><\/rvml:group>";
+            nestedWrapper = document.getElementById("vmlgroup-" + container);
         } else {
-            wrapper.innerHTML = "<div id='svggroup'><\/div>";
-            nestedWrapper = document.getElementById("svggroup");
+            wrapper.innerHTML = "<div id='svggroup-" + container + "'><\/div>";
+            nestedWrapper = document.getElementById("svggroup-" + container);
         }
 
         var paper = new Raphael(nestedWrapper, width, height);
@@ -519,7 +658,7 @@ Raphael.fn.getLikeId = function(id){
     }
 })();
 
-if(typeof String.prototype.trim !== 'function') {
+if(!String.prototype.trim) {
 	String.prototype.trim = function() {
 		return this.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
 	}

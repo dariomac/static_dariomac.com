@@ -168,14 +168,14 @@ There should be a reasonable relationship between the scope of the developed fun
 
 [\[1\]]: https://developer.mozilla.org/en/docs/Code_Review_FAQ "Knous, M. & Dbaron, A. (2005). Code Review FAQ. Mozilla Development Network. Retrieved from https://developer.mozilla.org/en/docs/Code\_Review\_FAQ."
 [\[2\]]: http://ifipwg213.org/system/files/Rigby2006TR.pdf "Rigby, C., German, D. (2006). \"A preliminary examination of code review processes in open source projects.\" University of Victoria Technical Report: DCS-305-IR. Retrieved from http://ifipwg213.org/system/files/Rigby2006TR.pdf."
-[\[3\]]: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197 "Macchi, D., & Solari, M. (2012). Software inspection adoption: A mapping study - http://dariomac.com/Article/Mapeo-sistem%C3%A1tico-de-la-literatura-sobre-la-Adopci%C3%B3n-de-Inspecciones-de-Software. In Conferencia Latinoamericana de Informática (CLEI 2012)."
+[\[3\]]: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197 "Macchi, D., & Solari, M. (2012). Software inspection adoption: A mapping study - http://dariomac.com/software-inspection-adoption--a-mapping-study. In Conferencia Latinoamericana de Informática (CLEI 2012)."
 [\[4\]]: http://www.mozilla.org/hacking/reviewers.html "Mozilla (2012). Retrieved from http://www.mozilla.org/hacking/reviewers.html."
 
 > \[1\] Knous, M. & Dbaron, A. (2005). Code Review FAQ. Mozilla Development Network. Retrieved from [https://developer.mozilla.org/en/docs/Code\_Review\_FAQ](https://developer.mozilla.org/en/docs/Code_Review_FAQ).
 
 > \[2\] Rigby, C., German, D. (2006). “A preliminary examination of code review processes in open source projects." University of Victoria Technical Report: DCS-305-IR. Retrieved from [http://ifipwg213.org/system/files/Rigby2006TR.pdf](http://ifipwg213.org/system/files/Rigby2006TR.pdf).
 
-> \[3\] Macchi, D., & Solari, M. (2012). [Software inspection adoption: A mapping study](http://dariomac.com/Article/Mapeo-sistem%C3%A1tico-de-la-literatura-sobre-la-Adopci%C3%B3n-de-Inspecciones-de-Software). In Conferencia Latinoamericana de Informática (CLEI 2012).[http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197).
+> \[3\] Macchi, D., & Solari, M. (2012). [Software inspection adoption: A mapping study](http://dariomac.com/software-inspection-adoption--a-mapping-study). In Conferencia Latinoamericana de Informática (CLEI 2012).[http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197).
 
 > \[4\] Mozilla (2012). Retrieved from [http://www.mozilla.org/hacking/reviewers.html](http://www.mozilla.org/hacking/reviewers.html).
 

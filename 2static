@@ -139,12 +139,7 @@ function convertFilesInPath(inputPath, outputPath) {
     if(fs.lstatSync(inputPath + file).isDirectory()) {
 
       if (file == 'assets'){
-        try {
-          fsx.copySync(inputPath + file, assetsPath, {'overwrite': false, 'errorOnExist': true});
-        }
-        catch(e){
-          console.warn("WARNING: file " + e + '.');
-        }
+        fsx.copySync(inputPath + file, assetsPath, {'overwrite': true, 'errorOnExist': false});
       }
       else{
         convertFilesInPath(inputPath + file + '/', outputPath);
