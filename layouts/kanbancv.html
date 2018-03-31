@@ -307,7 +307,7 @@
 
       var tasksArray = [
         {{#each jsons}}
-          {{{json this}}}
+          {{{json this.json}}}
           {{~#unless @last}}, {{/unless}}
         {{/each}}
       ];

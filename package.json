@@ -5,8 +5,9 @@
   "keywords": [ "static site generator", "generator", "static", "markdown", "website", "generator" ],
   "main": "susi",
   "scripts": {
-    "postinstall": "./2static data/ www/ layouts/ --clear-all",
-    "start": "./2static data/ www/ layouts/ --clear-all && node server.js"
+    "postinstall": "yarn build",
+    "build": "./2static data/ www/ layouts/ --clear-all",
+    "start": "node server.js"
   },
   "dependencies": {
       "command-line-args": "4.0.1",

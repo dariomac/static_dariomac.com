@@ -77,6 +77,9 @@ function renderToHtml(inputFilePath, outputFilePath) {
   var res = processMarkupContent(fileContent);
   if(res.frontmatter && res.frontmatter.date.length > 0) {
     if (res.frontmatter.mode == 'collection'){
+      if (res.frontmatter.layout === 'sitemap.xml') {
+        outputFilePath = outputFilePath.replace('sitemap.html', 'sitemap.xml');
+      }
       collectionPages.push({
         inputFilePath: inputFilePath,
         outputFilePath: outputFilePath,
@@ -85,9 +88,7 @@ function renderToHtml(inputFilePath, outputFilePath) {
     }
     else{
       processContentAndSaveFile(inputFilePath, outputFilePath, res);
-      if(res.frontmatter.json){
-        collectionJson.push(res.frontmatter.json);
-      }
+      collectionJson.push(res.frontmatter);
     }
   } else {
     console.warn(inputFilePath + " is missing the Frontmatter section!")
@@ -95,13 +96,17 @@ function renderToHtml(inputFilePath, outputFilePath) {
 }
 
 function processContentAndSaveFile(inputFilePath, outputFilePath, sourceContent){
-  sourceContent.frontmatter.date = sourceContent.frontmatter.date ? moment(sourceContent.frontmatter.date).format('MMMM Do YYYY') : moment().format('MMMM Do YYYY');
+  sourceContent.frontmatter.fdate = sourceContent.frontmatter.date ? moment(sourceContent.frontmatter.date).format('MMMM Do YYYY') : moment().format('MMMM Do YYYY');
 
   sourceContent.frontmatter.layout = sourceContent.frontmatter.layout || "layout"; //default to page layout
 
   var layoutHTML = compiledLayouts[sourceContent.frontmatter.layout];
   if (!layoutHTML){
-    layoutHTML = fs.readFileSync(layoutPathPrefix+sourceContent.frontmatter.layout+".html", 'utf8');
+    let layoutFilename = sourceContent.frontmatter.layout;
+    if (sourceContent.frontmatter.layout.indexOf('.') === -1) {
+      layoutFilename += '.html';
+    }
+    layoutHTML = fs.readFileSync(`${layoutPathPrefix}${layoutFilename}`, 'utf8');
     //first pull in all includes in html
     layoutHTML = ssiParser(layoutPathPrefix+"/dummy", layoutHTML); //needs file path not just dir, hence dummy
     layoutHTML = hb.compile(layoutHTML);
