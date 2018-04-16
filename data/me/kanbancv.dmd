@@ -1,0 +1,70 @@
+{
+  "title": "KanbanCV introduction",
+  "date": "2018-04-15",
+  "layout": "me",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "archive_6",
+    "content": "",
+    "datebox": "",
+    "extlink": "",
+    "laneid": "Me",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/kanbancv",
+    "position": "",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "KanbanCV introduction",
+    "type": "0"
+  }
+}
+
+---
+
+[short_description:string]
+
+[content:md]
+I think that curriculum vitae (CV) or resume must be something alive more than a static document that looks as a biography.
+
+For these reason I decide to make my own resume in a way that I called KanbanCV. Here I introduce myself, write about experiences, education, other activities, just as in a regular resume but with additional information. 
+
+The layout looks as a simple [kanban board](http://en.wikipedia.org/wiki/Kanban "Kanban board definition") and it's inspired in a very useful tool named [Kanbanize](http://kanbanize.com "Kanbanize.com"). 
+
+Each section of my resume (represented by a swimlane) shows what I'm planning to do, what I'm doing and what I've done. Traditionally, swimlanes are used to track parallel work streams within a common resource. In this case I'm the common resource used in every parallel work stream (aspect of my life). As in a normal kanban board, the demand of the left columns (e.g the need to finish things, to move forward, to increase experience) pulls items from the right (current activities and plans).
+
+The "Plan" column of kanban board let you know what may be my "next moves" about each aspect of my life. Here I'll list my education plan, some researches that I want to do, projects, etc. I use it as a motivator because once an activity is place there everybody see it and ask me _"when you will do that planned task?"_ or _"So, you are thinking in study ____ right?"_. So this is the column that show to where I'm going.
+
+The "In progress" column let me tell you what I'm doing right now and let you see if some of my planned task go forward and became work in progress. This is my main stream, the place that remember me where am I.
+
+Finally, "Done" column contains tasks I've done, experiences, generated knowledge, learned lessons and all that stuff that I've collected through years. This is the column that I use to think, to resolve problems, this is the place where I come to find answers and to remember.
+
+I know that is an uncommon way to present a resume but I feel more confortable with this kind of distribution and I think that show a more complete picture about myself.
+
+[Enjoy it!](index.html "Go to KanbanCV") or look at some more standard versions of my resume following the footer links.
+
+<p style="text-align: center; border: 1px solid; padding: 2px;">
+  <a style="background: none !important;" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
+    <img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" style="border-width: 0;" alt="Creative Commons License">
+  </a><br>
+  <span rel="dct:type" property="dct:title" href="http://purl.org/dc/dcmitype/Text" xmlns:dct="http://purl.org/dc/terms/">
+    KanbanCV
+  </span>
+  by
+  <a rel="cc:attributionURL" property="cc:attributionName" href="kanbancv.html" xmlns:cc="http://creativecommons.org/ns#">
+    Darío Macchi
+  </a>
+  is licensed under a
+  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
+    Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+  </a>.<br>
+  Permissions beyond the scope of this license may be available at
+  <a rel="cc:morePermissions" href="ContactMe.html" xmlns:cc="http://creativecommons.org/ns#">
+    http://www.dariomac.com/ContactMe
+  </a>.
+</p>

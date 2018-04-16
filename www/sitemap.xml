@@ -356,6 +356,12 @@
       <priority>0.5</priority>
     </url>
     <url>
+      <loc>http://www.dariomac.com/kanbancv</loc>
+      <lastmod>2018-04-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
       <loc>http://www.dariomac.com/manifesto</loc>
       <lastmod>2017-05-20</lastmod>
       <changefreq>monthly</changefreq>
