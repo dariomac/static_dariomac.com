@@ -1,5 +1,10 @@
+List of console colors:
+https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color
+
 editor online para pasar html a commonmark markdown:
 https://domchristie.github.io/to-markdown/
+
+diff --brief -r www www_orig
 
 Columns
 -----

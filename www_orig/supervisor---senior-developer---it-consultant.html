@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>Darío Macchi | Supervisor - Senior Developer - IT Consultant</title>
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Darío Macchi" />
+<meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
+<meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
+
+<link rel="dns-prefetch" href="//dariomac.com"/>
+<link rel="dns-prefetch" href="//translate.googleapis.com"/>
+<link rel="dns-prefetch" href="//gstatic.com"/>
+<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
+<link rel="dns-prefetch" href="//google-analytics.com"/>
+<link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+<link rel="dns-prefetch" href="//translate.google.com"/>
+<link rel="dns-prefetch" href="//google.com"/>
+<link rel="dns-prefetch" href="//c.statcounter.com"/>
+<link rel="dns-prefetch" href="//statcounter.com"/>
+<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+<link rel="dns-prefetch" href="//yui.yahooapis.com"/>
+
+<link rel="stylesheet" type="text/css" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+<!--[if lt IE 8]>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style_ie.css">
+  <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+<![endif]-->
+
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="/assets/vendor/jquery/jquery.min.js"></script>
+<!--<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28220054-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  function afterContentDraw(){
+    setTimeout(function(){
+      var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+      aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+      $.each(aList,
+        function(k, v){
+          var $v = $(v);
+
+          $v.click(function(){
+            _gaq.push(['_trackPageview', $v.attr('href')]);
+          });
+            //$v.css('color','red');
+          });
+
+      preloadImages($('a.fancybox'));
+    }, 1000);
+  }
+
+  function preloadImages(array) {
+    if (!preloadImages.list) {
+      preloadImages.list = [];
+    }
+    for (var i = 0; i < array.length; i++) {
+      var img = new Image();
+      img.src = $(array[i]).attr('href');
+      preloadImages.list.push(img);
+    }
+  }
+
+  function loadCSS( href, before, media ){
+    // Arguments explained:
+    // `href` [REQUIRED] is the URL for your CSS file.
+    // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+      // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+    // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+    var doc = this.document;
+    var ss = doc.createElement( "link" );
+    var newMedia = media || "all";
+    var ref;
+    if( before ){
+      ref = before;
+    }
+    else {
+      var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+      ref = refs[ refs.length - 1];
+    }
+
+    var sheets = doc.styleSheets;
+    ss.rel = "stylesheet";
+    ss.href = href;
+    // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+    ss.media = "only x";
+
+    // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+    function ready( cb ){
+      if( doc.body ){
+        return cb();
+      }
+      setTimeout(function(){
+        ready( cb );
+      });
+    }
+    // Inject link
+      // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+      // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+    ready( function(){
+      ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+    });
+    // A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+    var onloadcssdefined = function( cb ){
+      var resolvedHref = ss.href;
+      var i = sheets.length;
+      while( i-- ){
+        if( sheets[ i ].href === resolvedHref ){
+          return cb();
+        }
+      }
+      setTimeout(function() {
+        onloadcssdefined( cb );
+      });
+    };
+
+    // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+    if( ss.addEventListener ){
+      ss.addEventListener( "load", function(){
+        this.media = newMedia;
+      });
+    }
+    ss.onloadcssdefined = onloadcssdefined;
+    onloadcssdefined(function() {
+      if( ss.media !== newMedia ){
+        ss.media = newMedia;
+      }
+    });
+    return ss;
+  };
+</script>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+  var sc_project=9186547;
+  var sc_invisible=1;
+  var sc_security="dce954c9";
+  var scJsHost = (("https:" == document.location.protocol) ?
+    "https://secure." : "http://www.");
+  document.write("<sc"+"ript type='text/javascript' src='" +
+    scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript>
+  <div class="statcounter">
+    <a title="web analytics" href="http://statcounter.com/" target="_blank">
+      <img class="statcounter" src="http://c.statcounter.com/9186547/0/dce954c9/1/" alt="web analytics"></a>
+  </div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+<script type="text/javascript">
+  var baseUrl = "http://www.dariomac.com";
+</script>
+
+<link rel="shortcut icon" href="/assets/favicon.ico" />
+
+<link href="https://plus.google.com/101333970265292795022" rel="publisher" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="/assets/images/d.png">
+<meta property="og:image:type" content="image/png"><style>.details_content img { border: 1px solid #ccc; margin: 6px 0px !important; } </style>
+
+
+    <script type="text/javascript" src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        //board_dimensions.init(); //draw_kanban_board(boardArray, false, tasksArray, false);
+        afterContentDraw();
+
+        $(".fancybox").fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none'
+        });
+      });
+    </script>
+
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div class="wrapper">
+      <div class="header">
+        <div class="center"></div>
+      </div>
+      <div class="board_view">
+        <div class="clearfix top_menu" style="border-bottom: #D8D7D7 1px solid">
+  <div style="float:right; padding-top: 8px; padding-left: 15px;">
+      <a class="btn_feedback" title="Contact me" href="/messages/new">
+      <strong>Contact me<span>&nbsp;</span></strong>
+      </a>
+  </div>
+  <div class="submenu">
+    <div class="orange_box" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <a class="url" href="/about-me">
+          <div class="username">
+              <span>
+                <strong>
+                  <span itemprop="name">Darío</span> <span itemprop="familyName">Macchi</span>
+                </strong>
+              </span>
+          </div>
+      </a>
+      <ul>
+        <li id="link_manage_team">
+          <strong>
+            <span itemscope itemtype="http://schema.org/City">
+              <a target="_blank" href="http://maps.google.com/maps?q=montevideo+city+uruguay&hl=en&sll=-32.522779,-55.765835&sspn=5.325828,9.876709&t=v&hnear=Montevideo,+Montevideo+Dept,+Uruguay&z=11" itemprop="url">
+                <span itemprop="name">
+                  Montevideo</span>,
+              </a>
+            </span>
+            <span itemprop="nationality" itemscope itemtype="http://schema.org/Country">
+              <span itemprop="name">
+                <a href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&ie=UTF-8&hq=&hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&gl=uy&ei=KiKjU6fpE-HNsQSlqYGoCg&ved=0CBsQ8gEwAA" itemprop="url">
+                  Uruguay
+                </a>
+              </span>
+            </span>
+          </strong>
+        </li>
+        <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
+      </ul>
+    </div>
+  </div>
+  <a href="/">
+    <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+  </a>
+
+  <div class="breadcrumb">
+    <div class="breadcrumb-items" itemprop="breadcrumb">
+      <strong><a href="/">Home ( KanbanCV ) / </a></strong>
+        <strong></strong>
+      <div style="padding-left: 20px; display: inline;">
+        <div id="new_essay" style="display: inline; color:red;">
+          <span class="transition">
+            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+            <a href='/code-review--what-is-it-and-why-is-it-important' style='text-decoration: underline;'>
+              Code Review: What Is It and Why Is It Important?
+            </a>
+          </span>
+          |
+          <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div id="board_container">
+          <div class="content entry">
+            <div itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
+              <span itemprop="name" style="display:none">Work experience details</span>
+              <table cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td class="swimlane_inner">
+                      <strong>Details</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="details_cell" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                      <span itemprop="name" style="display:none">Darío Macchi</span>
+                      <h1 itemprop="jobTitle">Supervisor - Senior Developer - IT Consultant</h1>
+                      <div>
+                        <div>
+                          Nov 2004 – Mar 2014 (9 years 5 months)
+                        </div>
+
+                        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Corporation">
+                          <a itemprop="url" href="http://www.pwc.com"><span itemprop="name"> PricewaterhouseCoopers </span></a>
+                        </div>
+                          <div itemprop="description" class="summary details_content">
+                            <p>I worked as a <strong>Software Engineer</strong> in <strong>.NET</strong> technologies during many years, gaining experience in software development using Microsoft® environments. During those 10 years, I used my skills with <strong>.NET MVC</strong>, <strong>C#</strong>, <strong>SQL Server</strong> and <strong>TFS</strong>, my sharp eye for details &amp; <strong>quality</strong> and my knowledge to work throughout all the <strong>software life cycle</strong>. Finally, in the last four years at PwC, I helped in project management and <strong>cost estimation</strong> tasks.</p>
+
+                          </div>
+                    </div>
+
+
+                  </td>
+                </tr>
+                  <tr>
+                    <td class="swimlane_inner">
+                      <strong>Projects/Activities</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="details_cell">
+                      <div class="details_content">
+                        <h2>Web development &amp; support for PwC US online marketing team, PwC Global and PwC UK</h2>
+<p>Development of web projects that includes intensive <strong><a href="http://en.wikipedia.org/wiki/JavaScript" title="JavaScript">Javascript</a></strong> usage, <strong><a href="http://jquery.com/" title="JQuery">JQuery</a></strong>, <strong><a href="http://www.w3.org/Graphics/SVG/" title="Scalable Vector Graphics">SVG</a></strong> interaction and animations. Some of these projects are benchmark tools and small surveys with animated charts (almost always <strong><a href="http://www.highcharts.com/" title="Highcharts">Highcharts</a></strong> charts). Other projects have complex interfaces with <strong>SVG</strong> maps with different layers of information over it. Those complex solutions usually interact with other page elements, so most of the time they are a mix of <strong>SVG</strong> , <strong>JQuery</strong> , <strong><a href="http://raphaeljs.com/" title="Raphaël (JavaScript library)">Raphaël</a></strong> all together glued by Javascript. As this kind of projects are client side and usually involve some kind of external data, they are based in <strong><a href="http://json.org/" title="JSON">JSON</a></strong> data files. This data files may be rendered as a chart or in some cases, binded to <a href="http://en.wikipedia.org/wiki/HTML_element" title="HTML element"><strong>HTML</strong> elements</a> through <strong><a href="http://knockoutjs.com/" title="KnockoutJS">KnockoutJS</a></strong>.</p>
+<h3>Marketing Calendar</h3>
+<p>Application to show marketing activities filtered by event type, month, line of service and economic sector. Also let the user sort the activities by title and date. Lead to high profile users inside the firm. ( <strong>jQuery, UnderscoreJs, FilterJs</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-mam.gif" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-mam.gif" />
+    </a>
+  </div>
+</p>
+<h3>US CBG Corporate Director Survey (Benchmarking tool)</h3>
+<p>Collaboration in the development of this tool that allow users to compare themselves with the results of the <a href="http://www.pwc.com/us/en/corporate-governance/publications/annual-corporate-directors-survey.jhtml">PwC's 2012 Annual Corporate Directors Survey</a>. Users select the desired theme/subject and their company size, and then can compare their answers to some of the questions to the corresponding results. (<strong>jQuery, HighchartsJs</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-us-cbg1.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-us-cbg1.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-us-cbg2.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-us-cbg2.jpg" />
+    </a>
+  </div>
+</p>
+<h3>Benchmarking Tool</h3>
+<p>Requirement elicitation, design and implementation of a Data driven benchmarking tool which was developed for the Digital IQ publication. This application allows the creation of complex online benchmarks based on standard templates. ( <strong>KnockoutJs</strong>, <strong>jQuery, ASP.NET MVC, eXpress Persistent Objects, DevExpress Snap Report</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-bench1.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-bench1.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-bench2.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-bench2.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-bench3.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-bench3.jpg" />
+    </a>
+  </div>
+</p>
+<h3>PwC Gage</h3>
+<p>Collaboration in the development of a tool that helps with the creation of gauge charts inside the PwC CMS. It was designed as a wrapper plugin for <a href="http://www.justgage.com/">justgage</a> to create gauges following PwC branding guidelines displaying correctly on a wide variety of browsers and devices. The editor was intended to provide basic configuration options for the gauge, although further customization can be done editing the generated code. (<strong>jQuery, JustGageJs</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-gage.gif" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-gage.gif" />
+    </a>
+  </div>
+</p>
+<h3>TIMM Scenario Wheel</h3>
+<p>Requirement elicitation, design and implementation of a &quot;Polar chart&quot; animation that shows twenty impact values of one of two available options. This interactive scenario model shows the <a href="http://www.youtube.com/watch?v=CyE5BC1B3y0#t=113">PwC TIMM Framework</a> in action. Under the hood it's a SVG animation with a set of value (positives or negatives) with smooth animated transitions between the two options. The animation was built with a SVG/HTML animation engine also developed by me. (<strong>jQuery, RaphaëlJs, SVG</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-timm.gif" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-timm.gif" />
+    </a>
+  </div>
+</p>
+<h3>Paying Taxes homepage animation - 2013</h3>
+<p>Requirement elicitation, design and implementation of the Paying Taxes homepage animation which shows one indicator at a time using local determination to define the values for each indicator per location.
+Depending on local determination, some paying taxes indicators are loaded and then displayed to the user. It's an SVG animation in the background (calculator, clock, money) with a layer of HTML animated through a jQuery plugin. The animation was built with our own SVG/HTML animation engine. (<strong>jQuery, HighchartsJs, RaphaëlJs, SVG</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-ptanim1.gif" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-ptanim1.gif" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-ptanim2.gif" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-ptanim2.gif" />
+    </a>
+  </div>
+</p>
+<h3>Aviation Paper Data Modeler</h3>
+<p>Colaboration in the development of a tool to show the commercial aircraft manufacturing attractiveness ranking indices for US states using weighted averages of different variables.
+The states of the map are shaded according to their overall manufacturing attractiveness ranking composed of the three variables described above of it. The toolbar of the right is to explore the US aviation manufacturing attractiveness index by selecting US states to find rankings in each of the three variables, plus an overall composite ranking. ( <strong>jQuery, <strong>jQueryUI, TimJs,</strong> RaphaëlJs, SVG</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-aviation.gif" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-aviation.gif" />
+    </a>
+  </div>
+</p>
+<h3>Tweetable content</h3>
+<p>Requirement elicitation, design and implementation of a reusable module that enable site users to share via twitter paragraphs/phrases previously tagged as tweetable by site developers. This module transform paragraphs or phrases tagged into tweetable chunks of texts. There are two styles, one inline, suitable for short phrases, and other for paragraphs with a quote style. ( <strong>jQuery</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-tweetable.gif" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-tweetable.gif" />
+    </a>
+  </div>
+</p>
+<h3>Cities of Opportunity 2012: ' Where the jobs are…'</h3>
+<p>Requirement elicitation, design and implementation of an interactive map, which allows users to navigate the data results from a survey. This tool integrates both SVG mapping capabilities with the PwC Charting tool. Users can select up to three cities from a world map, then they can select the indicators they want to compare, and finally they can access an animated chart with the results. ( <strong>KnockoutJs</strong>, <strong>JQuery</strong>, <strong>HighchartsJs</strong>, <strong>RaphaëlJs</strong>, <strong>SVG</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-cityof.gif" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-cityof.gif" />
+    </a>
+  </div>
+</p>
+<h3>Paying Taxes: Comparative modeller 2012-2013</h3>
+<p>Requirement elicitation, design and implementation of a tool to make PwC latest comparative global tax study available for the user. It lets explore nearly a decade of data through a powerful and interactive modeller, analysing and comparing the differents business tax systems, across numerous geographies, themes and trends of 189 global economies. The user can choose between economies or regions and compare their on total tax rate, the time to comply and number and types of payments. ( <strong>KnockoutJs</strong>, <strong>jQuery</strong>, <strong>HighchartsJs</strong>, <strong>RaphaëlJs</strong>, <strong>SVG</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-pt-modeller.gif" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-pt-modeller.gif" />
+    </a>
+  </div>
+</p>
+<h3>US Careers Maps</h3>
+<p>Requirement elicitation, design and implementation of an interactive maps for the US careers site. Simple SVG map interaction, allowing the users to expand information from different states. ( <strong>jQuery</strong>, <strong>RaphaëlJs</strong>, <strong>SVG</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-uscareers.gif" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-uscareers.gif" />
+    </a>
+  </div>
+</p>
+<h3>Health insurance rate map</h3>
+<p>Coaching and collaboration in the development of a US map that shows the health insurance cost. The interactive US map lets the user change between two options in order to see different datasets using a suitable color codification. ( <strong>jQuery, RaphaëlJs, TimJs, SVG</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-health.gif" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-health.gif" />
+    </a>
+  </div>
+</p>
+<h2>eSirem - Salary survey</h2>
+<p>Requirement elicitation, architecture, design and implementation of a <strong>Salary Survey</strong> system that provides comprehensive measures of <strong>occupational wages</strong>; employment cost <strong>trends</strong>, benefit incidence and detailed plan provisions. Also detailed the occupational earnings that are available for metropolitan and non-metropolitan areas, broad geographic regions, and on a national basis. Salaries are provided only as means of reference taking in consideration a wide range of factors that affect the salary that a professional is entitled to, including prior experience and education, industry, and specific skills and attributes. The system let the users <strong>perform comparisons</strong> between their companies and the rest of it market sector. Now it's used by <strong>several south american countries</strong> because it has the flexibility to adapt to the standards and pay rules for every country being very highly configurable due to its versatile architecture. (<strong>ASP.NET</strong>, <strong>Oracle 10</strong>).</p>
+<h2>Client profitability and financial information report system</h2>
+<p>Development and maintenance of a regional <strong><a href="http://en.wikipedia.org/wiki/Business_intelligence" title="Business intelligence">business intelligence</a> tool</strong> to support a <a href="http://en.wikipedia.org/wiki/Client_(computing)" title="Client (computing)">client</a> centric approach strategy that allow <strong>partners</strong> and <strong>managers</strong> to: i) measure client profitability within various business dimensions (LoS; Industries; Offices; individual portfolios; <a href="http://en.wikipedia.org/wiki/Customer_relationship_management" title="Customer relationship management">CRM</a> programs; etc.) under a consistent pattern; ii) analyze clients by size and <strong>profitability</strong>; iii) access to all client's basic and contact information; and iv) project opportunities profitability</p>
+<p>The system is based on two main modules:</p>
+<ol>
+<li>the public site, available to most partners and managers from most south american countries, allow them to analyze their <a href="http://en.wikipedia.org/wiki/Management" title="Management">business management</a> data in a series of drill-down reports. It also provides an advanced clients/deals search engine and a proposal fees calculator. This site has a strong <strong>security schema</strong> based on roles, so the access to data is defined according to the user's role under the premise that each user must have access only to the data of his/her responsibility. Users have at least one role by default for all engagement partners and managers. Users that have more than one role are able to switch between them on the site home page. The reports are displayed for each chosen role, allowing him/her to concentrate the attention on that of his/her interest at the time.</li>
+<li>a back-end application which is used to normalize the data entered by the participating countries. It provides <strong>data quality</strong> management tools and <a href="http://en.wikipedia.org/wiki/Access_control_list" title="Access control list">access control list</a> management, among others. The database is based on each client's project/job initially stored in their local <a href="http://en.wikipedia.org/wiki/Accounting_software" title="Accounting software">accounting systems</a> and then exported to a file to be synchronized with the main system (using the <a href="http://en.wikipedia.org/wiki/Front_and_back_ends" title="Front and back ends">backend</a> application) (<strong>ASP.NET</strong>, <strong>Oracle 10</strong>).</li>
+</ol>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-icpr1.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-icpr1.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-icpr2.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-icpr2.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-icpr3.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-icpr3.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-icpr4.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-icpr4.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-icpr5.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-icpr5.jpg" />
+    </a>
+  </div>
+</p>
+<h2>Client Feedback management tool</h2>
+<p>Collaboration in the development of Client Feedback, a software for managing <a href="http://maps.google.com/maps?ll=51.5079833333,-0.124663888889&amp;spn=0.01,0.01&amp;q=51.5079833333,-0.124663888889%20(PricewaterhouseCoopers)&amp;t=h" title="PricewaterhouseCoopers">PwC</a> client satisfaction surveys cycle. Based on the <a href="http://en.wikipedia.org/wiki/Net_Promoter" title="Net Promoter">Net Promoter Score</a> approach, it allows mailing survey's requests to relevant PwC clients avoiding duplicate requests for each client. It also provides a simple to dashboard for managers and partners to review their promoters/detractors information. Clients receive their email requests together with access information to an online form which automatically updates our internal databases. Today it is used mainly in <a href="http://maps.google.com/maps?ll=-15.7833333333,-47.8666666667&amp;spn=10.0,10.0&amp;q=-15.7833333333,-47.8666666667%20(Brazil)&amp;t=h" title="Brazil">Brazil</a> and <a href="http://maps.google.com/maps?ll=-34.6,-58.3833333333&amp;spn=10.0,10.0&amp;q=-34.6,-58.3833333333%20(Argentina)&amp;t=h" title="Argentina">Argentina</a> . (<strong>ASP.NET</strong>, <strong>Oracle 10</strong>)</p>
+<h2>Charting Tool</h2>
+<p>Collaboration in the development of PwC Charting Tool, a web charts creation tool for webmaster. PwC Charting Tool allows webmasters to easily create web animated/interactive charts to be embedded in web pages. The user is able to copy data from an Excel spreadsheet, paste it into the tool and configure the chart in minutes. User can create charts from a list of available chart types, customize them, share and get the source code needed for the chart to work in PwC internal CMS or other similar environments. The charts are generated following PwC branding guidelines and have been developed so they display correctly on an ample variety of browsers and devices. ( <strong>ASP.NET</strong>, <strong>eXpress Persistent Objects</strong>, <strong>SQL Server</strong>, <strong>HighchartsJs</strong>, <strong>jQuery</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-charting1.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-charting1.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-charting2.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-charting2.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-charting3.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-charting3.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-charting4.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-charting4.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-charting5.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-charting5.jpg" />
+    </a>
+  </div>
+</p>
+<h2>Twitter Cache</h2>
+<p>Requirement elicitation, design and implementation of a service that supports an internal cache for Twitter widgets on PwC sites. We created what we call a Twitter cache, using the new Twiter API (v.2) because old Twitter API (v.1) was discontinued by Twitter after a series of previous &quot;blackouts&quot;. They encourage users to use their new embeded timelines, which are huge, and cannot be styled to make it comply with PwC brand guidelines.</p>
+<p>In simple terms, our cache service runs on one of our own servers, updating from Twitter the latest tweets of our accounts. On the other side, the twitter widget connect to that cache instead of connecting to the Twitter API solveing the API limit of request per hour. ( <strong>ASP.NET MVC</strong>, <strong>LinkToTwitter</strong>, <strong>eXpress</strong> <strong>Persistent</strong> <strong>Object</strong>, <strong>jQuery</strong>)</p>
+<h2>Penca</h2>
+<p>Collaboration in the development of an online football (soccer) fixture game. This game was used during the last FIFA World Cup, where PwC staff could predict matches' results. The game shows stats for each game and player, providing a global ranking. ( <strong>ASP.NET</strong>, <strong>eXpress Persistent Objects</strong>, <strong>SQL Server</strong>, <strong>jQuery</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-penca1.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-penca1.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-penca2.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-penca2.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-penca3.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-penca3.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-penca4.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-penca4.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-penca5.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-penca5.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-penca6.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-penca6.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-penca7.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-penca7.jpg" />
+    </a>
+  </div>
+</p>
+<h2>Experience Challenge</h2>
+<p>Collaboration in the development of an online quiz-like game and ranking. This game let users prove and communicate the PwC Experience precepts. The game consisted of a quiz, which calculated points for each correct answer and time between user's responses. It had several stages (races), and the winner of each stage competed for a major prize. ( <strong>ASP.NET</strong>, <strong>eXpress Persistent Objects,</strong> <strong>SQL Server</strong>, <strong>jQuery</strong>)</p>
+<p>  <div class="image_gallery">
+    <a itemprop="image" href="/assets/exp_pwc-challenge1.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-challenge1.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-challenge2.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-challenge2.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-challenge3.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-challenge3.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-challenge4.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-challenge4.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-challenge5.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-challenge5.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-challenge6.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-challenge6.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/exp_pwc-challenge7.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/exp_pwc-challenge7.jpg" />
+    </a>
+  </div>
+</p>
+<h2>Online survey manager</h2>
+<p>Architecture, design and implementation of a fully configurable <strong>online survey manager</strong> with many different surveys co-existing, separate lists of users, different <strong>authentication methods</strong> and <strong>statistical information</strong> generated for the subsequent analysis of data from the survey. It was flexible and <strong>scalable</strong> enough to meet the needs of a wide range of people. Today it is used in <strong>Argentina</strong>, <strong>Perú</strong>, <strong>Chile</strong> and <strong>Uruguay</strong>. ( <strong>ASP.NET</strong> , <strong>SQLServer</strong> )</p>
+<h2>Image bank</h2>
+<p>Architecture, design and implementation of an image bank for the <strong>marketing department across Latin America</strong>. It has several forms for search, great detail in the presentation of the photographs (intensive use of <strong>AJAX</strong>), handling of different formats depending on the final use of the photos (print, PowerPoint, etc.). As a added value, the system automatically categorize the photographs to the more precise approximation of the corporate visual identity, which allows you to find photos that match the colors used in proposals, banners, etc.. (<strong>ASP.NET</strong> , <strong>Oracle 10</strong>, <strong>AJAX</strong>)</p>
+<h2>Alumni</h2>
+<p>Development and maintenance of a basic <strong>CMS</strong> with multiple users for several south american countries (<strong><a href="http://maps.google.com/maps?ll=-15.7833333333,-47.8666666667&amp;spn=10.0,10.0&amp;q=-15.7833333333,-47.8666666667%20(Brazil)&amp;t=h" title="Brazil">Brazil</a></strong>, <strong><a href="http://maps.google.com/maps?ll=-33.4333333333,-70.6666666667&amp;spn=10.0,10.0&amp;q=-33.4333333333,-70.6666666667%20(Chile)&amp;t=h" title="Chile">Chile</a></strong>, <strong><a href="http://maps.google.com/maps?ll=4.58333333333,-74.0666666667&amp;spn=10.0,10.0&amp;q=4.58333333333,-74.0666666667%20(Colombia)&amp;t=h" title="Colombia">Colombia</a></strong>, <strong><a href="http://maps.google.com/maps?ll=-12.0433333333,-77.0283333333&amp;spn=10.0,10.0&amp;q=-12.0433333333,-77.0283333333%20(Peru)&amp;t=h" title="Peru">Perú</a></strong>) aimed to provide content for the PwC <a href="http://en.wikipedia.org/wiki/Alumnus" title="Alumnus">alumni</a> network to keep in touch with their former colleagues and friends. Also they can stay in touch with the firm through learning and networking programs, social media and newsletters. (<strong>ASP.NET</strong>, <strong>SQLServer</strong>)</p>
+<h2>BCPOOrganizer</h2>
+<p>Collaboration in the development of BCPOrganizer, a tool to assists companies in the integrated management of their <a href="http://en.wikipedia.org/wiki/Business_continuity" title="Business continuity">business continuity</a> . It's a centralized repository that allows controlled access to <a href="http://en.wikipedia.org/wiki/Contingency_plan" title="Contingency plan">contingency plans</a> and preventive plans, while at the same time it automates most of the administration and maintenance tasks for these plans. It make it easy the communication between different teams and outside entities because of an automated <a href="http://en.wikipedia.org/wiki/Notification_system" title="Notification system">notification system</a> . This software was commercialized by PwC Uruguay Advisory IT area ( <strong>ASP.NET</strong> , <strong>eXpress Persistent Objects</strong> , <strong>AJAX</strong> )</p>
+<h2>RiskOrganizer</h2>
+<p>Collaboration in the development of a risk evaluation software. RiskOrganizer provides a streamlined solution to document, evaluate and report risks for any unit, project or component within an organization.
+Following the international COSO II standard, the system lets multiple users record objectives, risks and controls in matrices, and document action and monitoring plans based on risk exposures. Reporting functions include risk consolidation, color/heat maps and detailed risk reports, with powerful filtering and analysis tools. This oftware is commercialized by PwC Uruguay's Advisory IT area. ( <strong>ASP.NET</strong>, <strong>eXpress Persistent Objects</strong>, <strong>AJAX</strong>)</p>
+<h2>MetricsOrganizer</h2>
+<p>Collaboration in the development and project management of <strong>MetricsOrganizer</strong>, which allows the registration of values and the subsequent analysis of a configurable number of metrics in a controlled environment. It has a standard output of information as tables and graphics showing different indicators. (<strong>ASP.NET</strong>, <strong>eXpress Persistent Objects</strong>, <strong>AJAX</strong>)</p>
+
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" style="text-align:center; width:100%;">
+  <div style="text-align:center; width:100%">
+  <ul>
+    <li style="margin-top: 0px;">
+      <a href="javascript:void(0);" onclick="window.open('http://www.copyscape.com/?q=' + escape(window.location) + '&src=front'); return false;">
+        <IMG src="/assets/images/cs-wh-3d-234x16.gif" alt="Protected by Copyscape Duplicate Content Detector" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." width="234" height="16" border="0">
+      </A>
+    </li>
+    <li><a style="padding-top:1px" href="/kanbancv">KanbanCV</a> © 2011-<%= Time.now.year %> <a style="padding-top:1px" href="/sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap</a></li>
+    <li>
+      <a href="http://uy.linkedin.com/in/dariomac" style="text-decoration:none;" target="_blank">
+        <img src="/assets/images/linkedin.png" width="17" height="16" alt="View Darío Macchi's LinkedIn profile" border="0" />
+      </a>
+    </li>
+    <li>
+      <a rel="author" href="https://plus.google.com/101333970265292795022?prsrc=3" style="text-decoration:none;" target="_blank">
+        <img src="/assets/images/gplus-16.png" alt="View Darío Macchi's Google+ profile" width="15" height="15" style="border:0;"/>
+      </a>
+    </li>
+    <li>
+      <a href="http://twitter.com/_dariomac" target="_blank">
+        <img src="/assets//images/twitter-16.png" width="15" height="15" alt="View my twitter"/>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.researchgate.net/profile/Dario_Macchi/" target="_blank">
+        <img src="/assets/images/researchgate.png" width="15" height="15" alt="View my ResearchGate profile"/>
+      </a>
+    </li>
+    <li style="padding-right: 2px;">
+      <a href="http://www.diigo.com/user/Dariomac" target="_blank">
+        <img src="/assets/images/diigo.png" width="41" height="15" alt="View my Diigo bookmarks library"/>
+      </a>
+    </li>
+    <li style="margin-top: 0px;">
+      <div class="board_filter">
+      <span>Filter: </span>
+      <input id="filter" type="text" />
+      </div>
+    </li>
+    <li style="margin-top: 0px">
+      <a href="http://humanstxt.org/humans/dario-macchi/" target="_black">
+        <img src="/assets/images/humanstxt-transparent-color.png" width="84" height="15" />
+      </a>
+    </li>
+    <li>Powered by <a style="padding-top:1px" href="http://github.com/comfy/comfortable-mexican-sofa">Comfy</a></li>
+  </ul>
+  </div>
+</div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      multilanguagePage: true,
+      gaTrack: true,
+      gaId: 'UA-28220054-1',
+      floatPosition: google.translate.TranslateElement.FloatPosition.BOTTOM_LEFT
+    });
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  </body>
+</html>
