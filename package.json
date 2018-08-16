@@ -30,7 +30,8 @@
     "morgan": "1.9.0",
     "tiny-ssi": "0.0.2",
     "winston": "2.4.0",
-    "winston-syslog": "1.2.6"
+    "winston-syslog": "1.2.6",
+    "async": "^2.0.0"
   },
   "devdepedencies": {
     "snazzy": "^5.0.0",
