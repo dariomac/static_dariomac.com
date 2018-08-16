@@ -1,6 +1,6 @@
 {
   "name": "2static",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Super Simple Site generator for dariomac.com. Inspired by https://github.com/AVGP/susi",
   "keywords": [
     "static site generator",
@@ -20,6 +20,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "async": "^2.0.0",
     "command-line-args": "4.0.1",
     "commonmark": "0.28.1",
     "express": "4.14.1",
@@ -30,8 +31,7 @@
     "morgan": "1.9.0",
     "tiny-ssi": "0.0.2",
     "winston": "2.4.0",
-    "winston-syslog": "1.2.6",
-    "async": "^2.0.0"
+    "winston-syslog": "1.2.6"
   },
   "devdepedencies": {
     "snazzy": "^5.0.0",
