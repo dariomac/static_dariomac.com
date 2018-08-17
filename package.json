@@ -1,6 +1,6 @@
 {
   "name": "2static",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Super Simple Site generator for dariomac.com. Inspired by https://github.com/AVGP/susi",
   "keywords": [
     "static site generator",
