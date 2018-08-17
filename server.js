@@ -25,7 +25,7 @@ app.use(function (req, res, next) {
 });
 app.use(express.static(publicdir));
 
-app.get('/pullit', function (req, res) {
+app.put('/pullit', function (req, res) {
   console.log('An event has been detected on the listened port: starting execution...');
 
   updateProject((e, result) => {
