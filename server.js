@@ -1,7 +1,6 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const http = require('http');
 const exec = require('child_process').exec;
 const async = require('async');
 
@@ -26,6 +25,23 @@ app.use(function (req, res, next) {
 });
 app.use(express.static(publicdir));
 
+app.get('/pullit', function (req, res) {
+  console.log('An event has been detected on the listened port: starting execution...');
+
+  updateProject((e, result) => {
+    let response = '';
+    if (e) {
+      console.error(`exec error: ${e}`);
+      response += `exec error: ${e}`;
+    }
+    if (result) {
+      console.log(result);
+      response += `\n ${result}`;
+    }
+    res.end(response);
+  });
+});
+
 app.listen(3000, function () {
   console.log('\r\nDariomac.com server listening on: 3000');
 });
@@ -49,24 +65,5 @@ const updateProject = function (callback) {
     return callback(null, results.join(''));
   });
 };
-
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  console.log('An event has been detected on the listened port: starting execution...');
-
-  updateProject((e, result) => {
-    let response = '';
-    if (e) {
-      console.error(`exec error: ${e}`);
-      response += `exec error: ${e}`;
-    }
-    if (result) {
-      console.log(result);
-      response += `\n ${result}`;
-    }
-    res.end(response);
-  });
-
-}).listen(1337);
 
 console.log('Git-auto-pull is running');
