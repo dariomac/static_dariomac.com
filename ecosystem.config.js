@@ -35,7 +35,7 @@ module.exports = {
     },
     dev : {
       key  : '$HOME/.ssh/id_rsa_dm.com',
-      user : 'dariomac',
+      user : 'dmacchi',
       host : 'bitbucket.org',
       ref  : 'origin/master',
       repo : 'git@bitbucket.org:dariomac/static_dariomac.com.git',
