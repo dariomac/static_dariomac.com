@@ -35,7 +35,7 @@ module.exports = {
     },
     dev : {
       user : 'dariomac',
-      host : 'https://bitbucket.org',
+      host : 'bitbucket.org',
       ref  : 'origin/master',
       repo : 'dariomac@bitbucket.org/dariomac/static_dariomac.com.git',
       path : '.',
