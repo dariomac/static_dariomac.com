@@ -34,6 +34,7 @@ module.exports = {
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev : {
+      key  : '$HOME/.ssh/id_rsa_dm.com',
       user : 'dariomac',
       host : 'bitbucket.org',
       ref  : 'origin/master',
