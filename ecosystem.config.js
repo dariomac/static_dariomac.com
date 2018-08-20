@@ -37,7 +37,7 @@ module.exports = {
       user : 'dariomac',
       host : 'bitbucket.org',
       ref  : 'origin/master',
-      repo : 'dariomac@bitbucket.org/dariomac/static_dariomac.com.git',
+      repo : 'git@bitbucket.org:dariomac/static_dariomac.com.git',
       path : '.',
       'post-deploy' : 'yarn install && pm2 reload ecosystem.config.js --env dev',
       env  : {
