@@ -26,7 +26,7 @@ app.use(function (req, res, next) {
 app.use(express.static(publicdir));
 
 app.post('/pullit', function (req, res) {
-  console.log('An event has been detected on the listened port: starting execution...');
+  console.log('Git-auto-pull was called... running!');
 
   updateProject((e, result) => {
     let response = '';
@@ -39,6 +39,20 @@ app.post('/pullit', function (req, res) {
       response += `\n ${result}`;
     }
     res.end(response);
+  });
+});
+
+app.get('/status', function (req, res) {
+  require('child_process').exec('git rev-parse HEAD', function (err, stdout) {
+    if (err) {
+      return res.json({
+        'err': err
+      }).status(500);
+    }
+
+    return res.json({
+      'last_commit': stdout.replace(/\r?\n|\r/, '')
+    });
   });
 });
 
@@ -65,5 +79,3 @@ const updateProject = function (callback) {
     return callback(null, results.join(''));
   });
 };
-
-console.log('Git-auto-pull is running');
