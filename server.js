@@ -49,8 +49,12 @@ app.get('/status', function (req, res) {
       }).status(500);
     }
 
+    let lastCommit = stdout.replace(/\r?\n|\r/, '');
+
+    console.log(`Last commit: ${lastCommit}`);
+
     return res.json({
-      'last_commit': stdout.replace(/\r?\n|\r/, '')
+      'last_commit': lastCommit
     });
   });
 });
