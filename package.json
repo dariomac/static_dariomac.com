@@ -19,7 +19,6 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "async": "^2.0.0",
     "command-line-args": "4.0.1",
     "commonmark": "0.28.1",
     "express": "4.14.1",

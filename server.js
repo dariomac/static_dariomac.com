@@ -1,8 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const exec = require('child_process').exec;
-const async = require('async');
+const { exec } = require('child_process');
 
 var publicdir = path.join(__dirname, '/www');
 
@@ -25,20 +24,20 @@ app.use(function (req, res, next) {
 });
 app.use(express.static(publicdir));
 
-app.post('/pullit', function (req, res) {
+app.post('/pullit', async function (req, res) {
   console.log('Git-auto-pull was called... running!');
 
-  updateProject((e, result) => {
-    let response = '';
-    if (e) {
-      console.error(`exec error: ${e}`);
-      response += `exec error: ${e}`;
+  exec('git pull && yarn install', (err, stdout, stderr) => {
+    if (err) {
+      // node couldn't execute the command
+      return;
     }
-    if (result) {
-      console.log(result);
-      response += `\n ${result}`;
+    if (stdout.length > 0) {
+      console.log(`\x1b[32m${stdout}\x1b[0m`);
     }
-    res.end(response);
+    else {
+      console.log(`\x1b[31m${stderr}\x1b[0m`);
+    }
   });
 });
 
@@ -59,23 +58,3 @@ app.get('/status', function (req, res) {
 app.listen(3000, function () {
   console.log('\r\nDariomac.com server listening on: 3000');
 });
-
-const absolutePath = __dirname;
-
-const cmds = ['git pull'].concat(process.argv.filter((arg, index) => { return index > 2; }));
-
-const execCmds = cmds.map((cmd) => {
-  return function (callback) {
-    exec(`cd ${absolutePath} && ${cmd}`, {maxBuffer: 1024 * 600}, (err, stdout, stderr) => {
-      if (err) return callback(err);
-      callback(null, `--- ${cmd} ---:\n stdout: ${stdout} \n stderr: ${stderr}\n`);
-    });
-  };
-});
-
-const updateProject = function (callback) {
-  async.series(execCmds, function (err, results) {
-    if (err) return callback(err);
-    return callback(null, results.join(''));
-  });
-};
