@@ -1,0 +1,121 @@
+{
+  "title": "The First Two Weeks Of The Rest Of My Flow-e Life",
+  "date": "2018-09-03",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Personal opinion about Flow-e based on my experince in the use of the tool.",
+    "datebox": "2018-01-03",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/first-two-weeks-rest-flow-e-life",
+    "position": "20180103",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "The First Two Weeks Of The Rest Of My Flow-e Life",
+    "type": "Document"
+  }
+}
+
+---
+
+[pub_date:string]
+2018-01-03
+
+[short_description:string]
+Personal opinion about Flow-e based on my experince in the use of the tool.
+
+[body:md]
+(Note: This review is provided by one of our Flow-e users – Dario Macchi. He shares his personal opinion, based on his experience with Flow-e).
+
+When I received the email announcing a new Kanbanize product, it took me by surprise. Why the company owner of, IMHO, the best **[Kanban board software](https://kanbanize.com/)** out there want to mess with emails?
+
+Maybe I should start by telling you the story from the very beginning, saying that I have a very long relationship with Kanbanize.
+
+In January 2012 I tried every (I am not exaggerating), every online kanban board software and decided that the most promising one was Kanbanize, over other more powerful at that moment.
+
+Years have passed, and now I feel very close to Kanbanize, the company behind it but mostly, with their people. And that’s why I was surprised. Because email readers are the second software that I use more, after Kanbanize!
+
+In the next sections, I will describe the pros and cons of Flow-e trying to be impartial and unbiased due to what I have explained above.
+
+The Pros Of Using This Tool
+---------------------------
+
+The first thing that surprised me was that, from time zero, I started using it in real life without feeling lost or suffering the adaptation. I started linking Flow-e with my Gmail account, configured to show emails from last two weeks, and that was all.
+
+Initially, **[Flow-e](https://flow-e.com/home)** shows you the three traditional Kanban columns, but you can easily add your own ones to represent your reading emails flow.
+
+![Flow-e email workflow](/assets/flow-e-email-workflow.jpg#center)
+
+For example, I added a couple of columns alongside the “In progress” column, Pinned column and Reading column. I use Pinned to pin important emails temporarily and access them easily and quickly.
+
+Reading is for those emails that have too many materials to process, like newsletters, digests, etc. As soon as I added those columns, I felt the need to assign a common color to them (and to the “In Progress” column too) because they represent “actions.”
+
+And that was easy too. In 10 minutes I had a board representing explicitly my current way of reading emails.
+
+About the interface, it’s clear and intuitive but also seems a bit odd.
+
+That oddity comes from the fact of reading emails in a new way, much more like I used to handle email actions in Kanbanize cards after I read emails in the old fashioned way.
+
+So, after this epiphany, I realized that I could convert those emails into real actionables directly from my email inbox, don’t having any reason to copy-paste them to a Kanbanize card anymore!
+
+By saying this, I need to be clear about Flow-e, the tool doesn’t replace a real Kanban board (this is not its goal, although there is a way to create cards without an actual email).
+
+It works more as a tool to process emails using the same mental abstractions as Kanban boards, reducing the mental switching cost between reading emails and managing projects.
+
+Another advantage of Flow-e is its **[ecosystem of power-ups](https://flow-e.com/blog/power-ups-in-flowe/)**, small enhancements that you can activate to improve even more the way you work.
+
+For example, I activated “**[Card Due Dates](https://flow-e.com/blog/email-due-date-reminder/)**” to set due dates, “**[Cards without an email](https://flow-e.com/blog/standalone-task-cards/)**,” the one that I talked in the last paragraph and “**[Group Cards](https://flow-e.com/blog/group-cards-conversations/)**.”
+
+This last one is very handy. You can group emails around a common topic that needs to be handled as an important topic.
+
+Also, if any of these power-ups doesn’t satisfy you entirely, there is a way to vote for the next power-up to be activated!
+
+![Flow-e vote for powerups](/assets/flow-e-vote-for-powerups.jpg#center)
+
+The Cons Of The Tool
+--------------------
+
+Until this moment I talked about the good things of Flow-e from my point of view and experience. About the cons, after two weeks of daily use, I really didn’t find any serious issues.
+
+The only thing that bothers me is that I can’t drag files to emails as attachments, but I think it’s a matter of time they add that small feature.
+
+Also, I’ve reported a couple of visual update bugs (e.g., things that worked well but didn’t update the interface) using the conversation tool without even leaving the Flow-e workflow.
+
+It is obvious that many things can be added or improved, but those aren’t issues.
+
+Sometimes you feel lost because you don’t see numbers or some notifications of new arrivals in labels with “Skip inbox” rules.
+
+Maybe this can be solved by choosing some labels to be shown as swimlanes, but these things are all debatable and part of my Christmas wish list.
+
+Conclusion
+----------
+
+Along with this brief post, I tried to be impartial and unbiased, but I couldn’t with these people. These guys made it again. And not only from the technical point of view, where they are very solid and trustable but mainly from the human point of view.
+
+From the first line of contact – the people behind the conversation tool, passing through the tech guys that try to reproduce reported bugs to even, the CEO of the company.
+
+They are very kind, serious and helpful.
+
+I chose them 5 years ago to trust my daily projects, and now I think they are the best team to trust my personal and work emails too.
+
+Cheers, and continue kanbanizing our lives!
+
+[acknowledgments:md]
+Thanks to Dimitar Karaivanov for asking me to write this review.
+
+[further_reading:md]
+You can read the original post at Flow-e blog in the "Inbox heroes" section, [https://flow-e.com/blog/inbox-heroes/first-two-weeks-rest-flow-e-life/](https://flow-e.com/blog/inbox-heroes/first-two-weeks-rest-flow-e-life/).
+
+[significant_revisions:md]
+* Jan 03, 2018: Original Publication on [https://flow-e.com/blog/inbox-heroes/](https://flow-e.com/blog/inbox-heroes/)
+* Set 03, 2018: Publication on dariomac.com

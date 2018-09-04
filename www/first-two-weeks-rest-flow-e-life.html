@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Darío Macchi | JQuery append into heavy loaded DOM trees</title>
+    <title>Darío Macchi | The First Two Weeks Of The Rest Of My Flow-e Life</title>
 
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -268,48 +268,62 @@
 </div>
 
         <div id="board_container">
-            <script type="text/javascript" src="/assets/vendor/syntaxhighlighter/shCore.js"></script>
-<script type="text/javascript" src="/assets/vendor/syntaxhighlighter/shAutoloader.js"></script>
-<script type="text/javascript" src="/assets/vendor/syntaxhighlighter/shBrushJScript.js"></script>
-<script type="text/javascript">
-$(function() {
- SyntaxHighlighter.all();
- $('.date').html($('.date').html().split(' ')[0]);
-});
-</script>
-<link type="text/css" rel="stylesheet" href="/assets/vendor/syntaxhighlighter/shThemeDefault.css" />
-
           <div class="content document">
-          <h1>JQuery append into heavy loaded DOM trees</h1>
+          <h1>The First Two Weeks Of The Rest Of My Flow-e Life</h1>
           <div>
-            <p class="date">2014-04-14</p>
+            <p class="date">2018-01-03</p>
           </div>
-          <div class="description">Describe odd behaviour when you append DOM element into heavy loaded DOM tree</div>
-          <p>Last week we have found an odd behaviour in some website that drove us crazy for a while. The bug was related with the append of jQuery that is used to insert content to the end of the matched elements and the height method used to get the computed height of an element. Look at this code:</p>
-<pre class="brush: javascript; toolbar: false;">
-//divSong is created with jQuery, added to the (DOM) in the next line
-$('.song-list .songs').append(divSong);
-currentPlaying.css('height', divSong.height());
-</pre>
-<p>This piece of code normally works without any problem, or should work, because In our case randomly the computed height of the dynamic div (divSong) returns 0px. It seems like the append sometimes behave asynchronously, so when we ask for the divs height it is still 0px due to the fact that it hasn't been added to the DOM tree yet. To test this we code the following workaround:</p>
-<pre class="brush: javascript; toolbar: false;">
-//divSong is a div created using jQuery added to the DOM in the next line
-$('.song-list .songs').append(divSong);
-// Although JS is single thread, setTimeout lets the browser re-render the page after running the
-// height code.
-setTimeout(function(){
-    currentPlaying.css('height', divSong.height());
-}, 0);
-</pre>
-<p>Because in Vairix we have an “always look for evidence&quot; culture we made a search looking for something that supports (or not) this theory. We have found that many people reports similar situations, although most of them were related with other problems like asynchronous ajax callbacks or other environmental errors. Besides those false positive results, we found two questions in StackOverflow (<a href="http://www.google.com/url?q=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F5017923%2Fdiv-width-immediately-after-append-is-calculating-wrong&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHCjQ70kysaH3Bu04VtKaQsOJ41Fw">link1</a>, <a href="http://www.google.com/url?q=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F6132141%2Fjquery-why-does-width-sometimes-return-0-after-inserting-elements-with-html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHelN_XY-QE0yf0KbANE4WI0UTt6Q">link2</a>) that describe the same situation that we have. Both answers lead to the same solution as we had found (we rocks!).</p>
-<p>Remember: this solutions works, but it is not due to the fact of running in a different thread (JavaScript runs in a single thread); it is because setTimeout let the browser continue with the next execution block in the queue that is the html render one.</p>
+          <div class="description">Personal opinion about Flow-e based on my experince in the use of the tool.</div>
+          <p>(Note: This review is provided by one of our Flow-e users – Dario Macchi. He shares his personal opinion, based on his experience with Flow-e).</p>
+<p>When I received the email announcing a new Kanbanize product, it took me by surprise. Why the company owner of, IMHO, the best <strong><a href="https://kanbanize.com/">Kanban board software</a></strong> out there want to mess with emails?</p>
+<p>Maybe I should start by telling you the story from the very beginning, saying that I have a very long relationship with Kanbanize.</p>
+<p>In January 2012 I tried every (I am not exaggerating), every online kanban board software and decided that the most promising one was Kanbanize, over other more powerful at that moment.</p>
+<p>Years have passed, and now I feel very close to Kanbanize, the company behind it but mostly, with their people. And that’s why I was surprised. Because email readers are the second software that I use more, after Kanbanize!</p>
+<p>In the next sections, I will describe the pros and cons of Flow-e trying to be impartial and unbiased due to what I have explained above.</p>
+<h2>The Pros Of Using This Tool</h2>
+<p>The first thing that surprised me was that, from time zero, I started using it in real life without feeling lost or suffering the adaptation. I started linking Flow-e with my Gmail account, configured to show emails from last two weeks, and that was all.</p>
+<p>Initially, <strong><a href="https://flow-e.com/home">Flow-e</a></strong> shows you the three traditional Kanban columns, but you can easily add your own ones to represent your reading emails flow.</p>
+<p><img src="/assets/flow-e-email-workflow.jpg#center" alt="Flow-e email workflow" /></p>
+<p>For example, I added a couple of columns alongside the “In progress” column, Pinned column and Reading column. I use Pinned to pin important emails temporarily and access them easily and quickly.</p>
+<p>Reading is for those emails that have too many materials to process, like newsletters, digests, etc. As soon as I added those columns, I felt the need to assign a common color to them (and to the “In Progress” column too) because they represent “actions.”</p>
+<p>And that was easy too. In 10 minutes I had a board representing explicitly my current way of reading emails.</p>
+<p>About the interface, it’s clear and intuitive but also seems a bit odd.</p>
+<p>That oddity comes from the fact of reading emails in a new way, much more like I used to handle email actions in Kanbanize cards after I read emails in the old fashioned way.</p>
+<p>So, after this epiphany, I realized that I could convert those emails into real actionables directly from my email inbox, don’t having any reason to copy-paste them to a Kanbanize card anymore!</p>
+<p>By saying this, I need to be clear about Flow-e, the tool doesn’t replace a real Kanban board (this is not its goal, although there is a way to create cards without an actual email).</p>
+<p>It works more as a tool to process emails using the same mental abstractions as Kanban boards, reducing the mental switching cost between reading emails and managing projects.</p>
+<p>Another advantage of Flow-e is its <strong><a href="https://flow-e.com/blog/power-ups-in-flowe/">ecosystem of power-ups</a></strong>, small enhancements that you can activate to improve even more the way you work.</p>
+<p>For example, I activated “<strong><a href="https://flow-e.com/blog/email-due-date-reminder/">Card Due Dates</a></strong>” to set due dates, “<strong><a href="https://flow-e.com/blog/standalone-task-cards/">Cards without an email</a></strong>,” the one that I talked in the last paragraph and “<strong><a href="https://flow-e.com/blog/group-cards-conversations/">Group Cards</a></strong>.”</p>
+<p>This last one is very handy. You can group emails around a common topic that needs to be handled as an important topic.</p>
+<p>Also, if any of these power-ups doesn’t satisfy you entirely, there is a way to vote for the next power-up to be activated!</p>
+<p><img src="/assets/flow-e-vote-for-powerups.jpg#center" alt="Flow-e vote for powerups" /></p>
+<h2>The Cons Of The Tool</h2>
+<p>Until this moment I talked about the good things of Flow-e from my point of view and experience. About the cons, after two weeks of daily use, I really didn’t find any serious issues.</p>
+<p>The only thing that bothers me is that I can’t drag files to emails as attachments, but I think it’s a matter of time they add that small feature.</p>
+<p>Also, I’ve reported a couple of visual update bugs (e.g., things that worked well but didn’t update the interface) using the conversation tool without even leaving the Flow-e workflow.</p>
+<p>It is obvious that many things can be added or improved, but those aren’t issues.</p>
+<p>Sometimes you feel lost because you don’t see numbers or some notifications of new arrivals in labels with “Skip inbox” rules.</p>
+<p>Maybe this can be solved by choosing some labels to be shown as swimlanes, but these things are all debatable and part of my Christmas wish list.</p>
+<h2>Conclusion</h2>
+<p>Along with this brief post, I tried to be impartial and unbiased, but I couldn’t with these people. These guys made it again. And not only from the technical point of view, where they are very solid and trustable but mainly from the human point of view.</p>
+<p>From the first line of contact – the people behind the conversation tool, passing through the tech guys that try to reproduce reported bugs to even, the CEO of the company.</p>
+<p>They are very kind, serious and helpful.</p>
+<p>I chose them 5 years ago to trust my daily projects, and now I think they are the best team to trust my personal and work emails too.</p>
+<p>Cheers, and continue kanbanizing our lives!</p>
 
             <h2 id="Acknowledgments">Acknowledgments</h2>
-              <p><a href="http://www.vairix.com/blog/jquery-append-into-heavy-loaded-dom-trees">This post</a> was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.</p>
+              <p>Thanks to Dimitar Karaivanov for asking me to write this review.</p>
+
+            <br>
+            <h2 id="FurtherReading">Further Reading</h2>
+            <p>You can read the original post at Flow-e blog in the &quot;Inbox heroes&quot; section, <a href="https://flow-e.com/blog/inbox-heroes/first-two-weeks-rest-flow-e-life/">https://flow-e.com/blog/inbox-heroes/first-two-weeks-rest-flow-e-life/</a>.</p>
 
             <br>
             <h2>Significant Revisions</h2>
-            <p><em>Apr 14, 2014</em>: Original Publication on vairix.com and dariomac.com</p>
+            <ul>
+<li>Jan 03, 2018: Original Publication on <a href="https://flow-e.com/blog/inbox-heroes/">https://flow-e.com/blog/inbox-heroes/</a></li>
+<li>Set 03, 2018: Publication on dariomac.com</li>
+</ul>
 
             <br>
 
