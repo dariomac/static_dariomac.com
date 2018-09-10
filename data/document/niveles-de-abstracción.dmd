@@ -1,0 +1,43 @@
+{
+  "title": "Niveles de Abstracción",
+  "date": "2019-09-09",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "requested_1",
+    "content": "¿Qué entendemos por niveles de abstracción?",
+    "datebox": "---",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/niveles-de-abstracción",
+    "position": "%{position}",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Niveles de Abstracción",
+    "type": "0"
+  }
+}
+
+---
+
+[pub_date:string]
+
+[short_description:string]
+
+[body:md]
+WIP
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+
