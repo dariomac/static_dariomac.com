@@ -16,7 +16,7 @@ requested_1, progress_2, done_3
 Lanes
 -----
 
-Article, Education, Me, Experience, Quote
+Article, Education, Me, Experience, Quote, Essay
 
 
 
