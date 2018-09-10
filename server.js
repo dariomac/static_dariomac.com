@@ -9,8 +9,10 @@ var app = express();
 
 // http://stackoverflow.com/a/16895480/126519
 app.use(function (req, res, next) {
-  if (req.path.indexOf('.') === -1) {
-    var file = publicdir + req.path + '.html';
+  let reqPath = decodeURIComponent(req.path);
+
+  if (reqPath.indexOf('.') === -1) {
+    var file = publicdir + reqPath + '.html';
     fs.exists(file, function (exists) {
       if (exists) {
         req.url += '.html';
