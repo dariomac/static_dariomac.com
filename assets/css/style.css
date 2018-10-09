@@ -99,7 +99,7 @@ ol {
 		border: 0px;
 		border-radius: 12px;
 		float: left; color: #fff;
-		margin-right: 10px;
+		margin-right: 8px;
 	}
 	.orange_box div.username {
 		padding: 0px 10px 0px 26px;
@@ -1064,4 +1064,10 @@ h3 > a:hover{
 
 #new_essay.blink span {
 	background-color: rgba(255, 221, 0, 0.5) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .breadcrumb, #geo {
+    	display: none;
+    }
 }
