@@ -8,7 +8,7 @@
     "color": "#99b399",
     "columnid": "done_3",
     "content": "Computing Teacher",
-    "datebox": "Dec 1998 – Jun 2003",
+    "datebox": "Dec 1998 - Jun 2003",
     "extlink": "http://www.redqualitas.com",
     "laneid": "Experience",
     "leftbox": "",
@@ -20,7 +20,7 @@
     "subtaskscomplete": "0",
     "tags": null,
     "title": "IAC (Instituto Americano de Computación) - Red Qualitas",
-    "type":"Experience"
+    "type": "Experience"
   }
 }
 
