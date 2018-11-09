@@ -1,0 +1,56 @@
+
+{
+  "title": "LimpiezaUY: plataforma colaborativa de limpieza",
+  "date": "2018-11-08",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "LimpiezaUY: plataforma colaborativa de limpieza",
+    "datebox": null,
+    "extlink": "https://fi.ort.edu.uy/51827/17/limpiezauy:-plataforma-colaborativa-de-limpieza.html",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/limpiezauy-plataforma-colaborativa-de-limpieza",
+    "position": "0",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#startup,#mvp",
+    "title": "LimpiezaUY: plataforma colaborativa de limpieza",
+    "type": "Project"
+  }
+}
+
+---
+
+[download_link:string]
+
+[platform:string]
+Web (React) - Mobile (React Native)
+
+[link:string]
+https://fi.ort.edu.uy/72359/17/experiencia-virtual-educativa:-sistema-inmunologico.html
+
+[short_description:string]
+LimpiezaUY: plataforma colaborativa de limpieza
+
+[description:md]
+**Disclaimer**: _I've participated in this project **only** on my role of_ [Tutor](/degree-final-projects-tutor)
+
+LimpiezaUY is a collaborative cleaning platform that connects cleaners with people who need cleaning services, acting as a mediator between the parties.
+
+The platform provides customers with a quick way to find a cleaner, ensuring an easy and intuitive user experience that solves the cleaning problem with a couple of clicks, without moving from your home.
+
+LimpiezaUY is an undertaking that arises in the combination of the search for innovative and collaborative solutions to one of the problems that was presented to a member of the group.
+
+[related_images:json]
+  [{
+    "filename": "limpiezauy-1.jpg"
+  },{
+    "filename": "limpiezauy-2.jpg"
+  }]
