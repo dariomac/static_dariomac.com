@@ -516,7 +516,7 @@ ol {
 	.task_inner {
 		width: 168px;
 		background: #EEE /*url('/assets/images/bgr_task_inner_top.png') no-repeat 0px 0px*/;
-		margin-left: 1px;
+		margin-left: 2px;
 		x-height: 84px;
 	}
 	.task_head {
