@@ -1,0 +1,51 @@
+
+{
+  "title": "Gestión de compras para proyectos de construcción",
+  "date": "2018-11-08",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "Gestión de compras para proyectos de construcción",
+    "datebox": "2016-2017",
+    "extlink": "https://fi.ort.edu.uy/49141/17/gestion-de-compras-para-proyectos-de-construccion.html",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/gestion-de-compras-para-proyectos-de-construccion",
+    "position": "0",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "",
+    "title": "Gestión de compras para proyectos de construcción",
+    "type": "Project"
+  }
+}
+
+---
+
+[download_link:string]
+
+[platform:string]
+Web
+
+[link:string]
+https://fi.ort.edu.uy/49141/17/gestion-de-compras-para-proyectos-de-construccion.html
+
+[short_description:string]
+Gestión de compras para proyectos de construcción
+
+[description:md]
+**Disclaimer**: _I've participated in this project **only** on my role of_ [Tutor](/degree-final-projects-tutor)
+
+The project consists of an integral system in which all purchases made by Berkes S.A. can be planned and managed. This involves supplies of works in different countries and a wide range of different inputs.
+
+Currently, Berkes uses an ERP system developed by the company Nodum, in which they make purchase orders for inputs, register users, articles, suppliers, projects, among others.
+
+The problem posed by the company was that they did not have a tool that would allow them to plan purchases efficiently, taking advantage of the information gathered in previous projects.
+
+![Gabriel's recommendation](/assets/grupo8-gabriel201811082235.png#center)
