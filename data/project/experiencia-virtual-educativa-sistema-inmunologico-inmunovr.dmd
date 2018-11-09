@@ -1,0 +1,73 @@
+
+{
+  "title": "Experiencia virtual educativa: Sistema Inmunológico (InmunoVR)",
+  "date": "2018-11-07",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Experiencia virtual educativa: Sistema Inmunológico",
+    "datebox": null,
+    "extlink": "https://fi.ort.edu.uy/72359/17/experiencia-virtual-educativa:-sistema-inmunologico.html",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/experiencia-virtual-educativa-sistema-inmunologico-inmunovr",
+    "position": "0",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#gear,#vr,#unreal",
+    "title": "InmunoVR (Samsung Gear VR)",
+    "type": "Project"
+  }
+}
+
+---
+
+[download_link:string]
+
+[platform:string]
+Samsung Gear VR - Unreal Engine
+
+[link:string]
+https://fi.ort.edu.uy/72359/17/experiencia-virtual-educativa:-sistema-inmunologico.html
+
+[short_description:string]
+Experiencia virtual educativa: Sistema Inmunológico
+
+[description:md]
+**Disclaimer**: _I've participated in this project **only** on my role of_ [Tutor](/degree-final-projects-tutor)
+
+InmunoVR is a simulation whose mission is to provide an educational experience that helps high school students to understand, in a playful way, a subject that is difficult to understand with traditional means.
+
+Unlike a book, this tool uses concepts and practices of experiential learning to transmit knowledge through the use of Virtual Reality.
+
+The objective of simulation is to transmit knowledge through a three-dimensional virtual environment, using an emerging technology that is increasingly common.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/20BrVBbQBGg#center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[attachments:json]
+  [{
+    "filename": "inmunovr-proyecto-educativo-permite-recorrer-el-sistema-inmunologico-la-diaria-201811062005.pdf",
+    "description": "Article about the project as appeared at 'La Diaria' paper (2018-10-18)."
+  },
+  {
+    "filename": "inmunovr-proyecto-educativo-permite-recorrer-el-sistema-inmunologico-cciu201811072222.pdf",
+    "description": "Article about the project as appeared at Comité Central Israelita del Uruguay website (2018-10-19)."
+  },{
+    "filename": "inmunovr-experiencia-virtual-educativa-sistema-inmunologico-ort-201811072218.pdf",
+    "description": "Complete abstract from Universidad ORT Uruguay website (2018-11-07)."
+  }]
+
+[related_images:json]
+  [{
+    "filename": "inmunovr-fabian-201811071832.png"
+  },{
+    "filename": "inmunovr-pablo-201811071832.jpg"
+  },{
+    "filename": "inmunovr-patricia-201811071830.jpg"
+  }]

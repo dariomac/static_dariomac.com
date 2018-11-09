@@ -11,7 +11,7 @@
     "content": "%{short_description}",
     "datebox": null,
     "extlink": "%{link}",
-    "laneid": "%{lane}",
+    "laneid": "Project",
     "leftbox": "",
     "leftmsg": "",
     "linkto": "%{link_to}",
@@ -33,7 +33,7 @@
     "subtaskscomplete": "0",
     "tags": null,
     "title": "%{title} (%{platform})",
-    "type": "0"
+    "type": "Project"
   }
 }
 
