@@ -203,34 +203,13 @@
 <meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
 <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
 
-<link rel="dns-prefetch" href="//dariomac.com"/>
-<link rel="dns-prefetch" href="//translate.googleapis.com"/>
-<link rel="dns-prefetch" href="//gstatic.com"/>
-<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
-<link rel="dns-prefetch" href="//google-analytics.com"/>
-<link rel="dns-prefetch" href="//fonts.gstatic.com"/>
-<link rel="dns-prefetch" href="//translate.google.com"/>
-<link rel="dns-prefetch" href="//google.com"/>
-<link rel="dns-prefetch" href="//c.statcounter.com"/>
-<link rel="dns-prefetch" href="//statcounter.com"/>
-<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
-<link rel="dns-prefetch" href="//yui.yahooapis.com"/>
-
-<link rel="stylesheet" type="text/css" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/18style.css">
 
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<!--[if lt IE 8]>
-  <link rel="stylesheet" type="text/css" href="/assets/css/style_ie.css">
-  <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
-<![endif]-->
-
-<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-<script type="text/javascript" src="/assets/vendor/jquery/jquery.min.js"></script>
-<!--<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>-->
 
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -257,92 +236,13 @@ function afterContentDraw () {
         // $v.css('color','red');
       });
 
-    preloadImages($('a.fancybox'));
   }, 1000);
 }
 
-function preloadImages (array) {
-  if (!preloadImages.list) {
-    preloadImages.list = [];
-  }
-  for (var i = 0; i < array.length; i++) {
-    var img = new Image();
-    img.src = $(array[i]).attr('href');
-    preloadImages.list.push(img);
-  }
-}
-
-function loadCSS ( href, before, media ) {
-  // Arguments explained:
-  // `href` [REQUIRED] is the URL for your CSS file.
-  // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
-  // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
-  // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
-  var doc = this.document;
-  var ss = doc.createElement('link');
-  var newMedia = media || 'all';
-  var ref;
-  if (before) {
-    ref = before;
-  }
-  else {
-    var refs = (doc.body || doc.getElementsByTagName('head')[0]).childNodes;
-    ref = refs[refs.length - 1];
-  }
-
-  var sheets = doc.styleSheets;
-  ss.rel = 'stylesheet';
-  ss.href = href;
-  // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
-  ss.media = 'only x';
-
-  // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
-  function ready (cb) {
-    if (doc.body) {
-      return cb();
-    }
-    setTimeout(function () {
-      ready(cb);
-    });
-  }
-  // Inject link
-  // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
-  // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
-  ready(function () {
-    ref.parentNode.insertBefore(ss, (before ? ref : ref.nextSibling));
-  });
-  // A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
-  var onloadcssdefined = function (cb) {
-    var resolvedHref = ss.href;
-    var i = sheets.length;
-    while (i--) {
-      if (sheets[ i ].href === resolvedHref) {
-        return cb();
-      }
-    }
-    setTimeout(function () {
-      onloadcssdefined(cb);
-    });
-  };
-
-  // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
-  if (ss.addEventListener) {
-    ss.addEventListener('load', function () {
-      this.media = newMedia;
-    });
-  }
-  ss.onloadcssdefined = onloadcssdefined;
-  onloadcssdefined(function () {
-    if (ss.media !== newMedia) {
-      ss.media = newMedia;
-    }
-  });
-  return ss;
-};
 </script>
 
 <!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
+<script type="text/javascript"
   var sc_project=9186547;
   var sc_invisible=1;
   var sc_security="dce954c9";
@@ -360,10 +260,6 @@ function loadCSS ( href, before, media ) {
 </noscript>
 <!-- End of StatCounter Code for Default Guide -->
 
-<script type="text/javascript">
-  var baseUrl = "http://www.dariomac.com";
-</script>
-
 <link rel="shortcut icon" href="/assets/favicon.ico" />
 
 <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
@@ -379,70 +275,1695 @@ function loadCSS ( href, before, media ) {
       <div class="center"></div>
     </div>-->
     <div class="board_view">
-      <div class="clearfix top_menu" style="border-bottom: #D8D7D7 1px solid">
-  <a href="/">
-    <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
-  </a>
-  <div style="float:right; padding-top: 8px;">
-      <a class="btn_feedback" title="Contact me" href="/messages/new">
-      <strong>Contact me<span>&nbsp;</span></strong>
-      </a>
-  </div>
-  <div class="submenu">
-    <div class="orange_box" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <a class="url" href="/about-me">
-          <div class="username">
-              <span>
-                <strong>
-                  <span itemprop="name">Darío</span> <span itemprop="familyName">Macchi</span>
-                </strong>
-              </span>
+      <header class="dm-header">
+  <h1>Content Filters</h1>
+</header>
+
+      <main class="dm-main-content">
+        <div class="dm-tab-filter-wrapper">
+          <div class="dm-tab-filter">
+            <ul class="dm-filters">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+              </li>
+              <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+              <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Plan</a></li>
+              <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">In Progress</a></li>
+              <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Done</a></li>
+            </ul> <!-- dm-filters -->
+          </div> <!-- dm-tab-filter -->
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="container-fluid dm-board">
+          <div id="plan" class="row d-none d-md-flex">
+            <div class="plan col-md-4">PLAN</div>
+            <div class="in_progress col-md-4">IN PROGRESS</div>
+            <div class="done col-md-4">DONE</div>
           </div>
-      </a>
-      <ul>
-        <li id="geo">
-          <strong>
-            <span itemscope itemtype="http://schema.org/City">
-              <a target="_blank" href="http://maps.google.com/maps?q=montevideo+city+uruguay&hl=en&sll=-32.522779,-55.765835&sspn=5.325828,9.876709&t=v&hnear=Montevideo,+Montevideo+Dept,+Uruguay&z=11" itemprop="url">
-                <span itemprop="name">
-                  Montevideo</span>,
-              </a>
-            </span>
-            <span itemprop="nationality" itemscope itemtype="http://schema.org/Country">
-              <span itemprop="name">
-                <a href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&ie=UTF-8&hq=&hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&gl=uy&ei=KiKjU6fpE-HNsQSlqYGoCg&ved=0CBsQ8gEwAA" itemprop="url">
-                  Uruguay
-                </a>
-              </span>
-            </span>
-          </strong>
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Me</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+            </div>
+            <div class="in_progress iso col-md-4">
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      About me
+    </div>
+    <div class="card-body">
+      <p class="card-text">Strong industry background. Interested in doing scientific research.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item ellipsis">
+          <a href="http://uy.linkedin.com/in/dariomac" class="card-link">http://uy.linkedin.com/in/dariomac</a>
         </li>
-        <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
-      </ul>
-    </div>
+    </ul>
   </div>
 
-  <div class="breadcrumb">
-    <div class="breadcrumb-items" itemprop="breadcrumb">
-      <strong><a href="/">Home ( KanbanCV ) / </a></strong>
-        <strong></strong>
-      <div style="padding-left: 20px; display: inline;">
-        <div id="new_essay" style="display: inline; color:red;">
-          <span class="transition">
-            <i class="fa fa-heartbeat" aria-hidden="true"></i>
-            <a href='/first-two-weeks-rest-flow-e-life' style='text-decoration: underline;'>
-              The First Two Weeks Of The Rest Of My Flow-e Life
-            </a>
-          </span>
-          |
-          <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
+  <div class="card task" style="background-color: #FFD700; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Finish this website
+    </div>
+    <div class="card-body">
+      <p class="card-text">This is a work in progress</p>
+    </div>
+    <ul class="list-group list-group-flush">
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #FF6E19; color: #ffffff" data-order=>
+    <div class="card-header ellipsis">
+      Manifesto
+    </div>
+    <div class="card-body">
+      <p class="card-text">A public declaration of intent stating my beliefs, how I organize my work and even my life.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Me elsewhere
+    </div>
+    <div class="card-body">
+      <p class="card-text">These are links to my profile on several online services.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+    </ul>
+  </div>
+
+            </div>
+            <div class="done iso col-md-4">
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
+    <div class="card-header ellipsis">
+      Favorite drinks
+    </div>
+    <div class="card-body">
+      <p class="card-text">These are my favorite drinks (just in case you want to invite me)</p>
+    </div>
+    <ul class="list-group list-group-flush">
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      My marriage
+    </div>
+    <div class="card-body">
+      <p class="card-text">I got married on March 17, 2012</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item ellipsis">
+          <a href="http://www.youtube.com/watch?v&#x3D;4Kaa7gPT9XE" class="card-link">http://www.youtube.com/watch?v&#x3D;4Kaa7gPT9XE</a>
+        </li>
+    </ul>
+  </div>
+
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Experience</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+            </div>
+            <div class="in_progress iso col-md-4">
+  <div class="card task" style="background-color: #6EA4D4; color: #000000" data-order=10>
+    <div class="card-header ellipsis">
+      Batanga Media
+    </div>
+    <div class="card-body">
+      <p class="card-text">Scrum Master - Project Manager</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #6EA4D4; color: #000000">Nov 2016 - Now</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="batangamedia.com" class="card-link">batangamedia.com</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #8C0202; color: #ffffff" data-order=0>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">Degree final projects tutor</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #8C0202; color: #ffffff">Aug 2016 - Now</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="https://fi.ort.edu.uy/72104/17/proyectos-de-fin-de-carrera.html" class="card-link">https://fi.ort.edu.uy/72104/17/proyectos-de-fin-de-carrera.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #FF6E19; color: #ffffff" data-order=0>
+    <div class="card-header ellipsis">
+      Self-Employed
+    </div>
+    <div class="card-body">
+      <p class="card-text">Software Engineering Advisor/Consultant</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #FF6E19; color: #ffffff">Mar 2013 – Now</span>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #8C0202; color: #ffffff" data-order=0>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">Software Engineering Professor</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #8C0202; color: #ffffff">Mar 2013 - Now</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://fi.ort.edu.uy/innovaportal/v/3399/5/fi.ort.front/ingenieria_de_software.html" class="card-link">http://fi.ort.edu.uy/innovaportal/v/3399/5/fi.ort.front/ingenieria_de_software.html</a>
+        </li>
+    </ul>
+  </div>
+
+            </div>
+            <div class="done iso col-md-4">
+  <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=6>
+    <div class="card-header ellipsis">
+      Universidad EAFIT
+    </div>
+    <div class="card-body">
+      <p class="card-text">9° Entrepreneurship Summer Camp</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #00A651; color: #ffffff">Mar 2015</span>
+            <span class="badge float-left" style="background-color: #00A651; color: #ffffff">Medellín - Colombia</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.eafit.edu.co/institucional/eafit-llanogrande/Paginas/presentacion.aspx" class="card-link">http://www.eafit.edu.co/institucional/eafit-llanogrande/Paginas/presentacion.aspx</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=0>
+    <div class="card-header ellipsis">
+      IAC (Instituto Americano de Computación) - Red Qualitas
+    </div>
+    <div class="card-body">
+      <p class="card-text">Computing Teacher</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">Dec 1998 - Jun 2003</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.redqualitas.com" class="card-link">http://www.redqualitas.com</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=8>
+    <div class="card-header ellipsis">
+      Agiles2015
+    </div>
+    <div class="card-body">
+      <p class="card-text">Inception Workshop on Agiles2015</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #00A651; color: #ffffff">Oct 2015</span>
+            <span class="badge float-left" style="background-color: #00A651; color: #ffffff">Radisson Victoria Plaza</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://agiles2015.agiles.org/es/?page_id&#x3D;1957" class="card-link">http://agiles2015.agiles.org/es/?page_id&#x3D;1957</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=6>
+    <div class="card-header ellipsis">
+      Universidad EAFIT
+    </div>
+    <div class="card-body">
+      <p class="card-text">Inception Workshop talk for agilists and young entrepreneurs</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #00A651; color: #ffffff">Mar 2015</span>
+            <span class="badge float-left" style="background-color: #00A651; color: #ffffff">Medellín - Colombia</span>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=7>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay - CIE
+    </div>
+    <div class="card-body">
+      <p class="card-text">Introduction to the practice of Inception</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #00A651; color: #ffffff">Jun 2015</span>
+            <span class="badge float-left" style="background-color: #00A651; color: #ffffff">Universidad ORT Uruguay</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://cie.ort.edu.uy/" class="card-link">http://cie.ort.edu.uy/</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
+    <div class="card-header ellipsis">
+      InnovaAge
+    </div>
+    <div class="card-body">
+      <p class="card-text">Senior Developer</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">Jul 2003 – Nov 2004</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.innovaage.com/" class="card-link">http://www.innovaage.com/</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=3>
+    <div class="card-header ellipsis">
+      PricewaterhouseCoopers
+    </div>
+    <div class="card-body">
+      <p class="card-text">Supervisor - Senior Developer - IT Consultant</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">Nov 2004 – Mar 2014</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.pwc.com" class="card-link">http://www.pwc.com</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=9>
+    <div class="card-header ellipsis">
+      VAIRIX Software Development
+    </div>
+    <div class="card-body">
+      <p class="card-text">Vairix COO - Scrum Master - QA</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #00A651; color: #ffffff">Mar 2014 – Now</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.vairix.com/" class="card-link">http://www.vairix.com/</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #FF6E19; color: #ffffff" data-order=2>
+    <div class="card-header ellipsis">
+      Facultad de Ingeniería (UdelaR)
+    </div>
+    <div class="card-body">
+      <p class="card-text">Workshop about reading techniques for software reviews</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #FF6E19; color: #ffffff">May 2013, Mar 2014</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.fing.edu.uy/" class="card-link">http://www.fing.edu.uy/</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #FF6E19; color: #ffffff" data-order=4>
+    <div class="card-header ellipsis">
+      WBagadion Consulting, Inc.
+    </div>
+    <div class="card-body">
+      <p class="card-text">Workshop on Software Requirements Management</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #FF6E19; color: #ffffff">Nov 2014</span>
+            <span class="badge float-left" style="background-color: #FF6E19; color: #ffffff">Bogotá - Colombia</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.wbagadion.com" class="card-link">http://www.wbagadion.com</a>
+        </li>
+    </ul>
+  </div>
+
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Education</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+  <div class="card task" style="background-color: #77D477; color: #000000" data-order=12>
+    <div class="card-header ellipsis">
+      Coursera (online)
+    </div>
+    <div class="card-body">
+      <p class="card-text">“Think Again: How to Reason and Argue” course.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #77D477; color: #000000">12 weeks</span>
+        </li>
+        <li class="list-group-item">#soft_skills, #humanities</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.coursera.org/course/thinkagain" class="card-link">http://www.coursera.org/course/thinkagain</a>
+        </li>
+    </ul>
+  </div>
+
+            </div>
+            <div class="in_progress iso col-md-4">
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay - PEDECIBA
+    </div>
+    <div class="card-body">
+      <p class="card-text">Doctorado (Ph.D)</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Sep 9, 2015 - </span>
+        </li>
+        <li class="list-group-item">#phd, #research</li>
+    </ul>
+  </div>
+
+            </div>
+            <div class="done iso col-md-4">
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
+    <div class="card-header ellipsis">
+      IAC-CTC-ORT
+    </div>
+    <div class="card-body">
+      <p class="card-text">Basic computer skills (first steps)</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Jun 2, 2014 - Jun 3, 2014</span>
+        </li>
+        <li class="list-group-item">#computer</li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #77D477; color: #000000" data-order=15>
+    <div class="card-header ellipsis">
+      CPA Innovation (Hotel Palladium)
+    </div>
+    <div class="card-body">
+      <p class="card-text">Certified ScrumMaster</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #77D477; color: #000000">Jun 2, 2014 - Jun 3, 2014</span>
+        </li>
+        <li class="list-group-item">#agile, #scrum</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.cpainnovation.com/" class="card-link">http://www.cpainnovation.com/</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
+    <div class="card-header ellipsis">
+      Instituto Cultural Anglo Uruguayo
+    </div>
+    <div class="card-body">
+      <p class="card-text">English studies (First Certificate Level)</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">1993 - 1999</span>
+        </li>
+        <li class="list-group-item">#english</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.anglo.edu.uy/portal/hgxpp001.aspx?101" class="card-link">http://www.anglo.edu.uy/portal/hgxpp001.aspx?101</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=8>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">“Experimental Methods and Statistical Analysis Applied to Software Engineering Research” tutorial</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Jun 25-27, 2012</span>
+            <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by M.A. Araújo</span>
+        </li>
+        <li class="list-group-item">#experimental, #statistics</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.ort.edu.uy/index.php?id&#x3D;AAAHAFAF&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;5975&amp;m&#x3D;0&amp;a&#x3D;2012&amp;pub&#x3D;0&amp;publishers&#x3D;" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAAHAFAF&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;5975&amp;m&#x3D;0&amp;a&#x3D;2012&amp;pub&#x3D;0&amp;publishers&#x3D;</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=7>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">“Experimental Software Engineering: using statistics methods to support planning and execution of experimental studies” tutorial</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Jun 13, 2011</span>
+            <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by G.H. Travassos</span>
+        </li>
+        <li class="list-group-item">#experimental, #statistics</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.ort.edu.uy/index.php?id&#x3D;AAALAC&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;4994&amp;m&#x3D;6&amp;a&#x3D;2011&amp;pub&#x3D;0&amp;publishers&#x3D;" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAALAC&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;4994&amp;m&#x3D;6&amp;a&#x3D;2011&amp;pub&#x3D;0&amp;publishers&#x3D;</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=16>
+    <div class="card-header ellipsis">
+      INCO - FING UY
+    </div>
+    <div class="card-body">
+      <p class="card-text">Formal Methods and Unified Modeling Language (UML)</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Nov 2015</span>
+            <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">INCO - FING UY</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="https://www.fing.edu.uy/evento/alexander-knapp-towards-institutional-framework-heterogeneous-formal-development-uml" class="card-link">https://www.fing.edu.uy/evento/alexander-knapp-towards-institutional-framework-heterogeneous-formal-development-uml</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=10>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">“Formalizing software processes” conference</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Oct 25, 2012</span>
+        </li>
+        <li class="list-group-item">#experimental, #statistics</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://fi.ort.edu.uy/innovaportal/v/5782/5/fi.ort.front/conferencia_formalizacion_de_procesos_de_software.html" class="card-link">http://fi.ort.edu.uy/innovaportal/v/5782/5/fi.ort.front/conferencia_formalizacion_de_procesos_de_software.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=12>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">Master in Engineering</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">2010 - 2013</span>
+        </li>
+        <li class="list-group-item">#software, #research</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.ort.edu.uy/fi/masteringenieria" class="card-link">http://www.ort.edu.uy/fi/masteringenieria</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #77D477; color: #000000" data-order=3>
+    <div class="card-header ellipsis">
+      InspirAction Consulting y D&amp;E Consulting
+    </div>
+    <div class="card-body">
+      <p class="card-text">People Leadership &amp; Management</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #77D477; color: #000000">Jun 8, 2009</span>
+        </li>
+        <li class="list-group-item">#soft_skills</li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #77D477; color: #000000" data-order=14>
+    <div class="card-header ellipsis">
+      NCET2.org (online)
+    </div>
+    <div class="card-body">
+      <p class="card-text">Research Commercialization - Introductory Course</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #77D477; color: #000000">May 21 - Jun 18, 2013</span>
+        </li>
+        <li class="list-group-item">#research, #commercialization</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://center.ncet2.org/index.php?option&#x3D;com_joomla_lms&amp;Itemid&#x3D;53&amp;task&#x3D;details_course&amp;id&#x3D;112" class="card-link">http://center.ncet2.org/index.php?option&#x3D;com_joomla_lms&amp;Itemid&#x3D;53&amp;task&#x3D;details_course&amp;id&#x3D;112</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=6>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">“Six Sigma Applied to Software Process Improvement” tutorial</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Apr 4-8, 2011</span>
+            <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by T. San Feliu</span>
+        </li>
+        <li class="list-group-item">#research, #SPI, #six-sigma</li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #77D477; color: #000000" data-order=4>
+    <div class="card-header ellipsis">
+      Commitment
+    </div>
+    <div class="card-body">
+      <p class="card-text">Soft Skills for Project Leaders</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #77D477; color: #000000">Sep 2-5, 2009</span>
+        </li>
+        <li class="list-group-item">#soft_skills</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.commitment.com.uy/" class="card-link">http://www.commitment.com.uy/</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=2>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">Software Engineer</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">2000 - 2008</span>
+        </li>
+        <li class="list-group-item">#computer, #software</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.ort.edu.uy/index.php?id&#x3D;AAAHAGAC" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAAHAGAC</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=5>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">“Software Engineering Experimentation” tutorial</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Mar 21-25, 2011</span>
+            <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by N. Juristo</span>
+        </li>
+        <li class="list-group-item">#research, #empirical #studies</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.google.com/url?q&#x3D;http%3A%2F%2Fwww.ort.edu.uy%2Findex.php%3Fid%3DAAAHBA%26h%3DAAAH%26noticias%3D1%26id_noticia%3D4769%26m%3D%26a%3D%26pub%3D0%26publishers%3D&amp;sa&#x3D;D&amp;sntz&#x3D;1&amp;usg&#x3D;AFQjCNEPh79hYj38pVVU6SG2LzRa7-_cTA" class="card-link">http://www.google.com/url?q&#x3D;http%3A%2F%2Fwww.ort.edu.uy%2Findex.php%3Fid%3DAAAHBA%26h%3DAAAH%26noticias%3D1%26id_noticia%3D4769%26m%3D%26a%3D%26pub%3D0%26publishers%3D&amp;sa&#x3D;D&amp;sntz&#x3D;1&amp;usg&#x3D;AFQjCNEPh79hYj38pVVU6SG2LzRa7-_cTA</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #45A9F2; color: #ffffff" data-order=9>
+    <div class="card-header ellipsis">
+      Universidad EAFIT (Medellín - Colombia)
+    </div>
+    <div class="card-body">
+      <p class="card-text">“Software Product Lines” tutorial</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #45A9F2; color: #ffffff">Oct 1, 2012</span>
+            <span class="badge float-left" style="background-color: #45A9F2; color: #ffffff">by J. D. Herrera</span>
+        </li>
+        <li class="list-group-item">#SPL, #reuse</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.clei2012.org/" class="card-link">http://www.clei2012.org/</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=11>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">“Systematic Literature Reviews“ tutorial</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Dec 3-6, 2012 (12hs)</span>
+            <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by M. Genero</span>
+        </li>
+        <li class="list-group-item">#empirical, #evidence</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://fi.ort.edu.uy/innovaportal/v/6416/5/fi.ort.front/curso_revisiones_sistematicas_de_la_literatura.html" class="card-link">http://fi.ort.edu.uy/innovaportal/v/6416/5/fi.ort.front/curso_revisiones_sistematicas_de_la_literatura.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=13>
+    <div class="card-header ellipsis">
+      Universidad ORT Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">“Technical Debt: basic concepts, research methods and study design“ tutorial</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">April 11-12, 2013</span>
+            <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by C. Seaman</span>
+        </li>
+        <li class="list-group-item">#technical debt, #empirical</li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.ort.edu.uy/index.php?id&#x3D;AAAHBA&amp;h&#x3D;AAAH&amp;noticias&#x3D;1&amp;id_noticia&#x3D;6612&amp;m&#x3D;&amp;a&#x3D;&amp;pub&#x3D;0&amp;publishers&#x3D;" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAAHBA&amp;h&#x3D;AAAH&amp;noticias&#x3D;1&amp;id_noticia&#x3D;6612&amp;m&#x3D;&amp;a&#x3D;&amp;pub&#x3D;0&amp;publishers&#x3D;</a>
+        </li>
+    </ul>
+  </div>
+
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Research</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+            </div>
+            <div class="in_progress iso col-md-4">
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
+    <div class="card-header ellipsis">
+      JQuery Plugin Quality Assessment
+    </div>
+    <div class="card-body">
+      <p class="card-text">JQuery plugins saves development time, but poor quality plugin are destabilizing factor. How to evaluate the quality of JQuery plugins?</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item">#picoresearchs</li>
+    </ul>
+  </div>
+
+            </div>
+            <div class="done iso col-md-4">
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=0>
+    <div class="card-header ellipsis">
+      Evidence based research of JavaScript Grids according to a set of expected attributes
+    </div>
+    <div class="card-body">
+      <p class="card-text">This study identifies javascript grids that have some attributes defined apriori. It&#x27;s my first attempt to apply a systematic method in order to make an industrial decision</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item">#picoresearchs</li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=0>
+    <div class="card-header ellipsis">
+      How small software companies are reviewing their software artifacts
+    </div>
+    <div class="card-body">
+      <p class="card-text">We are worried about how small software companies are performing their reviews over the software artifacts generated during the development cycle</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item">#MSc</li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #767782; color: #ffffff" data-order=0>
+    <div class="card-header ellipsis">
+      Research on 3D modeling of the human body
+    </div>
+    <div class="card-body">
+      <p class="card-text">Technology and methodology for modeling the human body in 3D</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #767782; color: #ffffff"></span>
+        </li>
+        <li class="list-group-item">#swingimprover</li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
+    <div class="card-header ellipsis">
+      Software Inspection Adoption
+    </div>
+    <div class="card-body">
+      <p class="card-text">Factors that difficult the adoption and how to avoid or overcome them</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item">#MSc</li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #767782; color: #ffffff" data-order=>
+    <div class="card-header ellipsis">
+      TDD Failures
+    </div>
+    <div class="card-body">
+      <p class="card-text">Difficulty of TDD in game development</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #767782; color: #ffffff"></span>
+        </li>
+        <li class="list-group-item">#swingimprover</li>
+    </ul>
+  </div>
+
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Articles</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+            </div>
+            <div class="in_progress iso col-md-4">
+            </div>
+            <div class="done iso col-md-4">
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
+    <div class="card-header ellipsis">
+      Darío Macchi, Martín Solari
+    </div>
+    <div class="card-body">
+      <p class="card-text">Diagnóstico del Uso de Técnicas de  Revisión de Software en Uruguay</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://cibse2013.ort.edu.uy/en/Presentation.php" class="card-link">http://cibse2013.ort.edu.uy/en/Presentation.php</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=0>
+    <div class="card-header ellipsis">
+      Darío Macchi, Martín Solari
+    </div>
+    <div class="card-body">
+      <p class="card-text">Software inspection adoption: A mapping study</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp&#x3D;&amp;arnumber&#x3D;6427197&amp;contentType&#x3D;Conference+Publications&amp;queryText%3Dsoftware+inspection+adoption" class="card-link">http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp&#x3D;&amp;arnumber&#x3D;6427197&amp;contentType&#x3D;Conference+Publications&amp;queryText%3Dsoftware+inspection+adoption</a>
+        </li>
+    </ul>
+  </div>
+
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Essays</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=%{position}>
+    <div class="card-header ellipsis">
+      Niveles de Abstracción
+    </div>
+    <div class="card-body">
+      <p class="card-text">¿Qué entendemos por niveles de abstracción?</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">---</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+            </div>
+            <div class="in_progress iso col-md-4">
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140501>
+    <div class="card-header ellipsis">
+      Pico-Researchs (p-researchs)
+    </div>
+    <div class="card-body">
+      <p class="card-text">Practical industry researchs with a scientific approach to take better decisions.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-05-01</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+            </div>
+            <div class="done iso col-md-4">
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140517>
+    <div class="card-header ellipsis">
+      Agile Open Space 2014 Virtual Covering - Montevideo - Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">Virtual covering of the Agile Open Space held in Montevideo - UY - May 17, 2014</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-05-17</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140929>
+    <div class="card-header ellipsis">
+      Better Errors &amp; RailsPanel: development aids
+    </div>
+    <div class="card-body">
+      <p class="card-text">Here we take a look at two tools to aid us in Ruby on Rails development process.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-09-29</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=20150922>
+    <div class="card-header ellipsis">
+      Code Review: What Is It and Why Is It Important?
+    </div>
+    <div class="card-body">
+      <p class="card-text">New to the concept of code review? This post explains what code review is and why it’s important.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #00A651; color: #ffffff">2015-09-22</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20141113>
+    <div class="card-header ellipsis">
+      Customer.io service and how to use it from Ruby
+    </div>
+    <div class="card-body">
+      <p class="card-text">Customer.io is a SaaS which enables you to easily manage all the emails you send to your users.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-11-13</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20180103>
+    <div class="card-header ellipsis">
+      The First Two Weeks Of The Rest Of My Flow-e Life
+    </div>
+    <div class="card-body">
+      <p class="card-text">Personal opinion about Flow-e based on my experince in the use of the tool.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2018-01-03</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140611>
+    <div class="card-header ellipsis">
+      Helping a startup in troubles to reach on time to an investors meeting
+    </div>
+    <div class="card-body">
+      <p class="card-text">The title of this case study should be &#x27;Pulling startup’s chestnuts out of the fire&#x27;... let us see why.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-06-11</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20130510>
+    <div class="card-header ellipsis">
+      i.e vs. e.g
+    </div>
+    <div class="card-body">
+      <p class="card-text">When do you use i.e., and when do you use e.g., and what do they mean?</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2013-05-10</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140414>
+    <div class="card-header ellipsis">
+      JQuery append into heavy loaded DOM trees
+    </div>
+    <div class="card-body">
+      <p class="card-text">Describe odd behaviour when you append DOM element into heavy loaded DOM tree</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-04-14</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140314>
+    <div class="card-header ellipsis">
+      JSConf 2014 Virtual Covering - Montevideo - Uruguay
+    </div>
+    <div class="card-body">
+      <p class="card-text">Virtual covering of the JSConf2014 held in Montevideo - Uruguay - Mar 14-15, 2014</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-03-14</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140919>
+    <div class="card-header ellipsis">
+      Lessons learned about Google Places
+    </div>
+    <div class="card-body">
+      <p class="card-text">The Google Places API allows you to query for place information on a variety of categories</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-09-19</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20141205>
+    <div class="card-header ellipsis">
+      Things to take care on a mobile MVP
+    </div>
+    <div class="card-body">
+      <p class="card-text">Things to take care on a mobile MVP and why it&#x27;s important to your business.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-12-05</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140422>
+    <div class="card-header ellipsis">
+      RailsConf 2014
+    </div>
+    <div class="card-body">
+      <p class="card-text">Virtual covering of the RailsConf held in Chicago - US - Apr 22-25, 2014</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-04-22</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20130314>
+    <div class="card-header ellipsis">
+      Raphaël Utilities
+    </div>
+    <div class="card-body">
+      <p class="card-text">I&#x27;ve made/adapted this library to import SVG directly from file and scale.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2013-03-14</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20130807>
+    <div class="card-header ellipsis">
+      Soft. Eng. and Strandbeests
+    </div>
+    <div class="card-body">
+      <p class="card-text">How to expose students to the multidimensional nature of Software Engineering processes? May be making an analogy with the Strandbeests, an ingenious blending of art and engineering.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2013-08-07</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140407>
+    <div class="card-header ellipsis">
+      One-week scrum sprint evaluation for prevent sprint backlog changes during sprint
+    </div>
+    <div class="card-body">
+      <p class="card-text">One-week scrum sprint evaluation for prevent sprint backlog changes during sprint</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-04-07</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20120807>
+    <div class="card-header ellipsis">
+      SVG to Räphael
+    </div>
+    <div class="card-body">
+      <p class="card-text">This is what I&#x27;ve learned during a project where I had to convert Flash content to something compatible with ipad (I choose SVG).</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2012-08-07</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://storify.com/dariomac/svg-to-raphael.html" class="card-link">http://storify.com/dariomac/svg-to-raphael.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20141020>
+    <div class="card-header ellipsis">
+      Swagger: easy API interface
+    </div>
+    <div class="card-body">
+      <p class="card-text">Swagger™ is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-10-20</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140520>
+    <div class="card-header ellipsis">
+      What is an MVP?
+    </div>
+    <div class="card-body">
+      <p class="card-text">MVP means Minimum Viable Product and it’s a core component of Lean Startup methodology</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-05-20</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="" class="card-link"></a>
+        </li>
+    </ul>
+  </div>
+
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Projects/Products</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+            </div>
+            <div class="in_progress iso col-md-4">
+            </div>
+            <div class="done iso col-md-4">
+  <div class="card task" style="background-color: #767782; color: #ffffff" data-order=>
+    <div class="card-header ellipsis">
+      Another Clojure Box (Windows)
+    </div>
+    <div class="card-body">
+      <p class="card-text">SciTE + WinCommand  + Tools &#x3D; kind of &quot;Clojure IDE&quot;</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #767782; color: #ffffff"></span>
+        </li>
+        <li class="list-group-item">R.I.P</li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=0>
+    <div class="card-header ellipsis">
+      DM-Pixie (Windows)
+    </div>
+    <div class="card-body">
+      <p class="card-text">It&#x27;s a color picker with extra goodies.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
+    <div class="card-header ellipsis">
+      InmunoVR (Samsung Gear VR)
+    </div>
+    <div class="card-body">
+      <p class="card-text">Experiencia virtual educativa: Sistema Inmunológico</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">2017-2018</span>
+        </li>
+        <li class="list-group-item">#gear,#vr,#unreal</li>
+        <li class="list-group-item ellipsis">
+          <a href="https://fi.ort.edu.uy/72359/17/experiencia-virtual-educativa:-sistema-inmunologico.html" class="card-link">https://fi.ort.edu.uy/72359/17/experiencia-virtual-educativa:-sistema-inmunologico.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
+    <div class="card-header ellipsis">
+      Gestión de compras para proyectos de construcción
+    </div>
+    <div class="card-body">
+      <p class="card-text">Gestión de compras para proyectos de construcción</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">2016-2017</span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="https://fi.ort.edu.uy/49141/17/gestion-de-compras-para-proyectos-de-construccion.html" class="card-link">https://fi.ort.edu.uy/49141/17/gestion-de-compras-para-proyectos-de-construccion.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=1>
+    <div class="card-header ellipsis">
+      Inception Workshop for Entrepreneurs
+    </div>
+    <div class="card-body">
+      <p class="card-text">Short workshop with the goal of identify essential software features, technological risks and get an idea of  size &amp; effort involved in its development.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #00A651; color: #ffffff"></span>
+        </li>
+        <li class="list-group-item">#entrepreneurship</li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
+    <div class="card-header ellipsis">
+      LimpiezaUY: plataforma colaborativa de limpieza
+    </div>
+    <div class="card-body">
+      <p class="card-text">LimpiezaUY: plataforma colaborativa de limpieza</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">2017</span>
+        </li>
+        <li class="list-group-item">#startup,#mvp</li>
+        <li class="list-group-item ellipsis">
+          <a href="https://fi.ort.edu.uy/51827/17/limpiezauy:-plataforma-colaborativa-de-limpieza.html" class="card-link">https://fi.ort.edu.uy/51827/17/limpiezauy:-plataforma-colaborativa-de-limpieza.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Local Read Later (Google Chrome Extension)
+    </div>
+    <div class="card-body">
+      <p class="card-text">Similar as Read It Later service but runs locally.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="https://chrome.google.com/webstore/detail/gkonjlhfjnlgikjfknnfcalimclipnck" class="card-link">https://chrome.google.com/webstore/detail/gkonjlhfjnlgikjfknnfcalimclipnck</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
+    <div class="card-header ellipsis">
+      Raphaël Utils (Javascript)
+    </div>
+    <div class="card-body">
+      <p class="card-text">SVG importer (and other utilities)</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.dariomac.com/raphael-utils-doc" class="card-link">http://www.dariomac.com/raphael-utils-doc</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=>
+    <div class="card-header ellipsis">
+      SwingImprover (Windows)
+    </div>
+    <div class="card-body">
+      <p class="card-text">Software that allows the analysis of a golf player swing movement against theory and professionals.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff"></span>
+        </li>
+        <li class="list-group-item">R.I.P</li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      WinCommand (Windows)
+    </div>
+    <div class="card-body">
+      <p class="card-text">Run console apps (e.g. CLisp or cmd) in a window to work more confortable.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+    </ul>
+  </div>
+
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Quotes</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+            </div>
+            <div class="in_progress iso col-md-4">
+            </div>
+            <div class="done iso col-md-4">
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Isaac Asimov
+    </div>
+    <div class="card-body">
+      <p class="card-text">A poor idea well written is more likely to be accepted than a good idea poorly written.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html" class="card-link">http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Peter Drucker
+    </div>
+    <div class="card-body">
+      <p class="card-text">Culture eats strategy for breakfast.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html" class="card-link">http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Reinhold Niebuhr
+    </div>
+    <div class="card-body">
+      <p class="card-text">God grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.brainyquote.com/quotes/quotes/r/reinholdni100884.html" class="card-link">http://www.brainyquote.com/quotes/quotes/r/reinholdni100884.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
+    <div class="card-header ellipsis">
+      Nelson Mandela
+    </div>
+    <div class="card-body">
+      <p class="card-text">Lead from the back and let others believe they are in front</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.goodreads.com/quotes/74368-lead-from-the-back-and-let-others-believe-they" class="card-link">http://www.goodreads.com/quotes/74368-lead-from-the-back-and-let-others-believe-they</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Seneca
+    </div>
+    <div class="card-body">
+      <p class="card-text">Luck is what happens when preparation meets opportunity.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://thinkexist.com/quotation/luck_is_what_happens_when_preparation_meets/11990.html" class="card-link">http://thinkexist.com/quotation/luck_is_what_happens_when_preparation_meets/11990.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Gustavo Gretter
+    </div>
+    <div class="card-body">
+      <p class="card-text">Para ser ágil tenés que ser veloz...sino pa&#x27; que sos “ágil“?</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.innovaportal.com" class="card-link">http://www.innovaportal.com</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Dwight Eisenhower
+    </div>
+    <div class="card-body">
+      <p class="card-text">Plans are useless, but planning is indispensable</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="https://www.brainyquote.com/quotes/quotes/d/dwightdei164720.html" class="card-link">https://www.brainyquote.com/quotes/quotes/d/dwightdei164720.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Bill Gates
+    </div>
+    <div class="card-body">
+      <p class="card-text">The only big companies that succeed will be those that obsolete their own products before somebody else does.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html" class="card-link">http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Theo Jansen
+    </div>
+    <div class="card-body">
+      <p class="card-text">The walls between art and engineering exist only in our minds.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://www.youtube.com/watch?v&#x3D;azy-c6QXUCw" class="card-link">http://www.youtube.com/watch?v&#x3D;azy-c6QXUCw</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Phil Karlton
+    </div>
+    <div class="card-body">
+      <p class="card-text">There are only two hard things in Computer Science: cache invalidation and naming things.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://martinfowler.com/bliki/TwoHardThings.html" class="card-link">http://martinfowler.com/bliki/TwoHardThings.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Various attributions 
+    </div>
+    <div class="card-body">
+      <p class="card-text">Watch your thoughts, they become words; watch your words, they become actions; watch your actions, they become habits; watch your habits, they become character; watch your character, for it becomes your destiny.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://quoteinvestigator.com/2013/01/10/watch-your-thoughts/" class="card-link">http://quoteinvestigator.com/2013/01/10/watch-your-thoughts/</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      Enrique Jardiel Poncela
+    </div>
+    <div class="card-body">
+      <p class="card-text">When something can be read without effort, great effort has gone into its writing.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="http://thinkexist.com/quotation/when_something_can_be_read_without_effort-great/204253.html" class="card-link">http://thinkexist.com/quotation/when_something_can_be_read_without_effort-great/204253.html</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
+    <div class="card-header ellipsis">
+      George Bray
+    </div>
+    <div class="card-body">
+      <p class="card-text">Your mobile phone has more computing power than all of NASA in 1969. NASA launched a man to the moon. We launch a bird into pigs.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        </li>
+        <li class="list-group-item ellipsis">
+          <a href="https://twitter.com/#!/GeorgeBray/status/50318850218131456" class="card-link">https://twitter.com/#!/GeorgeBray/status/50318850218131456</a>
+        </li>
+    </ul>
+  </div>
+
+            </div>
+          </div>
+
+          <div class="dm-fail-message">No results found</div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-      <div id="board_container"></div>
+        <div class="dm-filter">
+          <form>
+            <div class="dm-filter-block">
+              <h4>Search</h4>
+
+              <div class="dm-filter-content">
+                <input type="search" placeholder="Try color-1...">
+              </div> <!-- dm-filter-content -->
+            </div> <!-- dm-filter-block -->
+
+            <div class="dm-filter-block">
+              <h4>Check boxes</h4>
+
+              <ul class="dm-filter-content dm-filters list">
+                <li>
+                  <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+                  <label class="checkbox-label" for="checkbox1">Option 1</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+                  <label class="checkbox-label" for="checkbox2">Option 2</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                  <label class="checkbox-label" for="checkbox3">Option 3</label>
+                </li>
+              </ul> <!-- dm-filter-content -->
+            </div> <!-- dm-filter-block -->
+
+            <div class="dm-filter-block">
+              <h4>Select</h4>
+
+              <div class="dm-filter-content">
+                <div class="dm-select dm-filters">
+                  <select class="filter" name="selectThis" id="selectThis">
+                    <option value="">Choose an option</option>
+                    <option value=".option1">Option 1</option>
+                    <option value=".option2">Option 2</option>
+                    <option value=".option3">Option 3</option>
+                    <option value=".option4">Option 4</option>
+                  </select>
+                </div> <!-- dm-select -->
+              </div> <!-- dm-filter-content -->
+            </div> <!-- dm-filter-block -->
+
+            <div class="dm-filter-block">
+              <h4>Radio buttons</h4>
+
+              <ul class="dm-filter-content dm-filters list">
+                <li>
+                  <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+                  <label class="radio-label" for="radio1">All</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+                  <label class="radio-label" for="radio2">Choice 2</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+                  <label class="radio-label" for="radio3">Choice 3</label>
+                </li>
+              </ul> <!-- dm-filter-content -->
+            </div> <!-- dm-filter-block -->
+          </form>
+
+          <a href="#0" class="dm-close">Close</a>
+        </div> <!-- dm-filter -->
+
+        <a href="#0" class="dm-filter-trigger">Filters</a>
+      </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
 
@@ -510,216 +2031,48 @@ function loadCSS ( href, before, media ) {
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+      var isotopables = document.querySelectorAll('.iso');
+      [].forEach.call(isotopables, (elem)=>{
+         new Isotope( elem, {
+          itemSelector: '.task',
+          masonry: {
+            columnWidth: 168,
+            gutter: 5
+          },
+          getSortData : {
+            position : function ( elem ) {
+              return parseInt( $(elem).attr('data-order'));
+            }
+          },
+          sortBy : 'position',
+          sortAscending : false
+        });
+      });
+    </script>
+
     <script type="text/javascript">
       $(function(){
-        draw_kanban_board(boardArray, false, tasksArray, false);
         afterContentDraw();
         $('.footer').show();
       });
     </script>
 
-    <script type="text/javascript" src="/assets/vendor/isotope/isotope.pkgd.js"></script>
-    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
-
-    <!--[if lt IE 8]>
-      <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
-    <![endif]-->
-
     <script type="text/javascript">
-      configs.globalVars.baseUrl = "http://www.dariomac.com";
-      var boardArray = {
-          "backlogarchive": {
-              "archiveid": "archive_6",
-              "backlogid": "backlog_5"
-          },
-          "lanes":
-              [{
-                  "color": "#F0F0F0",
-                  "lcid": "Me",
-                  "lcname": "Me"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Experience",
-                  "lcname": "Experience"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Education",
-                  "lcname": "Education"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Research",
-                  "lcname": "Research"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Article",
-                  "lcname": "Articles"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Essay",
-                  "lcname": "Essays"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Project",
-                  "lcname": "Projects / Products"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Quote",
-                  "lcname": "Quotes"
-              }
-          ],
-          "rows":
-              [[
-                  [{
-                      "colspan": "1",
-                      "columnlimit": "0",
-                      "columntasksnow": "0",
-                      "lcname": "Interests - Ideas",
-                      "path": "requested_1",
-                      "position": "0"
-                  }],
-                  [{
-                      "colspan": "1",
-                      "columnlimit": "0",
-                      "columntasksnow": "0",
-                      "lcname": "Speculations - Prototypes",
-                      "path": "progress_2",
-                      "position": "1"
-                  }],
-                  [{
-                      "colspan": "1",
-                      "columnlimit": "0",
-                      "columntasksnow": "0",
-                      "lcname": "Knowledge - Products - Facts",
-                      "path": "done_3",
-                      "position": "2"
-                  }]
-              ]
-          ]
-      }
 
-      var tasksArray = [
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Diagnóstico del Uso de Técnicas de  Revisión de Software en Uruguay","datebox":null,"extlink":"http://cibse2013.ort.edu.uy/en/Presentation.php","laneid":"Article","leftbox":0,"leftmsg":null,"linkto":"/diagnostico-del-uso-de-tecnicas-de-revision-de-software-en-uruguay","position":"1","priority":"Average","subtaskdetails":[{"taskid":"1","title":"Submitted to CIbSE 2013.","assignee":"None","completiondate":"2012-20-12","assignedtome":0},{"taskid":"1","title":"Accepted in CIbSE 2013.","assignee":"None","completiondate":"2013-02-04","assignedtome":0},{"taskid":"1","title":"Presented in CIbSE 2013.","assignee":"None","completiondate":"2013-04-05","assignedtome":0}],"subtasks":"3","subtaskscomplete":"0","tags":null,"title":"Darío Macchi, Martín Solari","type":"Article"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Software inspection adoption: A mapping study","datebox":null,"extlink":"http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6427197&contentType=Conference+Publications&queryText%3Dsoftware+inspection+adoption","laneid":"Article","leftbox":0,"leftmsg":null,"linkto":"/software-inspection-adoption--a-mapping-study","position":"0","priority":"Average","subtaskdetails":[{"taskid":"1","title":"Submitted to CIbSE 2012. Rejected.","assignee":"None","completiondate":"2012-02-29 18:13:33","assignedtome":0},{"taskid":"2","title":"Accepted in CLEI 2012.","assignee":"None","completiondate":"2012-07-17 17:41:33","assignedtome":0},{"taskid":"3","title":"Presented in CLEI 2012.","assignee":"None","completiondate":"2012-10-03","assignedtome":0}],"subtasks":"3","subtaskscomplete":"0","tags":null,"title":"Darío Macchi, Martín Solari","type":"Article"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Virtual covering of the Agile Open Space held in Montevideo - UY - May 17, 2014","datebox":"2014-05-17","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/agile-open-space-2014","position":"20140517","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Agile Open Space 2014 Virtual Covering - Montevideo - Uruguay","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Here we take a look at two tools to aid us in Ruby on Rails development process.","datebox":"2014-09-29","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/better-errors-railspanel--development-aids","position":"20140929","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Better Errors & RailsPanel: development aids","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#00A651","columnid":"done_3","content":"New to the concept of code review? This post explains what code review is and why it’s important.","datebox":"2015-09-22","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/code-review--what-is-it-and-why-is-it-important","position":"20150922","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Code Review: What Is It and Why Is It Important?","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Customer.io is a SaaS which enables you to easily manage all the emails you send to your users.","datebox":"2014-11-13","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/customerio-service-and-how-to-use-it-from-ruby","position":"20141113","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Customer.io service and how to use it from Ruby","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Personal opinion about Flow-e based on my experince in the use of the tool.","datebox":"2018-01-03","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/first-two-weeks-rest-flow-e-life","position":"20180103","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"The First Two Weeks Of The Rest Of My Flow-e Life","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"The title of this case study should be 'Pulling startup’s chestnuts out of the fire'... let us see why.","datebox":"2014-06-11","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/helping-a-startup-in-troubles-to-reach-on-time-to-an-investors-meeting","position":"20140611","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Helping a startup in troubles to reach on time to an investors meeting","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"When do you use i.e., and when do you use e.g., and what do they mean?","datebox":"2013-05-10","extlink":null,"laneid":"Essay","leftbox":0,"leftmsg":null,"linkto":"/ie-vs-eg","position":"20130510","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"i.e vs. e.g","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Describe odd behaviour when you append DOM element into heavy loaded DOM tree","datebox":"2014-04-14","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/jquery-append-into-heavy-loaded-dom-trees","position":"20140414","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"JQuery append into heavy loaded DOM trees","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Virtual covering of the JSConf2014 held in Montevideo - Uruguay - Mar 14-15, 2014","datebox":"2014-03-14","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/jsconf2014","position":"20140314","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"JSConf 2014 Virtual Covering - Montevideo - Uruguay","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"The Google Places API allows you to query for place information on a variety of categories","datebox":"2014-09-19","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/lessons-learned-about-google-places","position":"20140919","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Lessons learned about Google Places","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Things to take care on a mobile MVP and why it's important to your business.","datebox":"2014-12-05","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/mobile-mvps-using-cordova","position":"20141205","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Things to take care on a mobile MVP","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"requested_1","content":"¿Qué entendemos por niveles de abstracción?","datebox":"---","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/niveles-de-abstracción","position":"%{position}","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Niveles de Abstracción","type":"0"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"progress_2","content":"Practical industry researchs with a scientific approach to take better decisions.","datebox":"2014-05-01","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/picoresearchs","position":"20140501","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Pico-Researchs (p-researchs)","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Virtual covering of the RailsConf held in Chicago - US - Apr 22-25, 2014","datebox":"2014-04-22","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/railsconf2014","position":"20140422","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"RailsConf 2014","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"I've made/adapted this library to import SVG directly from file and scale.","datebox":"2013-03-14","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/raphael-utils-doc","position":"20130314","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Raphaël Utilities","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"How to expose students to the multidimensional nature of Software Engineering processes? May be making an analogy with the Strandbeests, an ingenious blending of art and engineering.","datebox":"2013-08-07","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/software-engineering-and-strandbeests","position":"20130807","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Soft. Eng. and Strandbeests","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"One-week scrum sprint evaluation for prevent sprint backlog changes during sprint","datebox":"2014-04-07","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/sprint-backlog-changes-and-one-week-sprint-as-temporal-solution","position":"20140407","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"One-week scrum sprint evaluation for prevent sprint backlog changes during sprint","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"This is what I've learned during a project where I had to convert Flash content to something compatible with ipad (I choose SVG).","datebox":"2012-08-07","extlink":"http://storify.com/dariomac/svg-to-raphael.html","laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/svg-to-raphael","position":"20120807","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"SVG to Räphael","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Swagger™ is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.","datebox":"2014-10-20","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/swagger--easy-api-interface","position":"20141020","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Swagger: easy API interface","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"archive_6","content":"The purpose of this annex is to guide the user through a series of software use cases, so the user can become familiar with the tool and its features prior to use of it.","datebox":"2008-11-13","extlink":null,"laneid":"Me","leftbox":"","leftmsg":"","linkto":"/swingimprover-manual","position":"20081113","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#swingimprover, #manual","title":"SwingImprover manual","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"MVP means Minimum Viable Product and it’s a core component of Lean Startup methodology","datebox":"2014-05-20","extlink":null,"laneid":"Essay","leftbox":"","leftmsg":"","linkto":"/what-is-an-mvp","position":"20140520","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"What is an MVP?","type":"Document"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"Basic computer skills (first steps)","datebox":"Jun 2, 2014 - Jun 3, 2014","extlink":"","laneid":"Education","leftbox":"","leftmsg":"","linkto":"/basic-computer-skills-first-steps","position":0,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#computer","title":"IAC-CTC-ORT","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#77D477","columnid":"done_3","content":"Certified ScrumMaster","datebox":"Jun 2, 2014 - Jun 3, 2014","extlink":"http://www.cpainnovation.com/","laneid":"Education","leftbox":0,"leftmsg":null,"linkto":"/certified-scrummaster","position":"15","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#agile, #scrum","title":"CPA Innovation (Hotel Palladium)","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#99B399","columnid":"archive_6","content":"Software Engineer Courses","datebox":"","extlink":"","laneid":"Me","leftbox":"","leftmsg":"","linkto":"/computer-software-engineer-courses","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#ORT, #Software #Engineering","title":"Universidad ORT Uruguay","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"progress_2","content":"Doctorado (Ph.D)","datebox":"Sep 9, 2015 - ","extlink":"","laneid":"Education","leftbox":"","leftmsg":"","linkto":"/doctorado-phd","position":"0","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#phd, #research","title":"Universidad ORT Uruguay - PEDECIBA","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"English studies (First Certificate Level)","datebox":"1993 - 1999","extlink":"http://www.anglo.edu.uy/portal/hgxpp001.aspx?101","laneid":"Education","leftbox":"","leftmsg":"","linkto":"/english-studies-first-certificate-level","position":"1","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#english","title":"Instituto Cultural Anglo Uruguayo","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"“Experimental Methods and Statistical Analysis Applied to Software Engineering Research” tutorial","datebox":"Jun 25-27, 2012","extlink":"http://www.ort.edu.uy/index.php?id=AAAHAFAF&h=&noticias=1&id_noticia=5975&m=0&a=2012&pub=0&publishers=","laneid":"Education","leftbox":"by M.A. Araújo","leftmsg":null,"linkto":"/experimental-methods-and-statistical-analysis-applied-to-software-engineering-research-tutorial","position":8,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#experimental, #statistics","title":"Universidad ORT Uruguay","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"“Experimental Software Engineering: using statistics methods to support planning and execution of experimental studies” tutorial","datebox":"Jun 13, 2011","extlink":"http://www.ort.edu.uy/index.php?id=AAALAC&h=&noticias=1&id_noticia=4994&m=6&a=2011&pub=0&publishers=","laneid":"Education","leftbox":"by G.H. Travassos","leftmsg":null,"linkto":"/experimental-software-engineering--using-statistics-methods-to-support-planning-and-execution-of-experimental-studies-tutorial","position":7,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#experimental, #statistics","title":"Universidad ORT Uruguay","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"Formal Methods and Unified Modeling Language (UML)","datebox":"Nov 2015","extlink":"https://www.fing.edu.uy/evento/alexander-knapp-towards-institutional-framework-heterogeneous-formal-development-uml","laneid":"Education","leftbox":"INCO - FING UY","leftmsg":"","linkto":"/formal-methods-and-unified-modeling-language-uml","position":"16","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"INCO - FING UY","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"“Formalizing software processes” conference","datebox":"Oct 25, 2012","extlink":"http://fi.ort.edu.uy/innovaportal/v/5782/5/fi.ort.front/conferencia_formalizacion_de_procesos_de_software.html","laneid":"Education","leftbox":0,"leftmsg":"by M.C. Bastarrica","linkto":"/formalizing-software-processes-conference","position":10,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#experimental, #statistics","title":"Universidad ORT Uruguay","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"Master in Engineering","datebox":"2010 - 2013","extlink":"http://www.ort.edu.uy/fi/masteringenieria","laneid":"Education","leftbox":"","leftmsg":"","linkto":"/master-in-engineering","position":"12","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#software, #research","title":"Universidad ORT Uruguay","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#77D477","columnid":"done_3","content":"People Leadership & Management","datebox":"Jun 8, 2009","extlink":"","laneid":"Education","leftbox":"","leftmsg":"","linkto":"/people-leadership-management","position":3,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#soft_skills","title":"InspirAction Consulting y D&E Consulting","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#77D477","columnid":"done_3","content":"Research Commercialization - Introductory Course","datebox":"May 21 - Jun 18, 2013","extlink":"http://center.ncet2.org/index.php?option=com_joomla_lms&Itemid=53&task=details_course&id=112","laneid":"Education","leftbox":0,"leftmsg":null,"linkto":"/research-commercialization---introductory-course","position":14,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#research, #commercialization","title":"NCET2.org (online)","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"“Six Sigma Applied to Software Process Improvement” tutorial","datebox":"Apr 4-8, 2011","extlink":"","laneid":"Education","leftbox":"by T. San Feliu","leftmsg":"","linkto":"/six-sigma-applied-to-software-process-improvement-tutorial","position":6,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#research, #SPI, #six-sigma","title":"Universidad ORT Uruguay","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#77D477","columnid":"done_3","content":"Soft Skills for Project Leaders","datebox":"Sep 2-5, 2009","extlink":"http://www.commitment.com.uy/","laneid":"Education","leftbox":"","leftmsg":"","linkto":"/soft-skills-for-project-leaders","position":4,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#soft_skills","title":"Commitment","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"Software Engineer","datebox":"2000 - 2008","extlink":"http://www.ort.edu.uy/index.php?id=AAAHAGAC","laneid":"Education","leftbox":"","leftmsg":"","linkto":"/software-engineer","position":"2","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#computer, #software","title":"Universidad ORT Uruguay","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"“Software Engineering Experimentation” tutorial","datebox":"Mar 21-25, 2011","extlink":"http://www.google.com/url?q=http%3A%2F%2Fwww.ort.edu.uy%2Findex.php%3Fid%3DAAAHBA%26h%3DAAAH%26noticias%3D1%26id_noticia%3D4769%26m%3D%26a%3D%26pub%3D0%26publishers%3D&sa=D&sntz=1&usg=AFQjCNEPh79hYj38pVVU6SG2LzRa7-_cTA","laneid":"Education","leftbox":"by N. Juristo","leftmsg":"","linkto":"/software-engineering-experimentation-tutorial","position":5,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#research, #empirical #studies","title":"Universidad ORT Uruguay","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#45A9F2","columnid":"done_3","content":"“Software Product Lines” tutorial","datebox":"Oct 1, 2012","extlink":"http://www.clei2012.org/","laneid":"Education","leftbox":"by J. D. Herrera","leftmsg":"","linkto":"/software-product-lines-tutorial","position":9,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#SPL, #reuse","title":"Universidad EAFIT (Medellín - Colombia)","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"“Systematic Literature Reviews“ tutorial","datebox":"Dec 3-6, 2012 (12hs)","extlink":"http://fi.ort.edu.uy/innovaportal/v/6416/5/fi.ort.front/curso_revisiones_sistematicas_de_la_literatura.html","laneid":"Education","leftbox":"by M. Genero","leftmsg":null,"linkto":"/systematic-literature-reviews-tutorial","position":11,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#empirical, #evidence","title":"Universidad ORT Uruguay","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"“Technical Debt: basic concepts, research methods and study design“ tutorial","datebox":"April 11-12, 2013","extlink":"http://www.ort.edu.uy/index.php?id=AAAHBA&h=AAAH&noticias=1&id_noticia=6612&m=&a=&pub=0&publishers=","laneid":"Education","leftbox":"by C. Seaman","leftmsg":null,"linkto":"/technical-debt--basic-concepts--research-methods-and-study-design-tutorial","position":13,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#technical debt, #empirical","title":"Universidad ORT Uruguay","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#77D477","columnid":"requested_1","content":"“Think Again: How to Reason and Argue” course.","datebox":"12 weeks","extlink":"http://www.coursera.org/course/thinkagain","laneid":"Education","leftbox":0,"leftmsg":null,"linkto":"/think-again--how-to-reason-and-argue-course","position":12,"priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#soft_skills, #humanities","title":"Coursera (online)","type":"Education"}, 
-          {"assignee":"","blocked":"0","color":"#00A651","columnid":"archive_6","content":"8 Hours as VAIRIX Developer","datebox":"Abr 2016","extlink":"http://fi.ort.edu.uy/30816/17/postgrado_y_carreras.html#tecnicas","laneid":"Me","leftbox":"Universidad ORT Uruguay","leftmsg":"","linkto":"/8-hours-as-vairix-developer","position":"1","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Escuela de Tecnología","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#00A651","columnid":"done_3","content":"9° Entrepreneurship Summer Camp","datebox":"Mar 2015","extlink":"http://www.eafit.edu.co/institucional/eafit-llanogrande/Paginas/presentacion.aspx","laneid":"Experience","leftbox":"Medellín - Colombia","leftmsg":null,"linkto":"/9-entrepreneurship-summer-camp","position":"6","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Universidad EAFIT","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#6EA4D4","columnid":"progress_2","content":"Scrum Master - Project Manager","datebox":"Nov 2016 - Now","extlink":"batangamedia.com","laneid":"Experience","leftbox":"","leftmsg":"","linkto":"/batanga-media-scrum-master---project-manager","position":"10","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Batanga Media","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Computing Teacher","datebox":"Dec 1998 - Jun 2003","extlink":"http://www.redqualitas.com","laneid":"Experience","leftbox":"","leftmsg":"","linkto":"/computing-teacher","position":"0","priority":"Average","subtasks":"0","subtaskscomplete":"0","tags":null,"title":"IAC (Instituto Americano de Computación) - Red Qualitas","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#8C0202","columnid":"progress_2","content":"Degree final projects tutor","datebox":"Aug 2016 - Now","extlink":"https://fi.ort.edu.uy/72104/17/proyectos-de-fin-de-carrera.html","laneid":"Experience","leftbox":"","leftmsg":"","linkto":"/degree-final-projects-tutor","position":"0","priority":"Average","subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Universidad ORT Uruguay","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#00A651","columnid":"done_3","content":"Inception Workshop on Agiles2015","datebox":"Oct 2015","extlink":"http://agiles2015.agiles.org/es/?page_id=1957","laneid":"Experience","leftbox":"Radisson Victoria Plaza","leftmsg":"","linkto":"/inception-workshop-on-agiles2015","position":"8","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Agiles2015","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#00A651","columnid":"done_3","content":"Inception Workshop talk for agilists and young entrepreneurs","datebox":"Mar 2015","extlink":"","laneid":"Experience","leftbox":"Medellín - Colombia","leftmsg":"","linkto":"/inception-workshop-talk-for-agilists-and-young-entrepreneurs","position":"6","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Universidad EAFIT","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#00A651","columnid":"done_3","content":"Introduction to the practice of Inception","datebox":"Jun 2015","extlink":"http://cie.ort.edu.uy/","laneid":"Experience","leftbox":"Universidad ORT Uruguay","leftmsg":"","linkto":"/introduction-to-the-practice-of-inception","position":"7","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Universidad ORT Uruguay - CIE","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#00A651","columnid":"archive_6","content":"Spa Manager Seminar","datebox":"Oct 2015","extlink":"http://asociacionspa.com.ar/spamanager/","laneid":"Me","leftbox":"Punta del Este - Uruguay","leftmsg":"","linkto":"/seminario-spa-manager-punta-del-este","position":"0","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Hotel Conrad Punta del Este - Uruguay","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Senior Developer","datebox":"Jul 2003 – Nov 2004","extlink":"http://www.innovaage.com/","laneid":"Experience","leftbox":"","leftmsg":"","linkto":"/senior-developer","position":"1","priority":"Average","subtasks":"0","subtaskscomplete":"0","tags":null,"title":"InnovaAge","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#FF6E19","columnid":"progress_2","content":"Software Engineering Advisor/Consultant","datebox":"Mar 2013 – Now","extlink":"","laneid":"Experience","leftbox":"","leftmsg":"","linkto":"/software-engineering-advisor-consultant","position":"0","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Self-Employed","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#8C0202","columnid":"progress_2","content":"Software Engineering Professor","datebox":"Mar 2013 - Now","extlink":"http://fi.ort.edu.uy/innovaportal/v/3399/5/fi.ort.front/ingenieria_de_software.html","laneid":"Experience","leftbox":"","leftmsg":"","linkto":"/software-engineering-professor","position":"0","priority":"Average","subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Universidad ORT Uruguay","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Supervisor - Senior Developer - IT Consultant","datebox":"Nov 2004 – Mar 2014","extlink":"http://www.pwc.com","laneid":"Experience","leftbox":"","leftmsg":"","linkto":"/supervisor---senior-developer---it-consultant","position":"3","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"PricewaterhouseCoopers","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#00A651","columnid":"done_3","content":"Vairix COO - Scrum Master - QA","datebox":"Mar 2014 – Now","extlink":"http://www.vairix.com/","laneid":"Experience","leftbox":"","leftmsg":"","linkto":"/vairix-coo---scrum-master---researcher","position":"9","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"VAIRIX Software Development","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#FF6E19","columnid":"done_3","content":"Workshop about reading techniques for software reviews","datebox":"May 2013, Mar 2014","extlink":"http://www.fing.edu.uy/","laneid":"Experience","leftbox":"","leftmsg":"","linkto":"/workshop-about-reading-techniques-for-software-reviews","position":"2","priority":"Average","subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Facultad de Ingeniería (UdelaR)","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#FF6E19","columnid":"done_3","content":"Workshop on Software Requirements Management","datebox":"Nov 2014","extlink":"http://www.wbagadion.com","laneid":"Experience","leftbox":"Bogotá - Colombia","leftmsg":"","linkto":"/workshop-on-software-requirements-management","position":"4","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"WBagadion Consulting, Inc.","type":"Experience"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"progress_2","content":"Strong industry background. Interested in doing scientific research.","datebox":"","extlink":"http://uy.linkedin.com/in/dariomac","laneid":"Me","leftbox":"","leftmsg":"","linkto":"/about-me","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"About me","type":"Me"}, 
-          {"assignee":"Favorite drinks","blocked":"0","color":"#99b399","columnid":"done_3","content":"These are my favorite drinks (just in case you want to invite me)","datebox":"","extlink":"","laneid":"Me","leftbox":0,"leftmsg":null,"linkto":"/favorite-drinks","position":"1","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Favorite drinks","type":"Me"}, 
-          {"assignee":"","blocked":"0","color":"#FFD700","columnid":"progress_2","content":"This is a work in progress","datebox":"","extlink":"","laneid":"Me","leftbox":"","leftmsg":"","linkto":"/finish-this-website","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Finish this website","type":"Me"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"archive_6","content":"","datebox":"","extlink":"","laneid":"Me","leftbox":"","leftmsg":"","linkto":"/kanbancv","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"KanbanCV introduction","type":"0"}, 
-          {"assignee":"","blocked":"0","color":"#FF6E19","columnid":"progress_2","content":"A public declaration of intent stating my beliefs, how I organize my work and even my life.","datebox":"","extlink":"","laneid":"Me","leftbox":"","leftmsg":"","linkto":"/manifesto","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Manifesto","type":"Me"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"progress_2","content":"These are links to my profile on several online services.","datebox":"","extlink":"","laneid":"Me","leftbox":"","leftmsg":"","linkto":"/me-elsewhere","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Me elsewhere","type":"Me"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"I got married on March 17, 2012","datebox":"","extlink":"http://www.youtube.com/watch?v=4Kaa7gPT9XE","laneid":"Me","leftbox":"","leftmsg":"","linkto":"/my-marriage","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"My marriage","type":"Me"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"archive_6","content":"","datebox":"","extlink":"","laneid":"Me","leftbox":"","leftmsg":"","linkto":"/what-happened-on-august-12--1981","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"What happened on August 12, 1981","type":"Me"}, 
-          {"assignee":"","blocked":"0","color":"#767782","columnid":"done_3","content":"SciTE + WinCommand  + Tools = kind of \"Clojure IDE\"","datebox":null,"extlink":"","laneid":"Project","leftbox":"","leftmsg":"","linkto":"/another-clojure-box","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"R.I.P","title":"Another Clojure Box (Windows)","type":"Project"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"It's a color picker with extra goodies.","datebox":null,"extlink":"","laneid":"Project","leftbox":"","leftmsg":"","linkto":"/dm-pixie","position":"0","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"DM-Pixie (Windows)","type":"Project"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"Experiencia virtual educativa: Sistema Inmunológico","datebox":"2017-2018","extlink":"https://fi.ort.edu.uy/72359/17/experiencia-virtual-educativa:-sistema-inmunologico.html","laneid":"Project","leftbox":"","leftmsg":"","linkto":"/experiencia-virtual-educativa-sistema-inmunologico-inmunovr","position":"0","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#gear,#vr,#unreal","title":"InmunoVR (Samsung Gear VR)","type":"Project"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"Gestión de compras para proyectos de construcción","datebox":"2016-2017","extlink":"https://fi.ort.edu.uy/49141/17/gestion-de-compras-para-proyectos-de-construccion.html","laneid":"Project","leftbox":"","leftmsg":"","linkto":"/gestion-de-compras-para-proyectos-de-construccion","position":"0","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"","title":"Gestión de compras para proyectos de construcción","type":"Project"}, 
-          {"assignee":"","blocked":"0","color":"#00A651","columnid":"done_3","content":"Short workshop with the goal of identify essential software features, technological risks and get an idea of  size & effort involved in its development.","datebox":null,"extlink":"","laneid":"Project","leftbox":"","leftmsg":"","linkto":"/inception-workshop-for-entrepreneurs","position":"1","priority":"Average","subtasks":"0","subtaskscomplete":"0","tags":"#entrepreneurship","title":"Inception Workshop for Entrepreneurs","type":"Project"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"LimpiezaUY: plataforma colaborativa de limpieza","datebox":"2017","extlink":"https://fi.ort.edu.uy/51827/17/limpiezauy:-plataforma-colaborativa-de-limpieza.html","laneid":"Project","leftbox":"","leftmsg":"","linkto":"/limpiezauy-plataforma-colaborativa-de-limpieza","position":"0","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#startup,#mvp","title":"LimpiezaUY: plataforma colaborativa de limpieza","type":"Project"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Similar as Read It Later service but runs locally.","datebox":null,"extlink":"https://chrome.google.com/webstore/detail/gkonjlhfjnlgikjfknnfcalimclipnck","laneid":"Project","leftbox":"","leftmsg":"","linkto":"/local-read-later","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Local Read Later (Google Chrome Extension)","type":"Project"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"SVG importer (and other utilities)","datebox":null,"extlink":"http://www.dariomac.com/raphael-utils-doc","laneid":"Project","leftbox":0,"leftmsg":null,"linkto":"/raphael-utils","position":"1","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Raphaël Utils (Javascript)","type":"Project"}, 
-          {"assignee":"","blocked":"0","color":"#AD4647","columnid":"done_3","content":"Software that allows the analysis of a golf player swing movement against theory and professionals.","datebox":null,"extlink":"","laneid":"Project","leftbox":"","leftmsg":"","linkto":"/swingimprover","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"R.I.P","title":"SwingImprover (Windows)","type":"Project"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Run console apps (e.g. CLisp or cmd) in a window to work more confortable.","datebox":null,"extlink":"","laneid":"Project","leftbox":"","leftmsg":"","linkto":"/wincommand","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"WinCommand (Windows)","type":"Project"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"A poor idea well written is more likely to be accepted than a good idea poorly written.","datebox":null,"extlink":"http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/a-poor-idea-well-written-is-more-likely-to-be-accepted-than-a-good-idea-poorly-written","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Isaac Asimov","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Culture eats strategy for breakfast.","datebox":null,"extlink":"http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/culture-eats-strategy-for-breakfast","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Peter Drucker","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"God grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference.","datebox":null,"extlink":"http://www.brainyquote.com/quotes/quotes/r/reinholdni100884.html","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/god-grant-me-the-serenity-to-accept-the-things-i-cannot-change--the-courage-to-change-the-things-i-can--and-the-wisdom-to-know-the-difference","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Reinhold Niebuhr","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Lead from the back and let others believe they are in front","datebox":null,"extlink":"http://www.goodreads.com/quotes/74368-lead-from-the-back-and-let-others-believe-they","laneid":"Quote","leftbox":0,"leftmsg":null,"linkto":"/lead-from-the-back-and-let-others-believe-they-are-in-front","position":"1","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Nelson Mandela","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Luck is what happens when preparation meets opportunity.","datebox":null,"extlink":"http://thinkexist.com/quotation/luck_is_what_happens_when_preparation_meets/11990.html","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/luck-is-what-happens-when-preparation-meets-opportunity","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Seneca","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Para ser ágil tenés que ser veloz...sino pa' que sos “ágil“?","datebox":null,"extlink":"http://www.innovaportal.com","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Gustavo Gretter","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Plans are useless, but planning is indispensable","datebox":null,"extlink":"https://www.brainyquote.com/quotes/quotes/d/dwightdei164720.html","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/plans-are-useless--but-planning-is-indispensable","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Dwight Eisenhower","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"The only big companies that succeed will be those that obsolete their own products before somebody else does.","datebox":null,"extlink":"http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/the-only-big-companies-that-succeed-will-be-those-that-obsolete-their-own-products-before-somebody-else-does","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Bill Gates","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"The walls between art and engineering exist only in our minds.","datebox":null,"extlink":"http://www.youtube.com/watch?v=azy-c6QXUCw","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/the-walls-between-art-and-engineering-exist-only-in-our-minds","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Theo Jansen","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"There are only two hard things in Computer Science: cache invalidation and naming things.","datebox":null,"extlink":"http://martinfowler.com/bliki/TwoHardThings.html","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/there-are-only-two-hard-things-in-computer-science--cache-invalidation-and-naming-things","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Phil Karlton","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Watch your thoughts, they become words; watch your words, they become actions; watch your actions, they become habits; watch your habits, they become character; watch your character, for it becomes your destiny.","datebox":null,"extlink":"http://quoteinvestigator.com/2013/01/10/watch-your-thoughts/","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/watch-your-thoughts--they-become-words--watch-your-words--they-become-actions--watch-your-actions--they-become-habits--watch-your-habits--they-become-character--watch-your-character--for-it-becomes-your-destiny","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Various attributions ","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"When something can be read without effort, great effort has gone into its writing.","datebox":null,"extlink":"http://thinkexist.com/quotation/when_something_can_be_read_without_effort-great/204253.html","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/when-something-can-be-read-without-effort--great-effort-has-gone-into-its-writing","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"Enrique Jardiel Poncela","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Your mobile phone has more computing power than all of NASA in 1969. NASA launched a man to the moon. We launch a bird into pigs.","datebox":null,"extlink":"https://twitter.com/#!/GeorgeBray/status/50318850218131456","laneid":"Quote","leftbox":"","leftmsg":"","linkto":"/your-mobile-phone-has-more-computing-power-than-all-of-nasa-in-1969-nasa-launched-a-man-to-the-moon-we-launch-a-bird-into-pigs","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":null,"title":"George Bray","type":"Quote"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"This study identifies javascript grids that have some attributes defined apriori. It's my first attempt to apply a systematic method in order to make an industrial decision","datebox":null,"extlink":"","laneid":"Research","leftbox":"","leftmsg":"","linkto":"/evidence-based-research-of-javascript-grids-according-to-a-set-of-expected-attributes","position":"0","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#picoresearchs","title":"Evidence based research of JavaScript Grids according to a set of expected attributes","type":"Research"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"archive_6","content":"Evidence of the low software inspection adoption","datebox":null,"extlink":"","laneid":"Me","leftbox":"","leftmsg":"","linkto":"/evidence-of-the-low-adoption-of-software-inspection","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#Inspection, #MSc","title":"Evidence of the low adoption of Software Inspection","type":"Research"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"archive_6","content":"Factors causing low adoption of software inspections","datebox":null,"extlink":"","laneid":"Me","leftbox":"","leftmsg":"","linkto":"/factors-causing-the-low-adoption-of-software-inspection","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#inspection, #factors, #adoption","title":"Factors causing the low adoption of Software Inspection","type":"Research"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"We are worried about how small software companies are performing their reviews over the software artifacts generated during the development cycle","datebox":null,"extlink":"","laneid":"Research","leftbox":"","leftmsg":"","linkto":"/how-small-software-companies-are-reviewing-their-software-artifacts","position":"0","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#MSc","title":"How small software companies are reviewing their software artifacts","type":"Research"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"progress_2","content":"JQuery plugins saves development time, but poor quality plugin are destabilizing factor. How to evaluate the quality of JQuery plugins?","datebox":null,"extlink":"","laneid":"Research","leftbox":0,"leftmsg":null,"linkto":"/jquery-plugin-quality-assessment","position":"1","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#picoresearchs","title":"JQuery Plugin Quality Assessment","type":"Research"}, 
-          {"assignee":"","blocked":"0","color":"#767782","columnid":"done_3","content":"Technology and methodology for modeling the human body in 3D","datebox":null,"extlink":"","laneid":"Research","leftbox":"","leftmsg":"","linkto":"/research-on-3d-modeling-of-the-human-body","position":"0","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#swingimprover","title":"Research on 3D modeling of the human body","type":"Research"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"done_3","content":"Factors that difficult the adoption and how to avoid or overcome them","datebox":null,"extlink":"","laneid":"Research","leftbox":"","leftmsg":"","linkto":"/software-inspection-adoption","position":"1","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#MSc","title":"Software Inspection Adoption","type":"Research"}, 
-          {"assignee":"","blocked":"0","color":"#99b399","columnid":"archive_6","content":"Solutions suggested for the low software inspection adoption","datebox":null,"extlink":"","laneid":"Me","leftbox":"","leftmsg":"","linkto":"/solutions-suggested-for-the-low-software-inspection-adoption","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#inspection, #review, #adoption","title":"Solutions suggested for the low Software Inspection adoption","type":"Research"}, 
-          {"assignee":"","blocked":"0","color":"#767782","columnid":"done_3","content":"Difficulty of TDD in game development","datebox":null,"extlink":"","laneid":"Research","leftbox":"","leftmsg":"","linkto":"/tdd-failures","position":"","priority":"Average","subtaskdetails":[],"subtasks":"0","subtaskscomplete":"0","tags":"#swingimprover","title":"TDD Failures","type":"Research"}
-      ];
-
-      if (location.href.indexOf('file://') == 0)
+      if (location.href.indexOf('file://') ===0) {
         $.each(tasksArray, function(i, v){
           v.linkto = v.linkto.substr(1, v.linkto.length) + '.html';
         });
-
-      var typesArray = [];
-      configs.globalVars.isAdmin = 1;
-      configs.globalVars.isPM = 1;
-      configs.globalVars.taskViewsMask = 3261;//2237; //2303; //2193; //2064;
-      configs.globalVars.boardId = 2;
-      configs.globalVars.rolesMask = 4648893;
-      configs.globalVars.defaultTemplate = "None";
-      configs.globalVars.defaultAssignee = "None";
-      configs.globalVars.refreshInterval = "60";
+      }
 
     </script>
   </body>

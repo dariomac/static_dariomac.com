@@ -196,7 +196,7 @@
     </style>
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
-    <!--#include virtual="../common/_common_html_header.html" -->
+    <!--#include virtual="../common/_18common_html_header.html" -->
   </head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <!--<div class="wrapper">
@@ -204,128 +204,320 @@
       <div class="center"></div>
     </div>-->
     <div class="board_view">
-      <!--#include virtual="../common/_page_header.html" -->
-      <div id="board_container"></div>
+      <!--#include virtual="../common/_18page_header.html" -->
+      <main class="dm-main-content">
+        <div class="dm-tab-filter-wrapper">
+          <div class="dm-tab-filter">
+            <ul class="dm-filters">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+              </li>
+              <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+              <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Plan</a></li>
+              <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">In Progress</a></li>
+              <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Done</a></li>
+            </ul> <!-- dm-filters -->
+          </div> <!-- dm-tab-filter -->
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="container-fluid dm-board">
+          <div id="plan" class="row d-none d-md-flex">
+            <div class="plan col-md-4">PLAN</div>
+            <div class="in_progress col-md-4">IN PROGRESS</div>
+            <div class="done col-md-4">DONE</div>
+          </div>
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Me</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+              {{#each (getPlannedTasks laneContent.Me)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="in_progress iso col-md-4">
+              {{#each (getInProgressTasks laneContent.Me)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="done iso col-md-4">
+              {{#each (getDoneTasks laneContent.Me)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Experience</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+              {{#each (getPlannedTasks laneContent.Experience)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="in_progress iso col-md-4">
+              {{#each (getInProgressTasks laneContent.Experience)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="done iso col-md-4">
+              {{#each (getDoneTasks laneContent.Experience)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Education</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+              {{#each (getPlannedTasks laneContent.Education)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="in_progress iso col-md-4">
+              {{#each (getInProgressTasks laneContent.Education)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="done iso col-md-4">
+              {{#each (getDoneTasks laneContent.Education)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Research</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+              {{#each (getPlannedTasks laneContent.Research)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="in_progress iso col-md-4">
+              {{#each (getInProgressTasks laneContent.Research)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="done iso col-md-4">
+              {{#each (getDoneTasks laneContent.Research)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Articles</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+              {{#each (getPlannedTasks laneContent.Article)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="in_progress iso col-md-4">
+              {{#each (getInProgressTasks laneContent.Article)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="done iso col-md-4">
+              {{#each (getDoneTasks laneContent.Article)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Essays</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+              {{#each (getPlannedTasks laneContent.Essay)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="in_progress iso col-md-4">
+              {{#each (getInProgressTasks laneContent.Essay)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="done iso col-md-4">
+              {{#each (getDoneTasks laneContent.Essay)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Projects/Products</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+              {{#each (getPlannedTasks laneContent.Project)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="in_progress iso col-md-4">
+              {{#each (getInProgressTasks laneContent.Project)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="done iso col-md-4">
+              {{#each (getDoneTasks laneContent.Project)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Quotes</div>
+          </div>
+          <div class="row me">
+            <div class="plan iso col-md-4">
+              {{#each (getPlannedTasks laneContent.Quote)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="in_progress iso col-md-4">
+              {{#each (getInProgressTasks laneContent.Quote)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+            <div class="done iso col-md-4">
+              {{#each (getDoneTasks laneContent.Quote)}}
+                <!--#include virtual="../common/_task.html" -->
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="dm-fail-message">No results found</div>
+        </div>
+
+        <div class="dm-filter">
+          <form>
+            <div class="dm-filter-block">
+              <h4>Search</h4>
+
+              <div class="dm-filter-content">
+                <input type="search" placeholder="Try color-1...">
+              </div> <!-- dm-filter-content -->
+            </div> <!-- dm-filter-block -->
+
+            <div class="dm-filter-block">
+              <h4>Check boxes</h4>
+
+              <ul class="dm-filter-content dm-filters list">
+                <li>
+                  <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+                  <label class="checkbox-label" for="checkbox1">Option 1</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+                  <label class="checkbox-label" for="checkbox2">Option 2</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                  <label class="checkbox-label" for="checkbox3">Option 3</label>
+                </li>
+              </ul> <!-- dm-filter-content -->
+            </div> <!-- dm-filter-block -->
+
+            <div class="dm-filter-block">
+              <h4>Select</h4>
+
+              <div class="dm-filter-content">
+                <div class="dm-select dm-filters">
+                  <select class="filter" name="selectThis" id="selectThis">
+                    <option value="">Choose an option</option>
+                    <option value=".option1">Option 1</option>
+                    <option value=".option2">Option 2</option>
+                    <option value=".option3">Option 3</option>
+                    <option value=".option4">Option 4</option>
+                  </select>
+                </div> <!-- dm-select -->
+              </div> <!-- dm-filter-content -->
+            </div> <!-- dm-filter-block -->
+
+            <div class="dm-filter-block">
+              <h4>Radio buttons</h4>
+
+              <ul class="dm-filter-content dm-filters list">
+                <li>
+                  <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+                  <label class="radio-label" for="radio1">All</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+                  <label class="radio-label" for="radio2">Choice 2</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+                  <label class="radio-label" for="radio3">Choice 3</label>
+                </li>
+              </ul> <!-- dm-filter-content -->
+            </div> <!-- dm-filter-block -->
+          </form>
+
+          <a href="#0" class="dm-close">Close</a>
+        </div> <!-- dm-filter -->
+
+        <a href="#0" class="dm-filter-trigger">Filters</a>
+      </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
 
     <!--#include virtual="../common/_page_footer.html" -->
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+      var isotopables = document.querySelectorAll('.iso');
+      [].forEach.call(isotopables, (elem)=>{
+         new Isotope( elem, {
+          itemSelector: '.task',
+          masonry: {
+            columnWidth: 168,
+            gutter: 5
+          },
+          getSortData : {
+            position : function ( elem ) {
+              return parseInt( $(elem).attr('data-order'));
+            }
+          },
+          sortBy : 'position',
+          sortAscending : false
+        });
+      });
+    </script>
+
     <script type="text/javascript">
       $(function(){
-        draw_kanban_board(boardArray, false, tasksArray, false);
         afterContentDraw();
         $('.footer').show();
       });
     </script>
 
-    <script type="text/javascript" src="/assets/vendor/isotope/isotope.pkgd.js"></script>
-    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
-
-    <!--[if lt IE 8]>
-      <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
-    <![endif]-->
-
     <script type="text/javascript">
-      configs.globalVars.baseUrl = "http://www.dariomac.com";
-      var boardArray = {
-          "backlogarchive": {
-              "archiveid": "archive_6",
-              "backlogid": "backlog_5"
-          },
-          "lanes":
-              [{
-                  "color": "#F0F0F0",
-                  "lcid": "Me",
-                  "lcname": "Me"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Experience",
-                  "lcname": "Experience"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Education",
-                  "lcname": "Education"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Research",
-                  "lcname": "Research"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Article",
-                  "lcname": "Articles"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Essay",
-                  "lcname": "Essays"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Project",
-                  "lcname": "Projects / Products"
-              },
-              {
-                  "color": "#F0F0F0",
-                  "lcid": "Quote",
-                  "lcname": "Quotes"
-              }
-          ],
-          "rows":
-              [[
-                  [{
-                      "colspan": "1",
-                      "columnlimit": "0",
-                      "columntasksnow": "0",
-                      "lcname": "Interests - Ideas",
-                      "path": "requested_1",
-                      "position": "0"
-                  }],
-                  [{
-                      "colspan": "1",
-                      "columnlimit": "0",
-                      "columntasksnow": "0",
-                      "lcname": "Speculations - Prototypes",
-                      "path": "progress_2",
-                      "position": "1"
-                  }],
-                  [{
-                      "colspan": "1",
-                      "columnlimit": "0",
-                      "columntasksnow": "0",
-                      "lcname": "Knowledge - Products - Facts",
-                      "path": "done_3",
-                      "position": "2"
-                  }]
-              ]
-          ]
-      }
 
-      var tasksArray = [
-        {{#each content}}
-          {{{json this.frontmatter.json}}}
-          {{~#unless @last}}, {{/unless}}
-        {{/each}}
-      ];
-
-      if (location.href.indexOf('file://') == 0)
+      if (location.href.indexOf('file://') ===0) {
         $.each(tasksArray, function(i, v){
           v.linkto = v.linkto.substr(1, v.linkto.length) + '.html';
         });
-
-      var typesArray = [];
-      configs.globalVars.isAdmin = 1;
-      configs.globalVars.isPM = 1;
-      configs.globalVars.taskViewsMask = 3261;//2237; //2303; //2193; //2064;
-      configs.globalVars.boardId = 2;
-      configs.globalVars.rolesMask = 4648893;
-      configs.globalVars.defaultTemplate = "None";
-      configs.globalVars.defaultAssignee = "None";
-      configs.globalVars.refreshInterval = "60";
+      }
 
     </script>
   </body>

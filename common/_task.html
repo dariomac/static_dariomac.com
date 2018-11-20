@@ -1,0 +1,30 @@
+{{#with this.frontmatter}}
+  <div class="card task" style="background-color: {{json.color}}; color: {{getTextColor json.color}}" data-order={{json.position}}>
+    <div class="card-header ellipsis">
+      {{json.title}}
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{json.content}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      {{#or (compare json.datebox "!=" "") (compare json.leftbox "!=" "")}}
+        <li class="list-group-item">
+          {{#compare json.datebox "!=" ""}}
+            <span class="badge float-right" style="background-color: {{json.color}}; color: {{getTextColor json.color}}">{{json.datebox}}</span>
+          {{/compare}}
+          {{#compare json.leftbox "!=" ""}}
+            <span class="badge float-left" style="background-color: {{json.color}}; color: {{getTextColor json.color}}">{{json.leftbox}}</span>
+          {{/compare}}
+        </li>
+      {{/or}}
+      {{#and json.tags (compare json.tags "!=" "")}}
+        <li class="list-group-item">{{json.tags}}</li>
+      {{/and}}
+      {{#compare json.extlink "!=" ""}}
+        <li class="list-group-item ellipsis">
+          <a href="{{json.extlink}}" class="card-link">{{json.extlink}}</a>
+        </li>
+      {{/compare}}
+    </ul>
+  </div>
+{{/with}}
