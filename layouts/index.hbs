@@ -218,14 +218,16 @@
               <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Done</a></li>
             </ul> <!-- dm-filters -->
           </div> <!-- dm-tab-filter -->
+          <div class="container-fluid float-left">
+            <div id="dm-board-header" class="row d-none d-md-flex">
+              <div class="plan col-md-4"><span>PLAN</span></div>
+              <div class="in_progress col-md-4">IN PROGRESS</div>
+              <div class="done col-md-4">DONE</div>
+            </div>
+          </div>
         </div> <!-- dm-tab-filter-wrapper -->
 
         <div class="container-fluid dm-board">
-          <div id="plan" class="row d-none d-md-flex">
-            <div class="plan col-md-4">PLAN</div>
-            <div class="in_progress col-md-4">IN PROGRESS</div>
-            <div class="done col-md-4">DONE</div>
-          </div>
           <div class="row splitter">
             <div class="col-md-12 text-center">Me</div>
           </div>
@@ -395,7 +397,7 @@
           </div>
 
           <div class="dm-fail-message">No results found</div>
-        </div>
+        </div> <!-- container-fluid dm-boar -->
 
         <div class="dm-filter">
           <form>
@@ -468,7 +470,9 @@
 
           <a href="#0" class="dm-close">Close</a>
         </div> <!-- dm-filter -->
-
+        <a href="/" class="logo">
+          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+        </a>
         <a href="#0" class="dm-filter-trigger">Filters</a>
       </main> <!-- dm-main-content -->
     </div>
