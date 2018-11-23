@@ -208,6 +208,7 @@
 
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
@@ -282,7 +283,7 @@ function afterContentDraw () {
       <main class="dm-main-content">
         <div class="dm-tab-filter-wrapper">
           <div class="dm-tab-filter">
-            <ul class="dm-filters">
+            <ul class="dm-filters d-none">
               <li class="placeholder">
                 <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
               </li>
@@ -291,12 +292,29 @@ function afterContentDraw () {
               <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">In Progress</a></li>
               <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Done</a></li>
             </ul> <!-- dm-filters -->
+            <div style="padding-left: 110px; display: inline;">
+              <div id="new_essay" style="display: inline; color:red;">
+                <span class="transition">
+                  <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                  <a href='/first-two-weeks-rest-flow-e-life' style='text-decoration: underline;'>
+                    The First Two Weeks Of The Rest Of My Flow-e Life
+                  </a>
+                </span>
+                |
+                <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
+              </div>
+            </div>
           </div> <!-- dm-tab-filter -->
           <div class="container-fluid float-left">
             <div id="dm-board-header" class="row d-none d-md-flex">
-              <div class="plan col-md-4"><span>PLAN</span></div>
-              <div class="in_progress col-md-4">IN PROGRESS</div>
-              <div class="done col-md-4">DONE</div>
+              <div class="plan col-md-3"><span>PLAN</span></div>
+              <div class="in_progress col-md-3"><span>IN PROGRESS</span></div>
+              <div class="done col-md-6"><span>DONE</span></div>
+            </div>
+            <div id="dm-board-header-descs" class="row d-none d-md-flex">
+              <div class="col-md-3">Interests - Ideas</div>
+              <div class="col-md-3">Speculations - Prototype></div>
+              <div class="col-md-6">Knowledge - Products - Facts</div>
             </div>
           </div>
         </div> <!-- dm-tab-filter-wrapper -->
@@ -306,9 +324,9 @@ function afterContentDraw () {
             <div class="col-md-12 text-center">Me</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
     <div class="card-header ellipsis">
       About me
@@ -357,7 +375,7 @@ function afterContentDraw () {
   </div>
 
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
     <div class="card-header ellipsis">
       Favorite drinks
@@ -390,9 +408,9 @@ function afterContentDraw () {
             <div class="col-md-12 text-center">Experience</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
   <div class="card task" style="background-color: #6EA4D4; color: #000000" data-order=10>
     <div class="card-header ellipsis">
       Batanga Media
@@ -459,7 +477,7 @@ function afterContentDraw () {
   </div>
 
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
   <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=6>
     <div class="card-header ellipsis">
       Universidad EAFIT
@@ -639,7 +657,7 @@ function afterContentDraw () {
             <div class="col-md-12 text-center">Education</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
   <div class="card task" style="background-color: #77D477; color: #000000" data-order=12>
     <div class="card-header ellipsis">
       Coursera (online)
@@ -659,7 +677,7 @@ function afterContentDraw () {
   </div>
 
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
     <div class="card-header ellipsis">
       Universidad ORT Uruguay - PEDECIBA
@@ -676,7 +694,7 @@ function afterContentDraw () {
   </div>
 
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
     <div class="card-header ellipsis">
       IAC-CTC-ORT
@@ -988,9 +1006,9 @@ function afterContentDraw () {
             <div class="col-md-12 text-center">Research</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
     <div class="card-header ellipsis">
       JQuery Plugin Quality Assessment
@@ -1007,7 +1025,7 @@ function afterContentDraw () {
   </div>
 
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=0>
     <div class="card-header ellipsis">
       Evidence based research of JavaScript Grids according to a set of expected attributes
@@ -1090,11 +1108,11 @@ function afterContentDraw () {
             <div class="col-md-12 text-center">Articles</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
     <div class="card-header ellipsis">
       Darío Macchi, Martín Solari
@@ -1136,7 +1154,7 @@ function afterContentDraw () {
             <div class="col-md-12 text-center">Essays</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=%{position}>
     <div class="card-header ellipsis">
       Niveles de Abstracción
@@ -1155,7 +1173,7 @@ function afterContentDraw () {
   </div>
 
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140501>
     <div class="card-header ellipsis">
       Pico-Researchs (p-researchs)
@@ -1174,7 +1192,7 @@ function afterContentDraw () {
   </div>
 
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140517>
     <div class="card-header ellipsis">
       Agile Open Space 2014 Virtual Covering - Montevideo - Uruguay
@@ -1488,11 +1506,11 @@ function afterContentDraw () {
             <div class="col-md-12 text-center">Projects/Products</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
   <div class="card task" style="background-color: #767782; color: #ffffff" data-order=>
     <div class="card-header ellipsis">
       Another Clojure Box (Windows)
@@ -1660,11 +1678,11 @@ function afterContentDraw () {
             <div class="col-md-12 text-center">Quotes</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
     <div class="card-header ellipsis">
       Isaac Asimov

@@ -114,7 +114,7 @@ Main Components
 }
 @media only screen and (min-width: 1170px) {
   .dm-main-content.is-fixed .dm-board {
-    padding-top: 100px;
+    padding-top: 90px;
   }
 }
 
@@ -229,12 +229,10 @@ xtab-filter
   }
   .dm-tab-filter a {
     display: inline-block;
-    padding: 0 1em;
+    padding: 0 0.3em;
     width: auto;
     color: #9a9a9a;
-    text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.3rem;
   }
   .no-touch .dm-tab-filter a:hover {
     color: #41307c;
@@ -280,35 +278,97 @@ dm-board
   padding: 0px;
 }
 
-#dm-board-header .plan {
-  border: #64ade3 1px solid;
-  background: url(/assets/images/bgr_requested.gif) repeat-x 0px 0px;
-}
-
 #dm-board-header .plan span::before {
   background-image: url(/assets/images/sprite_column_markers.png);
-  background-repeat: no-repeat;
-  content: " ";
+  background-position: 1px 0;
   float: left;
-  height: 14px;
-  margin: 2px;
-  width: 18px;
+}
+
+#dm-board-header .plan {
+  border: #64ade3 1px solid;
+  background: url(/assets/images/bgr_plan.gif) repeat-x 0px 0px;
 }
 
 #dm-board-header .plan span::after {
   background-image: url(/assets/images/sprite_column_markers.png);
-  background-position: 0px -18px;
+  background-position: 1px -18px;
+  float: right;
+}
+
+
+#dm-board-header .in_progress span::before {
+  background-image: url(/assets/images/sprite_column_markers.png);
+  background-position: 0 -37px;
+  float: left;
+}
+
+#dm-board-header .in_progress {
+  border: #ffc34a 1px solid;
+  background: url(/assets/images/bgr_in_progress.gif) repeat-x 0px 0px;
+}
+
+#dm-board-header .in_progress span::after {
+  background-image: url(/assets/images/sprite_column_markers.png);
+  background-position: 1px -56px;
+  float: right;
+}
+
+#dm-board-header .done span::before {
+  background-image: url(/assets/images/sprite_column_markers.png);
+  background-position: 3px -75px;
+  float: left;
+}
+
+#dm-board-header .done {
+  border: #7da623 1px solid;
+  background: url(/assets/images/bgr_done.gif) repeat-x 0px 0px;
+}
+
+#dm-board-header .done span::after {
+  background-image: url(/assets/images/sprite_column_markers.png);
+  background-position: 0px -95px;
+  float: right;
+}
+
+#dm-board-header span {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+#dm-board-header span::before, #dm-board-header span::after {
   background-repeat: no-repeat;
   content: " ";
-  float: right;
   height: 14px;
   margin: 2px;
   width: 18px;
+}
+
+#dm-board-header-descs div {
+  background-color: #f0f0f0;
+  border: #d8d7d7 1px solid;
+  text-align: center;
 }
 
 .dm-board {
   padding: 26px 5%;
   width: 100%;
+}
+
+.splitter {
+  background-color: #F0F0F0;
+  border: #d8d7d7 1px solid;
+  font-size: 10px;
+  height: 18px;
+  margin-bottom: 10px;
+}
+
+.splitter > div {
+  font-weight: bold;
+  padding-top: 1px;
+}
+
+.splitter:not(:first-child) {
+  margin-top: 40px;
 }
 
 .dm-board .dm-fail-message {
@@ -341,14 +401,23 @@ dm-board
   text-decoration: underline;
 }
 
+.footer {
+  z-index: 9999999;
+  overflow: visible;
+  position: fixed;
+  top: auto;
+  bottom: 0px;
+  right: auto;
+}
+
 @media only screen and (min-width: 768px) {
   .dm-board {
-    padding: 40px 3%;
+    padding: 2px 3%;
   }
 }
 @media only screen and (min-width: 1170px) {
   .dm-board {
-    padding: 50px 2%;
+    padding: 2px 2%;
     float: right;
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;

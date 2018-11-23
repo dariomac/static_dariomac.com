@@ -208,7 +208,7 @@
       <main class="dm-main-content">
         <div class="dm-tab-filter-wrapper">
           <div class="dm-tab-filter">
-            <ul class="dm-filters">
+            <ul class="dm-filters d-none">
               <li class="placeholder">
                 <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
               </li>
@@ -217,12 +217,29 @@
               <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">In Progress</a></li>
               <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Done</a></li>
             </ul> <!-- dm-filters -->
+            <div style="padding-left: 110px; display: inline;">
+              <div id="new_essay" style="display: inline; color:red;">
+                <span class="transition">
+                  <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                  <a href='/first-two-weeks-rest-flow-e-life' style='text-decoration: underline;'>
+                    The First Two Weeks Of The Rest Of My Flow-e Life
+                  </a>
+                </span>
+                |
+                <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
+              </div>
+            </div>
           </div> <!-- dm-tab-filter -->
           <div class="container-fluid float-left">
             <div id="dm-board-header" class="row d-none d-md-flex">
-              <div class="plan col-md-4"><span>PLAN</span></div>
-              <div class="in_progress col-md-4">IN PROGRESS</div>
-              <div class="done col-md-4">DONE</div>
+              <div class="plan col-md-3"><span>PLAN</span></div>
+              <div class="in_progress col-md-3"><span>IN PROGRESS</span></div>
+              <div class="done col-md-6"><span>DONE</span></div>
+            </div>
+            <div id="dm-board-header-descs" class="row d-none d-md-flex">
+              <div class="col-md-3">Interests - Ideas</div>
+              <div class="col-md-3">Speculations - Prototype></div>
+              <div class="col-md-6">Knowledge - Products - Facts</div>
             </div>
           </div>
         </div> <!-- dm-tab-filter-wrapper -->
@@ -232,17 +249,17 @@
             <div class="col-md-12 text-center">Me</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Me)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
               {{#each (getInProgressTasks laneContent.Me)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
               {{#each (getDoneTasks laneContent.Me)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -253,17 +270,17 @@
             <div class="col-md-12 text-center">Experience</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Experience)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
               {{#each (getInProgressTasks laneContent.Experience)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
               {{#each (getDoneTasks laneContent.Experience)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -274,17 +291,17 @@
             <div class="col-md-12 text-center">Education</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Education)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
               {{#each (getInProgressTasks laneContent.Education)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
               {{#each (getDoneTasks laneContent.Education)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -295,17 +312,17 @@
             <div class="col-md-12 text-center">Research</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Research)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
               {{#each (getInProgressTasks laneContent.Research)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
               {{#each (getDoneTasks laneContent.Research)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -316,17 +333,17 @@
             <div class="col-md-12 text-center">Articles</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Article)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
               {{#each (getInProgressTasks laneContent.Article)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
               {{#each (getDoneTasks laneContent.Article)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -337,17 +354,17 @@
             <div class="col-md-12 text-center">Essays</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Essay)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
               {{#each (getInProgressTasks laneContent.Essay)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
               {{#each (getDoneTasks laneContent.Essay)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -358,17 +375,17 @@
             <div class="col-md-12 text-center">Projects/Products</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Project)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
               {{#each (getInProgressTasks laneContent.Project)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
               {{#each (getDoneTasks laneContent.Project)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -379,17 +396,17 @@
             <div class="col-md-12 text-center">Quotes</div>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-4">
+            <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Quote)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-4">
+            <div class="in_progress iso col-md-3">
               {{#each (getInProgressTasks laneContent.Quote)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-4">
+            <div class="done iso col-md-6">
               {{#each (getDoneTasks laneContent.Quote)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
