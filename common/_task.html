@@ -1,13 +1,30 @@
 {{#with this.frontmatter}}
   <div class="card task" style="background-color: {{json.color}}; color: {{getTextColor json.color}}" data-order={{json.position}}>
-    <div class="card-header ellipsis">
-      {{json.title}}
-    </div>
-    <div class="card-body">
-      <p class="card-text">{{json.content}}</p>
-    </div>
+    <a href="{{json.linkto}}" title="{{json.title}}" style="color: {{getTextColor json.color}}">
+      <div class="card-header ellipsis">
+        {{json.title}}
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{json.content}}</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-      {{#or (compare json.datebox "!=" "") (compare json.leftbox "!=" "")}}
+      {{#if json.subtaskdetails}}
+        <li class="list-group-item subtasks">
+          {{#each json.subtaskdetails}}
+            {{#if (compare this.completiondate "!=" "")}}
+              <label title="Completed on {{this.completiondate}}">
+                <input type="checkbox" onclick="return false;" checked="checked">{{this.title}}</input>
+              </label>
+            {{else}}
+              <label>
+                <input type="checkbox" onclick="return false;">{{this.title}}</input>
+              </label>
+            {{/if}}
+          {{/each}}
+        </li>
+      {{/if}}
+      {{#or (and json.datebox (compare json.datebox "!=" "")) (and json.leftbox (compare json.leftbox "!=" ""))}}
         <li class="list-group-item">
           {{#compare json.datebox "!=" ""}}
             <span class="badge float-right" style="background-color: {{json.color}}; color: {{getTextColor json.color}}">{{json.datebox}}</span>
@@ -18,13 +35,15 @@
         </li>
       {{/or}}
       {{#and json.tags (compare json.tags "!=" "")}}
-        <li class="list-group-item">{{json.tags}}</li>
-      {{/and}}
-      {{#compare json.extlink "!=" ""}}
-        <li class="list-group-item ellipsis">
-          <a href="{{json.extlink}}" class="card-link">{{json.extlink}}</a>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>{{json.tags}}
         </li>
-      {{/compare}}
+      {{/and}}
+      {{#and json.extlink (compare json.extlink "!=" "")}}
+        <li class="list-group-item ellipsis">
+          <span class="task_external_link">External link: </span><a href="{{json.extlink}}" class="card-link">{{json.extlink}}</a>
+        </li>
+      {{/and}}
     </ul>
   </div>
 {{/with}}

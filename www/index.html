@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Darío Macchi personal website</title>
     <style>
       @charset "UTF-8";
       html {
@@ -191,9 +191,9 @@
         border: #d1d1d1 1px solid;
         vertical-align: middle;
       }
-      /* } */
 
     </style>
+
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
     <meta charset="UTF-8">
@@ -204,12 +204,12 @@
 <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
 
 <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/18style.css">
 
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/assets/css/18style.css">
 
 
 <script type="text/javascript">
@@ -270,11 +270,7 @@ function afterContentDraw () {
 <meta property="og:image:type" content="image/png">
 
   </head>
-  <body itemscope itemtype="http://schema.org/WebPage">
-    <!--<div class="wrapper">
-    <div class="header">
-      <div class="center"></div>
-    </div>-->
+  <body>
     <div class="board_view">
       <header class="dm-header" style="display:none">
   <h1>Content Filters</h1>
@@ -283,16 +279,37 @@ function afterContentDraw () {
       <main class="dm-main-content">
         <div class="dm-tab-filter-wrapper">
           <div class="dm-tab-filter">
-            <ul class="dm-filters d-none">
+            <ul class="dm-filters d-block d-md-none">
               <li class="placeholder">
                 <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
               </li>
-              <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-              <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Plan</a></li>
-              <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">In Progress</a></li>
-              <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Done</a></li>
+              <li class="filter"><a class="selected" href="#0" data-filter="*">All</a></li>
+              <li class="filter" data-filter=".color-1"><a href="#0" data-filter=".plan > .card">Plan</a></li>
+              <li class="filter" data-filter=".color-2"><a href="#0" data-filter=".in_progress > .card">In Progress</a></li>
+              <li class="filter" data-filter=".color-3"><a href="#0" data-filter=".done > .card">Done</a></li>
             </ul> <!-- dm-filters -->
-            <div style="padding-left: 110px; display: inline;">
+          </div> <!-- dm-tab-filter -->
+
+          <div class="container-fluid float-left">
+            <div id="dm-board-header" class="row d-none d-md-flex">
+              <div class="plan col-md-3"><span>PLAN</span></div>
+              <div class="in_progress col-md-3"><span>IN PROGRESS</span></div>
+              <div class="done col-md-6"><span>DONE</span></div>
+            </div>
+            <div id="dm-board-header-descs" class="row d-none d-md-flex">
+              <div class="col-md-3">Interests - Ideas</div>
+              <div class="col-md-3">Speculations - Prototype</div>
+              <div class="col-md-6">Knowledge - Products - Facts</div>
+            </div>
+          </div>
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="container-fluid dm-board">
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Featured</div>
+          </div>
+          <div class="row featured">
+            <div class="plan iso col-md-12">
               <div id="new_essay" style="display: inline; color:red;">
                 <span class="transition">
                   <i class="fa fa-heartbeat" aria-hidden="true"></i>
@@ -304,22 +321,7 @@ function afterContentDraw () {
                 <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
               </div>
             </div>
-          </div> <!-- dm-tab-filter -->
-          <div class="container-fluid float-left">
-            <div id="dm-board-header" class="row d-none d-md-flex">
-              <div class="plan col-md-3"><span>PLAN</span></div>
-              <div class="in_progress col-md-3"><span>IN PROGRESS</span></div>
-              <div class="done col-md-6"><span>DONE</span></div>
-            </div>
-            <div id="dm-board-header-descs" class="row d-none d-md-flex">
-              <div class="col-md-3">Interests - Ideas</div>
-              <div class="col-md-3">Speculations - Prototype></div>
-              <div class="col-md-6">Knowledge - Products - Facts</div>
-            </div>
           </div>
-        </div> <!-- dm-tab-filter-wrapper -->
-
-        <div class="container-fluid dm-board">
           <div class="row splitter">
             <div class="col-md-12 text-center">Me</div>
           </div>
@@ -327,49 +329,57 @@ function afterContentDraw () {
             <div class="plan iso col-md-3">
             </div>
             <div class="in_progress iso col-md-3">
-  <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      About me
-    </div>
-    <div class="card-body">
-      <p class="card-text">Strong industry background. Interested in doing scientific research.</p>
-    </div>
+  <div class="card task" style="background-color: #99b399; color: #000000" data-order=4>
+    <a href="/about-me" title="About me" style="color: #000000">
+      <div class="card-header ellipsis">
+        About me
+      </div>
+      <div class="card-body">
+        <p class="card-text">Strong industry background. Interested in doing scientific research.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item ellipsis">
-          <a href="http://uy.linkedin.com/in/dariomac" class="card-link">http://uy.linkedin.com/in/dariomac</a>
+          <span class="task_external_link">External link: </span><a href="http://uy.linkedin.com/in/dariomac" class="card-link">http://uy.linkedin.com/in/dariomac</a>
         </li>
     </ul>
   </div>
 
-  <div class="card task" style="background-color: #FFD700; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Finish this website
-    </div>
-    <div class="card-body">
-      <p class="card-text">This is a work in progress</p>
-    </div>
+  <div class="card task" style="background-color: #FFD700; color: #000000" data-order=3>
+    <a href="/finish-this-website" title="Finish this website" style="color: #000000">
+      <div class="card-header ellipsis">
+        Finish this website
+      </div>
+      <div class="card-body">
+        <p class="card-text">This is a work in progress</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
     </ul>
   </div>
 
   <div class="card task" style="background-color: #FF6E19; color: #ffffff" data-order=>
-    <div class="card-header ellipsis">
-      Manifesto
-    </div>
-    <div class="card-body">
-      <p class="card-text">A public declaration of intent stating my beliefs, how I organize my work and even my life.</p>
-    </div>
+    <a href="/manifesto" title="Manifesto" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Manifesto
+      </div>
+      <div class="card-body">
+        <p class="card-text">A public declaration of intent stating my beliefs, how I organize my work and even my life.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Me elsewhere
-    </div>
-    <div class="card-body">
-      <p class="card-text">These are links to my profile on several online services.</p>
-    </div>
+    <a href="/me-elsewhere" title="Me elsewhere" style="color: #000000">
+      <div class="card-header ellipsis">
+        Me elsewhere
+      </div>
+      <div class="card-body">
+        <p class="card-text">These are links to my profile on several online services.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
     </ul>
   </div>
@@ -377,26 +387,30 @@ function afterContentDraw () {
             </div>
             <div class="done iso col-md-6">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
-    <div class="card-header ellipsis">
-      Favorite drinks
-    </div>
-    <div class="card-body">
-      <p class="card-text">These are my favorite drinks (just in case you want to invite me)</p>
-    </div>
+    <a href="/favorite-drinks" title="Favorite drinks" style="color: #000000">
+      <div class="card-header ellipsis">
+        Favorite drinks
+      </div>
+      <div class="card-body">
+        <p class="card-text">These are my favorite drinks (just in case you want to invite me)</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      My marriage
-    </div>
-    <div class="card-body">
-      <p class="card-text">I got married on March 17, 2012</p>
-    </div>
+    <a href="/my-marriage" title="My marriage" style="color: #000000">
+      <div class="card-header ellipsis">
+        My marriage
+      </div>
+      <div class="card-body">
+        <p class="card-text">I got married on March 17, 2012</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item ellipsis">
-          <a href="http://www.youtube.com/watch?v&#x3D;4Kaa7gPT9XE" class="card-link">http://www.youtube.com/watch?v&#x3D;4Kaa7gPT9XE</a>
+          <span class="task_external_link">External link: </span><a href="http://www.youtube.com/watch?v&#x3D;4Kaa7gPT9XE" class="card-link">http://www.youtube.com/watch?v&#x3D;4Kaa7gPT9XE</a>
         </li>
     </ul>
   </div>
@@ -412,46 +426,52 @@ function afterContentDraw () {
             </div>
             <div class="in_progress iso col-md-3">
   <div class="card task" style="background-color: #6EA4D4; color: #000000" data-order=10>
-    <div class="card-header ellipsis">
-      Batanga Media
-    </div>
-    <div class="card-body">
-      <p class="card-text">Scrum Master - Project Manager</p>
-    </div>
+    <a href="/batanga-media-scrum-master---project-manager" title="Batanga Media" style="color: #000000">
+      <div class="card-header ellipsis">
+        Batanga Media
+      </div>
+      <div class="card-body">
+        <p class="card-text">Scrum Master - Project Manager</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #6EA4D4; color: #000000">Nov 2016 - Now</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="batangamedia.com" class="card-link">batangamedia.com</a>
+          <span class="task_external_link">External link: </span><a href="batangamedia.com" class="card-link">batangamedia.com</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #8C0202; color: #ffffff" data-order=0>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">Degree final projects tutor</p>
-    </div>
+    <a href="/degree-final-projects-tutor" title="Universidad ORT Uruguay" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">Degree final projects tutor</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #8C0202; color: #ffffff">Aug 2016 - Now</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="https://fi.ort.edu.uy/72104/17/proyectos-de-fin-de-carrera.html" class="card-link">https://fi.ort.edu.uy/72104/17/proyectos-de-fin-de-carrera.html</a>
+          <span class="task_external_link">External link: </span><a href="https://fi.ort.edu.uy/72104/17/proyectos-de-fin-de-carrera.html" class="card-link">https://fi.ort.edu.uy/72104/17/proyectos-de-fin-de-carrera.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #FF6E19; color: #ffffff" data-order=0>
-    <div class="card-header ellipsis">
-      Self-Employed
-    </div>
-    <div class="card-body">
-      <p class="card-text">Software Engineering Advisor/Consultant</p>
-    </div>
+    <a href="/software-engineering-advisor-consultant" title="Self-Employed" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Self-Employed
+      </div>
+      <div class="card-body">
+        <p class="card-text">Software Engineering Advisor/Consultant</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #FF6E19; color: #ffffff">Mar 2013 – Now</span>
@@ -460,18 +480,20 @@ function afterContentDraw () {
   </div>
 
   <div class="card task" style="background-color: #8C0202; color: #ffffff" data-order=0>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">Software Engineering Professor</p>
-    </div>
+    <a href="/software-engineering-professor" title="Universidad ORT Uruguay" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">Software Engineering Professor</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #8C0202; color: #ffffff">Mar 2013 - Now</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://fi.ort.edu.uy/innovaportal/v/3399/5/fi.ort.front/ingenieria_de_software.html" class="card-link">http://fi.ort.edu.uy/innovaportal/v/3399/5/fi.ort.front/ingenieria_de_software.html</a>
+          <span class="task_external_link">External link: </span><a href="http://fi.ort.edu.uy/innovaportal/v/3399/5/fi.ort.front/ingenieria_de_software.html" class="card-link">http://fi.ort.edu.uy/innovaportal/v/3399/5/fi.ort.front/ingenieria_de_software.html</a>
         </li>
     </ul>
   </div>
@@ -479,65 +501,73 @@ function afterContentDraw () {
             </div>
             <div class="done iso col-md-6">
   <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=6>
-    <div class="card-header ellipsis">
-      Universidad EAFIT
-    </div>
-    <div class="card-body">
-      <p class="card-text">9° Entrepreneurship Summer Camp</p>
-    </div>
+    <a href="/9-entrepreneurship-summer-camp" title="Universidad EAFIT" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad EAFIT
+      </div>
+      <div class="card-body">
+        <p class="card-text">9° Entrepreneurship Summer Camp</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #00A651; color: #ffffff">Mar 2015</span>
             <span class="badge float-left" style="background-color: #00A651; color: #ffffff">Medellín - Colombia</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.eafit.edu.co/institucional/eafit-llanogrande/Paginas/presentacion.aspx" class="card-link">http://www.eafit.edu.co/institucional/eafit-llanogrande/Paginas/presentacion.aspx</a>
+          <span class="task_external_link">External link: </span><a href="http://www.eafit.edu.co/institucional/eafit-llanogrande/Paginas/presentacion.aspx" class="card-link">http://www.eafit.edu.co/institucional/eafit-llanogrande/Paginas/presentacion.aspx</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=0>
-    <div class="card-header ellipsis">
-      IAC (Instituto Americano de Computación) - Red Qualitas
-    </div>
-    <div class="card-body">
-      <p class="card-text">Computing Teacher</p>
-    </div>
+    <a href="/computing-teacher" title="IAC (Instituto Americano de Computación) - Red Qualitas" style="color: #000000">
+      <div class="card-header ellipsis">
+        IAC (Instituto Americano de Computación) - Red Qualitas
+      </div>
+      <div class="card-body">
+        <p class="card-text">Computing Teacher</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">Dec 1998 - Jun 2003</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.redqualitas.com" class="card-link">http://www.redqualitas.com</a>
+          <span class="task_external_link">External link: </span><a href="http://www.redqualitas.com" class="card-link">http://www.redqualitas.com</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=8>
-    <div class="card-header ellipsis">
-      Agiles2015
-    </div>
-    <div class="card-body">
-      <p class="card-text">Inception Workshop on Agiles2015</p>
-    </div>
+    <a href="/inception-workshop-on-agiles2015" title="Agiles2015" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Agiles2015
+      </div>
+      <div class="card-body">
+        <p class="card-text">Inception Workshop on Agiles2015</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #00A651; color: #ffffff">Oct 2015</span>
             <span class="badge float-left" style="background-color: #00A651; color: #ffffff">Radisson Victoria Plaza</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://agiles2015.agiles.org/es/?page_id&#x3D;1957" class="card-link">http://agiles2015.agiles.org/es/?page_id&#x3D;1957</a>
+          <span class="task_external_link">External link: </span><a href="http://agiles2015.agiles.org/es/?page_id&#x3D;1957" class="card-link">http://agiles2015.agiles.org/es/?page_id&#x3D;1957</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=6>
-    <div class="card-header ellipsis">
-      Universidad EAFIT
-    </div>
-    <div class="card-body">
-      <p class="card-text">Inception Workshop talk for agilists and young entrepreneurs</p>
-    </div>
+    <a href="/inception-workshop-talk-for-agilists-and-young-entrepreneurs" title="Universidad EAFIT" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad EAFIT
+      </div>
+      <div class="card-body">
+        <p class="card-text">Inception Workshop talk for agilists and young entrepreneurs</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #00A651; color: #ffffff">Mar 2015</span>
@@ -547,105 +577,117 @@ function afterContentDraw () {
   </div>
 
   <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=7>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay - CIE
-    </div>
-    <div class="card-body">
-      <p class="card-text">Introduction to the practice of Inception</p>
-    </div>
+    <a href="/introduction-to-the-practice-of-inception" title="Universidad ORT Uruguay - CIE" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay - CIE
+      </div>
+      <div class="card-body">
+        <p class="card-text">Introduction to the practice of Inception</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #00A651; color: #ffffff">Jun 2015</span>
             <span class="badge float-left" style="background-color: #00A651; color: #ffffff">Universidad ORT Uruguay</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://cie.ort.edu.uy/" class="card-link">http://cie.ort.edu.uy/</a>
+          <span class="task_external_link">External link: </span><a href="http://cie.ort.edu.uy/" class="card-link">http://cie.ort.edu.uy/</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
-    <div class="card-header ellipsis">
-      InnovaAge
-    </div>
-    <div class="card-body">
-      <p class="card-text">Senior Developer</p>
-    </div>
+    <a href="/senior-developer" title="InnovaAge" style="color: #000000">
+      <div class="card-header ellipsis">
+        InnovaAge
+      </div>
+      <div class="card-body">
+        <p class="card-text">Senior Developer</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">Jul 2003 – Nov 2004</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.innovaage.com/" class="card-link">http://www.innovaage.com/</a>
+          <span class="task_external_link">External link: </span><a href="http://www.innovaage.com/" class="card-link">http://www.innovaage.com/</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=3>
-    <div class="card-header ellipsis">
-      PricewaterhouseCoopers
-    </div>
-    <div class="card-body">
-      <p class="card-text">Supervisor - Senior Developer - IT Consultant</p>
-    </div>
+    <a href="/supervisor---senior-developer---it-consultant" title="PricewaterhouseCoopers" style="color: #000000">
+      <div class="card-header ellipsis">
+        PricewaterhouseCoopers
+      </div>
+      <div class="card-body">
+        <p class="card-text">Supervisor - Senior Developer - IT Consultant</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">Nov 2004 – Mar 2014</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.pwc.com" class="card-link">http://www.pwc.com</a>
+          <span class="task_external_link">External link: </span><a href="http://www.pwc.com" class="card-link">http://www.pwc.com</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=9>
-    <div class="card-header ellipsis">
-      VAIRIX Software Development
-    </div>
-    <div class="card-body">
-      <p class="card-text">Vairix COO - Scrum Master - QA</p>
-    </div>
+    <a href="/vairix-coo---scrum-master---researcher" title="VAIRIX Software Development" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        VAIRIX Software Development
+      </div>
+      <div class="card-body">
+        <p class="card-text">Vairix COO - Scrum Master - QA</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #00A651; color: #ffffff">Mar 2014 – Now</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.vairix.com/" class="card-link">http://www.vairix.com/</a>
+          <span class="task_external_link">External link: </span><a href="http://www.vairix.com/" class="card-link">http://www.vairix.com/</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #FF6E19; color: #ffffff" data-order=2>
-    <div class="card-header ellipsis">
-      Facultad de Ingeniería (UdelaR)
-    </div>
-    <div class="card-body">
-      <p class="card-text">Workshop about reading techniques for software reviews</p>
-    </div>
+    <a href="/workshop-about-reading-techniques-for-software-reviews" title="Facultad de Ingeniería (UdelaR)" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Facultad de Ingeniería (UdelaR)
+      </div>
+      <div class="card-body">
+        <p class="card-text">Workshop about reading techniques for software reviews</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #FF6E19; color: #ffffff">May 2013, Mar 2014</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.fing.edu.uy/" class="card-link">http://www.fing.edu.uy/</a>
+          <span class="task_external_link">External link: </span><a href="http://www.fing.edu.uy/" class="card-link">http://www.fing.edu.uy/</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #FF6E19; color: #ffffff" data-order=4>
-    <div class="card-header ellipsis">
-      WBagadion Consulting, Inc.
-    </div>
-    <div class="card-body">
-      <p class="card-text">Workshop on Software Requirements Management</p>
-    </div>
+    <a href="/workshop-on-software-requirements-management" title="WBagadion Consulting, Inc." style="color: #ffffff">
+      <div class="card-header ellipsis">
+        WBagadion Consulting, Inc.
+      </div>
+      <div class="card-body">
+        <p class="card-text">Workshop on Software Requirements Management</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #FF6E19; color: #ffffff">Nov 2014</span>
             <span class="badge float-left" style="background-color: #FF6E19; color: #ffffff">Bogotá - Colombia</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.wbagadion.com" class="card-link">http://www.wbagadion.com</a>
+          <span class="task_external_link">External link: </span><a href="http://www.wbagadion.com" class="card-link">http://www.wbagadion.com</a>
         </li>
     </ul>
   </div>
@@ -659,19 +701,23 @@ function afterContentDraw () {
           <div class="row me">
             <div class="plan iso col-md-3">
   <div class="card task" style="background-color: #77D477; color: #000000" data-order=12>
-    <div class="card-header ellipsis">
-      Coursera (online)
-    </div>
-    <div class="card-body">
-      <p class="card-text">“Think Again: How to Reason and Argue” course.</p>
-    </div>
+    <a href="/think-again--how-to-reason-and-argue-course" title="Coursera (online)" style="color: #000000">
+      <div class="card-header ellipsis">
+        Coursera (online)
+      </div>
+      <div class="card-body">
+        <p class="card-text">“Think Again: How to Reason and Argue” course.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #77D477; color: #000000">12 weeks</span>
         </li>
-        <li class="list-group-item">#soft_skills, #humanities</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#soft_skills, #humanities
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.coursera.org/course/thinkagain" class="card-link">http://www.coursera.org/course/thinkagain</a>
+          <span class="task_external_link">External link: </span><a href="http://www.coursera.org/course/thinkagain" class="card-link">http://www.coursera.org/course/thinkagain</a>
         </li>
     </ul>
   </div>
@@ -679,322 +725,392 @@ function afterContentDraw () {
             </div>
             <div class="in_progress iso col-md-3">
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay - PEDECIBA
-    </div>
-    <div class="card-body">
-      <p class="card-text">Doctorado (Ph.D)</p>
-    </div>
+    <a href="/doctorado-phd" title="Universidad ORT Uruguay - PEDECIBA" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay - PEDECIBA
+      </div>
+      <div class="card-body">
+        <p class="card-text">Doctorado (Ph.D)</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Sep 9, 2015 - </span>
         </li>
-        <li class="list-group-item">#phd, #research</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#phd, #research
+        </li>
     </ul>
   </div>
 
             </div>
             <div class="done iso col-md-6">
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
-    <div class="card-header ellipsis">
-      IAC-CTC-ORT
-    </div>
-    <div class="card-body">
-      <p class="card-text">Basic computer skills (first steps)</p>
-    </div>
+    <a href="/basic-computer-skills-first-steps" title="IAC-CTC-ORT" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        IAC-CTC-ORT
+      </div>
+      <div class="card-body">
+        <p class="card-text">Basic computer skills (first steps)</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Jun 2, 2014 - Jun 3, 2014</span>
         </li>
-        <li class="list-group-item">#computer</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#computer
+        </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #77D477; color: #000000" data-order=15>
-    <div class="card-header ellipsis">
-      CPA Innovation (Hotel Palladium)
-    </div>
-    <div class="card-body">
-      <p class="card-text">Certified ScrumMaster</p>
-    </div>
+    <a href="/certified-scrummaster" title="CPA Innovation (Hotel Palladium)" style="color: #000000">
+      <div class="card-header ellipsis">
+        CPA Innovation (Hotel Palladium)
+      </div>
+      <div class="card-body">
+        <p class="card-text">Certified ScrumMaster</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #77D477; color: #000000">Jun 2, 2014 - Jun 3, 2014</span>
         </li>
-        <li class="list-group-item">#agile, #scrum</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#agile, #scrum
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.cpainnovation.com/" class="card-link">http://www.cpainnovation.com/</a>
+          <span class="task_external_link">External link: </span><a href="http://www.cpainnovation.com/" class="card-link">http://www.cpainnovation.com/</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
-    <div class="card-header ellipsis">
-      Instituto Cultural Anglo Uruguayo
-    </div>
-    <div class="card-body">
-      <p class="card-text">English studies (First Certificate Level)</p>
-    </div>
+    <a href="/english-studies-first-certificate-level" title="Instituto Cultural Anglo Uruguayo" style="color: #000000">
+      <div class="card-header ellipsis">
+        Instituto Cultural Anglo Uruguayo
+      </div>
+      <div class="card-body">
+        <p class="card-text">English studies (First Certificate Level)</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">1993 - 1999</span>
         </li>
-        <li class="list-group-item">#english</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#english
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.anglo.edu.uy/portal/hgxpp001.aspx?101" class="card-link">http://www.anglo.edu.uy/portal/hgxpp001.aspx?101</a>
+          <span class="task_external_link">External link: </span><a href="http://www.anglo.edu.uy/portal/hgxpp001.aspx?101" class="card-link">http://www.anglo.edu.uy/portal/hgxpp001.aspx?101</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=8>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">“Experimental Methods and Statistical Analysis Applied to Software Engineering Research” tutorial</p>
-    </div>
+    <a href="/experimental-methods-and-statistical-analysis-applied-to-software-engineering-research-tutorial" title="Universidad ORT Uruguay" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">“Experimental Methods and Statistical Analysis Applied to Software Engineering Research” tutorial</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Jun 25-27, 2012</span>
             <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by M.A. Araújo</span>
         </li>
-        <li class="list-group-item">#experimental, #statistics</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#experimental, #statistics
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.ort.edu.uy/index.php?id&#x3D;AAAHAFAF&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;5975&amp;m&#x3D;0&amp;a&#x3D;2012&amp;pub&#x3D;0&amp;publishers&#x3D;" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAAHAFAF&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;5975&amp;m&#x3D;0&amp;a&#x3D;2012&amp;pub&#x3D;0&amp;publishers&#x3D;</a>
+          <span class="task_external_link">External link: </span><a href="http://www.ort.edu.uy/index.php?id&#x3D;AAAHAFAF&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;5975&amp;m&#x3D;0&amp;a&#x3D;2012&amp;pub&#x3D;0&amp;publishers&#x3D;" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAAHAFAF&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;5975&amp;m&#x3D;0&amp;a&#x3D;2012&amp;pub&#x3D;0&amp;publishers&#x3D;</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=7>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">“Experimental Software Engineering: using statistics methods to support planning and execution of experimental studies” tutorial</p>
-    </div>
+    <a href="/experimental-software-engineering--using-statistics-methods-to-support-planning-and-execution-of-experimental-studies-tutorial" title="Universidad ORT Uruguay" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">“Experimental Software Engineering: using statistics methods to support planning and execution of experimental studies” tutorial</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Jun 13, 2011</span>
             <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by G.H. Travassos</span>
         </li>
-        <li class="list-group-item">#experimental, #statistics</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#experimental, #statistics
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.ort.edu.uy/index.php?id&#x3D;AAALAC&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;4994&amp;m&#x3D;6&amp;a&#x3D;2011&amp;pub&#x3D;0&amp;publishers&#x3D;" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAALAC&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;4994&amp;m&#x3D;6&amp;a&#x3D;2011&amp;pub&#x3D;0&amp;publishers&#x3D;</a>
+          <span class="task_external_link">External link: </span><a href="http://www.ort.edu.uy/index.php?id&#x3D;AAALAC&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;4994&amp;m&#x3D;6&amp;a&#x3D;2011&amp;pub&#x3D;0&amp;publishers&#x3D;" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAALAC&amp;h&#x3D;&amp;noticias&#x3D;1&amp;id_noticia&#x3D;4994&amp;m&#x3D;6&amp;a&#x3D;2011&amp;pub&#x3D;0&amp;publishers&#x3D;</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=16>
-    <div class="card-header ellipsis">
-      INCO - FING UY
-    </div>
-    <div class="card-body">
-      <p class="card-text">Formal Methods and Unified Modeling Language (UML)</p>
-    </div>
+    <a href="/formal-methods-and-unified-modeling-language-uml" title="INCO - FING UY" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        INCO - FING UY
+      </div>
+      <div class="card-body">
+        <p class="card-text">Formal Methods and Unified Modeling Language (UML)</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Nov 2015</span>
             <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">INCO - FING UY</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="https://www.fing.edu.uy/evento/alexander-knapp-towards-institutional-framework-heterogeneous-formal-development-uml" class="card-link">https://www.fing.edu.uy/evento/alexander-knapp-towards-institutional-framework-heterogeneous-formal-development-uml</a>
+          <span class="task_external_link">External link: </span><a href="https://www.fing.edu.uy/evento/alexander-knapp-towards-institutional-framework-heterogeneous-formal-development-uml" class="card-link">https://www.fing.edu.uy/evento/alexander-knapp-towards-institutional-framework-heterogeneous-formal-development-uml</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=10>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">“Formalizing software processes” conference</p>
-    </div>
+    <a href="/formalizing-software-processes-conference" title="Universidad ORT Uruguay" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">“Formalizing software processes” conference</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Oct 25, 2012</span>
         </li>
-        <li class="list-group-item">#experimental, #statistics</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#experimental, #statistics
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://fi.ort.edu.uy/innovaportal/v/5782/5/fi.ort.front/conferencia_formalizacion_de_procesos_de_software.html" class="card-link">http://fi.ort.edu.uy/innovaportal/v/5782/5/fi.ort.front/conferencia_formalizacion_de_procesos_de_software.html</a>
+          <span class="task_external_link">External link: </span><a href="http://fi.ort.edu.uy/innovaportal/v/5782/5/fi.ort.front/conferencia_formalizacion_de_procesos_de_software.html" class="card-link">http://fi.ort.edu.uy/innovaportal/v/5782/5/fi.ort.front/conferencia_formalizacion_de_procesos_de_software.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=12>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">Master in Engineering</p>
-    </div>
+    <a href="/master-in-engineering" title="Universidad ORT Uruguay" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">Master in Engineering</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">2010 - 2013</span>
         </li>
-        <li class="list-group-item">#software, #research</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#software, #research
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.ort.edu.uy/fi/masteringenieria" class="card-link">http://www.ort.edu.uy/fi/masteringenieria</a>
+          <span class="task_external_link">External link: </span><a href="http://www.ort.edu.uy/fi/masteringenieria" class="card-link">http://www.ort.edu.uy/fi/masteringenieria</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #77D477; color: #000000" data-order=3>
-    <div class="card-header ellipsis">
-      InspirAction Consulting y D&amp;E Consulting
-    </div>
-    <div class="card-body">
-      <p class="card-text">People Leadership &amp; Management</p>
-    </div>
+    <a href="/people-leadership-management" title="InspirAction Consulting y D&amp;E Consulting" style="color: #000000">
+      <div class="card-header ellipsis">
+        InspirAction Consulting y D&amp;E Consulting
+      </div>
+      <div class="card-body">
+        <p class="card-text">People Leadership &amp; Management</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #77D477; color: #000000">Jun 8, 2009</span>
         </li>
-        <li class="list-group-item">#soft_skills</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#soft_skills
+        </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #77D477; color: #000000" data-order=14>
-    <div class="card-header ellipsis">
-      NCET2.org (online)
-    </div>
-    <div class="card-body">
-      <p class="card-text">Research Commercialization - Introductory Course</p>
-    </div>
+    <a href="/research-commercialization---introductory-course" title="NCET2.org (online)" style="color: #000000">
+      <div class="card-header ellipsis">
+        NCET2.org (online)
+      </div>
+      <div class="card-body">
+        <p class="card-text">Research Commercialization - Introductory Course</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #77D477; color: #000000">May 21 - Jun 18, 2013</span>
         </li>
-        <li class="list-group-item">#research, #commercialization</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#research, #commercialization
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://center.ncet2.org/index.php?option&#x3D;com_joomla_lms&amp;Itemid&#x3D;53&amp;task&#x3D;details_course&amp;id&#x3D;112" class="card-link">http://center.ncet2.org/index.php?option&#x3D;com_joomla_lms&amp;Itemid&#x3D;53&amp;task&#x3D;details_course&amp;id&#x3D;112</a>
+          <span class="task_external_link">External link: </span><a href="http://center.ncet2.org/index.php?option&#x3D;com_joomla_lms&amp;Itemid&#x3D;53&amp;task&#x3D;details_course&amp;id&#x3D;112" class="card-link">http://center.ncet2.org/index.php?option&#x3D;com_joomla_lms&amp;Itemid&#x3D;53&amp;task&#x3D;details_course&amp;id&#x3D;112</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=6>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">“Six Sigma Applied to Software Process Improvement” tutorial</p>
-    </div>
+    <a href="/six-sigma-applied-to-software-process-improvement-tutorial" title="Universidad ORT Uruguay" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">“Six Sigma Applied to Software Process Improvement” tutorial</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Apr 4-8, 2011</span>
             <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by T. San Feliu</span>
         </li>
-        <li class="list-group-item">#research, #SPI, #six-sigma</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#research, #SPI, #six-sigma
+        </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #77D477; color: #000000" data-order=4>
-    <div class="card-header ellipsis">
-      Commitment
-    </div>
-    <div class="card-body">
-      <p class="card-text">Soft Skills for Project Leaders</p>
-    </div>
+    <a href="/soft-skills-for-project-leaders" title="Commitment" style="color: #000000">
+      <div class="card-header ellipsis">
+        Commitment
+      </div>
+      <div class="card-body">
+        <p class="card-text">Soft Skills for Project Leaders</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #77D477; color: #000000">Sep 2-5, 2009</span>
         </li>
-        <li class="list-group-item">#soft_skills</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#soft_skills
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.commitment.com.uy/" class="card-link">http://www.commitment.com.uy/</a>
+          <span class="task_external_link">External link: </span><a href="http://www.commitment.com.uy/" class="card-link">http://www.commitment.com.uy/</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=2>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">Software Engineer</p>
-    </div>
+    <a href="/software-engineer" title="Universidad ORT Uruguay" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">Software Engineer</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">2000 - 2008</span>
         </li>
-        <li class="list-group-item">#computer, #software</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#computer, #software
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.ort.edu.uy/index.php?id&#x3D;AAAHAGAC" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAAHAGAC</a>
+          <span class="task_external_link">External link: </span><a href="http://www.ort.edu.uy/index.php?id&#x3D;AAAHAGAC" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAAHAGAC</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=5>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">“Software Engineering Experimentation” tutorial</p>
-    </div>
+    <a href="/software-engineering-experimentation-tutorial" title="Universidad ORT Uruguay" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">“Software Engineering Experimentation” tutorial</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Mar 21-25, 2011</span>
             <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by N. Juristo</span>
         </li>
-        <li class="list-group-item">#research, #empirical #studies</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#research, #empirical #studies
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.google.com/url?q&#x3D;http%3A%2F%2Fwww.ort.edu.uy%2Findex.php%3Fid%3DAAAHBA%26h%3DAAAH%26noticias%3D1%26id_noticia%3D4769%26m%3D%26a%3D%26pub%3D0%26publishers%3D&amp;sa&#x3D;D&amp;sntz&#x3D;1&amp;usg&#x3D;AFQjCNEPh79hYj38pVVU6SG2LzRa7-_cTA" class="card-link">http://www.google.com/url?q&#x3D;http%3A%2F%2Fwww.ort.edu.uy%2Findex.php%3Fid%3DAAAHBA%26h%3DAAAH%26noticias%3D1%26id_noticia%3D4769%26m%3D%26a%3D%26pub%3D0%26publishers%3D&amp;sa&#x3D;D&amp;sntz&#x3D;1&amp;usg&#x3D;AFQjCNEPh79hYj38pVVU6SG2LzRa7-_cTA</a>
+          <span class="task_external_link">External link: </span><a href="http://www.google.com/url?q&#x3D;http%3A%2F%2Fwww.ort.edu.uy%2Findex.php%3Fid%3DAAAHBA%26h%3DAAAH%26noticias%3D1%26id_noticia%3D4769%26m%3D%26a%3D%26pub%3D0%26publishers%3D&amp;sa&#x3D;D&amp;sntz&#x3D;1&amp;usg&#x3D;AFQjCNEPh79hYj38pVVU6SG2LzRa7-_cTA" class="card-link">http://www.google.com/url?q&#x3D;http%3A%2F%2Fwww.ort.edu.uy%2Findex.php%3Fid%3DAAAHBA%26h%3DAAAH%26noticias%3D1%26id_noticia%3D4769%26m%3D%26a%3D%26pub%3D0%26publishers%3D&amp;sa&#x3D;D&amp;sntz&#x3D;1&amp;usg&#x3D;AFQjCNEPh79hYj38pVVU6SG2LzRa7-_cTA</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #45A9F2; color: #ffffff" data-order=9>
-    <div class="card-header ellipsis">
-      Universidad EAFIT (Medellín - Colombia)
-    </div>
-    <div class="card-body">
-      <p class="card-text">“Software Product Lines” tutorial</p>
-    </div>
+    <a href="/software-product-lines-tutorial" title="Universidad EAFIT (Medellín - Colombia)" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad EAFIT (Medellín - Colombia)
+      </div>
+      <div class="card-body">
+        <p class="card-text">“Software Product Lines” tutorial</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #45A9F2; color: #ffffff">Oct 1, 2012</span>
             <span class="badge float-left" style="background-color: #45A9F2; color: #ffffff">by J. D. Herrera</span>
         </li>
-        <li class="list-group-item">#SPL, #reuse</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#SPL, #reuse
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.clei2012.org/" class="card-link">http://www.clei2012.org/</a>
+          <span class="task_external_link">External link: </span><a href="http://www.clei2012.org/" class="card-link">http://www.clei2012.org/</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=11>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">“Systematic Literature Reviews“ tutorial</p>
-    </div>
+    <a href="/systematic-literature-reviews-tutorial" title="Universidad ORT Uruguay" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">“Systematic Literature Reviews“ tutorial</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">Dec 3-6, 2012 (12hs)</span>
             <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by M. Genero</span>
         </li>
-        <li class="list-group-item">#empirical, #evidence</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#empirical, #evidence
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://fi.ort.edu.uy/innovaportal/v/6416/5/fi.ort.front/curso_revisiones_sistematicas_de_la_literatura.html" class="card-link">http://fi.ort.edu.uy/innovaportal/v/6416/5/fi.ort.front/curso_revisiones_sistematicas_de_la_literatura.html</a>
+          <span class="task_external_link">External link: </span><a href="http://fi.ort.edu.uy/innovaportal/v/6416/5/fi.ort.front/curso_revisiones_sistematicas_de_la_literatura.html" class="card-link">http://fi.ort.edu.uy/innovaportal/v/6416/5/fi.ort.front/curso_revisiones_sistematicas_de_la_literatura.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=13>
-    <div class="card-header ellipsis">
-      Universidad ORT Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">“Technical Debt: basic concepts, research methods and study design“ tutorial</p>
-    </div>
+    <a href="/technical-debt--basic-concepts--research-methods-and-study-design-tutorial" title="Universidad ORT Uruguay" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Universidad ORT Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">“Technical Debt: basic concepts, research methods and study design“ tutorial</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">April 11-12, 2013</span>
             <span class="badge float-left" style="background-color: #AD4647; color: #ffffff">by C. Seaman</span>
         </li>
-        <li class="list-group-item">#technical debt, #empirical</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#technical debt, #empirical
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.ort.edu.uy/index.php?id&#x3D;AAAHBA&amp;h&#x3D;AAAH&amp;noticias&#x3D;1&amp;id_noticia&#x3D;6612&amp;m&#x3D;&amp;a&#x3D;&amp;pub&#x3D;0&amp;publishers&#x3D;" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAAHBA&amp;h&#x3D;AAAH&amp;noticias&#x3D;1&amp;id_noticia&#x3D;6612&amp;m&#x3D;&amp;a&#x3D;&amp;pub&#x3D;0&amp;publishers&#x3D;</a>
+          <span class="task_external_link">External link: </span><a href="http://www.ort.edu.uy/index.php?id&#x3D;AAAHBA&amp;h&#x3D;AAAH&amp;noticias&#x3D;1&amp;id_noticia&#x3D;6612&amp;m&#x3D;&amp;a&#x3D;&amp;pub&#x3D;0&amp;publishers&#x3D;" class="card-link">http://www.ort.edu.uy/index.php?id&#x3D;AAAHBA&amp;h&#x3D;AAAH&amp;noticias&#x3D;1&amp;id_noticia&#x3D;6612&amp;m&#x3D;&amp;a&#x3D;&amp;pub&#x3D;0&amp;publishers&#x3D;</a>
         </li>
     </ul>
   </div>
@@ -1010,94 +1126,100 @@ function afterContentDraw () {
             </div>
             <div class="in_progress iso col-md-3">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
-    <div class="card-header ellipsis">
-      JQuery Plugin Quality Assessment
-    </div>
-    <div class="card-body">
-      <p class="card-text">JQuery plugins saves development time, but poor quality plugin are destabilizing factor. How to evaluate the quality of JQuery plugins?</p>
-    </div>
+    <a href="/jquery-plugin-quality-assessment" title="JQuery Plugin Quality Assessment" style="color: #000000">
+      <div class="card-header ellipsis">
+        JQuery Plugin Quality Assessment
+      </div>
+      <div class="card-body">
+        <p class="card-text">JQuery plugins saves development time, but poor quality plugin are destabilizing factor. How to evaluate the quality of JQuery plugins?</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+          <span class="task_tag">Tags: </span>#picoresearchs
         </li>
-        <li class="list-group-item">#picoresearchs</li>
     </ul>
   </div>
 
             </div>
             <div class="done iso col-md-6">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=0>
-    <div class="card-header ellipsis">
-      Evidence based research of JavaScript Grids according to a set of expected attributes
-    </div>
-    <div class="card-body">
-      <p class="card-text">This study identifies javascript grids that have some attributes defined apriori. It&#x27;s my first attempt to apply a systematic method in order to make an industrial decision</p>
-    </div>
+    <a href="/evidence-based-research-of-javascript-grids-according-to-a-set-of-expected-attributes" title="Evidence based research of JavaScript Grids according to a set of expected attributes" style="color: #000000">
+      <div class="card-header ellipsis">
+        Evidence based research of JavaScript Grids according to a set of expected attributes
+      </div>
+      <div class="card-body">
+        <p class="card-text">This study identifies javascript grids that have some attributes defined apriori. It&#x27;s my first attempt to apply a systematic method in order to make an industrial decision</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+          <span class="task_tag">Tags: </span>#picoresearchs
         </li>
-        <li class="list-group-item">#picoresearchs</li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=0>
-    <div class="card-header ellipsis">
-      How small software companies are reviewing their software artifacts
-    </div>
-    <div class="card-body">
-      <p class="card-text">We are worried about how small software companies are performing their reviews over the software artifacts generated during the development cycle</p>
-    </div>
+    <a href="/how-small-software-companies-are-reviewing-their-software-artifacts" title="How small software companies are reviewing their software artifacts" style="color: #000000">
+      <div class="card-header ellipsis">
+        How small software companies are reviewing their software artifacts
+      </div>
+      <div class="card-body">
+        <p class="card-text">We are worried about how small software companies are performing their reviews over the software artifacts generated during the development cycle</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+          <span class="task_tag">Tags: </span>#MSc
         </li>
-        <li class="list-group-item">#MSc</li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #767782; color: #ffffff" data-order=0>
-    <div class="card-header ellipsis">
-      Research on 3D modeling of the human body
-    </div>
-    <div class="card-body">
-      <p class="card-text">Technology and methodology for modeling the human body in 3D</p>
-    </div>
+    <a href="/research-on-3d-modeling-of-the-human-body" title="Research on 3D modeling of the human body" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Research on 3D modeling of the human body
+      </div>
+      <div class="card-body">
+        <p class="card-text">Technology and methodology for modeling the human body in 3D</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #767782; color: #ffffff"></span>
+          <span class="task_tag">Tags: </span>#swingimprover
         </li>
-        <li class="list-group-item">#swingimprover</li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
-    <div class="card-header ellipsis">
-      Software Inspection Adoption
-    </div>
-    <div class="card-body">
-      <p class="card-text">Factors that difficult the adoption and how to avoid or overcome them</p>
-    </div>
+    <a href="/software-inspection-adoption" title="Software Inspection Adoption" style="color: #000000">
+      <div class="card-header ellipsis">
+        Software Inspection Adoption
+      </div>
+      <div class="card-body">
+        <p class="card-text">Factors that difficult the adoption and how to avoid or overcome them</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+          <span class="task_tag">Tags: </span>#MSc
         </li>
-        <li class="list-group-item">#MSc</li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #767782; color: #ffffff" data-order=>
-    <div class="card-header ellipsis">
-      TDD Failures
-    </div>
-    <div class="card-body">
-      <p class="card-text">Difficulty of TDD in game development</p>
-    </div>
+    <a href="/tdd-failures" title="TDD Failures" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        TDD Failures
+      </div>
+      <div class="card-body">
+        <p class="card-text">Difficulty of TDD in game development</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #767782; color: #ffffff"></span>
+          <span class="task_tag">Tags: </span>#swingimprover
         </li>
-        <li class="list-group-item">#swingimprover</li>
     </ul>
   </div>
 
@@ -1114,35 +1236,55 @@ function afterContentDraw () {
             </div>
             <div class="done iso col-md-6">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
-    <div class="card-header ellipsis">
-      Darío Macchi, Martín Solari
-    </div>
-    <div class="card-body">
-      <p class="card-text">Diagnóstico del Uso de Técnicas de  Revisión de Software en Uruguay</p>
-    </div>
+    <a href="/diagnostico-del-uso-de-tecnicas-de-revision-de-software-en-uruguay" title="Darío Macchi, Martín Solari" style="color: #000000">
+      <div class="card-header ellipsis">
+        Darío Macchi, Martín Solari
+      </div>
+      <div class="card-body">
+        <p class="card-text">Diagnóstico del Uso de Técnicas de  Revisión de Software en Uruguay</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        <li class="list-group-item subtasks">
+              <label title="Completed on 2012-20-12">
+                <input type="checkbox" onclick="return false;" checked="checked">Submitted to CIbSE 2013.</input>
+              </label>
+              <label title="Completed on 2013-02-04">
+                <input type="checkbox" onclick="return false;" checked="checked">Accepted in CIbSE 2013.</input>
+              </label>
+              <label title="Completed on 2013-04-05">
+                <input type="checkbox" onclick="return false;" checked="checked">Presented in CIbSE 2013.</input>
+              </label>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://cibse2013.ort.edu.uy/en/Presentation.php" class="card-link">http://cibse2013.ort.edu.uy/en/Presentation.php</a>
+          <span class="task_external_link">External link: </span><a href="http://cibse2013.ort.edu.uy/en/Presentation.php" class="card-link">http://cibse2013.ort.edu.uy/en/Presentation.php</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=0>
-    <div class="card-header ellipsis">
-      Darío Macchi, Martín Solari
-    </div>
-    <div class="card-body">
-      <p class="card-text">Software inspection adoption: A mapping study</p>
-    </div>
+    <a href="/software-inspection-adoption--a-mapping-study" title="Darío Macchi, Martín Solari" style="color: #000000">
+      <div class="card-header ellipsis">
+        Darío Macchi, Martín Solari
+      </div>
+      <div class="card-body">
+        <p class="card-text">Software inspection adoption: A mapping study</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
+        <li class="list-group-item subtasks">
+              <label title="Completed on 2012-02-29 18:13:33">
+                <input type="checkbox" onclick="return false;" checked="checked">Rejects in CIbSE 2012.</input>
+              </label>
+              <label title="Completed on 2012-07-17 17:41:33">
+                <input type="checkbox" onclick="return false;" checked="checked">Accepted in CLEI 2012.</input>
+              </label>
+              <label title="Completed on 2012-10-03">
+                <input type="checkbox" onclick="return false;" checked="checked">Presented in CLEI 2012.</input>
+              </label>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp&#x3D;&amp;arnumber&#x3D;6427197&amp;contentType&#x3D;Conference+Publications&amp;queryText%3Dsoftware+inspection+adoption" class="card-link">http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp&#x3D;&amp;arnumber&#x3D;6427197&amp;contentType&#x3D;Conference+Publications&amp;queryText%3Dsoftware+inspection+adoption</a>
+          <span class="task_external_link">External link: </span><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp&#x3D;&amp;arnumber&#x3D;6427197&amp;contentType&#x3D;Conference+Publications&amp;queryText%3Dsoftware+inspection+adoption" class="card-link">http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp&#x3D;&amp;arnumber&#x3D;6427197&amp;contentType&#x3D;Conference+Publications&amp;queryText%3Dsoftware+inspection+adoption</a>
         </li>
     </ul>
   </div>
@@ -1156,18 +1298,17 @@ function afterContentDraw () {
           <div class="row me">
             <div class="plan iso col-md-3">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=%{position}>
-    <div class="card-header ellipsis">
-      Niveles de Abstracción
-    </div>
-    <div class="card-body">
-      <p class="card-text">¿Qué entendemos por niveles de abstracción?</p>
-    </div>
+    <a href="/niveles-de-abstracción" title="Niveles de Abstracción" style="color: #000000">
+      <div class="card-header ellipsis">
+        Niveles de Abstracción
+      </div>
+      <div class="card-body">
+        <p class="card-text">¿Qué entendemos por niveles de abstracción?</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">---</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
@@ -1175,18 +1316,17 @@ function afterContentDraw () {
             </div>
             <div class="in_progress iso col-md-3">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140501>
-    <div class="card-header ellipsis">
-      Pico-Researchs (p-researchs)
-    </div>
-    <div class="card-body">
-      <p class="card-text">Practical industry researchs with a scientific approach to take better decisions.</p>
-    </div>
+    <a href="/picoresearchs" title="Pico-Researchs (p-researchs)" style="color: #000000">
+      <div class="card-header ellipsis">
+        Pico-Researchs (p-researchs)
+      </div>
+      <div class="card-body">
+        <p class="card-text">Practical industry researchs with a scientific approach to take better decisions.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-05-01</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
@@ -1194,307 +1334,292 @@ function afterContentDraw () {
             </div>
             <div class="done iso col-md-6">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140517>
-    <div class="card-header ellipsis">
-      Agile Open Space 2014 Virtual Covering - Montevideo - Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">Virtual covering of the Agile Open Space held in Montevideo - UY - May 17, 2014</p>
-    </div>
+    <a href="/agile-open-space-2014" title="Agile Open Space 2014 Virtual Covering - Montevideo - Uruguay" style="color: #000000">
+      <div class="card-header ellipsis">
+        Agile Open Space 2014 Virtual Covering - Montevideo - Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">Virtual covering of the Agile Open Space held in Montevideo - UY - May 17, 2014</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-05-17</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140929>
-    <div class="card-header ellipsis">
-      Better Errors &amp; RailsPanel: development aids
-    </div>
-    <div class="card-body">
-      <p class="card-text">Here we take a look at two tools to aid us in Ruby on Rails development process.</p>
-    </div>
+    <a href="/better-errors-railspanel--development-aids" title="Better Errors &amp; RailsPanel: development aids" style="color: #000000">
+      <div class="card-header ellipsis">
+        Better Errors &amp; RailsPanel: development aids
+      </div>
+      <div class="card-body">
+        <p class="card-text">Here we take a look at two tools to aid us in Ruby on Rails development process.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-09-29</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=20150922>
-    <div class="card-header ellipsis">
-      Code Review: What Is It and Why Is It Important?
-    </div>
-    <div class="card-body">
-      <p class="card-text">New to the concept of code review? This post explains what code review is and why it’s important.</p>
-    </div>
+    <a href="/code-review--what-is-it-and-why-is-it-important" title="Code Review: What Is It and Why Is It Important?" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Code Review: What Is It and Why Is It Important?
+      </div>
+      <div class="card-body">
+        <p class="card-text">New to the concept of code review? This post explains what code review is and why it’s important.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #00A651; color: #ffffff">2015-09-22</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20141113>
-    <div class="card-header ellipsis">
-      Customer.io service and how to use it from Ruby
-    </div>
-    <div class="card-body">
-      <p class="card-text">Customer.io is a SaaS which enables you to easily manage all the emails you send to your users.</p>
-    </div>
+    <a href="/customerio-service-and-how-to-use-it-from-ruby" title="Customer.io service and how to use it from Ruby" style="color: #000000">
+      <div class="card-header ellipsis">
+        Customer.io service and how to use it from Ruby
+      </div>
+      <div class="card-body">
+        <p class="card-text">Customer.io is a SaaS which enables you to easily manage all the emails you send to your users.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-11-13</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20180103>
-    <div class="card-header ellipsis">
-      The First Two Weeks Of The Rest Of My Flow-e Life
-    </div>
-    <div class="card-body">
-      <p class="card-text">Personal opinion about Flow-e based on my experince in the use of the tool.</p>
-    </div>
+    <a href="/first-two-weeks-rest-flow-e-life" title="The First Two Weeks Of The Rest Of My Flow-e Life" style="color: #000000">
+      <div class="card-header ellipsis">
+        The First Two Weeks Of The Rest Of My Flow-e Life
+      </div>
+      <div class="card-body">
+        <p class="card-text">Personal opinion about Flow-e based on my experince in the use of the tool.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2018-01-03</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140611>
-    <div class="card-header ellipsis">
-      Helping a startup in troubles to reach on time to an investors meeting
-    </div>
-    <div class="card-body">
-      <p class="card-text">The title of this case study should be &#x27;Pulling startup’s chestnuts out of the fire&#x27;... let us see why.</p>
-    </div>
+    <a href="/helping-a-startup-in-troubles-to-reach-on-time-to-an-investors-meeting" title="Helping a startup in troubles to reach on time to an investors meeting" style="color: #000000">
+      <div class="card-header ellipsis">
+        Helping a startup in troubles to reach on time to an investors meeting
+      </div>
+      <div class="card-body">
+        <p class="card-text">The title of this case study should be &#x27;Pulling startup’s chestnuts out of the fire&#x27;... let us see why.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-06-11</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20130510>
-    <div class="card-header ellipsis">
-      i.e vs. e.g
-    </div>
-    <div class="card-body">
-      <p class="card-text">When do you use i.e., and when do you use e.g., and what do they mean?</p>
-    </div>
+    <a href="/ie-vs-eg" title="i.e vs. e.g" style="color: #000000">
+      <div class="card-header ellipsis">
+        i.e vs. e.g
+      </div>
+      <div class="card-body">
+        <p class="card-text">When do you use i.e., and when do you use e.g., and what do they mean?</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2013-05-10</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140414>
-    <div class="card-header ellipsis">
-      JQuery append into heavy loaded DOM trees
-    </div>
-    <div class="card-body">
-      <p class="card-text">Describe odd behaviour when you append DOM element into heavy loaded DOM tree</p>
-    </div>
+    <a href="/jquery-append-into-heavy-loaded-dom-trees" title="JQuery append into heavy loaded DOM trees" style="color: #000000">
+      <div class="card-header ellipsis">
+        JQuery append into heavy loaded DOM trees
+      </div>
+      <div class="card-body">
+        <p class="card-text">Describe odd behaviour when you append DOM element into heavy loaded DOM tree</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-04-14</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140314>
-    <div class="card-header ellipsis">
-      JSConf 2014 Virtual Covering - Montevideo - Uruguay
-    </div>
-    <div class="card-body">
-      <p class="card-text">Virtual covering of the JSConf2014 held in Montevideo - Uruguay - Mar 14-15, 2014</p>
-    </div>
+    <a href="/jsconf2014" title="JSConf 2014 Virtual Covering - Montevideo - Uruguay" style="color: #000000">
+      <div class="card-header ellipsis">
+        JSConf 2014 Virtual Covering - Montevideo - Uruguay
+      </div>
+      <div class="card-body">
+        <p class="card-text">Virtual covering of the JSConf2014 held in Montevideo - Uruguay - Mar 14-15, 2014</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-03-14</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140919>
-    <div class="card-header ellipsis">
-      Lessons learned about Google Places
-    </div>
-    <div class="card-body">
-      <p class="card-text">The Google Places API allows you to query for place information on a variety of categories</p>
-    </div>
+    <a href="/lessons-learned-about-google-places" title="Lessons learned about Google Places" style="color: #000000">
+      <div class="card-header ellipsis">
+        Lessons learned about Google Places
+      </div>
+      <div class="card-body">
+        <p class="card-text">The Google Places API allows you to query for place information on a variety of categories</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-09-19</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20141205>
-    <div class="card-header ellipsis">
-      Things to take care on a mobile MVP
-    </div>
-    <div class="card-body">
-      <p class="card-text">Things to take care on a mobile MVP and why it&#x27;s important to your business.</p>
-    </div>
+    <a href="/mobile-mvps-using-cordova" title="Things to take care on a mobile MVP" style="color: #000000">
+      <div class="card-header ellipsis">
+        Things to take care on a mobile MVP
+      </div>
+      <div class="card-body">
+        <p class="card-text">Things to take care on a mobile MVP and why it&#x27;s important to your business.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-12-05</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140422>
-    <div class="card-header ellipsis">
-      RailsConf 2014
-    </div>
-    <div class="card-body">
-      <p class="card-text">Virtual covering of the RailsConf held in Chicago - US - Apr 22-25, 2014</p>
-    </div>
+    <a href="/railsconf2014" title="RailsConf 2014" style="color: #000000">
+      <div class="card-header ellipsis">
+        RailsConf 2014
+      </div>
+      <div class="card-body">
+        <p class="card-text">Virtual covering of the RailsConf held in Chicago - US - Apr 22-25, 2014</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-04-22</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20130314>
-    <div class="card-header ellipsis">
-      Raphaël Utilities
-    </div>
-    <div class="card-body">
-      <p class="card-text">I&#x27;ve made/adapted this library to import SVG directly from file and scale.</p>
-    </div>
+    <a href="/raphael-utils-doc" title="Raphaël Utilities" style="color: #000000">
+      <div class="card-header ellipsis">
+        Raphaël Utilities
+      </div>
+      <div class="card-body">
+        <p class="card-text">I&#x27;ve made/adapted this library to import SVG directly from file and scale.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2013-03-14</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20130807>
-    <div class="card-header ellipsis">
-      Soft. Eng. and Strandbeests
-    </div>
-    <div class="card-body">
-      <p class="card-text">How to expose students to the multidimensional nature of Software Engineering processes? May be making an analogy with the Strandbeests, an ingenious blending of art and engineering.</p>
-    </div>
+    <a href="/software-engineering-and-strandbeests" title="Soft. Eng. and Strandbeests" style="color: #000000">
+      <div class="card-header ellipsis">
+        Soft. Eng. and Strandbeests
+      </div>
+      <div class="card-body">
+        <p class="card-text">How to expose students to the multidimensional nature of Software Engineering processes? May be making an analogy with the Strandbeests, an ingenious blending of art and engineering.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2013-08-07</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140407>
-    <div class="card-header ellipsis">
-      One-week scrum sprint evaluation for prevent sprint backlog changes during sprint
-    </div>
-    <div class="card-body">
-      <p class="card-text">One-week scrum sprint evaluation for prevent sprint backlog changes during sprint</p>
-    </div>
+    <a href="/sprint-backlog-changes-and-one-week-sprint-as-temporal-solution" title="One-week scrum sprint evaluation for prevent sprint backlog changes during sprint" style="color: #000000">
+      <div class="card-header ellipsis">
+        One-week scrum sprint evaluation for prevent sprint backlog changes during sprint
+      </div>
+      <div class="card-body">
+        <p class="card-text">One-week scrum sprint evaluation for prevent sprint backlog changes during sprint</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-04-07</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20120807>
-    <div class="card-header ellipsis">
-      SVG to Räphael
-    </div>
-    <div class="card-body">
-      <p class="card-text">This is what I&#x27;ve learned during a project where I had to convert Flash content to something compatible with ipad (I choose SVG).</p>
-    </div>
+    <a href="/svg-to-raphael" title="SVG to Räphael" style="color: #000000">
+      <div class="card-header ellipsis">
+        SVG to Räphael
+      </div>
+      <div class="card-body">
+        <p class="card-text">This is what I&#x27;ve learned during a project where I had to convert Flash content to something compatible with ipad (I choose SVG).</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2012-08-07</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="http://storify.com/dariomac/svg-to-raphael.html" class="card-link">http://storify.com/dariomac/svg-to-raphael.html</a>
+          <span class="task_external_link">External link: </span><a href="http://storify.com/dariomac/svg-to-raphael.html" class="card-link">http://storify.com/dariomac/svg-to-raphael.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20141020>
-    <div class="card-header ellipsis">
-      Swagger: easy API interface
-    </div>
-    <div class="card-body">
-      <p class="card-text">Swagger™ is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.</p>
-    </div>
+    <a href="/swagger--easy-api-interface" title="Swagger: easy API interface" style="color: #000000">
+      <div class="card-header ellipsis">
+        Swagger: easy API interface
+      </div>
+      <div class="card-body">
+        <p class="card-text">Swagger™ is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-10-20</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=20140520>
-    <div class="card-header ellipsis">
-      What is an MVP?
-    </div>
-    <div class="card-body">
-      <p class="card-text">MVP means Minimum Viable Product and it’s a core component of Lean Startup methodology</p>
-    </div>
+    <a href="/what-is-an-mvp" title="What is an MVP?" style="color: #000000">
+      <div class="card-header ellipsis">
+        What is an MVP?
+      </div>
+      <div class="card-body">
+        <p class="card-text">MVP means Minimum Viable Product and it’s a core component of Lean Startup methodology</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #99b399; color: #000000">2014-05-20</span>
-        </li>
-        <li class="list-group-item ellipsis">
-          <a href="" class="card-link"></a>
         </li>
     </ul>
   </div>
@@ -1512,162 +1637,171 @@ function afterContentDraw () {
             </div>
             <div class="done iso col-md-6">
   <div class="card task" style="background-color: #767782; color: #ffffff" data-order=>
-    <div class="card-header ellipsis">
-      Another Clojure Box (Windows)
-    </div>
-    <div class="card-body">
-      <p class="card-text">SciTE + WinCommand  + Tools &#x3D; kind of &quot;Clojure IDE&quot;</p>
-    </div>
+    <a href="/another-clojure-box" title="Another Clojure Box (Windows)" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Another Clojure Box (Windows)
+      </div>
+      <div class="card-body">
+        <p class="card-text">SciTE + WinCommand  + Tools &#x3D; kind of &quot;Clojure IDE&quot;</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #767782; color: #ffffff"></span>
+          <span class="task_tag">Tags: </span>R.I.P
         </li>
-        <li class="list-group-item">R.I.P</li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=0>
-    <div class="card-header ellipsis">
-      DM-Pixie (Windows)
-    </div>
-    <div class="card-body">
-      <p class="card-text">It&#x27;s a color picker with extra goodies.</p>
-    </div>
+    <a href="/dm-pixie" title="DM-Pixie (Windows)" style="color: #000000">
+      <div class="card-header ellipsis">
+        DM-Pixie (Windows)
+      </div>
+      <div class="card-body">
+        <p class="card-text">It&#x27;s a color picker with extra goodies.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
-    <div class="card-header ellipsis">
-      InmunoVR (Samsung Gear VR)
-    </div>
-    <div class="card-body">
-      <p class="card-text">Experiencia virtual educativa: Sistema Inmunológico</p>
-    </div>
+    <a href="/experiencia-virtual-educativa-sistema-inmunologico-inmunovr" title="InmunoVR (Samsung Gear VR)" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        InmunoVR (Samsung Gear VR)
+      </div>
+      <div class="card-body">
+        <p class="card-text">Experiencia virtual educativa: Sistema Inmunológico</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">2017-2018</span>
         </li>
-        <li class="list-group-item">#gear,#vr,#unreal</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#gear,#vr,#unreal
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="https://fi.ort.edu.uy/72359/17/experiencia-virtual-educativa:-sistema-inmunologico.html" class="card-link">https://fi.ort.edu.uy/72359/17/experiencia-virtual-educativa:-sistema-inmunologico.html</a>
+          <span class="task_external_link">External link: </span><a href="https://fi.ort.edu.uy/72359/17/experiencia-virtual-educativa:-sistema-inmunologico.html" class="card-link">https://fi.ort.edu.uy/72359/17/experiencia-virtual-educativa:-sistema-inmunologico.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
-    <div class="card-header ellipsis">
-      Gestión de compras para proyectos de construcción
-    </div>
-    <div class="card-body">
-      <p class="card-text">Gestión de compras para proyectos de construcción</p>
-    </div>
+    <a href="/gestion-de-compras-para-proyectos-de-construccion" title="Gestión de compras para proyectos de construcción" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Gestión de compras para proyectos de construcción
+      </div>
+      <div class="card-body">
+        <p class="card-text">Gestión de compras para proyectos de construcción</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">2016-2017</span>
         </li>
         <li class="list-group-item ellipsis">
-          <a href="https://fi.ort.edu.uy/49141/17/gestion-de-compras-para-proyectos-de-construccion.html" class="card-link">https://fi.ort.edu.uy/49141/17/gestion-de-compras-para-proyectos-de-construccion.html</a>
+          <span class="task_external_link">External link: </span><a href="https://fi.ort.edu.uy/49141/17/gestion-de-compras-para-proyectos-de-construccion.html" class="card-link">https://fi.ort.edu.uy/49141/17/gestion-de-compras-para-proyectos-de-construccion.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #00A651; color: #ffffff" data-order=1>
-    <div class="card-header ellipsis">
-      Inception Workshop for Entrepreneurs
-    </div>
-    <div class="card-body">
-      <p class="card-text">Short workshop with the goal of identify essential software features, technological risks and get an idea of  size &amp; effort involved in its development.</p>
-    </div>
+    <a href="/inception-workshop-for-entrepreneurs" title="Inception Workshop for Entrepreneurs" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        Inception Workshop for Entrepreneurs
+      </div>
+      <div class="card-body">
+        <p class="card-text">Short workshop with the goal of identify essential software features, technological risks and get an idea of  size &amp; effort involved in its development.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #00A651; color: #ffffff"></span>
+          <span class="task_tag">Tags: </span>#entrepreneurship
         </li>
-        <li class="list-group-item">#entrepreneurship</li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=0>
-    <div class="card-header ellipsis">
-      LimpiezaUY: plataforma colaborativa de limpieza
-    </div>
-    <div class="card-body">
-      <p class="card-text">LimpiezaUY: plataforma colaborativa de limpieza</p>
-    </div>
+    <a href="/limpiezauy-plataforma-colaborativa-de-limpieza" title="LimpiezaUY: plataforma colaborativa de limpieza" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        LimpiezaUY: plataforma colaborativa de limpieza
+      </div>
+      <div class="card-body">
+        <p class="card-text">LimpiezaUY: plataforma colaborativa de limpieza</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <span class="badge float-right" style="background-color: #AD4647; color: #ffffff">2017</span>
         </li>
-        <li class="list-group-item">#startup,#mvp</li>
+        <li class="list-group-item">
+          <span class="task_tag">Tags: </span>#startup,#mvp
+        </li>
         <li class="list-group-item ellipsis">
-          <a href="https://fi.ort.edu.uy/51827/17/limpiezauy:-plataforma-colaborativa-de-limpieza.html" class="card-link">https://fi.ort.edu.uy/51827/17/limpiezauy:-plataforma-colaborativa-de-limpieza.html</a>
+          <span class="task_external_link">External link: </span><a href="https://fi.ort.edu.uy/51827/17/limpiezauy:-plataforma-colaborativa-de-limpieza.html" class="card-link">https://fi.ort.edu.uy/51827/17/limpiezauy:-plataforma-colaborativa-de-limpieza.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Local Read Later (Google Chrome Extension)
-    </div>
-    <div class="card-body">
-      <p class="card-text">Similar as Read It Later service but runs locally.</p>
-    </div>
+    <a href="/local-read-later" title="Local Read Later (Google Chrome Extension)" style="color: #000000">
+      <div class="card-header ellipsis">
+        Local Read Later (Google Chrome Extension)
+      </div>
+      <div class="card-body">
+        <p class="card-text">Similar as Read It Later service but runs locally.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="https://chrome.google.com/webstore/detail/gkonjlhfjnlgikjfknnfcalimclipnck" class="card-link">https://chrome.google.com/webstore/detail/gkonjlhfjnlgikjfknnfcalimclipnck</a>
+          <span class="task_external_link">External link: </span><a href="https://chrome.google.com/webstore/detail/gkonjlhfjnlgikjfknnfcalimclipnck" class="card-link">https://chrome.google.com/webstore/detail/gkonjlhfjnlgikjfknnfcalimclipnck</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
-    <div class="card-header ellipsis">
-      Raphaël Utils (Javascript)
-    </div>
-    <div class="card-body">
-      <p class="card-text">SVG importer (and other utilities)</p>
-    </div>
+    <a href="/raphael-utils" title="Raphaël Utils (Javascript)" style="color: #000000">
+      <div class="card-header ellipsis">
+        Raphaël Utils (Javascript)
+      </div>
+      <div class="card-body">
+        <p class="card-text">SVG importer (and other utilities)</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.dariomac.com/raphael-utils-doc" class="card-link">http://www.dariomac.com/raphael-utils-doc</a>
+          <span class="task_external_link">External link: </span><a href="http://www.dariomac.com/raphael-utils-doc" class="card-link">http://www.dariomac.com/raphael-utils-doc</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #AD4647; color: #ffffff" data-order=>
-    <div class="card-header ellipsis">
-      SwingImprover (Windows)
-    </div>
-    <div class="card-body">
-      <p class="card-text">Software that allows the analysis of a golf player swing movement against theory and professionals.</p>
-    </div>
+    <a href="/swingimprover" title="SwingImprover (Windows)" style="color: #ffffff">
+      <div class="card-header ellipsis">
+        SwingImprover (Windows)
+      </div>
+      <div class="card-body">
+        <p class="card-text">Software that allows the analysis of a golf player swing movement against theory and professionals.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #AD4647; color: #ffffff"></span>
+          <span class="task_tag">Tags: </span>R.I.P
         </li>
-        <li class="list-group-item">R.I.P</li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      WinCommand (Windows)
-    </div>
-    <div class="card-body">
-      <p class="card-text">Run console apps (e.g. CLisp or cmd) in a window to work more confortable.</p>
-    </div>
+    <a href="/wincommand" title="WinCommand (Windows)" style="color: #000000">
+      <div class="card-header ellipsis">
+        WinCommand (Windows)
+      </div>
+      <div class="card-body">
+        <p class="card-text">Run console apps (e.g. CLisp or cmd) in a window to work more confortable.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
     </ul>
   </div>
 
@@ -1684,222 +1818,209 @@ function afterContentDraw () {
             </div>
             <div class="done iso col-md-6">
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Isaac Asimov
-    </div>
-    <div class="card-body">
-      <p class="card-text">A poor idea well written is more likely to be accepted than a good idea poorly written.</p>
-    </div>
+    <a href="/a-poor-idea-well-written-is-more-likely-to-be-accepted-than-a-good-idea-poorly-written" title="Isaac Asimov" style="color: #000000">
+      <div class="card-header ellipsis">
+        Isaac Asimov
+      </div>
+      <div class="card-body">
+        <p class="card-text">A poor idea well written is more likely to be accepted than a good idea poorly written.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html" class="card-link">http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html</a>
+          <span class="task_external_link">External link: </span><a href="http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html" class="card-link">http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Peter Drucker
-    </div>
-    <div class="card-body">
-      <p class="card-text">Culture eats strategy for breakfast.</p>
-    </div>
+    <a href="/culture-eats-strategy-for-breakfast" title="Peter Drucker" style="color: #000000">
+      <div class="card-header ellipsis">
+        Peter Drucker
+      </div>
+      <div class="card-body">
+        <p class="card-text">Culture eats strategy for breakfast.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html" class="card-link">http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html</a>
+          <span class="task_external_link">External link: </span><a href="http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html" class="card-link">http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Reinhold Niebuhr
-    </div>
-    <div class="card-body">
-      <p class="card-text">God grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference.</p>
-    </div>
+    <a href="/god-grant-me-the-serenity-to-accept-the-things-i-cannot-change--the-courage-to-change-the-things-i-can--and-the-wisdom-to-know-the-difference" title="Reinhold Niebuhr" style="color: #000000">
+      <div class="card-header ellipsis">
+        Reinhold Niebuhr
+      </div>
+      <div class="card-body">
+        <p class="card-text">God grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.brainyquote.com/quotes/quotes/r/reinholdni100884.html" class="card-link">http://www.brainyquote.com/quotes/quotes/r/reinholdni100884.html</a>
+          <span class="task_external_link">External link: </span><a href="http://www.brainyquote.com/quotes/quotes/r/reinholdni100884.html" class="card-link">http://www.brainyquote.com/quotes/quotes/r/reinholdni100884.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=1>
-    <div class="card-header ellipsis">
-      Nelson Mandela
-    </div>
-    <div class="card-body">
-      <p class="card-text">Lead from the back and let others believe they are in front</p>
-    </div>
+    <a href="/lead-from-the-back-and-let-others-believe-they-are-in-front" title="Nelson Mandela" style="color: #000000">
+      <div class="card-header ellipsis">
+        Nelson Mandela
+      </div>
+      <div class="card-body">
+        <p class="card-text">Lead from the back and let others believe they are in front</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.goodreads.com/quotes/74368-lead-from-the-back-and-let-others-believe-they" class="card-link">http://www.goodreads.com/quotes/74368-lead-from-the-back-and-let-others-believe-they</a>
+          <span class="task_external_link">External link: </span><a href="http://www.goodreads.com/quotes/74368-lead-from-the-back-and-let-others-believe-they" class="card-link">http://www.goodreads.com/quotes/74368-lead-from-the-back-and-let-others-believe-they</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Seneca
-    </div>
-    <div class="card-body">
-      <p class="card-text">Luck is what happens when preparation meets opportunity.</p>
-    </div>
+    <a href="/luck-is-what-happens-when-preparation-meets-opportunity" title="Seneca" style="color: #000000">
+      <div class="card-header ellipsis">
+        Seneca
+      </div>
+      <div class="card-body">
+        <p class="card-text">Luck is what happens when preparation meets opportunity.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://thinkexist.com/quotation/luck_is_what_happens_when_preparation_meets/11990.html" class="card-link">http://thinkexist.com/quotation/luck_is_what_happens_when_preparation_meets/11990.html</a>
+          <span class="task_external_link">External link: </span><a href="http://thinkexist.com/quotation/luck_is_what_happens_when_preparation_meets/11990.html" class="card-link">http://thinkexist.com/quotation/luck_is_what_happens_when_preparation_meets/11990.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Gustavo Gretter
-    </div>
-    <div class="card-body">
-      <p class="card-text">Para ser ágil tenés que ser veloz...sino pa&#x27; que sos “ágil“?</p>
-    </div>
+    <a href="/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil" title="Gustavo Gretter" style="color: #000000">
+      <div class="card-header ellipsis">
+        Gustavo Gretter
+      </div>
+      <div class="card-body">
+        <p class="card-text">Para ser ágil tenés que ser veloz...sino pa&#x27; que sos “ágil“?</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.innovaportal.com" class="card-link">http://www.innovaportal.com</a>
+          <span class="task_external_link">External link: </span><a href="http://www.innovaportal.com" class="card-link">http://www.innovaportal.com</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Dwight Eisenhower
-    </div>
-    <div class="card-body">
-      <p class="card-text">Plans are useless, but planning is indispensable</p>
-    </div>
+    <a href="/plans-are-useless--but-planning-is-indispensable" title="Dwight Eisenhower" style="color: #000000">
+      <div class="card-header ellipsis">
+        Dwight Eisenhower
+      </div>
+      <div class="card-body">
+        <p class="card-text">Plans are useless, but planning is indispensable</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="https://www.brainyquote.com/quotes/quotes/d/dwightdei164720.html" class="card-link">https://www.brainyquote.com/quotes/quotes/d/dwightdei164720.html</a>
+          <span class="task_external_link">External link: </span><a href="https://www.brainyquote.com/quotes/quotes/d/dwightdei164720.html" class="card-link">https://www.brainyquote.com/quotes/quotes/d/dwightdei164720.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Bill Gates
-    </div>
-    <div class="card-body">
-      <p class="card-text">The only big companies that succeed will be those that obsolete their own products before somebody else does.</p>
-    </div>
+    <a href="/the-only-big-companies-that-succeed-will-be-those-that-obsolete-their-own-products-before-somebody-else-does" title="Bill Gates" style="color: #000000">
+      <div class="card-header ellipsis">
+        Bill Gates
+      </div>
+      <div class="card-body">
+        <p class="card-text">The only big companies that succeed will be those that obsolete their own products before somebody else does.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html" class="card-link">http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html</a>
+          <span class="task_external_link">External link: </span><a href="http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html" class="card-link">http://en.thinkexist.com/quotation/a_poor_idea_well_written_is_more_likely_to_be/190305.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Theo Jansen
-    </div>
-    <div class="card-body">
-      <p class="card-text">The walls between art and engineering exist only in our minds.</p>
-    </div>
+    <a href="/the-walls-between-art-and-engineering-exist-only-in-our-minds" title="Theo Jansen" style="color: #000000">
+      <div class="card-header ellipsis">
+        Theo Jansen
+      </div>
+      <div class="card-body">
+        <p class="card-text">The walls between art and engineering exist only in our minds.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://www.youtube.com/watch?v&#x3D;azy-c6QXUCw" class="card-link">http://www.youtube.com/watch?v&#x3D;azy-c6QXUCw</a>
+          <span class="task_external_link">External link: </span><a href="http://www.youtube.com/watch?v&#x3D;azy-c6QXUCw" class="card-link">http://www.youtube.com/watch?v&#x3D;azy-c6QXUCw</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Phil Karlton
-    </div>
-    <div class="card-body">
-      <p class="card-text">There are only two hard things in Computer Science: cache invalidation and naming things.</p>
-    </div>
+    <a href="/there-are-only-two-hard-things-in-computer-science--cache-invalidation-and-naming-things" title="Phil Karlton" style="color: #000000">
+      <div class="card-header ellipsis">
+        Phil Karlton
+      </div>
+      <div class="card-body">
+        <p class="card-text">There are only two hard things in Computer Science: cache invalidation and naming things.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://martinfowler.com/bliki/TwoHardThings.html" class="card-link">http://martinfowler.com/bliki/TwoHardThings.html</a>
+          <span class="task_external_link">External link: </span><a href="http://martinfowler.com/bliki/TwoHardThings.html" class="card-link">http://martinfowler.com/bliki/TwoHardThings.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Various attributions 
-    </div>
-    <div class="card-body">
-      <p class="card-text">Watch your thoughts, they become words; watch your words, they become actions; watch your actions, they become habits; watch your habits, they become character; watch your character, for it becomes your destiny.</p>
-    </div>
+    <a href="/watch-your-thoughts--they-become-words--watch-your-words--they-become-actions--watch-your-actions--they-become-habits--watch-your-habits--they-become-character--watch-your-character--for-it-becomes-your-destiny" title="Various attributions " style="color: #000000">
+      <div class="card-header ellipsis">
+        Various attributions 
+      </div>
+      <div class="card-body">
+        <p class="card-text">Watch your thoughts, they become words; watch your words, they become actions; watch your actions, they become habits; watch your habits, they become character; watch your character, for it becomes your destiny.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://quoteinvestigator.com/2013/01/10/watch-your-thoughts/" class="card-link">http://quoteinvestigator.com/2013/01/10/watch-your-thoughts/</a>
+          <span class="task_external_link">External link: </span><a href="http://quoteinvestigator.com/2013/01/10/watch-your-thoughts/" class="card-link">http://quoteinvestigator.com/2013/01/10/watch-your-thoughts/</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      Enrique Jardiel Poncela
-    </div>
-    <div class="card-body">
-      <p class="card-text">When something can be read without effort, great effort has gone into its writing.</p>
-    </div>
+    <a href="/when-something-can-be-read-without-effort--great-effort-has-gone-into-its-writing" title="Enrique Jardiel Poncela" style="color: #000000">
+      <div class="card-header ellipsis">
+        Enrique Jardiel Poncela
+      </div>
+      <div class="card-body">
+        <p class="card-text">When something can be read without effort, great effort has gone into its writing.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="http://thinkexist.com/quotation/when_something_can_be_read_without_effort-great/204253.html" class="card-link">http://thinkexist.com/quotation/when_something_can_be_read_without_effort-great/204253.html</a>
+          <span class="task_external_link">External link: </span><a href="http://thinkexist.com/quotation/when_something_can_be_read_without_effort-great/204253.html" class="card-link">http://thinkexist.com/quotation/when_something_can_be_read_without_effort-great/204253.html</a>
         </li>
     </ul>
   </div>
 
   <div class="card task" style="background-color: #99b399; color: #000000" data-order=>
-    <div class="card-header ellipsis">
-      George Bray
-    </div>
-    <div class="card-body">
-      <p class="card-text">Your mobile phone has more computing power than all of NASA in 1969. NASA launched a man to the moon. We launch a bird into pigs.</p>
-    </div>
+    <a href="/your-mobile-phone-has-more-computing-power-than-all-of-nasa-in-1969-nasa-launched-a-man-to-the-moon-we-launch-a-bird-into-pigs" title="George Bray" style="color: #000000">
+      <div class="card-header ellipsis">
+        George Bray
+      </div>
+      <div class="card-body">
+        <p class="card-text">Your mobile phone has more computing power than all of NASA in 1969. NASA launched a man to the moon. We launch a bird into pigs.</p>
+      </div>
+    </a>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <span class="badge float-right" style="background-color: #99b399; color: #000000"></span>
-        </li>
         <li class="list-group-item ellipsis">
-          <a href="https://twitter.com/#!/GeorgeBray/status/50318850218131456" class="card-link">https://twitter.com/#!/GeorgeBray/status/50318850218131456</a>
+          <span class="task_external_link">External link: </span><a href="https://twitter.com/#!/GeorgeBray/status/50318850218131456" class="card-link">https://twitter.com/#!/GeorgeBray/status/50318850218131456</a>
         </li>
     </ul>
   </div>
@@ -1907,84 +2028,11 @@ function afterContentDraw () {
             </div>
           </div>
 
-          <div class="dm-fail-message">No results found</div>
         </div> <!-- container-fluid dm-boar -->
 
-        <div class="dm-filter">
-          <form>
-            <div class="dm-filter-block">
-              <h4>Search</h4>
-
-              <div class="dm-filter-content">
-                <input type="search" placeholder="Try color-1...">
-              </div> <!-- dm-filter-content -->
-            </div> <!-- dm-filter-block -->
-
-            <div class="dm-filter-block">
-              <h4>Check boxes</h4>
-
-              <ul class="dm-filter-content dm-filters list">
-                <li>
-                  <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-                  <label class="checkbox-label" for="checkbox1">Option 1</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-                  <label class="checkbox-label" for="checkbox2">Option 2</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox3">Option 3</label>
-                </li>
-              </ul> <!-- dm-filter-content -->
-            </div> <!-- dm-filter-block -->
-
-            <div class="dm-filter-block">
-              <h4>Select</h4>
-
-              <div class="dm-filter-content">
-                <div class="dm-select dm-filters">
-                  <select class="filter" name="selectThis" id="selectThis">
-                    <option value="">Choose an option</option>
-                    <option value=".option1">Option 1</option>
-                    <option value=".option2">Option 2</option>
-                    <option value=".option3">Option 3</option>
-                    <option value=".option4">Option 4</option>
-                  </select>
-                </div> <!-- dm-select -->
-              </div> <!-- dm-filter-content -->
-            </div> <!-- dm-filter-block -->
-
-            <div class="dm-filter-block">
-              <h4>Radio buttons</h4>
-
-              <ul class="dm-filter-content dm-filters list">
-                <li>
-                  <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-                  <label class="radio-label" for="radio1">All</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
-                  <label class="radio-label" for="radio2">Choice 2</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
-                  <label class="radio-label" for="radio3">Choice 3</label>
-                </li>
-              </ul> <!-- dm-filter-content -->
-            </div> <!-- dm-filter-block -->
-          </form>
-
-          <a href="#0" class="dm-close">Close</a>
-        </div> <!-- dm-filter -->
         <a href="/" class="logo">
           <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
         </a>
-        <a href="#0" class="dm-filter-trigger">Filters</a>
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
@@ -1992,20 +2040,15 @@ function afterContentDraw () {
     <div class="footer" style="text-align:center; width:100%;">
   <div style="text-align:center; width:100%">
   <ul>
-    <li style="margin-top: 0px;">
+    <li style="margin-top: 0px;" class="d-none d-lg-block">
       <a href="javascript:void(0);" onclick="window.open('http://www.copyscape.com/?q=' + escape(window.location) + '&src=front'); return false;">
         <IMG src="/assets/images/cs-wh-3d-234x16.gif" alt="Protected by Copyscape Duplicate Content Detector" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." width="234" height="16" border="0">
       </A>
     </li>
-    <li><a style="padding-top:1px" href="/kanbancv">KanbanCV</a> © 2011-<%= Time.now.year %> <a style="padding-top:1px" href="/sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap</a></li>
+    <li><a style="padding-top:1px" href="/kanbancv">KanbanCV</a> © 2011-2018 <a style="padding-top:1px" href="/sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap</a></li>
     <li>
       <a href="http://uy.linkedin.com/in/dariomac" style="text-decoration:none;" target="_blank">
         <img src="/assets/images/linkedin.png" width="17" height="16" alt="View Darío Macchi's LinkedIn profile" border="0" />
-      </a>
-    </li>
-    <li>
-      <a rel="author" href="https://plus.google.com/101333970265292795022?prsrc=3" style="text-decoration:none;" target="_blank">
-        <img src="/assets/images/gplus-16.png" alt="View Darío Macchi's Google+ profile" width="15" height="15" style="border:0;"/>
       </a>
     </li>
     <li>
@@ -2013,28 +2056,16 @@ function afterContentDraw () {
         <img src="/assets//images/twitter-16.png" width="15" height="15" alt="View my twitter"/>
       </a>
     </li>
-    <li>
+    <li class="d-none d-lg-block>
       <a href="http://www.researchgate.net/profile/Dario_Macchi/" target="_blank">
         <img src="/assets/images/researchgate.png" width="15" height="15" alt="View my ResearchGate profile"/>
       </a>
     </li>
-    <li style="padding-right: 2px;">
-      <a href="http://www.diigo.com/user/Dariomac" target="_blank">
-        <img src="/assets/images/diigo.png" width="41" height="15" alt="View my Diigo bookmarks library"/>
-      </a>
-    </li>
-    <li style="margin-top: 0px;">
-      <div class="board_filter">
-      <span>Filter: </span>
-      <input id="filter" type="text" />
-      </div>
-    </li>
-    <li style="margin-top: 0px">
+    <li style="margin-top: 0px" class="d-none d-lg-block">
       <a href="http://humanstxt.org/humans/dario-macchi/" target="_black">
         <img src="/assets/images/humanstxt-transparent-color.png" width="84" height="15" />
       </a>
     </li>
-    <li>Powered by <a style="padding-top:1px" href="http://github.com/comfy/comfortable-mexican-sofa">Comfy</a></li>
   </ul>
   </div>
 </div>
@@ -2055,47 +2086,10 @@ function afterContentDraw () {
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-    <script type="text/javascript">
-      var isotopables = document.querySelectorAll('.iso');
-      [].forEach.call(isotopables, (elem)=>{
-         new Isotope( elem, {
-          itemSelector: '.task',
-          masonry: {
-            columnWidth: 168,
-            gutter: 5
-          },
-          getSortData : {
-            position : function ( elem ) {
-              return parseInt( $(elem).attr('data-order'));
-            }
-          },
-          sortBy : 'position',
-          sortAscending : false
-        });
-      });
-    </script>
-
-    <script type="text/javascript">
-      $(function(){
-        afterContentDraw();
-        $('.footer').show();
-      });
-    </script>
-
-    <script type="text/javascript">
-
-      if (location.href.indexOf('file://') ===0) {
-        $.each(tasksArray, function(i, v){
-          v.linkto = v.linkto.substr(1, v.linkto.length) + '.html';
-        });
-      }
-
-    </script>
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
   </body>
 </html>

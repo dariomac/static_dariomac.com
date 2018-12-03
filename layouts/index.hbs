@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>{{title}}</title>
+    <title>Darío Macchi personal website</title>
     <style>
       @charset "UTF-8";
       html {
@@ -191,33 +191,50 @@
         border: #d1d1d1 1px solid;
         vertical-align: middle;
       }
-      /* } */
 
     </style>
+
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
     <!--#include virtual="../common/_18common_html_header.html" -->
   </head>
-  <body itemscope itemtype="http://schema.org/WebPage">
-    <!--<div class="wrapper">
-    <div class="header">
-      <div class="center"></div>
-    </div>-->
+  <body>
     <div class="board_view">
       <!--#include virtual="../common/_18page_header.html" -->
       <main class="dm-main-content">
         <div class="dm-tab-filter-wrapper">
           <div class="dm-tab-filter">
-            <ul class="dm-filters d-none">
+            <ul class="dm-filters d-block d-md-none">
               <li class="placeholder">
                 <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
               </li>
-              <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-              <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Plan</a></li>
-              <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">In Progress</a></li>
-              <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Done</a></li>
+              <li class="filter"><a class="selected" href="#0" data-filter="*">All</a></li>
+              <li class="filter" data-filter=".color-1"><a href="#0" data-filter=".plan > .card">Plan</a></li>
+              <li class="filter" data-filter=".color-2"><a href="#0" data-filter=".in_progress > .card">In Progress</a></li>
+              <li class="filter" data-filter=".color-3"><a href="#0" data-filter=".done > .card">Done</a></li>
             </ul> <!-- dm-filters -->
-            <div style="padding-left: 110px; display: inline;">
+          </div> <!-- dm-tab-filter -->
+
+          <div class="container-fluid float-left">
+            <div id="dm-board-header" class="row d-none d-md-flex">
+              <div class="plan col-md-3"><span>PLAN</span></div>
+              <div class="in_progress col-md-3"><span>IN PROGRESS</span></div>
+              <div class="done col-md-6"><span>DONE</span></div>
+            </div>
+            <div id="dm-board-header-descs" class="row d-none d-md-flex">
+              <div class="col-md-3">Interests - Ideas</div>
+              <div class="col-md-3">Speculations - Prototype</div>
+              <div class="col-md-6">Knowledge - Products - Facts</div>
+            </div>
+          </div>
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="container-fluid dm-board">
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Featured</div>
+          </div>
+          <div class="row featured">
+            <div class="plan iso col-md-12">
               <div id="new_essay" style="display: inline; color:red;">
                 <span class="transition">
                   <i class="fa fa-heartbeat" aria-hidden="true"></i>
@@ -229,22 +246,7 @@
                 <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
               </div>
             </div>
-          </div> <!-- dm-tab-filter -->
-          <div class="container-fluid float-left">
-            <div id="dm-board-header" class="row d-none d-md-flex">
-              <div class="plan col-md-3"><span>PLAN</span></div>
-              <div class="in_progress col-md-3"><span>IN PROGRESS</span></div>
-              <div class="done col-md-6"><span>DONE</span></div>
-            </div>
-            <div id="dm-board-header-descs" class="row d-none d-md-flex">
-              <div class="col-md-3">Interests - Ideas</div>
-              <div class="col-md-3">Speculations - Prototype></div>
-              <div class="col-md-6">Knowledge - Products - Facts</div>
-            </div>
           </div>
-        </div> <!-- dm-tab-filter-wrapper -->
-
-        <div class="container-fluid dm-board">
           <div class="row splitter">
             <div class="col-md-12 text-center">Me</div>
           </div>
@@ -269,7 +271,7 @@
           <div class="row splitter">
             <div class="col-md-12 text-center">Experience</div>
           </div>
-          <div class="row me">
+          <div class="row experience">
             <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Experience)}}
                 <!--#include virtual="../common/_task.html" -->
@@ -290,7 +292,7 @@
           <div class="row splitter">
             <div class="col-md-12 text-center">Education</div>
           </div>
-          <div class="row me">
+          <div class="row education">
             <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Education)}}
                 <!--#include virtual="../common/_task.html" -->
@@ -311,7 +313,7 @@
           <div class="row splitter">
             <div class="col-md-12 text-center">Research</div>
           </div>
-          <div class="row me">
+          <div class="row research">
             <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Research)}}
                 <!--#include virtual="../common/_task.html" -->
@@ -332,7 +334,7 @@
           <div class="row splitter">
             <div class="col-md-12 text-center">Articles</div>
           </div>
-          <div class="row me">
+          <div class="row article">
             <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Article)}}
                 <!--#include virtual="../common/_task.html" -->
@@ -353,7 +355,7 @@
           <div class="row splitter">
             <div class="col-md-12 text-center">Essays</div>
           </div>
-          <div class="row me">
+          <div class="row essay">
             <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Essay)}}
                 <!--#include virtual="../common/_task.html" -->
@@ -374,7 +376,7 @@
           <div class="row splitter">
             <div class="col-md-12 text-center">Projects/Products</div>
           </div>
-          <div class="row me">
+          <div class="row project">
             <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Project)}}
                 <!--#include virtual="../common/_task.html" -->
@@ -395,7 +397,7 @@
           <div class="row splitter">
             <div class="col-md-12 text-center">Quotes</div>
           </div>
-          <div class="row me">
+          <div class="row quote">
             <div class="plan iso col-md-3">
               {{#each (getPlannedTasks laneContent.Quote)}}
                 <!--#include virtual="../common/_task.html" -->
@@ -413,9 +415,10 @@
             </div>
           </div>
 
-          <div class="dm-fail-message">No results found</div>
+          {{!-- <div class="dm-fail-message">No results found</div> --}}
         </div> <!-- container-fluid dm-boar -->
 
+        {{!--
         <div class="dm-filter">
           <form>
             <div class="dm-filter-block">
@@ -487,10 +490,11 @@
 
           <a href="#0" class="dm-close">Close</a>
         </div> <!-- dm-filter -->
+        --}}
         <a href="/" class="logo">
           <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
         </a>
-        <a href="#0" class="dm-filter-trigger">Filters</a>
+        {{!-- <a href="#0" class="dm-filter-trigger"></a> --}}
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
@@ -499,47 +503,10 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-    <script type="text/javascript">
-      var isotopables = document.querySelectorAll('.iso');
-      [].forEach.call(isotopables, (elem)=>{
-         new Isotope( elem, {
-          itemSelector: '.task',
-          masonry: {
-            columnWidth: 168,
-            gutter: 5
-          },
-          getSortData : {
-            position : function ( elem ) {
-              return parseInt( $(elem).attr('data-order'));
-            }
-          },
-          sortBy : 'position',
-          sortAscending : false
-        });
-      });
-    </script>
-
-    <script type="text/javascript">
-      $(function(){
-        afterContentDraw();
-        $('.footer').show();
-      });
-    </script>
-
-    <script type="text/javascript">
-
-      if (location.href.indexOf('file://') ===0) {
-        $.each(tasksArray, function(i, v){
-          v.linkto = v.linkto.substr(1, v.linkto.length) + '.html';
-        });
-      }
-
-    </script>
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
   </body>
 </html>
