@@ -3,18 +3,20 @@ const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 
-var publicdir = path.join(__dirname, '/www');
+let publicDir = path.join(__dirname, '/www');
+let rootDir = path.join(__dirname, '/root');
 
-var app = express();
+let app = express();
 
 // http://stackoverflow.com/a/16895480/126519
 app.use(function (req, res, next) {
   let reqPath = decodeURIComponent(req.path);
 
   if (reqPath.indexOf('.') === -1) {
-    var file = publicdir + reqPath + '.html';
-    fs.exists(file, function (exists) {
-      if (exists) {
+    var file = `${publicDir}${reqPath}.html`;
+
+    fs.stat(file, function (err, stat) {
+      if (err == null) {
         req.url += '.html';
       }
       next();
@@ -24,7 +26,9 @@ app.use(function (req, res, next) {
     next();
   }
 });
-app.use(express.static(publicdir));
+
+app.use(express.static(publicDir));
+app.use('/', express.static(rootDir));
 
 app.post('/pullit', async function (req, res) {
   console.log('Git-auto-pull was called... running!');
