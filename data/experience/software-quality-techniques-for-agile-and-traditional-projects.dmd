@@ -1,0 +1,86 @@
+{
+  "title": "Software quality techniques for agile and traditional projects",
+  "date": "2019-01-15",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#FF6E19",
+    "columnid": "done_3",
+    "content": "Software quality techniques for agile and traditional projects",
+    "datebox": "Oct 22-24-26, 2018",
+    "extlink": "https://www.fing.edu.uy/cpap/cursos/tecnicas-de-calidad-de-software-para-proyectos-agiles-y-tradicionales",
+    "laneid": "Experience",
+    "leftbox": "INCO-FING-CPAP",
+    "leftmsg": "",
+    "linkto": "/software-quality-techniques-for-agile-and-traditional-projects",
+    "position": "20181026",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Facultad de Ingeniería (UdelaR)",
+    "type": "0"
+  }
+}
+
+---
+
+[duration:string]
+Oct 22-24-26, 2018 (9 hours)
+
+[place_url:string]
+http://www.fing.edu.uy/
+
+[place:string]
+Instituto Nacional de Computación (INCO) - Facultad de Ingeniería (FING) - Centro de Posgrados y Actualización Profesional en Informática (CPAP) - Universidad de la República.
+
+[summary:md]
+Course on software quality topics for agile and traditional teams. The topics covered by me were Shift Left, Exploratory Tests, Lean, PopcornFlow, Agile Jenga game, Behavior Driven Development (BDD), Review Techniques (Karl Wiegers spectrum of formality), Software Inspection process (Gilb & Graham) and Reading Techniques. Aimed at leaders of quality assurance teams and software project managers by the Instituto Nacional de Computación (INCO)-Facultad de Ingeniería (FING) through the Centro de Posgrados y Actualización Profesional en Informática (CPAP).
+
+[content:md]
+
+## Objective:
+In this course, topics of software quality and associated techniques that are used in both agile and traditional projects are presented. The following topics are covered: software quality concepts, software quality techniques, software process improvement as a way to address continuous quality improvement, defect prevention, and implementation (and adaptation) of software development processes to achieve organizational changes. In particular, the software inspection process is approached with a good level of detail because it is a proven technique of low cost and high benefit in software development and because, from the same, you can reason about the rest of the techniques of the course. During the course, practical exercises will be carried out and a laboratory will be developed so that the professional who attends the course can apply or propose the application of these techniques in their work environment.
+
+## Target audience:
+Postgraduate students interested in software quality techniques. Leaders of software development and/or maintenance teams. Quality assurance team leaders. Members of quality assurance, software development and/or maintenance teams. Software project managers.
+
+## Topics:
+1. Software quality
+    1. Fundamentals of software quality
+    2. Software quality management processes
+    3. Practical considerations
+2. Software quality techniques
+3. Software artifact reading techniques
+4. Implementation of software development and training processes
+    1. Implementation of software development processes
+    2. Training
+    3. Common challenges and how to avoid them
+5. Software Inspection Overview
+    1. Software Inspection Process
+    2. Costs and Benefits of Inspection
+6. Software quality in agile projects
+7. The Software Inspection Process
+    1. Start
+    2. Documentation
+    3. Review
+    4. Conclusion
+8. Process improvement (based on inspection quality measures)
+9. The Leader in Software Inspection
+10. Prevention of defects
+
+## Knowledge required:
+Basic knowledge of software engineering
+
+## Evaluation methodology:
+Individual tests, group presentation of selected topics of the course and elaboration of a final group work.
+
+[projects:md]
+
+[attachments:json]
+  [{
+    "filename": "técnicas-de-calidad-de-software.pdf",
+    "description": "Course syllabus, modality and academic considerations."
+  }]
