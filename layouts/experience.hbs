@@ -51,6 +51,11 @@
                         <div itemprop="worksFor" itemscope itemtype="http://schema.org/Corporation">
                           <a itemprop="url" href="{{ content.place_url }}"><span itemprop="name"> {{ content.place }} </span></a>
                         </div>
+                        {{#if content.summary}}
+                          <div style="font-style: italic; padding-top: 8px;">
+                            {{{ content.summary }}}
+                          </div>
+                        {{/if}}
                         {{#if content.content}}
                           <div itemprop="description" class="summary details_content">
                             {{{ content.content }}}

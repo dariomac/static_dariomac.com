@@ -40,3 +40,12 @@ Escuela de Tecnología
 We do a talk to software engineering students about how is a day of work as a developer in our company (VAIRIX). We discussed our methodological approach (scrum, ticket task and time management tools, etc.) and showed the development of a particular user story as a sample, taking it from the backlog (showing the agile management software we used), coding it in Ruby on Rails and finally adding it to the code repository using GIT.
 
 [projects:md]
+
+[attachments:json]
+  [{
+    "filename": "8_hours_as_vairix_developer.pdf",
+    "description": "This is the presentations used for this class."
+  }]
+
+[internal:raw]
+Original pptx: 8_hours_as_vairix_developer.pptx  

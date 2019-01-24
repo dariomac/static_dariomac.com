@@ -31,5 +31,20 @@
     "scope": "markdown",
     "prefix": "column.done",
     "body": "done_3"
+  },
+
+  "attachments": {
+    "scope": "markdown",
+    "prefix": "attachments",
+    "body": [
+      "[attachments:json]",
+      "\t[{",
+      "\t\t\"filename\": \"blablabla.pdf\",",
+      "\t\t\"description\": \"This is the description of the filename.\"",
+      "\t},{",
+      "\t\t\"filename\": \"blablabla2.pdf\",",
+      "\t\t\"description\": \"This is the description of the filename2.\"",
+      "\t}]"
+    ]
   }
 }
