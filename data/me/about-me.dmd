@@ -27,6 +27,35 @@
 
 ---
 
+[ldjson:json]
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "image": "http://dariomac.com/assets/aboutme-me.jpg",
+  "jobTitle": "Computer Engineering, MSc",
+  "name": "Darío Macchi",
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Universidad_ORT_Uruguay_-_Logo.jpg/220px-Universidad_ORT_Uruguay_-_Logo.jpg",
+    "name": "Universidad ORT Uruguay",
+    "sameAs": "https://en.wikipedia.org/wiki/Universidad_ORT_Uruguay",
+    "url": "https://www.ort.edu.uy/"
+  },
+  "birthPlace": "Paysandú, Uruguay",
+  "birthDate": "1981.08.12",
+  "height": "1.72 meters",
+  "gender": "male",
+  "nationality": "Uruguayan",
+  "url": "https://www.dariomac.com",
+  "sameAs" : [
+    "http://twitter.com/_dariomac",
+    "http://uy.linkedin.com/in/dariomac",
+    "http://www.researchgate.net/profile/Dario_Macchi/",
+    "http://ort-uy.academia.edu/Dar%C3%ADoMacchi",
+    "http://www.informatik.uni-trier.de/~ley/pers/hd/m/Macchi:Dario"
+  ]
+}
+
 [short_description:string]
 Strong industry background. Interested in doing scientific research.
 

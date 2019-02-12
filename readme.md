@@ -76,6 +76,10 @@ Attachments
   }]
 
 
+[internal:raw]
+Original pptx: 8_hours_as_vairix_developer.pptx  
+
+
 
 EntryDetail Template
 --------------------
