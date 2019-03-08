@@ -2,7 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="author" content="Darío Macchi" />
+{{#if content.summary}}
+<meta name="description" content="{{content.summary}}" />
+{{else}}
 <meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
+{{/if}}
 <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
 
 <link rel="dns-prefetch" href="//dariomac.com"/>

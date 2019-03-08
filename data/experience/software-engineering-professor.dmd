@@ -35,7 +35,7 @@ http://fi.ort.edu.uy/innovaportal/v/3399/5/fi.ort.front/ingenieria_de_software.h
 [place:string]
 Universidad ORT Uruguay
 
-[summary:md]
+[summary:string]
 The objective of these courses is to provide students with the basics theoretical and practical concepts of software engineering. The main areas of the Software Engineering Body of Knowledge (SWEBOK) are studied in three courses; first two, focused on traditional Software Development Life Cycle (SDLC) and the last one, on agile methodologies (Scrum/Kanban/XP) following the Team-Based Learning (TBL) format.
 
 [content:md]
