@@ -36,11 +36,10 @@ http://www.fing.edu.uy/
 [place:string]
 Instituto Nacional de Computación (INCO) - Facultad de Ingeniería (FING) - Centro de Posgrados y Actualización Profesional en Informática (CPAP) - Universidad de la República.
 
-[summary:md]
+[summary:string]
 Course on software quality topics for agile and traditional teams. The topics covered by me were Shift Left, Exploratory Tests, Lean, PopcornFlow, Agile Jenga game, Behavior Driven Development (BDD), Review Techniques (Karl Wiegers spectrum of formality), Software Inspection process (Gilb & Graham) and Reading Techniques. Aimed at leaders of quality assurance teams and software project managers by the Instituto Nacional de Computación (INCO)-Facultad de Ingeniería (FING) through the Centro de Posgrados y Actualización Profesional en Informática (CPAP).
 
 [content:md]
-
 ## Objective:
 In this course, topics of software quality and associated techniques that are used in both agile and traditional projects are presented. The following topics are covered: software quality concepts, software quality techniques, software process improvement as a way to address continuous quality improvement, defect prevention, and implementation (and adaptation) of software development processes to achieve organizational changes. In particular, the software inspection process is approached with a good level of detail because it is a proven technique of low cost and high benefit in software development and because, from the same, you can reason about the rest of the techniques of the course. During the course, practical exercises will be carried out and a laboratory will be developed so that the professional who attends the course can apply or propose the application of these techniques in their work environment.
 
