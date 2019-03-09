@@ -30,6 +30,10 @@ app.use(function (req, res, next) {
 app.use(express.static(publicDir));
 app.use('/', express.static(rootDir));
 
+app.get('/me', function (req, res) {
+  res.redirect(301, '/about-me');
+});
+
 app.post('/pullit', async function (req, res) {
   console.log('Git-auto-pull was called... running!');
 
