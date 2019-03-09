@@ -26,6 +26,30 @@
 }
 
 ---
+[ldjson:json]
+{
+  "@context": "http://www.schema.org",
+  "@type": "BusinessEvent",
+  "name": " 8 Hours as VAIRIX Developer",
+  "url": "http://www.dariomac.com/8-hours-as-vairix-developer",
+  "description": "Lecture to software engineering students about how is a day of work as a VAIRIX's software developer using a sample user story life cycle as central thread.",
+  "startDate": "2016-04-06",
+  "endDate": "2016-04-06",
+  "location": {
+    "@type": "Place",
+    "name": "Unverisidad ORT Uruguay",
+    "sameAs": "https://www.ort.edu.uy/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Cuareim 1451",
+      "addressLocality": "Montevideo",
+      "addressCountry": "Uruguay"
+    }
+  }
+}
+
+[summary:string]
+Lecture to software engineering students about how is a day of work as a VAIRIX's software developer using a sample user story life cycle as central thread.
 
 [duration:string]
 April 6th 2016 (2 hs)
@@ -35,9 +59,6 @@ http://fi.ort.edu.uy/30816/17/postgrado_y_carreras.html#tecnicas
 
 [place:string]
 Escuela de Tecnología
-
-[summary:string]
-Lecture to software engineering students about how is a day of work as a VAIRIX's software developer following a sample user story life cycle.
 
 [content:md]
 We do a talk to software engineering students about how is a day of work as a developer in our company (VAIRIX). We discussed our methodological approach (scrum, ticket task and time management tools, etc.) and showed the development of a particular user story as a sample, taking it from the backlog (showing the agile management software we used), coding it in Ruby on Rails and finally adding it to the code repository using GIT.
