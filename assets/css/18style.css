@@ -35,6 +35,9 @@ a {
   text-overflow: ellipsis;
 }
 
+.orange_box {
+  display: none;
+}
 /* --------------------------------
 Main Components
 -------------------------------- */
@@ -249,6 +252,10 @@ xtab-filter
   opacity: .4;
 }
 @media only screen and (min-width: 768px) {
+  .orange_box {
+    display: block;
+  }
+
   .dm-tab-filter {
     /* tabbed navigation style on medium devices */
     width: auto;
