@@ -1,6 +1,6 @@
 {
   "title": "Niveles de Abstracción",
-  "date": "2019-09-09",
+  "date": "2019-01-05",
   "layout": "document",
   "has_code": false,
   "json": {
@@ -29,6 +29,7 @@
 ---
 
 [pub_date:string]
+2019-01-05
 
 [short_description:string]
 

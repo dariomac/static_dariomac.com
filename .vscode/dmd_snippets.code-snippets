@@ -33,6 +33,12 @@
     "body": "done_3"
   },
 
+  "lane-essay": {
+    "scope": "markdown",
+    "prefix": "lane.essay",
+    "body": "Essay"
+  },
+
   "attachments": {
     "scope": "markdown",
     "prefix": "attachments",
