@@ -29,9 +29,13 @@
 ---
 
 [ldjson:json]
-  { 
+{ 
   "@context": "http://schema.org", 
   "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://www.dariomac.com/personal-kanban-with-kanbanize"
+  },
   "headline": "Personal Kanban with Kanbanize",
   "alternativeHeadline": "",
   "image": "http://www.dariomac.com/assets/essays-personal-kanban.png",
@@ -41,13 +45,13 @@
   "url": "http://www.dariomac.com/personal-kanban-with-kanbanize",
   "datePublished": "2019-01-14",
   "dateCreated": "2018-12-20",
-  "dateModified": "",
+  "dateModified": "2018-12-20",
   "description": "How to use Kanbanize for everyday tasks management following Personal Kanban as methodology",
     "author": {
       "@type": "Person",
       "id": "http://www.dariomac.com/me"
     }
-  }
+}
 
 [pub_date:string]
 2019-01-14
