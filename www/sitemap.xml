@@ -116,6 +116,12 @@
       <priority>0.5</priority>
     </url>
     <url>
+      <loc>http://www.dariomac.com/svg-to-raphael</loc>
+      <lastmod>2018-01-14</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
       <loc>http://www.dariomac.com/swagger--easy-api-interface</loc>
       <lastmod>2018-02-22</lastmod>
       <changefreq>monthly</changefreq>

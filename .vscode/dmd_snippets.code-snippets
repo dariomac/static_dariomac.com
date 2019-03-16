@@ -32,6 +32,11 @@
     "prefix": "column.done",
     "body": "done_3"
   },
+  "column-progress": {
+    "scope": "markdown",
+    "prefix": "column.progress",
+    "body": "progress_2"
+  },
 
   "lane-essay": {
     "scope": "markdown",

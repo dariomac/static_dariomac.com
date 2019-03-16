@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Better Errors &amp; RailsPanel: development aids | Darío Macchi
+    <title>Constant Comparisons | Darío Macchi
 </title>
 
     <meta charset="UTF-8">
@@ -298,67 +298,42 @@ function loadCSS ( href, before, media ) {
 </div>
 
         <div id="board_container">
-            <script type="text/javascript" src="/assets/vendor/syntaxhighlighter/shCore.js"></script>
-<script type="text/javascript" src="/assets/vendor/syntaxhighlighter/shAutoloader.js"></script>
-<script type="text/javascript" src="/assets/vendor/syntaxhighlighter/shBrushJScript.js"></script>
-<script type="text/javascript">
-$(function() {
- SyntaxHighlighter.all();
- $('.date').html($('.date').html().split(' ')[0]);
-});
-</script>
-<link type="text/css" rel="stylesheet" href="/assets/vendor/syntaxhighlighter/shThemeDefault.css" />
-
           <div class="content document">
-          <h1>Better Errors &amp; RailsPanel: development aids</h1>
+          <h1>Constant Comparisons</h1>
           <div>
-            <p class="date">2014-09-29</p>
+            <p class="date">2019-03-15</p>
           </div>
-          <div class="description">Here we take a look at two tools to aid us in Ruby on Rails development process.</div>
-          <h2>Better Errors</h2>
-<p>The default Rails error page is completely hideous and hurts to look at. <a href="https://github.com/charliesome/better_errors">Better Errors</a> replaces the standard Rails error page with a much better and more useful error page.</p>
-<p>This is how the &quot;Better Errors&quot; error page looks:
-<img src="/assets/essays_better_errors.png#center" alt="Better Errors interface" /></p>
-<p>It is clearly more visually appealing, but it also provides much more detailed debug information (also the error page page is even responsive!).</p>
-<p>Intalling the gem is very easy. You just have to add the following to your gemfile:</p>
-<pre>
-group :development do
-  gem "better_errors"
-end
-</pre>
-<p>Better errors has an optional dependency to another gem. If you add the <a href="https://github.com/banister/binding_of_caller">binding_of_caller</a> gem to the gemfile then you could use Better Errors' <strong>advanced features</strong> (REPL, local/instance variable inspection, pretty stack frame names).</p>
-<p>If you are debugging a Rails API, AJAX, want to investigate a non-critical error like missing images, <code>better_errors</code> provides a page accessible via the url &quot;/__better_errors&quot; which contains the error page for the last error on the server. Another awesome part of <code>better_errors</code> is that it can open up files in your editor! Out-of-the-box it support textmate, vim, etc. but if you are like us and enjoy using Sublime Text, you have to download <a href="https://github.com/asuth/subl-handler">sublime-handler</a>. Then you have to configure an initializer for <code>better_errors</code> like this:</p>
-<pre>
-BetterErrors.editor = :sublime if defined? BetterErrors
-</pre>
-<p>Remember to add Better Errors gem inside a <code>:development</code> section. <strong>Do NOT run better_errors in production, or on Internet facing hosts.</strong></p>
-<h2>RailsPanel</h2>
-<p><a href="https://github.com/dejan/rails_panel">RailsPanel</a> is a Chrome extension for Rails development that will end your tailing of development.log. Have all information about your Rails app requests in the browser - in the Developer Tools panel. Provides insight to db/rendering/total times, parameter list, rendered views and more.</p>
-<p><img src="/assets/essays_rails_panel.png#center" alt="RailsPanel interface" /></p>
-<p>The installation is as simple as going to the <a href="https://chrome.google.com/webstore/detail/railspanel/gjpfobpafnhjhbajcjgccbbdofdckggg">Chrome WebStore</a> and install RailsPanel extension from there. This is recommended way of installing extension, since it will auto-update on every new version. Then you have to add this to the gemfile:</p>
-<pre>
-group :development do
-  gem 'meta_request'
-end
-</pre>
-<p>You can even choose your editor on the extension options page: chrome://extensions. Following editors are supported:</p>
-<ul>
-<li>MacVim</li>
-<li>TextMate</li>
-<li>Sublime</li>
-<li>Emacs</li>
-<li>RubyMine</li>
-</ul>
-<h2>Better Errors &amp; RailsPanel RailsCasts</h2>
-<p>If you want to see both in action and learn a bit more about each of them, don't miss <a href="http://railscasts.com/episodes/402-better-errors-railspanel">this RailsCasts</a>!</p>
+          <div class="description">It’s an iterative data-analysis process where findings “emerge” from the data and the comparison with previous findings.</div>
+          <script>
+  function get_information(link, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", link, true);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4) {
+        callback(xhr.responseText);
+      }
+    };
+    xhr.send(null);
+  }
 
-            <h2 id="Acknowledgments">Acknowledgments</h2>
-              <p><a href="http://www.vairix.com/blog/better-errors-railspanel-development-aids">This post</a> was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.</p>
+  get_information(
+    "https://docs.google.com/document/d/e/2PACX-1vSS1pp4bPdv3mvylD9dEf0ftUfG7UqPK2WB4HhqZVD31SB1a3i4ENHrWGJq4vqirCtF_Iwmv0IPb_dn/pub?embedded=true",
+    function(text) {
+      var div = document.getElementById('gdoc');
+      div.innerHTML = text;
+      
+      // Remove css that comes with Google Doc embeds
+      // If you want the Google Doc styling, comment these out
+      div.removeChild(div.childNodes[1]);
+      div.removeChild(div.childNodes[0]);
+      div.querySelector('h1').remove();
+    }
+  );
+</script>
+<div id="gdoc"></div>
 
-            <br>
             <h2>Significant Revisions</h2>
-            <p><em>Sep 29, 2014</em>_:_ Original Publication on dariomac.com</p>
-<p><em>Dic 10, 2014</em>: Original Publication on dariomac.com</p>
+            <p><em>Mar 15, 2019</em>: Original Publication on dariomac.com</p>
 
             <br>
 

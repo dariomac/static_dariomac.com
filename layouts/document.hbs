@@ -20,7 +20,11 @@
         });
       });
     </script>
-
+    {{#if content.ldjson}}
+      <script type="application/ld+json">
+        {{{json content.ldjson}}}
+      </script>
+    {{/if}}
   </head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <div class="wrapper">
