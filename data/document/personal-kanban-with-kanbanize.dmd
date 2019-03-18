@@ -51,10 +51,7 @@
     "@type": "Person",
     "id": "http://www.dariomac.com/me"
   },
-  "publisher": {
-    "@type": "Person",
-    "id": "http://www.dariomac.com/me"
-  }
+  "publisher": "Darío Macchi"
 }
 
 [pub_date:string]
