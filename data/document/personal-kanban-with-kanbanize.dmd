@@ -47,10 +47,14 @@
   "dateCreated": "2018-12-20",
   "dateModified": "2018-12-20",
   "description": "How to use Kanbanize for everyday tasks management following Personal Kanban as methodology",
-    "author": {
-      "@type": "Person",
-      "id": "http://www.dariomac.com/me"
-    }
+  "author": {
+    "@type": "Person",
+    "id": "http://www.dariomac.com/me"
+  },
+  "publisher": {
+    "@type": "Person",
+    "id": "http://www.dariomac.com/me"
+  }
 }
 
 [pub_date:string]
