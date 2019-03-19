@@ -1,0 +1,96 @@
+{
+  "title": "Minimum Viable Product",
+  "date": "2019-03-18",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "progress_2",
+    "content": "The technique involves the development of a product with the sufficient features to satisfy early adopters.",
+    "datebox": "2019-03-18",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/minimum-viable-product",
+    "position": "20190318",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#gdoc #research #k-pills",
+    "title": "Minimum Viable Product",
+    "type": "0"
+  }
+}
+
+---
+
+[ldjson:json]
+{ 
+  "@context": "http://schema.org", 
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://www.dariomac.com/minimum-viable-product"
+  },
+  "headline": "Minimum Viable Product",
+  "alternativeHeadline": "",
+  "image": "http://www.dariomac.com/assets/mvp.png",
+  "genre": "research", 
+  "keywords": "lean startup validation learning", 
+  "wordcount": "305",
+  "url": "http://www.dariomac.com/minimum-viable-product",
+  "datePublished": "2019-03-17",
+  "dateCreated": "2014-12-15",
+  "dateModified": "2019-03-18",
+  "description": "The technique involves the development of a product with the sufficient features to satisfy early adopters.",
+  "author": {
+    "@type": "Person",
+    "id": "http://www.dariomac.com/me"
+  },
+  "publisher": "Darío Macchi"
+}
+
+[pub_date:string]
+2019-03-15
+
+[short_description:string]
+
+[body:md]
+<script>
+  function get_information(link, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", link, true);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4) {
+        callback(xhr.responseText);
+      }
+    };
+    xhr.send(null);
+  }
+
+  get_information(
+    "https://docs.google.com/document/d/e/2PACX-1vRpR-iLrO0lmX3pKDOs1GFrT8d9xpRo5OtXM7O30QGFwH8SwZdb5NN8Nh1Wj65DoDHCLisqgTmuD8mY/pub?embedded=true",
+    function(text) {
+      var div = document.getElementById('gdoc');
+      div.innerHTML = text;
+      
+      // Remove css that comes with Google Doc embeds
+      // If you want the Google Doc styling, comment these out
+      div.removeChild(div.childNodes[1]);
+      div.removeChild(div.childNodes[0]);
+      div.querySelector('h1').remove();
+    }
+  );
+</script>
+<div id="gdoc"></div>
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Mar 15, 2019_: Original Publication on dariomac.com
