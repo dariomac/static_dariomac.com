@@ -48,10 +48,11 @@
   "dateModified": "2018-12-20",
   "description": "How to use Kanbanize for everyday tasks management following Personal Kanban as methodology",
   "author": {
-    "@type": "Person",
     "@id": "http://www.dariomac.com/me"
   },
-  "publisher": "Darío Macchi"
+  "publisher": {
+    "@id": "http://www.dariomac.com/software-engineering-advisor-consultant"
+  }
 }
 
 [pub_date:string]

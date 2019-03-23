@@ -48,12 +48,10 @@
   "dateModified": "2019-03-18",
   "description": "The technique involves the development of a product with the sufficient features to satisfy early adopters.",
   "author": {
-    "@type": "Person",
     "@id": "http://www.dariomac.com/me"
   },
   "publisher": {
-    "@type": "Person",
-    "@id": "http://www.dariomac.com/me"
+    "@id": "http://www.dariomac.com/software-engineering-advisor-consultant"
   } 
 }
 
