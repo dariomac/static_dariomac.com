@@ -24,19 +24,34 @@
   "color-ort-light": {
     "scope": "markdown",
     "prefix": "color.ort-light",
-    "body": "#FF6E19"
+    "body": "#AD4647"
   },
-
-  "column-done": {
+  "color-industry": {
     "scope": "markdown",
-    "prefix": "column.done",
-    "body": "done_3"
+    "prefix": "color.industry",
+    "body": "#6EA4D4"
   },
+  "color-vix": {
+    "scope": "markdown",
+    "prefix": "color.vix",
+    "body": "#6EA4D4"
+  },
+  
   "column-progress": {
     "scope": "markdown",
     "prefix": "column.progress",
     "body": "progress_2"
   },
+  "column-done": {
+    "scope": "markdown",
+    "prefix": "column.done",
+    "body": "done_3"
+  },
+  "column-archive": {
+    "scope": "markdown",
+    "prefix": "column.archive",
+    "body": "archive_6"
+  }
 
   "lane-essay": {
     "scope": "markdown",

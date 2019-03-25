@@ -1,0 +1,49 @@
+{
+  "title": "VIX - Scrum Master - Project Manager",
+  "date": "2019-03-23",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#6EA4D4",
+    "columnid": "progress_2",
+    "content": "Scrum Master - Project Manager",
+    "datebox": "Nov 2016 - Now",
+    "extlink": "vix.com",
+    "laneid": "Experience",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/vix-scrum-master-project-manager",
+    "position": "0",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "VIX - Scrum Master - Project Manager",
+    "type": "0"
+  }
+}
+
+---
+
+[duration:string]
+Nov 2016 – Present
+
+[place_url:string]
+https://www.vix.com/en/corp
+
+[place:string]
+VIX
+
+[summary:md]
+I'm the Scrum Master of the uruguayan development team, which is focused on Product Development's support. One of our systems (of which I am its architect) is behind the delivery of content using several distribution channels [NodeJS]. Other is the editorial tool used to generate and admin editorial content [Drupal].
+
+[content:md]
+Vix is the largest independent digital media company for the U.S Hispanic market, Latin America and Brazil. It publishes content in English, Spanish and Portuguese, on Vix.com and across a variety of social platforms such as Facebook, Instagram, and YouTube every day. Also it counts with over 50 million social followers and reaches over 325 million people globally across platforms, most recently delivering over 1 billion monthly video views.
+
+I'm the Scrum Master of two web development teams at Uruguay, which are responsible of maintain and improve the platform that makes this possible. On the one hand we give editorial teams the tools to do their content-generating job following custom workflows; on the other, we deliver content through several channels (vix.com website, Instant Article, Google Accelerated Mobile Pages, and several feeds to social networks and devices). Also, I help in requirement gathering, QA and progress tracking to ensure the completion of company milestones.
+
+Vix is headquartered in Miami, Florida with offices in New York, Mexico City, Montevideo, Buenos Aires, and Sao Paulo
+
+[projects:md]
