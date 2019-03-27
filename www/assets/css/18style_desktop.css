@@ -1,0 +1,95 @@
+.dm-main-content.is-fixed .dm-board {
+  padding-top: 90px;
+}
+
+.orange_box {
+  display: block;
+}
+
+.dm-tab-filter {
+  /* tabbed navigation style on medium devices */
+  width: auto;
+  cursor: auto;
+}
+
+.dm-tab-filter::after {
+  /* hide the arrow */
+  display: none;
+}
+
+.dm-tab-filter ul {
+  background: transparent;
+  position: static;
+  box-shadow: none;
+  text-align: center;
+}
+
+.dm-tab-filter li {
+  display: inline-block;
+}
+
+.dm-tab-filter li.placeholder {
+  display: none !important;
+}
+
+.dm-tab-filter a {
+  display: inline-block;
+  padding: 0 0.3em;
+  width: auto;
+  color: #9a9a9a;
+  font-weight: 700;
+}
+.no-touch .dm-tab-filter a:hover {
+  color: #41307c;
+}
+
+.dm-tab-filter a.selected {
+  background: transparent;
+  color: #41307c;
+  /* create border bottom using box-shadow property */
+  box-shadow: inset 0 -2px 0 #41307c;
+}
+
+.dm-tab-filter.is-open ul li {
+  display: inline-block;
+}
+
+.dm-board {
+  padding-top: 2px;
+}
+
+@media only screen and (min-width: 1170px) {
+  /*.dm-tab-filter {*/
+    /* tabbed navigation on big devices */
+  /*  width: 100%;
+    float: right;
+    margin: 0;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+  .dm-tab-filter.filter-is-visible {*/
+    /* reduce width when filter is visible */
+  /*  width: 80%;
+  }*/
+
+  /*.dm-board {
+    padding: 2px 2%;
+    float: right;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+  }*/
+
+  /*.dm-board.filter-is-visible {*/
+    /* reduce width when filter is visible */
+  /*  width: 80%;
+  }*/
+
+  .dm-filter {
+    width: 20%;
+  }
+  .dm-filter form {
+    padding: 70px 10%;
+  }
+}
