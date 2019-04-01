@@ -11,9 +11,6 @@
 
       body {
         height: 100%;
-      }
-
-      body {
         margin: 0px;
         padding: 0px;
         font-family: "Open Sans", arial, sans-serif;
@@ -28,44 +25,6 @@
 
       a img {
         border: 0px;
-      }
-
-      th {
-        border: #d8d7d7 1px solid;
-      }
-
-      td {
-        border: #d8d7d7 1px solid;
-      }
-
-      tbody td {
-        background-color: #ffffff;
-        vertical-align: top;
-      }
-
-      table {
-        border-collapse: collapse;
-      }
-
-      .footer {
-        display: none;
-      }
-
-      .wrapper {
-        position: relative;
-      }
-
-      .breadcrumb {
-        line-height: 20px;
-        margin: 0px 0px 0px 35px;
-        color: #004f89;
-        font-size: 10px;
-        padding-top: 18px;
-      }
-
-      .breadcrumb-items {
-        white-space: nowrap;
-        overflow: hidden;
       }
 
       .submenu {
@@ -117,39 +76,6 @@
         padding: 0px;
       }
 
-      .btn_feedback {
-        margin: 2px 3px 0px 0px;
-        padding-left: 8px;
-        float: left;
-      }
-
-      .btn_feedback strong {
-        padding: 7px 8px 7px 0px;
-        line-height: 16px;
-        float: left;
-        color: #000000;
-        font-size: 10px;
-      }
-
-      .btn_feedback span {
-        width: 17px;
-        display: inline-block;
-        height: 16px;
-        margin-left: 3px;
-      }
-
-      .btn_feedback span {
-        background: url(<%= image_url("images/sprite_icons.png") %>) no-repeat -25px -71px;
-      }
-
-      .clearfix:after {
-          display: block;
-          height: 0pt;
-          visibility: hidden;
-          clear: both;
-          content: ".";
-      }
-
       /* Footer style {*/
       .footer {
         background-color: #00445c; height: 20px; color: #ffffff; overflow: hidden;
@@ -177,20 +103,6 @@
       .footer ul:after {
         display: block; height: 0pt; visibility: hidden; clear: both; content: "."
       }
-      .board_filter input {
-        line-height: 12px;
-        width: 200px;
-        height: 12px;
-        float: left;
-      }
-      .board_filter span {
-        padding: 1px 4px 0px 2px;
-        float: left;
-      }
-      input, textarea {
-        border: #d1d1d1 1px solid;
-        vertical-align: middle;
-      }
 
     </style>
 
@@ -201,7 +113,7 @@
   <body>
     <div class="board_view">
       <!--#include virtual="../common/_18page_header.html" -->
-      <main class="dm-main-content">
+      <main class="dm-main-content is-fixed">
         <div class="dm-tab-filter-wrapper">
           <div class="dm-tab-filter">
             <ul class="dm-filters d-block d-md-none">

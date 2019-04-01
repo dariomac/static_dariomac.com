@@ -1,8 +1,172 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>Inception Workshop talk for agilists and young entrepreneurs | Darío Macchi
-</title>
+    <meta charset="UTF-8">
+    <title>Darío Macchi personal website</title>
+    <style>
+      @charset "UTF-8";
+      html {
+        height: 100%;
+      }
+
+      body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        color: #414141;
+        font-size: 11px;
+      }
+
+      article a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      a img {
+        border: 0px;
+      }
+
+      .submenu {
+        float: right;
+        padding-top: 7px;
+      }
+
+      .orange_box {
+        padding: 0px 0px 0px 10px;
+        font-weight: bold;
+        background: #ff922c;
+        border: #ff922c 1px solid;
+        border-radius: 12px;
+        float: left;
+        color: #fff;
+        margin-right: 10px;
+      }
+
+      .orange_box div.username {
+        padding: 0px 10px 0px 26px;
+        background: url('data:image/png;base64,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') no-repeat 0px 6px;
+        float: left;
+        height: 35px;
+        line-height: 35px;
+      }
+
+      .orange_box ul {
+        border-left: #ec6100 1px solid;
+        padding: 0px 10px 0px 5px;
+        float: left;
+        overflow: hidden;
+        list-style-type: none;
+        list-style-image: none;
+        margin: 0px;
+      }
+
+      .orange_box ul li {
+        padding: 10px 0px 8px 0px;
+        float: left;
+      }
+
+      .orange_box ul li a {
+        border-left: #ff922c 1px solid;
+        font-weight: bold;
+        padding: 0px 0px 0px 5px;
+      }
+
+      .orange_box ul li a {
+        padding: 0px;
+      }
+
+      /* Footer style {*/
+      .footer {
+        background-color: #00445c; height: 20px; color: #ffffff; overflow: hidden;
+      }
+      .footer a {
+        color: #ffffff
+      }
+      .footer a:hover {
+        text-decoration: underline
+      }
+      .footer ul {
+        float: right;
+        list-style-type: none;
+        margin-top: 2px;
+      }
+      .footer li {
+        border-left: #ffffff 1px solid; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; float: left; padding-top: 0px; height:16px; margin-top:1px;
+      }
+      .footer li:first-child {
+        border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px; height:16px; margin-top:1px;
+      }
+      .clearfix:after {
+        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+      }
+      .footer ul:after {
+        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .details .dm-main-content.is-fixed .dm-board {
+          padding-top: 50px;
+        }
+
+        .container-fluid.dm-board {
+          max-width: 800px;
+          border: #d8d7d7 1px solid;
+        }
+      }
+
+      article {
+        margin: 0px 6px;
+      }
+
+      article h1 {
+        font-size: 18px;
+        padding: 5px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      article h2 {
+        font-size: 20px;
+        margin-bottom: 6px;
+      }
+
+      article h3 {
+        font-size: 16px;
+        margin-bottom: 2px;
+        text-decoration: underline;
+      }
+
+      article h4 {
+        font-size: 14px;
+        font-style: italic;
+      }
+
+      article p, section {
+        color: #414141;
+        font-size: 12px;
+        text-align: justify;
+      }
+
+      article a {
+        font-weight: bold;
+        color: #069;
+        background: url(/assets/images/external.png) right 50% no-repeat;
+        padding-right: 12px;
+      }
+
+      article .duration {
+        margin-bottom: 0px;
+      }
+
+      .summary {
+        font-style: italic;
+        padding-top: 8px;
+        cursor: none !important;
+        margin-bottom: 1rem;
+      }
+
+    </style>
+
+    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,34 +175,13 @@
 <meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
 <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
 
-<link rel="dns-prefetch" href="//dariomac.com"/>
-<link rel="dns-prefetch" href="//translate.googleapis.com"/>
-<link rel="dns-prefetch" href="//gstatic.com"/>
-<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
-<link rel="dns-prefetch" href="//google-analytics.com"/>
-<link rel="dns-prefetch" href="//fonts.gstatic.com"/>
-<link rel="dns-prefetch" href="//translate.google.com"/>
-<link rel="dns-prefetch" href="//google.com"/>
-<link rel="dns-prefetch" href="//c.statcounter.com"/>
-<link rel="dns-prefetch" href="//statcounter.com"/>
-<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
-<link rel="dns-prefetch" href="//yui.yahooapis.com"/>
-
-<link rel="stylesheet" type="text/css" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
+<link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
 
-<!--[if lt IE 8]>
-  <link rel="stylesheet" type="text/css" href="/assets/css/style_ie.css">
-  <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
-<![endif]-->
-
-<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-<script type="text/javascript" src="/assets/vendor/jquery/jquery.min.js"></script>
-<!--<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>-->
 
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -65,112 +208,27 @@ function afterContentDraw () {
         // $v.css('color','red');
       });
 
-    preloadImages($('a.fancybox'));
   }, 1000);
 }
 
-function preloadImages (array) {
-  if (!preloadImages.list) {
-    preloadImages.list = [];
-  }
-  for (var i = 0; i < array.length; i++) {
-    var img = new Image();
-    img.src = $(array[i]).attr('href');
-    preloadImages.list.push(img);
-  }
-}
-
-function loadCSS ( href, before, media ) {
-  // Arguments explained:
-  // `href` [REQUIRED] is the URL for your CSS file.
-  // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
-  // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
-  // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
-  var doc = this.document;
-  var ss = doc.createElement('link');
-  var newMedia = media || 'all';
-  var ref;
-  if (before) {
-    ref = before;
-  }
-  else {
-    var refs = (doc.body || doc.getElementsByTagName('head')[0]).childNodes;
-    ref = refs[refs.length - 1];
-  }
-
-  var sheets = doc.styleSheets;
-  ss.rel = 'stylesheet';
-  ss.href = href;
-  // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
-  ss.media = 'only x';
-
-  // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
-  function ready (cb) {
-    if (doc.body) {
-      return cb();
-    }
-    setTimeout(function () {
-      ready(cb);
-    });
-  }
-  // Inject link
-  // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
-  // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
-  ready(function () {
-    ref.parentNode.insertBefore(ss, (before ? ref : ref.nextSibling));
-  });
-  // A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
-  var onloadcssdefined = function (cb) {
-    var resolvedHref = ss.href;
-    var i = sheets.length;
-    while (i--) {
-      if (sheets[ i ].href === resolvedHref) {
-        return cb();
-      }
-    }
-    setTimeout(function () {
-      onloadcssdefined(cb);
-    });
-  };
-
-  // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
-  if (ss.addEventListener) {
-    ss.addEventListener('load', function () {
-      this.media = newMedia;
-    });
-  }
-  ss.onloadcssdefined = onloadcssdefined;
-  onloadcssdefined(function () {
-    if (ss.media !== newMedia) {
-      ss.media = newMedia;
-    }
-  });
-  return ss;
-};
 </script>
 
-<!-- Start of StatCounter Code for Default Guide -->
+<!-- Default Statcounter code for Dariomac.com
+http://www.dariomac.com -->
 <script type="text/javascript">
-  var sc_project=9186547;
-  var sc_invisible=1;
-  var sc_security="dce954c9";
-  var scJsHost = (("https:" == document.location.protocol) ?
-    "https://secure." : "http://www.");
-  document.write("<sc"+"ript type='text/javascript' src='" +
-    scJsHost+
-    "statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript>
-  <div class="statcounter">
-    <a title="web analytics" href="http://statcounter.com/" target="_blank">
-      <img class="statcounter" src="http://c.statcounter.com/9186547/0/dce954c9/1/" alt="web analytics"></a>
-  </div>
-</noscript>
-<!-- End of StatCounter Code for Default Guide -->
-
-<script type="text/javascript">
-  var baseUrl = "http://www.dariomac.com";
-</script>
+  var sc_project=9186547; 
+  var sc_invisible=1; 
+  var sc_security="dce954c9"; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js"
+  async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+  href="https://statcounter.com/" target="_blank"><img
+  class="statcounter"
+  src="https://c.statcounter.com/9186547/0/dce954c9/1/"
+  alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
 
 <link rel="shortcut icon" href="/assets/favicon.ico" />
 
@@ -180,165 +238,46 @@ function loadCSS ( href, before, media ) {
 <meta property="og:image" content="/assets/images/d_social.png">
 <meta property="og:image:type" content="image/png">
 
-<script type='application/ld+json'> 
-  {
-    "@context": "http://schema.org",
-    "@type": "Person",
-    "@id": "http://www.dariomac.com/me",
-    "image": "http://dariomac.com/assets/aboutme-me.jpg",
-    "jobTitle": "Computer Engineering, MSc",
-    "name": "Darío Macchi",
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Universidad_ORT_Uruguay_-_Logo.jpg/220px-Universidad_ORT_Uruguay_-_Logo.jpg",
-      "name": "Universidad ORT Uruguay",
-      "sameAs": "https://en.wikipedia.org/wiki/Universidad_ORT_Uruguay",
-      "url": "https://www.ort.edu.uy/"
-    },
-    "birthPlace": "Paysandú, Uruguay",
-    "birthDate": "1981.08.12",
-    "height": "1.72 meters",
-    "gender": "male",
-    "nationality": "Uruguayan",
-    "url": "https://www.dariomac.com",
-    "sameAs" : [
-      "http://twitter.com/_dariomac",
-      "http://uy.linkedin.com/in/dariomac",
-      "http://www.researchgate.net/profile/Dario_Macchi/",
-      "http://ort-uy.academia.edu/Dar%C3%ADoMacchi",
-      "http://www.informatik.uni-trier.de/~ley/pers/hd/m/Macchi:Dario"
-    ]
-  }
-</script>
-<script type='application/ld+json'>
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "@id": "http://www.dariomac.com/software-engineering-advisor-consultant",
-    "name": "Darío Macchi",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://www.dariomac.com/assets/images/d.png"
-    },
-    "url": "http://www.dariomac.com"
-  }
-</script>
 
-
-    <script type="text/javascript" src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
-    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
-
-    <script type="text/javascript">
-      $(function() {
-        //board_dimensions.init(); //draw_kanban_board(boardArray, false, tasksArray, false);
-        afterContentDraw();
-
-        $(".fancybox").fancybox({
-          openEffect  : 'none',
-          closeEffect : 'none'
-        });
-      });
-    </script>
   </head>
-  <body itemscope itemtype="http://schema.org/WebPage">
-    <div class="wrapper">
-      <div class="header">
-        <div class="center"></div>
-      </div>
-      <div class="board_view">
-        <div class="clearfix top_menu" style="border-bottom: #D8D7D7 1px solid">
-  <a href="/">
-    <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
-  </a>
-  <div style="float:right; padding-top: 8px;">
-      <a class="btn_feedback" title="Contact me" href="/messages/new">
-      <strong>Contact me<span>&nbsp;</span></strong>
-      </a>
-  </div>
-  <div class="submenu">
-    <div class="orange_box" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <a class="url" href="/about-me">
-          <div class="username">
-              <span>
-                <strong>
-                  <span itemprop="name">Darío</span> <span itemprop="familyName">Macchi</span>
-                </strong>
-              </span>
+  <body>
+    <div class="board_view details">
+
+      <main class="dm-main-content is-fixed">
+        <div class="dm-tab-filter-wrapper">
+          <div class="dm-tab-filter">
+            <ul class="dm-filters d-block d-md-none">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+              </li>
+              <li class="filter"><a class="selected" href="#0" data-filter="*">All</a></li>
+              <li class="filter" data-filter=".color-1"><a href="#0" data-filter=".plan > .card">Plan</a></li>
+              <li class="filter" data-filter=".color-2"><a href="#0" data-filter=".in_progress > .card">In Progress</a></li>
+              <li class="filter" data-filter=".color-3"><a href="#0" data-filter=".done > .card">Done</a></li>
+            </ul> <!-- dm-filters -->
+          </div> <!-- dm-tab-filter -->
+
+          <div class="container-fluid float-left"></div>
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="container-fluid dm-board">
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Details</div>
           </div>
-      </a>
-      <ul>
-        <li id="geo">
-          <strong>
-            <span itemscope itemtype="http://schema.org/City">
-              <a target="_blank" href="http://maps.google.com/maps?q=montevideo+city+uruguay&hl=en&sll=-32.522779,-55.765835&sspn=5.325828,9.876709&t=v&hnear=Montevideo,+Montevideo+Dept,+Uruguay&z=11" itemprop="url">
-                <span itemprop="name">
-                  Montevideo</span>,
-              </a>
-            </span>
-            <span itemprop="nationality" itemscope itemtype="http://schema.org/Country">
-              <span itemprop="name">
-                <a href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&ie=UTF-8&hq=&hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&gl=uy&ei=KiKjU6fpE-HNsQSlqYGoCg&ved=0CBsQ8gEwAA" itemprop="url">
-                  Uruguay
-                </a>
-              </span>
-            </span>
-          </strong>
-        </li>
-        <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="breadcrumb">
-    <div class="breadcrumb-items" itemprop="breadcrumb">
-      <strong><a href="/">Home ( KanbanCV ) / </a></strong>
-        <strong></strong>
-      <div style="padding-left: 20px; display: inline;">
-        <div id="new_essay" style="display: inline; color:red;">
-          <span class="transition">
-            <i class="fa fa-heartbeat" aria-hidden="true"></i>
-            <a href='/personal-kanban-with-kanbanize' style='text-decoration: underline;'>
-              Personal Kanban with Kanbanize
-            </a>
-          </span>
-          |
-          <a href="/essays" rel="nofollow" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-        <div id="board_container">
-          <div class="content entry">
-            <div itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
-              <span itemprop="name" style="display:none">Work experience details</span>
-              <table cellspacing="0" cellpadding="0">
-                <tbody>
-                  <tr>
-                    <td class="swimlane_inner">
-                      <strong>Details</strong>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="details_cell" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                      <span itemprop="name" style="display:none">Darío Macchi</span>
-                      <h1 itemprop="jobTitle">Inception Workshop talk for agilists and young entrepreneurs</h1>
-                      <div>
-                        <div>
-                          March 24th-25th, 2015 (6 hs)
-                        </div>
-
-                        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Corporation">
-                          <a itemprop="url" href="http://www.eafit.edu.co/"><span itemprop="name"> Universidad EAFIT </span></a>
-                        </div>
-                          <div itemprop="description" class="summary details_content">
-                            <p>On March 24 I was on Medellin for the <a href="/9-entrepreneurship-summer-camp">9° Entrepreneurship Summer Camp</a>, so I made use of the days before to validate the idea of the <a href="/inception-workshop-for-entrepreneurs">Inception Workshop for Entrepreneurs</a>. I talked with some friends at EAFIT university and they quickly organized two talks, one for the 24th and the end of the day and the other for the 25th earlier in the morning.</p>
+          <div class="row featured">
+            <div class="col-md-12">
+              <article>
+                <header>
+                  <h1>Inception Workshop talk for agilists and young entrepreneurs</h1>
+                  <p class="duration">March 24th-25th, 2015 (6 hs)</p>
+                  <p><a href="http://www.eafit.edu.co/">Universidad EAFIT</a></p>
+                </header>
+                  <section class="content">
+                    <p>On March 24 I was on Medellin for the <a href="/9-entrepreneurship-summer-camp">9° Entrepreneurship Summer Camp</a>, so I made use of the days before to validate the idea of the <a href="/inception-workshop-for-entrepreneurs">Inception Workshop for Entrepreneurs</a>. I talked with some friends at EAFIT university and they quickly organized two talks, one for the 24th and the end of the day and the other for the 25th earlier in the morning.</p>
 <p>The first talk was more a kind of &quot;Hey, this is how we adapted the agile inception deck to work with entrepreneurs!&quot;. The audience were mostly agilists, some teachers and a couple of students. The talk was a bit technical, explaining some games, the rationale behind them and how they help entrepreneurs to re-discover their entrepreneurships.</p>
 <p>The second talk was more like a workshop. We started earlier (really earlier, 6:30 a.m!) with a crew of 30 enthusiastic students. They were all entrepreneurs (or future ones) full of very good ideas, so we started quickly with a couple of games to break the ice. In this workshop I heavily tested two games which become core ones in the full workshop implementation.</p>
 
-                          </div>
-                    </div>
+                  </section>
   <div class="image_gallery">
     <a itemprop="image" href="/assets/EAFIT_Inception_1.jpg" class="fancybox lightbox_link" rel="challenge" title="">
       <img itemprop="thumbnailUrl" src="/assets/thumbs/EAFIT_Inception_1.jpg" />
@@ -419,15 +358,40 @@ function loadCSS ( href, before, media ) {
     </tbody>
   </table>
 
-                  </td>
-                </tr>
-                </tbody>
-              </table>
+              </article>
             </div>
           </div>
+        </div> <!-- container-fluid dm-board -->
+
+        <a href="/" class="logo">
+          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+        </a>
+        <div class="submenu" style="position: fixed; top: 0; right: 0; z-index: 10;">
+          <div class="orange_box">
+            <a class="url" href="/about-me">
+                <div class="username">
+                    Darío Macchi
+                </div>
+            </a>
+            <ul>
+              <li id="geo">
+                <a target="_blank" href="http://maps.google.com/maps?q=montevideo+city+uruguay&amp;hl=en&amp;sll=-32.522779,-55.765835&amp;sspn=5.325828,9.876709&amp;t=v&amp;hnear=Montevideo,+Montevideo+Dept,+Uruguay&amp;z=11" itemprop="url">
+                    Montevideo
+                </a><span>-</span>
+                <a href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&amp;ie=UTF-8&amp;hq=&amp;hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&amp;gl=uy&amp;ei=KiKjU6fpE-HNsQSlqYGoCg&amp;ved=0CBsQ8gEwAA" itemprop="url">
+                  Uruguay
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </main> <!-- dm-main-content -->
     </div>
+    <!--</div>-->
+
     <div class="footer" style="text-align:center; width:100%;">
   <div style="text-align:center; width:100%">
   <ul>
@@ -475,5 +439,12 @@ function loadCSS ( href, before, media ) {
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
   </body>
 </html>

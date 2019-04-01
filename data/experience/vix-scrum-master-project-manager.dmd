@@ -36,7 +36,7 @@ https://www.vix.com/en/corp
 [place:string]
 VIX
 
-[summary:md]
+[summary:string]
 I'm the Scrum Master of the uruguayan development team, which is focused on Product Development's support. One of our systems (of which I am its architect) is behind the delivery of content using several distribution channels [NodeJS]. Other is the editorial tool used to generate and admin editorial content [Drupal].
 
 [content:md]

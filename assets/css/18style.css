@@ -20,7 +20,7 @@ html * {
 
 body {
   font-size: 10px;
-  /*font-family: "Open Sans", arial, sans-serif; */
+  font-family: "Open Sans", arial, sans-serif !important;
   color: #331d35;
 }
 
