@@ -1,4 +1,5 @@
 {{#if content.attachments}}
+<section class="attachments">
   <table cellpadding="0" cellspacing="0" border="0" class="details_table attachment_table">
     <tbody>
       <tr>
@@ -12,13 +13,14 @@
           <span class="file_icon {{icon}}">&nbsp;</span>
         </td>
         <td>
-          {{{ description }}}
+          <a href="/assets/{{ filename }}">{{ filename }}</a>
         </td>
         <td>
-          <a href="/assets/{{ filename }}">{{ filename }}</a>
+          {{{ description }}}
         </td>
       </tr>
       {{/each}}
     </tbody>
   </table>
+</section>
 {{/if}}

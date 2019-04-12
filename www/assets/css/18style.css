@@ -736,3 +736,22 @@ xcustom form elements
     display: none;
   }
 }
+
+.attachments {
+  margin-bottom: 20px;
+}
+
+.image_gallery {
+  padding-left: 6px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.image_gallery a img {
+  padding-bottom: 4px;
+  padding-right: 4px;
+}
+.image_gallery a {
+  padding-right: 0px;
+}

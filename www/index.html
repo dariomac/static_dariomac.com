@@ -115,6 +115,7 @@
 <meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
 <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
 
+<link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
@@ -147,8 +148,20 @@ function afterContentDraw () {
         });
         // $v.css('color','red');
       });
-
+    
+    preloadImages($('a.fancybox'));
   }, 1000);
+}
+
+function preloadImages (array) {
+  if (!preloadImages.list) {
+    preloadImages.list = [];
+  }
+  for (var i = 0; i < array.length; i++) {
+    var img = new Image();
+    img.src = $(array[i]).attr('href');
+    preloadImages.list.push(img);
+  }
 }
 
 </script>
