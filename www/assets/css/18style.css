@@ -755,3 +755,10 @@ xcustom form elements
 .image_gallery a {
   padding-right: 0px;
 }
+
+article img[src*="#center"],
+article iframe[src*="#center"] {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+}
