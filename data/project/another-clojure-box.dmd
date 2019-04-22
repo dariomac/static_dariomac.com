@@ -48,7 +48,7 @@ Well, I love Scite, so I use it to experiment with Clojure. Later I integrate Wi
 
 All the source code of the tools are in the package, so you can hack every tool in order to make it more useful for you (or report bugs!!).
 
-![ACB Workplace](/assets/ACB_1.3_full-workplace.jpg)
+![ACB Workplace](/assets/ACB_1.3_full-workplace.jpg#center)
 
 **Features**
 
@@ -90,19 +90,19 @@ All the source code of the tools are in the package, so you can hack every tool 
 *   **Code completion (Ctrl-I)**
     ![IMG](/assets/ACB_code-completion.jpg)
 *   **Inline form arguments
-    ![IMG](/assets/ACB_parameters.jpg)**
+    ![IMG](/assets/ACB_parameters.jpg#center)**
 *   **Inline help
     ![IMG](/assets/ACB_1.3_inline_help.jpg)**
 *   **Show form documentation
-    ![IMG](/assets/ACB_show-doc.jpg)**
+    ![IMG](/assets/ACB_show-doc.jpg#center)**
 *   **Simple file explorer
     ![IMG](/assets/ACB_file-explorer.jpg)**
 *   **Bookmarks manager
-    ![IMG](/assets/ACB_bookmarks.jpg)**
+    ![IMG](/assets/ACB_bookmarks.jpg#center)**
 *   **Other tools
-    ![IMG](/assets/ACB_clj-tools.jpg)**
+    ![IMG](/assets/ACB_clj-tools.jpg#center)**
 *   **REPL
-    ![IMG](/assets/ACB_repl.gif)
+    ![IMG](/assets/ACB_repl.gif#center)
     **
 
 **Configuration**

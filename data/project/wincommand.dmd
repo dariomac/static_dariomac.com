@@ -62,7 +62,7 @@ Internal Commands:
 
 Global command execution:
 
-![IMG](/assets/wincommand.gif)
+![IMG](/assets/wincommand.gif#center)
 
 If you put some command inside this textbox and press Ctrl+Enter, or click in the green arrow or click in Tools - Exec Global Cmd. Useful when you want to execute the same command continuously, like a function defintion or, in my situation, repetitive commands like (load "foo") when you are working foo.clj
 

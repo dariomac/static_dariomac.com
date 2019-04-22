@@ -760,5 +760,14 @@ article img[src*="#center"],
 article iframe[src*="#center"] {
     display: block;
     margin: 0 auto;
-    max-width: 500px;
+    /* max-width: 500px; */
+    width: 100%;
+}
+
+.download {
+  background: url(/assets/images/download.png) 0px 0px repeat !important;
+  float: right;
+  width: 100px;
+  height: 16px;
+  padding-right: 0px !important;
 }
