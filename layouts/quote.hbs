@@ -1,76 +1,108 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title><!--#include virtual="../common/_title.html" --></title>
+    <title>{{ frontmatter.title }} | Darío Macchi</title>
+    <style>
+      
+      <!--#include virtual="../common/_critical.css" -->
 
-    <!--#include virtual="../common/_common_html_header.html" -->
+    </style>
 
-    <script type="text/javascript" src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
-    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
+    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
-    <script type="text/javascript">
-      $(function() {
-        //board_dimensions.init(); //draw_kanban_board(boardArray, false, tasksArray, false);
-        afterContentDraw();
+    <!--#include virtual="../common/_18common_html_header.html" -->
 
-        $(".fancybox").fancybox({
-          openEffect  : 'none',
-          closeEffect : 'none'
-        });
-      });
-    </script>
-
+    {{#if content.ldjson}}
+      <script type="application/ld+json">
+        {{{json content.ldjson}}}
+      </script>
+    {{/if}}
   </head>
-  <body itemscope itemtype="http://schema.org/WebPage">
-    <div class="wrapper">
-      <div class="header">
-        <div class="center"></div>
-      </div>
-      <div class="board_view">
-        <!--#include virtual="../common/_page_header.html" -->
-        <div id="board_container">
-          <div class="content entry">
-            <div class="details_cell">
-              <table cellspacing="0" cellpadding="0">
-                <tbody>
-                  <tr>
-                    <td class="swimlane_inner">
-                      <strong>Details</strong>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="details_cell">
-                      <h1>{{ frontmatter.title }}</h1>
-                      <div>
-                        <div>
-                          <i>― {{ content.authors }}</i>
-                        </div>
-                        <br/>
-                        {{#if content.publication_metadata}}
-                          <div>
-                            {{ content.publication_metadata }}
-                          </div>
-                        {{/if}}
+  <body>
+    <div class="board_view details">
+      <!--#include virtual="../common/_18page_header.html" -->
+      <main class="dm-main-content is-fixed">
+        <div class="dm-tab-filter-wrapper">
+          <div class="dm-tab-filter">
+            <ul class="dm-filters d-block d-md-none">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+              </li>
+              <!--#include virtual="../common/_mobile-menu.html" -->
+            </ul> <!-- dm-filters -->
+          </div> <!-- dm-tab-filter -->
 
-                        {{#if content.context}}
-                          <div class="details_content">
-                            {{{ content.context }}}
-                          </div>
-                        {{/if}}
-                      </div>
-                      <!--#include virtual="../common/_entry-gallery.html" -->
-                      <!--#include virtual="../common/_entry-attachments.html" -->
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="container-fluid float-left"></div>
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="container-fluid dm-board">
+          <article>
+            <div class="row splitter">
+              <div class="col-md-12 text-center">Details</div>
             </div>
-          </div>
-        </div>
-      </div>
+            <div class="row featured">
+              <div class="col-md-12">
+                <header>
+                  <h1>{{ frontmatter.title }}</h1>
+                  <i>― {{ content.authors }}</i>
+                </header>
+                
+                {{#if content.publication_metadata}}
+                  <section>
+                    {{{ content.publication_metadata }}}
+                  </section>
+                {{/if}}
+
+                {{#if content.context}}
+                  <section>
+                    {{{ content.context }}}
+                  </section>
+                {{/if}}
+
+                <!--#include virtual="../common/_entry-gallery.html" -->
+                <!--#include virtual="../common/_entry-attachments.html" -->
+              </div>
+            </div>
+            {{#if content.projects}}
+              <div class="row splitter">
+                <div class="col-md-12 text-center">Projects/Activities</div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <section class="projects">
+                    {{{ content.projects }}}
+                  </section>
+                </div>
+              </div>
+            {{/if}}
+          </article>
+        </div> <!-- container-fluid dm-board -->
+
+        <a href="/" class="logo">
+          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+        </a>
+        <!--#include virtual="../common/_orange-box.html" -->
+        {{!-- <a href="#0" class="dm-filter-trigger"></a> --}}
+      </main> <!-- dm-main-content -->
     </div>
+    <!--</div>-->
+
     <!--#include virtual="../common/_page_footer.html" -->
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+    <script>
+      $(".fancybox").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none'
+      });
+    </script>
   </body>
 </html>
