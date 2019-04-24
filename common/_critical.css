@@ -181,3 +181,13 @@ table td, table th {
   border: #d8d7d7 1px solid;
   padding: 5px;
 }
+
+.essay .date {
+  width: 100%;
+  border-top: 1px solid;
+  text-align: right;
+}
+
+.essay p {
+  font-size: 14px;
+}

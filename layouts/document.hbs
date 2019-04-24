@@ -1,71 +1,138 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title><!--#include virtual="../common/_title.html" --></title>
+    <title>{{ frontmatter.title }} | Darío Macchi</title>
+    <style>
+      
+      <!--#include virtual="../common/_critical.css" -->
 
-    <!--#include virtual="../common/_common_html_header.html" -->
+      .essay {
+        margin-left: inherit;
+        border: 0px !important;
+      }
 
-    <script type="text/javascript" src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
-    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
+      .details .container-fluid.dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
 
-    <script type="text/javascript">
-      $(function() {
-        //board_dimensions.init(); //draw_kanban_board(boardArray, false, tasksArray, false);
-        afterContentDraw();
+      .details .container-fluid.dm-board h3 {
+        font-weight: bold;
+        text-decoration: inherit;
+      }
 
-        $(".fancybox").fancybox({
-          openEffect  : 'none',
-          closeEffect : 'none'
-        });
-      });
-    </script>
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+    </style>
+
+    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+
+    <!--#include virtual="../common/_18common_html_header.html" -->
+
     {{#if content.ldjson}}
       <script type="application/ld+json">
         {{{json content.ldjson}}}
       </script>
     {{/if}}
   </head>
-  <body itemscope itemtype="http://schema.org/WebPage">
-    <div class="wrapper">
-      <div class="header">
-        <div class="center"></div>
-      </div>
-      <div class="board_view">
-        <!--#include virtual="../common/_page_header.html" -->
-        <div id="board_container">
-          {{#if frontmatter.has_code}}
-            <!--#include virtual="../common/_code-styler.html" -->
-          {{/if}}
-          <div class="content document">
-          <h1>{{ frontmatter.title }}</h1>
-          <div>
-            <p class="date">{{ content.pub_date }}</p>
-          </div>
-          <div class="description">{{ content.short_description }}</div>
-          {{{ content.body }}}
-          {{#if content.acknowledgments}}
-            <h2 id="Acknowledgments">Acknowledgments</h2>
-              {{{ content.acknowledgments }}}
-            <br>
-          {{/if}}
-          {{#if content.further_reading}}
-            <h2 id="FurtherReading">Further Reading</h2>
-            {{{ content.further_reading }}}
-            <br>
-          {{/if}}
-          {{#if content.significant_revisions}}
-            <h2>Significant Revisions</h2>
-            {{{ content.significant_revisions }}}
-            <br>
-          {{/if}}
-          <!--#include virtual="../common/_entry-gallery.html" -->
-          <!--#include virtual="../common/_entry-attachments.html" -->
-        </div>
-        </div>
-      </div>
+  <body>
+    <div class="board_view details">
+      <!--#include virtual="../common/_18page_header.html" -->
+      <main class="dm-main-content is-fixed">
+        <div class="dm-tab-filter-wrapper">
+          <div class="dm-tab-filter">
+            <ul class="dm-filters d-block d-md-none">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+              </li>
+              <!--#include virtual="../common/_mobile-menu.html" -->
+            </ul> <!-- dm-filters -->
+          </div> <!-- dm-tab-filter -->
+
+          <div class="container-fluid float-left"></div>
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="container-fluid dm-board essay">
+          <article>
+            <div class="row featured">
+              <div class="col-md-12">
+                <header>
+                  <h1>{{ frontmatter.title }}</h1>
+                  <p class="date">{{ content.pub_date }}</p>
+                </header>
+                
+                <section class="description">
+                  <p>
+                    {{ content.short_description }}
+                  </p>
+                </section>
+
+                <section>
+                  {{{ content.body }}}
+                </section>
+
+                {{#if content.acknowledgments}}
+                  <section>
+                    <h2 id="Acknowledgments">Acknowledgments</h2>
+                      {{{ content.acknowledgments }}}
+                  </section>
+                {{/if}}
+                {{#if content.further_reading}}
+                  <section>
+                    <h2 id="FurtherReading">Further Reading</h2>
+                    {{{ content.further_reading }}}
+                  </section>
+                {{/if}}
+                {{#if content.significant_revisions}}
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    {{{ content.significant_revisions }}}
+                  </section>
+                {{/if}}
+
+                <!--#include virtual="../common/_entry-gallery.html" -->
+                <!--#include virtual="../common/_entry-attachments.html" -->
+              </div>
+            </div>
+        </div> <!-- container-fluid dm-board -->
+
+        <a href="/" class="logo">
+          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+        </a>
+        <!--#include virtual="../common/_orange-box.html" -->
+        {{!-- <a href="#0" class="dm-filter-trigger"></a> --}}
+      </main> <!-- dm-main-content -->
     </div>
+    <!--</div>-->
+
     <!--#include virtual="../common/_page_footer.html" -->
 
+    {{#if frontmatter.has_code}}
+      <!--#include virtual="../common/_code-styler.html" -->
+    {{/if}}
+
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+    <script>
+      $(".fancybox").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none'
+      });
+    </script>
   </body>
 </html>

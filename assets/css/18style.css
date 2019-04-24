@@ -760,8 +760,7 @@ article img[src*="#center"],
 article iframe[src*="#center"] {
     display: block;
     margin: 0 auto;
-    /* max-width: 500px; */
-    width: 100%;
+    max-width: 95%;
 }
 
 .download {
