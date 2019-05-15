@@ -458,6 +458,12 @@
       <priority>0.5</priority>
     </url>
     <url>
+      <loc>http://www.dariomac.com/content-distribution-system</loc>
+      <lastmod>2019-04-25</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
       <loc>http://www.dariomac.com/dm-pixie</loc>
       <lastmod>2017-07-07</lastmod>
       <changefreq>monthly</changefreq>

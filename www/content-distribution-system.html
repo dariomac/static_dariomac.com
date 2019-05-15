@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Raphaël Utils | Darío Macchi</title>
+    <title>Content Distribution System (aka &#x27;H&#x27;) | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -317,27 +317,27 @@ http://www.dariomac.com -->
             <div class="row featured">
               <div class="col-md-12">
                 <header>
-                  <h1>Raphaël Utils</h1>
+                  <h1>Content Distribution System (aka &#x27;H&#x27;)</h1>
                   <div style="float:left">
                       <p>
-                        Platform: <span itemprop="operatingSystem">Javascript</span>
-                      </p>
-                      <p>
-                        Project url:
-                        <a itemprop="url" href="http://www.dariomac.com/raphael-utils-doc">
-                          http://www.dariomac.com/raphael-utils-doc
-                        </a>
+                        Platform: <span itemprop="operatingSystem">Web - NodeJS, Express.js, Handlebars</span>
                       </p>
                   </div>
                   <div style="float:right">
-                      <a itemprop="downloadUrl" class="download" download href="/assets/raphael-utils.js"></a>
                   </div>
                 </header>
 
+                  <section style="clear:both" class="summary">
+                    <p>
+                      &#x27;H&#x27; is a collection of microservices oriented to the distribution of content using different channels. It parses and normalizes articles&#x27; html to a well-structured &amp; easy to use JSON abstraction. Later it render that abstraction to each specific channel&#x27;s format, adapting the content to follow each distribution channel policies &amp; restrictions (i.e. Google AMP, Facebook Instant Articles, MSN, Google News).
+                    </p>
+                  </section>
                 
                   <section style="clear:both" class="content">
-                    <p>Mar 14, 2013</p>
-<p>SVG importer (and other utilities) to read SVG directly from file and convert to Raphaël primitives to draw elements (see more <a href="http://www.dariomac.com/raphael-utils-doc">here</a>).</p>
+                    <p>Having an article base of several tens of thousands is a positive thing for any publisher and a source of pride for its editorial team. One characteristic of this type of collection is that it has usually been produced over the course of many years and for this reason, its HTML has suffered the passage of time. Over the years recommendations have changed, teams and tools have matured, but those changes rarely impact on historical archives. So, many experiments with different types of content, embeds of products that no longer exist, others that have changed their format and a long and so on, are part of that list of elements that make up the entire information base.</p>
+<p>The real pain arises when, due to the publishing business, such content must be sent through different distribution channels. For example, Facebook Instant Articles, Google Accelerated Pages (AMP), Google News, Apple News, smart TVs and native apps on mobile devices. At that moment you suffer &quot;translating&quot; the old, outdated and bad HTML, trying to remove everything that is not compatible with each channel, having to make costly and not reusable adaptations.</p>
+<p>The solution is to generate an abstraction of the HTML of each article and after having it in an intermediate format, build rules to convert it to each distribution format. So, in the future adding more distribution channels only implies the definition of a new &quot;conversor&quot; that map each element of the intermediate format with the desired representation.</p>
+<p><img src="/assets/H_1.png#center" alt="&quot;H&quot; macro architecture" /></p>
 
                   </section>
 

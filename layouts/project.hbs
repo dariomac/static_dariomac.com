@@ -66,6 +66,14 @@
                     {{/if}}
                   </div>
                 </header>
+
+                {{#if content.summary}}
+                  <section style="clear:both" class="summary">
+                    <p>
+                      {{ content.summary }}
+                    </p>
+                  </section>
+                {{/if}}
                 
                 {{#if content.description}}
                   <section style="clear:both" class="content">

@@ -36,8 +36,10 @@ http://www.vairix.com/
 [place:string]
 VAIRIX Software Development
 
-[content:md]
+[summary:string]
 At VAIRIX I'm performing different roles. For one side I'm the COO of the company and, in that role, I help with the overall strategy and the sales. Because of the Scrum tradition of the company, one of my operational functions is to be the Scrum Master of different projects. Other operational functions are the development and implementation of strategies to align personnel with company goals. Also, I make continuous improvements in the public visibility of the company, taking care of the blog, the social networks engagement and participating in conferences as speaker.
+
+[content:md]
 
 [projects:md]
 ## Research projects

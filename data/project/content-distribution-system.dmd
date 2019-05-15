@@ -1,0 +1,55 @@
+
+{
+  "title": "Content Distribution System (aka 'H')",
+  "date": "2019-04-25",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "progress_2",
+    "content": "Content delivery through distribution channels",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/content-distribution-system",
+    "position": "20190425",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "'H' (NodeJS+VanillaJS)",
+    "type": "Project"
+  }
+}
+
+---
+
+[summary:string]
+'H' is a collection of microservices oriented to the distribution of content using different channels. It parses and normalizes articles' html to a well-structured & easy to use JSON abstraction. Later it render that abstraction to each specific channel's format, adapting the content to follow each distribution channel policies & restrictions (i.e. Google AMP, Facebook Instant Articles, MSN, Google News).
+
+[download_link:string]
+
+[platform:string]
+Web - NodeJS, Express.js, Handlebars
+
+[link:string]
+
+[short_description:string]
+
+[description:md]
+Having an article base of several tens of thousands is a positive thing for any publisher and a source of pride for its editorial team. One characteristic of this type of collection is that it has usually been produced over the course of many years and for this reason, its HTML has suffered the passage of time. Over the years recommendations have changed, teams and tools have matured, but those changes rarely impact on historical archives. So, many experiments with different types of content, embeds of products that no longer exist, others that have changed their format and a long and so on, are part of that list of elements that make up the entire information base.
+
+The real pain arises when, due to the publishing business, such content must be sent through different distribution channels. For example, Facebook Instant Articles, Google Accelerated Pages (AMP), Google News, Apple News, smart TVs and native apps on mobile devices. At that moment you suffer "translating" the old, outdated and bad HTML, trying to remove everything that is not compatible with each channel, having to make costly and not reusable adaptations.
+
+The solution is to generate an abstraction of the HTML of each article and after having it in an intermediate format, build rules to convert it to each distribution format. So, in the future adding more distribution channels only implies the definition of a new "conversor" that map each element of the intermediate format with the desired representation.
+
+!["H" macro architecture](/assets/H_1.png#center)
+
+These are the core cabilities of "H":
+* HTML to json-article conversion.
+* json-article conversion to each distribution channel format through an easy to implement "translator" with a recursive-asynchronous algorithm under the hood.
+* Custom logger with convenient format and traceability indicators to follow request's path.

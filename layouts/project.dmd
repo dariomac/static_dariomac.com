@@ -39,6 +39,8 @@
 
 ---
 
+[summary:string]
+
 [download_link:string]
 
 [platform:string]
