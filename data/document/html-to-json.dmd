@@ -1,0 +1,57 @@
+{
+  "title": "HTML to JSON Intermediate representation",
+  "date": "2019-05-20",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "HTML articles' JSON abstraction for later manipulation",
+    "datebox": "2019-05-20",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/html-to-json",
+    "position": "20190520",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "HTML to JSON Intermediate representation",
+    "type": "0"
+  }
+}
+
+---
+
+[pub_date:string]
+2019-05-27
+
+[short_description:string]
+How we realized about the needed of a common article format that could be used for generating content on any distribution platform.
+
+[body:md]
+Suppose that you have several thousand articles saved as HTML in a database and you want to make them available in Facebook, Google and Apple own native news experiences (i.e Facebook Instant Article -IA-, Google Acelerated Mobile Pages -AMP- and Apple News). 
+
+Since each of this formats has different structures (IA markup, AMP HTML, JSON), it's a very good idea to build something that transforms the original HTML to a structured json format, reusing the parsing and normalization for other integrations. 
+
+With that idea in mind, we started crawling the web for other publishers with the same problem to learn about how the solved it. Although many of our competitors has internal blogs, Medium's accounts and successful study cases, they don't explain how their stuff works under the hood. Only Mic, an american internet and media company, show us how the solved an indentical problem. They (as us) realized the need for a common article format that could be used to generate content on any platform. They call this format article-json, and open-sourced parsers for it.
+
+Article-json got a lot of support from Google and Apple, so we decided to give it a chance. Since it was open source, we started working with it (in a test environment) until we realized that we need to make improvements/adaptations in order to use it in our production environments.
+
+i.e: We will convert this HTML to JSON:
+<script src="https://gist.github.com/dariomac/092b774017fe94b84f1658cea7cf9a8a.js"></script>
+
+This is the JSON-Article representation of last article
+<script src="https://gist.github.com/dariomac/58b37d0dcd5c7853bb1593eeca21d923.js"></script>
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+

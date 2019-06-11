@@ -51,12 +51,18 @@
     "scope": "markdown",
     "prefix": "column.archive",
     "body": "archive_6"
-  }
+  },
 
   "lane-essay": {
     "scope": "markdown",
     "prefix": "lane.essay",
     "body": "Essay"
+  },
+
+  "lane-project": {
+    "scope": "markdown",
+    "prefix": "lane.project",
+    "body": "Project"
   },
 
   "attachments": {
