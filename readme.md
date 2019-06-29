@@ -6,6 +6,9 @@ https://domchristie.github.io/to-markdown/
 
 diff --brief -r www www_orig
 
+the-online-slug-generator
+https://blog.tersmitten.nl/slugify/
+
 Columns
 -----
 
