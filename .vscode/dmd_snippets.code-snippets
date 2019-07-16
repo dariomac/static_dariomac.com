@@ -65,6 +65,12 @@
     "body": "Project"
   },
 
+  "lane-experience": {
+    "scope": "markdown",
+    "prefix": "lane.experience",
+    "body": "Experience"
+  },
+
   "attachments": {
     "scope": "markdown",
     "prefix": "attachments",
