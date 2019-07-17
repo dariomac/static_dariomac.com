@@ -6,7 +6,7 @@
   "json": {
     "assignee": "",
     "blocked": "0",
-    "color": "#99b399",
+    "color": "#6EA4D4",
     "columnid": "progress_2",
     "content": "Content delivery through distribution channels",
     "datebox": null,
@@ -20,7 +20,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": null,
+    "tags": "#nodejs,#cms,#microservices",
     "title": "'H' (NodeJS+VanillaJS)",
     "type": "Project"
   }

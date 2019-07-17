@@ -6,7 +6,7 @@
     "assignee": "",
     "blocked": "0",
     "color": "#AD4647",
-    "columnid": "progress_2",
+    "columnid": "archive_6",
     "content": "Doctorado (Ph.D)",
     "datebox": "Sep 9, 2015 - ",
     "extlink": "",
@@ -19,7 +19,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": "#phd, #research",
+    "tags": "#phd,#research,#suspended",
     "title": "Universidad ORT Uruguay - PEDECIBA",
     "type":"Education"
   }

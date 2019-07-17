@@ -6,7 +6,7 @@
   "json": {
     "assignee": "",
     "blocked": "0",
-    "color": "#99b399",
+    "color": "#6EA4D4",
     "columnid": "done_3",
     "content": "HTML article to JSON abstraction",
     "datebox": "2018",
@@ -20,7 +20,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": null,
+    "tags": "#nodejs,#json,#abstraction",
     "title": "EAJP (NodeJS)",
     "type": "Project"
   }

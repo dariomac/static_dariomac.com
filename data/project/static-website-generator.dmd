@@ -1,0 +1,42 @@
+
+{
+  "title": "Static website generator",
+  "date": "2019-07-16",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#FF6E19",
+    "columnid": "progress_2",
+    "content": "Static website generator (this site)",
+    "datebox": "2017",
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/static-website-generator",
+    "position": "20170301",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#nodejs,#markdown,#static",
+    "title": "Static website generator (NodeJS)",
+    "type": "Project"
+  }
+}
+
+---
+
+[summary:string]
+Custom static site generator implemented in NodeJS. It takes content from a custom ‘YAML front matter’ files that include different sections with markdown content. Later, the front matter part is used to build the navigation and categorization of the website while the markdown is translated to HTML. Finally everything is saves as static HTML files to provide high performance server-side transference and client-side rendering.
+
+[download_link:string]
+
+[platform:string]
+
+[link:string]
+
+[short_description:string]
+
+[description:md]
