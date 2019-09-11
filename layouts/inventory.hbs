@@ -1,5 +1,5 @@
 [
   {{#each content}}
-    {{{json this.frontmatter.json}}},
+    {{{json (omit this 'content.body')}}},
   {{/each}}
 ]
