@@ -11,6 +11,7 @@ let app = express();
 // http://stackoverflow.com/a/16895480/126519
 app.use(function (req, res, next) {
   let reqPath = decodeURIComponent(req.path);
+  let reqQueryStr = getQueryString(req.url);
 
   if (reqPath.indexOf('.') === -1) {
     var file = `${publicDir}${reqPath}.html`;
@@ -18,6 +19,9 @@ app.use(function (req, res, next) {
     fs.stat(file, function (err, stat) {
       if (err == null) {
         req.url += '.html';
+        if (reqQueryStr) {
+          req.url += `?${reqQueryStr}`
+        }
       }
       next();
     });
@@ -32,6 +36,10 @@ app.use('/', express.static(rootDir));
 
 app.get('/me', function (req, res) {
   res.redirect(301, '/about-me');
+});
+
+app.get('/static/*', function (req, res) {
+  res.redirect(301, `/assets/build/static/${req.params[0]}`);
 });
 
 app.post('/pullit', async function (req, res) {
@@ -69,6 +77,17 @@ app.get('/status', function (req, res) {
   });
 });
 
-app.listen(3000, function () {
+app.listen(4000, function () {
   console.log('\r\nDariomac.com server listening on: 3000');
 });
+
+function getQueryString (urlWithQS) {
+  let qs = null;
+
+  const indexOfQS = urlWithQS.indexOf('?');
+  if (indexOfQS > 0) {
+    qs = urlWithQS.substring(indexOfQS);
+  }
+
+  return qs;
+};

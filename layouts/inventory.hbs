@@ -1,5 +1,5 @@
 [
-  {{#each content}}
-    {{{json (omit this 'content.body')}}},
-  {{/each}}
+  {{#forEach content}}
+    {{{json (omit this 'content.body')}}}{{#unless isLast~}}, {{/unless}}    
+  {{/forEach}}
 ]
