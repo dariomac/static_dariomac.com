@@ -1,0 +1,41 @@
+{
+  "title": "Software Engineer",
+  "date": "2019-07-15",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#00A651",
+    "columnid": "progress_2",
+    "content": "Software Engineer",
+    "datebox": "Jun 2019 - Now",
+    "extlink": "http://www.vairix.com/",
+    "laneid": "Experience",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/vairix-software-engineer",
+    "position": "20190603",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "VAIRIX Software Development",
+    "type": "0"
+  }
+}
+
+---
+
+[duration:string]
+Jun 2019 - Now
+
+[place_url:string]
+http://www.vairix.com/
+
+[place:string]
+VAIRIX Software Development
+
+[content:md]
+
+[projects:md]

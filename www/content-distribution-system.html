@@ -329,7 +329,7 @@ http://www.dariomac.com -->
 
                   <section style="clear:both" class="summary">
                     <p>
-                      &#x27;H&#x27; is a collection of microservices oriented to the distribution of content using different channels. It parses and normalizes articles&#x27; html to a well-structured &amp; easy to use JSON abstraction. Later it render that abstraction to each specific channel&#x27;s format, adapting the content to follow each distribution channel policies &amp; restrictions (i.e. Google AMP, Facebook Instant Articles, MSN, Google News).
+                      ‘H’ is a collection of NodeJS microservices oriented to the distribution of content using different channels. The content was stored in a MySQL database using a proprietary CMS format. Then one of those microservices retrieve each piece of content and normalize it to a well-structured &amp; easy to use JSON abstraction. Finally, each service renders that abstraction to specific channel’s format, adapting the content to follow each distribution channel policies &amp; restrictions (i.e. Google AMP, Facebook Instant Articles, MSN, Google News). This microservices net support ~25 requests/sec using only one service with 5 instances of them running, coordinated by PM2 process manager with an NGINX as reverse proxy supporting ~1000 req/sec.
                     </p>
                   </section>
                 

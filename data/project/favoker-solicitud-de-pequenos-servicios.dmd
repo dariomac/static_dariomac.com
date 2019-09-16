@@ -1,0 +1,55 @@
+
+{
+  "title": "Favoker: solicitud de pequeños servicios",
+  "date": "2019-07-20",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Favoker: solicitud de pequeños servicios",
+    "datebox": "2018-2019",
+    "extlink": "https://fi.ort.edu.uy/79201/17/favoker:-solicitud-de-pequenos-servicios.html",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/favoker-solicitud-de-pequenos-servicios",
+    "position": "20190530",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#pwa,#react,#js",
+    "title": "Favoker (PWA)",
+    "type": "Project"
+  }
+}
+
+---
+
+[summary:string]
+Favoker is an MVP of an application aimed to help people with daily tasks to be done and needs that may arise unexpectedly, providing a community of people who are willing to help in exchange for a payment. Implemented as a Progressive Web App (PWA) to make it available to a broader audience, without caring about their devices.
+
+[download_link:string]
+
+[platform:string]
+PWA - React
+
+[link:string]
+https://fi.ort.edu.uy/79201/17/favoker:-solicitud-de-pequenos-servicios.html
+
+[short_description:string]
+Favoker: solicitud de pequeños servicios
+
+[description:md]
+**Disclaimer**: _I've participated in this project **only** on my role of_ [Tutor](/degree-final-projects-tutor)
+
+Favoker is an application whose objective is to help people with daily tasks and needs that may arise unexpectedly, providing a community of people who are willing to help in exchange for a payment. The client's intention is to create an MVP in order to test the application with real users and see if it is feasible to apply it in the local market. Because of this and the need to have a functional product as soon as possible, it was decided to make a PWA (Progressive Web App). These apps has many advantages on testing; one of them are the versatility in the devices and rapid installation. 
+
+The solution has to take into account the needs of the main actors of this application who are: user (who requests the service) and partner (who accepts the service). This must allow users to request a service and then notify partners that this user has requested a task. In addition, it is required to provide a simple UI to make the main transactions of the app as simple as possible. These are: visualize the available services and offer an easy transition from user to partner. For the construction of the software it was chosen to use SCRUM, since it is a framework known by the development team and provides early feedback from the client on the functionalities developed.
+
+[related_images:json]
+  [{
+    "filename": "favoker-juan-20190502.jpg"
+  }]

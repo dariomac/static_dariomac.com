@@ -6,7 +6,7 @@
     "assignee": "",
     "blocked": "0",
     "color": "#77D477",
-    "columnid": "requested_1",
+    "columnid": "archive_6",
     "content": "“Think Again: How to Reason and Argue” course.",
     "datebox": "12 weeks",
     "extlink": "http://www.coursera.org/course/thinkagain",
@@ -19,7 +19,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": "#soft_skills, #humanities",
+    "tags": "#soft_skills,#humanities,#suspended",
     "title": "Coursera (online)",
     "type":"Education"
   }
