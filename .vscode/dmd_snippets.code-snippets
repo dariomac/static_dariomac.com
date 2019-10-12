@@ -84,5 +84,18 @@
       "\t\t\"description\": \"This is the description of the filename2.\"",
       "\t}]"
     ]
+  },
+
+  "related_images": {
+    "scope": "markdown",
+    "prefix": "related_images",
+    "body": [
+      "[related_images:json]",
+      "\t[{",
+      "\t\t\"filename\": \"blablabla.png\"",
+      "\t},{",
+      "\t\t\"filename\": \"blablabla2.jpg\"",
+      "\t}]"
+    ]
   }
 }

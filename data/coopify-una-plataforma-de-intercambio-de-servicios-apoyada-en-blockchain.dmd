@@ -1,0 +1,74 @@
+
+{
+  "title": "Coopify: una plataforma de intercambio de servicios apoyada en blockchain",
+  "date": "2019-10-09",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#99b399",
+    "columnid": "%{column}",
+    "content": "Coopify: una plataforma de intercambio de servicios apoyada en blockchain",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/coopify-una-plataforma-de-intercambio-de-servicios-apoyada-en-blockchain",
+    "position": "20191002",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Coopify (PWA - Blockchain)",
+    "type": "Project"
+  }
+}
+
+---
+
+[summary:string]
+The objective of this project is to create a platform for the exchange of services between users without having to handle real money. Its aim is to foster cooperation within the community. Users can publish their services for a value in coopis, negotiate possible exchanges and leave reviews about their experience for future consumers.
+
+The coopis mentioned above are a virtual currency that will be decentralized and regulated with blockchain technologies to ensure the transparency and reliability of the platform.
+
+[download_link:string]
+
+[platform:string]
+PWA - React - Blockchain
+
+[link:string]
+https://fi.ort.edu.uy/81789/17/coopify:-una-plataforma-de-intercambio-de-servicios-apoyada-en-blockchain.html
+
+[short_description:string]
+Coopify: una plataforma de intercambio de servicios apoyada en blockchain
+
+[description:md]
+**Disclaimer**: _I've participated in this project **only** on my role of_ [Tutor](/degree-final-projects-tutor)
+
+Today, the services market is the most important within a society. Services are provided by individuals or companies and with the advent of technology and the web are even exported and consumed in a simpler way and on a global scale.
+
+The aim of this project is to create a platform for the exchange of services between users without having to handle real money.
+
+In the platform there is a virtual currency called "coopi", which solves the problem of exchanging "barter" services, where it is not easy to get a connection. This virtual currency will be decentralized and regulated with blocking technologies to ensure the transparency and reliability of the platform.
+
+We can illustrate this with the following two examples:
+
+Juan is a guitarist and offers his guitar class service at Coopify. Maria is a designer and offers her logo design service at Coopify.
+Maria is interested in learning to play guitar and offers Juan exchange services. Juan thinks it's a good idea since he needs a logo for his music project, so they exchange services.
+Carla is a masseur and offers therapy sessions at Coopify. Carla is interested in accounting advice and publishes an application. Jorge is a student accountant and offers balance sheet advice at Coopify. Jorge sees Carla's application and offers her services, but is not interested in therapy sessions, so Carla pays Jorge's service for 20 "coopis".
+In short, Coopify is a platform with the aim of fostering cooperation within the community. Users can publish their services for a value in "coopis", negotiate possible exchanges and leave reviews of their experience for future consumers.
+
+If two users offer services that are of interest to both parties, they can exchange them. Otherwise, it can be contracted by paying its value in "coopis". Users will be able to become "coopis" by meeting objectives or helping the system to grow.
+
+The system consists of three main components: a website and two servers for the management of business logic and communication with the blocking, respectively. The website or frontend is built with React and uses PWA technology to give extended support on mobile devices and act as a native mobile application.
+
+Both data access servers are developed with NodeJS, exposing an API through express. It was necessary to have two servers to be able to encapsulate in one the business logic and in the other the access logic to Ethereum (blockchain provider selected).
+
+[related_images:json]
+  [{
+    "filename": "coopify-agustin.jpg"
+  },{
+    "filename": "coopify-ismael.jpg"
+  }]
