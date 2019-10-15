@@ -37,6 +37,7 @@ Factors causing low adoption of software inspections
 [knowledge:md]
 Aug, 2012
 
+<div class="table-container">
 <table class="tableizer-table">
    <tbody>
       <tr class="tableizer-firstrow">
@@ -707,3 +708,4 @@ Aug, 2012
       </tr>
    </tbody>
 </table>
+</div>

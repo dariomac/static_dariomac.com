@@ -35,6 +35,7 @@ Solutions suggested for the low software inspection adoption
 [speculations:md]
 
 [knowledge:md]
+<div class="table-container">
 <table class="tableizer-table">
    <tbody>
       <tr class="tableizer-firstrow">
@@ -218,3 +219,4 @@ Solutions suggested for the low software inspection adoption
       </tr>
    </tbody>
 </table>
+</div>

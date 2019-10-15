@@ -354,12 +354,14 @@ http://www.dariomac.com -->
 <p>The angular change of the joints in the same coordinate system is obtained between consecutive segments in a hierarchical manner through matrix transformations.</p>
 <p>The skeleton used contains 17 joints and 16 segments. It is assumed that we have geometric information of the individual (eg. length of each body segment).</p>
 <p>The body can be represented as a tree of rigid parts connected by specific joints. Each rigid part is allowed to move freely in their own domain on its immediate ancestor.</p>
-<table style="width: 100%;">
-  <tr>
-    <td><img src="/assets/SI_Annex-E-1.gif"></td>
-    <td><img src="/assets/SI_Annex-E-2.gif"></td>
-  </tr>
-</table>
+<div class="table-container">
+  <table style="width: 100%;">
+    <tr>
+      <td><img src="/assets/SI_Annex-E-1.gif"></td>
+      <td><img src="/assets/SI_Annex-E-2.gif"></td>
+    </tr>
+  </table>
+</div>
 <p>Each joint has three biomechanical constraints representing the angles of rotation about the axes X, Y, Z in its local coordinate system (a,b,g).</p>
 <p>Biomechanical constraints are important to construct the model since it decreases the solution space, but is not sufficient to determine the exact position of the body. For these reason we will user the concept of &quot;Criterion function&quot;.</p>
 <p>To define this concept will use the following notation:</p>

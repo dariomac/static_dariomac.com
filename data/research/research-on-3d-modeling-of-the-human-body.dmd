@@ -71,12 +71,14 @@ The skeleton used contains 17 joints and 16 segments. It is assumed that we have
 
 The body can be represented as a tree of rigid parts connected by specific joints. Each rigid part is allowed to move freely in their own domain on its immediate ancestor.
 
-<table style="width: 100%;">
-  <tr>
-    <td><img src="/assets/SI_Annex-E-1.gif"></td>
-    <td><img src="/assets/SI_Annex-E-2.gif"></td>
-  </tr>
-</table>
+<div class="table-container">
+  <table style="width: 100%;">
+    <tr>
+      <td><img src="/assets/SI_Annex-E-1.gif"></td>
+      <td><img src="/assets/SI_Annex-E-2.gif"></td>
+    </tr>
+  </table>
+</div>
 
 Each joint has three biomechanical constraints representing the angles of rotation about the axes X, Y, Z in its local coordinate system (a,b,g).
 
