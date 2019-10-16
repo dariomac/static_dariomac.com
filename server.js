@@ -4,7 +4,8 @@ const path = require('path');
 const { exec } = require('child_process');
 
 let publicDir = path.join(__dirname, '/www');
-let rootDir = path.join(__dirname, '/root');
+let rootDir = path.join(__dirname, '/root')
+const url = require('url');
 
 let app = express();
 
@@ -15,12 +16,13 @@ app.use(function (req, res, next) {
 
   if (reqPath.indexOf('.') === -1) {
     var file = `${publicDir}${reqPath}.html`;
-
     fs.stat(file, function (err, stat) {
       if (err == null) {
-        req.url += '.html';
         if (reqQueryStr) {
-          req.url += `?${reqQueryStr}`
+          req.url = `${url.parse(req.url).pathname}.html?${reqQueryStr}`
+        }
+        else {
+          req.url += '.html';
         }
       }
       next();
@@ -86,7 +88,7 @@ function getQueryString (urlWithQS) {
 
   const indexOfQS = urlWithQS.indexOf('?');
   if (indexOfQS > 0) {
-    qs = urlWithQS.substring(indexOfQS);
+    qs = urlWithQS.substring(indexOfQS+1);
   }
 
   return qs;
