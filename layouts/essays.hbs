@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ frontmatter.title }} | Darío Macchi</title>
+    <style>
+      
+      <!--#include virtual="../common/_critical.css" -->
+
+    </style>
+
+    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+
+    <!--#include virtual="../common/_18common_html_header.html" -->
+
+    {{#if content.ldjson}}
+      <script type="application/ld+json">
+        {{{json content.ldjson}}}
+      </script>
+    {{/if}}
+  </head>
+  <body>
+    <div class="board_view details">
+      <!--#include virtual="../common/_18page_header.html" -->
+      <main class="dm-main-content is-fixed">
+        <div class="dm-tab-filter-wrapper">
+          <div class="dm-tab-filter">
+            <ul class="dm-filters d-block d-md-none">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+              </li>
+              <!--#include virtual="../common/_mobile-menu.html" -->
+            </ul> <!-- dm-filters -->
+          </div> <!-- dm-tab-filter -->
+
+          <div class="container-fluid float-left"></div>
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="container-fluid dm-board">
+          <article>
+            <div class="row splitter">
+              <div class="col-md-12 text-center">Details</div>
+            </div>
+            <div class="row featured">
+              <div class="col-md-12">
+                <header>
+                  <h1>Essays</h1>
+                </header>
+                <section class="content">
+                  
+                  <ul>
+                    {{#each laneContent.Essay}}
+                      <li>
+                        <a href="http://www.dariomac.com{{this.frontmatter.json.linkto}}">
+                          {{#ifNotEq this.frontmatter.title ''}}
+                            {{../this.frontmatter.title}}
+                          {{else}}
+                            {{../this.frontmatter.json.title}}
+                          {{/ifNotEq}}
+                        </a>
+                      </li>
+                    {{/each}}
+                  </ul>
+
+                </section>
+              </div>
+            </div>
+          </article>
+        </div>
+        <a href="/" class="logo">
+          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+        </a>
+        <!--#include virtual="../common/_orange-box.html" -->
+        {{!-- <a href="#0" class="dm-filter-trigger"></a> --}}
+      </main> <!-- dm-main-content -->
+    </div>
+    <!--</div>-->
+
+    <!--#include virtual="../common/_page_footer.html" -->
+    <!--#include virtual="../common/_18common_html_footer.html" -->
+  </body>
+</html>
