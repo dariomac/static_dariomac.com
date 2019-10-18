@@ -47,125 +47,22 @@
                   <h1>Sitemap</h1>
                 </header>
                 <section class="content">
-                  <h2>Me</h2>
+                  {{#each (split "Me,Experience,Education,Research,Article,Essay,Project,Quote" ",")}}
+                    <h2>{{this}}</h2>
                     <ul>
-                  {{#each laneContent.Me}}
-                      <li>
-                        <a href="http://www.dariomac.com{{this.frontmatter.json.linkto}}">
-                          {{#ifNotEq this.frontmatter.title ''}}
-                            {{../this.frontmatter.title}}
-                          {{else}}
-                            {{../this.frontmatter.json.title}}
-                          {{/ifNotEq}}
-                        </a>
-                      </li>
-                  {{/each}}
+                      {{#each (getTasksFromLane ../laneContent this)}}
+                        <li>
+                          <a href="{{this.frontmatter.json.linkto}}">
+                            {{#ifNotEq this.frontmatter.title ""}}
+                              {{../this.frontmatter.title}}
+                            {{else}}
+                              {{../this.frontmatter.json.title}}
+                            {{/ifNotEq}}
+                          </a>
+                        </li>
+                      {{/each}}
                     </ul>
-
-                  <h2>Experience</h2>
-                    <ul>
-                  {{#each laneContent.Experience}}
-                      <li>
-                        <a href="http://www.dariomac.com{{this.frontmatter.json.linkto}}">
-                          {{#ifNotEq this.frontmatter.title ''}}
-                            {{../this.frontmatter.title}}
-                          {{else}}
-                            {{../this.frontmatter.json.title}}
-                          {{/ifNotEq}}
-                        </a>
-                      </li>
                   {{/each}}
-                    </ul>
-
-                  <h2>Education</h2>
-                    <ul>
-                  {{#each laneContent.Education}}
-                      <li>
-                        <a href="http://www.dariomac.com{{this.frontmatter.json.linkto}}">
-                          {{#ifNotEq this.frontmatter.title ''}}
-                            {{../this.frontmatter.title}}
-                          {{else}}
-                            {{../this.frontmatter.json.title}}
-                          {{/ifNotEq}}
-                        </a>
-                      </li>
-                  {{/each}}
-                    </ul>
-
-                  <h2>Research</h2>
-                    <ul>
-                  {{#each laneContent.Research}}
-                      <li>
-                        <a href="http://www.dariomac.com{{this.frontmatter.json.linkto}}">
-                          {{#ifNotEq this.frontmatter.title ''}}
-                            {{../this.frontmatter.title}}
-                          {{else}}
-                            {{../this.frontmatter.json.title}}
-                          {{/ifNotEq}}
-                        </a>
-                      </li>
-                  {{/each}}
-                    </ul>
-
-                  <h2>Article</h2>
-                    <ul>
-                  {{#each laneContent.Article}}
-                      <li>
-                        <a href="http://www.dariomac.com{{this.frontmatter.json.linkto}}">
-                          {{#ifNotEq this.frontmatter.title ''}}
-                            {{../this.frontmatter.title}}
-                          {{else}}
-                            {{../this.frontmatter.json.title}}
-                          {{/ifNotEq}}
-                        </a>
-                      </li>
-                  {{/each}}
-                    </ul>
-
-                  <h2>Essay</h2>
-                    <ul>
-                  {{#each laneContent.Essay}}
-                      <li>
-                        <a href="http://www.dariomac.com{{this.frontmatter.json.linkto}}">
-                          {{#ifNotEq this.frontmatter.title ''}}
-                            {{../this.frontmatter.title}}
-                          {{else}}
-                            {{../this.frontmatter.json.title}}
-                          {{/ifNotEq}}
-                        </a>
-                      </li>
-                  {{/each}}
-                    </ul>
-
-                  <h2>Project</h2>
-                    <ul>
-                  {{#each laneContent.Project}}
-                      <li>
-                        <a href="http://www.dariomac.com{{this.frontmatter.json.linkto}}">
-                          {{#ifNotEq this.frontmatter.title ''}}
-                            {{../this.frontmatter.title}}
-                          {{else}}
-                            {{../this.frontmatter.json.title}}
-                          {{/ifNotEq}}
-                        </a>
-                      </li>
-                  {{/each}}
-                    </ul>
-
-                  <h2>Quote</h2>
-                    <ul>
-                  {{#each laneContent.Quote}}
-                      <li>
-                        <a href="http://www.dariomac.com{{this.frontmatter.json.linkto}}">
-                          {{#ifNotEq this.frontmatter.title ''}}
-                            {{../this.frontmatter.title}}
-                          {{else}}
-                            {{../this.frontmatter.json.title}}
-                          {{/ifNotEq}}
-                        </a>
-                      </li>
-                  {{/each}}
-                    </ul>
                 </section>
               </div>
             </div>
