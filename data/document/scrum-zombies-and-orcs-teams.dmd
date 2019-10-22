@@ -1,0 +1,212 @@
+{
+  "title": "Scrum Zombies & Orcs teams",
+  "date": "2019-10-17",
+  "layout": "document",
+  "has_code": false,
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#FF6E19",
+    "columnid": "progress_2",
+    "content": "Discussion about two kind of Scrum Teams: Zombies & Orcs",
+    "datebox": "%{pub_date}",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/scrum-zombies-and-orcs-teams",
+    "position": "20191017",
+    "priority": "Average",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Scrum Zombies & Orcs teams",
+    "type": "0"
+  }
+}
+
+---
+
+[pub_date:string]
+
+[short_description:string]
+The concept of “Zombie Scrum” has been around for a while. From the outside, they seem to be normal scrum teams, but they lack the beating heart of potentially releasable increment at the end of each sprint. Also, these teams have no intention to improve their situation and their stakeholders have forgotten its existence long time ago.
+
+An Orc Scrum Team is a new kind of team that I was trying to define for a while now.
+
+Beings of greater (evilish) power(managers) build Orc Scrum Teams to be in fashion, but they lead them as battle fodder in battles that, as the zombies, only can be won because of the elevated number of them. Old, rigid organizations are survivors, so Scrum didn’t change them as everyone supposed will happen; old, rigid organizations changed Scrum.
+
+[body:md]
+First part - Scrum
+------------------
+
+We will define some terms to better understand the background of this article and later, discuss the relation between them.
+
+### Scrum definition
+
+The Scrum framework is a series of team behaviors that are based on values to achieve an objective. The Scrum attitude is the internal and personal experience that each one makes of the values. You can implement the Scrum framework without having a Scrum attitude; you can have a Scrum attitude and not implement the Scrum framework and you can implement the framework with the attitude.
+
+Without the Scrum attitude, Scrum practices are mere unfounded behaviors; it's like when children take a round plate and use it as a steering wheel: they execute the movements but don't achieve the goal.
+
+If your objective is to implement the Scrum methodology, you are already getting off to a bad start.
+
+Scrum provides a platform for people to work together effectively, while at the same time making it possible to relentlessly expose any problems that may arise to get in his way.
+
+Second part - Zombies
+---------------------
+
+I have a couple of questions for you.
+
+How many have experience working with Scrum? Ok… we have many raisen hands!!! Now, How many of you have done retrospectives like this in your scrum teams? Retrospectives where the team is challenged with creative activities, that pursue specific goals, make the team think bigger and about their future, analyze risks or just think about how they feel working together.
+
+![](assets/z-nd-o-2.png#center)
+
+![](assets/z-nd-o-1.png#center)
+
+![](assets/z-nd-o-4.png#center)
+
+![](assets/z-nd-o-5.png#center)
+
+![](assets/z-nd-o-3.png#center)
+
+Now, how many of you have done or do the [Good / Bad / Change](https://www.google.com/url?q=http://retrospectivewiki.org/index.php?title%3DEveryday_Retrospective&sa=D&ust=1571365566438000) retrospective, sprint after sprint:
+
+![](assets/z-nd-o-6.png#center)
+
+If you are in the first group of lucky people… you want to stay on the good track and avoid becoming a Zombie Scrum Team… For the second group, well… YOU WON’T EAT MY BRAIN!
+
+### Zombie definition
+
+A zombie, in its broadest sense, was once alive but has lost his sense of self-consciousness and identity, and only cares about the destruction of others around him, regardless of the circumstances, or the cost to himself. They compensate for this lack of intelligence in numbers, since the state of "zombieism" is almost always contagious, and spreads virulently, at a devastating cost to the society around them.
+
+### Zombie Scrum Team
+
+The concept of “Zombie Scrum” has been around for a while. From the outside, they seem to be normal scrum teams, but they lack the beating heart of potentially releasable increment at the end of each sprint. Also, these teams have no intention to improve their situation and their stakeholders have forgotten its existence long time ago.
+
+For me, the definition is even worse because it is broader. For me, besides what has been said, a Zombie Scrum team has lost its soul. What this means? Well, I’ll show you with examples (RAAAAUUUUGHHHH in zombie language).
+
+#### RAAAAUUUUGHHHH #1
+
+“Complete functionality is a nice-to-have, but if is not in this sprint, we can end in in the next one, because..  we’re not going live at the end of a sprint anyways.”
+
+They have no sense of urgency, mostly because they don’t have clear goals or there’s no real understanding of value.
+
+#### RAAAAUUUUGHHHH #2
+
+“Hey, I don’t care if the product at a whole meet customer expectations… I’M HERE TO CODE!”
+
+Again, they don’t understand what valuemeans in agile. Delivering value has always been the priority of agile teams, and excellent code but a poor product has no value to end users.
+
+#### RAAAAUUUUGHHHH #3
+
+“Ok… last sprint we do all the sprint backlog, not a big deal… this sprint we end it with items being carried over to the next sprint… not a big deal too… there’s always a next Sprint and... iterations are artificial anyway!”
+
+There is usually an underlying cause behind this RAAAAUUUUGHHHH and that is the “Scrum cherry picking”. It consists in deliberately partial adoption of Scrum. E.g. extending sprint durations to ensure “done” sprints, cancelling sprint reviews because there is nothing to show or cancelling the retrospective due to lack of time.
+
+#### RAAAAUUUUGHHHH #4 (the worst)
+
+"Seriously... Do we need that stupid retrospective meeting again? Whatever… I'm very bored here, so I will continue as is on another place.... Who cares? At least the SM came today… pfff… for what it's good for!”
+
+What is going on with this guy? Obviously he didn’t understand anything about agilism and Scrum. Retrospectives are the most important ceremony of Scrum… also, what is doing a bored dev in an agile team? And why doesn't he say that in retrospectives?
+
+Teams showing theseRAAAAUUUUGHHHHs are not agile… they don’t value working software, response to change, customer collaboration neither individuals and interactions… (do you remember the agile manifesto, right?). Some of you may be asking yourselves “but wait, they are Scrum teams, why they are no agile?”. Remember that scrum is a framework with a weak opinion on how software should be developed, allowing anti-agile methods to be incorporated and cloaked in agile terminology.
+
+### Treatments
+
+Zombism in Scrum teams is curable following one or many of these advices:
+
+*   Speak with the team: many times just talking about some of these RAAAAUUUUGHHHHs with the team is enough to make them react.
+*   Benefit from the community: there are many people fighting against zombie Scrum teams (e.g. the [Zombie Scrum Resistance](https://www.google.com/url?q=https://medium.com/zombie-scrum-resistance&sa=D&ust=1571365566443000)). They have several activities, retrospectives and tools proved to work with zombi teams.
+*   Stir the waters: this is my preferred; I like to shake the team to make it react. I prefer the use of specific retrospectives to make them analyze their current situation (i.e. smell-o-meter) and dream about the future.
+*   You can also try changing the length of sprints and start daily meetings reviewing the sprint goal.
+
+Third part - Orcs
+-----------------
+
+As we did with zombies, I have a couple of questions for you.
+
+How many of you go with laptops to retrospectives? How many of you have done daily meetings using slack or similar? How many of you have daily meetings where you report yourselves to the PM/SM who, also, is your boss? How many of you do Scrum and have a PM that assign tasks to each team member on planning meetings? Or worst, how many of you have a PM that do the planning based on it’s expert judgment and then assign the tasks to each team member?
+
+Ok ok… one at a time please!
+
+### Orc definition
+
+They are of human shape, of varying size, ugly and filthy… But once, some were beautiful creatures. Although they have their own culture of low cleverness and crudity, they are generally portrayed as a subject race used as soldiers (or battle fodder) by beings of greater (evilish) power and intelligence. There are exceptions, as orcs sometimes have cunning leaders of their own kind. They will fight fiercely if forced or directed by a guided will, but tend to more chaotic behavior (including cowardice) if left to their own.
+
+### Orc Scrum Team
+
+An Orc Scrum Team is a new kind of team that I was trying to define for a while now.
+
+Some authors say that scrum is the new waterfall, but I prefer to say that scrum is the new black! (more about orcs in a moment, be patient please). X is the new black phrase has its origin in the fashion world… and that’s exactly why I use this phrase. There are managers who are merely trying to show how modern and trendy their software development teams are, pushed by a market that believes everything should be agile. They are trying to be à la mode, being agiles, but also keeping the power that they have inside those (commonly) pyramidal structures.
+
+Zzzz… Hey! Wake up… this is the orcs part! The managers we talked about in the previous paragraph are those beings of greater (evilish) powerof orcs definition! They build Orc Scrum Teams to be in fashion, but they lead them as battle fodder in battles that, as the zombies, only can be won because of the elevated number of them. Old, rigid organizations are survivors, so Scrum didn’t change them as everyone supposed will happen; old, rigid organizations changed Scrum.
+
+What these managers (and many times, organizations) don’t understand is that scrum is not a software-development method at all. Think about the original Ken Schwaber’s book, named Agile Software Development with Scrum. Its title says that Scrum is an addition to agile, not a substitute for it. And review the case studies on that book too. You will see that the authors as  experienced agile professionals were leading the effort and the agility of the software development method was achieved through some variant of agile, typically Extreme Programming.
+
+ I’ll show you Orcs examples (HRROOGA in orc language).
+
+#### HRROOGA #1
+
+\[manager\] - “Ok, so I will be the PO, you (mid-level manager) will be the SM… we will work in two week iterations, having a planning at the first monday, dailies each morning and last friday the team will show me what they have done and then we will do a brief retrospective… Ahhhh now we are agile!”
+
+This doesn't admit the slightest analysis.
+
+#### HRROOGA #2
+
+“We have been defining the new agile process the last two months… but now I think that we finally can apply it to all the teams of the company” (those teams range between 2 to 50 peoples)
+
+How do you spend 2 months maturing an agile process in a theoretical way? Put all those people to work and after 2 months you will have a process adjusted to each team that will be generating value on its own.
+
+#### HRROOGA #3
+
+“Ok guys… we need to do agile… We need to find something to take away our pain… any ideas?”and someone trembling in the background say “Scrum?”. A couple of weeks later they end with cosmetic “fixes” that let them continue doing things the way they've always done, but with cool agile names!
+
+#### HRROOGA #4
+
+\[SM/PO in retrospective\] - “We hired you \[team\] to be smart and figure things out. You’re supposed to self-organize to solve problems. You’re already falling behind on features. We need features, not tests! build what we want!”
+
+This is all wrong... but the worst thing is that without tests you can't ensure that you deliver full functionality and it's impossible to add value every sprint (because eventually you'll break something that worked).
+
+### Treatments
+
+We're so sorry. There is no known treatment. We can advise you on ways to incorporate changes in your work in order to improve conditions... try to resemble the elf you were... but for sure scars will remain forever. You can:
+
+*   Connect your teams to customers and business-value generation directly.
+*   Focus on products, not projects
+*   Improve technically and add agile software development practices (maybe you can start from Extreme Programming).
+*   Follow Ron Jeffries advice:
+
+*   work on one or two of the items, complete those entirely — fully packaged, tested, and working — and then do another, so that at the end of the boxcar you have something that you can absolutely call completed.
+*   Take the inevitable abuse for not completing everything,
+*   and try to drive planning and expectations from reality, not the fantasy of what was demanded, that you never had a chance to do.
+
+In Jeffries own words: “I’ve been in those situations, and other than leaving, the best I know is to do good work, keep it visible, running, tested, and integrated, and help people to see reality.”
+
+Final thoughts
+--------------
+
+We (the agile movement) are in decisive moments, where we recognize what has been done in the last 10 years but we also know that we are not what we were supposed to be. Zombies and Orcs are far away the original Agile Manifesto spirit and need to return to the roots and start again. But not only them… all the agile movement need it. I finish this article with thoughts of some of those guys that signed the original Agile Manifesto.
+
+*   “Developers Should Abandon Agile” - May 2018, Ron Jeffries.
+*   “So that's our current battle. (...), it's realizing that a lot of what people are doing and calling agile, just isn't.” - August 2018, Martin Fowler.
+*   “Our first problem is dealing with the Agile Industrial Complex” - August 2018, Martin Fowler.
+*   “The second problem is the lack of recognition of the importance of technical excellence” - August 2018, Martin Fowler.
+*   In “The Land that Scrum Forgot,” Robert Cecil Martin (Uncle Bob) talks about the important technical fundamentals (like test-driven development) that were being left out of Scrum certification programs.
+
+[acknowledgments:md]
+
+[further_reading:md]
+*   Zombie Scrum - Symptoms, Causes and Treatment. [https://www.scrum.org/resources/blog/zombie-scrum-symptoms-causes-and-treatment](https://www.google.com/url?q=https://www.scrum.org/resources/blog/zombie-scrum-symptoms-causes-and-treatment&sa=D&ust=1571365566449000)
+*   RAAAAUUUUGHHHH: The Wonderful (And Painful) Art Of Voicing A Zombie. [https://www.audible.com/blog/arts-culture/raaaauuuughhhh-the-wonderful-and-painful-art-of-voicing-a-zombie/](https://www.google.com/url?q=https://www.audible.com/blog/arts-culture/raaaauuuughhhh-the-wonderful-and-painful-art-of-voicing-a-zombie/&sa=D&ust=1571365566450000)
+*   The Rise Of Zombie Scrum: Symptoms, causes and what you can do about it. [https://medium.com/the-liberators/the-rise-of-zombie-scrum-cd98741015d5](https://www.google.com/url?q=https://medium.com/the-liberators/the-rise-of-zombie-scrum-cd98741015d5&sa=D&ust=1571365566450000)
+*   Zombie Scrum Resistance. [https://medium.com/zombie-scrum-resistance](https://www.google.com/url?q=https://medium.com/zombie-scrum-resistance&sa=D&ust=1571365566450000)
+*   How to Succeed With Zombie-Scrum?. [https://www.barryovereem.com/how-to-succeed-with-zombie-scrum/](https://www.google.com/url?q=https://www.barryovereem.com/how-to-succeed-with-zombie-scrum/&sa=D&ust=1571365566451000)
+*   Why Scrum sucks. [https://techbeacon.com/app-dev-testing/why-scrum-sucks](https://www.google.com/url?q=https://techbeacon.com/app-dev-testing/why-scrum-sucks&sa=D&ust=1571365566451000)
+*   “Scrum is just Waterfall in disguise”. [https://medium.com/serious-scrum/scrum-is-just-waterfall-in-disguise-3476203d0f00](https://www.google.com/url?q=https://medium.com/serious-scrum/scrum-is-just-waterfall-in-disguise-3476203d0f00&sa=D&ust=1571365566452000)
+*   Dark Scrum. [https://ronjeffries.com/articles/016-09ff/defense/](https://www.google.com/url?q=https://ronjeffries.com/articles/016-09ff/defense/&sa=D&ust=1571365566452000)
+*   Developers Should Abandon Agile. [https://ronjeffries.com/articles/018-01ff/abandon-1/](https://www.google.com/url?q=https://ronjeffries.com/articles/018-01ff/abandon-1/&sa=D&ust=1571365566452000)
+*   The State of Agile Software in 2018. [https://martinfowler.com/articles/agile-aus-2018.html](https://www.google.com/url?q=https://martinfowler.com/articles/agile-aus-2018.html&sa=D&ust=1571365566452000)
+
+[significant_revisions:md]
+

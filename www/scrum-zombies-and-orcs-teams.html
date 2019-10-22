@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scrum Zombies &amp; Orcs teams | Darío Macchi</title>
+    <style>
+      
+      @charset "UTF-8";
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  color: #414141;
+  font-size: 11px;
+}
+
+article a {
+  text-decoration: none;
+  color: #000;
+}
+
+a img {
+  border: 0px;
+}
+
+.submenu {
+  float: right;
+  padding-top: 7px;
+}
+
+.orange_box {
+  padding: 0px 0px 0px 10px;
+  font-weight: bold;
+  background: #ff922c;
+  border: #ff922c 1px solid;
+  border-radius: 12px;
+  float: left;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.orange_box div.username {
+  padding: 0px 10px 0px 26px;
+  background: url('data:image/png;base64,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') no-repeat 0px 6px;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+}
+
+.orange_box ul {
+  border-left: #ec6100 1px solid;
+  padding: 0px 10px 0px 5px;
+  float: left;
+  overflow: hidden;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0px;
+}
+
+.orange_box ul li {
+  padding: 10px 0px 8px 0px;
+  float: left;
+}
+
+.orange_box ul li a {
+  border-left: #ff922c 1px solid;
+  font-weight: bold;
+  padding: 0px 0px 0px 5px;
+}
+
+.orange_box ul li a {
+  padding: 0px;
+}
+
+/* Footer style {*/
+.footer {
+  background-color: #00445c; height: 20px; color: #ffffff; overflow: hidden;
+}
+.footer a {
+  color: #ffffff
+}
+.footer a:hover {
+  text-decoration: underline
+}
+.footer ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 2px;
+}
+.footer li {
+  border-left: #ffffff 1px solid; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; float: left; padding-top: 0px; height:16px; margin-top:1px;
+}
+.footer li:first-child {
+  border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px; height:16px; margin-top:1px;
+}
+.clearfix:after {
+  display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+}
+.footer ul:after {
+  display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+}
+
+@media only screen and (min-width: 1170px) {
+  .details .dm-main-content.is-fixed .dm-board {
+    padding-top: 50px;
+  }
+
+  .container-fluid.dm-board {
+    max-width: 800px;
+    border: #d8d7d7 1px solid;
+  }
+}
+
+.details .dm-main-content.is-fixed .dm-board {
+  margin-bottom: 40px;
+}
+
+.details .container-fluid.dm-board h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0px 0px 0px;
+  margin: 0px 0px 6px 0px;
+}
+
+.details .container-fluid.dm-board h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.details .container-fluid.dm-board h3 {
+  font-size: 16px;
+  margin-bottom: 2px;
+  text-decoration: underline;
+}
+
+.details .container-fluid.dm-board h4 {
+  font-size: 14px;
+  font-style: italic;
+}
+
+article li {
+  margin-bottom: 4px;
+}
+
+article, section {
+  color: #414141;
+  font-size: 12px;
+  text-align: justify;
+}
+
+header, section {
+  margin: 0px 20px;
+}
+
+header p:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+article a:not(.lightbox_link), section a:not(.lightbox_link) {
+  font-weight: bold;
+  color: #069;
+  background: url(/assets/images/external.png) right 50% no-repeat;
+  padding-right: 12px;
+}
+
+article .duration {
+  margin-bottom: 0px;
+}
+
+section table {
+  margin: 0 auto;
+  min-width: 636px;
+}
+
+.summary {
+  font-style: italic;
+  padding-top: 8px;
+  cursor: none !important;
+  margin-bottom: 1rem;
+}
+
+table td, table th {
+  border: #d8d7d7 1px solid;
+  padding: 5px;
+}
+
+.essay .date {
+  width: 100%;
+  border-top: 1px solid;
+  text-align: right;
+}
+
+.essay p {
+  font-size: 14px;
+}
+
+
+      .essay {
+        margin-left: inherit;
+        border: 0px !important;
+      }
+
+      .details .container-fluid.dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .container-fluid.dm-board h3 {
+        font-weight: bold;
+        text-decoration: inherit;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+    </style>
+
+    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Darío Macchi" />
+<meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
+<meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
+
+<link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
+<link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-28220054-1']);
+_gaq.push(['_trackPageview']);
+
+(function () {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = (document.location.protocol === 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+function afterContentDraw () {
+  setTimeout(function () {
+    var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+    aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+    $.each(aList,
+      function (k, v) {
+        var $v = $(v);
+
+        $v.click(function () {
+          _gaq.push(['_trackPageview', $v.attr('href')]);
+        });
+        // $v.css('color','red');
+      });
+    
+    preloadImages($('a.fancybox'));
+  }, 1000);
+}
+
+function preloadImages (array) {
+  if (!preloadImages.list) {
+    preloadImages.list = [];
+  }
+  for (var i = 0; i < array.length; i++) {
+    var img = new Image();
+    img.src = $(array[i]).attr('href');
+    preloadImages.list.push(img);
+  }
+}
+
+</script>
+
+<!-- Default Statcounter code for Dariomac.com
+http://www.dariomac.com -->
+<script type="text/javascript">
+  var sc_project=9186547; 
+  var sc_invisible=1; 
+  var sc_security="dce954c9"; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js"
+  async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+  href="https://statcounter.com/" target="_blank"><img
+  class="statcounter"
+  src="https://c.statcounter.com/9186547/0/dce954c9/1/"
+  alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+<link rel="shortcut icon" href="/assets/favicon.ico" />
+
+<link href="https://plus.google.com/101333970265292795022" rel="publisher" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="/assets/images/d_social.png">
+<meta property="og:image:type" content="image/png">
+
+
+  </head>
+  <body>
+    <div class="board_view details">
+
+      <main class="dm-main-content is-fixed">
+        <div class="dm-tab-filter-wrapper">
+          <div class="dm-tab-filter">
+            <ul class="dm-filters d-block d-md-none">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+              </li>
+              <li class="filter"><a class="selected" href="#0">All</a></li>
+<li class="filter"><a href="/about-me">About Me</a></li>
+<li class="filter"><a href="/kanbancv">What is KanbanCV</a></li>
+
+            </ul> <!-- dm-filters -->
+          </div> <!-- dm-tab-filter -->
+
+          <div class="container-fluid float-left"></div>
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="container-fluid dm-board essay">
+          <article>
+            <div class="row featured">
+              <div class="col-md-12">
+                <header>
+                  <h1>Scrum Zombies &amp; Orcs teams</h1>
+                  <p class="date"></p>
+                </header>
+                
+                <section class="description">
+                  <p>
+                    The concept of “Zombie Scrum” has been around for a while. From the outside, they seem to be normal scrum teams, but they lack the beating heart of potentially releasable increment at the end of each sprint. Also, these teams have no intention to improve their situation and their stakeholders have forgotten its existence long time ago.
+
+An Orc Scrum Team is a new kind of team that I was trying to define for a while now.
+
+Beings of greater (evilish) power(managers) build Orc Scrum Teams to be in fashion, but they lead them as battle fodder in battles that, as the zombies, only can be won because of the elevated number of them. Old, rigid organizations are survivors, so Scrum didn’t change them as everyone supposed will happen; old, rigid organizations changed Scrum.
+                  </p>
+                </section>
+
+                <section>
+                  <h2>First part - Scrum</h2>
+<p>We will define some terms to better understand the background of this article and later, discuss the relation between them.</p>
+<h3>Scrum definition</h3>
+<p>The Scrum framework is a series of team behaviors that are based on values to achieve an objective. The Scrum attitude is the internal and personal experience that each one makes of the values. You can implement the Scrum framework without having a Scrum attitude; you can have a Scrum attitude and not implement the Scrum framework and you can implement the framework with the attitude.</p>
+<p>Without the Scrum attitude, Scrum practices are mere unfounded behaviors; it's like when children take a round plate and use it as a steering wheel: they execute the movements but don't achieve the goal.</p>
+<p>If your objective is to implement the Scrum methodology, you are already getting off to a bad start.</p>
+<p>Scrum provides a platform for people to work together effectively, while at the same time making it possible to relentlessly expose any problems that may arise to get in his way.</p>
+<h2>Second part - Zombies</h2>
+<p>I have a couple of questions for you.</p>
+<p>How many have experience working with Scrum? Ok… we have many raisen hands!!! Now, How many of you have done retrospectives like this in your scrum teams? Retrospectives where the team is challenged with creative activities, that pursue specific goals, make the team think bigger and about their future, analyze risks or just think about how they feel working together.</p>
+<p><img src="assets/z-nd-o-2.png#center" alt="" /></p>
+<p><img src="assets/z-nd-o-1.png#center" alt="" /></p>
+<p><img src="assets/z-nd-o-4.png#center" alt="" /></p>
+<p><img src="assets/z-nd-o-5.png#center" alt="" /></p>
+<p><img src="assets/z-nd-o-3.png#center" alt="" /></p>
+<p>Now, how many of you have done or do the <a href="https://www.google.com/url?q=http://retrospectivewiki.org/index.php?title%3DEveryday_Retrospective&amp;sa=D&amp;ust=1571365566438000">Good / Bad / Change</a> retrospective, sprint after sprint:</p>
+<p><img src="assets/z-nd-o-6.png#center" alt="" /></p>
+<p>If you are in the first group of lucky people… you want to stay on the good track and avoid becoming a Zombie Scrum Team… For the second group, well… YOU WON’T EAT MY BRAIN!</p>
+<h3>Zombie definition</h3>
+<p>A zombie, in its broadest sense, was once alive but has lost his sense of self-consciousness and identity, and only cares about the destruction of others around him, regardless of the circumstances, or the cost to himself. They compensate for this lack of intelligence in numbers, since the state of &quot;zombieism&quot; is almost always contagious, and spreads virulently, at a devastating cost to the society around them.</p>
+<h3>Zombie Scrum Team</h3>
+<p>The concept of “Zombie Scrum” has been around for a while. From the outside, they seem to be normal scrum teams, but they lack the beating heart of potentially releasable increment at the end of each sprint. Also, these teams have no intention to improve their situation and their stakeholders have forgotten its existence long time ago.</p>
+<p>For me, the definition is even worse because it is broader. For me, besides what has been said, a Zombie Scrum team has lost its soul. What this means? Well, I’ll show you with examples (RAAAAUUUUGHHHH in zombie language).</p>
+<h4>RAAAAUUUUGHHHH #1</h4>
+<p>“Complete functionality is a nice-to-have, but if is not in this sprint, we can end in in the next one, because..  we’re not going live at the end of a sprint anyways.”</p>
+<p>They have no sense of urgency, mostly because they don’t have clear goals or there’s no real understanding of value.</p>
+<h4>RAAAAUUUUGHHHH #2</h4>
+<p>“Hey, I don’t care if the product at a whole meet customer expectations… I’M HERE TO CODE!”</p>
+<p>Again, they don’t understand what valuemeans in agile. Delivering value has always been the priority of agile teams, and excellent code but a poor product has no value to end users.</p>
+<h4>RAAAAUUUUGHHHH #3</h4>
+<p>“Ok… last sprint we do all the sprint backlog, not a big deal… this sprint we end it with items being carried over to the next sprint… not a big deal too… there’s always a next Sprint and... iterations are artificial anyway!”</p>
+<p>There is usually an underlying cause behind this RAAAAUUUUGHHHH and that is the “Scrum cherry picking”. It consists in deliberately partial adoption of Scrum. E.g. extending sprint durations to ensure “done” sprints, cancelling sprint reviews because there is nothing to show or cancelling the retrospective due to lack of time.</p>
+<h4>RAAAAUUUUGHHHH #4 (the worst)</h4>
+<p>&quot;Seriously... Do we need that stupid retrospective meeting again? Whatever… I'm very bored here, so I will continue as is on another place.... Who cares? At least the SM came today… pfff… for what it's good for!”</p>
+<p>What is going on with this guy? Obviously he didn’t understand anything about agilism and Scrum. Retrospectives are the most important ceremony of Scrum… also, what is doing a bored dev in an agile team? And why doesn't he say that in retrospectives?</p>
+<p>Teams showing theseRAAAAUUUUGHHHHs are not agile… they don’t value working software, response to change, customer collaboration neither individuals and interactions… (do you remember the agile manifesto, right?). Some of you may be asking yourselves “but wait, they are Scrum teams, why they are no agile?”. Remember that scrum is a framework with a weak opinion on how software should be developed, allowing anti-agile methods to be incorporated and cloaked in agile terminology.</p>
+<h3>Treatments</h3>
+<p>Zombism in Scrum teams is curable following one or many of these advices:</p>
+<ul>
+<li>Speak with the team: many times just talking about some of these RAAAAUUUUGHHHHs with the team is enough to make them react.</li>
+<li>Benefit from the community: there are many people fighting against zombie Scrum teams (e.g. the <a href="https://www.google.com/url?q=https://medium.com/zombie-scrum-resistance&amp;sa=D&amp;ust=1571365566443000">Zombie Scrum Resistance</a>). They have several activities, retrospectives and tools proved to work with zombi teams.</li>
+<li>Stir the waters: this is my preferred; I like to shake the team to make it react. I prefer the use of specific retrospectives to make them analyze their current situation (i.e. smell-o-meter) and dream about the future.</li>
+<li>You can also try changing the length of sprints and start daily meetings reviewing the sprint goal.</li>
+</ul>
+<h2>Third part - Orcs</h2>
+<p>As we did with zombies, I have a couple of questions for you.</p>
+<p>How many of you go with laptops to retrospectives? How many of you have done daily meetings using slack or similar? How many of you have daily meetings where you report yourselves to the PM/SM who, also, is your boss? How many of you do Scrum and have a PM that assign tasks to each team member on planning meetings? Or worst, how many of you have a PM that do the planning based on it’s expert judgment and then assign the tasks to each team member?</p>
+<p>Ok ok… one at a time please!</p>
+<h3>Orc definition</h3>
+<p>They are of human shape, of varying size, ugly and filthy… But once, some were beautiful creatures. Although they have their own culture of low cleverness and crudity, they are generally portrayed as a subject race used as soldiers (or battle fodder) by beings of greater (evilish) power and intelligence. There are exceptions, as orcs sometimes have cunning leaders of their own kind. They will fight fiercely if forced or directed by a guided will, but tend to more chaotic behavior (including cowardice) if left to their own.</p>
+<h3>Orc Scrum Team</h3>
+<p>An Orc Scrum Team is a new kind of team that I was trying to define for a while now.</p>
+<p>Some authors say that scrum is the new waterfall, but I prefer to say that scrum is the new black! (more about orcs in a moment, be patient please). X is the new black phrase has its origin in the fashion world… and that’s exactly why I use this phrase. There are managers who are merely trying to show how modern and trendy their software development teams are, pushed by a market that believes everything should be agile. They are trying to be à la mode, being agiles, but also keeping the power that they have inside those (commonly) pyramidal structures.</p>
+<p>Zzzz… Hey! Wake up… this is the orcs part! The managers we talked about in the previous paragraph are those beings of greater (evilish) powerof orcs definition! They build Orc Scrum Teams to be in fashion, but they lead them as battle fodder in battles that, as the zombies, only can be won because of the elevated number of them. Old, rigid organizations are survivors, so Scrum didn’t change them as everyone supposed will happen; old, rigid organizations changed Scrum.</p>
+<p>What these managers (and many times, organizations) don’t understand is that scrum is not a software-development method at all. Think about the original Ken Schwaber’s book, named Agile Software Development with Scrum. Its title says that Scrum is an addition to agile, not a substitute for it. And review the case studies on that book too. You will see that the authors as  experienced agile professionals were leading the effort and the agility of the software development method was achieved through some variant of agile, typically Extreme Programming.</p>
+<p>I’ll show you Orcs examples (HRROOGA in orc language).</p>
+<h4>HRROOGA #1</h4>
+<p>[manager] - “Ok, so I will be the PO, you (mid-level manager) will be the SM… we will work in two week iterations, having a planning at the first monday, dailies each morning and last friday the team will show me what they have done and then we will do a brief retrospective… Ahhhh now we are agile!”</p>
+<p>This doesn't admit the slightest analysis.</p>
+<h4>HRROOGA #2</h4>
+<p>“We have been defining the new agile process the last two months… but now I think that we finally can apply it to all the teams of the company” (those teams range between 2 to 50 peoples)</p>
+<p>How do you spend 2 months maturing an agile process in a theoretical way? Put all those people to work and after 2 months you will have a process adjusted to each team that will be generating value on its own.</p>
+<h4>HRROOGA #3</h4>
+<p>“Ok guys… we need to do agile… We need to find something to take away our pain… any ideas?”and someone trembling in the background say “Scrum?”. A couple of weeks later they end with cosmetic “fixes” that let them continue doing things the way they've always done, but with cool agile names!</p>
+<h4>HRROOGA #4</h4>
+<p>[SM/PO in retrospective] - “We hired you [team] to be smart and figure things out. You’re supposed to self-organize to solve problems. You’re already falling behind on features. We need features, not tests! build what we want!”</p>
+<p>This is all wrong... but the worst thing is that without tests you can't ensure that you deliver full functionality and it's impossible to add value every sprint (because eventually you'll break something that worked).</p>
+<h3>Treatments</h3>
+<p>We're so sorry. There is no known treatment. We can advise you on ways to incorporate changes in your work in order to improve conditions... try to resemble the elf you were... but for sure scars will remain forever. You can:</p>
+<ul>
+<li>
+<p>Connect your teams to customers and business-value generation directly.</p>
+</li>
+<li>
+<p>Focus on products, not projects</p>
+</li>
+<li>
+<p>Improve technically and add agile software development practices (maybe you can start from Extreme Programming).</p>
+</li>
+<li>
+<p>Follow Ron Jeffries advice:</p>
+</li>
+<li>
+<p>work on one or two of the items, complete those entirely — fully packaged, tested, and working — and then do another, so that at the end of the boxcar you have something that you can absolutely call completed.</p>
+</li>
+<li>
+<p>Take the inevitable abuse for not completing everything,</p>
+</li>
+<li>
+<p>and try to drive planning and expectations from reality, not the fantasy of what was demanded, that you never had a chance to do.</p>
+</li>
+</ul>
+<p>In Jeffries own words: “I’ve been in those situations, and other than leaving, the best I know is to do good work, keep it visible, running, tested, and integrated, and help people to see reality.”</p>
+<h2>Final thoughts</h2>
+<p>We (the agile movement) are in decisive moments, where we recognize what has been done in the last 10 years but we also know that we are not what we were supposed to be. Zombies and Orcs are far away the original Agile Manifesto spirit and need to return to the roots and start again. But not only them… all the agile movement need it. I finish this article with thoughts of some of those guys that signed the original Agile Manifesto.</p>
+<ul>
+<li>“Developers Should Abandon Agile” - May 2018, Ron Jeffries.</li>
+<li>“So that's our current battle. (...), it's realizing that a lot of what people are doing and calling agile, just isn't.” - August 2018, Martin Fowler.</li>
+<li>“Our first problem is dealing with the Agile Industrial Complex” - August 2018, Martin Fowler.</li>
+<li>“The second problem is the lack of recognition of the importance of technical excellence” - August 2018, Martin Fowler.</li>
+<li>In “The Land that Scrum Forgot,” Robert Cecil Martin (Uncle Bob) talks about the important technical fundamentals (like test-driven development) that were being left out of Scrum certification programs.</li>
+</ul>
+
+                </section>
+
+                  <section>
+                    <h2 id="FurtherReading">Further Reading</h2>
+                    <ul>
+<li>Zombie Scrum - Symptoms, Causes and Treatment. <a href="https://www.google.com/url?q=https://www.scrum.org/resources/blog/zombie-scrum-symptoms-causes-and-treatment&amp;sa=D&amp;ust=1571365566449000">https://www.scrum.org/resources/blog/zombie-scrum-symptoms-causes-and-treatment</a></li>
+<li>RAAAAUUUUGHHHH: The Wonderful (And Painful) Art Of Voicing A Zombie. <a href="https://www.google.com/url?q=https://www.audible.com/blog/arts-culture/raaaauuuughhhh-the-wonderful-and-painful-art-of-voicing-a-zombie/&amp;sa=D&amp;ust=1571365566450000">https://www.audible.com/blog/arts-culture/raaaauuuughhhh-the-wonderful-and-painful-art-of-voicing-a-zombie/</a></li>
+<li>The Rise Of Zombie Scrum: Symptoms, causes and what you can do about it. <a href="https://www.google.com/url?q=https://medium.com/the-liberators/the-rise-of-zombie-scrum-cd98741015d5&amp;sa=D&amp;ust=1571365566450000">https://medium.com/the-liberators/the-rise-of-zombie-scrum-cd98741015d5</a></li>
+<li>Zombie Scrum Resistance. <a href="https://www.google.com/url?q=https://medium.com/zombie-scrum-resistance&amp;sa=D&amp;ust=1571365566450000">https://medium.com/zombie-scrum-resistance</a></li>
+<li>How to Succeed With Zombie-Scrum?. <a href="https://www.google.com/url?q=https://www.barryovereem.com/how-to-succeed-with-zombie-scrum/&amp;sa=D&amp;ust=1571365566451000">https://www.barryovereem.com/how-to-succeed-with-zombie-scrum/</a></li>
+<li>Why Scrum sucks. <a href="https://www.google.com/url?q=https://techbeacon.com/app-dev-testing/why-scrum-sucks&amp;sa=D&amp;ust=1571365566451000">https://techbeacon.com/app-dev-testing/why-scrum-sucks</a></li>
+<li>“Scrum is just Waterfall in disguise”. <a href="https://www.google.com/url?q=https://medium.com/serious-scrum/scrum-is-just-waterfall-in-disguise-3476203d0f00&amp;sa=D&amp;ust=1571365566452000">https://medium.com/serious-scrum/scrum-is-just-waterfall-in-disguise-3476203d0f00</a></li>
+<li>Dark Scrum. <a href="https://www.google.com/url?q=https://ronjeffries.com/articles/016-09ff/defense/&amp;sa=D&amp;ust=1571365566452000">https://ronjeffries.com/articles/016-09ff/defense/</a></li>
+<li>Developers Should Abandon Agile. <a href="https://www.google.com/url?q=https://ronjeffries.com/articles/018-01ff/abandon-1/&amp;sa=D&amp;ust=1571365566452000">https://ronjeffries.com/articles/018-01ff/abandon-1/</a></li>
+<li>The State of Agile Software in 2018. <a href="https://www.google.com/url?q=https://martinfowler.com/articles/agile-aus-2018.html&amp;sa=D&amp;ust=1571365566452000">https://martinfowler.com/articles/agile-aus-2018.html</a></li>
+</ul>
+
+                  </section>
+
+
+
+              </div>
+            </div>
+        </div> <!-- container-fluid dm-board -->
+
+        <a href="/" class="logo">
+          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+        </a>
+        <div class="submenu" style="position: fixed; top: 0; right: 0; z-index: 10;">
+  <div class="orange_box">
+    <a class="url" href="/about-me">
+        <div class="username">
+            Darío Macchi
+        </div>
+    </a>
+    <ul>
+      <li id="geo">
+        <a target="_blank" href="http://maps.google.com/maps?q=montevideo+city+uruguay&amp;hl=en&amp;sll=-32.522779,-55.765835&amp;sspn=5.325828,9.876709&amp;t=v&amp;hnear=Montevideo,+Montevideo+Dept,+Uruguay&amp;z=11" itemprop="url">
+            Montevideo
+        </a><span>-</span>
+        <a href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&amp;ie=UTF-8&amp;hq=&amp;hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&amp;gl=uy&amp;ei=KiKjU6fpE-HNsQSlqYGoCg&amp;ved=0CBsQ8gEwAA" itemprop="url">
+          Uruguay
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/contact-me">Contact me</a></strong></li>
+    </ul>
+  </div>
+</div>
+
+      </main> <!-- dm-main-content -->
+    </div>
+    <!--</div>-->
+
+    <div class="footer" style="text-align:center; width:100%;">
+  <div style="text-align:center; width:100%">
+  <ul>
+    <li style="margin-top: 0px;" class="d-none d-lg-block">
+      <a href="javascript:void(0);" onclick="window.open('http://www.copyscape.com/?q=' + escape(window.location) + '&src=front'); return false;">
+        <IMG src="/assets/images/cs-wh-3d-234x16.gif" alt="Protected by Copyscape Duplicate Content Detector" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." width="234" height="16" border="0">
+      </A>
+    </li>
+    <li><a style="padding-top:1px" href="/kanbancv">KanbanCV</a> © 2011-2019 <a style="padding-top:1px" href="/sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap</a></li>
+    <li>
+      <a href="http://uy.linkedin.com/in/dariomac" style="text-decoration:none;" target="_blank">
+        <img src="/assets/images/linkedin.png" width="17" height="16" alt="View Darío Macchi's LinkedIn profile" border="0" />
+      </a>
+    </li>
+    <li>
+      <a href="http://twitter.com/_dariomac" target="_blank">
+        <img src="/assets//images/twitter-16.png" width="15" height="15" alt="View my twitter"/>
+      </a>
+    </li>
+    <li class="d-none d-lg-block>
+      <a href="http://www.researchgate.net/profile/Dario_Macchi/" target="_blank">
+        <img src="/assets/images/researchgate.png" width="15" height="15" alt="View my ResearchGate profile"/>
+      </a>
+    </li>
+    <li style="margin-top: 0px" class="d-none d-lg-block">
+      <a href="http://humanstxt.org/humans/dario-macchi/" target="_black">
+        <img src="/assets/images/humanstxt-transparent-color.png" width="84" height="15" />
+      </a>
+    </li>
+  </ul>
+  </div>
+</div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      multilanguagePage: true,
+      gaTrack: true,
+      gaId: 'UA-28220054-1',
+      floatPosition: google.translate.TranslateElement.FloatPosition.BOTTOM_LEFT
+    });
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+
+
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+    <script>
+      $(".fancybox").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none'
+      });
+    </script>
+  </body>
+</html>
