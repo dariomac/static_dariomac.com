@@ -186,3 +186,12 @@ There should be a reasonable relationship between the scope of the developed fun
 
 [significant_revisions:md]
 _Set 22, 2015_: Original Publication on dariomac.com and thinkapps.com
+
+[attachments:json]
+  [{
+    "filename": "thinkapps_tweet.jpg",
+    "description": "Tweet promoting the article."
+  },{
+    "filename": "thinkapps-code-reviews-in-a-agile-way.wmv",
+    "description": "Me talking about this article to a broader audience throw ThinkApps network (2015-07-17)."
+  }]
