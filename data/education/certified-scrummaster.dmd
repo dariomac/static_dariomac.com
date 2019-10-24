@@ -116,3 +116,9 @@ This two-day course teaches the principles and practices that make ScrumMasters 
   },{
     "filename": "edu_CSM_10.jpg"
   }]
+
+[attachments:json]
+  [{
+    "filename": "edu-CSM-notes.pdf",
+    "description": "These are the notes from the course."
+  }]
