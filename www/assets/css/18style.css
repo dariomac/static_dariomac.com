@@ -776,3 +776,7 @@ article iframe[src*="#center"] {
   height: 16px;
   padding-right: 0px !important;
 }
+
+.board_view {
+  overflow-x: hidden;
+}
