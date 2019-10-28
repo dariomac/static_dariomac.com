@@ -80,53 +80,5 @@ Attachments
 
 
 [internal:raw]
-Original pptx: 8_hours_as_vairix_developer.pptx  
-
-
-
-EntryDetail Template
---------------------
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Darío Macchi | {{title}}</title>
-
-    <!--#include virtual="../common/_common_html_header.html" -->
-
-    <script type="text/javascript" src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
-    <script type="text/javascript" src="/assets/js/kanbancv.js"></script>
-
-    <script type="text/javascript">
-      $(function() {
-        //board_dimensions.init(); //draw_kanban_board(boardArray, false, tasksArray, false);
-        afterContentDraw();
-
-        $(".fancybox").fancybox({
-          openEffect  : 'none',
-          closeEffect : 'none'
-        });
-      });
-    </script>
-
-  </head>
-  <body itemscope itemtype="http://schema.org/WebPage">
-    <div class="wrapper">
-      <div class="header">
-        <div class="center"></div>
-      </div>
-      <div class="board_view">
-        <!--#include virtual="../common/_page_header.html" -->
-        <div id="board_container">
-          <div class="content entry">
-            <%= yield %>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--#include virtual="../common/_page_footer.html" -->
-
-  </body>
-</html>
+Original pptx: 8_hours_as_vairix_developer.pptx 
 
