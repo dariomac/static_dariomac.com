@@ -79,8 +79,10 @@ app.get('/status', function (req, res) {
   });
 });
 
-app.listen(3000, function () {
-  console.log('\r\nDariomac.com server listening on: 3000');
+const port = process.env['PORT'] || 3000;
+
+app.listen(port, function () {
+  console.log(`\r\nDariomac.com server listening on: ${port}`);
 });
 
 function getQueryString (urlWithQS) {
