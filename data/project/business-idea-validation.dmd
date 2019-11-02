@@ -1,0 +1,155 @@
+
+{
+  "title": "Business Idea Validation",
+  "date": "2019-11-02",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#FF6E19",
+    "columnid": "progress_2",
+    "content": "Tools to early ideas validation and risk reduction",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/business-idea-validation",
+    "position": "20191102",
+    "priority": "Average",
+    "subtaskdetails": [{
+      "taskid": "1",
+      "title": "Write the product offering",
+      "assignee": "None",
+      "completiondate": "2014-06-28",
+      "assignedtome": 0
+    }, {
+      "taskid": "2",
+      "title": "Start serving clients",
+      "assignee": "None",
+      "completiondate": "2015-04-01",
+      "assignedtome": 0
+    }],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Business Idea Validation",
+    "type": "Project"
+  }
+}
+
+---
+
+[summary:string]
+
+[download_link:string]
+
+[platform:string]
+
+[link:string]
+
+[short_description:string]
+
+[description:md]
+
+You are an entrepreneur and you are sure that your product/service is the best out there to solve a problem/issue but..., have you really tested with real people to see how they react?
+
+Most of the time we have an idea and we think that is the best of all. It is not until we show to other people that we start to realize that it is far to be ready. In fact, none of the most successful entrepreneurships born in the same way as we see them today. They started being a rough approximation of what people really needed and after many experiments, tests and validation stages they became today products. If you don’t believe me, just check the story about **YouTube’s original idea of being a video version of an online dating service**.
+
+_"Fail Early to Succeed Sooner"… I prefer "Test Early to Succeed Sooner, better"._
+
+Here’s is my workflow to perform a serie of tests/experiments/learning experiences to progressively reduce risk and uncertainties:
+
+<object width="100%" height="100%" data="assets/startup-idea-validation.svg" type="image/svg+xml"></object>
+
+This workflow is heavily inspired in **Lean concepts** and its **learn-build-measure** cycle so I can offer you two possible paths:
+
+1.  The first one is for those entrepreneurs that needs to define their customer in descriptive terms and write down the problem to be solved before start with the validation stage.I can help you with both and also, with the list of assumptions you have done that could lead to the success or failure of the entrepreneur.
+    
+2.  The second path is thought for those that have an “intuitive solution” when they arrive to me and want to start the validation from there.
+    
+
+In both cases, I take the most riskiest elements (assumptions/risks) or the initial idea and start the **Explore-Build-Measure** cycle. You can start anywhere and, you can get out the cycle whenever you think that the idea/risky element is validated. But if it is not validated, you need to start a new pivot and maybe change the customer definition or make slight changes to the problem definition/initial idea.
+
+Validation tools
+----------------
+
+If learning is the essential unit of progress for start-ups, any effort that is not absolutely necessary for learning what customers want should be eliminated. So how do we do that?
+
+*   **Prototype/wire-frame definitions**: wire-frame specification of your solution or build a functional prototype to collect feedback on basic functionality.
+    
+
+*   **Landing pages**: is an easy and inexpensive way to test interest in a product or service. It is a decent looking page with a clear call to action. It can be an email box, a form, a shopping cart. Anything you think can simulate how a user will act when the real application runs. If a lot of people are interested, it's a great sign that you're on the right track!
+    
+
+*   **[Minimum Viable Product](/what-is-an-mvp)**: is a product that has only those features (and no more) that allow you to send a product that resonates with early adopters; some of whom will pay you money or give you feedback.
+    
+
+*   **Hollow (_concierge_) MVP**: looks and feels like a full product on its surface, but it’s being faked on the back end. This approach is great for a non-technical founder looking for a robust proof of concept. It's called concierge because it could be done delivering your product through a physical service, hand-holding the customer. This method has also been referred to as Wizard of Oz, ie. faking the product with as little technology as possible. 
+    
+*   **Working MVP**: it is a real implementation of the final product, working right as the user expect. However, the cleverness here is to choose the right functions (that’s why it’s so important to have the prioritized list of functionalities) to add value without too much cost.
+    
+*   **Mobile MVP**: it is a working software developed in a technology that let you run the same developed app in any device (Iphone, Android, tablets, and a really long etc.). You can see more [here](/mobile-mvps-using-cordova).
+
+*   **Ad-words, Facebook, Linkedin campaigns**: Target publicity campaigns to those visitors that belong to potential clients group using the most suitable of these services.
+    
+*   **Google Analytics**: useful to analyze your results and to understand what your actual conversion rate is. 
+
+*   **Survey/interview design, execution and analysis**: I use borrowed tools from sociology to build the most accurate and well designed questionnaires; later I put all the power of computer data analysis to get the information needed to satisfy your initial goals.
+    
+*   **Literature reviews**: I also have the tools to perform an analysis of the related literature to find out more information about the chosen risky element.
+
+<table><colgroup><col width="*"><col width="*"><col width="*"><col width="*"></colgroup>
+<tbody>
+<tr>
+<td><strong>Tool/Stage</strong></td>
+<td style="text-align: center;"><strong>Explore</strong></td>
+<td style="text-align: center;"><strong>Build</strong></td>
+<td style="text-align: center;"><strong>Measure</strong></td>
+</tr>
+<tr>
+<td>Prototype/wire-frame definitions</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Landing pages</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Minimum Viable Product</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Ad-words, Facebook, Linkedin campaigns</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td>Google Analytics</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Survey/interview design, execution and analysis</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td>Literature reviews</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: center;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+
+After running your tests and looking at all your data, you will have **INFINITELY more perspective** on if you want to move forward with your business idea; and if so, which direction to take it in.

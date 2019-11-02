@@ -1,0 +1,113 @@
+
+{
+  "title": "Startup Advisory Services",
+  "date": "2019-11-01",
+  "layout": "project",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#FF6E19",
+    "columnid": "progress_2",
+    "content": "Advisory services aimed to help startups",
+    "datebox": null,
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/startup-advisory-services",
+    "position": "20191101",
+    "priority": "Average",
+    "subtaskdetails": [{
+      "taskid": "1",
+      "title": "Write the product offering",
+      "assignee": "None",
+      "completiondate": "2014-06-28",
+      "assignedtome": 0
+    }, {
+      "taskid": "2",
+      "title": "Start serving clients",
+      "assignee": "None",
+      "completiondate": "2015-04-01",
+      "assignedtome": 0
+    }],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Startup Advisory Services",
+    "type": "Project"
+  }
+}
+
+---
+
+[summary:string]
+
+[download_link:string]
+
+[platform:string]
+
+[link:string]
+
+[short_description:string]
+
+[description:md]
+Why me?
+-------
+
+I've been part of a lot of startups and that's why I know what it feels like to start with something from scratch. Only entrepreneurs know the challenges that arise from new ideas and the anxiety and doubts that they raise.
+
+Although I'm not an expert in all areas of business and technical issues, I think I can add my two cents in my field of specialization.
+
+If you are an entrepreneur you can contact me, tell me what your idea is and evaluate the venture from a technical point of view. With this information I will be able to offer you the ideal service for you.
+
+<object width="100%" height="100%" data="assets/startup-advisory-services.svg" type="image/svg+xml"></object>
+
+The previous diagram shows how we reduce uncertainty when we move from left to right (see the cone at the background). Therefore, if you ask for a budget in the post-brainstorm stage, my estimate will have a much higher margin of error than if you do it in the later stages. In addition, my workflow allows entrepreneurs to feel completely free to continue with me or not.
+
+I want to be with you at all stages of your venture, but I don't want you to feel tied to me.
+
+While I'd like to work with you forever, you're free to come out at any stage; you can do the workshop alone, or the workshop and test the idea in the marketplace with me, or just try it out with someone else and later come back with me to develop the final product.
+
+Services according to maturity level
+------------------------------------
+
+### PostBrainstorm Level:
+
+_"for those who just have the idea and can't define the features of the software they need..."_
+
+Inception workshop: is an efficient way to clarify and shape the product solution, get project stakeholders "on the same page" and inspire the team. It consists of a short, remote or face-to-face workshop (~ one week) that is adapted in each instance according to the characteristics of the participants.  The outputs of this workshop are:
+
+*   list of business objectives and risks
+*   prioritized list of software functionalities
+*   roles and "mock-ups" to know the main flows of the system
+*   list of skills that the developer/supplier of such software must have
+*   list of negotiable/non-negotiable items
+
+### PreValidation Level:
+
+_"for entrepreneurs who know exactly what to test, how to measure results and what to learn about them..."_
+
+*   Creation of landing pages to test the viability of your idea (analysis of access records, subscriptions, keywords, etc.).
+*   Development of prototypes or wire-frames to "see" the future product and be able to make quick changes on it.
+*   Development of a [Minimum Viable Product (MVP)](/minimum-viable-product) as a way to quickly reach the market, get feedback and position yourself.
+*   These services are accompanied by advice on feedback techniques and distribution where you will see the pros and cons of each strategy so you can choose the one that best suits your needs.
+
+### PostValidation Level:
+_"for those who are ready to build the final product..."_
+
+*   Development of the complete product generating "potentially marketable" versions of the software every 2 weeks.
+*   Development in web and mobile technologies .
+*   Use of agile methodologies  and practices to manage the team (full-stack developers) and the project..
+*   In addition to software development, deployment and corrective/adaptive maintenance.
+
+* * *
+
+### What if my startup is about software development?
+
+If your business is software development, I can help you with team coaching and advice in different areas. I can advise you about development methodologies, train your team in agile practices and specific technologies. I can also hold meetings with managers to discuss contract development and other business areas.
+
+*   Advice on software development methodologies based on the characteristics and capabilities of your team, the type of projects they carry out and their technological level.
+
+*   Training in agile practices and group activities.
+*   Technical talks about the technologies I master.
+*   Management talks on types of contracts and business strategies.
