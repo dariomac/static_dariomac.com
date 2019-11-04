@@ -747,6 +747,10 @@ xcustom form elements
   margin-bottom: 20px;
 }
 
+.attachments .filename {
+  display: none;
+}
+
 .image_gallery {
   padding-left: 6px;
   padding-right: 0px;

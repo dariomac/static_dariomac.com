@@ -58,6 +58,10 @@
   padding-top: 2px;
 }
 
+.attachments .filename {
+  display: table-cell;
+}
+
 @media only screen and (min-width: 1170px) {
   /*.dm-tab-filter {*/
     /* tabbed navigation on big devices */

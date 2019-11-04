@@ -167,7 +167,7 @@ article .duration {
 
 section table {
   margin: 0 auto;
-  min-width: 636px;
+  max-width: 636px;
 }
 
 .summary {

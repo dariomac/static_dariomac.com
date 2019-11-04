@@ -4,15 +4,17 @@
     <tbody>
       <tr>
         <th>Icon</th>
-        <th>File</th>
+        <th class="filename">File</th>
         <th>Description</th>
       </tr>
       {{#each content.attachments}}
       <tr>
-        <td>
-          <span class="file_icon {{icon}}">&nbsp;</span>
+        <td style="text-align: center;">
+          <a href="/assets/{{ filename }}" class="lightbox_link">
+            <img src="/assets/images/file-types/{{ getFileIcon filename }}.svg" style="width: 48px;" alt="{{ filename }}">
+          </a>
         </td>
-        <td>
+        <td class="filename">
           <a href="/assets/{{ filename }}">{{ filename }}</a>
         </td>
         <td>
