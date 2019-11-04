@@ -22,7 +22,6 @@ Lanes
 Article, Education, Me, Experience, Quote, Essay
 
 
-
 Colors
 ------
 
