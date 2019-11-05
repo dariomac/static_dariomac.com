@@ -27,6 +27,9 @@
 
 ---
 
+[summary:string]
+Short workshop (part of the agile kickstarting of the project) that aims to identify the essential features of the software, technological risks and have an idea of the size and effort involved in its development.
+
 [download_link:string]
 
 [platform:string]
@@ -34,7 +37,7 @@
 [link:string]
 
 [short_description:string]
-Short workshop with the goal of identify essential software features, technological risks and get an idea of  size & effort involved in its development.
+Short workshop with the goal of identify essential software features, technological risks and get an idea of size & effort involved in its development.
 
 [description:md]
 The Inception Workshop is a short workshop which has the goal of identify the essential software features for a venture, their technological risks and get an idea of the size & effort involved in its development.
