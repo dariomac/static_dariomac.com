@@ -45,6 +45,9 @@
 
 ---
 
+[summary:string]
+In the technical literature of Software Engineering, references about the benefits of software inspections are abundant. On the contrary, some authors raise the problem of the scarce adoption of this process. From this position, we review the literature to produce a map of the most researched issues in the area, the factors that cause low adoption and possible solutions. The main conclusion was that most of the factors causing low adoption are related to developers' perceptions of the process, lack of training and some characteristics of the process such as rigidity, complexity and the difficulty of connecting the effort made with the quality of the final product. These factors should be studied in future work.
+
 [authors:string]
 Darío Macchi, Martín Solari
 
