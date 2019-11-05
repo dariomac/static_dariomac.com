@@ -13,7 +13,7 @@
   "main": "server",
   "scripts": {
     "lint": "standard 'lib/*.js' --env node --verbose | snazzy; standard 'test/*.js' --env mocha --verbose | snazzy",
-    "build": "node builder.js data/ www/ layouts/ --clear-all",
+    "build": "find . -name '.DS_Store' -type f -delete && node builder.js data/ www/ layouts/ --clear-all",
     "debug-build": "LOG_LEVEL=debug NODE_ENV=development node --inspect builder.js data/ www/ layouts/ --clear-all",
     "findup": "echo && find data/*/assets -maxdepth 1 -type f -printf '%f\\n' | sort | uniq -d | xargs -I[filename] -n1 sh -c \"find data/ -name [filename] -printf 'data/%P\\n' && echo\"",
     "update-searcher": "rm -rf assets/build && cp -r ../dm-searcher/build/ assets/build",
