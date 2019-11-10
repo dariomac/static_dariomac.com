@@ -27,6 +27,8 @@
 }
 
 ---
+[summary:string]
+This article is about what code reviews are and what they are for. Then I explain how to do revisions on two levels: a first level of peers and a second level involving an external reviewer.
 
 [pub_date:string]
 2015-09-22
@@ -35,8 +37,6 @@
 New to the concept of code review? This post explains what code review is and why it’s important.
 
 [body:md]
-New to the concept of code review? This post explains what code review is and why it's important.
-
 Disclaimer: The following document is heavily based on the Mozilla Code Review FAQ [\[1\]][\[2\]]. But my team at [VAIRIX](http://vairix.com/ "VAIRIX") has made many adaptations in order to reflect the two-level review process that is part of our development methodology.
 
 ## What is code review?
