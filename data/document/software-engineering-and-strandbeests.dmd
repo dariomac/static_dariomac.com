@@ -27,6 +27,8 @@
 }
 
 ---
+[summary:string]
+This article is about how to expose students to the multidimensional nature of Software Engineering processes. I use the Strandbeests' analogy, an ingenious blending of art and engineering, to show a complex system made by simple pieces working in a coordinated way.
 
 [pub_date:string]
 2013-08-07
