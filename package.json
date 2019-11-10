@@ -18,6 +18,7 @@
     "findup": "echo && find data/*/assets -maxdepth 1 -type f -printf '%f\\n' | sort | uniq -d | xargs -I[filename] -n1 sh -c \"find data/ -name [filename] -printf 'data/%P\\n' && echo\"",
     "update-searcher": "rm -rf assets/build && cp -r ../dm-searcher/build/ assets/build",
     "debug": "LOG_LEVEL=debug NODE_ENV=development node --inspect server.js",
+    "deploy": "curl -X POST https://www.dariomac.com/pullit",
     "start": "node server.js"
   },
   "dependencies": {
