@@ -1,0 +1,105 @@
+{
+  "title": "Mejora en calidad de revisiones de software mediante técnicas de lectura",
+  "date": "2019-11-10",
+  "layout": "experience",
+  "json": {
+    "assignee": "",
+    "blocked": "0",
+    "color": "#AD4647",
+    "columnid": "progress_2",
+    "content": "Mejora en calidad de revisiones de software mediante técnicas de lectura",
+    "datebox": "Mid 2020",
+    "extlink": "https://eci2020.dc.uba.ar/",
+    "laneid": "Experience",
+    "leftbox": "Buenos Aires - Argentina",
+    "leftmsg": "",
+    "linkto": "/eci2020-course-proposal",
+    "position": "0",
+    "priority": "Average",
+    "subtaskdetails": [{
+      "taskid": "1",
+      "title": "Submitted to ECI 2020 organization.",
+      "assignee": "None",
+      "completiondate": "2019-11-10",
+      "assignedtome": 0
+    },
+    {
+      "taskid": "1",
+      "title": "Waiting for approval.",
+      "assignee": "None",
+      "completiondate": "",
+      "assignedtome": 0
+    }],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Mejora en calidad de revisiones de software mediante técnicas de lectura",
+    "type": "0"
+  }
+}
+
+---
+
+[duration:string]
+1 week - 15 hours (3hrs per day).
+
+[place_url:string]
+
+[place:string]
+
+[content:md]
+A lo largo de nuestras carreras (y las de nuestros profesionales) hemos sido capacitados y entrenados para construir diversos tipos de artefactos de software, modelos con distintos niveles de abstracción que ofrecen soluciones computacionales a problemas. Si bien en cursos relacionados con QA se hace foco en la práctica de revisiones (particularmente en las inspecciones formales), lo cierto es que no se hace foco en sus distintos niveles de formalidad ni en aquellas técnicas que podrían mejorar el resultado de las mismas. En definitiva, nuestros profesionales no reciben formación que les permita leer eficiente y efectivamente las abstracciones que somos capaces de construir.
+
+Este curso busca contribuir en este aspecto, otorgando al alumno herramientas para realizar la lectura de distintos artefactos según la etapa del proceso de ingeniería en la que se encuentren parados. Cuando hablamos de realizar la lectura de un artefacto, hablamos de procesar la abstracción en el menor tiempo posible, maximizando su comprensión. Como corolario de lo anterior, el aumento de la comprensión puede llevar a la detección de defectos en el artefacto objeto de estudio. Visto de esta forma, las revisiones contribuyen a la capacitación, transferencia de conocimiento, empoderamiento de artefactos y aseguramiento de la calidad de los mismos.
+
+[projects:md]
+### Lunes
+
+*   Definición de revisión de software
+*   Importancia, ventajas e impacto en la industria
+*   Qué puede ser revisado?
+*   Revisiones y cultura de equipo
+*   Planificación de las revisiones
+*   Tipo de revisiones
+*   Problemas de revisiones y técnicas de lectura
+*   Ad-hoc reading
+
+### Martes
+
+*   Requerimientos: técnicas de lectura
+    *   Checklist-based reading (CBR)
+    *   Defect-based reading (DBR)
+    *   Shift-left testing y su relación con las revisiones
+      *   Test-case driven reading (TcDR)
+    *   Perspective-based reading (PBR)
+
+### Miércoles
+
+*   Requerimientos: técnicas de lectura
+    *   Combined reading technique
+*   Diseño: técnicas de lectura
+    *   Usage-based reading (UBR)
+    *   Traceability-based reading (TBR)
+*   Arquitectura: técnicas de lectura
+    *   Traceability-based reading (TBR)
+*   Código: técnicas de lectura
+    *   Stepwise abstraction
+    *   Object oriented code reading
+    *   Abstraction-driven reading (ADR)
+
+### Jueves
+
+*   Código: técnicas de lectura
+    *   Object oriented code reading
+      *   Use-case reading (UCR)
+    *   Object-Oriented Framework code reading
+    *   Ejercicios con código seleccionado de github
+    *   Revisiones en entornos ágiles (rubber duck, github, herramientas virtuales)
+    *   Revisiones basadas en riesgos y criterios para elegir qué código revisar
+
+### Viernes
+
+*   Áreas de investigación
+    *   Revisiones y técnicas de lectura para user stories
+    *   Revisiones y técnicas de lectura para MDD
+    *   Revisiones y técnicas de lectura para blockchain

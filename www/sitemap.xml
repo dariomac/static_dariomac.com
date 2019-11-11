@@ -404,6 +404,12 @@
       <priority>0.5</priority>
     </url>
     <url>
+      <loc>http://www.dariomac.com/eci2020-course-proposal</loc>
+      <lastmod>2019-11-10</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
       <loc>http://www.dariomac.com/inception-workshop-on-agiles2015</loc>
       <lastmod>2017-10-09</lastmod>
       <changefreq>monthly</changefreq>
