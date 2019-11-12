@@ -1,0 +1,12 @@
+{{#if content.related_topics}}
+<section class="related-topics">
+  <h2>Related topics</h2>
+  <ul>
+    {{#each content.related_topics}}
+      <li>
+        <a href="{{ linkto }}">{{ title }}</a>
+      </li>
+    {{/each}}
+  </ul>
+</section>
+{{/if}}

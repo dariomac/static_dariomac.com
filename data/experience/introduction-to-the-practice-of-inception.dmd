@@ -26,6 +26,8 @@
 }
 
 ---
+[summary:string]
+Presentation organized by the Center for Innovation and Entrepreneurship (CIE) at ORT University with the aim of introducing entrepreneurs to our initial workshop and how we use it to help startups build their MVPs.
 
 [duration:string]
 June 10th 2015 (2 hs)
@@ -40,6 +42,21 @@ Universidad ORT Uruguay - CIE
 This was a presentation organized by the Centro de Innovación y Emprendimientos (CIE) at ORT University. The idea was to let innovators know about our inception workshop and how we use it to help startups to build their MVPs.
 
 [projects:md]
+
+[related_topics:json]
+  [{
+    "title": "What is an MVP?",
+    "linkto": "/what-is-an-mvp"
+  },{
+    "title": "Inception Workshop for Entrepreneurs",
+    "linkto": "/inception-workshop-for-entrepreneurs"
+  },{
+    "title": "Business Idea Validation",
+    "linkto": "/business-idea-validation"
+  },{
+    "title": "Startup Advisory Services",
+    "linkto": "/startup-advisory-services"
+  }]
 
 [related_images:json]
   [{
