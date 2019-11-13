@@ -97,5 +97,22 @@
       "\t\t\"filename\": \"blablabla2.jpg\"",
       "\t}]"
     ]
+  },
+
+  "related_topics": {
+    "scope": "markdown",
+    "prefix": "related_images",
+    "body": [
+      "[related_topics:json]",
+      "\t[{",
+      "\t\t\"title\": \"This is the link text\",",
+      "\t\t\"click_bait\": \"This is a clickbait title\",",
+      "\t\t\"linkto\": \"This is the href of the link\"",
+      "\t},{",
+      "\t\t\"filename\": \"This is the link text\",",
+      "\t\t\"click_bait\": \"This is a clickbait title\",",
+      "\t\t\"description\": \"This is the href of the link\"",
+      "\t}]"
+    ]
   }
 }

@@ -91,6 +91,13 @@ This year they accepted my proposal to talk about "Zombies & Orcs Scrum Teams", 
     "description": "This is the original jis.uy website with the agenda."
   }]
 
+[related_topics:json]
+  [{
+    "title": "Scrum Zombies & Orcs teams",
+    "click_bait": "Discussion about these two kind of Scrum Teams: Zombies & Orcs",
+    "linkto": "/scrum-zombies-and-orcs-teams"
+  }]
+
 [projects:md]
 ### Agenda
     
