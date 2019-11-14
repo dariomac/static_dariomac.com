@@ -7,7 +7,7 @@
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",
-    "columnid": "done_3",
+    "columnid": "progress_2",
     "content": "What to do when you wake up but your brain doesn't.",
     "datebox": "2019-06-11",
     "extlink": null,
@@ -20,7 +20,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": null,
+    "tags": "#gdoc",
     "title": "Ways to be productive when you're brain is dead",
     "type": "0"
   }
@@ -34,34 +34,8 @@
 [short_description:string]
 There are certain types of tasks that most of us either have to do or should do, even managers and top level executives, that don't require you to be at the top of your game.
 
-[body:md]
-<script>
-  function get_information(link, callback) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", link, true);
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4) {
-        callback(xhr.responseText);
-      }
-    };
-    xhr.send(null);
-  }
-
-  get_information(
-    "https://docs.google.com/document/d/e/2PACX-1vQNHRYpzuJGslxPcd-ys_lDAJOcjq58Kw_12uhFBRYFopAJvWfjAPE_yaQ27tX0VQNYynK6jnoyNKm_/pub?embedded=true",
-    function(text) {
-      var div = document.getElementById('gdoc');
-      div.innerHTML = text;
-      
-      // Remove css that comes with Google Doc embeds
-      // If you want the Google Doc styling, comment these out
-      div.removeChild(div.childNodes[1]);
-      div.removeChild(div.childNodes[0]);
-      div.querySelector('h1').remove();
-    }
-  );
-</script>
-<div id="gdoc"></div>
+[bodyurl:string]
+https://docs.google.com/document/d/e/2PACX-1vQNHRYpzuJGslxPcd-ys_lDAJOcjq58Kw_12uhFBRYFopAJvWfjAPE_yaQ27tX0VQNYynK6jnoyNKm_/pub?embedded=true
 
 [acknowledgments:md]
 This version is intially heavily inspired in [Steve Tobak's “10+ ways to be productive when you're brain dead”. 2010. Jul.]( 

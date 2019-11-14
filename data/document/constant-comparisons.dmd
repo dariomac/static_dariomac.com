@@ -60,34 +60,8 @@
 
 [short_description:string]
 
-[body:md]
-<script>
-  function get_information(link, callback) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", link, true);
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4) {
-        callback(xhr.responseText);
-      }
-    };
-    xhr.send(null);
-  }
-
-  get_information(
-    "https://docs.google.com/document/d/e/2PACX-1vSS1pp4bPdv3mvylD9dEf0ftUfG7UqPK2WB4HhqZVD31SB1a3i4ENHrWGJq4vqirCtF_Iwmv0IPb_dn/pub?embedded=true",
-    function(text) {
-      var div = document.getElementById('gdoc');
-      div.innerHTML = text;
-      
-      // Remove css that comes with Google Doc embeds
-      // If you want the Google Doc styling, comment these out
-      div.removeChild(div.childNodes[1]);
-      div.removeChild(div.childNodes[0]);
-      div.querySelector('h1').remove();
-    }
-  );
-</script>
-<div id="gdoc"></div>
+[bodyurl:string]
+https://docs.google.com/document/d/e/2PACX-1vSS1pp4bPdv3mvylD9dEf0ftUfG7UqPK2WB4HhqZVD31SB1a3i4ENHrWGJq4vqirCtF_Iwmv0IPb_dn/pub?embedded=true
 
 [acknowledgments:md]
 

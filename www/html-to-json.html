@@ -408,7 +408,7 @@ http://www.dariomac.com -->
                 </section>
 
                 <section>
-                  <p>Suppose that you have several thousand articles saved as HTML in a database and you want to make them available in Facebook, Google and Apple own native news experiences (i.e Facebook Instant Article -IA-, Google Acelerated Mobile Pages -AMP- and Apple News).</p>
+                    <p>Suppose that you have several thousand articles saved as HTML in a database and you want to make them available in Facebook, Google and Apple own native news experiences (i.e Facebook Instant Article -IA-, Google Acelerated Mobile Pages -AMP- and Apple News).</p>
 <p>Since each of this formats has different structures (IA markup, AMP HTML, JSON), it's a very good idea to build something that transforms the original HTML to a structured json format, reusing the parsing and normalization for other integrations.</p>
 <p>With that idea in mind, we started crawling the web for other publishers with the same problem to learn about how the solved it. Although many of our competitors has internal blogs, Medium's accounts and successful study cases, they don't explain how their stuff works under the hood. Only Mic, an american internet and media company, show us how the solved an indentical problem. They (as us) realized the need for a common article format that could be used to generate content on any platform. They call this format article-json, and open-sourced parsers for it.</p>
 <p>Article-json got a lot of support from Google and Apple, so we decided to give it a chance. Since it was open source, we started working with it (in a test environment) until we realized that we need to make improvements/adaptations in order to use it in our production environments.</p>
