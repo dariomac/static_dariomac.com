@@ -2,7 +2,7 @@
   "title": "“Experimental Software Engineering: using statistics methods to support planning and execution of experimental studies” tutorial",
   "date": "2017-10-16",
   "layout": "education",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#AD4647",

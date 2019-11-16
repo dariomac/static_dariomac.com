@@ -3,7 +3,7 @@
   "title": "Experiencia virtual educativa: Sistema Inmunológico (InmunoVR)",
   "date": "2018-11-07",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#AD4647",

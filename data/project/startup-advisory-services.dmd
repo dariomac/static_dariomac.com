@@ -3,7 +3,7 @@
   "title": "Startup Advisory Services",
   "date": "2019-11-01",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#FF6E19",

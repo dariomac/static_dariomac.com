@@ -2,7 +2,7 @@
   "title": "Raphaël Utils",
   "date": "2017-03-23",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",

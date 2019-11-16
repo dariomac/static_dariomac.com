@@ -2,7 +2,7 @@
   "title": "JQuery Plugin Quality Assessment",
   "date": "2017-04-09",
   "layout": "research",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",

@@ -70,7 +70,7 @@
               </div>
             {{/if}}
 
-            {{#ifIsOrWasInProgress frontmatter.json.columnid }}
+            {{#ifIsOrWasInProgress frontmatter.card.columnid }}
               {{#if ../content.speculations}}
                 <div class="row splitter">
                   <div class="col-md-12 text-center">Speculations - Prototypes</div>
@@ -85,7 +85,7 @@
               {{/if}}
             {{/ifIsOrWasInProgress}}
 
-            {{#ifOrWasDone frontmatter.json.columnid }}
+            {{#ifOrWasDone frontmatter.card.columnid }}
               {{#if ../content.knowledge}}
                 <div class="row splitter">
                   <div class="col-md-12 text-center">Knowledge - Products - Facts</div>

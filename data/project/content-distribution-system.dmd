@@ -3,7 +3,7 @@
   "title": "Content Distribution System (aka 'H')",
   "date": "2019-04-25",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#6EA4D4",

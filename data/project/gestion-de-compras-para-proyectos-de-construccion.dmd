@@ -3,7 +3,7 @@
   "title": "Gestión de compras para proyectos de construcción",
   "date": "2018-11-08",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#AD4647",

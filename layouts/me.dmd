@@ -2,7 +2,7 @@
   "title": "The_Title",
   "date": "Creation_date",
   "layout": "me",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",

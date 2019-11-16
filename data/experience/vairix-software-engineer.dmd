@@ -2,7 +2,7 @@
   "title": "Software Engineer",
   "date": "2019-07-15",
   "layout": "experience",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#00A651",

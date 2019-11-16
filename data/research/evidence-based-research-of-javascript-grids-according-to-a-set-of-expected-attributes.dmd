@@ -2,7 +2,7 @@
   "title": "Evidence based research of JavaScript Grids according to a set of expected attributes",
   "date": "2017-06-03",
   "layout": "research",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",

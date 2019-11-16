@@ -3,7 +3,7 @@
   "title": "Another Clojure Box",
   "date": "2017-07-16",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#767782",

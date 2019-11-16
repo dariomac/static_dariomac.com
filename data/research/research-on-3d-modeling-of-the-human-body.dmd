@@ -2,7 +2,7 @@
   "title": "Research on 3D modeling of the human body",
   "date": "2017-06-02",
   "layout": "research",
-    "json": {
+    "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#767782",

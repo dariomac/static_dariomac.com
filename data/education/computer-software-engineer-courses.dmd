@@ -2,7 +2,7 @@
   "title": "Computer Software Engineer Courses",
   "date": "2017-11-20",
   "layout": "education",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99B399",

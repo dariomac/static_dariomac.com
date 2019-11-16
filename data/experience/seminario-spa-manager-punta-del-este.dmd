@@ -2,7 +2,7 @@
   "title": "Spa Manager Seminar",
   "date": "2017-10-06",
   "layout": "experience",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#00A651",

@@ -3,7 +3,7 @@
   "title": "Traceability Logger",
   "date": "2019-07-16",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#6EA4D4",

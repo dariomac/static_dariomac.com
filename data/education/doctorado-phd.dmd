@@ -2,7 +2,7 @@
   "title": "Doctorado (Ph.D)",
   "date": "2017-11-10",
   "layout": "education",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#AD4647",

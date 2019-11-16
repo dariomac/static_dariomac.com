@@ -2,7 +2,7 @@
   "title": "KanbanCV introduction",
   "date": "2018-04-15",
   "layout": "me",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",

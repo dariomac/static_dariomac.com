@@ -2,7 +2,7 @@
   "title": "Software Engineering Advisor/Consultant",
   "date": "2017-07-20",
   "layout": "experience",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#FF6E19",

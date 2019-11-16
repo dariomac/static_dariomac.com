@@ -3,7 +3,7 @@
   "title": "Coopify: una plataforma de intercambio de servicios apoyada en blockchain",
   "date": "2019-10-09",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",

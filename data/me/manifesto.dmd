@@ -2,7 +2,7 @@
   "title": "Manifesto",
   "date": "2017-05-20",
   "layout": "me",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#FF6E19",

@@ -2,7 +2,7 @@
   "title": "“Technical Debt: basic concepts, research methods and study design“ tutorial",
   "date": "2017-10-14",
   "layout": "education",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#AD4647",

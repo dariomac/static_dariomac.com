@@ -2,7 +2,7 @@
   "title": "God grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference.",
   "date": "2017-06-20",
   "layout": "quote",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",

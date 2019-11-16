@@ -2,7 +2,7 @@
   "title": "Basic computer skills (first steps)",
   "date": "2017-10-23",
   "layout": "education",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#AD4647",

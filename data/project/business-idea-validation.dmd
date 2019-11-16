@@ -3,7 +3,7 @@
   "title": "Business Idea Validation",
   "date": "2019-11-02",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#FF6E19",

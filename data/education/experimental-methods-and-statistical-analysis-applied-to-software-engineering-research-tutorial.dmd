@@ -2,7 +2,7 @@
   "title": "“Experimental Methods and Statistical Analysis Applied to Software Engineering Research” tutorial",
   "date": "2017-10-16",
   "layout": "education",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#AD4647",

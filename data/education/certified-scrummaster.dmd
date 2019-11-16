@@ -2,7 +2,7 @@
     "title": "Certified ScrumMaster",
     "date": "2017-03-21",
     "layout": "education",
-    "json": {
+    "card": {
         "assignee": "",
         "blocked": "0",
         "color": "#77D477",

@@ -52,11 +52,11 @@
                     <ul>
                       {{#each (getTasksFromLane ../laneContent this)}}
                         <li>
-                          <a href="{{this.frontmatter.json.linkto}}">
+                          <a href="{{this.frontmatter.card.linkto}}">
                             {{#ifNotEq this.frontmatter.title ""}}
                               {{../this.frontmatter.title}}
                             {{else}}
-                              {{../this.frontmatter.json.title}}
+                              {{../this.frontmatter.card.title}}
                             {{/ifNotEq}}
                           </a>
                         </li>

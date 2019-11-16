@@ -2,7 +2,7 @@
   "title": "English studies (First Certificate Level)",
   "date": "2017-11-10",
   "layout": "education",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",

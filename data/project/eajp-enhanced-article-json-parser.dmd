@@ -3,7 +3,7 @@
   "title": "Enhanced Article-JSON Parser (EAJP)",
   "date": "2019-07-15",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#6EA4D4",

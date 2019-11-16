@@ -3,7 +3,7 @@
   "title": "WinCommand",
   "date": "2017-07-17",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",

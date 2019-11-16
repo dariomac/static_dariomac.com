@@ -3,7 +3,7 @@
   "title": "Favoker: solicitud de pequeños servicios",
   "date": "2019-07-20",
   "layout": "project",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",

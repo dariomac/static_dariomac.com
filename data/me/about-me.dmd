@@ -2,7 +2,7 @@
   "title": "About me",
   "date": "2017-03-22",
   "layout": "me",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",

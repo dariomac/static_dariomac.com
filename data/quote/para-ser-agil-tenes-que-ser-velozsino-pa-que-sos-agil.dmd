@@ -2,7 +2,7 @@
   "title": "Para ser ágil tenés que ser veloz...sino pa' que sos “ágil“?",
   "date": "2017-07-04",
   "layout": "quote",
-  "json": {
+  "card": {
     "assignee": "",
     "blocked": "0",
     "color": "#99b399",
