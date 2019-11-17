@@ -39,9 +39,9 @@
 
     <!--#include virtual="../common/_18common_html_header.html" -->
 
-    {{#if content.ldjson}}
+    {{#if frontmatter.jsonld}}
       <script type="application/ld+json">
-        {{{json content.ldjson}}}
+        {{{json frontmatter.jsonld}}}
       </script>
     {{/if}}
   </head>

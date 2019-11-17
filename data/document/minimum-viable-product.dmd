@@ -23,37 +23,35 @@
     "tags": "#gdoc #research #k-pills",
     "title": "Minimum Viable Product",
     "type": "0"
+  },
+  "jsonld": { 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://www.dariomac.com/minimum-viable-product"
+    },
+    "headline": "Minimum Viable Product",
+    "alternativeHeadline": "",
+    "image": "http://www.dariomac.com/assets/mvp.png",
+    "genre": "research", 
+    "keywords": "lean startup validation learning", 
+    "wordcount": "305",
+    "url": "http://www.dariomac.com/minimum-viable-product",
+    "datePublished": "2019-03-17",
+    "dateCreated": "2014-12-15",
+    "dateModified": "2019-03-18",
+    "description": "The technique involves the development of a product with the sufficient features to satisfy early adopters.",
+    "author": {
+      "@id": "http://www.dariomac.com/me"
+    },
+    "publisher": {
+      "@id": "http://www.dariomac.com/software-engineering-advisor-consultant"
+    } 
   }
 }
 
 ---
-
-[ldjson:json]
-{ 
-  "@context": "http://schema.org", 
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "http://www.dariomac.com/minimum-viable-product"
-  },
-  "headline": "Minimum Viable Product",
-  "alternativeHeadline": "",
-  "image": "http://www.dariomac.com/assets/mvp.png",
-  "genre": "research", 
-  "keywords": "lean startup validation learning", 
-  "wordcount": "305",
-  "url": "http://www.dariomac.com/minimum-viable-product",
-  "datePublished": "2019-03-17",
-  "dateCreated": "2014-12-15",
-  "dateModified": "2019-03-18",
-  "description": "The technique involves the development of a product with the sufficient features to satisfy early adopters.",
-  "author": {
-    "@id": "http://www.dariomac.com/me"
-  },
-  "publisher": {
-    "@id": "http://www.dariomac.com/software-engineering-advisor-consultant"
-  } 
-}
 
 [pub_date:string]
 2019-03-15

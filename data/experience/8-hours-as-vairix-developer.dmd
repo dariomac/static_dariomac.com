@@ -22,31 +22,30 @@
     "tags": null,
     "title": "Escuela de Tecnología",
     "type":"Experience"
+  },
+  "jsonld": {
+    "@context": "http://www.schema.org",
+    "@type": "BusinessEvent",
+    "name": " 8 Hours as VAIRIX Developer",
+    "url": "http://www.dariomac.com/8-hours-as-vairix-developer",
+    "description": "Lecture to software engineering students about how is a day of work as a VAIRIX's software developer using a sample user story life cycle as central thread.",
+    "startDate": "2016-04-06",
+    "endDate": "2016-04-06",
+    "location": {
+      "@type": "Place",
+      "name": "Unverisidad ORT Uruguay",
+      "sameAs": "https://www.ort.edu.uy/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cuareim 1451",
+        "addressLocality": "Montevideo",
+        "addressCountry": "Uruguay"
+      }
+    }
   }
 }
 
 ---
-[ldjson:json]
-{
-  "@context": "http://www.schema.org",
-  "@type": "BusinessEvent",
-  "name": " 8 Hours as VAIRIX Developer",
-  "url": "http://www.dariomac.com/8-hours-as-vairix-developer",
-  "description": "Lecture to software engineering students about how is a day of work as a VAIRIX's software developer using a sample user story life cycle as central thread.",
-  "startDate": "2016-04-06",
-  "endDate": "2016-04-06",
-  "location": {
-    "@type": "Place",
-    "name": "Unverisidad ORT Uruguay",
-    "sameAs": "https://www.ort.edu.uy/",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Cuareim 1451",
-      "addressLocality": "Montevideo",
-      "addressCountry": "Uruguay"
-    }
-  }
-}
 
 [summary:string]
 Lecture to software engineering students about how is a day of work as a VAIRIX's software developer using a sample user story life cycle as central thread.

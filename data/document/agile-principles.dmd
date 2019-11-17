@@ -23,36 +23,34 @@
     "tags": "#gdoc #agility #teaching",
     "title": "Agile Principles",
     "type": "0"
+  },
+  "jsonld": { 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://www.dariomac.com/agile-principles"
+    },
+    "headline": "Minimum Viable Product",
+    "alternativeHeadline": "",
+    "genre": "research", 
+    "keywords": "agility teaching learning", 
+    "wordcount": "305",
+    "url": "http://www.dariomac.com/agile-principles",
+    "datePublished": "2019-11-13",
+    "dateCreated": "2014-12-15",
+    "dateModified": "2019-03-18",
+    "description": "Sketches to show the agile principles.",
+    "author": {
+      "@id": "http://www.dariomac.com/me"
+    },
+    "publisher": {
+      "@id": "http://www.dariomac.com/software-engineering-advisor-consultant"
+    } 
   }
 }
 
 ---
-
-[ldjson:json]
-{ 
-  "@context": "http://schema.org", 
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "http://www.dariomac.com/agile-principles"
-  },
-  "headline": "Minimum Viable Product",
-  "alternativeHeadline": "",
-  "genre": "research", 
-  "keywords": "agility teaching learning", 
-  "wordcount": "305",
-  "url": "http://www.dariomac.com/agile-principles",
-  "datePublished": "2019-11-13",
-  "dateCreated": "2014-12-15",
-  "dateModified": "2019-03-18",
-  "description": "Sketches to show the agile principles.",
-  "author": {
-    "@id": "http://www.dariomac.com/me"
-  },
-  "publisher": {
-    "@id": "http://www.dariomac.com/software-engineering-advisor-consultant"
-  } 
-}
 
 [pub_date:string]
 2019-11-13

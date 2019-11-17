@@ -23,37 +23,35 @@
     "tags": "#personal #kanban #kanbanize",
     "title": "Personal Kanban with Kanbanize",
     "type": "0"
+  },
+  "jsonld": { 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://www.dariomac.com/personal-kanban-with-kanbanize"
+    },
+    "headline": "Personal Kanban with Kanbanize",
+    "alternativeHeadline": "",
+    "image": "http://www.dariomac.com/assets/essays-personal-kanban.png",
+    "genre": "productivity", 
+    "keywords": "personal kanban kanbanize productivity", 
+    "wordcount": "371",
+    "url": "http://www.dariomac.com/personal-kanban-with-kanbanize",
+    "datePublished": "2019-01-14",
+    "dateCreated": "2018-12-20",
+    "dateModified": "2018-12-20",
+    "description": "How to use Kanbanize for everyday tasks management following Personal Kanban as methodology",
+    "author": {
+      "@id": "http://www.dariomac.com/me"
+    },
+    "publisher": {
+      "@id": "http://www.dariomac.com/software-engineering-advisor-consultant"
+    }
   }
 }
 
 ---
-
-[ldjson:json]
-{ 
-  "@context": "http://schema.org", 
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "http://www.dariomac.com/personal-kanban-with-kanbanize"
-  },
-  "headline": "Personal Kanban with Kanbanize",
-  "alternativeHeadline": "",
-  "image": "http://www.dariomac.com/assets/essays-personal-kanban.png",
-  "genre": "productivity", 
-  "keywords": "personal kanban kanbanize productivity", 
-  "wordcount": "371",
-  "url": "http://www.dariomac.com/personal-kanban-with-kanbanize",
-  "datePublished": "2019-01-14",
-  "dateCreated": "2018-12-20",
-  "dateModified": "2018-12-20",
-  "description": "How to use Kanbanize for everyday tasks management following Personal Kanban as methodology",
-  "author": {
-    "@id": "http://www.dariomac.com/me"
-  },
-  "publisher": {
-    "@id": "http://www.dariomac.com/software-engineering-advisor-consultant"
-  }
-}
 
 [pub_date:string]
 2019-01-14
