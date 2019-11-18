@@ -33,11 +33,14 @@
     "tags": null,
     "title": "%{authors}",
     "type": "0"
-  }
-
+  },
+  "jsonld": {},
+  "canonical": ""
 }
 
 ---
+
+[summary:string]
 
 [authors:string]
 
@@ -46,3 +49,30 @@
 [abstract:md]
 
 [more_info:md]
+
+[attachments:json]
+  [{
+    "filename": "blablabla.pdf",
+    "description": "This is the description of the filename."
+  },{
+    "filename": "blablabla2.pdf",
+    "description": "This is the description of the filename2."
+  }]
+
+[related_images:json]
+  [{
+    "filename": "blablabla.png"
+  },{
+    "filename": "blablabla2.jpg"
+  }]
+
+[related_topics:json]
+  [{
+    "title": "This is the link text",
+    "click_bait": "This is a clickbait title",
+    "linkto": "This is the href of the link"
+  },{
+    "filename": "This is the link text",
+    "click_bait": "This is a clickbait title",
+    "description": "This is the href of the link"
+  }]

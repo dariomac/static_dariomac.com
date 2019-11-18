@@ -23,10 +23,14 @@
     "tags": "#gdoc",
     "title": "Ways to be productive when you're brain is dead",
     "type": "0"
-  }
+  },
+  "jsonld": {},
+  "canonical": "https://www.techrepublic.com/blog/10-things/10-plus-ways-to-be-productive-when-youre-brain-dead"
 }
 
 ---
+
+[summary:string]
 
 [pub_date:string]
 2019-06-11

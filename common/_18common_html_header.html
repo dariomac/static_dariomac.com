@@ -30,6 +30,9 @@
 <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
 <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
 
+{{#if frontmatter.canonical }}
+<link rel="canonical" href="{{ frontmatter.canonical }}" />
+{{/if}}
 
 <script type="text/javascript">
 var _gaq = _gaq || [];
