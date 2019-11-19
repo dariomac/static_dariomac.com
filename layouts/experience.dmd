@@ -3,8 +3,6 @@
   "date": "Creation_date",
   "layout": "experience",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#00A651",
     "columnid": "%{column}",
     "content": "%{title}",

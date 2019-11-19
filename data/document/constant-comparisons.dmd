@@ -4,8 +4,6 @@
   "layout": "document",
   "has_code": false,
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99b399",
     "columnid": "progress_2",
     "content": "An iterative data-analysis process where findings “emerge” from the data and the comparison with previous findings",

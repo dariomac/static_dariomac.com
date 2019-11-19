@@ -4,8 +4,6 @@
   "date": "2019-07-15",
   "layout": "project",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#6EA4D4",
     "columnid": "done_3",
     "content": "HTML article to JSON abstraction",

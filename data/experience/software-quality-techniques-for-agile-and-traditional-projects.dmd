@@ -3,8 +3,6 @@
   "date": "2019-01-15",
   "layout": "experience",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#FF6E19",
     "columnid": "done_3",
     "content": "Software quality techniques for agile and traditional projects",

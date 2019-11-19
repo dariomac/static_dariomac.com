@@ -4,8 +4,6 @@
   "layout": "document",
   "has_code": false,
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#00A651",
     "columnid": "done_3",
     "content": "New to the concept of code review? This post explains what code review is and why it’s important.",

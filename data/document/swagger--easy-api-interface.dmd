@@ -4,8 +4,6 @@
   "layout": "document",
   "has_code": true,
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99b399",
     "columnid": "done_3",
     "content": "Swagger™ is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.",

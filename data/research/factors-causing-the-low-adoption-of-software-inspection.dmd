@@ -3,8 +3,6 @@
   "date": "2017-06-14",
   "layout": "research",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99b399",
     "columnid": "archive_6",
     "content": "Factors causing low adoption of software inspections",

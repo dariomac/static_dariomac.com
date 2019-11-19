@@ -4,8 +4,6 @@
   "layout": "document",
   "has_code": true,
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99b399",
     "columnid": "done_3",
     "content": "The Google Places API allows you to query for place information on a variety of categories",

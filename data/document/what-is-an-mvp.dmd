@@ -4,8 +4,6 @@
   "layout": "document",
   "has_code": false,
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99b399",
     "columnid": "done_3",
     "content": "MVP means Minimum Viable Product and it’s a core component of Lean Startup methodology",

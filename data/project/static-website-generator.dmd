@@ -4,8 +4,6 @@
   "date": "2019-07-16",
   "layout": "project",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#FF6E19",
     "columnid": "progress_2",
     "content": "Static website generator (this site)",

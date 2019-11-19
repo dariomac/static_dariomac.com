@@ -3,8 +3,6 @@
   "date": "2017-06-03",
   "layout": "research",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99b399",
     "columnid": "done_3",
     "content": "This study identifies javascript grids that have some attributes defined apriori. It's my first attempt to apply a systematic method in order to make an industrial decision",

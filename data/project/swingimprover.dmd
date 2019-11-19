@@ -4,8 +4,6 @@
   "date": "2017-07-07",
   "layout": "project",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#AD4647",
     "columnid": "done_3",
     "content": "Software that allows the analysis of a golf player swing movement against theory and professionals.",

@@ -4,8 +4,6 @@
   "date": "2017-07-17",
   "layout": "project",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99b399",
     "columnid": "done_3",
     "content": "Run console apps (e.g. CLisp or cmd) in a window to work more confortable.",

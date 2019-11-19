@@ -3,8 +3,6 @@
   "date": "Creation_date",
   "layout": "research",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99b399",
     "columnid": "%{column}",
     "content": "%{summary}",

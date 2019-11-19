@@ -3,8 +3,6 @@
   "date": "2017-11-20",
   "layout": "education",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#AD4647",
     "columnid": "done_3",
     "content": "Formal Methods and Unified Modeling Language (UML)",

@@ -3,8 +3,6 @@
   "date": "2017-04-09",
   "layout": "research",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99b399",
     "columnid": "progress_2",
     "content": "JQuery plugins saves development time, but poor quality plugin are destabilizing factor. How to evaluate the quality of JQuery plugins?",

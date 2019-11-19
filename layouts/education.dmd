@@ -3,8 +3,6 @@
   "date": "Creation_date",
   "layout": "education",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99B399",
     "columnid": "%{column}",
     "content": "%{title}",

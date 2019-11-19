@@ -4,8 +4,6 @@
   "layout": "document",
   "has_code": false,
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99b399",
     "columnid": "progress_2",
     "content": "The technique involves the development of a product with the sufficient features to satisfy early adopters.",

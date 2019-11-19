@@ -4,8 +4,6 @@
   "date": "2017-07-16",
   "layout": "project",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#767782",
     "columnid": "done_3",
     "content": "SciTE + WinCommand  + Tools = kind of \"Clojure IDE\"",

@@ -3,8 +3,6 @@
   "date": "2017-05-19",
   "layout": "me",
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#FFD700",
     "columnid": "progress_2",
     "content": "This is a work in progress",

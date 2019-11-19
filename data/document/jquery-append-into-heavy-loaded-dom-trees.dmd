@@ -4,8 +4,6 @@
   "layout": "document",
   "has_code": true,
   "card": {
-    "assignee": "",
-    "blocked": "0",
     "color": "#99b399",
     "columnid": "done_3",
     "content": "Describe odd behaviour when you append DOM element into heavy loaded DOM tree",
