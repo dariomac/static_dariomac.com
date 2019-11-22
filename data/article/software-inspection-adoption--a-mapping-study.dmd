@@ -13,25 +13,18 @@
     "leftmsg": null,
     "linkto": "/software-inspection-adoption--a-mapping-study",
     "position": "0",
-    "priority": "Average",
     "subtaskdetails": [{
       "taskid": "1",
       "title": "Rejects in CIbSE 2012.",
-      "assignee": "None",
-      "completiondate": "2012-02-29 18:13:33",
-      "assignedtome": 0
+      "completiondate": "2012-02-29 18:13:33"
     }, {
       "taskid": "2",
       "title": "Accepted in CLEI 2012.",
-      "assignee": "None",
-      "completiondate": "2012-07-17 17:41:33",
-      "assignedtome": 0
+      "completiondate": "2012-07-17 17:41:33"
     }, {
       "taskid": "3",
       "title": "Presented in CLEI 2012.",
-      "assignee": "None",
-      "completiondate": "2012-10-03",
-      "assignedtome": 0
+      "completiondate": "2012-10-03"
     }],
     "subtasks": "3",
     "subtaskscomplete": "0",

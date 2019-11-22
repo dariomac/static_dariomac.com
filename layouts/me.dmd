@@ -13,14 +13,11 @@
     "leftmsg": "",
     "linkto": "%{link_to}",
     "position": "%{position}",
-    "priority": "Average",
     "subtaskdetails": [],
     /*"subtaskdetails": [{
       "taskid": "1",
       "title": "Submitted to CIbSE 2013.",
-      "assignee": "None",
-      "completiondate": "2012-20-12",
-      "assignedtome": 0
+      "completiondate": "2012-20-12"
     }, {
       ...
       ...

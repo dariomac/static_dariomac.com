@@ -14,19 +14,14 @@
     "leftmsg": "",
     "linkto": "/startup-advisory-services",
     "position": "20191101",
-    "priority": "Average",
     "subtaskdetails": [{
       "taskid": "1",
       "title": "Write the product offering",
-      "assignee": "None",
-      "completiondate": "2014-06-28",
-      "assignedtome": 0
+      "completiondate": "2014-06-28"
     }, {
       "taskid": "2",
       "title": "Start serving clients",
-      "assignee": "None",
-      "completiondate": "2015-04-01",
-      "assignedtome": 0
+      "completiondate": "2015-04-01"
     }],
     "subtasks": "0",
     "subtaskscomplete": "0",

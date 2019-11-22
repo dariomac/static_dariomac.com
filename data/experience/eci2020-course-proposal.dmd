@@ -13,20 +13,15 @@
     "leftmsg": "",
     "linkto": "/eci2020-course-proposal",
     "position": "0",
-    "priority": "Average",
     "subtaskdetails": [{
       "taskid": "1",
       "title": "Submitted to ECI 2020 organization.",
-      "assignee": "None",
-      "completiondate": "2019-11-10",
-      "assignedtome": 0
+      "completiondate": "2019-11-10"
     },
     {
-      "taskid": "1",
+      "taskid": "2",
       "title": "Waiting for approval.",
-      "assignee": "None",
-      "completiondate": "",
-      "assignedtome": 0
+      "completiondate": ""
     }],
     "subtasks": "0",
     "subtaskscomplete": "0",
