@@ -15,7 +15,7 @@
     "position": "0",
     "subtaskdetails": [{
       "taskid": "1",
-      "title": "Rejects in CIbSE 2012.",
+      "title": "Rejected in CIbSE 2012.",
       "completiondate": "2012-02-29 18:13:33"
     }, {
       "taskid": "2",
@@ -28,7 +28,7 @@
     }],
     "subtasks": "3",
     "subtaskscomplete": "0",
-    "tags": null,
+    "tags": "#a20121, #MSc",
     "title": "Darío Macchi, Martín Solari",
     "type":"Article"
   }
