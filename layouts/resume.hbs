@@ -40,6 +40,10 @@
   <body>
     <div id="page-wrap">
       <img src="https://dariomac.com/assets/aboutme-me.jpg" alt="Photo of Darío Macchi" id="pic" />
+
+      <div style="clear: both; float: right; margin-top: 50px; ">
+        <p>Twitter: <a href="https://twitter.com/_dariomac">_dariomac</a></p>
+      </div>
   
       <div id="contact-info" class="vcard">
         <!-- Microformats! -->
@@ -52,15 +56,16 @@
               
       <div id="objective">
         <p>
-          y profile can be defined as an elastic one, mostly because of my adaptive capacity.
-
-I can lead projects (as PM or Scrum Master) following agile methodologies (Scrum, Extreme Programming) or more traditional ones, taking care of the complete SLDC (mainly requirement elicitation/specification and quality assurance).
-
-Also, I love coding. My management skills are complemented with a deep technical background ranging between backend technologies (Java, .Net), databases (Oracle, SQL Server, MySql, Postgres), OSs (Linux, Windows), web frameworks (ASP.NET MVC, Ruby on Rails) and frontend (Javascript, jQuery, Highcharts, SVG, Angular).....
-............ 
+          {{#with (resumeGrep laneContent.Me this.frontmatter.params.resumeType)}}
+            {{#forEach this}}
+              {{{highlighter this.content.content}}}
+            {{/forEach}}
+          {{/with}}
         </p>
       </div>
-      <div class="clear"></div>
+      
+      <div class="clear" style="page-break-before: always"></div>
+
       <section>
         <dd class="clear"></dd>
 
