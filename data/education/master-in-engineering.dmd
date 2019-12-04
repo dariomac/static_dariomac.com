@@ -19,6 +19,9 @@
     "tags": "#software, #research, #thesis2013",
     "title": "Universidad ORT Uruguay",
     "type":"Education"
+  },
+  "resume": {
+    "tags": "academy,industry"
   }
 }
 
@@ -34,6 +37,9 @@ http://www.ort.edu.uy/fi/masteringenieria
 
 [place:string]
 Universidad ORT Uruguay
+
+[summary:string]
+This master aims to provide basic education in scientific and technological research. Candidates achieve their education primarily through research activities, which lead to the development of a final thesis under the supervision of active researchers within a research group of the university. This master is supported by the National Agency for Innovation and Research (ANII) in a national request for proposals for graduate study programs.
 
 [content:md]
 The Master of Engineering (by research) was supported by the [National Agency for Innovation and Research (ANII)](http://www.anii.org.uy/web/) in a national request for proposals for graduate study programs.

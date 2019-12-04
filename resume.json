@@ -1,0 +1,83 @@
+{
+  "basics": {
+    "name": "Darío Macchi",
+    "label": "Empirical Software Engineer. Systematic but flexible. Agile patterns fan. A bit literalist. Doomsayer.",
+    "picture": "https://dariomac.com/assets/aboutme-me.jpg",
+    "email": "dariomac@gmail.com",
+    "phone": "(598) 99259087",
+    "website": "https://dariomac.com",
+    "summary": "A summary of ...",
+    "location": {
+      "postalCode": "11700",
+      "city": "Montevideo",
+      "countryCode": "UY",
+      "region": "Montevideo"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "_dariomac",
+      "url": "https://twitter.com/_dariomac"
+    }]
+  },
+  "languages": [{
+    "language": "Spanish",
+    "fluency": "Native speaker"
+  },{
+    "language": "English",
+    "fluency": "Reading/Written: advanced - Listenin/Spoken: intermediate high"
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  }],
+  "work": [
+        {
+          "company": "VIX",
+          "position": "Scrum Master - Project Manager",
+          "website": "https://www.vix.com/en/corp",
+          "startDate": "Nov 2016",
+          "endDate": "Jun 2019",
+          "summary": "I'm the Scrum Master of the uruguayan development team, which is focused on Product Development's support. One of our systems (of which I am its architect) is behind the delivery of content using several distribution channels [NodeJS]. Other is the editorial tool used to generate and admin editorial content [Drupal]. Management of both is automated by a DevOps team."
+        }, 
+        {
+          "company": "VAIRIX Software Development",
+          "position": "Vairix COO - Scrum Master - QA",
+          "website": "http://www.vairix.com/",
+          "startDate": "",
+          "endDate": "",
+          "summary": "At VAIRIX I'm performing different roles. For one side I'm the COO of the company and, in that role, I help with the overall strategy and the sales. Because of the Scrum tradition of the company, one of my operational functions is to be the Scrum Master of different projects. Other operational functions are the development and implementation of strategies to align personnel with company goals. Also, I make continuous improvements in the public visibility of the company, taking care of the blog, the social networks engagement and participating in conferences as speaker."
+        }, 
+        {
+          "company": "PricewaterhouseCoopers",
+          "position": "Supervisor - Senior Developer - IT Consultant",
+          "website": "http://www.pwc.com",
+          "startDate": "",
+          "endDate": "",
+          "summary": ""
+        }
+  ],
+  "education": [
+      {
+        "institution": "Universidad ORT Uruguay",
+        "area": "Master in Engineering",
+        "studyType": "MSc",
+        "startDate": "2010",
+        "endDate": "2013"
+      }
+  ],
+  "publications": [
+      {
+        "name": "Diagnóstico del Uso de Técnicas de  Revisión de Software en Uruguay",
+        "publisher": "Company",
+        "releaseDate": "2013-04",
+        "website": "https://dariomac.com/diagnostico-del-uso-de-tecnicas-de-revision-de-software-en-uruguay",
+        "summary": ""
+      }
+  ]
+}
+

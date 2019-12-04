@@ -29,7 +29,7 @@
     "title": "%{title}",
     "type": "0"
   },
-  jsonld: {},
+  "jsonld": {},
   "canonical": ""
 }
 

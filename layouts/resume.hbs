@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>One Page Resume</title>
+
+    <style type="text/css">
+      * { margin: 0; padding: 0; }
+      body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+      .clear { clear: both; }
+      #page-wrap { width: 800px; margin: 40px auto 60px; }
+      #pic { float: right; margin: -30px 0 0 0; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+      h2 { font-size: 20px; margin: 0 0 1px 0; position: relative; }
+      h3 { font-size: 18px; margin: 0 0 6px 0; position: relative; color: #999; }
+      h3 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+      p { margin: 0 0 16px 0; text-align: justify; }
+      a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+      a:hover { border-bottom-style: solid; color: black; }
+      ul { margin: 0 0 32px 17px; }
+      #objective { width: 500px; float: left; }
+      #objective p { font-family: Georgia, Serif; font-style: italic; color: #666;}
+      dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0; width: 115px; float: left; height: 100px;  }
+      dd { width: 650px; float: right; border-left: 1px solid #999; padding-left: 8px;}
+      dd.clear { float: none; margin: 0; height: 25px; border: 0px; }
+      article { page-break-inside: avoid; padding-bottom: 30px;}
+      @media print {
+        a[href*='//']:after {
+          content:" (" attr(href) ") ";
+        }
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="page-wrap">
+      <img src="https://dariomac.com/assets/aboutme-me.jpg" alt="Photo of Darío Macchi" id="pic" />
+  
+      <div id="contact-info" class="vcard">
+        <!-- Microformats! -->
+        <h1 class="fn">Darío Macchi</h1>
+        <p>
+          Cell: <span class="tel">(598) 99259087</span><br />
+          Email: <a class="email" href="mailto:dariomac@gmail.com">dariomac@gmail.com</a>
+        </p>
+      </div>
+              
+      <div id="objective">
+        <p>
+          y profile can be defined as an elastic one, mostly because of my adaptive capacity.
+
+I can lead projects (as PM or Scrum Master) following agile methodologies (Scrum, Extreme Programming) or more traditional ones, taking care of the complete SLDC (mainly requirement elicitation/specification and quality assurance).
+
+Also, I love coding. My management skills are complemented with a deep technical background ranging between backend technologies (Java, .Net), databases (Oracle, SQL Server, MySql, Postgres), OSs (Linux, Windows), web frameworks (ASP.NET MVC, Ruby on Rails) and frontend (Javascript, jQuery, Highcharts, SVG, Angular).....
+............ 
+        </p>
+      </div>
+      <div class="clear"></div>
+      <section>
+        <dd class="clear"></dd>
+
+        {{#with (resumeGrep laneContent.Experience this.frontmatter.params.resumeType)}}
+          <dl>
+            <dt>Experience</dt>
+            <dd>
+            {{#forEach this}}
+              <article>
+                <h2>{{this.frontmatter.card.content}}</h2>
+                <h3><a href="{{this.content.place_url}}">{{this.content.place}}</a></h3>
+                <p><strong>{{this.content.duration}}</strong></p>
+                <p>{{{highlighter this.content.summary}}}</p>
+              </article>
+            {{/forEach}}
+            </dd>
+            <dd class="clear"></dd>
+          </dl>
+        {{/with}}
+
+        {{#with (resumeGrep laneContent.Education this.frontmatter.params.resumeType)}}
+          <dl>
+            <dt>Education</dt>
+            <dd>
+            {{#forEach this}}
+              <article>
+                <h2>{{this.frontmatter.card.content}}</h2>
+                <h3><a href="{{this.content.place_url}}">{{this.content.place}}</a></h3>
+                <p><strong>{{this.content.duration}}</strong></p>
+                <p>{{{highlighter this.content.summary}}}</p>
+              </article>
+            {{/forEach}}
+            </dd>
+            <dd class="clear"></dd>
+          </dl>
+        {{/with}}
+        
+        {{#with (resumeGrep laneContent.Education (concat 'language' ',' this.frontmatter.params.resumeType))}}
+          <dl>
+            <dt>Languages</dt>
+            <dd>
+            {{#forEach this}}
+              <article>
+                <h2>{{this.frontmatter.card.content}}</h2>
+                <h3><a href="{{this.content.place_url}}">{{this.content.place}}</a></h3>
+                <p><strong>{{this.content.duration}}</strong></p>
+                <p>{{{highlighter this.content.summary}}}</p>
+              </article>
+            {{/forEach}}
+            </dd>
+            <dd class="clear"></dd>
+          </dl>
+        {{/with}}
+
+      </section>
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>
+{{!--
+{
+  "basics": {
+    "name": "Darío Macchi",
+    "label": "Empirical Software Engineer. Systematic but flexible. Agile patterns fan. A bit literalist. Doomsayer.",
+    "picture": "https://dariomac.com/assets/aboutme-me.jpg",
+    "email": "dariomac@gmail.com",
+    "phone": "(598) 99259087",
+    "website": "https://dariomac.com",
+    "summary": "A summary of ...",
+    "location": {
+      "postalCode": "11700",
+      "city": "Montevideo",
+      "countryCode": "UY",
+      "region": "Montevideo"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "_dariomac",
+      "url": "https://twitter.com/_dariomac"
+    }]
+  },
+  "languages": [{
+    "language": "Spanish",
+    "fluency": "Native speaker"
+  },{
+    "language": "English",
+    "fluency": "Reading/Written: advanced - Listenin/Spoken: intermediate high"
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  }],
+  "work": [
+    {{#forEach (resumeGrep laneContent.Experience this.frontmatter.params.resumeType)}}
+        {
+          "company": "{{this.content.place}}",
+          "position": "{{this.frontmatter.card.content}}",
+          "website": "{{this.content.place_url}}",
+          "startDate": "{{this.frontmatter.resume.startDate}}",
+          "endDate": "{{this.frontmatter.resume.endDate}}",
+          "summary": "{{{this.content.summary}}}"
+        }{{#unless isLast~}}, {{/unless}}
+    {{/forEach}}
+  ],
+  "education": [
+    {{#forEach (resumeGrep laneContent.Education this.frontmatter.params.resumeType)}}
+      {
+        "institution": "{{this.content.place}}",
+        "area": "{{this.frontmatter.card.content}}",
+        "studyType": "{{this.frontmatter.resume.studyType}}",
+        "startDate": "{{this.frontmatter.resume.startDate}}",
+        "endDate": "{{this.frontmatter.resume.endDate}}"
+      }{{#unless isLast~}}, {{/unless}}
+    {{/forEach}}
+  ],
+  "publications": [
+    {{#forEach (resumeGrep laneContent.Article this.frontmatter.params.resumeType)}}
+      {
+        "name": "{{this.frontmatter.title}}",
+        "publisher": "Company",
+        "releaseDate": "{{this.frontmatter.resume.releaseDate}}",
+        "website": "https://dariomac.com{{this.frontmatter.card.linkto}}",
+        "summary": "{{{this.content.summary}}}"
+      }{{#unless isLast~}}, {{/unless}}
+    {{/forEach}}
+  ]
+}
+--}
+
+{{!--
+{
+  "basics": {
+    "name": "John Doe",
+    "label": "Programmer",
+    "picture": "",
+    "email": "john@gmail.com",
+    "phone": "(912) 555-4321",
+    "website": "http://johndoe.com",
+    "summary": "A summary of John Doe...",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "john",
+      "url": "http://twitter.com/john"
+    }]
+  },
+  "work": [{
+    "company": "Company",
+    "position": "President",
+    "website": "http://company.com",
+    "startDate": "2013-01-01",
+    "endDate": "2014-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Started the company"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "website": "http://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "University",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-01-01",
+    "gpa": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "website": "http://publication.com",
+    "summary": "Description..."
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference..."
+  }]
+}
+--}}

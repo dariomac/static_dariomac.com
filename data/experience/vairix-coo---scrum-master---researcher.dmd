@@ -1,11 +1,11 @@
 {
-  "title": "Vairix COO - Scrum Master - QA",
+  "title": "VAIRIX - COO - Scrum Master - QA",
   "date": "2017-07-20",
   "layout": "experience",
   "card": {
     "color": "#00A651",
     "columnid": "done_3",
-    "content": "Vairix COO - Scrum Master - QA",
+    "content": "COO - Scrum Master - QA",
     "datebox": "Mar 2014 – Now",
     "extlink": "http://www.vairix.com/",
     "laneid": "Experience",
@@ -19,6 +19,9 @@
     "tags": null,
     "title": "VAIRIX Software Development",
     "type":"Experience"
+  },
+  "resume": {
+    "tags": "academy,industry"
   }
 }
 

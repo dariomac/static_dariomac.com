@@ -30,7 +30,8 @@
     "type": "0"
   },
   "jsonld": {},
-  "canonical": ""
+  "canonical": "",
+  "custom_header": ""
 }
 
 ---

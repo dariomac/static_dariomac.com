@@ -19,6 +19,9 @@
     "tags": null,
     "title": "About me",
     "type":"Me"
+  },
+  "resume": {
+    "tags": "academy,industry"
   }
 }
 
