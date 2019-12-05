@@ -27,6 +27,9 @@
 
 ---
 
+[summary:string]
+I was the Scrum Master of the uruguayan development team, which was focused on Product Development's support. One of our systems (of which I am its architect) was behind the delivery of content using several distribution channels NodeJS. Other was the editorial tool used to generate and admin editorial content Drupal. Management of both was automated by a DevOps team.
+
 [duration:string]
 Nov 2016 – Jun 2019
 
@@ -35,9 +38,6 @@ https://www.vix.com/en/corp
 
 [place:string]
 VIX
-
-[summary:string]
-I was the Scrum Master of the uruguayan development team, which was focused on Product Development's support. One of our systems (of which I am its architect) was behind the delivery of content using several distribution channels NodeJS. Other was the editorial tool used to generate and admin editorial content Drupal. Management of both was automated by a DevOps team.
 
 [content:md]
 Vix is the largest independent digital media company for the U.S Hispanic market, Latin America and Brazil. It publishes content in English, Spanish and Portuguese, on Vix.com and across a variety of social platforms such as Facebook, Instagram, and YouTube every day. Also it counts with over 50 million social followers and reaches over 325 million people globally across platforms, most recently delivering over 1 billion monthly video views.

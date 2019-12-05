@@ -94,7 +94,12 @@
               <article>
                 <h2>{{this.frontmatter.card.content}}</h2>
                 <h3><a href="{{this.content.place_url}}">{{this.content.place}}</a></h3>
-                <p><strong>{{this.content.duration}}</strong></p>
+                <p>
+                  <strong>{{this.content.duration}}</strong>
+                  {{#if this.content.dictated_by}}
+                    - Dictated by {{this.content.dictated_by}}
+                  {{/if}}
+                </p>
                 <p>{{{highlighter this.content.summary}}}</p>
               </article>
             {{/forEach}}

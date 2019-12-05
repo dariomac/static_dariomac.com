@@ -9,7 +9,7 @@
     "datebox": "Nov 2015",
     "extlink": "https://www.fing.edu.uy/evento/alexander-knapp-towards-institutional-framework-heterogeneous-formal-development-uml",
     "laneid": "Education",
-    "leftbox": "INCO - FING UY",
+    "leftbox": "by Alexander Knapp",
     "leftmsg": "",
     "linkto": "/formal-methods-and-unified-modeling-language-uml",
     "position": "16",
@@ -19,6 +19,9 @@
     "tags": null,
     "title": "INCO - FING UY",
     "type":"Education"
+  },
+  "resume": {
+    "tags": "academy"
   }
 }
 
