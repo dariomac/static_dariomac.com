@@ -102,6 +102,22 @@
             <dd class="clear"></dd>
           </dl>
         {{/with}}
+
+        {{#with (resumeGrep laneContent.Article this.frontmatter.params.resumeType)}}
+          <dl>
+            <dt>Articles</dt>
+            <dd>
+            {{#forEach this}}
+              <article>
+                <h2>{{this.frontmatter.title}}</h2>
+                <p><i>{{this.content.publication_metadata}}</i></p>
+                <p>{{{highlighter this.content.summary}}}</p>
+              </article>
+            {{/forEach}}
+            </dd>
+            <dd class="clear"></dd>
+          </dl>
+        {{/with}}
         
         {{#with (resumeGrep laneContent.Education (concat 'language' ',' this.frontmatter.params.resumeType))}}
           <dl>

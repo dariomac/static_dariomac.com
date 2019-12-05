@@ -30,7 +30,10 @@
     "subtaskscomplete": "0",
     "tags": "#a20121, #MSc",
     "title": "Darío Macchi, Martín Solari",
-    "type":"Article"
+    "type": "Article"
+  },
+  "resume": {
+    "tags": "academy"
   }
 }
 

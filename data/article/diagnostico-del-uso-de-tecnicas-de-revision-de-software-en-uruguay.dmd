@@ -39,6 +39,9 @@
 
 ---
 
+[summary:string]
+There are different fault detection static techniques, but the reviews are specials because they don't require the execution of the artifact to be evaluated. The objective of this research is to understand how different artifacts are being reviewed during the software development process. It performs a survey for software development professionals who do activities related to quality assurance and process definition. The survey results show that no formal review techniques are used, but different software artifacts are checked using less formal and systematic techniques (ad-hoc and peer review techniques). Regarding the artifacts, the most reviewed are those which are key to the development process, highly risky for project success and highly visible for the user. These are the requirements specifications and design documents, code and user interface respectively. Since the use of non-formal revisions are large, you can search for process quality improvements by the adoption of practices from more formal techniques such as the use of reading techniques and support tools through ongoing training.
+
 [authors:string]
 Darío Macchi, Martín Solari
 
