@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+Basic definition of what an MVP is. Mainly, I said that it's not a minimum product, but a product with enough features to satisfy the early adopters (first users).
+
 [pub_date:string]
 2014-05-20
 

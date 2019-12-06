@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+Better Errors replaces the standard Rails error page with a much better and more useful error page. RailsPanel is a Chrome extension for Rails development that will end your tailing of development.log
+
 [pub_date:string]
 2014-09-29
 

@@ -1,11 +1,11 @@
 {
-  "title": "“Technical Debt: basic concepts, research methods and study design“ tutorial",
+  "title": "“Technical Debt: basic concepts, research methods and study design” tutorial",
   "date": "2017-10-14",
   "layout": "education",
   "card": {
     "color": "#AD4647",
     "columnid": "done_3",
-    "content": "“Technical Debt: basic concepts, research methods and study design“ tutorial",
+    "content": "“Technical Debt: basic concepts, research methods and study design” tutorial",
     "datebox": "April 11-12, 2013",
     "extlink": "http://www.ort.edu.uy/index.php?id=AAAHBA&h=AAAH&noticias=1&id_noticia=6612&m=&a=&pub=0&publishers=",
     "laneid": "Education",
@@ -19,10 +19,16 @@
     "tags": "#technical debt, #empirical",
     "title": "Universidad ORT Uruguay",
     "type":"Education"
+  },
+  "resume": {
+    "tags": "academy"
   }
 }
 
 ---
+
+[summary:string]
+Tutorial covering various tools that experimental sofware engineering researchers may need to address research questions in the field of Technical Debt, like collection and analysis of qualitative data and design of research studies.
 
 [duration:string]
 April 11-12, 2013 (6hs)
@@ -31,19 +37,25 @@ April 11-12, 2013 (6hs)
 Carolyn Seaman
 
 [place_url:string]
-http://www.ort.edu.uy/index.php?id=AAAHBA&h=AAAH&noticias=1&id_noticia=6612&m=&a=&pub=0&publishers=
+https://fi.ort.edu.uy/65505/17/seminario-%E2%80%9Cdeuda-tecnica:-conceptos-basicos-metodos-de-investigacion-y-diseno-de-estudios%E2%80%9D.html
 
 [place:string]
 Universidad ORT Uruguay
 
 [content:md]
-This tutorial will cover the various tools that a [empirical software engineering](http://en.wikipedia.org/wiki/Experimental_software_engineering "Experimental software engineering") researcher may need to address research questions in the field of Technical Debt.
+This tutorial will cover the various tools that a [empirical software engineering](http://en.wikipedia.org/wiki/Experimental_software_engineering "Experimental software engineering") researchers may need to address research questions in the field of Technical Debt.
 
 The first day starts with an introduction to the concept of "Technical Debt", including basic definitions, implications, examples and some research in the area. Then we will see qualitative research methods. After this we will discuss some of the most commonly used methods (at least in [software engineering](http://en.wikipedia.org/wiki/Software_engineering "Software engineering") research) for the collection and analysis of [qualitative data](http://en.wikipedia.org/wiki/Level_of_measurement "Level of measurement"). Qualitative data are texts (and sometimes images and sound) instead of numbers.
 
-The second day of the tutorial will focus on the design of research studies. Starts with some of the basic principles of study design. Then there will be a workshop in which we will choose open research questions in the area of ??Technical Debt and will design [empirical studies](http://en.wikipedia.org/wiki/Empirical_research "Empirical research") to address these issues.
+The second day of the tutorial will focus on the design of research studies. Starts with some of the basic principles of study design. Then there will be a workshop in which we will choose open research questions in the area of Technical Debt and will design [empirical studies](http://en.wikipedia.org/wiki/Empirical_research "Empirical research") to address these issues.
 
 [lessons:md]
+
+[attachments:json]
+  [{
+    "filename": "edu_seaman.pdf",
+    "description": "Slides used in the tutorial (as <a href=\"https://fi.ort.edu.uy/innovaportal/file/67586/1/carolynseaman.pdf\">seen online on 2019-12-06</a>)."
+  }]
 
 [related_images:json]
   [{

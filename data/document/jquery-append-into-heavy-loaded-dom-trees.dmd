@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+Research that describes the strange behavior that occurs when a DOM element is added to a heavy loaded DOM tree and a way to solve it using setTimeout to let the browser redisplay the page.
+
 [pub_date:string]
 2014-04-14
 

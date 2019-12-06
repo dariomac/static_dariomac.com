@@ -17,13 +17,16 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": "#lang_es",
+    "tags": "#lang_es,#abstraction,#modelling",
     "title": "Niveles de Abstracción",
     "type": "0"
   }
 }
 
 ---
+
+[summary:string]
+Definition and basic example of what is an abstraction and how important is its application to software engineering.
 
 [pub_date:string]
 2019-01-05

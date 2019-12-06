@@ -24,6 +24,9 @@
 
 ---
 
+[summary:string]
+KanbanCV has sections represented by a swimlane to track parallel work streams within a common resource (me).
+
 [short_description:string]
 
 [content:md]

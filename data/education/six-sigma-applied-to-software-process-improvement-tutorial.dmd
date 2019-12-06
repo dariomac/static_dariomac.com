@@ -19,10 +19,16 @@
     "tags": "#research, #SPI, #six-sigma",
     "title": "Universidad ORT Uruguay",
     "type":"Education"
+  },
+  "resume": {
+    "tags": "academy"
   }
 }
 
 ---
+
+[summary:string]
+This tutorial seeks to understand the philosophy and quantitative concepts behind Six Sigma and its application to software engineering. The objective of Six Sigma is to achieve a systematic improvement in the quality of products and services through statistical control of processes.
 
 [duration:string]
 Apr 4-8, 2011 (20hs)

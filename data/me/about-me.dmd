@@ -27,6 +27,9 @@
 
 ---
 
+[summary:string]
+I believe that the curriculum vitae (CV) or resume should be something alive rather than a static document that looks like a biography. For this reason I choose to make my own resume in a way I called KanbanCV. Here I introduce myself, I write about experiences, education, other activities, as in a regular resume but with additional information.
+
 [short_description:string]
 Empirical Software Engineer. Systematic but flexible. Agile patterns fan. A bit literalist. Doomsayer.
 

@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+This is what I've learned during a project where I had to convert Flash content to something compatible with Ipad (TL;DR: I choose SVG).
+
 [pub_date:string]
 2012-08-07 10:00
 

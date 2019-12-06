@@ -19,10 +19,16 @@
     "tags": "#experimental, #statistics",
     "title": "Universidad ORT Uruguay",
     "type":"Education"
+  },
+  "resume": {
+    "tags": "academy"
   }
 }
 
 ---
+
+[summary:string]
+Tutorial intends to discuss the principles of experimental software engineering, presenting its main concepts and illustrating how statistical methods can be used to support the analysis of data collected through experimental studies.
 
 [duration:string]
 Jun 13, 2011 (4hs)

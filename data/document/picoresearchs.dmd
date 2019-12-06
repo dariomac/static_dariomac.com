@@ -25,11 +25,14 @@
 
 ---
 
+[summary:string]
+This is a collection of practical industry research with a scientific approach. Most of the time they lead to better decision-making or to informed decisions based on objective evidence.
+
 [pub_date:string]
 2014-05-01
 
 [short_description:string]
-Practical industry researchs with a scientific approach to take better decisions.
+Practical industry research with a scientific approach to take better decisions.
 
 [body:md]
 On one hand the [software industry](http://en.wikipedia.org/wiki/Software_industry "Software industry"), in order to improve the quality of its products, decides to adopt new technologies without sufficient evidence about their effectiveness. This is because expert opinion, biased marketing, similar experiences, intuition, among others things that increase the risk of projects and makes difficult to justify decisions.

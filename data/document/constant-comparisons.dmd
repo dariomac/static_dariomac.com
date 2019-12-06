@@ -50,6 +50,9 @@
 
 ---
 
+[summary:string]
+It’s an iterative data-analysis process where findings “emerge” from the data and the comparison with previous findings.
+
 [pub_date:string]
 2019-03-15
 

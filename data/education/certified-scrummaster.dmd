@@ -24,6 +24,9 @@
 
 ---
 
+[summary:string]
+Course that consists of two days of presentation, group discussion and experiential/interactive exercises designed to effectively teach Scrum principles and practices. The course itself uses the principles of Scrum, where the learning outcome is driven by the needs of the participants. At the end, the participants will have the confidence and understanding to socialize Scrum at their own teams.
+
 [duration:string]
 June 2th-3th, 2014 (16 hs)
 
@@ -41,7 +44,7 @@ The Certified ScrumMaster Training (CSM) course consists of two days of presenta
 
 Successful completion of a two-day ScrumMaster Certification course, taught by a Certified Scrum Trainer, is a requisite for taking the Certified ScrumMaster exam. Upon completion of the course, attendees are eligible to take the exam, the successful completion of which results in the designation of "Certified ScrumMaster" from the Scrum Alliance.
 
-This two-day course teaches the principles and practices that make ScrumMasters effective facilitators and productivity enhancers. The course itself uses the principles of Scrum, where the learning outcome is driven by the needs of the participants through a combination of expert instruction and self-directed learning. Opportunities to reflect and adapt the direction of the course are offered at regular intervals.
+This two-day course teaches the principles and practices that make Scrum Masters effective facilitators and productivity enhancers. The course itself uses the principles of Scrum, where the learning outcome is driven by the needs of the participants through a combination of expert instruction and self-directed learning. Opportunities to reflect and adapt the direction of the course are offered at regular intervals.
 
 [lessons:md]
 *   First things first

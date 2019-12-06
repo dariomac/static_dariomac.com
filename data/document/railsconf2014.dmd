@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+Another virtual covering of an event. In this case, the RailsConf held in Chicago - US on Apr 22-25, 2014.
+
 [pub_date:string]
 2014-04-22
 

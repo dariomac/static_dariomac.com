@@ -19,10 +19,16 @@
     "tags": "#SPL, #reuse",
     "title": "Universidad EAFIT (Medellín - Colombia)",
     "type":"Education"
+  },
+  "resume": {
+    "tags": "academy"
   }
 }
 
 ---
+
+[summary:string]
+Tutorial on how to orchestrate system families into a "range" or similar products by identifying "reusable" solutions to support the future development of multiple systems improving design and development processes faster than competitors.
 
 [duration:string]
 Oct 1, 2012 (4hs)

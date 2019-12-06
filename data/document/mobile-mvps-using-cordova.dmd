@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+This article introduces the concept of mobile MVP as a way to test before and avoid the risks of costly native developments by using alternatives to use HTML technology as native.
+
 [pub_date:string]
 2014-12-05
 

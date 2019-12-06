@@ -19,10 +19,16 @@
     "tags": "#experimental, #statistics",
     "title": "Universidad ORT Uruguay",
     "type":"Education"
+  },
+  "resume": {
+    "tags": "academy"
   }
 }
 
 ---
+
+[summary:string]
+Tutorial about benefits of formalizing software processes in Small and Medium Enterprises (SMEs) such as eliminating ambiguity and the possibility of having computational support them.
 
 [duration:string]
 Oct 25, 2012 (1:30hs)

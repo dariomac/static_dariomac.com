@@ -27,6 +27,9 @@
 
 ---
 
+[summary:string]
+Course with the goal of explore UML capabilities and possible format semantics, analyze existing model-checking methods of verification and and introduce an algebraic theory of institutions for describing logical theories and institution (co-)morphisms for expressing relationships.
+
 [duration:string]
 Nov 25-27, 2015
 
@@ -40,7 +43,7 @@ https://www.fing.edu.uy/evento/alexander-knapp-towards-institutional-framework-h
 INCO - FING UY
 
 [content:md]
-The Unified Modeling Language (UML), the lingua franca of software engineering, has been criticized many times and generally reason for the lack of precise meaning. The absence of a formal semantics has prevented the use of UML for the development of critical software. The objectives of this course are: to explore the capabilities of UML language and its possible semantics, analyze existing model-checking as a formal method for verifying properties of designs based on UML software, and introduce an algebraic Theory based approach Institutions to assign a meaning to a system based on UML to consider it as a mixed language design.
+The Unified Modeling Language (UML) provides a wealth of sub-languages for specifying and documenting software systems, but only offers a rather weak linkage between these sub-languages through a common abstract syntax and an informal semantical description.  In order to open up the perspective of integrating the UML also in the development of safety-critical systems, we propose a heterogeneous modelling approach that represents the semantics of the several sub-languages in their own, appropriate semantic domain and provides flexible links between the different formalisms.  The approach is based on the algebraic theory of institutions for describing logical theories and institution (co-)morphisms for expressing relationships. We illustrate the approach by some examples for UML class diagrams, OCL, interactions, and state machines.
 
 [lessons:md]
 *   **Part I: UML**

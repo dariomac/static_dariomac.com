@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+Swagger™ is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.
+
 [pub_date:string]
 2014-10-20
 

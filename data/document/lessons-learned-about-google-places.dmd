@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+The Google Places API allows you to query for place information on a variety of categories, such as: establishments, prominent points of interest, geographic locations, and more. You can search for places either by proximity or a text string.
+
 [pub_date:string]
 2014-09-19
 

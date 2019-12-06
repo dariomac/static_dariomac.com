@@ -24,6 +24,9 @@
 
 ---
 
+[summary:string]
+Here I build a list of my first steps in the world of computers and software development.
+
 [duration:string]
 1994 - 2000
 
@@ -36,7 +39,6 @@ IAC-CTC-ORT
 
 [content:md]
 *   Linux Advanced (Servers Administration) at IAC (American Institute of Computation).
-
     July 12, 2002 – Montevideo
     10 months
 *   Linux Introduction Course at IAC (American Institute of Computation).

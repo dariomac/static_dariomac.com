@@ -19,10 +19,16 @@
     "tags": "#experimental, #statistics",
     "title": "Universidad ORT Uruguay",
     "type":"Education"
+  },
+  "resume": {
+    "tags": "academy"
   }
 }
 
 ---
+
+[summary:string]
+Tutorial covering various tools and methods of experimental and statistical analysis that software engineering researchers may need to address research issues in various fields, mainly related to quantitative data and research study design.
 
 [duration:string]
 Jun 25-27, 2012 (9hs)
@@ -31,7 +37,7 @@ Jun 25-27, 2012 (9hs)
 Marco Antonio Pereira Araujo
 
 [place_url:string]
-http://www.ort.edu.uy/index.php?id=AAAHAFAF&h=&noticias=1&id_noticia=5975&m=0&a=2012&pub=0&publishers=
+https://www.ort.edu.uy/56186/9/profesor-visitante-de-la-iuniversidade-federal-de-rio-de-janeiro-i-dicta-curso-en-el-master-en-ingenieria.html
 
 [place:string]
 Universidad ORT Uruguay

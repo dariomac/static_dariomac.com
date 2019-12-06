@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+This is the documentation of this libreary made/adapted to import SVG directly from file and scale images.
+
 [pub_date:string]
 2013-03-14 05:30
 
