@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+I integrate WinCommand and JSwat to the set so I thought to share this "package" with everybody. All the source code of the tools are in the package, so you can hack every tool in order to make it more useful for you (or report bugs!!).
+
 [download_link:string]
 https://code.google.com/archive/p/anotherclojurebox/downloads
 

@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+WinCommand is an application that can run a console (like CLisp or cmd) inside a window. For example you can run CLisp inside a window so you can work more confortable. The program can be configured for any (I hope) console application, like others implementations of lisp (Corman Lisp, GCL,...).
+
 [download_link:string]
 #
 

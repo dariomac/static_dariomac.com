@@ -25,6 +25,9 @@
 
 ---
 
+[summary:string]
+DM-Pixie was built especially for webmasters and designers. Just point to a color and DM-Pixie will tell you the hex, RGB, HTML, CMYK and HSB values of the color. Also show the current coordinates of your mouse pointer.
+
 [download_link:string]
 /assets/DM-Pixie.zip
 

@@ -24,6 +24,9 @@
 
 ---
 
+[summary:string]
+SVG importer (and other utilities) to read SVG directly from file and convert to Raphaël primitives to draw elements.
+
 [download_link:string]
 /assets/raphael-utils.js
 

@@ -24,6 +24,9 @@
 
 ---
 
+[summary:string]
+This Chrome extension provides the same service as Read It Later (http://readitlaterlist.com) but saves the data on your machine (so you don't need an account).
+
 [download_link:string]
 
 [platform:string]
