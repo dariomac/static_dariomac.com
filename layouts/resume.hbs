@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <title>One Page Resume</title>
+    <title>Resume-{{capitalize this.frontmatter.params.resumeType}}</title>
 
     <style type="text/css">
       * { margin: 0; padding: 0; }
@@ -19,132 +19,163 @@
       h3 { font-size: 18px; margin: 0 0 6px 0; position: relative; color: #999; }
       h3 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
       p { margin: 0 0 16px 0; text-align: justify; }
+      article p:nth-last-child(2) { margin-bottom: 6px }
       a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
       a:hover { border-bottom-style: solid; color: black; }
       ul { margin: 0 0 32px 17px; }
       #objective { width: 500px; float: left; }
-      #objective p { font-family: Georgia, Serif; font-style: italic; color: #666;}
-      dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0; width: 115px; float: left; height: 100px;  }
-      dd { width: 650px; float: right; border-left: 1px solid #999; padding-left: 8px;}
+      #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+      dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: left; padding: 0; width: 115px; float: left; height: 100px;  }
+      dd { width: 670px; float: right; border-left: 1px solid #999; padding-left: 8px; }
       dd.clear { float: none; margin: 0; height: 25px; border: 0px; }
+      section { page-break-before: always }
+      section article:last-child { padding-bottom: 0px; }
       article { page-break-inside: avoid; padding-bottom: 30px;}
-      @media print {
-        a[href*='//']:after {
+      .folio { text-align: right; color: #999; font-family: monospace; font-size: 10px; }
+      /*@media print {
+        h3 a[href*='//']:after {
           content:" (" attr(href) ") ";
         }
-      }
+      }*/
       
     </style>
   </head>
 
   <body>
     <div id="page-wrap">
-      <img src="https://dariomac.com/assets/aboutme-me.jpg" alt="Photo of Darío Macchi" id="pic" />
-
-      <div style="clear: both; float: right; margin-top: 50px; ">
-        <p>Twitter: <a href="https://twitter.com/_dariomac">_dariomac</a></p>
-      </div>
-  
-      <div id="contact-info" class="vcard">
-        <!-- Microformats! -->
-        <h1 class="fn">Darío Macchi</h1>
-        <p>
-          Cell: <span class="tel">(598) 99259087</span><br />
-          Email: <a class="email" href="mailto:dariomac@gmail.com">dariomac@gmail.com</a>
-        </p>
-      </div>
-              
-      <div id="objective">
-        <p>
-          {{#with (resumeGrep laneContent.Me this.frontmatter.params.resumeType)}}
-            {{#forEach this}}
-              {{{highlighter this.content.content}}}
-            {{/forEach}}
-          {{/with}}
-        </p>
-      </div>
-      
-      <div class="clear" style="page-break-before: always"></div>
-
       <section>
-        <dd class="clear"></dd>
+        <img src="https://dariomac.com/assets/aboutme-me.jpg" alt="Photo of Darío Macchi" id="pic" />
 
-        {{#with (resumeGrep laneContent.Experience this.frontmatter.params.resumeType)}}
-          <dl>
-            <dt>Experience</dt>
-            <dd>
-            {{#forEach this}}
-              <article>
-                <h2>{{this.frontmatter.card.content}}</h2>
-                <h3><a href="{{this.content.place_url}}">{{this.content.place}}</a></h3>
-                <p><strong>{{this.content.duration}}</strong></p>
-                <p>{{{highlighter this.content.summary}}}</p>
-              </article>
-            {{/forEach}}
-            </dd>
-            <dd class="clear"></dd>
-          </dl>
-        {{/with}}
-
-        {{#with (resumeGrep laneContent.Education this.frontmatter.params.resumeType)}}
-          <dl>
-            <dt>Education</dt>
-            <dd>
-            {{#forEach this}}
-              <article>
-                <h2>{{this.frontmatter.card.content}}</h2>
-                <h3><a href="{{this.content.place_url}}">{{this.content.place}}</a></h3>
-                <p>
-                  <strong>{{this.content.duration}}</strong>
-                  {{#if this.content.dictated_by}}
-                    - Dictated by {{this.content.dictated_by}}
-                  {{/if}}
-                </p>
-                <p>{{{highlighter this.content.summary}}}</p>
-              </article>
-            {{/forEach}}
-            </dd>
-            <dd class="clear"></dd>
-          </dl>
-        {{/with}}
-
-        {{#with (resumeGrep laneContent.Article this.frontmatter.params.resumeType)}}
-          <dl>
-            <dt>Articles</dt>
-            <dd>
-            {{#forEach this}}
-              <article>
-                <h2>{{this.frontmatter.title}}</h2>
-                <p><i>{{this.content.publication_metadata}}</i></p>
-                <p>{{{highlighter this.content.summary}}}</p>
-              </article>
-            {{/forEach}}
-            </dd>
-            <dd class="clear"></dd>
-          </dl>
-        {{/with}}
-        
-        {{#with (resumeGrep laneContent.Education (concat 'language' ',' this.frontmatter.params.resumeType))}}
-          <dl>
-            <dt>Languages</dt>
-            <dd>
-            {{#forEach this}}
-              <article>
-                <h2>{{this.frontmatter.card.content}}</h2>
-                <h3><a href="{{this.content.place_url}}">{{this.content.place}}</a></h3>
-                <p><strong>{{this.content.duration}}</strong></p>
-                <p>{{{highlighter this.content.summary}}}</p>
-              </article>
-            {{/forEach}}
-            </dd>
-            <dd class="clear"></dd>
-          </dl>
-        {{/with}}
-
+        <div style="clear: both; float: right; margin-top: 50px; ">
+          <p>Twitter: <a href="https://twitter.com/_dariomac">_dariomac</a></p>
+        </div>
+    
+        <div id="contact-info" class="vcard">
+          <!-- Microformats! -->
+          <h1 class="fn">Darío Macchi</h1>
+          <p>
+            Cell: <span class="tel">(598) 99259087</span><br />
+            Email: <a class="email" href="mailto:dariomac@gmail.com">dariomac@gmail.com</a>
+          </p>
+        </div>
+                
+        <div id="objective">
+          <p>
+            {{#with (resumeGrep laneContent.Me this.frontmatter.params.resumeType)}}
+              {{#forEach this}}
+                {{{highlighter this.content.content}}}
+              {{/forEach}}
+            {{/with}}
+          </p>
+        </div>
       </section>
+      
+      <div class="clear"></div>
+
+      {{#with (resumeGrep laneContent.Experience this.frontmatter.params.resumeType)}}
+      <section>
+        <dl>
+          <dt>Experience</dt>
+          <dd>
+          {{#forEach this}}
+            <article>
+              <h2>{{this.frontmatter.card.content}}</h2>
+              <h3><a href="{{this.content.place_url}}">{{this.content.place}}</a></h3>
+              <p><strong>{{this.content.duration}}</strong></p>
+              <p>{{{highlighter this.content.summary}}}</p>
+              <p class="folio">
+                <a href="https://dariomac.com{{this.frontmatter.card.linkto}}">
+                  https://dariomac.com{{this.frontmatter.card.linkto}}
+                </a>
+              </p>
+            </article>
+          {{/forEach}}
+          </dd>
+          <dd class="clear"></dd>
+        </dl>
+      </section>
+      {{/with}}
+
+      {{#with (resumeGrep laneContent.Education this.frontmatter.params.resumeType)}}
+      <section>
+        <dl>
+          <dt>Education</dt>
+          <dd>
+          {{#forEach this}}
+            <article>
+              <h2>{{this.frontmatter.card.content}}</h2>
+              <h3><a href="{{this.content.place_url}}">{{this.content.place}}</a></h3>
+              <p>
+                <strong>{{this.content.duration}}</strong>
+                {{#if this.content.dictated_by}}
+                  - Dictated by {{this.content.dictated_by}}
+                {{/if}}
+              </p>
+              <p>{{{highlighter this.content.summary}}}</p>
+              <p class="folio">
+                <a href="https://dariomac.com{{this.frontmatter.card.linkto}}">
+                  https://dariomac.com{{this.frontmatter.card.linkto}}
+                </a>
+              </p>
+            </article>
+          {{/forEach}}
+          </dd>
+          <dd class="clear"></dd>
+        </dl>
+      </section>
+      {{/with}}
+
+      {{#with (resumeGrep laneContent.Article this.frontmatter.params.resumeType)}}
+      <section>
+        <dl>
+          <dt>Articles</dt>
+          <dd>
+          {{#forEach this}}
+            <article>
+              <h2>{{this.frontmatter.title}}</h2>
+              <p><i>{{this.content.publication_metadata}}</i></p>
+              <p>{{{highlighter this.content.summary}}}</p>
+              <p class="folio">
+                <a href="https://dariomac.com{{this.frontmatter.card.linkto}}">
+                  https://dariomac.com{{this.frontmatter.card.linkto}}
+                </a>
+              </p>
+            </article>
+          {{/forEach}}
+          </dd>
+          <dd class="clear"></dd>
+        </dl>
+      </section>
+      {{/with}}
+      
+      {{#with (resumeGrep laneContent.Education (concat 'language' ',' this.frontmatter.params.resumeType))}}
+      <section>
+        <dl>
+          <dt>Languages</dt>
+          <dd>
+          {{#forEach this}}
+            <article>
+              <h2>{{this.frontmatter.card.content}}</h2>
+              <h3><a href="{{this.content.place_url}}">{{this.content.place}}</a></h3>
+              <p><strong>{{this.content.duration}}</strong></p>
+              <p>{{{highlighter this.content.summary}}}</p>
+              <p class="folio">
+                <a href="https://dariomac.com{{this.frontmatter.card.linkto}}">
+                  https://dariomac.com{{this.frontmatter.card.linkto}}
+                </a>
+              </p>
+            </article>
+          {{/forEach}}
+          </dd>
+          <dd class="clear"></dd>
+        </dl>
+      </section>
+      {{/with}}
+
       <div class="clear"></div>
     </div>
   </body>
+  <section>
 </html>
 {{!--
 {
@@ -158,7 +189,8 @@
     "summary": "A summary of ...",
     "location": {
       "postalCode": "11700",
-      "city": "Montevideo",
+      "cit
+    </section>y": "Montevideo",
       "countryCode": "UY",
       "region": "Montevideo"
     },
