@@ -5,7 +5,7 @@
   "card": {
     "color": "#99B399",
     "columnid": "%{column}",
-    "content": "%{title}",
+    "content": "Name_of_the_activity_course_or_career",
     "datebox": "Jun 2, 2014 - Jun 3, 2014",
     "extlink": "%{place_url}",
     "laneid": "%{lane}",
@@ -26,7 +26,7 @@
     "subtasks": "0",
     "subtaskscomplete": "0",
     "tags": "#research, #commercialization",
-    "title": "%{place}",
+    "title": "Name_of_the_place_or_company",
     "type": "0"
   },
   "jsonld": {},

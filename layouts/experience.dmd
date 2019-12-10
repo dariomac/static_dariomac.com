@@ -5,11 +5,11 @@
   "card": {
     "color": "#00A651",
     "columnid": "%{column}",
-    "content": "%{title}",
+    "content": "Activity_done_or_position_name",
     "datebox": "Mar 2015",
     "extlink": "%{place_url}",
     "laneid": "%{lane}",
-    "leftbox": "Medellín - Colombia",
+    "leftbox": "",
     "leftmsg": "",
     "linkto": "%{link_to}",
     "position": "%{position}",
@@ -26,7 +26,7 @@
     "subtasks": "0",
     "subtaskscomplete": "0",
     "tags": null,
-    "title": "%{place}",
+    "title": "Name_of_the_place_or_company",
     "type": "0"
   },
   "jsonld": {},
