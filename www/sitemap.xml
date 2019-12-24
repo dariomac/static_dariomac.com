@@ -272,12 +272,6 @@
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>http://www.dariomac.com/basic-computer-skills-first-steps</loc>
-      <lastmod>2017-10-23</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
       <loc>http://www.dariomac.com/formal-methods-and-unified-modeling-language-uml</loc>
       <lastmod>2017-11-20</lastmod>
       <changefreq>monthly</changefreq>
@@ -286,12 +280,6 @@
     <url>
       <loc>http://www.dariomac.com/certified-scrummaster</loc>
       <lastmod>2017-03-21</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/doctorado-phd</loc>
-      <lastmod>2017-11-10</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
@@ -386,26 +374,50 @@
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>http://www.dariomac.com/9-entrepreneurship-summer-camp</loc>
-      <lastmod>2017-07-19</lastmod>
+      <loc>http://www.dariomac.com/basic-computer-skills-first-steps</loc>
+      <lastmod>2017-10-23</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>http://www.dariomac.com/batanga-media-scrum-master---project-manager</loc>
-      <lastmod>2017-09-17</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/jis-uy-2019-scrum-zombies-and-orcs-teams</loc>
-      <lastmod>2019-10-07</lastmod>
+      <loc>http://www.dariomac.com/doctorado-phd</loc>
+      <lastmod>2017-11-10</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>http://www.dariomac.com/vairix-software-engineer</loc>
       <lastmod>2019-07-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/degree-final-projects-tutor</loc>
+      <lastmod>2018-11-06</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/software-engineering-advisor-consultant</loc>
+      <lastmod>2017-07-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/software-engineering-professor</loc>
+      <lastmod>2017-07-23</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/eci2020-course-proposal</loc>
+      <lastmod>2019-11-10</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/jis-uy-2019-scrum-zombies-and-orcs-teams</loc>
+      <lastmod>2019-10-07</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
@@ -422,44 +434,8 @@
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>http://www.dariomac.com/vairix-coo---scrum-master---researcher</loc>
-      <lastmod>2017-07-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/workshop-about-reading-techniques-for-software-reviews</loc>
-      <lastmod>2017-07-21</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/degree-final-projects-tutor</loc>
-      <lastmod>2018-11-06</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/introduction-to-the-practice-of-inception</loc>
-      <lastmod>2017-10-06</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/inception-workshop-talk-for-agilists-and-young-entrepreneurs</loc>
-      <lastmod>2017-09-02</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/computing-teacher</loc>
-      <lastmod>2017-07-23</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/eci2020-course-proposal</loc>
-      <lastmod>2019-11-10</lastmod>
+      <loc>http://www.dariomac.com/batanga-media-scrum-master---project-manager</loc>
+      <lastmod>2017-09-17</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
@@ -470,8 +446,38 @@
       <priority>0.5</priority>
     </url>
     <url>
+      <loc>http://www.dariomac.com/introduction-to-the-practice-of-inception</loc>
+      <lastmod>2017-10-06</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/9-entrepreneurship-summer-camp</loc>
+      <lastmod>2017-07-19</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/inception-workshop-talk-for-agilists-and-young-entrepreneurs</loc>
+      <lastmod>2017-09-02</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
       <loc>http://www.dariomac.com/workshop-on-software-requirements-management</loc>
       <lastmod>2017-03-17</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/vairix-coo---scrum-master---researcher</loc>
+      <lastmod>2017-07-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/workshop-about-reading-techniques-for-software-reviews</loc>
+      <lastmod>2017-07-21</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
@@ -488,13 +494,7 @@
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>http://www.dariomac.com/software-engineering-advisor-consultant</loc>
-      <lastmod>2017-07-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/software-engineering-professor</loc>
+      <loc>http://www.dariomac.com/computing-teacher</loc>
       <lastmod>2017-07-23</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
@@ -532,12 +532,6 @@
     <url>
       <loc>http://www.dariomac.com/content-distribution-system</loc>
       <lastmod>2019-04-25</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/dm-pixie</loc>
-      <lastmod>2017-07-07</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
@@ -580,6 +574,12 @@
     <url>
       <loc>http://www.dariomac.com/inception-workshop-for-entrepreneurs</loc>
       <lastmod>2017-07-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/dm-pixie</loc>
+      <lastmod>2017-07-07</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
@@ -686,6 +686,18 @@
       <priority>0.5</priority>
     </url>
     <url>
+      <loc>http://www.dariomac.com/jquery-plugin-quality-assessment</loc>
+      <lastmod>2017-04-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/software-inspection-adoption</loc>
+      <lastmod>2017-05-26</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
       <loc>http://www.dariomac.com/evidence-based-research-of-javascript-grids-according-to-a-set-of-expected-attributes</loc>
       <lastmod>2017-06-03</lastmod>
       <changefreq>monthly</changefreq>
@@ -698,20 +710,8 @@
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>http://www.dariomac.com/jquery-plugin-quality-assessment</loc>
-      <lastmod>2017-04-09</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
       <loc>http://www.dariomac.com/research-on-3d-modeling-of-the-human-body</loc>
       <lastmod>2017-06-02</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/software-inspection-adoption</loc>
-      <lastmod>2017-05-26</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>

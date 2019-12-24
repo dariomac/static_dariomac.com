@@ -76,10 +76,12 @@ $(function(){
   [].forEach.call(document.querySelectorAll('.iso'), (elem)=>{
     isotopables.push(new Isotope( elem, {
       itemSelector: '.task',
-      masonry: {
+      layoutMode: 'fitRows',
+      fitRows: {
         columnWidth: 170,
         gutter: 5
-      },
+      }
+      ,
       getSortData: {
         position: function ( elem ) {
           return (parseInt($(elem).attr('data-order')) || 0);

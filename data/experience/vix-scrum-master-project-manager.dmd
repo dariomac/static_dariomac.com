@@ -1,11 +1,11 @@
 {
-  "title": "VIX - Scrum Master - Project Manager",
+  "title": "VIX - Scrum Master - Project Manager - Node.js Architect",
   "date": "2019-03-23",
   "layout": "experience",
   "card": {
     "color": "#6EA4D4",
     "columnid": "done_3",
-    "content": "Scrum Master - Project Manager",
+    "content": "Scrum Master - Project Manager - Node.js Architect",
     "datebox": "Nov 2016 - Jun 2019",
     "extlink": "https://www.vix.com/en/corp",
     "laneid": "Experience",
@@ -17,21 +17,22 @@
     "subtasks": "0",
     "subtaskscomplete": "0",
     "tags": null,
-    "title": "VIX - Scrum Master - Project Manager",
+    "title": "VIX",
     "type": "0"
   },
   "resume": {
-    "tags": "academy,industry"
+    "tags": "academy,industry",
+    "featured": "industry"
   }
 }
 
 ---
 
 [summary:string]
-I was the Scrum Master of the uruguayan development team, which was focused on Product Development's support. One of our systems (of which I am its architect) was behind the delivery of content using several distribution channels NodeJS. Other was the editorial tool used to generate and admin editorial content Drupal. Management of both was automated by a DevOps team.
+I was the Scrum Master of the uruguayan development team, which was focused on Product Development's support. One of our systems (of which I am its architect in Node.js) was behind the delivery of content using several distribution channels. Other was the editorial tool (Drupal) used to generate and admin editorial content. Management of both was automated by a DevOps team.
 
 [duration:string]
-Nov 2016 – Jun 2019
+Nov 2016 – Jun 2019 (2 years 7 months)
 
 [place_url:string]
 https://www.vix.com/en/corp

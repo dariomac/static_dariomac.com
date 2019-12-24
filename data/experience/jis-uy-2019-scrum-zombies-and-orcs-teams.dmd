@@ -5,7 +5,7 @@
   "card": {
     "color": "#00A651",
     "columnid": "done_3",
-    "content": "Me talking about broken scrum teams and how to fix them in the jis.uy 2019.",
+    "content": "“Scrum Zombies & Orcs teams” talk",
     "datebox": "Oct 2019",
     "extlink": "https://is.uy/jis-uy/",
     "laneid": "Experience",
@@ -17,8 +17,11 @@
     "subtasks": "0",
     "subtaskscomplete": "0",
     "tags": null,
-    "title": "jis.uy 2019 - Scrum Zombies & Orcs teams",
+    "title": "JIS.uy 2019",
     "type": "0"
+  },
+  "resume": {
+    "tags": "industry"
   }
 }
 
@@ -27,13 +30,13 @@
 This talk was about two different types of scrum teams, how they became those monsters (zombies and orcs) and how they can come back to life (if they can!). It was held at the Faculty of Engineering as part of jis.uy 2019.
 
 [duration:string]
-Oct 3, 2019
+Oct 3, 2019 (4 hours)
 
 [place_url:string]
 https://goo.gl/maps/DiXifTfw42b64xCe6
 
 [place:string]
-jis.uy 2019 - Edificio Polifuncional "José Luis Massera" - FING - Montevideo - Uruguay
+Edificio Polifuncional "José Luis Massera" - FING - Montevideo - Uruguay
 
 [content:md]
 IS.uy is a program to promote and develop Software Engineering in Uruguay. The intention is to generate synergy, encourage and strengthen industry-academy links by building a strong community in software engineering.

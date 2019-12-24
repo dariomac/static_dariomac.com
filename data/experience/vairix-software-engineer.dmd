@@ -12,7 +12,7 @@
     "leftbox": "",
     "leftmsg": "",
     "linkto": "/vairix-software-engineer",
-    "position": "20190603",
+    "position": "30190603",
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
@@ -21,7 +21,8 @@
     "type": "0"
   },
   "resume": {
-    "tags": "academy,industry"
+    "tags": "academy,industry",
+    "featured": "industry"
   }
 }
 

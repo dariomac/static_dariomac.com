@@ -111,7 +111,7 @@
       "\t},{",
       "\t\t\"filename\": \"This is the link text\",",
       "\t\t\"click_bait\": \"This is a clickbait title\",",
-      "\t\t\"description\": \"This is the href of the link\"",
+      "\t\t\"linkto\": \"This is the href of the link\"",
       "\t}]"
     ]
   }

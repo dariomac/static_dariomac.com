@@ -12,7 +12,7 @@
     "leftbox": "Buenos Aires - Argentina",
     "leftmsg": "",
     "linkto": "/eci2020-course-proposal",
-    "position": "0",
+    "position": "20191110",
     "subtaskdetails": [{
       "taskid": "1",
       "title": "Submitted to ECI 2020 organization.",
@@ -26,7 +26,7 @@
     "subtasks": "0",
     "subtaskscomplete": "0",
     "tags": null,
-    "title": "Mejora en calidad de revisiones de software mediante técnicas de lectura",
+    "title": "ECI 2020",
     "type": "0"
   }
 }

@@ -1,25 +1,28 @@
 {
-    "title": "Certified ScrumMaster",
-    "date": "2017-03-21",
-    "layout": "education",
-    "card": {
-      "color": "#77D477",
-      "columnid": "done_3",
-      "content": "Certified ScrumMaster",
-      "datebox": "Jun 2, 2014 - Jun 3, 2014",
-      "extlink": "http://www.cpainnovation.com/",
-      "laneid": "Education",
-      "leftbox": 0,
-      "leftmsg": null,
-      "linkto": "/certified-scrummaster",
-      "position": "15",
-      "subtaskdetails": [],
-      "subtasks": "0",
-      "subtaskscomplete": "0",
-      "tags": "#agile, #scrum",
-      "title": "CPA Innovation (Hotel Palladium)",
-      "type":"Education"
-    }
+  "title": "Certified ScrumMaster",
+  "date": "2017-03-21",
+  "layout": "education",
+  "card": {
+    "color": "#77D477",
+    "columnid": "done_3",
+    "content": "Certified ScrumMaster",
+    "datebox": "Jun 2, 2014 - Jun 3, 2014",
+    "extlink": "http://www.cpainnovation.com/",
+    "laneid": "Education",
+    "leftbox": 0,
+    "leftmsg": null,
+    "linkto": "/certified-scrummaster",
+    "position": "15",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "#agile, #scrum",
+    "title": "CPA Innovation (Hotel Palladium)",
+    "type":"Education"
+  },
+  "resume": {
+    "tags": "industry"
+  }
 }
 
 ---

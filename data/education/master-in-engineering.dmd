@@ -21,7 +21,8 @@
     "type":"Education"
   },
   "resume": {
-    "tags": "academy,industry"
+    "tags": "academy,industry",
+    "featured": "academy,industry"
   }
 }
 
@@ -31,7 +32,7 @@
 This master aims to provide basic education in scientific and technological research. Candidates achieve their education primarily through research activities, which lead to the development of a final thesis under the supervision of active researchers within a research group of the university. This master is supported by the National Agency for Innovation and Research (ANII) in a national request for proposals for graduate study programs.
 
 [duration:string]
-2010 - 2013
+Aug 2010 - March 2013 (2 years 3 months)
 
 [dictated_by:string]
 

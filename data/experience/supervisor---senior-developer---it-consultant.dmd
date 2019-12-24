@@ -1,5 +1,5 @@
 {
-  "title": "Supervisor - Senior Developer - IT Consultant",
+  "title": "PwC - Supervisor - Senior Developer - IT Consultant",
   "date": "2017-08-01",
   "layout": "experience",
   "card": {
@@ -12,7 +12,7 @@
     "leftbox": "",
     "leftmsg": "",
     "linkto": "/supervisor---senior-developer---it-consultant",
-    "position": "20140315",
+    "position": "20041115",
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
@@ -21,7 +21,8 @@
     "type":"Experience"
   },
   "resume": {
-    "tags": "academy,industry"
+    "tags": "academy,industry",
+    "featured": "industry"
   },
   "custom_header": "<style>.details_content img { border: 1px solid #ccc; margin: 6px 0px !important; } </style>"
 }

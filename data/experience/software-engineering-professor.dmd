@@ -12,12 +12,16 @@
     "leftbox": "",
     "leftmsg": "",
     "linkto": "/software-engineering-professor",
-    "position": "0",
+    "position": "30130301",
     "subtasks": "0",
     "subtaskscomplete": "0",
     "tags": null,
     "title": "Universidad ORT Uruguay",
     "type":"Experience"
+  },
+  "resume": {
+    "tags": "academy,industry",
+    "featured": "academy,industry"
   }
 }
 

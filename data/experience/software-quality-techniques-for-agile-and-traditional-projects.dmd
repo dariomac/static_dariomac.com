@@ -1,11 +1,11 @@
 {
-  "title": "Software quality techniques for agile and traditional projects",
+  "title": "Software Quality Techniques for agile and traditional projects",
   "date": "2019-01-15",
   "layout": "experience",
   "card": {
     "color": "#FF6E19",
     "columnid": "done_3",
-    "content": "Software quality techniques for agile and traditional projects",
+    "content": "Software Quality Techniques for agile and traditional projects",
     "datebox": "Oct 22-24-26, 2018",
     "extlink": "https://www.fing.edu.uy/cpap/cursos/tecnicas-de-calidad-de-software-para-proyectos-agiles-y-tradicionales",
     "laneid": "Experience",
@@ -19,6 +19,9 @@
     "tags": null,
     "title": "Facultad de Ingeniería (UdelaR)",
     "type": "0"
+  },
+  "resume": {
+    "tags": "academy,industry"
   }
 }
 

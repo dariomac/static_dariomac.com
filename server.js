@@ -9,6 +9,11 @@ const url = require('url');
 
 let app = express();
 
+let logger = require('dm-logger').initialize(app, {
+  getLogLevelFromQuerystring: (process.env.NODE_ENV !== 'production'),
+  assetsPathRegex: /^\/assets\/.*/ig
+});
+
 // http://stackoverflow.com/a/16895480/126519
 app.use(function (req, res, next) {
   let reqPath = decodeURIComponent(req.path);

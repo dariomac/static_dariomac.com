@@ -12,20 +12,24 @@
     "leftbox": "",
     "leftmsg": "",
     "linkto": "/degree-final-projects-tutor",
-    "position": "20160401",
+    "position": "30160401",
     "subtasks": "0",
     "subtaskscomplete": "0",
     "tags": null,
     "title": "Universidad ORT Uruguay",
     "type": "Experience"
+  },
+  "resume": {
+    "tags": "academy,industry",
+    "featured": "academy,industry"
   }
 }
 
 ---
 
 [summary:string]
-The end-of-degree-project is a complex task where the undergraduate student has to integrate the concepts, contents, knowledge, procedures, and skills that she has been working through her studies.
-I think my job as tutor's is to help students to sort things out. As they never faced real situations/problems, I feel that is my responsibility to guide them with advises from my own experience. Also is always good keep an eye on the written and oral presentation preparation.
+The end-of-degree-project is a complex task where the undergraduate student has to integrate the concepts, contents, knowledge, procedures, and skills that were developed throughout their studies.
+I think my job as tutor's is to help students to sort things out. As they never faced real situations/problems, I feel that my responsibility is to guide them with advises from my own experience. Also, is always good to keep an eye on the written and oral presentation preparation.
 
 [duration:string]
 Aug 2016 - Now
