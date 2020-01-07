@@ -230,7 +230,7 @@
       </section>
       {{/with}}
 
-      {{#with (resumeGrep laneContent.Project this.frontmatter.params.resumeType)}}
+      {{#with (resumeGrep laneContent.Project this.frontmatter.params.resumeType this.frontmatter.params.job)}}
       <section>
         <dl>
           <dt>Projects</dt>

@@ -188,12 +188,6 @@
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>http://www.dariomac.com/contact-me</loc>
-      <lastmod>2019-10-14</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
       <loc>http://www.dariomac.com/8-hours-as-vairix-developer</loc>
       <lastmod>2017-09-17</lastmod>
       <changefreq>monthly</changefreq>
@@ -212,14 +206,20 @@
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>http://www.dariomac.com/finish-this-website</loc>
-      <lastmod>2017-05-19</lastmod>
+      <loc>http://www.dariomac.com/contact-me</loc>
+      <lastmod>2019-10-14</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
       <loc>http://www.dariomac.com/favorite-drinks</loc>
       <lastmod>2017-05-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/finish-this-website</loc>
+      <lastmod>2017-05-19</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
@@ -374,14 +374,14 @@
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>http://www.dariomac.com/basic-computer-skills-first-steps</loc>
-      <lastmod>2017-10-23</lastmod>
+      <loc>http://www.dariomac.com/doctorado-phd</loc>
+      <lastmod>2017-11-10</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>http://www.dariomac.com/doctorado-phd</loc>
-      <lastmod>2017-11-10</lastmod>
+      <loc>http://www.dariomac.com/basic-computer-skills-first-steps</loc>
+      <lastmod>2017-10-23</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
@@ -536,6 +536,24 @@
       <priority>0.5</priority>
     </url>
     <url>
+      <loc>http://www.dariomac.com/swingimprover</loc>
+      <lastmod>2017-07-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/local-read-later</loc>
+      <lastmod>2017-07-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>http://www.dariomac.com/wincommand</loc>
+      <lastmod>2017-07-17</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
       <loc>http://www.dariomac.com/experiencia-virtual-educativa-sistema-inmunologico-inmunovr</loc>
       <lastmod>2018-11-07</lastmod>
       <changefreq>monthly</changefreq>
@@ -572,6 +590,12 @@
       <priority>0.5</priority>
     </url>
     <url>
+      <loc>http://www.dariomac.com/raphael-utils</loc>
+      <lastmod>2017-03-23</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
       <loc>http://www.dariomac.com/inception-workshop-for-entrepreneurs</loc>
       <lastmod>2017-07-18</lastmod>
       <changefreq>monthly</changefreq>
@@ -580,30 +604,6 @@
     <url>
       <loc>http://www.dariomac.com/dm-pixie</loc>
       <lastmod>2017-07-07</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/local-read-later</loc>
-      <lastmod>2017-07-18</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/raphael-utils</loc>
-      <lastmod>2017-03-23</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/swingimprover</loc>
-      <lastmod>2017-07-07</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://www.dariomac.com/wincommand</loc>
-      <lastmod>2017-07-17</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>

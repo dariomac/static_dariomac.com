@@ -24,7 +24,7 @@ app.use(function (req, res, next) {
     fs.stat(file, function (err, stat) {
       if (err == null) {
         if (reqQueryStr) {
-          req.url = `${url.parse(req.url).pathname}.html?${reqQueryStr}`
+          req.url = `${url.parse(req.url).pathname}.html?${reqQueryStr}`;
         }
         else {
           req.url += '.html';
