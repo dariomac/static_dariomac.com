@@ -20,6 +20,9 @@
     "tags": "#nodejs,#json,#abstraction",
     "title": "EAJP (NodeJS)",
     "type": "Project"
+  },
+  "resume": {
+    "tags": "basecamp-developer"
   }
 }
 

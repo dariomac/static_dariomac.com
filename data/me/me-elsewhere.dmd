@@ -16,7 +16,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": null,
+    "tags": "#need-ui-refactor",
     "title": "Me elsewhere",
     "type":"Me"
   }

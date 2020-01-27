@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Raphaël Utilities | Darío Macchi</title>
+    <title>Basecamp Research &amp; Fidelity Programmer | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -200,32 +200,6 @@ table td, table th {
 }
 
 
-      .essay {
-        margin-left: inherit;
-        border: 0px !important;
-      }
-
-      .details .container-fluid.dm-board h2 {
-        font-size: 20px;
-        margin-bottom: 2px;
-        font-weight: bold;
-        padding-top: 8px;
-      }
-
-      .details .container-fluid.dm-board h3 {
-        font-weight: bold;
-        text-decoration: inherit;
-      }
-
-      article .essay h3 {
-        font-weight: bold !important;
-        text-decoration: inherit !important;
-      }
-
-      article .essay li {
-        font-size: 14px;
-      }
-
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
@@ -234,7 +208,7 @@ table td, table th {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="author" content="Darío Macchi" />
-<meta name="description" content="This is the documentation of this library made/adapted to import SVG directly from file and scale images." />
+<meta name="description" content="This is the application letter I&#x27;m sending to Basecamp, speaking directly to the Research &amp; Fidelity Programmer position." />
 <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
 
 <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -258,7 +232,7 @@ table td, table th {
 <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
 <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
 
-<link rel="canonical" href="https://dariomac.com/raphael-utils-doc" />
+<link rel="canonical" href="https://dariomac.com/basecamp-application-2020" />
 
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -372,6 +346,9 @@ http://www.dariomac.com -->
 </script>
 
 
+      <script type="application/ld+json">
+        {}
+      </script>
   </head>
   <body>
     <div class="board_view details">
@@ -393,112 +370,117 @@ http://www.dariomac.com -->
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board essay">
+        <div class="container-fluid dm-board">
           <article>
+            <div class="row splitter">
+              <div class="col-md-12 text-center">Details</div>
+            </div>
             <div class="row featured">
               <div class="col-md-12">
                 <header>
-                  <h1>Raphaël Utilities</h1>
-                  <p class="date">2013-03-14 05:30</p>
+                  <h1>Basecamp Research &amp; Fidelity Programmer</h1>
+                  <p class="duration"></p>
+                  <p><a href="https://m.signalvnoise.com/basecamp-is-hiring-a-front-end-programmer/">Remote</a></p>
                 </header>
-
                 
-                <section class="description">
-                  <p>
-                    I&#x27;ve made/adapted this library to import SVG directly from file and scale.
-                  </p>
-                </section>
-
-                <section>
-                    <p>I've made/adapted this library because I was looking for an automatic way to convert SVG tag elements to <a href="http://raphaeljs.com/" title="Raphaël (JavaScript library)">Raphaël</a> primitives to draw elements. All of the converters that are out there works in this way: you paste SVG tags into some textarea, clicks in convert and then you get all the javascript-raphaël code need it to build the SVG image. If you only need to display a <a href="http://www.w3.org/Graphics/SVG/" title="Scalable Vector Graphics">SVG file</a> (compatible with non-SVG browsers), this converters are for you.</p>
-<p>But, what about parsing the file in real time, client-side, reading the SVG directly from the file? Well, I took <a href="https://github.com/sanojian/raphael-svg-import">Jonas Olmstead version</a> of his SVG importer and made many changes to it in order to fit all my different scenarios.</p>
-<p>This is the template that I use in many of my SVG projects as you can see in <a href="/assets/map01.html">demo1</a>, <a href="/assets/map02.html">demo2</a> and <a href="/assets/map03.html">demo3</a>.</p>
-<pre class="brush: javascript; toolbar: false;">
-$(function() {
-    var paper;
-    jQuery.ajax({
-        type: 'GET',
-        url: 'picture.xml', //this is the svg file loaded as xml
-        dataType: 'xml',
-        success: function(svgXML) {
-            var svg = svgXML.getElementsByTagName('svg')[0];
-            var width = svg.getAttribute('width'), height = svg.getAttribute('height');
-            //'board' is the id of the SVG container (div in this case)
-            paper = ScaleRaphael('board', width, height); //This create a scalable svg (changeSize function can be used as you see in next line)
-            //Tricky way to adjust picture size to fill container width
-            $('#board').css('width', '100%');
-            paper.changeSize($('#board').width(), $('#board').width(), false, true);
-            paper.importSVG(svg, {
-                path: {
-                    fill: '#fff'
-                }
-            });
-        }
-    });
-});
-</pre>
-<p>I've added the following functions to this library so it can be more useful:</p>
-<style>
-    .codeUl > li {
-        padding-top: 10px;
-    }
-</style>
+                  <section class="summary">
+                    <p>
+                      This is the application letter I&#x27;m sending to Basecamp, speaking directly to the Research &amp; Fidelity Programmer position.
+                    </p>
+                  </section>
+                
+                  <section class="content">
+                    <p>Hi! 👋</p>
+<p>Thanks for the challenge of being in this process. There are many reasons not to try this longshot, but a couple of days ago I read somewhere that &quot;everything is impossible before someone does it&quot;; and you certainly have a lot of different people working from various parts of the world... so here we go.</p>
+<h2>Brief talk about me</h2>
+<p>My name is Darío Macchi, I’m 38 years old, from Uruguay. I have been married for 7 years and am the proud father of two little girls (6 yo and 3 yo). Beside my job in the software development industry, I’ve been a <a href="https://dariomac.com/software-engineering-professor">Software Engineer Professor</a> at the same university where, at the age of 11, I decided that I wanted to study and get my degree. <a href="https://dariomac.com/industry+basecamp-developer">My standard resume</a> has a generic cover letter that describes my main skills and my most notable background, so I will not repeat information; instead, I will tell you some of my personal attributes and the way I think.</p>
+<p>As I stated <a href="https://dariomac.com/kanbancv">here</a> I don't believe in traditional resumes, so I prefer alternative ways of showing myself. I believe that showing everyone what I'm doing is a better way to make myself known and also leads to quick and sometimes deadly honest feedback! So, this application is not the exception.</p>
+<p>I don't like to follow trends or develop software aligned to fashion principles; I don't overuse great ideas/concepts/tools (e.g. operator overloading, factories, lambdas for everything, React.js where is not needed, <a href="https://www.youtube.com/watch?v=kNdqZhWAHKg&amp;feature=youtu.be&amp;t=805&amp;hl=es&amp;cc_lang_pref=en&amp;cc=1">Scrum as the new black</a> and a very long etc.). Software is about people. Most of the time we are doing abstractions, modeling real process that people actually follow everyday. So at the end of the day we are serving people. I've been doing that for my teams, my students and users forever, and I believe in being trustable. For that, you have to know what are you doing, being capable of justify decisions beyond the &quot;it's fancy... this is new tech... oh no, that's old school... everybody is using this&quot;.</p>
+<p>I know Basecamp, your history (from the times of 37signals), I've worked with Turbolinks and Trix and in a moment I will jump to what I have to offer to your team.</p>
+<h2>Brief talk about what I do</h2>
+<p>I have worked in the industry for 20 years, but my interest in computers began several years earlier. I define myself as a curious, fast-learning guy. Just think about how my technology stack has changed/growed over my career. I'm always on side projects: now with a requirements inspection tool for a low-code platform; before, porting my personal website from RoR to a portable, <a href="https://www.dariomac.com/static-website-generator">technology agnostic content manager</a> in NodeJS; sometime ago, a note taking PoC with Trix to automatically link related content using a trie data structure; Clojure, Lisp, you name it. I know what this may look: “this guy didn't have the time to go deep in almost any of these technologies and only scratch the surface of them” and in a certain way that’s true. But also is true that HTML, vanilla Javascript and CSS where always there, and that is why I love, respect and prefer that triad over anything else.</p>
+<p>When I had to behave as an architect (and developer) of a <a href="https://www.dariomac.com/content-distribution-system">high traffic microservices</a> solution (<a href="https://www.vix.com/en/">VIX</a>), I choose that triad to be the core of it, following an architecture mostly like your “HTML over the wire”. Indeed, I had a PoC working with turbolinks for almost a month that was finally discarded toward a self-made smaller and simpler solution to fit our specific needs. We used intersection observers for image loading, embeds (lot of them) and infinite scrolling, Handlebars for server (and a bit of client) side rendering and a custom client-side router. From that project we built 2 frameworks/tools (<a href="https://www.dariomac.com/eajp-enhanced-article-json-parser">Enhanced Article-JSON Parser</a> and <a href="https://www.dariomac.com/traceability-logger">Traceability Logger</a>) plus the current solution, that is extensible (as a framework) by design. We had a rollout of almost a year where we slowly replaced the existing solution.</p>
+<h2>Brief talk about why this position</h2>
+<p>On 2019 I decided not to commute anymore but I couldn't make it, so I want to try it now. Why? Well, I love my house. It has all I ever wanted and it was so hard to get that now, I don't want to be 8 hours (plus 2 of commuting) away from it.</p>
+<p>I consider this opportunity to be unique, mostly because your offering touch very important topics for me. Being completly honest with you, the most important is that I'll be working with web development stars in a high-profile company, from my home for a salary that let me ensure my family wellness.</p>
+<p>Also (and not less important)... reading about the position I felt like we know each other from long time ago, and that the description were written after chatting together about how ideal companies should behave. I felt in my guts, trust, happiness and a completly sense of tranquillity.</p>
+<h2>(not) brief talk about what I can offer</h2>
+<p>I can offer a <strong>well-proven structured way of dealing with problems</strong>, organizing them and working carefully in small steps towards solutions. I search for evidence before making assertions or taking important decisions (due to that thing of being trustable).</p>
+<p>Also, I'm a <strong>managers of one</strong>. If you don't believe me, see what's a regular work day for me:</p>
 <ul>
-<li>
-<p>You can change rendered SVG size in runtime (thx <a href="http://www.shapevent.com/scaleraphael/">ScaleRaphaël</a>)</p>
-<pre class="brush: javascript; toolbar: false;">
-    function resizePaper(){
-        var win = $(this);
-        paper.changeSize($('#board').width(), $('#board').width(), false, true);
-    }
-    $(window).resize(resizePaper);
-</pre>
-</li>
-<li>
-<p>Multiple event bindings to Raphaël objects (mostly to handle the case of mobile support).</p>
-<pre class="brush: javascript; toolbar: false;">
-    paper.bindEvents(svgCity, 'mouseover,touchstart', function(el){
-        this.attr({'fill': '#E0301E'});
-    });
-</pre>
-</li>
-<li>
-<p>moveScaledTo is a Raphael canvas extension to move a shape and scale it too.</p>
-<pre class="brush: javascript; toolbar: false;">
-    paper.moveScaledTo(elShape, newX, newY, 1.5); //scale 1.5 times
-</pre>
-</li>
-<li>
-<p>moveTo is a Raphael canvas extension to move a shape (keeping the same scale).</p>
-<pre class="brush: javascript; toolbar: false;">
-    paper.moveTo(elShape, newX, newY);
-</pre>
-</li>
-<li>
-<p>getLikeId is a Raphael canvas extension to returns you element by its internal ID (using like instead of equals as getById).</p>
-<pre class="brush: javascript; toolbar: false;">
-    paper.getLikeId(someIdOrPartOfIt);
-</pre>
-</li>
-<li>
-<p>chrome is a Raphael canvas extension to fix small issue with texts in chrome.</p>
-<pre class="brush: javascript; toolbar: false;">
-    paper.chrome();
-</pre>
-</li>
-<li>
-<p>beforeFn and afterFn events to be executed in each shape (more on <a href="/assets-cv/documents/raphael-utils/map03.html">demo3</a>).</p>
-</li>
+<li>I put play on my personal time management tool in my cell phone. I like to work in chunks of 25 mins with 5-10 of relax between them (the old pomodoro).</li>
+<li>I use <a href="">bullet journal</a> for managing my everyday tasks (yes, with a pen, in a notebook). So, in the first pomodoro run I start moving missing/unfinished task from the day before. Then add today tasks and prioritize.</li>
+<li>As the day goes on, I mark ended tasks, add new ones or take side notes and sketch ideas.</li>
 </ul>
+<p><strong>Visibility</strong>. I know you guys doesn't need more of that, but I'm always being active in social networks, trying to be accepted as speaker in conferences and leting others know about what I'm learning in my awesome everyday worklife. I can even start to imagine how working at Basecamp would affect my life in this regard.</p>
+<p><strong>Technically I´m good</strong>. Not the best (I know a couple of guys that... pfff... they seem to be unbeatable), but good enough to know that my missing skills are complimented by me deep love for this profession. But <strong>I'm unbeatable</strong> when my team needs me and I have to be at their height quickly (e.g. I learned 11 new technologies -between frameworks, libraries and tools- in the last 6 months to help in a project that was on-fire).</p>
+<h2>Final thoughts</h2>
+<p>First of all, thanks for taking the time to read through this.</p>
 
-                </section>
+                  </section>
 
+  <section class="image_gallery">
+    <a itemprop="image" href="/assets/basecamp_application.jpg" class="fancybox lightbox_link" rel="challenge" title="Night mode. Home of side projects and challenging applications.">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/basecamp_application.jpg" />
+    </a>
+    <a itemprop="image" href="/assets/rubber-ducks.jpg" class="fancybox lightbox_link" rel="challenge" title="My rubber-duck-debugging team is ready!">
+      <img itemprop="thumbnailUrl" src="/assets/thumbs/rubber-ducks.jpg" />
+    </a>
+  </section>
 
+<section class="attachments table-container">
+  <table cellpadding="0" cellspacing="0" class="details_table attachment_table">
+    <tbody>
+      <tr>
+        <th>Icon</th>
+        <th class="filename">File</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td style="text-align: center;">
+          <a href="/assets/blablabla.pdf" class="lightbox_link">
+            <img src="/assets/images/file-types/pdf.svg" style="width: 48px;" alt="blablabla.pdf">
+          </a>
+        </td>
+        <td class="filename">
+          <a href="/assets/blablabla.pdf">blablabla.pdf</a>
+        </td>
+        <td>
+          This is the description of the filename.
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">
+          <a href="/assets/blablabla2.pdf" class="lightbox_link">
+            <img src="/assets/images/file-types/pdf.svg" style="width: 48px;" alt="blablabla2.pdf">
+          </a>
+        </td>
+        <td class="filename">
+          <a href="/assets/blablabla2.pdf">blablabla2.pdf</a>
+        </td>
+        <td>
+          This is the description of the filename2.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
-
+<section class="related-topics">
+  <h2>Related topics</h2>
+  <ul>
+      <li>
+        <a href="This is the href of the link">This is a clickbait title</a>
+      </li>
+      <li>
+        <a href="">This is a clickbait title</a>
+      </li>
+  </ul>
+</section>
 
               </div>
             </div>
+          </article>
         </div> <!-- container-fluid dm-board -->
 
         <a href="/" class="logo">
@@ -581,30 +563,19 @@ $(function() {
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
 
-
-      <script type="text/javascript" src="/assets/vendor/syntaxhighlighter/shCore.js"></script>
-<script type="text/javascript" src="/assets/vendor/syntaxhighlighter/shAutoloader.js"></script>
-<script type="text/javascript" src="/assets/vendor/syntaxhighlighter/shBrushJScript.js"></script>
-<script type="text/javascript">
-$(function() {
- SyntaxHighlighter.all();
- $('.date').html($('.date').html().split(' ')[0]);
-});
-</script>
-<link type="text/css" rel="stylesheet" href="/assets/vendor/syntaxhighlighter/shThemeDefault.css" />
-
-
     <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 
-    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
-    <script>
-      $(".fancybox").fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none'
-      });
-    </script>
+<script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+<script>
+  $(".fancybox").fancybox({
+    openEffect  : 'none',
+    closeEffect : 'none'
+  });
+</script>
+
   </body>
 </html>

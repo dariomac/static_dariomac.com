@@ -37,6 +37,11 @@
     "body": "#6EA4D4"
   },
   
+  "column-plan": {
+    "scope": "markdown",
+    "prefix": "column.plan",
+    "body": "requested_1"
+  },
   "column-progress": {
     "scope": "markdown",
     "prefix": "column.progress",

@@ -20,6 +20,9 @@
     "tags": "#nodejs,#markdown,#static",
     "title": "Static website generator (NodeJS)",
     "type": "Project"
+  },
+  "resume": {
+    "tags": "basecamp-developer"
   }
 }
 

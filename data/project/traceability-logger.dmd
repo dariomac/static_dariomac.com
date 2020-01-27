@@ -20,6 +20,9 @@
     "tags": "#nodejs,#js,#logger",
     "title": "Traceability Logger (NodeJS)",
     "type": "Project"
+  },
+  "resume": {
+    "tags": "basecamp-developer"
   }
 }
 
