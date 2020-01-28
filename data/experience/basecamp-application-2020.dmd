@@ -45,9 +45,9 @@ Thanks for the challenge of being in this process. There are many reasons not to
 ## Brief talk about me
 My name is Darío Macchi, I’m 38 years old, from Uruguay. I have been married for 7 years and am the proud father of two little girls (6 yo and 3 yo). Beside my job in the software development industry, I’ve been a [Software Engineer Professor](https://dariomac.com/software-engineering-professor) at the same university where, at the age of 11, I decided that I wanted to study and get my degree. [My standard resume](https://dariomac.com/industry+basecamp-developer) has a generic cover letter that describes my main skills and my most notable background, so I will not repeat information; instead, I will tell you some of my personal attributes and the way I think. 
 
-As I stated [here](https://dariomac.com/kanbancv) I don't believe in traditional resumes, so I prefer alternative ways of showing myself. I believe that showing everyone what I'm doing is a better way to make myself known and also leads to quick and sometimes deadly honest feedback! So, this application is not the exception.
+As I state [here](https://dariomac.com/kanbancv) I don't believe in traditional resumes, so I prefer alternative ways of introducing myself. I believe that showing everyone what I'm doing is a better way to make myself known and also, leads to quick and sometimes deadly honest feedback! So, this application is not the exception.
 
-I don't like to follow trends or develop software aligned to fashion principles; I don't overuse great ideas/concepts/tools (e.g. operator overloading, factories, lambdas for everything, React.js where is not needed, [Scrum as the new black](https://www.youtube.com/watch?v=kNdqZhWAHKg&feature=youtu.be&t=805&hl=es&cc_lang_pref=en&cc=1) and a very long etc.). Software is about people. Most of the time we are doing abstractions, modeling real process that people actually follow everyday. So at the end of the day we are serving people. I've been doing that for my teams, my students and users forever, and I believe in being trustable. For that, you have to know what are you doing, being capable of justify decisions beyond the "it's fancy... this is new tech... oh no, that's old school... everybody is using this".
+I don't like to follow trends or develop software aligned to fashion principles; I don't overuse great ideas/concepts/tools (e.g. operator overloading, factories, lambdas for everything, React.js where is not needed, [Scrum as the new black](https://www.youtube.com/watch?v=kNdqZhWAHKg&feature=youtu.be&t=805&hl=es&cc_lang_pref=en&cc=1) and a very long etc.) to be fancy. Software is about people. Most of the time we are doing abstractions, modeling real process that people actually follow everyday. So at the end of the day we are serving people. I've been doing that for my teams, my students and end users forever, and I believe in being trustable. To do that, you have to know what are you doing, being capable of justify decisions beyond the "it's fancy... this is new tech... oh no, that's old school... everybody is using this".
 
 I know Basecamp, your history (from the times of 37signals), I've worked with Turbolinks and Trix and in a moment I will jump to what I have to offer to your team.
 
@@ -57,38 +57,34 @@ I have worked in the industry for 20 years, but my interest in computers began s
 When I had to behave as an architect (and developer) of a [high traffic microservices](https://www.dariomac.com/content-distribution-system) solution ([VIX](https://www.vix.com/en/)), I choose that triad to be the core of it, following an architecture mostly like your “HTML over the wire”. Indeed, I had a PoC working with turbolinks for almost a month that was finally discarded toward a self-made smaller and simpler solution to fit our specific needs. We used intersection observers for image loading, embeds (lot of them) and infinite scrolling, Handlebars for server (and a bit of client) side rendering and a custom client-side router. From that project we built 2 frameworks/tools ([Enhanced Article-JSON Parser](https://www.dariomac.com/eajp-enhanced-article-json-parser) and [Traceability Logger](https://www.dariomac.com/traceability-logger)) plus the current solution, that is extensible (as a framework) by design. We had a rollout of almost a year where we slowly replaced the existing solution.
 
 ## Brief talk about why this position
-On 2019 I decided not to commute anymore but I couldn't make it, so I want to try it now. Why? Well, I love my house. It has all I ever wanted and it was so hard to get that now, I don't want to be 8 hours (plus 2 of commuting) away from it.
+On 2019 I decided not to commute anymore but I couldn't make it, so I want to try it now. Why? Well, I love my house. It has all I ever wanted and it was so hard to get, that now, I don't want to be 8 hours (plus 2 of commuting) away from it.
 
 I consider this opportunity to be unique, mostly because your offering touch very important topics for me. Being completly honest with you, the most important is that I'll be working with web development stars in a high-profile company, from my home for a salary that let me ensure my family wellness.
 
-Also (and not less important)... reading about the position I felt like we know each other from long time ago, and that the description were written after chatting together about how ideal companies should behave. I felt in my guts, trust, happiness and a completly sense of tranquillity.
+Also (and not less important)... when reading about the position I felt that we have known each other for a long time, and that the description was written after talking together about how ideal companies should behave. I felt in my gut, confidence, happiness and a complete sense of tranquility.
 
 ## (not) brief talk about what I can offer
 
 I can offer a **well-proven structured way of dealing with problems**, organizing them and working carefully in small steps towards solutions. I search for evidence before making assertions or taking important decisions (due to that thing of being trustable).
 
 Also, I'm a **managers of one**. If you don't believe me, see what's a regular work day for me:
-* I put play on my personal time management tool in my cell phone. I like to work in chunks of 25 mins with 5-10 of relax between them (the old pomodoro).
-* I use [bullet journal]() for managing my everyday tasks (yes, with a pen, in a notebook). So, in the first pomodoro run I start moving missing/unfinished task from the day before. Then add today tasks and prioritize. 
+* I put play on my personal time management tool on my cell phone. I like to work in chunks of 25 mins with 5-10 of relax between them (the old pomodoro).
+* I use [bullet journal](https://dariomac.com/how-bullet-journal-changed-my-work-routine) for managing my everyday tasks (yes, with a pen, in a notebook). So, in the first pomodoro run I start moving missing/unfinished task from the day before. Then add today tasks and prioritize. 
 * As the day goes on, I mark ended tasks, add new ones or take side notes and sketch ideas.
+Also I'm always trying to follow [my manifesto](https://dariomac.com/manifesto).
 
-**Visibility**. I know you guys doesn't need more of that, but I'm always being active in social networks, trying to be accepted as speaker in conferences and leting others know about what I'm learning in my awesome everyday worklife. I can even start to imagine how working at Basecamp would affect my life in this regard.
+**Visibility**. I know you guys doesn't need more of that, but I'm always being active in social networks, trying to be accepted as speaker in conferences (like my [Scrum Zombies & Orcs teams](https://dariomac.com/jis-uy-2019-scrum-zombies-and-orcs-teams) speak) and leting others know about what I'm learning in my awesome everyday worklife. I can even start to imagine how working at Basecamp would affect my life in this regard.
 
-**Technically I´m good**. Not the best (I know a couple of guys that... pfff... they seem to be unbeatable), but good enough to know that my missing skills are complimented by me deep love for this profession. But **I'm unbeatable** when my team needs me and I have to be at their height quickly (e.g. I learned 11 new technologies -between frameworks, libraries and tools- in the last 6 months to help in a project that was on-fire).
+**Technically I´m good**. Not the best (I know a couple of guys that... pfff... they seem to be unbeatable), but good enough to know that my missing skills are complimented by me deep love for this profession. But **I'm unbeatable** when my team needs me and I have to be at their height quickly (e.g. I learned 11 frontend new technologies -between frameworks, libraries and tools- in the last 6 months to help in a project that was on-fire).
 
 ## Final thoughts
-First of all, thanks for taking the time to read through this.
+First of all, thanks for taking the time to read through this. I know you should have many letters to review, most of them saying the same things. So I will do a closing saying something that any of them can: I'm from [Uruguay, the Silicon Valley of South America](https://medium.com/bros/uruguay-the-silicon-valley-of-south-america-8cdef0bbcadc); the best version of me is in the morning, when I work drinking [mate](https://en.wikipedia.org/wiki/Mate_(drink)); I love my house and my kids, and they would be very happy finding me working at home back from school. 
+
+Words always fail to describe beautiful things, so if this letter doesn't convince you, perhaps my promise to eat the best asado will 😉.
+
+Regards.
 
 [projects:md]
-
-[attachments:json]
-  [{
-    "filename": "blablabla.pdf",
-    "description": "This is the description of the filename."
-  },{
-    "filename": "blablabla2.pdf",
-    "description": "This is the description of the filename2."
-  }]
 
 [related_images:json]
   [{
@@ -97,15 +93,4 @@ First of all, thanks for taking the time to read through this.
   }, {
     "filename": "rubber-ducks.jpg",
     "title": "My rubber-duck-debugging team is ready!"
-  }]
-
-[related_topics:json]
-  [{
-    "title": "This is the link text",
-    "click_bait": "This is a clickbait title",
-    "linkto": "This is the href of the link"
-  },{
-    "filename": "This is the link text",
-    "click_bait": "This is a clickbait title",
-    "description": "This is the href of the link"
   }]

@@ -1,0 +1,79 @@
+{
+  "title": "How bullet journal changed my work routine",
+  "date": "2020-01-27",
+  "layout": "document",
+  "has_code": false,
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "The last hack you will need to boost your daily work routine",
+    "datebox": "2020-01-27",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/how-bullet-journal-changed-my-work-routine",
+    "position": "20200127",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "How bullet journal changed my work routine",
+    "type": "0"
+  },
+  "jsonld": {},
+  "canonical": ""
+}
+
+---
+
+[summary:string]
+Bullet Journal is an (alternate) analog method "to be focused and productive". Is a methodology, "described as a mindfulness practice disguised as a productivity system". I started using it on 2017  for personal organization of schedules, reminders, to-do lists, brainstorming results, and other organizational tasks. With adaptations/changes it will be with me forever!
+
+[pub_date:string]
+
+[short_description:string]
+Bullet Journal is an (alternate) analog method "to be focused and productive". Is a methodology, "described as a mindfulness practice disguised as a productivity system". I started using it on 2017  for personal organization of schedules, reminders, to-do lists, brainstorming results, and other organizational tasks. With adaptations/changes it will be with me forever!
+
+[body:md]
+I was a bit obsessive about my productiveness and how to avoid procrastination. I tried every productivity hack that I read on [99u](https://99u.adobe.com/) or any other source of advice, but always found one (or many) of this problems:
+
+* It didn't hook me. Some hacks didn't felt natural even after a long try period so I started to abandon them.
+* Are related with some specific software. Everyone says "test this app, is the best... no, no, no, this website is awesome (...) If you want to be more productive, try listening this podcast... Nothing beat this webapp with this special board...". But at the end of the day you have a bunch of accound from many services that (in my case) didn't solved any of my issues.
+* They are not portable. Yes, portable... I want something that can solve my lack of focus and procrastination tendency in my different works, in my house and in any place, with or without a computer or cellphone.
+
+In winter of 2017 I read somewhere (I missed the reference) about [Bullet Journal (BuJo)](https://bulletjournal.com/) and it blows my mind. If you want to know more about it, you should read every post in the website blog and maybe, buy the book or just start playing and looking at the different examples around.
+
+Talking about examples, I leave here a photograph or some of the pages of my own bullet journal.
+
+![My Bullet Journal example](/assets/bullet_journal_1.jpg#center)
+
+Yes. I know how it looks. It´s a bit messy compared with the online examples. In my defense I can say that my BuJo is "naturally encrypted". But jokes aside, that the beauty of this method. You can invent your own notation and style.
+
+I started using a subset of the "official" symbols.
+* Add dates to start the daily notes
+* **\-** for notes
+* **\+** for more, so later you can continue expanding the idea
+* **.** for Task bullet
+* **x** for a completed Task
+* **>** for migrated Task (useful for tasks not done on that day). I also add a reference using this format for later use: ddmmnn where nn is an incremental number.
+
+Later I did this customizations:
+* Left and right margins. Left to split markers from notes and left to highlight notes (more about this in next customizations)
+* **!**, **?** and sometimes random markers in the right margin are highlights. Exclamation mark is to keep an eye over that task and question mark is for questions that should be answered sooner (like a blocker).
+
+So, don't judge this method because of it's simplicity. Try it, customize it and give it the opportunity to shine by itself.
+
+[acknowledgments:md]
+
+[further_reading:md]
+You can read more about Bullet Journal in the [official blog](https://bulletjournal.com/blogs/bulletjournalist)
+
+[significant_revisions:md]
+
+[related_topics:json]
+  [{
+    "title": "Manifesto",
+    "click_bait": "Manifesto to keep me productive and aligned with my principles",
+    "linkto": "/Manifesto"
+  }]
