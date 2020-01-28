@@ -52,7 +52,7 @@ app.get('/static/*', function (req, res) {
 app.post('/pullit', async function (req, res) {
   console.log('Git-auto-pull was called... running!');
 
-  exec('git pull && yarn install', (err, stdout, stderr) => {
+  exec('git fetch origin && git reset --hard origin/master && yarn install', (err, stdout, stderr) => {
     if (err) {
       // node couldn't execute the command
       console.log(`\x1b[31m${err}\x1b[0m`);
