@@ -55,15 +55,16 @@ app.post('/pullit', async function (req, res) {
   exec('git pull && yarn install', (err, stdout, stderr) => {
     if (err) {
       // node couldn't execute the command
-      res.sendStatus(405);
+      console.log(`\x1b[31m${err}\x1b[0m`);
+      return res.sendStatus(405);
     }
     if (stdout.length > 0) {
       console.log(`\x1b[32m${stdout}\x1b[0m`);
-      res.sendStatus(200);
+      return res.sendStatus(200);
     }
     else {
       console.log(`\x1b[31m${stderr}\x1b[0m`);
-      res.sendStatus(500);
+      return res.sendStatus(500);
     }
   });
 });
