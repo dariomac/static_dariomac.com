@@ -76,6 +76,18 @@
     "body": "Experience"
   },
 
+  "lane-research": {
+    "scope": "markdown",
+    "prefix": "lane.research",
+    "body": "Research"
+  },
+
+  "linkto": {
+    "scope": "markdown",
+    "prefix": "linkto",
+    "body": "/${TM_FILENAME/(.*)\\..+$/$1/}"
+  },
+
   "attachments": {
     "scope": "markdown",
     "prefix": "attachments",
