@@ -36,6 +36,11 @@
     "prefix": "color.vix",
     "body": "#6EA4D4"
   },
+  "color-vairix": {
+    "scope": "markdown",
+    "prefix": "color.vairix",
+    "body": "#00A651"
+  },
   
   "column-plan": {
     "scope": "markdown",
