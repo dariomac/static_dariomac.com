@@ -1,5 +1,15 @@
 Custom static site generator implemented in NodeJS. It takes content from a custom ‘YAML front matter’ files that include different sections with markdown content. Later, the front matter part is used to build the navigation and categorization of the website while the markdown is translated to HTML. Finally everything is saves as static HTML files to provide high performance server-side transference and client-side rendering.
 
+To build static html files for dariomac.com website
+```
+yarn build
+```
+
+To start the server
+```
+yarn start
+```
+
 Below there are some notes that I did (in the long history of my website), some of them are being included in the 'dmd_snippets.code-snippets' file to make things a bit easier.
 
 List of console colors:
@@ -14,12 +24,14 @@ https://blog.tersmitten.nl/slugify/
 Columns
 -----
 _Added to already in dmd_snippets.code-snippets file_
+
 requested_1, progress_2, done_3
 
 
 Lanes
 -----
 _Added to already in dmd_snippets.code-snippets file_
+
 Article, Education, Me, Experience, Quote, Essay
 
 
