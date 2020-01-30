@@ -1,0 +1,794 @@
+0:00:22.320,0:00:23.800
+Shall we get started?
+
+0:00:23.800,0:00:30.520
+My name is Darío Macchi and I will be l talking
+about Zombie and Orc Scrum Teams.
+
+0:00:30.520,0:00:33.880
+The idea is to cover these two topics.
+
+0:00:33.880,0:00:39.520
+There is little time and a lot to say so I
+will go straight to the point.
+
+0:00:39.520,0:00:42.480
+But first of all: Do you all know what Scrum
+is?
+
+0:00:42.480,0:00:43.680
+Yes?
+
+0:00:43.680,0:00:48.040
+Raise your hand if you use Scrum or have theoretical
+knowledge of Scrum.
+
+0:00:48.040,0:00:52.600
+Everybody? Well, perfect. The first slide
+will be very easy, then.
+
+0:00:52.600,0:00:55.400
+But just for those who didn’t raise their
+hand.
+
+0:00:55.400,0:00:56.880
+What do we understand by Scrum?
+
+0:00:56.880,0:01:00.680
+We have a client that brings a value proposition,
+right?
+
+0:01:00.680,0:01:06.600
+When that value proposition is understandable
+and clear, the team takes that value proposition,
+
+0:01:06.600,0:01:11.040
+they work on it for a period of time we call
+“sprint”.
+
+0:01:11.040,0:01:17.760
+During that period of time, things come up
+which the team solves: impediments, problems, situations.
+
+0:01:17.760,0:01:21.560
+Until this value proposition becomes a product
+increment.
+
+0:01:21.560,0:01:27.160
+At this point, when we believe it’s ready,
+we deliver it to the client, and basically
+
+0:01:27.160,0:01:29.320
+that is where that workflow ends.
+
+0:01:29.320,0:01:34.640
+The amount of value that we generate in that
+period of time is what we usually call “speed”.
+
+0:01:34.640,0:01:37.200
+So far it’s simple: you already know what
+Scrum is.
+
+0:01:37.200,0:01:39.760
+Are you sure you know what Scrum is?
+
+0:01:39.760,0:01:44.360
+Yes? Stay with that question because you may
+hesitate later.
+
+0:01:44.360,0:01:46.400
+Yes? Good, let’s continue.
+
+0:01:46.400,0:01:51.120
+Let’s go to the main topic which is “What
+are Zombies?”
+
+0:01:51.120,0:01:55.480
+What do we understand by a Zombie, technically?
+
+0:01:55.480,0:01:58.600
+A zombie is a being that was once alive, right?
+
+0:01:58.600,0:02:01.480
+They had a heart with a strong heartbeat.
+
+0:02:01.520,0:02:07.680
+But as a result of contagion of the zombie
+gene
+
+0:02:07.680,0:02:13.840
+they basically became a crude and slow being.
+
+0:02:14.080,0:02:19.560
+A being that has reduced intelligence, and
+due to that reduced intelligence
+
+0:02:19.560,0:02:22.160
+needs to act in big numbers in order to achieve their
+goals.
+
+0:02:22.160,0:02:29.500
+That’s why it is said that zombieism is
+highly contagious in healthy societies.
+
+0:02:29.500,0:02:35.280
+Now, what does this have to do with Scrum?
+Well, let’s see.
+
+0:02:35.280,0:02:42.480
+A Zombie Scrum Team is a team that lacks a
+heartbeat.
+
+0:02:42.480,0:02:45.040
+From the outside, they look like a normal
+Scrum team.
+
+0:02:45.040,0:02:48.000
+They have all their ceremonies, their roles,
+and so on.
+
+0:02:48.000,0:02:49.440
+But its heart does not beat.
+
+0:02:49.480,0:02:55.060
+What is the heart of an Agile team? Sorry,
+of a Scrum team?
+
+0:02:55.060,0:02:58.940
+The constant delivery of value in each sprint.
+
+0:02:58.940,0:03:06.260
+So, these teams do not have a heartbeat, which means they are not delivering value in each sprint.
+
+0:03:06.260,0:03:15.420
+If that is the heart of a Scrum team, their blood is the need to improve that value delivery with each sprint, right?
+
+0:03:15.420,0:03:26.280
+Clearly, Zombie teams don’t have either of these characteristics, even though, as I said, they abide by all the Scrum roles and ceremonies.
+
+0:03:26.280,0:03:42.560
+So, what happens here? Let’s look into some symptoms that will allow you to identify when a team is becoming a zombie team, and try to revert that effect.
+
+0:03:42.580,0:03:46.260
+The slides are going backwards, let’s go forward. Good, there.
+
+0:03:46.260,0:03:54.760
+I had to Google what sound a zombie would make, how we could spell the sound a zombie makes. And this is the best I could find, okay?
+
+0:03:54.760,0:03:58.920
+And this would mean “Symptoms” in zombie slang, just an editor’s note.
+
+0:03:58.920,0:04:09.960
+Good. All of you told me you know what Scrum is, right? So I assume you all hold retrospective meetings, right? Do we all agree? Raise your hand once more.
+
+0:04:09.960,0:04:13.160
+Yes? You all hold retrospective meetings, you know what they are. Well, perfect.
+
+0:04:13.160,0:04:21.320
+Now, how many of you hold retrospective meetings where you challenge the team with creative activities?
+
+0:04:21.320,0:04:34.060
+How many of you have taken part in retrospective meetings where the team tries to find clear goals, and those goals are translated into concrete and defined actions?
+
+0:04:34.060,0:04:45.880
+How many of you have taken part in retrospective meetings where the team is asked to dream big, and then those dreams are expressed through actionable points?
+
+0:04:45.880,0:04:56.740
+How many of you have analyzed risks during retrospective meetings and have looked for solutions as a team, or have simply analyzed how you feel working together?
+
+0:04:56.740,0:05:00.660
+Raise your hand: How many of you have this happened to?
+
+0:05:00.660,0:05:12.520
+Now, how many of you have had to resort to the good old sad, happy, and light bulb emojis during retrospective meetings?
+
+0:05:12.520,0:05:21.280
+Good. If you find yourself belonging to the first group, in the first Scrum team, I can tell you that you can be at ease.
+
+0:05:21.280,0:05:24.860
+You will continue to be alive, and will avoid being zombies. Okay?
+
+0:05:24.860,0:05:40.240
+As for the second team, whom I intentionally didn’t ask to raise their hands so as to not make them feel bad, but I reckon it’s the majority, this is possibly an early sign that you are becoming a zombie without your being aware of it.
+
+0:05:40.240,0:05:51.860
+Right? This is a first symptom that the team is losing agility, that their heartbeat is dropping. They are starting to abandon certain things.
+
+0:05:51.860,0:05:57.220
+Let’s have a look at what a developer said on this topic:
+
+0:05:57.220,0:06:08.380
+“Really? I have to go to these dumb retrospective meeting again? Well, I’m bored anyways. Who cares? At least the Scrum Master is here today. Gasp. Like he’s of any use.”
+
+0:06:08.380,0:06:12.040
+Right? I see some of you laughing.
+Good.
+
+0:06:12.040,0:06:14.900
+What is wrong with this guy? He doesn’t get it.
+
+0:06:14.900,0:06:20.400
+This person does not understand the value of a retrospective. He does not understand...
+
+0:06:20.400,0:06:22.400
+What makes an Agile team boring?
+
+0:06:22.400,0:06:27.520
+Also, if you are bored within an Agile team, the retrospective meeting is precisely the place to address that.
+
+0:06:27.520,0:06:32.820
+In fact, he didn’t even understand the value that a Scrum Master has within Scrum.
+
+0:06:32.820,0:06:38.060
+And the Scrum Master himself doesn’t seem to understand as he apparently doesn’t show up very often.
+
+0:06:38.060,0:06:40.420
+But everything about this statement is wrong. Right?
+
+0:06:40.420,0:06:51.340
+I mean, there are several issues that are related to what we talked about earlier: With the blood, with the need to improve. Right? Good.
+
+0:06:51.340,0:06:54.860
+Another symptom...
+I ranked this first one as the worst of them.
+
+0:06:54.860,0:07:01.520
+Because I personally think retrospective meetings are very important, and it’s there where we usually start to turn into zombies.
+
+0:07:01.520,0:07:04.200
+Let’s look at this other symptom then.
+
+0:07:04.200,0:07:14.000
+“Complete functionalities are desirable, but if it doesn’t happen in this sprint, we can finish them in the next one… After all, we aren’t going to production at the end of the sprint”.
+
+0:07:14.000,0:07:25.920
+Again: We said that the heart of a Scrum team is precisely adding value sprint after sprint. And now we are confronted with this affirmation.
+
+0:07:25.920,0:07:35.200
+The fact that we go or don’t go to production at the end of the sprint is not up to us. We committed to delivering a certain value to the client by the end of the sprint.
+
+0:07:35.200,0:07:42.020
+And the client will decide what he wants to do with that value. Our responsibility is delivering working software to the client. Right?
+
+0:07:42.020,0:07:47.960
+So again, when we fall into these kinds of issues is when we start becoming zombies.
+
+0:07:47.960,0:07:49.700
+Let’s look at another symptom:
+
+0:07:49.700,0:08:00.340
+“In the last sprint we did the whole backlog, it wasn’t so hard… in this sprint there were tasks that will remain as pending for the following sprint, so we didn’t have a sprint review as we don’t have anything to prove anyways.
+
+0:08:00.340,0:08:11.540
+I don’t know why we didn’t stretch the sprint duration, like we did in the last one, to reach the scope that we committed to…  After all, iterations are artificial…”.
+
+0:08:11.540,0:08:23.620
+We may be witnessing another symptom in this affirmation, and that’s when the team may be doing what is known as “cherry-picking” of Scrum activities. Cherry-picking of GIT.
+
+0:08:23.620,0:08:25.800
+Those who have worked with GIT know what it means.
+
+0:08:25.800,0:08:38.260
+Basically, the team is picking what Scrum practices to include, at which point in time, and adapting them to their situation in order to make the whole thing  fit.
+
+0:08:38.260,0:08:47.920
+So we stretch sprints to accomplish goals. 
+And maybe one day we don’t do a review meeting because we don’t have anything to show, like in this example.
+
+0:08:47.920,0:08:53.500
+Or, given we are behind schedule, we skip the retrospective and don’t do it.
+Right?
+
+0:08:53.500,0:08:58.180
+Let’s look at the last symptom of “Zombieism”:
+
+0:08:58.180,0:09:06.180
+“I don’t care whether the overall product doesn’t meet the client’s expectations… I’m here to program.”
+
+0:09:06.180,0:09:10.240
+Has anybody heard this affirmation at some point? 
+Yes? Good.
+
+0:09:10.240,0:09:13.820
+Again: this person doesn’t get it. Right?
+
+0:09:13.820,0:09:22.160
+Beware: technical expertise and having people that know how to program is the core of an Agile software development team.There’s no doubt about it.
+
+0:09:22.160,0:09:28.660
+If we don’t have people who know what they are talking about technically and that use Agile software development practices,
+
+0:09:28.660,0:09:35.560
+as opposed to Agile management,  we’ll never be able to accomplish what Scrum promises us in terms of delivering working software at the end of each sprint,
+
+0:09:35.560,0:09:40.340
+or the ability to tweak software as we please to adapt it to the client’s needs.
+
+0:09:40.340,0:09:51.980
+That benefit that Scrum sells and that we all have sold by advocating for Scrum cannot be accomplished if we don’t have software developers who are good at Agile software development practices.
+
+0:09:51.980,0:09:56.760
+But that doesn’t mean we shouldn’t consider the client’s expectations. That’s just wrong.
+
+0:09:56.760,0:10:02.180
+This is, again, another symptom that the team is going the wrong way.
+
+0:10:02.180,0:10:09.260
+Now: What treatment or cure is there for Zombieism?
+
+0:10:09.260,0:10:13.040
+Well, we can do several things. 
+First of all, we can try talking to the team.
+
+0:10:13.040,0:10:23.240
+Many times, by facing the team and showing them these issues, they are able to realize those issues and can start healing themselves.
+
+0:10:23.240,0:10:29.380
+In other cases, one thing that can be done is introducing healthy team members to the team that is turning into a zombie team.
+
+0:10:29.380,0:10:38.160
+With the goal of getting that heart beating again. A sort of CPR, so that they start flowing again.
+
+0:10:38.160,0:10:43.540
+The other thing we can do is resort to the community.
+
+0:10:43.540,0:10:52.540
+There are many studies and activities that have been tested within zombie teams where they have succeeded in resuscitating them and get their heart beating.
+
+0:10:52.540,0:10:58.840
+For example, Zombie Scrum Resistance is a blog with a series of case studies you can turn to.
+
+0:10:58.840,0:11:06.620
+And my personal favorite, which is to stir the waters. Meaning, to somehow shake the team back into life.
+
+0:11:06.620,0:11:15.280
+We can do this through retrospectives.
+There’s some things like what I mentioned today about seeing the bigger picture and then translating that to concrete actions.
+
+0:11:15.280,0:11:24.000
+Another one is “Smell-o-meter”, which implies building a smell-scale of sorts within the company. Things that smell good, things that smell bad.
+
+0:11:24.000,0:11:27.900
+The author illustrates is rather well with that phrase.
+
+0:11:27.900,0:11:34.500
+Another thing we can do is change the sprint duration. You might think: “That is a weird thing to do in Scrum. You don’t mess with sprint duration”.
+
+0:11:34.500,0:11:39.900
+It isn’t messed with mainly due to metrics. 
+But here we are in the presence of a team that doesn’t generate value and fails to achieve a great number of things.
+
+0:11:39.900,0:11:46.680
+Altering the sprint duration in this case will work to stir the waters and make the team come back to life.
+
+0:11:46.680,0:11:56.240
+Starting each daily meeting with a recap of the sprint’s goal, which will force us to come up with a sprint goal in the planning meeting, which is good to have.
+
+0:11:56.240,0:12:02.220
+These are all things we can do to wake this team up and for them to stop being a zombie team.
+
+0:12:02.220,0:12:08.160
+Do we all agree? Great, this is it for our zombie friends.
+
+0:12:08.160,0:12:10.720
+Let’s move on and talk about our friends the Orcs now.
+
+0:12:10.720,0:12:15.860
+What are Orcs?
+What would be the technical definition of an Orc?
+
+0:12:15.860,0:12:27.200
+Orcs used to be beautiful beings. 
+But an evil force took them and turned them into these ugly, dirty beings we see on screen.
+
+0:12:27.200,0:12:40.500
+These evil forces are usually more intelligent forces.
+And what they do is create these orcs for their own benefit.
+
+0:12:40.500,0:12:52.520
+As they don’t want the orcs to rebel, what they do is reduce their intelligence so that they require strength in numbers to reach their goals, much like zombies.
+
+0:12:52.520,0:12:57.980
+They are usually used as cannon fodder for the benefit of this evil mind that creates them.
+
+0:12:57.980,0:13:02.000
+So far, that’s the definition of what an Orc is.
+
+0:13:02.000,0:13:08.020
+Now again: What does an orc have to do with a Scrum team?
+
+0:13:08.020,0:13:18.400
+Before we dive into the definition of an Orc Scrum team, let’s analyze a short phrase to get started on the topic.
+
+0:13:18.400,0:13:22.720
+There are some authors that say that “Scrum is the new Waterfall”.
+
+0:13:22.720,0:13:29.160
+I prefer the phrase that says “Scrum is the new black”.
+Do you know this phrase? Do you know where it comes from?
+
+0:13:29.160,0:13:39.700
+In the fashion world, when somebody says that something is the new black, they are saying that that thing, for whatever reason, or lack thereof, became fashionable.
+
+0:13:39.700,0:13:48.120
+So if somebody says “This summer, lettuce green will be the new black”, we all start wearing lettuce green without any sort of explanation. Right?
+
+0:13:48.120,0:14:00.800
+So my point here, and I brought this because I like the relation the the fashion industry, is that to me, “Scrum is the new black” means that Scrum became so popular because Scrum is a fad.
+
+0:14:00.800,0:14:06.640
+And there is some reason for it to be fashionable, which we will analyze shortly. Why?
+
+0:14:06.640,0:14:17.680
+There are a lot of managers of companies with a typical pyramid hierarchy who, when pressured by their environment, need to be agile and need to prove they are agile.
+
+0:14:17.680,0:14:23.700
+Or appear to be agile.
+And Scrum is a perfect framework for this.
+
+0:14:23.700,0:14:33.380
+Because Scrum is a framework that does not guarantee results within Agile software development in the software industry.
+
+0:14:33.380,0:14:42.060
+Remember: Scrum is a framework, a container for developing anything in an Agile way.
+
+0:14:42.060,0:14:50.860
+But for it to work, to develop Agile software, it must be paired with Agile software development practices.
+
+0:14:50.860,0:15:06.740
+So many of these managers take Scrum, modify it, add and remove things from it, and showcase a false Agilism to the outside world.
+
+0:15:06.740,0:15:12.680
+That’s why I like this phrase. Because Scrum is something that has become fashionable for different reasons.
+
+0:15:12.680,0:15:20.060
+Right? Good, now you can wake back up, and let’s return to the topic of Orcs to see what’s the deal there.
+
+0:15:20.060,0:15:23.860
+What is an Orc Scrum team?
+
+0:15:23.860,0:15:31.380
+Well, precisely, these evil characters that took beautiful beings and turned them into the orcs we spoke about in the definition
+
+0:15:31.380,0:15:42.480
+are those managers that take a healthy team, make alterations to it, they impose Scrum on them,
+
+0:15:42.480,0:15:48.160
+and ultimately turn them into something that appears to be Agile but is not.
+
+0:15:48.160,0:15:54.500
+As I see you’re still not fully grasping the idea, let’s look at some examples or symptoms of this, like we did with the zombies.
+
+0:15:54.500,0:15:57.400
+So let’s look at some symptoms.
+
+0:15:57.400,0:16:05.000
+Again, I took the liberty to do a Google search for what an Orc might sound like and be able to spell it. 
+This is the best I came up with.
+
+0:16:05.000,0:16:10.820
+Please tell me: How many of you go to retrospective meetings with your laptops?
+
+0:16:10.820,0:16:12.900
+I see some of you laughing in the audience.
+
+0:16:12.900,0:16:25.740
+How many of you, within your daily meetings, report to a product manager or scrum master who also happens to be your boss?
+
+0:16:25.740,0:16:35.400
+How many of you have a PM who assigns tasks to each of the Scrum team members?
+
+0:16:35.400,0:16:46.280
+Or worse, how many of you have a PM who does the planning based on his expert judgement, then distributes the tasks, and expects us to reach the goals or scope they established?
+
+0:16:46.280,0:16:54.360
+Do any of these sound familiar?
+If it does sound familiar, you may be a part of an Orc Scrum team, and not be aware of it.
+
+0:16:54.360,0:17:02.260
+Let’s look at some other examples or symptoms.
+This is from a manager’s perspective, right?
+So a manager says:
+
+0:17:02.260,0:17:09.120
+“Ok, I will be the Product Owner. You (sub-manager) will be the Scrum Master. We will have two-week long iterations, planning, dailies.
+
+0:17:09.120,0:17:16.740
+And on the last Friday what we’ll do is the team will show me what they have done, and then they’ll do a short retrospective. And that’s it. We are now Agile”.
+
+0:17:16.740,0:17:24.840
+And from an outside perspective, you have the ceremonies, you have the roles. Why wouldn’t we consider it a Scrum team? Right?
+
+0:17:24.840,0:17:31.340
+But clearly, this Scrum team is a long way from really having what a real Scrum should have.
+
+0:17:31.340,0:17:46.100
+Creating value in each sprint. Creating trust. That the software can adapt and support changes from one sprint to the next, and so on.
+
+0:17:46.100,0:17:51.320
+Remember that Scrum is a container. I’ll keep repeating this.
+
+0:17:51.320,0:17:54.260
+Let’s look at another example, another symptom.
+
+0:17:54.260,0:18:04.160
+“We’ve spent the past two months defining the new Agile process. I think that now that we’re finished, it’s ready and we can implement it in the company”.
+
+0:18:04.160,0:18:13.540
+Open parenthesis: The company this person is speaking about ranges from two to fifty people. It has teams of two people, teams of three people, teams of five… All the way to fifty people.
+
+0:18:13.540,0:18:27.760
+Now: Two months defining an Agile process? 
+Two months for an Agile process to mature, which we know we will not be able to adapt to such disparate teams?
+
+0:18:27.760,0:18:33.980
+Put them to work from day one!
+Let the team itself be the one who generates that process on the go.
+
+0:18:33.980,0:18:43.160
+And at the end of two months - four iterations - you won’t have just one process. You will have five, or ten. One process for each team. But that is aligned to each team.
+
+0:18:43.160,0:18:54.700
+Where the team understands what they’re talking about, and are already creating value.This is clearly also a symptom that the team is turning into an Orc team.
+
+0:18:54.700,0:19:01.720
+Look at these other symptoms.
+Imagine a meeting around a large round table.
+
+0:19:01.720,0:19:08.040
+“Ok people, we need to be Agile. Any ideas?”.
+And from the bottom of the room, a hand is raised and the person says “Scrum?”.
+
+0:19:08.040,0:19:17.220
+After which, what tends to happen is the team camouflages what they’ve been doing so far. They camouflage the same activities and roles they used to have by using Agile terms.
+
+0:19:17.220,0:19:20.560
+And there you have it. They are now Agile.
+Right?
+
+0:19:20.560,0:19:27.540
+Again: This tends to happen, and it doesn’t represent the spirit of Agilism.
+
+0:19:27.540,0:19:34.560
+One last symptom. A Product Manager or Scrum Master within a retrospective meeting says:
+
+0:19:34.560,0:19:46.320
+“People, we hired you to be intelligent and self-manage. You should be able to organize yourselves. You’re already behind schedule! We need more functionalities, not more tests!”
+
+0:19:46.320,0:19:52.440
+Who hasn’t this happened to? Do you find it familiar?
+Well, good.
+
+0:19:52.440,0:19:59.100
+Again: A person that says this doesn’t understand anything about creating and developing software and creating value sprint after sprint.
+
+0:19:59.100,0:20:09.600
+How could I be able to create value or deliver new functionalities to the client in the following sprint if I well may be breaking the ones I delivered in the previous sprint?
+
+0:20:09.600,0:20:15.940
+In fact, I don’t even know if I finished a functionality if I don’t have a way to test it.
+
+0:20:15.940,0:20:29.660
+Coming back to the idea of Scrum as a container:
+One of the areas in which Scrum is weak is in being able to ensure the use of Agile software development practices.
+
+0:20:29.660,0:20:37.040
+Scrum doesn’t tell you how to do things. It tells you that you have to hand over a deliverable at the end of each sprint. But it doesn’t tell you how to do it.
+
+0:20:37.040,0:20:49.540
+That’s why we need to inject Agile software development practices in order to achieve our goals, which we’ll discuss further towards the end of our talk.
+
+0:20:49.540,0:20:55.480
+And as sprints go by, the goal is for our software to remain stable and working.
+
+0:20:55.480,0:20:59.560
+That the value we deliver to the client is real value as opposed to something that only lasts for one sprint.
+
+0:20:59.560,0:21:10.560
+Do we agree? Good. Let’s now analyze the treatment we can apply to Orc teams.
+
+0:21:10.560,0:21:23.020
+Well, what can we do with these teams?
+Unfortunately, “Orcism” - to give it a term - is incurable.  It’s not like Zombeism, which can be cured. There is no way back from this.
+
+0:21:23.020,0:21:31.160
+What people who have belonged to Orc teams can try to do is improve their condition, have the best time they can,
+
+0:21:31.160,0:21:37.720
+and know that they will not revert to those beautiful beings they started as. And they will have some scars.
+
+0:21:37.720,0:21:44.500
+But what they can do is try to come closer to the idea of Agilism and ask themselves:
+
+0:21:44.500,0:21:51.800
+“Can we contact the clients and the people that create the value for the product we’re developing?
+
+0:21:51.800,0:21:57.080
+Can we think more in terms of product and not so much in terms of process?”
+
+0:21:57.080,0:22:05.260
+Another thing we can do and that is totally up to us is getting better at Agile software development practices. That’s totally up to us to do.
+
+0:22:05.260,0:22:19.340
+We can start implementing practices such as TDD, Extreme Programming. Pair programming can be one of those practices.
+
+0:22:19.340,0:22:25.780
+Meaning, there is a set of Agile software development practices that have stood the test of time and can be used.
+
+0:22:25.780,0:22:34.980
+These have been tested and there have been experiments that show their positive results. So those are up to us to implement. We can use them. Right?
+
+0:22:34.980,0:22:42.140
+We can also follow Jeffries advice, who says that what we can do is finish one, two or three stories.
+
+0:22:42.140,0:22:48.300
+Then take the abuse for not having finished everything that was planned for the sprint.
+
+0:22:48.300,0:22:58.280
+And in the next planning meeting, try to start from the reality we are showing and living as opposed to a fantasy that could never have been achieved from the get-go.
+
+0:22:58.280,0:23:07.100
+Meaning: “Look, we can do two, three, four full functionalities that are tested and integrated, and that don’t break anything. If you want ten, it cannot be done”.
+
+0:23:07.100,0:23:14.940
+So, within a planning meeting, show the reality as it is, and not a fantasy. Right?
+
+0:23:14.940,0:23:18.060
+Jeffries says this in his own words: He says he has been in that situation.
+
+0:23:18.060,0:23:26.680
+And that instead of doing what one would do, which is running away from a certain situation or a certain company, one should try to hold their ground, do things right,
+
+0:23:26.680,0:23:33.120
+develop and work in a professional manner, do a good job and keep it visible, working and tested.
+
+0:23:33.120,0:23:41.800
+And then try to make people see reality for what it is. Right? Good.
+
+0:23:41.800,0:23:46.540
+Some final notes in regards to Agilism.
+
+0:23:46.540,0:23:59.220
+And I’ll come back to the concept of Scrum as an empty container that we need to fill with good practices to be able to deliver. Right?
+
+0:23:59.220,0:24:08.940
+Before we dive into that, let’s see what some reputable authors think. People that signed the Agile Manifesto back in its origins.
+
+0:24:08.940,0:24:15.300
+Let’s see what they say about the current state of Agilism.
+
+0:24:15.300,0:24:21.500
+Ron Jeffries says that developers must abandon Agile methods with given names.
+
+0:24:21.520,0:24:32.480
+What he is conveying - although the title looks to shake up the community - is that we should try to come closer to what is the Agile Manifesto
+
+0:24:32.500,0:24:41.780
+and stop consuming “packaged methodologies” where we basically follow the manual. Right?
+
+0:24:41.780,0:24:51.180
+Now, earlier today we spoke against “cherry-picking” Scrum activities because that turns us into zombies. And now I’m saying not to follow the manual because it’s also wrong. So what gives?
+
+0:24:51.180,0:24:55.480
+The problem is that there are authors that state that there is no hope for Scrum anymore.
+
+0:24:55.480,0:25:06.480
+It’s over. Scrum started to become a sort of a foul word and there are lots of people across the globe who disagree with Scrum given what it has turned into.
+
+0:25:06.480,0:25:12.600
+For what we were saying earlier. That it became a fad and started to be used to create these Orc teams. Right?
+
+0:25:12.600,0:25:20.540
+For example, Fowler says one of our main problems as an Agile community is that we need to try to find the “Industrial Complex”.
+
+0:25:20.540,0:25:29.220
+Meaning, the whole business that was created around the sale of Agile services: consulting, books, certifications.
+
+0:25:29.240,0:25:37.280
+This is one of the main problems that have to be dealt with. And it’s somewhat related to these given name methodologies.
+
+0:25:37.280,0:25:53.580
+The second problem Fowler speaks of is what I’ve been talking about so far. And that is that there is a lack of recognition for technical skills within the Scrum community. Within Agilism in general.
+
+0:25:53.580,0:26:01.740
+One trend that is going on is that in different Agile conferences, less and less software developers are attending them,
+
+0:26:01.740,0:26:16.980
+and there’s more attendance from managers, PMs, Scrum Masters and people who don’t really have the ability to create software that is compliant with what we are selling and promising.
+
+0:26:16.980,0:26:30.480
+At first, it was developers who encouraged Agilism. And in fact, if one reads the first books on Agile, they will notice that the case studies which were successes were lead by this kind of people.
+
+0:26:30.480,0:26:40.900
+People who were and are really good developers and who write code every day. Raise your hand if you write code every day?
+
+0:26:40.900,0:26:46.320
+There are many of you here. But maybe half aren’t raising their hands nowadays.
+
+0:26:46.320,0:26:54.520
+This - and there’s more people here who do it than I would have thought - is happening within the different communities related to software engineering.
+
+0:26:54.520,0:27:07.100
+There are lots of people talking about how to create software and less people in that group who actually write code and ensure that the product complies with the Agile philosophy.
+
+0:27:07.100,0:27:10.840
+Who implement Agile software development practices.
+
+0:27:10.840,0:27:21.460
+On this note, Robert C. Martin says that there are technical foundations - like TDD and many others - that are being left out of Scrum Certifications.
+
+0:27:21.460,0:27:32.760
+That is why the community is asking, in a way, that we return to the Agile Manifesto and that we abandon those practices that have a first and last name.
+
+0:27:32.760,0:27:38.620
+Right? Good.
+As we’re short on time we’ll continue with another topic.
+
+0:27:38.620,0:27:44.760
+Yes? Great.
+Let’s continue.
+
+0:27:44.760,0:27:50.520
+The first thing Fowler says is related to what we discussed about the Orcs.
+
+0:27:50.540,0:28:01.580
+There are many things that are done and sold as Agile when they aren’t really Agile. Fowler spoke about this at a conference last year where he introduced this problem.
+
+0:28:01.580,0:28:09.140
+The main problem is not filling room with people that want to consume and learn about Agilism.
+
+0:28:09.140,0:28:19.720
+The main battle is getting those people to then implement Agile software development practices.
+
+0:28:19.720,0:28:22.560
+And for them to really believe in the Agile philosophy. And for them to be Agile.
+
+0:28:22.560,0:28:29.280
+So Fowler got asked which of the four Agile principles was the most important to him.
+
+0:28:29.280,0:28:33.920
+He had never thought about which one was the most important one, but if he had to define one it would be:
+
+0:28:33.920,0:28:38.000
+Interactions and individuals above processes
+and tools.
+
+0:28:38.000,0:28:41.920
+And notice how in today’s talk we’ve spent
+the whole time talking about processes.
+
+0:28:41.920,0:28:45.420
+Instead of talking about interactions and
+individuals.
+
+0:28:45.420,0:28:46.820
+Do we agree?
+
+0:28:46.820,0:28:49.240
+Scrum is about processes.
+
+0:28:49.240,0:28:52.560
+We all know that. And as you said, you all know what Scrum is.
+
+0:28:52.560,0:28:57.600
+What we need now is 
+to really start injecting Agile software development
+
+0:28:57.600,0:29:08.180
+practices to those teams so that 
+they ultimately become real value creators for the client. Right?
+
+0:29:08.180,0:29:11.840
+Any doubts? Questions?
+
+0:29:11.840,0:29:13.560
+We can discuss during the break over a coffee.
+
+0:29:13.560,0:29:16.340
+Or you can send me your questions via email
+to continue the discussion.
+
+0:29:16.340,0:29:22.100
+It’s been a pleasure talking with you, and
+happy to help.
+

@@ -43,3 +43,30 @@ VAIRIX Software Development
 [content:md]
 
 [projects:md]
+
+## Development projects
+
+* **Pharmaceutical Platform**
+    Pharmaceutical platform (HIPAA compliant) where patients with a subscription can directly connect with doctors in real time through appointed video calls to have a diagnosis and electronic prescriptions sent directly to the pharmacy. Includes a web app made with React + Redux + Redux Saga, a mobile app made with React Native + Redux + Redux Saga and a REST API made with Node.js + Firebase + Sequelize.
+
+## QA/PM projects
+
+* **Personal guidance**
+    PM and internal QA of a web && mobile app to help university students. The system offer the posibility of talk with advisors (mostly doctors, thus it should be HIPAA compliant).
+* **Tee-time marketplace**
+    Internal QA of a marketplace to search and compare online tee times and golf deals at several golf courses across  United States, Canada, and more that 150 other countries. We scale up && out the existent application, working on a second version with a React frontend and refactoring Ruby on Rails backend.
+
+## Writing projects
+* [Server Side Rendering (SSR) of Create-React-App (CRA) app on 2020](/#) (TBC)
+* [Node.js logging solutions](/nodejs-logging-solutions) (Dic, 2019)
+* [Scrum Zombies & Orcs teams](/scrum-zombies-and-orcs-teams) (Nov, 2019)
+
+## Company visibility tasks
+* [jis.uy 2019 - Scrum Zombies & Orcs teams](/jis-uy-2019-scrum-zombies-and-orcs-teams) - Edificio Polifuncional "José Luis Massera" - FING - Montevideo - Uruguay (Oct, 2019)
+
+[related_topics:json]
+  [{
+    "title": "VAIRIX - COO - Scrum Master - QA",
+    "click_bait": "Description of my first period working on VAIRIX (2014-2016)",
+    "linkto": "/vairix-coo---scrum-master---researcher"
+  }]
