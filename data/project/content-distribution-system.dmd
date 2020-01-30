@@ -50,6 +50,6 @@ The solution is to generate an abstraction of the HTML of each article and after
 !["H" macro architecture](/assets/H_1.png#center)
 
 These are the core capilities of "H":
-* HTML to json-article conversion.
+* [HTML to json-article conversion](/eajp-enhanced-article-json-parser).
 * json-article conversion to each distribution channel format through an easy to implement "translator" with a recursive-asynchronous algorithm under the hood.
-* Custom logger with convenient format and traceability indicators to follow request's path.
+* [Custom logger](/traceability-logger) with convenient format and traceability indicators to follow request's path.

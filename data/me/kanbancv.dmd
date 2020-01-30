@@ -34,7 +34,9 @@ I think that curriculum vitae (CV) or resume must be something alive more than a
 
 For these reason I decide to make my own resume in a way that I called KanbanCV. Here I introduce myself, write about experiences, education, other activities, just as in a regular resume but with additional information. 
 
-The layout looks as a simple [kanban board](http://en.wikipedia.org/wiki/Kanban "Kanban board definition") and it's inspired in a very useful tool named [Kanbanize](http://kanbanize.com "Kanbanize.com"). 
+The layout looks as a simple [kanban board](http://en.wikipedia.org/wiki/Kanban "Kanban board definition") and it's inspired in the best Kanban tool out there named [Kanbanize](http://kanbanize.com "Kanbanize.com"). 
+
+![Screenshot of Kanbanize from 2013](/assets/kanbanize_2013.png#center)
 
 Each section of my resume (represented by a swimlane) shows what I'm planning to do, what I'm doing and what I've done. Traditionally, swimlanes are used to track parallel work streams within a common resource. In this case I'm the common resource used in every parallel work stream (aspect of my life). As in a normal kanban board, the demand of the left columns (e.g the need to finish things, to move forward, to increase experience) pulls items from the right (current activities and plans).
 
