@@ -1,6 +1,6 @@
 {
   "title": "Node.js logging solutions",
-  "date": "2019-01-28",
+  "date": "2019-12-28",
   "layout": "document",
   "has_code": false,
   "card": {
@@ -13,7 +13,7 @@
     "leftbox": "",
     "leftmsg": "",
     "linkto": "/nodejs-logging-solutions",
-    "position": "20200128",
+    "position": "20191228",
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
