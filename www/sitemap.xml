@@ -422,12 +422,6 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/basecamp-application-2020</loc>
-        <lastmod>20200123</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
         <loc>http://www.dariomac.com/eci2020-course-proposal</loc>
         <lastmod>2019-11-10</lastmod>
         <changefreq>monthly</changefreq>
@@ -705,7 +699,7 @@
       </url>
       <url>
         <loc>http://www.dariomac.com/requirements-inspection-tool-for-a-low-code-platform</loc>
-        <lastmod>20191204</lastmod>
+        <lastmod>2019-12-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
