@@ -51,15 +51,17 @@
                     <h2>{{this}}</h2>
                     <ul>
                       {{#each (getTasksFromLane ../laneContent this)}}
-                        <li>
-                          <a href="{{this.frontmatter.card.linkto}}">
-                            {{#ifNotEq this.frontmatter.title ""}}
-                              {{../this.frontmatter.title}}
-                            {{else}}
-                              {{../this.frontmatter.card.title}}
-                            {{/ifNotEq}}
-                          </a>
-                        </li>
+                        {{#ifNotEq this.frontmatter.params.noIndex true}}
+                          <li>
+                            <a href="{{this.frontmatter.card.linkto}}">
+                              {{#ifNotEq this.frontmatter.title ""}}
+                                {{../this.frontmatter.title}}
+                              {{else}}
+                                {{../this.frontmatter.card.title}}
+                              {{/ifNotEq}}
+                            </a>
+                          </li>
+                        {{/ifNotEq}}
                       {{/each}}
                     </ul>
                   {{/each}}

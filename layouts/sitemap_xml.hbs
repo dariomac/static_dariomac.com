@@ -2,7 +2,7 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {{#each content}}
-    {{#ifNotEq this.frontmatter.card.columnid "requested_1"}}
+    {{#ifNotEq this.frontmatter.params.noIndex true}}
       <url>
         <loc>http://www.dariomac.com{{../frontmatter.card.linkto}}</loc>
         <lastmod>{{../frontmatter.date}}</lastmod>

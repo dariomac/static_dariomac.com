@@ -3,7 +3,8 @@
   "layout": "resume",
   "mode": "collection",
   "params": {
-    "resumeType": "industry"
+    "resumeType": "industry",
+    "noIndex": true
   }
 }
 

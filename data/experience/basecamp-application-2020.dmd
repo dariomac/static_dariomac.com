@@ -21,7 +21,10 @@
   },
   "jsonld": {},
   "canonical": "",
-  "custom_header": ""
+  "custom_header": "",
+  "params": {
+    "noIndex": true
+  }
 }
 
 ---

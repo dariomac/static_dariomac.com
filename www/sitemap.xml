@@ -194,8 +194,14 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/solutions-suggested-for-the-low-software-inspection-adoption</loc>
-        <lastmod>2017-06-14</lastmod>
+        <loc>http://www.dariomac.com/computer-software-engineer-courses</loc>
+        <lastmod>2017-11-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://www.dariomac.com/contact-me</loc>
+        <lastmod>2019-10-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -218,8 +224,8 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/contact-me</loc>
-        <lastmod>2019-10-14</lastmod>
+        <loc>http://www.dariomac.com/finish-this-website</loc>
+        <lastmod>2017-05-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -230,14 +236,8 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/finish-this-website</loc>
-        <lastmod>2017-05-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>http://www.dariomac.com/computer-software-engineer-courses</loc>
-        <lastmod>2017-11-20</lastmod>
+        <loc>http://www.dariomac.com/kanbancv</loc>
+        <lastmod>2018-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -278,8 +278,8 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/kanbancv</loc>
-        <lastmod>2018-04-15</lastmod>
+        <loc>http://www.dariomac.com/solutions-suggested-for-the-low-software-inspection-adoption</loc>
+        <lastmod>2017-06-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -386,14 +386,14 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/doctorado-phd</loc>
-        <lastmod>2017-11-10</lastmod>
+        <loc>http://www.dariomac.com/basic-computer-skills-first-steps</loc>
+        <lastmod>2017-10-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/basic-computer-skills-first-steps</loc>
-        <lastmod>2017-10-23</lastmod>
+        <loc>http://www.dariomac.com/doctorado-phd</loc>
+        <lastmod>2017-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -410,20 +410,14 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/software-engineering-professor</loc>
-        <lastmod>2017-07-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
         <loc>http://www.dariomac.com/software-engineering-advisor-consultant</loc>
         <lastmod>2017-07-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/basecamp-application-2020</loc>
-        <lastmod>2020-01-23</lastmod>
+        <loc>http://www.dariomac.com/software-engineering-professor</loc>
+        <lastmod>2017-07-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -554,24 +548,6 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/swingimprover</loc>
-        <lastmod>2017-07-07</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>http://www.dariomac.com/local-read-later</loc>
-        <lastmod>2017-07-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>http://www.dariomac.com/wincommand</loc>
-        <lastmod>2017-07-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
         <loc>http://www.dariomac.com/experiencia-virtual-educativa-sistema-inmunologico-inmunovr</loc>
         <lastmod>2018-11-07</lastmod>
         <changefreq>monthly</changefreq>
@@ -608,12 +584,6 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/raphael-utils</loc>
-        <lastmod>2017-03-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
         <loc>http://www.dariomac.com/inception-workshop-for-entrepreneurs</loc>
         <lastmod>2017-07-18</lastmod>
         <changefreq>monthly</changefreq>
@@ -626,14 +596,38 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/plans-are-useless--but-planning-is-indispensable</loc>
-        <lastmod>2017-05-07</lastmod>
+        <loc>http://www.dariomac.com/local-read-later</loc>
+        <lastmod>2017-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://www.dariomac.com/raphael-utils</loc>
+        <lastmod>2017-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://www.dariomac.com/swingimprover</loc>
+        <lastmod>2017-07-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://www.dariomac.com/wincommand</loc>
+        <lastmod>2017-07-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
         <loc>http://www.dariomac.com/a-poor-idea-well-written-is-more-likely-to-be-accepted-than-a-good-idea-poorly-written</loc>
         <lastmod>2017-05-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://www.dariomac.com/culture-eats-strategy-for-breakfast</loc>
+        <lastmod>2017-07-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -662,8 +656,8 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.dariomac.com/culture-eats-strategy-for-breakfast</loc>
-        <lastmod>2017-07-04</lastmod>
+        <loc>http://www.dariomac.com/plans-are-useless--but-planning-is-indispensable</loc>
+        <lastmod>2017-05-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

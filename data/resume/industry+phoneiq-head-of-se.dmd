@@ -4,7 +4,8 @@
   "mode": "collection",
   "params": {
     "resumeType": "industry",
-    "job": "phoneiq-head-of-se"
+    "job": "phoneiq-head-of-se",
+    "noIndex": true
   }
 }
 

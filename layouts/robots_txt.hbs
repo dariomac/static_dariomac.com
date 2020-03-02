@@ -1,0 +1,12 @@
+User-agent: *
+  {{#each siblings}}
+    {{#ifEq this.frontmatter.params.noIndex true}}
+Disallow: /{{../meta.slug}}
+    {{/ifEq}}
+  {{/each}}
+  {{#each content}}
+    {{#ifEq this.frontmatter.params.noIndex true}}
+Disallow: {{../frontmatter.card.linkto}}
+    {{/ifEq}}
+  {{/each}}
+Sitemap: https://dariomac.com/sitemap.xml

@@ -4,7 +4,8 @@
   "mode": "collection",
   "params": {
     "resumeType": "industry",
-    "job": "basecamp-developer"
+    "job": "basecamp-developer",
+    "noIndex": true
   }
 }
 
