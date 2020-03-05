@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <title>Resume-{{capitalize this.frontmatter.params.resumeType}}</title>
+    <title>Resume-{{capitalize (concat this.frontmatter.params.resumeType "-" this.frontmatter.params.job)}}</title>
 
     <script src="https://kit.fontawesome.com/cd808f9989.js" crossorigin="anonymous"></script>
 
@@ -37,6 +37,18 @@
       .folio { text-align: right; color: #999; font-family: monospace; font-size: 10px; width: 90%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; float: right;}
       .featured .folio a { color: #616161; }
       tr > td:first-child { text-align: center; padding-right: 4px; }
+      a.printable {
+        display: none;
+      }
+
+      @media print {
+        a.printable {
+          display: inline;
+        }
+        a.no-printable {
+          display: none;
+        }
+      }
       /*@media print {
         h3 a[href*='//']:after {
           content:" (" attr(href) ") ";
@@ -49,7 +61,7 @@
   <body>
     <div id="page-wrap">
       <section>
-        <img src="/assets/aboutme-me.jpg" alt="Photo of Darío Macchi" id="pic" />
+        <img src="---/assets/aboutme-me.jpg" alt="Photo of Darío Macchi" id="pic" />
 
         {{!--
         <div style="clear: both; float: right; margin-top: 18px; padding-right: 106px;">
@@ -98,7 +110,7 @@
                 <i class="fas fa-globe-americas"></i>
               </td>
               <td>
-                <a href="https://dariomac.com?utm_source=pdf-resume&utm_medium={{this.frontmatter.params.job}}">www.dariomac.com</ <a>
+                {{printableLink 'https://dariomac.com' 'www.dariomac.com' utm_source='resume' utm_medium='pdf' utm_campaign=this.frontmatter.params.job }}
               </td>
             </tr>
           </table>
@@ -138,9 +150,9 @@
               <p><strong>{{this.content.duration}}</strong></p>
               <p>{{{highlighter this.content.summary}}}</p>
               <p class="folio">
-                <a href="https://dariomac.com{{this.frontmatter.card.linkto}}?utm_source=pdf-resume&utm_medium={{../../this.frontmatter.params.job}}">
-                  https://dariomac.com{{this.frontmatter.card.linkto}}
-                </a>
+                {{#with (concat 'https://dariomac.com' ./frontmatter.card.linkto) as | link |}}
+                  {{printableLink link link utm_source='resume' utm_medium='pdf' utm_campaign=../../../this.frontmatter.params.job }}
+                {{/with}}
               </p>
             </article>
           {{/forEach}}
@@ -169,9 +181,9 @@
               </p>
               <p>{{{highlighter this.content.summary}}}</p>
               <p class="folio">
-                <a href="https://dariomac.com{{this.frontmatter.card.linkto}}?utm_source=pdf-resume&utm_medium={{../../this.frontmatter.params.job}}">
-                  https://dariomac.com{{this.frontmatter.card.linkto}}
-                </a>
+                {{#with (concat 'https://dariomac.com' ./frontmatter.card.linkto) as | link |}}
+                  {{printableLink link link utm_source='resume' utm_medium='pdf' utm_campaign=../../../this.frontmatter.params.job }}
+                {{/with}}
               </p>
             </article>
           {{/forEach}}
@@ -194,9 +206,9 @@
               <p><i>{{this.content.publication_metadata}}</i></p>
               <p>{{{highlighter this.content.summary}}}</p>
               <p class="folio">
-                <a href="https://dariomac.com{{this.frontmatter.card.linkto}}?utm_source=pdf-resume&utm_medium={{../../this.frontmatter.params.job}}">
-                  https://dariomac.com{{this.frontmatter.card.linkto}}
-                </a>
+                {{#with (concat 'https://dariomac.com' ./frontmatter.card.linkto) as | link |}}
+                  {{printableLink link link utm_source='resume' utm_medium='pdf' utm_campaign=../../../this.frontmatter.params.job }}
+                {{/with}}
               </p>
             </article>
           {{/forEach}}
@@ -218,9 +230,9 @@
               <h2>{{this.frontmatter.title}}</h2>
               <p>{{{highlighter this.content.summary}}}</p>
               <p class="folio">
-                <a href="https://dariomac.com{{this.frontmatter.card.linkto}}?utm_source=pdf-resume&utm_medium={{../../this.frontmatter.params.job}}">
-                  https://dariomac.com{{this.frontmatter.card.linkto}}
-                </a>
+                {{#with (concat 'https://dariomac.com' ./frontmatter.card.linkto) as | link |}}
+                  {{printableLink link link utm_source='resume' utm_medium='pdf' utm_campaign=../../../this.frontmatter.params.job }}
+                {{/with}}
               </p>
             </article>
           {{/forEach}}
@@ -242,9 +254,9 @@
               <h2>{{this.frontmatter.title}}</h2>
               <p>{{{highlighter this.content.summary}}}</p>
               <p class="folio">
-                <a href="https://dariomac.com{{this.frontmatter.card.linkto}}?utm_source=pdf-resume&utm_medium={{../../this.frontmatter.params.job}}">
-                  https://dariomac.com{{this.frontmatter.card.linkto}}
-                </a>
+                {{#with (concat 'https://dariomac.com' ./frontmatter.card.linkto) as | link |}}
+                  {{printableLink link link utm_source='resume' utm_medium='pdf' utm_campaign=../../../this.frontmatter.params.job }}
+                {{/with}}
               </p>
             </article>
           {{/forEach}}
@@ -268,9 +280,9 @@
               <p><strong>{{this.content.duration}}</strong></p>
               <p>{{{highlighter this.content.summary}}}</p>
               <p class="folio">
-                <a href="https://dariomac.com{{this.frontmatter.card.linkto}}?utm_source=pdf-resume&utm_medium={{../../this.frontmatter.params.job}}">
-                  https://dariomac.com{{this.frontmatter.card.linkto}}
-                </a>
+                {{#with (concat 'https://dariomac.com' ./frontmatter.card.linkto) as | link |}}
+                  {{printableLink link link utm_source='resume' utm_medium='pdf' utm_campaign=../../../this.frontmatter.params.job }}
+                {{/with}}
               </p>
             </article>
           {{/forEach}}
