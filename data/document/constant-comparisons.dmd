@@ -26,21 +26,21 @@
     "@type": "BlogPosting",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "http://www.dariomac.com/constant-comparisons"
+      "@id": "https://www.dariomac.com/constant-comparisons"
     },
     "headline": "Constant Comparisons",
     "alternativeHeadline": "",
-    "image": "http://www.dariomac.com/assets/constant-comparisons.png",
+    "image": "https://www.dariomac.com/assets/constant-comparisons.png",
     "genre": "research", 
     "keywords": "qualitative research tool", 
     "wordcount": "682",
-    "url": "http://www.dariomac.com/constant-comparisons",
+    "url": "https://www.dariomac.com/constant-comparisons",
     "datePublished": "2019-03-17",
     "dateCreated": "2015-04-30",
     "dateModified": "2017-10-19",
     "description": "Iterative data-analysis process where findings 'emerge' from the data and the comparison with previous findings.",
     "author": {
-      "@id": "http://www.dariomac.com/me"
+      "@id": "https://www.dariomac.com/me"
     },
     "publisher": {
       "@id": "http://www.dariomac.com/software-engineering-advisor-consultant"
