@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /academy
 Disallow: /industry+basecamp-developer
 Disallow: /industry+bryter-backend-engineer
+Disallow: /industry+crossover-technical-director
 Disallow: /industry+phoneiq-head-of-se
 Disallow: /industry
 Disallow: /basecamp-application-2020
