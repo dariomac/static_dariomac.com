@@ -19,13 +19,16 @@
     "tags": "#MSc",
     "title": "Software Inspection Adoption",
     "type":"Research"
+  },
+  "resume": {
+    "tags": "duckduckgo-sr-user-researcher"
   }
 }
 
 ---
 
 [summary:string]
-Factors that difficult the adoption and how to avoid or overcome them
+Factors that difficult the adoption and how to avoid or overcome them.
 
 [idea:md]
 Feb, 2012

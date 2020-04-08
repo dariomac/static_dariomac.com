@@ -21,7 +21,10 @@
     "type": "0"
   },
   "jsonld": {},
-  "canonical": ""
+  "canonical": "",
+  "resume": {
+    "tags": "duckduckgo-sr-user-researcher"
+  }
 }
 
 ---

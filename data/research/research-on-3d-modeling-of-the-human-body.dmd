@@ -19,13 +19,16 @@
     "tags": "#swingimprover",
     "title": "Research on 3D modeling of the human body",
     "type":"Research"
+  },
+  "resume": {
+    "tags": "duckduckgo-sr-user-researcher"
   }
 }
 
 ---
 
 [summary:string]
-Technology and methodology for modeling the human body in 3D
+Technology and methodology for modeling the human body in 3D.
 
 [idea:md]
 

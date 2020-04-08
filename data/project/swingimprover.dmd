@@ -20,13 +20,16 @@
     "tags": "R.I.P",
     "title": "SwingImprover (Windows)",
     "type":"Project"
+  },
+  "resume": {
+    "tags": "duckduckgo-sr-user-researcher"
   }
 }
 
 ---
 
 [summary:string]
-Software that allows the analysis of a golf player swing movement against theory and professionals.
+Software that allows the analysis of a golf player's swing against theoretical positions/angles and videos of professionals.
 
 [download_link:string]
 

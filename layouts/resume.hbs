@@ -242,6 +242,30 @@
       </section>
       {{/with}}
 
+      {{#with (resumeGrep laneContent.Research this.frontmatter.params.resumeType this.frontmatter.params.job)}}
+      <section>
+        <dl>
+          <dt>Researches</dt>
+          <dd>
+          {{#forEach this}}
+            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeType) ~}}
+              class="featured"
+            {{/if~}}>
+              <h2>{{this.frontmatter.title}}</h2>
+              <p>{{{highlighter this.content.summary}}}</p>
+              <p class="folio">
+                {{#with (concat 'https://dariomac.com' ./frontmatter.card.linkto) as | link |}}
+                  {{printableLink link link utm_source='resume' utm_medium='pdf' utm_campaign=../../../this.frontmatter.params.job }}
+                {{/with}}
+              </p>
+            </article>
+          {{/forEach}}
+          </dd>
+          <dd class="clear"></dd>
+        </dl>
+      </section>
+      {{/with}}
+
       {{#with (resumeGrep laneContent.Project this.frontmatter.params.resumeType this.frontmatter.params.job)}}
       <section>
         <dl>
