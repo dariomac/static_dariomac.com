@@ -53,8 +53,8 @@
                       {{#each (getTasksFromLane ../laneContent this)}}
                         {{#ifNotEq this.frontmatter.params.noIndex true}}
                           <li>
-                            <a href="{{this.frontmatter.card.linkto}}">
-                              {{#ifNotEq this.frontmatter.title ""}}
+                            <a href="{{../this.frontmatter.card.linkto}}">
+                              {{#ifNotEq ../this.frontmatter.title ""}}
                                 {{../this.frontmatter.title}}
                               {{else}}
                                 {{../this.frontmatter.card.title}}
