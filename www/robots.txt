@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /academy+duckduckgo-sr-user-researcher
 Disallow: /academy
+Disallow: /industry+avaaz-sr-se
 Disallow: /industry+basecamp-developer
 Disallow: /industry+bryter-backend-engineer
 Disallow: /industry+crossover-technical-director
