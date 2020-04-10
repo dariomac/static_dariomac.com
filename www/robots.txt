@@ -5,6 +5,7 @@ Disallow: /industry+avaaz-sr-se
 Disallow: /industry+basecamp-developer
 Disallow: /industry+bryter-backend-engineer
 Disallow: /industry+crossover-technical-director
+Disallow: /industry+kalamuna-technical-pm
 Disallow: /industry+phoneiq-head-of-se
 Disallow: /industry
 Disallow: /basecamp-application-2020

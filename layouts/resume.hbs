@@ -118,7 +118,7 @@
                 
         <div id="objective">
           <p>
-            {{#with (resumeGrep laneContent.Me this.frontmatter.params.resumeType)}}
+            {{#with (resumeGrep laneContent.Me this.frontmatter.params.resumeType this.frontmatter.params.job)}}
               {{#forEach this}}
                 {{{highlighter this.content.content}}}
               {{/forEach}}
@@ -129,7 +129,7 @@
       
       <div class="clear"></div>
 
-      {{#with (resumeGrep laneContent.Experience this.frontmatter.params.resumeType)}}
+      {{#with (resumeGrep laneContent.Experience this.frontmatter.params.resumeType this.frontmatter.params.job)}}
       <section>
         <dl>
           <dt>Experience</dt>
@@ -162,7 +162,7 @@
       </section>
       {{/with}}
 
-      {{#with (resumeGrep laneContent.Education this.frontmatter.params.resumeType)}}
+      {{#with (resumeGrep laneContent.Education this.frontmatter.params.resumeType this.frontmatter.params.job)}}
       <section>
         <dl>
           <dt>Education</dt>
@@ -193,7 +193,7 @@
       </section>
       {{/with}}
 
-      {{#with (resumeGrep laneContent.Article this.frontmatter.params.resumeType)}}
+      {{#with (resumeGrep laneContent.Article this.frontmatter.params.resumeType this.frontmatter.params.job)}}
       <section>
         <dl>
           <dt>Articles</dt>
@@ -218,7 +218,7 @@
       </section>
       {{/with}}
 
-      {{#with (resumeGrep laneContent.Essay this.frontmatter.params.resumeType)}}
+      {{#with (resumeGrep laneContent.Essay this.frontmatter.params.resumeType this.frontmatter.params.job)}}
       <section>
         <dl>
           <dt>Essays</dt>
