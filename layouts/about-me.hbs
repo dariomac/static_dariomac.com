@@ -57,43 +57,25 @@
                 
                 {{#if content.content}}
                   <section class="content">
-                    <div class="table-container">
-                      <table itemscope="itemscope" itemtype="http://schema.org/AboutPage">
-                        <tbody class="summary">
-                          <tr itemprop="author" itemtype="http://schema.org/Person" itemscope="itemscope">
-                            <td style="width: 255px;">
-                              <p style="text-align: center; width: 100%;">
-                                <img src="/assets/aboutme-me.jpg" alt="My photograph">
-                              </p>
-                              <p>
-                                <strong>Full name: </strong><span itemprop="name">Darío </span><span itemprop="additionalName">Alejandro </span><span itemprop="familyName">Macchi </span><span itemprop="familyName">Heins</span><br>
-                                <strong>Date of birth: </strong><a itemprop="birthDate" href="http://www.dariomac.com/what-happened-on-august-12--1981">1981-08-12</a><br>
-                                <strong> Place of birth: </strong><a itemtype="http://schema.org/City" itemscope="itemscope" href="http://maps.google.com/maps?q=paysand%C3%BA+department+uruguay&amp;hl=en&amp;ie=UTF8&amp;sll=-32.301658,-58.069376&amp;sspn=0.166861,0.308647&amp;t=v&amp;hnear=Paysandu,+Uruguay&amp;z=9" target="_blank"><span itemprop="name">Paysandú</span></a>, <a itemprop="nationality" itemtype="http://schema.org/Country" itemscope="itemscope" href="http://maps.google.com/maps?q=uruguay+country&amp;hl=en&amp;sll=-32.22166,-57.462726&amp;sspn=1.336054,2.469177&amp;t=v&amp;hnear=Uruguay&amp;z=7" target="_blank"> <span itemprop="name">Uruguay</span></a><br>
-                                <strong>Nationality: </strong>Uruguayan
-                              </p>
-                              <div>
-                              </div>
-                            </td>
-                            <td>
-                              <div>
-                                {{{ highlighter content.content }}}
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="2">
-                              <p style="text-align: justify;">
-                                I think that curriculum vitae (CV) or resume must be something alive more than a static document that looks as a biography.
-                              </p>
-                              <p style="text-align: justify;">
-                                For these reason I decide to make my own resume in a way that I called
-                                <a href="http://www.dariomac.com/KanbanCV">KanbanCV</a>. Here I introduce myself, write about experiences, education, other activities, just as in a regular resume but with additional information.
-                              </p>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <p style="text-align: center; width: 100%;">
+                      <img src="/assets/aboutme-me.jpg#center" alt="My photograph">
+                    </p>
+                    <p>
+                      <strong>Full name: </strong><span itemprop="name">Darío </span><span itemprop="additionalName">Alejandro </span><span itemprop="familyName">Macchi </span><span itemprop="familyName">Heins</span><br>
+                      <strong>Date of birth: </strong><a itemprop="birthDate" href="http://www.dariomac.com/what-happened-on-august-12--1981">1981-08-12</a><br>
+                      <strong> Place of birth: </strong><a itemtype="http://schema.org/City" itemscope="itemscope" href="http://maps.google.com/maps?q=paysand%C3%BA+department+uruguay&amp;hl=en&amp;ie=UTF8&amp;sll=-32.301658,-58.069376&amp;sspn=0.166861,0.308647&amp;t=v&amp;hnear=Paysandu,+Uruguay&amp;z=9" target="_blank"><span itemprop="name">Paysandú</span></a>, <a itemprop="nationality" itemtype="http://schema.org/Country" itemscope="itemscope" href="http://maps.google.com/maps?q=uruguay+country&amp;hl=en&amp;sll=-32.22166,-57.462726&amp;sspn=1.336054,2.469177&amp;t=v&amp;hnear=Uruguay&amp;z=7" target="_blank"> <span itemprop="name">Uruguay</span></a><br>
+                      <strong>Nationality: </strong>Uruguayan
+                    </p>
+
+                    {{{ highlighter content.content }}}
+
+                    <p style="text-align: justify;">
+                      I think that curriculum vitae (CV) or resume must be something alive more than a static document that looks as a biography.
+                    </p>
+                    <p style="text-align: justify;">
+                      For these reason I decide to make my own resume in a way that I called
+                      <a href="http://www.dariomac.com/KanbanCV">KanbanCV</a>. Here I introduce myself, write about experiences, education, other activities, just as in a regular resume but with additional information.
+                    </p>
                   </section>
                 {{/if}}
 
