@@ -48,7 +48,7 @@ Well, I love Scite, so I use it to experiment with Clojure. Later I integrate Wi
 
 All the source code of the tools are in the package, so you can hack every tool in order to make it more useful for you (or report bugs!!).
 
-![ACB Workplace](/assets/ACB_1.3_full-workplace.jpg#center)
+![ACB Workplace](/assets/ACB_1.3_full-workplace.webp#center)
 
 **Features**
 
@@ -82,27 +82,27 @@ All the source code of the tools are in the package, so you can hack every tool 
 **Screenshots**
 
 *   ACB Launcher
-    ![IMG](/assets/ACB_1.3_acb_3.jpg#center)
+    ![IMG](/assets/ACB_1.3_acb_3.webp#center)
 
     *   You can drag and drop files over ACB logo to open it with scite.
     *   If you click over the logo you will open WinCommand REPL.
     *   You can set your JDK Path through context menu instead of modifying configurations files manually.
 *   **Code completion (Ctrl-I)**
-    ![IMG](/assets/ACB_code-completion.jpg#center)
+    ![IMG](/assets/ACB_code-completion.webp#center)
 *   **Inline form arguments
-    ![IMG](/assets/ACB_parameters.jpg#center)**
+    ![IMG](/assets/ACB_parameters.webp#center)**
 *   **Inline help
-    ![IMG](/assets/ACB_1.3_inline_help.jpg#center)**
+    ![IMG](/assets/ACB_1.3_inline_help.webp#center)**
 *   **Show form documentation
-    ![IMG](/assets/ACB_show-doc.jpg#center)**
+    ![IMG](/assets/ACB_show-doc.webp#center)**
 *   **Simple file explorer
-    ![IMG](/assets/ACB_file-explorer.jpg#center)**
+    ![IMG](/assets/ACB_file-explorer.webp#center)**
 *   **Bookmarks manager
-    ![IMG](/assets/ACB_bookmarks.jpg#center)**
+    ![IMG](/assets/ACB_bookmarks.webp#center)**
 *   **Other tools
-    ![IMG](/assets/ACB_clj-tools.jpg#center)**
+    ![IMG](/assets/ACB_clj-tools.webp#center)**
 *   **REPL
-    ![IMG](/assets/ACB_repl.gif#center)
+    ![IMG](/assets/ACB_repl.webp#center)
     **
 
 **Configuration**

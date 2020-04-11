@@ -30,7 +30,7 @@
     },
     "headline": "Personal Kanban with Kanbanize",
     "alternativeHeadline": "",
-    "image": "https://www.dariomac.com/assets/essays-personal-kanban.png",
+    "image": "https://www.dariomac.com/assets/essays-personal-kanban.webp",
     "genre": "productivity", 
     "keywords": "personal kanban kanbanize productivity", 
     "wordcount": "371",
@@ -66,7 +66,7 @@ I use [Kanbanize](https://kanbanize.com/) for everyday tasks management using [P
 
 The board looks like this:
 
-![](assets/essays-personal-kanban.png)
+![](assets/essays-personal-kanban.webp)
 
 Columns
 -------
@@ -91,13 +91,13 @@ Swimlanes
 Task Types
 ----------
 
-*   ![](assets/pk_idea.png)Idea: self explanatory
-*   ![](assets/pk_todo.png)Todo: self explanatory
-*   ![](assets/pk_monkey.png)Monkey: Those tasks that require very little brain activity, but must be done. I choose to do these kind of tasks when I’m tired but I “need” to keep productive.
-*   ![](assets/pk_urgent+important.png)Q1: Urgent + Important = Crisis
-*   ![](assets/pk_not-urgent+important.png)Q2: Not Urgent + Important = Planning
-*   ![](assets/pk_urgent+not-important.png)Q3: Urgent + Not Important = Interruptions
-*   ![](assets/pk_not-urgent+not-important.png)Q4: Not Urgent + Not Important = Time wasters
+*   ![](assets/pk_idea.webp)Idea: self explanatory
+*   ![](assets/pk_todo.webp)Todo: self explanatory
+*   ![](assets/pk_monkey.webp)Monkey: Those tasks that require very little brain activity, but must be done. I choose to do these kind of tasks when I’m tired but I “need” to keep productive.
+*   ![](assets/pk_urgent+important.webp)Q1: Urgent + Important = Crisis
+*   ![](assets/pk_not-urgent+important.webp)Q2: Not Urgent + Important = Planning
+*   ![](assets/pk_urgent+not-important.webp)Q3: Urgent + Not Important = Interruptions
+*   ![](assets/pk_not-urgent+not-important.webp)Q4: Not Urgent + Not Important = Time wasters
 
 [acknowledgments:md]
 

@@ -47,7 +47,7 @@ The real pain arises when, due to the publishing business, such content must be 
 
 The solution is to generate an abstraction of the HTML of each article and after having it in an intermediate format, build rules to convert it to each distribution format. So, in the future adding more distribution channels only implies the definition of a new "conversor" that map each element of the intermediate format with the desired representation.
 
-!["H" macro architecture](/assets/H_1.png#center)
+!["H" macro architecture](/assets/H_1.webp#center)
 
 These are the core capilities of "H":
 * [HTML to json-article conversion](/eajp-enhanced-article-json-parser).

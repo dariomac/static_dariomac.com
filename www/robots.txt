@@ -5,6 +5,7 @@ Disallow: /industry+1degree-director-eng
 Disallow: /industry+avaaz-sr-se
 Disallow: /industry+basecamp-developer
 Disallow: /industry+bryter-backend-engineer
+Disallow: /industry+clevertech-sr-js-eng
 Disallow: /industry+crossover-technical-director
 Disallow: /industry+kalamuna-technical-pm
 Disallow: /industry+phoneiq-head-of-se

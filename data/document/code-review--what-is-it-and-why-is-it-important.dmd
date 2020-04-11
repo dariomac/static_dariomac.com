@@ -50,7 +50,7 @@ The code review process doesn't begin working instantaneously (especially with e
 
 Having said that, let's dig into peer reviews.
 
-![Code reviewing at Vairix](/assets/20150819_162103-1.jpg#center)
+![Code reviewing at Vairix](/assets/20150819_162103-1.webp#center)
 
 ## What is a peer review?
 
@@ -100,7 +100,7 @@ The reviewer will check to see if the functionality can be implemented using som
 
 Finally, the reviewer will ensure the presence of enough test cases to go through all the possible execution paths. All tests have to pass before the code can be merged into the shared repository.
 
-![Code review process](/assets/Peer-Review-1.gif#center)
+![Code review process](/assets/Peer-Review-1.webp#center)
 
 ## What is an external review?
 
@@ -134,7 +134,7 @@ If they know about the domain, they will feel tempted to review it at a function
 
 So, domain expertise is a bonus, not a requirement.
 
-![Code reviewing at Vairix](/assets/20150819_162034-1.jpg#center)
+![Code reviewing at Vairix](/assets/20150819_162034-1.webp#center)
 
 ## What if an external reviewer misses something?
 
@@ -186,7 +186,7 @@ _Set 22, 2015_: Original Publication on dariomac.com and thinkapps.com
 
 [attachments:json]
   [{
-    "filename": "thinkapps_tweet.jpg",
+    "filename": "thinkapps_tweet.webp",
     "description": "Tweet promoting the article."
   },{
     "filename": "thinkapps-code-reviews-in-a-agile-way.wmv",

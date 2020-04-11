@@ -198,17 +198,17 @@ Collaboration in the development and project management of **MetricsOrganizer**,
     }],
   "exp_pwc-us-cbg1":
     [{
-      "filename": "exp_pwc-us-cbg1.jpg"
+      "filename": "exp_pwc-us-cbg1.webp"
     },{
-      "filename": "exp_pwc-us-cbg2.jpg"
+      "filename": "exp_pwc-us-cbg2.webp"
     }],
   "exp_pwc-bench":
     [{
-      "filename": "exp_pwc-bench1.jpg"
+      "filename": "exp_pwc-bench1.webp"
     },{
-      "filename": "exp_pwc-bench2.jpg"
+      "filename": "exp_pwc-bench2.webp"
     },{
-      "filename": "exp_pwc-bench3.jpg"
+      "filename": "exp_pwc-bench3.webp"
     }],
   "exp_pwc-gage":
     [{
@@ -250,58 +250,58 @@ Collaboration in the development and project management of **MetricsOrganizer**,
     }],
   "exp_pwc-icpr":
     [{
-      "filename": "exp_pwc-icpr1.jpg"
+      "filename": "exp_pwc-icpr1.webp"
     },{
-      "filename": "exp_pwc-icpr2.jpg"
+      "filename": "exp_pwc-icpr2.webp"
     },{
-      "filename": "exp_pwc-icpr3.jpg"
+      "filename": "exp_pwc-icpr3.webp"
     },{
-      "filename": "exp_pwc-icpr4.jpg"
+      "filename": "exp_pwc-icpr4.webp"
     },{
-      "filename": "exp_pwc-icpr5.jpg"
+      "filename": "exp_pwc-icpr5.webp"
     }],
   "exp_pwc-charting":
     [{
-      "filename": "exp_pwc-charting1.jpg"
+      "filename": "exp_pwc-charting1.webp"
     },{
-      "filename": "exp_pwc-charting2.jpg"
+      "filename": "exp_pwc-charting2.webp"
     },{
-      "filename": "exp_pwc-charting3.jpg"
+      "filename": "exp_pwc-charting3.webp"
     },{
-      "filename": "exp_pwc-charting4.jpg"
+      "filename": "exp_pwc-charting4.webp"
     },{
-      "filename": "exp_pwc-charting5.jpg"
+      "filename": "exp_pwc-charting5.webp"
     }],
   "exp_pwc-penca":
     [{
-      "filename": "exp_pwc-penca1.jpg"
+      "filename": "exp_pwc-penca1.webp"
     },{
-      "filename": "exp_pwc-penca2.jpg"
+      "filename": "exp_pwc-penca2.webp"
     },{
-      "filename": "exp_pwc-penca3.jpg"
+      "filename": "exp_pwc-penca3.webp"
     },{
-      "filename": "exp_pwc-penca4.jpg"
+      "filename": "exp_pwc-penca4.webp"
     },{
-      "filename": "exp_pwc-penca5.jpg"
+      "filename": "exp_pwc-penca5.webp"
     },{
-      "filename": "exp_pwc-penca6.jpg"
+      "filename": "exp_pwc-penca6.webp"
     },{
-      "filename": "exp_pwc-penca7.jpg"
+      "filename": "exp_pwc-penca7.webp"
     }],
   "exp_pwc-challenge":
     [{
-      "filename": "exp_pwc-challenge1.jpg"
+      "filename": "exp_pwc-challenge1.webp"
     },{
-      "filename": "exp_pwc-challenge2.jpg"
+      "filename": "exp_pwc-challenge2.webp"
     },{
-      "filename": "exp_pwc-challenge3.jpg"
+      "filename": "exp_pwc-challenge3.webp"
     },{
-      "filename": "exp_pwc-challenge4.jpg"
+      "filename": "exp_pwc-challenge4.webp"
     },{
-      "filename": "exp_pwc-challenge5.jpg"
+      "filename": "exp_pwc-challenge5.webp"
     },{
-      "filename": "exp_pwc-challenge6.jpg"
+      "filename": "exp_pwc-challenge6.webp"
     },{
-      "filename": "exp_pwc-challenge7.jpg"
+      "filename": "exp_pwc-challenge7.webp"
     }]
   }

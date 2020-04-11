@@ -88,12 +88,12 @@ Regards.
 
 [related_images:json]
   [{
-    "filename": "basecamp_application.jpg",
+    "filename": "basecamp_application.webp",
     "title": "Night mode. Home of side projects and challenging applications."
   }, {
-    "filename": "rubber-ducks.jpg",
+    "filename": "rubber-ducks.webp",
     "title": "My rubber-duck-debugging team is ready!"
   }, {
-    "filename": "basecamp_application1.png",
+    "filename": "basecamp_application1.webp",
     "title": "Basecamp application already added to my KanbanCV"
   }]

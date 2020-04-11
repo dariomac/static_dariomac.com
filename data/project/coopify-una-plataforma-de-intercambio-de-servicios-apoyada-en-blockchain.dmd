@@ -67,7 +67,7 @@ Both data access servers are developed with NodeJS, exposing an API through expr
 
 [related_images:json]
   [{
-    "filename": "coopify-agustin.jpg"
+    "filename": "coopify-agustin.webp"
   },{
-    "filename": "coopify-ismael.jpg"
+    "filename": "coopify-ismael.webp"
   }]

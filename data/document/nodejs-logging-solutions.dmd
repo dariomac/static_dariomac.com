@@ -41,23 +41,23 @@ Ok, me too. So I decided to do something about it. I started as everyone, using�
 
 But I need more. As I said, it shows request and response information in one line. What if you want to log something after the request was logged and before the response line in the log? E.g.
 
-![Log generic example](/assets/nodejs-logging1.jpg#center)
+![Log generic example](/assets/nodejs-logging1.webp#center)
 
 This can’t be done with Morgan. I need something more flexible, something that lets me log whatever I want, whenever I want… without losing the automation gained with Morgan. To achieve this I went over the most popular module for logging, which is [Winston](https://www.npmjs.com/package/winston).
 
 Winston lets you log whatever you want. You just need to create it and call it.
 
-![Winston configuration](/assets/nodejs-logging2.jpg#center)
+![Winston configuration](/assets/nodejs-logging2.webp#center)
 
 Winston decouples parts of logging and makes it extensible and flexible. It can be configured to multiple levels of logging and has a large and robust feature set. So for us, it was natural to mix both solutions.
 
-![Morgan with Winston](/assets/nodejs-logging3.jpg#center)
+![Morgan with Winston](/assets/nodejs-logging3.webp#center)
 
 With this code, I use Morgan to automate the request-response log, but I use Winston as a renderer to keep a consistent format between automatic and manual logging.
 
 So, with a couple more configurations (mostly in Winston formatter) I end with a logger like this:
 
-![Log result](/assets/nodejs-logging4.jpg#center)
+![Log result](/assets/nodejs-logging4.webp#center)
 
 There I see two request-response cycles, both done from a web browser that returned 304 as status code. Requests are represented with -> while responses are <-. Messages sent between request and response are marked as --.
 
@@ -65,7 +65,7 @@ There I see two request-response cycles, both done from a web browser that retur
 
 If this hasn’t happened to you, you are a lucky guy. I need a way to trace down some user from its first request to the last response. Also, I need to trace the internal calls (e.g. calls to microservices or endpoints). Remember that in production, with say 50 requests/sec, your logs sorted by time would be mixed between several requests from different users. How can I achieve this? I implement a middleware that adds an ID to the first request, or if the request came with an ID as header variable, use it instead.
 
-![Unique requirement id generation](/assets/nodejs-logging6.jpg#center)
+![Unique requirement id generation](/assets/nodejs-logging6.webp#center)
 
 Using [express-http-context](https://www.npmjs.com/package/express-http-context) I make the ID available to be used anywhere. Also, because I add it to the response header, you can follow the trace even to the client-side for further use (e.g. if you experiment issues in the client-side, you can take note of that ID and later search for it in the logs server-side). The ID is the one between square brackets in the previous output sample.
 
@@ -73,7 +73,7 @@ Using [express-http-context](https://www.npmjs.com/package/express-http-context
 
 Finally, I need to change the verbosity level of the log in realtime, without restarting the server. The reason behind this is that e.g. when I’m debugging, I want to see the queries executed against the database. Sometimes I want to log a complete JSON object, or just generate more information on some level, other than debugging, to be consumed in special opportunities. For these reasons, we choose to log using [syslog severity levels](https://en.wikipedia.org/wiki/Syslog#Severity_level).
 
-![Full example of how to use severity levels](/assets/nodejs-logging7.jpg#center)
+![Full example of how to use severity levels](/assets/nodejs-logging7.webp#center)
 
 In this example, the logger is my solution to logging and I am calling it in the catch, twice… but with different severity levels. Functions called emerg, alert, crit, error, warning, notice, info and debug are available from Winston. As the doc says “Logging levels in Winston conform to the severity ordering specified by RFC5424: severity of all levels is assumed to be numerically ascending from most important to least important.” So you can define a level to initiate which specifies the maximum level of messages that it should log and then change it.
 
