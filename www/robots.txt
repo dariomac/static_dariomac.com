@@ -10,6 +10,7 @@ Disallow: /industry+crossover-technical-director
 Disallow: /industry+future-se
 Disallow: /industry+kalamuna-technical-pm
 Disallow: /industry+phoneiq-head-of-se
+Disallow: /industry+waterlilypond
 Disallow: /industry
 Disallow: /basecamp-application-2020
 Sitemap: https://dariomac.com/sitemap.xml
