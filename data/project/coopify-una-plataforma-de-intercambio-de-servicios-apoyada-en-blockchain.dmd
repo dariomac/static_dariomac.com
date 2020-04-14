@@ -7,8 +7,8 @@
     "color": "#AD4647",
     "columnid": "done_3",
     "content": "Coopify: una plataforma de intercambio de servicios apoyada en blockchain",
-    "datebox": null,
-    "extlink": "",
+    "datebox": "2018-2019",
+    "extlink": "https://fi.ort.edu.uy/81789/17/coopify:-una-plataforma-de-intercambio-de-servicios-apoyada-en-blockchain.html",
     "laneid": "Project",
     "leftbox": "",
     "leftmsg": "",
@@ -22,7 +22,7 @@
     "type": "Project"
   },
   "resume": {
-    "tags": "basecamp-developer,avaaz-sr-se,1degree-director-eng"
+    "tags": "basecamp-developer,avaaz-sr-se,1degree-director-eng,future-se"
   }
 }
 

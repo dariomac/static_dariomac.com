@@ -7,6 +7,7 @@ Disallow: /industry+basecamp-developer
 Disallow: /industry+bryter-backend-engineer
 Disallow: /industry+clevertech-sr-js-eng
 Disallow: /industry+crossover-technical-director
+Disallow: /industry+future-se
 Disallow: /industry+kalamuna-technical-pm
 Disallow: /industry+phoneiq-head-of-se
 Disallow: /industry
