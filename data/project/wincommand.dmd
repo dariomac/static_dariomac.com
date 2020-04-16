@@ -20,6 +20,9 @@
     "tags": null,
     "title": "WinCommand (Windows)",
     "type":"Project"
+  },
+  "resume": {
+    "tags": "invision-eng-manager"
   }
 }
 
