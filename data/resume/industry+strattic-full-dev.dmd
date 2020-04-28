@@ -1,10 +1,10 @@
 {
-  "date": "2020-04-13",
+  "date": "2020-04-13", 
   "layout": "resume",
   "mode": "collection",
   "params": {
     "resumeType": "industry",
-    "job": "invisible-strattic-full-dev",
+    "job": "strattic-full-dev",
     "noIndex": true
   }
 }
