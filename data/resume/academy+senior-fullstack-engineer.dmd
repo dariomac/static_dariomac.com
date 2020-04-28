@@ -1,0 +1,14 @@
+{
+  "date": "2020-04-26",
+  "layout": "resume",
+  "mode": "collection",
+  "params": {
+    "resumeType": "academy",
+    "job": "senior-fullstack-engineer",
+    "noIndex": true
+  }
+}
+
+---
+[link]
+https://api.cotopaxi.io/gestionhumana/position/6

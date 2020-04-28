@@ -366,12 +366,64 @@ I think my job as tutor's is to help students to sort things out. As they never 
           <dt>Projects</dt>
           <dd>
             <article >
+              <h2>Coopify: una plataforma de intercambio de servicios apoyada en blockchain</h2>
+              <p>The goal of this project is to create a platform for the exchange of services between users without having to handle real money. Instead, they will use a decentralized virtual currency regulated with blockchain technology (Ethereum) to ensure the transparency and reliability of the platform.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.</p>
+              <p class="folio">
+                  
+      <a href="https://dariomac.com/coopify-una-plataforma-de-intercambio-de-servicios-apoyada-en-blockchain" class="no-printable">https://dariomac.com/coopify-una-plataforma-de-intercambio-de-servicios-apoyada-en-blockchain</a>
+      <a href="https://dariomac.com/coopify-una-plataforma-de-intercambio-de-servicios-apoyada-en-blockchain?utm_campaign=phoneiq-head-of-se&utm_medium=pdf&utm_source=resume" class="printable" title="https://dariomac.com/coopify-una-plataforma-de-intercambio-de-servicios-apoyada-en-blockchain">https://dariomac.com/coopify-una-plataforma-de-intercambio-de-servicios-apoyada-en-blockchain</a>
+    
+              </p>
+            </article>
+            <article >
               <h2>Content Distribution System (aka &#x27;H&#x27;)</h2>
               <p>‘H’ is a collection of <strong>Node.js</strong> microservices oriented to the distribution of content using different channels. The content was stored in a <strong>MySQL</strong> database using a proprietary <strong>CMS</strong> format. Then one of those microservices retrieve each piece of content and normalize it to a well-structured & easy to use <strong>JSON</strong> abstraction. Finally, each service renders that abstraction to specific channel’s format, adapting the content to follow each distribution channel policies & restrictions (i.e. <strong>Google AMP</strong>, <strong>Facebook Instant Articles</strong>, <strong>MSN</strong>, <strong>Google News</strong>). This microservices <strong>net</strong> support ~25 requests/sec using only one service with 5 instances of them running, coordinated by <strong>PM2</strong> process manager with an <strong>NGINX</strong> as reverse proxy supporting ~1000 req/sec.</p>
               <p class="folio">
                   
       <a href="https://dariomac.com/content-distribution-system" class="no-printable">https://dariomac.com/content-distribution-system</a>
       <a href="https://dariomac.com/content-distribution-system?utm_campaign=phoneiq-head-of-se&utm_medium=pdf&utm_source=resume" class="printable" title="https://dariomac.com/content-distribution-system">https://dariomac.com/content-distribution-system</a>
+    
+              </p>
+            </article>
+            <article >
+              <h2>Experiencia virtual educativa: Sistema Inmunológico (InmunoVR)</h2>
+              <p>InmunoVR is a simulation that aims to provide an unique educational experience to help high school students understand, in a playful way and using virtual reality, a subject that is difficult to understand by traditional means.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.</p>
+              <p class="folio">
+                  
+      <a href="https://dariomac.com/experiencia-virtual-educativa-sistema-inmunologico-inmunovr" class="no-printable">https://dariomac.com/experiencia-virtual-educativa-sistema-inmunologico-inmunovr</a>
+      <a href="https://dariomac.com/experiencia-virtual-educativa-sistema-inmunologico-inmunovr?utm_campaign=phoneiq-head-of-se&utm_medium=pdf&utm_source=resume" class="printable" title="https://dariomac.com/experiencia-virtual-educativa-sistema-inmunologico-inmunovr">https://dariomac.com/experiencia-virtual-educativa-sistema-inmunologico-inmunovr</a>
+    
+              </p>
+            </article>
+            <article >
+              <h2>Traceability Logger</h2>
+              <p>The goal of this <strong>NodeJS</strong> module was to generate centralized logs of different sources (most of the time, microservices) to provide client requests traceability. It use Winston and Morgan modules under the hood but add a layer of services to provide a common highly-customizable format which includes type of signal (request/response), timestamps, ip address, user agent and most important, short non-sequential url-friendly unique ids that let you “follow” a client from the first request done to any service until it leaves. Indeed, after it leaves, the client keep that unique id in it’s browser for later use.</p>
+              <p class="folio">
+                  
+      <a href="https://dariomac.com/traceability-logger" class="no-printable">https://dariomac.com/traceability-logger</a>
+      <a href="https://dariomac.com/traceability-logger?utm_campaign=phoneiq-head-of-se&utm_medium=pdf&utm_source=resume" class="printable" title="https://dariomac.com/traceability-logger">https://dariomac.com/traceability-logger</a>
+    
+              </p>
+            </article>
+            <article >
+              <h2>Enhanced Article-JSON Parser (EAJP)</h2>
+              <p>This <strong>NodeJS</strong> module was intended to parse and normalize articles’ <strong>HTML</strong> (most of the time in legacy format, with several errors) to a well-structured & easy to use <strong>JSON</strong> abstraction. The base parser was done by MIC company in <strong>JavaScript</strong> <strong>ES6</strong>. Over it base version, I add custom embeds support (Instagram, Twitter, Google Maps, Spotify) using a recursive-asynchronous algorithm. Asynchronously too, the parser take images and ask databases for their metadata (photograph autor, copyright license, etc.). Finally, the parser supports the extension of it using a plugin architecture to avoid the rebuilding of the parser later, when someone of editorial departments need support to new <strong>HTML</strong>-elements/embeds.</p>
+              <p class="folio">
+                  
+      <a href="https://dariomac.com/eajp-enhanced-article-json-parser" class="no-printable">https://dariomac.com/eajp-enhanced-article-json-parser</a>
+      <a href="https://dariomac.com/eajp-enhanced-article-json-parser?utm_campaign=phoneiq-head-of-se&utm_medium=pdf&utm_source=resume" class="printable" title="https://dariomac.com/eajp-enhanced-article-json-parser">https://dariomac.com/eajp-enhanced-article-json-parser</a>
+    
+              </p>
+            </article>
+            <article >
+              <h2>Static website generator</h2>
+              <p>Custom static site generator implemented in <strong>NodeJS</strong>. It takes content from a custom ‘<strong>YAML</strong> front matter’ files that include different sections with markdown content. Later, the front matter part is used to build the navigation and categorization of the website while the markdown is translated to <strong>HTML</strong>. Finally everything is saves as static <strong>HTML</strong> files to provide high performance server-side transference and client-side rendering.</p>
+              <p class="folio">
+                  
+      <a href="https://dariomac.com/static-website-generator" class="no-printable">https://dariomac.com/static-website-generator</a>
+      <a href="https://dariomac.com/static-website-generator?utm_campaign=phoneiq-head-of-se&utm_medium=pdf&utm_source=resume" class="printable" title="https://dariomac.com/static-website-generator">https://dariomac.com/static-website-generator</a>
     
               </p>
             </article>

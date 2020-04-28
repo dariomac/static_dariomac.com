@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /academy+duckduckgo-sr-user-researcher
+Disallow: /academy+senior-fullstack-engineer
 Disallow: /academy
 Disallow: /industry+1degree-director-eng
 Disallow: /industry+avaaz-sr-se
@@ -8,10 +9,15 @@ Disallow: /industry+bryter-backend-engineer
 Disallow: /industry+clevertech-sr-js-eng
 Disallow: /industry+crossover-technical-director
 Disallow: /industry+future-se
+Disallow: /industry+invisible-software-engineer
+Disallow: /industry+invisible-strattic-full-dev
 Disallow: /industry+invision-eng-manager
 Disallow: /industry+kalamuna-technical-pm
+Disallow: /industry+loom-fullstack-engineer
 Disallow: /industry+phoneiq-head-of-se
 Disallow: /industry+waterlilypond
+Disallow: /industry+webflow-fullstack-se
+Disallow: /industry+writer-access-full-stack-dev
 Disallow: /industry
 Disallow: /basecamp-application-2020
 Sitemap: https://dariomac.com/sitemap.xml
