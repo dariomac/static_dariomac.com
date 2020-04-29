@@ -1,5 +1,4 @@
 #!/bin/bash
-cp ~/Downloads/sslforfree.zip sslforfree/
 ls sslforfree
 unzip sslforfree/sslforfree.zip -d sslforfree/
 cp sslforfree/certificate.crt sslforfree/server.crt
