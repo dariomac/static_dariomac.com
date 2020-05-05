@@ -1,7 +1,5 @@
 User-agent: *
 Disallow: /academy
-Disallow: /industry+a-content-qa-admin
-Disallow: /industry+shogun-technical-pm
 Disallow: /industry+strattic-full-dev
 Disallow: /industry
 Disallow: /basecamp-application-2020
