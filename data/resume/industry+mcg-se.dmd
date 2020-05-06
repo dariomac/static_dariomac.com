@@ -1,0 +1,15 @@
+{
+  "disable": true,
+  "date": "2020-05-05",
+  "layout": "resume",
+  "mode": "collection",
+  "params": {
+    "resumeType": "industry",
+    "job": "mcg-se",
+    "noIndex": true
+  }
+}
+
+---
+[link]
+https://www.mcg.com/about/careers/search-jobs/?gh_jid=4712101002
