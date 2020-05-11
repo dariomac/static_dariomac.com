@@ -45,6 +45,9 @@
     "publisher": {
       "@id": "http://www.dariomac.com/software-engineering-advisor-consultant"
     }
+  },
+  "resume": {
+    "tags": "blue-trail-sm"
   }
 }
 
