@@ -22,7 +22,10 @@
     "type": "0"
   },
   "jsonld": {},
-  "canonical": ""
+  "canonical": "",
+  "resume": {
+    "tags": "blue-trail-sm"
+  }
 }
 
 ---

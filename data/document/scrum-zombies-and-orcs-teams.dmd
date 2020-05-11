@@ -45,6 +45,9 @@
     "publisher": {
       "@id": "http://www.dariomac.com/vairix-software-engineer"
     } 
+  },
+  "resume": {
+    "tags": "blue-trail-sm"
   }
 }
 
