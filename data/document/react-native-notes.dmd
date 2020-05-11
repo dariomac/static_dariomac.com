@@ -1,0 +1,87 @@
+{
+  "title": "React Native Notes",
+  "date": "2020-05-11",
+  "layout": "document",
+  "has_code": false,
+  "card": {
+    "color": "#99b399",
+    "columnid": "progress_2",
+    "content": "Notes about ReactNative",
+    "datebox": "2020-05-11",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/react-native-notes",
+    "position": "20200511",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "React Native Notes",
+    "type": "0"
+  },
+  "jsonld": {},
+  "canonical": ""
+}
+
+---
+
+[summary:string]
+
+[pub_date:string]
+
+[short_description:string]
+
+[body:md]
+## Getting started
+[Expo](https://expo.io/) is used to start easy with RN. With it you don't need XCode or Android Studio.
+
+Also we can use [Ignite](https://github.com/infinitered/ignite).
+
+## Testing
+[Jest](https://jestjs.io/)
+- Runs only test files related to changed files
+- Supports [Snapshot Testing](https://jestjs.io/docs/en/snapshot-testing)
+
+[Detox](https://github.com/wix/Detox) for end-to-end testing
+
+## Push notifications
+- Expo
+- One Signal
+- Firebase Cloud Messaging
+- AWS Amplify
+
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+
+[attachments:json]
+  [{
+    "filename": "blablabla.pdf",
+    "description": "This is the description of the filename."
+  },{
+    "filename": "blablabla2.pdf",
+    "description": "This is the description of the filename2."
+  }]
+
+[related_images:json]
+  [{
+    "filename": "blablabla.png"
+  },{
+    "filename": "blablabla2.jpg"
+  }]
+
+[related_topics:json]
+  [{
+    "title": "This is the link text",
+    "click_bait": "This is a clickbait title",
+    "linkto": "This is the href of the link"
+  },{
+    "filename": "This is the link text",
+    "click_bait": "This is a clickbait title",
+    "description": "This is the href of the link"
+  }]
