@@ -4,7 +4,7 @@
   "date": "2020-04-11",
   "layout": "project",
   "card": {
-    "color": "#99b399",
+    "color": "#AD4647",
     "columnid": "done_3",
     "content": "MiTurno - Sistema de gestión de turnos para la atención al público",
     "datebox": "2019-2020",
@@ -18,7 +18,7 @@
     "subtasks": "0",
     "subtaskscomplete": "0",
     "tags": null,
-    "title": "MiTurno",
+    "title": "MiTurno (ReactNative - Python - Raspberry Pi) ",
     "type": "Project"
   },
   "jsonld": {},
@@ -28,6 +28,8 @@
 ---
 
 [summary:string]
+MiTurno is a system for customers to mitigate the problem of queuing up to be attended, like shopper fatigue and decrease of customer experience (CX). The mobile app solves this keeping the customer informed about queue state letting be free to wander and buy more things or do whatever he want. Besides customer app, it has an employee app, an owner statistical app and even a physical printer (turn-o-matic like) for those customers who don't want to use the app.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
 
 [download_link:string]
 
@@ -41,7 +43,7 @@ https://fi.ort.edu.uy/92527/17/miturno---sistema-de-gestion-de-turnos-para-la-at
 MiTurno - Sistema de gestión de turnos para la atención al público
 
 [description:md]
-**Disclaimer**: _I've participated in this project **only** on my role of_ [Tutor](/degree-final-projects-tutor)
+**Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
 
 Waiting to be served in a facility is a daily problem that we face both as consumers and as service providers, generateing discomfort and endless complications for both roles.
 
@@ -63,29 +65,13 @@ In summary, MiTurno is a mobile application that allows users to request numbers
 
 On the other hand, it provides alternative ways to obtain numbers if one does not have a mobile device or the application when attending the establishment such as the printer, finally it saves all the information of requested shifts to provide useful statistics to the owner of the establishment.
 
-[attachments:json]
-  [{
-    "filename": "blablabla.pdf",
-    "description": "This is the description of the filename."
-  },{
-    "filename": "blablabla2.pdf",
-    "description": "This is the description of the filename2."
-  }]
-
 [related_images:json]
   [{
-    "filename": "blablabla.png"
+    "filename": "miturno-1.webp"
   },{
-    "filename": "blablabla2.jpg"
-  }]
-
-[related_topics:json]
-  [{
-    "title": "This is the link text",
-    "click_bait": "This is a clickbait title",
-    "linkto": "This is the href of the link"
+    "filename": "miturno-2.webp"
   },{
-    "filename": "This is the link text",
-    "click_bait": "This is a clickbait title",
-    "description": "This is the href of the link"
+    "filename": "miturno-3.webp"
+  },{
+    "filename": "miturno-4.webp"
   }]
