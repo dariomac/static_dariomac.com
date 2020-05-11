@@ -86,19 +86,19 @@ The powerpoint presentation used in the defense can be downloaded from [here](/a
 
 [related_images:json]
   [{
-    "filename": "master-d-1.webp"
+    "filename": "master-d-1.jpg"
   },{
-    "filename": "master-d-2.webp"
+    "filename": "master-d-2.jpg"
   },{
-    "filename": "master-d-3.webp"
+    "filename": "master-d-3.jpg"
   },{
-    "filename": "master-d-4.webp"
+    "filename": "master-d-4.jpg"
   },{
-    "filename": "master-d-5.webp"
+    "filename": "master-d-5.jpg"
   },{
-    "filename": "master-1.webp"
+    "filename": "master-1.png"
   },{
-    "filename": "master-2.webp"
+    "filename": "master-2.png"
   }]
 
 [lessons:md]

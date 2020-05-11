@@ -418,14 +418,26 @@ http://www.dariomac.com -->
                   </section>
 
   <section class="image_gallery">
-    <a itemprop="image" href="/assets/inmunovr-fabian-201811071832.webp" class="fancybox lightbox_link" rel="challenge" title="">
-      <img itemprop="thumbnailUrl" src="/assets/thumbs/inmunovr-fabian-201811071832.webp" />
+    <a itemprop="image" data-fancybox="gallery" href="/assets/inmunovr-fabian-201811071832.png" class="fancybox lightbox_link" rel="challenge" title="">
+      <picture>
+        <source srcset="/assets/thumbs/inmunovr-fabian-201811071832.webp" type="image/webp">
+
+        <img src="/assets/thumbs/inmunovr-fabian-201811071832.png" alt="" />
+      </picture>
     </a>
-    <a itemprop="image" href="/assets/inmunovr-pablo-201811071832.webp" class="fancybox lightbox_link" rel="challenge" title="">
-      <img itemprop="thumbnailUrl" src="/assets/thumbs/inmunovr-pablo-201811071832.webp" />
+    <a itemprop="image" data-fancybox="gallery" href="/assets/inmunovr-pablo-201811071832.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <picture>
+        <source srcset="/assets/thumbs/inmunovr-pablo-201811071832.webp" type="image/webp">
+
+        <img src="/assets/thumbs/inmunovr-pablo-201811071832.jpg" alt="" />
+      </picture>
     </a>
-    <a itemprop="image" href="/assets/inmunovr-patricia-201811071830.webp" class="fancybox lightbox_link" rel="challenge" title="">
-      <img itemprop="thumbnailUrl" src="/assets/thumbs/inmunovr-patricia-201811071830.webp" />
+    <a itemprop="image" data-fancybox="gallery" href="/assets/inmunovr-patricia-201811071830.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <picture>
+        <source srcset="/assets/thumbs/inmunovr-patricia-201811071830.webp" type="image/webp">
+
+        <img src="/assets/thumbs/inmunovr-patricia-201811071830.jpg" alt="" />
+      </picture>
     </a>
   </section>
 
@@ -478,12 +490,12 @@ http://www.dariomac.com -->
       </tr>
       <tr>
         <td style="text-align: center;">
-          <a href="/assets/inmunovr-anuario2018.webp" class="lightbox_link">
-            <img src="/assets/images/file-types/webp.svg" style="width: 48px;" alt="inmunovr-anuario2018.webp">
+          <a href="/assets/inmunovr-anuario2018.png" class="lightbox_link">
+            <img src="/assets/images/file-types/png.svg" style="width: 48px;" alt="inmunovr-anuario2018.png">
           </a>
         </td>
         <td class="filename">
-          <a href="/assets/inmunovr-anuario2018.webp">inmunovr-anuario2018.webp</a>
+          <a href="/assets/inmunovr-anuario2018.png">inmunovr-anuario2018.png</a>
         </td>
         <td>
           InmunoVR referenece in the 2018 yearbook.
@@ -579,7 +591,7 @@ http://www.dariomac.com -->
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
 
-    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -588,8 +600,9 @@ http://www.dariomac.com -->
 <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
 <script>
   $(".fancybox").fancybox({
-    openEffect  : 'none',
-    closeEffect : 'none'
+    arrows: true,
+    loop: true,
+    keyboard: true
   });
 </script>
 

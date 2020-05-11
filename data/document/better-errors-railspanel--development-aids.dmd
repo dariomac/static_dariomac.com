@@ -40,7 +40,7 @@ Here we take a look at two tools to aid us in Ruby on Rails development process.
 The default Rails error page is completely hideous and hurts to look at. [Better Errors](https://github.com/charliesome/better_errors) replaces the standard Rails error page with a much better and more useful error page.
 
 This is how the "Better Errors" error page looks:
-![Better Errors interface](/assets/essays_better_errors.webp#center)
+![Better Errors interface](/assets/essays_better_errors.png#center)
 
 It is clearly more visually appealing, but it also provides much more detailed debug information (also the error page page is even responsive!).
 
@@ -66,7 +66,7 @@ Remember to add Better Errors gem inside a `:development` section. **Do NOT run 
 
 [RailsPanel](https://github.com/dejan/rails_panel) is a Chrome extension for Rails development that will end your tailing of development.log. Have all information about your Rails app requests in the browser - in the Developer Tools panel. Provides insight to db/rendering/total times, parameter list, rendered views and more.
 
-![RailsPanel interface](/assets/essays_rails_panel.webp#center)
+![RailsPanel interface](/assets/essays_rails_panel.png#center)
 
 The installation is as simple as going to the [Chrome WebStore](https://chrome.google.com/webstore/detail/railspanel/gjpfobpafnhjhbajcjgccbbdofdckggg) and install RailsPanel extension from there. This is recommended way of installing extension, since it will auto-update on every new version. Then you have to add this to the gemfile:
 

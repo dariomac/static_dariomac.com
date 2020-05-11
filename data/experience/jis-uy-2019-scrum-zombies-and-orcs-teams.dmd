@@ -45,7 +45,7 @@ They have two "products" known as mis.uy and jis.uy. The first one, mis.uy is th
 
 This year they accepted my proposal to talk about "Zombies & Orcs Scrum Teams", something I've been wanting to do for a long time.
 
-![My place in agenda: Tuesday 3, 3:30pm](assets/z-nd-o-jis-uy-2019-media0.webp#center)
+![My place in agenda: Tuesday 3, 3:30pm](assets/z-nd-o-jis-uy-2019-media0.png#center)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kNdqZhWAHKg#center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -848,35 +848,35 @@ happy to help.
 
 [related_images:json]
   [{
-    "filename": "z-nd-o-jis-uy-2019-0.webp"
+    "filename": "z-nd-o-jis-uy-2019-0.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-1.webp"
+    "filename": "z-nd-o-jis-uy-2019-1.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-2.webp"
+    "filename": "z-nd-o-jis-uy-2019-2.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-3.webp"
+    "filename": "z-nd-o-jis-uy-2019-3.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-4.webp"
+    "filename": "z-nd-o-jis-uy-2019-4.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-5.webp"
+    "filename": "z-nd-o-jis-uy-2019-5.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-6.webp"
+    "filename": "z-nd-o-jis-uy-2019-6.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-7.webp"
+    "filename": "z-nd-o-jis-uy-2019-7.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-8.webp"
+    "filename": "z-nd-o-jis-uy-2019-8.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-9.webp"
+    "filename": "z-nd-o-jis-uy-2019-9.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-media1.webp"
+    "filename": "z-nd-o-jis-uy-2019-media1.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-media2.webp"
+    "filename": "z-nd-o-jis-uy-2019-media2.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-media3.webp"
+    "filename": "z-nd-o-jis-uy-2019-media3.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-media4.webp"
+    "filename": "z-nd-o-jis-uy-2019-media4.jpg"
   },{
-    "filename": "z-nd-o-jis-uy-2019-media5.webp"
+    "filename": "z-nd-o-jis-uy-2019-media5.jpg"
   }]
 
 [attachments:json]
@@ -884,7 +884,7 @@ happy to help.
     "filename": "z-nd-o-jis-uy-2019.pdf",
     "description": "This was the slide deck used in the conference."
   }, {
-    "filename": "z-nd-o-jis-uy-2019-agenda.webp",
+    "filename": "z-nd-o-jis-uy-2019-agenda.png",
     "description": "This is the original jis.uy website with the agenda."
   }]
 

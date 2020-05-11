@@ -406,7 +406,10 @@ http://www.dariomac.com -->
 <p><strong>Why Another Clojure Box?</strong></p>
 <p>Well, I love Scite, so I use it to experiment with Clojure. Later I integrate WinCommand and <del>JSwat</del> to the set so I thought to share this &quot;package&quot; with everybody.</p>
 <p>All the source code of the tools are in the package, so you can hack every tool in order to make it more useful for you (or report bugs!!).</p>
-<p><img src="/assets/ACB_1.3_full-workplace.webp#center" alt="ACB Workplace" /></p>
+<p><picture>
+            <source srcset="/assets/ACB_1.3_full-workplace.webp" type="image/webp">
+
+            <img src="/assets/ACB_1.3_full-workplace.jpg#center" alt="ACB Workplace"></picture></p>
 <p><strong>Features</strong></p>
 <ul>
 <li>REPL (WinCommand)
@@ -452,7 +455,10 @@ http://www.dariomac.com -->
 <ul>
 <li>
 <p>ACB Launcher
-<img src="/assets/ACB_1.3_acb_3.webp#center" alt="IMG" /></p>
+<picture>
+            <source srcset="/assets/ACB_1.3_acb_3.webp" type="image/webp">
+
+            <img src="/assets/ACB_1.3_acb_3.jpg#center" alt="IMG"></picture></p>
 <ul>
 <li>You can drag and drop files over ACB logo to open it with scite.</li>
 <li>If you click over the logo you will open WinCommand REPL.</li>
@@ -461,35 +467,59 @@ http://www.dariomac.com -->
 </li>
 <li>
 <p><strong>Code completion (Ctrl-I)</strong>
-<img src="/assets/ACB_code-completion.webp#center" alt="IMG" /></p>
+<picture>
+            <source srcset="/assets/ACB_code-completion.webp" type="image/webp">
+
+            <img src="/assets/ACB_code-completion.jpg#center" alt="IMG"></picture></p>
 </li>
 <li>
 <p><strong>Inline form arguments
-<img src="/assets/ACB_parameters.webp#center" alt="IMG" /></strong></p>
+<picture>
+            <source srcset="/assets/ACB_parameters.webp" type="image/webp">
+
+            <img src="/assets/ACB_parameters.jpg#center" alt="IMG"></picture></strong></p>
 </li>
 <li>
 <p><strong>Inline help
-<img src="/assets/ACB_1.3_inline_help.webp#center" alt="IMG" /></strong></p>
+<picture>
+            <source srcset="/assets/ACB_1.3_inline_help.webp" type="image/webp">
+
+            <img src="/assets/ACB_1.3_inline_help.jpg#center" alt="IMG"></picture></strong></p>
 </li>
 <li>
 <p><strong>Show form documentation
-<img src="/assets/ACB_show-doc.webp#center" alt="IMG" /></strong></p>
+<picture>
+            <source srcset="/assets/ACB_show-doc.webp" type="image/webp">
+
+            <img src="/assets/ACB_show-doc.jpg#center" alt="IMG"></picture></strong></p>
 </li>
 <li>
 <p><strong>Simple file explorer
-<img src="/assets/ACB_file-explorer.webp#center" alt="IMG" /></strong></p>
+<picture>
+            <source srcset="/assets/ACB_file-explorer.webp" type="image/webp">
+
+            <img src="/assets/ACB_file-explorer.jpg#center" alt="IMG"></picture></strong></p>
 </li>
 <li>
 <p><strong>Bookmarks manager
-<img src="/assets/ACB_bookmarks.webp#center" alt="IMG" /></strong></p>
+<picture>
+            <source srcset="/assets/ACB_bookmarks.webp" type="image/webp">
+
+            <img src="/assets/ACB_bookmarks.jpg#center" alt="IMG"></picture></strong></p>
 </li>
 <li>
 <p><strong>Other tools
-<img src="/assets/ACB_clj-tools.webp#center" alt="IMG" /></strong></p>
+<picture>
+            <source srcset="/assets/ACB_clj-tools.webp" type="image/webp">
+
+            <img src="/assets/ACB_clj-tools.jpg#center" alt="IMG"></picture></strong></p>
 </li>
 <li>
 <p>**REPL
-<img src="/assets/ACB_repl.webp#center" alt="IMG" />
+<picture>
+            <source srcset="/assets/ACB_repl.webp" type="image/webp">
+
+            <img src="/assets/ACB_repl.gif#center" alt="IMG"></picture>
 **</p>
 </li>
 </ul>
@@ -621,7 +651,7 @@ http://www.dariomac.com -->
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
 
-    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -630,8 +660,9 @@ http://www.dariomac.com -->
 <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
 <script>
   $(".fancybox").fancybox({
-    openEffect  : 'none',
-    closeEffect : 'none'
+    arrows: true,
+    loop: true,
+    keyboard: true
   });
 </script>
 

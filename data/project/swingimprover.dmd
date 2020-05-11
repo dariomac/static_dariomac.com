@@ -46,7 +46,7 @@ Mar, 2006
 
 The project was about the development of a software prototype (called SwingImprover) that allows the analysis of a golf player swing movement (using personal videos). The software has to let the user study their moves during the various stages of the swing, allowing the comparison with theoretical measures and with movements of professional players.
 
-![SwingImprover main interface](/assets/SI_Annex-F-2.webp#center)
+![SwingImprover main interface](/assets/SI_Annex-F-2.gif#center)
 
 To set important aspects of these movements, the software ask the user to mark important points in successive video frames. Based on these information and additional data inputted by the user (such as dimensions of the player, etc.), the system display a report that show the corrections to be done in every swing stage.
 

@@ -42,7 +42,7 @@ The application interface was designed considering the standard functionality of
 
 As an introduction we will start seeing a description of the tools available on the home screen.
 
-![SwingImprover UI](/assets/SI_Annex-F-1.webp#center)
+![SwingImprover UI](/assets/SI_Annex-F-1.gif#center)
 
 1 - Video playback controls. In conjunction with the trackbar this group of controls handles video playback. Allows the user to play, pause and move frame by frame through the video.
 
@@ -68,11 +68,11 @@ As shown in the picture below, this mode allows the user to perform measurements
 
 View of two videos simultaneously:
 
-![Comparative view](/assets/SI_Annex-F-2.webp#center)
+![Comparative view](/assets/SI_Annex-F-2.gif#center)
 
 Independent study of the swing:
 
-![Angle analysis](/assets/SI_Annex-F-3.webp#center)
+![Angle analysis](/assets/SI_Annex-F-3.gif#center)
 
 ## Assisted mode
 
@@ -80,7 +80,7 @@ The use of the assisted mode is very simple. After opening the video to study, u
 
 After completing the different measurements, it can get a list of all the results as seen in the picture.
 
-![Measure results](/assets/SI_Annex-F-4.webp#center)
+![Measure results](/assets/SI_Annex-F-4.gif#center)
 
 This list gives details of the score obtained in each stage of the swing, and a final score that serves as a benchmark to evaluate each swing.
 
@@ -96,7 +96,7 @@ You can also save a screenshot of a frame with all the study information (sketch
 
 DirectX is Microsoft's technology for handling multimedia. Video adapters require a certain configuration depending on the capabilities of each PC, which is why SwingImprover provides the possibility of setting the adapter for better graphics performance.
 
-![Adapters configuration](/assets/SI_Annex-F-5.webp#center)
+![Adapters configuration](/assets/SI_Annex-F-5.gif#center)
 
 ## On error handling
 
@@ -104,13 +104,13 @@ Since graphic handling applications mostly have compatibility issues with older 
 
 There is an option to send an email with an automatically generated report to SwingImprover site in order to be solved in future releases.
 
-![Error handling](/assets/SI_Annex-F-6.webp#center)
+![Error handling](/assets/SI_Annex-F-6.gif#center)
 
 ## On application installer
 
 The application has an installation wizard created especially for the application. This generates a group of shortcuts and registry entries in Windows to correct automatically uninstall.
 
-![Installation wizard](/assets/SI_Annex-F-7.webp#center)
+![Installation wizard](/assets/SI_Annex-F-7.gif#center)
 
 [acknowledgments:md]
 
