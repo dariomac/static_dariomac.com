@@ -29,7 +29,7 @@
 ---
 
 [summary:string]
-I was the Scrum Master of the uruguayan development team, which was focused on Product Development's support. One of our systems (of which I am its architect in Node.js) was behind the delivery of content using several distribution channels. Other was the editorial tool (Drupal) used to generate and admin editorial content. Management of both was automated by a DevOps team.
+I was the Scrum Master of the uruguayan development team focused on Product Development's support and new tools generation. Our content delivery system (of which I was its Node.js architect) convert legacy HTML articles to a JSON intermediate format for later send them through several channels. We also maintain the editorial tool (Drupal) used to generate and admin articles. The automation of the management of both was performed by a DevOps team.
 
 [duration:string]
 Nov 2016 – Jun 2019 (2 years 7 months)
@@ -43,11 +43,17 @@ VIX
 [content:md]
 Vix is the largest independent digital media company for the U.S Hispanic market, Latin America and Brazil. It publishes content in English, Spanish and Portuguese, on Vix.com and across a variety of social platforms such as Facebook, Instagram, and YouTube every day. Also it counts with over 50 million social followers and reaches over 325 million people globally across platforms, most recently delivering over 1 billion monthly video views.
 
-I'm the Scrum Master of two web development teams at Uruguay, which are responsible of maintain and improve the platform that makes this possible. On the one hand we give editorial teams the tools to do their content-generating job following custom workflows; on the other, we deliver content through several channels (vix.com website, Instant Article, Google Accelerated Mobile Pages, and several feeds to social networks and devices). Also, I help in requirement gathering, QA and progress tracking to ensure the completion of company milestones.
+### Scrum Master - Project Manager
+Initially I was the Scrum Master of the two web development teams at Uruguay offices, responsible of maintain and improve the platform that supports all the operations of the company. On the one hand we gave editorial teams the tools to do their content-generating job following custom workflows; on the other, we delivered content through several channels (vix.com website, Instant Article, Google Accelerated Mobile Pages, and several feeds to social networks and devices). Also, I helped in requirement gathering, QA and progress tracking to ensure the completion of company milestones.
 
 ![Some of our retrospectives](/assets/retros.webp#center)
 
-Vix is headquartered in Miami, Florida with offices in New York, Mexico City, Montevideo, Buenos Aires, and Sao Paulo
+### Node.js Architect
+After a year and a half I proposed the idea of making a net of Node.js microservices to split the content delivery from the editorial workflow. Before this, they had a single heavily-customized Drupal that supported all the editorial workflow (~150 copywriters and writers) and the content consumption of ~80.000.000 monthly visits. I was in charge of the design, implementation and management (using Scrum) of that project for about a year, slowly replacing the old implementation of each distribution channels (i.e. Google AMP, Facebook Instant Articles, msn.com, Google News) with new ones. We did it without a significant loss of visits, increasing time on page and reducing bounce rate. Also we increased the rendering times (increasing the gains of the company) but also reduced the DevOps complexity and cost because it support ~25 requests/sec using only one service with 5 instances of them running, coordinated by [PM2](https://pm2.keymetrics.io/) process manager with an NGINX as reverse proxy supporting ~1000 req/sec. We also reduced the time to add new channels from an average of two week to 8 hours. From that project we built 2 frameworks/tools ([Enhanced Article-JSON Parser](/eajp-enhanced-article-json-parser) and [Traceability Logger](/traceability-logger)) plus the [microservices solution itself](/content-distribution-system), that was extensible (as a framework) by design.
+
+Vix was headquartered in Miami, Florida with offices in New York, Mexico City, Montevideo, Buenos Aires, and Sao Paulo. I had constant interaction with nearly all of the editorial offices of each city, the AdOps team at Sao Paulo, the teams specialized in Analytics at Buenos Aires. Also we worked very near the DevOps team geographically distributed between Uruguay to Belarus.
 
 [projects:md]
 * [Content distribution system - NodeJS](/content-distribution-system)
+* [Enhanced Article-JSON Parser](/eajp-enhanced-article-json-parser)
+* [Traceability Logger](/traceability-logger)

@@ -217,7 +217,7 @@ table td, table th {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="author" content="Darío Macchi" />
-<meta name="description" content="I was the Scrum Master of the uruguayan development team, which was focused on Product Development&#x27;s support. One of our systems (of which I am its architect in Node.js) was behind the delivery of content using several distribution channels. Other was the editorial tool (Drupal) used to generate and admin editorial content. Management of both was automated by a DevOps team." />
+<meta name="description" content="I was the Scrum Master of the uruguayan development team focused on Product Development&#x27;s support and new tools generation. Our content delivery system (of which I was its Node.js architect) convert legacy HTML articles to a JSON intermediate format for later send them through several channels. We also maintain the editorial tool (Drupal) used to generate and admin articles. The automation of the management of both was performed by a DevOps team." />
 <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
 
 <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -391,15 +391,18 @@ http://www.dariomac.com -->
                 
                   <section class="summary">
                     <p>
-                      I was the Scrum Master of the uruguayan development team, which was focused on Product Development&#x27;s support. One of our systems (of which I am its architect in Node.js) was behind the delivery of content using several distribution channels. Other was the editorial tool (Drupal) used to generate and admin editorial content. Management of both was automated by a DevOps team.
+                      I was the Scrum Master of the uruguayan development team focused on Product Development&#x27;s support and new tools generation. Our content delivery system (of which I was its Node.js architect) convert legacy HTML articles to a JSON intermediate format for later send them through several channels. We also maintain the editorial tool (Drupal) used to generate and admin articles. The automation of the management of both was performed by a DevOps team.
                     </p>
                   </section>
                 
                   <section class="content">
                     <p>Vix is the largest independent digital media company for the U.S Hispanic market, Latin America and Brazil. It publishes content in English, Spanish and Portuguese, on Vix.com and across a variety of social platforms such as Facebook, Instagram, and YouTube every day. Also it counts with over 50 million social followers and reaches over 325 million people globally across platforms, most recently delivering over 1 billion monthly video views.</p>
-<p>I'm the Scrum Master of two web development teams at Uruguay, which are responsible of maintain and improve the platform that makes this possible. On the one hand we give editorial teams the tools to do their content-generating job following custom workflows; on the other, we deliver content through several channels (vix.com website, Instant Article, Google Accelerated Mobile Pages, and several feeds to social networks and devices). Also, I help in requirement gathering, QA and progress tracking to ensure the completion of company milestones.</p>
+<h3>Scrum Master - Project Manager</h3>
+<p>Initially I was the Scrum Master of the two web development teams at Uruguay offices, responsible of maintain and improve the platform that supports all the operations of the company. On the one hand we gave editorial teams the tools to do their content-generating job following custom workflows; on the other, we delivered content through several channels (vix.com website, Instant Article, Google Accelerated Mobile Pages, and several feeds to social networks and devices). Also, I helped in requirement gathering, QA and progress tracking to ensure the completion of company milestones.</p>
 <p><img src="/assets/retros.webp#center" alt="Some of our retrospectives" /></p>
-<p>Vix is headquartered in Miami, Florida with offices in New York, Mexico City, Montevideo, Buenos Aires, and Sao Paulo</p>
+<h3>Node.js Architect</h3>
+<p>After a year and a half I proposed the idea of making a net of Node.js microservices to split the content delivery from the editorial workflow. Before this, they had a single heavily-customized Drupal that supported all the editorial workflow (~150 copywriters and writers) and the content consumption of ~80.000.000 monthly visits. I was in charge of the design, implementation and management (using Scrum) of that project for about a year, slowly replacing the old implementation of each distribution channels (i.e. Google AMP, Facebook Instant Articles, msn.com, Google News) with new ones. We did it without a significant loss of visits, increasing time on page and reducing bounce rate. Also we increased the rendering times (increasing the gains of the company) but also reduced the DevOps complexity and cost because it support ~25 requests/sec using only one service with 5 instances of them running, coordinated by <a href="https://pm2.keymetrics.io/">PM2</a> process manager with an NGINX as reverse proxy supporting ~1000 req/sec. We also reduced the time to add new channels from an average of two week to 8 hours. From that project we built 2 frameworks/tools (<a href="/eajp-enhanced-article-json-parser">Enhanced Article-JSON Parser</a> and <a href="/traceability-logger">Traceability Logger</a>) plus the <a href="/content-distribution-system">microservices solution itself</a>, that was extensible (as a framework) by design.</p>
+<p>Vix was headquartered in Miami, Florida with offices in New York, Mexico City, Montevideo, Buenos Aires, and Sao Paulo. I had constant interaction with nearly all of the editorial offices of each city, the AdOps team at Sao Paulo, the teams specialized in Analytics at Buenos Aires. Also we worked very near the DevOps team geographically distributed between Uruguay to Belarus.</p>
 
                   </section>
 
@@ -416,6 +419,8 @@ http://www.dariomac.com -->
                   <section class="projects">
                     <ul>
 <li><a href="/content-distribution-system">Content distribution system - NodeJS</a></li>
+<li><a href="/eajp-enhanced-article-json-parser">Enhanced Article-JSON Parser</a></li>
+<li><a href="/traceability-logger">Traceability Logger</a></li>
 </ul>
 
                   </section>

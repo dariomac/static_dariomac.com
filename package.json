@@ -18,8 +18,8 @@
     "deploy": "timeout 15 bash -c 'while [[ \"$(curl -s -o /dev/null -X POST -w ''%{http_code}'' https://www.dariomac.com/pullit)\" != \"200\" ]]; do sleep 1; done'",
     "build": "find . -name '.DS_Store' -type f -delete && node builder.js data/ www/ layouts/ --clear-all",
     "build-debug": "LOG_LEVEL=debug NODE_ENV=development node --inspect builder.js data/ www/ layouts/ --clear-all",
-    "start": "nodemon -e dmd server.js",
-    "start-debug": "LOG_LEVEL=debug NODE_ENV=development nodemon -e dmd --inspect server.js"
+    "start": "nodemon -e dmd,hbs,js,css server.js",
+    "start-debug": "LOG_LEVEL=debug NODE_ENV=development nodemon -e dmd,hbs,js,css --inspect server.js"
   },
   "dependencies": {
     "command-line-args": "4.0.1",
@@ -42,8 +42,12 @@
     "standard": "git+ssh://git@bitbucket.org/crovat/vix-standard.git"
   },
   "nodemonConfig": {
+    "ignore": [
+      "www/*",
+      "*.pid"
+    ],
     "events": {
-      "restart": "find . -name '.DS_Store' -type f -delete && node builder.js data/ www/ layouts/ --clear-all"
+      "restart": "yarn build"
     }
   },
   "homepage": "",
