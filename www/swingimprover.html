@@ -403,7 +403,10 @@ http://www.dariomac.com -->
                   <section style="clear:both" class="content">
                     <p>Mar, 2006</p>
 <p>The project was about the development of a software prototype (called SwingImprover) that allows the analysis of a golf player swing movement (using personal videos). The software has to let the user study their moves during the various stages of the swing, allowing the comparison with theoretical measures and with movements of professional players.</p>
-<p><img src="/assets/SI_Annex-F-2.webp#center" alt="SwingImprover main interface" /></p>
+<p><picture>
+            <source srcset="/assets/SI_Annex-F-2.webp" type="image/webp">
+
+            <img src="/assets/SI_Annex-F-2.gif#center" alt="SwingImprover main interface"></picture></p>
 <p>To set important aspects of these movements, the software ask the user to mark important points in successive video frames. Based on these information and additional data inputted by the user (such as dimensions of the player, etc.), the system display a report that show the corrections to be done in every swing stage.</p>
 <p>SwingImprover development was splitted into several stages, each one with it's own technological challenges. Some of these are the use of DirectX technology and VMR9 libraries to manage video files and draw sketches over them, 3D modeling technologies and the development of custom reusable controls to improve usability.</p>
 <p>The software was completely developed in C # using the Framework 1.1 according to customer specifications.</p>
@@ -514,7 +517,7 @@ http://www.dariomac.com -->
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
 
-    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -523,8 +526,9 @@ http://www.dariomac.com -->
 <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
 <script>
   $(".fancybox").fancybox({
-    openEffect  : 'none',
-    closeEffect : 'none'
+    arrows: true,
+    loop: true,
+    keyboard: true
   });
 </script>
 

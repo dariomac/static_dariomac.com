@@ -34,7 +34,7 @@ This article is about how to expose students to the multidimensional nature of S
 How to expose students to the multidimensional nature of Software Engineering processes? May be making an analogy with the Strandbeests, an ingenious blending of art and engineering.
 
 [body:md]
-![Strandbeest featured](/assets/doc_strandbeest.webp#center)
+![Strandbeest featured](/assets/doc_strandbeest.jpg#center)
 
 As a Software Engineering (SE) teacher I've to think about the planning of the course. Many times, this lead to ask myself how to make young practitioners experience a genuine software development process and appreciate the relations and tradeoffs between all the processes of SE. [SE is a multidimensional field](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=4908981&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F13%2F5191288%2F04908981.pdf%3Farnumber%3D4908981) that involve many overlapping and complementary processes from many [subdisciplines](https://en.wikipedia.org/wiki/Software_engineering#Subdisciplines).
 
@@ -46,7 +46,7 @@ In short, the problem that we face as SE teachers is **how to teach each SE subd
 
 While I was thinking about this problem, I remembered this photo of me with a Strandbeest and the analogy between SE and ["this new forms of life"](http://strandbeest.com/) came to my head.
 
-![Me with a Strandbeest](/assets/doc_strandebeest1.webp#center) <span class="credit">Strandbeest on ArtFutura 2012, Montevideo, Dec 2012</span>
+![Me with a Strandbeest](/assets/doc_strandebeest1.jpg#center) <span class="credit">Strandbeest on ArtFutura 2012, Montevideo, Dec 2012</span>
 
 ## The Strandbeests
 
@@ -79,7 +79,7 @@ For me, the answer to this question is that no matter where you start to teach (
 
 The Strandbeest, no matter it size, can be divided into small and simple parts. Once you have that small part you can analyze how to join with the next sibling understanding how they work together.
 
-![Strandbeest piece (plastic)](/assets/doc_strandebeest2.webp#center)
+![Strandbeest piece (plastic)](/assets/doc_strandebeest2.jpg#center)
 
 You can do the same with the SE discipline. No matter how complex it appear to be, you can divide it in subdisciplines, each one with their own processes. We must teach a this granular level but we can't forget that this small parts work together with others and this collaborative work is the key to the success of the whole system.
 

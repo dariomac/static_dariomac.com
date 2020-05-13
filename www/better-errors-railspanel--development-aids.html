@@ -422,7 +422,10 @@ http://www.dariomac.com -->
                     <h2>Better Errors</h2>
 <p>The default Rails error page is completely hideous and hurts to look at. <a href="https://github.com/charliesome/better_errors">Better Errors</a> replaces the standard Rails error page with a much better and more useful error page.</p>
 <p>This is how the &quot;Better Errors&quot; error page looks:
-<img src="/assets/essays_better_errors.webp#center" alt="Better Errors interface" /></p>
+<picture>
+            <source srcset="/assets/essays_better_errors.webp" type="image/webp">
+
+            <img src="/assets/essays_better_errors.png#center" alt="Better Errors interface"></picture></p>
 <p>It is clearly more visually appealing, but it also provides much more detailed debug information (also the error page page is even responsive!).</p>
 <p>Intalling the gem is very easy. You just have to add the following to your gemfile:</p>
 <pre>
@@ -438,7 +441,10 @@ BetterErrors.editor = :sublime if defined? BetterErrors
 <p>Remember to add Better Errors gem inside a <code>:development</code> section. <strong>Do NOT run better_errors in production, or on Internet facing hosts.</strong></p>
 <h2>RailsPanel</h2>
 <p><a href="https://github.com/dejan/rails_panel">RailsPanel</a> is a Chrome extension for Rails development that will end your tailing of development.log. Have all information about your Rails app requests in the browser - in the Developer Tools panel. Provides insight to db/rendering/total times, parameter list, rendered views and more.</p>
-<p><img src="/assets/essays_rails_panel.webp#center" alt="RailsPanel interface" /></p>
+<p><picture>
+            <source srcset="/assets/essays_rails_panel.webp" type="image/webp">
+
+            <img src="/assets/essays_rails_panel.png#center" alt="RailsPanel interface"></picture></p>
 <p>The installation is as simple as going to the <a href="https://chrome.google.com/webstore/detail/railspanel/gjpfobpafnhjhbajcjgccbbdofdckggg">Chrome WebStore</a> and install RailsPanel extension from there. This is recommended way of installing extension, since it will auto-update on every new version. Then you have to add this to the gemfile:</p>
 <pre>
 group :development do
@@ -570,7 +576,7 @@ $(function() {
 <link type="text/css" rel="stylesheet" href="/assets/vendor/syntaxhighlighter/shThemeDefault.css" />
 
 
-    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -578,8 +584,9 @@ $(function() {
     <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
     <script>
       $(".fancybox").fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none'
+        arrows: true,
+        loop: true,
+        keyboard: true
       });
     </script>
   </body>

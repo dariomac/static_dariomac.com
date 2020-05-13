@@ -34,6 +34,20 @@
 [short_description:string]
 
 [body:md]
+
+## 20200513
+**Flatlist**
+It has a renderItem function reponsible of render reach item of the list from an array (by prop). Comparing with web React approach (iterate rendering each item inside the loop), Flatlist has a lot of internal optimizations.
+
+renderItem function receives a element as parameter. element.item has each item of the data and element.index is just that, the index of the element inside the data prop. 
+
+Each element should have a key that must be a string, consistent between renders and unique. keyExtractor is a prop of the FlatList that is a function that receives each element of the data array, build and return the expected key.
+
+## 20200512
+[React Navigation](https://reactnavigation.org/)
+
+StyleSheet.create is useful instead of styling inline style=\\{{ ... }} because if you make a mistake with the first, it shows an big red error instead of just a yellow warning (as with the inline style).
+
 ## Getting started
 [Expo](https://expo.io/) is used to start easy with RN. With it you don't need XCode or Android Studio.
 
@@ -51,6 +65,7 @@ Also we can use [Ignite](https://github.com/infinitered/ignite).
 - One Signal
 - Firebase Cloud Messaging
 - AWS Amplify
+
 
 
 [acknowledgments:md]

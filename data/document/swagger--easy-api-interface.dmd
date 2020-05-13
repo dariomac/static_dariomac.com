@@ -97,7 +97,7 @@ What to do after those files were created? You have to create your documentation
 
 After following the Swagger-ui directions you will get something like this screenshot:
 
-![Swagger interface](/assets/essays_swagger.webp#center)
+![Swagger interface](/assets/essays_swagger.png#center)
 
 If you want to see a live demo of a api documented with Swagger and a sandbox to play with, you can go [here](http://petstore.swagger.wordnik.com/#!/).
 

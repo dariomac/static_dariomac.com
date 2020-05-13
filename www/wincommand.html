@@ -418,7 +418,10 @@ http://www.dariomac.com -->
 <li>Ctrl+Up, Ctrl+Down, Ctrl+Right are for editing and viewing the input history.</li>
 </ul>
 <p>Global command execution:</p>
-<p><img src="/assets/wincommand.webp#center" alt="IMG" /></p>
+<p><picture>
+            <source srcset="/assets/wincommand.webp" type="image/webp">
+
+            <img src="/assets/wincommand.gif#center" alt="IMG"></picture></p>
 <p>If you put some command inside this textbox and press Ctrl+Enter, or click in the green arrow or click in Tools - Exec Global Cmd. Useful when you want to execute the same command continuously, like a function defintion or, in my situation, repetitive commands like (load &quot;foo&quot;) when you are working foo.clj</p>
 <p>WinCommand.ini is the file that let you configure WinCommand.</p>
 <p>First you have an application area that let you add more applications to WinCommand.</p>
@@ -562,7 +565,7 @@ Version 1.2.2:</p>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
 
-    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -571,8 +574,9 @@ Version 1.2.2:</p>
 <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
 <script>
   $(".fancybox").fancybox({
-    openEffect  : 'none',
-    closeEffect : 'none'
+    arrows: true,
+    loop: true,
+    keyboard: true
   });
 </script>
 

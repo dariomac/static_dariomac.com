@@ -422,7 +422,15 @@ http://www.dariomac.com -->
                 </section>
 
                 <section>
-                    <h2>Getting started</h2>
+                    <h2>20200513</h2>
+<p><strong>Flatlist</strong>
+It has a renderItem function reponsible of render reach item of the list from an array (by prop). Comparing with web React approach (iterate rendering each item inside the loop), Flatlist has a lot of internal optimizations.</p>
+<p>renderItem function receives a element as parameter. element.item has each item of the data and element.index is just that, the index of the element inside the data prop.</p>
+<p>Each element should have a key that must be a string, consistent between renders and unique. keyExtractor is a prop of the FlatList that is a function that receives each element of the data array, build and return the expected key.</p>
+<h2>20200512</h2>
+<p><a href="https://reactnavigation.org/">React Navigation</a></p>
+<p>StyleSheet.create is useful instead of styling inline style={{ ... }} because if you make a mistake with the first, it shows an big red error instead of just a yellow warning (as with the inline style).</p>
+<h2>Getting started</h2>
 <p><a href="https://expo.io/">Expo</a> is used to start easy with RN. With it you don't need XCode or Android Studio.</p>
 <p>Also we can use <a href="https://github.com/infinitered/ignite">Ignite</a>.</p>
 <h2>Testing</h2>
@@ -444,11 +452,19 @@ http://www.dariomac.com -->
 
 
   <section class="image_gallery">
-    <a itemprop="image" href="/assets/blablabla.png" class="fancybox lightbox_link" rel="challenge" title="">
-      <img itemprop="thumbnailUrl" src="/assets/thumbs/blablabla.png" />
+    <a itemprop="image" data-fancybox="gallery" href="/assets/blablabla.png" class="fancybox lightbox_link" rel="challenge" title="">
+      <picture>
+        <source srcset="/assets/thumbs/blablabla.webp" type="image/webp">
+
+        <img src="/assets/thumbs/blablabla.png" alt="" />
+      </picture>
     </a>
-    <a itemprop="image" href="/assets/blablabla2.jpg" class="fancybox lightbox_link" rel="challenge" title="">
-      <img itemprop="thumbnailUrl" src="/assets/thumbs/blablabla2.jpg" />
+    <a itemprop="image" data-fancybox="gallery" href="/assets/blablabla2.jpg" class="fancybox lightbox_link" rel="challenge" title="">
+      <picture>
+        <source srcset="/assets/thumbs/blablabla2.webp" type="image/webp">
+
+        <img src="/assets/thumbs/blablabla2.jpg" alt="" />
+      </picture>
     </a>
   </section>
 
@@ -588,7 +604,7 @@ http://www.dariomac.com -->
 
 
 
-    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -596,8 +612,9 @@ http://www.dariomac.com -->
     <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
     <script>
       $(".fancybox").fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none'
+        arrows: true,
+        loop: true,
+        keyboard: true
       });
     </script>
   </body>

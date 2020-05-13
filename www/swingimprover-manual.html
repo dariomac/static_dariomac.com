@@ -423,7 +423,10 @@ http://www.dariomac.com -->
 The first one frees up the control over the tools of analysis, being able to conduct an independent study while the second lead the user during the successive stages of the swing asking to mark relevant points to achieve efficient measurement.</p>
 <p>The application interface was designed considering the standard functionality of video editing applications, so that the process of familiarization with the same does not imply a larger effort by the user.</p>
 <p>As an introduction we will start seeing a description of the tools available on the home screen.</p>
-<p><img src="/assets/SI_Annex-F-1.webp#center" alt="SwingImprover UI" /></p>
+<p><picture>
+            <source srcset="/assets/SI_Annex-F-1.webp" type="image/webp">
+
+            <img src="/assets/SI_Annex-F-1.gif#center" alt="SwingImprover UI"></picture></p>
 <p>1 - Video playback controls. In conjunction with the trackbar this group of controls handles video playback. Allows the user to play, pause and move frame by frame through the video.</p>
 <p>2 - Control of the frames positions of the video. This control allows you to go directly to a desired frame number; also keeps track of all the frames on which the user made a measurement so you can have a direct access to relevant video frames.</p>
 <p>3 - Toolbar Here are the tools to work with video frames. During the analysis the user can:</p>
@@ -440,13 +443,22 @@ The first one frees up the control over the tools of analysis, being able to con
 <h2>Free Mode</h2>
 <p>As shown in the picture below, this mode allows the user to perform measurements on their swing, having the opportunity to compare with another video at the same time. This opens the possibility to choose whether the user wants to see your progress in the game or compare the swing against a professional player.</p>
 <p>View of two videos simultaneously:</p>
-<p><img src="/assets/SI_Annex-F-2.webp#center" alt="Comparative view" /></p>
+<p><picture>
+            <source srcset="/assets/SI_Annex-F-2.webp" type="image/webp">
+
+            <img src="/assets/SI_Annex-F-2.gif#center" alt="Comparative view"></picture></p>
 <p>Independent study of the swing:</p>
-<p><img src="/assets/SI_Annex-F-3.webp#center" alt="Angle analysis" /></p>
+<p><picture>
+            <source srcset="/assets/SI_Annex-F-3.webp" type="image/webp">
+
+            <img src="/assets/SI_Annex-F-3.gif#center" alt="Angle analysis"></picture></p>
 <h2>Assisted mode</h2>
 <p>The use of the assisted mode is very simple. After opening the video to study, using the controls in sides of the trackbar (as seen above items 7, 8 and 9) the user can choose the measurement that the user want to perform.</p>
 <p>After completing the different measurements, it can get a list of all the results as seen in the picture.</p>
-<p><img src="/assets/SI_Annex-F-4.webp#center" alt="Measure results" /></p>
+<p><picture>
+            <source srcset="/assets/SI_Annex-F-4.webp" type="image/webp">
+
+            <img src="/assets/SI_Annex-F-4.gif#center" alt="Measure results"></picture></p>
 <p>This list gives details of the score obtained in each stage of the swing, and a final score that serves as a benchmark to evaluate each swing.</p>
 <p>The scores are calculated giving some specific &quot;weight&quot; to each one. This allows evaluating them according to their importance in the full swing.</p>
 <h2>Data persistence</h2>
@@ -454,14 +466,23 @@ The first one frees up the control over the tools of analysis, being able to con
 <p>You can also save a screenshot of a frame with all the study information (sketch) over it, for example, to share it with a golf instructor via email.</p>
 <h2>On DirectX device configuration</h2>
 <p>DirectX is Microsoft's technology for handling multimedia. Video adapters require a certain configuration depending on the capabilities of each PC, which is why SwingImprover provides the possibility of setting the adapter for better graphics performance.</p>
-<p><img src="/assets/SI_Annex-F-5.webp#center" alt="Adapters configuration" /></p>
+<p><picture>
+            <source srcset="/assets/SI_Annex-F-5.webp" type="image/webp">
+
+            <img src="/assets/SI_Annex-F-5.gif#center" alt="Adapters configuration"></picture></p>
 <h2>On error handling</h2>
 <p>Since graphic handling applications mostly have compatibility issues with older drivers or operating systems errors, SwingImprover provides overall management of exceptions.</p>
 <p>There is an option to send an email with an automatically generated report to SwingImprover site in order to be solved in future releases.</p>
-<p><img src="/assets/SI_Annex-F-6.webp#center" alt="Error handling" /></p>
+<p><picture>
+            <source srcset="/assets/SI_Annex-F-6.webp" type="image/webp">
+
+            <img src="/assets/SI_Annex-F-6.gif#center" alt="Error handling"></picture></p>
 <h2>On application installer</h2>
 <p>The application has an installation wizard created especially for the application. This generates a group of shortcuts and registry entries in Windows to correct automatically uninstall.</p>
-<p><img src="/assets/SI_Annex-F-7.webp#center" alt="Installation wizard" /></p>
+<p><picture>
+            <source srcset="/assets/SI_Annex-F-7.webp" type="image/webp">
+
+            <img src="/assets/SI_Annex-F-7.gif#center" alt="Installation wizard"></picture></p>
 
                 </section>
 
@@ -560,7 +581,7 @@ The first one frees up the control over the tools of analysis, being able to con
 
 
 
-    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -568,8 +589,9 @@ The first one frees up the control over the tools of analysis, being able to con
     <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
     <script>
       $(".fancybox").fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none'
+        arrows: true,
+        loop: true,
+        keyboard: true
       });
     </script>
   </body>

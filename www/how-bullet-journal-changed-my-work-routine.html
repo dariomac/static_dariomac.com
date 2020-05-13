@@ -430,7 +430,10 @@ http://www.dariomac.com -->
 </ul>
 <p>In winter of 2017 I read somewhere (I missed the reference) about <a href="https://bulletjournal.com/">Bullet Journal (BuJo)</a> and it blows my mind. If you want to know more about it, you should read every post in the website blog and maybe, buy the book or just start playing and looking at the different examples around.</p>
 <p>Talking about examples, I leave here a photograph or some of the pages of my own bullet journal.</p>
-<p><img src="/assets/bullet_journal_1.webp#center" alt="My Bullet Journal example" /></p>
+<p><picture>
+            <source srcset="/assets/bullet_journal_1.webp" type="image/webp">
+
+            <img src="/assets/bullet_journal_1.jpg#center" alt="My Bullet Journal example"></picture></p>
 <p>Yes. I know how it looks. It´s a bit messy compared with the online examples. In my defense I can say that my BuJo is &quot;naturally encrypted&quot;. But jokes aside, that the beauty of this method. You can invent your own notation and style.</p>
 <p>I started using a subset of the &quot;official&quot; symbols.</p>
 <ul>
@@ -553,7 +556,7 @@ http://www.dariomac.com -->
 
 
 
-    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -561,8 +564,9 @@ http://www.dariomac.com -->
     <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
     <script>
       $(".fancybox").fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none'
+        arrows: true,
+        loop: true,
+        keyboard: true
       });
     </script>
   </body>
