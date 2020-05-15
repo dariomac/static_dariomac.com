@@ -427,6 +427,10 @@ http://www.dariomac.com -->
 It has a renderItem function reponsible of render reach item of the list from an array (by prop). Comparing with web React approach (iterate rendering each item inside the loop), Flatlist has a lot of internal optimizations.</p>
 <p>renderItem function receives a element as parameter. element.item has each item of the data and element.index is just that, the index of the element inside the data prop.</p>
 <p>Each element should have a key that must be a string, consistent between renders and unique. keyExtractor is a prop of the FlatList that is a function that receives each element of the data array, build and return the expected key.</p>
+<p><strong>Button &amp; TouchableOpacity</strong>
+Button is simple, but is limited... it has a default styling. On the other side there is the TouchableOpacity that is very customizable.</p>
+<p><strong>Stack Navigator</strong>
+It decides what to show in scren at any time. It pass a navigation object inside the prop to components. If you call navigation.navigate with a string of the router object (defined at initialization), you will load a new component.</p>
 <h2>20200512</h2>
 <p><a href="https://reactnavigation.org/">React Navigation</a></p>
 <p>StyleSheet.create is useful instead of styling inline style={{ ... }} because if you make a mistake with the first, it shows an big red error instead of just a yellow warning (as with the inline style).</p>
