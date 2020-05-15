@@ -43,6 +43,12 @@ renderItem function receives a element as parameter. element.item has each item 
 
 Each element should have a key that must be a string, consistent between renders and unique. keyExtractor is a prop of the FlatList that is a function that receives each element of the data array, build and return the expected key.
 
+**Button & TouchableOpacity**
+Button is simple, but is limited... it has a default styling. On the other side there is the TouchableOpacity that is very customizable.
+
+**Stack Navigator**
+It decides what to show in scren at any time. It pass a navigation object inside the prop to components. If you call navigation.navigate with a string of the router object (defined at initialization), you will load a new component.
+
 ## 20200512
 [React Navigation](https://reactnavigation.org/)
 
