@@ -365,6 +365,10 @@ dm-board
   border-radius: 0;
 }
 
+.task.card input[type="checkbox"] {
+  margin-right: 2px;
+}
+
 .task.card a:hover {
   text-decoration: none;
 }
