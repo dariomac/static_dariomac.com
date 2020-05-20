@@ -1,0 +1,15 @@
+{
+  "disable": true,
+  "date": "2020-05-19",
+  "layout": "resume",
+  "mode": "collection",
+  "params": {
+    "resumeType": "industry",
+    "job": "roon-full-se",
+    "noIndex": true
+  }
+}
+
+---
+[link]
+https://roonlabs.com/jobs
