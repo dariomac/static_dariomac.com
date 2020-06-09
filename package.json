@@ -12,7 +12,7 @@
   ],
   "main": "server",
   "scripts": {
-    "lint": "standard 'lib/*.js' --env node --verbose | snazzy; standard 'test/*.js' --env mocha --verbose | snazzy",
+    "lint": "semistandard '*.js' --env node --verbose | snazzy",
     "findup": "echo && find data/*/assets -maxdepth 1 -type f -printf '%f\\n' | sort | uniq -d | xargs -I[filename] -n1 sh -c \"find data/ -name [filename] -printf 'data/%P\\n' && echo\"",
     "update-searcher": "rm -rf assets/build && cp -r ../dm-searcher/build/ assets/build && rm assets/build/inventory.json",
     "debug": "LOG_LEVEL=debug NODE_ENV=development node --inspect server.js",
@@ -39,8 +39,8 @@
     "winston-syslog": "1.2.6"
   },
   "devdepedencies": {
-    "snazzy": "^5.0.0",
-    "standard": "git+ssh://git@bitbucket.org/crovat/vix-standard.git"
+    "snazzy": "^8.0.0",
+    "semistandard": "^14.2.0"
   },
   "nodemonConfig": {
     "ignore": [
@@ -50,6 +50,11 @@
     "events": {
       "restart": "yarn build"
     }
+  },
+  "semistandard": {
+    "ignore": [
+      "/assets"
+    ]
   },
   "homepage": "",
   "author": "Dario Macchi <dariomac@gmail.com>",
