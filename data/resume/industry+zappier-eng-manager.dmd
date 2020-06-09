@@ -1,0 +1,15 @@
+{
+  "disable": true,
+  "date": "2020-05-21",
+  "layout": "resume",
+  "mode": "collection",
+  "params": {
+    "resumeType": "industry",
+    "job": "zappier-eng-manager",
+    "noIndex": true
+  }
+}
+
+---
+[link]
+https://zapier.com/jobs/4716727002/engineering-manager-site-reliability/
