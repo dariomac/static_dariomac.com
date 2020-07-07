@@ -1,0 +1,107 @@
+{
+  "title": "Blockchain 101 An Introduction",
+  "date": "2020-07-06",
+  "layout": "document",
+  "has_code": false,
+  "card": {
+    "color": "#00A651",
+    "columnid": "done_3",
+    "content": "Some notes about blockchain",
+    "datebox": "2020-03-06",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/blockchain-101-an-introduction",
+    "position": "20200306",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Blockchain 101 An Introduction",
+    "type": "0"
+  },
+  "jsonld": {},
+  "canonical": "https://www.vairix.com/tech-blog/blockchain-101-an-introduction"
+}
+
+---
+
+[summary:string]
+Much has been written about the blockchain, so the intention of this article is not to repeat all that information, but rather to take some notes about blockchain, share them internally first and then with anyone who wants to get started with it.
+
+[pub_date:string]
+2020-03-06
+
+[short_description:string]
+Much has been written about the blockchain, so the intention of this article is not to repeat all that information, but rather to take some notes about blockchain, share them internally first and then with anyone who wants to get started with it.
+
+[body:md]
+
+## Blockchain
+
+Blockchains are used when multiple parties, perhaps located across the world, need to share data and transfer value within a context where they don’t fully trust each other.
+
+The financial world describes this trust as the counterparty risk: the risk that the other party won't hold up their end of the bargain. Blockchains completely remove the counterparty risk through a revolutionary system of mathematics, cryptography, and peer-to-peer networking.
+
+The control over the process belongs to the users, not to the banks -we keep talking about money, but the example can be extrapolated to other types of transactions- and they are the ones who basically become part of a “huge bank” with thousands, millions of nodes acting as participants and managers of that bank's bookkeeping.
+
+So what is the block chain? Well, it’s a giant ledger in which the records (the blocks) are linked and encrypted to protect the security and privacy of the transactions. It is, in other words, a distributed and secure database (thanks to encryption) that can be applied to all kinds of transactions that do not necessarily have to be economic.
+
+This chain of blocks has an important requirement: there must be several users (nodes) that are responsible for verifying these transactions to validate them, and thus the block corresponding to that transaction (in each block there is a large number of transactions that is variable) is recorded in this huge ledger.
+
+It is important to say there are various Blockchain platforms that can be used by enterprises, based on their needs. Ethereum, founded in 2014, is one of the most widely known and one of the first to offer decentralized apps (DApps). Hyperledger Fabric is from 2016 and is an umbrella for blockchains and related tools. Also, it's backed by the Linux Foundation. Aeternity is a new blockchain platform for DApps. But there are a lot more, like IBM Blockchain, Multichain, Hydrachain, Ripple, R3 Corda and a long etcetera.  
+  
+
+## Ethereum
+
+Ethereum is a blockchain that allows you to run programs in its trusted environment over a virtual machine, called the Ethereum Virtual Machine (EVM). The code you write is embedded in "smart contracts" and is then checked and executed in the blocking chain.
+
+So, what is a smart contract? A smart contract is that code that runs on the EVM. They can accept/store ether (more on this in a moment) and data and then distribute that ether to other accounts of smart contracts. Smart contracts are written in statically typed Javascript-like language called Solidity, supporting inheritance, libraries, and complex user-defined types, among much else.
+
+On the public blockchain (known as MainNet), anyone can read or write data. Reading data is free, but writing to the public blockchain has a cost (named "gas") and is priced in Ether. This helps discourage spam and pays to secure the network.  
+  
+
+## Ethereum networks
+
+What if you need to do some tests? Do you have to pay (through gas/Ether consumption)? The short answer is: No!
+   
+### Public test networks
+
+If you are developing DApps or something related with Ethereum, you can use public test networks (or testnets) to test them before production deployment on MainNet. The Ether on these networks is used for testing purposes and has no value.
+
+Some widely used testnets:
+
+- Ropsten: This was created by The Ethereum Foundation with features like the MainNet.
+- Kovan: After an attack over Ropsten, a consortium of 10 Ethereum companies came together to organise the launch of this stable testnet that uses a consensus method called proof-of-authority. Transactions are validated by select members, leading to a consistent four-second block time. Also, the Ether supply on this testnet is also controlled to mitigate spam attacks.
+- Rinkeby: “A testnet also using proof-of-authority, created by The Ethereum Foundation.”
+
+### Local test networks
+
+Ethereum blockchain can be simulated locally for development purposes. In these environments, transactions are processed instantly and Ether can be distributed as desired. For example, you can use [Ganache](https://www.trufflesuite.com/ganache) to do the same things as on a testnet or MainNet, even without an Internet connection.
+   
+### Private/Enterprise networks
+  
+These kinds of networks allow parties to share data without making it available to the public. They can be useful for sharing sensitive data such as health care records or handle higher read/write performance due to the small network size.  
+  
+
+## Last thoughts
+
+As we stated in our introduction, this article aims to cover the basics of blockchain technology to shed some light on the subject. It is still far from exhaustive or even detailed on many of the points discussed. That being said, our team will continue to write more detailed posts on these topics in the near future, so stay tuned for upcoming updates.
+
+[acknowledgments:md]
+[This post](https://www.vairix.com/tech-blog/blockchain-101-an-introduction) was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Mar 06, 2020_: Original Publication on vairix.com
+
+_Jul 06, 2020_: Original Publication on dariomac.com
+
+[related_topics:json]
+  [{
+    "title": "Coopify: una plataforma de intercambio de servicios apoyada en blockchain",
+    "click_bait": "End-of-degree-project with a deep research about Ethereum and Hyperledger",
+    "linkto": "/coopify-una-plataforma-de-intercambio-de-servicios-apoyada-en-blockchain"
+  }]

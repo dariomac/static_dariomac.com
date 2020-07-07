@@ -71,3 +71,10 @@ Both data access servers are developed with NodeJS, exposing an API through expr
   },{
     "filename": "coopify-ismael.jpg"
   }]
+
+[related_topics:json]
+  [{
+    "title": "Blockchain 101 An Introduction",
+    "click_bait": "Very light introduction to Blockchain",
+    "linkto": "/blockchain-101-an-introduction"
+  }]
