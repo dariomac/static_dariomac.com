@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HIPAA for Software Developers | Darío Macchi</title>
+    <style>
+      
+      @charset "UTF-8";
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  color: #414141;
+  font-size: 11px;
+}
+
+article a {
+  text-decoration: none;
+  color: #000;
+}
+
+a img {
+  border: 0px;
+}
+
+.submenu {
+  float: right;
+  padding-top: 7px;
+}
+
+.orange_box {
+  padding: 0px 0px 0px 10px;
+  font-weight: bold;
+  background: #ff922c;
+  border: #ff922c 1px solid;
+  border-radius: 12px;
+  float: left;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.orange_box div.username {
+  padding: 0px 10px 0px 26px;
+  background: url('data:image/png;base64,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') no-repeat 0px 6px;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+}
+
+.orange_box ul {
+  border-left: #ec6100 1px solid;
+  padding: 0px 10px 0px 5px;
+  float: left;
+  overflow: hidden;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0px;
+}
+
+.orange_box ul li {
+  padding: 10px 0px 8px 0px;
+  float: left;
+}
+
+.orange_box ul li a {
+  border-left: #ff922c 1px solid;
+  font-weight: bold;
+  padding: 0px 0px 0px 5px;
+}
+
+.orange_box ul li a {
+  padding: 0px;
+}
+
+/* Footer style {*/
+.footer {
+  background-color: #00445c; height: 20px; color: #ffffff; overflow: hidden;
+}
+.footer a {
+  color: #ffffff
+}
+.footer a:hover {
+  text-decoration: underline
+}
+.footer ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 2px;
+}
+.footer li {
+  border-left: #ffffff 1px solid; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; float: left; padding-top: 0px; height:16px; margin-top:0px;
+}
+.footer li:first-child {
+  border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px; height:16px; margin-top:1px;
+}
+.clearfix:after {
+  display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+}
+.footer ul:after {
+  display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+}
+
+@media only screen and (min-width: 1170px) {
+  .details .dm-main-content.is-fixed .dm-board {
+    padding-top: 50px;
+  }
+
+  .container-fluid.dm-board {
+    max-width: 800px;
+    border: #d8d7d7 1px solid;
+  }
+}
+
+.details .dm-main-content.is-fixed .dm-board {
+  margin-bottom: 40px;
+}
+
+.details .container-fluid.dm-board h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0px 0px 0px;
+  margin: 0px 0px 6px 0px;
+}
+
+.details .container-fluid.dm-board h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.details .container-fluid.dm-board h3 {
+  font-size: 16px;
+  margin-bottom: 2px;
+  text-decoration: underline;
+}
+
+.details .container-fluid.dm-board h4 {
+  font-size: 14px;
+  font-style: italic;
+}
+
+article li {
+  margin-bottom: 4px;
+}
+
+article, section {
+  color: #414141;
+  font-size: 14px;
+  text-align: justify;
+}
+
+header, section {
+  margin: 0px 20px;
+}
+
+header p {
+  text-align: left;
+}
+
+header p:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+article a:not(.lightbox_link), section a:not(.lightbox_link) {
+  font-weight: bold;
+  color: #069;
+  background: url(/assets/images/external.png) right 50% no-repeat;
+  padding-right: 12px;
+}
+
+article a:not([href]) {
+  background: inherit;
+  padding-right: inherit;
+}
+
+article .duration {
+  margin-bottom: 0px;
+}
+
+section table {
+  margin: 0 auto;
+  max-width: 636px;
+}
+
+.summary {
+  font-style: italic;
+  padding-top: 8px;
+  cursor: none !important;
+  margin-bottom: 1rem;
+}
+
+table td, table th {
+  border: #d8d7d7 1px solid;
+  padding: 5px;
+}
+
+.essay .date {
+  width: 100%;
+  border-top: 1px solid;
+  text-align: right;
+}
+
+.essay p {
+  font-size: 14px;
+}
+
+
+      .essay {
+        margin-left: inherit;
+        border: 0px !important;
+      }
+
+      .details .container-fluid.dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .container-fluid.dm-board h3 {
+        font-weight: bold;
+        text-decoration: inherit;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+    </style>
+
+    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Darío Macchi" />
+<meta name="description" content="Article aimed to make things clearer when you need to handle protected health information (PHI) from a software development point of view, helping you avoid rookie mistakes and getting lost in the abundance of online HIPAA documentation. Disclaimer: it&#x27;s not a definitive list of what is required for HIPAA compliance; you should ask a Privacy Officer to review each rule with you just to be sure." />
+<meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
+
+<link rel="dns-prefetch" href="//dariomac.com"/>
+<link rel="dns-prefetch" href="//translate.googleapis.com"/>
+<link rel="dns-prefetch" href="//gstatic.com"/>
+<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
+<link rel="dns-prefetch" href="//google-analytics.com"/>
+<link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+<link rel="dns-prefetch" href="//translate.google.com"/>
+<link rel="dns-prefetch" href="//google.com"/>
+<link rel="dns-prefetch" href="//c.statcounter.com"/>
+<link rel="dns-prefetch" href="//statcounter.com"/>
+<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+<link rel="dns-prefetch" href="//yui.yahooapis.com"/>
+
+<link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+<link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
+<link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
+
+<link rel="canonical" href="https://www.vairix.com/tech-blog/hipaa-for-software-developers" />
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-28220054-1']);
+_gaq.push(['_trackPageview']);
+
+(function () {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = (document.location.protocol === 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+function afterContentDraw () {
+  setTimeout(function () {
+    var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+    aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+    $.each(aList,
+      function (k, v) {
+        var $v = $(v);
+
+        $v.click(function () {
+          _gaq.push(['_trackPageview', $v.attr('href')]);
+        });
+        // $v.css('color','red');
+      });
+    
+    preloadImages($('a.fancybox'));
+  }, 1000);
+}
+
+function preloadImages (array) {
+  if (!preloadImages.list) {
+    preloadImages.list = [];
+  }
+  for (var i = 0; i < array.length; i++) {
+    var img = new Image();
+    img.src = $(array[i]).attr('href');
+    preloadImages.list.push(img);
+  }
+}
+
+</script>
+
+<!-- Default Statcounter code for Dariomac.com
+http://www.dariomac.com -->
+<script type="text/javascript">
+  var sc_project=9186547; 
+  var sc_invisible=1; 
+  var sc_security="dce954c9"; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js"
+  async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+  href="https://statcounter.com/" target="_blank"><img
+  class="statcounter"
+  src="https://c.statcounter.com/9186547/0/dce954c9/1/"
+  alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+<link rel="shortcut icon" href="/assets/favicon.ico" />
+
+<link href="https://plus.google.com/101333970265292795022" rel="publisher" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="/assets/images/d_social.png">
+<meta property="og:image:type" content="image/png">
+
+<script type='application/ld+json'> 
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "@id": "https://www.dariomac.com/me",
+    "image": "https://dariomac.com/assets/aboutme-me.jpg",
+    "jobTitle": "Computer Engineering, MSc",
+    "name": "Darío Macchi",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Universidad_ORT_Uruguay_-_Logo.jpg/220px-Universidad_ORT_Uruguay_-_Logo.jpg",
+      "name": "Universidad ORT Uruguay",
+      "sameAs": "https://en.wikipedia.org/wiki/Universidad_ORT_Uruguay",
+      "url": "https://www.ort.edu.uy/"
+    },
+    "birthPlace": "Paysandú, Uruguay",
+    "birthDate": "1981.08.12",
+    "height": "1.72 meters",
+    "gender": "male",
+    "nationality": "Uruguayan",
+    "url": "https://www.dariomac.com",
+    "sameAs" : [
+      "http://twitter.com/_dariomac",
+      "http://uy.linkedin.com/in/dariomac",
+      "http://www.researchgate.net/profile/Dario_Macchi/",
+      "http://ort-uy.academia.edu/Dar%C3%ADoMacchi",
+      "http://www.informatik.uni-trier.de/~ley/pers/hd/m/Macchi:Dario"
+    ]
+  }
+</script>
+<script type='application/ld+json'>
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.dariomac.com/software-engineering-advisor-consultant",
+    "name": "Darío Macchi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.dariomac.com/assets/images/d.png"
+    },
+    "url": "https://www.dariomac.com"
+  }
+</script>
+
+
+      <script type="application/ld+json">
+        {}
+      </script>
+  </head>
+  <body>
+    <div class="board_view details">
+
+      <main class="dm-main-content is-fixed">
+        <div class="dm-tab-filter-wrapper">
+          <div class="dm-tab-filter">
+            <ul class="dm-filters d-block d-md-none">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+              </li>
+              <li class="filter"><a class="selected" href="#0">All</a></li>
+<li class="filter"><a href="/about-me">About Me</a></li>
+<li class="filter"><a href="/kanbancv">What is KanbanCV</a></li>
+
+            </ul> <!-- dm-filters -->
+          </div> <!-- dm-tab-filter -->
+
+          <div class="container-fluid float-left"></div>
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="container-fluid dm-board essay">
+          <article>
+            <div class="row featured">
+              <div class="col-md-12">
+                <header>
+                  <h1>HIPAA for Software Developers</h1>
+                  <p class="date">2020-02-25</p>
+                </header>
+
+                
+                <section class="description">
+                  <p>
+                    If you are here reading this is because you need to handle protected health information (PHI) and you need to be HIPAA compliant. Disclaimer: this article is not a definitive list of what is required for HIPAA compliance; you should ask a Privacy Officer to review each rule with you just to be sure. Our intention is to make things clearer from a software development point of view, helping you avoid rookie mistakes and getting lost in the abundance of online HIPAA documentation.
+                  </p>
+                </section>
+
+                <section>
+                    <h2>A bit of history and HIPAA breakdown</h2>
+<p>First, a bit of history. The Health Insurance Portability and Accountability Act of 1996 was “created primarily to modernize the flow of healthcare information, stipulate how Personally Identifiable Information maintained by the healthcare and healthcare insurance industries should be protected from fraud and theft, and address limitations on healthcare insurance coverage.” The act consists of five titles, but most of the time only title II is directly related with software development activities.</p>
+<p>Title II splits itself in five rules:</p>
+<ol>
+<li>Privacy Rule</li>
+<li>Transactions and Code Sets Rule</li>
+<li>Security Rule</li>
+<li>Unique Identifiers Rule</li>
+<li>Enforcement Rule</li>
+</ol>
+<p>Oversimplifying, this title covers the prevention of fraud and abuse and can be reduced to data protection and handling. That is probably the first area that comes to your mind when you think about HIPAA, together with patient privacy protection, security controls for health and medical records and other forms of protected health information (PHI).</p>
+<p>Remember that HIPAA applies to all <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html">Business Associates</a> (“BAs”) such as subcontractors, data storage companies, cloud providers, payment gateways, etc. As a rule of thumb, remember that “a person [or company] becomes a BA by definition, not by the act of contracting with a covered entity or otherwise.” So, you are a BA if you “perform functions or activities on behalf of, or certain services for, a covered entity or another BA that involve the use or disclosure of protected health information (PHI)”.</p>
+<p>In the next sections we will be describing the most important Title II rules (from a software development point of view), putting more attention in the <strong>Privacy Rule</strong>, with the <strong>Breach Notification Rule</strong> introduced in the Omnibus Rules of 2013, and the <strong>Security Rule</strong>.</p>
+<h2>Privacy Rule</h2>
+<p>This rule establishes standards to protect individuals’ medical records and other PHI. It dictates how, when and under what circumstances PHI can be used and disclosed.</p>
+<p>As stated by Truevault <a href="https://www.truevault.com/blog/how-do-i-become-hipaa-compliant.html">here</a>, this rule requires BAs to do the following:</p>
+<ol>
+<li>Do not allow any impermissible uses or disclosures of PHI.</li>
+<li>Provide breach notification to the Covered Entity.</li>
+<li>Provide either the individual or the Covered Entity access to PHI.</li>
+<li>Disclose PHI to the Secretary of HHS [United States Department of Health and Human Services], if compelled to do so.</li>
+<li>Provide an accounting of disclosures.</li>
+<li>Comply with the requirements of the HIPAA Security Rule.</li>
+</ol>
+<p>Another way to look at this rule is to think about what situations allow you to make use of PHI. <a href="https://eligible.com/community/hipaa-title-ii/">Eligible summarized</a> these six areas:</p>
+<ul>
+<li>When disclosed to the individual</li>
+<li>For treatment, payment and operations</li>
+<li>When permission is given</li>
+<li>When used incidentally</li>
+<li>In benefit of public interest</li>
+<li>When personally-identifiable information has been removed</li>
+</ul>
+<p>The “used incidentally” sounds a bit strange, but the HHS gives this example: if “a janitor has contact with protected health information incidentally, such disclosure is permissible”, mostly “because the performance of such service does not involve the use or disclosure of [PHI].” The other rare area is the “benefit of public interest”, but this is the case when the disclosure is “required by law, victims of abuse, and law enforcement purposes”.</p>
+<p>Regarding breach notifications (number 2 of the initial list), it was modified in the Omnibus Rule of 2013 together with final modifications of the HIPAA privacy and security rules. The Breach Notification Rule, <a href="https://www.ecfr.gov/cgi-bin/text-idx?SID=0ed84c7423abdfca1fa81d772667435a&amp;mc=true&amp;node=sp45.1.164.d&amp;rgn=div6">45 CFR §§ 164.400-414</a>, “requires HIPAA covered entities and their business associates to provide notification following a breach of unsecured PHI”.</p>
+<p>As <a href="https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html">stated here</a>, “A breach is, generally, an impermissible use or disclosure under the Privacy Rule that compromises the security or privacy of the protected health information”. Also “An investigation into the potential breach and notification to appropriate individuals must be conducted by the covered entity and/or business associate no later than sixty (60) day past the date of discovery”. Finally, there are scenarios where disclosure to the customer isn’t required (according to some law schools), but consulting with appropriate legal counsel is always highly recommended.</p>
+<h2>Security Rule</h2>
+<p>The Privacy Rule applies to all kinds of PHI; the Security Rule doesn't. It impacts only in electronic PHI (ePHI), laying out the requirements of the safeguards that must be in place to be compliant with it. All “HIPAA Covered Entities” (CEs) or BA who can access, create, alter or transfer ePHI must follow these standards. Those safeguards are:</p>
+<ol>
+<li>Technical Safeguards</li>
+<li>Physical Safeguards</li>
+<li>Administrative Safeguards</li>
+</ol>
+<p>Safeguards summaries</p>
+<p>TL;DR. The following tables are from the Appendix A to Subpart C of Part of the <a href="https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/combined/hipaa-simplification-201303.pdf">HIPAA Administrative Simplification</a> document.</p>
+<p>As stated here, if a specification is Required, the spec must be implemented. But if it´s Addressable, then you can: “(a) implement the addressable implementation specifications; (b) implement one or more alternative security measures to accomplish the same purpose; (c) not implement either an addressable implementation specification or an alternative.”</p>
+<hr />
+<h3>Technical safeguards (<a href="https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=5c5f44e031fcd43b1599caf2aa375ce2&amp;h=L&amp;mc=true&amp;n=sp45.2.164.c&amp;r=SUBPART&amp;ty=HTML#se45.2.164_1312">§ 164.312</a>)</h3>
+<div style="overflow: scroll">
+  <table>
+    <tbody>
+        <tr>
+          <td>
+              <p><b>Standards</b></p>
+          </td>
+          <td>
+              <p><b>Sections</b></p>
+          </td>
+          <td>
+              <p><b>Implementation Specifications</b></p>
+          </td>
+          <td>
+              <p><b>(R)=Required, (A)=Addressable</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <p>Access Control</p>
+          </td>
+          <td>
+              <p>164.312(a)(1)</p>
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+              <p>Unique User Identification</p>
+          </td>
+          <td>
+              <p>R</p>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+              <p>Emergency Access Procedure</p>
+          </td>
+          <td>
+              <p>R</p>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+              <p>Automatic Logoff</p>
+          </td>
+          <td>
+              <p>A</p>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+              <p>Encryption and Decryption</p>
+          </td>
+          <td>
+              <p>A</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <p>Audit Controls</p>
+          </td>
+          <td>
+              <p>164.312(b)</p>
+          </td>
+          <td>&nbsp;</td>
+          <td>
+              <p>R</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <p>Integrity</p>
+          </td>
+          <td>
+              <p>164.31 (c) (1)</p>
+          </td>
+          <td>
+              <p>Mechanism to Authenticate Electronic Protected Health Information</p>
+          </td>
+          <td>
+              <p>A</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <p>Person or Entity Authentication</p>
+          </td>
+          <td>
+              <p>164.312(d)</p>
+          </td>
+          <td>&nbsp;</td>
+          <td>
+              <p>R</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <p>Transmission Security</p>
+          </td>
+          <td>
+              <p>164.312(e)(1)</p>
+          </td>
+          <td>
+              <p>Integrity Controls</p>
+          </td>
+          <td>
+              <p>A</p>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+              <p>Encryption</p>
+          </td>
+          <td>
+              <p>A</p>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<hr />
+<h3>Physical safeguards (<a href="https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=5c5f44e031fcd43b1599caf2aa375ce2&amp;h=L&amp;mc=true&amp;n=sp45.2.164.c&amp;r=SUBPART&amp;ty=HTML#se45.2.164_1310">§164.310</a>)</h3>
+<div style="overflow: scroll">
+   <table>
+      <tbody>
+         <tr>
+            <td>
+               <p><b>Standards</b></p>
+            </td>
+            <td>
+               <p><b>Sections</b></p>
+            </td>
+            <td>
+               <p><b>Implementation Specifications</b></p>
+            </td>
+            <td>
+               <p><b>(R)=Required, (A)=Addressable</b>/p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Facility Access Controls</p>
+            </td>
+            <td>
+               <p>164.310(a)(1)</p>
+            </td>
+            <td>
+               <p>Contingency Operations</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Facility Security Plan</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Access Control and Validation Procedures</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Maintenance Records</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Workstation Use</p>
+            </td>
+            <td>
+               <p>164.310(b)</p>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Workstation Security</p>
+            </td>
+            <td>
+               <p>164.310(c)</p>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Device and Media Controls</p>
+            </td>
+            <td>
+               <p>164.310(d)(1)</p>
+            </td>
+            <td>
+               <p>Disposal</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Media Re-use</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Accountability</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Data Backup and Storage</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>  
+<hr />
+<h3>Administrative safeguards (<a href="https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=5c5f44e031fcd43b1599caf2aa375ce2&amp;h=L&amp;mc=true&amp;n=sp45.2.164.c&amp;r=SUBPART&amp;ty=HTML#se45.2.164_1308">§164.308</a>)</h3>
+<div style="overflow: scroll">
+   <table>
+      <tbody>
+         <tr>
+            <td>
+               <p><b>Standards</b></p>
+            </td>
+            <td>
+               <p><b>Sections</b></p>
+            </td>
+            <td>
+               <p><b>Implementation Specifications</b></p>
+            </td>
+            <td>
+               <p><b>(R)=Required, (A)=Addressable</b></p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Security Management Process</p>
+            </td>
+            <td>
+               <p>164.308(a)(1)</p>
+            </td>
+            <td>
+               <p>Risk Analysis</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Risk Management</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Sanction Policy</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Information System Activity Review</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Assigned Security Responsibility</p>
+            </td>
+            <td>
+               <p>164.308(a)(2)</p>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Workforce Security</p>
+            </td>
+            <td>
+               <p>164.308(a)(3)</p>
+            </td>
+            <td>
+               <p>Authorization and/or Supervision</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Workforce Clearance Procedure</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Termination Procedures</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Information Access Management</p>
+            </td>
+            <td>
+               <p>164.308(a)(4)</p>
+            </td>
+            <td>
+               <p>Isolating Health care Clearinghouse Function</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Access Authorization</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Access Establishment and Modification</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Security Awareness and Training</p>
+            </td>
+            <td>
+               <p>164.308(a)(5)</p>
+            </td>
+            <td>
+               <p>Security Reminders</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Protection from Malicious Software</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Log-in Monitoring</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Password Management</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Security Incident Procedures</p>
+            </td>
+            <td>
+               <p>164.308(a)(6)</p>
+            </td>
+            <td>
+               <p>Response and Reporting</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Contingency Plan</p>
+            </td>
+            <td>
+               <p>164.308(a)(7)</p>
+            </td>
+            <td>
+               <p>Data Backup Plan</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Disaster Recovery Plan</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Emergency Mode Operation Plan</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Testing and Revision Procedure</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Applications and Data Criticality Analysis</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Evaluation</p>
+            </td>
+            <td>
+               <p>164.308(a)(8)</p>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Business Associate Contracts and Other Arrangement</p>
+            </td>
+            <td>
+               <p>164.308(b)(1)</p>
+            </td>
+            <td>
+               <p>Written Contract or Other Arrangement</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+<h2>Annex - Security Safeguards - Complete list</h2>
+<h3>Technical safeguards</h3>
+<p><a href="https://www.govregs.com/regulations/expand/title45_chapterA_part164_subpartC_section164.306#title45_chapterA_part164_subpartC_section164.312">These safeguards</a> are focused on the technology that protects PHI and controls access to it without requiring the use of specific technologies (technology neutrality).</p>
+<ol>
+<li><strong>Access Control</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Unique User Identification:</strong> “Assign a unique name and/or number for identifying and tracking user identity.”</li>
+<li><strong>Emergency Access Procedure:</strong> “Establish (and implement as needed) procedures for obtaining necessary electronic protected health information during an emergency.”</li>
+</ol>
+</li>
+<li>Addressable
+<ol>
+<li>Automatic logoff: “Implement electronic procedures that terminate an electronic session after a predetermined time of inactivity.”</li>
+<li>Encryption and Decryption: “Implement a mechanism to encrypt and decrypt electronic protected health information.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Audit Controls</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Audit controls:</strong> “Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Integrity
+<ol>
+<li>Addressable
+<ol>
+<li>Implementation specification. Mechanism to authenticate electronic protected health information: “Implement electronic mechanisms to corroborate that electronic protected health information has not been altered or destroyed in an unauthorized manner.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Authentication</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Person or entity authentication:</strong> “Implement procedures to verify that a person or entity seeking access to electronic protected health information is the one claimed.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Transmission Security
+<ol>
+<li>Addressable
+<ol>
+<li>Integrity Controls: “Implement security measures to ensure that electronically transmitted electronic protected health information is not improperly modified without detection until disposed of.”</li>
+<li>Encryption: “Implement a mechanism to encrypt electronic protected health information whenever deemed appropriate.”</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3>Physical safeguards</h3>
+<p><a href="https://www.govregs.com/regulations/expand/title45_chapterA_part164_subpartC_section164.306#title45_chapterA_part164_subpartC_section164.310">These are</a> a set of rules and guidelines that focus on the physical access to PHI.</p>
+<ol>
+<li>Facility Access Controls
+<ol>
+<li>Addressable
+<ol>
+<li>Contingency Operations: “Establish (and implement as needed) procedures that allow facility access in support of restoration of lost data under the disaster recovery plan and emergency mode operations plan in the event of an emergency.”</li>
+<li>Facility Security Plan: “Implement policies and procedures to safeguard the facility and the equipment therein from unauthorized physical access, tampering, and theft.”</li>
+<li>Access Control and Validation Procedures: “Implement procedures to control and validate a person's access to facilities based on their role or function, including visitor control, and control of access to software programs for testing and revision.”</li>
+<li>Maintenance Records: “Implement policies and procedures to document repairs and modifications to the physical components of a facility which are related to security (for example, hardware, walls, doors, and locks).”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Workstation Use</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Workstation use:</strong> “Implement policies and procedures that specify the proper functions to be performed, the manner in which those functions are to be performed, and the physical attributes of the surroundings of a specific workstation or class of workstation that can access electronic protected health information.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Workstation Security</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Workstation security:</strong> “Implement physical safeguards for all workstations that access electronic protected health information, to restrict access to authorized users.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Device and Media Controls</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Disposal:</strong> “Implement policies and procedures to address the final disposition of electronic protected health information, and/or the hardware or electronic media on which it is stored.”</li>
+<li><strong>Media Re-Use:</strong> “Implement procedures for removal of electronic protected health information from electronic media before the media are made available for reuse.”</li>
+</ol>
+</li>
+<li>Addressable
+<ol>
+<li>Accountability: “Maintain a record of the movements of hardware and electronic media and any person responsible therefore.“</li>
+<li>Data Backup and Storage: “Create a retrievable, exact copy of electronic protected health information, when needed, before movement of equipment.”</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3>Administrative safeguards</h3>
+<p><a href="https://www.govregs.com/regulations/expand/title45_chapterA_part164_subpartC_section164.306#title45_chapterA_part164_subpartC_section164.308">These safeguards</a> are a collection of policies and procedures that govern the conduct of the workforce, and the security measures put in place to protect ePHI.</p>
+<ol>
+<li>Security Management Process
+<ol>
+<li>Required
+<ol>
+<li><strong>Risk Analysis:</strong> “Conduct an accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information held by the covered entity or business associate.”</li>
+<li><strong>Risk Management:</strong> “Implement security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level to comply with § 164.306(a).”</li>
+<li><strong>Sanction Policy:</strong> “Apply appropriate sanctions against workforce members who fail to comply with the security policies and procedures of the covered entity or business associate.”</li>
+<li><strong>Information Systems Activity Reviews:</strong> “Implement procedures to regularly review records of information system activity, such as audit logs, access reports, and security incident tracking reports.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Assigned Security Responsibility</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Officers:</strong> “ Identify the security official who is responsible for the development and implementation of the policies and procedures required by this subpart for the covered entity or business associate.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Workforce Security
+<ol>
+<li>Addressable
+<ol>
+<li>Authorization and/or supervision: “Implement procedures for the authorization and/or supervision of workforce members who work with electronic protected health information or in locations where it might be accessed.”</li>
+<li>Workforce clearance procedure: “Implement procedures to determine that the access of a workforce member to electronic protected health information is appropriate.”</li>
+<li>Termination procedures: “Implement procedures for terminating access to electronic protected health information when the employment of, or other arrangement with, a workforce member ends or as required by determinations made as specified in paragraph (a)(3)(ii)(B) of this section.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Information Access Management</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Isolating health care clearinghouse functions:</strong> “If a health care clearinghouse is part of a larger organization, the clearinghouse must implement policies and procedures that protect the electronic protected health information of the clearinghouse from unauthorized access by the larger organization.”</li>
+</ol>
+</li>
+<li>Addressable
+<ol>
+<li>Access authorization: “Implement policies and procedures for granting access to electronic protected health information, for example, through access to a workstation, transaction, program, process, or other mechanism.“</li>
+<li>Access establishment and modification: Implement policies and procedures that, based upon the covered entity's or the business associate's access authorization policies, establish, document, review, and modify a user's right of access to a workstation, transaction, program, or process.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Security Awareness and Training
+<ol>
+<li>Addressable
+<ol>
+<li>Security reminders: “Periodic security updates.”</li>
+<li>Protection from malicious software: “Procedures for guarding against, detecting, and reporting malicious software.”</li>
+<li>Log-in monitoring: “Procedures for monitoring log-in attempts and reporting discrepancies.”</li>
+<li>Password management: “Procedures for creating, changing, and safeguarding passwords.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Security Incident Procedures</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Response and reporting:</strong> “Identify and respond to suspected or known security incidents; mitigate, to the extent practicable, harmful effects of security incidents that are known to the covered entity or business associate; and document security incidents and their outcomes.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Contingency Plan</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Data backup plan:</strong> “Establish and implement procedures to create and maintain retrievable exact copies of electronic protected health information”</li>
+<li><strong>Disaster recovery plan:</strong> “Establish (and implement as needed) procedures to restore any loss of data.”</li>
+<li><strong>Emergency mode operation plan:</strong> “Establish (and implement as needed) procedures to enable continuation of critical business processes for protection of the security of electronic protected health information while operating in emergency mode.”</li>
+</ol>
+</li>
+<li>Addressable
+<ol>
+<li>Testing and revision procedures: “Implement procedures for periodic testing and revision of contingency plans.”</li>
+<li>Applications and data criticality analysis: “Assess the relative criticality of specific applications and data in support of other contingency plan components.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Evaluation</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Evaluations:</strong> “Perform a periodic technical and nontechnical evaluation, based initially upon the standards implemented under this rule and, subsequently, in response to environmental or operational changes affecting the security of electronic protected health information, that establishes the extent to which a covered entity's or business associate's security policies and procedures meet the requirements of this subpart.”</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Business Associate Contracts and Other Arrangements</strong>
+<ol>
+<li><strong>Required</strong>
+<ol>
+<li><strong>Written contract or other arrangement:</strong> Have special contracts with business partners who will have access to your PHI in order to ensure that they will be compliant. Choose partners that have similar agreements with any of their partners to which they are also extending access.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+
+                </section>
+
+                  <section>
+                    <h2 id="Acknowledgments">Acknowledgments</h2>
+                      <p><a href="https://www.vairix.com/tech-blog/hipaa-for-software-developers">This post</a> was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.</p>
+
+                  </section>
+                  <section>
+                    <h2 id="FurtherReading">Further Reading</h2>
+                    <ul>
+<li>
+<p><a href="https://github.com/truevault/hipaa-compliance-developers-guide">A developers guide to HIPAA compliance and application development.</a></p>
+</li>
+<li>
+<p><a href="https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/combined/hipaa-simplification-201303.pdf">Combined Regulation Text of All Rules</a></p>
+</li>
+<li>
+<p><a href="https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/techsafeguards.pdf">HIPAA Security Series #4 - Technical Safeguards</a></p>
+</li>
+<li>
+<p><a href="https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/physsafeguards.pdf">Security Physical Safeguards</a></p>
+</li>
+<li>
+<p><a href="https://eligible.com/community/hipaa-introduction/">HIPAA - A History and Overview</a></p>
+</li>
+<li>
+<p><a href="https://eligible.com/community/hipaa-title-ii/">HIPAA Title II - An Overview from Privacy to Enforcement</a></p>
+</li>
+<li>
+<p><a href="https://www.truevault.com/blog/how-do-i-become-hipaa-compliant.html">How do I become HIPAA compliant? (a checklist)</a></p>
+</li>
+<li>
+<p><a href="https://ibpllc.com/compliance-alert-final-hipaa-privacy-regulations-are-published/">COMPLIANCE ALERT! Final HIPAA Privacy Regulations are Published - Innovative</a></p>
+</li>
+<li>
+<p><a href="https://www.hhs.gov/hipaa/for-professionals/breach-notification/laws-regulations/final-rule-update/hitech/index.html">HITECH Breach Notification Interim Final Rule<br />
+</a></p>
+</li>
+</ul>
+
+                  </section>
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    <p><em>Feb 25, 2020</em>: Original Publication on vairix.com</p>
+<p><em>Jul 07, 2020</em>: Original Publication on dariomac.com</p>
+
+                  </section>
+
+
+
+
+              </div>
+            </div>
+        </div> <!-- container-fluid dm-board -->
+
+        <a href="/" class="logo">
+          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+        </a>
+        <div class="submenu" style="position: fixed; top: 0; right: 0; z-index: 10;">
+  <div class="orange_box">
+    <a class="url" href="/about-me">
+        <div class="username">
+            Darío Macchi
+        </div>
+    </a>
+    <ul>
+      <li id="geo">
+        <a target="_blank" href="http://maps.google.com/maps?q=montevideo+city+uruguay&amp;hl=en&amp;sll=-32.522779,-55.765835&amp;sspn=5.325828,9.876709&amp;t=v&amp;hnear=Montevideo,+Montevideo+Dept,+Uruguay&amp;z=11" itemprop="url">
+            Montevideo
+        </a><span>-</span>
+        <a href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&amp;ie=UTF-8&amp;hq=&amp;hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&amp;gl=uy&amp;ei=KiKjU6fpE-HNsQSlqYGoCg&amp;ved=0CBsQ8gEwAA" itemprop="url">
+          Uruguay
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/contact-me">Contact me</a></strong></li>
+    </ul>
+  </div>
+</div>
+
+      </main> <!-- dm-main-content -->
+    </div>
+    <!--</div>-->
+
+    <div class="footer" style="text-align:center; width:100%;">
+  <div style="text-align:center; width:100%">
+  <ul>
+    <li style="margin-top: 0px;" class="d-none d-lg-block">
+      <a href="javascript:void(0);" onclick="window.open('http://www.copyscape.com/?q=' + escape(window.location) + '&src=front'); return false;">
+        <IMG src="/assets/images/cs-wh-3d-234x16.gif" alt="Protected by Copyscape Duplicate Content Detector" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." width="234" height="16" border="0">
+      </A>
+    </li>
+    <li><a style="padding-top:1px" href="/kanbancv">KanbanCV</a> © 2011-2020 <a style="padding-top:1px" href="/sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap</a></li>
+    <li>
+      <a href="http://uy.linkedin.com/in/dariomac" style="text-decoration:none;" target="_blank">
+        <img src="/assets/images/linkedin.png" width="16" height="15" alt="View Darío Macchi's LinkedIn profile" border="0" />
+      </a>
+    </li>
+    <li>
+      <a href="http://twitter.com/_dariomac" target="_blank">
+        <img src="/assets/images/twitter-16.png" width="16" height="16" alt="View my twitter"/>
+      </a>
+    </li>
+    <li class="d-none d-lg-block">
+      <a href="http://www.researchgate.net/profile/Dario_Macchi/" target="_blank">
+        <img src="/assets/images/researchgate.png" width="15" height="15" alt="View my ResearchGate profile"/>
+      </a>
+    </li>
+    <li style="margin-top: 0px" class="d-none d-lg-block">
+      <a href="http://humanstxt.org/humans/dario-macchi/" target="_black">
+        <img src="/assets/images/humanstxt-transparent-color.png" width="84" height="15" />
+      </a>
+    </li>
+  </ul>
+  </div>
+</div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      multilanguagePage: true,
+      gaTrack: true,
+      gaId: 'UA-28220054-1',
+      floatPosition: google.translate.TranslateElement.FloatPosition.BOTTOM_LEFT
+    });
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+
+
+
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+    <script>
+      $(".fancybox").fancybox({
+        arrows: true,
+        loop: true,
+        keyboard: true
+      });
+    </script>
+  </body>
+</html>

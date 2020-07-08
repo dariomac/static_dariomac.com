@@ -1,0 +1,787 @@
+{
+  "title": "HIPAA for Software Developers",
+  "date": "2020-07-07",
+  "layout": "document",
+  "has_code": false,
+  "card": {
+    "color": "#00A651",
+    "columnid": "done_3",
+    "content": "Make things clearer from a software development point of view",
+    "datebox": "2020-02-25",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/hipaa-for-software-developers",
+    "position": "20200225",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": "HIPAA",
+    "title": "HIPAA for Software Developers",
+    "type": "0"
+  },
+  "jsonld": {},
+  "canonical": "https://www.vairix.com/tech-blog/hipaa-for-software-developers"
+}
+
+---
+
+[summary:string]
+Article aimed to make things clearer when you need to handle protected health information (PHI) from a software development point of view, helping you avoid rookie mistakes and getting lost in the abundance of online HIPAA documentation. Disclaimer: it's not a definitive list of what is required for HIPAA compliance; you should ask a Privacy Officer to review each rule with you just to be sure.
+
+[pub_date:string]
+2020-02-25
+
+[short_description:string]
+If you are here reading this is because you need to handle protected health information (PHI) and you need to be HIPAA compliant. Disclaimer: this article is not a definitive list of what is required for HIPAA compliance; you should ask a Privacy Officer to review each rule with you just to be sure. Our intention is to make things clearer from a software development point of view, helping you avoid rookie mistakes and getting lost in the abundance of online HIPAA documentation.
+
+[body:md]
+## A bit of history and HIPAA breakdown
+
+First, a bit of history. The Health Insurance Portability and Accountability Act of 1996 was “created primarily to modernize the flow of healthcare information, stipulate how Personally Identifiable Information maintained by the healthcare and healthcare insurance industries should be protected from fraud and theft, and address limitations on healthcare insurance coverage.” The act consists of five titles, but most of the time only title II is directly related with software development activities.  
+  
+Title II splits itself in five rules:  
+  
+1. Privacy Rule  
+2. Transactions and Code Sets Rule  
+3. Security Rule  
+4. Unique Identifiers Rule  
+5. Enforcement Rule  
+  
+Oversimplifying, this title covers the prevention of fraud and abuse and can be reduced to data protection and handling. That is probably the first area that comes to your mind when you think about HIPAA, together with patient privacy protection, security controls for health and medical records and other forms of protected health information (PHI).  
+  
+Remember that HIPAA applies to all [Business Associates](https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html) (“BAs”) such as subcontractors, data storage companies, cloud providers, payment gateways, etc. As a rule of thumb, remember that “a person \[or company\] becomes a BA by definition, not by the act of contracting with a covered entity or otherwise.” So, you are a BA if you “perform functions or activities on behalf of, or certain services for, a covered entity or another BA that involve the use or disclosure of protected health information (PHI)”.  
+  
+In the next sections we will be describing the most important Title II rules (from a software development point of view), putting more attention in the **Privacy Rule**, with the **Breach Notification Rule** introduced in the Omnibus Rules of 2013, and the **Security Rule**.  
+
+## Privacy Rule
+  
+This rule establishes standards to protect individuals’ medical records and other PHI. It dictates how, when and under what circumstances PHI can be used and disclosed.  
+  
+As stated by Truevault [here](https://www.truevault.com/blog/how-do-i-become-hipaa-compliant.html), this rule requires BAs to do the following:  
+  
+1. Do not allow any impermissible uses or disclosures of PHI.  
+2. Provide breach notification to the Covered Entity.  
+3. Provide either the individual or the Covered Entity access to PHI.  
+4. Disclose PHI to the Secretary of HHS \[United States Department of Health and Human Services\], if compelled to do so.  
+5. Provide an accounting of disclosures.  
+6. Comply with the requirements of the HIPAA Security Rule.  
+  
+Another way to look at this rule is to think about what situations allow you to make use of PHI. [Eligible summarized](https://eligible.com/community/hipaa-title-ii/) these six areas:  
+  
+- When disclosed to the individual  
+- For treatment, payment and operations  
+- When permission is given  
+- When used incidentally  
+- In benefit of public interest  
+- When personally-identifiable information has been removed  
+  
+The “used incidentally” sounds a bit strange, but the HHS gives this example: if “a janitor has contact with protected health information incidentally, such disclosure is permissible”, mostly “because the performance of such service does not involve the use or disclosure of \[PHI\].” The other rare area is the “benefit of public interest”, but this is the case when the disclosure is “required by law, victims of abuse, and law enforcement purposes”.  
+  
+Regarding breach notifications (number 2 of the initial list), it was modified in the Omnibus Rule of 2013 together with final modifications of the HIPAA privacy and security rules. The Breach Notification Rule, [45 CFR §§ 164.400-414](https://www.ecfr.gov/cgi-bin/text-idx?SID=0ed84c7423abdfca1fa81d772667435a&mc=true&node=sp45.1.164.d&rgn=div6), “requires HIPAA covered entities and their business associates to provide notification following a breach of unsecured PHI”.  
+  
+As [stated here](https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html), “A breach is, generally, an impermissible use or disclosure under the Privacy Rule that compromises the security or privacy of the protected health information”. Also “An investigation into the potential breach and notification to appropriate individuals must be conducted by the covered entity and/or business associate no later than sixty (60) day past the date of discovery”. Finally, there are scenarios where disclosure to the customer isn’t required (according to some law schools), but consulting with appropriate legal counsel is always highly recommended.  
+  
+
+## Security Rule
+
+The Privacy Rule applies to all kinds of PHI; the Security Rule doesn't. It impacts only in electronic PHI (ePHI), laying out the requirements of the safeguards that must be in place to be compliant with it. All “HIPAA Covered Entities” (CEs) or BA who can access, create, alter or transfer ePHI must follow these standards. Those safeguards are:  
+  
+1. Technical Safeguards  
+2. Physical Safeguards  
+3. Administrative Safeguards  
+  
+Safeguards summaries  
+  
+TL;DR. The following tables are from the Appendix A to Subpart C of Part of the [HIPAA Administrative Simplification](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/combined/hipaa-simplification-201303.pdf) document.  
+  
+As stated here, if a specification is Required, the spec must be implemented. But if it´s Addressable, then you can: “(a) implement the addressable implementation specifications; (b) implement one or more alternative security measures to accomplish the same purpose; (c) not implement either an addressable implementation specification or an alternative.”  
+
+----------  
+  
+### Technical safeguards ([§ 164.312](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&SID=5c5f44e031fcd43b1599caf2aa375ce2&h=L&mc=true&n=sp45.2.164.c&r=SUBPART&ty=HTML#se45.2.164_1312))
+
+<div style="overflow: scroll">
+  <table>
+    <tbody>
+        <tr>
+          <td>
+              <p><b>Standards</b></p>
+          </td>
+          <td>
+              <p><b>Sections</b></p>
+          </td>
+          <td>
+              <p><b>Implementation Specifications</b></p>
+          </td>
+          <td>
+              <p><b>(R)=Required, (A)=Addressable</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <p>Access Control</p>
+          </td>
+          <td>
+              <p>164.312(a)(1)</p>
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+              <p>Unique User Identification</p>
+          </td>
+          <td>
+              <p>R</p>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+              <p>Emergency Access Procedure</p>
+          </td>
+          <td>
+              <p>R</p>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+              <p>Automatic Logoff</p>
+          </td>
+          <td>
+              <p>A</p>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+              <p>Encryption and Decryption</p>
+          </td>
+          <td>
+              <p>A</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <p>Audit Controls</p>
+          </td>
+          <td>
+              <p>164.312(b)</p>
+          </td>
+          <td>&nbsp;</td>
+          <td>
+              <p>R</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <p>Integrity</p>
+          </td>
+          <td>
+              <p>164.31 (c) (1)</p>
+          </td>
+          <td>
+              <p>Mechanism to Authenticate Electronic Protected Health Information</p>
+          </td>
+          <td>
+              <p>A</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <p>Person or Entity Authentication</p>
+          </td>
+          <td>
+              <p>164.312(d)</p>
+          </td>
+          <td>&nbsp;</td>
+          <td>
+              <p>R</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <p>Transmission Security</p>
+          </td>
+          <td>
+              <p>164.312(e)(1)</p>
+          </td>
+          <td>
+              <p>Integrity Controls</p>
+          </td>
+          <td>
+              <p>A</p>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+              <p>Encryption</p>
+          </td>
+          <td>
+              <p>A</p>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+----------
+
+### Physical safeguards ([§164.310](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&SID=5c5f44e031fcd43b1599caf2aa375ce2&h=L&mc=true&n=sp45.2.164.c&r=SUBPART&ty=HTML#se45.2.164_1310))
+
+<div style="overflow: scroll">
+   <table>
+      <tbody>
+         <tr>
+            <td>
+               <p><b>Standards</b></p>
+            </td>
+            <td>
+               <p><b>Sections</b></p>
+            </td>
+            <td>
+               <p><b>Implementation Specifications</b></p>
+            </td>
+            <td>
+               <p><b>(R)=Required, (A)=Addressable</b>/p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Facility Access Controls</p>
+            </td>
+            <td>
+               <p>164.310(a)(1)</p>
+            </td>
+            <td>
+               <p>Contingency Operations</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Facility Security Plan</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Access Control and Validation Procedures</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Maintenance Records</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Workstation Use</p>
+            </td>
+            <td>
+               <p>164.310(b)</p>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Workstation Security</p>
+            </td>
+            <td>
+               <p>164.310(c)</p>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Device and Media Controls</p>
+            </td>
+            <td>
+               <p>164.310(d)(1)</p>
+            </td>
+            <td>
+               <p>Disposal</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Media Re-use</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Accountability</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Data Backup and Storage</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>  
+
+----------
+
+### Administrative safeguards ([§164.308](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&SID=5c5f44e031fcd43b1599caf2aa375ce2&h=L&mc=true&n=sp45.2.164.c&r=SUBPART&ty=HTML#se45.2.164_1308))
+
+<div style="overflow: scroll">
+   <table>
+      <tbody>
+         <tr>
+            <td>
+               <p><b>Standards</b></p>
+            </td>
+            <td>
+               <p><b>Sections</b></p>
+            </td>
+            <td>
+               <p><b>Implementation Specifications</b></p>
+            </td>
+            <td>
+               <p><b>(R)=Required, (A)=Addressable</b></p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Security Management Process</p>
+            </td>
+            <td>
+               <p>164.308(a)(1)</p>
+            </td>
+            <td>
+               <p>Risk Analysis</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Risk Management</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Sanction Policy</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Information System Activity Review</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Assigned Security Responsibility</p>
+            </td>
+            <td>
+               <p>164.308(a)(2)</p>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Workforce Security</p>
+            </td>
+            <td>
+               <p>164.308(a)(3)</p>
+            </td>
+            <td>
+               <p>Authorization and/or Supervision</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Workforce Clearance Procedure</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Termination Procedures</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Information Access Management</p>
+            </td>
+            <td>
+               <p>164.308(a)(4)</p>
+            </td>
+            <td>
+               <p>Isolating Health care Clearinghouse Function</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Access Authorization</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Access Establishment and Modification</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Security Awareness and Training</p>
+            </td>
+            <td>
+               <p>164.308(a)(5)</p>
+            </td>
+            <td>
+               <p>Security Reminders</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Protection from Malicious Software</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Log-in Monitoring</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Password Management</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Security Incident Procedures</p>
+            </td>
+            <td>
+               <p>164.308(a)(6)</p>
+            </td>
+            <td>
+               <p>Response and Reporting</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Contingency Plan</p>
+            </td>
+            <td>
+               <p>164.308(a)(7)</p>
+            </td>
+            <td>
+               <p>Data Backup Plan</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Disaster Recovery Plan</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Emergency Mode Operation Plan</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Testing and Revision Procedure</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+               <p>Applications and Data Criticality Analysis</p>
+            </td>
+            <td>
+               <p>A</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Evaluation</p>
+            </td>
+            <td>
+               <p>164.308(a)(8)</p>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p>Business Associate Contracts and Other Arrangement</p>
+            </td>
+            <td>
+               <p>164.308(b)(1)</p>
+            </td>
+            <td>
+               <p>Written Contract or Other Arrangement</p>
+            </td>
+            <td>
+               <p>R</p>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+## Annex - Security Safeguards - Complete list
+
+### Technical safeguards  
+  
+[These safeguards](https://www.govregs.com/regulations/expand/title45_chapterA_part164_subpartC_section164.306#title45_chapterA_part164_subpartC_section164.312) are focused on the technology that protects PHI and controls access to it without requiring the use of specific technologies (technology neutrality).
+
+1.  **Access Control**
+    1.  **Required**
+        1.  **Unique User Identification:** “Assign a unique name and/or number for identifying and tracking user identity.”
+        2.  **Emergency Access Procedure:** “Establish (and implement as needed) procedures for obtaining necessary electronic protected health information during an emergency.”
+    2.  Addressable
+        1.  Automatic logoff: “Implement electronic procedures that terminate an electronic session after a predetermined time of inactivity.”
+        2.  Encryption and Decryption: “Implement a mechanism to encrypt and decrypt electronic protected health information.”
+2.  **Audit Controls**
+    1.  **Required**
+        1.  **Audit controls:** “Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.”
+3.  Integrity
+    1.  Addressable
+        1.  Implementation specification. Mechanism to authenticate electronic protected health information: “Implement electronic mechanisms to corroborate that electronic protected health information has not been altered or destroyed in an unauthorized manner.”
+4.  **Authentication**
+    1.  **Required**
+        1.  **Person or entity authentication:** “Implement procedures to verify that a person or entity seeking access to electronic protected health information is the one claimed.”
+5.  Transmission Security
+    1.  Addressable
+        1.  Integrity Controls: “Implement security measures to ensure that electronically transmitted electronic protected health information is not improperly modified without detection until disposed of.”
+        2.  Encryption: “Implement a mechanism to encrypt electronic protected health information whenever deemed appropriate.”     
+
+### Physical safeguards  
+
+[These are](https://www.govregs.com/regulations/expand/title45_chapterA_part164_subpartC_section164.306#title45_chapterA_part164_subpartC_section164.310) a set of rules and guidelines that focus on the physical access to PHI.
+
+1.  Facility Access Controls
+    1.  Addressable
+        1.  Contingency Operations: “Establish (and implement as needed) procedures that allow facility access in support of restoration of lost data under the disaster recovery plan and emergency mode operations plan in the event of an emergency.”
+        2.  Facility Security Plan: “Implement policies and procedures to safeguard the facility and the equipment therein from unauthorized physical access, tampering, and theft.”
+        3.  Access Control and Validation Procedures: “Implement procedures to control and validate a person's access to facilities based on their role or function, including visitor control, and control of access to software programs for testing and revision.”
+        4.  Maintenance Records: “Implement policies and procedures to document repairs and modifications to the physical components of a facility which are related to security (for example, hardware, walls, doors, and locks).”
+2.  **Workstation Use**
+    1.  **Required**
+        1.  **Workstation use:** “Implement policies and procedures that specify the proper functions to be performed, the manner in which those functions are to be performed, and the physical attributes of the surroundings of a specific workstation or class of workstation that can access electronic protected health information.”
+3.  **Workstation Security**
+    1.  **Required**
+        1.  **Workstation security:** “Implement physical safeguards for all workstations that access electronic protected health information, to restrict access to authorized users.”
+4.  **Device and Media Controls**
+    1.  **Required**
+        1.  **Disposal:** “Implement policies and procedures to address the final disposition of electronic protected health information, and/or the hardware or electronic media on which it is stored.”
+        2.  **Media Re-Use:** “Implement procedures for removal of electronic protected health information from electronic media before the media are made available for reuse.”
+    3.  Addressable
+        1.  Accountability: “Maintain a record of the movements of hardware and electronic media and any person responsible therefore.“
+        2.  Data Backup and Storage: “Create a retrievable, exact copy of electronic protected health information, when needed, before movement of equipment.”  
+### Administrative safeguards
+
+[These safeguards](https://www.govregs.com/regulations/expand/title45_chapterA_part164_subpartC_section164.306#title45_chapterA_part164_subpartC_section164.308) are a collection of policies and procedures that govern the conduct of the workforce, and the security measures put in place to protect ePHI.
+
+1.  Security Management Process
+    1.  Required
+        1.  **Risk Analysis:** “Conduct an accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information held by the covered entity or business associate.”
+        2.  **Risk Management:** “Implement security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level to comply with § 164.306(a).”
+        3.  **Sanction Policy:** “Apply appropriate sanctions against workforce members who fail to comply with the security policies and procedures of the covered entity or business associate.”
+        4.  **Information Systems Activity Reviews:** “Implement procedures to regularly review records of information system activity, such as audit logs, access reports, and security incident tracking reports.”
+2.  **Assigned Security Responsibility**
+    1.  **Required**
+        1.  **Officers:** “ Identify the security official who is responsible for the development and implementation of the policies and procedures required by this subpart for the covered entity or business associate.”
+3.  Workforce Security
+    1.  Addressable
+        1.  Authorization and/or supervision: “Implement procedures for the authorization and/or supervision of workforce members who work with electronic protected health information or in locations where it might be accessed.”
+        2.  Workforce clearance procedure: “Implement procedures to determine that the access of a workforce member to electronic protected health information is appropriate.”
+        3.  Termination procedures: “Implement procedures for terminating access to electronic protected health information when the employment of, or other arrangement with, a workforce member ends or as required by determinations made as specified in paragraph (a)(3)(ii)(B) of this section.”
+4.  **Information Access Management**
+    1.  **Required**
+        1.  **Isolating health care clearinghouse functions:** “If a health care clearinghouse is part of a larger organization, the clearinghouse must implement policies and procedures that protect the electronic protected health information of the clearinghouse from unauthorized access by the larger organization.”
+    2.  Addressable
+        1.  Access authorization: “Implement policies and procedures for granting access to electronic protected health information, for example, through access to a workstation, transaction, program, process, or other mechanism.“
+        2.  Access establishment and modification: Implement policies and procedures that, based upon the covered entity's or the business associate's access authorization policies, establish, document, review, and modify a user's right of access to a workstation, transaction, program, or process.
+5.  Security Awareness and Training
+    1.  Addressable
+        1.  Security reminders: “Periodic security updates.”
+        2.  Protection from malicious software: “Procedures for guarding against, detecting, and reporting malicious software.”
+        3.  Log-in monitoring: “Procedures for monitoring log-in attempts and reporting discrepancies.”
+        4.  Password management: “Procedures for creating, changing, and safeguarding passwords.”
+6.  **Security Incident Procedures**
+    1.  **Required**
+        1.  **Response and reporting:** “Identify and respond to suspected or known security incidents; mitigate, to the extent practicable, harmful effects of security incidents that are known to the covered entity or business associate; and document security incidents and their outcomes.”
+7.  **Contingency Plan**
+    1.  **Required**
+        1.  **Data backup plan:** “Establish and implement procedures to create and maintain retrievable exact copies of electronic protected health information”
+        2.  **Disaster recovery plan:** “Establish (and implement as needed) procedures to restore any loss of data.”
+        3.  **Emergency mode operation plan:** “Establish (and implement as needed) procedures to enable continuation of critical business processes for protection of the security of electronic protected health information while operating in emergency mode.”
+    2.  Addressable
+        1.  Testing and revision procedures: “Implement procedures for periodic testing and revision of contingency plans.”
+        2.  Applications and data criticality analysis: “Assess the relative criticality of specific applications and data in support of other contingency plan components.”
+8.  **Evaluation**
+    1.  **Required**
+        1.  **Evaluations:** “Perform a periodic technical and nontechnical evaluation, based initially upon the standards implemented under this rule and, subsequently, in response to environmental or operational changes affecting the security of electronic protected health information, that establishes the extent to which a covered entity's or business associate's security policies and procedures meet the requirements of this subpart.”
+9.  **Business Associate Contracts and Other Arrangements**
+    1.  **Required**
+        1.  **Written contract or other arrangement:** Have special contracts with business partners who will have access to your PHI in order to ensure that they will be compliant. Choose partners that have similar agreements with any of their partners to which they are also extending access.
+
+[acknowledgments:md]
+[This post](https://www.vairix.com/tech-blog/hipaa-for-software-developers) was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
+
+[further_reading:md]
+
+*   [A developers guide to HIPAA compliance and application development.](https://github.com/truevault/hipaa-compliance-developers-guide)
+    
+*   [Combined Regulation Text of All Rules](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/combined/hipaa-simplification-201303.pdf)
+    
+*   [HIPAA Security Series #4 - Technical Safeguards](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/techsafeguards.pdf)
+    
+*   [Security Physical Safeguards](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/physsafeguards.pdf)
+    
+*   [HIPAA - A History and Overview](https://eligible.com/community/hipaa-introduction/)
+    
+*   [HIPAA Title II - An Overview from Privacy to Enforcement](https://eligible.com/community/hipaa-title-ii/)
+    
+*   [How do I become HIPAA compliant? (a checklist)](https://www.truevault.com/blog/how-do-i-become-hipaa-compliant.html)
+    
+*   [COMPLIANCE ALERT! Final HIPAA Privacy Regulations are Published - Innovative](https://ibpllc.com/compliance-alert-final-hipaa-privacy-regulations-are-published/)
+    
+*   [HITECH Breach Notification Interim Final Rule  
+    ](https://www.hhs.gov/hipaa/for-professionals/breach-notification/laws-regulations/final-rule-update/hitech/index.html)
+
+[significant_revisions:md]
+_Feb 25, 2020_: Original Publication on vairix.com
+
+_Jul 07, 2020_: Original Publication on dariomac.com
