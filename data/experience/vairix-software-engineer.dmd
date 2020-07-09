@@ -52,6 +52,8 @@ VAIRIX Software Development
 
 ## QA/PM projects
 
+* **Shopping checkout**
+    PM and internal QA of a mobile app to pay on shopping checkout using a QR code generated with a Time-bound One-Time Password (TOTP) algorithm. To recognize where the client is buying it detects the presence of a physical Beacon with a specific signature. The app also interacts with an API that, by the time the client gets to the register to use the QR, it has generated a receipt by knowing every item the client has interacted with while purchasing.
 * **Personal guidance**
     PM and internal QA of a web && mobile app to help university students. The system offer the posibility of talk with advisors (mostly doctors, thus it should be HIPAA compliant).
 * **Tee-time marketplace**
@@ -59,9 +61,10 @@ VAIRIX Software Development
 
 ## Writing projects
 * [Behind the scenes of Ethereum Pet Shop tutorial](https://www.vairix.com/behind-the-scenes-of-ethereum-pet-shop-tutorial) (Mar, 2020)
-* [Blockchain 101 An Introduction](https://www.vairix.com/blockchain-101-an-introduction) (Mar, 2020)
-* [HIPAA for Software Developers](https://www.vairix.com/hipaa-for-software-developers) (Feb, 2020)
+* [Blockchain 101 An Introduction](/blockchain-101-an-introduction) (Mar, 2020)
+* [HIPAA for Software Developers](/hipaa-for-software-developers) (Feb, 2020)
 * [Server Side Rendering (SSR) of Create-React-App (CRA) app on 2020](https://www.vairix.com/server-side-rendering-ssr-of-create-react-app-cra-app-in-2020) (Feb, 2020)
+* [Zombie & Orc Scrum teams: Is your Agile team infected?](/scrum-zombies-and-orcs-teams) (Jan, 2020)
 * [Node.js logging solutions](/nodejs-logging-solutions) (Dic, 2019)
 * [Scrum Zombies & Orcs teams](/scrum-zombies-and-orcs-teams) (Nov, 2019)
 
