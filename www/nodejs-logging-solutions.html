@@ -426,40 +426,40 @@ http://www.dariomac.com -->
 <p>Ok, me too. So I decided to do something about it. I started as everyone, using <a href="https://www.npmjs.com/package/morgan">Morgan</a> as an easy way to log requests and responses. Morgan is a middleware that listens to each request made to the server, the request continues down the pipeline and finally logs request and response information in one line. It saves a lot of time because you don’t have to manually create those logs.</p>
 <p>But I need more. As I said, it shows request and response information in one line. What if you want to log something after the request was logged and before the response line in the log? E.g.</p>
 <p><picture>
-            <source srcset="/assets/nodejs-logging1.webp" type="image/webp">
-
-            <img src="/assets/nodejs-logging1.jpg#center" alt="Log generic example"></picture></p>
+              <source srcset="/assets/nodejs-logging1.webp" type="image/webp">
+  
+              <img src="/assets/nodejs-logging1.jpg#center" alt="Log generic example"></picture></p>
 <p>This can’t be done with Morgan. I need something more flexible, something that lets me log whatever I want, whenever I want… without losing the automation gained with Morgan. To achieve this I went over the most popular module for logging, which is <a href="https://www.npmjs.com/package/winston">Winston</a>.</p>
 <p>Winston lets you log whatever you want. You just need to create it and call it.</p>
 <p><picture>
-            <source srcset="/assets/nodejs-logging2.webp" type="image/webp">
-
-            <img src="/assets/nodejs-logging2.jpg#center" alt="Winston configuration"></picture></p>
+              <source srcset="/assets/nodejs-logging2.webp" type="image/webp">
+  
+              <img src="/assets/nodejs-logging2.jpg#center" alt="Winston configuration"></picture></p>
 <p>Winston decouples parts of logging and makes it extensible and flexible. It can be configured to multiple levels of logging and has a large and robust feature set. So for us, it was natural to mix both solutions.</p>
 <p><picture>
-            <source srcset="/assets/nodejs-logging3.webp" type="image/webp">
-
-            <img src="/assets/nodejs-logging3.jpg#center" alt="Morgan with Winston"></picture></p>
+              <source srcset="/assets/nodejs-logging3.webp" type="image/webp">
+  
+              <img src="/assets/nodejs-logging3.jpg#center" alt="Morgan with Winston"></picture></p>
 <p>With this code, I use Morgan to automate the request-response log, but I use Winston as a renderer to keep a consistent format between automatic and manual logging.</p>
 <p>So, with a couple more configurations (mostly in Winston formatter) I end with a logger like this:</p>
 <p><picture>
-            <source srcset="/assets/nodejs-logging4.webp" type="image/webp">
-
-            <img src="/assets/nodejs-logging4.jpg#center" alt="Log result"></picture></p>
+              <source srcset="/assets/nodejs-logging4.webp" type="image/webp">
+  
+              <img src="/assets/nodejs-logging4.jpg#center" alt="Log result"></picture></p>
 <p>There I see two request-response cycles, both done from a web browser that returned 304 as status code. Requests are represented with -&gt; while responses are &lt;-. Messages sent between request and response are marked as --.</p>
 <h2>Has it happened to you that a user reports some issues and you don’t have a way to follow its trail in the logs?</h2>
 <p>If this hasn’t happened to you, you are a lucky guy. I need a way to trace down some user from its first request to the last response. Also, I need to trace the internal calls (e.g. calls to microservices or endpoints). Remember that in production, with say 50 requests/sec, your logs sorted by time would be mixed between several requests from different users. How can I achieve this? I implement a middleware that adds an ID to the first request, or if the request came with an ID as header variable, use it instead.</p>
 <p><picture>
-            <source srcset="/assets/nodejs-logging5.webp" type="image/webp">
-
-            <img src="/assets/nodejs-logging5.jpg#center" alt="Unique requirement id generation"></picture></p>
+              <source srcset="/assets/nodejs-logging5.webp" type="image/webp">
+  
+              <img src="/assets/nodejs-logging5.jpg#center" alt="Unique requirement id generation"></picture></p>
 <p>Using <a href="https://www.npmjs.com/package/express-http-context">express-http-context</a> I make the ID available to be used anywhere. Also, because I add it to the response header, you can follow the trace even to the client-side for further use (e.g. if you experiment issues in the client-side, you can take note of that ID and later search for it in the logs server-side). The ID is the one between square brackets in the previous output sample.</p>
 <h2>Have you ever wanted to change the verbosity of your logs in realtime, without restarting your server, just to catch a slippery bug?</h2>
 <p>Finally, I need to change the verbosity level of the log in realtime, without restarting the server. The reason behind this is that e.g. when I’m debugging, I want to see the queries executed against the database. Sometimes I want to log a complete JSON object, or just generate more information on some level, other than debugging, to be consumed in special opportunities. For these reasons, we choose to log using <a href="https://en.wikipedia.org/wiki/Syslog#Severity_level">syslog severity levels</a>.</p>
 <p><picture>
-            <source srcset="/assets/nodejs-logging6.webp" type="image/webp">
-
-            <img src="/assets/nodejs-logging6.jpg#center" alt="Full example of how to use severity levels"></picture></p>
+              <source srcset="/assets/nodejs-logging6.webp" type="image/webp">
+  
+              <img src="/assets/nodejs-logging6.jpg#center" alt="Full example of how to use severity levels"></picture></p>
 <p>In this example, the logger is my solution to logging and I am calling it in the catch, twice… but with different severity levels. Functions called emerg, alert, crit, error, warning, notice, info and debug are available from Winston. As the doc says “Logging levels in Winston conform to the severity ordering specified by RFC5424: severity of all levels is assumed to be numerically ascending from most important to least important.” So you can define a level to initiate which specifies the maximum level of messages that it should log and then change it.</p>
 <p>To change it, I added an endpoint (fully configurable via options) that lets you make requests to it setting the desired level. As soon as the endpoint receives this parameter, it will change the logging level until you send another request asking to change it again.</p>
 <p>e.g. curl localhost:5000/?set_log_level=debug will set the default log level to debug, so basically it will log everything!</p>
@@ -539,17 +539,17 @@ http://www.dariomac.com -->
     <li><a style="padding-top:1px" href="/kanbancv">KanbanCV</a> © 2011-2020 <a style="padding-top:1px" href="/sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap</a></li>
     <li>
       <a href="http://uy.linkedin.com/in/dariomac" style="text-decoration:none;" target="_blank">
-        <img src="/assets/images/linkedin.png" width="16" height="15" alt="View Darío Macchi's LinkedIn profile" border="0" />
+        <img src="/assets/linkedin.png" width="16" height="15" alt="View Darío Macchi's LinkedIn profile" border="0" />
       </a>
     </li>
     <li>
       <a href="http://twitter.com/_dariomac" target="_blank">
-        <img src="/assets/images/twitter-16.png" width="16" height="16" alt="View my twitter"/>
+        <img src="/assets/twitter.png" width="16" height="16" alt="View my twitter"/>
       </a>
     </li>
     <li class="d-none d-lg-block">
       <a href="http://www.researchgate.net/profile/Dario_Macchi/" target="_blank">
-        <img src="/assets/images/researchgate.png" width="15" height="15" alt="View my ResearchGate profile"/>
+        <img src="/assets/researchgate.png" width="15" height="15" alt="View my ResearchGate profile"/>
       </a>
     </li>
     <li style="margin-top: 0px" class="d-none d-lg-block">
