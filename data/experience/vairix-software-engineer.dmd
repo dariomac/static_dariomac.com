@@ -1,11 +1,11 @@
 {
-  "title": "Software Engineer",
+  "title": "Sr. Software Engineer",
   "date": "2019-07-15",
   "layout": "experience",
   "card": {
     "color": "#00A651",
     "columnid": "progress_2",
-    "content": "Software Engineer",
+    "content": "Sr. Software Engineer",
     "datebox": "Jun 2019 - Now",
     "extlink": "http://www.vairix.com/",
     "laneid": "Experience",
@@ -29,7 +29,7 @@
 ---
 
 [summary:string]
-This time at VAIRIX I have a more technical role. In some projects, I'm working as a developer on the full javascript stack (Node.js + React). In other projects, I'm right behind the team, serving them in a Scrum Master way, but not visible to the client. The idea of this function is to monitor quality, management and social skills and then support the team to solve problems related to these issues.
+This time at VAIRIX I have a more technical role. In some projects I manage the team as a Technical Project Manager, creating tasks, asigning them to the team and helping with the communication with the client. Other times I'm right behind the team, serving them like a Scrum Master, but not visible to the client, to monitor quality, manage the social skills of the team and support them problem solving. Finally, in some specific projects, I'm working as a Javascript Full-Stack Developer (Node.js + React).
 
 [duration:string]
 Jun 2019 - Now
@@ -52,12 +52,14 @@ VAIRIX Software Development
 
 ## QA/PM projects
 
+* **Online Marketing Tool**
+    PM and DevOp in the maintenance of an already built marketing tool to create and manage email campaigns, landing pages and events. It does a heavy use of SendGrid as a base delivery system, using well known strategies as use or dedicated IPs and IP warming.
 * **Shopping checkout**
     PM and internal QA of a mobile app to pay on shopping checkout using a QR code generated with a Time-bound One-Time Password (TOTP) algorithm. To recognize where the client is buying it detects the presence of a physical Beacon with a specific signature. The app also interacts with an API that, by the time the client gets to the register to use the QR, it has generated a receipt by knowing every item the client has interacted with while purchasing.
 * **Personal guidance**
-    PM and internal QA of a web && mobile app to help university students. The system offer the posibility of talk with advisors (mostly doctors, thus it should be HIPAA compliant).
+    PM and internal QA of the API for a mobile app that gives university students mental health support. The system offers the ability of talk with advisors (mostly doctors, thus it should be HIPAA compliant). Students can talk ad-hoc or schedule appointments. Doctors can manage their agendas, view information from previous sesion and do follow up.
 * **Tee-time marketplace**
-    Internal QA of a marketplace to search and compare online tee times and golf deals at several golf courses across  United States, Canada, and more that 150 other countries. We scale up && out the existent application, working on a second version with a React frontend and refactoring Ruby on Rails backend.
+    Internal QA of a marketplace to search and compare online tee times and golf deals at several golf courses across United States, Canada, and more that 150 other countries. We scale up && out the existent application, working on a second version with a React frontend and refactoring Ruby on Rails backend.
 
 ## Writing projects
 * [Behind the scenes of Ethereum Pet Shop tutorial](https://www.vairix.com/behind-the-scenes-of-ethereum-pet-shop-tutorial) (Mar, 2020)
