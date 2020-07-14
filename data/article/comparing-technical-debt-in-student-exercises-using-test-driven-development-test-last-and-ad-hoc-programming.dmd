@@ -1,0 +1,47 @@
+{
+  "title": "Comparing technical debt in student exercises using test driven development, test last and ad hoc programming",
+  "date": "2016-10-10",
+  "layout": "article",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Comparing technical debt in student exercises using test driven development, test last and ad hoc programming",
+    "datebox": null,
+    "extlink": "https://ieeexplore.ieee.org/document/7833380",
+    "laneid": "Article",
+    "leftbox": "",
+    "leftmsg": "",
+    "linkto": "/comparing-technical-debt-in-student-exercises-using-test-driven-development-test-last-and-ad-hoc-programming",
+    "position": "20161010",
+    "subtaskdetails": [],
+    "subtasks": "0",
+    "subtaskscomplete": "0",
+    "tags": null,
+    "title": "Eugenia Parodi, Santiago Matalonga, Darío Macchi, Martín Solari",
+    "type": "Article"
+  },
+  "jsonld": {},
+  "canonical": ""
+}
+
+---
+
+[summary:string]
+Technical Debt is a metaphor that explains a phenomenon that occurs in software development when programmers are faced with trade-off decisions (usually ship first vs. quality assurance). This work analyses the amount of technical debt incurred by undergraduate students using different coding techniques. This observational study uses source code from seventy-five students. We provided students with similar exercises to compare techniques by measuring with static code analyzers (Sonar, FindBugs). The techniques are TDD, Test Last, and ad hoc programming. Our results could not find a statistically significant difference of technical debt incurred by each development practices. Nonetheless, with both tools ad hoc programming measures less technical debt than TDD, and TDD measures less than Test Last. Furthermore, we observed that the two measurement tools outputs are not statistically correlated. Finally, we discuss implications for the research of technical debt stemming from our observations.
+
+[authors:string]
+Eugenia Parodi, Santiago Matalonga, Darío Macchi, Martín Solari
+
+[publication_metadata:string]
+Parodi, E., Matalonga, S., Macchi, D., & Solari, M. (2016, October). Comparing technical debt in student exercises using test driven development, test last and ad hoc programming. In 2016 XLII Latin American Computing Conference (CLEI) (pp. 1-10). IEEE.
+
+[abstract:md]
+Technical Debt is a metaphor that explains a phenomenon that occurs in software development when programmers are faced with trade-off decisions (usually ship first vs. quality assurance). This work analyses the amount of technical debt incurred by undergraduate students using different coding techniques. This observational study uses source code from seventy-five students. We provided students with similar exercises to compare techniques by measuring with static code analyzers (Sonar, FindBugs). The techniques are TDD, Test Last, and ad hoc programming. Our results could not find a statistically significant difference of technical debt incurred by each development practices. Nonetheless, with both tools ad hoc programming measures less technical debt than TDD, and TDD measures less than Test Last. Furthermore, we observed that the two measurement tools outputs are not statistically correlated. Finally, we discuss implications for the research of technical debt stemming from our observations.
+
+[more_info:md]
+
+[attachments:json]
+  [{
+    "filename": "comparing-technical-debt-in-student-exercises-using-test-driven-development-test-last-and-ad-hoc-programming.pdf",
+    "description": "This is my self hosted version of the article."
+  }]
