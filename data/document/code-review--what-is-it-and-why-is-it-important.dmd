@@ -43,7 +43,7 @@ As Wikipedia puts it, “ [Code review](https://en.wikipedia.org/wiki/Code_revie
 
 ## What is the purpose of code review?
 
-Code review is the most commonly used procedure for validating the design and implementation of features. It helps developers to maintain consistency between design and implementation “styles" across many team members and between various projects on which the company is working.
+Code review is the most commonly used procedure for validating the design and implementation of features. It helps developers to maintain consistency between design and implementation “styles" across many team members and between various projects on which the company is working. If you want to know more benefits of code reviews and how it saves time, money and minimize technical debt, check out [MODESTACK's article on Code Audits](https://themodestack.com/how-code-audit-saves-time-money-and-makes-things-better/).
 
 We perform code review in two levels. The first is known as **peer review** and the second is **external review**.
 
