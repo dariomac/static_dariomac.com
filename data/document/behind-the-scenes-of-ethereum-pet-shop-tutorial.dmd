@@ -59,7 +59,7 @@ Back to the pet shop example, we can see that the adopt function uses the `msg.s
   
 <script src="https://gist.github.com/dariomac/bb86df06b0036c41f25dc6715a299c4d.js"></script>
   
-##Estimating Gas in Ethereum
+## Estimating Gas in Ethereum
 
 Something that bothered me from the very beginning was the Gas consumption. Remember that Gas is a unit that measures the amount of computational effort that will take to execute a given operation. Each created contract and every transaction executed will consume a certain amount of gas. So the first question (at least for me) is, how do I know how much Gas is needed to create a contract or to execute a transaction? The answer wasn’t straightforward, at least at the beginning.
 
@@ -69,7 +69,7 @@ If you did the pet shop tutorial, you saw that [web3 Javascript library](https:
   
 `adoptionInstance` is an instance of the deployed contract where you can call the adopt function as stated in the tutorial. However, if instead of calling the `adoptionInstance.adopt(petId, {from: account});` you call the `estimateGas` with the same params, you will receive the estimated Gas consumption after the transaction simulation.
 
-##Gas cost in Ether
+## Gas cost in Ether
 
 Remember that Ether is the currency inside Ethereum. So, what is the cost, in terms of Ether, of the previous Gas consumption calculation? To know it, we must know the Gas price. The Gas price is a value representing how much Ether a user is willing to pay per Gas. On every transaction you can set the max amount of Gas you are willing to consume and the price you are willing to pay for each unit of Gas. I say “can” because those parameters are optional. If you don’t set them, the network will provide some value determined by the last few blocks' median gas price. This price can be obtained asking the network with `web3.eth.getGasPrice` and it would be returned in Wei (the smallest denomination of Ether, 1 Ether = 1018 wei). Here is the complete example asking for confirmation to spend x amount of Ether in each adoption transaction:  
 
