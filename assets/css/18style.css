@@ -777,6 +777,10 @@ article iframe[src*="#center"] {
     max-width: 95%;
 }
 
+article .description {
+  font-style: italic;
+}
+
 .download {
   background: url(/assets/images/download.png) 0px 0px repeat !important;
   float: right;
