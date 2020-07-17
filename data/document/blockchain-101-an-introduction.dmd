@@ -22,7 +22,10 @@
     "type": "0"
   },
   "jsonld": {},
-  "canonical": "https://www.vairix.com/tech-blog/blockchain-101-an-introduction"
+  "canonical": "https://www.vairix.com/tech-blog/blockchain-101-an-introduction",
+  "resume": {
+    "tags": "iov-researcher"
+  }
 }
 
 ---

@@ -21,7 +21,10 @@
     "type": "Article"
   },
   "jsonld": {},
-  "canonical": ""
+  "canonical": "",
+  "resume": {
+    "tags": "academy,iov-researcher"
+  }
 }
 
 ---
