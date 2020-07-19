@@ -22,7 +22,10 @@
     "type": "0"
   },
   "jsonld": {},
-  "canonical": "https://www.vairix.com/tech-blog/hipaa-for-software-developers"
+  "canonical": "https://www.vairix.com/tech-blog/hipaa-for-software-developers",
+  "resume": {
+    "tags": "project-implicit-researcher"
+  }
 }
 
 ---
