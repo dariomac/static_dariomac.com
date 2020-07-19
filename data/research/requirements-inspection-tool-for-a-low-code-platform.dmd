@@ -30,7 +30,7 @@
 ---
 
 [summary:string]
-What happens with inspections in a low-code/no-code environment? Can we apply them to other artifacts as requirement specifications? Can they me used even for automatic model generation, when examples where added to those requirements?
+What happens with inspections in a low-code/no-code environment? Can we apply them to other artifacts as requirement specifications? Can they be used even for automatic model generation, when examples were added to those requirements?
 
 [idea:md]
 Inspection is, as we know, one of the best ways to ensure quality of a software development artifact. Traditionally is was applied to code, bringing place to code inspection, code walktrough and less formal ways of reviews as pair programming and pair review.
@@ -40,10 +40,11 @@ But what happens on a low-code or no-code environment? Are there place for the i
 [speculations:md]
 * In these scenarios I think that there is place for doing inspection and less formal kind of reviews (see Weigers classification) of software requirements.
 * Maybe we can suggest the use of Perspective Based Reading as a way to decouple the inspeciton result with the inspector background, experience or project role.
-* I think that requirement specifications, written in the right format, can help not only to make inspection easier and less reviewer dependent, but also in how low-code plaforms automates the initial generation of domain models.
 * Also, requirements specification written in the right format can be used as input for test cases, due to many times, requirements are written together with examples of use provided by the client.
 
 Right now I'm in the middle of the design/proposal of a solution based on a highly recognized low-code platform. As soon I end with this theoretical proposal I will be what are the possibilities to make a functional prototype and after that, we will see.
 
 [knowledge:md]
+* Requirement specifications, written in the right format, can help not only to make inspection easier and less reviewer dependent, but also in how low-code plaforms automates the initial generation of domain models.
+* Gherkin can be used as this "right format" to write specifications with examples.
 
