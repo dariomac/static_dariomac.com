@@ -1,0 +1,15 @@
+{
+  "disable": true,
+  "date": "2020-07-18",
+  "layout": "resume",
+  "mode": "collection",
+  "params": {
+    "resumeType": "academy",
+    "job": "project-implicit-researcher",
+    "noIndex": true
+  }
+}
+
+---
+[link]
+https://www.projectimplicit.net/job.html
