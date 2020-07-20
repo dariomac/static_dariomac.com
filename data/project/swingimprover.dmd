@@ -4,10 +4,10 @@
   "date": "2017-07-07",
   "layout": "project",
   "card": {
-    "color": "#AD4647",
+    "color": "#767782",
     "columnid": "done_3",
     "content": "Software that allows the analysis of a golf player swing movement against theory and professionals.",
-    "datebox": null,
+    "datebox": "2016",
     "extlink": "",
     "laneid": "Project",
     "leftbox": "",
@@ -17,7 +17,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": "R.I.P",
+    "tags": "ORT,R.I.P",
     "title": "SwingImprover (Windows)",
     "type":"Project"
   },

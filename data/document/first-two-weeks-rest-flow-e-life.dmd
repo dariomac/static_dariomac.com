@@ -17,10 +17,11 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": null,
+    "tags": "guest post",
     "title": "The First Two Weeks Of The Rest Of My Flow-e Life",
     "type": "Document"
-  }
+  },
+  "canonical": "https://flow-e.com/blog/inbox-heroes/first-two-weeks-rest-flow-e-life/"
 }
 
 ---

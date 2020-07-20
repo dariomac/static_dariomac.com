@@ -17,7 +17,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": "#nodejs,#markdown,#static",
+    "tags": "nodejs,markdown,static",
     "title": "Static website generator (NodeJS)",
     "type": "Project"
   },
