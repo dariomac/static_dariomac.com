@@ -41,7 +41,198 @@ There are three simple rules for creating a manifesto:
 
 * * *
 
-## [I will use the following apps for...](#apps-i-use)
+## Level of work
+
+I work at 90%, always, but I do it in many “swimlanes" (see above). Because of this, I only work in the 20% of things that returns the 80% of benefits (the old Pareto).
+
+* * *
+
+## My values
+
+Some of these are borrowed from [Adams Wiggins Heroku Values](https://gist.github.com/adamwiggins/5687294).
+
+### Strategy vs. Tactic
+
+The difference between strategy and tactics: strategy is done above the shoulders, tactics are done below the shoulders.
+
+Strategy is the best way we found to choose the best battles to fight in order to win a war; tactic is just the best way we found to win those battles.
+
+### Make it real
+
+Ideas are cheap. Make a prototype, draw a wireframe. Discuss around concrete examples, not hand-waving abstractions. Don't say you did something; provide a URL that proves it.
+
+### Ship it
+
+Nothing is real until it's being used by a real user. This doesn't mean you make a prototype in the morning and blog about it in the evening. It means you find one person you believe your product will help and try to get them to use it.
+
+### Do it with style
+
+Just because we're building bad-ass infrastructure and tools doesn't mean it can't be cool, stylish, and fun. Aesthetic matters. See [The Substance of Style](http://books.google.com/books?id=MqdydvbWZgEC)
+
+Slick and fun meets powerful and serious.
+
+Before Heroku (and a few others, like Github and Atlassian), developer-facing products were almost always stodgy, ugly, and completely lacking in style or fun.
+
+We're part of the [consumerization of IT](http://www.infoworld.com/t/consumerization-of-it/consumerization-of-it-190132).
+
+### Intuition-driven balances data-driven
+
+Hunches guide you to places to create new value in the product. Users don't really know what they want. Creating products people loves requires treating product development as an art, not a science; but products have to solve real user problems. Understanding impact of product changes to existing product is best done by mining the data. When you have a mature product and many users you have lots of data on how they are using it. Use that data to make evidence-based decisions.
+
+See: [Inspired: Created Products People Love](http://books.google.com/books?id=nE7NMQAACAA)
+
+### Divide and conquer
+
+Big, hard problems become easy if you cut them into small pieces. How do you eat the elephant? One bite at a time. If a problems seems hard, think about how you can cut it into two smaller, easier problems. If one of those problems is still too hard, cut it in half again.
+
+Wiggins' Law: If it's hard, cut scope.
+
+### Timing matters
+
+If you're building something and just can't seem to get it right, maybe now isn't the right time. You learned something in the attempt, set it down for a while. Maybe in a few weeks or a few months you (or someone else) will pick it up again and find that the world has changed in a way that makes it the right time to build the thing.
+
+Corollary: if you don't do what you need/have to do in the right moment, later it won't be effective.
+
+### Build an audience
+
+I don't know the industry you work in. But what I do know is that your industry needs your voice. More people than those in the room with you each day deserve to see your take on things that matter. All that people will know how good you are so is the [best job insurance possible](http://99u.com/articles/52687/the-most-defensible-thing-you-can-do-for-your-career-build-an-audience).
+
+### Don't interrupt an interruption.
+
+One thing at a time; as exception you can make 1 interruption, but only 1\. Don't interrupt an interruption. See [Test Driven Development By Kent Beck](http://gmarik.info/notes/programming/test-driven-development-kent-beck)
+
+### Take a good decision; then ensure that the decision you make turns out right.
+
+While I support the use of any available data to rank my options in some rough sense, ultimately the best way to avoid paralysis-by-analysis and moving forward is:
+
+1.  paying close attention to the feelings and emotions that accompany the decision we're facing,
+2.  assessing how motivated we are to work toward the success of any given option, and
+3.  recognizing that, no matter what option we choose, our efforts to support its success will be more important than the initial guesswork that led to our choice. This reminds us that while randomness plays a role in every outcome, our locus of control resides in our day-to-day activities more than in our one-time decisions.
+
+See [Stop Worrying About Making the Right Decision](http://blogs.hbr.org/2013/11/stop-worrying-about-making-the-right-decision/)
+
+### Machete design
+
+Create a single, general-purpose tool which is simple to understand but can be applied to many problems. It's like the product version of [occam's razor](http://en.wikipedia.org/wiki/Occam%27s_razor).
+
+The value of a product is the number of problems it can solve divided by the amount of complexity the user needs to keep in their head to use it. Consider an iPhone vs a standard TV remote: an iPhone touchscreen can be used for countless different functions, but there's very little to remember about how it works (tap, drag, swipe, pinch). With a TV remote you have to remember what every button does; the more things you can use the remote for, the more buttons it has. We want to create iPhones, not TV remotes.
+
+### Small sharp tools
+
+Composability. Simple tools which do one thing well and can be composed with other tools to create a nearly infinite number of results. For example, the unix methodology (stdin/stdout and pipes), see [The Art of Unix Programming](http://books.google.com/books?id=H4q1t-jAcBIC). Small is beautiful. This isn't just tools, it's also teams. Several small, autonomous, focused teams working in concert almost always beat a single monolithic team.
+
+### Results, not politics
+
+You "get ahead" in your career by delivering real value to customers and to the company, not by impressing your boss or with big talk.
+
+### Decision-making via ownership, not consensus or authority
+
+Every product, feature, software component, web page, business deal, blog post, and so on should have a single owner. Many people may collaborate on it, but the owner is "the buck stops here" and makes the final call on what happens with the owned thing.
+
+The owner can and should collect feedback from others, but feedback is just that: input that the owner might or might not choose to incorporate into their work. If something doesn't have an owner, no one should be working on it or trying to make decisions about it. Before those things can happen, it has to be owned.
+
+Ownership can't be given, only taken. Ownership can't be declared, only demonstrated. Ownership begins with whoever creates the thing first. Later the owner may hand it off to someone else. If an item gets dropped for some reason (for example, the current owner switching teams or leaving the company), it's fair game for anyone else to pick up.
+
+Apple's term for an owner is ["directly responsible individual," or DRI](http://www.quora.com/Apple-Inc-2/How-well-does-Apples-Directly-Responsible-Individual-DRI-model-work-in-practice).
+
+### Do-ocracy / intrapreneurship
+
+Ask forgiveness, not permission.
+
+*   [Do-ocracy](http://adam.heroku.com/past/2009/7/28/doocracy/)
+    *   A do-ocracy is an organizational structure in which individuals choose roles and tasks for themselves and execute them. Responsibilities attach to people who do the work, rather than elected or selected officials. From [DoOcracy on communitywiki.org](http://www.communitywiki.org/en/DoOcracy)
+    *   Any member who regularly attends meetings can have input in designing, building, operating and playing with the large-scale work that is created. This type of leadership has been coined a Do-ocracy. In short, if one wants to see something happen they take the initiative to do it. From [the Wikipedia entry for the Flaming Lotus Girls](http://en.wikipedia.org/wiki/Flaming_Lotus_Girls)
+*   [Intrapreneur](http://adam.heroku.com/past/2008/8/10/intrapreneur/): someone who launches new initiatives within an established organization, marshalling resources and taking responsibility for the results.
+
+### Everything is an experiment
+
+Anything we do -- a product, a feature, a standing meeting, an email campaign -- is always subject to change. That includes discontinuing or shutting down whatever the thing is. Ending an experiment isn't a failure, since we often learn the most from experiments that don't produce the results we wanted.
+
+### Own up to failure
+
+Did you make a mistake by posting to the blog at the wrong time? By failing to document the feature before you shipped it? By screwing up a customer's app? By not respecting someone's ownership, or hurting someone's feelings?
+
+Own it. Admit your mistake, say you're sorry (when applicable), and feel the failure to make sure you learned from it. Then, get back to work.
+
+### Gradual rollouts
+
+Ease into everything. Use feature flags to activate people slowly into changes, then let it bake for a bit. Test out the message for a public launch by first sending it around internally, and later writing the private beta announcement. Collect feedback and adjust. By the time you're ready to take it public to a wide audience, you'll be fairly certain to have worked out all the kinks.
+
+See: [Crossing the Chasm](http://books.google.com/books?id=yJXHUDSaJgsC)
+
+### Do less
+
+Do we really need that feature? Can we delete that code? Do we really need that command? Can we outsource to or partner with another company so that we don't have the build and maintain something?
+
+See: [Ephemeralization](http://adam.heroku.com/past/2011/4/7/ephemeralization/)
+
+### You touch it, you own it
+
+Ownership can be a problem, especially if there's more than a few devs working on an app.
+
+*   Adding a new feature right next to some scary code? Improve the scary first. Maybe add a few tests.
+*   Adding a new instance variable to a 20 line controller method? Break it apart.
+
+In the hairiest of cases or the rushiest of rushes: make a mental note that it needs to be refactored. Bring it up with your boss. Explain that it would be irresponsible to build further there without some refactoring. If you lack a test harness to do this efficiently, fantastic! That is a clear step 1.
+
+### Question everything
+
+The status quo is never good enough.
+
+See:
+
+*   [The Innovator's Dilema](http://books.google.com/books?id=SIexi_qgq2gC)
+*   [Blue Ocean Strategy](http://books.google.com/books?id=BmPPAjGaDuQC)
+
+### Interfaces matter
+
+Everything has an interface. A platform has an API. A computer has a keyboard, a mouse, and a GUI operating system.
+
+Teams have interfaces too. How do you file a bug or make a request? Where and when does the team collaborate with any other team?
+
+The two critical components of a good interface are that it be narrow and well-defined. A poor interface is one that is wide and poorly-defined.
+
+See: [Explicit Contracts](http://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts/)
+
+### Names matter
+
+Think careful about how something is named. Pick exactly one name for each concept the user needs to track, and use it consistently. For example, Heroku add-on providers are always called providers, never "vendor" or "partner" or anything else. Writing [a glossary](https://addons.heroku.com/provider/resources/technical/reference/glossary) can be a good way to design the vocabulary around something.
+
+### Maniacal focus on simplicity
+
+There is no step 1.
+
+### Write well
+
+Good writing is a powerful tool for communication. Clear writing is clear thinking.
+
+See:
+
+*   [The Elements of Style](http://books.google.com/books?id=sj5_wr6zIEcC)
+*   [On Writing Well](http://books.google.com/books?id=tPkZ3WU1BM8C)
+*   [The Book on Writing](http://www.goodreads.com/review/show/239524186)
+
+### Strong opinions, weakly held
+
+Have a strong opinion and argue passionately for it. But when you encounter new information, be willing to change your mind.
+
+See: [Strong Opinions, Weakly Held](http://bobsutton.typepad.com/my_weblog/2006/07/strong_opinions.html)
+
+### Candor
+
+Be blunt, honest, and truthful. Constructive criticism is the best kind. Avoid keeping quiet with your criticism about someone or something for the sake of politeness. Don't say something about someone to a third party that you wouldn't say to their face.
+
+See: [Winning](http://books.google.com/books?id=g7PG7vwBNYoC)
+
+### Read purposefully, and apply your knowledge
+
+“Don't just say you have read books. Show that through them you have learned to think better (...) it would be a bad mistake to suppose that one has made progress simply by having internalized their contents." — Epictetus, The Art of Living
+
+### Put the phone away and be present
+
+“Nothing, to my way of thinking, is a better proof of a well ordered mind than a man's ability to stop just where he is and pass some time in his own company." — Seneca, Letters From a Stoic
+
+## I will use the following apps for...
 
 Google Drive (GDrive) for backup my files, photos and mp3.
 
@@ -116,194 +307,3 @@ GoogleDocs for simple surveys or polls.
 CRM (folder on GDrive) for meaningful people management.
 
 * * *
-
-## [Level of work](#level-of-work)
-
-I work at 90%, always, but I do it in many “swimlanes" (see above). Because of this, I only work in the 20% of things that returns the 80% of benefits (the old Pareto).
-
-* * *
-
-## [My values](#my-values)
-
-Some of these are borrowed from [Adams Wiggins Heroku Values](https://gist.github.com/adamwiggins/5687294).
-
-### [Strategy vs. Tactic](#strategy-vs-tactic)
-
-The difference between strategy and tactics: strategy is done above the shoulders, tactics are done below the shoulders.
-
-Strategy is the best way we found to choose the best battles to fight in order to win a war; tactic is just the best way we found to win those battles.
-
-### [Make it real](#make-it-real)
-
-Ideas are cheap. Make a prototype, draw a wireframe. Discuss around concrete examples, not hand-waving abstractions. Don't say you did something; provide a URL that proves it.
-
-### [Ship it](#ship-it)
-
-Nothing is real until it's being used by a real user. This doesn't mean you make a prototype in the morning and blog about it in the evening. It means you find one person you believe your product will help and try to get them to use it.
-
-### [Do it with style](#do-with-style)
-
-Just because we're building bad-ass infrastructure and tools doesn't mean it can't be cool, stylish, and fun. Aesthetic matters. See [The Substance of Style](http://books.google.com/books?id=MqdydvbWZgEC)
-
-Slick and fun meets powerful and serious.
-
-Before Heroku (and a few others, like Github and Atlassian), developer-facing products were almost always stodgy, ugly, and completely lacking in style or fun.
-
-We're part of the [consumerization of IT](http://www.infoworld.com/t/consumerization-of-it/consumerization-of-it-190132).
-
-### [Intuition-driven balances data-driven](#intuition-balance-data)
-
-Hunches guide you to places to create new value in the product. Users don't really know what they want. Creating products people loves requires treating product development as an art, not a science; but products have to solve real user problems. Understanding impact of product changes to existing product is best done by mining the data. When you have a mature product and many users you have lots of data on how they are using it. Use that data to make evidence-based decisions.
-
-See: [Inspired: Created Products People Love](http://books.google.com/books?id=nE7NMQAACAA)
-
-### [Divide and conquer](#divide-and-conquer)
-
-Big, hard problems become easy if you cut them into small pieces. How do you eat the elephant? One bite at a time. If a problems seems hard, think about how you can cut it into two smaller, easier problems. If one of those problems is still too hard, cut it in half again.
-
-Wiggins' Law: If it's hard, cut scope.
-
-### [Timing matters](#timing-matters)
-
-If you're building something and just can't seem to get it right, maybe now isn't the right time. You learned something in the attempt, set it down for a while. Maybe in a few weeks or a few months you (or someone else) will pick it up again and find that the world has changed in a way that makes it the right time to build the thing.
-
-Corollary: if you don't do what you need/have to do in the right moment, later it won't be effective.
-
-### [Build an audience](#build-audience)
-
-I don't know the industry you work in. But what I do know is that your industry needs your voice. More people than those in the room with you each day deserve to see your take on things that matter. All that people will know how good you are so is the [best job insurance possible](http://99u.com/articles/52687/the-most-defensible-thing-you-can-do-for-your-career-build-an-audience).
-
-### [Don't interrupt an interruption.](#interruptions)
-
-One thing at a time; as exception you can make 1 interruption, but only 1\. Don't interrupt an interruption. See [Test Driven Development By Kent Beck](http://gmarik.info/notes/programming/test-driven-development-kent-beck)
-
-### [Take a good decision; then ensure that the decision you make turns out right.](#good-decisions)
-
-While I support the use of any available data to rank my options in some rough sense, ultimately the best way to avoid paralysis-by-analysis and moving forward is:
-
-1.  paying close attention to the feelings and emotions that accompany the decision we're facing,
-2.  assessing how motivated we are to work toward the success of any given option, and
-3.  recognizing that, no matter what option we choose, our efforts to support its success will be more important than the initial guesswork that led to our choice. This reminds us that while randomness plays a role in every outcome, our locus of control resides in our day-to-day activities more than in our one-time decisions.
-
-See [Stop Worrying About Making the Right Decision](http://blogs.hbr.org/2013/11/stop-worrying-about-making-the-right-decision/)
-
-### [Machete design](#machete)
-
-Create a single, general-purpose tool which is simple to understand but can be applied to many problems. It's like the product version of [occam's razor](http://en.wikipedia.org/wiki/Occam%27s_razor).
-
-The value of a product is the number of problems it can solve divided by the amount of complexity the user needs to keep in their head to use it. Consider an iPhone vs a standard TV remote: an iPhone touchscreen can be used for countless different functions, but there's very little to remember about how it works (tap, drag, swipe, pinch). With a TV remote you have to remember what every button does; the more things you can use the remote for, the more buttons it has. We want to create iPhones, not TV remotes.
-
-### [Small sharp tools](#small-tools)
-
-Composability. Simple tools which do one thing well and can be composed with other tools to create a nearly infinite number of results. For example, the unix methodology (stdin/stdout and pipes), see [The Art of Unix Programming](http://books.google.com/books?id=H4q1t-jAcBIC). Small is beautiful. This isn't just tools, it's also teams. Several small, autonomous, focused teams working in concert almost always beat a single monolithic team.
-
-### [Results, not politics](#results)
-
-You "get ahead" in your career by delivering real value to customers and to the company, not by impressing your boss or with big talk.
-
-### [Decision-making via ownership, not consensus or authority](#ownership)
-
-Every product, feature, software component, web page, business deal, blog post, and so on should have a single owner. Many people may collaborate on it, but the owner is "the buck stops here" and makes the final call on what happens with the owned thing.
-
-The owner can and should collect feedback from others, but feedback is just that: input that the owner might or might not choose to incorporate into their work. If something doesn't have an owner, no one should be working on it or trying to make decisions about it. Before those things can happen, it has to be owned.
-
-Ownership can't be given, only taken. Ownership can't be declared, only demonstrated. Ownership begins with whoever creates the thing first. Later the owner may hand it off to someone else. If an item gets dropped for some reason (for example, the current owner switching teams or leaving the company), it's fair game for anyone else to pick up.
-
-Apple's term for an owner is ["directly responsible individual," or DRI](http://www.quora.com/Apple-Inc-2/How-well-does-Apples-Directly-Responsible-Individual-DRI-model-work-in-practice).
-
-### [Do-ocracy / intrapreneurship](#dodocracy)
-
-Ask forgiveness, not permission.
-
-*   [Do-ocracy](http://adam.heroku.com/past/2009/7/28/doocracy/)
-    *   A do-ocracy is an organizational structure in which individuals choose roles and tasks for themselves and execute them. Responsibilities attach to people who do the work, rather than elected or selected officials. From [DoOcracy on communitywiki.org](http://www.communitywiki.org/en/DoOcracy)
-    *   Any member who regularly attends meetings can have input in designing, building, operating and playing with the large-scale work that is created. This type of leadership has been coined a Do-ocracy. In short, if one wants to see something happen they take the initiative to do it. From [the Wikipedia entry for the Flaming Lotus Girls](http://en.wikipedia.org/wiki/Flaming_Lotus_Girls)
-*   [Intrapreneur](http://adam.heroku.com/past/2008/8/10/intrapreneur/): someone who launches new initiatives within an established organization, marshalling resources and taking responsibility for the results.
-
-### [Everything is an experiment](#everything-is-a-experiment)
-
-Anything we do -- a product, a feature, a standing meeting, an email campaign -- is always subject to change. That includes discontinuing or shutting down whatever the thing is. Ending an experiment isn't a failure, since we often learn the most from experiments that don't produce the results we wanted.
-
-### [Own up to failure](#own-up-to-failure)
-
-Did you make a mistake by posting to the blog at the wrong time? By failing to document the feature before you shipped it? By screwing up a customer's app? By not respecting someone's ownership, or hurting someone's feelings?
-
-Own it. Admit your mistake, say you're sorry (when applicable), and feel the failure to make sure you learned from it. Then, get back to work.
-
-### [Gradual rollouts](#gradual-rollouts)
-
-Ease into everything. Use feature flags to activate people slowly into changes, then let it bake for a bit. Test out the message for a public launch by first sending it around internally, and later writing the private beta announcement. Collect feedback and adjust. By the time you're ready to take it public to a wide audience, you'll be fairly certain to have worked out all the kinks.
-
-See: [Crossing the Chasm](http://books.google.com/books?id=yJXHUDSaJgsC)
-
-### [Do less](#do-less)
-
-Do we really need that feature? Can we delete that code? Do we really need that command? Can we outsource to or partner with another company so that we don't have the build and maintain something?
-
-See: [Ephemeralization](http://adam.heroku.com/past/2011/4/7/ephemeralization/)
-
-### [You touch it, you own it](#touch-own)
-
-Ownership can be a problem, especially if there's more than a few devs working on an app.
-
-*   Adding a new feature right next to some scary code? Improve the scary first. Maybe add a few tests.
-*   Adding a new instance variable to a 20 line controller method? Break it apart.
-
-In the hairiest of cases or the rushiest of rushes: make a mental note that it needs to be refactored. Bring it up with your boss. Explain that it would be irresponsible to build further there without some refactoring. If you lack a test harness to do this efficiently, fantastic! That is a clear step 1.
-
-### [Question everything](#question-everything)
-
-The status quo is never good enough.
-
-See:
-
-*   [The Innovator's Dilema](http://books.google.com/books?id=SIexi_qgq2gC)
-*   [Blue Ocean Strategy](http://books.google.com/books?id=BmPPAjGaDuQC)
-
-### [Interfaces matter](#interfaces-matter)
-
-Everything has an interface. A platform has an API. A computer has a keyboard, a mouse, and a GUI operating system.
-
-Teams have interfaces too. How do you file a bug or make a request? Where and when does the team collaborate with any other team?
-
-The two critical components of a good interface are that it be narrow and well-defined. A poor interface is one that is wide and poorly-defined.
-
-See: [Explicit Contracts](http://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts/)
-
-### [Names matter](#names-matter)
-
-Think careful about how something is named. Pick exactly one name for each concept the user needs to track, and use it consistently. For example, Heroku add-on providers are always called providers, never "vendor" or "partner" or anything else. Writing [a glossary](https://addons.heroku.com/provider/resources/technical/reference/glossary) can be a good way to design the vocabulary around something.
-
-### [Maniacal focus on simplicity](#simplicity)
-
-There is no step 1.
-
-### [Write well](#write-well)
-
-Good writing is a powerful tool for communication. Clear writing is clear thinking.
-
-See:
-
-*   [The Elements of Style](http://books.google.com/books?id=sj5_wr6zIEcC)
-*   [On Writing Well](http://books.google.com/books?id=tPkZ3WU1BM8C)
-*   [The Book on Writing](http://www.goodreads.com/review/show/239524186)
-
-### [Strong opinions, weakly held](#strong-opinions)
-
-Have a strong opinion and argue passionately for it. But when you encounter new information, be willing to change your mind.
-
-See: [Strong Opinions, Weakly Held](http://bobsutton.typepad.com/my_weblog/2006/07/strong_opinions.html)
-
-### [Candor](#candor)
-
-Be blunt, honest, and truthful. Constructive criticism is the best kind. Avoid keeping quiet with your criticism about someone or something for the sake of politeness. Don't say something about someone to a third party that you wouldn't say to their face.
-
-See: [Winning](http://books.google.com/books?id=g7PG7vwBNYoC)
-
-### [Read purposefully, and apply your knowledge](#read-purposefully)
-
-“Don't just say you have read books. Show that through them you have learned to think better (...) it would be a bad mistake to suppose that one has made progress simply by having internalized their contents." — Epictetus, The Art of Living
-
-### [Put the phone away and be present](#be-present)
-
-“Nothing, to my way of thinking, is a better proof of a well ordered mind than a man's ability to stop just where he is and pass some time in his own company." — Seneca, Letters From a Stoic
