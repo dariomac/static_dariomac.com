@@ -1,12 +1,10 @@
 {{#with this.frontmatter}}
   <div class="card task" style="background-color: {{card.color}}; color: {{getTextColor card.color}}" data-order={{card.position}}>
     <a href="{{card.linkto}}" title="{{card.title}}" style="color: {{getTextColor card.color}}">
-      <div class="card-header ellipsis">
+      <h2 class="card-header ellipsis">
         {{card.title}}
-      </div>
-      <div class="card-body">
-        <p class="card-text">{{card.content}}</p>
-      </div>
+      </h2>
+      <h3 class="card-body card-text">{{card.content}}</h3>
     </a>
     <ul class="list-group list-group-flush">
       {{#if card.subtaskdetails}}

@@ -1,5 +1,6 @@
 {{#if content.related_images}}
   <section class="image_gallery">
+    <link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
   {{#each content.related_images}}
     <a itemprop="image" data-fancybox="gallery" href="/assets/{{filename}}" class="fancybox no_external_ico" rel="challenge" title="{{title}}">
       <picture>

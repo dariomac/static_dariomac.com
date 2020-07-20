@@ -247,6 +247,15 @@ dm-board
 
 }
 
+.dm-board h1, .dm-board h2, .dm-board h3 {
+  font-size: inherit;
+}
+
+.dm-board h1 {
+  font-weight: bold;
+  padding-top: 1px;
+}
+
 #dm-board-header .plan,
 #dm-board-header .in_progress,
 #dm-board-header .done {
