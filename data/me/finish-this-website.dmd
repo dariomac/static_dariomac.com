@@ -44,3 +44,10 @@ That moment was on 2017. At that moment I was in charge of a massive content mig
 I didn't go for a CMS this time. Why? I think web development is living in very confusing times, where trends and fashion clash with common sense. For example, people who use highly reactive web development frameworks to disply almost static information or for administrative websites that don't need any kind of reactivity. These decisions (beside going against common sense) make everything more complex, adding layers of indirections, being more resource intensive and making it more difficult to maintain.
 
 I'm happy with static html generation, is simple, is enough, is easy to maintain; I can't be happier with my dmd format, because it let me do whatever I want, always keeping in mind the KISS principle.
+
+[related_topics:json]
+  [{
+    "title": "Static website generator",
+    "click_bait": "Static website generator (this site)",
+    "linkto": "/static-website-generator"
+  }]

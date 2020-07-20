@@ -128,7 +128,7 @@
 
   "related_topics": {
     "scope": "markdown",
-    "prefix": "related_images",
+    "prefix": "related_topics",
     "body": [
       "[related_topics:json]",
       "\t[{",
