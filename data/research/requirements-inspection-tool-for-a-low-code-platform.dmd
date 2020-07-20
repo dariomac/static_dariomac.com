@@ -16,7 +16,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": "#inspection,#lowcode",
+    "tags": "inspection,lowcode",
     "title": "Requirements inspection tool for a low-code platform",
     "type": "0"
   },

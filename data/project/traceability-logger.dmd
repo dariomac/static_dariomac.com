@@ -17,7 +17,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": "#nodejs,#js,#logger",
+    "tags": "nodejs,js,logger",
     "title": "Traceability Logger (NodeJS)",
     "type": "Project"
   },
