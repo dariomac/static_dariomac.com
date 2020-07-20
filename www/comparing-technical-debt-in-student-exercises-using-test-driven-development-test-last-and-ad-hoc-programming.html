@@ -165,7 +165,13 @@ header p:not(:last-child) {
   margin-bottom: 0px;
 }
 
-article a:not(.lightbox_link), section a:not(.lightbox_link) {
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
   font-weight: bold;
   color: #069;
   background: url(/assets/images/external.png) right 50% no-repeat;
@@ -422,7 +428,7 @@ http://www.dariomac.com -->
       </tr>
       <tr>
         <td style="text-align: center;">
-          <a href="/assets/comparing-technical-debt-in-student-exercises-using-test-driven-development-test-last-and-ad-hoc-programming.pdf" class="lightbox_link">
+          <a href="/assets/comparing-technical-debt-in-student-exercises-using-test-driven-development-test-last-and-ad-hoc-programming.pdf" class="no_external_ico">
             <img src="/assets/images/file-types/pdf.svg" style="width: 48px;" alt="comparing-technical-debt-in-student-exercises-using-test-driven-development-test-last-and-ad-hoc-programming.pdf">
           </a>
         </td>

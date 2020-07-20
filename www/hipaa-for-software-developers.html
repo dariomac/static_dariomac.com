@@ -165,7 +165,13 @@ header p:not(:last-child) {
   margin-bottom: 0px;
 }
 
-article a:not(.lightbox_link), section a:not(.lightbox_link) {
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
   font-weight: bold;
   color: #069;
   background: url(/assets/images/external.png) right 50% no-repeat;
@@ -422,7 +428,8 @@ http://www.dariomac.com -->
                 </section>
 
                 <section>
-                    <h2>A bit of history and HIPAA breakdown</h2>
+                    <h2><a name="a-bit-of-history-and-hipaa-breakdown" class="anchor">
+<a name="a-bit-of-history-and-hipaa-breakdown" href="#a-bit-of-history-and-hipaa-breakdown" class="no_external_ico">A bit of history and HIPAA breakdown</a></h2>
 <p>First, a bit of history. The Health Insurance Portability and Accountability Act of 1996 was “created primarily to modernize the flow of healthcare information, stipulate how Personally Identifiable Information maintained by the healthcare and healthcare insurance industries should be protected from fraud and theft, and address limitations on healthcare insurance coverage.” The act consists of five titles, but most of the time only title II is directly related with software development activities.</p>
 <p>Title II splits itself in five rules:</p>
 <ol>
@@ -435,7 +442,8 @@ http://www.dariomac.com -->
 <p>Oversimplifying, this title covers the prevention of fraud and abuse and can be reduced to data protection and handling. That is probably the first area that comes to your mind when you think about HIPAA, together with patient privacy protection, security controls for health and medical records and other forms of protected health information (PHI).</p>
 <p>Remember that HIPAA applies to all <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html">Business Associates</a> (“BAs”) such as subcontractors, data storage companies, cloud providers, payment gateways, etc. As a rule of thumb, remember that “a person [or company] becomes a BA by definition, not by the act of contracting with a covered entity or otherwise.” So, you are a BA if you “perform functions or activities on behalf of, or certain services for, a covered entity or another BA that involve the use or disclosure of protected health information (PHI)”.</p>
 <p>In the next sections we will be describing the most important Title II rules (from a software development point of view), putting more attention in the <strong>Privacy Rule</strong>, with the <strong>Breach Notification Rule</strong> introduced in the Omnibus Rules of 2013, and the <strong>Security Rule</strong>.</p>
-<h2>Privacy Rule</h2>
+<h2><a name="privacy-rule" class="anchor">
+<a name="privacy-rule" href="#privacy-rule" class="no_external_ico">Privacy Rule</a></h2>
 <p>This rule establishes standards to protect individuals’ medical records and other PHI. It dictates how, when and under what circumstances PHI can be used and disclosed.</p>
 <p>As stated by Truevault <a href="https://www.truevault.com/blog/how-do-i-become-hipaa-compliant.html">here</a>, this rule requires BAs to do the following:</p>
 <ol>
@@ -458,7 +466,8 @@ http://www.dariomac.com -->
 <p>The “used incidentally” sounds a bit strange, but the HHS gives this example: if “a janitor has contact with protected health information incidentally, such disclosure is permissible”, mostly “because the performance of such service does not involve the use or disclosure of [PHI].” The other rare area is the “benefit of public interest”, but this is the case when the disclosure is “required by law, victims of abuse, and law enforcement purposes”.</p>
 <p>Regarding breach notifications (number 2 of the initial list), it was modified in the Omnibus Rule of 2013 together with final modifications of the HIPAA privacy and security rules. The Breach Notification Rule, <a href="https://www.ecfr.gov/cgi-bin/text-idx?SID=0ed84c7423abdfca1fa81d772667435a&amp;mc=true&amp;node=sp45.1.164.d&amp;rgn=div6">45 CFR §§ 164.400-414</a>, “requires HIPAA covered entities and their business associates to provide notification following a breach of unsecured PHI”.</p>
 <p>As <a href="https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html">stated here</a>, “A breach is, generally, an impermissible use or disclosure under the Privacy Rule that compromises the security or privacy of the protected health information”. Also “An investigation into the potential breach and notification to appropriate individuals must be conducted by the covered entity and/or business associate no later than sixty (60) day past the date of discovery”. Finally, there are scenarios where disclosure to the customer isn’t required (according to some law schools), but consulting with appropriate legal counsel is always highly recommended.</p>
-<h2>Security Rule</h2>
+<h2><a name="security-rule" class="anchor">
+<a name="security-rule" href="#security-rule" class="no_external_ico">Security Rule</a></h2>
 <p>The Privacy Rule applies to all kinds of PHI; the Security Rule doesn't. It impacts only in electronic PHI (ePHI), laying out the requirements of the safeguards that must be in place to be compliant with it. All “HIPAA Covered Entities” (CEs) or BA who can access, create, alter or transfer ePHI must follow these standards. Those safeguards are:</p>
 <ol>
 <li>Technical Safeguards</li>
@@ -469,7 +478,8 @@ http://www.dariomac.com -->
 <p>TL;DR. The following tables are from the Appendix A to Subpart C of Part of the <a href="https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/combined/hipaa-simplification-201303.pdf">HIPAA Administrative Simplification</a> document.</p>
 <p>As stated here, if a specification is Required, the spec must be implemented. But if it´s Addressable, then you can: “(a) implement the addressable implementation specifications; (b) implement one or more alternative security measures to accomplish the same purpose; (c) not implement either an addressable implementation specification or an alternative.”</p>
 <hr />
-<h3>Technical safeguards (<a href="https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=5c5f44e031fcd43b1599caf2aa375ce2&amp;h=L&amp;mc=true&amp;n=sp45.2.164.c&amp;r=SUBPART&amp;ty=HTML#se45.2.164_1312">§ 164.312</a>)</h3>
+<h3><a name="technical-safeguards" class="anchor">
+<a name="technical-safeguards" href="#technical-safeguards" class="no_external_ico">Technical safeguards (<a href="https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=5c5f44e031fcd43b1599caf2aa375ce2&amp;h=L&amp;mc=true&amp;n=sp45.2.164.c&amp;r=SUBPART&amp;ty=HTML#se45.2.164_1312">§ 164.312</a>)</a></h3>
 <div style="overflow: scroll">
   <table>
     <tbody>
@@ -603,7 +613,8 @@ http://www.dariomac.com -->
   </table>
 </div>
 <hr />
-<h3>Physical safeguards (<a href="https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=5c5f44e031fcd43b1599caf2aa375ce2&amp;h=L&amp;mc=true&amp;n=sp45.2.164.c&amp;r=SUBPART&amp;ty=HTML#se45.2.164_1310">§164.310</a>)</h3>
+<h3><a name="physical-safeguards" class="anchor">
+<a name="physical-safeguards" href="#physical-safeguards" class="no_external_ico">Physical safeguards (<a href="https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=5c5f44e031fcd43b1599caf2aa375ce2&amp;h=L&amp;mc=true&amp;n=sp45.2.164.c&amp;r=SUBPART&amp;ty=HTML#se45.2.164_1310">§164.310</a>)</a></h3>
 <div style="overflow: scroll">
    <table>
       <tbody>
@@ -737,7 +748,8 @@ http://www.dariomac.com -->
    </table>
 </div>  
 <hr />
-<h3>Administrative safeguards (<a href="https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=5c5f44e031fcd43b1599caf2aa375ce2&amp;h=L&amp;mc=true&amp;n=sp45.2.164.c&amp;r=SUBPART&amp;ty=HTML#se45.2.164_1308">§164.308</a>)</h3>
+<h3><a name="administrative-safeguards" class="anchor">
+<a name="administrative-safeguards" href="#administrative-safeguards" class="no_external_ico">Administrative safeguards (<a href="https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&amp;SID=5c5f44e031fcd43b1599caf2aa375ce2&amp;h=L&amp;mc=true&amp;n=sp45.2.164.c&amp;r=SUBPART&amp;ty=HTML#se45.2.164_1308">§164.308</a>)</a></h3>
 <div style="overflow: scroll">
    <table>
       <tbody>
@@ -1020,8 +1032,10 @@ http://www.dariomac.com -->
       </tbody>
    </table>
 </div>
-<h2>Annex - Security Safeguards - Complete list</h2>
-<h3>Technical safeguards</h3>
+<h2><a name="annex-security-safeguards-complete-list" class="anchor">
+<a name="annex-security-safeguards-complete-list" href="#annex-security-safeguards-complete-list" class="no_external_ico">Annex - Security Safeguards - Complete list</a></h2>
+<h3><a name="technical-safeguards" class="anchor">
+<a name="technical-safeguards" href="#technical-safeguards" class="no_external_ico">Technical safeguards</a></h3>
 <p><a href="https://www.govregs.com/regulations/expand/title45_chapterA_part164_subpartC_section164.306#title45_chapterA_part164_subpartC_section164.312">These safeguards</a> are focused on the technology that protects PHI and controls access to it without requiring the use of specific technologies (technology neutrality).</p>
 <ol>
 <li><strong>Access Control</strong>
@@ -1078,7 +1092,8 @@ http://www.dariomac.com -->
 </ol>
 </li>
 </ol>
-<h3>Physical safeguards</h3>
+<h3><a name="physical-safeguards" class="anchor">
+<a name="physical-safeguards" href="#physical-safeguards" class="no_external_ico">Physical safeguards</a></h3>
 <p><a href="https://www.govregs.com/regulations/expand/title45_chapterA_part164_subpartC_section164.306#title45_chapterA_part164_subpartC_section164.310">These are</a> a set of rules and guidelines that focus on the physical access to PHI.</p>
 <ol>
 <li>Facility Access Controls
@@ -1128,7 +1143,8 @@ http://www.dariomac.com -->
 </ol>
 </li>
 </ol>
-<h3>Administrative safeguards</h3>
+<h3><a name="administrative-safeguards" class="anchor">
+<a name="administrative-safeguards" href="#administrative-safeguards" class="no_external_ico">Administrative safeguards</a></h3>
 <p><a href="https://www.govregs.com/regulations/expand/title45_chapterA_part164_subpartC_section164.306#title45_chapterA_part164_subpartC_section164.308">These safeguards</a> are a collection of policies and procedures that govern the conduct of the workforce, and the security measures put in place to protect ePHI.</p>
 <ol>
 <li>Security Management Process

@@ -158,7 +158,13 @@ header p:not(:last-child) {
   margin-bottom: 0px;
 }
 
-article a:not(.lightbox_link), section a:not(.lightbox_link) {
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
   font-weight: bold;
   color: #069;
   background: url(/assets/images/external.png) right 50% no-repeat;

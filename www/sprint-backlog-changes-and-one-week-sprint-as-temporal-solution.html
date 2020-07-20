@@ -165,7 +165,13 @@ header p:not(:last-child) {
   margin-bottom: 0px;
 }
 
-article a:not(.lightbox_link), section a:not(.lightbox_link) {
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
   font-weight: bold;
   color: #069;
   background: url(/assets/images/external.png) right 50% no-repeat;
@@ -437,7 +443,8 @@ http://www.dariomac.com -->
 <li>one-week sprint still needs estimation, tasking, demo, etc. Relative to the size of the sprint those fixed time costs will now be high so they have to get rushed.</li>
 </ul>
 <p>Also, we have found the following table which compares one to four weeks sprint lengths showing several challenges for each one <a href="http://www.cognizant.com/InsightsWhitepapers/Agile-Scrum-Sprint-Length-Whats-Right-for-You.pdf" title="Haughton, B. (2011). Cognizant. Agile Scrum Sprint Length: What's Right for You? Cognizant 20-20 Insights.">[4]</a>.</p>
-<h4>Sprint length comparison</h4>
+<h4><a name="sprint-length-comparison" class="anchor">
+<a name="sprint-length-comparison" href="#sprint-length-comparison" class="no_external_ico">Sprint length comparison</a></h4>
 <div class="table-container">
   <table class="table_blog" cellpadding="0" cellspacing="0">
     <tbody>

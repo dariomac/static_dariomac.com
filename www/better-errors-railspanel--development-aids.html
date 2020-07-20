@@ -165,7 +165,13 @@ header p:not(:last-child) {
   margin-bottom: 0px;
 }
 
-article a:not(.lightbox_link), section a:not(.lightbox_link) {
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
   font-weight: bold;
   color: #069;
   background: url(/assets/images/external.png) right 50% no-repeat;
@@ -419,7 +425,8 @@ http://www.dariomac.com -->
                 </section>
 
                 <section>
-                    <h2>Better Errors</h2>
+                    <h2><a name="better-errors" class="anchor">
+<a name="better-errors" href="#better-errors" class="no_external_ico">Better Errors</a></h2>
 <p>The default Rails error page is completely hideous and hurts to look at. <a href="https://github.com/charliesome/better_errors">Better Errors</a> replaces the standard Rails error page with a much better and more useful error page.</p>
 <p>This is how the &quot;Better Errors&quot; error page looks:
 <picture>
@@ -439,7 +446,8 @@ end
 BetterErrors.editor = :sublime if defined? BetterErrors
 </pre>
 <p>Remember to add Better Errors gem inside a <code>:development</code> section. <strong>Do NOT run better_errors in production, or on Internet facing hosts.</strong></p>
-<h2>RailsPanel</h2>
+<h2><a name="railspanel" class="anchor">
+<a name="railspanel" href="#railspanel" class="no_external_ico">RailsPanel</a></h2>
 <p><a href="https://github.com/dejan/rails_panel">RailsPanel</a> is a Chrome extension for Rails development that will end your tailing of development.log. Have all information about your Rails app requests in the browser - in the Developer Tools panel. Provides insight to db/rendering/total times, parameter list, rendered views and more.</p>
 <p><picture>
               <source srcset="/assets/essays_rails_panel.webp" type="image/webp">
@@ -459,7 +467,8 @@ end
 <li>Emacs</li>
 <li>RubyMine</li>
 </ul>
-<h2>Better Errors &amp; RailsPanel RailsCasts</h2>
+<h2><a name="better-errors" class="anchor">
+<a name="better-errors" href="#better-errors" class="no_external_ico">Better Errors &amp; RailsPanel RailsCasts</a></h2>
 <p>If you want to see both in action and learn a bit more about each of them, don't miss <a href="http://railscasts.com/episodes/402-better-errors-railspanel">this RailsCasts</a>!</p>
 
                 </section>

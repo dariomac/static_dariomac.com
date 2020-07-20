@@ -1,7 +1,7 @@
 {{#if content.related_images}}
   <section class="image_gallery">
   {{#each content.related_images}}
-    <a itemprop="image" data-fancybox="gallery" href="/assets/{{filename}}" class="fancybox lightbox_link" rel="challenge" title="{{title}}">
+    <a itemprop="image" data-fancybox="gallery" href="/assets/{{filename}}" class="fancybox no_external_ico" rel="challenge" title="{{title}}">
       <picture>
         <source srcset="/assets/thumbs/{{getFileName filename}}.webp" type="image/webp">
 
