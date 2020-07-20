@@ -165,7 +165,13 @@ header p:not(:last-child) {
   margin-bottom: 0px;
 }
 
-article a:not(.lightbox_link), section a:not(.lightbox_link) {
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
   font-weight: bold;
   color: #069;
   background: url(/assets/images/external.png) right 50% no-repeat;
@@ -422,20 +428,24 @@ http://www.dariomac.com -->
                 </section>
 
                 <section>
-                    <h2>Blockchain</h2>
+                    <h2><a name="blockchain" class="anchor">
+<a name="blockchain" href="#blockchain" class="no_external_ico">Blockchain</a></h2>
 <p>Blockchains are used when multiple parties, perhaps located across the world, need to share data and transfer value within a context where they don’t fully trust each other.</p>
 <p>The financial world describes this trust as the counterparty risk: the risk that the other party won't hold up their end of the bargain. Blockchains completely remove the counterparty risk through a revolutionary system of mathematics, cryptography, and peer-to-peer networking.</p>
 <p>The control over the process belongs to the users, not to the banks -we keep talking about money, but the example can be extrapolated to other types of transactions- and they are the ones who basically become part of a “huge bank” with thousands, millions of nodes acting as participants and managers of that bank's bookkeeping.</p>
 <p>So what is the block chain? Well, it’s a giant ledger in which the records (the blocks) are linked and encrypted to protect the security and privacy of the transactions. It is, in other words, a distributed and secure database (thanks to encryption) that can be applied to all kinds of transactions that do not necessarily have to be economic.</p>
 <p>This chain of blocks has an important requirement: there must be several users (nodes) that are responsible for verifying these transactions to validate them, and thus the block corresponding to that transaction (in each block there is a large number of transactions that is variable) is recorded in this huge ledger.</p>
 <p>It is important to say there are various Blockchain platforms that can be used by enterprises, based on their needs. Ethereum, founded in 2014, is one of the most widely known and one of the first to offer decentralized apps (DApps). Hyperledger Fabric is from 2016 and is an umbrella for blockchains and related tools. Also, it's backed by the Linux Foundation. Aeternity is a new blockchain platform for DApps. But there are a lot more, like IBM Blockchain, Multichain, Hydrachain, Ripple, R3 Corda and a long etcetera.</p>
-<h2>Ethereum</h2>
+<h2><a name="ethereum" class="anchor">
+<a name="ethereum" href="#ethereum" class="no_external_ico">Ethereum</a></h2>
 <p>Ethereum is a blockchain that allows you to run programs in its trusted environment over a virtual machine, called the Ethereum Virtual Machine (EVM). The code you write is embedded in &quot;smart contracts&quot; and is then checked and executed in the blocking chain.</p>
 <p>So, what is a smart contract? A smart contract is that code that runs on the EVM. They can accept/store ether (more on this in a moment) and data and then distribute that ether to other accounts of smart contracts. Smart contracts are written in statically typed Javascript-like language called Solidity, supporting inheritance, libraries, and complex user-defined types, among much else.</p>
 <p>On the public blockchain (known as MainNet), anyone can read or write data. Reading data is free, but writing to the public blockchain has a cost (named &quot;gas&quot;) and is priced in Ether. This helps discourage spam and pays to secure the network.</p>
-<h2>Ethereum networks</h2>
+<h2><a name="ethereum-networks" class="anchor">
+<a name="ethereum-networks" href="#ethereum-networks" class="no_external_ico">Ethereum networks</a></h2>
 <p>What if you need to do some tests? Do you have to pay (through gas/Ether consumption)? The short answer is: No!</p>
-<h3>Public test networks</h3>
+<h3><a name="public-test-networks" class="anchor">
+<a name="public-test-networks" href="#public-test-networks" class="no_external_ico">Public test networks</a></h3>
 <p>If you are developing DApps or something related with Ethereum, you can use public test networks (or testnets) to test them before production deployment on MainNet. The Ether on these networks is used for testing purposes and has no value.</p>
 <p>Some widely used testnets:</p>
 <ul>
@@ -443,11 +453,14 @@ http://www.dariomac.com -->
 <li>Kovan: After an attack over Ropsten, a consortium of 10 Ethereum companies came together to organise the launch of this stable testnet that uses a consensus method called proof-of-authority. Transactions are validated by select members, leading to a consistent four-second block time. Also, the Ether supply on this testnet is also controlled to mitigate spam attacks.</li>
 <li>Rinkeby: “A testnet also using proof-of-authority, created by The Ethereum Foundation.”</li>
 </ul>
-<h3>Local test networks</h3>
+<h3><a name="local-test-networks" class="anchor">
+<a name="local-test-networks" href="#local-test-networks" class="no_external_ico">Local test networks</a></h3>
 <p>Ethereum blockchain can be simulated locally for development purposes. In these environments, transactions are processed instantly and Ether can be distributed as desired. For example, you can use <a href="https://www.trufflesuite.com/ganache">Ganache</a> to do the same things as on a testnet or MainNet, even without an Internet connection.</p>
-<h3>Private/Enterprise networks</h3>
+<h3><a name="private-enterprise-networks" class="anchor">
+<a name="private-enterprise-networks" href="#private-enterprise-networks" class="no_external_ico">Private/Enterprise networks</a></h3>
 <p>These kinds of networks allow parties to share data without making it available to the public. They can be useful for sharing sensitive data such as health care records or handle higher read/write performance due to the small network size.</p>
-<h2>Last thoughts</h2>
+<h2><a name="last-thoughts" class="anchor">
+<a name="last-thoughts" href="#last-thoughts" class="no_external_ico">Last thoughts</a></h2>
 <p>As we stated in our introduction, this article aims to cover the basics of blockchain technology to shed some light on the subject. It is still far from exhaustive or even detailed on many of the points discussed. That being said, our team will continue to write more detailed posts on these topics in the near future, so stay tuned for upcoming updates.</p>
 
                 </section>

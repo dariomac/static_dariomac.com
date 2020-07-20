@@ -165,7 +165,13 @@ header p:not(:last-child) {
   margin-bottom: 0px;
 }
 
-article a:not(.lightbox_link), section a:not(.lightbox_link) {
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
   font-weight: bold;
   color: #069;
   background: url(/assets/images/external.png) right 50% no-repeat;
@@ -437,29 +443,35 @@ The first one frees up the control over the tools of analysis, being able to con
 <p>4 - Sketch Tools This is one of the most important controls. It let the user identify points, lines, ellipses and angles. There are two ways to use these tools. According to the user's need, it can make the sketch to belong to a particular frame or it will be there throughout the video. This is determined by selecting the tab &quot;frame&quot; or the tab &quot;video&quot;.</p>
 <p>5 - Views SwingImprover allows the study of two-dimensional swing. Therefore it is necessary that the user can see both dimensions of the videos simultaneously. Selecting multiple view video space split the screen and enable the option from the file menu to load the new video (second dimension). As a result you can edit and play videos from the view &quot;face on&quot; and &quot;down the line&quot;. Another possibility is that the user wants to compare the evolution of their swings against the previous, or compare it against a video of a professional. This is also possible using multiple views.</p>
 <p>6 - Selection of camera position Switch between the two possible positions of the camera: &quot;face on&quot; and &quot;down the line&quot;. This is necessary because the measurements are made on the basis of coordinates selected from two views. 7 - Stages of swing Here are the stages of the swing. The user can select one depending on what it need to study. 8 - Measures of swing Within each stage of the swing there is a set of relevant measures that the user can select according to your needs.</p>
-<h2>Free Mode</h2>
+<h2><a name="free-mode" class="anchor">
+<a name="free-mode" href="#free-mode" class="no_external_ico">Free Mode</a></h2>
 <p>As shown in the picture below, this mode allows the user to perform measurements on their swing, having the opportunity to compare with another video at the same time. This opens the possibility to choose whether the user wants to see your progress in the game or compare the swing against a professional player.</p>
 <p>View of two videos simultaneously:</p>
 <p><img src="/assets/SI_Annex-F-2.gif#center" alt="Comparative view"></picture></p>
 <p>Independent study of the swing:</p>
 <p><img src="/assets/SI_Annex-F-3.gif#center" alt="Angle analysis"></picture></p>
-<h2>Assisted mode</h2>
+<h2><a name="assisted-mode" class="anchor">
+<a name="assisted-mode" href="#assisted-mode" class="no_external_ico">Assisted mode</a></h2>
 <p>The use of the assisted mode is very simple. After opening the video to study, using the controls in sides of the trackbar (as seen above items 7, 8 and 9) the user can choose the measurement that the user want to perform.</p>
 <p>After completing the different measurements, it can get a list of all the results as seen in the picture.</p>
 <p><img src="/assets/SI_Annex-F-4.gif#center" alt="Measure results"></picture></p>
 <p>This list gives details of the score obtained in each stage of the swing, and a final score that serves as a benchmark to evaluate each swing.</p>
 <p>The scores are calculated giving some specific &quot;weight&quot; to each one. This allows evaluating them according to their importance in the full swing.</p>
-<h2>Data persistence</h2>
+<h2><a name="data-persistence" class="anchor">
+<a name="data-persistence" href="#data-persistence" class="no_external_ico">Data persistence</a></h2>
 <p>The information entered by the user of the video is stored in an xml file in the same location and with the same name as the video in which you are working.</p>
 <p>You can also save a screenshot of a frame with all the study information (sketch) over it, for example, to share it with a golf instructor via email.</p>
-<h2>On DirectX device configuration</h2>
+<h2><a name="on-directx-device-configuration" class="anchor">
+<a name="on-directx-device-configuration" href="#on-directx-device-configuration" class="no_external_ico">On DirectX device configuration</a></h2>
 <p>DirectX is Microsoft's technology for handling multimedia. Video adapters require a certain configuration depending on the capabilities of each PC, which is why SwingImprover provides the possibility of setting the adapter for better graphics performance.</p>
 <p><img src="/assets/SI_Annex-F-5.gif#center" alt="Adapters configuration"></picture></p>
-<h2>On error handling</h2>
+<h2><a name="on-error-handling" class="anchor">
+<a name="on-error-handling" href="#on-error-handling" class="no_external_ico">On error handling</a></h2>
 <p>Since graphic handling applications mostly have compatibility issues with older drivers or operating systems errors, SwingImprover provides overall management of exceptions.</p>
 <p>There is an option to send an email with an automatically generated report to SwingImprover site in order to be solved in future releases.</p>
 <p><img src="/assets/SI_Annex-F-6.gif#center" alt="Error handling"></picture></p>
-<h2>On application installer</h2>
+<h2><a name="on-application-installer" class="anchor">
+<a name="on-application-installer" href="#on-application-installer" class="no_external_ico">On application installer</a></h2>
 <p>The application has an installation wizard created especially for the application. This generates a group of shortcuts and registry entries in Windows to correct automatically uninstall.</p>
 <p><img src="/assets/SI_Annex-F-7.gif#center" alt="Installation wizard"></picture></p>
 

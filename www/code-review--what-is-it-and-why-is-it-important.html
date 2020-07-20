@@ -165,7 +165,13 @@ header p:not(:last-child) {
   margin-bottom: 0px;
 }
 
-article a:not(.lightbox_link), section a:not(.lightbox_link) {
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
   font-weight: bold;
   color: #069;
   background: url(/assets/images/external.png) right 50% no-repeat;
@@ -420,9 +426,11 @@ http://www.dariomac.com -->
 
                 <section>
                     <p>Disclaimer: The following document is heavily based on the Mozilla Code Review FAQ <a href="http://ifipwg213.org/system/files/Rigby2006TR.pdf" title="Rigby, C., German, D. (2006). &quot;A preliminary examination of code review processes in open source projects.&quot; University of Victoria Technical Report: DCS-305-IR. Retrieved from http://ifipwg213.org/system/files/Rigby2006TR.pdf.">[1]</a>. But my team at <a href="http://vairix.com/" title="VAIRIX">VAIRIX</a> has made many adaptations in order to reflect the two-level review process that is part of our development methodology.</p>
-<h2>What is code review?</h2>
+<h2><a name="what-is-code-review" class="anchor">
+<a name="what-is-code-review" href="#what-is-code-review" class="no_external_ico">What is code review?</a></h2>
 <p>As Wikipedia puts it, “ <a href="https://en.wikipedia.org/wiki/Code_review" title="What is code review?">Code review</a> is systematic examination … of computer source code. It is intended to find and fix mistakes overlooked in the initial development phase, improving both the overall quality of software and the developers' skills.&quot;</p>
-<h2>What is the purpose of code review?</h2>
+<h2><a name="what-is-the-purpose-of-code-review" class="anchor">
+<a name="what-is-the-purpose-of-code-review" href="#what-is-the-purpose-of-code-review" class="no_external_ico">What is the purpose of code review?</a></h2>
 <p>Code review is the most commonly used procedure for validating the design and implementation of features. It helps developers to maintain consistency between design and implementation “styles&quot; across many team members and between various projects on which the company is working. If you want to know more benefits of code reviews and how it saves time, money and minimize technical debt, check out <a href="https://themodestack.com/how-code-audit-saves-time-money-and-makes-things-better/?utm_medium=email&amp;utm_source=blog">MODESTACK's article on Code Audits</a>.</p>
 <p>We perform code review in two levels. The first is known as <strong>peer review</strong> and the second is <strong>external review</strong>.</p>
 <p>The code review process doesn't begin working instantaneously (especially with external review), and our process is far from being perfect — although we have done some serious research around the topic <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197" title="Macchi, D., &amp; Solari, M. (2012). Software inspection adoption: A mapping study - https://dariomac.com/software-inspection-adoption--a-mapping-study. In Conferencia Latinoamericana de Informática (CLEI 2012).">[3]</a>. So, we are always open to suggestions for improvement.</p>
@@ -431,44 +439,61 @@ http://www.dariomac.com -->
               <source srcset="/assets/20150819_162103-1.webp" type="image/webp">
   
               <img src="/assets/20150819_162103-1.jpg#center" alt="Code reviewing at Vairix"></picture></p>
-<h2>What is a peer review?</h2>
+<h2><a name="what-is-a-peer-review" class="anchor">
+<a name="what-is-a-peer-review" href="#what-is-a-peer-review" class="no_external_ico">What is a peer review?</a></h2>
 <p>A peer review is mainly focused on functionality, design, and the implementation and usefulness of proposed fixes for stated problems.</p>
 <p>The peer reviewer should be someone with business knowledge in the problem area. Also, he or she may use other areas of expertise to make comments or suggest possible improvements.</p>
 <p>In our company, this is necessary because we don't do design reviews prior to code reviews. Instead, we expect developers to talk to each other about their design intentions and get feedback throughout the (usually non-linear) design/implementation process.</p>
 <p>Accordingly, we don't put limitations on what comments a reviewer might make about the reviewed code.</p>
-<h2>What do peer reviewers look for?</h2>
-<h3>Feature Completion</h3>
+<h2><a name="what-do-peer-reviewers-look-for" class="anchor">
+<a name="what-do-peer-reviewers-look-for" href="#what-do-peer-reviewers-look-for" class="no_external_ico">What do peer reviewers look for?</a></h2>
+<h3><a name="feature-completion" class="anchor">
+<a name="feature-completion" href="#feature-completion" class="no_external_ico">Feature Completion</a></h3>
 <p>The reviewer will make sure that the code meets the requirements, pointing out if something has been left out or has been done without asking the client.</p>
-<h3>Potential Side Effects</h3>
+<h3><a name="potential-side-effects" class="anchor">
+<a name="potential-side-effects" href="#potential-side-effects" class="no_external_ico">Potential Side Effects</a></h3>
 <p>The reviewer will check to see whether the changed code causes any issues in other features.</p>
-<h3>Readability and Maintenance</h3>
+<h3><a name="readability-and-maintenance" class="anchor">
+<a name="readability-and-maintenance" href="#readability-and-maintenance" class="no_external_ico">Readability and Maintenance</a></h3>
 <p>The reviewer will make sure the code is readable and is not too complicated for someone completely new to the project. Model and variable names should be immediately obvious (again, even to new developers) and as short as possible without <a href="http://thinkapps.com/blog/development/mobile-app-development-glossary-for-founders-and-product-managers/" title="Mobile App Development Glossary">using abbreviations</a>.</p>
-<h3>Consistency</h3>
+<h3><a name="consistency" class="anchor">
+<a name="consistency" href="#consistency" class="no_external_ico">Consistency</a></h3>
 <p>Conducting peer reviews is the best approach for achieving consistency across all company projects. Define a code style with the team and then stick to it.</p>
-<h3>Performance</h3>
+<h3><a name="performance" class="anchor">
+<a name="performance" href="#performance" class="no_external_ico">Performance</a></h3>
 <p>The reviewer will assess whether code that will be executed more often (or the most critical functionalities) can be optimized.</p>
-<h3>Exception Handling</h3>
+<h3><a name="exception-handling" class="anchor">
+<a name="exception-handling" href="#exception-handling" class="no_external_ico">Exception Handling</a></h3>
 <p>The reviewer will make sure bad inputs and exceptions are handled in the way that was pre-defined by the team (it must be visible/accessible to everyone).</p>
-<h3>Simplicity</h3>
+<h3><a name="simplicity" class="anchor">
+<a name="simplicity" href="#simplicity" class="no_external_ico">Simplicity</a></h3>
 <p>The reviewer will assess whether there are any simpler or more elegant alternatives available.</p>
-<h3>Reuse of Existing Code</h3>
+<h3><a name="reuse-of-existing-code" class="anchor">
+<a name="reuse-of-existing-code" href="#reuse-of-existing-code" class="no_external_ico">Reuse of Existing Code</a></h3>
 <p>The reviewer will check to see if the functionality can be implemented using some of the existing code. Code has to be aggressively “DRYed&quot; (as in, Don't Repeat Yourself) during development.</p>
-<h3>Test Cases</h3>
+<h3><a name="test-cases" class="anchor">
+<a name="test-cases" href="#test-cases" class="no_external_ico">Test Cases</a></h3>
 <p>Finally, the reviewer will ensure the presence of enough test cases to go through all the possible execution paths. All tests have to pass before the code can be merged into the shared repository.</p>
 <p><img src="/assets/Peer-Review-1.gif#center" alt="Code review process"></picture></p>
-<h2>What is an external review?</h2>
+<h2><a name="what-is-an-external-review" class="anchor">
+<a name="what-is-an-external-review" href="#what-is-an-external-review" class="no_external_ico">What is an external review?</a></h2>
 <p>An external review addresses different issues than peer reviews. Specifically, external reviews focus on how to increase code quality, promote best practices, and remove “code smells.&quot;</p>
 <p>This level of review will look at the quality of the code itself, its potential effects on other areas of the project, and its adherence with company coding guidelines.</p>
 <p>Although external reviewers may not have domain expertise, they do have discretion to raise red flags related to both the design and code and to suggest ways to solve problems and refactor code as necessary.</p>
-<h2>What do external reviewers look for?</h2>
-<h3>Readability and Maintenance</h3>
+<h2><a name="what-do-external-reviewers-look-for" class="anchor">
+<a name="what-do-external-reviewers-look-for" href="#what-do-external-reviewers-look-for" class="no_external_ico">What do external reviewers look for?</a></h2>
+<h3><a name="readability-and-maintenance" class="anchor">
+<a name="readability-and-maintenance" href="#readability-and-maintenance" class="no_external_ico">Readability and Maintenance</a></h3>
 <p>Similar to above, the reviewer will make sure the code is readable and is not too complicated for someone completely new. Again, all model and variable names have to be immediately obvious (even to new developers) and as short as possible without using abbreviations.</p>
-<h3>Coding Style</h3>
+<h3><a name="coding-style" class="anchor">
+<a name="coding-style" href="#coding-style" class="no_external_ico">Coding Style</a></h3>
 <p>The reviewer will ensure that everyone adheres to a strict coding style and will use code editors' built-in helpers to format the code.</p>
-<h3>Code Smells</h3>
+<h3><a name="code-smells" class="anchor">
+<a name="code-smells" href="#code-smells" class="no_external_ico">Code Smells</a></h3>
 <p>Finally, the reviewer will keep an eye out (or should that be a nose out?) for code smells and make suggestions for how to avoid them.</p>
 <p>In case the term is new to you, a <a href="http://c2.com/cgi/wiki?CodeSmell" title="What is a code smell?">code smell</a> is “a hint that something has gone wrong somewhere in your code. Use the smell to track down the problem.&quot;</p>
-<h2>Must external reviewers be &quot;domain experts&quot;?</h2>
+<h2><a name="must-external-reviewers-be" class="anchor">
+<a name="must-external-reviewers-be" href="#must-external-reviewers-be" class="no_external_ico">Must external reviewers be &quot;domain experts&quot;?</a></h2>
 <p>External reviewers don't have to have domain knowledge of the code that they will be reviewing. <a href="http://www.mozilla.org/hacking/reviewers.html" title="Mozilla (2012). Retrieved from http://www.mozilla.org/hacking/reviewers.html.">[4]</a>.</p>
 <p>If they know about the domain, they will feel tempted to review it at a functional level, which could lead to burnout. However, if they have some business knowledge, they can estimate more easily how complex the review will be and can quickly complete the review, providing a more comprehensive evaluation of the code.</p>
 <p>So, domain expertise is a bonus, not a requirement.</p>
@@ -476,22 +501,27 @@ http://www.dariomac.com -->
               <source srcset="/assets/20150819_162034-1.webp" type="image/webp">
   
               <img src="/assets/20150819_162034-1.jpg#center" alt="Code reviewing at Vairix"></picture></p>
-<h2>What if an external reviewer misses something?</h2>
+<h2><a name="what-if-an-external-reviewer-misses-something" class="anchor">
+<a name="what-if-an-external-reviewer-misses-something" href="#what-if-an-external-reviewer-misses-something" class="no_external_ico">What if an external reviewer misses something?</a></h2>
 <p>We do not expect an external reviewer to make everything perfect. Something will most likely be missed. <strong>The external reviewer does not become responsible for the developer's work by reviewing it.</strong></p>
-<h2>How fast should developers receive a response from the external reviewer?</h2>
+<h2><a name="how-fast-should-developers-receive-a-response-from-the-external-reviewer" class="anchor">
+<a name="how-fast-should-developers-receive-a-response-from-the-external-reviewer" href="#how-fast-should-developers-receive-a-response-from-the-external-reviewer" class="no_external_ico">How fast should developers receive a response from the external reviewer?</a></h2>
 <p>If a developer has requested an external review, he can expect some type of response within two hours. At the very least, the response should tell him a timeframe for completion.</p>
 <p>In some cases, the external reviewers might not respond. They're not perfect and might have too much work to do. Developers should feel free to ping them again if they don't hear back within two hours or try with another external reviewer.</p>
-<h2>Why can't developers simply merge their code into the main branch now and ask for an external review later?</h2>
+<h2><a name="why-can" class="anchor">
+<a name="why-can" href="#why-can" class="no_external_ico">Why can't developers simply merge their code into the main branch now and ask for an external review later?</a></h2>
 <p>There are many reasons this is a bad idea, but here are two of the most important:</p>
 <ol>
 <li>External reviews catch problems that would affect everyone if the code were merged into the main repository. It doesn't make sense to cause everyone to suffer for problems that could have been caught by anexternal review.</li>
 <li>The process of merging code causes the developer to feel that the work is done, and it's time to go on to the next thing. It's silly to have people feeling like something is checked off the task list when it's really not.</li>
 </ol>
-<h2>Can the external reviewer ask the developer to do something that is not precisely related to the code?</h2>
+<h2><a name="can-the-external-reviewer-ask-the-developer-to-do-something-that-is-not-precisel" class="anchor">
+<a name="can-the-external-reviewer-ask-the-developer-to-do-something-that-is-not-precisel" href="#can-the-external-reviewer-ask-the-developer-to-do-something-that-is-not-precisel" class="no_external_ico">Can the external reviewer ask the developer to do something that is not precisely related to the code?</a></h2>
 <p>Yes, the external reviewer has some discretion here.</p>
 <p>We don't think that continuously making auxiliary changes that are unrelated to the core functionality is the right thing to do on reviews. On the other hand, small changes (or changes that help the code maintain a consistent style) may be requested.</p>
 <p>There should be a reasonable relationship between the scope of the developed functionality and the scope of the requested change.</p>
-<h2>References</h2>
+<h2><a name="references" class="anchor">
+<a name="references" href="#references" class="no_external_ico">References</a></h2>
 <blockquote>
 <p>[1] Knous, M. &amp; Dbaron, A. (2005). Code Review FAQ. Mozilla Development Network. Retrieved from <a href="https://developer.mozilla.org/en/docs/Code_Review_FAQ">https://developer.mozilla.org/en/docs/Code_Review_FAQ</a>.</p>
 </blockquote>
@@ -529,7 +559,7 @@ http://www.dariomac.com -->
       </tr>
       <tr>
         <td style="text-align: center;">
-          <a href="/assets/thinkapps_tweet.jpg" class="lightbox_link">
+          <a href="/assets/thinkapps_tweet.jpg" class="no_external_ico">
             <img src="/assets/images/file-types/jpg.svg" style="width: 48px;" alt="thinkapps_tweet.jpg">
           </a>
         </td>
@@ -542,7 +572,7 @@ http://www.dariomac.com -->
       </tr>
       <tr>
         <td style="text-align: center;">
-          <a href="/assets/thinkapps-code-reviews-in-a-agile-way.wmv" class="lightbox_link">
+          <a href="/assets/thinkapps-code-reviews-in-a-agile-way.wmv" class="no_external_ico">
             <img src="/assets/images/file-types/wmv.svg" style="width: 48px;" alt="thinkapps-code-reviews-in-a-agile-way.wmv">
           </a>
         </td>

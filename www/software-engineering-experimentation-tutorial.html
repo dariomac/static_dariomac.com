@@ -165,7 +165,13 @@ header p:not(:last-child) {
   margin-bottom: 0px;
 }
 
-article a:not(.lightbox_link), section a:not(.lightbox_link) {
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
   font-weight: bold;
   color: #069;
   background: url(/assets/images/external.png) right 50% no-repeat;
@@ -423,7 +429,8 @@ http://www.dariomac.com -->
 <li>Aggregation of results and <a href="http://en.wikipedia.org/wiki/Meta-analysis" title="Meta-analysis">meta-analysis</a>.</li>
 <li>Relationship between theory and generalization.</li>
 </ol>
-<h4>Bibliography</h4>
+<h4><a name="bibliography" class="anchor">
+<a name="bibliography" href="#bibliography" class="no_external_ico">Bibliography</a></h4>
 <ul>
 <li>Juristo, N., Moreno, A. 2001. Basics of Software Engineering Experimentation. <a href="http://www.springer.com" title="Springer Science+Business Media">Springer</a>.</li>
 <li>Wohlin, Claes, et al. 1999. <a href="http://www.amazon.com/Experimentation-Software-Engineering-Introduction-International/dp/0792386825%3FSubscriptionId%3D0G81C5DAZ03ZR9WH9X82%26tag%3Dzem-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0792386825" title="Experimentation in Software Engineering: An Introduction (International Series in Software Engineering)">Experimentation in Software Engineering: An Introduction</a>. Springer.</li>

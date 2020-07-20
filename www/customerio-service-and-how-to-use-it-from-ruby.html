@@ -165,7 +165,13 @@ header p:not(:last-child) {
   margin-bottom: 0px;
 }
 
-article a:not(.lightbox_link), section a:not(.lightbox_link) {
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
   font-weight: bold;
   color: #069;
   background: url(/assets/images/external.png) right 50% no-repeat;
@@ -419,11 +425,13 @@ http://www.dariomac.com -->
                 </section>
 
                 <section>
-                    <h3>What is Customer.io?</h3>
+                    <h3><a name="what-is-customer-io" class="anchor">
+<a name="what-is-customer-io" href="#what-is-customer-io" class="no_external_ico">What is Customer.io?</a></h3>
 <p><a href="http://customer.io/">customer.io</a> is a SaaS which enables you to easily manage all the emails you send to your users: from your newsletters to transactionnal and behavioral emails.</p>
 <p>The concept is simple: you send to customer.io data about your users, it creates a custom userbase, on your customer.io dashboard, which you can segment in order to send the good emails to the good users at the good time.</p>
 <p>You can, for examples, decide to automatically send a welcome email to all new users, to send a reminder email for users who registered but didn't come back after 2 weeks or simply send a newsletter to specific users. We often hear that emails are dead (with mobile notification, social networks inbox etc...) but we can doubt it, emails are here to stay. Emailing is one of the most important communication channel to reach people. The startup fulfills the need of email management with a more “personalized/CRM&quot; approach than classical emailing tools.</p>
-<h3>How to use it from Rails?</h3>
+<h3><a name="how-to-use-it-from-rails" class="anchor">
+<a name="how-to-use-it-from-rails" href="#how-to-use-it-from-rails" class="no_external_ico">How to use it from Rails?</a></h3>
 <p>The first way is using the <a href="http://customer.io/docs/javascript-quick-start.html">Javascript Snippet</a>. This is the easiest way to start sending data to Customer.io. You copy and paste your Customer.io tracking code in to the footer of your website. Then you identify logged in users and any important information about them. You'll then be able to email everyone who logs in to the website.</p>
 <p>The other way is using a client library or a gem in Ruby case. At VAIRIX we use <a href="https://github.com/customerio/customerio-ruby">Customerio gem</a> as a client for the Customer.io <a href="https://app.customer.io/api/docs/index.html">event API</a>. To install it just add <code>gem 'customerio'</code> and execute <code>bundle</code>. Then you can identify your customers when they sign up for your app and any time their key information changes. This keeps Customer.io up to date with your customer information.</p>
 <pre>

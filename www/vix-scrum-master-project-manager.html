@@ -165,7 +165,13 @@ header p:not(:last-child) {
   margin-bottom: 0px;
 }
 
-article a:not(.lightbox_link), section a:not(.lightbox_link) {
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
   font-weight: bold;
   color: #069;
   background: url(/assets/images/external.png) right 50% no-repeat;
@@ -397,13 +403,15 @@ http://www.dariomac.com -->
                 
                   <section class="content">
                     <p>Vix is the largest independent digital media company for the U.S Hispanic market, Latin America and Brazil. It publishes content in English, Spanish and Portuguese, on Vix.com and across a variety of social platforms such as Facebook, Instagram, and YouTube every day. Also it counts with over 50 million social followers and reaches over 325 million people globally across platforms, most recently delivering over 1 billion monthly video views.</p>
-<h3>Scrum Master - Project Manager</h3>
+<h3><a name="scrum-master-project-manager" class="anchor">
+<a name="scrum-master-project-manager" href="#scrum-master-project-manager" class="no_external_ico">Scrum Master - Project Manager</a></h3>
 <p>Initially I was the Scrum Master of the two web development teams at Uruguay offices, responsible of maintain and improve the platform that supports all the operations of the company. On the one hand we gave editorial teams the tools to do their content-generating job following custom workflows; on the other, we delivered content through several channels (vix.com website, Instant Article, Google Accelerated Mobile Pages, and several feeds to social networks and devices). Also, I helped in requirement gathering, QA and progress tracking to ensure the completion of company milestones.</p>
 <p><picture>
               <source srcset="/assets/retros.webp" type="image/webp">
   
               <img src="/assets/retros.jpg#center" alt="Some of our retrospectives"></picture></p>
-<h3>Node.js Architect</h3>
+<h3><a name="node-js-architect" class="anchor">
+<a name="node-js-architect" href="#node-js-architect" class="no_external_ico">Node.js Architect</a></h3>
 <p>After a year and a half I proposed the idea of making a net of Node.js microservices to split the content delivery from the editorial workflow. Before this, they had a single heavily-customized Drupal that supported all the editorial workflow (~150 copywriters and writers) and the content consumption of ~80.000.000 monthly visits. I was in charge of the design, implementation and management (using Scrum) of that project for about a year, slowly replacing the old implementation of each distribution channels (i.e. Google AMP, Facebook Instant Articles, msn.com, Google News) with new ones. We did it without a significant loss of visits, increasing time on page and reducing bounce rate. Also we increased the rendering times (increasing the gains of the company) but also reduced the DevOps complexity and cost because it support ~25 requests/sec using only one service with 5 instances of them running, coordinated by <a href="https://pm2.keymetrics.io/">PM2</a> process manager with an NGINX as reverse proxy supporting ~1000 req/sec. We also reduced the time to add new channels from an average of two week to 8 hours. From that project we built 2 frameworks/tools (<a href="/eajp-enhanced-article-json-parser">Enhanced Article-JSON Parser</a> and <a href="/traceability-logger">Traceability Logger</a>) plus the <a href="/content-distribution-system">microservices solution itself</a>, that was extensible (as a framework) by design.</p>
 <p>Vix was headquartered in Miami, Florida with offices in New York, Mexico City, Montevideo, Buenos Aires, and Sao Paulo. I had constant interaction with nearly all of the editorial offices of each city, the AdOps team at Sao Paulo, the teams specialized in Analytics at Buenos Aires. Also we worked very near the DevOps team geographically distributed between Uruguay to Belarus.</p>
 

@@ -948,6 +948,11 @@ fresh@0.3.0:
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.3.0.tgz#651f838e22424e7566de161d8358caa199f83d4f"
   integrity sha1-ZR+DjiJCTnVm3hYdg1jKoZn4PU8=
 
+friendly-url@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/friendly-url/-/friendly-url-1.0.3.tgz#6b893a0fe3cf642515cbfe55bef4f0f31cb1c73e"
+  integrity sha1-a4k6D+PPZCUVy/5VvvTw8xyxxz4=
+
 fs-exists-sync@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/fs-exists-sync/-/fs-exists-sync-0.1.0.tgz#982d6893af918e72d08dec9e8673ff2b5a8d6add"
