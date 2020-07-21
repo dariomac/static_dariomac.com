@@ -29,14 +29,26 @@
 ---
 
 [summary:string]
-Custom static site generator implemented in NodeJS. It takes content from a custom ‘YAML front matter’ files that include different sections with markdown content. Later, the front matter part is used to build the navigation and categorization of the website while the markdown is translated to HTML. Finally everything is saves as static HTML files to provide high performance server-side transference and client-side rendering.
+Custom static site generator implemented in NodeJS. It takes content from a custom ‘YAML front matter’ files that include different sections with markdown content. Later, the front matter part is used to build the navigation and categorization of the website while the markdown is translated to HTML. Finally everything is saved as static HTML files to provide high performance server-side transference and client-side rendering.
 
 [download_link:string]
+https://github.com/dariomac/static_dariomac.com
 
 [platform:string]
+NodeJS
 
 [link:string]
 
 [short_description:string]
 
 [description:md]
+This website ([dariomac.com](dariomac.com)) has a long [history of migrations and CMSs](/finish-this-website). In 2017 I choose to migrate everything to my own technology agnostic content manager in Node.js. The idea behind this new migration was to do a last effort toward a reusable format.
+
+This time, every piece of content will be a file instead of one (or several) records in a propiertary database. Each of these files will be a hybrid between a json structure and an INI file. The json part will be a "front matter" structure with metadata to be used to build the index (Kanban board). The INI part will have several sections (as a INI file) that will be mapped the Handlebars template.
+
+<script src="https://gist.github.com/dariomac/569b54196811b0e24cea1ffa8684f166.js"></script>
+
+As you see in the example (the DMD file of this page), each section has an identifier and a type. The most important type is the markdown (md) type. I use [commonmark](https://commonmark.org/) specification of markdown. The sections that a DMD (that's the name of the file spec) depends on each content type. Until now I have article, document, education, experience, me, project, quote, research and a couple more (administrative types).
+
+Now I'm pretty sure I won't migrate again, but if I do, my content won't be saved in an ugly proprietary format and can easily be transformed into any target format I need. For example, I can generate custom summaries (i.e. [industry](/industry) or [academy](/academy) and then export them to PDF) just from the website content.
+
