@@ -44,3 +44,9 @@ Besides this, and perhaps because I am a Software Engineering professor at Unive
 
 Finally, I am interested in conducting scientific research in the field of Software Engineering to add value to its body of knowledge. At the same time, I want to satisfy some practical needs of the industry, especially those related to quality assurance and decision making. I think it may be helpful to bring tools from the scientific environment closer to the daily activities of software development. In order to achieve this objective and to make a first approximation to the scientific field, I did a Master in Engineering at Universidad ORT Uruguay.
 
+[related_topics:json]
+  [{
+    "title": "Doomsayer",
+    "click_bait": "Doomsayer: an agile role that describes me",
+    "linkto": "/doomsayer"
+  }]
