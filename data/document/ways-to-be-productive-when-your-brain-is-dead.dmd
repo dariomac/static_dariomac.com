@@ -1,5 +1,5 @@
 {
-  "title": "Ways to be productive when you're brain is dead",
+  "title": "Ways to be productive when your brain is dead",
   "date": "2019-06-11",
   "layout": "document",
   "has_code": false,
@@ -17,8 +17,8 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": "gdoc",
-    "title": "Ways to be productive when you're brain is dead",
+    "tags": "",
+    "title": "Ways to be productive when your brain is dead",
     "type": "0"
   },
   "jsonld": {},
@@ -47,3 +47,6 @@ https://www.techrepublic.com/blog/10-things/10-plus-ways-to-be-productive-when-y
 
 [significant_revisions:md]
 _Jun 11, 2019_: Original Publication on dariomac.com
+
+[internal:raw]
+dm_dot_com
