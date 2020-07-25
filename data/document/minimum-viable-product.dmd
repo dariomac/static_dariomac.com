@@ -17,7 +17,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": "gdoc,research,k-pills",
+    "tags": "research,k-pills",
     "title": "Minimum Viable Product",
     "type": "0"
   },
@@ -67,3 +67,6 @@ https://docs.google.com/document/d/e/2PACX-1vRpR-iLrO0lmX3pKDOs1GFrT8d9xpRo5OtXM
 
 [significant_revisions:md]
 _Mar 15, 2019_: Original Publication on dariomac.com
+
+[internal:raw]
+dm_dot_com

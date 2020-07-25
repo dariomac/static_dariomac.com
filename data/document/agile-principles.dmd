@@ -17,7 +17,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": "gdoc,agility,teaching",
+    "tags": "agility,teaching",
     "title": "Agile Principles",
     "type": "0"
   },
@@ -66,3 +66,6 @@ https://docs.google.com/document/d/e/2PACX-1vRzkka6OujbkovyXZn0rV5Z2IUFeCf2GglSJ
 
 [significant_revisions:md]
 _Nov 13, 2019_: Original Publication on dariomac.com
+
+[internal:raw]
+dm_dot_com
