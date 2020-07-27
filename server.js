@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 
-let publicDir = path.join(__dirname, '/www');
-let rootDir = path.join(__dirname, '/root')
+const publicDir = path.join(__dirname, '/www');
+const rootDir = path.join(__dirname, '/root')
 const url = require('url');
 
 let app = express();
