@@ -1,6 +1,6 @@
 #!/bin/bash
 ls sslforfree
-unzip sslforfree/sslforfree.zip -d sslforfree/
+unzip sslforfree/dariomac.com.zip -d sslforfree/
 cp sslforfree/certificate.crt sslforfree/server.crt
 echo "" >> sslforfree/server.crt
 cat sslforfree/ca_bundle.crt >> sslforfree/server.crt
