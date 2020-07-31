@@ -46,20 +46,20 @@ VAIRIX Software Development
 
 ## Development projects
 
-<!-- * **Pharmaceutical Platform**
+* **Pharmaceutical Platform**
     <a name="pharmaceutical-platform"></a>
-    Pharmaceutical platform (HIPAA compliant) where patients with a subscription can directly connect with doctors in real time through appointed video calls to have a diagnosis and electronic prescriptions sent directly to the pharmacy. Includes a web app made with React + Redux + Redux Saga, a mobile app made with React Native + Redux + Redux Saga and a REST API made with Node.js + Firebase + Sequelize.
+    Pharmaceutical platform (HIPAA compliant) where patients with a subscription can directly connect with doctors in real time through appointed video calls (through twilio) to have a diagnosis and electronic prescriptions sent directly to the pharmacy. The solution involves React, Redux, Redux Saga, Node.js, Firebase and Sequelize for web/REST API and React Native, Redux, Redux Saga for mobile.
 
 ## QA/PM projects
 
 * **Online Marketing Tool**
-    PM and DevOp in the maintenance of an already built marketing tool to create and manage email campaigns, landing pages and events. It does a heavy use of SendGrid as a base delivery system, using well known strategies as use or dedicated IPs and IP warming.
+    DevOp & Dev in the maintenance of an already built marketing tool to create and manage email campaigns, landing pages and events. It does a heavy use of SendGrid as a base delivery system, using well known strategies as use or dedicated IPs and IP warming.
 * **Shopping checkout**
-    PM and internal QA of a mobile app to pay on shopping checkout using a QR code generated with a Time-bound One-Time Password (TOTP) algorithm. To recognize where the client is buying it detects the presence of a physical Beacon with a specific signature. The app also interacts with an API that, by the time the client gets to the register to use the QR, it has generated a receipt by knowing every item the client has interacted with while purchasing.
+    PM and Internal QA of a mobile app to pay on shopping checkout. It involves QR codes, [Time-bound One-Time Password (TOTP) algorithm](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) and [Beacons](https://en.wikipedia.org/wiki/Bluetooth_low_energy_beacon) with specific signatures. The app interacts with an API, so by the time the customer arrives at the checkout to make the payment, a receipt has already been generated based on the knowledge of each item the customer has interacted with during the purchase.
 * **Personal guidance**
-    PM and internal QA of the API for a mobile app that gives university students mental health support. The system offers the ability of talk with advisors (mostly doctors, thus it should be HIPAA compliant). Students can talk ad-hoc or schedule appointments. Doctors can manage their agendas, view information from previous sesion and do follow up.
+    PM and internal QA of the API for a mobile app designed to alleviate the stress of attending university giving mental health support. The system offers the ability of talk with advisors (mostly doctors, thus it should be HIPAA compliant). Students can talk ad-hoc or schedule appointments. Doctors can manage their agendas, view information from previous session and do follow up.
 * **Tee-time marketplace**
-    Internal QA of a marketplace to search and compare online tee times and golf deals at several golf courses across United States, Canada, and more that 150 other countries. We scale up && out the existent application, working on a second version with a React frontend and refactoring Ruby on Rails backend. -->
+    Internal QA of a marketplace to search and compare online tee times and golf deals at several golf courses across many places and countries. We scaled up && out the existent application from a traditional MVC webapp to a SPA in React.js.
 
 ## Writing projects
 * [Behind the scenes of Ethereum Pet Shop tutorial](https://www.vairix.com/behind-the-scenes-of-ethereum-pet-shop-tutorial) (Mar, 2020)
