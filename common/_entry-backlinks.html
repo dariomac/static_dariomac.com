@@ -1,0 +1,29 @@
+{{#if backlinks}}
+  {{#*inline "backlinkList"}}
+    <ul>
+      {{#each backlinks}}
+        <li>
+          <a href="{{ backlink }}">{{ title }}</a>
+        </li>
+      {{/each}}
+    </ul>
+  {{/inline}}
+
+  {{#ifEq frontmatter.card.laneid "Essay"}}
+  <section class="backlinks">
+    <h2>Mentioned in</h2>
+    {{> backlinkList backlinks=../backlinks}}
+  </section>
+  {{else}}
+  <div class="row splitter">
+    <div class="col-md-12 text-center">Mentioned in</div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <section class="backlinks">
+        {{> backlinkList}}
+      </section>
+    </div>
+  </div>
+  {{/ifEq}}
+{{/if}}
