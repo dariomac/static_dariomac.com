@@ -43,7 +43,7 @@
       "@id": "https://www.dariomac.com/me"
     },
     "publisher": {
-      "@id": "http://www.dariomac.com/vairix-software-engineer"
+      "@id": "https://www.dariomac.com/vairix-software-engineer"
     } 
   },
   "resume": {
