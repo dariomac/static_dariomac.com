@@ -4,6 +4,10 @@
 <meta name="author" content="Darío Macchi" />
 {{#if content.summary}}
 <meta name="description" content="{{content.summary}}" />
+{{else if frontmatter.card.content}}
+<meta name="description" content="{{frontmatter.card.content}}" />
+{{else if frontmatter.summary}}
+<meta name="description" content="{{frontmatter.summary}}" />
 {{else}}
 <meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
 {{/if}}
