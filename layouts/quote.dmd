@@ -1,36 +1,24 @@
 {
-  "title": "The_Title",
-  "date": "Creation_date",
+  "title": "<title>",
+  "date": "<creation_date>",
   "layout": "quote",
   "card": {
     "color": "#99b399",
-    "columnid": "%{column}",
-    "content": "%{title}",
+    "columnid": "<column>",
+    "content": "<title>",
     "datebox": null,
-    "extlink": "http://www.goodreads.com/quotes/74368-lead-from-the-back-and-let-others-believe-they",
-    "laneid": "%{lane}",
-    "leftbox": "",
-    "leftmsg": "",
-    "linkto": "%{link_to}",
-    "position": "%{position}",
+    "extlink": "<external_link>",
+    "laneid": "Quote",
+    "leftbox": null,
+    "linkto": "<link_to>",
+    "position": "<position>",
     "subtaskdetails": [],
-    /*"subtaskdetails": [{
-      "taskid": "1",
-      "title": "Submitted to CIbSE 2013.",
-      "completiondate": "2012-20-12"
-    }, {
-      ...
-      ...
-      ...
-    }],*/
-    "subtasks": "0",
-    "subtaskscomplete": "0",
     "tags": null,
-    "title": "%{authors}",
-    "type": "0"
+    "title": "<author>"
   },
   "jsonld": {},
-  "canonical": ""
+  "canonical": "",
+  "custom_header": ""
 }
 
 ---
@@ -42,30 +30,3 @@
 [publication_metadata:string]
 
 [context:md]
-
-[attachments:json]
-  [{
-    "filename": "blablabla.pdf",
-    "description": "This is the description of the filename."
-  },{
-    "filename": "blablabla2.pdf",
-    "description": "This is the description of the filename2."
-  }]
-
-[related_images:json]
-  [{
-    "filename": "blablabla.png"
-  },{
-    "filename": "blablabla2.jpg"
-  }]
-
-[related_topics:json]
-  [{
-    "title": "This is the link text",
-    "click_bait": "This is a clickbait title",
-    "linkto": "This is the href of the link"
-  },{
-    "filename": "This is the link text",
-    "click_bait": "This is a clickbait title",
-    "description": "This is the href of the link"
-  }]
