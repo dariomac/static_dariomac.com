@@ -1,36 +1,24 @@
 {
-  "title": "The_Title",
-  "date": "Creation_date",
+  "title": "<title>",
+  "date": "<creation_date>",
   "layout": "education",
   "card": {
     "color": "#99B399",
-    "columnid": "%{column}",
-    "content": "Name_of_the_activity_course_or_career",
-    "datebox": "Jun 2, 2014 - Jun 3, 2014",
-    "extlink": "%{place_url}",
-    "laneid": "%{lane}",
-    "leftbox": "",
-    "leftmsg": "",
-    "linkto": "%{link_to}",
-    "position": '%{position}',
+    "columnid": "<column>",
+    "content": "<title>",
+    "datebox": "<Jun_2,_2014_-_Jun_3,_2014>",
+    "extlink": "<place_url>",
+    "laneid": "Education",
+    "leftbox": null,
+    "linkto": "<link_to>",
+    "position": "<position>",
     "subtaskdetails": [],
-    /*"subtaskdetails": [{
-      "taskid": "1",
-      "title": "Submitted to CIbSE 2013.",
-      "completiondate": "2012-20-12"
-    }, {
-      ...
-      ...
-      ...
-    }],*/
-    "subtasks": "0",
-    "subtaskscomplete": "0",
-    "tags": "#research, #commercialization",
-    "title": "Name_of_the_place_or_company",
-    "type": "0"
+    "tags": null,
+    "title": "<place_or_company>"
   },
   "jsonld": {},
-  "canonical": ""
+  "canonical": "",
+  "custom_header": ""
 }
 
 ---
@@ -49,29 +37,3 @@
 
 [lessons:md]
 
-[attachments:json]
-  [{
-    "filename": "blablabla.pdf",
-    "description": "This is the description of the filename."
-  },{
-    "filename": "blablabla2.pdf",
-    "description": "This is the description of the filename2."
-  }]
-
-[related_images:json]
-  [{
-    "filename": "blablabla.png"
-  },{
-    "filename": "blablabla2.jpg"
-  }]
-
-[related_topics:json]
-  [{
-    "title": "This is the link text",
-    "click_bait": "This is a clickbait title",
-    "linkto": "This is the href of the link"
-  },{
-    "filename": "This is the link text",
-    "click_bait": "This is a clickbait title",
-    "description": "This is the href of the link"
-  }]
