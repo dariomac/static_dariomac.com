@@ -20,4 +20,8 @@
      `       O/ /       /O\        \
              /\|/\.                `
 
+/* THANKS */
 Thanks to the people of Kanbanize for allowing me to use the look&feel of a version around 2013.
+
+/* SITE */
+Software: my own (explained here: https://dariomac.com/static-website-generator)
