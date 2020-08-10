@@ -10,11 +10,11 @@
     "extlink": null,
     "laneid": "Research",
     "leftbox": null,
-    "linkto": "<link_to>",
+    "linkto": "[link_to]",
     "position": "<position>",
     "subtaskdetails": [],
     "tags": null,
-    "title": "<title>"
+    "title": "[title]"
   },
   "jsonld": {},
   "canonical": ""
