@@ -1,0 +1,15 @@
+{
+  "disable": true,
+  "date": "2020-07-17",
+  "layout": "resume",
+  "mode": "collection",
+  "params": {
+    "resumeType": "industry",
+    "job": "iov-tech-arch",
+    "noIndex": true
+  }
+}
+
+---
+[link]
+https://www.iovlabs.org/careers/technical-architect.html
