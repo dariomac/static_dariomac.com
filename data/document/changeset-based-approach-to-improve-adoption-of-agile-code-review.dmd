@@ -1,0 +1,100 @@
+{
+  "title": "Changeset-based approach to improve adoption of agile code review",
+  "date": "2020-08-28",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "A painless way to do code review in an agile & smart way, using changesets and auto assigning reviews",
+    "datebox": "2020-08-28",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20200828",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "has_code": false
+}
+
+---
+
+[summary:string]
+Opinionated review / summary of the article “Adopting Code Reviews for Agile Software Development”. In my own words I explain the proposed process and how it reduces code review overhead and improves developer acceptance of it.
+
+[pub_date:string]
+2020-08-28
+
+[short_description:string]
+Opinionated review / summary of the article “Adopting Code Reviews for Agile Software Development”. In my own words I explain the proposed process and how it reduces code review overhead and improves developer acceptance of it.
+
+[body:md]
+Agilism and agile software development tend to be naturally opposed to manual, error prone, personal skill dependable processes like code review. But why?
+
+I think reviews in general - a manual process where you take something and read it trying to find defects - usually have a lot of overhead, which is amplified when we're talking about an artifact as big as the source code. It is widely accepted that traditional and formal code reviews are time-consuming, expensive and often imply that the code being reviewed is a finished artifact.
+
+This article is interesting due to the proposal of the author toward a code reviews continuous approach to reduce the overhead and improve the developer acceptance of this Quality Assurance practice. Mario Bernhart, the main author, is a software researcher and practitioner who leads TU Wien's [BUSY software engineering research team](https://busy.inso.tuwien.ac.at/). Contact him at mario.bernhart@inso.tuwien.ac.at.
+
+In this article, I summarize the main ideas from the [original article](https://doi.org/10.1109/AGILE.2010.18) to help them spread as far and wide as possible. Assume everything below is directly taken or paraphrased from the article, although I’ve tried to explain it in my own words. Any mistakes or misinterpretations are mine.
+
+# How do they propose to achieve this improvement?
+
+In the context of the article, continuous means that code reviews are differential-based (taking changes only from the latest stable version of the artifact) and automatically triggered by new change-sets. So, the authors presents a novel workflow:
+
+1.  The developer commits the changes to the SCM.
+2.  If there is a match between the author and the changed items, the review is automatically created and the reviewer is notified.
+3.  The review is done based on a differential-view against the previous version of each file in the change-set.
+4.  The result of the review is documented by the reviewer, and then consumed by the author of the change-set.
+5.  The reviewer may document the review result creating corrective tasks for the author.
+6.  The author of the change-set may use that result to do corrections that can be followed up by the reviewer.
+
+# Rationale of the process
+
+The process works because it relies on very basic steps that developers already do, but changing the order of them or doing small tweaks in comparison with previous works (see Related Work section of the article).
+
+In the first step, commit first is that it exposes the developer work to the rest of the team, contributing to the transparency and code ownership, both basic agile principles. Also, the commit to the SCM acts as a code review trigger that starts the review process.
+
+The second step is done automatically by the tool and organizes the review taking advantage of reviewers’ skills (more on this below, on Threats section).
+
+The third step is where the review happens. There is a lot to say here about techniques, best practices and strategies to perform code reviews, but that is out of the scope of the original article. Besides the way that review is performed, the key here is to review just the differences against the previous version. That makes reviews short, focused on (and related to) a change reason and more attractive to (less suffered by) developers.
+
+Finally, the last three steps are related with the documentation of the review findings, the translation of them to corrective tasks and then the correction of the issues and follow up by the reviewer. These steps match the theoretical review process (see Fagan inspection process) but again, the opportunity, the small size of the code under review and the average low severity of the issues that can be found, makes them lighter than classic approaches.
+
+There are tools to support differential-reviewing, change-based algorithms to developer’s accountability & quality assessment, weekly based code reviews scheduled automatically. All of these helped in the definition of this changeset-based process that appears to be sound and consistent (as the author states).
+
+## Process coherence
+
+The first thing to note about the process is the time and sense of opportunity of its application, because it minimizes the time between the injection of an error and its identification. As you may know, an agile process -most of the time- is organized in iterations. Therefore, if the review is done in the same iteration in which the code is built, there is a good chance that the same developer takes care of the corrective tasks himself being more time-efficient.
+
+Another point to note is that agile methods are based on constant feedback, so getting a review just right after the code is written fits perfectly.
+
+## Information coherence
+
+All changes made within a single timeframe have strong information coherence. Not only the generated code, but the review, the results of the review and the corrections made afterwards are generally consistent. Also it fits well with major agile techniques like collective code ownership and refactoring. Code ownership because the synergy between the reviewer and the code; refactoring because the consequences of the possible review corrections.
+
+## Threats
+
+From my point of view, the only step of the process that generates uncertainty to me is the auto scheduling of the review. Although it is novel and can work, there is a risk of generating knowledge silos and ending up avoiding the code ownership we want.
+
+Let see the following example (from the original article):
+
+![](assets/changeset-based-reviews.png#center)
+
+In this example, Mike is the senior developer and reviews the Java and XML of Peter, John and Ben. Chris is the test expert and reviews all Java test cases of all team members. Then, following this scenario, Mike keeps all the knowledge related with java domain files, but Chris will own all the knowledge related with the test files. So, Peter, John and Ben will start asking questions and advice to each of them about their expertise area, making the situation even worse.
+
+# Final thoughts
+
+The article shows a review tool to support the process which was introduced to a large audience with a broad acceptance. So, if you want to evaluate the new process and compare with the traditional review process, boths methods can be used in parallel over the same codebase. The effectiveness can be assessed by the evaluation of the issues found and their severities. For efficiency, the review and re-work efforts can be measured and compared. Finally, for traceability reasons it is suggested that any change should be reflected on a task to help on the management of them.
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Aug 28, 2020_: Original Publication on dariomac.com
+
