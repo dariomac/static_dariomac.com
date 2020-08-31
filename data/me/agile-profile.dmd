@@ -1,20 +1,20 @@
 {
   "title": "My agile profile",
   "date": "2020-08-29",
-  "layout": "experience",
+  "layout": "me",
   "card": {
     "color": "#00A651",
-    "columnid": "progress_2",
+    "columnid": "archive_6",
     "content": "[title]",
     "datebox": "2010 – now",
     "extlink": null,
-    "laneid": "Experience",
+    "laneid": "Me",
     "leftbox": null,
     "linkto": "[link_to]",
     "position": "20200829",
     "subtaskdetails": [],
     "tags": null,
-    "title": "Many places... more inside"
+    "title": "[title]"
   },
   "jsonld": {},
   "canonical": "",
@@ -24,15 +24,14 @@
 ---
 
 [summary:string]
+Summary of my agile experience, trying to link everything I've done related with agilism.
 
-[duration:string]
-
-[place_url:string]
-
-[place:string]
+[short_description:string]
 
 [content:md]
-As an agile practitioner, my experience started with [Swingimprover](/swingimprover) my [Software Engineering](/software-engineer) end of degree project. During the year that last that project we used **Extreme Programming (XP)** as a methodology. Then I applied some of the agile principles and XP practices during my last years at [PricewaterhouseCoopers (PwC)](/supervisor---senior-developer---it-consultant).
+As an agile practitioner, my experience started in 2006 with [Swingimprover](/swingimprover) my [Software Engineering](/software-engineer) end of degree project. During the year that last the project, we used **Extreme Programming (XP)** as a methodology being the Coach and [Doomsayer](/doomsayer) of the team. Then I applied some of the agile principles and XP practices during my last years at [PricewaterhouseCoopers (PwC)](/supervisor---senior-developer---it-consultant).
+
+In 2013-2014 I choose to handle [every aspect of my life in an agile way](/personal-kanban-with-kanbanize), putting everything on a Kanban board using the best tool out there, Kanbanize. Since then, I kept a close relationsip with the bulgarian company, mainly with its CEO. Later I took the design of the tool at that time as the base layout for my personal homepage which is arranged just as a Kanban board (something I called [KanbanCV](/kanbancv)).
 
 At [VAIRIX I worked mainly with scrum](/vairix-coo---scrum-master---researcher). For that reason I did the [Scrum Master Certification](/certified-scrummaster) (CSM) with Alan Cyment and later saving the Scrum Alliance exam. Also, and responding to the needs of the company at that time, I designed, developed and carried out an [agile inception workshop](/inception-workshop-for-entrepreneurs). The success of this workshop led me to present it in the [Summer Camp on Entrepreneurship](/9-entrepreneurship-summer-camp) in Colombia, in [Agiles2015](/inception-workshop-on-agiles2015) in Uruguay and different universities ([Universidad ORT Uruguay](/introduction-to-the-practice-of-inception), [Universidad EAFIT - Colombia](/inception-workshop-talk-for-agilists-and-young-entrepreneurs)).
 
@@ -40,8 +39,6 @@ When I started being a full time [Scrum Master at VIX](/vix-scrum-master-project
 
 ![Some of our retrospectives](/assets/retros.jpg#center)
 
-Last, but not less important, we did some efforts to add agile practices to other areas of the company. i.e. we promote the use of retrospectives in the editorial area, where each editorial team performed several ones with mixed results.
+Last, but not less important, we did some efforts to add agile practices and principles to other areas of the company. i.e. we promote the use of retrospectives in the editorial area, where each editorial team performed several ones with mixed results.
 
 Academically, since 2017 I'm teaching [Agile Software Engineering at Universidad ORT Uruguay](/software-engineering-professor). Since 2018 I've being teaching [Software Quality Techniques for agile and traditional projects](/software-quality-techniques-for-agile-and-traditional-projects) at Facultad de Ingeniería (FING) - Centro de Posgrados y Actualización Profesional en Informática (CPAP). In this last institution I did a talk named [Scrum Zombies & Orcs teams](/jis-uy-2019-scrum-zombies-and-orcs-teams) at JIS2019. Finally, since 2016 I'm [end of degree projects tutor](/degree-final-projects-tutor), helping teams with their ideas and advicing them in the use of differents agile practices. 
-
-[projects:md]
