@@ -801,3 +801,7 @@ article .description {
 .board_view {
   overflow-x: hidden;
 }
+
+.syntaxhighlighter table {
+  margin: inherit;
+}
