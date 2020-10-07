@@ -45,6 +45,21 @@ app.get('/me', function (req, res) {
   res.redirect(301, '/about-me');
 });
 
+const destinations = {
+  "/eci2020-course-proposal": "/es/eci2020-course-proposal",
+  "/niveles-de-abstracci%C3%B3n": "/es/niveles-de-abstracci%C3%B3n",
+  "/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil": "/es/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil",
+}
+
+const origins = Object.keys(destinations);
+for (let i=0; i < origins.length; i++) {
+  const origin = origins[i];
+
+  app.get(origin, function (req, res) {
+    res.redirect(301, destinations[origin]);
+  });
+}
+
 app.get('/static/*', function (req, res) {
   res.redirect(301, `/assets/build/static/${req.params[0]}`);
 });

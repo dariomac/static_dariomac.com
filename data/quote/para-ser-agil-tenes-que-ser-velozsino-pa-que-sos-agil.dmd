@@ -11,7 +11,7 @@
     "laneid": "Quote",
     "leftbox": "",
     "leftmsg": "",
-    "linkto": "/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil",
+    "linkto": "[link_to]",
     "position": "",
     "subtaskdetails": [],
     "subtasks": "0",
@@ -19,7 +19,8 @@
     "tags": null,
     "title": "Gustavo Gretter",
     "type":"Quote"
-  }
+  },
+  "lang": "es"
 }
 
 ---
