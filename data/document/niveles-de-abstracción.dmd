@@ -12,7 +12,7 @@
     "laneid": "Essay",
     "leftbox": "",
     "leftmsg": "",
-    "linkto": "/niveles-de-abstracción",
+    "linkto": "[link_to]",
     "position": "20150820",
     "subtaskdetails": [],
     "subtasks": "0",
@@ -20,7 +20,8 @@
     "tags": "lang_es,abstraction,modelling",
     "title": "Niveles de Abstracción",
     "type": "0"
-  }
+  },
+  "lang": "es"
 }
 
 ---

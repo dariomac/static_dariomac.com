@@ -11,7 +11,7 @@
     "laneid": "Experience",
     "leftbox": "Buenos Aires - Argentina",
     "leftmsg": "",
-    "linkto": "/eci2020-course-proposal",
+    "linkto": "[link_to]",
     "position": "20191110",
     "subtaskdetails": [{
       "taskid": "1",
@@ -28,7 +28,8 @@
     "tags": null,
     "title": "ECI 2020",
     "type": "0"
-  }
+  },
+  "lang": "es"
 }
 
 ---

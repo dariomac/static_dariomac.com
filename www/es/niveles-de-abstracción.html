@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Mejora en calidad de revisiones de software mediante técnicas de lectura | Darío Macchi</title>
+    <title>Niveles de Abstracción | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -215,6 +215,32 @@ table td, table th {
 }
 
 
+      .essay {
+        margin-left: inherit;
+        border: 0px !important;
+      }
+
+      .details .container-fluid.dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .container-fluid.dm-board h3 {
+        font-weight: bold;
+        text-decoration: inherit;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
@@ -223,7 +249,7 @@ table td, table th {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="author" content="Darío Macchi" />
-<meta name="description" content="This course gives students tools to read different artifacts according to the stage of the engineering process in which they are standing. Reading an artifact is processing the abstraction in the shortest time possible, maximizing its comprehension. Increased understanding can lead to the detection of defects in the artifact under study. Seen in this way, revisions contribute to training, knowledge transfer, device empowerment and quality assurance." />
+<meta name="description" content="Definition and basic example of what is an abstraction and how important is its application to software engineering." />
 <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
 
 <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -246,7 +272,7 @@ table td, table th {
 <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
 <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
 
-<link rel="canonical" href="https://dariomac.com/eci2020-course-proposal" />
+<link rel="canonical" href="https://dariomac.com/es/niveles-de-abstracción" />
 
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -381,125 +407,50 @@ https://www.dariomac.com -->
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board">
+        <div class="container-fluid dm-board essay">
           <article>
-            <div class="row splitter">
-              <div class="col-md-12 text-center">Details</div>
-            </div>
             <div class="row featured">
               <div class="col-md-12">
                 <header>
-                  <h1>Mejora en calidad de revisiones de software mediante técnicas de lectura</h1>
-                  <p class="duration">1 week - 15 hours (3hrs per day).</p>
-                  <p><a href=""></a></p>
+                  <h1>Niveles de Abstracción</h1>
+                  <p class="date">2019-01-05</p>
                 </header>
+
                 
-                  <section class="summary">
-                    <p>
-                      This course gives students tools to read different artifacts according to the stage of the engineering process in which they are standing. Reading an artifact is processing the abstraction in the shortest time possible, maximizing its comprehension. Increased understanding can lead to the detection of defects in the artifact under study. Seen in this way, revisions contribute to training, knowledge transfer, device empowerment and quality assurance.
-                    </p>
-                  </section>
-                
-                  <section class="content">
-                    <p>A lo largo de nuestras carreras (y las de nuestros profesionales) hemos sido capacitados y entrenados para construir diversos tipos de artefactos de software, modelos con distintos niveles de abstracción que ofrecen soluciones computacionales a problemas. Si bien en cursos relacionados con QA se hace foco en la práctica de revisiones (particularmente en las inspecciones formales), lo cierto es que no se hace foco en sus distintos niveles de formalidad ni en aquellas técnicas que podrían mejorar el resultado de las mismas. En definitiva, nuestros profesionales no reciben formación que les permita leer eficiente y efectivamente las abstracciones que somos capaces de construir.</p>
-<p>Este curso busca contribuir en este aspecto, otorgando al alumno herramientas para realizar la lectura de distintos artefactos según la etapa del proceso de ingeniería en la que se encuentren parados. Cuando hablamos de realizar la lectura de un artefacto, hablamos de procesar la abstracción en el menor tiempo posible, maximizando su comprensión. Como corolario de lo anterior, el aumento de la comprensión puede llevar a la detección de defectos en el artefacto objeto de estudio. Visto de esta forma, las revisiones contribuyen a la capacitación, transferencia de conocimiento, empoderamiento de artefactos y aseguramiento de la calidad de los mismos.</p>
+                <section class="description">
+                  <p>
+                    
+                  </p>
+                </section>
+
+                <section>
+                    <p>Una abstracción supone una supresión u ocultamiento intencional de detalles en un proceso o artefacto con la finalidad de destacar más claramente ciertos aspectos detalles u estructuras. Un buen ejemplo consiste en pensar lo que el promedio de la gente entiende por un automóvil: un dispositivo que toma el combustible como entrada y produce un movimiento de rotación como salida. Debido a que el motor gira muy rápidamente, existe un mecanismo llamado transmisión que la reduce y dicha reducción es la que impulsa el vehículo. Si bien esto no es del todo correcto, es suficientemente simple para resultar útil y entendible para la mayoría de la gente <a href="#1" title="T. Budd, An Introduction to Object-Oriented Programming. 2002.">[1]</a>.</p>
+<p><picture>
+              <source srcset="/assets/doc_abstraction1.webp" type="image/webp">
+  
+              <img src="/assets/doc_abstraction1.png#center" alt="Modelo simple de un automóvil"></picture> <span class="credit">Ilustración 1 - usualmente a una abstracción se la puede considerar un modelo</span></p>
+<p>En el contexto de la ingeniería de software el concepto es bien conocido y utilizado. El mismo se utiliza en distintas etapas del proyecto de desarrollo para destacar elementos importantes sobre los que debe recaer el foco de los distintos actores. En particular, en las prácticas de software de alto nivel de abstracción conducidas por las pruebas (BDD, STDD, ATDD, FTDD etc.) se utilizan cambios de niveles de abstracción deliberadamente para construir software. Se comienza trabajando a  un nivel de abstracción alto, cerca del negocio y del problema que el cliente quiere resolver. A este nivel se construyen pruebas para definir el comportamiento de la UI y beneficiarse del feedback rápido del cliente. Luego, cada método que describe un comportamiento de alto nivel de abstracción es automatizado usando TDD. Dicha automatización hace que el nivel de abstracción baje y se acerque un nivel técnico entendible y cómodo para los desarrolladores <a href="#2" title="B. Rice, R. Jones, and J. ’Engel, “Behavior Driven Development,” 2014. [Online]. Available: https://pythonhosted.org/behave/philosophy.html. [Accessed: 17-Aug-2015].">[2]</a>.</p>
+<p><a name="1"></a></p>
+<blockquote>
+<p>[1] T. Budd, An Introduction to Object-Oriented Programming. 2002. <br />
+<a name="2"></a>
+[2] B. Rice, R. Jones, and J. ’Engel, “Behavior Driven Development,” 2014. [Online]. Not available: https://pythonhosted.org/behave/philosophy.html. [Accessed: 17-Aug-2015]. Available at <a href="https://web.archive.org/web/20180125104729/https://pythonhosted.org/behave/philosophy.html">WaybackMachine</a> or from my <a href="/assets/https-pythonhosted-org-behave-philosophy-html-2018-12-05-14_36_16.pdf">own archive</a>.</p>
+</blockquote>
+
+                </section>
+
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    <p><em>Dec 12, 2018</em>: Original Publication on dariomac.com</p>
 
                   </section>
+
 
 
 
 
               </div>
             </div>
-              <div class="row splitter">
-                <div class="col-md-12 text-center">Projects/Activities</div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <section class="projects">
-                    <h3><a name="lunes" class="anchor">
-<a name="lunes" href="#lunes" class="no_external_ico">Lunes</a></h3>
-<ul>
-<li>Definición de revisión de software</li>
-<li>Importancia, ventajas e impacto en la industria</li>
-<li>Qué puede ser revisado?</li>
-<li>Revisiones y cultura de equipo</li>
-<li>Planificación de las revisiones</li>
-<li>Tipo de revisiones</li>
-<li>Problemas de revisiones y técnicas de lectura</li>
-<li>Ad-hoc reading</li>
-</ul>
-<h3><a name="martes" class="anchor">
-<a name="martes" href="#martes" class="no_external_ico">Martes</a></h3>
-<ul>
-<li>Requerimientos: técnicas de lectura
-<ul>
-<li>Checklist-based reading (CBR)</li>
-<li>Defect-based reading (DBR)</li>
-<li>Shift-left testing y su relación con las revisiones</li>
-<li>Test-case driven reading (TcDR)</li>
-<li>Perspective-based reading (PBR)</li>
-</ul>
-</li>
-</ul>
-<h3><a name="miercoles" class="anchor">
-<a name="miercoles" href="#miercoles" class="no_external_ico">Miércoles</a></h3>
-<ul>
-<li>Requerimientos: técnicas de lectura
-<ul>
-<li>Combined reading technique</li>
-</ul>
-</li>
-<li>Diseño: técnicas de lectura
-<ul>
-<li>Usage-based reading (UBR)</li>
-<li>Traceability-based reading (TBR)</li>
-</ul>
-</li>
-<li>Arquitectura: técnicas de lectura
-<ul>
-<li>Traceability-based reading (TBR)</li>
-</ul>
-</li>
-<li>Código: técnicas de lectura
-<ul>
-<li>Stepwise abstraction</li>
-<li>Object oriented code reading</li>
-<li>Abstraction-driven reading (ADR)</li>
-</ul>
-</li>
-</ul>
-<h3><a name="jueves" class="anchor">
-<a name="jueves" href="#jueves" class="no_external_ico">Jueves</a></h3>
-<ul>
-<li>Código: técnicas de lectura
-<ul>
-<li>Object oriented code reading</li>
-<li>Use-case reading (UCR)</li>
-<li>Object-Oriented Framework code reading</li>
-<li>Ejercicios con código seleccionado de github</li>
-<li>Revisiones en entornos ágiles (rubber duck, github, herramientas virtuales)</li>
-<li>Revisiones basadas en riesgos y criterios para elegir qué código revisar</li>
-</ul>
-</li>
-</ul>
-<h3><a name="viernes" class="anchor">
-<a name="viernes" href="#viernes" class="no_external_ico">Viernes</a></h3>
-<ul>
-<li>Áreas de investigación
-<ul>
-<li>Revisiones y técnicas de lectura para user stories</li>
-<li>Revisiones y técnicas de lectura para MDD</li>
-<li>Revisiones y técnicas de lectura para blockchain</li>
-</ul>
-</li>
-</ul>
-
-                  </section>
-                </div>
-              </div>
-
-          </article>
         </div> <!-- container-fluid dm-board -->
 
         <a href="/" class="logo">
@@ -582,20 +533,20 @@ https://www.dariomac.com -->
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
 
+
+
     <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-<script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
-<script>
-  $(".fancybox").fancybox({
-    arrows: true,
-    loop: true,
-    keyboard: true
-  });
-</script>
-
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+    <script>
+      $(".fancybox").fancybox({
+        arrows: true,
+        loop: true,
+        keyboard: true
+      });
+    </script>
   </body>
 </html>
