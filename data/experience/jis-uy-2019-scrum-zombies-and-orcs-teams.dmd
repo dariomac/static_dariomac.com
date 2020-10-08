@@ -33,7 +33,7 @@ This talk was about two different types of scrum teams, how they became those mo
 Oct 3, 2019 (4 hours)
 
 [place_url:string]
-https://goo.gl/maps/DiXifTfw42b64xCe6
+https://www.google.com/maps/place/Edificio+Polifuncional+%22Jos%C3%A9+Luis+Massera%22/@-34.9173249,-56.1668731,19z/data=!4m5!3m4!1s0x959f81a27950cb5b:0x2c3c43b4bd78578a!8m2!3d-34.9171034!4d-56.166883
 
 [place:string]
 Edificio Polifuncional "José Luis Massera" - FING - Montevideo - Uruguay
@@ -902,7 +902,7 @@ happy to help.
 Diego Vallespir y Martin Solari
 
 14:50 pm - **Agile practices for software acquisition in critical contexts** \
-[Forrest Shull](https://forrestshull.com/) - [Software Engineering Institute](https://www.sei.cmu.edu/) \
+[Forrest Shull](https://scholar.google.com/citations?user=S3KDFHEAAAAJ&hl=en) - [Software Engineering Institute](https://www.sei.cmu.edu/) \
 _While Agile and DevOps software methods are hardly new concepts, their application in specialized contexts may in fact require new thinking and innovative methods of tailoring. Moving organizations to adopt Agile methods for the acquisition of systems with safety- and/or security-critical constraints can be an exciting but daunting undertaking, requiring significant effort on both technical issues as well as organizational change ones. An important goal is to obtain the desired benefits of new approaches (e.g. speed to delivery) along with existing aspects that can’t be left behind (e.g. the engineering rigor needed to develop safe and secure software with confidence). In this talk, I draw from experiences in this area to explore questions related to the interplay of research and practice. How much can prior software research work influence large-scale decisions related to software practice? “Do we trust or do we know” regarding the effects of decisions that have to be made and will have significant practical repercussions? And, can new research help fill in gaps in our knowledge, at the right speed to be relevant?_
 
 15:30 pm - **Zombie & Orc Scrum teams** \
@@ -927,7 +927,7 @@ _There is no doubt that, 18 years after the publication of the Agile Manifesto, 
 _The main objective of this talk is to share the experience of a project managed with Agile methodologies in the Banco de Previsión Social del Uruguay and how during that project the following questions were solved: How were the requirements solved? How was the planning of this project organized? How was the team organized? What was done to deliver software working every 15 days? Was the planned date reached? Were the different stakeholders satisfied? Was the application of an agile methodology beneficial in this context?_
 
 18:30 pm - **La aventura de enseñar testing**
-Mónica Wodzislawski - [Centro de Ensayos de Software](https://www.ces.com.uy/) \
+Mónica Wodzislawski - [Centro de Ensayos de Software](https://ces.com.uy/web/) \
 _The construction of software is a collective process, where multiple actors intervene who negotiate their expectations, achieve successes and make mistakes. Testing seeks to mitigate the risk of production failures, both by errors and by divergences in the negotiation of expectations. Therefore, who, how, and what we teach about testing is a "quality" challenge for this community of actors. We invite you to share CES' fifteen years of experience teaching testing to computer scientists and non computer scientists._
 
 19:00 pm - **Plataformas Low Code: Qué hay de nuevo viejo?** \

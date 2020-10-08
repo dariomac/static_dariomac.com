@@ -34,7 +34,7 @@ I think that curriculum vitae (CV) or resume must be something alive more than a
 
 For these reason I decide to make my own resume in a way that I called KanbanCV. Here I introduce myself, write about experiences, education, other activities, just as in a regular resume but with additional information. 
 
-The layout looks as a simple [kanban board](http://en.wikipedia.org/wiki/Kanban "Kanban board definition") and it's inspired in the best Kanban tool out there named [Kanbanize](http://kanbanize.com "Kanbanize.com"). 
+The layout looks as a simple [kanban board](https://en.wikipedia.org/wiki/Kanban "Kanban board definition") and it's inspired in the best Kanban tool out there named [Kanbanize](https://kanbanize.com "Kanbanize.com"). 
 
 ![Screenshot of Kanbanize from 2013](/assets/kanbanize_2013.png#center)
 
@@ -51,22 +51,22 @@ I know that is an uncommon way to present a resume but I feel more confortable w
 [Enjoy it!](index.html "Go to KanbanCV") or look at some more standard versions of my resume following the footer links.
 
 <p style="text-align: center; border: 1px solid; padding: 2px;">
-  <a style="background: none !important;" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
-    <img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" style="border-width: 0;" alt="Creative Commons License">
+  <a style="background: none !important;" href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
+    <img src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" style="border-width: 0;" alt="Creative Commons License">
   </a><br>
-  <span rel="dct:type" property="dct:title" href="http://purl.org/dc/dcmitype/Text" xmlns:dct="http://purl.org/dc/terms/">
+  <span rel="dct:type" property="dct:title" href="https://purl.org/dc/dcmitype/Text" xmlns:dct="https://purl.org/dc/terms/">
     KanbanCV
   </span>
   by
-  <a rel="cc:attributionURL" property="cc:attributionName" href="kanbancv.html" xmlns:cc="http://creativecommons.org/ns#">
+  <a rel="cc:attributionURL" property="cc:attributionName" href="kanbancv.html" xmlns:cc="https://creativecommons.org/ns#">
     Darío Macchi
   </a>
   is licensed under a
-  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
     Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
   </a>.<br>
   Permissions beyond the scope of this license may be available at
-  <a rel="cc:morePermissions" href="ContactMe.html" xmlns:cc="http://creativecommons.org/ns#">
+  <a rel="cc:morePermissions" href="ContactMe.html" xmlns:cc="https://creativecommons.org/ns#">
     https://www.dariomac.com/ContactMe
   </a>.
 </p>

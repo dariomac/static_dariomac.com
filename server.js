@@ -14,7 +14,7 @@ let logger = require('dm-logger').initialize(app, {
   assetsPathRegex: /^\/assets\/.*/ig
 });
 
-// http://stackoverflow.com/a/16895480/126519
+// https://stackoverflow.com/a/16895480/126519
 app.use(function (req, res, next) {
   let reqPath = decodeURIComponent(req.path);
   let reqQueryStr = getQueryString(req.url);
