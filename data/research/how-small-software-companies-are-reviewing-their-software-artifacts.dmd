@@ -35,4 +35,4 @@ We are worried about how small software companies are performing their reviews o
 
 [knowledge:md]
 *   Now we are making some survey in order to know if in our country (Uruguay) software companies are using software inspections (Fagan or other formal method), how they are performing static analysis and if some of the factors founded in the mapping study also apply to our country.
-*   We will be using the work of Seaman [[Seaman, 1999]](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=799955&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F32%2F17384%2F00799955.pdf%3Farnumber%3D799955) about qualitative methods for data collection and analysis to get some answers from the results of this survey.
+*   We will be using the work of Seaman [[Seaman, 1999]](https://ieeexplore.ieee.org/document/799955) about qualitative methods for data collection and analysis to get some answers from the results of this survey.
