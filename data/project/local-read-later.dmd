@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "Similar as Read It Later service but runs locally.",
     "datebox": null,
-    "extlink": "https://chrome.google.com/webstore/detail/gkonjlhfjnlgikjfknnfcalimclipnck",
+    "extlink": "",
     "laneid": "Project",
     "leftbox": "",
     "leftmsg": "",
@@ -51,9 +51,7 @@ This is my first extension so I hope that you enjoy it!!
 
 Articles written about this extension:
 
-*   [Local Read Later - Save Articles You Want to Read Later in Google Chrome](http://voices.yahoo.com/local-read-later-save-articles-want-read-later-7192930.html?cat=15) (english)
-*   [Create Read Later Lists in Google Chrome](http://www.howtogeek.com/howto/8553/create-read-later-lists-in-google-chrome/) (english)
-*   [How To Save Pages And Read Them Later in Chrome](http://manikarum.com/2010/01/local-read-later/) (english)
-*   [Local Read Later è una estensione di Chrome per contrassegnare le pagine da leggere in un secondo momento.](http://www.ideepercomputeredinternet.com/2010/01/local-read-later-e-una-estensione-di.html) (italian)
-*   [Local Read Later: Read It Later per Chrome](http://computer-acquisti.com/blog/local-read-later-read-it-later-google-chrome/) (italian)
-*   [Google Chrome Extension – Local Read Later](http://manikarum.com/2010/01/local-read-later/) (indonesian)
+*   [Create Read Later Lists in Google Chrome](http://www.howtogeek.com/howto/8553/create-read-later-lists-in-google-chrome/) (english - [local version](/assets/lrl-howtogeek.com.pdf))
+*   How To Save Pages And Read Them Later in Chrome (indonesian - [local version](/assets/lrl-manikarum.pdf))
+*   [Local Read Later è una estensione di Chrome per contrassegnare le pagine da leggere in un secondo momento.](http://www.ideepercomputeredinternet.com/2010/01/local-read-later-e-una-estensione-di.html) (italian - [local version](/assets/lrl-ideepercomputeredinternet.com.pdf))
+*   [Local Read Later: Read It Later per Chrome](http://computer-acquisti.com/blog/local-read-later-read-it-later-google-chrome/) (italian - [local version](/assets/lrl-computer-acquisti.com.pdf))

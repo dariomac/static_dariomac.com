@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "“Software Product Lines” tutorial",
     "datebox": "Oct 1, 2012",
-    "extlink": "http://www.clei2012.org/",
+    "extlink": "https://dblp.org/db/conf/clei/clei2012.html",
     "laneid": "Education",
     "leftbox": "by J. D. Herrera",
     "leftmsg": "",
@@ -37,7 +37,7 @@ Oct 1, 2012 (4hs)
 Jorge Diaz Herrera
 
 [place_url:string]
-http://www.clei2012.org/
+https://dblp.org/db/conf/clei/clei2012.html
 
 [place:string]
 Universidad EAFIT (Medellín - Colombia)

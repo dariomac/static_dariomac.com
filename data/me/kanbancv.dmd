@@ -48,7 +48,7 @@ Finally, "Done" column contains tasks I've done, experiences, generated knowledg
 
 I know that is an uncommon way to present a resume but I feel more confortable with this kind of distribution and I think that show a more complete picture about myself.
 
-[Enjoy it!](index.html "Go to KanbanCV") or look at some more standard versions of my resume following the footer links.
+[Enjoy it!](/ "Go to KanbanCV") or look at some more standard versions of my resume following the footer links.
 
 <p style="text-align: center; border: 1px solid; padding: 2px;">
   <a style="background: none !important;" href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
@@ -58,7 +58,7 @@ I know that is an uncommon way to present a resume but I feel more confortable w
     KanbanCV
   </span>
   by
-  <a rel="cc:attributionURL" property="cc:attributionName" href="kanbancv.html" xmlns:cc="https://creativecommons.org/ns#">
+  <a rel="cc:attributionURL" property="cc:attributionName" href="/kanbancv" xmlns:cc="https://creativecommons.org/ns#">
     Darío Macchi
   </a>
   is licensed under a
@@ -66,7 +66,7 @@ I know that is an uncommon way to present a resume but I feel more confortable w
     Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
   </a>.<br>
   Permissions beyond the scope of this license may be available at
-  <a rel="cc:morePermissions" href="ContactMe.html" xmlns:cc="https://creativecommons.org/ns#">
+  <a rel="cc:morePermissions" href="/contact-me" xmlns:cc="https://creativecommons.org/ns#">
     https://www.dariomac.com/ContactMe
   </a>.
 </p>

@@ -68,7 +68,7 @@ customerio.track(5, "purchase", :type =&gt; "socks", :price =&gt; "13.99")
 That said customer.io is a great SaaS with a well conceived product and which offer a lot of value when you start a website/app. You should definitively try it.
 
 [acknowledgments:md]
-[This post](http://vairix.com/blog/customer-io-service-and-how-to-use-it-from-ruby) was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
+This post, originally at http://vairix.com/blog/customer-io-service-and-how-to-use-it-from-ruby, was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
 
 [further_reading:md]
 

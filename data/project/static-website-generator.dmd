@@ -42,7 +42,7 @@ NodeJS
 [short_description:string]
 
 [description:md]
-This website ([dariomac.com](dariomac.com)) has a long [history of migrations and CMSs](/finish-this-website). In 2017 I choose to migrate everything to my own technology agnostic content manager in Node.js. The idea behind this new migration was to do a last effort toward a reusable format.
+This website ([dariomac.com](/)) has a long [history of migrations and CMSs](/finish-this-website). In 2017 I choose to migrate everything to my own technology agnostic content manager in Node.js. The idea behind this new migration was to do a last effort toward a reusable format.
 
 This time, every piece of content will be a file instead of one (or several) records in a propiertary database. Each of these files will be a hybrid between a json structure and an INI file. The json part will be a "front matter" structure with metadata to be used to build the index (Kanban board). The INI part will have several sections (as a INI file) that will be mapped the Handlebars template.
 

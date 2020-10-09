@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "Research Commercialization - Introductory Course",
     "datebox": "May 21 - Jun 18, 2013",
-    "extlink": "http://center.ncet2.org/index.php?option=com_joomla_lms&Itemid=53&task=details_course&id=112",
+    "extlink": "https://ncet2.org/",
     "laneid": "Education",
     "leftbox": 0,
     "leftmsg": null,
@@ -34,7 +34,7 @@ May 21 - Jun 18, 2013 (13.5 hours, twice a week)
 NCET2.org
 
 [place_url:string]
-http://center.ncet2.org/index.php?option=com_joomla_lms&Itemid=53&task=details_course&id=112
+https://ncet2.org/
 
 [place:string]
 NCET2.org (online)

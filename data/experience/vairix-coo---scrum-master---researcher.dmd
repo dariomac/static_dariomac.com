@@ -44,7 +44,7 @@ VAIRIX Software Development
 [projects:md]
 ## Research projects
 
-*   Small research about one-week scrum sprint duration and advantages/disadvantages of it. This research was used to take the decision of make the sprint shorter because of the lack of user stories at that moment of the project. The decision was taken based on the evidence gathered during the research. The research output was the post "[One-week scrum sprint evaluation for prevent sprint backlog changes during sprint](/Sprint-backlog-changes-and-one-week-sprint-as-temporal-solution)".
+*   Small research about one-week scrum sprint duration and advantages/disadvantages of it. This research was used to take the decision of make the sprint shorter because of the lack of user stories at that moment of the project. The decision was taken based on the evidence gathered during the research. The research output was the post "[One-week scrum sprint evaluation for prevent sprint backlog changes during sprint](/sprint-backlog-changes-and-one-week-sprint-as-temporal-solution)".
 
 ## Writing projects
 
@@ -52,13 +52,13 @@ VAIRIX Software Development
 *   [Inception Workshop on Agiles2015](/inception-workshop-on-agiles2015) (Oct, 2015)
 *   [Presentation of the Inception Workshop for Entrepreneurs (CIE-ORT)](/introduction-to-the-practice-of-inception) (Jun, 2015)
 *   [VAIRIX on Summer Camp on Entrepreneurship](/9-entrepreneurship-summer-camp) (Apr, 2015)
-*   [Mobile MVPs using Cordova](/Mobile%20MVPs%20using%20Cordova) (Dic, 2014)
-*   [Customer.io service and how to use it from Ruby](/Customer.io%20service%20and%20how%20to%20use%20it%20from%20Ruby) (Nov, 2014)
-*   [Swagger: easy API interface](/Swagger%20-%20easy%20API%20interface) (Nov, 2014)
-*   [Better Errors & RailsPanel: development aids](/Better%20Errors%20-%20RailsPanel.%20Development%20aids) (Sep, 2014)
-*   [Lessons learned about Google Places](/Lessons%20learned%20about%20Google%20Places) (Sep, 2014)
-*   [Helping a startup in troubles to reach on time to an investors meeting](/Helping%20a%20startup%20in%20troubles%20to%20reach%20on%20time%20to%20an%20investors%20meeting) (Jun, 2014)
-*   [What is an MVP?](/What%20is%20an%20MVP) (May, 2014)
+*   [Mobile MVPs using Cordova](/mobile-mvps-using-cordova) (Dic, 2014)
+*   [Customer.io service and how to use it from Ruby](/customerio-service-and-how-to-use-it-from-ruby) (Nov, 2014)
+*   [Swagger: easy API interface](/swagger--easy-api-interface) (Nov, 2014)
+*   [Better Errors & RailsPanel: development aids](/better-errors-railspanel--development-aids) (Sep, 2014)
+*   [Lessons learned about Google Places](/lessons-learned-about-google-places) (Sep, 2014)
+*   [Helping a startup in troubles to reach on time to an investors meeting](/helping-a-startup-in-troubles-to-reach-on-time-to-an-investors-meeting) (Jun, 2014)
+*   [What is an MVP?](/what-is-an-mvp) (May, 2014)
 *   [JQuery append into heavy loaded DOM trees](/JQuery-append-into-heavy-loaded-DOM-trees) (Apr, 2014)
 *   [One-week scrum sprint evaluation for prevent sprint backlog changes during sprint](/Sprint-backlog-changes-and-one-week-sprint-as-temporal-solution) (Apr, 2014)
 
@@ -71,9 +71,9 @@ VAIRIX Software Development
 *   Review and editing of "Discourse setup" (Sep, 2014)
 *   Review and editing of "Testing AngularJS with Karma-Jasmine (part 1)" (Sep, 2014)
 *   Review and editing of "AngularJS CRUD Operations over a REST service (NodeJS)" (Jul, 2014)
-*   [Agile Open Space - Montevideo - May 17, 2014 (May, 2014)](/AgileOpenSpace2014)
-*   [RailsConf 2014 Virtual Covering - Chicago - United States](/RailsConf2014) (Apr, 2014)
-*   [JSConf 2014 Virtual Covering - Montevideo - Uruguay](/JSConf2014) (Mar, 2014)
+*   [Agile Open Space - Montevideo - May 17, 2014 (May, 2014)](/agile-open-space-2014)
+*   [RailsConf 2014 Virtual Covering - Chicago - United States](/railsconf2014) (Apr, 2014)
+*   [JSConf 2014 Virtual Covering - Montevideo - Uruguay](/jsconf2014) (Mar, 2014)
 
 ## Development projects
 

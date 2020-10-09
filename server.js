@@ -49,6 +49,7 @@ const destinations = {
   "/eci2020-course-proposal": "/es/eci2020-course-proposal",
   "/niveles-de-abstracci%C3%B3n": "/es/niveles-de-abstracci%C3%B3n",
   "/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil": "/es/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil",
+  "/svg-to-raphael": "/"
 }
 
 const origins = Object.keys(destinations);

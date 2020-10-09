@@ -74,7 +74,7 @@ I've added the following functions to this library so it can be more useful:
     }
 </style>
 
-*   You can change rendered SVG size in runtime (thx [ScaleRaphaël](http://www.shapevent.com/scaleraphael/))
+*   You can change rendered SVG size in runtime (thx [ScaleRaphaël](https://github.com/danypx/ScaleRapha-l))
     <pre class="brush: javascript; toolbar: false;">
         function resizePaper(){
             var win = $(this);
@@ -105,7 +105,7 @@ I've added the following functions to this library so it can be more useful:
     <pre class="brush: javascript; toolbar: false;">
         paper.chrome();
     </pre>
-*   beforeFn and afterFn events to be executed in each shape (more on [demo3](/assets-cv/documents/raphael-utils/map03.html)).
+*   beforeFn and afterFn events to be executed in each shape (more on [demo3](/assets/map03.html)).
 
 [acknowledgments:md]
 

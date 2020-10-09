@@ -37,11 +37,11 @@ Things to take care on a mobile MVP and why it's important to your business.
 [body:md]
 It's time for a little role play. Think about you (the reader) as one of the main stakeholders of a new and revolutionary mobile app thats your startup want to push to the market. Now, to add a little pressure, think that you have a meeting with investors coming up with a hard deadline, and they only will invest in your idea if they see some working version of the app.
 
-Luckily, your team have contacted VAIRIX to assist in turning your idea into reality. Seeing as we provide [this kind of services to startups in the past](http://www.vairix.com/blog/helping-a-startup-in-troubles-to-reach-on-time-to-an-investors-meeting) and we have experience in [MVPs](http://www.vairix.com/blog/what-is-an-mvp), we can make this happen.
+Luckily, your team have contacted VAIRIX to assist in turning your idea into reality. Seeing as we provide this kind of services to startups in the past and we have experience in [MVPs](/what-is-an-mvp), we can make this happen.
 
 As always happens in an MVP development, the first thing that we need is the list of critical features to allow the app be deployed quickly. Although is out of the scope of this post I can say that the prioritized list of features is one of the output of an inception workshop (yes, we can do that too!).
 
-Assuming that you already have the feature list, then you ask us “It's a good idea to do a mobile MVP? because I heard that it is not." Ok, let try to be straight with this and tell you how do we see it. The development of any MVP comprises a deep understanding of the core value of your product (those thing that make it special), so balancing “minimum" and “viable" is a major issue in this approach. But in mobile, we have to take special care of some things that will make the difference between a successful mobile MVP and a “[zombie](http://www.insidemobileapps.com/2014/07/11/80-of-apps-in-the-app-store-are-practically-zombies/)" app.
+Assuming that you already have the feature list, then you ask us “It's a good idea to do a mobile MVP? because I heard that it is not." Ok, let try to be straight with this and tell you how do we see it. The development of any MVP comprises a deep understanding of the core value of your product (those thing that make it special), so balancing “minimum" and “viable" is a major issue in this approach. But in mobile, we have to take special care of some things that will make the difference between a successful mobile MVP and a “[zombie](https://www.adweek.com/digital/80-of-apps-in-the-app-store-are-practically-zombies/)" app.
 
 ### Things to take care on a mobile MVP
 
@@ -68,7 +68,7 @@ Going back to our initial situation, we said that luckily you've contacted us! I
 When we talk about mobile MVPs, we prefer to call them [minimum delightful product](http://blogs.law.harvard.edu/lamont/2013/09/16/mdp-minimum-delightful-product/) (MDP). This approach combines requisite (but critical) functionality, good design and a conscious level of quality, making it less likely that organizations will build mobile apps that don't make any sense to their audiences. At the same time, there isn't excess effort or resources lost in the bargain.
 
 [acknowledgments:md]
-[This post](http://vairix.com/blog/mobile-mvps-using-cordova) was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
+This post, originally at http://vairix.com/blog/mobile-mvps-using-cordova, was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
 
 [further_reading:md]
 

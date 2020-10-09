@@ -29,7 +29,7 @@ We are worried about how small software companies are performing their reviews o
 
 [idea:md]
 *   We know that software inspections (the most formal review technique) has a low adoption in the industry (see more [here](/software-inspection-adoption--a-mapping-study)).
-*   We also know from the work of [[Ciolkowski, Laitenberger & Biffl, 2003]](http://www.computer.org/portal/web/csdl/doi/10.1109/MS.2003.1241366), [[Ciolkowski, Laitenberger & Vegas, 2003]](http://www.springerlink.com/content/2t8u4bue0mxlmxv5/) and [[Laitenberger, Vegas & Ciolkowski, 2002]](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCMQFjAA&url=http%3A%2F%2Fwwwagse-old.informatik.uni-kl.de%2Fpubs%2Frepository%2Flaitenberger2002%2FViSEK_Report_011E_public.pdf&ei=ufKCUOuxH4Wi8ATPiYGgAw&usg=AFQjCNEUjdpnkhzbhyOsXblj-tiv3ql7vQ&sig2=B1YGml64z5fRF5VqTC0bAg) that the industry are performing software reviews unsistematically.
+*   We also know from the work of [[Ciolkowski, Laitenberger & Biffl, 2003]](https://ieeexplore.ieee.org/abstract/document/1241366/), [Ciolkowski, Laitenberger & Vegas, 2003] and [[Laitenberger, Vegas & Ciolkowski, 2002]](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCMQFjAA&url=http%3A%2F%2Fwwwagse-old.informatik.uni-kl.de%2Fpubs%2Frepository%2Flaitenberger2002%2FViSEK_Report_011E_public.pdf&ei=ufKCUOuxH4Wi8ATPiYGgAw&usg=AFQjCNEUjdpnkhzbhyOsXblj-tiv3ql7vQ&sig2=B1YGml64z5fRF5VqTC0bAg) that the industry are performing software reviews unsistematically.
 
 [speculations:md]
 

@@ -91,7 +91,7 @@ Our API declaration would look as such:
 }
 </pre>
 
-For more an extended explanation of the API declaration, check out the relevant section in the [Swagger Specification](https://github.com/wordnik/swagger-spec/blob/master/versions/1.2.md#52-api-declaration). About the greeting example, you can read the full tutorial [here](https://github.com/wordnik/swagger-spec/wiki/Hello-World-Sample) and get the code from [here](https://github.com/wordnik/swagger-spec/tree/master/fixtures/v1.2/helloworld/static).
+For more an extended explanation of the API declaration, check out the relevant section in the [Swagger Specification](https://github.com/wordnik/swagger-spec/blob/master/versions/1.2.md#52-api-declaration). About the greeting example, you can read the full tutorial [here](https://github.com/wordnik/swagger-spec/wiki/Hello-World-Sample) and get the code from [here](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md).
 
 What to do after those files were created? You have to create your documentation/sandbox environment. To do that, go ahead and clone [Swagger-UI](https://github.com/wordnik/swagger-ui). Follow the directions there on how to run it, and direct it at your api-docs file.
 
@@ -99,12 +99,12 @@ After following the Swagger-ui directions you will get something like this scree
 
 ![Swagger interface](/assets/essays_swagger.png#center)
 
-If you want to see a live demo of a api documented with Swagger and a sandbox to play with, you can go [here](http://petstore.swagger.wordnik.com/#!/).
+If you want to see a live demo of a api documented with Swagger and a sandbox to play with, you can go [here](https://petstore.swagger.io/).
 
 If you are in Ruby world, there are a couple of gems to handle the Swagger specification for you [here](https://github.com/wordnik/swagger-spec#ruby).
 
 [acknowledgments:md]
-[This post](http://vairix.com/blog/swagger-easy-api-interface) was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
+This post, originally posted on https://vairix.com/blog/swagger-easy-api-interface was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.
 
 [further_reading:md]
 

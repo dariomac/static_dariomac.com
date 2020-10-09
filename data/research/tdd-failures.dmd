@@ -36,7 +36,7 @@ May, 2006
 
 David Weller (2004) published an article about the difficulty of implementing [TDD](http://en.wikipedia.org/wiki/Test-driven_development "Test-driven development") as a design methodology in [game development](http://en.wikipedia.org/wiki/Video_game_development "Video game development") using [DirectX](http://en.wikipedia.org/wiki/DirectX "DirectX").
 
-While our project is not a [video game](http://en.wikipedia.org/wiki/Video_game "Video game"), some of the issues raised in the article are applicable and were confimed by the development team during the early stages of this [project](../Project/SwingImprover.html).
+While our project is not a [video game](http://en.wikipedia.org/wiki/Video_game "Video game"), some of the issues raised in the article are applicable and were confimed by the development team during the early stages of this [project](/swingimprover).
 
 The main problem experienced using TDD is that certain things are extremely difficult to prove, although we find it very appropriate to use when the code was designed to be called in a specific order or whose result is expected.
 
@@ -56,4 +56,4 @@ It fact, the team's idea about TDD is that it is only useful if it make the desi
 
 Instead it was decided to make checklists with test items to be followed at the end of each iteration, so we will always perform the same tests to ensure proper operation of each functionality.
 
-WELLER, David 2004\. The Random Musings of David Weller [online] [citado 14 junio 2004]. Disponible en internet: < [http://www.inkblog.com/](http://www.inkblog.com/)>
+WELLER, David 2004\. The Random Musings of David Weller [online]
