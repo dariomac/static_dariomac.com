@@ -52,18 +52,13 @@
             "@type": "WebPage",
             "@id": "https://www.dariomac.com/{{frontmatter.slug}}"
           },
-          "headline": "{{frontmatter.title}}",
-          "alternativeHeadline": "",
-          "image": [
-            "https://example.com/photos/1x1/photo.jpg",
-            "https://example.com/photos/4x3/photo.jpg",
-            "https://example.com/photos/16x9/photo.jpg"
-          ],
+          "headline": "{{{frontmatter.title}}}",
+          "image": [{{#each content.related_images}}"https://www.dariomac.com/assets/{{filename}}"{{/each}}],
           "url": "https://www.dariomac.com/{{frontmatter.slug}}",
-          "datePublished": "2019-03-17",
+          "datePublished": "{{frontmatter.date}}",
           "dateCreated": "{{frontmatter.date}}",
           "dateModified": "{{frontmatter.date}}",
-          "description": "{{frontmatter.card.content}}",
+          "description": "{{{frontmatter.card.content}}}",
           "author": {
             "@id": "https://www.dariomac.com/me"
           },
