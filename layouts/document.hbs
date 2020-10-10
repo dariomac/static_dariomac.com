@@ -52,11 +52,12 @@
           },
           "headline": "{{{frontmatter.title}}}",
           "alternativeHeadline": "{{{frontmatter.card.content}}}",
-          "image": [{{#each content.related_images}}"https://www.dariomac.com/assets/{{filename}}"{{/each}}],
+          {{#if content.related_images}}
+          "image": [{{#forEach content.related_images}}"https://www.dariomac.com/assets/{{filename}}"{{#unless isLast~}}, {{/unless}}{{/forEach}}],
+          {{/if}}
           "url": "https://www.dariomac.com/{{frontmatter.slug}}",
           "datePublished": "{{content.pub_date}}",
           "dateCreated": "{{frontmatter.date}}",
-          "dateModified": "{{content.pub_date}}",
           "description": "{{{content.summary}}}",
           "author": {
             "@id": "https://www.dariomac.com/me"
