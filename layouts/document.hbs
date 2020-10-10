@@ -39,12 +39,10 @@
 
     <!--#include virtual="../common/_18common_html_header.html" -->
 
-    {{#if (hasJsonLd frontmatter.jsonld) }}
-      <script type="application/ld+json">
+    <script type="application/ld+json">
+      {{#if (hasJsonLd frontmatter.jsonld) }}
         {{{json frontmatter.jsonld}}}
-      </script>
-    {{else}}
-      <script type="application/ld+json">
+      {{else}}
         {
           "@context": "http://schema.org", 
           "@type": "BlogPosting",
@@ -53,12 +51,13 @@
             "@id": "https://www.dariomac.com/{{frontmatter.slug}}"
           },
           "headline": "{{{frontmatter.title}}}",
+          "alternativeHeadline": "{{{frontmatter.card.content}}}",
           "image": [{{#each content.related_images}}"https://www.dariomac.com/assets/{{filename}}"{{/each}}],
           "url": "https://www.dariomac.com/{{frontmatter.slug}}",
-          "datePublished": "{{frontmatter.date}}",
+          "datePublished": "{{content.pub_date}}",
           "dateCreated": "{{frontmatter.date}}",
-          "dateModified": "{{frontmatter.date}}",
-          "description": "{{{frontmatter.card.content}}}",
+          "dateModified": "{{content.pub_date}}",
+          "description": "{{{content.summary}}}",
           "author": {
             "@id": "https://www.dariomac.com/me"
           },
@@ -66,8 +65,8 @@
             "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
           }
         } 
-      </script>
-    {{/if}}
+      {{/if}}
+    </script>
   </head>
   <body>
     <div class="board_view details">
