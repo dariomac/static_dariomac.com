@@ -3,7 +3,7 @@
   "date": "2017-07-18",
   "layout": "project",
   "card": {
-    "color": "#99b399",
+    "color": "#767782",
     "columnid": "done_3",
     "content": "Similar as Read It Later service but runs locally.",
     "datebox": null,
@@ -16,7 +16,7 @@
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": null,
+    "tags": "RIP",
     "title": "Local Read Later (Google Chrome Extension)",
     "type":"Project"
   }
