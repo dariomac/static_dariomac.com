@@ -20,6 +20,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/why-I-decided-to-do-research-digests</loc>
+        <lastmod>2020-10-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/changeset-based-approach-to-improve-adoption-of-agile-code-review</loc>
         <lastmod>2020-08-28</lastmod>
         <changefreq>monthly</changefreq>

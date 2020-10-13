@@ -1,0 +1,59 @@
+{
+  "title": "Why I decided to do research digests",
+  "date": "2020-10-12",
+  "layout": "document",
+  "card": {
+    "color": "#FF6E19",
+    "columnid": "progress_2",
+    "content": "Research articles decoded for the practitioner´s consuption.",
+    "datebox": "2020-10-12",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20201012",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+For me the reason behind brillant ideas that dies in scientific articles (or take too much time to be mainstream) is the lack of easily accessible resources we provide to the industry. As a solution I will write digests over interesting articles to be consumable by practitioners.
+
+[pub_date:string]
+
+[short_description:string]
+TL;DR: If you want to be a most up-to-date professional of your team, ahead of your colleagues, have access to disruptive ideas and use them as seed to generate new ones, you need to read these digests generated from the latest scientific/academic articles about Software Engineering.
+
+[body:md]
+For years I have been reading academic articles full of brilliant ideas ahead of their time, challenging the status quo with solid approaches (and sometimes, weakly explained). And for years I wondered why many of those ideas never reach the industry or if they do, that happens years after their academic introductions. 
+
+We can discuss the reasons behind that, saying that many ideas have to grow up and be tested in controlled environments; others just need to be re-tested to make data aggregation in order to generate more reliable information. Even, there are ideas that just need to be discarded because they are weakly supported or lack proper evidence.
+
+But in any case, sometimes you need to take a leap of faith and test new things, even if they are just half baked. Or maybe you might not be ready to test new things, but just reading about them sheds some light over your daily work. Also, there are **a lot of good ideas** heavily tested that didn't get the traction and are not being adopted by the industry in the way they deserve.
+
+I will give you **my** explanation for this waste of resources and opportunities: our industry doesn’t like / believe / trust academic knowledge because they see it as artificial, non applicable, far from their daily challenges and too theoretical knowledge. And we as academics are guilty of that due to the lack of easily accessible resources we provide to the industry.
+
+So that's what I'm offering right now. I will do all the hard work —read, decode, translate and reorganize information— of scientific articles related to Software Engineering just to make them consumable by industry practitioners. It’s not that you can’t do it by yourself, but remember:
+* there are thousands of new articles monthly with different quality levels
+* they are written in an academic way (sometimes more darker than what is needed)
+* you don’t have the time (and the practice) to read them skipping the parts that are only relevant from academic points of view.
+
+As an example I leave the [first digest I did](/changeset-based-approach-to-improve-adoption-of-agile-code-review) about the article “Adopting Code Reviews for Agile Software Development” by Mario Bernhart _et al_. After I read it I thought… _”This is a recent article describing how Github/Gitlab works with Pull Requests and how they suggest to do code reviews”_ but wasn’t. It was written in **2010** when Gitlab didn’t exists, but Github was introducing a the code compare view ([Mach, 2010](https://github.blog/2010-03-01-introducing-github-compare-view/)) and the revamped version of their Pull Requests ([August, 2010](https://github.blog/2010-08-31-pull-requests-2-0/)). Although I can’t say if Github people read the article or just the idea popped up in their heads at the same time (read about [multiple discoveries](https://en.wikipedia.org/wiki/Multiple_discovery)) the fact is that works as an example of how a piece of knowledge read at the right moment offers strategic advantages. Remember Seneca’s saying: [Luck is what happens when preparation meets opportunity.](/luck-is-what-happens-when-preparation-meets-opportunity)
+
+[acknowledgments:md]
+The idea materialized in my mind when I read the article of [Tiago Forte](https://twitter.com/fortelabs) about the process he follows to summarize books. I felt identified with the number of books he read and the feeling of "**scarcely recall even one useful idea from each book***". The same happens with me and the number of scientific articles I read. So, as a way to put things in my own words and help others I decided to do this.
+
+Then, after I wrote the first digest, I saw that [David Wilkinson](https://twitter.com/fearcourse) was looking a writer to join him on [Oxford Review](https://www.oxford-review.com/) and when I visited that site I "confirmed" that other fields had the same problem stated above (lack of accesible resources). He do something like what I want to do with our field, so I grab some ideas of his briefings.
+
+[further_reading:md]
+* I'm using Tiago Forte's process, almost identical as stated here: [https://fortelabs.co/blog/the-ultimate-guide-to-summarizing-books](https://fortelabs.co/blog/the-ultimate-guide-to-summarizing-books)
+
+[significant_revisions:md]
+_Oct 13, 2020_: Original Publication on dariomac.com
