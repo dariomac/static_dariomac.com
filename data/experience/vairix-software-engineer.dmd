@@ -49,12 +49,6 @@ VAIRIX Software Development
 * **Pharmaceutical Platform**
     <a name="pharmaceutical-platform"></a>
     Pharmaceutical platform (HIPAA compliant) where patients with a subscription can directly connect with doctors in real time through appointed video calls (through twilio) to have a diagnosis and electronic prescriptions sent directly to the pharmacy. The solution involves React, Redux, Redux Saga, Node.js, Firebase and Sequelize for web/REST API and React Native, Redux, Redux Saga for mobile.
-
-## QA/PM projects
-
-* **Learning online platform**
-    Backend Dev of a webapp for remote classes through an online platform (based on Zoom), with real instructors. The spirit of these classes is to help black students see themselves differently by discussing black contributions to American and world history in a way that is accurate and affirms their identity. Instructors enroll in courses, sharing them with other instructors; students also enroll in courses (with limited places) and get a schedule of all the classes and a specific link to attend each one. The classes are done via Zoom.
-
 * **Online Marketing Tool**
     DevOp & Dev in the maintenance of an already built marketing tool to create and manage email campaigns, landing pages and events. It does a heavy use of SendGrid as a base delivery system, using well known strategies such as use of dedicated IPs and IP warming.
     <!-- 
@@ -62,6 +56,14 @@ VAIRIX Software Development
     Desc: Marketing tool to create and manage email campaigns, landing pages and events. It does a heavy use of SendGrid as a base delivery system, using well known strategies such as use of dedicated IPs and IP warming. Also uses PM2 as a process manager, MongoDB as a NoSQL database and several cron processes that, in coordination with Redis, performs async operations. The frontend relies on React, having several custom UI components, highlighting a very complex editor for landing pages and emails.
     Responsabilities: In this project I was involved in DevOps activities such as building deployment scripts for every environment (testing, staging and production), process monitoring, IPs health checks and Sendgrid maintenance activities due to migration processes. Also I worked as a Full Stack Dev, fixing bugs, adding new features and performing proof of concepts (PoC) (i.e. integration with Kaltura video platform and Zoom) as side projects to get investors.
     -->
+* **Web app to perform online classes**
+    Development of the integration between the backend (mostly GraphQL) API and Zoom for a web app to perform remote classes. Instructors enroll in courses, sharing them with other instructors; students also enroll in courses (with limited seats) and get a schedule of all the classes and a specific link to attend each one. The classes are done via Zoom. I did a module to perform the desired operations against Zoom API and wired into the database hooks (Hasura) or in GraphQL mutations. To test that the integration with Zoom works as expected, I did Jest test cases against the expected contract. Besides that integration and did another ones with Mandrill and Clever SSO.
+
+## QA/PM projects
+
+* **Learning online platform**
+    Backend Dev of a webapp for remote classes through an online platform (based on Zoom), with real instructors. The spirit of these classes is to help black students see themselves differently by discussing black contributions to American and world history in a way that is accurate and affirms their identity. Instructors enroll in courses, sharing them with other instructors; students also enroll in courses (with limited places) and get a schedule of all the classes and a specific link to attend each one. The classes are done via Zoom.
+
 * **Shopping checkout**
     PM and Internal QA of a mobile app to pay on shopping checkout. It involves QR codes, [Time-bound One-Time Password (TOTP) algorithm](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) and [Beacons](https://en.wikipedia.org/wiki/Bluetooth_low_energy_beacon) with specific signatures. The app interacts with an API, so by the time the customer arrives at the checkout to make the payment, a receipt has already been generated based on the knowledge of each item the customer has interacted with during the purchase.
 * **Personal guidance**

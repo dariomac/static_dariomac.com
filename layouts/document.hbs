@@ -50,15 +50,15 @@
             "@type": "WebPage",
             "@id": "https://www.dariomac.com/{{frontmatter.slug}}"
           },
-          "headline": "{{{frontmatter.title}}}",
-          "alternativeHeadline": "{{{frontmatter.card.content}}}",
+          "headline": {{{json frontmatter.title}}},
+          "alternativeHeadline": {{{json frontmatter.card.content}}},
           {{#if content.related_images}}
           "image": [{{#forEach content.related_images}}"https://www.dariomac.com/assets/{{filename}}"{{#unless isLast~}}, {{/unless}}{{/forEach}}],
           {{/if}}
           "url": "https://www.dariomac.com/{{frontmatter.slug}}",
           "datePublished": "{{content.pub_date}}",
           "dateCreated": "{{frontmatter.date}}",
-          "description": "{{{content.summary}}}",
+          "description": {{{json content.summary}}},
           "author": {
             "@id": "https://www.dariomac.com/me"
           },
