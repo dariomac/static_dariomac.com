@@ -7,6 +7,15 @@
       
       <!--#include virtual="../common/_critical.css" -->
 
+      .me-effect {
+        border: 2px solid #fff;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        box-shadow: 2px 2px 7px #ccc;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+      }
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
@@ -30,6 +39,7 @@
                 <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
               </li>
               <!--#include virtual="../common/_mobile-menu.html" -->
+              <li class="filter"><a href="/essays">Essays</a></li>
             </ul> <!-- dm-filters -->
           </div> <!-- dm-tab-filter -->
 
@@ -58,7 +68,7 @@
                 {{#if content.content}}
                   <section class="content">
                     <p style="text-align: center; width: 100%;">
-                      <img src="/assets/aboutme-me.jpg#center" alt="My photograph">
+                      <img src="/assets/aboutme-me.jpg#center" alt="My photograph" class="me-effect">
                     </p>
                     <p>
                       <strong>Full name: </strong><span itemprop="name">Darío </span><span itemprop="additionalName">Alejandro </span><span itemprop="familyName">Macchi </span><span itemprop="familyName">Heins</span><br>
