@@ -4,9 +4,9 @@
   "layout": "experience",
   "card": {
     "color": "#00A651",
-    "columnid": "progress_2",
+    "columnid": "done_3",
     "content": "Sr. Software Engineer",
-    "datebox": "Jun 2019 - Now",
+    "datebox": "Jun 2019 - Nov 2020",
     "extlink": "http://www.vairix.com/",
     "laneid": "Experience",
     "leftbox": "",
@@ -32,7 +32,7 @@
 This time at VAIRIX I have a more technical role. In some projects I manage the team as a Technical Project Manager, creating tasks, asigning them to the team and helping with the communication with the client. Other times I'm right behind the team, serving them like a Scrum Master, but not visible to the client, to monitor quality, manage the social skills of the team and support them problem solving. Finally, in some specific projects, I'm working as a Javascript Full-Stack Developer (Node.js + React).
 
 [duration:string]
-Jun 2019 - Now
+Jun 2019 - Nov 2020
 
 [place_url:string]
 http://www.vairix.com/
