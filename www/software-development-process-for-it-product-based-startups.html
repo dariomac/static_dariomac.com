@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Software development process for IT product based startups | Darío Macchi</title>
+    <style>
+      
+      @charset "UTF-8";
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  color: #414141;
+  font-size: 11px;
+}
+
+article a {
+  text-decoration: none;
+  color: #000;
+}
+
+a img {
+  border: 0px;
+}
+
+.submenu {
+  float: right;
+  padding-top: 7px;
+}
+
+.orange_box {
+  padding: 0px 0px 0px 10px;
+  font-weight: bold;
+  background: #ff922c;
+  border: #ff922c 1px solid;
+  border-radius: 12px;
+  float: left;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.orange_box div.username {
+  padding: 0px 10px 0px 34px;
+  background: url('data:image/png;base64,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') no-repeat 0px 3px;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+}
+
+.orange_box ul {
+  border-left: #ec6100 1px solid;
+  padding: 0px 10px 0px 5px;
+  float: left;
+  overflow: hidden;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0px;
+}
+
+.orange_box ul li {
+  padding: 10px 0px 8px 0px;
+  float: left;
+}
+
+.orange_box ul li a {
+  border-left: #ff922c 1px solid;
+  font-weight: bold;
+  padding: 0px 0px 0px 5px;
+}
+
+.orange_box ul li a {
+  padding: 0px;
+}
+
+/* Footer style {*/
+.footer {
+  background-color: #00445c; height: 20px; color: #ffffff; overflow: hidden;
+}
+.footer a {
+  color: #ffffff
+}
+.footer a:hover {
+  text-decoration: underline
+}
+.footer ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 2px;
+}
+.footer li {
+  border-left: #ffffff 1px solid; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; float: left; padding-top: 0px; height:16px; margin-top:0px;
+}
+.footer li:first-child {
+  border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px; height:16px; margin-top:1px;
+}
+.clearfix:after {
+  display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+}
+.footer ul:after {
+  display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+}
+
+@media only screen and (min-width: 1170px) {
+  .details .dm-main-content.is-fixed .dm-board {
+    padding-top: 50px;
+  }
+
+  .container-fluid.dm-board {
+    max-width: 800px;
+    border: #d8d7d7 1px solid;
+  }
+}
+
+.details .dm-main-content.is-fixed .dm-board {
+  margin-bottom: 40px;
+}
+
+.details .container-fluid.dm-board h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0px 0px 0px;
+  margin: 0px 0px 6px 0px;
+}
+
+.details .container-fluid.dm-board h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.details .container-fluid.dm-board h3 {
+  font-size: 16px;
+  margin-bottom: 2px;
+  text-decoration: underline;
+}
+
+.details .container-fluid.dm-board h4 {
+  font-size: 14px;
+  font-style: italic;
+}
+
+article li {
+  margin-bottom: 4px;
+}
+
+article, section {
+  color: #414141;
+  font-size: 14px;
+  text-align: justify;
+}
+
+header, section {
+  margin: 0px 20px;
+}
+
+header p {
+  text-align: left;
+}
+
+header p:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+}
+
+article a:not(.no_external_ico), section a:not(.no_external_ico) {
+  font-weight: bold;
+  color: #069;
+  background: url(/assets/images/external.png) right 50% no-repeat;
+  padding-right: 12px;
+}
+
+article a:not([href]) {
+  background: inherit;
+  padding-right: inherit;
+}
+
+article .duration {
+  margin-bottom: 0px;
+}
+
+section table {
+  margin: 0 auto;
+  max-width: 636px;
+}
+
+.summary {
+  font-style: italic;
+  padding-top: 8px;
+  cursor: none !important;
+  margin-bottom: 1rem;
+}
+
+table td, table th {
+  border: #d8d7d7 1px solid;
+  padding: 5px;
+}
+
+.essay .date {
+  width: 100%;
+  border-top: 1px solid;
+  text-align: right;
+}
+
+.essay p {
+  font-size: 14px;
+}
+
+
+      .essay {
+        margin-left: inherit;
+        border: 0px !important;
+      }
+
+      .essay article {
+        margin-left: 26px;
+      }
+
+      .essay p {
+        font-size: 16px;;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-weight: bold;
+        text-decoration: inherit;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+    </style>
+
+    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Darío Macchi" />
+<meta name="description" content="You develop software for startups and want an agile methodology (sparkled with classical engineering methods) to experiment continuously avoiding technical debt? This article is for you." />
+<meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
+
+<link rel="dns-prefetch" href="//dariomac.com"/>
+<link rel="dns-prefetch" href="//translate.googleapis.com"/>
+<link rel="dns-prefetch" href="//gstatic.com"/>
+<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
+<link rel="dns-prefetch" href="//google-analytics.com"/>
+<link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+<link rel="dns-prefetch" href="//translate.google.com"/>
+<link rel="dns-prefetch" href="//google.com"/>
+<link rel="dns-prefetch" href="//c.statcounter.com"/>
+<link rel="dns-prefetch" href="//statcounter.com"/>
+<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+<link rel="dns-prefetch" href="//yui.yahooapis.com"/>
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+<!-- <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
+<link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
+
+<link rel="canonical" href="https://dariomac.com/software-development-process-for-it-product-based-startups" />
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-28220054-1']);
+_gaq.push(['_trackPageview']);
+
+(function () {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = (document.location.protocol === 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+function afterContentDraw () {
+  setTimeout(function () {
+    var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+    aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+    $.each(aList,
+      function (k, v) {
+        var $v = $(v);
+
+        $v.click(function () {
+          _gaq.push(['_trackPageview', $v.attr('href')]);
+        });
+        // $v.css('color','red');
+      });
+    
+    preloadImages($('a.fancybox'));
+  }, 1000);
+}
+
+function preloadImages (array) {
+  if (!preloadImages.list) {
+    preloadImages.list = [];
+  }
+  for (var i = 0; i < array.length; i++) {
+    var img = new Image();
+    img.src = $(array[i]).attr('href');
+    preloadImages.list.push(img);
+  }
+}
+
+</script>
+
+<!-- Default Statcounter code for Dariomac.com
+https://www.dariomac.com -->
+<script type="text/javascript">
+  var sc_project=9186547; 
+  var sc_invisible=1; 
+  var sc_security="dce954c9"; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js"
+  async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+  href="https://statcounter.com/" target="_blank"><img
+  class="statcounter"
+  src="https://c.statcounter.com/9186547/0/dce954c9/1/"
+  alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<link href="https://plus.google.com/101333970265292795022" rel="publisher" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="/assets/images/d_social.png">
+<meta property="og:image:type" content="image/png">
+
+<script type='application/ld+json'> 
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "@id": "https://www.dariomac.com/me",
+    "image": "https://dariomac.com/assets/aboutme-me.jpg",
+    "jobTitle": "Computer Engineering, MSc",
+    "name": "Darío Macchi",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Universidad_ORT_Uruguay_-_Logo.jpg/220px-Universidad_ORT_Uruguay_-_Logo.jpg",
+      "name": "Universidad ORT Uruguay",
+      "sameAs": "https://en.wikipedia.org/wiki/Universidad_ORT_Uruguay",
+      "url": "https://www.ort.edu.uy/"
+    },
+    "birthPlace": "Paysandú, Uruguay",
+    "birthDate": "1981.08.12",
+    "height": "1.72 meters",
+    "gender": "male",
+    "nationality": "Uruguayan",
+    "url": "https://www.dariomac.com",
+    "sameAs" : [
+      "https://twitter.com/_dariomac",
+      "https://uy.linkedin.com/in/dariomac",
+      "https://www.researchgate.net/profile/Dario_Macchi",
+      "https://ort-uy.academia.edu/Dar%C3%ADoMacchi",
+      "https://www.informatik.uni-trier.de/~ley/pers/hd/m/Macchi:Dario"
+    ]
+  }
+</script>
+<script type='application/ld+json'>
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.dariomac.com/software-engineering-advisor-consultant",
+    "name": "Darío Macchi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.dariomac.com/assets/images/d.png"
+    },
+    "url": "https://www.dariomac.com"
+  }
+</script>
+
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.dariomac.com/"
+          },
+          "headline": "Software development process for IT product based startups",
+          "alternativeHeadline": "Agile methodology sparkled with classical engineering methods to experiment continuously avoiding technical debt",
+          "url": "https://www.dariomac.com/",
+          "datePublished": "2021-01-04",
+          "dateCreated": "2021-01-04",
+          "description": "You develop software for startups and want an agile methodology (sparkled with classical engineering methods) to experiment continuously avoiding technical debt? This article is for you.",
+          "author": {
+            "@id": "https://www.dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
+  </head>
+  <body>
+    <div class="board_view details">
+
+      <main class="dm-main-content is-fixed">
+        <div class="dm-tab-filter-wrapper">
+          <div class="dm-tab-filter">
+            <ul class="dm-filters d-block d-md-none">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+              </li>
+              <li class="filter"><a class="selected" href="#0">All</a></li>
+<li class="filter"><a href="/">Home</a></li>
+<li class="filter"><a href="/about-me">About Me</a></li>
+<li class="filter"><a href="/kanbancv">What is KanbanCV</a></li>
+
+            </ul> <!-- dm-filters -->
+          </div> <!-- dm-tab-filter -->
+
+          <div class="container-fluid float-left"></div>
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="dm-board essay">
+          <article>
+            <div class="row featured">
+              <div class="col-md-6">
+                <header>
+                  <h1>Software development process for IT product based startups</h1>
+                  <p class="date">2021-01-04</p>
+                </header>
+
+                
+                <section class="description">
+                  <p>
+                    You develop software for startups and want an agile methodology (sparkled with classical engineering methods) to experiment continuously avoiding technical debt? This article is for you.
+                  </p>
+                </section>
+
+                <section>
+                    <p>I’ve summarized/commented the article <a href="https://www.researchgate.net/publication/344338022_Entrepreneurial_Software_Engineering_Towards_a_Hybrid_Development_Method_for_Early-Stage_Startups">Entrepreneurial Software Engineering: Towards a Hybrid Development Method for Early-Stage Startups</a> below because I want the information it contains to spread far and wide. Not due to the novelty of the practices or processes, but for having all of them consolidated into one single source. I truly believe that every team doing software for a startup must take into consideration the concepts poured in the original article.</p>
+<p>I discovered this article because I follow the work of one of the authors, <a href="https://www.researchgate.net/profile/Juergen_Muench">Jürgen Münch</a> from the time when he posted this on twitter with the legend “Be careful what you measure!” back in 2015.</p>
+<p><picture>
+              <source srcset="assets/munch_measures.webp" type="image/webp">
+  
+              <img src="assets/munch_measures.png#center" alt="Sum of non related measures" title="Be careful what you measure!"></picture></p>
+<p>Dr. Münch has a huge academic production about software startups, lean product management, lean analytics, innovation processes, business model validation, and agile engineering. The article is co-authored by two other researchers, <a href="https://www.researchgate.net/profile/Marco_Kuhrmann">Marco Kuhrmann</a> and <a href="https://www.researchgate.net/profile/Daniel_Brunner7">Daniel Brunner</a> with a lot of experience in those fields too.</p>
+<p>I’ll focus on what I think are the most important, unusual and powerful points of the article. Assume everything below is directly taken or paraphrased from the original article, although I’ve tried to explain it in my own words leaving out MANY details and diagrams. Any mistakes or misinterpretations are mine.</p>
+<h1><a name="what-everybody-knows-but-nobody-tells-you" class="anchor">
+<a name="what-everybody-knows-but-nobody-tells-you" href="#what-everybody-knows-but-nobody-tells-you" class="no_external_ico">What everybody knows (but nobody tells you)</a></h1>
+<p>Those of us who have been involved in the startup ecosystem and the development of software for them know that there is a pattern that almost everyone followed sometime in a way or another.</p>
+<p>When building a new product, the rush, the excitement of the unknown, and the general pressure to seize opportunities lead to generally <em>hackish</em> software development.</p>
+<p>You forget everything you learned about systematically implemented practices (a.k.a Software Engineering). Instead, as evidence from various researches suggests, developers tend (choose or perhaps... prefer?) to use light, informal, personalized methods &quot;based&quot; on things that seem to work for others. In fact, many times these practices are selected opportunistically and with great bias.</p>
+<p>Remember that most of these ventures tend to have inexperienced members with little knowledge of software engineering. Or they have experience, but that experience comes from software factories that have very different (and most of the time, opposite) business models. And as if that weren’t enough, the lack of resources (human and physical) makes everything harder. Many times this leads to a feeling that &quot;those software engineering processes are applicable in well established teams, with enough money to afford them&quot;</p>
+<p>Finally… you have the speed factor around startups. They tend to have a rapid evolution, from the discovery of their business model, they run a race against everybody with the main goal to scale as fast as they can. To do that, startups tend to deliver products/features to their clients as fast as possible just for the sake of establishing themselves, many times exchanging those deliveries by technical debt.</p>
+<h1><a name="lean-to-the-rescue" class="anchor">
+<a name="lean-to-the-rescue" href="#lean-to-the-rescue" class="no_external_ico">Lean to the rescue</a></h1>
+<p>I really believe (and other authors think the same) that agile methodologies, and especially Lean Startup, are the key to successful startups. But startups refuse to be tied to the big names and strictly follow their rules. Often, these technology entrepreneurs take relevant practices from here and there and adapt them to their individual needs resulting in what are known as hybrid methods.</p>
+<p>Quite often startups build different types of Minimal Viable Products (MVPs) －landing pages, mockups, concierges, single-feature MVPs, etc－ just to test assumptions, validate with clients and users, and collect valuable learning(s) about customers. And that is a very rational decision to make. Because in the core of Lean you find the Build-Measure-Learn cycle (BML) that is just that, a way to turn assumptions into certainties offering solutions to problems that many customers are not even aware of.</p>
+<p>There will be enough time to worry about the increasingly complex processes that startups will need to install once the product reaches the market.</p>
+<h1><a name="as-a-startup-i-want-to-follow-a-hybrid-methodology" class="anchor">
+<a name="as-a-startup-i-want-to-follow-a-hybrid-methodology" href="#as-a-startup-i-want-to-follow-a-hybrid-methodology" class="no_external_ico">As a startup I want to follow a hybrid methodology…</a></h1>
+<p>...I always preferred to write user stories backward, starting with the business need, then the actor and finally what you need or want… because I feel that I’m narrowing too much the scope of the stories. This time won’t be the exception.</p>
+<p><em>“<strong>To</strong> be able to experiment continuously through different MVPs, but also avoid technical debt to scale later once the product matures, <strong>as a</strong> startup <strong>I want</strong> to follow a lightweight methodology”</em></p>
+<p>Now it’s much better, because that lightweight methodology can be a hybrid one (as we will talk about) or any other.</p>
+<p>So, what is a hybrid development methodology? Is one that combines agile aspects with classical engineering methods. In this case, It’s a three stages process that a startup building a product can follow for each new feature it wants to add. The process starts from a validated problem and defines these stages:</p>
+<ol>
+<li>
+<p>Feature Requirements Generation and Evaluation (FRGE)</p>
+</li>
+<li>
+<p>Design and User Experience Evaluation (DUXE)</p>
+</li>
+<li>
+<p>Pre-Launch Testing (PLT)</p>
+</li>
+</ol>
+<p>Remember that a validated problem should be able to answer these questions: What is the problem? Who has the problem? Is the problem big enough to make a business out of it?</p>
+<h2><a name="stage-1-feature-requirements-generation-and-evaluation-frge" class="anchor">
+<a name="stage-1-feature-requirements-generation-and-evaluation-frge" href="#stage-1-feature-requirements-generation-and-evaluation-frge" class="no_external_ico">Stage 1 - Feature Requirements Generation and Evaluation (FRGE)</a></h2>
+<p>You need to start finding (identifying/discovering) key requirements and quickly put them into an MVP following the BML cycle. But remember, you don’t need to (and you shouldn’t) wait for a beta version of your product… you can start working with wireframes as inputs for experimentation activities.</p>
+<p>After several BML cycles you can decide to take a validated feature, break it down into user stories and have the developers implement it. Later you will need to answer if the current set of features is sufficient to solve a customer’s issue and if there are customers willing to test the MVPs.</p>
+<h2><a name="stage-2-design-and-user-experience-evaluation-duxe" class="anchor">
+<a name="stage-2-design-and-user-experience-evaluation-duxe" href="#stage-2-design-and-user-experience-evaluation-duxe" class="no_external_ico">Stage 2 - Design and User Experience Evaluation (DUXE)</a></h2>
+<p>This stage is like the first one with the difference that you will need to develop software-based prototypes (mockups). For this you can use clickable prototypes so early adopters can test the MVP. Later you will need to answer if the current set of features is sufficient to solve a customer’s issue and if there are customers willing to test the MVPs.</p>
+<p>It is worth asking these to make decisions at this point: is the user experience sufficient for early adopters? Does the customer fully understand the use of the product?</p>
+<h2><a name="stage-3-pre-launch-testing-plt" class="anchor">
+<a name="stage-3-pre-launch-testing-plt" href="#stage-3-pre-launch-testing-plt" class="no_external_ico">Stage 3 - Pre-Launch Testing (PLT)</a></h2>
+<p>This third stage is simple: once the single-feature MVP reaches a maturity state in which it can potentially be released, then it must undergo a series of quality assurance activities.</p>
+<h1><a name="conclusions" class="anchor">
+<a name="conclusions" href="#conclusions" class="no_external_ico">Conclusions</a></h1>
+<p>As I said at the beginning, if you've been working on developing software for startups you're used to these stages. However, that does not make less valuable the approach of this hybrid methodology that shows all the necessary information consolidated in 3 very well defined stages.</p>
+<h1><a name="reference" class="anchor">
+<a name="reference" href="#reference" class="no_external_ico">Reference</a></h1>
+<p>D. Brunner, J. Münch, and M. Kuhrmann, “Entrepreneurial Software Engineering: Towards a Hybrid Development Method for Early-Stage Startups,” p. 12, Sep. 2020.</p>
+<h1><a name="secondary-references" class="anchor">
+<a name="secondary-references" href="#secondary-references" class="no_external_ico">Secondary references</a></h1>
+<ul>
+<li>Wasserman, A. I. “Low ceremony processes for short lifecycle projects”. In: Managing Software Process Evolution. Springer, 2016, pp. 1–13.</li>
+<li>Paternoster N. et al. “Software development in startup companies: A systematic map- ping study”. In: Information and Software Technology 56.10 (2014), pp. 1200–1218.</li>
+<li>Tegegne, E. W.; Seppänen, S.; Ahmad, M. O. “Software development methodologies and practices in start-ups”. In: IET Software 13.6 (2019), pp. 497–509.</li>
+<li>Giardino C. et al. “What do we know about software development in startups?”. In: IEEE software 31.5 (2014), pp. 28–32.</li>
+<li>Kuhrmann M. et al. “Hybrid Software Development Approaches in Practice: A European Perspective”. In: IEEE Software (2018).</li>
+<li>Lindgren, E.; Münch, J. “Raising the odds of success: the current state of experimenta- tion in product development”. In: Information and Software Technology 77 (2016), pp. 80–91.</li>
+</ul>
+<h1><a name="review" class="anchor">
+<a name="review" href="#review" class="no_external_ico">Review</a></h1>
+<ol>
+<li><strong>Research quality - 2/5</strong> <br />
+The article is a proposal that, although is based on solid previous research and literature background, lacks enough empirical evidence of its use.</li>
+<li><strong>Confidence - 4/5</strong> <br />
+At risk of being in contradiction with the previous point, the article, the background of the authors and my own experience makes me feel very confident with the proposal.</li>
+<li><strong>Usefulness - 5/5</strong> <br />
+As I said, I think that the concepts poured in this article are very useful, and they should be spread, used, measured and reported to establish as they way to do things in the context of new software development for startups.</li>
+<li><strong>Comments</strong> <br />
+The article is easy to read, enjoyable and enlightening, mostly the diagrams of each stage that make everything crystal clear.</li>
+</ol>
+
+                </section>
+
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    <p><em>Jan 4, 2021</em>: Original Publication on dariomac.com</p>
+
+                  </section>
+
+
+
+
+
+              </div>
+            </div>
+        </div> <!-- container-fluid dm-board -->
+
+        <a href="/" class="logo">
+          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+        </a>
+        <div class="submenu" style="position: fixed; top: 0; right: 0; z-index: 10;">
+  <div class="orange_box">
+    <a class="url" href="/about-me">
+        <div class="username">
+            Darío Macchi
+        </div>
+    </a>
+    <ul>
+      <li id="geo">
+        <a target="_blank" href="https://www.google.com/maps/place/Montevideo,+Montevideo+Department/@-34.8207772,-56.5166263,10z/data=!3m1!4b1!4m5!3m4!1s0x959f80ffc63bf7d3:0x6b321b2e355bec99!8m2!3d-34.9011127!4d-56.1645314?hl=en" itemprop="url">
+            Montevideo
+        </a><span>-</span>
+        <a href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&amp;ie=UTF-8&amp;hq=&amp;hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&amp;gl=uy&amp;ei=KiKjU6fpE-HNsQSlqYGoCg&amp;ved=0CBsQ8gEwAA" itemprop="url">
+          Uruguay
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/contact-me">Contact me</a></strong></li>
+    </ul>
+  </div>
+</div>
+
+      </main> <!-- dm-main-content -->
+    </div>
+    <!--</div>-->
+
+    <div class="footer" style="text-align:center; width:100%;">
+  <div style="text-align:center; width:100%">
+  <ul>
+    <li style="margin-top: 0px;" class="d-none d-lg-block">
+      <a href="javascript:void(0);" onclick="window.open('https://www.copyscape.com/?q=' + escape(window.location) + '&src=front'); return false;">
+        <IMG src="/assets/images/cs-wh-3d-234x16.gif" alt="Protected by Copyscape Duplicate Content Detector" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." width="234" height="16" border="0">
+      </A>
+    </li>
+    <li><a style="padding-top:1px" href="/kanbancv">KanbanCV</a> © 2011-2021 <a style="padding-top:1px" href="/sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap</a></li>
+    <li>
+      <a href="https://uy.linkedin.com/in/dariomac" style="text-decoration:none;" target="_blank">
+        <img src="/assets/linkedin.png" width="16" height="15" alt="View Darío Macchi's LinkedIn profile" border="0" />
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/_dariomac" target="_blank">
+        <img src="/assets/twitter.png" width="16" height="16" alt="View my twitter"/>
+      </a>
+    </li>
+    <li class="d-none d-lg-block">
+      <a href="https://www.researchgate.net/profile/Dario_Macchi" target="_blank">
+        <img src="/assets/researchgate.png" width="15" height="15" alt="View my ResearchGate profile"/>
+      </a>
+    </li>
+    <li style="margin-top: 0px" class="d-none d-lg-block">
+      <a href="http://humanstxt.org" target="_black">
+        <img src="/assets/images/humanstxt-transparent-color.png" width="84" height="15" alt="View humans.txt file"/>
+      </a>
+    </li>
+  </ul>
+  </div>
+</div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      multilanguagePage: true,
+      gaTrack: true,
+      gaId: 'UA-28220054-1',
+      floatPosition: google.translate.TranslateElement.FloatPosition.BOTTOM_LEFT
+    });
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+
+
+
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+    <script>
+      $(".fancybox").fancybox({
+        arrows: true,
+        loop: true,
+        keyboard: true
+      });
+    </script>
+  </body>
+</html>

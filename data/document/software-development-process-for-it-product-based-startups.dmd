@@ -1,0 +1,141 @@
+{
+  "title": "Software development process for IT product based startups",
+  "date": "2021-01-04",
+  "layout": "document",
+  "card": {
+    "color": "#FF6E19",
+    "columnid": "done_3",
+    "content": "Agile methodology sparkled with classical engineering methods to experiment continuously avoiding technical debt",
+    "datebox": "2021-01-04",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20210104",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+You develop software for startups and want an agile methodology (sparkled with classical engineering methods) to experiment continuously avoiding technical debt? This article is for you.
+
+[pub_date:string]
+2021-01-04
+
+[short_description:string]
+You develop software for startups and want an agile methodology (sparkled with classical engineering methods) to experiment continuously avoiding technical debt? This article is for you.
+
+[body:md]
+I’ve summarized/commented the article [Entrepreneurial Software Engineering: Towards a Hybrid Development Method for Early-Stage Startups](https://www.researchgate.net/publication/344338022_Entrepreneurial_Software_Engineering_Towards_a_Hybrid_Development_Method_for_Early-Stage_Startups) below because I want the information it contains to spread far and wide. Not due to the novelty of the practices or processes, but for having all of them consolidated into one single source. I truly believe that every team doing software for a startup must take into consideration the concepts poured in the original article.
+
+I discovered this article because I follow the work of one of the authors, [Jürgen Münch](https://www.researchgate.net/profile/Juergen_Muench) from the time when he posted this on twitter with the legend “Be careful what you measure!” back in 2015.
+
+![Sum of non related measures](assets/munch_measures.png#center "Be careful what you measure!")
+
+Dr. Münch has a huge academic production about software startups, lean product management, lean analytics, innovation processes, business model validation, and agile engineering. The article is co-authored by two other researchers, [Marco Kuhrmann](https://www.researchgate.net/profile/Marco_Kuhrmann) and [Daniel Brunner](https://www.researchgate.net/profile/Daniel_Brunner7) with a lot of experience in those fields too.
+
+I’ll focus on what I think are the most important, unusual and powerful points of the article. Assume everything below is directly taken or paraphrased from the original article, although I’ve tried to explain it in my own words leaving out MANY details and diagrams. Any mistakes or misinterpretations are mine.
+
+
+# What everybody knows (but nobody tells you)
+
+Those of us who have been involved in the startup ecosystem and the development of software for them know that there is a pattern that almost everyone followed sometime in a way or another.
+
+When building a new product, the rush, the excitement of the unknown, and the general pressure to seize opportunities lead to generally _hackish_ software development. 
+
+You forget everything you learned about systematically implemented practices (a.k.a Software Engineering). Instead, as evidence from various researches suggests, developers tend (choose or perhaps... prefer?) to use light, informal, personalized methods "based" on things that seem to work for others. In fact, many times these practices are selected opportunistically and with great bias.
+
+Remember that most of these ventures tend to have inexperienced members with little knowledge of software engineering. Or they have experience, but that experience comes from software factories that have very different (and most of the time, opposite) business models. And as if that weren’t enough, the lack of resources (human and physical) makes everything harder. Many times this leads to a feeling that "those software engineering processes are applicable in well established teams, with enough money to afford them"
+
+Finally… you have the speed factor around startups. They tend to have a rapid evolution, from the discovery of their business model, they run a race against everybody with the main goal to scale as fast as they can. To do that, startups tend to deliver products/features to their clients as fast as possible just for the sake of establishing themselves, many times exchanging those deliveries by technical debt.
+
+
+# Lean to the rescue
+
+I really believe (and other authors think the same) that agile methodologies, and especially Lean Startup, are the key to successful startups. But startups refuse to be tied to the big names and strictly follow their rules. Often, these technology entrepreneurs take relevant practices from here and there and adapt them to their individual needs resulting in what are known as hybrid methods.
+
+Quite often startups build different types of Minimal Viable Products (MVPs) －landing pages, mockups, concierges, single-feature MVPs, etc－ just to test assumptions, validate with clients and users, and collect valuable learning(s) about customers. And that is a very rational decision to make. Because in the core of Lean you find the Build-Measure-Learn cycle (BML) that is just that, a way to turn assumptions into certainties offering solutions to problems that many customers are not even aware of.
+
+There will be enough time to worry about the increasingly complex processes that startups will need to install once the product reaches the market.
+
+
+# As a startup I want to follow a hybrid methodology…
+
+...I always preferred to write user stories backward, starting with the business need, then the actor and finally what you need or want… because I feel that I’m narrowing too much the scope of the stories. This time won’t be the exception.
+
+_“**To** be able to experiment continuously through different MVPs, but also avoid technical debt to scale later once the product matures, **as a** startup **I want** to follow a lightweight methodology”_
+
+Now it’s much better, because that lightweight methodology can be a hybrid one (as we will talk about) or any other.
+
+So, what is a hybrid development methodology? Is one that combines agile aspects with classical engineering methods. In this case, It’s a three stages process that a startup building a product can follow for each new feature it wants to add. The process starts from a validated problem and defines these stages:
+
+
+1. Feature Requirements Generation and Evaluation (FRGE)
+ 						
+2. Design and User Experience Evaluation (DUXE)
+ 						
+3. Pre-Launch Testing (PLT) 
+
+Remember that a validated problem should be able to answer these questions: What is the problem? Who has the problem? Is the problem big enough to make a business out of it?
+
+
+## Stage 1 - Feature Requirements Generation and Evaluation (FRGE)
+
+You need to start finding (identifying/discovering) key requirements and quickly put them into an MVP following the BML cycle. But remember, you don’t need to (and you shouldn’t) wait for a beta version of your product… you can start working with wireframes as inputs for experimentation activities.
+
+After several BML cycles you can decide to take a validated feature, break it down into user stories and have the developers implement it. Later you will need to answer if the current set of features is sufficient to solve a customer’s issue and if there are customers willing to test the MVPs.
+
+
+## Stage 2 - Design and User Experience Evaluation (DUXE)
+
+This stage is like the first one with the difference that you will need to develop software-based prototypes (mockups). For this you can use clickable prototypes so early adopters can test the MVP. Later you will need to answer if the current set of features is sufficient to solve a customer’s issue and if there are customers willing to test the MVPs.
+
+It is worth asking these to make decisions at this point: is the user experience sufficient for early adopters? Does the customer fully understand the use of the product?
+
+
+## Stage 3 - Pre-Launch Testing (PLT)
+
+This third stage is simple: once the single-feature MVP reaches a maturity state in which it can potentially be released, then it must undergo a series of quality assurance activities.
+
+
+# Conclusions
+
+As I said at the beginning, if you've been working on developing software for startups you're used to these stages. However, that does not make less valuable the approach of this hybrid methodology that shows all the necessary information consolidated in 3 very well defined stages.
+
+# Reference
+
+D. Brunner, J. Münch, and M. Kuhrmann, “Entrepreneurial Software Engineering: Towards a Hybrid Development Method for Early-Stage Startups,” p. 12, Sep. 2020.
+
+# Secondary references
+
+*   Wasserman, A. I. “Low ceremony processes for short lifecycle projects”. In: Managing Software Process Evolution. Springer, 2016, pp. 1–13.
+*   Paternoster N. et al. “Software development in startup companies: A systematic map- ping study”. In: Information and Software Technology 56.10 (2014), pp. 1200–1218.
+*   Tegegne, E. W.; Seppänen, S.; Ahmad, M. O. “Software development methodologies and practices in start-ups”. In: IET Software 13.6 (2019), pp. 497–509.
+*   Giardino C. et al. “What do we know about software development in startups?”. In: IEEE software 31.5 (2014), pp. 28–32.
+*   Kuhrmann M. et al. “Hybrid Software Development Approaches in Practice: A European Perspective”. In: IEEE Software (2018).
+*   Lindgren, E.; Münch, J. “Raising the odds of success: the current state of experimenta- tion in product development”. In: Information and Software Technology 77 (2016), pp. 80–91.
+
+# Review
+
+1. **Research quality - 2/5** \
+The article is a proposal that, although is based on solid previous research and literature background, lacks enough empirical evidence of its use.
+2. **Confidence - 4/5** \
+At risk of being in contradiction with the previous point, the article, the background of the authors and my own experience makes me feel very confident with the proposal.
+3. **Usefulness - 5/5** \
+As I said, I think that the concepts poured in this article are very useful, and they should be spread, used, measured and reported to establish as they way to do things in the context of new software development for startups.
+4. **Comments** \
+The article is easy to read, enjoyable and enlightening, mostly the diagrams of each stage that make everything crystal clear.
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Jan 4, 2021_: Original Publication on dariomac.com

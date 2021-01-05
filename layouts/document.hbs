@@ -12,14 +12,29 @@
         border: 0px !important;
       }
 
-      .details .container-fluid.dm-board h2 {
+      .essay article {
+        margin-left: 26px;
+      }
+
+      .essay p {
+        font-size: 16px;;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
         font-size: 20px;
         margin-bottom: 2px;
         font-weight: bold;
         padding-top: 8px;
       }
 
-      .details .container-fluid.dm-board h3 {
+      .details .dm-board h3 {
         font-weight: bold;
         text-decoration: inherit;
       }
@@ -31,6 +46,14 @@
 
       article .essay li {
         font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
       }
 
     </style>
@@ -86,10 +109,10 @@
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board essay">
+        <div class="dm-board essay">
           <article>
             <div class="row featured">
-              <div class="col-md-12">
+              <div class="col-md-6">
                 <header>
                   <h1>{{ frontmatter.title }}</h1>
                   <p class="date">{{ content.pub_date }}</p>
