@@ -25,3 +25,6 @@ Thanks to the people of Kanbanize for allowing me to use the look&feel of a vers
 
 /* SITE */
 Software: my own (explained here: https://dariomac.com/static-website-generator)
+
+/* VENDORS */
+Fancybox - https://fancyapps.com/fancybox/3/ - https://github.com/fancyapps/fancybox
