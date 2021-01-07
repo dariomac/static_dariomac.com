@@ -1,0 +1,45 @@
+{
+  "title": "Software Engineer",
+  "date": "20210106",
+  "layout": "experience",
+  "card": {
+    "color": "#000000",
+    "columnid": "progress_2",
+    "content": "[title]",
+    "datebox": "Nov 2020 – Now",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "202010106",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Stagger.com"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Software Engineer at Stagger.com
+
+[duration:string]
+Nov 2020 - Now
+
+[place_url:string]
+https://stagger.com/
+
+[place:string]
+Stagger
+
+[content:md]
+As a Software Engineer I'm working mostly in the API (Node.js) to enable other devs to create new experiences or creating my own ones on React. Also I'm helping with the data streams and analytics pipelines to provide users of insights converting data from different sources into standarized information.
+
+{{!-- New share service to deliver embeds --}}
+{{!-- Embeds analytics --}}
+{{!-- IG/FB integration of insights --}}
+
+[projects:md]
