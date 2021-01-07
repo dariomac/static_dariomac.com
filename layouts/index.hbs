@@ -134,14 +134,14 @@
 
           <div class="container-fluid float-left">
             <div id="dm-board-header" class="row d-none d-md-flex">
-              <div class="plan col-md-3"><span>PLAN</span></div>
-              <div class="in_progress col-md-3"><span>IN PROGRESS</span></div>
-              <div class="done col-md-6"><span>DONE</span></div>
+              <div class="plan col-md-{{ frontmatter.plan_cols }}"><span>PLAN</span></div>
+              <div class="in_progress col-md-{{ frontmatter.in_progress_cols }}"><span>IN PROGRESS</span></div>
+              <div class="done col-md-{{ frontmatter.done_cols }}"><span>DONE</span></div>
             </div>
             <div id="dm-board-header-descs" class="row d-none d-md-flex">
-              <div class="col-md-3">Interests - Ideas</div>
-              <div class="col-md-3">Speculations - Prototype</div>
-              <div class="col-md-6">Knowledge - Products - Facts</div>
+              <div class="col-md-{{ frontmatter.plan_cols }}">Interests - Ideas</div>
+              <div class="col-md-{{ frontmatter.in_progress_cols }}">Speculations - Prototype</div>
+              <div class="col-md-{{ frontmatter.done_cols }}">Knowledge - Products - Facts</div>
             </div>
           </div>
         </div> <!-- dm-tab-filter-wrapper -->
@@ -168,17 +168,17 @@
             <h1 class="col-md-12 text-center">Me</h1>
           </div>
           <div class="row me">
-            <div class="plan iso col-md-3">
+            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
               {{#each (getPlannedTasks laneContent.Me)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-3">
+            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
               {{#each (getInProgressTasks laneContent.Me)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-6">
+            <div class="done iso col-md-{{ frontmatter.done_cols }}">
               {{#each (getDoneTasks laneContent.Me)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -189,17 +189,17 @@
             <h1 class="col-md-12 text-center">Experience</h1>
           </div>
           <div class="row experience">
-            <div class="plan iso col-md-3">
+            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
               {{#each (getPlannedTasks laneContent.Experience)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-3">
+            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
               {{#each (getInProgressTasks laneContent.Experience)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-6">
+            <div class="done iso col-md-{{ frontmatter.done_cols }}">
               {{#each (getDoneTasks laneContent.Experience)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -210,17 +210,17 @@
             <h1 class="col-md-12 text-center">Education</h1>
           </div>
           <div class="row education">
-            <div class="plan iso col-md-3">
+            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
               {{#each (getPlannedTasks laneContent.Education)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-3">
+            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
               {{#each (getInProgressTasks laneContent.Education)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-6">
+            <div class="done iso col-md-{{ frontmatter.done_cols }}">
               {{#each (getDoneTasks laneContent.Education)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -231,17 +231,17 @@
             <h1 class="col-md-12 text-center">Research</h1>
           </div>
           <div class="row research">
-            <div class="plan iso col-md-3">
+            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
               {{#each (getPlannedTasks laneContent.Research)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-3">
+            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
               {{#each (getInProgressTasks laneContent.Research)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-6">
+            <div class="done iso col-md-{{ frontmatter.done_cols }}">
               {{#each (getDoneTasks laneContent.Research)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -252,17 +252,17 @@
             <h1 class="col-md-12 text-center">Articles</h1>
           </div>
           <div class="row article">
-            <div class="plan iso col-md-3">
+            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
               {{#each (getPlannedTasks laneContent.Article)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-3">
+            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
               {{#each (getInProgressTasks laneContent.Article)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-6">
+            <div class="done iso col-md-{{ frontmatter.done_cols }}">
               {{#each (getDoneTasks laneContent.Article)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -273,17 +273,17 @@
             <h1 class="col-md-12 text-center">Essays &amp; Field Notes</h1>
           </div>
           <div class="row essay">
-            <div class="plan iso col-md-3">
+            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
               {{#each (getPlannedTasks laneContent.Essay)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-3">
+            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
               {{#each (getInProgressTasks laneContent.Essay)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-6">
+            <div class="done iso col-md-{{ frontmatter.done_cols }}">
               {{#each (getDoneTasks laneContent.Essay)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -294,17 +294,17 @@
             <h1 class="col-md-12 text-center">Projects/Products</dih1v>
           </div>
           <div class="row project">
-            <div class="plan iso col-md-3">
+            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
               {{#each (getPlannedTasks laneContent.Project)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-3">
+            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
               {{#each (getInProgressTasks laneContent.Project)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-6">
+            <div class="done iso col-md-{{ frontmatter.done_cols }}">
               {{#each (getDoneTasks laneContent.Project)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
@@ -315,17 +315,17 @@
             <h1 class="col-md-12 text-center">Quotes</h1>
           </div>
           <div class="row quote">
-            <div class="plan iso col-md-3">
+            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
               {{#each (getPlannedTasks laneContent.Quote)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="in_progress iso col-md-3">
+            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
               {{#each (getInProgressTasks laneContent.Quote)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}
             </div>
-            <div class="done iso col-md-6">
+            <div class="done iso col-md-{{ frontmatter.done_cols }}">
               {{#each (getDoneTasks laneContent.Quote)}}
                 <!--#include virtual="../common/_task.html" -->
               {{/each}}

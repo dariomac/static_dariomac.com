@@ -4,7 +4,10 @@
   "mode": "collection",
   "title": "Darío Macchi personal website",
   "done": "done_3",
-  "canonical": "https://dariomac.com/index.html"
+  "canonical": "https://dariomac.com/index.html",
+  "plan_cols": 2,
+  "in_progress_cols": 3,
+  "done_cols": 7
 }
 
 ---
