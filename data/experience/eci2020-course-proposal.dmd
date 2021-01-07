@@ -4,7 +4,7 @@
   "layout": "experience",
   "card": {
     "color": "#AD4647",
-    "columnid": "progress_2",
+    "columnid": "archive_6",
     "content": "Mejora en calidad de revisiones de software mediante técnicas de lectura",
     "datebox": "Mid 2020",
     "extlink": "https://eci.dc.uba.ar/",
@@ -20,8 +20,8 @@
     },
     {
       "taskid": "2",
-      "title": "Waiting for approval.",
-      "completiondate": ""
+      "title": "Was never approved due to COVID-19",
+      "completiondate": "2020-12-31"
     }],
     "subtasks": "0",
     "subtaskscomplete": "0",
