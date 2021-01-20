@@ -780,10 +780,12 @@ xcustom form elements
 }
 
 article img[src*="#center"],
-article iframe[src*="#center"] {
+article iframe[src*="#center"],
+article .center {
     display: block;
     margin: 0 auto;
     max-width: 95%;
+    text-align: center;
 }
 
 article .description {

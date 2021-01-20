@@ -1,0 +1,55 @@
+{
+  "title": "Ligustrum - The first one (tf1)",
+  "date": "2021-01-17",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "progress_2",
+    "content": "This is the first Ligustrum of my collection",
+    "datebox": "2021-01-17",
+    "extlink": null,
+    "laneid": "Bonsai",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20170601",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+
+[pub_date:string]
+
+[short_description:string]
+
+[body:md]
+I did my real first Bonsai in 1993... really. I was 11 and I didn't know anything about Bonsai trees. It was a pine, and with the help of a book I did my best efforts and keep it alive for 2-3 years :-(
+
+So on 2017, when I bought my house, I decided to start again with Bonsai trees as a hobby. This was my first attempt, my first pre-bonsai tree.
+
+<div class="center">
+
+![Ligustrum - tf1 - 2020-12-10 1](/assets/bonsai-1-20201210-1.jpg)
+![Ligustrum - tf1 - 2020-12-10 2](/assets/bonsai-1-20201210-2.jpg)
+
+</div>
+
+Although those photos are from December 10, 2020 I have been taking care of it since 2017. I choosed the Ligustrum because in my home it grew like grass... an seems to support every rough condition that you can imagine. A couple of years later, reading more about Ligustrum, I realized that indeed [it's a plague (ES)](http://aia.org.uy/sites/default/files/seminario_investigaciones.pdf) and is [killing the native trees of my country (ES)](https://ladiaria.com.uy/articulo/2019/11/ligustro-el-arbol-exotico-invasor-que-esta-ahogando-nuestros-bosques-nativos/).
+
+Anyway, the first advice I read [here](https://www.bonsaiempire.com/basics), that I support 100% is: start working with a local tree, a tree used to your weather and soil... so I started (again) with a Ligustrum.
+
+
+[acknowledgments:md]
+
+[further_reading:md]
+- [The basics - Learn how to grow a Bonsai tree](https://www.bonsaiempire.com/basics)
+
+[significant_revisions:md]
+_Jan 19, 2021_: Original Publication on dariomac.com
