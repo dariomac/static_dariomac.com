@@ -8,16 +8,22 @@
       <!--#include virtual="../common/_critical.css" -->
 
       .essay {
-        margin-left: inherit;
+        background-color: #f2f2f2;
         border: 0px !important;
+        margin-left: inherit;
       }
 
-      .essay article {
-        margin-left: 26px;
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
       }
 
       .essay p {
-        font-size: 16px;;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
       }
 
       .details .dm-board h1 {
@@ -54,6 +60,20 @@
         font-style: italic;
         color: #414141;
         text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
       }
 
     </style>
@@ -112,7 +132,7 @@
         <div class="dm-board essay">
           <article>
             <div class="row featured">
-              <div class="col-md-6">
+              <div class="offset-md-3 col-md-6 sheet">
                 <header>
                   <h1>{{ frontmatter.title }}</h1>
                   <p class="date">{{ content.pub_date }}</p>
