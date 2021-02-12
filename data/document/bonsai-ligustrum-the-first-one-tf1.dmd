@@ -9,7 +9,7 @@
     "datebox": "2021-01-17",
     "extlink": null,
     "laneid": "Bonsai",
-    "leftbox": null,
+    "leftbox": "2017-06-01",
     "linkto": "[link_to]",
     "position": "20170601",
     "subtaskdetails": [],
@@ -24,8 +24,10 @@
 ---
 
 [summary:string]
+This is the first Ligustrum bonsai I made, back to 2017. It was raised from seed and is the oldest in my collection.
 
 [pub_date:string]
+2021-01-17
 
 [short_description:string]
 
