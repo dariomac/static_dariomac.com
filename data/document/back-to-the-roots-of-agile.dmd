@@ -1,0 +1,106 @@
+{
+  "title": "Back to the roots of agile",
+  "date": "2021-02-15",
+  "layout": "document",
+  "card": {
+    "color": "#FF6E19",
+    "columnid": "done_3",
+    "content": "Psss... I'm not talking about management here, but software development technical skills!",
+    "datebox": "2021-02-15",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20210215",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+
+[pub_date:string]
+2021-02-15
+
+[short_description:string]
+(psss... I'm not talking about management)
+
+[body:md]
+## Agile Software Development needs to be about software development again.
+
+Ok, this will be a short one. Not because the topic isn’t interesting or attractive… you know that if it were I wouldn’t be writing about it. Will be short because I want it to be taken as an invitation. An invitation to go deeper in this topic, but mostly, to think about the origin of agile software development. The article [Technical Agile Coaching with the Samman Method](http://www.methodsandtools.com/archive/sammancoaching.php) introduces you to something so easy to understand and natural, that makes you wonder why it looks so far from the reality of many software factories. It also makes me think about why the agile movement moved away from software development over the years.
+
+The article reviewed is an excerpt from the book ["Technical Agile Coaching with the Samman Method"](https://leanpub.com/techagilecoach) published on Leanpub. The author, Emily Bache is a software developer that built software for small startups and large corporations. She is a Samman Technical Coach, has a blog called “[Coding is Like Cooking](http://coding-is-like-cooking.info/)" (which I recommend) and a very interesting (and active) [twitter account](https://twitter.com/emilybache). A special mention is for her [github account](https://github.com/emilybache), full of coding katas in up to 20 languages in some cases!
+
+I’ll focus on what I think are the most important ideas behind the article, introducing the coaching technique briefly described in the article. Then I will jump into a very personal opinion about its relationship to the current agile state of the art, so mistakes or misinterpretations are all mine.
+
+## A tale of two devs
+
+To begin with, let's talk about some developer called Lars. I imagine him as one of many that you know, that being pressured by new projects all the time, follows his recipes and well known methods trying to reach each milestone until projects ends. Then he starts again with another project. And so on...
+
+Now, think for a moment what would happen if we stop that suffocating cycle and let him try new things; not new for the industry, but new for himself. For example, what if he starts using TDD and, after a while, comments to Patrik (a team member) “I like the feeling of freedom to change the code and get quick feedback in the form of passing or failing tests. It should be easier to find and fix bugs in this code now”? Would the whole team be interested in this kind of renewal experience toward better developers?
+
+Let's continue with the example. Patrik started using TDD too and, after a while he said “it is actually fun to write the tests this way instead of afterwards.” Now, wait a minute… TDD shouldn’t be seen as a competitor of afterward testing (indeed is not) because it is a design strategy. So… who would correct the conceptual error that Patrik has or at least, discuss about the topic? Lars? He is a bit more experienced than Patrik, but I don’t think that he has the enough skills and experience for that job.
+
+So now we have these two questions to be answered. Let’s review them:
+
+1.  Would the whole team be interested in this kind of renewal experience toward better developers?
+2.  Who would correct the conceptual error that Patrik has or at least, discuss about the topic?
+
+The answer for both questions can be found in Samman coaching.
+
+Samman coaching is a method for developers that wants to be better and improve how they produce and build software. Here we can talk about the meaning of the Swedish word Samman, but I will leave that for your research. I prefer to talk about the fact that it is completely focused on technical practices and how people write code.
+
+Basically a Samman coach works with different software development teams at the same time, splitting its contribution between Ensemble working and Learning hours.
+
+The Ensemble working is like a Mob programming session where all the team works towards the completion of a single task, taking turns to code while the others are in the Navigator role. And this is the answer to the first question. The Ensemble working is the way to make everyone part of the experience of working on something useful while applying new techniques.
+
+A Learning hour is… well, an hour of your daily work time dedicated to learning new things. In that hour you will do short exercises to practice coding skills and learn new techniques. In the Ensemble working the team will use some techniques that will be fully understood in these hours of study on the theory behind them. So, that’s the answer to the 2nd question. Those conceptual errors can be explained during these sessions, going to the sources, asking professionals taking advantage of the spare time to think!
+
+## And what about the origin of agile?
+
+At least we reached this part; I was waiting to explain this.
+
+You know who are the guys that signed the Agile Manifesto? Take a look a THE list:
+
+- Kent Beck
+- Mike Beedle
+- Arie van Bennekum
+- Alistair Cockburn
+- Ward Cunningham
+- Martin Fowler
+- James Grenning
+- Jim Highsmith
+- Andrew Hunt
+- Ron Jeffries
+- Jon Kern
+- Brian Marick
+- Robert C. Martin
+- Steve Mellor
+- Ken Schwaber
+- Jeff Sutherland
+- Dave Thomas
+
+Ok… those are big names… Not only many of them are agile legends, but most of them have another thing in common: they are/were all excellent, highly recognized, deadly productive, very famous… DEVELOPERS! Yes… those men that signed the agile manifesto knew/know how to write well crafted code. And the original spirit of agile spin over that idea and not over the managerial -goals achievers- one that has right now.
+
+The author says The great privilege of a Samman coach is getting to write code for most of the day, together with others. (...) using effective technical practices and writing excellent quality code and tests together. 
+
+Let me know if you find anything that represents the agile spirit more than that phrase.
+
+[acknowledgments:md]
+
+[further_reading:md]
+*   Emily Bache - [Technical Agile Coaching with the Samman Method](https://www.google.com/url?q=http://www.methodsandtools.com/archive/sammancoaching.php&sa=D&source=editors&ust=1613442103291000&usg=AOvVaw0xkqWaRSlKfht8qGZStQP2) - [http://www.methodsandtools.com/archive/sammancoaching.php](https://www.google.com/url?q=http://www.methodsandtools.com/archive/sammancoaching.php&sa=D&source=editors&ust=1613442103292000&usg=AOvVaw0X-H7eL9Li8xP5BzogVfVo)
+
+### Secondary references
+
+*   [https://agilemanifesto.org/](https://www.google.com/url?q=https://agilemanifesto.org/&sa=D&source=editors&ust=1613442103292000&usg=AOvVaw3p4tTpBi8nYf6QzlQvrSUo)
+
+[significant_revisions:md]
+_Feb 15, 2021_: Original Publication on dariomac.com

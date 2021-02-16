@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Node.js logging solutions | Darío Macchi</title>
+    <title>Back to the roots of agile | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -286,7 +286,7 @@ table td, table th {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="author" content="Darío Macchi" />
-<meta name="description" content="This article describes a NodeJS module to generate centralized logs of different sources (most of the time, microservices) adding client requests traceability. It use Winston and Morgan modules under the hood but add a layer of services to provide a common highly-customizable format which includes type of signal (request/response), timestamps, ip address, user agent and most important, short non-sequential url-friendly unique ids that let you “follow” the client activity from the first request done to any service until it leaves." />
+<meta name="description" content="Psss... I&#x27;m not talking about management here, but software development technical skills!" />
 <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
 
 <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -309,7 +309,7 @@ table td, table th {
 <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
 <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
 
-<link rel="canonical" href="https://www.vairix.com/nodejs-logging-solutions" />
+<link rel="canonical" href="https://dariomac.com/back-to-the-roots-of-agile" />
 
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -431,12 +431,12 @@ https://www.dariomac.com -->
             "@type": "WebPage",
             "@id": "https://www.dariomac.com/"
           },
-          "headline": "Node.js logging solutions",
-          "alternativeHeadline": "Node.js logging solution with client tracing capability",
+          "headline": "Back to the roots of agile",
+          "alternativeHeadline": "Psss... I'm not talking about management here, but software development technical skills!",
           "url": "https://www.dariomac.com/",
-          "datePublished": "2020-01-29",
-          "dateCreated": "2019-12-28",
-          "description": "This article describes a NodeJS module to generate centralized logs of different sources (most of the time, microservices) adding client requests traceability. It use Winston and Morgan modules under the hood but add a layer of services to provide a common highly-customizable format which includes type of signal (request/response), timestamps, ip address, user agent and most important, short non-sequential url-friendly unique ids that let you “follow” the client activity from the first request done to any service until it leaves.",
+          "datePublished": "2021-02-15",
+          "dateCreated": "2021-02-15",
+          "description": ,
           "author": {
             "@id": "https://www.dariomac.com/me"
           },
@@ -472,103 +472,88 @@ https://www.dariomac.com -->
             <div class="row featured">
               <div class="offset-md-3 col-md-6 sheet">
                 <header>
-                  <h1>Node.js logging solutions</h1>
-                  <p class="date">2020-01-29</p>
+                  <h1>Back to the roots of agile</h1>
+                  <p class="date">2021-02-15</p>
                 </header>
 
                 
                 <section class="description">
                   <p>
-                    
+                    (psss... I&#x27;m not talking about management)
                   </p>
                 </section>
 
                 <section>
-                    <h2><a name="do-you-feel-lost-when-something-happens-and-your-logs-dont-show-any-useful-infor" class="anchor">
-<a name="do-you-feel-lost-when-something-happens-and-your-logs-dont-show-any-useful-infor" href="#do-you-feel-lost-when-something-happens-and-your-logs-dont-show-any-useful-infor" class="no_external_ico">Do you feel lost when something happens and your logs don’t show any useful information?</a></h2>
-<p>Ok, me too. So I decided to do something about it. I started as everyone, using <a href="https://www.npmjs.com/package/morgan">Morgan</a> as an easy way to log requests and responses. Morgan is a middleware that listens to each request made to the server, the request continues down the pipeline and finally logs request and response information in one line. It saves a lot of time because you don’t have to manually create those logs.</p>
-<p>But I need more. As I said, it shows request and response information in one line. What if you want to log something after the request was logged and before the response line in the log? E.g.</p>
-<p><picture>
-              <source srcset="/assets/nodejs-logging1.webp" type="image/webp">
-  
-              <img src="/assets/nodejs-logging1.jpg#center" alt="Log generic example"></picture></p>
-<p>This can’t be done with Morgan. I need something more flexible, something that lets me log whatever I want, whenever I want… without losing the automation gained with Morgan. To achieve this I went over the most popular module for logging, which is <a href="https://www.npmjs.com/package/winston">Winston</a>.</p>
-<p>Winston lets you log whatever you want. You just need to create it and call it.</p>
-<p><picture>
-              <source srcset="/assets/nodejs-logging2.webp" type="image/webp">
-  
-              <img src="/assets/nodejs-logging2.jpg#center" alt="Winston configuration"></picture></p>
-<p>Winston decouples parts of logging and makes it extensible and flexible. It can be configured to multiple levels of logging and has a large and robust feature set. So for us, it was natural to mix both solutions.</p>
-<p><picture>
-              <source srcset="/assets/nodejs-logging3.webp" type="image/webp">
-  
-              <img src="/assets/nodejs-logging3.jpg#center" alt="Morgan with Winston"></picture></p>
-<p>With this code, I use Morgan to automate the request-response log, but I use Winston as a renderer to keep a consistent format between automatic and manual logging.</p>
-<p>So, with a couple more configurations (mostly in Winston formatter) I end with a logger like this:</p>
-<p><picture>
-              <source srcset="/assets/nodejs-logging4.webp" type="image/webp">
-  
-              <img src="/assets/nodejs-logging4.jpg#center" alt="Log result"></picture></p>
-<p>There I see two request-response cycles, both done from a web browser that returned 304 as status code. Requests are represented with -&gt; while responses are &lt;-. Messages sent between request and response are marked as --.</p>
-<h2><a name="has-it-happened-to-you-that-a-user-reports-some-issues-and-you-dont-have-a-way-t" class="anchor">
-<a name="has-it-happened-to-you-that-a-user-reports-some-issues-and-you-dont-have-a-way-t" href="#has-it-happened-to-you-that-a-user-reports-some-issues-and-you-dont-have-a-way-t" class="no_external_ico">Has it happened to you that a user reports some issues and you don’t have a way to follow its trail in the logs?</a></h2>
-<p>If this hasn’t happened to you, you are a lucky guy. I need a way to trace down some user from its first request to the last response. Also, I need to trace the internal calls (e.g. calls to microservices or endpoints). Remember that in production, with say 50 requests/sec, your logs sorted by time would be mixed between several requests from different users. How can I achieve this? I implement a middleware that adds an ID to the first request, or if the request came with an ID as header variable, use it instead.</p>
-<p><picture>
-              <source srcset="/assets/nodejs-logging5.webp" type="image/webp">
-  
-              <img src="/assets/nodejs-logging5.jpg#center" alt="Unique requirement id generation"></picture></p>
-<p>Using <a href="https://www.npmjs.com/package/express-http-context">express-http-context</a> I make the ID available to be used anywhere. Also, because I add it to the response header, you can follow the trace even to the client-side for further use (e.g. if you experiment issues in the client-side, you can take note of that ID and later search for it in the logs server-side). The ID is the one between square brackets in the previous output sample.</p>
-<h2><a name="have-you-ever-wanted-to-change-the-verbosity-of-your-logs-in-realtime-without-re" class="anchor">
-<a name="have-you-ever-wanted-to-change-the-verbosity-of-your-logs-in-realtime-without-re" href="#have-you-ever-wanted-to-change-the-verbosity-of-your-logs-in-realtime-without-re" class="no_external_ico">Have you ever wanted to change the verbosity of your logs in realtime, without restarting your server, just to catch a slippery bug?</a></h2>
-<p>Finally, I need to change the verbosity level of the log in realtime, without restarting the server. The reason behind this is that e.g. when I’m debugging, I want to see the queries executed against the database. Sometimes I want to log a complete JSON object, or just generate more information on some level, other than debugging, to be consumed in special opportunities. For these reasons, we choose to log using <a href="https://en.wikipedia.org/wiki/Syslog#Severity_level">syslog severity levels</a>.</p>
-<p><picture>
-              <source srcset="/assets/nodejs-logging6.webp" type="image/webp">
-  
-              <img src="/assets/nodejs-logging6.jpg#center" alt="Full example of how to use severity levels"></picture></p>
-<p>In this example, the logger is my solution to logging and I am calling it in the catch, twice… but with different severity levels. Functions called emerg, alert, crit, error, warning, notice, info and debug are available from Winston. As the doc says “Logging levels in Winston conform to the severity ordering specified by RFC5424: severity of all levels is assumed to be numerically ascending from most important to least important.” So you can define a level to initiate which specifies the maximum level of messages that it should log and then change it.</p>
-<p>To change it, I added an endpoint (fully configurable via options) that lets you make requests to it setting the desired level. As soon as the endpoint receives this parameter, it will change the logging level until you send another request asking to change it again.</p>
-<p>e.g. curl localhost:5000/?set_log_level=debug will set the default log level to debug, so basically it will log everything!</p>
-<h2><a name="conclusion" class="anchor">
-<a name="conclusion" href="#conclusion" class="no_external_ico">Conclusion</a></h2>
-<p>With all these ideas, and to have all the same logging solutions, with the same format, on every project, we built a module and made it <a href="https://github.com/dariomac/dm-logger">publicly available in GitHub</a>, so you can use it too.</p>
+                    <h2><a name="agile-software-development-needs-to-be-about-software-development-again" class="anchor">
+<a name="agile-software-development-needs-to-be-about-software-development-again" href="#agile-software-development-needs-to-be-about-software-development-again" class="no_external_ico">Agile Software Development needs to be about software development again.</a></h2>
+<p>Ok, this will be a short one. Not because the topic isn’t interesting or attractive… you know that if it were I wouldn’t be writing about it. Will be short because I want it to be taken as an invitation. An invitation to go deeper in this topic, but mostly, to think about the origin of agile software development. The article <a href="http://www.methodsandtools.com/archive/sammancoaching.php">Technical Agile Coaching with the Samman Method</a> introduces you to something so easy to understand and natural, that makes you wonder why it looks so far from the reality of many software factories. It also makes me think about why the agile movement moved away from software development over the years.</p>
+<p>The article reviewed is an excerpt from the book <a href="https://leanpub.com/techagilecoach">&quot;Technical Agile Coaching with the Samman Method&quot;</a> published on Leanpub. The author, Emily Bache is a software developer that built software for small startups and large corporations. She is a Samman Technical Coach, has a blog called “<a href="http://coding-is-like-cooking.info/">Coding is Like Cooking</a>&quot; (which I recommend) and a very interesting (and active) <a href="https://twitter.com/emilybache">twitter account</a>. A special mention is for her <a href="https://github.com/emilybache">github account</a>, full of coding katas in up to 20 languages in some cases!</p>
+<p>I’ll focus on what I think are the most important ideas behind the article, introducing the coaching technique briefly described in the article. Then I will jump into a very personal opinion about its relationship to the current agile state of the art, so mistakes or misinterpretations are all mine.</p>
+<h2><a name="a-tale-of-two-devs" class="anchor">
+<a name="a-tale-of-two-devs" href="#a-tale-of-two-devs" class="no_external_ico">A tale of two devs</a></h2>
+<p>To begin with, let's talk about some developer called Lars. I imagine him as one of many that you know, that being pressured by new projects all the time, follows his recipes and well known methods trying to reach each milestone until projects ends. Then he starts again with another project. And so on...</p>
+<p>Now, think for a moment what would happen if we stop that suffocating cycle and let him try new things; not new for the industry, but new for himself. For example, what if he starts using TDD and, after a while, comments to Patrik (a team member) “I like the feeling of freedom to change the code and get quick feedback in the form of passing or failing tests. It should be easier to find and fix bugs in this code now”? Would the whole team be interested in this kind of renewal experience toward better developers?</p>
+<p>Let's continue with the example. Patrik started using TDD too and, after a while he said “it is actually fun to write the tests this way instead of afterwards.” Now, wait a minute… TDD shouldn’t be seen as a competitor of afterward testing (indeed is not) because it is a design strategy. So… who would correct the conceptual error that Patrik has or at least, discuss about the topic? Lars? He is a bit more experienced than Patrik, but I don’t think that he has the enough skills and experience for that job.</p>
+<p>So now we have these two questions to be answered. Let’s review them:</p>
+<ol>
+<li>Would the whole team be interested in this kind of renewal experience toward better developers?</li>
+<li>Who would correct the conceptual error that Patrik has or at least, discuss about the topic?</li>
+</ol>
+<p>The answer for both questions can be found in Samman coaching.</p>
+<p>Samman coaching is a method for developers that wants to be better and improve how they produce and build software. Here we can talk about the meaning of the Swedish word Samman, but I will leave that for your research. I prefer to talk about the fact that it is completely focused on technical practices and how people write code.</p>
+<p>Basically a Samman coach works with different software development teams at the same time, splitting its contribution between Ensemble working and Learning hours.</p>
+<p>The Ensemble working is like a Mob programming session where all the team works towards the completion of a single task, taking turns to code while the others are in the Navigator role. And this is the answer to the first question. The Ensemble working is the way to make everyone part of the experience of working on something useful while applying new techniques.</p>
+<p>A Learning hour is… well, an hour of your daily work time dedicated to learning new things. In that hour you will do short exercises to practice coding skills and learn new techniques. In the Ensemble working the team will use some techniques that will be fully understood in these hours of study on the theory behind them. So, that’s the answer to the 2nd question. Those conceptual errors can be explained during these sessions, going to the sources, asking professionals taking advantage of the spare time to think!</p>
+<h2><a name="and-what-about-the-origin-of-agile" class="anchor">
+<a name="and-what-about-the-origin-of-agile" href="#and-what-about-the-origin-of-agile" class="no_external_ico">And what about the origin of agile?</a></h2>
+<p>At least we reached this part; I was waiting to explain this.</p>
+<p>You know who are the guys that signed the Agile Manifesto? Take a look a THE list:</p>
+<ul>
+<li>Kent Beck</li>
+<li>Mike Beedle</li>
+<li>Arie van Bennekum</li>
+<li>Alistair Cockburn</li>
+<li>Ward Cunningham</li>
+<li>Martin Fowler</li>
+<li>James Grenning</li>
+<li>Jim Highsmith</li>
+<li>Andrew Hunt</li>
+<li>Ron Jeffries</li>
+<li>Jon Kern</li>
+<li>Brian Marick</li>
+<li>Robert C. Martin</li>
+<li>Steve Mellor</li>
+<li>Ken Schwaber</li>
+<li>Jeff Sutherland</li>
+<li>Dave Thomas</li>
+</ul>
+<p>Ok… those are big names… Not only many of them are agile legends, but most of them have another thing in common: they are/were all excellent, highly recognized, deadly productive, very famous… DEVELOPERS! Yes… those men that signed the agile manifesto knew/know how to write well crafted code. And the original spirit of agile spin over that idea and not over the managerial -goals achievers- one that has right now.</p>
+<p>The author says The great privilege of a Samman coach is getting to write code for most of the day, together with others. (...) using effective technical practices and writing excellent quality code and tests together.</p>
+<p>Let me know if you find anything that represents the agile spirit more than that phrase.</p>
 
                 </section>
 
-                  <section>
-                    <h2 id="Acknowledgments">Acknowledgments</h2>
-                      <p><a href="https://www.vairix.com/nodejs-logging-solutions">This post</a> was written for Vairix Software Development, so I want say thanks to them for let me share this with you in my homepage.</p>
+                  <section class="further-reading">
+                    <h2 id="FurtherReading">Further Reading</h2>
+                    <ul>
+<li>Emily Bache - <a href="https://www.google.com/url?q=http://www.methodsandtools.com/archive/sammancoaching.php&amp;sa=D&amp;source=editors&amp;ust=1613442103291000&amp;usg=AOvVaw0xkqWaRSlKfht8qGZStQP2">Technical Agile Coaching with the Samman Method</a> - <a href="https://www.google.com/url?q=http://www.methodsandtools.com/archive/sammancoaching.php&amp;sa=D&amp;source=editors&amp;ust=1613442103292000&amp;usg=AOvVaw0X-H7eL9Li8xP5BzogVfVo">http://www.methodsandtools.com/archive/sammancoaching.php</a></li>
+</ul>
+<h3><a name="secondary-references" class="anchor">
+<a name="secondary-references" href="#secondary-references" class="no_external_ico">Secondary references</a></h3>
+<ul>
+<li><a href="https://www.google.com/url?q=https://agilemanifesto.org/&amp;sa=D&amp;source=editors&amp;ust=1613442103292000&amp;usg=AOvVaw3p4tTpBi8nYf6QzlQvrSUo">https://agilemanifesto.org/</a></li>
+</ul>
 
                   </section>
                   <section>
                     <h2>Significant Revisions</h2>
-                    <p><em>Dec 27, 2019</em>: Original Publication on vairix.com</p>
-<p><em>Jan 29, 2020</em>: Original Publication on dariomac.com</p>
+                    <p><em>Feb 15, 2021</em>: Original Publication on dariomac.com</p>
 
                   </section>
 
 
 
-<section class="related-topics">
-  <h2>Related topics</h2>
-  <ul>
-      <li>
-        <a href="https://dariomac.com/traceability-logger">This is the card of the original Traceability Logger project</a>
-      </li>
-  </ul>
-</section>
 
-
-  <section class="backlinks">
-    <h2>Mentioned in</h2>
-        <ul>
-            <li>
-              <a href="/vairix-software-engineer">Sr. Software Engineer</a>
-            </li>
-            <li>
-              <a href="/traceability-logger">Traceability Logger</a>
-            </li>
-        </ul>
-  </section>
 
               </div>
             </div>

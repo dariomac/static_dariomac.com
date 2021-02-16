@@ -109,19 +109,6 @@ This third stage is simple: once the single-feature MVP reaches a maturity state
 
 As I said at the beginning, if you've been working on developing software for startups you're used to these stages. However, that does not make less valuable the approach of this hybrid methodology that shows all the necessary information consolidated in 3 very well defined stages.
 
-# Reference
-
-D. Brunner, J. Münch, and M. Kuhrmann, “Entrepreneurial Software Engineering: Towards a Hybrid Development Method for Early-Stage Startups,” p. 12, Sep. 2020.
-
-# Secondary references
-
-*   Wasserman, A. I. “Low ceremony processes for short lifecycle projects”. In: Managing Software Process Evolution. Springer, 2016, pp. 1–13.
-*   Paternoster N. et al. “Software development in startup companies: A systematic map- ping study”. In: Information and Software Technology 56.10 (2014), pp. 1200–1218.
-*   Tegegne, E. W.; Seppänen, S.; Ahmad, M. O. “Software development methodologies and practices in start-ups”. In: IET Software 13.6 (2019), pp. 497–509.
-*   Giardino C. et al. “What do we know about software development in startups?”. In: IEEE software 31.5 (2014), pp. 28–32.
-*   Kuhrmann M. et al. “Hybrid Software Development Approaches in Practice: A European Perspective”. In: IEEE Software (2018).
-*   Lindgren, E.; Münch, J. “Raising the odds of success: the current state of experimenta- tion in product development”. In: Information and Software Technology 77 (2016), pp. 80–91.
-
 # Review
 
 1. **Research quality - 2/5** \
@@ -136,6 +123,16 @@ The article is easy to read, enjoyable and enlightening, mostly the diagrams of 
 [acknowledgments:md]
 
 [further_reading:md]
+D. Brunner, J. Münch, and M. Kuhrmann, “[Entrepreneurial Software Engineering: Towards a Hybrid Development Method for Early-Stage Startups](https://www.researchgate.net/publication/344338022_Entrepreneurial_Software_Engineering_Towards_a_Hybrid_Development_Method_for_Early-Stage_Startups),” p. 12, Sep. 2020.
+
+### Secondary references
+
+*   Wasserman, A. I. “Low ceremony processes for short lifecycle projects”. In: Managing Software Process Evolution. Springer, 2016, pp. 1–13.
+*   Paternoster N. et al. “Software development in startup companies: A systematic map- ping study”. In: Information and Software Technology 56.10 (2014), pp. 1200–1218.
+*   Tegegne, E. W.; Seppänen, S.; Ahmad, M. O. “Software development methodologies and practices in start-ups”. In: IET Software 13.6 (2019), pp. 497–509.
+*   Giardino C. et al. “What do we know about software development in startups?”. In: IEEE software 31.5 (2014), pp. 28–32.
+*   Kuhrmann M. et al. “Hybrid Software Development Approaches in Practice: A European Perspective”. In: IEEE Software (2018).
+*   Lindgren, E.; Münch, J. “Raising the odds of success: the current state of experimenta- tion in product development”. In: Information and Software Technology 77 (2016), pp. 80–91.
 
 [significant_revisions:md]
 _Jan 4, 2021_: Original Publication on dariomac.com
