@@ -3,7 +3,7 @@
   "date": "2020-10-30",
   "layout": "project",
   "card": {
-    "color": "#99b399",
+    "color": "#AD4647",
     "columnid": "done_3",
     "content": "Software for processing and analyzing satellite images to optimize crops based on certain indicators",
     "datebox": null,
@@ -53,3 +53,12 @@ In Uruguay, and probably throughout Latin America, 97% of producers do not recor
 The problem that currently arises is that the records are only provided by the agricultural engineers at the time of going through the fields, who usually only manage to go through the sectors near the roads, preventing the possibility of having a total record of them. Because of this, there is no automatic alert system to minimize the effects of a plague or a specific problem affecting a specific sector of a pasture.
 
 With the implementation of this project thorugh the reading and interpretation of satellite images, it will be possible to provide a complete analysis, allowing to easily compare the current situation of a crop in comparison to objective indicators and store historical data of it.
+
+[related_images:json]
+  [{
+    "filename": "krooping-fabian.png"
+  },{
+    "filename": "krooping-agustina.png"
+  },{
+    "filename": "krooping-joaquin.png"
+  }]
