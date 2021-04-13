@@ -98,3 +98,80 @@ _Added to already in dmd_snippets.code-snippets file_
 [internal:raw]
 Original pptx: 8_hours_as_vairix_developer.pptx 
 
+# Layouts and partials
+
+## Layouts
+
+```html
+_critical
+_18common_html_header
+_18page_header
+_mobile-menu
+  dm-searcher
+  quote
+_entry-gallery
+_entry-attachments
+_entry-backlinks
+_orange-box
+_page_footer
+_18common_html_footer
+
+_critical
+_18common_html_header
+_18page_header
+_mobile-menu
+  about-me
+  article
+  education
+  experience
+  me
+  project
+  research
+_entry-gallery
+_entry-attachments
+_entry-related-topics
+_entry-backlinks
+_orange-box
+_page_footer
+_18common_html_footer
+
+_critical
+_18common_html_header
+_18page_header
+_mobile-menu
+  essays
+  sitemap
+_entry-backlinks
+_orange-box
+_page_footer
+_18common_html_footer
+
+_critical
+_18common_html_header
+_18page_header
+_mobile-menu
+  document
+_entry-gallery
+_entry-attachments
+_entry-related-topics
+_entry-backlinks
+_orange-box
+_page_footer
+_code-styler
+
+_18common_html_header
+_18page_header
+  index
+  _task
+_orange-box
+_page_footer
+
+inventory
+resume
+robots_txt
+sitemap_xml
+
+UNUSED
+_title.html
+header.html
+```
