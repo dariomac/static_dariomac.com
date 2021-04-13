@@ -173,5 +173,4 @@ sitemap_xml
 
 UNUSED
 _title.html
-header.html
 ```
