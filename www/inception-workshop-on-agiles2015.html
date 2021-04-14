@@ -208,19 +208,125 @@
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
-    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <meta name="author" content="Darío Macchi" />
+    <meta name="description" content="Presentation of our Initiation Workshop at the annual conference of the Latin American community of agile methodologies. This workshop uses an adaptation of Inception Deck Agile for entrepreneurs to establish/prioritize technology needs and associated technical risks. The talk shows examples of activities/games, success stories and experiences." />
+    <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
-    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
-    <script>
-      $(".fancybox").fancybox({
-        arrows: true,
-        loop: true,
-        keyboard: true
-      });
+    <link rel="dns-prefetch" href="//dariomac.com"/>
+    <link rel="dns-prefetch" href="//gstatic.com"/>
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
+    <link rel="dns-prefetch" href="//google-analytics.com"/>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+    <link rel="dns-prefetch" href="//google.com"/>
+    <link rel="dns-prefetch" href="//c.statcounter.com"/>
+    <link rel="dns-prefetch" href="//statcounter.com"/>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+    <link rel="dns-prefetch" href="//yui.yahooapis.com"/>
+    
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+    <!-- <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
+    <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
+    
+    <link rel="canonical" href="https://dariomac.com/inception-workshop-on-agiles2015" />
+    
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28220054-1']);
+    _gaq.push(['_trackPageview']);
+    
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = (document.location.protocol === 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    
+    function afterContentDraw () {
+      setTimeout(function () {
+        var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+        aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+        $.each(aList,
+          function (k, v) {
+            var $v = $(v);
+    
+            $v.click(function () {
+              _gaq.push(['_trackPageview', $v.attr('href')]);
+            });
+            // $v.css('color','red');
+          });
+        
+        preloadImages($('a.fancybox'));
+      }, 1000);
+    }
+    
+    function preloadImages (array) {
+      if (!preloadImages.list) {
+        preloadImages.list = [];
+      }
+      for (var i = 0; i < array.length; i++) {
+        var img = new Image();
+        img.src = $(array[i]).attr('href');
+        preloadImages.list.push(img);
+      }
+    }
+    
+    </script>
+    
+    <link rel="shortcut icon" href="/favicon.ico" />
+    
+    <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="og:image" content="/assets/images/d_social.png">
+    <meta property="og:image:type" content="image/png">
+    
+    <script type='application/ld+json'> 
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "@id": "https://www.dariomac.com/me",
+        "image": "https://dariomac.com/assets/aboutme-me.jpg",
+        "jobTitle": "Computer Engineering, MSc",
+        "name": "Darío Macchi",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Universidad_ORT_Uruguay_-_Logo.jpg/220px-Universidad_ORT_Uruguay_-_Logo.jpg",
+          "name": "Universidad ORT Uruguay",
+          "sameAs": "https://en.wikipedia.org/wiki/Universidad_ORT_Uruguay",
+          "url": "https://www.ort.edu.uy/"
+        },
+        "birthPlace": "Paysandú, Uruguay",
+        "birthDate": "1981.08.12",
+        "height": "1.72 meters",
+        "gender": "male",
+        "nationality": "Uruguayan",
+        "url": "https://www.dariomac.com",
+        "sameAs" : [
+          "https://twitter.com/_dariomac",
+          "https://uy.linkedin.com/in/dariomac",
+          "https://www.researchgate.net/profile/Dario_Macchi",
+          "https://ort-uy.academia.edu/Dar%C3%ADoMacchi",
+          "https://www.informatik.uni-trier.de/~ley/pers/hd/m/Macchi:Dario"
+        ]
+      }
+    </script>
+    <script type='application/ld+json'>
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.dariomac.com/software-engineering-advisor-consultant",
+        "name": "Darío Macchi",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.dariomac.com/assets/images/d.png"
+        },
+        "url": "https://www.dariomac.com"
+      }
     </script>
 
   </head>
@@ -542,125 +648,19 @@
       src="https://c.statcounter.com/9186547/0/dce954c9/1/"
       alt="web counter"></a></div></noscript>
     <!-- End of Statcounter Code -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
     
-    <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="Presentation of our Initiation Workshop at the annual conference of the Latin American community of agile methodologies. This workshop uses an adaptation of Inception Deck Agile for entrepreneurs to establish/prioritize technology needs and associated technical risks. The talk shows examples of activities/games, success stories and experiences." />
-    <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
     
-    <link rel="dns-prefetch" href="//dariomac.com"/>
-    <link rel="dns-prefetch" href="//gstatic.com"/>
-    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
-    <link rel="dns-prefetch" href="//google-analytics.com"/>
-    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
-    <link rel="dns-prefetch" href="//google.com"/>
-    <link rel="dns-prefetch" href="//c.statcounter.com"/>
-    <link rel="dns-prefetch" href="//statcounter.com"/>
-    <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
-    <link rel="dns-prefetch" href="//yui.yahooapis.com"/>
-    
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
-    <!-- <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
-    <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
-    
-    <link rel="canonical" href="https://dariomac.com/inception-workshop-on-agiles2015" />
-    
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-28220054-1']);
-    _gaq.push(['_trackPageview']);
-    
-    (function () {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = (document.location.protocol === 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    
-    function afterContentDraw () {
-      setTimeout(function () {
-        var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
-        aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
-        $.each(aList,
-          function (k, v) {
-            var $v = $(v);
-    
-            $v.click(function () {
-              _gaq.push(['_trackPageview', $v.attr('href')]);
-            });
-            // $v.css('color','red');
-          });
-        
-        preloadImages($('a.fancybox'));
-      }, 1000);
-    }
-    
-    function preloadImages (array) {
-      if (!preloadImages.list) {
-        preloadImages.list = [];
-      }
-      for (var i = 0; i < array.length; i++) {
-        var img = new Image();
-        img.src = $(array[i]).attr('href');
-        preloadImages.list.push(img);
-      }
-    }
-    
-    </script>
-    
-    <link rel="shortcut icon" href="/favicon.ico" />
-    
-    <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta property="og:image" content="/assets/images/d_social.png">
-    <meta property="og:image:type" content="image/png">
-    
-    <script type='application/ld+json'> 
-      {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "@id": "https://www.dariomac.com/me",
-        "image": "https://dariomac.com/assets/aboutme-me.jpg",
-        "jobTitle": "Computer Engineering, MSc",
-        "name": "Darío Macchi",
-        "alumniOf": {
-          "@type": "EducationalOrganization",
-          "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Universidad_ORT_Uruguay_-_Logo.jpg/220px-Universidad_ORT_Uruguay_-_Logo.jpg",
-          "name": "Universidad ORT Uruguay",
-          "sameAs": "https://en.wikipedia.org/wiki/Universidad_ORT_Uruguay",
-          "url": "https://www.ort.edu.uy/"
-        },
-        "birthPlace": "Paysandú, Uruguay",
-        "birthDate": "1981.08.12",
-        "height": "1.72 meters",
-        "gender": "male",
-        "nationality": "Uruguayan",
-        "url": "https://www.dariomac.com",
-        "sameAs" : [
-          "https://twitter.com/_dariomac",
-          "https://uy.linkedin.com/in/dariomac",
-          "https://www.researchgate.net/profile/Dario_Macchi",
-          "https://ort-uy.academia.edu/Dar%C3%ADoMacchi",
-          "https://www.informatik.uni-trier.de/~ley/pers/hd/m/Macchi:Dario"
-        ]
-      }
-    </script>
-    <script type='application/ld+json'>
-      {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "@id": "https://www.dariomac.com/software-engineering-advisor-consultant",
-        "name": "Darío Macchi",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.dariomac.com/assets/images/d.png"
-        },
-        "url": "https://www.dariomac.com"
-      }
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+    <script>
+      $(".fancybox").fancybox({
+        arrows: true,
+        loop: true,
+        keyboard: true
+      });
     </script>
   </body>
 </html>
