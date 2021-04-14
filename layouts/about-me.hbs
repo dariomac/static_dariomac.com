@@ -5,7 +5,7 @@
     <title>{{ frontmatter.title }} | Darío Macchi</title>
     <style>
       
-      <!--#include virtual="../common/_critical.css" -->
+      {{> _critical-css }}
 
       .me-effect {
         border: 2px solid #fff;
@@ -20,7 +20,7 @@
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
-    <!--#include virtual="../common/_18common_html_header.html" -->
+    {{> _common-html-footer }}
 
     {{#if frontmatter.jsonld}}
       <script type="application/ld+json">
@@ -30,7 +30,7 @@
   </head>
   <body>
     <div class="board_view details">
-      <!--#include virtual="../common/_18page_header.html" -->
+      {{> _page-header }}
       <main class="dm-main-content is-fixed">
         <div class="dm-tab-filter-wrapper">
           <div class="dm-tab-filter">
@@ -38,7 +38,7 @@
               <li class="placeholder">
                 <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
               </li>
-              <!--#include virtual="../common/_mobile-menu.html" -->
+              {{> _mobile-menu }}
               <li class="filter"><a href="/essays">Essays</a></li>
             </ul> <!-- dm-filters -->
           </div> <!-- dm-tab-filter -->
@@ -89,25 +89,25 @@
                   </section>
                 {{/if}}
 
-                <!--#include virtual="../common/_entry-gallery.html" -->
-                <!--#include virtual="../common/_entry-attachments.html" -->
-                <!--#include virtual="../common/_entry-related-topics.html" -->
+                {{> _entry-gallery }}
+                {{> _entry-attachments }}
+                {{> _entry-related-topics }}
               </div>
             </div>
-            <!--#include virtual="../common/_entry-backlinks.html" -->
+            {{> _entry-backlinks }}
           </article>
         </div> <!-- container-fluid dm-board -->
 
         <a href="/" class="logo">
           <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
         </a>
-        <!--#include virtual="../common/_orange-box.html" -->
+        {{> _orange-box }}
         {{!-- <a href="#0" class="dm-filter-trigger"></a> --}}
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
 
-    <!--#include virtual="../common/_page_footer.html" -->
-    <!--#include virtual="../common/_18common_html_footer.html" -->
+    {{> _page-footer }}
+    {{> _common-html-header }}
   </body>
 </html>
