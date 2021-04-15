@@ -16,7 +16,7 @@
     "findup": "echo && find data/*/assets -maxdepth 1 -type f -printf '%f\\n' | sort | uniq -d | xargs -I[filename] -n1 sh -c \"find data/ -name [filename] -printf 'data/%P\\n' && echo\"",
     "update-searcher": "rm -rf assets/build && cp -r ../dm-searcher/build/ assets/build && rm assets/build/inventory.json",
     "debug": "LOG_LEVEL=debug NODE_ENV=development node --inspect server.js",
-    "deploy": "timeout 15 bash -c 'while [[ \"$(curl -s -o /dev/null -X POST -w ''%{http_code}'' https://dariomac.com/pullit)\" != \"200\" ]]; do sleep 1; done'",
+    "deploy": "timeout 15 bash -c 'while [[ \"$(curl -s -o /dev/null -X OPTIONS -w ''%{http_code}'' https://dariomac.com/pullit)\" != \"204\" ]]; do sleep 1; done'",
     "build": "find . -name '.DS_Store' -type f -delete && node builder.js data/ www/ layouts/ --clear-all",
     "build-debug": "LOG_LEVEL=debug NODE_ENV=development node --inspect builder.js data/ www/ layouts/ --clear-all",
     "watch": "nodemon -e dmd,hbs,js,css server.js",
