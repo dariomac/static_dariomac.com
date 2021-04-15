@@ -65,24 +65,27 @@ app.get('/static/*', function (req, res) {
   res.redirect(301, `/assets/build/static/${req.params[0]}`);
 });
 
-app.post('/pullit', async function (req, res) {
-  console.log('Git-auto-pull was called... running!');
-
+const fetchAndReset = () => {
   exec('git fetch origin && git reset --hard origin/master && npm install', (err, stdout, stderr) => {
     if (err) {
       // node couldn't execute the command
       console.log(`\x1b[31m${err}\x1b[0m`);
-      return res.sendStatus(405);
     }
     if (stdout.length > 0) {
       console.log(`\x1b[32m${stdout}\x1b[0m`);
-      return res.sendStatus(200);
     }
     else {
       console.log(`\x1b[31m${stderr}\x1b[0m`);
-      return res.sendStatus(500);
     }
   });
+}
+
+app.options('/pullit', async function (req, res) {
+  console.log('Git-auto-pull was called... running!');
+
+  fetchAndReset();
+
+  return res.sendStatus(204);
 });
 
 app.get('/status', function (req, res) {
