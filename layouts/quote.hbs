@@ -62,6 +62,7 @@
 
                 {{> _entry-gallery }}
                 {{> _entry-attachments }}
+                {{> _entry-related-topics }}
               </div>
             </div>
             {{#if content.projects}}
@@ -90,6 +91,11 @@
     <!--</div>-->
 
     {{> _page-footer }}
+
+    {{#if frontmatter.has_code}}
+      {{> _code-styler }}
+    {{/if}}
+
     {{> _common-html-footer }}
   </body>
 </html>

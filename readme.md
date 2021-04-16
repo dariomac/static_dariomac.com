@@ -103,68 +103,47 @@ Original pptx: 8_hours_as_vairix_developer.pptx
 ## Layouts
 
 ```html
-_critical
-_18common_html_header
-_18page_header
-_mobile-menu
-  dm-searcher
-  quote
-_entry-gallery
-_entry-attachments
-_entry-backlinks
-_orange-box
-_page_footer
-_18common_html_footer
 
 _critical
-_18common_html_header
-_18page_header
+_common_html_header
+_page-header
 _mobile-menu
   about-me
   article
+  dm-searcher
+  document
   education
   experience
   me
   project
+  quote
   research
 _entry-gallery
 _entry-attachments
 _entry-related-topics
 _entry-backlinks
 _orange-box
-_page_footer
-_18common_html_footer
+_page-footer
+_code-styler
+_common-html-footer
 
 _critical
-_18common_html_header
-_18page_header
+_common_html_header
+_page-header
 _mobile-menu
   essays
   sitemap
 _entry-backlinks
 _orange-box
-_page_footer
-_18common_html_footer
+_page-footer
+_common-html-footer
 
-_critical
-_18common_html_header
-_18page_header
-_mobile-menu
-  document
-_entry-gallery
-_entry-attachments
-_entry-related-topics
-_entry-backlinks
-_orange-box
-_page_footer
-_code-styler
-
-_18common_html_header
-_18page_header
+_common_html_header
+_page-header
   index
   _task
 _orange-box
-_page_footer
+_page-footer
 
 inventory
 resume

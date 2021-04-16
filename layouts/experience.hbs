@@ -94,6 +94,11 @@
     <!--</div>-->
 
     {{> _page-footer }}
+
+    {{#if frontmatter.has_code}}
+      {{> _code-styler }}
+    {{/if}}
+
     {{> _common-html-footer }}
   </body>
 </html>
