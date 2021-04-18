@@ -105,7 +105,7 @@ Original pptx: 8_hours_as_vairix_developer.pptx
 ```html
 
 _critical
-_common_html_header
+_common-html-header
 _page-header
 _mobile-menu
   about-me
@@ -128,7 +128,7 @@ _code-styler
 _common-html-footer
 
 _critical
-_common_html_header
+_common-html-header
 _page-header
 _mobile-menu
   essays
@@ -138,7 +138,7 @@ _orange-box
 _page-footer
 _common-html-footer
 
-_common_html_header
+_common-html-header
 _page-header
   index
   _task
