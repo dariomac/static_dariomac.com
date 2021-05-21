@@ -5,7 +5,7 @@
   "has_code": true,
   "card": {
     "color": "#99b399",
-    "columnid": "done_3",
+    "columnid": "archive_6",
     "content": "I've made/adapted this library to import SVG directly from file and scale.",
     "datebox": "2013-03-14",
     "extlink": null,

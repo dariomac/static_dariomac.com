@@ -3,7 +3,10 @@
   "layout": "essays",
   "mode": "collection",
   "title": "Essays",
-  "summary": "All the eassays I wrote. Generally, they are piece of writing that gives my own argument, but in some cases, they can be papers, articles, or short stories."
+  "summary": "All the eassays I wrote. Generally, they are piece of writing that gives my own argument, but in some cases, they can be papers, articles, or short stories.",
+  "card": {
+    "linkto": "/essays"
+  }
 }
 
 ---

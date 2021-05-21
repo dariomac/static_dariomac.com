@@ -246,6 +246,19 @@
               {{#each (getDoneTasks laneContent.Essay)}}
                 {{> _task }}
               {{/each}}
+              <div class="card task" style="background-color: #A94BFF; color: {{getTextColor '#A94BFF'}}" data-order={{card.position}}>
+                <a href="/essays" title="Test Title" style="color: {{getTextColor '#A94BFF'}}">
+                  <h2 class="card-header ellipsis">
+                    Archive of essays
+                  </h2>
+                  <h3 class="card-body card-text">List of all my essays written to help the companies I have worked for, to consolidate knowledge, share my opinions or disseminate scientific information in a consumable format.</h3>
+                </a>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <span class="badge float-right" style="background-color: #A94BFF; color: {{getTextColor '#A94BFF'}}">2013 - Now</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
