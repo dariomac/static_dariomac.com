@@ -79,7 +79,7 @@ $(function(){
       layoutMode: 'fitRows',
       fitRows: {
         columnWidth: 170,
-        gutter: 5
+        gutter: 10
       }
       ,
       getSortData: {

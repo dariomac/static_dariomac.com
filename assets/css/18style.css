@@ -10,7 +10,7 @@ Primary style
 }
 
 html {
-  /* font-size: 62.5%; */
+  font-size: 10px;
 }
 
 html * {
@@ -19,7 +19,6 @@ html * {
 }
 
 body {
-  font-size: 10px;
   font-family: "Open Sans", arial, sans-serif !important;
   color: #331d35;
 }
@@ -43,7 +42,7 @@ Main Components
 -------------------------------- */
 .dm-header {
   position: relative;
-  height: 150px;
+  height: 15rem;
   background-color: #331d35;
 }
 
@@ -79,19 +78,11 @@ Main Components
 }
 
 #new_essay i {
-  font-size: 12px;
-  transition: all .2s ease-in-out;
-  width: 16px;
+  font-size: 1.2rem;
+  width: 1.6rem;
   text-align: center;
-}
-
-#new_essay.blink i {
-  font-size: 14px !important;
-  transition: all .1s ease-in-out;
-}
-
-#new_essay.blink span {
-  background-color: rgba(255, 221, 0, 0.5) !important;
+  display: inline; 
+  color:red;
 }
 
 .iso {
@@ -317,7 +308,7 @@ dm-board
 }
 
 #dm-board-header span {
-  font-size: 11px;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
@@ -344,9 +335,10 @@ dm-board
 .splitter {
   background-color: #F0F0F0;
   border: #d8d7d7 1px solid;
-  font-size: 10px;
-  height: 19px;
-  margin-bottom: 10px;
+  font-size: 1.1rem;
+  height: 2.2rem;
+  margin-bottom: 1rem;
+  padding-top: .2rem;
 }
 
 .splitter > div {
@@ -364,8 +356,8 @@ dm-board
 }
 
 .task {
-  font-size: 10px;
-  margin: 5px 0px;
+  font-size: 1.2rem;
+  margin: 0.55rem 0rem;
   width: 170px /*12rem*/;
   background-color: #99b399;
 }
@@ -391,7 +383,7 @@ dm-board
 }
 
 .task .card-header, .task .card-body, .task .list-group-item {
-  padding: 0.20rem;
+  padding: 0.4rem;
 }
 
 .task .card-body, .task .list-group-item {
@@ -415,6 +407,8 @@ dm-board
   border-radius: 0.3rem;
   font-weight: normal;
   padding: .45em .4em;
+  font-size: .8rem;
+  margin-top: .5rem;
 }
 
 .task .task_tag {
@@ -422,7 +416,7 @@ dm-board
   background-position: -60px -136px;
   background-repeat: no-repeat;
   float: left;
-  margin: 1px 3px 0px 0px;
+  margin: 3px 3px 0px 0px;
   overflow: hidden;
   width: 11px;
   height: 11px;
@@ -440,7 +434,7 @@ dm-board
   background-repeat: no-repeat;
   float: left;
   height: 11px;
-  margin: 1px 3px 0px 0px;
+  margin: 3px 3px 0px 0px;
   overflow: hidden;
   text-indent: -99px;
   width: 11px;
