@@ -1,0 +1,68 @@
+{
+  "title": "Dot voting",
+  "date": "2021-05-25",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "progress_2",
+    "content": "How to choose between options using a limited number of votes. How many votes?",
+    "datebox": "2021-05-25",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20210521",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": { 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.dariomac.com/dot-voting"
+    },
+    "headline": "Dot voting",
+    "alternativeHeadline": "",
+    "genre": "research", 
+    "keywords": "agility retrospective planning", 
+    "wordcount": "305",
+    "url": "https://www.dariomac.com/dot-voting",
+    "datePublished": "2021-05-25",
+    "dateCreated": "2016-11-28",
+    "dateModified": "2021-05-25",
+    "description": "How to choose between options using a limited number of votes. How many votes?",
+    "author": {
+      "@id": "https://www.dariomac.com/me"
+    },
+    "publisher": {
+      "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+    } 
+  },
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Dot voting or dotmocracy is a method of facilitation used to describe voting with dot stickers. Participants vote for their desired options using a limited number of votes.
+
+[pub_date:string]
+2021-05-25
+
+[short_description:string]
+
+[bodyurl:string]
+https://docs.google.com/document/d/e/2PACX-1vTo5mO8fAwzZbKH0OFyL3BxmDFNfNaI5WjXtlxXewaVXFpjX05QCykybZxLplFpJMJOeAL-x7ixU3hq/pub?embedded=true
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_May 25, 2021_: Original Publication on dariomac.com
+
+[internal:raw]
+dm_dot_com
