@@ -136,3 +136,10 @@ D. Brunner, J. Münch, and M. Kuhrmann, “[Entrepreneurial Software Engineering
 
 [significant_revisions:md]
 _Jan 4, 2021_: Original Publication on dariomac.com
+
+[related_topics:json]
+  [{
+    "title": "Why I decided to do research digests",
+    "click_bait": "List of research digests and why I decided to do them",
+    "linkto": "/why-I-decided-to-do-research-digests"
+  }]
