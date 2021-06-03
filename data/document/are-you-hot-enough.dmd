@@ -1,0 +1,68 @@
+{
+  "title": "Are you HOT enough?",
+  "date": "2014-12-15",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "How to be at the top of your game or just keep up with the day-to-day demands but perform at your best — in both cases.",
+    "datebox": "2021-06-02",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20141215",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": { 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.dariomac.com/are-you-hot-enough"
+    },
+    "headline": "Dot voting",
+    "alternativeHeadline": "",
+    "genre": "research", 
+    "keywords": "Business Intelligence Decision Making Productivity", 
+    "wordcount": "826",
+    "url": "https://www.dariomac.com/are-you-hot-enough",
+    "datePublished": "2021-06-02",
+    "dateCreated": "2014-12-15",
+    "dateModified": "2021-06-02",
+    "description": "How to be at the top of your game or just keep up with the day-to-day demands but perform at your best — in both cases.",
+    "author": {
+      "@id": "https://www.dariomac.com/me"
+    },
+    "publisher": {
+      "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+    } 
+  },
+  "canonical": "https://www.techrepublic.com/blog/tech-decision-maker/are-you-hot-enough/",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+In business it’s important to perform at the top of your game. Sometimes, however, it’s tough enough just to keep up with the day-to-day demands. This will provide insights into how you can perform at your best — all the time.
+
+[pub_date:string]
+2021-06-02
+
+[short_description:string]
+
+[bodyurl:string]
+https://docs.google.com/document/d/e/2PACX-1vQbQGx8y1pnP4hXH5qJmjjl6dqCl3iq4CKQSXQz2UuayBVjHjO66UCAHxlTbtFt0B0vr7kfzsn5fNPG/pub?embedded=true
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Jun 2, 2021_: Original Publication on dariomac.com
+
+[internal:raw]
+dm_dot_com
