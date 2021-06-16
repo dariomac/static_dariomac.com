@@ -1,0 +1,68 @@
+{
+  "title": "Ask what keeps us up at night",
+  "date": "20210615",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Exercise to identify the risks that are worth worrying about.",
+    "datebox": "2021-06-15",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20150303",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": { 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.dariomac.com/ask-what-keeps-us-up-at-night"
+    },
+    "headline": "How to identify risks",
+    "alternativeHeadline": "",
+    "genre": "research", 
+    "keywords": "Business Intelligence Decision Making Productivity", 
+    "wordcount": "826",
+    "url": "https://www.dariomac.com/ask-what-keeps-us-up-at-night",
+    "datePublished": "2021-06-15",
+    "dateCreated": "2015-03-03",
+    "dateModified": "2021-06-15",
+    "description": "Exercise to identify the risks that are worth worrying about.",
+    "author": {
+      "@id": "https://www.dariomac.com/me"
+    },
+    "publisher": {
+      "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+    } 
+  },
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Exercise to identify the risks that are worth worrying about.
+
+[pub_date:string]
+2021-06-15
+
+[short_description:string]
+
+[bodyurl:string]
+https://docs.google.com/document/d/e/2PACX-1vSX3bTh0JV6dF2nOudvBYHub1GAS7sGF84ED71Bapj6ujp7Ig0uVeZSTGW0LCAmhEkxqAhK6dlXlgPT/pub?embedded=true
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Jun 15, 2021_: Original Publication on dariomac.com
+
+[internal:raw]
+dm_dot_com
