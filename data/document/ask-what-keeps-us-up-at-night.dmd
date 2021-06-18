@@ -64,5 +64,12 @@ https://docs.google.com/document/d/e/2PACX-1vSX3bTh0JV6dF2nOudvBYHub1GAS7sGF84ED
 [significant_revisions:md]
 _Jun 15, 2021_: Original Publication on dariomac.com
 
+[related_topics:json]
+  [{
+    "title": "Inception Workshop for Entrepreneurs",
+    "click_bait": "This exercise is part of this Inception Workshop",
+    "linkto": "/inception-workshop-for-entrepreneurs"
+  }]
+
 [internal:raw]
 dm_dot_com
