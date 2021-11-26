@@ -43,10 +43,12 @@ Besides the main technology already mentioned, it uses Cloudinary to manage imag
 
 As a software engineer I am mainly working on the API (Node.js) to allow other developers to build new features or create them myself in React. I am also helping with data flows and analytics pipelines to provide users with insights by converting data from different sources into standardized information.
 
-{{!-- Generate suggestions merging templates with user's assets --}}
+{{!-- Generate suggestions using ML algorithms, merging templates with user's assets --}}
 {{!-- Scraping tool to get assets from user's websites --}}
 {{!-- New share service to deliver embeds --}}
 {{!-- Embeds analytics --}}
 {{!-- IG/FB integration of insights --}}
+{{!-- Share server: not only did I replace the old one, but I made it more flexible (not tied to slide sizes). 
+It was also prepared to scale without limit by placing it behind AWS CloudFront. --}}
 
 [projects:md]
