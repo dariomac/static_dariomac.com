@@ -404,8 +404,8 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://www.dariomac.com/vairix-software-engineer</loc>
-        <lastmod>2019-07-15</lastmod>
+        <loc>https://www.dariomac.com/meetup-python-chile-quality-in-agile-contexts</loc>
+        <lastmod>2022-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -430,6 +430,12 @@
       <url>
         <loc>https://www.dariomac.com/jis-uy-2019-scrum-zombies-and-orcs-teams</loc>
         <lastmod>2019-10-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/vairix-software-engineer</loc>
+        <lastmod>2019-07-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

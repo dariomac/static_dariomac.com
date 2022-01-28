@@ -1,0 +1,45 @@
+{
+  "title": "Meetup Python Chile - Quality in Agile Contexts",
+  "date": "2022-01-27",
+  "layout": "experience",
+  "card": {
+    "color": "#00A651",
+    "columnid": "done_3",
+    "content": "“Quality in Agile Contexts“ talk",
+    "datebox": "Jan, 2022",
+    "extlink": "https://www.meetup.com/es/pythonchiledev/events/283338972/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20220127",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Meetup Python Chile"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+This short talk was about what we should do to detect defects soon after their introduction.
+
+[duration:string]
+Jan 27, 2022 (20 minutes)
+
+[place_url:string]
+https://www.meetup.com/es/pythonchiledev/events/283338972/
+
+[place:string]
+Remote
+
+[content:md]
+This talk was about how quality can be assured whe you work in an agile way. Mostly, all the talk was around the idea of shift left and how to not push defects the end of the engineering process. It was a good introduction to these topics and a way to show how quality can be improved in the preplanning, planning and implementation phases.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fm2-PQFrwpE?start=2033#center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- ![Meetup agenda: Thursday 27, 6:00pm](assets/python-chile-talk.jpg#center) -->
+
+[projects:md]
