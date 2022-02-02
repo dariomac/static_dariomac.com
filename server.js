@@ -6,13 +6,17 @@ const { exec } = require('child_process');
 const publicDir = path.join(__dirname, '/www');
 const rootDir = path.join(__dirname, '/root')
 const url = require('url');
+const pino = require('express-pino-logger')({
+  serializers: {
+    req: (req) => ({
+      method: req.method,
+      url: req.url,
+      user: req.raw.user,
+    }),
+  },
+});
 
 let app = express();
-
-let logger = require('dm-logger').initialize(app, {
-  getLogLevelFromQuerystring: (process.env.NODE_ENV !== 'production'),
-  assetsPathRegex: /^\/assets\/.*/ig
-});
 
 // https://stackoverflow.com/a/16895480/126519
 app.use(function (req, res, next) {
@@ -38,6 +42,7 @@ app.use(function (req, res, next) {
   }
 });
 
+app.use(pino);
 app.use(express.static(publicDir));
 app.use('/', express.static(rootDir));
 
