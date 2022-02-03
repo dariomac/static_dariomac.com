@@ -27,7 +27,7 @@ function ensureSlashTermination (somePath) {
 (async function () {
 
   const backlinks = await toZ.buildBacklinks(mainOptions, paths);
-console.log(backlinks);
+  console.log(backlinks);
   toS.initialize(mainOptions, paths, backlinks);
   toS.run();
 
