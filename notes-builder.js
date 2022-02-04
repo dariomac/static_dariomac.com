@@ -9,12 +9,17 @@ const urlSlug = require('url-slug');
   {
     isPublished: (file) => {
       let getIt = false;
+
       getIt = file.frontMatter != null && file.frontMatter.tags;
+
       if (getIt && Array.isArray(file.frontMatter.tags)) {
         getIt = file.frontMatter.tags.includes('dm.com');
       } else {
         getIt = false;
       }
+
+      getIt &= !file.path.includes('/Templates/');
+
       return getIt;
     }
   }
@@ -22,10 +27,35 @@ const urlSlug = require('url-slug');
 
   console.log(JSON.stringify(vault.files, null, 4));
 
+
   Object.keys(vault.files).forEach((noteKey) => {
     const note = vault.files[noteKey];
 
-    let dmdNote = JSON.stringify(note.frontMatter.json, null, 4);
+    const dmdFrontmatter = {    
+      date: new Date(note.updatedAt).toISOString().replace(/T.*/,''),
+      layout: 'document',
+      ...note.frontMatter.json,
+      jsonld: {},
+      canonical: '',
+	    custom_header: ''
+    };
+
+    dmdFrontmatter.card = {
+      color: '#99b399',
+      columnid: 'progress_2',
+      datebox: '',
+      extlink: null,
+      laneid: 'Essay',
+      leftbox: '',
+      position: dmdFrontmatter.date.replace(/-/g, ''),
+      tags: null,
+      ...dmdFrontmatter.card,
+      linkto: "[link_to]",
+      title: "[title]",
+      subtaskdetails: [],
+    }
+
+    let dmdNote = JSON.stringify(dmdFrontmatter, null, 4);
     dmdNote += '\n\n---\n\n';
 
     dmdNote += '[summary:string]\n';
@@ -51,6 +81,7 @@ const urlSlug = require('url-slug');
     })}_: Original publication on dariomac.com\n`;
     
     fs.writeFileSync(path.resolve(`./data/document/${urlSlug(note.name)}.dmd`), dmdNote, 'utf8');
+    // console.log(dmdNote);
   });
 
 })().catch(e => {
