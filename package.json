@@ -14,6 +14,7 @@
   "scripts": {
     "build": "find . -name '.DS_Store' -type f -delete && node builder.js data/ www/ layouts/ --clear-all",
     "build-notes": "find . -name '.DS_Store' -type f -delete && node notes-builder.js ../bra1n data/",
+    "build-all": "npm run build-notes && npm run build",
     "start": "node server.js",
     "deploy": "timeout 15 bash -c 'while [[ \"$(curl -s -o /dev/null -X OPTIONS -w ''%{http_code}'' https://dariomac.com/pullit)\" != \"204\" ]]; do sleep 1; done'",
     "build-debug": "LOG_LEVEL=debug NODE_ENV=development node --inspect builder.js data/ www/ layouts/ --clear-all",

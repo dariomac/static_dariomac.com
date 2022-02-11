@@ -1,0 +1,48 @@
+{
+    "date": "2022-02-07",
+    "layout": "document",
+    "title": "Mock",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20220207",
+        "tags": "software,engineering",
+        "content": "What is a Mock in Software Engineering",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": ""
+}
+
+---
+
+[summary:string]
+What is a Mock in Software Engineering
+
+[pub_date:string]
+2022-02-07
+
+[short_description:string]
+
+[body:md]
+In software engineering I call a mock/stub/fake to a function/object that mimic the behavior of the original function/object (a.k.a mocked function/object).
+
+I know there are differences between mock/stub/fake but I don't use them everyday.
+
+To detect where we should use a mock, we need to analyze the piece of code under study (the one to be tested) looking for "seams" (more about this on   
+[Testing Effectively With Legacy Code, By Michael Feathers](https://www.informit.com/articles/article.aspx?p=359417&seqNum=2))
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Oct 21, 2021_: Original publication on dariomac.com

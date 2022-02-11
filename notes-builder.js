@@ -45,6 +45,8 @@ const assetsPath = `./${outputPath}assets/`;
   await Promise.all(
     Object.keys(vault.files).map(async (noteKey) => {
       const note = vault.files[noteKey];
+
+      const createdAt = new Date(note.createdAt).toISOString().replace(/T.*/,'')
       
       const dmdFrontmatter = {    
         date: new Date(note.updatedAt).toISOString().replace(/T.*/,''),
@@ -77,7 +79,7 @@ const assetsPath = `./${outputPath}assets/`;
       dmdNote += `${note.frontMatter.json.card.content}\n\n`;
       
       dmdNote += '[pub_date:string]\n';
-      dmdNote += `${note.frontMatter.json.date}\n\n`;
+      dmdNote += `${dmdFrontmatter.date}\n\n`;
       
       dmdNote += '[short_description:string]\n\n';
       
@@ -89,8 +91,8 @@ const assetsPath = `./${outputPath}assets/`;
       
       dmdNote += '[further_reading:md]\n\n';
       
-      dmdNote += '[significant_revisions:md]\n\n';
-      dmdNote += `_${new Date(`${note.frontMatter.json.date} GMT-0300`).toLocaleString('en-US', {
+      dmdNote += '[significant_revisions:md]\n';
+      dmdNote += `_${new Date(`${createdAt} GMT-0300`).toLocaleString('en-US', {
         month: 'short', // numeric, 2-digit, long, short, narrow
         day: 'numeric', // numeric, 2-digit
         year: 'numeric', // numeric, 2-digit
