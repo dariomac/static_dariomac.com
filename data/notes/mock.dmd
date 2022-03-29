@@ -1,5 +1,5 @@
 {
-    "date": "2022-02-07",
+    "date": "2022-02-11",
     "layout": "document",
     "title": "Mock",
     "card": {
@@ -9,7 +9,7 @@
         "extlink": null,
         "laneid": "Essay",
         "leftbox": "",
-        "position": "20220207",
+        "position": "20220211",
         "tags": "software,engineering",
         "content": "What is a Mock in Software Engineering",
         "linkto": "[link_to]",
@@ -28,7 +28,7 @@
 What is a Mock in Software Engineering
 
 [pub_date:string]
-2022-02-07
+2022-02-11
 
 [short_description:string]
 
@@ -45,4 +45,4 @@ To detect where we should use a mock, we need to analyze the piece of code under
 [further_reading:md]
 
 [significant_revisions:md]
-_Oct 21, 2021_: Original publication on dariomac.com
+_Feb 11, 2022_: Original publication on dariomac.com

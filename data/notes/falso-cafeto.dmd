@@ -1,5 +1,5 @@
 {
-    "date": "2022-02-09",
+    "date": "2022-02-11",
     "layout": "document",
     "title": "Falso cafeto (fc1)",
     "card": {
@@ -9,7 +9,7 @@
         "extlink": null,
         "laneid": "Bonsai",
         "leftbox": "",
-        "position": "20220209",
+        "position": "20220211",
         "tags": "",
         "content": "Manihot Grahamii from seed, also known as Mandioca Brava",
         "linkto": "[link_to]",
@@ -27,7 +27,7 @@
 Manihot Grahamii from seed, also known as Mandioca Brava
 
 [pub_date:string]
-2022-02-09
+2022-02-11
 
 [short_description:string]
 
@@ -49,4 +49,4 @@ Elementos característicos: árbol o arbusto laticífero; hojas simples, altemas
 [further_reading:md]
 
 [significant_revisions:md]
-_Jan 4, 2022_: Original publication on dariomac.com
+_Feb 11, 2022_: Original publication on dariomac.com

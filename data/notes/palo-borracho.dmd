@@ -1,0 +1,81 @@
+{
+    "date": "2022-02-11",
+    "layout": "document",
+    "title": "Palo borracho",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Bonsai",
+        "leftbox": "",
+        "position": "20220211",
+        "tags": "deciduous,tropical",
+        "content": "Deciduous tree native to the tropical forests of South America",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": false,
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": ""
+}
+
+---
+
+[summary:string]
+Deciduous tree native to the tropical forests of South America
+
+[pub_date:string]
+2022-02-11
+
+[short_description:string]
+
+[body:md]
+## Canopy
+https://www.youtube.com/watch?v=DJ0YqTcojS8&list=PLliZ_5IED-w1bMi_OOsC0abDrtzJFc607&index=1&t=2s
+
+### Desfoliado
+Cortar hojas dejando el tallito.
+
+### Ramificar
+Visto y comprobado el fuerte crecimiento apical, esta es una forma de hacer crecer ramas a gusto. 
+
+La técnica busca que crezcan brotes de la parte de arriba de las ramas. Para eso se intentará que las mismas queden los más horizontales posibles.
+
+Este es un ejemplo extremo de lo anterior. Consiste en bajar la rama de forma que el ápice quede por debajo del punto donde se desea la rama, en este caso marcado con un círculo rojo (foto). 
+
+![16417397611871793378040132478771.jpg](/assets/16417397611871793378040132478771.jpg#center)
+
+Y el resultado después de algunos días. Se puede seguir con esa como nuevo ápice o dejarla tal cual como rama (foto).
+
+![16417400247592312478922356999811.jpg](/assets/16417400247592312478922356999811.jpg#center)
+
+## Técnicas
+**Esqueje**
+¿Cuándo y cómo hacer **esquejes** de **Palo Borracho** (Ceiba speciosa)? Los **esquejes** deben realizarse en verano sobre madera semidura, preferiblemente utilizando las puntas. Trasplantar en recipientes después de remojarlos en una hormona, hundiendo cada **esqueje** 3 cm en una mezcla ligera de turba y arena.
+
+## Referencias
+[https://www.youtube.com/playlist?list=PLliZ_5IED-w1bMi_OOsC0abDrtzJFc607](https://www.youtube.com/playlist?list=PLliZ_5IED-w1bMi_OOsC0abDrtzJFc607)
+
+## My trees
+### PB1
+Palo borracho plantado ~mitad de 2020 (hermano de PB1).
+Siempre tuvo el tronco más grueso que el otro.
+
+### PB2
+Palo borracho plantado ~mitad de 2020 (hermano de PB2)
+
+## Log
+
+2022-01-21 - PB2 - autoinjerto no agarró
+2022-01-12 - PB1 - corte de tronco principal a ~20cm
+2022-01-02 - PB2 - autoinjerto de ápice en tronco como rama primaria
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Jan 23, 2022_: Original publication on dariomac.com
