@@ -1,0 +1,47 @@
+{
+  "title": "FastRabbit - Plataforma de testing de servicios de Movistar",
+  "date": "2022-03-30",
+  "layout": "project",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Software to run test cases that interacti with various client systems",
+    "datebox": null,
+    "extlink": null,
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20220330",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "FastRabbit - Plataforma de testing de servicios de Movistar"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+The project aims to implement a software to run test cases that interacti with various client systems to validate their correct operation and collect performance metrics.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+
+[platform:string]
+React+NestJS - Backend: NodeJS+MongoDB - Infra: Owned by Movistar 
+
+[link:string]
+
+[short_description:string]
+
+[description:md]
+**Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
+
+Movistar's service testing and monitoring system (Fastrabbit) is a system developed in NodeJS with NestJS backend framework, React frontend framework and MongoDB database. It is designed to run test cases that interact with various client systems to validate their correct operation and collect performance metrics.
+
+The system consists of four applications: the web interface, the entity management system, the test case execution system and the results processing and storage system. The web interface, called the frontend, will be used by Movistar operations staff to manage test cases and other system entities.
+
+The test case execution system allows interacting with different services, using different communication protocols such as HTTP, SOAP and Diameter, among others. The design and architecture of the system are made to allow adding new protocols and functionalities to the system without the need to modify the rest of the system.
+

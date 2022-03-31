@@ -638,6 +638,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/fastrabbit-plataforma-de-testing-de-servicios-de-movistar</loc>
+        <lastmod>2022-03-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/krooping-procesamiento-de-imágenes-satelitales-para-generación-de-índices-agronómicos</loc>
         <lastmod>2020-10-30</lastmod>
         <changefreq>monthly</changefreq>
@@ -722,6 +728,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/raphael-utils</loc>
+        <lastmod>2017-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/dm-pixie</loc>
         <lastmod>2017-07-07</lastmod>
         <changefreq>monthly</changefreq>
@@ -730,12 +742,6 @@
       <url>
         <loc>https://www.dariomac.com/local-read-later</loc>
         <lastmod>2017-07-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>https://www.dariomac.com/raphael-utils</loc>
-        <lastmod>2017-03-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

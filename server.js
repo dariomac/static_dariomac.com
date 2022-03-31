@@ -111,7 +111,7 @@ app.get('/status', function (req, res) {
   });
 });
 
-const port = process.env['PORT'] || 3000;
+const port = process.env['PORT'] || 7007;
 
 app.listen(port, function () {
   console.log(`\r\nDariomac.com server listening on: ${port}`);
