@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Agile Principles | Darío Macchi</title>
+    <title>DMARC | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -292,7 +292,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="The Twelve Principles are the guiding principles for the set of methodologies that are included under the title “The Agile Movement.” They describe a culture in which change is welcome, and the customer is the focus of the work." />
+    <meta name="description" content="What is DMARC and how to use it" />
     <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
     <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -313,7 +313,7 @@
     <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
     <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
     
-    <link rel="canonical" href="https://dariomac.com/agile-principles" />
+    <link rel="canonical" href="https://dariomac.com/dmarc" />
     
     <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -410,7 +410,26 @@
     </script>
 
     <script type="application/ld+json">
-        {"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.dariomac.com/agile-principles"},"headline":"Minimum Viable Product","alternativeHeadline":"","genre":"research","keywords":"agility teaching learning","wordcount":"305","url":"https://www.dariomac.com/agile-principles","datePublished":"2019-11-13","dateCreated":"2014-12-15","dateModified":"2019-03-18","description":"Sketches to show the agile principles.","author":{"@id":"https://www.dariomac.com/me"},"publisher":{"@id":"https://www.dariomac.com/software-engineering-advisor-consultant"}}
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.dariomac.com/"
+          },
+          "headline": "DMARC",
+          "alternativeHeadline": "What is DMARC and how to use it",
+          "url": "https://www.dariomac.com/",
+          "datePublished": "2022-04-01",
+          "dateCreated": "2022-04-01",
+          "description": "What is DMARC and how to use it",
+          "author": {
+            "@id": "https://www.dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
     </script>
   </head>
   <body>
@@ -437,8 +456,8 @@
             <div class="row featured">
               <div class="offset-md-3 col-md-6 sheet">
                 <header>
-                  <h1>Agile Principles</h1>
-                  <p class="date">2019-11-13</p>
+                  <h1>DMARC</h1>
+                  <p class="date">2022-04-01</p>
                 </header>
 
                 <section>
@@ -456,46 +475,29 @@
                 </section>
 
                 <section>
-                    <script>
-                      function get_information(link, callback) {
-                        var xhr = new XMLHttpRequest();
-                        xhr.open("GET", link, true);
-                        xhr.onreadystatechange = function() {
-                          if (xhr.readyState === 4) {
-                            callback(xhr.responseText);
-                          }
-                        };
-                        xhr.send(null);
-                      }
+                    <p>I've used DMARC as a TXT record on a DNS configured like this:</p>
+<p>Name: <code>1_dmarc.example.com (or just _dmarc for GoDaddy)</code></p>
+<p>Value: <code>1v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p>
+<p>where:</p>
+<p><strong>v</strong>: is the version of DMARC</p>
+<p><strong>p</strong>: Instructs the receiving mail server what to do with messages that don’t pass authentication. In this case, we want to log messages in a daily report and send it to rua address.</p>
+<p><strong>rua</strong>: Email address to receive reports about DMARC activity for your domain.</p>
 
-                      get_information(
-                        "https://docs.google.com/document/d/e/2PACX-1vRzkka6OujbkovyXZn0rV5Z2IUFeCf2GglSJrOlj2ibr872bN-KOOizjdUNxme_e20XtwS0aZXrB5tM/pub?embedded=true",
-                        function(text) {
-                          var div = document.getElementById('gdoc');
-                          div.innerHTML = text;
-                          
-                          // Remove css that comes with Google Doc embeds
-                          // If you want the Google Doc styling, comment these out
-                          div.removeChild(div.childNodes[1]);
-                          div.removeChild(div.childNodes[0]);
-                          div.querySelector('h1').remove();
-                        }
-                      );
-                    </script>
-                    <div id="gdoc"></div>
                 </section>
 
-                  <section class="further-reading">
-                    <h2 id="FurtherReading">Further Reading</h2>
-                    <ul>
-<li><a href="https://drive.google.com/file/d/0B6MBpMDsPydqbFNIdWxoTk9wYTg/view?usp=sharing">Agile poster, 2014, Jeff Patton, www.jpattonassociates.com</a></li>
-</ul>
-
-                  </section>
                   <section>
                     <h2>Significant Revisions</h2>
-                    <p><em>Nov 13, 2019</em>: Original publication on dariomac.com</p>
+                    <p><em>Apr 1, 2022</em>: Original publication on dariomac.com</p>
 
+                  </section>
+                
+                  <section class="backlinks">
+                    <h2>Mentioned in</h2>
+                        <ul>
+                            <li>
+                              <a href="/things-to-take-into-account-before-a-massive-email-compaign">Before massive email campaigns</a>
+                            </li>
+                        </ul>
                   </section>
               </div>
             </div>

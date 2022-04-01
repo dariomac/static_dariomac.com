@@ -20,6 +20,18 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/dmarc</loc>
+        <lastmod>2022-04-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/things-to-take-into-account-before-a-massive-email-compaign</loc>
+        <lastmod>2022-04-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/mock</loc>
         <lastmod>2022-02-11</lastmod>
         <changefreq>monthly</changefreq>
@@ -278,14 +290,20 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://www.dariomac.com/falso-cafeto</loc>
-        <lastmod>2022-02-11</lastmod>
+        <loc>https://www.dariomac.com/palo-borracho</loc>
+        <lastmod>2022-03-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://www.dariomac.com/palo-borracho</loc>
-        <lastmod>2022-02-11</lastmod>
+        <loc>https://www.dariomac.com/pino-negro</loc>
+        <lastmod>2022-03-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/falso-cafeto</loc>
+        <lastmod>2022-02-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

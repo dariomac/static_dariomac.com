@@ -1,5 +1,5 @@
 {
-    "date": "2022-02-11",
+    "date": "2022-03-21",
     "layout": "document",
     "title": "Palo borracho",
     "card": {
@@ -9,7 +9,7 @@
         "extlink": null,
         "laneid": "Bonsai",
         "leftbox": "",
-        "position": "20220211",
+        "position": "20220321",
         "tags": "deciduous,tropical",
         "content": "Deciduous tree native to the tropical forests of South America",
         "linkto": "[link_to]",
@@ -28,18 +28,27 @@
 Deciduous tree native to the tropical forests of South America
 
 [pub_date:string]
-2022-02-11
+2022-03-21
 
 [short_description:string]
 
 [body:md]
-## Canopy
-https://www.youtube.com/watch?v=DJ0YqTcojS8&list=PLliZ_5IED-w1bMi_OOsC0abDrtzJFc607&index=1&t=2s
+## Description
 
-### Desfoliado
-Cortar hojas dejando el tallito.
+## Position
+
+## Watering
+
+## Feeding
+
+## Pruning
+Al defoliar, cortar hojas dejando el tallito.
 
 ### Ramificar
+---
+[# COMO RAMIFICAR UN BONSAI DE PALO BORRACHO?? (Ceiba speciosa). !!](https://www.youtube.com/watch?v=DJ0YqTcojS8&list=PLliZ_5IED-w1bMi_OOsC0abDrtzJFc607&index=1&t=2s)
+
+---
 Visto y comprobado el fuerte crecimiento apical, esta es una forma de hacer crecer ramas a gusto. 
 
 La técnica busca que crezcan brotes de la parte de arriba de las ramas. Para eso se intentará que las mismas queden los más horizontales posibles.
@@ -51,31 +60,58 @@ Este es un ejemplo extremo de lo anterior. Consiste en bajar la rama de forma qu
 Y el resultado después de algunos días. Se puede seguir con esa como nuevo ápice o dejarla tal cual como rama (foto).
 
 ![16417400247592312478922356999811.jpg](/assets/16417400247592312478922356999811.jpg#center)
+[Referencia](http://edugranbonsai.blogspot.com/2013/06/chorissia-insignis-speciosa-palo.html)
 
-## Técnicas
+## Wiring
+
+## Repotting
+
+## Notes
 **Esqueje**
 ¿Cuándo y cómo hacer **esquejes** de **Palo Borracho** (Ceiba speciosa)? Los **esquejes** deben realizarse en verano sobre madera semidura, preferiblemente utilizando las puntas. Trasplantar en recipientes después de remojarlos en una hormona, hundiendo cada **esqueje** 3 cm en una mezcla ligera de turba y arena.
 
-## Referencias
+---
+Playlist de Masaru Bonsai sobre ramificado, pinzado y trabajos varios en Palos Borrachos.
 [https://www.youtube.com/playlist?list=PLliZ_5IED-w1bMi_OOsC0abDrtzJFc607](https://www.youtube.com/playlist?list=PLliZ_5IED-w1bMi_OOsC0abDrtzJFc607)
 
 ## My trees
-### PB1
-Palo borracho plantado ~mitad de 2020 (hermano de PB1).
-Siempre tuvo el tronco más grueso que el otro.
+### pb1
+Palo borracho plantado ~mitad de 2020 (hermano de pb1). Siempre tuvo el tronco más grueso que el otro.
+https://photos.app.goo.gl/X8PX1uuusBGaDgko6
 
-### PB2
-Palo borracho plantado ~mitad de 2020 (hermano de PB2)
+### pb2
+Palo borracho plantado ~mitad de 2020 (hermano de pb2).
 
 ## Log
+### 2022-02-26
+pb2 - lo llevé a un estilo raft.
+[Fotos](https://photos.app.goo.gl/nuokVvdeKJBHNUib7)
 
-2022-01-21 - PB2 - autoinjerto no agarró
-2022-01-12 - PB1 - corte de tronco principal a ~20cm
-2022-01-02 - PB2 - autoinjerto de ápice en tronco como rama primaria
+### 2022-02-19
+pb2 - probé la técnica de ramificar doblando el árbol y funcionó ([fotos](https://photos.app.goo.gl/yW7ibHgwkgu2jbrC9)).
+
+### 2022-01-21
+pb2 - autoinjerto no agarró
+
+### 2022-01-12
+pb1 - corte de tronco principal a ~20cm
+[Fotos](https://photos.app.goo.gl/X8PX1uuusBGaDgko6)
+
+### 2022-01-02
+pb1 - [[Air layering|acodo aéreo]] porque se fue muy alto ([fotos](https://photos.app.goo.gl/7sXBXR4qRDfqc5UH7)).
+pb2 - autoinjerto de ápice en tronco como rama primaria.
+
+### 2021-08-24
+[Foto de la separación](https://photos.app.goo.gl/LA9QvnkpR7u3FkxV8) de ambos arbolitos en 2 macetas.
+pb1 - trasplante a maceta individual
+pb2 - trasplante a maceta individual
+
+### 2021-01-17
+[En esta foto](https://photos.app.goo.gl/Frp4N8Cvw8PnrEw6A) se puede ver la disposición original de ambos árboles (pb1 y pb2).
 
 [acknowledgments:md]
 
 [further_reading:md]
 
 [significant_revisions:md]
-_Jan 23, 2022_: Original publication on dariomac.com
+_Mar 21, 2022_: Original publication on dariomac.com

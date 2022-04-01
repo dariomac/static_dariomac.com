@@ -1,0 +1,54 @@
+{
+    "date": "2022-04-01",
+    "layout": "document",
+    "title": "Before massive email campaigns",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20220401",
+        "tags": "email,SPG,DKIM,DMARC",
+        "content": "Things to take into account before a massive email compaign",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": ""
+}
+
+---
+
+[summary:string]
+Things to take into account before a massive email compaign
+
+[pub_date:string]
+2022-04-01
+
+[short_description:string]
+
+[body:md]
+This is not an extensive list but just what I've learnt from doing it. I'm not an expert, so it's very perfectible.
+
+I think the first you need to do is test the health of your domain. For this I can recommend [MxToolBox's Email Health Report](https://mxtoolbox.com/emailhealth/)
+
+If you never used your domain for email campaigns, usually this report will throw some errors, mainly related to:
+- SPF
+- DKIM
+- [DMARC](/dmarc)
+
+What are those acronyms? here is a simple explanation: SPF and DKIM are email authentication methods. SPF set the server that can be send emails and is already configured in GoDaddy (it seems that Google did it automatically); DKIM helps prevent spammers and other malicious parties from impersonating a legitimate domain (we need to activate this); [DMARC](/dmarc) is a set of rules to instruct emails servers to report to us when something goes wrong at their sides.
+
+Also is useful to be in the email delivery list (at least at the beginning), just to debug how emails are being received by our users. To do that you can use the [Messageheader tool ](https://toolbox.googleapps.com/apps/messageheader/)of the Google Admin Toolbox.
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Apr 1, 2022_: Original publication on dariomac.com

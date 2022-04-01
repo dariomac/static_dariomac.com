@@ -41,7 +41,7 @@ const assetsPath = `./${outputPath}assets/`;
       return getIt;
     }
   });
-    
+  
   await Promise.all(
     Object.keys(vault.files).map(async (noteKey) => {
       const note = vault.files[noteKey];
@@ -84,7 +84,8 @@ const assetsPath = `./${outputPath}assets/`;
       dmdNote += '[short_description:string]\n\n';
       
       dmdNote += '[body:md]\n';
-      const modifiedContent = await processImages(note.content);
+      let modifiedContent = await processImages(note.content);
+      modifiedContent = await processLinks(modifiedContent, vault.files);
       dmdNote += `${modifiedContent.trim()}\n\n`;
       
       dmdNote += '[acknowledgments:md]\n\n';
@@ -106,6 +107,7 @@ const assetsPath = `./${outputPath}assets/`;
 });
 
 const processImages = async (content) => {
+  let processedContent = content;
   const regex = /!\[\[([a-zA-Z0-9\s\.-]+\|?[a-zA-Z0-9\s]*)\]\]/g;
   let m;
   
@@ -117,22 +119,46 @@ const processImages = async (content) => {
     
     // The result can be accessed through the `m`-variable.
     const originalString = m[0];
-    const imageNameExt = m[1];
-    fs.copyFileSync(`${inputPath}Organization/Attachments/${imageNameExt}`, `${assetsPath}${imageNameExt}`);
+    const imageNameWithExtension = m[1];
+    fs.copyFileSync(`${inputPath}Organization/Attachments/${imageNameWithExtension}`, `${assetsPath}${imageNameWithExtension}`);
     
-    const imageName = imageNameExt.replace(/\.[^/.]+$/, '');
+    const imageName = imageNameWithExtension.replace(/\.[^/.]+$/, '');
     await webp.cwebp(
-      `${inputPath}Organization/Attachments/${imageNameExt}`,
+      `${inputPath}Organization/Attachments/${imageNameWithExtension}`,
       `${assetsPath}${imageName}.webp`,
       '-q 80',
       logging='-v');
       
-      content = content.replace(originalString, `![${imageNameExt}](/assets/${imageNameExt}#center)`);
-    }
-    return content;
-  };
-  
-  function ensureSlashTermination (somePath) {
-    return (somePath.lastIndexOf('/') === somePath.length - 1) ? somePath : `${somePath}/`;
+    processedContent = processedContent.replace(originalString, `![${imageNameWithExtension}](/assets/${imageNameWithExtension}#center)`);
   }
+    return processedContent;
+};
+
+const processLinks = async (content, files) => {
+  let processedContent = content;
+  const regex = /\[\[([a-zA-Z0-9\s\.-]+\|?[a-zA-Z0-9\s]*)\]\]/g;
+  let m;
+  
+  while ((m = regex.exec(content)) !== null) {
+    // This is necessary to avoid infinite loops with zero-width matches
+    if (m.index === regex.lastIndex) {
+      regex.lastIndex++;
+    }
+    
+    // The result can be accessed through the `m`-variable.
+    const originalString = m[0];
+    const pageName = m[1];
+
+    if (files[pageName.toLowerCase()]) {
+      processedContent = processedContent.replace(originalString, `[${pageName}](/${urlSlug(pageName)})`);
+    } else {
+      processedContent = processedContent.replace(originalString, pageName);
+    }
+  }
+  return processedContent;
+};
+
+function ensureSlashTermination (somePath) {
+  return (somePath.lastIndexOf('/') === somePath.length - 1) ? somePath : `${somePath}/`;
+}
       

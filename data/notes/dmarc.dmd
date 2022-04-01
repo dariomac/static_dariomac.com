@@ -1,0 +1,55 @@
+{
+    "date": "2022-04-01",
+    "layout": "document",
+    "title": "DMARC",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20220401",
+        "tags": "email,campaign",
+        "content": "What is DMARC and how to use it",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": ""
+}
+
+---
+
+[summary:string]
+What is DMARC and how to use it
+
+[pub_date:string]
+2022-04-01
+
+[short_description:string]
+
+[body:md]
+I've used DMARC as a TXT record on a DNS configured like this:
+
+Name: `1_dmarc.example.com (or just _dmarc for GoDaddy)`
+
+Value: `1v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com`
+
+where:
+
+**v**: is the version of DMARC
+
+**p**: Instructs the receiving mail server what to do with messages that don’t pass authentication. In this case, we want to log messages in a daily report and send it to rua address.
+
+**rua**: Email address to receive reports about DMARC activity for your domain.
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Apr 1, 2022_: Original publication on dariomac.com
