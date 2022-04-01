@@ -33,7 +33,7 @@ Things to take into account before a massive email compaign
 [short_description:string]
 
 [body:md]
-This is not an extensive list but just what I've learnt from doing it. I'm not an expert, so it's very perfectible.
+This is not an extensive list but just what I've learned from doing it. I'm not an expert, so it's very perfectible.
 
 I think the first you need to do is test the health of your domain. For this I can recommend [MxToolBox's Email Health Report](https://mxtoolbox.com/emailhealth/)
 

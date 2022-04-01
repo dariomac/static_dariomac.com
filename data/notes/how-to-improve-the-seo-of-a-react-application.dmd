@@ -1,0 +1,50 @@
+{
+    "date": "2022-04-01",
+    "layout": "document",
+    "title": "SEO & React",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20220401",
+        "tags": "SEO,React",
+        "content": "How to improve the SEO of a React application",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": ""
+}
+
+---
+
+[summary:string]
+How to improve the SEO of a React application
+
+[pub_date:string]
+2022-04-01
+
+[short_description:string]
+
+[body:md]
+This is an screenshot taken from here: [https://www.youtube.com/watch?v=3B7gBVTsEaE](https://www.youtube.com/watch?v=3B7gBVTsEaE)
+![pasted-image-20220214145136.png](/assets/pasted-image-20220214145136.png#center)
+
+Don't confuse Googlebot (the crawler) with Caffeine (Google’s indexing system). The crawler can't "run a React application"; the indexer is the one that "runs the application".
+
+The crawler get the page as when you do a `curl example.com`. Just a regular `GET`. After that the crawler halts because it can follow any hyperlink and send the page to the indexer. The indexer "understand" the page and render it, extracting the hyperlinks which then are added to the crawler's queue. Eventually the cycle starts again (crawler `GET` the new page, halts, send it to the indexer and so on).
+
+ That is why websites built on React (and other JavaScript platforms) perform worse in Google than websites that primarily serve plain HTML to the crawler.
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Apr 1, 2022_: Original publication on dariomac.com
