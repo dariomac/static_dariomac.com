@@ -119,17 +119,21 @@ const processImages = async (content) => {
     
     // The result can be accessed through the `m`-variable.
     const originalString = m[0];
-    const imageNameWithExtension = m[1];
-    fs.copyFileSync(`${inputPath}Organization/Attachments/${imageNameWithExtension}`, `${assetsPath}${imageNameWithExtension}`);
+    const originalImageNameWithExtension = m[1];
+    const newImageName = urlSlug(originalImageNameWithExtension.replace(/\.[^/.]+$/, ''));
+    const extension = originalImageNameWithExtension.replace(/^.*\./, '');
+
+    const newImageNameWithExtension = `${newImageName}.${extension}`;
+
+    fs.copyFileSync(`${inputPath}Organization/Attachments/${originalImageNameWithExtension}`, `${assetsPath}${newImageNameWithExtension}`);
     
-    const imageName = imageNameWithExtension.replace(/\.[^/.]+$/, '');
     await webp.cwebp(
-      `${inputPath}Organization/Attachments/${imageNameWithExtension}`,
-      `${assetsPath}${imageName}.webp`,
+      `${assetsPath}${newImageNameWithExtension}`,
+      `${assetsPath}${newImageName}.webp`,
       '-q 80',
       logging='-v');
       
-    processedContent = processedContent.replace(originalString, `![${imageNameWithExtension}](/assets/${imageNameWithExtension}#center)`);
+    processedContent = processedContent.replace(originalString, `![${newImageNameWithExtension}](/assets/${newImageNameWithExtension}#center)`);
   }
     return processedContent;
 };
