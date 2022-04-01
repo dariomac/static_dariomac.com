@@ -44,7 +44,7 @@ If you never used your domain for email campaigns, usually this report will thro
 
 What are those acronyms? here is a simple explanation: SPF and DKIM are email authentication methods. SPF set the server that can be send emails and is already configured in GoDaddy (it seems that Google did it automatically); DKIM helps prevent spammers and other malicious parties from impersonating a legitimate domain (we need to activate this); [DMARC](/dmarc) is a set of rules to instruct emails servers to report to us when something goes wrong at their sides.
 
-Also is useful to be in the email delivery list (at least at the beginning), just to debug how emails are being received by our users. To do that you can use the [Messageheader tool ](https://toolbox.googleapps.com/apps/messageheader/)of the Google Admin Toolbox.
+Also is useful to be in the email delivery list (at least at the beginning), just to debug how emails are being received by our users. To do that you can use the [Messageheader tool](https://toolbox.googleapps.com/apps/messageheader/)of the Google Admin Toolbox.
 
 [acknowledgments:md]
 
