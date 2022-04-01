@@ -140,7 +140,7 @@ const processImages = async (content) => {
 
 const processLinks = async (content, files) => {
   let processedContent = content;
-  const regex = /\[\[([a-zA-Z0-9\s\.-]+\|?[a-zA-Z0-9\s]*)\]\]/g;
+  const regex = /\[\[([a-zA-ZÀ-ú0-9\s\.-]+\|?[a-zA-Z0-9\s]*)\]\]/g;
   let m;
   
   while ((m = regex.exec(content)) !== null) {
