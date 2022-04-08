@@ -119,7 +119,7 @@ const processImages = async (content) => {
     
     // The result can be accessed through the `m`-variable.
     const originalString = m[0];
-    const originalImageNameWithExtension = m[1];
+    const originalImageNameWithExtension = m[1].split('|')[0];
     const newImageName = urlSlug(originalImageNameWithExtension.replace(/\.[^/.]+$/, ''));
     const extension = originalImageNameWithExtension.replace(/^.*\./, '');
 

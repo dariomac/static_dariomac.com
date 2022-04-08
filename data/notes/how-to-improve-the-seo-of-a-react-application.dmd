@@ -1,5 +1,5 @@
 {
-    "date": "2022-04-01",
+    "date": "2022-04-03",
     "layout": "document",
     "title": "SEO & React",
     "card": {
@@ -9,7 +9,7 @@
         "extlink": null,
         "laneid": "Essay",
         "leftbox": "",
-        "position": "20220401",
+        "position": "20220403",
         "tags": "SEO,React",
         "content": "How to improve the SEO of a React application",
         "linkto": "[link_to]",
@@ -28,7 +28,7 @@
 How to improve the SEO of a React application
 
 [pub_date:string]
-2022-04-01
+2022-04-03
 
 [short_description:string]
 
@@ -41,10 +41,17 @@ Don't confuse Googlebot (the crawler) with Caffeine (Google’s indexing system)
 The crawler get the page as when you do a `curl example.com`. Just a regular `GET`. After that the crawler halts because it can follow any hyperlink and send the page to the indexer. The indexer "understand" the page and render it, extracting the hyperlinks which then are added to the crawler's queue. Eventually the cycle starts again (crawler `GET` the new page, halts, send it to the indexer and so on).
 
  That is why websites built on React (and other JavaScript platforms) perform worse in Google than websites that primarily serve plain HTML to the crawler.
+ 
+ The best solution is to opt for Server Side Rendering (SSR) or Server Side Generation (SSG) mainly due to:
+
+> -   Faster initial renders.
+> -   Not having to rely on search engine crawlers to render content.
+> -   Improvements in TTI due to less JavaScript code for the browser to parse and render before becoming interactive.
+[Source](https://ahrefs.com/blog/react-seo/#:~:text=The%20best%20option,before%20becoming%20interactive.)
 
 [acknowledgments:md]
 
 [further_reading:md]
 
 [significant_revisions:md]
-_Apr 1, 2022_: Original publication on dariomac.com
+_Apr 3, 2022_: Original publication on dariomac.com

@@ -1,5 +1,5 @@
 {
-    "date": "2022-04-01",
+    "date": "2022-04-06",
     "layout": "document",
     "title": "Pino negro",
     "card": {
@@ -9,7 +9,7 @@
         "extlink": null,
         "laneid": "Bonsai",
         "leftbox": "",
-        "position": "20220401",
+        "position": "20220406",
         "tags": "pn1",
         "content": "Pinus uncinata, also knonw as Black pine",
         "linkto": "[link_to]",
@@ -27,7 +27,7 @@
 Pinus uncinata, also knonw as Black pine
 
 [pub_date:string]
-2022-04-01
+2022-04-06
 
 [short_description:string]
 
@@ -41,10 +41,13 @@ Pinus uncinata, also knonw as Black pine
 ## Feeding
 
 ## Pruning
+Hagari: se hace en otoño y consiste en sacar las acículas viejas.
+[How to prune and decandle](https://youtu.be/8JWRenbHNys)
 
 ## Wiring
 
 ## Repotting
+El transplante se realiza en invierno.
 
 ## Notes
 ![trabajos-anuales-en-pinos-negros.png](/assets/trabajos-anuales-en-pinos-negros.png#center)
@@ -61,14 +64,14 @@ pn1 - [Foto](https://photos.app.goo.gl/ArEXqPQebJVgLQqc6)
 
 ## Log
 ### 20220227
-Quité muchas acículas de la base de las ramas nuevas y acículas viejas.
+Quité algunas acículas de la base de las ramas nuevas y acículas viejas. Todavía salía bastante savia al sacar las acículas así que no seguí.
 
 ### 20210927
-Vino pn1 com regalo cuándo compré el Timbó.
+Vino pn1 como regalo cuándo compré el Timbó.
 
 [acknowledgments:md]
 
 [further_reading:md]
 
 [significant_revisions:md]
-_Mar 21, 2022_: Original publication on dariomac.com
+_Apr 3, 2022_: Original publication on dariomac.com

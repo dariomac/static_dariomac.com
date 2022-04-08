@@ -1,5 +1,5 @@
 {
-    "date": "2022-04-01",
+    "date": "2022-04-03",
     "layout": "document",
     "title": "DMARC",
     "card": {
@@ -9,7 +9,7 @@
         "extlink": null,
         "laneid": "Essay",
         "leftbox": "",
-        "position": "20220401",
+        "position": "20220403",
         "tags": "email,campaign",
         "content": "What is DMARC and how to use it",
         "linkto": "[link_to]",
@@ -28,7 +28,7 @@
 What is DMARC and how to use it
 
 [pub_date:string]
-2022-04-01
+2022-04-03
 
 [short_description:string]
 
@@ -52,4 +52,4 @@ where:
 [further_reading:md]
 
 [significant_revisions:md]
-_Apr 1, 2022_: Original publication on dariomac.com
+_Apr 3, 2022_: Original publication on dariomac.com

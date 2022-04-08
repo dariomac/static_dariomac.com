@@ -1,5 +1,5 @@
 {
-    "date": "2022-04-01",
+    "date": "2022-04-03",
     "layout": "document",
     "title": "Before massive email campaigns",
     "card": {
@@ -9,7 +9,7 @@
         "extlink": null,
         "laneid": "Essay",
         "leftbox": "",
-        "position": "20220401",
+        "position": "20220403",
         "tags": "email,SPG,DKIM,DMARC",
         "content": "Things to take into account before a massive email compaign",
         "linkto": "[link_to]",
@@ -28,7 +28,7 @@
 Things to take into account before a massive email compaign
 
 [pub_date:string]
-2022-04-01
+2022-04-03
 
 [short_description:string]
 
@@ -51,4 +51,4 @@ Also is useful to be in the email delivery list (at least at the beginning), jus
 [further_reading:md]
 
 [significant_revisions:md]
-_Apr 1, 2022_: Original publication on dariomac.com
+_Apr 3, 2022_: Original publication on dariomac.com
