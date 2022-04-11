@@ -43,12 +43,15 @@ Besides the main technology already mentioned, it uses Cloudinary to manage imag
 
 As a software engineer I'm mainly working on the API (Node.js) to allow other developers to build new features or create them myself in React. I'm also in charge of the automatic collection of brands' digital assets and the generation of half-baked content using ML. Finally, I help with data flows and analytics pipelines to provide users with insights by converting data from different sources into standardized information.
 
-{{!-- Generate suggestions using ML algorithms, merging templates with user's assets --}}
-{{!-- Scraping tool to get assets from user's websites --}}
-{{!-- New share service to deliver embeds --}}
-{{!-- Embeds analytics --}}
-{{!-- IG/FB integration of insights --}}
 {{!-- Share server: not only did I replace the old one, but I made it more flexible (not tied to slide sizes). 
 It was also prepared to scale without limit by placing it behind AWS CloudFront. --}}
+{{!-- IG/FB integration of insights --}}
+{{!-- Embeds analytics --}}
+{{!-- New share service to deliver embeds --}}
+{{!-- Scraping tool to get assets from user's websites --}}
+{{!-- Generate suggestions using ML algorithms, merging templates with user's assets --}}
+{{!-- We introduced Stagger to all AS (here is the video: https://drive.google.com/file/d/1nFH_zfFYi8ByTsuU3L_WuAVUiSh8nAHM/view?usp=sharing) --}}
+{{!-- Public accounts accesible through QR code with geolocation to show nearest flyers --}}
 
 [projects:md]
+
