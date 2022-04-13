@@ -1,5 +1,6 @@
 {
-    "date": "2022-04-07",
+    "date": "2022-02-11",
+    "updated_date": "2022-04-07",
     "layout": "document",
     "title": "Falso cafeto",
     "card": {
@@ -9,7 +10,7 @@
         "extlink": null,
         "laneid": "Bonsai",
         "leftbox": "",
-        "position": "20220407",
+        "position": "20220211",
         "tags": "fc1",
         "content": "Manihot Grahamii, also known as Mandioca Brava",
         "linkto": "[link_to]",
@@ -27,7 +28,7 @@
 Manihot Grahamii, also known as Mandioca Brava
 
 [pub_date:string]
-2022-04-07
+2022-02-11
 
 [short_description:string]
 

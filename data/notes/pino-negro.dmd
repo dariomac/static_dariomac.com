@@ -1,5 +1,6 @@
 {
-    "date": "2022-04-06",
+    "date": "2022-04-03",
+    "updated_date": "2022-04-06",
     "layout": "document",
     "title": "Pino negro",
     "card": {
@@ -9,7 +10,7 @@
         "extlink": null,
         "laneid": "Bonsai",
         "leftbox": "",
-        "position": "20220406",
+        "position": "20220403",
         "tags": "pn1",
         "content": "Pinus uncinata, also knonw as Black pine",
         "linkto": "[link_to]",
@@ -27,7 +28,7 @@
 Pinus uncinata, also knonw as Black pine
 
 [pub_date:string]
-2022-04-06
+2022-04-03
 
 [short_description:string]
 

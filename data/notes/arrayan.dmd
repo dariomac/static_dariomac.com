@@ -1,5 +1,6 @@
 {
-    "date": "2022-04-07",
+    "date": "2022-03-27",
+    "updated_date": "2022-04-07",
     "layout": "document",
     "title": "Arrayán",
     "card": {
@@ -9,7 +10,7 @@
         "extlink": null,
         "laneid": "Bonsai",
         "leftbox": "",
-        "position": "20220407",
+        "position": "20220327",
         "tags": "myrtaceae",
         "content": "Tree of little height. Thick, dark trunk, finely cracked bark.",
         "linkto": "[link_to]",
@@ -28,7 +29,7 @@
 Tree of little height. Thick, dark trunk, finely cracked bark.
 
 [pub_date:string]
-2022-04-07
+2022-03-27
 
 [short_description:string]
 

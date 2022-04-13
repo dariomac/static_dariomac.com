@@ -1,5 +1,6 @@
 {
     "date": "2022-04-03",
+    "updated_date": "2022-04-08",
     "layout": "document",
     "title": "SEO & React",
     "card": {
@@ -33,7 +34,7 @@ How to improve the SEO of a React application
 [short_description:string]
 
 [body:md]
-This is an screenshot taken from here: [https://www.youtube.com/watch?v=3B7gBVTsEaE](https://www.youtube.com/watch?v=3B7gBVTsEaE)
+This is a screenshot taken from here: [https://www.youtube.com/watch?v=3B7gBVTsEaE](https://www.youtube.com/watch?v=3B7gBVTsEaE)
 ![pasted-image-20220214145136.png](/assets/pasted-image-20220214145136.png#center)
 
 Don't confuse Googlebot (the crawler) with Caffeine (Google’s indexing system). The crawler can't "run a React application"; the indexer is the one that "runs the application".
