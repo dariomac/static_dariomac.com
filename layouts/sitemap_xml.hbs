@@ -5,7 +5,7 @@
     {{#ifNotEq this.frontmatter.params.noIndex true}}
       <url>
         <loc>https://www.dariomac.com{{../frontmatter.card.linkto}}</loc>
-        <lastmod>{{../frontmatter.date}}</lastmod>
+        <lastmod>{{default ../frontmatter.updated_date ../frontmatter.date}}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

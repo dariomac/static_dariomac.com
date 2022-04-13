@@ -49,7 +49,8 @@ const assetsPath = `./${outputPath}assets/`;
       const createdAt = new Date(note.createdAt).toISOString().replace(/T.*/,'')
       
       const dmdFrontmatter = {    
-        date: new Date(note.updatedAt).toISOString().replace(/T.*/,''),
+        date: createdAt,
+        updated_date: new Date(note.updatedAt).toISOString().replace(/T.*/,''),
         layout: 'document',
         ...note.frontMatter.json,
         jsonld: {},
