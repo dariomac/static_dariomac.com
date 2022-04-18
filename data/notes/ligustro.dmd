@@ -1,0 +1,88 @@
+{
+    "date": "2022-03-27",
+    "updated_date": "2022-04-16",
+    "layout": "document",
+    "title": "Ligustro",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Bonsai",
+        "leftbox": "",
+        "position": "20220327",
+        "tags": "liq,li2,li3,li4,li5,li6",
+        "content": "lucidum means 'bright' or 'shiny', referring to the leaves.",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": false,
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": ""
+}
+
+---
+
+[summary:string]
+lucidum means 'bright' or 'shiny', referring to the leaves.
+
+[pub_date:string]
+2022-03-27
+
+[short_description:string]
+
+[body:md]
+## Description
+Scientific name: [_Ligustrum lucidum_](https://www.gbif.org/species/3172297)
+Genus: ligustrum
+Family: oleaceae
+Order: lamiales
+
+## Position
+Prefers a bright position, with direct sunlight at least part of the day.
+
+## Watering
+On hot days it needs a lot of water and must be watered thoroughly as soon as the soil gets dry. In Winter water less but take care not to let the rootball dry out completely.
+
+## Feeding
+
+## Pruning
+
+## Wiring
+
+## Repotting
+
+## Notes
+
+## My trees
+li1: Primer Ligustro que trabajé en Estomba.
+li2: Ligustro en cascada.
+li3: Ligustro mame.
+li4: Ligustro en frasco.
+li5: Ligustro con tronco torneado alrededor.
+li6: Ligustro de tronco "doble".
+
+## Log
+### 2022-02-19
+Hice li3 ([Fotos](https://photos.app.goo.gl/c5PMcakLFz9vviZh7)).
+Así está li1 ([Fotos](https://photos.app.goo.gl/8DALF4d2ZTT6Fpge9)).
+Así está li2 ([Fotos](https://photos.app.goo.gl/jpG7HiBjh2DMJncn6)).
+Así está li5 ([Fotos](https://photos.app.goo.gl/p1rzBqFRwkAdecLA8)).
+Así está li6: ([Fotos](https://photos.app.goo.gl/YqEU7SPqCfKaYRAm8)).
+
+### 2020-11-06
+[Fotos](https://photos.app.goo.gl/iX8HhNJfP7HggRje9) de li1.
+[Fotos](https://photos.app.goo.gl/BLYouMSiae2zvtnD8) de li2 y li5.
+[Fotos](https://photos.app.goo.gl/FXPAVbn8cGxqPGaZA) de li6.
+
+### 2020-09-10
+Hice li4 ([Fotos](https://photos.app.goo.gl/Wg4ZZcnxiuoPyuzc8))
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Mar 27, 2022_: Original publication on dariomac.com

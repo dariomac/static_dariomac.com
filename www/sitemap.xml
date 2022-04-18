@@ -183,7 +183,7 @@
       </url>
       <url>
         <loc>https://www.dariomac.com/ask-what-keeps-us-up-at-night</loc>
-        <lastmod>20210615</lastmod>
+        <lastmod>2021-06-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -303,13 +303,25 @@
       </url>
       <url>
         <loc>https://www.dariomac.com/arrayan</loc>
-        <lastmod>2022-04-07</lastmod>
+        <lastmod>2022-04-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/boj</loc>
+        <lastmod>2022-04-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/ligustro</loc>
+        <lastmod>2022-04-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
         <loc>https://www.dariomac.com/ceibo</loc>
-        <lastmod>2022-04-11</lastmod>
+        <lastmod>2022-04-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -320,8 +332,20 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/juniperus-chinensis</loc>
+        <lastmod>2022-04-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/falso-cafeto</loc>
         <lastmod>2022-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/espinillo</loc>
+        <lastmod>2022-04-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

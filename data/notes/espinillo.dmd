@@ -1,0 +1,78 @@
+{
+    "date": "2021-08-27",
+    "updated_date": "2022-04-18",
+    "layout": "document",
+    "title": "Espinillo",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Bonsai",
+        "leftbox": "",
+        "position": "20210827",
+        "tags": "es1💀",
+        "content": "Acacia caven",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": false,
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": ""
+}
+
+---
+
+[summary:string]
+Acacia caven
+
+[pub_date:string]
+2021-08-27
+
+[short_description:string]
+
+[body:md]
+## Description
+
+## Position
+
+## Watering
+
+## Feeding
+
+## Pruning
+
+## Wiring
+
+## Repotting
+
+## Notes
+
+## My trees
+es1: espinillo yamadori 💀
+
+## Log
+### 2022-02-25
+es1 fue perdiendo fuerza estos 2 meses y se murió.
+
+### 2021-12-30
+es1 brotó todo, luego estos 4 meses de inactividad.
+
+### 2021-08-08
+Este fue mi primer Yamadori. [Fotos](https://photos.app.goo.gl/WYMhipZ3C2MYRy83A) de es1.
+
+Es una [Acacia Caven](https://en.m.wikipedia.org/wiki/Vachellia_caven) (Espinillo).
+
+Lo extraje usando un Lesche Digging Tool
+![lesche-digging-tool.jpeg](/assets/lesche-digging-tool.jpeg#center) 
+y un Hori-Hori Nisaku NJP650
+![nisaku-njp650.jpeg](/assets/nisaku-njp650.jpeg#center)
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Aug 27, 2021_: Original publication on dariomac.com
