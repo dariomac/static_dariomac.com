@@ -43,7 +43,7 @@ There are three simple rules for creating a manifesto:
 
 ## Level of work
 
-I work at 90%, always, but I do it in many “swimlanes" (see above). Because of this, I only work in the 20% of things that returns the 80% of benefits (the old Pareto).
+I work at 90%, always, but I do it in many “swimlanes" ([see below](/manifesto#swimlanes)). Because of this, I only work in the 20% of things that returns the 80% of benefits (the old Pareto).
 
 * * *
 
@@ -53,13 +53,13 @@ Some of these are borrowed from [Adams Wiggins Heroku Values](https://gist.githu
 
 ### Strategy vs. Tactic
 
-The difference between strategy and tactics: strategy is done above the shoulders, tactics are done below the shoulders.
+The difference between strategy and tactics: strategy is done above the shoulders, tactics is done below the shoulders.
 
-Strategy is about choosing which battles to fight to win a war; tactics is just the best way we find to win those battles.
+Strategy is choosing which battles to fight for winning a war; tactics is simply the best way we find to win those battles.
 
 ### Make it real
 
-Ideas are cheap. Make a prototype, draw a wireframe. Discuss around concrete examples, not hand-waving abstractions. Don't say you did something; provide a URL that proves it.
+Ideas are cheap. Make a prototype, draw an outline. Discuss aroud concrete examples, not abstractions. Don't say you've done something; provide a URL to prove it.
 
 ### Ship it
 
@@ -69,15 +69,15 @@ Nothing is real until it's being used by a real user. This doesn't mean you make
 
 Just because we're building bad-ass infrastructure and tools doesn't mean it can't be cool, stylish, and fun. Aesthetic matters. See [The Substance of Style](http://books.google.com/books?id=MqdydvbWZgEC)
 
-Slick and fun meets powerful and serious.
+### Fun combined with strength and seriousness.
 
-Before Heroku (and a few others, like Github and Atlassian), developer-facing products were almost always stodgy, ugly, and completely lacking in style or fun.
+Before Heroku (and a few others, like Slack, Github and Atlassian), developer-facing products were almost always stodgy, ugly, and completely lacking in style or fun.
 
 We're part of the [consumerization of IT](http://www.infoworld.com/t/consumerization-of-it/consumerization-of-it-190132).
 
 ### Intuition-driven balances data-driven
 
-Hunches guide you to places to create new value in the product. Users don't really know what they want. Creating products people loves requires treating product development as an art, not a science; but products have to solve real user problems. Understanding impact of product changes to existing product is best done by mining the data. When you have a mature product and many users you have lots of data on how they are using it. Use that data to make evidence-based decisions.
+Use <s>data</s> information to make evidence-based decisions.
 
 See: [Inspired: Created Products People Love](https://books.google.com.uy/books/about/Inspired.html?id=nE7NMQAACAAJ&redir_esc=y)
 
@@ -91,7 +91,7 @@ Wiggins' Law: If it's hard, cut scope.
 
 If you're building something and just can't seem to get it right, maybe now isn't the right time. You learned something in the attempt, set it down for a while. Maybe in a few weeks or a few months you (or someone else) will pick it up again and find that the world has changed in a way that makes it the right time to build the thing.
 
-Corollary: if you don't do what you need/have to do in the right moment, later it won't be effective.
+Corollary: if you don't do what you need/have to do in the right time, it won't be effective afterwards.
 
 ### Build an audience
 
@@ -156,7 +156,7 @@ Own it. Admit your mistake, say you're sorry (when applicable), and feel the fai
 
 ### Gradual rollouts
 
-Ease into everything. Use feature flags to activate people slowly into changes, then let it bake for a bit. Test out the message for a public launch by first sending it around internally, and later writing the private beta announcement. Collect feedback and adjust. By the time you're ready to take it public to a wide audience, you'll be fairly certain to have worked out all the kinks.
+Ease into everything. Use feature flags to activate people slowly into changes, then let it bake for a bit. Test out the message for a public launch by first sending it around internally, and later writing the private beta announcement. Collect feedback and adjust. By the time you're ready to take it public to a wide audience, you'll be fairly certain to have worked out all the problems.
 
 See: [Crossing the Chasm](http://books.google.com/books?id=yJXHUDSaJgsC)
 
@@ -234,23 +234,17 @@ See: [Winning](http://books.google.com/books?id=g7PG7vwBNYoC)
 
 ## I will use the following apps for...
 
-Google Drive (GDrive) for backup my files, photos and mp3.
+* * *
 
-*   Photos in GDrive (backup in V:, X:)
-*   MP3 in GDrive (backup in W:, V:)
-*   Darío (personal stuff) in GDrive (backup in C:, V:, X:)
+[Obsidian](https://obsidian.md/) as my [second brain](https://www.buildingasecondbrain.com/) for almost anything. There I write temporary notes, more mature notes, ideas and later link them when I know they are linked or use one of Obsidian's plugins to discover relationships between them.
 
-[Dropbox](https://db.tt/Hb2DIPSA) for important files.
-
-GDrive for searchable files (not caring about extraction and parsing of the data by Google).
-
-Onedrive for everything else (garbage?).
+Later, some of those notes end up on this website through an automatic migration process that creates/updates them as I work on Obsidian (as an editor).
 
 * * *
 
-[Diigo](https://www.diigo.com/user/dariomac) for bookmarks, keep [cached versions or] references of online content, highlights and for keep references to online content (short period of time).
+[Refind](https://refind.com/) is how I receive the most important piece of knowledge.
 
-[Pearltrees](http://www.pearltrees.com/dariomac) for the same as Diigo. I'm using it for my [Personal Learning Network](http://en.wikipedia.org/wiki/Personal_learning_network) (PLN).
+[Researcher](https://www.researcher-app.com/) is the tool I use to add the papers I want to keep for the future (they are in sync with the Put&Read folder).
 
 * * *
 
@@ -262,7 +256,7 @@ Temp (folder on GDrive) for "files downloaded to scan and classify or read soon"
 
 [Kanbanize](http://kanbanize.com) for everyday project tasks management using [Kanban](http://en.wikipedia.org/wiki/Kanban) and [Personal Kanban](http://www.personalkanban.com/pk/personal-kanban-101/).
 
-Columns
+#### Columns
 
 *   Planned: Things that are selected to be done in the short time (day?). Must be re-prioritized (top-down bottom-up)
 *   In progress: These are task that in a way or another are being done
@@ -271,14 +265,14 @@ Columns
     *   For review/complete/accept: Things that are waiting for a review (depend on other people).
 *   Done: Done tasks. DONE, really done. You can forget this tasks. Really.
 
-Swimlanes
+#### Swimlanes
 
 *   Work: Tasks related to industrial activities
 *   Academic: Academic tasks or research activities
 *   Personal: House, family, life tasks
 *   Me: Tasks about me, my own research activities and business ideas
 
-Task Types
+#### Task Types
 
 *   ![](https://lh5.googleusercontent.com/KVXmmRSZE2EqYkeWqrd3cC_mzQt54kIasxcTxcC2nC1UCOg8AQbSkC9NAY90Wjea4UYzFKmjwEiX_B8Du-qp9qRGXTuYLmHJ9U20_jfcZGfO-N-58FWESLR1c_DOVBKZHwxxS1_j)Idea: self explanatory
 *   ![](https://lh6.googleusercontent.com/_kFvDZJgOvjhetpKyU30CD1Hy98SJFkqyviVOx3fYQ_5c8oxWF7Tpj9iRXUCdsv2vK6bSZWXNsqJ01D59WpVqUhMuTwyxCKb-MaWvbaUiqBP7SKVafhyXH87P603mI4fCRdNMNcG)Todo: self explanatory
@@ -287,23 +281,5 @@ Task Types
 *   ![](https://lh6.googleusercontent.com/qv5F2LblHNmjiQuMRy1TVKVldnkViy_tu29OH1tufyyC6dJQDO9SVDZD22Kr_NvYekTok8afK0HZexT5aGG832Z-qM4QwJNJZaRoh_KtSUrrlnhrFuNHjnNUQXM8BfQCnH6WjUQf)Q2: Not Urgent + Important = Planning
 *   ![](https://lh4.googleusercontent.com/Zbn-AoFLEqi8dhegxSteYtr5zcqD-0DWFVWkEzYa9sIuuuv0G1je2v2sfENldGPsTnKtgqFd511vKapQ5XR6Lm203QpC6C6m8S6jyEpuk3zGSim_dHp0ZpRxkS89JPYG2GYi4It0)Q3: Urgent + Not Important = Interruptions
 *   ![](https://lh6.googleusercontent.com/amQYy0mNWS9KtSZjH6aVOerEvcQ9iUpmRp-R9v-x6m2Idk7NZmHdi7khrS1JMKgXfZwBKIk2O8P0Hz5evhYldVKPZoDRxpcSLRznbV5myl4FWA75gHmbr_Tr64h1MwdVo26-vKtD)Q4: Not Urgent + Not Important = Time waster
-
-[Gantter](https://www.gantter.com/) for project management in a classic way.
-
-* * *
-
-[Hackpad](http://hackpad.com/) for small notes (with the intention to be collaborative)
-
-* * *
-
-KwikSurveys for complex surveys.
-
-[TypeForm](http://www.typeform.com/) for beautiful surveys.
-
-GoogleDocs for simple surveys or polls.
-
-* * *
-
-CRM (folder on GDrive) for meaningful people management.
 
 * * *
