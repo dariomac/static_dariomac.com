@@ -87,6 +87,7 @@ const assetsPath = `./${outputPath}assets/`;
       dmdNote += '[body:md]\n';
       let modifiedContent = await processImages(note.content);
       modifiedContent = await processLinks(modifiedContent, vault.files);
+      modifiedContent = modifiedContent.replace(/---/g, '<hr/>\n');
       dmdNote += `${modifiedContent.trim()}\n\n`;
       
       dmdNote += '[acknowledgments:md]\n\n';
