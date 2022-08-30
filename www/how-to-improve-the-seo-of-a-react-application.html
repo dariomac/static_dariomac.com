@@ -480,8 +480,7 @@
               <source srcset="/assets/pasted-image-20220214145136.webp" type="image/webp">
   
               <img src="/assets/pasted-image-20220214145136.png#center" alt="pasted-image-20220214145136.png"></picture></p>
-<p>Don't confuse Googlebot (the crawler) with Caffeine (Google’s indexing system). The crawler can't &quot;run a React application&quot;; the indexer is the one that &quot;runs the application&quot;.</p>
-<p>The crawler get the page as when you do a <code>curl example.com</code>. Just a regular <code>GET</code>. After that the crawler halts because it can follow any hyperlink and send the page to the indexer. The indexer &quot;understand&quot; the page and render it, extracting the hyperlinks which then are added to the crawler's queue. Eventually the cycle starts again (crawler <code>GET</code> the new page, halts, send it to the indexer and so on).</p>
+<p>!GoogleBot vs Caffeine</p>
 <p>That is why websites built on React (and other JavaScript platforms) perform worse in Google than websites that primarily serve plain HTML to the crawler.</p>
 <p>The best solution is to opt for Server Side Rendering (SSR) or Server Side Generation (SSG) mainly due to:</p>
 <blockquote>

@@ -1,6 +1,6 @@
 {
     "date": "2022-03-27",
-    "updated_date": "2022-04-17",
+    "updated_date": "2022-07-11",
     "layout": "document",
     "title": "Boj",
     "card": {
@@ -64,6 +64,9 @@ Every 2-5 years.
 bj1: boj comprado de Carmelo
 
 ## Log
+### 2022-07-08
+Agregué más tensores en otras ramas para seguir abriendo la copa. Hay una rama baja (las que tienen tensores de cuerda) que están haciendo que pierda la forma de honguito y hace atractiva la idea de que tenga una nube baja hacia la izquierda.
+
 ### 2022-03-05
 Tensores y recorte de hojas para llevar a primer diseño ([Video](https://photos.app.goo.gl/s4o7x9Qhhx2TNGy77)). La idea es abrir la copa para llevarlo a algo así:
 ![boj-wish.jpg](/assets/boj-wish.jpg#center)

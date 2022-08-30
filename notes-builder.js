@@ -125,19 +125,21 @@ const processImages = async (content) => {
     const newImageName = urlSlug(originalImageNameWithExtension.replace(/\.[^/.]+$/, ''));
     const extension = originalImageNameWithExtension.replace(/^.*\./, '');
 
-    const newImageNameWithExtension = `${newImageName}.${extension}`;
-
-    fs.copyFileSync(`${inputPath}Organization/Attachments/${originalImageNameWithExtension}`, `${assetsPath}${newImageNameWithExtension}`);
-    
-    await webp.cwebp(
-      `${assetsPath}${newImageNameWithExtension}`,
-      `${assetsPath}${newImageName}.webp`,
-      '-q 80',
-      logging='-v');
+    if (fs.existsSync(`${inputPath}Organization/Attachments/${originalImageNameWithExtension}`)) {
+      const newImageNameWithExtension = `${newImageName}.${extension}`;
+  
+      fs.copyFileSync(`${inputPath}Organization/Attachments/${originalImageNameWithExtension}`, `${assetsPath}${newImageNameWithExtension}`);
       
-    processedContent = processedContent.replace(originalString, `![${newImageNameWithExtension}](/assets/${newImageNameWithExtension}#center)`);
+      await webp.cwebp(
+        `${assetsPath}${newImageNameWithExtension}`,
+        `${assetsPath}${newImageName}.webp`,
+        '-q 80',
+        logging='-v');
+        
+      processedContent = processedContent.replace(originalString, `![${newImageNameWithExtension}](/assets/${newImageNameWithExtension}#center)`);
+    }
   }
-    return processedContent;
+  return processedContent;
 };
 
 const processLinks = async (content, files) => {

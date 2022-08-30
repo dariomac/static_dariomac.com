@@ -1,0 +1,71 @@
+{
+    "date": "2022-05-02",
+    "updated_date": "2022-08-06",
+    "layout": "document",
+    "title": "Sombra de toro",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay | Bonsai",
+        "leftbox": "",
+        "position": "20220502",
+        "tags": "Card tags",
+        "content": "Card content",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": false,
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": ""
+}
+
+---
+
+[summary:string]
+Card content
+
+[pub_date:string]
+2022-05-02
+
+[short_description:string]
+
+[body:md]
+## Description
+Nombre científico: *[Jorina Rhombifolia](https://www.google.com/search?q=Jorina+Rhombifolia)*
+
+*Árbol de mediano porte (3 a 5 metros), copa irregular, tronco de corteza rugosa, tallos sin espinas. Hojas perennes, verdes profundo, alternas, romboidales, coriáceas, de 2 a 5 cm de longitud, con una espina punzante en el ápice y dos espinas en los laterales. Flores pequeñas, de aproximadamente 5 mm, blanco verdosas, pubescentes, poco llamativas visualmente pero con un aroma muy fragante que se percibe a la distancia, generalmente a fines de otoño; el fruto es una cápsula drupácea, roja, esférica, rugosa, de casi 1 cm diámetro.* [source](https://www.buenosaires.gob.ar/noticias/jodina-rhombifolia)
+
+
+
+## Position
+Requiere sol pleno
+
+## Watering
+
+## Feeding
+
+## Pruning
+
+## Wiring
+
+## Repotting
+
+## Notes
+
+## My trees
+st1: lo compré por instagram y lo enviaron desde Colonia
+
+## Log
+### 2022-08-06
+Hoy alambré por primera vez, separando ramas para dar una primera estructura (nada loco).
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_May 2, 2022_: Original publication on dariomac.com
