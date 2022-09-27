@@ -3,7 +3,7 @@
   "date": "2022-03-30",
   "layout": "project",
   "card": {
-    "color": "#99b399",
+    "color": "#AD4647",
     "columnid": "done_3",
     "content": "Software to run test cases that interacti with various client systems",
     "datebox": "2019-2020",
