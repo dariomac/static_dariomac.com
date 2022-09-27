@@ -1,0 +1,49 @@
+{
+  "title": "GxReq: Requirement traceability tool for GeneXus",
+  "date": "2022-09-26",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "System for specifying semi-structured business requirements in client language for GeneXus",
+    "datebox": "2021-2022",
+    "extlink": null,
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20220420",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "GxReq: Requirement traceability tool for GeneXus"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+GxReq is a Requirement traceability tool for GeneXus. It allows to specify semi-structured business requirements in client language for GeneXus.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+
+[platform:string]
+
+[link:string]
+
+[short_description:string]
+
+[description:md]
+**Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
+
+The GeneXus philosophy is based on incremental iterative development, which includes user vision and knowledge base capture. Using this knowledge base, GeneXus can automatically develop and manage the architecture of a software deliverable by creating all necessary components on its own, such as databases and domain entities.
+
+Although GeneXus has been on the market for a long time, it currently lacks a mechanism to support written requirements in a way that ensures implementation quality, can be audited, and can be discussed, shared, and understood by all parties.
+
+Through an integration with GeneXus tools, this project aims to make it possible to specify a business need that is accurate, complete, consistent, unambiguous enough to serve as a contract, flexible enough to adapt to incremental prototyping, and written in the customer’s native language.
+
+One component of this proof of concept is the GeneXus development environment’s extension mechanism, which interfaces with the GeneXus test suite (GxTest) and GeneXus Server.
+
+It does, however, include a separate website called Requirements Client that is used to manage users, projects, and features. It also includes a text editor based on Monaco Editor which allows users to write requirements later import them from the GeneXus development environment via the link between the Extension Mechanism and the Requirements Client’s backend.
