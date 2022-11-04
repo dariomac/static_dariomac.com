@@ -219,7 +219,7 @@
     <link rel="dns-prefetch" href="//dariomac.com"/>
     <link rel="dns-prefetch" href="//gstatic.com"/>
     <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
-    <link rel="dns-prefetch" href="//google-analytics.com"/>
+    <link rel="dns-prefetch" href="//www.googletagmanager.com"/>
     <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
     <link rel="dns-prefetch" href="//google.com"/>
     <link rel="dns-prefetch" href="//c.statcounter.com"/>
@@ -247,36 +247,34 @@
     </script>
     
     <script type="text/javascript">
+      function afterContentDraw () {
+        setTimeout(function () {
+          var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+          aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+          $.each(aList,
+            function (k, v) {
+              var $v = $(v);
     
-    function afterContentDraw () {
-      setTimeout(function () {
-        var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
-        aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
-        $.each(aList,
-          function (k, v) {
-            var $v = $(v);
-    
-            $v.click(function () {
-              _gaq.push(['_trackPageview', $v.attr('href')]);
+              $v.click(function () {
+                _gaq.push(['_trackPageview', $v.attr('href')]);
+              });
+              // $v.css('color','red');
             });
-            // $v.css('color','red');
-          });
-        
-        preloadImages($('a.fancybox'));
-      }, 1000);
-    }
-    
-    function preloadImages (array) {
-      if (!preloadImages.list) {
-        preloadImages.list = [];
+          
+          preloadImages($('a.fancybox'));
+        }, 1000);
       }
-      for (var i = 0; i < array.length; i++) {
-        var img = new Image();
-        img.src = $(array[i]).attr('href');
-        preloadImages.list.push(img);
-      }
-    }
     
+      function preloadImages (array) {
+        if (!preloadImages.list) {
+          preloadImages.list = [];
+        }
+        for (var i = 0; i < array.length; i++) {
+          var img = new Image();
+          img.src = $(array[i]).attr('href');
+          preloadImages.list.push(img);
+        }
+      }
     </script>
     
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -374,9 +372,8 @@
                   </section>
                 
                   <section class="content">
-                    <p>This talk was about how quality can be assured whe you work in an agile way. Mostly, all the talk was around the idea of shift left and how to not push defects the end of the engineering process. It was a good introduction to these topics and a way to show how quality can be improved in the preplanning, planning and implementation phases.</p>
+                    <p>This talk was about how working in an agile way can help ensure quality. Most of what was talked about was the idea of &quot;shift left&quot; and how to avoid pushing defects to the end of the engineering process. It was a good way to get started with these topics and show how quality can be improved during the preplanning, planning, and implementation phases.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fm2-PQFrwpE?start=2033#center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
-<!-- ![Meetup agenda: Thursday 27, 6:00pm](assets/python-chile-talk.jpg#center) -->
 <h2><a name="references" class="anchor">
 <a name="references" href="#references" class="no_external_ico">References</a></h2>
 <ul>
@@ -406,6 +403,19 @@
                         </td>
                         <td>
                           This is the presentation I used for the meetup.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;">
+                          <a href="/assets/python-chile-talk.jpg" class="no_external_ico">
+                            <img src="/assets/images/file-types/jpg.svg" style="width: 48px;" alt="python-chile-talk.jpg">
+                          </a>
+                        </td>
+                        <td class="filename">
+                          <a href="/assets/python-chile-talk.jpg">python-chile-talk.jpg</a>
+                        </td>
+                        <td>
+                          Meetup agenda: Thursday 27, 6:00pm
                         </td>
                       </tr>
                     </tbody>

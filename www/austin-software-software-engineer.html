@@ -219,7 +219,7 @@
     <link rel="dns-prefetch" href="//dariomac.com"/>
     <link rel="dns-prefetch" href="//gstatic.com"/>
     <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
-    <link rel="dns-prefetch" href="//google-analytics.com"/>
+    <link rel="dns-prefetch" href="//www.googletagmanager.com"/>
     <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
     <link rel="dns-prefetch" href="//google.com"/>
     <link rel="dns-prefetch" href="//c.statcounter.com"/>
@@ -247,36 +247,34 @@
     </script>
     
     <script type="text/javascript">
+      function afterContentDraw () {
+        setTimeout(function () {
+          var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+          aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+          $.each(aList,
+            function (k, v) {
+              var $v = $(v);
     
-    function afterContentDraw () {
-      setTimeout(function () {
-        var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
-        aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
-        $.each(aList,
-          function (k, v) {
-            var $v = $(v);
-    
-            $v.click(function () {
-              _gaq.push(['_trackPageview', $v.attr('href')]);
+              $v.click(function () {
+                _gaq.push(['_trackPageview', $v.attr('href')]);
+              });
+              // $v.css('color','red');
             });
-            // $v.css('color','red');
-          });
-        
-        preloadImages($('a.fancybox'));
-      }, 1000);
-    }
-    
-    function preloadImages (array) {
-      if (!preloadImages.list) {
-        preloadImages.list = [];
+          
+          preloadImages($('a.fancybox'));
+        }, 1000);
       }
-      for (var i = 0; i < array.length; i++) {
-        var img = new Image();
-        img.src = $(array[i]).attr('href');
-        preloadImages.list.push(img);
-      }
-    }
     
+      function preloadImages (array) {
+        if (!preloadImages.list) {
+          preloadImages.list = [];
+        }
+        for (var i = 0; i < array.length; i++) {
+          var img = new Image();
+          img.src = $(array[i]).attr('href');
+          preloadImages.list.push(img);
+        }
+      }
     </script>
     
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -369,7 +367,8 @@
                 
                 
                   <section class="content">
-                    <p>At Austin Software I work full time as a Software Engineer for their partners. As part of the partner's team, my job is to apply all my software engineering knowledge for the benefit of their business. In addition, I do my best to collaborate on any internal project or initiative needed, writing articles, generating branded content or as a speaker.</p>
+                    <p>At Austin Software, I worked full time as a Software Engineer for their partners (until June 2022, when I started doing it part-time). My responsibility as a member of the partner's team is to use all of my experience in software engineering to boost their business.</p>
+<p>In addition, I tried my best to contribute to any internal project or campaign that required it, whether it was writing articles, creating branded material, or speaking. As a result, I started working as a Developer Advocate in June 2022.</p>
 
                   </section>
 
@@ -384,22 +383,24 @@
                     <h2><a name="writing-projects" class="anchor">
 <a name="writing-projects" href="#writing-projects" class="no_external_ico">Writing projects</a></h2>
 <ul>
-<li><a href="https://www.austinsoftware.com/post/pull-requests-far-away-from-heaven">What Science Says About Getting Your PR Accepted</a></li>
-<li><a href="https://www.austinsoftware.com/post/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it">Detecting &quot;Wont Fix&quot; Issues with Machine Learning</a></li>
-<li><a href="https://www.austinsoftware.com/post/covid19-the-van-helsing-of-zombies-orcs-scrum-team">Covid 19: the Van Helsing of Zombies &amp; Orcs Scrum team</a></li>
-<li><a href="https://www.austinsoftware.com/crypto-how-it-started/">Crypto: How it started</a></li>
+<li>20210513 - <a href="https://www.austinsoftware.com/post/pull-requests-far-away-from-heaven">What Science Says About Getting Your PR Accepted</a></li>
+<li>20210705 - <a href="https://www.austinsoftware.com/post/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it">Detecting &quot;Wont Fix&quot; Issues with Machine Learning</a></li>
+<li>20220412 - <a href="https://www.austinsoftware.com/post/covid19-the-van-helsing-of-zombies-orcs-scrum-team">Covid 19: the Van Helsing of Zombies &amp; Orcs Scrum team</a></li>
+<li>20220929 - <a href="https://www.austinsoftware.com/crypto-how-it-started/">Crypto: How it started</a></li>
+<li>20220929 - <a href="https://www.austinsoftware.com/questions-to-ask-your-interviewer/">Questions to ask your interviewer</a></li>
+<li>20221004 - <a href="https://www.austinsoftware.com/be-the-goat-software-engineer-know-your-clients-2/">Be the GOAT software engineer: Know your clients</a></li>
 </ul>
 <h2><a name="company-visibility-tasks" class="anchor">
 <a name="company-visibility-tasks" href="#company-visibility-tasks" class="no_external_ico">Company visibility tasks</a></h2>
 <ul>
-<li><a href="https://www.austinsoftware.com/post/as-talk-the-last-productivity-hack-youll-ever-by-dario-macchi">AS Talk: The last productivity hack you'll ever need</a></li>
-<li><a href="/meetup-python-chile-quality-in-agile-contexts">Meetup Python Chile: Quality in Agile Contexts</a></li>
+<li>20210727 - <a href="https://www.austinsoftware.com/post/as-talk-the-last-productivity-hack-youll-ever-by-dario-macchi">AS Talk: The last productivity hack you'll ever need</a></li>
+<li>20220127 - <a href="/meetup-python-chile-quality-in-agile-contexts">Meetup Python Chile: Quality in Agile Contexts</a></li>
 </ul>
 <h2><a name="internal-initiatives" class="anchor">
 <a name="internal-initiatives" href="#internal-initiatives" class="no_external_ico">Internal initiatives</a></h2>
 <ul>
-<li>Earth Day Happy Hour - How to grow a tree from seed and convert it into a bonsai tree</li>
-<li>Partner description and workshop/demo</li>
+<li>20210429 - Earth Day Happy Hour - How to grow a tree from seed and convert it into a bonsai tree</li>
+<li>20211125 - Partner description and workshop/demo</li>
 </ul>
 
                   </section>

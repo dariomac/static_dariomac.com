@@ -298,7 +298,7 @@
     <link rel="dns-prefetch" href="//dariomac.com"/>
     <link rel="dns-prefetch" href="//gstatic.com"/>
     <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
-    <link rel="dns-prefetch" href="//google-analytics.com"/>
+    <link rel="dns-prefetch" href="//www.googletagmanager.com"/>
     <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
     <link rel="dns-prefetch" href="//google.com"/>
     <link rel="dns-prefetch" href="//c.statcounter.com"/>
@@ -326,36 +326,34 @@
     </script>
     
     <script type="text/javascript">
+      function afterContentDraw () {
+        setTimeout(function () {
+          var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+          aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+          $.each(aList,
+            function (k, v) {
+              var $v = $(v);
     
-    function afterContentDraw () {
-      setTimeout(function () {
-        var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
-        aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
-        $.each(aList,
-          function (k, v) {
-            var $v = $(v);
-    
-            $v.click(function () {
-              _gaq.push(['_trackPageview', $v.attr('href')]);
+              $v.click(function () {
+                _gaq.push(['_trackPageview', $v.attr('href')]);
+              });
+              // $v.css('color','red');
             });
-            // $v.css('color','red');
-          });
-        
-        preloadImages($('a.fancybox'));
-      }, 1000);
-    }
-    
-    function preloadImages (array) {
-      if (!preloadImages.list) {
-        preloadImages.list = [];
+          
+          preloadImages($('a.fancybox'));
+        }, 1000);
       }
-      for (var i = 0; i < array.length; i++) {
-        var img = new Image();
-        img.src = $(array[i]).attr('href');
-        preloadImages.list.push(img);
-      }
-    }
     
+      function preloadImages (array) {
+        if (!preloadImages.list) {
+          preloadImages.list = [];
+        }
+        for (var i = 0; i < array.length; i++) {
+          var img = new Image();
+          img.src = $(array[i]).attr('href');
+          preloadImages.list.push(img);
+        }
+      }
     </script>
     
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -472,7 +470,7 @@
                     <p>Disclaimer: The following document is heavily based on the Mozilla Code Review FAQ <a href="http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf" title="Rigby, C., German, D. (2006). &quot;A preliminary examination of code review processes in open source projects.&quot; University of Victoria Technical Report: DCS-305-IR. Retrieved from http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf.">[1]</a>. But my team at <a href="http://vairix.com/" title="VAIRIX">VAIRIX</a> has made many adaptations in order to reflect the two-level review process that is part of our development methodology.</p>
 <h2><a name="what-is-code-review" class="anchor">
 <a name="what-is-code-review" href="#what-is-code-review" class="no_external_ico">What is code review?</a></h2>
-<p>As Wikipedia puts it, “ <a href="https://en.wikipedia.org/wiki/Code_review" title="What is code review?">Code review</a> is systematic examination … of computer source code. It is intended to find and fix mistakes overlooked in the initial development phase, improving both the overall quality of software and the developers' skills.&quot;</p>
+<p>As Wikipedia puts it, “<a href="https://en.wikipedia.org/wiki/Code_review" title="What is code review?">Code review</a> is systematic examination … of computer source code. It is intended to find and fix mistakes overlooked in the initial development phase, improving both the overall quality of software and the developers' skills.&quot;</p>
 <h2><a name="what-is-the-purpose-of-code-review" class="anchor">
 <a name="what-is-the-purpose-of-code-review" href="#what-is-the-purpose-of-code-review" class="no_external_ico">What is the purpose of code review?</a></h2>
 <p>Code review is the most commonly used procedure for validating the design and implementation of features. It helps developers to maintain consistency between design and implementation “styles&quot; across many team members and between various projects on which the company is working. If you want to know more benefits of code reviews and how it saves time, money and minimize technical debt, check out <a href="https://themodestack.com/how-code-audit-saves-time-money-and-makes-things-better/?utm_medium=email&amp;utm_source=blog">MODESTACK's article on Code Audits</a>.</p>
@@ -623,6 +621,19 @@
                         </td>
                         <td>
                           Me talking about this article to a broader audience throw ThinkApps network (2015-07-17).
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;">
+                          <a href="/assets/code-review--what-is-it-and-why-is-it-important.pdf" class="no_external_ico">
+                            <img src="/assets/images/file-types/pdf.svg" style="width: 48px;" alt="code-review--what-is-it-and-why-is-it-important.pdf">
+                          </a>
+                        </td>
+                        <td class="filename">
+                          <a href="/assets/code-review--what-is-it-and-why-is-it-important.pdf">code-review--what-is-it-and-why-is-it-important.pdf</a>
+                        </td>
+                        <td>
+                          Original article in ThinkApps blog.
                         </td>
                       </tr>
                     </tbody>
