@@ -1,6 +1,6 @@
 {
     "date": "2022-02-11",
-    "updated_date": "2022-08-15",
+    "updated_date": "2022-10-01",
     "layout": "document",
     "title": "Falso cafeto",
     "card": {
@@ -11,7 +11,7 @@
         "laneid": "Bonsai",
         "leftbox": "",
         "position": "20220211",
-        "tags": "fc1",
+        "tags": "fc1, fc2",
         "content": "Manihot Grahamii, also known as Mandioca Brava",
         "linkto": "[link_to]",
         "title": "[title]",
@@ -34,6 +34,8 @@ Manihot Grahamii, also known as Mandioca Brava
 
 [body:md]
 ## Description
+Nombre científico: Manihot Grahamii
+
 Arbusto o árbol bajo, [laticífero](https://es.m.wikipedia.org/wiki/Latic%C3%ADfero) muy ramificado. Hojas simples, alternas, glabras, digitilobadas, con 7-l I lobos oblanceolados, pecíolo de 10-30 cm. relativamente grueso.
 
 Flores dispuestas en cimas laxas, con corola ausente. Fruto tricoco de 3 cm. de diámetro que se abre ruidosa y violentamente lanzando las semillas lejos del pie del árbol.
