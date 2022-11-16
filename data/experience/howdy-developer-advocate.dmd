@@ -3,7 +3,7 @@
   "date": "2022-11-15",
   "layout": "experience",
   "card": {
-    "color": "#5E9D9F",
+    "color": "#003366",
     "columnid": "progress_2",
     "content": "[title]",
     "datebox": "Jun 2022 – Now",
@@ -14,7 +14,7 @@
     "position": "20220601",
     "subtaskdetails": [],
     "tags": null,
-    "title": "Austin Software"
+    "title": "Howdy"
   },
   "jsonld": {},
   "canonical": "",
@@ -29,20 +29,20 @@
 Jun 2022 - Now
 
 [place_url:string]
-https://www.austinsoftware.com/
+https://www.howdy.com/
 
 [place:string]
-Austin Software
+Howdy
 
 [content:md]
 Like all DevRel roles, our work lives at the intersection of product, engineering, and marketing. My day job comprises writing docs and blog posts, collecting and sharing developer feedback, actively taking part in (as many) developer communities, and speaking at events, or just being there helping in any way.
 
 [projects:md]
 ## Content generation projects
- - 20220929 - [Crypto: How it started](https://www.austinsoftware.com/crypto-how-it-started/)
- - 20220929 - [Questions to ask your interviewer](https://www.austinsoftware.com/questions-to-ask-your-interviewer/)
- - 20221004 - [Be the GOAT software engineer: Know your clients](https://www.austinsoftware.com/be-the-goat-software-engineer-know-your-clients-2/)
+ - 20220929 - [Crypto: How it started](https://www.howdy.com/crypto-how-it-started/)
+ - 20220929 - [Questions to ask your interviewer](https://www.howdy.com/questions-to-ask-your-interviewer/)
+ - 20221004 - [Be the GOAT software engineer: Know your clients](https://www.howdy.com/be-the-goat-software-engineer-know-your-clients-2/)
 
  ## Brand awareness tasks
 
-Also, before I officially started in this role, I was doing different activities while working as [Software Engineer](/austin-software-engineer#writing-projects).
+Also, before I officially started in this role, I was doing different activities while working as [Software Engineer](/austin-software-software-engineer#writing-projects).

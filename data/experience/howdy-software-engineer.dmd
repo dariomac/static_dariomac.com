@@ -1,0 +1,56 @@
+{
+  "title": "Software Engineer",
+  "date": "2021-08-09",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "progress_2",
+    "content": "[title]",
+    "datebox": "Nov 2020 – Now",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20201115",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+
+[duration:string]
+Nov 2020 - Now
+
+[place_url:string]
+https://www.howdy.com/
+
+[place:string]
+Howdy
+
+[content:md]
+At Howdy, I worked full time as a Software Engineer for their partners (until June 2022, when I started doing it part-time). My responsibility as a member of the partner's team is to use all of my experience in software engineering to boost their business. 
+
+In addition, I tried my best to contribute to any internal project or campaign that required it, whether it was writing articles, creating branded material, or speaking. As a result, I started working as a [Developer Advocate in June 2022](/austin-software-developer-advocate).
+
+[projects:md]
+
+## Writing projects
+ - 20210513 - [What Science Says About Getting Your PR Accepted](https://www.howdy.com/post/pull-requests-far-away-from-heaven)
+ - 20210705 - [Detecting "Wont Fix" Issues with Machine Learning](https://www.howdy.com/post/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it)
+ - 20220412 - [Covid 19: the Van Helsing of Zombies & Orcs Scrum team](https://www.howdy.com/post/covid19-the-van-helsing-of-zombies-orcs-scrum-team)
+
+## Company visibility tasks
+ - 20210727 - [AS Talk: The last productivity hack you'll ever need](https://www.howdy.com/post/as-talk-the-last-productivity-hack-youll-ever-by-dario-macchi)
+ - 20220127 - [Meetup Python Chile: Quality in Agile Contexts](/meetup-python-chile-quality-in-agile-contexts)
+
+## Internal initiatives
+- 20210429 - Earth Day Happy Hour - How to grow a tree from seed and convert it into a bonsai tree
+- 20211125 - Partner description and workshop/demo
+ 

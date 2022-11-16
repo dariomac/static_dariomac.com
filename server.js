@@ -51,10 +51,12 @@ app.get('/me', function (req, res) {
 });
 
 const destinations = {
-  "/eci2020-course-proposal": "/es/eci2020-course-proposal",
-  "/niveles-de-abstracci%C3%B3n": "/es/niveles-de-abstracci%C3%B3n",
-  "/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil": "/es/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil",
-  "/svg-to-raphael": "/"
+  '/eci2020-course-proposal': '/es/eci2020-course-proposal',
+  '/niveles-de-abstracci%C3%B3n': '/es/niveles-de-abstracci%C3%B3n',
+  '/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil': '/es/para-ser-agil-tenes-que-ser-velozsino-pa-que-sos-agil',
+  '/svg-to-raphael': '/',
+  '/austin-software-software-engineer': '/howdy-software-engineer',
+  '/austin-software-developer-advocate': '/howdy-developer-advocate',
 }
 
 const origins = Object.keys(destinations);
