@@ -45,6 +45,7 @@ const assetsPath = `./${outputPath}assets/`;
   await Promise.all(
     Object.keys(vault.files).map(async (noteKey) => {
       const note = vault.files[noteKey];
+      note.casedName = path.basename(note.path).replace(/\.md$/,'');
 
       const createdAt = new Date(note.createdAt).toISOString().replace(/T.*/,'')
       
@@ -52,6 +53,7 @@ const assetsPath = `./${outputPath}assets/`;
         date: createdAt,
         updated_date: new Date(note.updatedAt).toISOString().replace(/T.*/,''),
         layout: 'document',
+        title: note.frontMatter.json.title || note.casedName,
         ...note.frontMatter.json,
         jsonld: {},
         canonical: '',
