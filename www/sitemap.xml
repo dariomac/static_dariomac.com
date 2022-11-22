@@ -488,6 +488,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/meetup-frontend-peru-quality-in-agile-contexts</loc>
+        <lastmod>2022-11-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/howdy-developer-advocate</loc>
         <lastmod>2022-11-15</lastmod>
         <changefreq>monthly</changefreq>

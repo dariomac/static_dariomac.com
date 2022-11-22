@@ -51,6 +51,11 @@
     "prefix": "color.as",
     "body": "#5E9D9F"
   },
+  "color-howdy": {
+    "scope": "markdown",
+    "prefix": "color.howdy",
+    "body": "#003366"
+  },
   
   "column-plan": {
     "scope": "markdown",

@@ -1,0 +1,59 @@
+{
+  "title": "Meetup Frontend Perú - Quality in Agile Contexts",
+  "date": "2022-11-21",
+  "layout": "experience",
+  "card": {
+    "color": "#5E9D9F",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Jun, 2022",
+    "extlink": "https://www.meetup.com/frontend-pe/events/286793562/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20220630",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Meetup Frontend Perú"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+This short talk was about what we should do to detect defects soon after their introduction.
+
+[duration:string]
+Jun 30, 2022 (20 minutes)
+
+[place_url:string]
+https://goo.gl/maps/v9ta8RrYe8d3DBLZ6
+
+[place:string]
+Av. Emilio Cavenecia 151, Miraflores - Comunal Cavenecia
+
+[content:md]
+This talk was about how working in an agile way can help ensure quality. Most of what was talked about was the idea of "shift left" and how to avoid pushing defects to the end of the engineering process. It was a good way to get started with these topics and show how quality can be improved during the preplanning, planning, and implementation phases.
+
+<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fjeanpaul1304%2Fvideos%2F750296172989971%2F%3Fidorvanity%3D1169488320563802&show_text=false&width=267&t=0#center" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
+[projects:md]
+
+[attachments:json]
+  [{
+    "filename": "calidad-en-contextos-agiles-frontend-peru.pdf",
+    "description": "This is the presentation I used for the meetup."
+  }]
+
+[related_images:json]
+  [{
+    "filename": "frontend-peru-2.jpg",
+    "description": ""
+  },
+  {
+    "filename": "frontend-peru-1.jpg",
+    "description": "Meetup agenda: Thursday 30, 7:00pm"
+  }]
