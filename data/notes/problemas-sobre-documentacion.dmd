@@ -1,0 +1,65 @@
+{
+    "date": "2022-11-21",
+    "updated_date": "2022-11-23",
+    "layout": "document",
+    "title": "Problemas sobre documentación",
+    "card": {
+        "color": "#FF6E19",
+        "columnid": "done_3",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20221121",
+        "tags": "es,docs,problemas",
+        "content": "Algunos problemas que me plantearon sobre documentación",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": false,
+    "lang": "es",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": ""
+}
+
+---
+
+[summary:string]
+Algunos problemas que me plantearon sobre documentación
+
+[pub_date:string]
+2022-11-21
+
+[short_description:string]
+
+[body:md]
+Esta breve nota surge en base a comentarios que me hicieron en los espacios de networking que sucedieron el pasado 18 de noviembre durante la WebConf Latam 2022 ([https://webconf.tech/](https://webconf.tech)).
+
+Durante mi charla en la conferencia, entre otras cosas, introduje el concepto de Documinding, hablando de documentación ágil y de los problemas que plantea. 
+
+Mi sorpresa fue que luego recibí varias preguntas relacionadas al tema documentación en general:
+
+> 1. ¿Cómo documentar un producto que tiene un core compartido entre varias instalaciones, pero luego una parte de la doc depende de la configuración de la instancia?
+> 2. ¿Cómo convencer a un PM/gerente que es necesario asignar tiempo para documentar durante el desarrollo?
+> 3. ¿En serio puedo hacer diagramas escribiendo una representación del mismo en un DSL que puede ser versionado con mi código?
+
+La pregunta 1 no encontré una forma de responderla (quien me lo preguntó usaba Notion).
+==#TODO== buscar respuesta a esto porque es un tema interesante.
+
+La respuesta a la pregunta 2 va por el lado de traducir en dinero costos:
+- costo de *onboarding* y *hand-holding* de nuevos devs.
+- costo que tiene la falta de una visión única de lo que estamos construyendo
+- costo de tener que generar dicha doc al momento de vender el producto
+
+La respuesta de la pregunta 3 la di citando el [*thread* de Twitter sobre *just enough documentation*](https://twitter.com/wearehowdy_/status/1583514973694615552?s=20&t=PNKZBzXE9G4GqwLLkbtv1A) y las herramientas que permiten documentar utilizando DSLs (conocidas como Diagrams-as-code). Un extra que no está en dicho tweet es Mermaid, de la cual daré un ejemplo en otro *post*.
+
+![Example of PlantUML](https://pbs.twimg.com/media/FfnFiozXEAEakQJ?format=jpg&name=4096x4096#center)
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Nov 21, 2022_: Original publication on dariomac.com

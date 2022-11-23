@@ -146,7 +146,7 @@ const processImages = async (content) => {
 
 const processLinks = async (content, files) => {
   let processedContent = content;
-  const regex = /\[\[([a-zA-ZÀ-ú0-9\s\.-]+\|?[a-zA-Z0-9\s]*)\]\]/g;
+  const regex = /\[\[([a-zA-ZÀ-ú0-9\s\.-]+\|?[a-zA-ZÀ-ú0-9\s]*)\]\]/g;
   let m;
   
   while ((m = regex.exec(content)) !== null) {
@@ -157,12 +157,14 @@ const processLinks = async (content, files) => {
     
     // The result can be accessed through the `m`-variable.
     const originalString = m[0];
-    const pageName = m[1];
+    const dobleSquareBracketContent = m[1];
+    
+    const [pageName, pipedText] = dobleSquareBracketContent.split('|');
 
     if (files[pageName.toLowerCase()]) {
-      processedContent = processedContent.replace(originalString, `[${pageName}](/${urlSlug(pageName)})`);
+      processedContent = processedContent.replace(originalString, `[${pipedText || pageName}](/${urlSlug(pageName)})`);
     } else {
-      processedContent = processedContent.replace(originalString, pageName);
+      processedContent = processedContent.replace(originalString, pipedText || pageName);
     }
   }
   return processedContent;
