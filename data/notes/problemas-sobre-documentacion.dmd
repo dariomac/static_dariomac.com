@@ -53,7 +53,7 @@ La respuesta a la pregunta 2 va por el lado de traducir en dinero costos:
 - costo que tiene la falta de una visión única de lo que estamos construyendo
 - costo de tener que generar dicha doc al momento de vender el producto
 
-La respuesta de la pregunta 3 la di citando el [*thread* de Twitter sobre *just enough documentation*](https://twitter.com/wearehowdy_/status/1583514973694615552?s=20&t=PNKZBzXE9G4GqwLLkbtv1A) y las herramientas que permiten documentar utilizando DSLs (conocidas como Diagrams-as-code). Un extra que no está en dicho tweet es Mermaid, de la cual daré un ejemplo en otro *post*.
+La respuesta de la pregunta 3 la di citando el [*thread* de Twitter sobre *just enough documentation*](https://twitter.com/wearehowdy_/status/1583514973694615552?s=20&t=PNKZBzXE9G4GqwLLkbtv1A) y las herramientas que permiten documentar utilizando DSLs (conocidas como Diagrams-as-code). Un extra que no está en dicho tweet es Mermaid, herramienta sobre la cual daré un ejemplo en otro *post*.
 
 ![Example of PlantUML](https://pbs.twimg.com/media/FfnFiozXEAEakQJ?format=jpg&name=4096x4096#center)
 
