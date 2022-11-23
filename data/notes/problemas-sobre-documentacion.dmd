@@ -15,7 +15,7 @@
         "leftbox": "",
         "position": "20221121",
         "tags": "es,docs,problemas",
-        "content": "Algunos problemas que me plantearon sobre documentación",
+        "content": "3 preguntas sobre documentación, 2 con respuestas 😃",
         "linkto": "[link_to]",
         "title": "[title]",
         "subtaskdetails": []
@@ -27,7 +27,7 @@
 ---
 
 [summary:string]
-Algunos problemas que me plantearon sobre documentación
+3 preguntas sobre documentación, 2 con respuestas 😃
 
 [pub_date:string]
 2022-11-21
