@@ -3,6 +3,9 @@
     "updated_date": "2022-05-25",
     "layout": "document",
     "title": "SEO & React",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
     "card": {
         "color": "#99b399",
         "columnid": "progress_2",
@@ -17,10 +20,7 @@
         "title": "[title]",
         "subtaskdetails": []
     },
-    "fieldNote": true,
-    "jsonld": {},
-    "canonical": "",
-    "custom_header": ""
+    "fieldNote": true
 }
 
 ---

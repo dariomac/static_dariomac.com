@@ -3,6 +3,9 @@
     "updated_date": "2022-10-01",
     "layout": "document",
     "title": "Pino negro",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
     "card": {
         "color": "#99b399",
         "columnid": "progress_2",
@@ -16,10 +19,7 @@
         "linkto": "[link_to]",
         "title": "[title]",
         "subtaskdetails": []
-    },
-    "jsonld": {},
-    "canonical": "",
-    "custom_header": ""
+    }
 }
 
 ---

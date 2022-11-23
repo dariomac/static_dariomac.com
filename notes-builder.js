@@ -54,10 +54,10 @@ const assetsPath = `./${outputPath}assets/`;
         updated_date: new Date(note.updatedAt).toISOString().replace(/T.*/,''),
         layout: 'document',
         title: note.frontMatter.json.title || note.casedName,
-        ...note.frontMatter.json,
         jsonld: {},
         canonical: '',
-        custom_header: ''
+        custom_header: '',
+        ...note.frontMatter.json
       };
       
       dmdFrontmatter.card = {
