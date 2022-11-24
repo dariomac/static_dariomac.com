@@ -3,7 +3,7 @@
   "date": "2022-01-27",
   "layout": "experience",
   "card": {
-    "color": "#5E9D9F",
+    "color": "#003366",
     "columnid": "done_3",
     "content": "“Quality in Agile Contexts“ talk",
     "datebox": "Jan, 2022",
@@ -36,7 +36,7 @@ https://www.meetup.com/es/pythonchiledev/events/283338972/
 Remote
 
 [content:md]
-This talk was about how working in an agile way can help ensure quality. Most of what was talked about was the idea of "shift left" and how to avoid pushing defects to the end of the engineering process. It was a good way to get started with these topics and show how quality can be improved during the preplanning, planning, and implementation phases.
+This talk was about how working in an agile way can help ensure quality. Most ofthe discussion was around the idea of "shift left" and how to avoid pushing defects to the end of the engineering process. It was a good way to get started with these topics and show how quality can be improved during the preplanning, planning, and implementation phases.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fm2-PQFrwpE?start=2033#center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
 

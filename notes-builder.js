@@ -161,8 +161,11 @@ const processLinks = async (content, files) => {
     
     const [pageName, pipedText] = dobleSquareBracketContent.split('|');
 
-    if (files[pageName.toLowerCase()]) {
-      processedContent = processedContent.replace(originalString, `[${pipedText || pageName}](/${urlSlug(pageName)})`);
+    const linkedNote = files[pageName.toLowerCase()];
+    if (linkedNote) {
+      const lang = linkedNote.frontMatter.json.lang;
+      const langFolder = lang ? `/${lang}` : '';
+      processedContent = processedContent.replace(originalString, `[${pipedText || pageName}](${langFolder}/${urlSlug(pageName)})`);
     } else {
       processedContent = processedContent.replace(originalString, pipedText || pageName);
     }

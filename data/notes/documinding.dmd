@@ -1,0 +1,60 @@
+{
+    "date": "2022-11-24",
+    "updated_date": "2022-11-24",
+    "layout": "document",
+    "title": "Documinding",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
+    "card": {
+        "color": "#FF6E19",
+        "columnid": "done_3",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20221124",
+        "tags": "es,docs,devs",
+        "content": "Docu [Documentación] minding [mind -mente-, pero también de interés -matter of interest-]",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": false,
+    "lang": "es"
+}
+
+---
+
+[summary:string]
+Docu [Documentación] minding [mind -mente-, pero también de interés -matter of interest-]
+
+[pub_date:string]
+2022-11-24
+
+[short_description:string]
+
+[body:md]
+Esta idea la introduje en la charla que dí en la WebConf Latam 2022, pero es algo que venimos trabajando desde hace un tiempo.
+
+El objetivo es asegurar una cantidad de documentación necesaria, pero mínima.
+
+¿Cómo?
+
+Lo primero es hacer un análisis de riesgo de las tareas que tenemos más arriba en el *backlog*. No el clásico análisis de riesgo... simplemente identificar las tareas riesgosas desde lo técnico o del negocio.
+
+Con esa lista, documentar las tareas más riesgosas usando uno o varios de los siguientes formatos, en orden de prioridad:
+- Status Quo en el ticket  *(If in JIRA it is not, exist it does not!). -Yoda*
+- Código autodocumentado (no solo Clean Code)
+- README.md actualizados, concretos y completos
+- Ejemplos (técnicos y de negocio) en [Notion](https://www.notion.so/) o similar. 
+- Casos de prueba
+- Diagramas ([Notion](https://www.notion.so/) o *diagram as code* con [Mermaid](https://mermaid-js.github.io/mermaid/#/) que tiene [integración nativa con GitHub](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/))
+- Narrativa en [Notion](https://www.notion.so/)
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Nov 24, 2022_: Original publication on dariomac.com
