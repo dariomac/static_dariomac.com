@@ -28,7 +28,7 @@
   "dependencies": {
     "command-line-args": "4.0.1",
     "commonmark": "0.29.1",
-    "express": "4.14.1",
+    "express": "4.17.3",
     "express-pino-logger": "^7.0.0",
     "friendly-url": "^1.0.3",
     "fs-extra": "5.0.0",
