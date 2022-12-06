@@ -1,0 +1,66 @@
+{
+  "title": "WebConf LATAM 2022 - Don’t panic! Solucionando problemas recurrentes en equipos nuevos",
+  "date": "2022-05-12",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "“Don’t panic! Solucionando problemas recurrentes en equipos nuevos“ talk",
+    "datebox": "Nov 18, 2022",
+    "extlink": "https://webconf.tech/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20221118",
+    "subtaskdetails": [],
+    "tags": "team,soft skills,software,problems",
+    "title": "WebConf LATAM 2022"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "industry"
+  }
+}
+
+---
+
+[summary:string]
+This talk was about how, after years of using the same solutions to solve the same problems, I wrote down the 4 main ones (technical, methodological, etc.) as patterns, with a name, an intention, and a structure, just like in the GOF.
+
+[duration:string]
+Nov 18, 2022 (all day)
+
+[place_url:string]
+https://goo.gl/maps/Qz2CtcegCRiPrh3m7
+
+[place:string]
+Colegio Universitario IES - Córdoba - Argentina
+
+[content:md]
+WebConf LATAM is a conference for web developers that started in 2018. It was created to provide a space for Spanish speakers to discuss new technologies and share their experiences with the developer community. The organizers want the conference to be a place where everyone can come and share their knowledge and experiences. Under the rules of their code of conduct, all people working in the software industry are welcome in our space.
+
+![My place in agenda: Friday 18, 11:00am](assets/webconf-latam-2022-1.png#center)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4Z3pbiplvws?start=302#center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[related_images:json]
+  [{
+    "filename": "webconf-latam-2022-2.jpg"
+  },{
+    "filename": "webconf-latam-2022-3.jpg"
+  },{
+    "filename": "webconf-latam-2022-4.jpg"
+  }]
+
+[attachments:json]
+  [{
+    "filename": "webconf-latam-2022-ppt.pdf",
+    "description": "This was the slide deck used in the conference."
+  }, {
+    "filename": "webconf-latam-2022-0.pdf",
+    "description": "This is the original webconf website with the agenda."
+  }]
+
+[projects:md]

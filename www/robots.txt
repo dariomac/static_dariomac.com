@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: /academy
-Disallow: /industry+strattic-full-dev
 Disallow: /industry
 Disallow: /basecamp-application-2020
 Sitemap: https://dariomac.com/sitemap.xml
