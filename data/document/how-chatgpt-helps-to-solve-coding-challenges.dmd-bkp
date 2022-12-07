@@ -1,0 +1,94 @@
+{
+  "title": "How ChatGPT helps to solve coding challenges",
+  "date": "2022-12-06",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Experiment to solve coding challenges with ChatGPT and make it write an article about it",
+    "datebox": "2022-12-05",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20221205",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges/",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+ChatGPT is a programming language that can write text that sounds like it was written by a person. I thought it might be interesting to try it out and see if it could help me solve some coding problems. In this article, I'll talk about how I've used ChatGPT and what I've learned from it.
+
+[pub_date:string]
+December 5, 2022
+
+[short_description:string]
+ChatGPT is a programming language that can write text that sounds like it was written by a person. I thought it might be interesting to try it out and see if it could help me solve some coding problems. In this article, I'll talk about how I've used ChatGPT and what I've learned from it.
+
+[body:md]
+Hey there! I don’t know about you, but I’m always looking for new tools and techniques to make my coding life more manageable. Recently, I’ve been curious about using ChatGPT to solve code challenges, so I tried it with the [Advent of Code 2022](https://adventofcode.com/2022). 
+
+For those unfamiliar, [ChatGPT](https://chat.openai.com/) is a state-of-the-art language model developed by OpenAI that can generate human-like text. I thought it might be interesting to see if it could help me tackle some coding problems, so I decided to try it. In this article, I’ll share my experiences using ChatGPT and what I learned along the way.
+
+___
+
+Advent of Code is a yearly coding challenge event that begins on December 1st and runs through the end of the month.
+
+Participants are given a series of challenges to solve using their coding skills, and the goal is to complete as many challenges as possible. 
+
+This year, I decided to try something different: I used a chatbot to help me solve the first challenge of Advent of Code 2022.
+
+The first challenge was written in natural language and required me to write a program that could solve it. 
+
+I used NodeJS to build my solution and turned to a chatbot for help.
+
+To my surprise, the chatbot understood the challenge and provided me with a working solution in just one attempt. 
+
+It was able to understand the challenge’s requirements and create a program to solve it.
+
+![Challenge 1 (part 1)](assets/how-chatgpt-helps-to-solve-coding-challenges-1.png#center)
+![How ChatGPT helps to solve the first coding challenges (part 1)](assets/how-chatgpt-helps-to-solve-coding-challenges-2.png#center)
+
+  
+This is the second part of the challenge, which was flawlessly solved by the chatbot using the context of the chat:
+
+![Challenge 1 (part 2)](assets/how-chatgpt-helps-to-solve-coding-challenges-3.png#center)
+![How ChatGPT helps to solve the first coding challenges (part 2)](assets/how-chatgpt-helps-to-solve-coding-challenges-4.png#center)
+  
+I was amazed by the chatbot’s ability to understand natural language and create runnable code. 
+
+It could read the challenge and understand what was required to solve it. 
+
+This saved me a lot of time and effort and allowed me to focus on other aspects of the challenge.
+
+Overall, I was very impressed with the chatbot’s ability to help me solve the first challenge of Advent of Code 2022. It understood the challenge and provided me with a working solution in just one attempt, which saved me a lot of time and effort! 
+
+I would use a chatbot like this again in the future to help me solve similar coding challenges.
+
+___
+
+I’m sorry I wasn’t candid with you; from now on, I will try to be.
+
+**This whole article** (or at least the part between horizontal lines) **was indeed written by the same OpenAI chat I used to generate all the code for the first challenge of the** [**Advent of Code 2022**](https://adventofcode.com/2022) **!🤯.**
+
+I just wrote this prompt and let the chat do the rest:
+
+_Write a blog post about how I used this chat to solve the first challenge of the Advent of Code 2022._ 
+
+_The reason was to try to find if it could solve challenges written in natural language and building code to solve it (NodeJS in my case)._ 
+
+In conclusion, ChatGPT successfully generated a complete article using a simple prompt. The resulting article could accurately capture the prompt’s main points and expand upon them coherently and logically. This demonstrates the potential of large language models like ChatGPT to assist with various writing and coding tasks.
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+

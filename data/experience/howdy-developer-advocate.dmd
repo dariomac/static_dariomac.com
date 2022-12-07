@@ -39,11 +39,14 @@ Like all DevRel roles, our work lives at the intersection of product, engineerin
 
 [projects:md]
 ## Content generation projects
- - 20220929 - [Crypto: How it started](https://www.howdy.com/crypto-how-it-started/)
- - 20220929 - [Questions to ask your interviewer](https://www.howdy.com/questions-to-ask-your-interviewer/)
+ - 20221205 - [How ChatGPT helps to solve coding challenges](https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges/) {{! how-chatgpt-helps-to-solve-coding-challenges --}}
  - 20221004 - [Be the GOAT software engineer: Know your clients](https://www.howdy.com/be-the-goat-software-engineer-know-your-clients-2/)
+ - 20220929 - [Questions to ask your interviewer](https://www.howdy.com/questions-to-ask-your-interviewer/)
+ - 20220929 - [Crypto: How it started](https://www.howdy.com/crypto-how-it-started/)
+
 
  ## Brand awareness tasks
+ - 20221118 - [WebConf LATAM 2022 - Don’t panic!](/webconf-latam-2022-dont-panic)
  - 20220630 - [Quality in Agile Contexts](/meetup-frontend-peru-quality-in-agile-contexts)
 
 Also, before I officially started in this role, I was doing different activities while working as [Software Engineer](/austin-software-software-engineer#writing-projects).
