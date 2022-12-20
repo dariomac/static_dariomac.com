@@ -2,15 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="author" content="Darío Macchi" />
-{{#if content.summary}}
-<meta name="description" content="{{content.summary}}" />
-{{else if frontmatter.summary}}
-<meta name="description" content="{{frontmatter.summary}}" />
-{{else if frontmatter.card.content}}
-<meta name="description" content="{{frontmatter.card.content}}" />
-{{else}}
-<meta name="description" content="My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information." />
-{{/if}}
+<meta name="description" content="{{{default content.summary frontmatter.summary frontmatter.card.content "My own resume in an uncommon way to present it that I called KanbanCV. Just as a regular resume but with additional (complementary) information."}}}" />
 <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
 
 <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -85,7 +77,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta property="og:url" content="{{{ frontmatter.card.linkto }}}" />
 <meta property="og:title" content="{{{ frontmatter.title }}}" />
-<meta property="og:description" content="{{{ frontmatter.card.content }}}" />
+<meta property="og:description" content="{{{ default content.summary frontmatter.card.content }}}" />
 <meta property="og:site_name" content="Darío Macchi personal website" />
 <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
 <meta property="og:image:type" content="image/png">
@@ -94,7 +86,7 @@
 <meta name="twitter:site" content="@_dariomac">
 <meta name="twitter:creator" content="@_dariomac">
 <meta name="twitter:title" content="{{{ frontmatter.title }}}">
-<meta name="twitter:description" content="{{{ frontmatter.card.content }}}">
+<meta name="twitter:description" content="{{{ default content.summary frontmatter.card.content }}}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:widgets:new-embed-design" content="on">
 <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">

@@ -24,6 +24,7 @@
 ---
 
 [summary:string]
+A summary of my work as Developer Advocate at Howdy.
 
 [duration:string]
 Jun 2022 - Now
@@ -39,7 +40,8 @@ Like all DevRel roles, our work lives at the intersection of product, engineerin
 
 [projects:md]
 ## Content generation projects
- - 20221205 - [How ChatGPT helps to solve coding challenges](https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges/) {{! how-chatgpt-helps-to-solve-coding-challenges --}}
+ - 20221129 - [Interview with Agencia EFE about Soft Skills](/interview-agencia-efe-soft-skills)
+ - 20221205 - [How ChatGPT helps to solve coding challenges](https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges/) {{! /how-chatgpt-helps-to-solve-coding-challenges --}}
  - 20221004 - [Be the GOAT software engineer: Know your clients](https://www.howdy.com/be-the-goat-software-engineer-know-your-clients-2/)
  - 20220929 - [Questions to ask your interviewer](https://www.howdy.com/questions-to-ask-your-interviewer/)
  - 20220929 - [Crypto: How it started](https://www.howdy.com/crypto-how-it-started/)

@@ -1,0 +1,68 @@
+{
+  "title": "Interview with Agencia EFE about Soft Skills",
+  "date": "2022-11-29",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Nov 2022",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20221129",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Agencia EFE"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+An interview with Agencia EFE about Soft Skills and how they are important for developers.
+
+[duration:string]
+Nov 2022 - 1hr
+
+[place_url:string]
+https://efe.com/
+
+[place:string]
+Agencia EFE
+
+[content:md]
+EFE is the leading news agency in Spanish, with 82 years of experience and a worldwide network of journalists. More than 3,000 professionals of 60 nationalities work from more than 110 countries and with five editing desks in Madrid, Bogota, Cairo, Rio de Janeiro and Bangkok. 
+
+The interview was conducted by Luis Amaya, a Social Communication professional with more than seven years of experience in the areas of Opinion and New Media at El País newspaper in Cali, the Spanish Agency EFE in Bogota, and two and a half years as Deputy International Editor of El Tiempo newspaper and in the digital area of CNN en Español.
+
+Several media outlets distributed the interview, including:
+[attachments:json]
+  [{
+    "filename": "/efe-soft-skills-outlet1.pdf",
+    "description": "<a href=\"https://www.infobae.com/america/agencias/2022/12/10/las-habilidades-blandas-ganan-importancia-en-tecnologias-de-la-informacion/\">Infobae - Argentina</a>"
+  },{
+    "filename": "/efe-soft-skills-outlet2.pdf",
+    "description": "<a href=\"https://hoy.com.do/las-habilidades-blandas-salvan-el-dia-a-las-empresas/\">Hoy - República Dominicana</a>"
+  },{
+    "filename": "/efe-soft-skills-outlet3.pdf",
+    "description": "<a href=\"https://www.abc.com.py/tecnologia/2022/12/10/las-habilidades-blandas-salvan-el-dia-a-las-empresas-de-it/\">ABC - Paraguay</a>"
+  },{
+    "filename": "/efe-soft-skills-outlet4.pdf",
+    "description": "<a href=\"https://www.swissinfo.ch/spa/am%C3%A9rica-tecnolog%C3%ADa_las--habilidades-blandas--ganan-importancia-en-tecnolog%C3%ADas-de-la-informaci%C3%B3n/48124558\">SwissInfo - Chile</a>"
+  },{
+    "filename": "/efe-soft-skills-outlet5.pdf",
+    "description": "<a href=\"https://latin-american.news/few-soft-skills-are-now-a-job-handicap/?amp=1\">Latin American News</a>"
+  },{
+    "filename": "/efe-soft-skills-outlet6.pdf",
+    "description": "<a href=\"https://news.dayfr.com/entreprise/1401491.html\">News day - France</a>"
+  },{
+    "filename": "/efe-soft-skills-outlet7.pdf",
+    "description": "<a href=\"https://www.eldiario.es/tecnologia/habilidades-blandas-ganan-importancia-tecnologias-informacion_1_9783433.html\">El Diario - España</a>"
+  }]
+
+[projects:md]
