@@ -1,0 +1,141 @@
+{
+  "title": "Questions to ask your interviewer",
+  "date": "2022-12-24",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Questions you can ask during and interview to show your interest in a position",
+    "datebox": "2022-09-29",
+    "extlink": "https://www.howdy.com/questions-to-ask-your-interviewer/",
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20220929>",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "https://www.howdy.com/questions-to-ask-your-interviewer/",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Asking questions during a job interview shows that you've done your homework and are interested in being a key player from day one. Don't underestimate the value of demonstrating your knowledge and understanding of the company and position during the hiring process.
+
+[pub_date:string]
+
+[short_description:string]
+Asking questions during a job interview shows that you've done your homework and are interested in being a key player from day one. Don't underestimate the value of demonstrating your knowledge and understanding of the company and position during the hiring process.
+
+[body:md]
+Nothing says more about your interest in a position than asking questions.
+
+Why? Think about the people that are interviewing you. They are trying to find someone that fits a position description. So, in order to get the job (or at least reach the last round of interviews), you will need to do some extra work.
+
+If you can ask good questions, you’ll show that you’ve done your homework. What does this mean? It means that you’ve read up on the company, what they do and how they make money. Also, you did the same about the position, researching what similar positions do in the market sector of your future employer.
+
+The bottom line is that you need to show you’re there to be a key player from day 0 (yes, from that interview onward).
+
+## The questions
+
+First, this is not (and was never intended to be) an exhaustive list of questions you should/need to ask in an interview. These are some questions, dubiously broken down into categories, gleaned from the web, grabbed from different discussions on social networks, or that just popped into my head.
+
+I will briefly explain some questions to give some clues why they are important or what we are trying to find out from the answers.
+
+### Warming up questions
+
+These are questions just to set the stage, to see if the interviewer is receptive to answering questions and likes my open approach.
+
+-   Do you enjoy working on this product/project?
+-   How big is the company?
+-   Why did you choose to work here?
+-   Do you have a favorite part of the job? Least favorite?
+
+Most of the time, the last question (your least favorite part of the job) will give you a clue whether you can delve into more sensitive topics.
+
+### About the company
+
+Company questions are about the company’s policies, the culture, and how people interact daily.
+
+-   What’s a typical day like?
+
+It is always good to know what an ideal day is like, if they have routines, roles and how they organize their workday.
+
+Also, it’s wise to “read” the interviewer’s reaction when you say “typical day”. Many times they are hesitant about what a typical day is, joking that every day they have to figure out new things (firefighting software development?).
+
+-   Work hours? Flexibility of them? Crunch times?
+-   Is there flexibility within the company/team to shift to different projects?
+-   Do you have a time tracking system?
+-   Do people hang out outside work? Company outings? Lunch?
+
+These questions are mostly about the company/team culture. It is important to feel comfortable with a company’s culture, and to share the same principles or, at least, to put up with them without too much effort.
+
+-   Dress code?
+-   Budget for conferences/events?
+-   Does the company seem stable? Profitable? Any plans to sell?
+
+The latter is more generic but can steer the course of your decision or, at the very least, gives you additional information that will laterally affect the position you are considering.
+
+## About the position
+
+Wait, now you’re going to ask questions about the position? We’ve actually asked a lot of questions that make up the environment of the position you’re interested in, so indirectly you were already asking about it. Remember also that all these questions do not have to be asked in this order and that you are ultimately responsible for ordering them in how best suits you.
+
+-   Management style/structure? Frequent catch-ups like 1:1? What else?
+
+Management style is key to understand how they work, how they organize their daily work, and which outcomes they will expect from you in the future. e.g. If they say they are agile, but you see a lot of roles and a pyramidal structure, that will tell you a lot about their concept of agility.
+
+-   How is your career plan?
+
+With this question we are doing 2 things: showing interest in things besides the current position (i.e. your professional future) and also you are digging if the company worried about setting career paths for their employees.
+
+-   Learning opportunities?
+
+Ask your interviewer to describe the daily activities that its expect the position to perform. Maybe you already asked something like that the typical day question but here I want something different. I want to have a brief description of my daily work, especially to know if I will have opportunities to grow as a professional, learn new things or apply things already known but in different contexts and situations.
+
+## About the Software Engineering process
+
+Finally, my favorite set of questions. Why? No, not because they are technical questions (okay, maybe they are, but not just because of that), but because they will tell you A LOT about the position you are interviewing for.
+
+-   Software dev process? (agile/tdd/pairing?)
+-   Version control system?
+-   How often are releases done? or How often do you deploy new code to production?
+-   Where do feature + bugfix requests come from?
+-   Bug tracking system?
+-   Is the product live in production? If not, what’s the schedule for being there?
+-   How big is the code base? Is it tied to external or legacy projects?
+-   Would my work be full-stack, or focused on backend/frontend?
+
+The answer to this question reveals a lot about how the company/team works internally, how they relate to other teams/departments of the company, their quality standards, and if they are truly agile or not.
+
+-   Who supports the product once it’s released? Pager duty? Emails?
+-   Who does the “design” of the product?
+
+Finally, these questions will complement the vision of the position and how the team works on everyday tasks and after they are deployed. Remember that you can [triangulate the answers](https://en.wikipedia.org/wiki/Triangulation_(social_science)) of the different questions to combine them and get the full picture of the position and the company.
+
+## About the Business
+
+Remember all the time this is a business… you are asking to be part of a business so you need to understand how the company makes money, how it operates, and in which market sector they are.
+
+Why? Besides the obvious fact that your salary will depend on it, you have to know how to cover yourself and the company. Knowing the regulations of the different market sectors, the type of information you will be handling, and how you are expected to behave with it is important. Not only to be safe but also gives a good impression to your interviewer (remember they expect you to have done your homework, right?).
+
+-   Gov’t contractor? Clearance required?
+-   Regulatory compliance? PCI (payment card industry), SOX (financial disclosures) HIPAA (medical records)?
+
+## How to use these questions
+
+You can build different strategies around these questions.
+
+-   Shoot them one by one (not necessarily in this order).
+-   Ask just the most important ones and later make the rest of the list reach the interviewer (i.e. drop them an email)
+-   Don’t ask any of these questions, but use them as a checklist to guide your speech whenever your interviewer asks if you have questions or lets you speak freely.
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+

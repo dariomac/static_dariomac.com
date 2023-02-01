@@ -1,0 +1,102 @@
+
+{
+  "title": "Be the GOAT software engineer: Know your clients",
+  "date": "2022-12-24",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Who are your clients as a Software Engineer?",
+    "datebox": "2022-10-04",
+    "extlink": "https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges",
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20221004",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+As a software engineer there are a lot of people to serve, and lots of different ways to do it. If you want to be the GOAT, you need to know who your clients are.
+
+[pub_date:string]
+October 4, 2022
+
+[short_description:string]
+As a software engineer there are a lot of people to serve, and lots of different ways to do it. IF you want to be the GOAT, you need to know who your clients are.
+
+[body:md]
+Ok, I got it. You’re a GREAT software engineer. You have your stack under control and you can actually do frontend stuff and backend stuff; you rock working with relational and non-SQL databases… my gosh, you can even work with different cloud providers (e.g. GCP, AWS, Azure). Also, you feel GREAT because you have the right set of skills to satisfy your client; that guy (company, group, or corporation, it doesn’t matter) who pays your salary every month. Right?
+
+Well, I have bad news for you: you’re _great_ as a software engineer or developer, but you may have something wrong! And no, it’s not your stack, or the database, or even the cloud provider you’re using… is your definition of “client”. Of course, the guy who pays you is a client; a very special one, if you ask me. But to be the GOAT software engineer, you have to satisfy a bunch of other clients. 
+
+If you still have doubts, I can write it down for you in a familiar way:
+
+_AS A software engineer I WANT to develop the right skills to satisfy all my clients TO make the business successful._
+
+See what I’ve done there? Wink, wink; now, seriously, there are a LOT of customers to serve. Let’s go through them.
+
+## The business client
+
+This is the client that keeps the business running. Yes, I know what you are thinking… “I can’t be everywhere… someone has to care about THIS client and send me their requirements in a digested way.”
+
+That’s right if you work for a large company, with all the Cxx layer, the PMBOK’s and SWEBOK’s roles in your team to keep you at a safe distance from the client. BUT, if you are in the trenches of a startup, or involved in the product definition, you better take it into account.
+
+This client will set many of the system attributes, like performance, security, or usability. Not intentionally or directly, but by being the first to test the scalability of the product, demand security for their information, and suffer or be delighted with your UI/UX. It will also be the primary source of needs which then will get into the business owner’s head and hopefully translate into something like a requirement (user story or paper napkin) for you to implement. Finally, it will be the one who discovers the bugs you left in your code after all the battery of QA activities you applied to the product.
+
+## Marketers / Growth Hackers
+
+At least in computer-based products/businesses, it doesn’t matter that you have the best piece of software ever written in the history of computing if you don’t have someone to sell it. So the marketing team, salespeople, and growth hackers will inevitably be your clients.
+
+This client will need to get analytics on the product, information about how the people are using the product compared with the last month, a year ago, and so on. Also, they will need to understand the limitations of the tracking systems and the anonymity of the statistical information you can get from users.
+
+And they won’t just need raw data; they’ll need processed information, reliable ways to run product experiments, create landing pages for their campaigns, and learn more from the data crossing of those tools. Finally, they will want to know more about the SEO of those pages, the SEO of the company’s website, and how the content is being generated.
+
+## Other developers
+
+Perhaps you had never thought about your teammates and other IT teams as your clients.
+
+But rethink it.
+
+Your teammates will be your clients when they consume your interfaces and classes; when they trust part of a new feature, they are developing on a helper you built and documented some time ago. Also, teammates and other IT teams will act as clients when they call those endpoints you built, sometimes intended for them but often built for their own specific requirements.
+
+## The business owner
+
+Finally, we get to THE client we talked about in the intro. This is the guy (company, group, blah, blah) that pays you monthly. This is the one we always want to keep satisfied. But instead of being aware that we have to keep all our clients satisfied, we focus on this hard-to-please client. But if you think about it a little, it’s pretty easy to get it under your belt. Focus on their business, how it works, how you (as a Software Engineer) relate to the rest of the business areas, and what things you can do from that position to help the rest of your clients.
+
+## What about suppliers?
+
+As you read throughout the article, we made a rough comparison with the manufacturing industry. So, if we talked about clients, it is reasonable to think that we also have suppliers. In fact, there are many (and they deserve an entire article about them), but here is a short list of them.
+
+## All the clients previously mentioned
+
+Wait, wait, wait. Can our clients be our suppliers at the same time? Yes, they can. In fact, from time to time you will swap roles with all of them, so be aware of what you expect as a client or supplier, and remember it the next time you flip the roles.
+
+## Design teams
+
+These guys will give us assets (i.e. icons, colors, animations) and UI designs considering their UX. Also, they will be in charge of defining the [design system](https://www.nngroup.com/articles/design-systems-101) for the product, and many times, they will decide if a feature is ready to go to market (beyond if they are technically ready or not).
+
+## Final thoughts
+
+The idea of this article is to make you aware of the whole environment that surrounds you as a software engineer. Each of these clients and suppliers deserves its own article explaining the subtle ways of dealing with them and will certainly be addressed. However, here are a couple of hints that apply to the interaction with them:
+
+1.  Define good communication interfaces and always use them.
+2.  Recognize the cultural differences between clients and suppliers and address them by establishing common ways of communication and agreements (i.e. don’t use jargon, bring examples on the table whenever is possible, draw ideas on a whiteboard, etc)
+3.  Although we want to be agile, from time to time we need to document things. Try to agree on the best way to do this based on the intended audience of the documentation.
+4.  Be tolerant. In every role (client and supplier), it’s ok to make mistakes. Try to understand the underlying need that the person who made the mistake wanted to fulfill, and then talk about how both parts can work in the future.
+
+[acknowledgments:md]
+This post, originally on [https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges](https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Oct 04, 2020_: Original publication on howdy.com

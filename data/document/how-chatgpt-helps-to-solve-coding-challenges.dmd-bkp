@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "Experiment to solve coding challenges with ChatGPT and make it write an article about it",
     "datebox": "2022-12-05",
-    "extlink": null,
+    "extlink": "https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges",
     "laneid": "Essay",
     "leftbox": null,
     "linkto": "[link_to]",
@@ -17,7 +17,7 @@
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges/",
+  "canonical": "https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges",
   "custom_header": ""
 }
 
@@ -87,8 +87,9 @@ _The reason was to try to find if it could solve challenges written in natural l
 In conclusion, ChatGPT successfully generated a complete article using a simple prompt. The resulting article could accurately capture the prompt’s main points and expand upon them coherently and logically. This demonstrates the potential of large language models like ChatGPT to assist with various writing and coding tasks.
 
 [acknowledgments:md]
+This post, originally on [https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges](https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 
 [significant_revisions:md]
-
+_Dec 05, 2020_: Original publication on howdy.com

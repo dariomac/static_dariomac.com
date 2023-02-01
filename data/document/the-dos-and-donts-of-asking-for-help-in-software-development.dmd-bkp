@@ -1,0 +1,85 @@
+{
+  "title": "The Do’s and Don’ts of Asking for Help in Software Development",
+  "date": "20230131",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Asking for help is an important skill, and should be considered part of the software development process.",
+    "datebox": "2022-12-09",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20221209",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Asking for help is an important skill, and should be considered part of the software development process. It's advisable to have courage and humbleness when it comes to asking for help.
+
+[pub_date:string]
+2022-12-09
+
+[short_description:string]
+Asking for help is an important skill, and should be considered part of the software development process. It's advisable to have courage and humbleness when it comes to asking for help.
+
+[body:md]
+I would like to start this post by stating that software developers should learn from team sports like soccer. It doesn’t matter if you are Messi, Ronaldo, or Suárez, eventually, you will need help from your team. And if you watch a soccer game when they are playing, you’ll notice that no one is afraid to ask for help.
+
+Asking for help is an important skill, and it should be considered part of the software development process. But as with everything in life, you need to find the right balance, and in this case, that means knowing **when to ask for help.**
+
+When software development gets really hard and overwhelming, there are developers who ask for help too soon. This type of developer can become a liability as they ask for advice or help on basic tasks that they don’t give themselves the opportunity to learn on their own. But there are other developers who don’t ask for help until it’s too late. The person who becomes stuck on a task with only a few days left and continues to solve it alone, putting the entire team in jeopardy.
+
+It’s advisable to have a bit of both behaviors: **the courage to tackle a task by yourself and the humbleness to know when to ask for help.** To find that balance, developers must realize when they need help and be comfortable enough to seek it.
+
+## **Where can I go for help?**
+
+Every developer has their own preferred place to ask for help. I’ll write about my experience and what is my process to find the best place to ask for help.
+
+First, **I Google the issue I have**. There is a good chance that someone has faced this before and offers a solution within reach. If not, the search results may lead you to forums or communities where you can ask for help. There, you can create an account and ask for help. Remember always to read the welcome messages, the rules of the community and to find the most suitable channel to ask for help. Many times, writing in the wrong channel leads to any response or simply to some people asking you to post your question elsewhere.
+
+Also, if the issue I’m looking for help with is related to a specific project, I can try to look for help in GitHub issue trackers. That’s an obvious one, as that is what they are there for. Another thing you can do is ask a question on the StackOverflow website, wait for an answer and then wait some more in case other users have something else to add.
+
+If the answer is not on the internet or if I need some more direct help, you can ask for it inside your **Personal Learning Network**. **Mentors and coworkers are always excellent resources, as they may have had similar issues in the past.**
+
+## **How to ask for help?**
+
+Now we know we should ask for help at the right moment and where we can do it, we need to talk about how to do it.
+
+First, if you are in a community (Slack, Discord, Telegram, etc.) please, **don’t ask if you can ask a question, or if there is someone with knowledge in something to help you**; **just pull the trigger and shoot the question!**
+
+Now try to follow these tips to build your SOS message:
+
+-   Share your environment/context (what are you using: libraries, languages, etc.)
+-   Explain the problem you are having in a **few sentences**
+-   Use **simple language**, don’t use jargon or difficult words
+-   Point out what steps you have already taken to solve the problem
+-   If it’s possible, **build a concrete example**, with the essentials to reproduce the issue you have. Share copy-and-paste source code, not code screenshots 🙏 
+-   Show the **error messages**
+
+If you are lucky enough to be in a supportive community, or if there are coworkers/mentors that are willing to help you, you can request a pairing or ensemble session. Something I enjoy about my time at Howdy is the availability of a community of developers that can assist me anytime, even if they are working with different clients or technologies.
+
+Working with someone in the same place is what you have always done, but there is a possibility that you work remotely. In those cases, you can share your screen on a video call to explain and solve the problem together. And if you want to go down the rabbit hole of pair/mob programming, there are plenty of tools to get everyone involved in the same piece of code.
+
+## **At the end**
+
+Remember that if the people you are asking for help are volunteers, they won’t be able to put your priorities first. Even if you are stuck on a deadline, that’s not the same for others, so please be patient and don’t be rude. Thank them for their time!
+
+And once you’ve solved your problem, please share it on the same channel where you asked for help (if you’re in a community), write a blog post, reply on StackOverflow, or put up a sign on the street. Do whatever you think will help other developers find your solution the next time they need help with the same thing.
+
+[acknowledgments:md]
+This post, originally on [https://www.howdy.com/the-dos-and-donts-of-asking-for-help-in-software-development/](https://www.howdy.com/the-dos-and-donts-of-asking-for-help-in-software-development/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Dic 09, 2022_: Original publication on howdy.com
