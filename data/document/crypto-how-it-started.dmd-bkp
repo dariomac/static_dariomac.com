@@ -1,0 +1,89 @@
+{
+  "title": "Crypto: How it started",
+  "date": "2023-02-02",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Learn about the science and art of cryptography",
+    "datebox": "2022-09-09",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20220909",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Learn about the science and art of cryptography - the process of writing and reading secure messages. Discover its roots in the Greek word for 'hidden writing.
+
+[pub_date:string]
+2022-09-09
+
+[short_description:string]
+Learn about the science and art of cryptography - the process of writing and reading secure messages. Discover its roots in the Greek word for 'hidden writing'.
+
+[body:md]
+Cryptography is the science (and art) of writing messages that no one but the intended receiver can read. The name derives from either the French word _cryptographie_ or from Modern Latin _cryptographia_ both of which find their roots in the Greek _kryptos_ “hidden” + _graphia_ “writing or recording”.
+
+Historically, the human race needed to communicate and share information with others, but it also needed to communicate selectively. That’s why this “art” started to be performed, hiding messages from unauthorized people until the message reaches the intended hand.
+
+The first evidence of cryptography is the use of hieroglyphs by the Egyptians.
+
+![Hieroglyphs](/assets/doc_crypto1.jpeg#center)
+
+<center>Isaac Chou/Unsplash</center>
+
+Later on the Romans popularized the cryptography method known as the **Caesar Shift Cipher** which relies on shifting the letters of a message by an agreed number. Then, the receiver of the message would shift the letters by the same number again to obtain the original message.
+
+Here is a quick example:
+
+_Gmfyjcjmjuz up xpsl gspn ipnf ps boz puifs qmbdf_
+
+To cipher this phrase using Caesar method one would shift each letter up in the alphabet.
+
+plain:  _abcdefghijklmnopqrstuvwxyz_
+
+cipher: _bcdefghijklmnopqrstuvwxyza_
+
+In this case, G becomes F, m becomes l, f becomes e… and so on until you get the full phrase: _Flexibility to work from home or any other place._ (Which, by the way, is one of our many company’s benefits.)
+
+This is another example that obviously uses a different key so the encrypted alphabet will be shifted a different amount (13 letters down): _xrrc nhfgva fbsgjner jrveq_.
+
+During the 16th century, Vigenere designed a polyalphabetic cipher that destroys the direct and proportional relationship between the plaintext and the cryptogram that was observed in (prior) monoalphabetic cipher systems.
+
+To cipher the phrase Attack at dawn with the key Dont do it we use a mod27 alphabet like this:
+
+![mod27 alphabet](/assets/doc_crypto2.png#center)
+
+Then we write the key under the message as many times as necessary and replace the code of the letters to perform the addition operation later
+
+![Vigenère calcs](/assets/doc_crypto3.png#center)
+
+The operations in the table follow the generic Vigenère equation: **ci = mi + ki mod n** where the subscript i refers to the ith character of the plaintext and the key. You can see how a polyalphabetic cipher destroys that relationship we said earlier just by seeing how the letter A (4 times in the plaintext) assumes different values (D,T,I,O).
+
+In 1918 the ADFGVX cipher came into use, designed by German Army Colonel Fritz Nebel. Like the other ciphers, it used a Polybius square, with rows and columns headed by the letters ADFGX. With the advent of mechanical cipher machines in the early 20th century, it became easier to decrypt even the most complex systems.
+
+That’s why in 1923 the Enigma machine started using a polyalphabetic substitution cipher. It contained several rotors (or “scramblers”) with the 26 letters of the alphabet and a switchboard that performed individual alphabetic character conversions. For each letter that was typed, the rotor advanced by one position, which allowed messages to be easily encrypted and decrypted messages easily with a key that changed with each letter.
+
+Since World War II, the tools used for encryption and decryption have changed: instead of mechanical machines, they are now computers. Due to the rapid spread of computers in the private sector, encryption is now mainly used in corporate business transactions, in the military, or in ways that benefit the general population.
+
+As we will discuss in the next article, the computer has made it easier to break codes, which is why several ciphers have been used over the last 50 years (DES, public-private keys, RSA). The history of cryptography is a cycle in which the invention of a new algorithm is followed by the creation of a new decryption method. Maybe the last step in this evolution is quantum cryptography, which will use the angle of oscillation of a photon to receive encrypted data. Only time will tell…
+
+[acknowledgments:md]
+This post, originally on [https://www.howdy.com/crypto-how-it-started/](https://www.howdy.com/crypto-how-it-started/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Sep 09, 2022_: Original publication on howdy.com
+
