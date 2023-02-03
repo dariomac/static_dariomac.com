@@ -1,35 +1,36 @@
 {
   "title": "Questions to ask your interviewer",
-  "date": "2022-12-24",
+  "date": "2023-02-02",
   "layout": "document",
   "card": {
     "color": "#003366",
     "columnid": "done_3",
-    "content": "Questions you can ask during and interview to show your interest in a position",
+    "content": "Nothing says more about your interest in a position than asking questions.",
     "datebox": "2022-09-29",
-    "extlink": "https://www.howdy.com/questions-to-ask-your-interviewer/",
+    "extlink": null,
     "laneid": "Essay",
     "leftbox": null,
     "linkto": "[link_to]",
-    "position": "20220929>",
+    "position": "20220929",
     "subtaskdetails": [],
     "tags": null,
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "https://www.howdy.com/questions-to-ask-your-interviewer/",
+  "canonical": "",
   "custom_header": ""
 }
 
 ---
 
 [summary:string]
-Asking questions during a job interview shows that you've done your homework and are interested in being a key player from day one. Don't underestimate the value of demonstrating your knowledge and understanding of the company and position during the hiring process.
+Demonstrate your interest in a position by asking insightful questions. Show your research and preparation to be a key player from the start with expert advice.
 
 [pub_date:string]
+2022-09-29
 
 [short_description:string]
-Asking questions during a job interview shows that you've done your homework and are interested in being a key player from day one. Don't underestimate the value of demonstrating your knowledge and understanding of the company and position during the hiring process.
+Demonstrate your interest in a position by asking insightful questions. Show your research and preparation to be a key player from the start with expert advice.
 
 [body:md]
 Nothing says more about your interest in a position than asking questions.
@@ -134,8 +135,9 @@ You can build different strategies around these questions.
 -   Don’t ask any of these questions, but use them as a checklist to guide your speech whenever your interviewer asks if you have questions or lets you speak freely.
 
 [acknowledgments:md]
+This post, originally on [https://www.howdy.com/questions-to-ask-your-interviewer/](https://www.howdy.com/questions-to-ask-your-interviewer/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 
 [significant_revisions:md]
-
+_Sep 29, 2022_: Original publication on howdy.com
