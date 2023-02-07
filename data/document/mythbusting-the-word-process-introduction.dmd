@@ -1,0 +1,117 @@
+{
+  "title": "Mythbusting: the word process",
+  "date": "2023-02-06",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Discover why software developers often dislike the word 'process' despite using them in their daily work.",
+    "datebox": "2022-08-19",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20220819",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Discover why software developers often dislike the word 'process' despite using them in their daily work. Explore the relationship between processes and bureaucracy in the software industry. Learn the truth about processes and software development. Read now!
+
+[pub_date:string]
+2022-08-19
+
+[short_description:string]
+Discover why software developers often dislike the word 'process' despite using them in their daily work. Explore the relationship between processes and bureaucracy in the software industry. Learn the truth about processes and software development. Read now!
+
+[body:md]
+## Introduction
+
+No one in the software industry wants to hear the word process. You can tell yourself that it doesn't happen, but deep inside, you know it's true.
+
+I am not against processes. In fact, I think it is impossible to build good software without them.
+
+Software developers may say, "that's not true!" and maybe they believe it. But if you delve into how they work, you will discover several processes simultaneously while they perform daily.
+
+So why does this happen? Why do developers dislike the word process, and many assure they don't use processes, even though they do?
+
+And you know what? I'm sure it's because they think processes are close relatives of bureaucracy. I agree with that assertion.
+
+Shopify founder and CEO Tobi Lütke ([@tobi](https://twitter.com/tobi)) has something to say about it:
+
+"There are three kinds of processes. There's a kind of process that makes things that were previously impossible to do possible. That's good. Then there's a process that makes something previously possible significantly simpler, which is also good. And then there's everything else. I bet 99.9% of all processes in corporate America is the third category, which is telling people to behave slightly differently from what common sense tells them to do." 
+
+Software developers (like everyone else) don't want to behave differently from what THEIR common sense tells them to do. And that leads me to the next section of this article.
+
+
+## That 99.9%
+
+
+It would be easy to infer that almost all corporate processes (99.9%) are harmful because they force you to behave senselessly.
+
+How do we reach this point? I think there are two reasons: "the road to hell is paved with good intentions" and bureaucracy.
+
+
+## The road to hell is paved with good intentions.
+
+This first reason is easy to explain if we analyze the practices that make up some processes and how processes are implemented.
+
+I will take the OKRs as an example of a practice. OKR is a powerful tool for managing objectives by focusing on results, increasing transparency, and strategic alignment. But what happens when people use that tool in the wrong way? 
+
+Let's say for a moment that you use OKRs for performance evaluation. Instead of having a small set of aspirational goals, you will end up with a list of trivial tasks to ensure a good performance evaluation (with the corresponding bonus). Also, think about how this inappropriate use of OKRs undermines the collaboration between team members.
+
+Now, what about process implementation? Let's take Scrum as the best example of a great set of processes that are generally misused.
+
+Scrum is a framework full of intentional holes that must be filled judiciously with agile practices. After understanding the team's needs and during the project development, those who know about agile methods fill those holes, measuring how each change affects the team's productivity. 
+
+What happens with teams forced (i.e., bosses, trends, competitors, etc.) to behave agile? Because of the pressure and, many times, lack of knowledge, those teams fill the holes with… the most un-agile things you can imagine. That's how you end up with Scrum teams estimating a backlog in hours, sacrificing quality to reach velocity quotas, or being angry when the client asks to change features.
+
+In short, the first reason we dislike processes is that many times, with good intentions, people destroy successful processes and practices. And the situation is so bad that they didn't even realize it was their fault and blame the process/practice instead of themselves.
+
+
+## Bureaucracy
+
+
+This is a whole different beast. First, although it has a negative connotation, people need bureaucracy in some circumstances. When? Following procedures is critical in terms of safety or in terms of the results.
+
+So, why do we assign that negative connotation? In most cases, we are just following a meaningless process for the sake of bureaucracy.
+
+In my experience, geographically distributed companies with pyramidal structures, with several departments interacting daily, are prone to set bureaucratic processes. The processes often change over several years, so people forget why they do this or that step. They just do it. Other times, people deliberately construct bureaucratic processes to feel a false sense of control and pretend to contribute more than they actually do.
+
+So, bureaucracy in our daily processes (with the above exceptions) is the second reason we don't believe in these methods.
+
+
+## Conclusion
+
+
+So far, I've thrown out a set of thoughts, opinions, and complaints... but what can you take away from it?
+
+First, I cannot stress enough the idea that processes are essential in software development. François Chollet (Senior Staff Software Engineer at Google) said,
+
+ "A tech company without its engineers and processes is just a pile of exponentially depreciating software and servers that will be worth zero within months. It's all in the people and culture."
+
+How do we stay away from that 99.9%? Well, it's easy (at least to say it), but each of the following topics deserves a whole article only about them.
+
+Suppose you are part of a big software company (corporation?). In that case, you should analyze each process to find out if they are renowned processes being misused or bad adaptations. But the most important thing is to find out if you still need those processes and which non-documented ones are used daily.
+
+What if I'm part of a software startup? I'm away from the "99%" by definition, right? If you avoid the "road to hell", yes; study those renowned processes, their original intentions, and how to use them. Start small, adding only those processes necessary to make the impossible possible or to simplify the possible. Also, pay attention and be careful. Your startup will grow and change, but your processes may not and could be used without being questioned or even needed.
+
+
+[acknowledgments:md]
+This post was originally written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Aug 19, 2022_: Original publication on Howdy's LinkedIn page.
+
+_Feb 06, 2023_: Original publication on dariomac.com.
+
