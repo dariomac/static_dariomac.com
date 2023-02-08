@@ -1,0 +1,39 @@
+{
+  "title": "Employability: what is it and why should it be important?",
+  "date": "2023-02-06",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "<short_description>",
+    "datebox": "Aug, 2022",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20220817",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+
+[pub_date:string]
+
+[short_description:string]
+
+[body:md]
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+
