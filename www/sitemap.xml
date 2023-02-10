@@ -44,12 +44,6 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://www.dariomac.com/employability-what-is-it-and-why-should-it-be-important</loc>
-        <lastmod>2023-02-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
         <loc>https://www.dariomac.com/dmarc</loc>
         <lastmod>2022-04-03</lastmod>
         <changefreq>monthly</changefreq>
@@ -526,6 +520,12 @@
       <url>
         <loc>https://www.dariomac.com/webconf-latam-2022-dont-panic</loc>
         <lastmod>2022-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/employability-what-is-it-and-why-should-it-be-important</loc>
+        <lastmod>2023-02-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

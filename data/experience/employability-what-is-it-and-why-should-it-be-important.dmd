@@ -1,0 +1,52 @@
+{
+  "title": "Employability: what is it and why should it be important?",
+  "date": "2023-02-06",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "The presentation guided IT students on how to prepare themselves to meet the requirements of the IT industry.",
+    "datebox": "Aug, 2022",
+    "extlink": "https://enlinea.santotomas.cl/mundo-santo-tomas-2/experto-en-desarrollo-de-software-realizo-charla-de-empleabilidad-a-tomasinos/250652/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20220817",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Employability talk"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+
+[duration:string]
+Aug 17, 2022 (60 minutes)
+
+[place_url:string]
+https://enlinea.santotomas.cl/mundo-santo-tomas-2/experto-en-desarrollo-de-software-realizo-charla-de-empleabilidad-a-tomasinos/250652/
+
+[place:string]
+Remote
+
+[content:md]
+I think that professionals need to add certain conditions in order to make someone employable. First, I think you should think about "how I sell what I have," which means how you show off your skills and abilities. Then, I think it's important to think about "how I will build on what I have" and keep making it better. Lastly, I stress how important it is to think about my life circumstances, because all of these things together will make me employable.
+
+![](/assets/employability1.jpg#center)
+
+During my presentation, I stressed how important it is to have not only technical knowledge but also a broad understanding of the industry, including knowledge of different countries' cultures, fluency in different languages (especially English as a common language), strong communication and teamwork skills, and the ability to be flexible at work.
+
+Through my own experience, I've learned that each of these traits is something that can be developed and improved over time, and that it's important to keep studying and getting stronger in order to stay employable.
+
+[projects:md]
+
+[attachments:json]
+  [{
+    "filename": "employability2.pdf",
+    "description": "This was the article the University of Santo Tomas wrote about the talk."
+  }]
