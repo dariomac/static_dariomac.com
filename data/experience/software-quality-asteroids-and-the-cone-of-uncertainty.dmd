@@ -1,0 +1,45 @@
+{
+  "title": "Meetup Austin Software - Software Quality, Asteroids and the Cone of Uncertainty",
+  "date": "2022-08-23",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "“Software Quality, Asteroids and the Cone of Uncertainty“ talk",
+    "datebox": "Aug, 2022",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20220823",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Meetup Austin Software"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+The talk focuses on the software world and how to map the Earth to a software product that needs protection by an early detection (bug) barrier system.
+
+[duration:string]
+Aug 23, 2022 (60 minutes)
+
+[place_url:string]
+https://www.google.com/maps/place/La+Plata,+Buenos+Aires+Province,+Argentina/@-34.9205233,-57.9881897,13z/data=!4m6!3m5!1s0x95a2e62b1f0085a1:0xbcfc44f0547312e3!8m2!3d-34.9204948!4d-57.9535657!16zL20vMDIzYjk3
+
+[place:string]
+La Plata, Argentina
+
+[content:md]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zd1RlmWFQ9Q#center" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+The purpose of the talk is to discuss the issue of detecting and protecting the Earth against space objects that may impact it. I present the three options available: do nothing, build something to prevent the effects of impact (bunkers/space stations), or build a barrier to detect and protect against such objects. Later, the talk focuses on the software world and how we can map the Earth to a software product that needs protection by an early detection (bug) barrier system. The goal is to have an organized quality system for the early detection of defects and to determine the risk they pose to the code. The talk ends with a discussion of the Cone of Uncertainty and how it can be used to determine the risk of a defect.
+
+![Social Networks poster](/assets/la-plata-meetup-twitter1.jpg#center)
+
+[projects:md]
