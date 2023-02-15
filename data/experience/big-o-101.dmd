@@ -1,0 +1,73 @@
+{
+  "title": "Big O 101 - Howdy Internal Talk",
+  "date": "2022-10-19",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Howdy Internal Talk",
+    "datebox": "Oct, 2022",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20221019",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Big O 101"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Learn about Big O notation and its time complexity in software development. O(1), O(n), O(log n), and O(n^2) are explained with examples to help you understand the difference between each notation and how they impact the execution of an algorithm.
+
+[duration:string]
+Oct 19, 2022 (60 minutes) 
+
+[place_url:string]
+https://www.howdy.com/
+
+[place:string]
+Howdy (Internal Talk)
+
+[content:md]
+This talk describes the concept of Big O notation, which is used in software development to describe the time and space complexity of an algorithm. It considers the worst-case scenario and approximates the number of steps required to execute an algorithm based on the order of operations count. The text describes four different Big O notations, each with an example: O(1) (constant time), O(n) (linear time), O(log n) (logarithmic time), and O(n^2) (quadratic time). These examples demonstrate how the execution time of an algorithm changes with the size of the input data.
+
+## O(1)
+Constant time: in theory, no matter how many elements you have to process, it will take the same amount of time to execute.
+
+e.g., you are in an all-inclusive hotel feeling hungry, picking up snacks from the buffet
+![O(1) example](/assets/big-o-101-o1.jpeg#center)
+
+## O(n)
+Linear time: the execution time grows linearly with the number of elements to be processed.
+
+e.g., same situation as before, but you want to choose what you want to eat. The bigger the buffet, the longer it will take you to find what you want.
+![O(n) example](/assets/big-o-101-on.jpeg#center)
+
+## O(log n)
+The algorithm's execution time is proportional to the logarithm of the input size n.
+
+e.g., same situation as before, but now the buffet's dishes are sorted by name. You can start in the middle, go left/right, and successively repeat the same until finding it.
+![O(log n) example](/assets/big-o-101-ologn.jpeg#center)
+
+## O(m+n)
+This is a linear time also. T=T(m)+T(n)=TTotal. As TTotal it a constant, by convention the order will be O(n).
+
+e.g., same situation as before, but you decide to eat à la carte. Now you have to review the menu, pick something, and order; the chef will prepare each order.
+![O(m+n) example](/assets/big-o-101-omn.jpeg#center)
+
+## O(n^2)
+#Quadratic time: Its execution time is proportional to the square of its input size.
+
+e.g., same as before, you decided to eat à la carte, but the chef doesn't like to repeat orders. Now you have to review the menu and, for each dish, check that nobody ordered the same.
+![O(n^2) example](/assets/big-o-101-on2.jpeg#center)
+
+[projects:md]
+After the talk, I wrote this Tweeter's thread:
+<center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hi! Welcome back to our <a href="https://twitter.com/hashtag/CuratedContent?src=hash&amp;ref_src=twsrc%5Etfw">#CuratedContent</a> thread by our very own <a href="https://twitter.com/_dariomac?ref_src=twsrc%5Etfw">@_dariomac</a>. Today, we&#39;d like to share something that scares young developers, but it&#39;s not rocket science and can help in more cases than you might think: <a href="https://twitter.com/hashtag/BigONotation?src=hash&amp;ref_src=twsrc%5Etfw">#BigONotation</a></p>&mdash; Howdy™ (@hurrayforhowdy) <a href="https://twitter.com/hurrayforhowdy/status/1581000413397950464?ref_src=twsrc%5Etfw">October 14, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
