@@ -1,0 +1,48 @@
+{
+  "title": "GxReq: Herramienta de trazabilidad de requerimientos para GeneXus",
+  "date": "2023-02-17",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "GxReq: Herramienta de trazabilidad de requerimientos para GeneXus",
+    "datebox": null,
+    "extlink": null,
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "<position>",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "<title (platform)>"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Project to solve the creation, review and traceability of requirements for GeneXus through a web site to write/review requirements and an extension of its IDE.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+
+[platform:string]
+C# (ASP.NET Core) - React - GeneXus
+
+[link:string]
+https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=93274
+
+[short_description:string]
+GxReq: Herramienta de trazabilidad de requerimientos para GeneXus
+
+[description:md]
+**Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
+
+This project describes the development of a requirements traceability system for GeneXus, a Uruguayan software company that has been providing low code software tools since 1984. The project aims to address two main issues faced by GeneXus. Firstly, the company's existing tool lacks a mechanism to support written requirements, which results in a lack of quality assurance and auditability. Secondly, there is no traceability of a written business need in a language that is common to all parties involved.
+
+The project is a proof of concept that integrates with GeneXus tools to allow for the specification of a business need in the customer's language, with a structured approach that is useful for automation, complete, consistent, unambiguous, and flexible to adapt to incremental prototyping. It comprises an extension mechanism for the GeneXus development environment, as well as an external system, consisting of a web page called Requirements Client, and its backend. The Requirements Client includes a system for managing users, projects, and features, as well as a text editor called Monaco Editor, which is also integrated into the Extension Mechanism. Users can write requirements, and these can be exported from the GeneXus development environment through the connection between the Extension Mechanism and the backend of the Requirements Client.
+
+The project successfully achieved all the proposed objectives and met customer satisfaction.

@@ -8,7 +8,7 @@
     "columnid": "done_3",
     "content": "Gestión de compras para proyectos de construcción",
     "datebox": "2016-2017",
-    "extlink": "https://fi.ort.edu.uy/49141/17/gestion-de-compras-para-proyectos-de-construccion.html",
+    "extlink": "https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=85479",
     "laneid": "Project",
     "leftbox": "",
     "leftmsg": "",
@@ -35,7 +35,7 @@ The project is an integral system in which all purchases made by Berkes S.A. can
 Web
 
 [link:string]
-https://fi.ort.edu.uy/49141/17/gestion-de-compras-para-proyectos-de-construccion.html
+https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=85479
 
 [short_description:string]
 The project is an integral system in which all purchases made by Berkes S.A. can be planned and managed. This involves supplies of works in different countries and a wide range of different inputs.
@@ -43,6 +43,13 @@ The project is an integral system in which all purchases made by Berkes S.A. can
 [description:md]
 **Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
 
+## Authors
+Möller Garelli, Fernando Daniel | Labrada Cary, Gabriel | Minetti De María, Soledad | Coates D' Alessandro, Andrés | Ruiz Mazzeo, Bruno
+
+## Reviewers
+Hernández Guimarans, Pablo | Garbervetsky, Diego David
+
+## Description
 The project consists of an integral system in which all purchases made by Berkes S.A. can be planned and managed. This involves supplies of works in different countries and a wide range of different inputs.
 
 Currently, Berkes uses an ERP system developed by the company Nodum, in which they make purchase orders for inputs, register users, articles, suppliers, projects, among others.

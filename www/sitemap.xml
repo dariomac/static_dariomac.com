@@ -878,12 +878,6 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://www.dariomac.com/inception-workshop-for-entrepreneurs</loc>
-        <lastmod>2017-07-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
         <loc>https://www.dariomac.com/raphael-utils</loc>
         <lastmod>2017-03-23</lastmod>
         <changefreq>monthly</changefreq>
@@ -892,6 +886,18 @@
       <url>
         <loc>https://www.dariomac.com/dm-pixie</loc>
         <lastmod>2017-07-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/gxreq-herramienta-de-trazabilidad-de-requerimientos-para-genexus</loc>
+        <lastmod>2023-02-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/inception-workshop-for-entrepreneurs</loc>
+        <lastmod>2017-07-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
