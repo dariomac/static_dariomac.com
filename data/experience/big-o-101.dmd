@@ -5,7 +5,7 @@
   "card": {
     "color": "#003366",
     "columnid": "done_3",
-    "content": "Howdy Internal Talk",
+    "content": "“Big O 101“ talk",
     "datebox": "Oct, 2022",
     "extlink": null,
     "laneid": "Experience",
@@ -14,7 +14,7 @@
     "position": "20221019",
     "subtaskdetails": [],
     "tags": null,
-    "title": "Big O 101"
+    "title": "Howdy Internal Talk"
   },
   "jsonld": {},
   "canonical": "",

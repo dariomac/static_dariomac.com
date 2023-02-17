@@ -1,0 +1,45 @@
+{
+  "title": "Howdy <> NodeCO - How does AI affect software developers?",
+  "date": "2023-01-17",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "How does AI affect software developers?",
+    "datebox": "Jan, 2023",
+    "extlink": "https://www.meetup.com/node_co/events/290942070/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230117",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy <> NodeCO"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Chat with NodeCO community to share opinions about how artificial intelligence is or will affect software development processes.
+
+[duration:string]
+Jan 17, 2023 (1:11hrs)
+
+[place_url:string]
+https://www.youtube.com/live/v6KKoQSOmyM?feature=share
+
+[place:string]
+Remote
+
+[content:md]
+The NodeCO community is a group of developers that are passionate about software development and are always looking to stay on top of the latest industry trends. One topic that has been generating a lot of buzz lately is the impact that artificial intelligence is having on software development processes. As companies continue to adopt AI technologies to automate tasks and optimize workflows, many developers are left wondering what the future of their profession will look like.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v6KKoQSOmyM#center" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Developers have the opportunity to participate in this conversation and acquire useful insights and thoughts on how AI is altering the landscape of software development. There is an infinite number of material to investigate, ranging from arguments on the ethical implications of utilizing artificial intelligence in software development to talks on how AI is currently being used to enhance software testing and debugging procedures.
+
+[projects:md]
