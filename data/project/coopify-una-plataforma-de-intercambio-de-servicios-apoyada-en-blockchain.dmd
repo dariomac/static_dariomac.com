@@ -29,7 +29,7 @@
 ---
 
 [summary:string]
-The goal of this project is to create a platform for the exchange of services between users without having to handle real money. Instead, they will use a decentralized virtual currency regulated with blockchain technology (Ethereum) to ensure the transparency and reliability of the platform.
+This project aims to create a platform where users can exchange services without using real money. Instead, they will use a decentralized virtual currency (coopis) that is regulated with blockchain technology, specifically Ethereum. The use of this technology will ensure that the platform is transparent and reliable.
 *Disclaimer*: I've participated in this project *only* on my role of tutor.
 
 [download_link:string]
@@ -41,31 +41,29 @@ PWA - React - Blockchain
 https://fi.ort.edu.uy/81789/17/coopify:-una-plataforma-de-intercambio-de-servicios-apoyada-en-blockchain.html
 
 [short_description:string]
-The objective of this project is to create a platform for the exchange of services between users without having to handle real money. Its aim is to foster cooperation within the community. Users can publish their services for a value in coopis, negotiate possible exchanges and leave reviews about their experience for future consumers.
-
-The coopis mentioned above are a virtual currency that will be decentralized and regulated with blockchain technologies to ensure the transparency and reliability of the platform.
+This project aims to create a platform where users can exchange services without using real money. Instead, they will use a decentralized virtual currency (coopis) that is regulated with blockchain technology, specifically Ethereum. The use of this technology will ensure that the platform is transparent and reliable.
 
 [description:md]
 **Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
 
-Today, the services market is the most important within a society. Services are provided by individuals or companies and with the advent of technology and the web are even exported and consumed in a simpler way and on a global scale.
+The goal of this project is to create a platform where users can exchange services without using real money. Instead, a virtual currency called "coopy" will be used, which is decentralized and regulated using blockchain technology to ensure transparency and accountability. Here are two examples of how it works:
 
-The aim of this project is to create a platform for the exchange of services between users without having to handle real money.
+1. Juan offers guitar lessons on Coopify, and Maria offers logo design. Maria wants to learn to play the guitar, so she offers to exchange services with Juan. John needs a logo for his music business and thinks this is a good idea, so they exchange services.
 
-In the platform there is a virtual currency called "coopi", which solves the problem of exchanging "barter" services, where it is not easy to get a connection. This virtual currency will be decentralized and regulated with blocking technologies to ensure the transparency and reliability of the platform.
+2. Carla offers massage therapy sessions, and Jorge offers accounting advice. Jorge sees Carla's post and offers his services, but he's not interested in therapy sessions. Carla pays Jorge 20 coopies for his service.
 
-We can illustrate this with the following two examples:
+Coopify aims to promote cooperation within the community. Users can post their services for a value in coopies, negotiate exchanges, and leave reviews for future consumers. If two users have services that interest each other, they can exchange them, or the service can be contracted by paying its value in coopies. Users can earn coopies by meeting goals or helping the system grow.
 
-Juan is a guitarist and offers his guitar class service at Coopify. Maria is a designer and offers her logo design service at Coopify.
-Maria is interested in learning to play guitar and offers Juan exchange services. Juan thinks it's a good idea since he needs a logo for his music project, so they exchange services.
-Carla is a masseur and offers therapy sessions at Coopify. Carla is interested in accounting advice and publishes an application. Jorge is a student accountant and offers balance sheet advice at Coopify. Jorge sees Carla's application and offers her services, but is not interested in therapy sessions, so Carla pays Jorge's service for 20 "coopis".
-In short, Coopify is a platform with the aim of fostering cooperation within the community. Users can publish their services for a value in "coopis", negotiate possible exchanges and leave reviews of their experience for future consumers.
+The system has three main components: a website and two servers for managing business logic and communication with the blockchain. Agile methodologies were used for the development process, with the architecture and design of the solution built incrementally over iterations.
 
-If two users offer services that are of interest to both parties, they can exchange them. Otherwise, it can be contracted by paying its value in "coopis". Users will be able to become "coopis" by meeting objectives or helping the system to grow.
+## Authors
+Caetano Rodríguez, César Agustín | Martínez Vicente, Camilo Nicolás | Puricelli Ronchetti, Ismael Elbio | Rodríguez Sappia, Juan Carlos
 
-The system consists of three main components: a website and two servers for the management of business logic and communication with the blocking, respectively. The website or frontend is built with React and uses PWA technology to give extended support on mobile devices and act as a native mobile application.
+## Score
+100/100
 
-Both data access servers are developed with NodeJS, exposing an API through express. It was necessary to have two servers to be able to encapsulate in one the business logic and in the other the access logic to Ethereum (blockchain provider selected).
+## Reviewers
+Fornaro Rosado, Carlos Nicolás | Olsina Santos, Luis Antonio
 
 [related_images:json]
   [{
