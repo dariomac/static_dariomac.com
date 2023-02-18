@@ -8,7 +8,7 @@
     "columnid": "done_3",
     "content": "LimpiezaUY: plataforma colaborativa de limpieza",
     "datebox": "2017",
-    "extlink": "https://fi.ort.edu.uy/51827/17/limpiezauy:-plataforma-colaborativa-de-limpieza.html",
+    "extlink": "https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=86187",
     "laneid": "Project",
     "leftbox": "",
     "leftmsg": "",
@@ -34,7 +34,7 @@ LimpiezaUY is a collaborative cleaning platform that connects cleaners with peop
 Web (React) - Mobile (React Native)
 
 [link:string]
-https://fi.ort.edu.uy/72359/17/experiencia-virtual-educativa:-sistema-inmunologico.html
+https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=86187
 
 [short_description:string]
 LimpiezaUY: plataforma colaborativa de limpieza
@@ -42,11 +42,20 @@ LimpiezaUY: plataforma colaborativa de limpieza
 [description:md]
 **Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
 
-LimpiezaUY is a collaborative cleaning platform that connects cleaners with people who need cleaning services, acting as a mediator between the parties.
+LimpiezaUY is a collaborative cleaning platform that connects cleaners with people in need of cleaning services, acting as a mediator between the parties. The platform provides customers with a quick way to find a cleaner, ensuring an easy and intuitive user experience, which solves the cleaning problem with a couple of clicks without leaving your home.
 
-The platform provides customers with a quick way to find a cleaner, ensuring an easy and intuitive user experience that solves the cleaning problem with a couple of clicks, without moving from your home.
+LimpiezaUY is a venture that arises from the combination of the search for innovative and collaborative solutions. The main challenge of the project is the business risks due to the fact that it is challenging the status quo of cleaners in Uruguay with a disruptive and innovative idea, not only for the cleaners but also for future employers. The cleaners are given the possibility of having a new sales channel with a labor flexibility that they do not have until now. To overcome these risks, several activities were carried out to validate and refine the idea, based on design thinking practices, which allow us to focus on people, while the agile Scrum methodology was used for the development, with an evolutionary life cycle to obtain feedback at all stages of development.
 
-LimpiezaUY is an undertaking that arises in the combination of the search for innovative and collaborative solutions to one of the problems that was presented to a member of the group.
+The project includes a website for employers, developed in React, a mobile application for cleaners developed in React Native and an administration site to manage statistics and different control functions. In the future, after the completion of the final project, there will be a stage of controlled tests with specific users, the objective will be to identify possible improvements and then launch the implementation in the market.
+
+## Authors
+Lopetegui Canapa, Rodrigo Sebastian | Filgueira Gonzalez, Pablo Andres | Güidi Santos, Christian Gabriel
+
+## Score
+100/100
+
+## Reviewers
+Garbervetsky, Diego David | Garbarino Alberti, Helena
 
 [related_images:json]
   [{
