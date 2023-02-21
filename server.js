@@ -57,6 +57,7 @@ const destinations = {
   '/svg-to-raphael': '/',
   '/austin-software-software-engineer': '/howdy-software-engineer',
   '/austin-software-developer-advocate': '/howdy-developer-advocate',
+  '/krooping-procesamiento-de-im%C3%A1genes-satelitales-para-generaci%C3%B3n-de-%C3%ADndices-agron%C3%B3micos': '/krooping-procesamiento-de-imagenes-satelitales-para-generacion-de-indices-agronomicos'
 }
 
 const origins = Object.keys(destinations);
