@@ -782,6 +782,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/ariadnes-thread-gestor-organizacional-para-qualabs</loc>
+        <lastmod>2023-02-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/gxreq-requirement-traceability-tool-for-genexus</loc>
         <lastmod>2022-09-26</lastmod>
         <changefreq>monthly</changefreq>
@@ -878,12 +884,6 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://www.dariomac.com/raphael-utils</loc>
-        <lastmod>2017-03-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
         <loc>https://www.dariomac.com/dm-pixie</loc>
         <lastmod>2017-07-07</lastmod>
         <changefreq>monthly</changefreq>
@@ -904,6 +904,12 @@
       <url>
         <loc>https://www.dariomac.com/local-read-later</loc>
         <lastmod>2017-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/raphael-utils</loc>
+        <lastmod>2017-03-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
