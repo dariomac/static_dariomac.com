@@ -1,6 +1,6 @@
 {
     "date": "2022-11-24",
-    "updated_date": "2022-11-24",
+    "updated_date": "2023-02-08",
     "layout": "document",
     "title": "Documinding",
     "jsonld": {},
@@ -44,7 +44,7 @@ El objetivo es asegurar una cantidad de documentación necesaria, pero mínima.
 Lo primero es hacer un análisis de riesgo de las tareas que tenemos más arriba en el *backlog*. No el clásico análisis de riesgo... simplemente identificar las tareas riesgosas desde lo técnico o del negocio.
 
 Con esa lista, documentar las tareas más riesgosas usando uno o varios de los siguientes formatos, en orden de prioridad:
-- Status Quo en el ticket  *(If in JIRA it is not, exist it does not!). -Yoda*
+- Status Quo en el ticket  *(If in JIRA it is not, exist it does not!). -Yoda* ^jira
 - Código autodocumentado (no solo *Clean Code*)
 - README.md actualizados, concretos y completos
 - Ejemplos (técnicos y de negocio) en [Notion](https://www.notion.so/) o similar. 

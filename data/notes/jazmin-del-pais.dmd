@@ -1,6 +1,6 @@
 {
     "date": "2022-04-20",
-    "updated_date": "2022-04-27",
+    "updated_date": "2023-02-03",
     "layout": "document",
     "title": "Jazmín del país",
     "jsonld": {},
@@ -35,7 +35,7 @@ Jasminum officinale (Common Jasmine) is a large semi-evergreen or deciduous clim
 
 [body:md]
 ## Description
-Nombre: [Jasmin Officinale](https://identify.plantnet.org/the-plant-list/species/Jasminum%20officinale%20L./data)
+Nombre: Jasmin Officinale https://identify.plantnet.org/the-plant-list/species/Jasminum%20officinale%20L./data
 
 ## Position
 Lugar soleado para que de flores.
@@ -57,6 +57,9 @@ Soporta alambre fino en ramas no lignificadas. Una vez lignificada una rama es d
 ja1: un Jazmín que estaba para tirar pero tenía un tronco lignificado...
 
 ## Log
+
+### 20230203
+Le di el primer diseño. Alambre unas ramas (ya tenía otras alambradas y lignifico bien). Deje una rama de sacrificio para ensanchar una rama.
 
 ### 2021xxyy
 No se muy bien que quiero con ja1 pero creo que puede ser un lindo experimento para luego conseguir uno con mejor tronco y lograr algo interesante, como este
