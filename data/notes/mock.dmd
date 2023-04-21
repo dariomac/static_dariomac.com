@@ -20,7 +20,10 @@
         "title": "[title]",
         "subtaskdetails": []
     },
-    "fieldNote": true
+    "fieldNote": true,
+    "params": {
+        "noIndex": true
+    }
 }
 
 ---

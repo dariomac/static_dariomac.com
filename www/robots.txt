@@ -1,5 +1,9 @@
 User-agent: *
 Disallow: /academy
 Disallow: /industry
+Disallow: /dmarc
+Disallow: /how-to-improve-the-seo-of-a-react-application
+Disallow: /things-to-take-into-account-before-a-massive-email-campaign
+Disallow: /mock
 Disallow: /basecamp-application-2020
 Sitemap: https://dariomac.com/sitemap.xml

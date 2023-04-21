@@ -74,6 +74,14 @@ const assetsPath = `./${outputPath}assets/`;
         title: "[title]",
         subtaskdetails: [],
       }
+
+      if (dmdFrontmatter.card.laneid === 'Essay' && 
+        ['requested_1', 'progress_2'].includes(dmdFrontmatter.card.columnid)
+      ){
+        dmdFrontmatter.params = {
+          "noIndex": true,
+        };
+      }
       
       let dmdNote = JSON.stringify(dmdFrontmatter, null, 4);
       dmdNote += '\n\n---\n\n';
