@@ -1,0 +1,49 @@
+{
+  "title": "Howdy<>Tribu Latam Tech - Personal Brand & Learn in public",
+  "date": "2023-03-23",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Personal Brand & Learn in public",
+    "datebox": "Mar, 2023",
+    "extlink": "https://www.youtube.com/live/TR-_QxiN6A8?feature=share",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230323",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy <> Tribu Latam Tech"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Learn about the importance of personal branding and how it can help you advance your career. This talk discusses the process of building a personal brand and provides examples of individuals with good personal branding. Discover tips on how to build a personal brand and how it can help you stand out from the crowd in job hunting and networking.
+
+[duration:string]
+Mar 23, 2023 (1:04hrs)
+
+[place_url:string]
+https://www.youtube.com/live/TR-_QxiN6A8
+
+[place:string]
+Remote
+
+[content:md]
+The talk discusses the importance of personal branding, which refers to the public perception of an individual. It explains that personal branding can be consciously built or can arise naturally from an individual's actions and achievements.
+
+![Instagram invite to the talk](/assets/personal-brand-talk.jpg#center)
+
+The article provides examples of individuals with good personal branding and emphasizes the need for it in job hunting and career advancement. The process of building a personal brand is called personal branding, which involves defining how one wants to be perceived, deciding on a creator, curator, or connector role, maintaining consistency in content creation, finding a balance between personal brand and work, focusing on one platform or area, and being purposeful in what is shared. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TR-_QxiN6A8#center" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+It also provides tips on how to build a personal brand, such as creating a personal website, using social media, and networking with others in the industry. The article concludes by stating that personal branding is important because it helps people stand out from the crowd and get noticed by employers.
+
+[projects:md]
