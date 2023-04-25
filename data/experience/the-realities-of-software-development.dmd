@@ -1,0 +1,47 @@
+{
+  "title": "Howdy - The realities of Software Development",
+  "date": "2023-02-28",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "The realities of Software Development",
+    "datebox": "Feb, 2023",
+    "extlink": "https://www.youtube.com/watch?v=_Hi-_GkucPw",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230228",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Explore challenges faced by junior developers during their training, from discovering requirements to generating authoring defects. Learn strategies to overcome these obstacles and improve business proficiency.
+
+[duration:string]
+Feb 28, 2023 (1:14hrs)
+
+[place_url:string]
+https://www.youtube.com/watch?v=_Hi-_GkucPw
+
+[place:string]
+Remote
+
+[content:md]
+In this talk, we explore the challenges that we face as junior developers for which we are not prepared during our formation. First, we discuss the challenge of discovering requirements and how it is often taught to us through the letter of the problems to be solved. 
+
+![Instagram talk invite](/assets/realities-sw-dev.png#center)
+
+Second, we touch on the fact that it is rare for us to start something from scratch and how every exercise or problem we face during our formation involves starting from scratch without measuring the impact of structure, standards, and design decisions. Third, we delve into how code has inertia and how with every exercise or mini project we do, we generate "authoring defects" that are specific to us and contagious to our teammates. Finally, we discuss how business proficiency is (usually) more important than technical proficiency and how often as junior developers, we are offered technical challenges and rewarded for our skill by showing off with technical elegance of solutions. Overall, this talk aims to prepare junior developers for these challenges and provide them with strategies to overcome them.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_Hi-_GkucPw#center" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+[projects:md]
