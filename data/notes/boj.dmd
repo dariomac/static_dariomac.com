@@ -1,6 +1,6 @@
 {
     "date": "2022-03-27",
-    "updated_date": "2023-02-12",
+    "updated_date": "2023-04-12",
     "layout": "document",
     "title": "Boj",
     "jsonld": {},
@@ -66,6 +66,9 @@ Every 2-5 years.
 #dm_bj1: boj comprado de Carmelo
 
 ## Log
+### 2023-04-08
+Hice una definición de volúmenes en #dm_bj1. Todavía queda bastante verde... Pero tiene mucho mejor pinta. De hecho corte unas cuantas ramas internas que no tenían sentido.
+
 ### 2023-02-04
 Hace un par de días venía peluquendo a #dm_bj1. Le corté muchas hojitas internas para liberar más las ramas... Aunque sigue teniendo porra 😂
 

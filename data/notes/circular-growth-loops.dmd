@@ -1,0 +1,67 @@
+{
+    "date": "2023-05-03",
+    "updated_date": "2023-05-03",
+    "layout": "document",
+    "title": "Circular growth loops",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20230503",
+        "tags": "learning,progress",
+        "content": "Card content",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "params": {
+        "noIndex": true
+    }
+}
+
+---
+
+[summary:string]
+Card content
+
+[pub_date:string]
+2023-05-03
+
+[short_description:string]
+
+[body:md]
+It's a way to see progress; you can see it as something linear or as something where people is not "up" or "down" the progress ladder, but on one point of their "own, unique growth loop".
+
+Circular model applied to learning [^1]:
+
+> 1.  Learn something new
+> 2.  Write about it and share it
+> 3.  Connect with new people
+>
+> … and learn something new from them.
+
+It's all about "celebrating the small wins rather than chasing a big final victory".
+
+## Single loop vs. double loop
+
+> “A thermostat that automatically turns on the heat whenever the temperature in a room drops below 68°F is a good example of single-loop learning. A thermostat that could ask, “why am I set to 68°F?” and then explore whether or not some other temperature might more economically achieve the goal of heating the room would be engaged in double-loop learning.”
+> 
+> Chris Argyris, Business Theorist and Professor at Harvard Business School.
+
+The double-loop model encourages people to question assumptions and objectives rather than repeating the same loop endlessly.
+
+[^1]: Growth Loops: From linear growth to circular growth - [https://nesslabs.com/growth-loops](https://nesslabs.com/growth-loops)
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_May 3, 2023_: Original publication on dariomac.com

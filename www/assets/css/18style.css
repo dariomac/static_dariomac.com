@@ -786,6 +786,34 @@ article .description {
   font-style: italic;
 }
 
+article blockquote{
+  font-size: 1.4em;
+  width:100%;
+  margin:20px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 50px;
+  border-left:8px solid #FF6E19 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+article blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#FF6E19;
+  font-size:4em;
+  position: absolute;
+  left: 4px;
+  top:-10px;
+}
+
+article blockquote::after{
+  content: '';
+}
+
 .download {
   background: url(/assets/images/download.png) 0px 0px repeat !important;
   float: right;

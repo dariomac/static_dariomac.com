@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /academy
 Disallow: /industry
+Disallow: /circular-growth-loops
 Disallow: /dmarc
 Disallow: /how-to-improve-the-seo-of-a-react-application
 Disallow: /things-to-take-into-account-before-a-massive-email-campaign
