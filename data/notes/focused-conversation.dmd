@@ -1,0 +1,75 @@
+{
+    "date": "2023-05-18",
+    "updated_date": "2023-05-18",
+    "layout": "document",
+    "title": "Focused Conversation",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20230518",
+        "tags": "conversation, communication, decision-making",
+        "content": "Conversation structuring tool with 4 stages",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "params": {
+        "noIndex": true
+    }
+}
+
+---
+
+[summary:string]
+Conversation structuring tool with 4 stages
+
+[pub_date:string]
+2023-05-18
+
+[short_description:string]
+
+[body:md]
+Is a tool that can be used to structure a conversation.
+
+## Stages
+It states that conversations should have four phases: objective, reflective, interpretive and decisional [^1].
+> You don’t have to spend an hour on each category of question, but ignoring facts to jump to a decision or devaluing reflective questions because you just want to talk about data will not necessarily get you better results. [^2]
+
+### Objective
+Facts gathering stage. Answer questions like:
+- What are the actual facts?
+- What didi you observe?
+
+### Reflective
+Thoughts, feelings, and emotions sharing stage. Answer questions like:
+- How does this topic make you feel?
+- What emotions arise when you think about this objective?
+
+### Interpretive
+Insights, interpretations, and analysis generation stage. Answer questions like:
+-  Are there any connections or relationships between the shared things?
+-  What patterns can we identify in the information we have gathered?
+
+### Decisional
+Action and decision-making stage. Answer questions like:
+- What experiments could you run?
+- What action will you take?
+
+[^1]: Stanfield, R. B., & Stanfield, J. M. (2000). The art of focused conversation: 100 ways to access group wisdom in the workplace. New Society Publishers.
+
+[^2]: Facilitating with The Focused Conversation - https://helpingimprove.com/facilitating-with-the-focused-conversation/
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_May 18, 2023_: Original publication on dariomac.com

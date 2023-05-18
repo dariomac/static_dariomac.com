@@ -1,0 +1,64 @@
+{
+    "date": "2023-05-09",
+    "updated_date": "2023-05-13",
+    "layout": "document",
+    "title": "The Pac-Man rule",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20230509",
+        "tags": "inclusivity, community, events",
+        "content": "The Pac-Man Rule at Conferences",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "params": {
+        "noIndex": true
+    }
+}
+
+---
+
+[summary:string]
+The Pac-Man Rule at Conferences
+
+[pub_date:string]
+2023-05-09
+
+[short_description:string]
+
+[body:md]
+Invented by [@ericholscher](https://twitter.com/ericholscher) [^1].
+The rule is:
+
+> **When standing as a group of people, always leave room for 1 person to join your group.**
+
+More memorably, stand like Pac-Man!
+
+![pac-man.png](/assets/pac-man.png#center)
+
+> The new person, who has been given permission to join your group, will gather up the courage, and join you! Another important point, the group should now readjust to leave another space for a new person.
+
+> **Leaving room for new people when standing in a group is a physical way to show an inclusive and welcoming environment.** It reduces the feeling of there being cliques, and allows people to integrate themselves into the community.
+
+This is a video about how it works:
+
+[https://twitter.com/dylanbeattie/status/1111619036809449472?s=20](https://twitter.com/dylanbeattie/status/1111619036809449472?s=20)
+
+[^1]: The Pac-Man Rule at Conferences - [https://ericholscher.com/blog/2017/aug/2/pacman-rule-conferences/#the-pac-man-rule](https://ericholscher.com/blog/2017/aug/2/pacman-rule-conferences/#the-pac-man-rule)
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_May 9, 2023_: Original publication on dariomac.com

@@ -1,6 +1,8 @@
 User-agent: *
 Disallow: /academy
 Disallow: /industry
+Disallow: /focused-conversation
+Disallow: /the-pac-man-rule
 Disallow: /circular-growth-loops
 Disallow: /dmarc
 Disallow: /how-to-improve-the-seo-of-a-react-application

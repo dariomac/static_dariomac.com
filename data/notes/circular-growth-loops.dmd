@@ -1,6 +1,6 @@
 {
     "date": "2023-05-03",
-    "updated_date": "2023-05-03",
+    "updated_date": "2023-05-13",
     "layout": "document",
     "title": "Circular growth loops",
     "jsonld": {},
@@ -14,8 +14,8 @@
         "laneid": "Essay",
         "leftbox": "",
         "position": "20230503",
-        "tags": "learning,progress",
-        "content": "Card content",
+        "tags": "learning, progress, growth",
+        "content": "Learning progress and growth loops",
         "linkto": "[link_to]",
         "title": "[title]",
         "subtaskdetails": []
@@ -29,7 +29,7 @@
 ---
 
 [summary:string]
-Card content
+Learning progress and growth loops
 
 [pub_date:string]
 2023-05-03
