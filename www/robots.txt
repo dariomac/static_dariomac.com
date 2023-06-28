@@ -1,6 +1,8 @@
 User-agent: *
 Disallow: /academy
 Disallow: /industry
+Disallow: /make-jobs-collaborate
+Disallow: /senior-juniorism
 Disallow: /focused-conversation
 Disallow: /the-pac-man-rule
 Disallow: /circular-growth-loops

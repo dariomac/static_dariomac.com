@@ -1,0 +1,58 @@
+{
+    "date": "2023-06-08",
+    "updated_date": "2023-06-08",
+    "layout": "document",
+    "title": "Senior juniorism",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20230608",
+        "tags": "programming, advice, self-taught",
+        "content": "Senior Juniorism in Programming",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "params": {
+        "noIndex": true
+    }
+}
+
+---
+
+[summary:string]
+Senior Juniorism in Programming
+
+[pub_date:string]
+2023-06-08
+
+[short_description:string]
+
+[body:md]
+"Senior juniorism"[^1] refers to the phenomenon where inexperienced programmers give advice and write extensively about their [limited] knowledge, unaware of their own blind spots. Aspiring programmers should be cautious when receiving advice, as not all advice is good and can lead to poor coding practices and habits.
+
+When someone pretends to be an expert, they may inadvertently give advice that is outdated, incomplete or simply incorrect.
+
+Self-taught developers skips over fundamental concepts due to the abundance of resources available to them.
+
+Ways to avoid falling for bad advice:
+- seek out reputable sources
+- do your own research and fact-checking
+- develop your critical thinking skills
+
+[^1]: https://www.30secondsofcode.org/articles/s/avoiding-bad-advice/
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Jun 8, 2023_: Original publication on dariomac.com

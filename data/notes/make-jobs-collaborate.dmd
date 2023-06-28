@@ -1,0 +1,71 @@
+{
+    "date": "2023-06-28",
+    "updated_date": "2023-06-28",
+    "layout": "document",
+    "title": "Make jobs collaborate",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20230628",
+        "tags": "life, helath, collaboration, productivity",
+        "content": "Juggling Multiple Jobs and Collaborating for Success",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "params": {
+        "noIndex": true
+    }
+}
+
+---
+
+[summary:string]
+Juggling Multiple Jobs and Collaborating for Success
+
+[pub_date:string]
+2023-06-28
+
+[short_description:string]
+
+[body:md]
+This week, I came across several articles from various publishers promoting what I believe to be a risky and ill-advised approach: juggling 2-3 full-time remote jobs simultaneously (unless you don't want to sleep)... and do it secretly! 😡
+
+Don't get me wrong. It's OK if you want to have more than one job and do more than one thing during your day. In fact, I code as a software engineer, I'm a developer advocate, I tutor 3 groups doing their final year project and teach at university, I have two kids and over 20 bonsai 🌳 to take care of... and I do it every day! And the best part... everyone knows about the existence of the others (well, maybe some of the trees didn't get the message yet 😄). 
+
+So, instead of keeping something hidden and causing yourself a lot of stress, you can choose to adopt a healthier approach.
+
+Make them collaborate.
+
+What?
+
+Yes, instead of making different jobs compete for that one exhaustible resource that is you, make them cooperate. 
+
+By allowing different aspects of your life to collaborate and intertwine, you create a synergistic effect. This means that each area of your life supports and enhances the others, leading to increased productivity, creativity, and overall satisfaction.
+
+Those who knows me know that, while coding, I gather examples or ideas that I later share with my students. By integrating my teaching and coding experiences, I not only strengthen my understanding of the subject matter but also inspire and engage my students with real-world examples.
+
+Can you write a similar paragraph as before but relating software engineering and developer advocate?
+
+Also, as a developer advocate I constantly seek out innovative software engineering practices and techniques that I can later share to fellow developers. By merging my expertise in software engineering and my passion for advocating developer tools and technologies, I not only deepen my understanding of the field but also captivate and motivate other developers through real-life demonstrations and use cases.
+
+Similarly, when spending time with my family or engaging in hobbies like playing cards or being with my bonsai trees, I may have moments of insight or inspiration related to my coding work or teaching. These "flashes" can help me overcome obstacles or come up with new ideas when I'm feeling stuck.
+
+The key is to embrace the interconnectedness of different areas of your life and recognize that they are not separate entities competing for your time and energy. Instead, they can complement and support each other.
+
+So, instead of compartmentalizing different aspects of your life and causing unnecessary stress by trying to keep them separate, allow them to collaborate. This approach will not only help alleviate stress but also foster personal growth and fulfillment in all areas of your life.
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Jun 28, 2023_: Original publication on dariomac.com
