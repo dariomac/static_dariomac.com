@@ -36,7 +36,7 @@ Web
 https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=93698
 
 [short_description:string]
-The project is a customized system called Ariadne's Thread developed for Qualabs' human resources department using agile methodologies.
+This project aimed to address the challenge of managing information across different platforms in Qualabs' human resources department. By utilizing agile methodologies such as Dual Track Scrum and Design Sprint, a web application was developed using React for the user interface and NodeJs with Typescript for the server. The application was deployed on Amazon Web Services, allowing the client to actively use the system with real data and provide feedback for continuous improvement. Overall, the project successfully delivered a customized system that effectively met the client's needs and expectations.
 
 [description:md]
 **Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_

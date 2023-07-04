@@ -40,7 +40,7 @@ Mobile (React Native) - Web: React/Angular - Physical interface: Raspberry Pi
 https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=90656
 
 [short_description:string]
-MiTurno is a system for customers to mitigate the problem of queuing up to be attended, like shopper fatigue and decrease of customer experience (CX). The mobile app solves this keeping the customer informed about queue state letting be free to wander and buy more things or do whatever he want. Besides customer app, it has an employee app, an owner statistical app and even a physical printer (turn-o-matic like) for those customers who don't want to use the app.
+MiTurno is a comprehensive queue management system that utilizes mobile apps, web apps, and specialized hardware to help users avoid waiting in line. The system is built using technologies like React Native, Angular 5, NodeJS, and Python to provide a seamless experience for both customers and establishment owners. With features like real-time notifications, statistics tracking, and alternative methods of getting a number, MiTurno improves customer experience while simplifying queue management for businesses.
 
 [description:md]
 **Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_

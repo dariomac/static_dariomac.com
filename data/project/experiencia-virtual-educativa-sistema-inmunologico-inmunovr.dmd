@@ -40,7 +40,7 @@ Samsung Gear VR - Unreal Engine
 https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=88056
 
 [short_description:string]
-InmunoVR is a simulation that aims to provide an educational experience to help high school students understand, in a playful way, a subject that is difficult to understand by traditional means. Unlike a book, InmunoVR uses concepts and practices of experiential learning to transmit knowledge through the use of Virtual Reality. The objective of the simulation is to transmit knowledge through a three-dimensional virtual environment, using an emerging technology that is increasingly becoming common.
+InmunoVR is an educational simulation that utilizes Virtual Reality technology to provide high school students with an immersive and interactive learning experience about the immune system. Through visualizations, interactions, and assessments, students can understand how the immune system responds to external threats. The project was developed using an iterative process, collaborating with experts in education and design. Unreal Engine 4 was chosen as the development tool due to its visual quality and flexibility across different platforms. Overall, InmunoVR successfully achieves its goal of making learning about the immune system more engaging and effective for students.
 
 [description:md]
 **Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_

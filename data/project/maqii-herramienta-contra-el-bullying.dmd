@@ -34,9 +34,7 @@ Maqii is a tool for specialists to accompany the treatment of children who may b
 [link:string]
 
 [short_description:string]
-Maqii is an educational video game for cell phones based on a virtual pet, which through "mini-games" and interaction with it, accompanies the treatment of children who may be experiencing or suffering from bullying.
-
-Also gives the specialist the tools to monitor the child's progress and to be able to intervene in case of need.
+Maqii is a comprehensive solution designed to address the serious issue of bullying among children. It consists of a mobile educational video game, developed using Unity, which aims to accompany children in the detection and treatment of bullying through interactive mini-games and virtual pet interactions. Additionally, specialists can utilize a web platform to monitor assigned patients, analyze their progress, and access reports generated from the child's interactions with the game. The system communicates with a server that handles database manipulation and report generation, utilizing .Net Core for the web application and MySQL for the database.
 
 [description:md]
 **Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_

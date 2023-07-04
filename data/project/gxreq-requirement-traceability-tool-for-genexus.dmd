@@ -34,7 +34,7 @@ GxReq is a Requirement traceability tool for GeneXus. It allows to specify semi-
 [link:string]
 
 [short_description:string]
-This project aims to write businesses needs for GeneXus. They should be accurate, complete, consistent, unambiguous enough to serve as a contract, flexible enough to adapt to incremental prototyping, and written in the customer's native language by integrating with GeneXus tools. Also, the system provides a way to trace requirements to the code, and to the tests, generating as much as possible automatically.
+This project aimed to address the lack of a requirements traceability system in GeneXus by developing an integrated solution. It consisted of two components: an extension mechanism for the GeneXus development environment and a web-based Requirements Client. The Requirements Client enabled users to manage projects, features, and write requirements easily. These requirements could then be exported from GeneXus via the extension mechanism. Ultimately, the project successfully achieved its objectives and improved customer satisfaction.
 
 [description:md]
 **Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_

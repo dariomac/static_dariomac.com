@@ -35,9 +35,7 @@ Mobile (React Native) - Backend: Flask+Python - Infra: AWS
 [link:string]
 
 [short_description:string]
-The project aims to implement a software for processing and analyzing satellite images to be used by agricultural engineers and producers in their different crops, achieving optimization of crops and generating great value for producers. This analysis will be carried out according to calculations of certain indicators such as NDVI, EVI, LAI, floods, among others. 
-
-With the final product and through the interpretation of the satellite images, it would be possible to provide a complete analysis, allowing to easily compare the current situation of a crop in comparison with the objective indicators.
+This project aims to develop software that utilizes satellite images to analyze and process agricultural data, providing valuable insights for agricultural engineers and producers to optimize their crops. By calculating indicators such as NDVI, EVI, LAI, and floods, the software will enable a comprehensive analysis of crops, allowing for easy comparison to objective indicators and storage of historical data. This will help improve productivity and decision-making in the agricultural industry, particularly in Latin America where agriculture is a significant economic sector.
 
 [description:md]
 **Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
