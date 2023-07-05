@@ -764,6 +764,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/ahorranza-sistema-de-gestion-de-finanzas</loc>
+        <lastmod>2023-07-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/another-clojure-box</loc>
         <lastmod>2017-07-16</lastmod>
         <changefreq>monthly</changefreq>
@@ -872,8 +878,8 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://www.dariomac.com/static-website-generator</loc>
-        <lastmod>2019-07-16</lastmod>
+        <loc>https://www.dariomac.com/inception-workshop-for-entrepreneurs</loc>
+        <lastmod>2017-07-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -890,14 +896,14 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://www.dariomac.com/inception-workshop-for-entrepreneurs</loc>
+        <loc>https://www.dariomac.com/local-read-later</loc>
         <lastmod>2017-07-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://www.dariomac.com/local-read-later</loc>
-        <lastmod>2017-07-18</lastmod>
+        <loc>https://www.dariomac.com/static-website-generator</loc>
+        <lastmod>2019-07-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

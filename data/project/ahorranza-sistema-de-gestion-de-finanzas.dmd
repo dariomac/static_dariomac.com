@@ -1,0 +1,57 @@
+{
+  "title": "Ahorranza: Sistema de gestión de finanzas",
+  "date": "2023-07-04",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "Ahorranza: Sistema de gestión de finanzas",
+    "datebox": "2022-2023",
+    "extlink": "https://dspace.ort.edu.uy/handle/20.500.11968/6431",
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230503",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Ahorranza: Sistema de gestión de finanzas"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+The project is a financial management system called Ahorranza developed to automatically process and categorize expenses..
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+
+[platform:string]
+Web & mobile app
+
+[link:string]
+https://dspace.ort.edu.uy/handle/20.500.11968/6431
+
+[short_description:string]
+Ahorranza finance management system is a project that uses image processing and text categorization to automatically record transactions, reducing manual effort for users. It also provides personalized savings recommendations based on recorded information. The system was developed with input from users and consists of a backend server, an expense classifier, and an API. Two clients, a web client and a mobile client, are used by end users to access the system's functionalities. The project is currently in production and is being offered to a growing community interested in improving their financial situation efficiently.
+
+[description:md]
+**Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
+
+The following project presents the Ahorranza finance management system. It uses image processing technologies and text categorization to provide innovative ways of automatically recording transactions, reducing manual user effort. In addition, to reward consistent use of the system, personalized savings recommendations are proposed based on the recorded information. 
+
+The development of this system was driven by user input, with constant contact with potential end users throughout all stages of the project to ensure quality and that the product meets real needs. The system consists of a backend server that handles all platform data, composed of two modules: an expense classifier (in Django) and an API built in ExpressJS with TypeScript. This is consumed by two clients: a web client built in React with JavaScript and a mobile client built with Flutter. Both clients are used by end users to carry out the functionalities offered by the system. 
+
+Currently, it is in production, offering the tool to a growing community interested in improving their financial situation in an agile, efficient, and innovative way.
+
+## Authors
+Lamela Conde, Joaquín | Hernandorena Lamas, Agustín Antonio | Rügnitz Gomez, Santiago | Gutman Mehr, Martín | Galeano Roca, Franco Bruno. 
+
+## Score
+100/100
+
+## Reviewers
+Garbervetsky, Diego David | Hernández Guimarans, Pablo
