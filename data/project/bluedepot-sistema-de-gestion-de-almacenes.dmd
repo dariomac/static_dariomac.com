@@ -1,0 +1,57 @@
+{
+  "title": "BlueDepot: Sistema de gestión de almacenes",
+  "date": "2023-07-04",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "BlueDepot: Sistema de gestión de almacenes",
+    "datebox": "2022-2023",
+    "extlink": "https://dspace.ort.edu.uy/handle/20.500.11968/6439",
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230502",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "BlueDepot: Sistema de gestión de almacenes"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+The project is warehouse management system called BlueDepot developed as a SaaS using agile methodologies.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+
+[platform:string]
+Web
+
+[link:string]
+https://dspace.ort.edu.uy/handle/20.500.11968/6439
+
+[short_description:string]
+BlueDepot is a warehouse management system developed for a client company in the logistics industry. It aims to improve and optimize warehouse management by providing functionalities to manage and control operations. The system is hosted in the cloud, reducing costs for users. It is developed using React, NextJS, NodeJS, Typescript, and NestJS, and deployed on Amazon Web Services.
+
+[description:md]
+**Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
+
+The following project presents BlueDepot, a warehouse management system developed for the client company, which provides consulting services to the logistics industry, focusing on business model modernization, process optimization, and technology integration. The client company identified that one of the weakest links was the internal handling of warehouses. These warehouses contain raw materials and finished products from manufacturing and supply chain processes. Research on existing tools concluded that they did not meet the requirements of the entire industry.
+
+As a solution to this problem, BlueDepot emerged as a "lite" version warehouse management system (reduced for application download). It has functionalities to manage and control warehouse operations and is hosted in the cloud at a reduced cost. The final system consists of an adaptable progressive web application developed in React with NextJS for the frontend and a backend developed in NodeJS with Typescript and NestJS, deployed in the cloud using Amazon Web Services.
+
+The result is a management system where customers have the opportunity to subscribe and access a cloud-based system capable of improving and optimizing warehouse management through merchandise entry and exit management, inventory organization and control, registration and listing of products in the system, handling inconsistencies, among other options.
+
+## Authors
+Espinosa Fernández, Paula Denise | Fernandez del Campo, Agustin | Pujol Campomar, Facundo | Revetria Schuch, Serafín | Sehabiaga Giménez, Tomás.
+
+## Score
+95/100
+
+## Reviewers
+Garbervetsky, Diego David | Nieves Lema, Ruben Carlos

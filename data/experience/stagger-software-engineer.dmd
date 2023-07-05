@@ -53,6 +53,10 @@ It was also prepared to scale without limit by placing it behind AWS CloudFront.
 {{!-- Generate suggestions using ML algorithms, merging templates with user's assets --}}
 {{!-- We introduced Stagger to all AS (here is the video: https://drive.google.com/file/d/1nFH_zfFYi8ByTsuU3L_WuAVUiSh8nAHM/view?usp=sharing) --}}
 {{!-- Public accounts accesible through QR code with geolocation to show nearest flyers --}}
+{{!-- Rules engine to analize the project while the user is working on it and provide insights: https://drive.google.com/file/d/1RmRCqARvX6bUOHdeWW3eSmZcB0gXrgNu/view?usp%253Ddrive_link --}}
+{{!-- Background removal tool: https://drive.google.com/file/d/1oOCRhOtxh-pqbztypfPmp4g317Gp_egr/view?usp%253Ddrive_link --}}
+{{!-- Image inferrer service to analyze images using pre-trained models and get insights as colors, objects, faces, etc. --}}
+{{!-- Collage generator engine to create collages from a set of rules using the information provided by the image inferrer --}}
 
 [projects:md]
 
