@@ -38,7 +38,7 @@ Remote
 [content:md]
 This talk was about how working in an agile way can help ensure quality. Most ofthe discussion was around the idea of "shift left" and how to avoid pushing defects to the end of the engineering process. It was a good way to get started with these topics and show how quality can be improved during the preplanning, planning, and implementation phases.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fm2-PQFrwpE?start=2033#center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fm2-PQFrwpE?start=2033#center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /> {{! 20220127-meetup-python-chile-quality-in-agile-contexts.mp4 --}}
 
 ## References
 - [Peer Reviews in Software: A Practical Guide](https://www.amazon.com/Peer-Reviews-Software-Practical-Guide/dp/0201734850/ref=sr_1_2)

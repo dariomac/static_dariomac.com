@@ -1,0 +1,127 @@
+{
+  "title": "Detecting “Wont Fix” Issues with Machine Learning",
+  "date": "2021-07-05",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Learn how discarded issues consume on average 5 months of developers’ time",
+    "datebox": "2021-07-05",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20210705",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+The article discusses the main reasons for marking an issue as "wontfix" or discarding it. 
+
+[pub_date:string]
+2021-07-05
+
+[short_description:string]
+The article discusses the main reasons for marking an issue as "wontfix" or discarding it, which are already implemented or not needed change requests and bug reports that are not actually bugs. The article suggests that these issues can be avoided by using machine learning or by having issue writers and bug reporters use a template to demonstrate business importance and clearly state the steps to reproduce the bug and the expected outcomes. The article also discusses the use of machine learning to train a model that can identify potentially wontfix issues and generate a list of reasons why stakeholders open issues or why community members of OSS projects discard issues. The article concludes with advice on how to use this information to build templates for requesting new features and enhancements and to write better bug reports.
+
+[body:md]
+### Key takeaways
+
+-   The main reason to mark an issue as wontfix (or discard it) is _already implemented / not needed change requests_.
+-   The second reason is bug reports that are _not bugs_ actually.
+-   Both of them are easily avoidable:
+
+-   using Machine Learning
+-   if the issue writer or bug reporter use a template to:  
+    a) demonstrate the business importance in the case of change / new requests.  
+    b) clearly state the steps to reproduce the bug and the expected outcomes.  
+    
+
+To justify these claims, we will go through a recently published article and tie it with my own experience.  
+
+
+Do you know that issues finally marked as [wontfix](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels#about-default-labels) (though, discarded) consume on average 5 months of developers’ time? (yes, 5 months of YOUR TIME!). When I read that in the article _‘‘Won’t We Fix this Issue?’’ Qualitative characterization and automated identification of wontfix issues on GitHub_ my internal alarms rang. I remember I thought “that’s too much time for nothing!”.  
+
+
+That’s why we think this research deserves to be shared with you. I hope that showing their discoveries and tying them with our own experiences will shed some light on this topic. As usual, I strongly recommend reading the [original paper](https://www.sciencedirect.com/science/article/pii/S0950584921001269) to get all the insights, how they did the research, and the detailed discussion over it.  
+
+
+### Issues-list driven development
+
+As a developer’s team, your product is your baby. You know it, you grew it, you can justify and explain each feature and relate it to a business value. And now it is mature enough to be released and finally interact with real users and you release it. This is what happens right after:  
+
+
+-   Finally we deployed our baby! 💪😷🍾 🎉
+-   😴😴😴NEXT DAY
+-   Good mornin…, wait!. What’s going one here? Why our issue tracking software started to be flooded by change requests and bug reports from people that we don’t even know.
+-   Let’s see …
+-   WHAAAAT? The user BadKarma42 wants to do what??? OMG, Why did she need that feature? 🤔  
+    And user BigFootIsReal666 did what? What the heck? How did he break that? How do I suppose to produce that bug if the user just said what he broke but didn’t describe how? 😡  
+    
+
+You know that software needs to be updated and fixed. The reasons for this deserve it’s own article and won’t be covered here. I’ll just say that to meet users’ expectations (and market requirements) software developers need to continuously update their source code.  
+
+
+But how do developers know when they need to update or fix things? What is the artifact that drives development, shows product improvements, and the team’s work pace? Yes, you’re right. It’s the list of issues and bugs reported/created by users, customers, Product Owners or any other project stakeholder.  
+
+
+### How to deal with issues?
+
+Let’s face it. The list of features requested by stakeholders and bugs reported can be intimidatingly long. In addition, the quality of what’s inside tends to be very different, so we, as developers, have to spend a significant amount of time managing those reports. Obviously, there are software engineering approaches to address these issues, such as backlog refinement meetings, specific roles that review and prioritize tasks (i.e., Product Owners), QA best practices, templates, and a long etc. However, at some point, your valuable time will be needed to at least give your “expert opinion”.  
+
+
+For these reasons, in the last decade or so, several research works have proposed/developed automated solutions to prioritize requested changes [(Lamkanfi et al. 2011)](https://paperpile.com/c/IrEa0I/bU7h), [(Tian, Lo, and Sun 2013)](https://paperpile.com/c/IrEa0I/UgG3), find out “who should fix bugs” [(Anvik, Hiew, and Murphy 2006)](https://paperpile.com/c/IrEa0I/lyUu), figure out whether am issue “is a bug or an enhancement” [(Antoniol et al. 2008)](https://paperpile.com/c/IrEa0I/Xwt0), detect issues misclassifications or bug duplication. Believe it or not, nobody investigated why we discard issues following costly processes until the work named _“Won’t We Fix this Issue?” Qualitative Characterization and Automated Identification of Wontfix Issues on GitHub_ [(Panichella, Canfora, and Di Sorbo 2021)](https://paperpile.com/c/IrEa0I/ebmm) did it.  
+
+
+What if we could automate the process of ruling out issues without losing too much time on the process? Panichella et al. have just published an article in which they use machine learning to train a model which proved to be very accurate (statistically speaking) in identifying potentially wontfix issues. In addition, they generate a lot of related information, such as a list of reasons why stakeholders open issues or a list of why community members of OSS projects discard issues. Let’s review the latter:  
+
+
+![](/assets/reasons-for-discard-issues.jpg#center)
+
+  
+This list was constructed by analyzing 667 closed issues (wontfix) from 97 different projects on Github. As the authors of the article explain, the sum of the percentage values in the table is greater than 100% due to issues that have been assigned to more than one reason.  
+
+
+### Machine Learning? 🤔
+
+What is the second-best thing we can do if we don’t know how to train a model but also don’t want to wait for a commercial tool to be developed? We can use the information that Panichella et al. make available to us and extrapolate it to our own projects to make educated guesses about issues that will never be solved and should be quickly discarded  
+
+
+The first reason on the list for rejecting an issue seems to be that the requested new features/enhancements are already implemented, are not needed at all or are not a relevant change. Therefore, we can build a template for requesting new features/enhancements by asking questions to avoid creating potential issues that are not going to be solved. If you think for a moment, you will see that change requests are like small business cases, so we can ask them to contain, more or less, the same elements as business cases.  
+
+
+1.  A **one-line summary**: _Add a tooltip over the call-to-action (CTA) button to increase conversion._
+2.  **Problem statement**: _Users let us know that many times they identify the CTA but the action goal isn’t clear._
+3.  **Options**: _Besides adding a tooltip, other options are changing the color of each CTA button (CR-323) or re-think buttons’ texts (CR-324)._
+4.  **Solution description**: _On every CTA according to the attached table, add a tooltip to reinforce the message that stays open 3-5 seconds (also stated on the table)._
+5.  **Cost-benefit analysis**: _This task will cost 10-14 development hours, but preliminary tests show an increase of 3-5% of conversion with the new tooltips. Extrapolating linearly that percentage to all the CTAs we will start seeing net benefits one week after we put it in production.  
+    _
+
+Many change requests only state the summary, some the problem statement, but then quickly jump to the solution. They forget to sell the change to the decision maker tying it to a business benefit, which makes this person’s job very difficult. Panichella et al. state that developers spend an average of five months deciding whether a problem should be labeled as a wontfix.  
+
+
+### Final thoughts
+
+Panichella et al. did an amazing job researching a novel topic that is a real problem for everyday developers. They discovered a list of reasons that could lead to flagging problems as wontfix faster and used that information to train a model and automate the detection of those problems. We analyzed the most frequent reason, but the rest of the reasons are also important and can be worked on in the same way as we did with the first one (i.e. we can build templates to write better bug reports by adding replication steps, expected and actual outputs). We encourage you to use this information in your current projects, generating new tools that will serve your teams and, why not, the rest of the industry.  
+
+
+### References
+
+-   S. Panichella, G. Canfora and A. Di Sorbo, “_Won’t We Fix this Issue?_”Qualitative characterization and automated identification of wontfix issues on GitHub, _Information and Software Technology_ (2021), doi: [https://doi.org/10.1016/j.infsof.2021.106665](https://doi.org/10.1016/j.infsof.2021.106665).
+
+[acknowledgments:md]
+This post, originally on [https://www.howdy.com/blog/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it/](https://www.howdy.com/blog/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Jul 05, 2021_: Original publication on howdy.com
+

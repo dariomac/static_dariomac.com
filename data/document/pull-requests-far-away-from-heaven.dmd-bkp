@@ -1,0 +1,106 @@
+{
+  "title": "Learn about what makes your PR accepted/rejected",
+  "date": "2021-05-13",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Insights on how PRs are actually accepted/rejected",
+    "datebox": "2021-05-13",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20210513",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+The article reviews several studies on how pull requests (PRs) are accepted or rejected and identifies factors that affect the speed with which a PR is accepted.
+
+[pub_date:string]
+2021-05-13
+
+[short_description:string]
+The article reviews several studies on how pull requests (PRs) are accepted or rejected and identifies factors that affect the speed with which a PR is accepted. The article also discusses the role of PMD issues in PR acceptance and suggests that although good coding practices are important, they may not be the key factor for the acceptance of PRs. The article concludes with advice for contributors/developers and core team members interested in making PRs add value to their product.
+
+[body:md]
+**(hint: It’s not quality.)**
+
+Ever wonder what makes developers accept PRs? the article “[Does code quality affect pull request acceptance? An empirical study](https://www.sciencedirect.com/science/article/pii/S0164121220302090)” contains an interesting insight into this question because it reviews many studies on how PRs are actually accepted/rejected.  It’s unique because it confirms previously discovered facts about PRs  across several studies using different research techniques. I found this paper very helpful to developers, not only if you want to improve the acceptance rate of your PRs, but mostly because everyone involved in software development should try to go back to the original spirit of pull requests.
+
+I’ll focus on what I think are the most useful points of the article. This is a condensed summary, with a mix of direct quotes from the article and related work, sometimes rewording them, sometimes adding my own comments. All research results come from the original article; any mistakes are mine.  
+
+
+### Some (fun/curious/not even new) facts around PRs
+
+Ok, we think that we are fancy because we are using pull requests (PRs). Indeed, we feel protected by working like this, as though PRs automatically bestow magical effects on our code; we feel that just because we are doing them, we must have high-quality code!
+
+But deep inside, we know that’s not true. We’ve witnessed several projects that used PRs but had major quality issues regardless; those cases where you think “this should never have passed a code review”. So what is the explanation for this?
+
+Researchers have been working on this for years, trying to understand the conditions that lead to poor code review in PRs and what leads to the acceptance/rejection of PRs. The following section lists some facts stated by different researchers in various articles on pull request acceptance. The key takeaway is that PRs alone are not the panacea we like/want to believe.
+
+I strongly suggest you follow the references and do a [snowballing](https://dl.acm.org/doi/abs/10.1145/2601248.2601268) over them to get the fine details around each fact.  
+
+
+### Factors that affect acceptance/rejection of PRs
+
+Evidence from different studies suggests that several factors appear to affect the speed with which a PR is accepted. A study that began with the GHTorrent corpus and then continued on a  sample of 291 projects ([Gousios et al., 2014](https://dl.acm.org/doi/10.1145/2568225.2568260)) named factors like “developer’s previous track record, the size of the project and its test coverage and the project’s openness to external contributions”. Another study between successful and unsuccessful pull requests made to 78 GitHub base projects by 20,142 developers from 103,192 forked projects ([Rahman and Roy, 2014](https://dl.acm.org/doi/10.1145/2597073.2597121)) states that “developers with 20 to 50 months experience are found the most productive in terms of submitting and getting pull requests accepted” but that the “number of developers involved into a project and their experience can affect the success and failure rates of pull requests for a project”.
+
+Additionally, a case study with Active Merchant, a commercial project developed by Shopify Inc. ([Kononenko et al., 2018](https://dl.acm.org/doi/10.1145/3183519.3183542)), goes in the same direction: “The statistical models revealed that both PR review time and merge decision are affected by PR size, discussion, and author experience and affiliation. Developers believe that PR quality, type of change, and responsiveness of an author are also important factors”. Finally, the size of the pull requests, the perceived quality of them, and the code in general along with the context, play an important role in the acceptance of pull requests ([Tsay et al., 2014](https://dl.acm.org/doi/10.1145/2568225.2568315); [Gousios et al., 2014](https://dl.acm.org/doi/10.1145/2568225.2568260); [Soares et al., 2015b](https://dl.acm.org/doi/10.1145/2695664.2695856)).
+
+The bottom line is that researchers (even before these studies) already suspected that factors like: the reputation of the PR author, the implementation of new features or bug fixes, and inattention to code smells, anti-patterns and other coding rules, seem to tip the balance in favor of accepting PRs, as opposed to other aspects like objective quality measures.  
+
+
+### And what about gender?
+
+Yes… what about it? I mean, it’s incredible that in 2021 we are still wondering if there are gender-related differences in PR acceptance rates. But here we are, and (as I supposed) it seems that gender affects the acceptance rate of pull requests.
+
+However, perhaps not in the way you think, a study of an open-source software community ([Terrell et al., 2017](https://peerj.com/articles/cs-111/)) yielded unexpected results when they compared men versus women PR acceptance rates: women’s contributions are accepted more than men’s, but only when they are not identifiable as women.  
+
+
+### Well, at least my social networks don’t have an effect… or do they?
+
+Hey… you know… social networks affect everything nowadays. Indeed, people make a lot of inferences from the activity on social networks such as Github and Twitter. They infer technical goals, infer how people react to code reviews and even infer seniority. All these inferences influence group collaboration and reputation.
+
+Therefore, it is no surprise that pull requests from developers with more social contributions are more likely to be merged than those with fewer contributions ([Dabbishetal., 2012](https://dl.acm.org/doi/10.1145/2145204.2145396)). In fact, [Tsay et al., 2014](https://dl.acm.org/doi/10.1145/2568225.2568315) shows that better connected PR authors and project managers have higher PR acceptance rates.  
+
+
+### But wait… I thought pull requests had to do with the quality
+
+Yes… it was always about quality. Indeed, the spirit of pull requests is to give the opportunity to every developer of a project to review the code related to a changeset in a forum-like environment. This leads to better opportunities for engaging with the community and incorporating contributions ([Gousios et al., 2014](https://dl.acm.org/doi/10.1145/2568225.2568260), [2015](https://ieeexplore.ieee.org/document/7194588); [Veen et al., 2015](https://ieeexplore.ieee.org/document/7180094)). So why haven’t we seen quality named as the main acceptance factor in the previous section? Sadly, because of all the reasons for pull request rejection, technical ones are only a small minority ([Gousios et al., 2014](https://dl.acm.org/doi/10.1145/2568225.2568260), [2015](https://ieeexplore.ieee.org/document/7194588)).
+
+To confirm these suspicions, the author of the article under review studied the role of [PMD (Programming Mistake Detector)](https://pmd.github.io/) issues in pull request acceptance. PMD is a static source code analyzer used to find common programming flaws. Although the author expected that developers address quality issues in PRs, the statistical techniques applied showed that the acceptance/rejection of PRs didn’t have a relation with the presence of PMD issues. Not happy with that, they applied six machine learning models to confirm/reject these results.
+
+It turns out that the results confirmed that PMD issues, code smells, and anti-patterns are not considered as a problem when it came to  accepting or rejecting a pull request! Although I can’t say that this is a surprise due to all the previous section’s facts, I can’t stop thinking about the implications of this. All these quality misses seriously increase the risk of faults, increase bugs, and increase maintenance effort ([Khomh et al., 2009a](https://ieeexplore.ieee.org/document/5328703); [Olbrich et al., 2009](https://ieeexplore.ieee.org/document/5314231); [D’Ambros et al.,2010](https://ieeexplore.ieee.org/document/5562941); [Fontana Arcelli and Spinelli, 2011](https://www.researchgate.net/publication/254002878_Impact_of_refactoring_on_quality_code_evaluation)).
+
+Let me give you some examples related to some of these PMD issues. The authors manually reviewed 28 well-known Java projects (i.e. apache/cassandra, apache/kafka, hibernate/hibernate-orm, spring-projects/spring-frame) and found things that I see every day with my undergraduate students: god classes, speculative generality (named ‘‘Law of Demeter’’, don’t talk to strangers… remember?), duplicated code, long methods, and many other issues usually considered dangerous by different empirical studies ([Sjberg et al., 2013](https://ieeexplore.ieee.org/abstract/document/6392174); [Taibi et al., 2017](https://www.sciencedirect.com/science/article/abs/pii/S0950584916304128); [Palombaetal., 2018](https://link.springer.com/article/10.1007/s10664-017-9535-z)).
+
+
+### Implications of the study
+
+In this study (taking into account the background of the other researches mentioned) the authors give some advice.
+
+To contributors/developers, remember that although good ol’ clean code will make your life easier,  it may not be the key factor for the acceptance of your PRs. Pay attention to the coding standards and quality rules agreed upon by the team. Don’t forget other things like adding a complete test suite and clear documentation for your PR. Try to use what you have learned in this article to make your PR submissions mergeable without (too many) changes. Remember that you are the last person responsible of the quality of your code (at least, until researchers find a better way).
+
+Core team members interested in making PRs add value to their product should consider adopting an automated static analysis tool.
+
+It should be integrated with the CD/CI pipeline so contributors can validate their code automatically. They should adopt more systematic ways of code review like checklist based using well known [best practices](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/) to avoid measuring PRs based on perceived quality.
+
+Finally, spread the culture of objective quality patterns  regarding clean code. Avoid well documented code smells, or anti-patterns in the context of pull requests approval processes. At least until researchers find how to make the PR process more quality-centered again!
+
+[acknowledgments:md]
+This post, originally on [https://www.howdy.com/blog/pull-requests-far-away-from-heaven/](https://www.howdy.com/blog/pull-requests-far-away-from-heaven/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_May 13, 2021_: Original publication on howdy.com

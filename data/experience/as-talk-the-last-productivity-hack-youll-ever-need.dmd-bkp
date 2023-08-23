@@ -1,0 +1,48 @@
+{
+  "title": "AS Talk: The last productivity hack you'll ever need",
+  "date": "2021-07-27",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "“The last productivity hack you'll ever need“ talk",
+    "datebox": "Jul, 2021",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20210727",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "AS Talk"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+This article discusses three methods for staying organized: Dar-jo (a modified version of bullet journaling), the Pomodoro Technique, and dividing your day into quarters to avoid letting negative events affect your entire day.
+
+[duration:string]
+Jul 27, 2022 (33 minutes)
+
+[place_url:string]
+
+[place:string]
+Remote
+
+[content:md]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pTJQDABcrBc#center" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Staying organized and efficient can be difficult especially when you’re working from home. No matter your profession — whether you’re an engineering manager, software developer, or executive assistant — your organization skills will be a key component to your success in your career. So how do you do it? How do you get organized? Do you finally purchase a $40 bulky planner and dozens of colorful markers, tabs, and sticky notes? Do you color coordinate your Google Calendar? Do you get a white board and cast your weekly goals on it in hopes that it looming over you will help motivate you? There are a lot of ways to get organized out there and it can be an expensive task. But it doesn’t have to be. Software engineer Dario Macchi has spent years honing his organization skills through the process of trial and error and he’s found a way to help just about everyone get organized. How?! Well, we would say check out our quick 30 minute video above but given the fact that you’re still reading, we’re guessing you’re here for the cliff notes. Don’t worry, we got you! Dario uses one practice on a daily basis but threw in a couple bonus tips in case that one doesn’t work for you. His methods are:
+
+1.  **Dar-jo —** OK, OK, technically, it’s basically bullet journaling (or Bujo if you will) except Dario has put his own spin on it. This isn’t your typical bullet journaling where you spend two hours drawing/coloring a clock only to use 1/4 the page to write your daily schedule on it. Instead he’s taken the general idea of bullet journaling, created his own symbols/key and made a quick and easy way to get organized. ‍**‍**
+2.  **The Pomodoro Technique —** This technique involves time increments. I know what you’re thinking it’s named after a pasta sauce, it must have something to do with how long it takes to cook that sauce. Well, same but that couldn’t be further from the facts. The Pomodoro Technique uses a timer to break your work day into intervals — 25 minutes working / 5 minute break (repeat 4 times) after your 4th working increment you get a longer 15-20 minute break. This technique allows you to focus on one task at a time without exhausting your mental capacity. Oh, and as far as the name goes, it was named by it’s creator Francesco Cirillo after the tomato-shaped kitchen timer that was in his kitchen. ‍**‍**
+3.  **Divide your days into quarters —** You know how some days you wake up, start your day, and then immediately are hit with bad news. A code isn’t working properly, you forgot to send a follow up email, or maybe you accidentally missed your morning meeting. The negative emotions you feel in regards to that can take a large toll on your mood and success for the rest of the day. So instead of chopping it up to just a bad day, divide your days into quarters. That way, say you fail in Q1 of your day. It doesn’t need to effect the rest of your day. Just say, I had a bad early morning — I’ll make up for it in the other 3 quarters.
+
+Actively working to stay organized can make a huge difference in both your personal life and on your career path. It can be hard, and finding the right technique is half the battle. So give it a shot, it can only help! ‍
+
+[projects:md]

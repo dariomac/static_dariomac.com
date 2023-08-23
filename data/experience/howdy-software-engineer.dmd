@@ -42,15 +42,15 @@ In addition, I tried my best to contribute to any internal project or campaign t
 [projects:md]
 
 ## Writing projects
- - 20220412 - [Covid 19: the Van Helsing of Zombies & Orcs Scrum team](https://www.howdy.com/post/covid19-the-van-helsing-of-zombies-orcs-scrum-team)
- - 20210705 - [Detecting "Wont Fix" Issues with Machine Learning](https://www.howdy.com/post/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it)
- - 20210513 - [What Science Says About Getting Your PR Accepted](https://www.howdy.com/post/pull-requests-far-away-from-heaven)
+ - 20220412 - [Covid 19: the Van Helsing of Zombies & Orcs Scrum team](https://www.howdy.com/blog/covid19-the-van-helsing-of-zombies-orcs-scrum-team) {{! /covid19-the-van-helsing-of-zombies-orcs-scrum-team --}}
+ - 20210705 - [Detecting "Wont Fix" Issues with Machine Learning](https://www.howdy.com/blog/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it) {{! /how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it --}}
+ - 20210513 - [What Science Says About Getting Your PR Accepted](https://www.howdy.com/blog/pull-requests-far-away-from-heaven/) {{! /pull-requests-far-away-from-heaven --}}
 
 ## Company visibility tasks
  - 20220127 - [Meetup Python Chile: Quality in Agile Contexts](/meetup-python-chile-quality-in-agile-contexts)
- - 20210727 - [AS Talk: The last productivity hack you'll ever need](https://www.howdy.com/post/as-talk-the-last-productivity-hack-youll-ever-by-dario-macchi)
+ - 20210727 - [AS Talk: The last productivity hack you'll ever need](https://www.howdy.com/blog/as-talk-the-last-productivity-hack-youll-ever-by-dario-macchi) {{! /as-talk-the-last-productivity-hack-youll-ever-need --}}
 
 ## Internal initiatives
-- 20211125 - Partner description and workshop/demo
+- 20211125 - Partner introduction to all the company and workshop/demo
 - 20210429 - Earth Day Happy Hour - How to grow a tree from seed and convert it into a bonsai tree
  

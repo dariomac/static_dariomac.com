@@ -1,0 +1,107 @@
+{
+  "title": "Covid 19: the Van Helsing of Zombies & Orcs Scrum Team",
+  "date": "2022-04-12",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "COVID-19 was a monster that killed many Scrum teams, but also healed some of them.",
+    "datebox": "2022-04-12",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20220412",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+COVID-19 was a monster that killed many Scrum teams, but also healed some of them. Now that the pandemic is under control, it’s time to go back to the roots of agility and not to the old ways of working.
+
+[pub_date:string]
+2022-04-12
+
+[short_description:string]
+The article discusses how the COVID-19 pandemic affected Scrum teams, particularly Zombie Scrum teams and Orcs Scrum teams. The author compares the pandemic to Van Helsing, who studied monsters and their weaknesses to defeat them, and suggests that the pandemic was an effective Scrum monster-teams killer. The article also discusses how strong agile teams adapted easily to the pandemic, while Zombie Scrum teams struggled with remote work and lost their soul. The article concludes with a call to go back to the roots of agility and to continue delivering value as we did during the lockdown.
+
+[body:md]
+Do you remember 2019? Yes, 2019. That year will end with the beginning of the COVID-19 pandemic that hit our country in March of 2020. But let’s go back to October 3, 2019. That day I gave a talk named [Scrum Zombie & Orc Scrum teams](https://dariomac.com/jis-uy-2019-scrum-zombies-and-orcs-teams) as part of the [JIS.uy of 2019](https://is.uy/jis-uy/). In [that talk](https://youtu.be/kNdqZhWAHKg), I stated Zombie Scrum teams were Scrum teams that lost their soul. Also, I defined the Orcs Scrum teams as teams built by old, rigid organizations trying to be _à la mode_, playing agilism without releasing their pyramidal structures.
+
+![](/assets/z-nd-o-jis-uy-2019-1.png#center)
+
+But the pandemic struck us. And struck hard. We entered a dark time when everyone was trying to put their best foot forward, but all with a half-smile at best. The whole world from one day to the next was forced to work from their home (at best), isolated from the other coworkers just keeping virtual contacts. Because the whole world was sharing the same situation, we had no choice but to trust each other; among co-coworkers, contractors and clients, teams, and managers. In particular, managers and bosses were more affected because they could no longer control workers as in the _old-good days_ and were forced to define objectives to measure the productivity of individuals and teams.
+
+-   _Ok… but everyone here knows that… so, what about Van Helsing? I came here for the monsters’ hunter, remember?_
+-   Ok, ok… I will tell you about Van Helsing.
+
+The history of this family of monsters’ killers started with the well-known Professor Abraham Van Helsing, the archenemy of Count Dracula. But as I said, the family business is hunting monsters regardless of the cost. No matter the era, no matter the monster on duty, they confront them looking for their weak points and using those weak points to attack and defeat the monsters.
+
+Now, why did I mention Van Helsing in the title of the article, and what’s the relationship with my 2019’s talk about monstrous Scrum teams?
+
+I did it because the COVID-19 was an effective Scrum monster-teams killer. Like Van Helsing, it studied the monsters, their weaknesses (all the [RAAAAUUUUGHHHHs](https://dariomac.com/scrum-zombies-and-orcs-teams#zombie-scrum-team) and [HRROOGAs](https://dariomac.com/scrum-zombies-and-orcs-teams#orc-scrum-team) of my 2019’s article), and using them as weapons, killed these Scrum teams easily.
+
+### I need examples, please.
+
+If you are like me, at this moment you might need examples to tie everything together, so I will _dissect_ my statements into something more concrete.
+
+Two years ago I said Zombie Scrum teams “_don’t value working software, response to change, customer collaboration nor individuals and interactions_” and use “_anti-agile methods cloaked in agile terminology_”.
+
+If they didn’t value the working software before COVID-19, think of that poor piece of code being developed from its noisy home surrounded by bored kids. Also, if they didn’t like requirements changes when they were working together as a _team_, how could they react now everyone is working on their own? Finally, Imagine their interaction with customers and the collaboration with co-workers! They weren’t good at interacting in person, so now they’ll have to struggle with video communication platforms and trust each other, they’ll suck.
+
+Also, I said zombieism can be healed. However, no one (not even in their worst nightmares) thought of what COVID-19 could do to these teams.
+
+In this scenario of chaos, agility paid off. Remember that agility is managing on the edge of chaos, so strong agile teams adapted easily and our Van Helsing didn’t pay attention to them (after all, they weren’t monsters). But, many Zombie teams quickly died at the beginning of the pandemic, which surprisingly made others heal. Why? Survival instincts. They were forced to be agile again. They began to improve the way they communicated, to give value to their customers (otherwise they would lose them), and began to trust each other. That’s how they healed.
+
+### What about Orcs?
+
+Back in 2019, I said that Orcs are _“battle fodder used by beings of greater (evilish) power and intelligence”_ and these beings _“build Orc Scrum Teams to be in fashion (…) in old, rigid organizations (…) trying to be à la mode, being agile, but also keeping the power that they have inside those (commonly) pyramidal structures”._
+
+![](assets/z-nd-o-jis-uy-2019-4.png#center)
+
+Van Helsing didn’t have mercy with these evil beings: he just killed them.
+
+COVID-19 destroyed pyramidal structures, forcing managers to throw away all the traditional engineering pre-concepts they had. They had to forget all the Taylor-based knowledge and control structures they had built up over the years and start (desperately) adopting new, agile ways of doing things. Either that or stop the entire production line until lockdowns ended (extreme, but I know of a couple of cases that did exactly that).
+
+And… What happened to the orcs? Did they die too, or just their leaders? Van Helsing was merciful to the orcs because he knew it wasn’t their fault they were orcs, and he let them live. Once their chiefs died, they went from being ugly and dirty to beautiful creatures with free will again!
+
+## What now?
+
+But as Judas Priest says in “[Evil Never Dies](https://www.youtube.com/watch?v=ytzrxwg3Yjo)”:
+
+_A master of deception_
+
+_Who takes you by the hand_
+
+_Then leads you to the palace of the damned_
+
+The evil is awakening, slowly and without the power it had, but gaining strength at each time. Now that the COVID-19 _feels_ to be under control (Van Helsing is resting) many of those creatures that felt the freedom of not being Orcs or Zombies anymore are in danger.
+
+It’s time to go back to the roots of agility, to take this pandemic as an opportunity to work better, to continue to deliver value as we did during the lockdown. Think about it for a moment. Didn’t we do well all this time?
+
+Teams gave value to their clients, using creative and innovative ways to work. Teams also improved their abilities to communicate internally and externally; I saw many of them evolve their use of video communication from clunky and long calls full of technical glitches and _sorry, I think you are muted_ to broad use of the tool, sharing screens, multiple devices on the same call, splitting the audience in rooms and using a myriad of collaborative and complementary tools.
+
+Also, they worked in a more transparent way because traditional managers were forced to use agile tools and concepts such as online task boards and goals as performance measurements. From one day to the next all the work performed by everyone started to become visible, noticeable, and auditable. Again, I saw old orcs who used to work just enough not to attract attention, work more during the pandemic than in the last five years. But also they were very creative in solving issues like how to perform planning meetings, how to do (and improve) retrospective meetings, and how to train people to be more agile without being in contact.
+
+## Conclusion
+
+Pandemic wasn’t good in any sense, people suffered around the world and we saw the worst and the best of humanity during it. But, as we suffered without being asked whether we wanted to or not, I think we need to keep with the good things that were born during it.
+
+Van Helsing (COVID-19) killed a lot of Zombi and Orc teams around the world. But those who survived also changed. Radically changed. Changed in a way that in many cases is irreversible and is causing some problems now. People who have tasted what it’s like to be free to work from home, managing their own time and being measured by objectives and not by time cards, don’t want to go back.
+
+Agility proves to be a good way to work on the edge of chaos, and what more chaotic scenario than a pandemic? So let’s stay agile and not go back just because it’s always been done that way.
+
+[acknowledgments:md]
+This post, originally on [https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges](https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Apr 12, 2022_: Original publication on howdy.com
