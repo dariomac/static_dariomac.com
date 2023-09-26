@@ -1,0 +1,130 @@
+{
+  "title": "Not another cheat sheet about technical interviews",
+  "date": "2923-09-25",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "This article provides a comprehensive guide to preparing for a technical interview.",
+    "datebox": "2023-02-07",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230207",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+This article provides a comprehensive guide to preparing for a technical interview. It covers various aspects such as researching the job, preparing a bio, setting up your environment, and formulating questions for the interviewer. The article also emphasizes the importance of coding interviews and provides useful resources and links to help understand various algorithms and data structures. Furthermore, it underscores the value of having a mentor or coach to provide personalized advice, build confidence, and stay motivated during the preparation process. The article concludes with a reminder that practice is key in acing a technical interview.
+
+[pub_date:string]
+2023-02-07
+
+[short_description:string]
+This article provides a comprehensive guide to preparing for a technical interview. It covers various aspects such as researching the job, preparing a bio, setting up your environment, and formulating questions for the interviewer. The article also emphasizes the importance of coding interviews and provides useful resources and links to help understand various algorithms and data structures. Furthermore, it underscores the value of having a mentor or coach to provide personalized advice, build confidence, and stay motivated during the preparation process. The article concludes with a reminder that practice is key in acing a technical interview.
+
+[body:md]
+Technical interviews can be intimidating, especially if you’re unsure what to expect. Many candidates turn to cheat sheets and online resources to get an idea of what they will be asked and how to prepare. **While these resources can be helpful, they are often so scattered all over the web that the good ones are hard to find.** Also, they provide a different level of specific advice than a good mentor or tutor.
+
+## **Cheat sheets and online resources**
+
+When I started writing about technical interviews, I discovered a wealth of online resources available. There are even books on how to ace technical interviews, from general tips and advice to problem-solving strategies and specific types of questions.
+
+So, how can we talk about a subject that has already been discussed without repeating ideas that have already been said?
+
+My approach will focus on **providing actionable advice for candidates.** Instead of repeating the same guidelines and tips, I will focus on **concrete strategies and insights and then redirect to the existing documentation**. Think of it as a technical interview content hub.
+
+## **How to prepare for the interview**
+
+You finally made it! You got a technical interview for an amazing job at the company you want to work for. **What now?** 😬
+
+It’s normal to feel nervous: don’t let others tell you that it is because you are a junior and haven’t prepared enough! **Even senior software developers feel nervous. They often fear being too familiar with programming concepts (or languages) outside their expertise.**
+
+### **Do your homework: research the job**.
+
+This shouldn’t be said, but sadly, many people come to an interview without doing the most basic research about the company and the job. And if by some miracle you pass the screening interview without doing that research, you won’t be so lucky twice.
+
+Find out (or ask) which is the **technology stack, who works there, and what kinds of products they build**. Also, discover if they have any **public repositories or OSS projects to take a sneak peek at**. Finally, try to find out **who will be your interviewer and analyze their Github profile.** In the end, the goal is to learn about their coding style, the technologies, and the libraries they use so you can use that information to your advantage during the interview.
+
+### **Prepare a short bio**.
+
+While using the same self-presentation speech at every interview is tempting, please don’t do it! Interviewers want to hear about the **experience you have that is relevant to the position you are trying to land.**
+
+[This Tech Interview Handbook section is handy for](https://www.techinterviewhandbook.org/self-introduction/) getting into the topic. But, I think the “short introduction” should be shorter than the examples shown. Think about something you can say in a minute or even less.
+
+### **Get your setup ready**.
+
+“Ok, that one, I understand; you mean getting my audio and camera and headphones and so on working, right?”.
+
+Well, yes and no. Yes, your audio and camera should work (Didn’t we learn anything during the 2-years-lock-up because of the pandemic?), and headphones are a must to get clearly understood in a virtual conversation. But no, that’s not the only thing I meant.
+
+You should also pay attention to your [room light](https://www.youtube.com/watch?v=rGcAM1CNEU0) and [background](https://anyvoo.com/home-office-background/), wear appropriate clothing (no, you can’t wear those old pajamas), and have the camera positioned correctly. Also, knowing which coding environment will be used during the interview is always advantageous. If you know it beforehand, don’t lose the opportunity to become familiar with it. Usually, you’ll use a solution with syntax highlighting, auto-completion, and testing capabilities, such as CoderPad or similar.
+
+### **Prepare some questions**
+
+Remember that any interview is an excellent opportunity to **learn more about your future job**, the team you will work with, the company culture, and how you will fit in (if you do!). Don’t you know what to ask? Here are some [Questions to ask your interviewer](https://www.howdy.com/questions-to-ask-your-interviewer/).
+
+## **During the interview**
+
+As soon as the interviewer tells you about the problem you have to solve, you put your head down and try to solve it… **STOP! What did you do wrong?**
+
+You missed three things before starting to code:
+
+1.  **Repeat the question/problem to the interviewer** to ensure both are on the same page.
+2.  **Ask questions! (it won’t hurt you).** Instead of assuming how your inputs/outputs will be, you can ask. Also, if your code has some side effects and you want to clarify it to the interviewer, it’s ok.
+3.  If the question/problem you need to solve is still too vague, maybe it’s time to **create a quick example to ask the interviewer if you have the right idea.**
+
+### **Coding interview**
+
+Here is a set of advice specifically for coding interviews:
+
+-   Algorithms are a niche case. It is crucial to remember that most interviewers will only expect you to place them on the bat. [Source.](https://coderpad.io/resources/learn/technical-interview-cheat-sheet/#:~:text=Consider%20algorithms%20in%20niche%20cases) 
+-   Here is a list of the main algorithms you should know with references to review/practice:
+    -   [Search Algorithms](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#search-algorithms)
+        -   [Breadth First Search](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#breadth-first-search)
+        -   [Depth First Search](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#depth-first-search)
+    -   [Sorting Algorithms](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#sorting-algorithms)
+        -   [Selection Sort](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#selection-sort)
+        -   [Insertion Sort](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#insertion-sort)
+        -   [Merge Sort](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#merge-sort)
+        -   [Quick Sort](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#quick-sort)
+-   Explain a high-level approach, even if it is a brute-force one. Seriously, don’t try to get the solution working and be efficient in the same attempt. You will have time, in the end, to enhance it and make it more efficient. You can even leave it as is and discuss possible improvements you could make to make it more efficient, scalable, or reusable. [Source.](https://medium.com/hackernoon/the-tech-interview-cheatsheet-8e28d94f5f04#:~:text=Explain%20a%20high%20level%20approach%20even%20if%20it%20is%20a%20brute%20force%20one)
+-   Point out when you’re cutting corners. It should be evident that you do this intentionally to simplify the scenario or because you are in a fictitious situation.
+-   Discuss the time and space complexity of your approach. The old Big O!. [Source.](https://coderpad.io/resources/learn/technical-interview-cheat-sheet/#:~:text=discuss%20the%20time%20and%20space%20complexity%20of%20your%20approach)
+-   No one expects you to be the next Turing, but you should be able to justify your choice between different data structures. [Source 1](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#asymptotic-notation), [Source 2.](https://twitter.com/hurrayforhowdy/status/1581000413397950464?s=20&t=zXH4k8Eb_86GEhQPjGgSfg)
+-   Talking about data structures, here is a list of the most important ones, with references to review/practice with them:
+    -   Array [(link 1](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#array), [link 2](https://www.techinterviewhandbook.org/algorithms/array/)[)](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#array)
+    -   Linked List [(link 1](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#linked-list), [link 2](https://www.techinterviewhandbook.org/algorithms/linked-list/)[)](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#linked-list)
+    -   Hash Table or Hash Map [(link 1,](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#hash) [link 2](https://www.techinterviewhandbook.org/algorithms/hash-table/)[)](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#hash)
+    -   Queue ([link 1](https://www.techinterviewhandbook.org/algorithms/queue/))
+    -   Stack ([link 1](https://www.techinterviewhandbook.org/algorithms/stack/))
+    -   Binary Tree [(link 1,](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#binary-tree) [link 2](https://www.techinterviewhandbook.org/algorithms/tree/)[)](https://github.com/TSiege/Tech-Interview-Cheat-Sheet#binary-tree)
+    -   Graph ([link 1](https://www.techinterviewhandbook.org/algorithms/graph/))
+    -   Trie ([link 1](https://www.techinterviewhandbook.org/algorithms/trie/))
+-   Test your code! Remember that coding test cases is an essential part of your skills as a developer and, most of the time is the way to show your code works! [Source.](https://www.techinterviewhandbook.org/coding-interview-prep/#:~:text=Testing%20%2D%20Ability%20to%20test%20code%20against%20normal%20and%20corner%20cases%2C%20self%2Dcorrecting%20issues%20in%20code)
+
+## **The help of a mentor**
+
+A mentor or coach who has undergone technical interview processes can offer practical advice specific to your needs and goals. They help you identify areas where you may need to improve or focus during your preparation and guide you in addressing different questions and challenges.
+
+But most importantly, a mentor or coach can help you build confidence and stay motivated. Technical interviews can be stressful, and it’s easy to feel discouraged if you’re not seeing the progress you want. A mentor or coach can offer encouragement and support to help you stay focused and keep working towards your goals.
+
+Ultimately, the best way to prepare for a technical interview **is to practice, practice, and then practice some more.** This means working through sample questions and problems and seeking out opportunities to **apply your skills and knowledge in real-world situations**. A mentor or coach can help you identify the most effective ways to practice and give you feedback on your progress.
+
+So, don’t rely on cheat sheets and online resources when preparing for a technical interview. Find a mentor or coach who can offer targeted advice and support to help you succeed. Good luck! With the proper preparation and support, you’ll be well on your way to acing your technical interview.
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+
