@@ -1,0 +1,144 @@
+{
+  "title": "The crucial role of Software Communities in developers’s growth",
+  "date": "20230510",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "How important is for a software developer to be part of a community?",
+    "datebox": "2023-05-10",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230510",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+This article discusses the importance of software developer communities and why developers like to be part of virtual or physical communities. The author defines a software developer community as a group of people who are all interested in making software, work together to improve their skills, share what they know, and help each other by having a unique identity. The article suggests that joining a software development community is vital for growth and that it is normal to want to be part of a group or community with people who have similar hobbies, views, or goals.
+
+[pub_date:string]
+
+[short_description:string]
+
+[body:md]
+This article won’t be to tell you which are the best communities out there. In fact, there are a lot of such articles published on the internet and most of them became obsolete as soon as they were published. Instead, my intention through this article is to shed some light on why software developers like to (or need to) be part of virtual or physical communities.
+
+People have always wanted to be a part of something bigger, and they have been building groups since the beginning of society. But, come on! I can’t be the only one wondering why on earth we software developers, the loneliest, most antisocial, weirdest kind of people (I’m kidding, obviously) want to belong to communities.
+
+## What are the software developers communities anyway?
+
+I’m sure it should be a very formal and precise definition of what a community is. In fact, I know there are sociological studies on these types of communities \[1\], but I want to make it simple and look at the issue through the eyes of a software developer. I would say that a software developer community is a group of people who are all interested in making software, work together to improve their skills, share what they know, and help each other by having a unique identity.
+
+## Why joining a software development community is vital for growth?
+
+The need to join is a basic part of what it means to be human. It’s normal to want to be a part of a group or community with people who have similar hobbies, views, or goals. This feeling of belonging brings together people who might not have met otherwise and leads to relationships based on shared values and experiences.
+
+But I also said (and I think we all agree at least a little bit) that software workers are not the stereotypical chatty people who always want to be around other people.
+
+So, what is the root cause that makes us join and be a very active part of these communities?
+
+As I usually do when I don’t have a clue about something, I search it in Google and ask ChatGPT (not always in that order 🙂). Using both tools and adding some of my own experience, I built an initial list of reasons or benefits that developers get from being part of a community. This list will become my hypothesis:
+
+-   **Technical support**: Communities can provide technical assistance and solutions to specific problems related to software development.
+-   **Networking**: Communities are an excellent way for developers to connect with each other and establish professional relationships that can lead to job opportunities or future collaborations.
+-   **Constructive feedback**: Communities can provide valuable feedback on a developer’s work, allowing them to improve their skill and quality of work. Also, they can give that kind of feedback to other peers.
+-   **Emotional support community**: Communities allow developers to connect with people who share their interests and challenges, which can be beneficial for their emotional and mental well-being (i.e. recent layoffs, well-being, healthcare)
+-   **Early access to tools and resources**: Some communities have early access to new tools or resources before they are publicly available, which can be beneficial for developers.
+-   **Job opportunities**: Communities are an exceptional way for developers to learn about job opportunities in companies related to their field.
+-   **Events**: Some communities organize in-person/virtual events such as hackathons or conferences, which are an opportunity to meet new people and learn new things.
+-   **Project collaboration**: Communities can be a place to find collaborators on personal or professional projects.
+-   **Access to mentors**: Communities can provide access to experienced mentors who can help developers grow and improve in their careers.
+-   **Access to news**: Communities are one of the most important sources of news for developers, who often share that news among communities, amplifying the reach of the news.
+-   **Access to gossip**: Why not? After all, we developers are people… and we love fresh gossip to distract us from the daily grind of technical stuff.
+
+### Hypothesis validation
+
+In order to be sure about this hypothesis, and because we are engineers after all, and trust in numbers, I decided to test it against reality through a very simple survey. I asked:
+
+-   How does your community affect your daily life? (give it a score from 1 to 10)
+-   Say what these communities give you.
+
+To answer the second question, people could check at least 4 of the 11 items in my hypothesis, but they could also add a new one if they thought the list was not complete.
+
+This survey was shared with +20 communities across LATAM, involving hundreds of software developers. Later it was opened to LinkedIn and Twitter to get more results. After some purge we et 50 answers to analyze.
+
+### Main survey results
+
+For software developers, belonging to communities is essential, as can be seen from the answers to the first question.  
+
+![](assets/the-crucial-role-of-software-communities-in-developerss-growth-1.png#center)
+
+72% of people stated that communities are important to them, with 42% rating the importance above 8.
+
+If you ask me this question, I would say 10 because communities allow me to connect with like-minded individuals who share the passion for technology and coding as me. I am fortunate to have a Howdy’s office in my country that I can go to whenever I want (or need), but often developers work from home, spending long hours in front of computer screens, which can lead to feelings of isolation and disconnection. I think being part of a community provides a sense of support and camaraderie that helps alleviate these negative feelings.
+
+But let’s see what the answers to the second question indicate to validate this.
+
+![](assets/the-crucial-role-of-software-communities-in-developerss-growth-2.png#center)
+
+Let’s analyze the main benefits that people choose from my hypothesis, giving my own opinion on each of them.
+
+**Networking**  
+Being part of a software engineering community can provide significant benefits for networking. Developers can connect with like-minded individuals who share similar interests and goals. These connections can lead to job opportunities, collaborations on projects, or even mentorship.
+
+**Job opportunities**  
+Through networking, developers can find potential employers who are looking for their specific skill sets. They may also come across job openings that may not be advertised in traditional channels. This is because companies often rely on word-of-mouth referrals from the community to find suitable candidates.
+
+**Events**  
+Being part of a software engineering community that organizes events such as hackathons or conferences offers several benefits. Firstly, attending these events provides an opportunity to network with like-minded individuals from the industry. This is especially important for those new to the field (as someone answered in the Others option) or looking for job opportunities. Meeting people from different companies can also provide insights into other areas of the industry and can help you keep up with the latest trends and technologies. Secondly, events organized by software engineering communities often feature talks and presentations by experts in the field. These talks can be a great way to learn new things and stay up-to-date with emerging technologies, methodologies, and best practices. You can gain valuable insights into topics that interest you, meet new people who share your passion for software engineering, and even pick up new skills.
+
+**Access to news**  
+Being part of a software engineering community provides the benefit of being up-to-date with the latest news and trends in the industry. Communities constantly share news about new technologies, software updates, and best practices. This information can be crucial for staying competitive in the field and keeping your skills relevant.  
+Furthermore, communities often provide a platform for discussion and analysis of news, allowing members to gain a deeper understanding of the implications and potential impact. This can lead to valuable insights and ideas for innovation or improvement in one’s own work.  
+Additionally, by sharing news within communities, the reach of important information is amplified. This means that members have access to a greater pool of knowledge and resources than they would on their own, ultimately leading to better outcomes for projects and organizations.
+
+## Means of knowledge sharing
+
+Now that we know that communities are important and what their main benefits are, how do I choose which communities I want to belong to?
+
+One of the key concepts around a community is how they make it work; how do they get software developers hooked into being an active part of the community?
+
+Some communities base their workflow around physical interaction among their members. This is the case of Meetups that entrust the organization to the meetup.com website and most of the time are built around a technology or technical concept. Another example is BeerJS, a set of communities around the world that uses beer as an excuse to talk about software development (or the other way around 😂). 
+
+There are others that build remote communities basing their operation on the use of some tool or set of tools. These communities (in my opinion) are larger than the first group, with thousands of software developers being part of them. This is the case of those who use Slack, Discord, Telegram, online forums, and even GitHub or Stack Overflow.
+
+But it’s not the size (or the tools) that makes communities touch our hearts; nor is it the physical or remote approach. So what’s the secret to some communities being so successful versus others?
+
+Here we can only make guesses, but some of the main reasons could be:
+
+-   **Clear purpose and goals**: Successful communities have a clear purpose and set of goals that guide their activities. This helps members understand the value they can get from being part of the community and motivates them to participate actively.
+-   **Welcoming and inclusive culture**: Communities that prioritize creating a welcoming and inclusive culture tend to attract more diverse members who feel comfortable sharing their ideas and collaborating with others.
+-   **Active participation from leaders**: The leaders of thriving communities are typically active participants themselves, engaging with members, sharing knowledge, and driving the community’s direction.
+-   **Value-added activities**: Communities that offer value-added activities such as mentorship programs, hackathons, or workshops tend to attract more members who are looking for opportunities to learn new skills or advance their careers.
+-   **Consistent communication**: Regular communication among community members helps keep everyone engaged and up-to-date on new developments or events within the community.
+-   **Recognition for contributions**: Recognizing member contributions through awards or other forms of recognition encourages active participation from members and motivates them to continue contributing in meaningful ways.
+
+## Ending
+
+In conclusion, software developer communities are essential for industry professionals because they provide a sense of belonging and support that can be lacking in an isolated work environment. Through networking, employment opportunities, events, access to news, and means of knowledge sharing, developers can connect with like-minded people who share their passion for technology and coding.
+
+In addition, communities offer a wide range of benefits to software developers. These include technical assistance, access to tools and resources, employment opportunities, collaboration on projects, and access to events. Many participants noted that the communities are an excellent place to network with other industry professionals. Constructive feedback and emotional support were also considered important, indicating that communities are a valuable source of guidance and assistance for developers.
+
+Many respondents also stressed the importance of early access to tools and resources, indicating that communities can provide exclusive access to the latest technological advances. Participants also mentioned the need to stay informed about news and developments, highlighting the importance of keeping abreast of the latest trends and developments in the field. Overall, software engineering lets developers improve their skills, advance their careers and build valuable industry connections.
+
+As the tech industry continues to evolve rapidly, software developer communities will likely play an increasingly important role in the professional lives of developers. Whether through physical or virtual means of interaction, these communities provide a space where developers can learn from each other, get support when they need it most, and stay up-to-date on the latest news and trends in the field. So if you’re a software developer who hasn’t yet joined a community – why not give it a try? You might be surprised at how much you gain from being part of one!
+
+-   Kumar, Shreya, “Communication Patterns and Strategies in Software Development Communities of Practice”, Open Access Dissertation, Michigan Technological University, 2016. [https://doi.org/10.37099/mtu.dc.etdr/186](https://doi.org/10.37099/mtu.dc.etdr/186) – online: [https://www.mtu.edu/cs/graduate/dissertations/pdfs/communication-patterns-and-strategies-in-software-development.pdf](https://www.mtu.edu/cs/graduate/dissertations/pdfs/communication-patterns-and-strategies-in-software-development.pdf)
+
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+

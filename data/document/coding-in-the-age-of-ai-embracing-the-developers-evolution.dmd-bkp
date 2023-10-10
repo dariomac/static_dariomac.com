@@ -1,0 +1,93 @@
+{
+  "title": "Coding in the Age of AI: Embracing the Developer’s Evolution",
+  "date": "20230530",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Impact of AI-powered code generators to increase efficiency and productivity.",
+    "datebox": "2023-05-30",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230530",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+This article discusses the impact of AI on software development, including the use of AI-powered code generators to increase efficiency and productivity. The article also explores the responsibility and critical approach that developers should take when using AI tools, as well as the emergence of new skills and job roles in the field. Overall, the article encourages developers to embrace the changing landscape of coding in the AI era and approach technological advances with responsibility and a willingness to learn new skills.
+
+[pub_date:string]
+2023-05-30
+
+[short_description:string]
+This article discusses the impact of AI on software development, including the use of AI-powered code generators to increase efficiency and productivity. The article also explores the responsibility and critical approach that developers should take when using AI tools, as well as the emergence of new skills and job roles in the field. Overall, the article encourages developers to embrace the changing landscape of coding in the AI era and approach technological advances with responsibility and a willingness to learn new skills.
+
+[body:md]
+In recent times, Artificial Intelligence (AI) has taken the technological world by storm, and code generators are one of the significant advancements in this field. Code generators are tools that automatically generate code snippets or even entire applications using AI algorithms. These tools have been introduced to automate routine programming tasks and reduce the time and effort required to develop software. Some examples of these code generators include Google’s AutoML, OpenAI’s GPT-4 (mostly through ChatGPT), and GitHub’s Copilot.
+
+However, the impact of AI on software developers is a topic of significant concern. On the one hand, some experts argue that AI will revolutionize how developers work, as it will make their job more efficient and productive. On the other hand, there are concerns that AI will eventually replace human programmers altogether, making their skills obsolete.
+
+To shed light on the topic, the [NodeCO](https://nodeco.org/) community took the initiative to organize a live discussion. This insightful event [was streamed on YouTube](https://www.youtube.com/watch?v=v6KKoQSOmyM) three months ago, bringing together industry experts, seasoned developers, and AI enthusiasts to explore the implications of AI in software development. The discussion aimed to foster a deeper understanding of how code generators and other AI-driven tools are shaping the future of coding, and to encourage developers to embrace the evolving landscape. With diverse perspectives and real-world insights shared during this engaging discussion, participants gained valuable knowledge and inspiration to navigate the exciting era of AI-powered development.
+
+## The Impact of AI on Software Development
+
+One of the main topics of the live discussion was the significant impact of AI technology on the efficiency and productivity of software developers. AI-powered code generators are changing the game by reducing repetitive tasks associated with coding and automating bug detection and fixing.
+
+For example, as a software developer, writing repetitive code for authentication can be time-consuming and repetitive. This involves creating login and user registration functions, configuring sessions and cookies, and managing password encryption. An AI-based code generator can help in this regard by generating the necessary code based on your specifications. Simply specify the type of authentication (such as email + password or social media login), the type of database to be used (such as MySQL or MongoDB), and other parameters, and let the AI do the rest. This not only reduces repetitive tasks but also ensures code consistency and accuracy, making it easier to maintain and scale over the long term.
+
+And not only saves time! By doing this, developers can focus on higher-level problem-solving that requires human creativity and interaction with potential/real users improving the quality of the final product. Additionally, AI tools can provide insights and suggestions that help developers make better decisions and avoid mistakes, further enhancing the speed and efficiency of the team’s work.
+
+However, at one point in the talk, it began to be debated whether this reliance on AI tools could lead to a decrease in the overall quality of developers, as they could become complacent and over-reliant on automated processes.
+
+One example of this could be if a developer relies too heavily on an AI tool for code analysis and optimization. Even though the AI tool might be able to find places to improve, it might not fully understand the code’s context and purpose (and I haven’t even brought up hallucinations). If the developer blindly implements all suggested changes without fully understanding them, they may inadvertently introduce new bugs or reduce the efficiency of the code. This could lead to a decrease in the overall quality of their work.
+
+Therefore, it is essential that developers embrace AI as a tool and not as a substitute for their skills and knowledge.
+
+## Responsibility and Critical Approach when Using AI Tools
+
+As AI technology continues to advance, we are seeing more and more tools being developed that use machine learning to generate code. While these tools can be incredibly useful in streamlining the development process (as we discussed previously), it is important for developers to approach them with a critical eye. In this part of the live streaming, we discussed the responsibility that developers have when using AI tools, including the importance of verifying and validating code generated by GPT and other AI tools.
+
+We already stated that developers should not blindly copy or use code generated by an AI. Besides quality issues, it is essential that developers verify and validate AI code because even small errors or inconsistencies can lead to security flaws or other issues down the line. For example, if a developer copies code verbatim from an AI tool without verifying its accuracy, they may unwittingly introduce a vulnerability into their software. 
+
+One example of a security flaw resulting from copying code verbatim comes from the world of IoT devices. In 2018, researchers discovered that many smart locks on the market were vulnerable to attack because they used identical key codes that were hard-coded into their firmware. This meant that anyone who knew the code could easily unlock any of these locks. The root cause of this vulnerability was traced back to a single piece of software that was widely used by many lock manufacturers – and which had been copied verbatim without any modifications.
+
+To avoid this, developers should carefully review any code generated by AI tools before integrating it into their projects.
+
+Github’s Copilot deserves a separate treatment because there are times when you may think he (or she?… whatever) knows your code better than you. Besides the potential legal implications of it (a topic to be discussed at another time), Copilot can be incredibly helpful in suggesting blocks of code or auto-completing functions. But, it is still up to the developer to ensure that these suggestions are appropriate for their specific use case, checking things like variable names, input parameters, and error handling – all things that Copilot may not be able to take into account on its own.
+
+## The emergence of new skills
+
+The emergence of Artificial Intelligence (AI) has raised concerns about the displacement of human jobs, especially in the field of software development. Indeed, this was what we were discussing in the NodeCO community when we moved to the live discussion. However, AI can also enhance our jobs and create new skill sets and specialization areas. In this section, we discussed how AI can transform job definitions and lead to the emergence of new skills.
+
+First, writing effective prompts is a crucial aspect of working with AI language models like GPT or Midjourney. It requires a deep understanding of the language model’s capabilities and limitations, as well as an ability to phrase questions or statements in a way that elicits the desired response. This skill is similar to writing good search strings for search engines, with the added complexity of working with natural language and the non-determinism of the results.
+
+With the rise of AI language models and tools, a new job role named Prompt Engineer has emerged. A prompt engineer is responsible for creating prompts that guide AI models to perform specific tasks or generate specific outputs. These people have the deep understanding we talked about plus the problem domain to which it applies. As an example, I told during the live discussion that I constantly see fantastic photorealistic images made by Midjourney, but when I try it I only get mediocre results, to say the least. And the reason for this is the prompts because the first ones are incredibly specific, made by people who know how to write them but also have knowledge of photography, leaving nothing to chance.
+
+As AI becomes more pervasive in software development, we can expect to see new areas of specialization emerge within the field. For example, developers may specialize in building conversational interfaces or designing prompts (maybe reusable prompts as templates) for specific use cases.
+
+Software developers will need to embrace new skill sets as they emerge to stay relevant in our rapidly evolving industry. While not everyone may become a prompt engineer, having a basic understanding of how to work with AI language models will be essential for many roles within software development.
+
+## Conclusion
+
+During this live discussion, we explored the impact of AI on software development, specifically how AI-powered code generators can increase efficiency and productivity by reducing repetitive tasks and automating bug detection and fixing. Some people worry that developers will get worse if they rely too much on AI tools, but it’s important for developers to look at these tools with a critical eye and use them as tools, not as a replacement for their skills and knowledge.
+
+Also, we explored how AI can transform job definitions and lead to the emergence of new skills. And roles, as the prompt engineer. As software development continues to evolve with the integration of AI technologies, developers will need to embrace new skill sets to stay relevant in our rapidly evolving industry.
+
+Overall, through this article (and the live discussion) we encourage developers to embrace the changing landscape of coding in the AI era. It is essential that we approach these technological advances with responsibility, critical thinking, and a willingness to learn new skills.
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+
