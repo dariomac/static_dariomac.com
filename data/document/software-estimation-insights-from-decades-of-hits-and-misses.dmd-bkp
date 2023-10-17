@@ -1,0 +1,140 @@
+{
+  "title": "Software Estimation: Insights from Decades of Hits and Misses",
+  "date": "2023-10-16",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "This article explores the challenges and best practices of software estimation, providing unconventional ideas and personal experiences.",
+    "datebox": "2023-07-20",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230720",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+This article explores the challenges and best practices of software estimation, providing unconventional ideas and personal experiences to help developers make better estimates. The author emphasizes the importance of acknowledging uncertainty, communicating openly, and learning from past projects to improve estimation accuracy. The article also highlights wrong approaches to estimation, such as blind guessing and fixed mindsets, and suggests proper ways to estimate tasks, such as breaking down work into small tasks and using uncertainty charts. Additionally, the article discusses the significance of estimation in software development, including planning and resource allocation, setting realistic expectations, prioritizing tasks, identifying potential risks, and improving decision-making. Finally, the article addresses the role of AI in software estimation, highlighting its potential benefits and limitations and emphasizing the need for human expertise and judgment.
+
+[pub_date:string]
+
+[short_description:string]
+This article explores the challenges and best practices of software estimation, providing unconventional ideas and personal experiences to help developers make better estimates. The author emphasizes the importance of acknowledging uncertainty, communicating openly, and learning from past projects to improve estimation accuracy. The article also highlights wrong approaches to estimation, such as blind guessing and fixed mindsets, and suggests proper ways to estimate tasks, such as breaking down work into small tasks and using uncertainty charts. Additionally, the article discusses the significance of estimation in software development, including planning and resource allocation, setting realistic expectations, prioritizing tasks, identifying potential risks, and improving decision-making. Finally, the article addresses the role of AI in software estimation, highlighting its potential benefits and limitations and emphasizing the need for human expertise and judgment.
+
+[body:md]
+Much has been said about estimation in software development, you know? There are tons of blog posts and articles out there advising on how to do it better. But hey, let’s shake things up a bit and look at it from a different angle. I don’t wanna write another boring post on estimation, instead, I wanna dive into some unconventional ideas and share my own experiences with you. Let’s get real and explore this intriguing subject freshly!
+
+## Acknowledging uncertainty
+
+Estimating projects is tough, and the first thing to remember is that no two projects are the same. Each project has its own challenges and stuff that can mess with the estimation process. So, it’s important to keep an open mind and not assume things based on past experiences. Instead, you need to carefully look at all the details and factors of the current project to come up with a better estimate.
+
+Another thing to keep in mind is that uncertainty is always there. No matter how much we plan or analyze, there will always be unknowns. Things can change, risks can pop up, or issues can happen during implementation. So, it’s smart to account for this uncertainty by adding extra time or resources in case things don’t go as planned.
+
+Communication is super important too. Everyone involved in the project needs to talk openly and clearly throughout the estimation process. This means discussing expectations, making sure everyone understands what needs to be done, addressing any concerns or doubts, and keeping each other updated on progress. Good communication helps avoid misunderstandings, catch problems early on, and adjust estimates if new information comes up.
+
+Also, looking back at past projects can help make estimates more accurate. By checking out what happened before and learning from mistakes, we can make better decisions when estimating tasks for new projects. It’s also helpful to think about how our brains work when making estimates – we might have biases that make us too optimistic or confident. Understanding these biases can help us be more realistic when estimating.
+
+Overall, estimating projects isn’t easy, but by keeping these points in mind – being open-minded, accounting for uncertainty, communicating well, and learning from the past – we can make better estimates that set us up for success!
+
+## Wrong ways to do estimations
+
+So, let’s talk about estimations, my friend. You know, there are some pretty wrong ways to go about it. Like, imagine just blindly guessing the time and effort it’ll take to complete a task. That’s like throwing darts in the dark and hoping for the best outcome. Trust me, it won’t end well.
+
+And then there’s this whole “one size fits all” approach some people have. They think they can apply the same estimation technique to every single project under the sun. But hey, newsflash! (or not so because we said it before)… every project is different, with its unique challenges and requirements. Ignoring those external factors is a recipe for disaster.
+
+Now here’s another big no-no: having a fixed mindset. You see, estimations require flexibility and adaptability. If you’re stuck in your ways and refuse to consider alternative perspectives or new information, you’re setting yourself up for failure, my friend. Embracing collaboration and diverse viewpoints is key to making accurate estimations that stand a chance of being realistic.
+
+So remember, when it comes to estimations, blind guessing, and one-size-fits-all thinking just won’t cut it. And don’t even get me started on ignoring external factors or having a fixed mindset! Instead, let’s embrace collaborative practices and tap into the collective intelligence of all stakeholders involved. It might take some open discussions and brainstorming sessions, but trust me, it’ll lead to better outcomes in the end.
+
+## Proper ways to do estimations
+
+Here’s a juicy secret that the gods of software engineering have been keeping locked up: there’s no one “correct” way to do estimations! 😎
+
+Before you start talking trash and bailing on this post, just hear me out. I know you’ve come looking for the right way to estimate things and I said it doesn’t exist, but all I can do is share what worked for me 🤷🏻♂️.
+
+Suppose someone asked me to calculate the time it would take me to eat a medium-sized elephant. How would I do it?
+
+### First: slice the elephant
+
+The first step for me is always to break down the work at hand into small tasks.
+
+Break things down as much as possible for a more accurate estimate, but let’s be real, it’s not always practical. So, my suggestion is to break it down until you’re confident enough to bet your monthly salary on your estimation for that part of the job 🤑.
+
+(hey, don’t waste your time asking me about the best way to estimate tasks… just use whatever method you feel comfortable with, as long as it doesn’t become the main focus of your project).
+
+### Second: uncertainty chart
+
+People who know me know that I’m a big fan of the uncertainty cone. Why? Well, it’s something we can all understand and empathize with the poor guy holding the estimates in his hand.
+
+You now have each part of the elephant sliced and have made a WAG (wild-ass guess) of how long it will take to eat each one. But, how sure are you on each estimation?
+
+Why not just put each “slice” in the uncertainty cone based on how unsure you are about that estimate? Then show the chart to everyone, so they understand your worries and uncertainties. This will help make sure that everyone involved in the project takes responsibility for those estimations.
+
+### Third: Add up all the slices
+
+So, the time to eat the elephant is the sum of the time to eat all the slices, right? Not quite.
+
+If you do that, you won’t be using the position of the slice in the uncertainty cone ignoring that important aspect. To include this information, you can multiply your estimate by a factor that relates to how uncertain the situation is. This approach gives a more complete and accurate representation, considering the potential range of possibilities within the uncertainty cone. By factoring in this uncertainty-related value, you can improve your estimate by considering all possible outcomes within the cone, leading to a stronger and more dependable analysis.
+
+But, what if I don’t have enough (knowledge, experience, information) to estimate a task? How can I reduce the uncertainty?
+
+-   **Get the pro on the line!**: This is the quickest and simplest method, especially if an expert is available. It is sufficient to rely on the expert’s opinion to estimate the quantitative details of the project, such as time frames and potential resources. It is also the most commonly used technique.
+-   **Research**: By looking at past projects or using industry best practices, developers can learn valuable information that can help them make better estimates. Research also helps identify any potential risks or uncertainties that could affect the estimation process. This proactive approach ensures that estimations are based on solid foundations, reducing the chances of unexpected problems and making software development more efficient and reliable.
+-   **Spikes**: When you’re trying to figure out a solution to a problem, you sometimes just gotta dive in and start writing some code. It’s like a little experiment to see if your idea works. And hey, sometimes that code ends up being useful for your project, but most of the time it’s just something you throw away once you’ve proven your point. Make sure to set a deadline for the spike, or else you might end up spending forever on it.
+-   **Do it like pharma does**: They set aside money for their research projects, carry them out, and then decide whether to give more money based on the results. You can do something similar by starting a task with a set budget. When the money runs out, evaluate how things have gone and decide whether to get more funds to keep going or stop the task.
+
+## Why are estimations so important?
+
+What’s the big deal with estimation? Why do people discuss this topic and nobody has a definite way to estimate software projects? Is it so hard or important to do it?
+
+Let’s apply what we learned previously and eat THIS elephant a bite at a time.
+
+First, estimations are not important… are crucial in software development! Software development is a business, you know? Unless you’re on some chill product team or rolling in dough (or a few other special cases), money is gonna be on your mind.
+
+Classic articles about this topic only talk about money… and in the end, it all boils down to money. But I want to shed light on other aspects of estimation to really grasp its significance.
+
+-   **Planning and resource allocation**: Estimations help business owners in effectively planning and allocating resources for software development projects. By estimating the time and effort required for each task, business owners can make informed decisions about staffing, timelines, and overall project management.
+-   **Setting realistic expectations**: Estimations enable business owners to set realistic expectations for clients, stakeholders, and team members. By understanding the estimated timeframes for completion, business owners can communicate these expectations clearly, avoiding misunderstandings and ensuring everyone is on the same page.
+-   **Prioritizing tasks**: Estimations allow business owners to prioritize tasks based on their estimated complexity or effort required. This helps in determining which features or functionalities should be developed first, ensuring that critical aspects are addressed early on in the project.
+-   **Identifying potential risks**: Estimations help identify potential risks by highlighting areas that may require additional attention or resources. By understanding the estimated challenges or complexities of certain tasks, business owners can proactively address these risks and implement strategies to mitigate any negative impact on the project.
+-   **Improving decision-making**: Estimations provide valuable information that aids in decision-making throughout the software development process. Business owners can use estimations to evaluate alternative approaches or solutions, make informed trade-offs between different features or functionalities, and ensure that decisions align with the overall goals of the project.
+
+## AI to the rescue… 🤔
+
+Ok, I got it… but it’s so hard? Why can’t anyone come up with the perfect way to estimate software development projects? Seriously, we’re living in the AI era! Can’t I just ask chatGPT to give me an estimate?
+
+Just nope. Estimating software development projects accurately is indeed a challenging task. While AI, like chatGPT, can assist in various areas, estimating project timelines and efforts still requires human expertise and involvement. Here are a few reasons why it’s difficult to come up with perfect estimates:
+
+-   **Complexity**: Software projects can be highly complex, involving numerous variables, dependencies, and potential risks. Predicting all these factors accurately is a complex task.
+-   **Uncertainty**: There are often uncertainties in the requirements, scope changes, and external dependencies that can affect project timelines. It’s difficult to foresee and account for all these uncertainties.
+-   **Human Factors**: Estimating software development involves human skills and efforts that are influenced by individual capabilities and expertise. Different developers may have varying speeds, approaches, or unforeseen challenges.
+-   **Emerging Technologies**: The ever-evolving nature of technology makes it challenging to estimate projects using cutting-edge tools or frameworks that lack historical data for accurate estimation.
+-   **Communication & Collaboration**: Accurate estimation requires effective communication and collaboration between stakeholders involved in the project. Misunderstandings or incomplete information may lead to inaccurate estimates.
+
+While AI can support estimation processes by analyzing historical data or providing insights based on patterns, it cannot replace the need for human judgment and understanding of the specific project context. It’s best to combine AI capabilities with expert knowledge to improve estimation accuracy rather than relying solely on automation for estimating software development projects.
+
+## Conclusion
+
+As we said, estimation is a crucial aspect of software development that goes beyond just money. It helps with planning, setting expectations, prioritizing tasks, identifying risks, and improving decision-making.
+
+AI can assist in various areas of estimation, but it cannot replace the need for human expertise and judgment. Estimating projects accurately requires acknowledging uncertainty, avoiding wrong approaches such as blind guessing or fixed mindsets, and embracing collaborative practices.
+
+So let’s enhance our estimation skills by learning from past projects, seeking expert opinions when needed, conducting research to mitigate uncertainties, and utilizing techniques like spikes or budget allocation for better planning.
+
+[acknowledgments:md]
+This post, originally on [https://www.howdy.com/blog/software-estimation-insights-from-decades-of-hits-and-misses/](https://www.howdy.com/blog/software-estimation-insights-from-decades-of-hits-and-misses/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Jul 20, 2023_: Original publication on howdy.com
