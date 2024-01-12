@@ -1,0 +1,130 @@
+{
+  "title": "Code Like a Pro: Mental Models for Dev Success",
+  "date": "2024-01-12",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Mental models are cognitive frameworks that help individuals make sense of the world.",
+    "datebox": "2023-09-29",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230929",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Mental models are cognitive frameworks that help individuals make sense of the world. By applying these models, developers can approach challenges in a more effective and strategic manner, leading to improved outcomes and better software design.
+
+[pub_date:string]
+2023-09-29
+
+[short_description:string]
+Mental models are cognitive frameworks that help individuals make sense of the world. By applying these models, developers can approach challenges in a more effective and strategic manner, leading to improved outcomes and better software design.
+
+[body:md]
+### **What Are Mental Models?**
+
+Mental models are like the **maps in our minds that help us make sense of things.** They’re the reason we think some things are more important than others and they help us figure stuff out.
+
+Basically, a mental model is our **own little understanding or picture of how something operates.** We can’t remember every tiny detail about everything, right? So, we create these mental models to break down all that complex info into bits we can easily manage and understand.
+
+_You do not rise to the level of your goals. You fall to the level of your systems._ – James Clear
+
+What does this mean? It means that you can’t aim high without a system to support it. Or more simply, **it means that what you achieve is the result of your systems,** the result of how to follow your internal/external processes, and not the result of aiming high.
+
+### **Why are they important to you as a software developer?**
+
+We have discussed a lot about how you can be just a “Ticket Closer” or you can aim high and become a “Problem Framer”. If you don’t remember, go and read our article [Redefining Seniority: From Ticket Closers to Problem Framers](https://www.howdy.com/blog/redefining-seniority-from-ticket-closers-to-problem-framers/).
+
+If you want to be that “Problem Solver”, or even if you start out as a “Ticket Closer”, you need a system, processes, and ways of thinking that support your work. You need a way to face problems, read that code you have to maintain, and face it in the most healthy, productive, and professional way. And the most important: **you need to do it without having to reinvent the wheel all the time.**
+
+In my opinion, mental models are comparable to [design patterns](https://en.wikipedia.org/wiki/Software_design_pattern) – they are general, reusable solutions to frequently encountered problems. **They aren’t ready-made solutions that can be directly applied;** instead, they function as a **set of “best practices” that can be utilized in a variety of situations.**
+
+### **Mental models for software developers**
+
+There are a bunch of mental models out there. As a matter of fact, there are [catalogs of mental models](https://fs.blog/mental-models/) you can get online or as physical books. But, just as with design patterns, there can be instances where it’s challenging to apply the abstract description of the pattern to a practical, real-life situation where it would be beneficial.
+
+That’s why I chose these mental models that, in my opinion, are the most useful for software developers, and added to them one or more real-life examples about how they can be applied.
+
+#### **Occam’s razor**
+
+Occam’s razor is also known as **the law of parsimony.** It suggests that when trying to understand a complex phenomenon or solve a problem, **one should always opt for the simplest explanation or strategy among the available options.** It doesn’t guarantee the correctness of the simplest solution; just suggests that it should be pursued first.
+
+In the software development realm, this model could be used when you’re trying to solve a bug. After some time hunting it, you start thinking you can’t fix it; then you start having a crisis of confidence (hello Imposter syndrome!); a couple of hours later you are questioning your career to end the day questioning your whole life. The next morning you realize that it was just a missing semicolon or a simple typo. The real problem (and the simple explanation) was that you were too deep down in the rabbit hole (or just tired).
+
+If you’re looking for an additional example of this model being utilized in software, remember the KISS (Keep It Simple Stupid) design principle.
+
+#### **Circle of competence**
+
+It refers to the idea that each of us, individually or as an organization, has a range of abilities or understanding in certain areas. **The concept emphasizes the importance of staying within your areas of expertise for decision-making and endeavors.** Knowing our limits allows us to understand when we have an advantage in a certain situation vs. when we have a “rough edge” that makes us vulnerable.
+
+Knowing our circle allows us to **improve decision-making without our ego blinding us**. Have you ever found yourself discussing a topic outside of your expertise, just to avoid admitting that you’re clueless? It’s not a comfortable position to be in, especially when it comes to making decisions 🤦🏻♂️.
+
+#### **Inversion**
+
+This is a simple but very powerful one. Inversion is a mental model where **you approach a situation from the opposite end of the normal starting point**. Instead of thinking about how to succeed, you think about how to fail. This helps you understand what mistakes to avoid.
+
+Suppose you and your software development team have promised a client that you will produce maintainable code. What does that really mean? If you ask them, they will answer “Clean code”, as if that’s enough to guarantee the maintainability of your code. Instead, you can ask your team what they can do to make your source code unmaintainable. They will tell you “Don’t add any comments”, “use cryptic variable/function names”, “code everything inside a single class/file”, etc. This will give you a handy list of things to avoid in your coding process, thus ensuring greater maintainability.
+
+Inversion, as a method, can be challenging for us due to three key scientific reasons:
+
+-   It disrupts our conventional thinking patterns
+-   It forces us to contemplate unwanted outcomes
+-   Shifting from our regular problem-solving approach to inversion puts extra strain on our brains 🧠.
+
+By mastering this method, we can potentially revolutionize our problem-solving abilities.
+
+#### **Second-Order thinking**
+
+Second-order thinking is a mental model that **involves considering not only the immediate results of decisions but also how those results might cause further effects in the future.** This type of foresight can help prevent potential problems that weren’t immediately obvious and enable us to make more informed, strategic decisions.
+
+This way of thinking is key in software development because we make so many choices throughout the day. Like, should I update this tool to the latest version for this cool new feature? Or should I go with this new design style? **Every choice we make has an instant effect, and we usually get that part right.** But if we don’t think ahead about what might happen next because of that choice, we could mess up other parts of our project, or end up with unexpected problems down the line because the new version isn’t stable.
+
+This mental model is **especially important at the beginning of a project.** At this time, you make many choices that are hard to change later on. Think about architecture decisions, database type, cloud provider, and a long, long list of others. If you want to go deeper into this topic, read Jeff Bezos’ concept of Type 1 and Type 2 decisions.
+
+#### **Reciprocity**
+
+This one is a very simple, but powerful one. **If someone does something to you, you’re likely to do the same thing back to them (or worse, to others).**
+
+An example of this could be when we do a code review for someone. If we’re kind, honest, and polite in our feedback, that person will likely do the same for us and even with other devs when doing a CR.
+
+#### **Inertia**
+
+Inertia is a basic rule in physics that says **that if something is moving in a certain direction, it will keep going that way unless something else stops or changes its direction.** This idea can also apply to different areas of our lives, including our jobs.
+
+In many companies, even as they grow and change a lot, the technical parts like databases and programming languages don’t change as quickly. This is especially true for foundational aspects such as databases, programming languages, and cloud providers. Although it’s important to keep making things quickly and efficiently, we should also make sure they’re easy to maintain.
+
+I think this idea of inertia applies to software engineering projects too. **Have you ever tried to shake things up right after joining a new project?** It usually doesn’t go too well. I often use a scene from the movie “Raiders of the Lost Ark” to explain this. In the scene, trying to stop or redirect a huge rolling boulder (like trying to change a project) will get you squished!
+
+#### **Sunk-Cost fallacy**
+
+The Sunk-Cost fallacy is like **throwing good money after bad.** It’s when **we keep doing something because we’ve already put a lot of time, money or effort into it, even if it might not be the best thing to do now.** The mistake is thinking that because we’ve already invested so much, we should keep going, even though we can’t get back what we’ve already spent. Basically, **it means letting what we’ve done in the past affect our decisions now, instead of just thinking about what’s best for the future.**
+
+This last mental model is very common in our field. **How many of you have been involved in a software development project that ought to have been stopped far earlier**? Yet, management pushed on until its completion, resulting in dissatisfaction all around, and the final product now lies forgotten on an unused server.
+
+Don’t just point fingers at the managers. As software developers, **we often create complex systems that can be expanded in every possible way, as per the client’s wishes.** But, we later realized that the **client’s needs were much simpler than we initially thought**. Still, we continue to use our behemoth because it took us a lot of time to build it and it looks beautiful, instead of using a simple structure.
+
+### **Wrap it all up**
+
+In the world of coding, having **mental models can help us think better and make smarter decisions.** They’re like a guide map that helps us understand tricky situations, solve problems, and guess what might happen next. **But it’s important to remember that there’s no one-size-fits-all mental mode**l. They’re just tools for thinking, not strict rules to follow. **It’s best to have a bunch of them in your toolkit so you can use them depending on the situation.**
+
+At first, it might take some effort to get used to these mental models as you start using them in your daily work. But after some time, **they’ll become like second nature and will subtly influence how you make decisions**, **making it easier for you to handle the complex world of software development.** The goal isn’t to have an answer for everything but rather to develop a way of thinking that lets you look at problems from different angles and come up with effective solutions.
+
+[acknowledgments:md]
+This post, originally on [https://www.howdy.com/blog/code-like-a-pro-mental-models-for-dev-success/](https://www.howdy.com/blog/code-like-a-pro-mental-models-for-dev-success/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Sep 29, 2023_: Original publication on howdy.com
