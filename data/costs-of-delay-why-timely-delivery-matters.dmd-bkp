@@ -1,0 +1,118 @@
+{
+  "title": "Hidden Costs of Delay: Why Timely Delivery Matters",
+  "date": "2024-01-12",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "The concept of the Cost of Delay (CoD) refers to the potential loss of money by not releasing a product or feature promptly.",
+    "datebox": "2023-08-25",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230825",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+The concept of the Cost of Delay (CoD) refers to the potential loss of money by not releasing a product or feature promptly.
+
+[pub_date:string]
+2023-08-25
+
+[short_description:string]
+The concept of the Cost of Delay (CoD) refers to the potential loss of money by not releasing a product or feature promptly.
+
+[body:md]
+Ever heard of “Cost of Delay”? 🤔
+
+Don’t worry if you didn’t, we’re going to break it down in simple and everyday words.
+
+Think of it as the money you’re potentially losing out on by not getting a product or feature out there into the world right now. By understanding this concept, businesses can better grasp how their choices could impact their bottom line. This can result in smarter decisions, [better performance](https://www.howdy.com/blog/3-must-try-productivity-boosters/), and ultimately more money in the bank!
+
+Stick around as we go deeper into this concept and let us explain why we believe there are hidden costs associated with it in Software Engineering.
+
+#### **Unveiling the Hidden Costs of Delay (CoD)**
+
+Imagine there are two developers talking about the cost a delay has in the development of a specific software product. Let’s hear what they have to say about it 👇
+
+– Clark: “I had this awesome feature that was supposed to be ready by the end of the month, you know? But guess what? It took me an extra two weeks to finish it. I wonder how much money my company lost because of this delay.”
+
+– Rick: “Hmm… let’s see 🤔. You need to estimate how much profit your company would’ve made per week once the feature was released. Let’s say it’s around $20,000 a week. With that info, you can easily calculate the cost of that delay!”
+
+– Clark: “Oh, I see! 🧮… the CoD comes out to be a whopping $40,000! Can you believe it? 💸”
+
+– Rick: “Wait! but did you work that extra two weeks for free?”
+
+– Clark: “What? pfff… no! Of course, I didn’t!”
+
+– Rick: “Then you have to add to that $40,000, your salary for those 2 weeks!”
+
+– Clark: “Ok, now I’m worried because that’s a lot of money!”
+
+Rick got it! And as Johanna Rothman defines it: “is the way to think about the revenue you can lose plus the cost of continued development”.
+
+#### **Why Timely Feature Delivery is a Game-Changer in Software Development**
+
+It goes without saying that we should try to deliver features on time. Rick talked about this from a money angle only, but there are loads of reasons why it’s crucial. Off the top of our heads, we’re talking about keeping customers happy, staying ahead of competitors, looking after our reputation, impressing our investors…, and we bet there are tons more.
+
+But moving back to Rick’s reasoning, we’ve always wanted to say “I Don’t Know Rick, Looks Fake to Me”. And now we finally got the chance!
+
+Okay, maybe calling it a fake was a bit forced, but something deep down tells us it’s not the full picture… that there are more hidden costs when we don’t deliver on time.
+
+#### **How Late Software Projects Really Hit your Wallet**
+
+We saw that delays in software development can have a significant impact on sales, especially if a product is slated for release during a high-demand period. For instance, missing out on the holiday shopping season because of development delays could result in substantial lost sales opportunities.
+
+As the saying goes, “Time is money,” and in the world of software development, this couldn’t be more true. Each day that your software isn’t on the market is a day that it’s not generating revenue, which can add up pretty quickly.
+
+But let’s check out these three “hidden” costs that have sadly come up because of Clark’s delay – costs that might not be super obvious but are totally key to fully getting what’s going on.
+
+##### **Marketing Costs**
+
+When it comes to feature delivery and marketing efforts, these two need to be in perfect sync for optimal results. Imagine spending tons of resources on marketing campaigns promising potential clients specific features only for them to find out those features aren’t ready yet. It’s like going to a restaurant that’s advertising their special lobster dinner only to find out they’ve run out of lobsters – disappointing right? Delays in feature delivery disrupt marketing timelines and can lead to wasted resources and missed opportunities.
+
+In Clark’s case, the entire marketing campaign scheduled for the expected delivery day had to be suspended.
+
+Marketing isn’t cheap; there are costs associated with manpower, materials, digital space purchases, and the list goes on. When product launch delays occur, these expenses do not just disappear; instead they pile up or go down the drain altogether. Not only does this mean your business has thrown money away, but it also means when you’re finally ready for launch and you’ll need even more funds for new campaigns.
+
+##### **Customer**
+
+We talked about customer disappointment in the lobster ad. The same thing happens to customers of Clark’s products. Delays can lead to customer dissatisfaction and loss of trust which translates into monetary losses as well. Customers might request refunds or decide not to renew contracts because they feel let down or believe they can’t trust your brand anymore. And once you lose trust… well let’s just say regaining it isn’t an easy task.
+
+In fact, consistent delays can cause long-term damage in your business relationships too—not just with clients but also with partners and suppliers who may start seeing your company as unreliable or risky. This could lead them either demanding upfront payments or even terminating contracts altogether leaving you scrambling for replacements or dealing with financial hits.
+
+Not to mention, if you’ve got a competitor who manages to launch before you do, they might snatch up potential customers that could have been yours.
+
+##### **Investors**
+
+Investor confidence is another area where delays might have an impact—and not a good one, that’s for sure! Investors like seeing returns on their investments (who wouldn’t?) and consistent delays send worrying signals about management’s ability to deliver results which can scare off current investors and deter potential ones from funding future projects.
+
+Less investors, less money… and with less money is more likely to be laid off in short order.
+
+#### **Wrapping up**
+
+Do you know what is worst about the Cost of Delay? The sequence of costs “marketing-customers-investors” is like the old song “There Was an Old Lady Who Swallowed a Fly” (ok, maybe not everybody has kids, so here it’s the [YouTube version](https://youtu.be/J0_4hkfR7WE)). Go listen to the song. We’ll wait here.
+
+Now you are back, did you realize the cumulative structure of the song? In the marketing-customers-investors trifecta happens the same!
+
+If a developer doesn’t meet a deadline and fails to deliver a promised feature, we gotta put the brakes on marketing campaigns… and that ain’t cheap. Plus, if we’ve already hyped up that feature in our ads, besides losing money there, customers are gonna be expecting it and they’ll be ticked off when they don’t get it. Angry customers are bad news for business and investors tend to steer clear of products or businesses where stuff hits the fan.
+
+So, Rick… when Johanna Rothman refers to the “plus the cost of continued development,” in the Costs of Delay definition, we believe she’s including not just the developer’s salary but also all these additional expenses that we’ve termed as “hidden costs.”
+
+[acknowledgments:md]
+This post, originally on [https://www.howdy.com/blog/costs-of-delay-why-timely-delivery-matters/](https://www.howdy.com/blog/costs-of-delay-why-timely-delivery-matters/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Aug 25, 2023_: Original publication on howdy.com
