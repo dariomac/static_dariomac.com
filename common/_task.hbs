@@ -1,7 +1,7 @@
 {{#with this.frontmatter}}
-  <div class="card task" style="background-color: {{card.color}}; color: {{getTextColor card.color}}" data-order={{card.position}}>
+  <div class="card task" style="color: {{getTextColor card.color}}; border: 1px solid {{card.color}};" data-order={{card.position}}>
     <a href="{{card.linkto}}" title="{{card.title}}" style="color: {{getTextColor card.color}}">
-      <h2 class="card-header ellipsis">
+      <h2 class="card-header ellipsis" style="background-color: {{card.color}};">
         {{card.title}}
       </h2>
       <h3 class="card-body card-text">{{card.content}}</h3>
