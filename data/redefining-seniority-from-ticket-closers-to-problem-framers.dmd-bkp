@@ -1,0 +1,103 @@
+{
+  "title": "Redefining Seniority: From Ticket Closers to Problem Framers",
+  "date": "2024-01-12",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "The importance of seniority levels in software engineering and proposes an alternative view based on the ability to handle tasks autonomously.",
+    "datebox": "2023-09-18",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230918",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+The importance of seniority levels in software engineering and proposes an alternative view based on the ability to handle tasks autonomously. The text argues that autonomy is crucial, with problem framers being the most autonomous.
+
+[pub_date:string]
+2023-09-18
+
+[short_description:string]
+The importance of seniority levels in software engineering and proposes an alternative view based on the ability to handle tasks autonomously. The text argues that autonomy is crucial, with problem framers being the most autonomous.
+
+[body:md]
+I love meetups where folks get together and share ideas, pizza, and beers. Whether with students or in dev communities, I’m often asked to define the seniority levels.
+
+Today, I want to make a strong statement: they’re not important at all; they’re at the last of my worries. Compared to everything else I could be thinking about, these definitions just don’t matter. It doesn’t make a difference to me whether they change or stay the same. So, it’s fair to say that there’s nothing I worry about less than these definitions.
+
+(Alright, I admit… I feel bad for you because you had to bear with me while I offloaded all this onto you! Now I’ll chill out, take a breath, and try to explain it to you because you’ve earned that much.)
+
+Let’s analyze this problem from another point of view, focusing on what matters when we talk about seniority.
+
+#### **Junior, Semi-Senior and Senior: Does seniority really matters?**
+
+We could go on and on about what a dev should know and be responsible for on each seniority level. But, in my opinion, a simple way to gauge a software engineer’s “maturity level” is by seeing how well they can handle their daily tasks autonomously.
+
+How do we know when someone is autonomous? Easy. If someone can do their job without someone else constantly looking over their shoulder, it’s autonomous. Usually, they’re motivated, know what they’re doing, and can handle their responsibilities really well. They’re good at figuring out priorities and getting stuff done on time. They set their own goals and work hard to achieve them.
+
+Why is this important? Well, we saw that to [thrive in startup environments](https://www.howdy.com/blog/thriving-in-a-dynamic-startup-enviornment/), workers need a level of independence that allows them to adapt to changing circumstances, solve problems creatively, and take initiative when necessary. This is true for every startup, but for those technology-dependent startups, having autonomous software developers is a must.
+
+#### **Tell me your daily work routine, I’ll gauge your seniority level.**
+
+#### Ticket closers
+
+Let’s say a software developer gives me this description of his job:
+
+_“Normally, I start my day by checking out my task board. I grab the first card from the ToDo column, shift it to the Doing column, and start coding. Usually, I ask other devs about how to do things at the code or design level. I barely participate in many of the company’s online meetings because I tend to be too engrossed in taking care of my task board, staying productive, and completing all the tasks assigned to me for the current phase of our project.”_
+
+This description reveals that the seniority of the developer in question is known as a “**ticket closer**“: someone who predominantly **spends their time merely closing tickets, and whose input is seldom considered by the team** (mostly due to lack of opportunities). They appear to be more of a doer than a thinker, lacking influence in decision-making or strategic planning. This could be due to many reasons. They might be inexperienced, their ideas doesn’t follow team’s direction, or they not have been allowed to share their perspectives.
+
+Even so, **being a ‘ticket closer’ isn’t always a bad thing.** They can be trusted, they are good at resolving issues, and might become a key player in team conversations.
+
+#### Problem Solvers
+
+Now, let’s analyze this other description:  
+_“Usually, I take the jobs from the board and get to work. While I’m at it, folks often pop questions about various topics. We usually have a mini brain dump session where I toss out suggestions on solving the current challenge, interacting with my teammates over our digital workspace. Occasionally, if I feel a situation is critical or harmful to the business, I dive in to sort it out, then return to my previous task afterward.”_
+
+This description hints that this developer is part of a group I like to call “**problem solvers**“. These are **flexible, forward-thinking developers who are great at communicating**. They can juggle multiple tasks and manage their time well by deciding what needs to be done first based on how urgent and important it is to the business.
+
+They’re also **good at collaborating with their team**, regularly jumping into talks with their colleagues to fix issues and share what they know. This particular developer seems prepared to step up when things get tough but is also ready and willing to lend a hand to others, acting as a support system for the rest of the team.
+
+The most notorious attribute is that they can do all of this while keeping up with coding.
+
+#### Problem Farmers
+
+Finally, let’s review this description:
+
+_“I love starting my day by scanning the ‘Doing’ column to see if anything’s gotten stuck. If I find anything, I have a chat with the dev in charge of that task. Usually, we end up pair programming until we sort it out. This often leads to me spotting issues or opportunities that fit in with our big-picture strategy, so I’ll add new tasks to our backlog. When I’m not immersed in code with others, I’m implementing basic tasks or figuring out which tasks will make the best use of our time in the next iteration.”_
+
+Alright, let’s talk about this final set of developers I like to refer to as “**problem framers**“. These are devs who can **identify challenges or opportunities, neatly pack these into a detailed task within a project management tool, and then decide whether to tackle them or not.** Their choices are guided by their understanding of the business, insights gained from strategic meetings, and their personal experience.
+
+But that’s not all they do. Remember, they’re software developers at heart. This means they need extensive knowledge of different programming languages, tech concepts, and software development methods. They’re not just whizzing at writing code. They also have the knack for designing software systems, resolving issues independently, crafting innovative solutions for complex problems, and continually updating their tech knowledge to stay ahead of the curve. They excel at keeping everyone updated about progress and any obstacles encountered along the way. Plus, they are dedicated to providing high-quality end products.
+
+#### **Wrapping up**
+
+So, you might be wondering what all this has to do with my rant against the seniority labels. Well, I bet you’ve already put two and two together.
+
+If you push me too hard, I may define a Junior as a **ticket closer**, a Semi-Senior as a **problem solver**, and a Senior as a **problem framer**.
+
+Why do I think this definition makes more sense?
+
+Well, at the start of this piece, I mentioned the independence of a software developer. If someone only completes tasks and frequently asks coding-related questions (ticket closers), they lack independence when compared to those who set up tasks in the ToDo column and other developers. If you can handle problems independently without needing much help and also have some involvement in defining tasks (problem solvers), you’re more self-sufficient; while you still rely on those who populate the backlog, it’s known that some of them will need your help to complete these tasks. Lastly, problem framers are those who don’t rely on anyone else, the ones who can tell their boss “That’s an interesting idea but my time would be more effective elsewhere” and not get fired on the spot. This is the highest level of autonomy.
+
+As we always say at Howdy, [the office is where your heart is](https://www.howdy.com/blog/office-is-where-the-heart-is/), implying that being able to work remotely and independently allows for efficiency while enjoying life simultaneously.
+
+[acknowledgments:md]
+This post, originally on [https://www.howdy.com/blog/redefining-seniority-from-ticket-closers-to-problem-framers/](https://www.howdy.com/blog/redefining-seniority-from-ticket-closers-to-problem-framers/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Sep 18, 2023_: Original publication on howdy.com
