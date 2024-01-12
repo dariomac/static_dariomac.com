@@ -1,0 +1,104 @@
+{
+  "title": "Do software developers procrastinate more?",
+  "date": "2024-01-12",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Procrastination in software development can be caused by lack of interest, comfort, or confidence in success.",
+    "datebox": "2024-08-29",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20240829",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Procrastination in software development is influenced by factors such as lack of interest, comfort, or confidence, and developers have a range of distractions and opportunities to procrastinate.
+
+[pub_date:string]
+2023-08-29
+
+[short_description:string]
+Procrastination in software development is influenced by factors such as lack of interest, comfort, or confidence, and developers have a range of distractions and opportunities to procrastinate.
+
+[body:md]
+### **What is procrastination? (no, not again!)**
+
+Here is where we should give the definition of procrastination, but let’s save it for later – did you get the joke?
+
+You may know the answer (if not, you can Google it). We’re not here to explain things that are easy to find out there. But if you read what procrastination is, you will find broad definitions that apply to anyone. Don’t get us wrong, we don’t think that we (software developers) are demigods to whom definitions don’t apply. But let’s say that if procrastinating were a crime, we would have the motive, the means, and the opportunity to do it.
+
+Ok, maybe we need to take a break from police tv-shows, but while we go to a 10-7, let’s 10-9 our last transmission. Over.
+
+### **Why do yo procrastinate? – the _motive_**
+
+There are a ton of reasons why a developer might procrastinate, but instead of listing them, let us analyze just the opposite to get a different perspective: [what gets you motivated to keep working?](https://www.howdy.com/blog/take-the-best-out-of-your-software-team-%f0%9f%a7%91%f0%9f%92%bb%f0%9f%9a%80/)
+
+As a software developer, have you ever experienced the sensation of time whizzing by? That everything aligns seamlessly? You are aware of this feeling: You’re engaged in a task and there’s an innate belief that it’s going to be exceptional. There’s a sense of expertise.
+
+But when does this happen, why, how did I feel? These are the main reasons:
+
+-   High level of interest
+-   Comfort
+-   Confidence in success
+-   Simplified procedures
+-   Clarity of task requirements
+
+Coming back to why you might be putting things off: If you’re feeling something that’s not on the list, then you’ve got at least one reason to procrastinate on what you’re doing right now.
+
+### **What do you do when you procrastinate? – the _means_**
+
+In today’s world, everybody has a phone in their hands and lots of social media apps. Those are “means” that everyone has access to.
+
+But us? We’re coders. We live in the fast lane. A fresh app hits the market, a new social platform pops up – we’re all over it like white on rice (ehm, Thread?). So, yeah, we’ve got even more distractions, more “tools” to procrastinate with until deadlines come biting our behinds.
+
+And wait, there’s more! We also have tons of stuff we can do while we’re “working” that might seem “useful”. These are things that’ll eat up our time and energy, stopping us from doing other tasks until we finish them, and deceive us into believing we’ve had a highly productive day, but in the end, we didn’t.
+
+For example, think about setting up your IDE for instance. You know the drill – configuring new plugins that promise to turn you into some 10x ninja developer with fancy navigation tricks and cool help tools. Or messing around with Terminal settings so it displays specific info and changes depending on which directory you’re in.
+
+Don’t get us wrong, we’re all in for these kinda tweaks and sometimes we gotta stop ourselves from spending the whole afternoon tinkering with them. But let’s get real, you ain’t making any difference to your product by doing this stuff. You could be making progress as a 2x or 3x developer while setting things up to become a 10x one down the line. At least then you’re adding value to what you’re building.
+
+### **When things start to go wrong? – the _opportunity_**
+
+If you’re working at a store, you can easily waste time on your phone. But then, you might think “Alright, no more slacking off. I’ll keep away from screens and actually do some work around the shop for the next hour.” Basically, you’re making sure there’s no way for you to procrastinate (at least for a while).
+
+But hey, we’re software developers! We’re always working with tech stuff, right? Phones, laptops, tablets, our own personal stuff and the ones we use for work. It’s all going off at the same time and interrupting us in lots of different ways.
+
+So, there you are, in the coding zone, but then your phone pings. “I’ll check it once I’m done with this bit,” you think. But then another ping. “Alright, let me just finish this part,” but then Slack chimes in, and your phone again. “Fine, what the heck is going on?” You get distracted and 40 minutes later you snap back to reality and realize you were coding but can’t remember where you left off. Now you need a good 20 minutes to get back into the groove. And just as you’re starting to focus again – another ping from your phone and the whole cycle begins anew.
+
+Do you see? We’ve got opportunities always right in front of us, just waiting and chasing after us.
+
+But this isn’t even the worst opportunity for procrastination. We think that it’s perfectionism.
+
+Perfectionism, while often seen as a desirable trait, can lead to procrastination in software development. Developers who strive for perfection may find themselves constantly revising their work, looking for the “perfect” solution to a problem that may not exist. Instead of making progress and moving forward with their tasks, these developers spend an excessive amount of time trying to perfect every detail.
+
+The fear of making mistakes or delivering less-than-perfect work can also contribute to procrastination. A perfectionist developer might delay starting a project due to the fear that they won’t be able to complete it perfectly. They might spend a lot of time planning and preparing, but never actually start coding because they’re afraid of messing up.
+
+This constant striving for perfection can lead to burnout and decreased productivity. It’s important for software developers (and everyone else) to understand that making mistakes is a normal part of the learning process. Instead of aiming for perfection, it’s more beneficial to aim for continuous improvement.
+
+### **Summary**
+
+In conclusion, procrastination in software development is a complex issue that can be fueled by various factors such as a lack of interest, comfort, or confidence in success. Developers have the means to procrastinate with numerous distractions at their disposal and the nature of their job gives them ample opportunities to put off tasks. Furthermore, striving for perfection can also lead to procrastination as developers may delay starting a project due to fear of making mistakes or delivering less-than-perfect work.
+
+However, understanding these triggers and acknowledging that they exist is the first step toward overcoming procrastination. Developers should strive for continuous improvement instead of perfection and set realistic goals and deadlines for their tasks. They should also try to minimize distractions as much as possible and create an environment that fosters focus and productivity.
+
+Finally, it’s important for developers to remember that everyone experiences moments of procrastination. Luckily, it’s not a crime but human nature. The key is not to beat oneself up  but rather identify the cause and take steps towards managing it effectively. After all, productivity isn’t about being busy all the time; it’s about working smarter, not harder. Procrastination might be a tough nut to crack but with determination and perseverance, developers can achieve their full potential.
+
+[acknowledgments:md]
+This post, originally on [https://www.howdy.com/blog/do-software-developers-procrastinate-more/](https://www.howdy.com/blog/do-software-developers-procrastinate-more/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Aug 29, 2023_: Original publication on howdy.com
