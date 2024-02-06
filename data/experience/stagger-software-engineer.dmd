@@ -37,26 +37,27 @@ https://stagger.com/
 Stagger
 
 [content:md]
-Stagger is a visual storytelling platform to help small business owners (lacking complex design software experience) create better digital marketing content. Stagger’s added value is the machine learning features that provide actionable insights on content that attracts the most customer engagement so business owners can make informed decisions.
+Stagger is a visual storytelling platform designed to assist small business owners, who may lack experience with complex design software, in creating more effective digital marketing content. Its unique selling point lies in its machine learning capabilities that offer actionable insights into the types of content that generate the most customer engagement, allowing business owners to make data-driven decisions.
 
-The product is a graphic drag & drop design platform (much like Canva) built with React that includes templates for users to create social media graphics, presentations, and other visual content. That frontend communicates with a Node.js backend that acts as a hub between several services like a couple of Postgresql databases, an exporter service, batch processes, and the ML solution. Everything is deployed on Heroku and Google Cloud Platform (GCP).
-Besides the main technology already mentioned, it uses Cloudinary to manage images/videos, Mixpanel/Sentry.io/FullStory for analytics, user experience and error reporting tools, Stripe for payments, and Sendgrid for mail delivery.
+The product features a user-friendly graphic drag-and-drop design interface (similar to Canva) developed using React. This allows users to craft social media graphics, presentations, and other types of visual content with ease. The front-end system communicates with a Node.js backend, which serves as a central link to various services including multiple PostgreSQL databases, an exporter service, batch processing operations, and the machine learning component. The entire infrastructure is hosted on Heroku and the Google Cloud Platform (GCP).
 
-As a software engineer I'm mainly working on the API (Node.js) to allow other developers to build new features or create them myself in React. I'm also in charge of the automatic collection of brands' digital assets and the generation of half-baked content using ML. Finally, I help with data flows and analytics pipelines to provide users with insights by converting data from different sources into standardized information.
+In addition to the main technologies mentioned, Stagger employs Cloudinary for image and video management; Mixpanel, Sentry.io, and FullStory for analytics and user experience tracking; Stripe for payment processing; and Sendgrid for email delivery.
 
-{{!-- Share server: not only did I replace the old one, but I made it more flexible (not tied to slide sizes). 
-It was also prepared to scale without limit by placing it behind AWS CloudFront. --}}
-{{!-- IG/FB integration of insights --}}
-{{!-- Embeds analytics --}}
-{{!-- New share service to deliver embeds --}}
-{{!-- Scraping tool to get assets from user's websites --}}
-{{!-- Generate suggestions using ML algorithms, merging templates with user's assets --}}
-{{!-- We introduced Stagger to all AS (here is the video: https://drive.google.com/file/d/1nFH_zfFYi8ByTsuU3L_WuAVUiSh8nAHM/view?usp=sharing) --}}
-{{!-- Public accounts accesible through QR code with geolocation to show nearest flyers --}}
-{{!-- Rules engine to analize the project while the user is working on it and provide insights: https://drive.google.com/file/d/1RmRCqARvX6bUOHdeWW3eSmZcB0gXrgNu/view?usp%253Ddrive_link --}}
-{{!-- Background removal tool: https://drive.google.com/file/d/1oOCRhOtxh-pqbztypfPmp4g317Gp_egr/view?usp%253Ddrive_link --}}
-{{!-- Image inferrer service to analyze images using pre-trained models and get insights as colors, objects, faces, etc. --}}
-{{!-- Collage generator engine to create collages from a set of rules using the information provided by the image inferrer --}}
+As a software engineer working primarily on the API (Node.js), my responsibilities include enabling other developers to build new features or developing them myself using React. I also handle the automated collection of brand digital assets and the creation of partially completed content through machine learning algorithms. Furthermore, I contribute to data flows and analytics pipelines that transform data from diverse sources into standardized information to provide users with meaningful insights.
 
 [projects:md]
+- Share server: not only did I replace the old one, but I made it more flexible (not tied to slide sizes). 
+It was also prepared to scale without limit by placing it behind AWS CloudFront.
+- IG/FB integration of insights
+- Embeds analytics
+- New share service to deliver embeds
+- Scraping tool to get assets from user's websites
+- Generate suggestions using ML algorithms, merging templates with user's assets
+- Public accounts accesible through QR code with geolocation to show nearest flyers
+- Rules engine to analize the project while the user is working on it and provide insights {{!-- https://drive.google.com/file/d/1RmRCqARvX6bUOHdeWW3eSmZcB0gXrgNu/view?usp%253Ddrive_link --}}
+- Background removal tool {{!-- https://drive.google.com/file/d/1oOCRhOtxh-pqbztypfPmp4g317Gp_egr/view?usp%253Ddrive_link --}}
+- Image inferrer service to analyze images using pre-trained models and get insights as colors, objects, faces, etc.
+- Collage generator engine to create collages from a set of rules using the information provided by the image inferrer
+
+{{!-- We introduced Stagger to all AS (here is the video: https://drive.google.com/file/d/1nFH_zfFYi8ByTsuU3L_WuAVUiSh8nAHM/view?usp=sharing) --}}
 
