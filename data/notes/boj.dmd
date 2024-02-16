@@ -1,6 +1,6 @@
 {
     "date": "2022-03-27",
-    "updated_date": "2023-04-12",
+    "updated_date": "2023-12-27",
     "layout": "document",
     "title": "Boj",
     "jsonld": {},
@@ -35,16 +35,22 @@ Buxus is a family of about seventy species in the family Buxaceae.
 
 [body:md]
 ## Description
-Nombre científico: Buxus sempervirens
+Order: Buxales
+Family: Buxaceae
+Genus: Buxus
+Specie: Buxus sempervirens
+
+Link: https://www.google.com/search?q=Buxus+sempervirens)
 
 ## Position
 Sunny or semi-shaded place.
+El Boj Común debe colocarse en el exterior en una posición soleada o de semisombra. En el invierno un invernadero frío es ideal para la protección que requiere en esta estación.
 
 ## Watering
 In summer the boxwood needs a lot of water, but it can withstand short dry periods.
 
 ## Feeding
-Nothing special. The soild should have a PH 7-8.
+Nothing special. The soil should have a PH 7-8.
 
 ## Pruning
 Don't leave branches without leaves. Also prevent the inner twigs from dying and encourage back-budding. It tolerates hard pruning.
@@ -63,9 +69,15 @@ Every 2-5 years.
 ## Notes
 
 ## My trees
-#dm_bj1: boj comprado de Carmelo
+#dm_bj1: boj comprado de Carmelo el 2022-02-07
 
 ## Log
+### 2023-11-29
+Siguió perdiendo hojas. Así que lo que hice fue sumergir toda la copa en agua jabonosa con algo de mata hongos a ver si se salva... Perdió pila de hojas y ramas :-(
+
+### 2023-08-19
+Tuve que hacer un transplante de emergencia. Hace días encontré algunas ramas y hojas secas. Cuando lo saqué de la maceta estaba muy húmedo adentro... Muy muy. Así que aproveche a sacar muchas raíces, cambiar todo el sustrato y baje un poco el nivel del mismo hasta encontrar raíces gruesas para un buen nebari.
+
 ### 2023-04-08
 Hice una definición de volúmenes en #dm_bj1. Todavía queda bastante verde... Pero tiene mucho mejor pinta. De hecho corte unas cuantas ramas internas que no tenían sentido.
 
@@ -80,9 +92,9 @@ Agregué más tensores en otras ramas para seguir abriendo la copa. Hay una rama
 
 ### 2022-03-05
 Tensores y recorte de hojas para llevar a primer diseño ([Video](https://photos.app.goo.gl/s4o7x9Qhhx2TNGy77)). La idea es abrir la copa para llevarlo a algo así:
-![boj-wish.jpg](/assets/boj-wish.jpg#center)
+![boj-sample-1.jpg](/assets/boj-sample-1.jpg#center)
 pero con esa copa baja a la izquierda como este:
-![boj-wish2.jpg](/assets/boj-wish2.jpg#center)
+![boj-sample-2.jpg](/assets/boj-sample-2.jpg#center)
 
 ### 2022-02-07
 Lo saqué de su maceta porque tenía poca tierra. Le puse tierra en el fondo y volví a colocar el cepellón completo sobre él ([Fotos](https://photos.app.goo.gl/KU3wzp53PFC2KVLs8)).

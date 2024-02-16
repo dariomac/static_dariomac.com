@@ -1,6 +1,6 @@
 {
     "date": "2022-02-14",
-    "updated_date": "2023-05-07",
+    "updated_date": "2023-12-29",
     "layout": "document",
     "title": "Juniperus chinensis",
     "jsonld": {},
@@ -35,6 +35,14 @@ Evergreen conifer native to China with a dark green foliage and brown bark
 
 [body:md]
 ## Description
+
+Order: Cupressales
+Family: Cupressaceae
+Genus: Juniperus
+Specie: Juniperus chinensis
+
+Link: https://www.google.com/search?q=juniperus+chinensis
+
 Easily grown in average, medium moisture, well-drained soils in full sun. Tolerant of a wide variety of soils including clay. Intolerant of wet soils. Tolerant of some drought once established. Also tolerant of many city air pollutants.
 
 ## Position

@@ -1,6 +1,6 @@
 {
     "date": "2022-03-27",
-    "updated_date": "2023-03-04",
+    "updated_date": "2023-12-30",
     "layout": "document",
     "title": "Ligustro",
     "jsonld": {},
@@ -35,10 +35,12 @@ lucidum means 'bright' or 'shiny', referring to the leaves.
 
 [body:md]
 ## Description
-Scientific name: [_Ligustrum lucidum_](https://www.gbif.org/species/3172297)
-Genus: ligustrum
-Family: oleaceae
-Order: lamiales
+Order: Lamiales
+Family: Oleaceae 
+Genus: Ligustrum
+Specie: Ligustrum lucidum
+
+Link: https://www.google.com/search?q=Ligustrum+lucidum
 
 ## Position
 Prefers a bright position, with direct sunlight at least part of the day.
@@ -66,20 +68,26 @@ Tierra... nada de sustrato drenante ni coladores!
 #dm_li6: Ligustro de tronco "doble".
 
 ## Log
+### 2023-11-26
+Volví #dm_li1 a un bidón para engordar rápido, disimular heridas y tirar más hojas.
+
+### 2023-07-29
+Hice una poda de #dm_li1, sobre todo de la rama de sacrificio que tenía para engordar la primera. También saque mucho verde y reduje todo para prepararlo para la primavera. Fijé un nuevo ápice.
+
 ### 2023-03-02
-Cambié de maceta a una de cerámica porque estaban saliendo las raíces por abajo. En el último transplante había puesto una tapa de plaatico abajo de las raíces por lo que estaban bastante planas y radiales.
+Cambié #dm_li1 de maceta a una de cerámica porque estaban saliendo las raíces por abajo. En el último transplante había puesto una tapa de plastico abajo de las raíces por lo que estaban bastante planas y radiales.
 
 ### 2022-12-28
 En #dm_li1 saqué el alambre que torcía el tronco. Quedó bastante marcado 😔. Le puse un vendaje con Aloe. Luego liberé un tensor y otro lo ajuste para que quede más triangular.
 
 ### 2022-10-15
-A #dm_li1 le hice un desfoliado parcial y moví ramas para tratar de darle profundidad. Creo que el problema es este árbol es que está puy "plano". Si lo miro de frente está bien, pero es plano.
+A #dm_li1 le hice un defoliado parcial y moví ramas para tratar de darle profundidad. Creo que el problema es este árbol es que está puy "plano". Si lo miro de frente está bien, pero es plano.
 
 ### 2022-08-06
 Uní en un solo bosque a #dm_li2, #dm_li5, #dm_li6 y un ligustro extra que tenía con un grosor interesante para terminar con "5" ligustros ( #dm_li6 vale doble). De #dm_li2 y #dm_li5 saqué muuuuuucha raíz, del resto normal.
 
 ### 2022-08-06
-En #dm_li1 torci una parte del tronco que estaba recto usando Bending-3.png. Se marcó un poco el tronco... Veremos con el tiempo como quedan esas marcas y si las podemos disimular luego.
+En #dm_li1 torci una parte del tronco que estaba recto usando bending-3.png. Se marcó un poco el tronco... Veremos con el tiempo como quedan esas marcas y si las podemos disimular luego.
 ### 2022-02-19
 Hice #dm_li3 ([Fotos](https://photos.app.goo.gl/c5PMcakLFz9vviZh7)).
 Así está #dm_li1 ([Fotos](https://photos.app.goo.gl/8DALF4d2ZTT6Fpge9)).

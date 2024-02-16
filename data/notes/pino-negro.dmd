@@ -1,6 +1,6 @@
 {
     "date": "2022-04-03",
-    "updated_date": "2023-02-25",
+    "updated_date": "2024-01-06",
     "layout": "document",
     "title": "Pino negro",
     "jsonld": {},
@@ -34,7 +34,14 @@ Pinus uncinata, also knonw as Black pine
 
 [body:md]
 ## Description
-Nombre científico: Pinus uncinata
+
+Order: Pinales
+Family: Pinaceae
+Genus: Pinus
+Specie: Pinus uncinata
+
+Link: https://www.google.com/search?q=Pinus+uncinata
+
 
 ## Position
 
@@ -45,6 +52,9 @@ Nombre científico: Pinus uncinata
 ## Pruning
 Hagari: se hace en otoño y consiste en sacar las acículas viejas.
 [How to prune and decandle](https://youtu.be/8JWRenbHNys)
+
+#Monje Q: Cuál sería la técnica para reducir el tamaño de las agujas?
+A: No se abona durante el proceso de crecimiento de velas, se reduce el largo de las velas justo antes de que abran, mientras se riega lo mínimo necesario. El proceso se puede programar desde inicios del otoño o desde que se corta el crecimiento que desarrolló el árbol durante el verano. Desde ahí se programa la quita de abono y se controla el riego hasta la primavera, donde se hace el corte/reducción de velas... se continúa con el control de riego con buen sol. Una vez maduras las agujas, volvemos al abono y riego normal.
 
 ## Wiring
 
@@ -65,6 +75,9 @@ Acá hay un pino negro chiquito como el mío: [https://www.instagram.com/reel/Cb
 #dm_pn1 - [Foto](https://photos.app.goo.gl/ArEXqPQebJVgLQqc6)
 
 ## Log
+### 2023-11-13
+Esta con varias ramas pequeñas de las velas que tiro en el último  crecimiento. Decidí darle una vuelta alrededor de una piedra (me gustó la idea y el resultado).
+
 ### 2022-05-13
 Le quite bastantes acículas como se puede ver en la [foto](https://photos.app.goo.gl/3H9yzMcAedtNFpCf9)
 

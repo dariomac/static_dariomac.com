@@ -1,6 +1,6 @@
 {
     "date": "2022-03-21",
-    "updated_date": "2023-06-25",
+    "updated_date": "2023-12-28",
     "layout": "document",
     "title": "Ceibo",
     "jsonld": {},
@@ -35,7 +35,13 @@ National flower of Uruguay and Argentina
 
 [body:md]
 ## Description
-Nombre científico: *[Erythrina crista-galli](https://www.google.com/search?q=Erythrina+crista-galli)*.
+Order: Fabales
+Family: Fabaceae
+Genus: Erythrina
+Specie: Erythrina crista-galli
+
+Link: https://www.google.com/search?q=Erythrina+crista-galli
+
 Arbol nativo de follaje caduco. Florece en primavera-verano. Se reproduce fácilmente por semillas que se cosechan de su fruto en los meses de Enero y Marzo. Su semilla grande y oscura se siembran la primavera siguiente.
 
 ## Position
@@ -67,14 +73,21 @@ Al desfoliar, nunca cortar toda una hoja, porque eso casi siempre termina en que
 ## Notes
 
 ## My trees
-#dm_ce1: Tronco torcido, medio botella, chico.[Fotos](https://photos.app.goo.gl/cB76Twn3RuytrS3g6)
+#dm_ce1💀: Tronco torcido, medio botella, chico.[Fotos](https://photos.app.goo.gl/cB76Twn3RuytrS3g6)
 #dm_ce2: Tronco doble.[Fotos](https://photos.app.goo.gl/cB76Twn3RuytrS3g6)
-#dm_ce3: Palito largo sin características especiales. [Fotos](https://photos.app.goo.gl/cB76Twn3RuytrS3g6) 💀
+#dm_ce3💀: Palito largo sin características especiales. [Fotos](https://photos.app.goo.gl/cB76Twn3RuytrS3g6) 💀
 #dm_ce4: Tronco grueso, doble. [Fotos](https://photos.app.goo.gl/cQ29iA5FHzZYBQbFA)
+#dm_ce5: uní #dm_ce4 y #dm_ce2 para formar una composición.
 
 ## Log
+### 2023-08-25
+Al crear #dm_ce5, encontré que hay un buen nebari que tiene que empezar a aparecer una vez que se estabilice.
+
+### 2023-08-25
+El transplante de #dm_ce1💀 no gustó.
+
 ### 2023-06-20
-Transplanté #dm_ce1 a un viejo mate... Vamos a ver si le gusta la idea...
+Transplanté #dm_ce1💀 a un viejo mate... Vamos a ver si le gusta la idea...
 
 ### 2023-01-18
 He pasado los últimos 2 meses cortando y moviendo ramas en todos los árboles... crece como loco.
@@ -83,7 +96,7 @@ He pasado los últimos 2 meses cortando y moviendo ramas en todos los árboles..
 Quebré una de las ramas gruesas de #dm_ce4, mientras que esa y otra están con tensores porque venían creciendo mucho para arriba.
 
 ### 2022-07-07
-Luego de quebrar algunas ramitas de #dm_ce1 y #dm_ce2 e incluso la punta del tronco chico de #dm_ce4, quebré el tronco grueso de #dm_ce4 a unos 20cm.
+Luego de quebrar algunas ramitas de #dm_ce1💀 y #dm_ce2 e incluso la punta del tronco chico de #dm_ce4, quebré el tronco grueso de #dm_ce4 a unos 20cm.
 
 ### 2022-04-17
 Como fue un éxito el doblado de la rama en creo, ahora hice lo mismo en el segundo tronco de #dm_ce4. Quiero ver si en ese lugar de corte salen nuevos brotes (quizáso sea la época). Lo hice ahora para probar qué pasa.

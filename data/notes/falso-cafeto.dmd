@@ -1,6 +1,6 @@
 {
     "date": "2022-02-11",
-    "updated_date": "2023-02-24",
+    "updated_date": "2023-12-28",
     "layout": "document",
     "title": "Falso cafeto",
     "jsonld": {},
@@ -34,7 +34,12 @@ Manihot Grahamii, also known as Mandioca Brava
 
 [body:md]
 ## Description
-Nombre científico: Manihot Grahamii
+Order: Malpighiales
+Family: Euphorbiaceae
+Genus: Manihot
+Specie: Manihot grahamii
+
+Link: https://www.google.com/search?q=Manihot+grahamii
 
 Arbusto o árbol bajo, [laticífero](https://es.m.wikipedia.org/wiki/Latic%C3%ADfero) muy ramificado. Hojas simples, alternas, glabras, digitilobadas, con 7-l I lobos oblanceolados, pecíolo de 10-30 cm. relativamente grueso.
 

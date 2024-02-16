@@ -1,6 +1,6 @@
 {
     "date": "2022-04-20",
-    "updated_date": "2023-02-24",
+    "updated_date": "2023-12-29",
     "layout": "document",
     "title": "Jazmín del país",
     "jsonld": {},
@@ -35,7 +35,15 @@ Jasminum officinale (Common Jasmine) is a large semi-evergreen or deciduous clim
 
 [body:md]
 ## Description
-Nombre: Jasmin Officinale https://identify.plantnet.org/the-plant-list/species/Jasminum%20officinale%20L./data
+
+Order: Lamiales
+Family: Oleaceae 
+Genus: Jasminum
+Specie: Jasminum officinale
+
+Link: https://www.google.com/search?q=jasminum+officinale
+
+https://identify.plantnet.org/the-plant-list/species/Jasminum%20officinale%20L./data
 
 ## Position
 Lugar soleado para que de flores.
@@ -58,11 +66,11 @@ Soporta alambre fino en ramas no lignificadas. Una vez lignificada una rama es d
 
 ## Log
 
-### 20230203
+### 2023-02-03
 Le di el primer diseño. Alambre unas ramas (ya tenía otras alambradas y lignifico bien). Deje una rama de sacrificio para ensanchar una rama.
 
-### 2021xxyy
-No se muy bien que quiero con ja1 pero creo que puede ser un lindo experimento para luego conseguir uno con mejor tronco y lograr algo interesante, como este
+### 2021-xx-yy
+No se muy bien que quiero con #dm_ja1 pero creo que puede ser un lindo experimento para luego conseguir uno con mejor tronco y lograr algo interesante, como este
 ![pasted-image-20220427154758.png](/assets/pasted-image-20220427154758.png#center)
 [*source*](https://bonsaieejit.com/2012/08/12/garage-get-together/)
 
