@@ -1,0 +1,65 @@
+{
+  "title": "Employability and Personal Brand",
+  "date": "2024-02-15",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Jun 13, 2023",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20230613",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Tech Week 4.0"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+
+[duration:string]
+Jun 13, 2023 (30 minutes)
+
+[place_url:string]
+https://www.mibucle.com/techweek23
+
+[place:string]
+Remote
+
+[content:md]
+In this talk, we will explore how employability has become a key competency for all professionals in today's technology-driven world. We will discuss what employability is and why it is important to consciously develop it. We will also look at how a strong and well-defined personal brand can serve as a showcase of our employability and can be used as a strategic tool to stand out in a competitive job market. Finally, we will integrate practical examples from the Fintech sector to illustrate these concepts.
+
+### Informal Summary of the Talk
+
+The talk initially focused on the concept of employability, defining it as a crucial skill that every professional should actively cultivate. It was explained that employability is not only composed of technical knowledge but also includes soft skills and proactive attitudes towards labor market challenges.
+
+Next, we addressed how personal and professional development contributes to improving our employability. The presentation highlighted that it's not enough to have skills; it's also essential to know how to promote them, and this is where our personal brand comes into play.
+
+The speaker, Darío Maki, shared his personal experience in the technical field and his transition to roles where communication and content creation have been key. He emphasized how his active participation in social networks, tech communities, and academic events has contributed to establishing his professional reputation.
+
+Two different types of personal brands were introduced: one built around one's work (such as projects or individual initiatives) and another focused on sharing knowledge and experiences with the community. For attendees interested in improving their own personal brand, practical advice was offered on how to define and enhance it.
+
+Finally, we discussed how these concepts can be applied to the Fintech sector, highlighting the importance of staying up-to-date with current trends and innovations in order to remain relevant within the financial-technology field.
+
+The presentation concluded with a call for attendees to reflect on their own employability and encouraged them to take active steps towards building a personal brand that reflects their unique values ​​and professional identity.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O5F6qHFLDYc?si=yA6CUqFL8jE3R_Cm&start=9254#center" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+[projects:md]
+
+[related_images:json]
+  [{
+    "filename": "tech-week-4.0-li.jpg"
+  },{
+    "filename": "tech-week-4.0-li-2.png"
+  },{
+    "filename": "tech-week-4.0-li-3.png"
+  }]
