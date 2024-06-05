@@ -17,7 +17,7 @@
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "",
+  "canonical": "https://www.howdy.com/blog/coding-in-the-age-of-ai/",
   "custom_header": ""
 }
 
@@ -86,6 +86,7 @@ Also, we explored how AI can transform job definitions and lead to the emergence
 Overall, through this article (and the live discussion) we encourage developers to embrace the changing landscape of coding in the AI era. It is essential that we approach these technological advances with responsibility, critical thinking, and a willingness to learn new skills.
 
 [acknowledgments:md]
+This post, originally on [https://www.howdy.com/blog/coding-in-the-age-of-ai/](https://www.howdy.com/blog/coding-in-the-age-of-ai/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 

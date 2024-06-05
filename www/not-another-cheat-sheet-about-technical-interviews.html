@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Developer Advocate | Darío Macchi</title>
+    <title>Not another cheat sheet about technical interviews | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -205,15 +205,94 @@
         padding: 5px;
       }
 
+      .essay {
+        background-color: #f2f2f2;
+        border: 0px !important;
+        margin-left: inherit;
+      }
+
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
+      }
+
+      .essay p, .essay li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: inherit;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h4 {
+        font-weight: bold;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .further-reading {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
+      }
+
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
-
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="A summary of my work as Developer Advocate at Howdy." />
+    <meta name="description" content="This article provides a comprehensive guide to preparing for a technical interview. It covers various aspects such as researching the job, preparing a bio, setting up your environment, and formulating questions for the interviewer. The article also emphasizes the importance of coding interviews and provides useful resources and links to help understand various algorithms and data structures. Furthermore, it underscores the value of having a mentor or coach to provide personalized advice, build confidence, and stay motivated during the preparation process. The article concludes with a reminder that practice is key in acing a technical interview." />
     <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
     <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -234,7 +313,7 @@
     <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
     <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
     
-    <link rel="canonical" href="https://dariomac.com/howdy-developer-advocate" />
+    <link rel="canonical" href="https://www.howdy.com/not-another-cheat-sheet-about-technical-interviews/" />
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
@@ -282,9 +361,9 @@
     <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta property="og:url" content="/howdy-developer-advocate" />
-    <meta property="og:title" content="Developer Advocate" />
-    <meta property="og:description" content="A summary of my work as Developer Advocate at Howdy." />
+    <meta property="og:url" content="/not-another-cheat-sheet-about-technical-interviews" />
+    <meta property="og:title" content="Not another cheat sheet about technical interviews" />
+    <meta property="og:description" content="This article provides a comprehensive guide to preparing for a technical interview. It covers various aspects such as researching the job, preparing a bio, setting up your environment, and formulating questions for the interviewer. The article also emphasizes the importance of coding interviews and provides useful resources and links to help understand various algorithms and data structures. Furthermore, it underscores the value of having a mentor or coach to provide personalized advice, build confidence, and stay motivated during the preparation process. The article concludes with a reminder that practice is key in acing a technical interview." />
     <meta property="og:site_name" content="Darío Macchi personal website" />
     <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
     <meta property="og:image:type" content="image/png">
@@ -292,8 +371,8 @@
     
     <meta name="twitter:site" content="@_dariomac">
     <meta name="twitter:creator" content="@_dariomac">
-    <meta name="twitter:title" content="Developer Advocate">
-    <meta name="twitter:description" content="A summary of my work as Developer Advocate at Howdy.">
+    <meta name="twitter:title" content="Not another cheat sheet about technical interviews">
+    <meta name="twitter:description" content="This article provides a comprehensive guide to preparing for a technical interview. It covers various aspects such as researching the job, preparing a bio, setting up your environment, and formulating questions for the interviewer. The article also emphasizes the importance of coding interviews and provides useful resources and links to help understand various algorithms and data structures. Furthermore, it underscores the value of having a mentor or coach to provide personalized advice, build confidence, and stay motivated during the preparation process. The article concludes with a reminder that practice is key in acing a technical interview.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:widgets:new-embed-design" content="on">
     <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
@@ -344,9 +423,28 @@
       }
     </script>
 
-      <script type="application/ld+json">
-        {}
-      </script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.dariomac.com/"
+          },
+          "headline": "Not another cheat sheet about technical interviews",
+          "alternativeHeadline": "This article provides a comprehensive guide to preparing for a technical interview.",
+          "url": "https://www.dariomac.com/",
+          "datePublished": "2023-02-07",
+          "dateCreated": "2923-09-25",
+          "description": "This article provides a comprehensive guide to preparing for a technical interview. It covers various aspects such as researching the job, preparing a bio, setting up your environment, and formulating questions for the interviewer. The article also emphasizes the importance of coding interviews and provides useful resources and links to help understand various algorithms and data structures. Furthermore, it underscores the value of having a mentor or coach to provide personalized advice, build confidence, and stay motivated during the preparation process. The article concludes with a reminder that practice is key in acing a technical interview.",
+          "author": {
+            "@id": "https://www.dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
   </head>
   <body>
     <div class="board_view details">
@@ -367,155 +465,124 @@
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board">
+        <div class="dm-board essay">
           <article>
-            <div class="row splitter">
-              <div class="col-md-12 text-center">Details</div>
-            </div>
             <div class="row featured">
-              <div class="col-md-12">
+              <div class="offset-md-3 col-md-6 sheet">
                 <header>
-                  <h1>Developer Advocate</h1>
-                  <p class="duration">Jun 2022 - Now</p>
-                  <p><a href="https://www.howdy.com/">Howdy</a></p>
+                  <h1>Not another cheat sheet about technical interviews</h1>
+                  <p class="date">2023-02-07</p>
                 </header>
+
                 
-                  <section class="summary">
-                    <p>
-                      A summary of my work as Developer Advocate at Howdy.
-                    </p>
-                  </section>
-                
-                  <section class="content">
-                    <p>Like all DevRel roles, our work lives at the intersection of product, engineering, and marketing. My day job comprises writing docs and blog posts, collecting and sharing developer feedback, actively taking part in (as many) developer communities, and speaking at events, or just being there helping in any way.</p>
+                <section class="description">
+                  <p>
+                    This article provides a comprehensive guide to preparing for a technical interview. It covers various aspects such as researching the job, preparing a bio, setting up your environment, and formulating questions for the interviewer. The article also emphasizes the importance of coding interviews and provides useful resources and links to help understand various algorithms and data structures. Furthermore, it underscores the value of having a mentor or coach to provide personalized advice, build confidence, and stay motivated during the preparation process. The article concludes with a reminder that practice is key in acing a technical interview.
+                  </p>
+                </section>
+
+                <section>
+                    <p>Technical interviews can be intimidating, especially if you’re unsure what to expect. Many candidates turn to cheat sheets and online resources to get an idea of what they will be asked and how to prepare. <strong>While these resources can be helpful, they are often so scattered all over the web that the good ones are hard to find.</strong> Also, they provide a different level of specific advice than a good mentor or tutor.</p>
+<h2><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Cheat sheets and online resources</strong></a></h2>
+<p>When I started writing about technical interviews, I discovered a wealth of online resources available. There are even books on how to ace technical interviews, from general tips and advice to problem-solving strategies and specific types of questions.</p>
+<p>So, how can we talk about a subject that has already been discussed without repeating ideas that have already been said?</p>
+<p>My approach will focus on <strong>providing actionable advice for candidates.</strong> Instead of repeating the same guidelines and tips, I will focus on <strong>concrete strategies and insights and then redirect to the existing documentation</strong>. Think of it as a technical interview content hub.</p>
+<h2><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>How to prepare for the interview</strong></a></h2>
+<p>You finally made it! You got a technical interview for an amazing job at the company you want to work for. <strong>What now?</strong> 😬</p>
+<p>It’s normal to feel nervous: don’t let others tell you that it is because you are a junior and haven’t prepared enough! <strong>Even senior software developers feel nervous. They often fear being too familiar with programming concepts (or languages) outside their expertise.</strong></p>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Do your homework: research the job</strong>.</a></h3>
+<p>This shouldn’t be said, but sadly, many people come to an interview without doing the most basic research about the company and the job. And if by some miracle you pass the screening interview without doing that research, you won’t be so lucky twice.</p>
+<p>Find out (or ask) which is the <strong>technology stack, who works there, and what kinds of products they build</strong>. Also, discover if they have any <strong>public repositories or OSS projects to take a sneak peek at</strong>. Finally, try to find out <strong>who will be your interviewer and analyze their Github profile.</strong> In the end, the goal is to learn about their coding style, the technologies, and the libraries they use so you can use that information to your advantage during the interview.</p>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Prepare a short bio</strong>.</a></h3>
+<p>While using the same self-presentation speech at every interview is tempting, please don’t do it! Interviewers want to hear about the <strong>experience you have that is relevant to the position you are trying to land.</strong></p>
+<p><a href="https://www.techinterviewhandbook.org/self-introduction/">This Tech Interview Handbook section is handy for</a> getting into the topic. But, I think the “short introduction” should be shorter than the examples shown. Think about something you can say in a minute or even less.</p>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Get your setup ready</strong>.</a></h3>
+<p>“Ok, that one, I understand; you mean getting my audio and camera and headphones and so on working, right?”.</p>
+<p>Well, yes and no. Yes, your audio and camera should work (Didn’t we learn anything during the 2-years-lock-up because of the pandemic?), and headphones are a must to get clearly understood in a virtual conversation. But no, that’s not the only thing I meant.</p>
+<p>You should also pay attention to your <a href="https://www.youtube.com/watch?v=rGcAM1CNEU0">room light</a> and <a href="https://anyvoo.com/home-office-background/">background</a>, wear appropriate clothing (no, you can’t wear those old pajamas), and have the camera positioned correctly. Also, knowing which coding environment will be used during the interview is always advantageous. If you know it beforehand, don’t lose the opportunity to become familiar with it. Usually, you’ll use a solution with syntax highlighting, auto-completion, and testing capabilities, such as CoderPad or similar.</p>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Prepare some questions</strong></a></h3>
+<p>Remember that any interview is an excellent opportunity to <strong>learn more about your future job</strong>, the team you will work with, the company culture, and how you will fit in (if you do!). Don’t you know what to ask? Here are some <a href="https://www.howdy.com/questions-to-ask-your-interviewer/">Questions to ask your interviewer</a>.</p>
+<h2><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>During the interview</strong></a></h2>
+<p>As soon as the interviewer tells you about the problem you have to solve, you put your head down and try to solve it… <strong>STOP! What did you do wrong?</strong></p>
+<p>You missed three things before starting to code:</p>
+<ol>
+<li><strong>Repeat the question/problem to the interviewer</strong> to ensure both are on the same page.</li>
+<li><strong>Ask questions! (it won’t hurt you).</strong> Instead of assuming how your inputs/outputs will be, you can ask. Also, if your code has some side effects and you want to clarify it to the interviewer, it’s ok.</li>
+<li>If the question/problem you need to solve is still too vague, maybe it’s time to <strong>create a quick example to ask the interviewer if you have the right idea.</strong></li>
+</ol>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Coding interview</strong></a></h3>
+<p>Here is a set of advice specifically for coding interviews:</p>
+<ul>
+<li>Algorithms are a niche case. It is crucial to remember that most interviewers will only expect you to place them on the bat. <a href="https://coderpad.io/resources/learn/technical-interview-cheat-sheet/#:~:text=Consider%20algorithms%20in%20niche%20cases">Source.</a></li>
+<li>Here is a list of the main algorithms you should know with references to review/practice:
+<ul>
+<li><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#search-algorithms">Search Algorithms</a>
+<ul>
+<li><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#breadth-first-search">Breadth First Search</a></li>
+<li><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#depth-first-search">Depth First Search</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#sorting-algorithms">Sorting Algorithms</a>
+<ul>
+<li><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#selection-sort">Selection Sort</a></li>
+<li><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#insertion-sort">Insertion Sort</a></li>
+<li><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#merge-sort">Merge Sort</a></li>
+<li><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#quick-sort">Quick Sort</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Explain a high-level approach, even if it is a brute-force one. Seriously, don’t try to get the solution working and be efficient in the same attempt. You will have time, in the end, to enhance it and make it more efficient. You can even leave it as is and discuss possible improvements you could make to make it more efficient, scalable, or reusable. <a href="https://medium.com/hackernoon/the-tech-interview-cheatsheet-8e28d94f5f04#:~:text=Explain%20a%20high%20level%20approach%20even%20if%20it%20is%20a%20brute%20force%20one">Source.</a></li>
+<li>Point out when you’re cutting corners. It should be evident that you do this intentionally to simplify the scenario or because you are in a fictitious situation.</li>
+<li>Discuss the time and space complexity of your approach. The old Big O!. <a href="https://coderpad.io/resources/learn/technical-interview-cheat-sheet/#:~:text=discuss%20the%20time%20and%20space%20complexity%20of%20your%20approach">Source.</a></li>
+<li>No one expects you to be the next Turing, but you should be able to justify your choice between different data structures. <a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#asymptotic-notation">Source 1</a>, <a href="https://twitter.com/hurrayforhowdy/status/1581000413397950464?s=20&amp;t=zXH4k8Eb_86GEhQPjGgSfg">Source 2.</a></li>
+<li>Talking about data structures, here is a list of the most important ones, with references to review/practice with them:
+<ul>
+<li>Array <a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#array">(link 1</a>, <a href="https://www.techinterviewhandbook.org/algorithms/array/">link 2</a><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#array">)</a></li>
+<li>Linked List <a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#linked-list">(link 1</a>, <a href="https://www.techinterviewhandbook.org/algorithms/linked-list/">link 2</a><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#linked-list">)</a></li>
+<li>Hash Table or Hash Map <a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#hash">(link 1,</a> <a href="https://www.techinterviewhandbook.org/algorithms/hash-table/">link 2</a><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#hash">)</a></li>
+<li>Queue (<a href="https://www.techinterviewhandbook.org/algorithms/queue/">link 1</a>)</li>
+<li>Stack (<a href="https://www.techinterviewhandbook.org/algorithms/stack/">link 1</a>)</li>
+<li>Binary Tree <a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#binary-tree">(link 1,</a> <a href="https://www.techinterviewhandbook.org/algorithms/tree/">link 2</a><a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet#binary-tree">)</a></li>
+<li>Graph (<a href="https://www.techinterviewhandbook.org/algorithms/graph/">link 1</a>)</li>
+<li>Trie (<a href="https://www.techinterviewhandbook.org/algorithms/trie/">link 1</a>)</li>
+</ul>
+</li>
+<li>Test your code! Remember that coding test cases is an essential part of your skills as a developer and, most of the time is the way to show your code works! <a href="https://www.techinterviewhandbook.org/coding-interview-prep/#:~:text=Testing%20%2D%20Ability%20to%20test%20code%20against%20normal%20and%20corner%20cases%2C%20self%2Dcorrecting%20issues%20in%20code">Source.</a></li>
+</ul>
+<h2><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>The help of a mentor</strong></a></h2>
+<p>A mentor or coach who has undergone technical interview processes can offer practical advice specific to your needs and goals. They help you identify areas where you may need to improve or focus during your preparation and guide you in addressing different questions and challenges.</p>
+<p>But most importantly, a mentor or coach can help you build confidence and stay motivated. Technical interviews can be stressful, and it’s easy to feel discouraged if you’re not seeing the progress you want. A mentor or coach can offer encouragement and support to help you stay focused and keep working towards your goals.</p>
+<p>Ultimately, the best way to prepare for a technical interview <strong>is to practice, practice, and then practice some more.</strong> This means working through sample questions and problems and seeking out opportunities to <strong>apply your skills and knowledge in real-world situations</strong>. A mentor or coach can help you identify the most effective ways to practice and give you feedback on your progress.</p>
+<p>So, don’t rely on cheat sheets and online resources when preparing for a technical interview. Find a mentor or coach who can offer targeted advice and support to help you succeed. Good luck! With the proper preparation and support, you’ll be well on your way to acing your technical interview.</p>
+
+                </section>
+
+                  <section>
+                    <h2 id="Acknowledgments">Acknowledgments</h2>
+                      <p>This post, originally on <a href="https://www.howdy.com/not-another-cheat-sheet-about-technical-interviews/">https://www.howdy.com/not-another-cheat-sheet-about-technical-interviews/</a>, was written for <a href="https://www.howdy.com">Howdy™</a>, so I want to thank them for letting me share it with you on my website.</p>
 
                   </section>
-
-                  <section class="image_gallery">
-                    <link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness1.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness1.webp" type="image/webp">
                 
-                        <img src="/assets/thumbs/awareness1.jpg" alt="awareness1.jpg" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness2.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness2.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness2.png" alt="awareness2.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness3.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness3.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness3.png" alt="awareness3.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness4.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness4.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness4.png" alt="awareness4.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness5.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness5.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness5.jpg" alt="awareness5.jpg" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness6.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness6.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness6.png" alt="awareness6.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness7.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness7.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness7.png" alt="awareness7.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness8.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness8.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness8.png" alt="awareness8.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness9.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness9.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness9.png" alt="awareness9.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness10.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness10.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness10.png" alt="awareness10.png" />
-                      </picture>
-                    </a>
+                  <section class="backlinks">
+                    <h2>Mentioned in</h2>
+                        <ul>
+                            <li>
+                              <a href="/howdy-developer-advocate">Developer Advocate</a>
+                            </li>
+                        </ul>
                   </section>
               </div>
             </div>
-              <div class="row splitter">
-                <div class="col-md-12 text-center">Projects/Activities</div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <section class="projects">
-                    <h2><a name="content-generation-projects" class="anchor">
-<a name="content-generation-projects" href="#content-generation-projects" class="no_external_ico">Content generation projects</a></h2>
-<ul>
-<li>20240123 - <a href="/unearthing-user-needs-for-true-innovation">Unearthing User Needs for True Innovation</a> </li>
-<li>20240123 - <a href="/strategies-to-make-smart-choices-in-technology">Strategies to Make Smart Choices in Technology</a> </li>
-<li>20230929 - <a href="/code-like-a-pro-mental-models-for-dev-success">Code Like a Pro: Mental Models for Dev Success</a> </li>
-<li>20230918 - <a href="/redefining-seniority-from-ticket-closers-to-problem-framers">Redefining Seniority: From Ticket Closers to Problem Framers</a> </li>
-<li>20230829 - <a href="/do-software-developers-procrastinate-more">Do software developers procrastinate more?</a> </li>
-<li>20230825 - <a href="/costs-of-delay-why-timely-delivery-matters">Hidden Costs of Delay: Why Timely Delivery Matters</a> </li>
-<li>20230801 - <a href="/adapting-to-the-era-of-ai-challenges-and-opportunities-for-experienced-developers">Adapting to the era of AI: Challenges and opportunities for experienced developers</a> </li>
-<li>20230720 - <a href="/software-estimation-insights-from-decades-of-hits-and-misses">Software Estimation: Insights from Decades of Hits and Misses</a> </li>
-<li>20230615 - <a href="/from-developer-to-brand-how-personal-branding-can-skyrocket-your-career">From developer to brand: How personal branding can skyrocket your career</a> </li>
-<li>20230530 - <a href="/coding-in-the-age-of-ai-embracing-the-developers-evolution">Coding in the Age of AI: Embracing the Developer’s Evolution</a> </li>
-<li>20230510 - <a href="/the-crucial-role-of-software-communities-in-developers-growth">The crucial role of Software Communities in developers’s growth</a> </li>
-<li>20230207 - <a href="/not-another-cheat-sheet-about-technical-interviews">Not another cheat sheet about technical interviews</a> </li>
-<li>20230105 - <em>just as reviewer</em> - <a href="https://www.howdy.com/blog/pros-cons-working-startups/">Pros and Cons of Working in Startups</a></li>
-<li>20221209 - <a href="/the-dos-and-donts-of-asking-for-help-in-software-development">The Do’s and Don’ts of Asking for Help in Software Development</a> </li>
-<li>20221206 - <em>just as reviewer</em> - <a href="https://www.howdy.com/how-to-improve-knowledge-sharing-in-a-new-role/">How to Improve Knowledge Sharing in a New Role</a></li>
-<li>20221205 - <a href="/how-chatgpt-helps-to-solve-coding-challenges">How ChatGPT helps to solve coding challenges</a> </li>
-<li>20221107 - <a href="https://www.canal-uy.com/65-Soy-desarrollador-de-software-para-que-necesito-habilidades-blandas.html">Soy desarrollador de software, ¿para qué necesito habilidades blandas?</a> </li>
-<li>20221004 - <a href="/be-the-goat-software-engineer-know-your-clients">Be the GOAT software engineer: Know your clients</a> </li>
-<li>20220929 - <a href="/questions-to-ask-your-interviewer">Questions to ask your interviewer</a> </li>
-<li>20220929 - <a href="/crypto-how-it-started">Crypto: How it started</a> </li>
-<li>20220824 - <a href="/how-the-covid-pandemic-changed-the-world-of-work">How the COVID pandemic changed the world of work.</a></li>
-<li>20220819 - <a href="/mythbusting-the-word-process-introduction">Process mythbusting</a></li>
-</ul>
-<h2><a name="brand-awareness-tasks" class="anchor">
-<a name="brand-awareness-tasks" href="#brand-awareness-tasks" class="no_external_ico">Brand awareness tasks</a></h2>
-<ul>
-<li>20230323 - <a href="/personal-brand-and-learn-in-public">Howdy&lt;&gt;Tribu Latam Tech - Personal Brand &amp; Learn in public</a></li>
-<li>20230228 - <a href="/the-realities-of-software-development">Howdy - The realities of Software Development</a></li>
-<li>20230117 - <a href="/how-does-ai-affect-software-developers">Howdy &lt;&gt; NodeCO - How does AI affect software developers?</a></li>
-<li>20221129 - <a href="/interview-agencia-efe-soft-skills">Interview with Agencia EFE about Soft Skills</a></li>
-<li>20221118 - <a href="/webconf-latam-2022-dont-panic">WebConf LATAM 2022 - Don’t panic!</a></li>
-<li>20220823 - <a href="/software-quality-asteroids-and-the-cone-of-uncertainty">Software Quality, Asteroids and the Cone of Uncertainty</a></li>
-<li>20220817 - <a href="/employability-what-is-it-and-why-should-it-be-important">Employability: what is it and why should it be important?</a></li>
-<li>20220630 - <a href="/meetup-frontend-peru-quality-in-agile-contexts">Quality in Agile Contexts</a></li>
-</ul>
-<p>Also, before I officially started in this role, I was doing different activities while working as <a href="/austin-software-software-engineer#writing-projects">Software Engineer</a>.</p>
-
-                  </section>
-                </div>
-              </div>
-          </article>
         </div> <!-- container-fluid dm-board -->
 
         <a href="/" class="logo">
@@ -549,7 +616,7 @@
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
-
+    
     <div class="footer" style="text-align:center; width:100%;">
       <div style="text-align:center; width:100%">
       <ul>

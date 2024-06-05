@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Developer Advocate | Darío Macchi</title>
+    <title>Be the GOAT software engineer: Know your clients | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -205,15 +205,94 @@
         padding: 5px;
       }
 
+      .essay {
+        background-color: #f2f2f2;
+        border: 0px !important;
+        margin-left: inherit;
+      }
+
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
+      }
+
+      .essay p, .essay li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: inherit;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h4 {
+        font-weight: bold;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .further-reading {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
+      }
+
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
-
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="A summary of my work as Developer Advocate at Howdy." />
+    <meta name="description" content="As a software engineer there are a lot of people to serve, and lots of different ways to do it. If you want to be the GOAT, you need to know who your clients are." />
     <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
     <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -234,7 +313,7 @@
     <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
     <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
     
-    <link rel="canonical" href="https://dariomac.com/howdy-developer-advocate" />
+    <link rel="canonical" href="https://www.howdy.com/be-the-goat-software-engineer-know-your-clients-2/" />
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
@@ -282,9 +361,9 @@
     <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta property="og:url" content="/howdy-developer-advocate" />
-    <meta property="og:title" content="Developer Advocate" />
-    <meta property="og:description" content="A summary of my work as Developer Advocate at Howdy." />
+    <meta property="og:url" content="/be-the-goat-software-engineer-know-your-clients" />
+    <meta property="og:title" content="Be the GOAT software engineer: Know your clients" />
+    <meta property="og:description" content="As a software engineer there are a lot of people to serve, and lots of different ways to do it. If you want to be the GOAT, you need to know who your clients are." />
     <meta property="og:site_name" content="Darío Macchi personal website" />
     <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
     <meta property="og:image:type" content="image/png">
@@ -292,8 +371,8 @@
     
     <meta name="twitter:site" content="@_dariomac">
     <meta name="twitter:creator" content="@_dariomac">
-    <meta name="twitter:title" content="Developer Advocate">
-    <meta name="twitter:description" content="A summary of my work as Developer Advocate at Howdy.">
+    <meta name="twitter:title" content="Be the GOAT software engineer: Know your clients">
+    <meta name="twitter:description" content="As a software engineer there are a lot of people to serve, and lots of different ways to do it. If you want to be the GOAT, you need to know who your clients are.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:widgets:new-embed-design" content="on">
     <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
@@ -344,9 +423,28 @@
       }
     </script>
 
-      <script type="application/ld+json">
-        {}
-      </script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.dariomac.com/"
+          },
+          "headline": "Be the GOAT software engineer: Know your clients",
+          "alternativeHeadline": "Who are your clients as a Software Engineer?",
+          "url": "https://www.dariomac.com/",
+          "datePublished": "October 4, 2022",
+          "dateCreated": "2022-12-24",
+          "description": "As a software engineer there are a lot of people to serve, and lots of different ways to do it. If you want to be the GOAT, you need to know who your clients are.",
+          "author": {
+            "@id": "https://www.dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
   </head>
   <body>
     <div class="board_view details">
@@ -367,155 +465,88 @@
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board">
+        <div class="dm-board essay">
           <article>
-            <div class="row splitter">
-              <div class="col-md-12 text-center">Details</div>
-            </div>
             <div class="row featured">
-              <div class="col-md-12">
+              <div class="offset-md-3 col-md-6 sheet">
                 <header>
-                  <h1>Developer Advocate</h1>
-                  <p class="duration">Jun 2022 - Now</p>
-                  <p><a href="https://www.howdy.com/">Howdy</a></p>
+                  <h1>Be the GOAT software engineer: Know your clients</h1>
+                  <p class="date">October 4, 2022</p>
                 </header>
+
                 
-                  <section class="summary">
-                    <p>
-                      A summary of my work as Developer Advocate at Howdy.
-                    </p>
-                  </section>
-                
-                  <section class="content">
-                    <p>Like all DevRel roles, our work lives at the intersection of product, engineering, and marketing. My day job comprises writing docs and blog posts, collecting and sharing developer feedback, actively taking part in (as many) developer communities, and speaking at events, or just being there helping in any way.</p>
+                <section class="description">
+                  <p>
+                    As a software engineer there are a lot of people to serve, and lots of different ways to do it. IF you want to be the GOAT, you need to know who your clients are.
+                  </p>
+                </section>
+
+                <section>
+                    <p>Ok, I got it. You’re a GREAT software engineer. You have your stack under control and you can actually do frontend stuff and backend stuff; you rock working with relational and non-SQL databases… my gosh, you can even work with different cloud providers (e.g. GCP, AWS, Azure). Also, you feel GREAT because you have the right set of skills to satisfy your client; that guy (company, group, or corporation, it doesn’t matter) who pays your salary every month. Right?</p>
+<p>Well, I have bad news for you: you’re <em>great</em> as a software engineer or developer, but you may have something wrong! And no, it’s not your stack, or the database, or even the cloud provider you’re using… is your definition of “client”. Of course, the guy who pays you is a client; a very special one, if you ask me. But to be the GOAT software engineer, you have to satisfy a bunch of other clients.</p>
+<p>If you still have doubts, I can write it down for you in a familiar way:</p>
+<p><em>AS A software engineer I WANT to develop the right skills to satisfy all my clients TO make the business successful.</em></p>
+<p>See what I’ve done there? Wink, wink; now, seriously, there are a LOT of customers to serve. Let’s go through them.</p>
+<h2><a name="the-business-client" class="anchor">
+<a name="the-business-client" href="#the-business-client" class="no_external_ico">The business client</a></h2>
+<p>This is the client that keeps the business running. Yes, I know what you are thinking… “I can’t be everywhere… someone has to care about THIS client and send me their requirements in a digested way.”</p>
+<p>That’s right if you work for a large company, with all the Cxx layer, the PMBOK’s and SWEBOK’s roles in your team to keep you at a safe distance from the client. BUT, if you are in the trenches of a startup, or involved in the product definition, you better take it into account.</p>
+<p>This client will set many of the system attributes, like performance, security, or usability. Not intentionally or directly, but by being the first to test the scalability of the product, demand security for their information, and suffer or be delighted with your UI/UX. It will also be the primary source of needs which then will get into the business owner’s head and hopefully translate into something like a requirement (user story or paper napkin) for you to implement. Finally, it will be the one who discovers the bugs you left in your code after all the battery of QA activities you applied to the product.</p>
+<h2><a name="marketers-growth-hackers" class="anchor">
+<a name="marketers-growth-hackers" href="#marketers-growth-hackers" class="no_external_ico">Marketers / Growth Hackers</a></h2>
+<p>At least in computer-based products/businesses, it doesn’t matter that you have the best piece of software ever written in the history of computing if you don’t have someone to sell it. So the marketing team, salespeople, and growth hackers will inevitably be your clients.</p>
+<p>This client will need to get analytics on the product, information about how the people are using the product compared with the last month, a year ago, and so on. Also, they will need to understand the limitations of the tracking systems and the anonymity of the statistical information you can get from users.</p>
+<p>And they won’t just need raw data; they’ll need processed information, reliable ways to run product experiments, create landing pages for their campaigns, and learn more from the data crossing of those tools. Finally, they will want to know more about the SEO of those pages, the SEO of the company’s website, and how the content is being generated.</p>
+<h2><a name="other-developers" class="anchor">
+<a name="other-developers" href="#other-developers" class="no_external_ico">Other developers</a></h2>
+<p>Perhaps you had never thought about your teammates and other IT teams as your clients.</p>
+<p>But rethink it.</p>
+<p>Your teammates will be your clients when they consume your interfaces and classes; when they trust part of a new feature, they are developing on a helper you built and documented some time ago. Also, teammates and other IT teams will act as clients when they call those endpoints you built, sometimes intended for them but often built for their own specific requirements.</p>
+<h2><a name="the-business-owner" class="anchor">
+<a name="the-business-owner" href="#the-business-owner" class="no_external_ico">The business owner</a></h2>
+<p>Finally, we get to THE client we talked about in the intro. This is the guy (company, group, blah, blah) that pays you monthly. This is the one we always want to keep satisfied. But instead of being aware that we have to keep all our clients satisfied, we focus on this hard-to-please client. But if you think about it a little, it’s pretty easy to get it under your belt. Focus on their business, how it works, how you (as a Software Engineer) relate to the rest of the business areas, and what things you can do from that position to help the rest of your clients.</p>
+<h2><a name="what-about-suppliers" class="anchor">
+<a name="what-about-suppliers" href="#what-about-suppliers" class="no_external_ico">What about suppliers?</a></h2>
+<p>As you read throughout the article, we made a rough comparison with the manufacturing industry. So, if we talked about clients, it is reasonable to think that we also have suppliers. In fact, there are many (and they deserve an entire article about them), but here is a short list of them.</p>
+<h2><a name="all-the-clients-previously-mentioned" class="anchor">
+<a name="all-the-clients-previously-mentioned" href="#all-the-clients-previously-mentioned" class="no_external_ico">All the clients previously mentioned</a></h2>
+<p>Wait, wait, wait. Can our clients be our suppliers at the same time? Yes, they can. In fact, from time to time you will swap roles with all of them, so be aware of what you expect as a client or supplier, and remember it the next time you flip the roles.</p>
+<h2><a name="design-teams" class="anchor">
+<a name="design-teams" href="#design-teams" class="no_external_ico">Design teams</a></h2>
+<p>These guys will give us assets (i.e. icons, colors, animations) and UI designs considering their UX. Also, they will be in charge of defining the <a href="https://www.nngroup.com/articles/design-systems-101">design system</a> for the product, and many times, they will decide if a feature is ready to go to market (beyond if they are technically ready or not).</p>
+<h2><a name="final-thoughts" class="anchor">
+<a name="final-thoughts" href="#final-thoughts" class="no_external_ico">Final thoughts</a></h2>
+<p>The idea of this article is to make you aware of the whole environment that surrounds you as a software engineer. Each of these clients and suppliers deserves its own article explaining the subtle ways of dealing with them and will certainly be addressed. However, here are a couple of hints that apply to the interaction with them:</p>
+<ol>
+<li>Define good communication interfaces and always use them.</li>
+<li>Recognize the cultural differences between clients and suppliers and address them by establishing common ways of communication and agreements (i.e. don’t use jargon, bring examples on the table whenever is possible, draw ideas on a whiteboard, etc)</li>
+<li>Although we want to be agile, from time to time we need to document things. Try to agree on the best way to do this based on the intended audience of the documentation.</li>
+<li>Be tolerant. In every role (client and supplier), it’s ok to make mistakes. Try to understand the underlying need that the person who made the mistake wanted to fulfill, and then talk about how both parts can work in the future.</li>
+</ol>
+
+                </section>
+
+                  <section>
+                    <h2 id="Acknowledgments">Acknowledgments</h2>
+                      <p>This post, originally on <a href="https://www.howdy.com/be-the-goat-software-engineer-know-your-clients-2/">https://www.howdy.com/be-the-goat-software-engineer-know-your-clients-2/</a>, was written for <a href="https://www.howdy.com">Howdy™</a>, so I want to thank them for letting me share it with you on my website.</p>
 
                   </section>
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    <p><em>Oct 04, 2020</em>: Original publication on howdy.com</p>
 
-                  <section class="image_gallery">
-                    <link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness1.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness1.webp" type="image/webp">
+                  </section>
                 
-                        <img src="/assets/thumbs/awareness1.jpg" alt="awareness1.jpg" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness2.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness2.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness2.png" alt="awareness2.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness3.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness3.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness3.png" alt="awareness3.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness4.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness4.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness4.png" alt="awareness4.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness5.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness5.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness5.jpg" alt="awareness5.jpg" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness6.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness6.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness6.png" alt="awareness6.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness7.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness7.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness7.png" alt="awareness7.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness8.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness8.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness8.png" alt="awareness8.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness9.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness9.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness9.png" alt="awareness9.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness10.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness10.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness10.png" alt="awareness10.png" />
-                      </picture>
-                    </a>
+                  <section class="backlinks">
+                    <h2>Mentioned in</h2>
+                        <ul>
+                            <li>
+                              <a href="/howdy-developer-advocate">Developer Advocate</a>
+                            </li>
+                        </ul>
                   </section>
               </div>
             </div>
-              <div class="row splitter">
-                <div class="col-md-12 text-center">Projects/Activities</div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <section class="projects">
-                    <h2><a name="content-generation-projects" class="anchor">
-<a name="content-generation-projects" href="#content-generation-projects" class="no_external_ico">Content generation projects</a></h2>
-<ul>
-<li>20240123 - <a href="/unearthing-user-needs-for-true-innovation">Unearthing User Needs for True Innovation</a> </li>
-<li>20240123 - <a href="/strategies-to-make-smart-choices-in-technology">Strategies to Make Smart Choices in Technology</a> </li>
-<li>20230929 - <a href="/code-like-a-pro-mental-models-for-dev-success">Code Like a Pro: Mental Models for Dev Success</a> </li>
-<li>20230918 - <a href="/redefining-seniority-from-ticket-closers-to-problem-framers">Redefining Seniority: From Ticket Closers to Problem Framers</a> </li>
-<li>20230829 - <a href="/do-software-developers-procrastinate-more">Do software developers procrastinate more?</a> </li>
-<li>20230825 - <a href="/costs-of-delay-why-timely-delivery-matters">Hidden Costs of Delay: Why Timely Delivery Matters</a> </li>
-<li>20230801 - <a href="/adapting-to-the-era-of-ai-challenges-and-opportunities-for-experienced-developers">Adapting to the era of AI: Challenges and opportunities for experienced developers</a> </li>
-<li>20230720 - <a href="/software-estimation-insights-from-decades-of-hits-and-misses">Software Estimation: Insights from Decades of Hits and Misses</a> </li>
-<li>20230615 - <a href="/from-developer-to-brand-how-personal-branding-can-skyrocket-your-career">From developer to brand: How personal branding can skyrocket your career</a> </li>
-<li>20230530 - <a href="/coding-in-the-age-of-ai-embracing-the-developers-evolution">Coding in the Age of AI: Embracing the Developer’s Evolution</a> </li>
-<li>20230510 - <a href="/the-crucial-role-of-software-communities-in-developers-growth">The crucial role of Software Communities in developers’s growth</a> </li>
-<li>20230207 - <a href="/not-another-cheat-sheet-about-technical-interviews">Not another cheat sheet about technical interviews</a> </li>
-<li>20230105 - <em>just as reviewer</em> - <a href="https://www.howdy.com/blog/pros-cons-working-startups/">Pros and Cons of Working in Startups</a></li>
-<li>20221209 - <a href="/the-dos-and-donts-of-asking-for-help-in-software-development">The Do’s and Don’ts of Asking for Help in Software Development</a> </li>
-<li>20221206 - <em>just as reviewer</em> - <a href="https://www.howdy.com/how-to-improve-knowledge-sharing-in-a-new-role/">How to Improve Knowledge Sharing in a New Role</a></li>
-<li>20221205 - <a href="/how-chatgpt-helps-to-solve-coding-challenges">How ChatGPT helps to solve coding challenges</a> </li>
-<li>20221107 - <a href="https://www.canal-uy.com/65-Soy-desarrollador-de-software-para-que-necesito-habilidades-blandas.html">Soy desarrollador de software, ¿para qué necesito habilidades blandas?</a> </li>
-<li>20221004 - <a href="/be-the-goat-software-engineer-know-your-clients">Be the GOAT software engineer: Know your clients</a> </li>
-<li>20220929 - <a href="/questions-to-ask-your-interviewer">Questions to ask your interviewer</a> </li>
-<li>20220929 - <a href="/crypto-how-it-started">Crypto: How it started</a> </li>
-<li>20220824 - <a href="/how-the-covid-pandemic-changed-the-world-of-work">How the COVID pandemic changed the world of work.</a></li>
-<li>20220819 - <a href="/mythbusting-the-word-process-introduction">Process mythbusting</a></li>
-</ul>
-<h2><a name="brand-awareness-tasks" class="anchor">
-<a name="brand-awareness-tasks" href="#brand-awareness-tasks" class="no_external_ico">Brand awareness tasks</a></h2>
-<ul>
-<li>20230323 - <a href="/personal-brand-and-learn-in-public">Howdy&lt;&gt;Tribu Latam Tech - Personal Brand &amp; Learn in public</a></li>
-<li>20230228 - <a href="/the-realities-of-software-development">Howdy - The realities of Software Development</a></li>
-<li>20230117 - <a href="/how-does-ai-affect-software-developers">Howdy &lt;&gt; NodeCO - How does AI affect software developers?</a></li>
-<li>20221129 - <a href="/interview-agencia-efe-soft-skills">Interview with Agencia EFE about Soft Skills</a></li>
-<li>20221118 - <a href="/webconf-latam-2022-dont-panic">WebConf LATAM 2022 - Don’t panic!</a></li>
-<li>20220823 - <a href="/software-quality-asteroids-and-the-cone-of-uncertainty">Software Quality, Asteroids and the Cone of Uncertainty</a></li>
-<li>20220817 - <a href="/employability-what-is-it-and-why-should-it-be-important">Employability: what is it and why should it be important?</a></li>
-<li>20220630 - <a href="/meetup-frontend-peru-quality-in-agile-contexts">Quality in Agile Contexts</a></li>
-</ul>
-<p>Also, before I officially started in this role, I was doing different activities while working as <a href="/austin-software-software-engineer#writing-projects">Software Engineer</a>.</p>
-
-                  </section>
-                </div>
-              </div>
-          </article>
         </div> <!-- container-fluid dm-board -->
 
         <a href="/" class="logo">
@@ -549,7 +580,7 @@
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
-
+    
     <div class="footer" style="text-align:center; width:100%;">
       <div style="text-align:center; width:100%">
       <ul>

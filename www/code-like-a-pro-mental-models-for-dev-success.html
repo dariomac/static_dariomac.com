@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Developer Advocate | Darío Macchi</title>
+    <title>Code Like a Pro: Mental Models for Dev Success | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -205,15 +205,94 @@
         padding: 5px;
       }
 
+      .essay {
+        background-color: #f2f2f2;
+        border: 0px !important;
+        margin-left: inherit;
+      }
+
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
+      }
+
+      .essay p, .essay li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: inherit;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h4 {
+        font-weight: bold;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .further-reading {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
+      }
+
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
-
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="A summary of my work as Developer Advocate at Howdy." />
+    <meta name="description" content="Mental models are cognitive frameworks that help individuals make sense of the world. By applying these models, developers can approach challenges in a more effective and strategic manner, leading to improved outcomes and better software design." />
     <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
     <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -234,7 +313,7 @@
     <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
     <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
     
-    <link rel="canonical" href="https://dariomac.com/howdy-developer-advocate" />
+    <link rel="canonical" href="https://www.howdy.com/blog/code-like-a-pro-mental-models-for-dev-success/" />
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
@@ -282,9 +361,9 @@
     <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta property="og:url" content="/howdy-developer-advocate" />
-    <meta property="og:title" content="Developer Advocate" />
-    <meta property="og:description" content="A summary of my work as Developer Advocate at Howdy." />
+    <meta property="og:url" content="/code-like-a-pro-mental-models-for-dev-success" />
+    <meta property="og:title" content="Code Like a Pro: Mental Models for Dev Success" />
+    <meta property="og:description" content="Mental models are cognitive frameworks that help individuals make sense of the world. By applying these models, developers can approach challenges in a more effective and strategic manner, leading to improved outcomes and better software design." />
     <meta property="og:site_name" content="Darío Macchi personal website" />
     <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
     <meta property="og:image:type" content="image/png">
@@ -292,8 +371,8 @@
     
     <meta name="twitter:site" content="@_dariomac">
     <meta name="twitter:creator" content="@_dariomac">
-    <meta name="twitter:title" content="Developer Advocate">
-    <meta name="twitter:description" content="A summary of my work as Developer Advocate at Howdy.">
+    <meta name="twitter:title" content="Code Like a Pro: Mental Models for Dev Success">
+    <meta name="twitter:description" content="Mental models are cognitive frameworks that help individuals make sense of the world. By applying these models, developers can approach challenges in a more effective and strategic manner, leading to improved outcomes and better software design.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:widgets:new-embed-design" content="on">
     <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
@@ -344,9 +423,28 @@
       }
     </script>
 
-      <script type="application/ld+json">
-        {}
-      </script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.dariomac.com/"
+          },
+          "headline": "Code Like a Pro: Mental Models for Dev Success",
+          "alternativeHeadline": "Mental models are cognitive frameworks that help individuals make sense of the world.",
+          "url": "https://www.dariomac.com/",
+          "datePublished": "2023-09-29",
+          "dateCreated": "2024-01-12",
+          "description": "Mental models are cognitive frameworks that help individuals make sense of the world. By applying these models, developers can approach challenges in a more effective and strategic manner, leading to improved outcomes and better software design.",
+          "author": {
+            "@id": "https://www.dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
   </head>
   <body>
     <div class="board_view details">
@@ -367,155 +465,105 @@
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board">
+        <div class="dm-board essay">
           <article>
-            <div class="row splitter">
-              <div class="col-md-12 text-center">Details</div>
-            </div>
             <div class="row featured">
-              <div class="col-md-12">
+              <div class="offset-md-3 col-md-6 sheet">
                 <header>
-                  <h1>Developer Advocate</h1>
-                  <p class="duration">Jun 2022 - Now</p>
-                  <p><a href="https://www.howdy.com/">Howdy</a></p>
+                  <h1>Code Like a Pro: Mental Models for Dev Success</h1>
+                  <p class="date">2023-09-29</p>
                 </header>
+
                 
-                  <section class="summary">
-                    <p>
-                      A summary of my work as Developer Advocate at Howdy.
-                    </p>
-                  </section>
-                
-                  <section class="content">
-                    <p>Like all DevRel roles, our work lives at the intersection of product, engineering, and marketing. My day job comprises writing docs and blog posts, collecting and sharing developer feedback, actively taking part in (as many) developer communities, and speaking at events, or just being there helping in any way.</p>
+                <section class="description">
+                  <p>
+                    Mental models are cognitive frameworks that help individuals make sense of the world. By applying these models, developers can approach challenges in a more effective and strategic manner, leading to improved outcomes and better software design.
+                  </p>
+                </section>
+
+                <section>
+                    <h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>What Are Mental Models?</strong></a></h3>
+<p>Mental models are like the <strong>maps in our minds that help us make sense of things.</strong> They’re the reason we think some things are more important than others and they help us figure stuff out.</p>
+<p>Basically, a mental model is our <strong>own little understanding or picture of how something operates.</strong> We can’t remember every tiny detail about everything, right? So, we create these mental models to break down all that complex info into bits we can easily manage and understand.</p>
+<p><em>You do not rise to the level of your goals. You fall to the level of your systems.</em> – James Clear</p>
+<p>What does this mean? It means that you can’t aim high without a system to support it. Or more simply, <strong>it means that what you achieve is the result of your systems,</strong> the result of how to follow your internal/external processes, and not the result of aiming high.</p>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Why are they important to you as a software developer?</strong></a></h3>
+<p>We have discussed a lot about how you can be just a “Ticket Closer” or you can aim high and become a “Problem Framer”. If you don’t remember, go and read our article <a href="https://www.howdy.com/blog/redefining-seniority-from-ticket-closers-to-problem-framers/">Redefining Seniority: From Ticket Closers to Problem Framers</a>.</p>
+<p>If you want to be that “Problem Solver”, or even if you start out as a “Ticket Closer”, you need a system, processes, and ways of thinking that support your work. You need a way to face problems, read that code you have to maintain, and face it in the most healthy, productive, and professional way. And the most important: <strong>you need to do it without having to reinvent the wheel all the time.</strong></p>
+<p>In my opinion, mental models are comparable to <a href="https://en.wikipedia.org/wiki/Software_design_pattern">design patterns</a> – they are general, reusable solutions to frequently encountered problems. <strong>They aren’t ready-made solutions that can be directly applied;</strong> instead, they function as a <strong>set of “best practices” that can be utilized in a variety of situations.</strong></p>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Mental models for software developers</strong></a></h3>
+<p>There are a bunch of mental models out there. As a matter of fact, there are <a href="https://fs.blog/mental-models/">catalogs of mental models</a> you can get online or as physical books. But, just as with design patterns, there can be instances where it’s challenging to apply the abstract description of the pattern to a practical, real-life situation where it would be beneficial.</p>
+<p>That’s why I chose these mental models that, in my opinion, are the most useful for software developers, and added to them one or more real-life examples about how they can be applied.</p>
+<h4><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Occam’s razor</strong></a></h4>
+<p>Occam’s razor is also known as <strong>the law of parsimony.</strong> It suggests that when trying to understand a complex phenomenon or solve a problem, <strong>one should always opt for the simplest explanation or strategy among the available options.</strong> It doesn’t guarantee the correctness of the simplest solution; just suggests that it should be pursued first.</p>
+<p>In the software development realm, this model could be used when you’re trying to solve a bug. After some time hunting it, you start thinking you can’t fix it; then you start having a crisis of confidence (hello Imposter syndrome!); a couple of hours later you are questioning your career to end the day questioning your whole life. The next morning you realize that it was just a missing semicolon or a simple typo. The real problem (and the simple explanation) was that you were too deep down in the rabbit hole (or just tired).</p>
+<p>If you’re looking for an additional example of this model being utilized in software, remember the KISS (Keep It Simple Stupid) design principle.</p>
+<h4><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Circle of competence</strong></a></h4>
+<p>It refers to the idea that each of us, individually or as an organization, has a range of abilities or understanding in certain areas. <strong>The concept emphasizes the importance of staying within your areas of expertise for decision-making and endeavors.</strong> Knowing our limits allows us to understand when we have an advantage in a certain situation vs. when we have a “rough edge” that makes us vulnerable.</p>
+<p>Knowing our circle allows us to <strong>improve decision-making without our ego blinding us</strong>. Have you ever found yourself discussing a topic outside of your expertise, just to avoid admitting that you’re clueless? It’s not a comfortable position to be in, especially when it comes to making decisions 🤦🏻♂️.</p>
+<h4><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Inversion</strong></a></h4>
+<p>This is a simple but very powerful one. Inversion is a mental model where <strong>you approach a situation from the opposite end of the normal starting point</strong>. Instead of thinking about how to succeed, you think about how to fail. This helps you understand what mistakes to avoid.</p>
+<p>Suppose you and your software development team have promised a client that you will produce maintainable code. What does that really mean? If you ask them, they will answer “Clean code”, as if that’s enough to guarantee the maintainability of your code. Instead, you can ask your team what they can do to make your source code unmaintainable. They will tell you “Don’t add any comments”, “use cryptic variable/function names”, “code everything inside a single class/file”, etc. This will give you a handy list of things to avoid in your coding process, thus ensuring greater maintainability.</p>
+<p>Inversion, as a method, can be challenging for us due to three key scientific reasons:</p>
+<ul>
+<li>It disrupts our conventional thinking patterns</li>
+<li>It forces us to contemplate unwanted outcomes</li>
+<li>Shifting from our regular problem-solving approach to inversion puts extra strain on our brains 🧠.</li>
+</ul>
+<p>By mastering this method, we can potentially revolutionize our problem-solving abilities.</p>
+<h4><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Second-Order thinking</strong></a></h4>
+<p>Second-order thinking is a mental model that <strong>involves considering not only the immediate results of decisions but also how those results might cause further effects in the future.</strong> This type of foresight can help prevent potential problems that weren’t immediately obvious and enable us to make more informed, strategic decisions.</p>
+<p>This way of thinking is key in software development because we make so many choices throughout the day. Like, should I update this tool to the latest version for this cool new feature? Or should I go with this new design style? <strong>Every choice we make has an instant effect, and we usually get that part right.</strong> But if we don’t think ahead about what might happen next because of that choice, we could mess up other parts of our project, or end up with unexpected problems down the line because the new version isn’t stable.</p>
+<p>This mental model is <strong>especially important at the beginning of a project.</strong> At this time, you make many choices that are hard to change later on. Think about architecture decisions, database type, cloud provider, and a long, long list of others. If you want to go deeper into this topic, read Jeff Bezos’ concept of Type 1 and Type 2 decisions.</p>
+<h4><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Reciprocity</strong></a></h4>
+<p>This one is a very simple, but powerful one. <strong>If someone does something to you, you’re likely to do the same thing back to them (or worse, to others).</strong></p>
+<p>An example of this could be when we do a code review for someone. If we’re kind, honest, and polite in our feedback, that person will likely do the same for us and even with other devs when doing a CR.</p>
+<h4><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Inertia</strong></a></h4>
+<p>Inertia is a basic rule in physics that says <strong>that if something is moving in a certain direction, it will keep going that way unless something else stops or changes its direction.</strong> This idea can also apply to different areas of our lives, including our jobs.</p>
+<p>In many companies, even as they grow and change a lot, the technical parts like databases and programming languages don’t change as quickly. This is especially true for foundational aspects such as databases, programming languages, and cloud providers. Although it’s important to keep making things quickly and efficiently, we should also make sure they’re easy to maintain.</p>
+<p>I think this idea of inertia applies to software engineering projects too. <strong>Have you ever tried to shake things up right after joining a new project?</strong> It usually doesn’t go too well. I often use a scene from the movie “Raiders of the Lost Ark” to explain this. In the scene, trying to stop or redirect a huge rolling boulder (like trying to change a project) will get you squished!</p>
+<h4><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Sunk-Cost fallacy</strong></a></h4>
+<p>The Sunk-Cost fallacy is like <strong>throwing good money after bad.</strong> It’s when <strong>we keep doing something because we’ve already put a lot of time, money or effort into it, even if it might not be the best thing to do now.</strong> The mistake is thinking that because we’ve already invested so much, we should keep going, even though we can’t get back what we’ve already spent. Basically, <strong>it means letting what we’ve done in the past affect our decisions now, instead of just thinking about what’s best for the future.</strong></p>
+<p>This last mental model is very common in our field. <strong>How many of you have been involved in a software development project that ought to have been stopped far earlier</strong>? Yet, management pushed on until its completion, resulting in dissatisfaction all around, and the final product now lies forgotten on an unused server.</p>
+<p>Don’t just point fingers at the managers. As software developers, <strong>we often create complex systems that can be expanded in every possible way, as per the client’s wishes.</strong> But, we later realized that the <strong>client’s needs were much simpler than we initially thought</strong>. Still, we continue to use our behemoth because it took us a lot of time to build it and it looks beautiful, instead of using a simple structure.</p>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Wrap it all up</strong></a></h3>
+<p>In the world of coding, having <strong>mental models can help us think better and make smarter decisions.</strong> They’re like a guide map that helps us understand tricky situations, solve problems, and guess what might happen next. <strong>But it’s important to remember that there’s no one-size-fits-all mental mode</strong>l. They’re just tools for thinking, not strict rules to follow. <strong>It’s best to have a bunch of them in your toolkit so you can use them depending on the situation.</strong></p>
+<p>At first, it might take some effort to get used to these mental models as you start using them in your daily work. But after some time, <strong>they’ll become like second nature and will subtly influence how you make decisions</strong>, <strong>making it easier for you to handle the complex world of software development.</strong> The goal isn’t to have an answer for everything but rather to develop a way of thinking that lets you look at problems from different angles and come up with effective solutions.</p>
+
+                </section>
+
+                  <section>
+                    <h2 id="Acknowledgments">Acknowledgments</h2>
+                      <p>This post, originally on <a href="https://www.howdy.com/blog/code-like-a-pro-mental-models-for-dev-success/">https://www.howdy.com/blog/code-like-a-pro-mental-models-for-dev-success/</a>, was written for <a href="https://www.howdy.com">Howdy™</a>, so I want to thank them for letting me share it with you on my website.</p>
 
                   </section>
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    <p><em>Sep 29, 2023</em>: Original publication on howdy.com</p>
 
-                  <section class="image_gallery">
-                    <link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness1.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness1.webp" type="image/webp">
+                  </section>
                 
-                        <img src="/assets/thumbs/awareness1.jpg" alt="awareness1.jpg" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness2.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness2.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness2.png" alt="awareness2.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness3.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness3.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness3.png" alt="awareness3.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness4.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness4.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness4.png" alt="awareness4.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness5.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness5.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness5.jpg" alt="awareness5.jpg" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness6.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness6.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness6.png" alt="awareness6.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness7.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness7.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness7.png" alt="awareness7.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness8.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness8.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness8.png" alt="awareness8.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness9.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness9.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness9.png" alt="awareness9.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness10.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness10.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness10.png" alt="awareness10.png" />
-                      </picture>
-                    </a>
+                  <section class="backlinks">
+                    <h2>Mentioned in</h2>
+                        <ul>
+                            <li>
+                              <a href="/howdy-developer-advocate">Developer Advocate</a>
+                            </li>
+                        </ul>
                   </section>
               </div>
             </div>
-              <div class="row splitter">
-                <div class="col-md-12 text-center">Projects/Activities</div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <section class="projects">
-                    <h2><a name="content-generation-projects" class="anchor">
-<a name="content-generation-projects" href="#content-generation-projects" class="no_external_ico">Content generation projects</a></h2>
-<ul>
-<li>20240123 - <a href="/unearthing-user-needs-for-true-innovation">Unearthing User Needs for True Innovation</a> </li>
-<li>20240123 - <a href="/strategies-to-make-smart-choices-in-technology">Strategies to Make Smart Choices in Technology</a> </li>
-<li>20230929 - <a href="/code-like-a-pro-mental-models-for-dev-success">Code Like a Pro: Mental Models for Dev Success</a> </li>
-<li>20230918 - <a href="/redefining-seniority-from-ticket-closers-to-problem-framers">Redefining Seniority: From Ticket Closers to Problem Framers</a> </li>
-<li>20230829 - <a href="/do-software-developers-procrastinate-more">Do software developers procrastinate more?</a> </li>
-<li>20230825 - <a href="/costs-of-delay-why-timely-delivery-matters">Hidden Costs of Delay: Why Timely Delivery Matters</a> </li>
-<li>20230801 - <a href="/adapting-to-the-era-of-ai-challenges-and-opportunities-for-experienced-developers">Adapting to the era of AI: Challenges and opportunities for experienced developers</a> </li>
-<li>20230720 - <a href="/software-estimation-insights-from-decades-of-hits-and-misses">Software Estimation: Insights from Decades of Hits and Misses</a> </li>
-<li>20230615 - <a href="/from-developer-to-brand-how-personal-branding-can-skyrocket-your-career">From developer to brand: How personal branding can skyrocket your career</a> </li>
-<li>20230530 - <a href="/coding-in-the-age-of-ai-embracing-the-developers-evolution">Coding in the Age of AI: Embracing the Developer’s Evolution</a> </li>
-<li>20230510 - <a href="/the-crucial-role-of-software-communities-in-developers-growth">The crucial role of Software Communities in developers’s growth</a> </li>
-<li>20230207 - <a href="/not-another-cheat-sheet-about-technical-interviews">Not another cheat sheet about technical interviews</a> </li>
-<li>20230105 - <em>just as reviewer</em> - <a href="https://www.howdy.com/blog/pros-cons-working-startups/">Pros and Cons of Working in Startups</a></li>
-<li>20221209 - <a href="/the-dos-and-donts-of-asking-for-help-in-software-development">The Do’s and Don’ts of Asking for Help in Software Development</a> </li>
-<li>20221206 - <em>just as reviewer</em> - <a href="https://www.howdy.com/how-to-improve-knowledge-sharing-in-a-new-role/">How to Improve Knowledge Sharing in a New Role</a></li>
-<li>20221205 - <a href="/how-chatgpt-helps-to-solve-coding-challenges">How ChatGPT helps to solve coding challenges</a> </li>
-<li>20221107 - <a href="https://www.canal-uy.com/65-Soy-desarrollador-de-software-para-que-necesito-habilidades-blandas.html">Soy desarrollador de software, ¿para qué necesito habilidades blandas?</a> </li>
-<li>20221004 - <a href="/be-the-goat-software-engineer-know-your-clients">Be the GOAT software engineer: Know your clients</a> </li>
-<li>20220929 - <a href="/questions-to-ask-your-interviewer">Questions to ask your interviewer</a> </li>
-<li>20220929 - <a href="/crypto-how-it-started">Crypto: How it started</a> </li>
-<li>20220824 - <a href="/how-the-covid-pandemic-changed-the-world-of-work">How the COVID pandemic changed the world of work.</a></li>
-<li>20220819 - <a href="/mythbusting-the-word-process-introduction">Process mythbusting</a></li>
-</ul>
-<h2><a name="brand-awareness-tasks" class="anchor">
-<a name="brand-awareness-tasks" href="#brand-awareness-tasks" class="no_external_ico">Brand awareness tasks</a></h2>
-<ul>
-<li>20230323 - <a href="/personal-brand-and-learn-in-public">Howdy&lt;&gt;Tribu Latam Tech - Personal Brand &amp; Learn in public</a></li>
-<li>20230228 - <a href="/the-realities-of-software-development">Howdy - The realities of Software Development</a></li>
-<li>20230117 - <a href="/how-does-ai-affect-software-developers">Howdy &lt;&gt; NodeCO - How does AI affect software developers?</a></li>
-<li>20221129 - <a href="/interview-agencia-efe-soft-skills">Interview with Agencia EFE about Soft Skills</a></li>
-<li>20221118 - <a href="/webconf-latam-2022-dont-panic">WebConf LATAM 2022 - Don’t panic!</a></li>
-<li>20220823 - <a href="/software-quality-asteroids-and-the-cone-of-uncertainty">Software Quality, Asteroids and the Cone of Uncertainty</a></li>
-<li>20220817 - <a href="/employability-what-is-it-and-why-should-it-be-important">Employability: what is it and why should it be important?</a></li>
-<li>20220630 - <a href="/meetup-frontend-peru-quality-in-agile-contexts">Quality in Agile Contexts</a></li>
-</ul>
-<p>Also, before I officially started in this role, I was doing different activities while working as <a href="/austin-software-software-engineer#writing-projects">Software Engineer</a>.</p>
-
-                  </section>
-                </div>
-              </div>
-          </article>
         </div> <!-- container-fluid dm-board -->
 
         <a href="/" class="logo">
@@ -549,7 +597,7 @@
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
-
+    
     <div class="footer" style="text-align:center; width:100%;">
       <div style="text-align:center; width:100%">
       <ul>

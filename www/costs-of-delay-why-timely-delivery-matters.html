@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Developer Advocate | Darío Macchi</title>
+    <title>Hidden Costs of Delay: Why Timely Delivery Matters | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -205,15 +205,94 @@
         padding: 5px;
       }
 
+      .essay {
+        background-color: #f2f2f2;
+        border: 0px !important;
+        margin-left: inherit;
+      }
+
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
+      }
+
+      .essay p, .essay li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: inherit;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h4 {
+        font-weight: bold;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .further-reading {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
+      }
+
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
-
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="A summary of my work as Developer Advocate at Howdy." />
+    <meta name="description" content="The concept of the Cost of Delay (CoD) refers to the potential loss of money by not releasing a product or feature promptly." />
     <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
     <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -234,7 +313,7 @@
     <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
     <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
     
-    <link rel="canonical" href="https://dariomac.com/howdy-developer-advocate" />
+    <link rel="canonical" href="https://www.howdy.com/blog/costs-of-delay-why-timely-delivery-matters/" />
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
@@ -282,9 +361,9 @@
     <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta property="og:url" content="/howdy-developer-advocate" />
-    <meta property="og:title" content="Developer Advocate" />
-    <meta property="og:description" content="A summary of my work as Developer Advocate at Howdy." />
+    <meta property="og:url" content="/costs-of-delay-why-timely-delivery-matters" />
+    <meta property="og:title" content="Hidden Costs of Delay: Why Timely Delivery Matters" />
+    <meta property="og:description" content="The concept of the Cost of Delay (CoD) refers to the potential loss of money by not releasing a product or feature promptly." />
     <meta property="og:site_name" content="Darío Macchi personal website" />
     <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
     <meta property="og:image:type" content="image/png">
@@ -292,8 +371,8 @@
     
     <meta name="twitter:site" content="@_dariomac">
     <meta name="twitter:creator" content="@_dariomac">
-    <meta name="twitter:title" content="Developer Advocate">
-    <meta name="twitter:description" content="A summary of my work as Developer Advocate at Howdy.">
+    <meta name="twitter:title" content="Hidden Costs of Delay: Why Timely Delivery Matters">
+    <meta name="twitter:description" content="The concept of the Cost of Delay (CoD) refers to the potential loss of money by not releasing a product or feature promptly.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:widgets:new-embed-design" content="on">
     <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
@@ -344,9 +423,28 @@
       }
     </script>
 
-      <script type="application/ld+json">
-        {}
-      </script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.dariomac.com/"
+          },
+          "headline": "Hidden Costs of Delay: Why Timely Delivery Matters",
+          "alternativeHeadline": "The concept of the Cost of Delay (CoD) refers to the potential loss of money by not releasing a product or feature promptly.",
+          "url": "https://www.dariomac.com/",
+          "datePublished": "2023-08-25",
+          "dateCreated": "2024-01-12",
+          "description": "The concept of the Cost of Delay (CoD) refers to the potential loss of money by not releasing a product or feature promptly.",
+          "author": {
+            "@id": "https://www.dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
   </head>
   <body>
     <div class="board_view details">
@@ -367,155 +465,92 @@
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board">
+        <div class="dm-board essay">
           <article>
-            <div class="row splitter">
-              <div class="col-md-12 text-center">Details</div>
-            </div>
             <div class="row featured">
-              <div class="col-md-12">
+              <div class="offset-md-3 col-md-6 sheet">
                 <header>
-                  <h1>Developer Advocate</h1>
-                  <p class="duration">Jun 2022 - Now</p>
-                  <p><a href="https://www.howdy.com/">Howdy</a></p>
+                  <h1>Hidden Costs of Delay: Why Timely Delivery Matters</h1>
+                  <p class="date">2023-08-25</p>
                 </header>
+
                 
-                  <section class="summary">
-                    <p>
-                      A summary of my work as Developer Advocate at Howdy.
-                    </p>
-                  </section>
-                
-                  <section class="content">
-                    <p>Like all DevRel roles, our work lives at the intersection of product, engineering, and marketing. My day job comprises writing docs and blog posts, collecting and sharing developer feedback, actively taking part in (as many) developer communities, and speaking at events, or just being there helping in any way.</p>
+                <section class="description">
+                  <p>
+                    The concept of the Cost of Delay (CoD) refers to the potential loss of money by not releasing a product or feature promptly.
+                  </p>
+                </section>
+
+                <section>
+                    <p>Ever heard of “Cost of Delay”? 🤔</p>
+<p>Don’t worry if you didn’t, we’re going to break it down in simple and everyday words.</p>
+<p>Think of it as the money you’re potentially losing out on by not getting a product or feature out there into the world right now. By understanding this concept, businesses can better grasp how their choices could impact their bottom line. This can result in smarter decisions, <a href="https://www.howdy.com/blog/3-must-try-productivity-boosters/">better performance</a>, and ultimately more money in the bank!</p>
+<p>Stick around as we go deeper into this concept and let us explain why we believe there are hidden costs associated with it in Software Engineering.</p>
+<h4><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Unveiling the Hidden Costs of Delay (CoD)</strong></a></h4>
+<p>Imagine there are two developers talking about the cost a delay has in the development of a specific software product. Let’s hear what they have to say about it 👇</p>
+<p>– Clark: “I had this awesome feature that was supposed to be ready by the end of the month, you know? But guess what? It took me an extra two weeks to finish it. I wonder how much money my company lost because of this delay.”</p>
+<p>– Rick: “Hmm… let’s see 🤔. You need to estimate how much profit your company would’ve made per week once the feature was released. Let’s say it’s around $20,000 a week. With that info, you can easily calculate the cost of that delay!”</p>
+<p>– Clark: “Oh, I see! 🧮… the CoD comes out to be a whopping $40,000! Can you believe it? 💸”</p>
+<p>– Rick: “Wait! but did you work that extra two weeks for free?”</p>
+<p>– Clark: “What? pfff… no! Of course, I didn’t!”</p>
+<p>– Rick: “Then you have to add to that $40,000, your salary for those 2 weeks!”</p>
+<p>– Clark: “Ok, now I’m worried because that’s a lot of money!”</p>
+<p>Rick got it! And as Johanna Rothman defines it: “is the way to think about the revenue you can lose plus the cost of continued development”.</p>
+<h4><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Why Timely Feature Delivery is a Game-Changer in Software Development</strong></a></h4>
+<p>It goes without saying that we should try to deliver features on time. Rick talked about this from a money angle only, but there are loads of reasons why it’s crucial. Off the top of our heads, we’re talking about keeping customers happy, staying ahead of competitors, looking after our reputation, impressing our investors…, and we bet there are tons more.</p>
+<p>But moving back to Rick’s reasoning, we’ve always wanted to say “I Don’t Know Rick, Looks Fake to Me”. And now we finally got the chance!</p>
+<p>Okay, maybe calling it a fake was a bit forced, but something deep down tells us it’s not the full picture… that there are more hidden costs when we don’t deliver on time.</p>
+<h4><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>How Late Software Projects Really Hit your Wallet</strong></a></h4>
+<p>We saw that delays in software development can have a significant impact on sales, especially if a product is slated for release during a high-demand period. For instance, missing out on the holiday shopping season because of development delays could result in substantial lost sales opportunities.</p>
+<p>As the saying goes, “Time is money,” and in the world of software development, this couldn’t be more true. Each day that your software isn’t on the market is a day that it’s not generating revenue, which can add up pretty quickly.</p>
+<p>But let’s check out these three “hidden” costs that have sadly come up because of Clark’s delay – costs that might not be super obvious but are totally key to fully getting what’s going on.</p>
+<h5><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Marketing Costs</strong></a></h5>
+<p>When it comes to feature delivery and marketing efforts, these two need to be in perfect sync for optimal results. Imagine spending tons of resources on marketing campaigns promising potential clients specific features only for them to find out those features aren’t ready yet. It’s like going to a restaurant that’s advertising their special lobster dinner only to find out they’ve run out of lobsters – disappointing right? Delays in feature delivery disrupt marketing timelines and can lead to wasted resources and missed opportunities.</p>
+<p>In Clark’s case, the entire marketing campaign scheduled for the expected delivery day had to be suspended.</p>
+<p>Marketing isn’t cheap; there are costs associated with manpower, materials, digital space purchases, and the list goes on. When product launch delays occur, these expenses do not just disappear; instead they pile up or go down the drain altogether. Not only does this mean your business has thrown money away, but it also means when you’re finally ready for launch and you’ll need even more funds for new campaigns.</p>
+<h5><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Customer</strong></a></h5>
+<p>We talked about customer disappointment in the lobster ad. The same thing happens to customers of Clark’s products. Delays can lead to customer dissatisfaction and loss of trust which translates into monetary losses as well. Customers might request refunds or decide not to renew contracts because they feel let down or believe they can’t trust your brand anymore. And once you lose trust… well let’s just say regaining it isn’t an easy task.</p>
+<p>In fact, consistent delays can cause long-term damage in your business relationships too—not just with clients but also with partners and suppliers who may start seeing your company as unreliable or risky. This could lead them either demanding upfront payments or even terminating contracts altogether leaving you scrambling for replacements or dealing with financial hits.</p>
+<p>Not to mention, if you’ve got a competitor who manages to launch before you do, they might snatch up potential customers that could have been yours.</p>
+<h5><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Investors</strong></a></h5>
+<p>Investor confidence is another area where delays might have an impact—and not a good one, that’s for sure! Investors like seeing returns on their investments (who wouldn’t?) and consistent delays send worrying signals about management’s ability to deliver results which can scare off current investors and deter potential ones from funding future projects.</p>
+<p>Less investors, less money… and with less money is more likely to be laid off in short order.</p>
+<h4><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Wrapping up</strong></a></h4>
+<p>Do you know what is worst about the Cost of Delay? The sequence of costs “marketing-customers-investors” is like the old song “There Was an Old Lady Who Swallowed a Fly” (ok, maybe not everybody has kids, so here it’s the <a href="https://youtu.be/J0_4hkfR7WE">YouTube version</a>). Go listen to the song. We’ll wait here.</p>
+<p>Now you are back, did you realize the cumulative structure of the song? In the marketing-customers-investors trifecta happens the same!</p>
+<p>If a developer doesn’t meet a deadline and fails to deliver a promised feature, we gotta put the brakes on marketing campaigns… and that ain’t cheap. Plus, if we’ve already hyped up that feature in our ads, besides losing money there, customers are gonna be expecting it and they’ll be ticked off when they don’t get it. Angry customers are bad news for business and investors tend to steer clear of products or businesses where stuff hits the fan.</p>
+<p>So, Rick… when Johanna Rothman refers to the “plus the cost of continued development,” in the Costs of Delay definition, we believe she’s including not just the developer’s salary but also all these additional expenses that we’ve termed as “hidden costs.”</p>
+
+                </section>
+
+                  <section>
+                    <h2 id="Acknowledgments">Acknowledgments</h2>
+                      <p>This post, originally on <a href="https://www.howdy.com/blog/costs-of-delay-why-timely-delivery-matters/">https://www.howdy.com/blog/costs-of-delay-why-timely-delivery-matters/</a>, was written for <a href="https://www.howdy.com">Howdy™</a>, so I want to thank them for letting me share it with you on my website.</p>
 
                   </section>
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    <p><em>Aug 25, 2023</em>: Original publication on howdy.com</p>
 
-                  <section class="image_gallery">
-                    <link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness1.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness1.webp" type="image/webp">
+                  </section>
                 
-                        <img src="/assets/thumbs/awareness1.jpg" alt="awareness1.jpg" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness2.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness2.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness2.png" alt="awareness2.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness3.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness3.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness3.png" alt="awareness3.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness4.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness4.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness4.png" alt="awareness4.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness5.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness5.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness5.jpg" alt="awareness5.jpg" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness6.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness6.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness6.png" alt="awareness6.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness7.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness7.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness7.png" alt="awareness7.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness8.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness8.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness8.png" alt="awareness8.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness9.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness9.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness9.png" alt="awareness9.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness10.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness10.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness10.png" alt="awareness10.png" />
-                      </picture>
-                    </a>
+                  <section class="backlinks">
+                    <h2>Mentioned in</h2>
+                        <ul>
+                            <li>
+                              <a href="/howdy-developer-advocate">Developer Advocate</a>
+                            </li>
+                        </ul>
                   </section>
               </div>
             </div>
-              <div class="row splitter">
-                <div class="col-md-12 text-center">Projects/Activities</div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <section class="projects">
-                    <h2><a name="content-generation-projects" class="anchor">
-<a name="content-generation-projects" href="#content-generation-projects" class="no_external_ico">Content generation projects</a></h2>
-<ul>
-<li>20240123 - <a href="/unearthing-user-needs-for-true-innovation">Unearthing User Needs for True Innovation</a> </li>
-<li>20240123 - <a href="/strategies-to-make-smart-choices-in-technology">Strategies to Make Smart Choices in Technology</a> </li>
-<li>20230929 - <a href="/code-like-a-pro-mental-models-for-dev-success">Code Like a Pro: Mental Models for Dev Success</a> </li>
-<li>20230918 - <a href="/redefining-seniority-from-ticket-closers-to-problem-framers">Redefining Seniority: From Ticket Closers to Problem Framers</a> </li>
-<li>20230829 - <a href="/do-software-developers-procrastinate-more">Do software developers procrastinate more?</a> </li>
-<li>20230825 - <a href="/costs-of-delay-why-timely-delivery-matters">Hidden Costs of Delay: Why Timely Delivery Matters</a> </li>
-<li>20230801 - <a href="/adapting-to-the-era-of-ai-challenges-and-opportunities-for-experienced-developers">Adapting to the era of AI: Challenges and opportunities for experienced developers</a> </li>
-<li>20230720 - <a href="/software-estimation-insights-from-decades-of-hits-and-misses">Software Estimation: Insights from Decades of Hits and Misses</a> </li>
-<li>20230615 - <a href="/from-developer-to-brand-how-personal-branding-can-skyrocket-your-career">From developer to brand: How personal branding can skyrocket your career</a> </li>
-<li>20230530 - <a href="/coding-in-the-age-of-ai-embracing-the-developers-evolution">Coding in the Age of AI: Embracing the Developer’s Evolution</a> </li>
-<li>20230510 - <a href="/the-crucial-role-of-software-communities-in-developers-growth">The crucial role of Software Communities in developers’s growth</a> </li>
-<li>20230207 - <a href="/not-another-cheat-sheet-about-technical-interviews">Not another cheat sheet about technical interviews</a> </li>
-<li>20230105 - <em>just as reviewer</em> - <a href="https://www.howdy.com/blog/pros-cons-working-startups/">Pros and Cons of Working in Startups</a></li>
-<li>20221209 - <a href="/the-dos-and-donts-of-asking-for-help-in-software-development">The Do’s and Don’ts of Asking for Help in Software Development</a> </li>
-<li>20221206 - <em>just as reviewer</em> - <a href="https://www.howdy.com/how-to-improve-knowledge-sharing-in-a-new-role/">How to Improve Knowledge Sharing in a New Role</a></li>
-<li>20221205 - <a href="/how-chatgpt-helps-to-solve-coding-challenges">How ChatGPT helps to solve coding challenges</a> </li>
-<li>20221107 - <a href="https://www.canal-uy.com/65-Soy-desarrollador-de-software-para-que-necesito-habilidades-blandas.html">Soy desarrollador de software, ¿para qué necesito habilidades blandas?</a> </li>
-<li>20221004 - <a href="/be-the-goat-software-engineer-know-your-clients">Be the GOAT software engineer: Know your clients</a> </li>
-<li>20220929 - <a href="/questions-to-ask-your-interviewer">Questions to ask your interviewer</a> </li>
-<li>20220929 - <a href="/crypto-how-it-started">Crypto: How it started</a> </li>
-<li>20220824 - <a href="/how-the-covid-pandemic-changed-the-world-of-work">How the COVID pandemic changed the world of work.</a></li>
-<li>20220819 - <a href="/mythbusting-the-word-process-introduction">Process mythbusting</a></li>
-</ul>
-<h2><a name="brand-awareness-tasks" class="anchor">
-<a name="brand-awareness-tasks" href="#brand-awareness-tasks" class="no_external_ico">Brand awareness tasks</a></h2>
-<ul>
-<li>20230323 - <a href="/personal-brand-and-learn-in-public">Howdy&lt;&gt;Tribu Latam Tech - Personal Brand &amp; Learn in public</a></li>
-<li>20230228 - <a href="/the-realities-of-software-development">Howdy - The realities of Software Development</a></li>
-<li>20230117 - <a href="/how-does-ai-affect-software-developers">Howdy &lt;&gt; NodeCO - How does AI affect software developers?</a></li>
-<li>20221129 - <a href="/interview-agencia-efe-soft-skills">Interview with Agencia EFE about Soft Skills</a></li>
-<li>20221118 - <a href="/webconf-latam-2022-dont-panic">WebConf LATAM 2022 - Don’t panic!</a></li>
-<li>20220823 - <a href="/software-quality-asteroids-and-the-cone-of-uncertainty">Software Quality, Asteroids and the Cone of Uncertainty</a></li>
-<li>20220817 - <a href="/employability-what-is-it-and-why-should-it-be-important">Employability: what is it and why should it be important?</a></li>
-<li>20220630 - <a href="/meetup-frontend-peru-quality-in-agile-contexts">Quality in Agile Contexts</a></li>
-</ul>
-<p>Also, before I officially started in this role, I was doing different activities while working as <a href="/austin-software-software-engineer#writing-projects">Software Engineer</a>.</p>
-
-                  </section>
-                </div>
-              </div>
-          </article>
         </div> <!-- container-fluid dm-board -->
 
         <a href="/" class="logo">
@@ -549,7 +584,7 @@
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
-
+    
     <div class="footer" style="text-align:center; width:100%;">
       <div style="text-align:center; width:100%">
       <ul>

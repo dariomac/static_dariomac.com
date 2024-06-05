@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Software Estimation: Insights from Decades of Hits and Misses | Darío Macchi</title>
+    <style>
+      
+      @charset "UTF-8";
+      html {
+        height: 100%;
+      }
+      
+      body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        color: #414141;
+        font-size: 11px;
+      }
+      
+      article a {
+        text-decoration: none;
+        color: #000;
+      }
+      
+      a img {
+        border: 0px;
+      }
+      
+      .submenu {
+        float: right;
+        padding-top: 7px;
+      }
+      
+      .orange_box {
+        padding: 0px 0px 0px 10px;
+        font-weight: bold;
+        background: #ff922c;
+        border: #ff922c 1px solid;
+        border-radius: 12px;
+        float: left;
+        color: #fff;
+        margin-right: 10px;
+      }
+      
+      .orange_box div.username {
+        padding: 0px 10px 0px 34px;
+        background: url('data:image/png;base64,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') no-repeat 0px 3px;
+        float: left;
+        height: 35px;
+        line-height: 35px;
+      }
+      
+      .orange_box ul {
+        border-left: #ec6100 1px solid;
+        padding: 0px 10px 0px 5px;
+        float: left;
+        overflow: hidden;
+        list-style-type: none;
+        list-style-image: none;
+        margin: 0px;
+      }
+      
+      .orange_box ul li {
+        padding: 10px 0px 8px 0px;
+        float: left;
+      }
+      
+      .orange_box ul li a {
+        border-left: #ff922c 1px solid;
+        font-weight: bold;
+        padding: 0px 0px 0px 5px;
+      }
+      
+      .orange_box ul li a {
+        padding: 0px;
+      }
+      
+      /* Footer style {*/
+      .footer {
+        background-color: #00445c; height: 20px; color: #ffffff; overflow: hidden;
+      }
+      .footer a {
+        color: #ffffff
+      }
+      .footer a:hover {
+        text-decoration: underline
+      }
+      .footer ul {
+        float: right;
+        list-style-type: none;
+        margin-top: 2px;
+      }
+      .footer li {
+        border-left: #ffffff 1px solid; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; float: left; padding-top: 0px; height:16px; margin-top:0px;
+      }
+      .footer li:first-child {
+        border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px; height:16px; margin-top:1px;
+      }
+      .clearfix:after {
+        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+      }
+      .footer ul:after {
+        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+      }
+      
+      @media only screen and (min-width: 1170px) {
+        .details .dm-main-content.is-fixed .dm-board {
+          padding-top: 50px;
+        }
+      
+        .container-fluid.dm-board {
+          max-width: 800px;
+          border: #d8d7d7 1px solid;
+        }
+      }
+      
+      .details .dm-main-content.is-fixed .dm-board {
+        margin-bottom: 20px;
+      }
+      
+      .details .container-fluid.dm-board h1 {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+      
+      .details .container-fluid.dm-board h2 {
+        font-size: 18px;
+        margin-bottom: 6px;
+        color: #000;
+      }
+      
+      .details .container-fluid.dm-board h3 {
+        font-size: 16px;
+        margin-bottom: 2px;
+        text-decoration: underline;
+      }
+      
+      .details .container-fluid.dm-board h4 {
+        font-size: 14px;
+        font-style: italic;
+      }
+      
+      article li {
+        margin-bottom: 4px;
+      }
+      
+      article, section {
+        color: #414141;
+        font-size: 14px;
+        text-align: justify;
+      }
+      
+      header, section {
+        margin: 0px 20px;
+      }
+      
+      header p {
+        text-align: left;
+      }
+      
+      header p:not(:last-child) {
+        margin-bottom: 0px;
+      }
+      
+      .anchor {
+        display: block;
+        position: relative;
+        top: -54px;
+      }
+      
+      article a:not(.no_external_ico), section a:not(.no_external_ico) {
+        font-weight: bold;
+        color: #069;
+        background: url(/assets/images/external.png) right 50% no-repeat;
+        padding-right: 12px;
+        overflow-wrap: break-word;
+      }
+      
+      article a:not([href]) {
+        background: inherit;
+        padding-right: inherit;
+      }
+      
+      article .duration {
+        margin-bottom: 0px;
+      }
+      
+      section table {
+        margin: 0 auto;
+        max-width: 636px;
+      }
+      
+      .summary {
+        font-style: italic;
+        padding-top: 8px;
+        cursor: none !important;
+        margin-bottom: 1rem;
+      }
+      
+      table td, table th {
+        border: #d8d7d7 1px solid;
+        padding: 5px;
+      }
+
+      .essay {
+        background-color: #f2f2f2;
+        border: 0px !important;
+        margin-left: inherit;
+      }
+
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
+      }
+
+      .essay p, .essay li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: inherit;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h4 {
+        font-weight: bold;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .further-reading {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
+      }
+
+    </style>
+
+    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="author" content="Darío Macchi" />
+    <meta name="description" content="This article explores the challenges and best practices of software estimation, providing unconventional ideas and personal experiences to help developers make better estimates. The author emphasizes the importance of acknowledging uncertainty, communicating openly, and learning from past projects to improve estimation accuracy. The article also highlights wrong approaches to estimation, such as blind guessing and fixed mindsets, and suggests proper ways to estimate tasks, such as breaking down work into small tasks and using uncertainty charts. Additionally, the article discusses the significance of estimation in software development, including planning and resource allocation, setting realistic expectations, prioritizing tasks, identifying potential risks, and improving decision-making. Finally, the article addresses the role of AI in software estimation, highlighting its potential benefits and limitations and emphasizing the need for human expertise and judgment." />
+    <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
+    
+    <link rel="dns-prefetch" href="//dariomac.com"/>
+    <link rel="dns-prefetch" href="//gstatic.com"/>
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
+    <link rel="dns-prefetch" href="//www.googletagmanager.com"/>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+    <link rel="dns-prefetch" href="//google.com"/>
+    <link rel="dns-prefetch" href="//c.statcounter.com"/>
+    <link rel="dns-prefetch" href="//statcounter.com"/>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+    <link rel="dns-prefetch" href="//yui.yahooapis.com"/>
+    
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+    <!-- <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
+    <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
+    
+    <link rel="canonical" href="https://www.howdy.com/blog/software-estimation-insights-from-decades-of-hits-and-misses/" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NBDFJZDVV3');
+    </script>
+    
+    <script type="text/javascript">
+      function afterContentDraw () {
+        setTimeout(function () {
+          var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+          aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+          $.each(aList,
+            function (k, v) {
+              var $v = $(v);
+    
+              $v.click(function () {
+                _gaq.push(['_trackPageview', $v.attr('href')]);
+              });
+              // $v.css('color','red');
+            });
+          
+          preloadImages($('a.fancybox'));
+        }, 1000);
+      }
+    
+      function preloadImages (array) {
+        if (!preloadImages.list) {
+          preloadImages.list = [];
+        }
+        for (var i = 0; i < array.length; i++) {
+          var img = new Image();
+          img.src = $(array[i]).attr('href');
+          preloadImages.list.push(img);
+        }
+      }
+    </script>
+    
+    <link rel="shortcut icon" href="/favicon.ico" />
+    
+    <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="og:url" content="/software-estimation-insights-from-decades-of-hits-and-misses" />
+    <meta property="og:title" content="Software Estimation: Insights from Decades of Hits and Misses" />
+    <meta property="og:description" content="This article explores the challenges and best practices of software estimation, providing unconventional ideas and personal experiences to help developers make better estimates. The author emphasizes the importance of acknowledging uncertainty, communicating openly, and learning from past projects to improve estimation accuracy. The article also highlights wrong approaches to estimation, such as blind guessing and fixed mindsets, and suggests proper ways to estimate tasks, such as breaking down work into small tasks and using uncertainty charts. Additionally, the article discusses the significance of estimation in software development, including planning and resource allocation, setting realistic expectations, prioritizing tasks, identifying potential risks, and improving decision-making. Finally, the article addresses the role of AI in software estimation, highlighting its potential benefits and limitations and emphasizing the need for human expertise and judgment." />
+    <meta property="og:site_name" content="Darío Macchi personal website" />
+    <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
+    <meta property="og:image:type" content="image/png">
+    
+    
+    <meta name="twitter:site" content="@_dariomac">
+    <meta name="twitter:creator" content="@_dariomac">
+    <meta name="twitter:title" content="Software Estimation: Insights from Decades of Hits and Misses">
+    <meta name="twitter:description" content="This article explores the challenges and best practices of software estimation, providing unconventional ideas and personal experiences to help developers make better estimates. The author emphasizes the importance of acknowledging uncertainty, communicating openly, and learning from past projects to improve estimation accuracy. The article also highlights wrong approaches to estimation, such as blind guessing and fixed mindsets, and suggests proper ways to estimate tasks, such as breaking down work into small tasks and using uncertainty charts. Additionally, the article discusses the significance of estimation in software development, including planning and resource allocation, setting realistic expectations, prioritizing tasks, identifying potential risks, and improving decision-making. Finally, the article addresses the role of AI in software estimation, highlighting its potential benefits and limitations and emphasizing the need for human expertise and judgment.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:widgets:new-embed-design" content="on">
+    <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
+    
+    
+    
+    <script type='application/ld+json'> 
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "@id": "https://www.dariomac.com/me",
+        "image": "https://dariomac.com/assets/aboutme-me.jpg",
+        "jobTitle": "Computer Engineering, MSc",
+        "name": "Darío Macchi",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Universidad_ORT_Uruguay_-_Logo.jpg/220px-Universidad_ORT_Uruguay_-_Logo.jpg",
+          "name": "Universidad ORT Uruguay",
+          "sameAs": "https://en.wikipedia.org/wiki/Universidad_ORT_Uruguay",
+          "url": "https://www.ort.edu.uy/"
+        },
+        "birthPlace": "Paysandú, Uruguay",
+        "birthDate": "1981.08.12",
+        "height": "1.72 meters",
+        "gender": "male",
+        "nationality": "Uruguayan",
+        "url": "https://www.dariomac.com",
+        "sameAs" : [
+          "https://twitter.com/_dariomac",
+          "https://uy.linkedin.com/in/dariomac",
+          "https://www.researchgate.net/profile/Dario_Macchi",
+          "https://ort-uy.academia.edu/Dar%C3%ADoMacchi",
+          "https://www.informatik.uni-trier.de/~ley/pers/hd/m/Macchi:Dario"
+        ]
+      }
+    </script>
+    <script type='application/ld+json'>
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.dariomac.com/software-engineering-advisor-consultant",
+        "name": "Darío Macchi",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.dariomac.com/assets/images/d.png"
+        },
+        "url": "https://www.dariomac.com"
+      }
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.dariomac.com/"
+          },
+          "headline": "Software Estimation: Insights from Decades of Hits and Misses",
+          "alternativeHeadline": "This article explores the challenges and best practices of software estimation, providing unconventional ideas and personal experiences.",
+          "url": "https://www.dariomac.com/",
+          "datePublished": "",
+          "dateCreated": "2023-10-16",
+          "description": "This article explores the challenges and best practices of software estimation, providing unconventional ideas and personal experiences to help developers make better estimates. The author emphasizes the importance of acknowledging uncertainty, communicating openly, and learning from past projects to improve estimation accuracy. The article also highlights wrong approaches to estimation, such as blind guessing and fixed mindsets, and suggests proper ways to estimate tasks, such as breaking down work into small tasks and using uncertainty charts. Additionally, the article discusses the significance of estimation in software development, including planning and resource allocation, setting realistic expectations, prioritizing tasks, identifying potential risks, and improving decision-making. Finally, the article addresses the role of AI in software estimation, highlighting its potential benefits and limitations and emphasizing the need for human expertise and judgment.",
+          "author": {
+            "@id": "https://www.dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
+  </head>
+  <body>
+    <div class="board_view details">
+      <main class="dm-main-content is-fixed">
+        <div class="dm-tab-filter-wrapper">
+          <div class="dm-tab-filter">
+            <ul class="dm-filters d-block d-md-none">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+              </li>
+              <li class="filter"><a class="selected" href="#0">All</a></li>
+              <li class="filter"><a href="/">Home</a></li>
+              <li class="filter"><a href="/about-me">About Me</a></li>
+              <li class="filter"><a href="/kanbancv">What is KanbanCV</a></li>
+            </ul> <!-- dm-filters -->
+          </div> <!-- dm-tab-filter -->
+
+          <div class="container-fluid float-left"></div>
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="dm-board essay">
+          <article>
+            <div class="row featured">
+              <div class="offset-md-3 col-md-6 sheet">
+                <header>
+                  <h1>Software Estimation: Insights from Decades of Hits and Misses</h1>
+                  <p class="date"></p>
+                </header>
+
+                
+                <section class="description">
+                  <p>
+                    This article explores the challenges and best practices of software estimation, providing unconventional ideas and personal experiences to help developers make better estimates. The author emphasizes the importance of acknowledging uncertainty, communicating openly, and learning from past projects to improve estimation accuracy. The article also highlights wrong approaches to estimation, such as blind guessing and fixed mindsets, and suggests proper ways to estimate tasks, such as breaking down work into small tasks and using uncertainty charts. Additionally, the article discusses the significance of estimation in software development, including planning and resource allocation, setting realistic expectations, prioritizing tasks, identifying potential risks, and improving decision-making. Finally, the article addresses the role of AI in software estimation, highlighting its potential benefits and limitations and emphasizing the need for human expertise and judgment.
+                  </p>
+                </section>
+
+                <section>
+                    <p>Much has been said about estimation in software development, you know? There are tons of blog posts and articles out there advising on how to do it better. But hey, let’s shake things up a bit and look at it from a different angle. I don’t wanna write another boring post on estimation, instead, I wanna dive into some unconventional ideas and share my own experiences with you. Let’s get real and explore this intriguing subject freshly!</p>
+<h2><a name="acknowledging-uncertainty" class="anchor">
+<a name="acknowledging-uncertainty" href="#acknowledging-uncertainty" class="no_external_ico">Acknowledging uncertainty</a></h2>
+<p>Estimating projects is tough, and the first thing to remember is that no two projects are the same. Each project has its own challenges and stuff that can mess with the estimation process. So, it’s important to keep an open mind and not assume things based on past experiences. Instead, you need to carefully look at all the details and factors of the current project to come up with a better estimate.</p>
+<p>Another thing to keep in mind is that uncertainty is always there. No matter how much we plan or analyze, there will always be unknowns. Things can change, risks can pop up, or issues can happen during implementation. So, it’s smart to account for this uncertainty by adding extra time or resources in case things don’t go as planned.</p>
+<p>Communication is super important too. Everyone involved in the project needs to talk openly and clearly throughout the estimation process. This means discussing expectations, making sure everyone understands what needs to be done, addressing any concerns or doubts, and keeping each other updated on progress. Good communication helps avoid misunderstandings, catch problems early on, and adjust estimates if new information comes up.</p>
+<p>Also, looking back at past projects can help make estimates more accurate. By checking out what happened before and learning from mistakes, we can make better decisions when estimating tasks for new projects. It’s also helpful to think about how our brains work when making estimates – we might have biases that make us too optimistic or confident. Understanding these biases can help us be more realistic when estimating.</p>
+<p>Overall, estimating projects isn’t easy, but by keeping these points in mind – being open-minded, accounting for uncertainty, communicating well, and learning from the past – we can make better estimates that set us up for success!</p>
+<h2><a name="wrong-ways-to-do-estimations" class="anchor">
+<a name="wrong-ways-to-do-estimations" href="#wrong-ways-to-do-estimations" class="no_external_ico">Wrong ways to do estimations</a></h2>
+<p>So, let’s talk about estimations, my friend. You know, there are some pretty wrong ways to go about it. Like, imagine just blindly guessing the time and effort it’ll take to complete a task. That’s like throwing darts in the dark and hoping for the best outcome. Trust me, it won’t end well.</p>
+<p>And then there’s this whole “one size fits all” approach some people have. They think they can apply the same estimation technique to every single project under the sun. But hey, newsflash! (or not so because we said it before)… every project is different, with its unique challenges and requirements. Ignoring those external factors is a recipe for disaster.</p>
+<p>Now here’s another big no-no: having a fixed mindset. You see, estimations require flexibility and adaptability. If you’re stuck in your ways and refuse to consider alternative perspectives or new information, you’re setting yourself up for failure, my friend. Embracing collaboration and diverse viewpoints is key to making accurate estimations that stand a chance of being realistic.</p>
+<p>So remember, when it comes to estimations, blind guessing, and one-size-fits-all thinking just won’t cut it. And don’t even get me started on ignoring external factors or having a fixed mindset! Instead, let’s embrace collaborative practices and tap into the collective intelligence of all stakeholders involved. It might take some open discussions and brainstorming sessions, but trust me, it’ll lead to better outcomes in the end.</p>
+<h2><a name="proper-ways-to-do-estimations" class="anchor">
+<a name="proper-ways-to-do-estimations" href="#proper-ways-to-do-estimations" class="no_external_ico">Proper ways to do estimations</a></h2>
+<p>Here’s a juicy secret that the gods of software engineering have been keeping locked up: there’s no one “correct” way to do estimations! 😎</p>
+<p>Before you start talking trash and bailing on this post, just hear me out. I know you’ve come looking for the right way to estimate things and I said it doesn’t exist, but all I can do is share what worked for me 🤷🏻♂️.</p>
+<p>Suppose someone asked me to calculate the time it would take me to eat a medium-sized elephant. How would I do it?</p>
+<h3><a name="first-slice-the-elephant" class="anchor">
+<a name="first-slice-the-elephant" href="#first-slice-the-elephant" class="no_external_ico">First: slice the elephant</a></h3>
+<p>The first step for me is always to break down the work at hand into small tasks.</p>
+<p>Break things down as much as possible for a more accurate estimate, but let’s be real, it’s not always practical. So, my suggestion is to break it down until you’re confident enough to bet your monthly salary on your estimation for that part of the job 🤑.</p>
+<p>(hey, don’t waste your time asking me about the best way to estimate tasks… just use whatever method you feel comfortable with, as long as it doesn’t become the main focus of your project).</p>
+<h3><a name="second-uncertainty-chart" class="anchor">
+<a name="second-uncertainty-chart" href="#second-uncertainty-chart" class="no_external_ico">Second: uncertainty chart</a></h3>
+<p>People who know me know that I’m a big fan of the uncertainty cone. Why? Well, it’s something we can all understand and empathize with the poor guy holding the estimates in his hand.</p>
+<p>You now have each part of the elephant sliced and have made a WAG (wild-ass guess) of how long it will take to eat each one. But, how sure are you on each estimation?</p>
+<p>Why not just put each “slice” in the uncertainty cone based on how unsure you are about that estimate? Then show the chart to everyone, so they understand your worries and uncertainties. This will help make sure that everyone involved in the project takes responsibility for those estimations.</p>
+<h3><a name="third-add-up-all-the-slices" class="anchor">
+<a name="third-add-up-all-the-slices" href="#third-add-up-all-the-slices" class="no_external_ico">Third: Add up all the slices</a></h3>
+<p>So, the time to eat the elephant is the sum of the time to eat all the slices, right? Not quite.</p>
+<p>If you do that, you won’t be using the position of the slice in the uncertainty cone ignoring that important aspect. To include this information, you can multiply your estimate by a factor that relates to how uncertain the situation is. This approach gives a more complete and accurate representation, considering the potential range of possibilities within the uncertainty cone. By factoring in this uncertainty-related value, you can improve your estimate by considering all possible outcomes within the cone, leading to a stronger and more dependable analysis.</p>
+<p>But, what if I don’t have enough (knowledge, experience, information) to estimate a task? How can I reduce the uncertainty?</p>
+<ul>
+<li><strong>Get the pro on the line!</strong>: This is the quickest and simplest method, especially if an expert is available. It is sufficient to rely on the expert’s opinion to estimate the quantitative details of the project, such as time frames and potential resources. It is also the most commonly used technique.</li>
+<li><strong>Research</strong>: By looking at past projects or using industry best practices, developers can learn valuable information that can help them make better estimates. Research also helps identify any potential risks or uncertainties that could affect the estimation process. This proactive approach ensures that estimations are based on solid foundations, reducing the chances of unexpected problems and making software development more efficient and reliable.</li>
+<li><strong>Spikes</strong>: When you’re trying to figure out a solution to a problem, you sometimes just gotta dive in and start writing some code. It’s like a little experiment to see if your idea works. And hey, sometimes that code ends up being useful for your project, but most of the time it’s just something you throw away once you’ve proven your point. Make sure to set a deadline for the spike, or else you might end up spending forever on it.</li>
+<li><strong>Do it like pharma does</strong>: They set aside money for their research projects, carry them out, and then decide whether to give more money based on the results. You can do something similar by starting a task with a set budget. When the money runs out, evaluate how things have gone and decide whether to get more funds to keep going or stop the task.</li>
+</ul>
+<h2><a name="why-are-estimations-so-important" class="anchor">
+<a name="why-are-estimations-so-important" href="#why-are-estimations-so-important" class="no_external_ico">Why are estimations so important?</a></h2>
+<p>What’s the big deal with estimation? Why do people discuss this topic and nobody has a definite way to estimate software projects? Is it so hard or important to do it?</p>
+<p>Let’s apply what we learned previously and eat THIS elephant a bite at a time.</p>
+<p>First, estimations are not important… are crucial in software development! Software development is a business, you know? Unless you’re on some chill product team or rolling in dough (or a few other special cases), money is gonna be on your mind.</p>
+<p>Classic articles about this topic only talk about money… and in the end, it all boils down to money. But I want to shed light on other aspects of estimation to really grasp its significance.</p>
+<ul>
+<li><strong>Planning and resource allocation</strong>: Estimations help business owners in effectively planning and allocating resources for software development projects. By estimating the time and effort required for each task, business owners can make informed decisions about staffing, timelines, and overall project management.</li>
+<li><strong>Setting realistic expectations</strong>: Estimations enable business owners to set realistic expectations for clients, stakeholders, and team members. By understanding the estimated timeframes for completion, business owners can communicate these expectations clearly, avoiding misunderstandings and ensuring everyone is on the same page.</li>
+<li><strong>Prioritizing tasks</strong>: Estimations allow business owners to prioritize tasks based on their estimated complexity or effort required. This helps in determining which features or functionalities should be developed first, ensuring that critical aspects are addressed early on in the project.</li>
+<li><strong>Identifying potential risks</strong>: Estimations help identify potential risks by highlighting areas that may require additional attention or resources. By understanding the estimated challenges or complexities of certain tasks, business owners can proactively address these risks and implement strategies to mitigate any negative impact on the project.</li>
+<li><strong>Improving decision-making</strong>: Estimations provide valuable information that aids in decision-making throughout the software development process. Business owners can use estimations to evaluate alternative approaches or solutions, make informed trade-offs between different features or functionalities, and ensure that decisions align with the overall goals of the project.</li>
+</ul>
+<h2><a name="ai-to-the-rescue" class="anchor">
+<a name="ai-to-the-rescue" href="#ai-to-the-rescue" class="no_external_ico">AI to the rescue… 🤔</a></h2>
+<p>Ok, I got it… but it’s so hard? Why can’t anyone come up with the perfect way to estimate software development projects? Seriously, we’re living in the AI era! Can’t I just ask chatGPT to give me an estimate?</p>
+<p>Just nope. Estimating software development projects accurately is indeed a challenging task. While AI, like chatGPT, can assist in various areas, estimating project timelines and efforts still requires human expertise and involvement. Here are a few reasons why it’s difficult to come up with perfect estimates:</p>
+<ul>
+<li><strong>Complexity</strong>: Software projects can be highly complex, involving numerous variables, dependencies, and potential risks. Predicting all these factors accurately is a complex task.</li>
+<li><strong>Uncertainty</strong>: There are often uncertainties in the requirements, scope changes, and external dependencies that can affect project timelines. It’s difficult to foresee and account for all these uncertainties.</li>
+<li><strong>Human Factors</strong>: Estimating software development involves human skills and efforts that are influenced by individual capabilities and expertise. Different developers may have varying speeds, approaches, or unforeseen challenges.</li>
+<li><strong>Emerging Technologies</strong>: The ever-evolving nature of technology makes it challenging to estimate projects using cutting-edge tools or frameworks that lack historical data for accurate estimation.</li>
+<li><strong>Communication &amp; Collaboration</strong>: Accurate estimation requires effective communication and collaboration between stakeholders involved in the project. Misunderstandings or incomplete information may lead to inaccurate estimates.</li>
+</ul>
+<p>While AI can support estimation processes by analyzing historical data or providing insights based on patterns, it cannot replace the need for human judgment and understanding of the specific project context. It’s best to combine AI capabilities with expert knowledge to improve estimation accuracy rather than relying solely on automation for estimating software development projects.</p>
+<h2><a name="conclusion" class="anchor">
+<a name="conclusion" href="#conclusion" class="no_external_ico">Conclusion</a></h2>
+<p>As we said, estimation is a crucial aspect of software development that goes beyond just money. It helps with planning, setting expectations, prioritizing tasks, identifying risks, and improving decision-making.</p>
+<p>AI can assist in various areas of estimation, but it cannot replace the need for human expertise and judgment. Estimating projects accurately requires acknowledging uncertainty, avoiding wrong approaches such as blind guessing or fixed mindsets, and embracing collaborative practices.</p>
+<p>So let’s enhance our estimation skills by learning from past projects, seeking expert opinions when needed, conducting research to mitigate uncertainties, and utilizing techniques like spikes or budget allocation for better planning.</p>
+
+                </section>
+
+                  <section>
+                    <h2 id="Acknowledgments">Acknowledgments</h2>
+                      <p>This post, originally on <a href="https://www.howdy.com/blog/software-estimation-insights-from-decades-of-hits-and-misses/">https://www.howdy.com/blog/software-estimation-insights-from-decades-of-hits-and-misses/</a>, was written for <a href="https://www.howdy.com">Howdy™</a>, so I want to thank them for letting me share it with you on my website.</p>
+
+                  </section>
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    <p><em>Jul 20, 2023</em>: Original publication on howdy.com</p>
+
+                  </section>
+                
+                  <section class="backlinks">
+                    <h2>Mentioned in</h2>
+                        <ul>
+                            <li>
+                              <a href="/howdy-developer-advocate">Developer Advocate</a>
+                            </li>
+                        </ul>
+                  </section>
+              </div>
+            </div>
+        </div> <!-- container-fluid dm-board -->
+
+        <a href="/" class="logo">
+          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+        </a>
+        <div class="submenu" style="position: fixed; top: 0; right: 0; z-index: 10;">
+          <div class="orange_box">
+            <a class="url" href="/about-me">
+                <div class="username">
+                    Darío Macchi
+                </div>
+            </a>
+            <ul>
+              <li id="geo">
+                <a rel="noreferrer" href="https://www.google.com/maps/place/Montevideo,+Montevideo+Department/@-34.8207772,-56.5166263,10z/data=!3m1!4b1!4m5!3m4!1s0x959f80ffc63bf7d3:0x6b321b2e355bec99!8m2!3d-34.9011127!4d-56.1645314?hl=en" itemprop="url">
+                    Montevideo
+                </a><span>-</span>
+                <a rel="noreferrer" href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&amp;ie=UTF-8&amp;hq=&amp;hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&amp;gl=uy&amp;ei=KiKjU6fpE-HNsQSlqYGoCg&amp;ved=0CBsQ8gEwAA" itemprop="url">
+                  Uruguay
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
+            </ul>
+            <ul>
+              <li><a href="/contact-me">Contact me</a></strong></li>
+            </ul>
+          </div>
+        </div>
+      </main> <!-- dm-main-content -->
+    </div>
+    <!--</div>-->
+    
+    <div class="footer" style="text-align:center; width:100%;">
+      <div style="text-align:center; width:100%">
+      <ul>
+        <li style="margin-top: 0px;" class="d-none d-lg-block">
+          <a href="javascript:void(0);" onclick="window.open('https://www.copyscape.com/?q=' + escape(window.location) + '&src=front'); return false;">
+            <IMG src="/assets/images/cs-wh-3d-234x16.gif" alt="Protected by Copyscape Duplicate Content Detector" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." width="234" height="16" border="0">
+          </A>
+        </li>
+        <li><a style="padding-top:1px" href="/kanbancv">KanbanCV</a> © 2011-2024 <a style="padding-top:1px" href="/sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap</a></li>
+        <li>
+          <a href="https://uy.linkedin.com/in/dariomac" style="text-decoration:none;" target="_blank" rel="noreferrer">
+            <img src="/assets/linkedin.svg" width="16" height="15" alt="View Darío Macchi's LinkedIn profile" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/_dariomac" target="_blank" rel="noreferrer">
+            <img src="/assets/twitter.svg" width="16" height="16" alt="View my twitter"/>
+          </a>
+        </li>
+        <li class="d-none d-lg-block">
+          <a href="https://www.researchgate.net/profile/Dario_Macchi" target="_blank" rel="noreferrer">
+            <img src="/assets/researchgate.png" width="15" height="15" alt="View my ResearchGate profile"/>
+          </a>
+        </li>
+        <li style="margin-top: 0px" class="d-none d-lg-block">
+          <a href="http://humanstxt.org" target="_black" rel="noreferrer">
+            <img src="/assets/images/humanstxt-transparent-color.png" width="84" height="15" alt="View humans.txt file"/>
+          </a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Default Statcounter code for Dariomac.com
+    http://www.dariomac.com -->
+    <script type="text/javascript">
+      var sc_project=9186547; 
+      var sc_invisible=1; 
+      var sc_security="dce954c9"; 
+      </script>
+      <script type="text/javascript"
+      src="https://www.statcounter.com/counter/counter.js"
+      async></script>
+      <noscript><div class="statcounter"><a title="web counter"
+      href="https://statcounter.com/" target="_blank"><img
+      class="statcounter"
+      src="https://c.statcounter.com/9186547/0/dce954c9/1/"
+      alt="web counter"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+
+
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+    <script>
+      $(".fancybox").fancybox({
+        arrows: true,
+        loop: true,
+        keyboard: true
+      });
+    </script>
+  </body>
+</html>

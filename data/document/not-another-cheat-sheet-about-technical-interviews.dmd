@@ -17,7 +17,7 @@
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "",
+  "canonical": "https://www.howdy.com/not-another-cheat-sheet-about-technical-interviews/",
   "custom_header": ""
 }
 
@@ -123,6 +123,7 @@ Ultimately, the best way to prepare for a technical interview **is to practice,
 So, don’t rely on cheat sheets and online resources when preparing for a technical interview. Find a mentor or coach who can offer targeted advice and support to help you succeed. Good luck! With the proper preparation and support, you’ll be well on your way to acing your technical interview.
 
 [acknowledgments:md]
+This post, originally on [https://www.howdy.com/not-another-cheat-sheet-about-technical-interviews/](https://www.howdy.com/not-another-cheat-sheet-about-technical-interviews/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 

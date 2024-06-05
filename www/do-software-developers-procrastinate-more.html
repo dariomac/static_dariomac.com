@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Developer Advocate | Darío Macchi</title>
+    <title>Do software developers procrastinate more? | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -205,15 +205,94 @@
         padding: 5px;
       }
 
+      .essay {
+        background-color: #f2f2f2;
+        border: 0px !important;
+        margin-left: inherit;
+      }
+
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
+      }
+
+      .essay p, .essay li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: inherit;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h4 {
+        font-weight: bold;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .further-reading {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
+      }
+
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
-
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="A summary of my work as Developer Advocate at Howdy." />
+    <meta name="description" content="Procrastination in software development is influenced by factors such as lack of interest, comfort, or confidence, and developers have a range of distractions and opportunities to procrastinate." />
     <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
     <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -234,7 +313,7 @@
     <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
     <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
     
-    <link rel="canonical" href="https://dariomac.com/howdy-developer-advocate" />
+    <link rel="canonical" href="https://www.howdy.com/blog/do-software-developers-procrastinate-more/" />
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
@@ -282,9 +361,9 @@
     <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta property="og:url" content="/howdy-developer-advocate" />
-    <meta property="og:title" content="Developer Advocate" />
-    <meta property="og:description" content="A summary of my work as Developer Advocate at Howdy." />
+    <meta property="og:url" content="/do-software-developers-procrastinate-more" />
+    <meta property="og:title" content="Do software developers procrastinate more?" />
+    <meta property="og:description" content="Procrastination in software development is influenced by factors such as lack of interest, comfort, or confidence, and developers have a range of distractions and opportunities to procrastinate." />
     <meta property="og:site_name" content="Darío Macchi personal website" />
     <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
     <meta property="og:image:type" content="image/png">
@@ -292,8 +371,8 @@
     
     <meta name="twitter:site" content="@_dariomac">
     <meta name="twitter:creator" content="@_dariomac">
-    <meta name="twitter:title" content="Developer Advocate">
-    <meta name="twitter:description" content="A summary of my work as Developer Advocate at Howdy.">
+    <meta name="twitter:title" content="Do software developers procrastinate more?">
+    <meta name="twitter:description" content="Procrastination in software development is influenced by factors such as lack of interest, comfort, or confidence, and developers have a range of distractions and opportunities to procrastinate.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:widgets:new-embed-design" content="on">
     <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
@@ -344,9 +423,28 @@
       }
     </script>
 
-      <script type="application/ld+json">
-        {}
-      </script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.dariomac.com/"
+          },
+          "headline": "Do software developers procrastinate more?",
+          "alternativeHeadline": "Procrastination in software development can be caused by lack of interest, comfort, or confidence in success.",
+          "url": "https://www.dariomac.com/",
+          "datePublished": "2023-08-29",
+          "dateCreated": "2024-01-12",
+          "description": "Procrastination in software development is influenced by factors such as lack of interest, comfort, or confidence, and developers have a range of distractions and opportunities to procrastinate.",
+          "author": {
+            "@id": "https://www.dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
   </head>
   <body>
     <div class="board_view details">
@@ -367,155 +465,87 @@
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board">
+        <div class="dm-board essay">
           <article>
-            <div class="row splitter">
-              <div class="col-md-12 text-center">Details</div>
-            </div>
             <div class="row featured">
-              <div class="col-md-12">
+              <div class="offset-md-3 col-md-6 sheet">
                 <header>
-                  <h1>Developer Advocate</h1>
-                  <p class="duration">Jun 2022 - Now</p>
-                  <p><a href="https://www.howdy.com/">Howdy</a></p>
+                  <h1>Do software developers procrastinate more?</h1>
+                  <p class="date">2023-08-29</p>
                 </header>
+
                 
-                  <section class="summary">
-                    <p>
-                      A summary of my work as Developer Advocate at Howdy.
-                    </p>
-                  </section>
-                
-                  <section class="content">
-                    <p>Like all DevRel roles, our work lives at the intersection of product, engineering, and marketing. My day job comprises writing docs and blog posts, collecting and sharing developer feedback, actively taking part in (as many) developer communities, and speaking at events, or just being there helping in any way.</p>
+                <section class="description">
+                  <p>
+                    Procrastination in software development is influenced by factors such as lack of interest, comfort, or confidence, and developers have a range of distractions and opportunities to procrastinate.
+                  </p>
+                </section>
+
+                <section>
+                    <h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>What is procrastination? (no, not again!)</strong></a></h3>
+<p>Here is where we should give the definition of procrastination, but let’s save it for later – did you get the joke?</p>
+<p>You may know the answer (if not, you can Google it). We’re not here to explain things that are easy to find out there. But if you read what procrastination is, you will find broad definitions that apply to anyone. Don’t get us wrong, we don’t think that we (software developers) are demigods to whom definitions don’t apply. But let’s say that if procrastinating were a crime, we would have the motive, the means, and the opportunity to do it.</p>
+<p>Ok, maybe we need to take a break from police tv-shows, but while we go to a 10-7, let’s 10-9 our last transmission. Over.</p>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Why do yo procrastinate? – the <em>motive</em></strong></a></h3>
+<p>There are a ton of reasons why a developer might procrastinate, but instead of listing them, let us analyze just the opposite to get a different perspective: <a href="https://www.howdy.com/blog/take-the-best-out-of-your-software-team-%f0%9f%a7%91%f0%9f%92%bb%f0%9f%9a%80/">what gets you motivated to keep working?</a></p>
+<p>As a software developer, have you ever experienced the sensation of time whizzing by? That everything aligns seamlessly? You are aware of this feeling: You’re engaged in a task and there’s an innate belief that it’s going to be exceptional. There’s a sense of expertise.</p>
+<p>But when does this happen, why, how did I feel? These are the main reasons:</p>
+<ul>
+<li>High level of interest</li>
+<li>Comfort</li>
+<li>Confidence in success</li>
+<li>Simplified procedures</li>
+<li>Clarity of task requirements</li>
+</ul>
+<p>Coming back to why you might be putting things off: If you’re feeling something that’s not on the list, then you’ve got at least one reason to procrastinate on what you’re doing right now.</p>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>What do you do when you procrastinate? – the <em>means</em></strong></a></h3>
+<p>In today’s world, everybody has a phone in their hands and lots of social media apps. Those are “means” that everyone has access to.</p>
+<p>But us? We’re coders. We live in the fast lane. A fresh app hits the market, a new social platform pops up – we’re all over it like white on rice (ehm, Thread?). So, yeah, we’ve got even more distractions, more “tools” to procrastinate with until deadlines come biting our behinds.</p>
+<p>And wait, there’s more! We also have tons of stuff we can do while we’re “working” that might seem “useful”. These are things that’ll eat up our time and energy, stopping us from doing other tasks until we finish them, and deceive us into believing we’ve had a highly productive day, but in the end, we didn’t.</p>
+<p>For example, think about setting up your IDE for instance. You know the drill – configuring new plugins that promise to turn you into some 10x ninja developer with fancy navigation tricks and cool help tools. Or messing around with Terminal settings so it displays specific info and changes depending on which directory you’re in.</p>
+<p>Don’t get us wrong, we’re all in for these kinda tweaks and sometimes we gotta stop ourselves from spending the whole afternoon tinkering with them. But let’s get real, you ain’t making any difference to your product by doing this stuff. You could be making progress as a 2x or 3x developer while setting things up to become a 10x one down the line. At least then you’re adding value to what you’re building.</p>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>When things start to go wrong? – the <em>opportunity</em></strong></a></h3>
+<p>If you’re working at a store, you can easily waste time on your phone. But then, you might think “Alright, no more slacking off. I’ll keep away from screens and actually do some work around the shop for the next hour.” Basically, you’re making sure there’s no way for you to procrastinate (at least for a while).</p>
+<p>But hey, we’re software developers! We’re always working with tech stuff, right? Phones, laptops, tablets, our own personal stuff and the ones we use for work. It’s all going off at the same time and interrupting us in lots of different ways.</p>
+<p>So, there you are, in the coding zone, but then your phone pings. “I’ll check it once I’m done with this bit,” you think. But then another ping. “Alright, let me just finish this part,” but then Slack chimes in, and your phone again. “Fine, what the heck is going on?” You get distracted and 40 minutes later you snap back to reality and realize you were coding but can’t remember where you left off. Now you need a good 20 minutes to get back into the groove. And just as you’re starting to focus again – another ping from your phone and the whole cycle begins anew.</p>
+<p>Do you see? We’ve got opportunities always right in front of us, just waiting and chasing after us.</p>
+<p>But this isn’t even the worst opportunity for procrastination. We think that it’s perfectionism.</p>
+<p>Perfectionism, while often seen as a desirable trait, can lead to procrastination in software development. Developers who strive for perfection may find themselves constantly revising their work, looking for the “perfect” solution to a problem that may not exist. Instead of making progress and moving forward with their tasks, these developers spend an excessive amount of time trying to perfect every detail.</p>
+<p>The fear of making mistakes or delivering less-than-perfect work can also contribute to procrastination. A perfectionist developer might delay starting a project due to the fear that they won’t be able to complete it perfectly. They might spend a lot of time planning and preparing, but never actually start coding because they’re afraid of messing up.</p>
+<p>This constant striving for perfection can lead to burnout and decreased productivity. It’s important for software developers (and everyone else) to understand that making mistakes is a normal part of the learning process. Instead of aiming for perfection, it’s more beneficial to aim for continuous improvement.</p>
+<h3><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico"><strong>Summary</strong></a></h3>
+<p>In conclusion, procrastination in software development is a complex issue that can be fueled by various factors such as a lack of interest, comfort, or confidence in success. Developers have the means to procrastinate with numerous distractions at their disposal and the nature of their job gives them ample opportunities to put off tasks. Furthermore, striving for perfection can also lead to procrastination as developers may delay starting a project due to fear of making mistakes or delivering less-than-perfect work.</p>
+<p>However, understanding these triggers and acknowledging that they exist is the first step toward overcoming procrastination. Developers should strive for continuous improvement instead of perfection and set realistic goals and deadlines for their tasks. They should also try to minimize distractions as much as possible and create an environment that fosters focus and productivity.</p>
+<p>Finally, it’s important for developers to remember that everyone experiences moments of procrastination. Luckily, it’s not a crime but human nature. The key is not to beat oneself up  but rather identify the cause and take steps towards managing it effectively. After all, productivity isn’t about being busy all the time; it’s about working smarter, not harder. Procrastination might be a tough nut to crack but with determination and perseverance, developers can achieve their full potential.</p>
+
+                </section>
+
+                  <section>
+                    <h2 id="Acknowledgments">Acknowledgments</h2>
+                      <p>This post, originally on <a href="https://www.howdy.com/blog/do-software-developers-procrastinate-more/">https://www.howdy.com/blog/do-software-developers-procrastinate-more/</a>, was written for <a href="https://www.howdy.com">Howdy™</a>, so I want to thank them for letting me share it with you on my website.</p>
 
                   </section>
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    <p><em>Aug 29, 2023</em>: Original publication on howdy.com</p>
 
-                  <section class="image_gallery">
-                    <link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness1.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness1.webp" type="image/webp">
+                  </section>
                 
-                        <img src="/assets/thumbs/awareness1.jpg" alt="awareness1.jpg" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness2.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness2.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness2.png" alt="awareness2.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness3.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness3.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness3.png" alt="awareness3.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness4.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness4.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness4.png" alt="awareness4.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness5.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness5.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness5.jpg" alt="awareness5.jpg" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness6.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness6.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness6.png" alt="awareness6.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness7.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness7.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness7.png" alt="awareness7.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness8.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness8.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness8.png" alt="awareness8.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness9.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness9.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness9.png" alt="awareness9.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness10.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness10.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness10.png" alt="awareness10.png" />
-                      </picture>
-                    </a>
+                  <section class="backlinks">
+                    <h2>Mentioned in</h2>
+                        <ul>
+                            <li>
+                              <a href="/howdy-developer-advocate">Developer Advocate</a>
+                            </li>
+                        </ul>
                   </section>
               </div>
             </div>
-              <div class="row splitter">
-                <div class="col-md-12 text-center">Projects/Activities</div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <section class="projects">
-                    <h2><a name="content-generation-projects" class="anchor">
-<a name="content-generation-projects" href="#content-generation-projects" class="no_external_ico">Content generation projects</a></h2>
-<ul>
-<li>20240123 - <a href="/unearthing-user-needs-for-true-innovation">Unearthing User Needs for True Innovation</a> </li>
-<li>20240123 - <a href="/strategies-to-make-smart-choices-in-technology">Strategies to Make Smart Choices in Technology</a> </li>
-<li>20230929 - <a href="/code-like-a-pro-mental-models-for-dev-success">Code Like a Pro: Mental Models for Dev Success</a> </li>
-<li>20230918 - <a href="/redefining-seniority-from-ticket-closers-to-problem-framers">Redefining Seniority: From Ticket Closers to Problem Framers</a> </li>
-<li>20230829 - <a href="/do-software-developers-procrastinate-more">Do software developers procrastinate more?</a> </li>
-<li>20230825 - <a href="/costs-of-delay-why-timely-delivery-matters">Hidden Costs of Delay: Why Timely Delivery Matters</a> </li>
-<li>20230801 - <a href="/adapting-to-the-era-of-ai-challenges-and-opportunities-for-experienced-developers">Adapting to the era of AI: Challenges and opportunities for experienced developers</a> </li>
-<li>20230720 - <a href="/software-estimation-insights-from-decades-of-hits-and-misses">Software Estimation: Insights from Decades of Hits and Misses</a> </li>
-<li>20230615 - <a href="/from-developer-to-brand-how-personal-branding-can-skyrocket-your-career">From developer to brand: How personal branding can skyrocket your career</a> </li>
-<li>20230530 - <a href="/coding-in-the-age-of-ai-embracing-the-developers-evolution">Coding in the Age of AI: Embracing the Developer’s Evolution</a> </li>
-<li>20230510 - <a href="/the-crucial-role-of-software-communities-in-developers-growth">The crucial role of Software Communities in developers’s growth</a> </li>
-<li>20230207 - <a href="/not-another-cheat-sheet-about-technical-interviews">Not another cheat sheet about technical interviews</a> </li>
-<li>20230105 - <em>just as reviewer</em> - <a href="https://www.howdy.com/blog/pros-cons-working-startups/">Pros and Cons of Working in Startups</a></li>
-<li>20221209 - <a href="/the-dos-and-donts-of-asking-for-help-in-software-development">The Do’s and Don’ts of Asking for Help in Software Development</a> </li>
-<li>20221206 - <em>just as reviewer</em> - <a href="https://www.howdy.com/how-to-improve-knowledge-sharing-in-a-new-role/">How to Improve Knowledge Sharing in a New Role</a></li>
-<li>20221205 - <a href="/how-chatgpt-helps-to-solve-coding-challenges">How ChatGPT helps to solve coding challenges</a> </li>
-<li>20221107 - <a href="https://www.canal-uy.com/65-Soy-desarrollador-de-software-para-que-necesito-habilidades-blandas.html">Soy desarrollador de software, ¿para qué necesito habilidades blandas?</a> </li>
-<li>20221004 - <a href="/be-the-goat-software-engineer-know-your-clients">Be the GOAT software engineer: Know your clients</a> </li>
-<li>20220929 - <a href="/questions-to-ask-your-interviewer">Questions to ask your interviewer</a> </li>
-<li>20220929 - <a href="/crypto-how-it-started">Crypto: How it started</a> </li>
-<li>20220824 - <a href="/how-the-covid-pandemic-changed-the-world-of-work">How the COVID pandemic changed the world of work.</a></li>
-<li>20220819 - <a href="/mythbusting-the-word-process-introduction">Process mythbusting</a></li>
-</ul>
-<h2><a name="brand-awareness-tasks" class="anchor">
-<a name="brand-awareness-tasks" href="#brand-awareness-tasks" class="no_external_ico">Brand awareness tasks</a></h2>
-<ul>
-<li>20230323 - <a href="/personal-brand-and-learn-in-public">Howdy&lt;&gt;Tribu Latam Tech - Personal Brand &amp; Learn in public</a></li>
-<li>20230228 - <a href="/the-realities-of-software-development">Howdy - The realities of Software Development</a></li>
-<li>20230117 - <a href="/how-does-ai-affect-software-developers">Howdy &lt;&gt; NodeCO - How does AI affect software developers?</a></li>
-<li>20221129 - <a href="/interview-agencia-efe-soft-skills">Interview with Agencia EFE about Soft Skills</a></li>
-<li>20221118 - <a href="/webconf-latam-2022-dont-panic">WebConf LATAM 2022 - Don’t panic!</a></li>
-<li>20220823 - <a href="/software-quality-asteroids-and-the-cone-of-uncertainty">Software Quality, Asteroids and the Cone of Uncertainty</a></li>
-<li>20220817 - <a href="/employability-what-is-it-and-why-should-it-be-important">Employability: what is it and why should it be important?</a></li>
-<li>20220630 - <a href="/meetup-frontend-peru-quality-in-agile-contexts">Quality in Agile Contexts</a></li>
-</ul>
-<p>Also, before I officially started in this role, I was doing different activities while working as <a href="/austin-software-software-engineer#writing-projects">Software Engineer</a>.</p>
-
-                  </section>
-                </div>
-              </div>
-          </article>
         </div> <!-- container-fluid dm-board -->
 
         <a href="/" class="logo">
@@ -549,7 +579,7 @@
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
-
+    
     <div class="footer" style="text-align:center; width:100%;">
       <div style="text-align:center; width:100%">
       <ul>
