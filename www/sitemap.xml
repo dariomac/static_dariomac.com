@@ -146,6 +146,24 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/covid19-the-van-helsing-of-zombies-orcs-scrum-team</loc>
+        <lastmod>2022-04-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it</loc>
+        <lastmod>2021-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/pull-requests-far-away-from-heaven</loc>
+        <lastmod>2021-05-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/back-to-the-roots-of-agile</loc>
         <lastmod>2021-02-15</lastmod>
         <changefreq>monthly</changefreq>
@@ -670,6 +688,12 @@
       <url>
         <loc>https://www.dariomac.com/meetup-python-chile-quality-in-agile-contexts</loc>
         <lastmod>2022-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/as-talk-the-last-productivity-hack-youll-ever-need</loc>
+        <lastmod>2021-07-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

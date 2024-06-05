@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Software Engineer | Darío Macchi</title>
+    <title>Detecting “Wont Fix” Issues with Machine Learning | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -205,15 +205,94 @@
         padding: 5px;
       }
 
+      .essay {
+        background-color: #f2f2f2;
+        border: 0px !important;
+        margin-left: inherit;
+      }
+
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
+      }
+
+      .essay p, .essay li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: inherit;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h4 {
+        font-weight: bold;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .further-reading {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
+      }
+
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
-
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="Software Engineer" />
+    <meta name="description" content="The article discusses the main reasons for marking an issue as "wontfix" or discarding it." />
     <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
     <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -234,7 +313,7 @@
     <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
     <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
     
-    <link rel="canonical" href="https://dariomac.com/howdy-software-engineer" />
+    <link rel="canonical" href="https://www.howdy.com/blog/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it/" />
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
@@ -282,9 +361,9 @@
     <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta property="og:url" content="/howdy-software-engineer" />
-    <meta property="og:title" content="Software Engineer" />
-    <meta property="og:description" content="Software Engineer" />
+    <meta property="og:url" content="/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it" />
+    <meta property="og:title" content="Detecting “Wont Fix” Issues with Machine Learning" />
+    <meta property="og:description" content="The article discusses the main reasons for marking an issue as "wontfix" or discarding it." />
     <meta property="og:site_name" content="Darío Macchi personal website" />
     <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
     <meta property="og:image:type" content="image/png">
@@ -292,8 +371,8 @@
     
     <meta name="twitter:site" content="@_dariomac">
     <meta name="twitter:creator" content="@_dariomac">
-    <meta name="twitter:title" content="Software Engineer">
-    <meta name="twitter:description" content="Software Engineer">
+    <meta name="twitter:title" content="Detecting “Wont Fix” Issues with Machine Learning">
+    <meta name="twitter:description" content="The article discusses the main reasons for marking an issue as "wontfix" or discarding it.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:widgets:new-embed-design" content="on">
     <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
@@ -344,9 +423,28 @@
       }
     </script>
 
-      <script type="application/ld+json">
-        {}
-      </script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.dariomac.com/"
+          },
+          "headline": "Detecting “Wont Fix” Issues with Machine Learning",
+          "alternativeHeadline": "Learn how discarded issues consume on average 5 months of developers’ time",
+          "url": "https://www.dariomac.com/",
+          "datePublished": "2021-07-05",
+          "dateCreated": "2021-07-05",
+          "description": "The article discusses the main reasons for marking an issue as \"wontfix\" or discarding it.",
+          "author": {
+            "@id": "https://www.dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
   </head>
   <body>
     <div class="board_view details">
@@ -367,58 +465,115 @@
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board">
+        <div class="dm-board essay">
           <article>
-            <div class="row splitter">
-              <div class="col-md-12 text-center">Details</div>
-            </div>
             <div class="row featured">
-              <div class="col-md-12">
+              <div class="offset-md-3 col-md-6 sheet">
                 <header>
-                  <h1>Software Engineer</h1>
-                  <p class="duration">Nov 2020 - Now</p>
-                  <p><a href="https://www.howdy.com/">Howdy</a></p>
+                  <h1>Detecting “Wont Fix” Issues with Machine Learning</h1>
+                  <p class="date">2021-07-05</p>
                 </header>
+
                 
-                
-                  <section class="content">
-                    <p>At Howdy, I worked full time as a Software Engineer for their partners (until June 2022, when I started doing it part-time). My responsibility as a member of the partner's team is to use all of my experience in software engineering to boost their business.</p>
-<p>In addition, I tried my best to contribute to any internal project or campaign that required it, whether it was writing articles, creating branded material, or speaking. As a result, I started working as a <a href="/austin-software-developer-advocate">Developer Advocate in June 2022</a>.</p>
+                <section class="description">
+                  <p>
+                    The article discusses the main reasons for marking an issue as &quot;wontfix&quot; or discarding it, which are already implemented or not needed change requests and bug reports that are not actually bugs. The article suggests that these issues can be avoided by using machine learning or by having issue writers and bug reporters use a template to demonstrate business importance and clearly state the steps to reproduce the bug and the expected outcomes. The article also discusses the use of machine learning to train a model that can identify potentially wontfix issues and generate a list of reasons why stakeholders open issues or why community members of OSS projects discard issues. The article concludes with advice on how to use this information to build templates for requesting new features and enhancements and to write better bug reports.
+                  </p>
+                </section>
+
+                <section>
+                    <h3><a name="key-takeaways" class="anchor">
+<a name="key-takeaways" href="#key-takeaways" class="no_external_ico">Key takeaways</a></h3>
+<ul>
+<li>
+<p>The main reason to mark an issue as wontfix (or discard it) is <em>already implemented / not needed change requests</em>.</p>
+</li>
+<li>
+<p>The second reason is bug reports that are <em>not bugs</em> actually.</p>
+</li>
+<li>
+<p>Both of them are easily avoidable:</p>
+</li>
+<li>
+<p>using Machine Learning</p>
+</li>
+<li>
+<p>if the issue writer or bug reporter use a template to:<br />
+a) demonstrate the business importance in the case of change / new requests.<br />
+b) clearly state the steps to reproduce the bug and the expected outcomes.</p>
+</li>
+</ul>
+<p>To justify these claims, we will go through a recently published article and tie it with my own experience.</p>
+<p>Do you know that issues finally marked as <a href="https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels#about-default-labels">wontfix</a> (though, discarded) consume on average 5 months of developers’ time? (yes, 5 months of YOUR TIME!). When I read that in the article <em>‘‘Won’t We Fix this Issue?’’ Qualitative characterization and automated identification of wontfix issues on GitHub</em> my internal alarms rang. I remember I thought “that’s too much time for nothing!”.</p>
+<p>That’s why we think this research deserves to be shared with you. I hope that showing their discoveries and tying them with our own experiences will shed some light on this topic. As usual, I strongly recommend reading the <a href="https://www.sciencedirect.com/science/article/pii/S0950584921001269">original paper</a> to get all the insights, how they did the research, and the detailed discussion over it.</p>
+<h3><a name="issues-list-driven-development" class="anchor">
+<a name="issues-list-driven-development" href="#issues-list-driven-development" class="no_external_ico">Issues-list driven development</a></h3>
+<p>As a developer’s team, your product is your baby. You know it, you grew it, you can justify and explain each feature and relate it to a business value. And now it is mature enough to be released and finally interact with real users and you release it. This is what happens right after:</p>
+<ul>
+<li>Finally we deployed our baby! 💪😷🍾 🎉</li>
+<li>😴😴😴NEXT DAY</li>
+<li>Good mornin…, wait!. What’s going one here? Why our issue tracking software started to be flooded by change requests and bug reports from people that we don’t even know.</li>
+<li>Let’s see …</li>
+<li>WHAAAAT? The user BadKarma42 wants to do what??? OMG, Why did she need that feature? 🤔<br />
+And user BigFootIsReal666 did what? What the heck? How did he break that? How do I suppose to produce that bug if the user just said what he broke but didn’t describe how? 😡</li>
+</ul>
+<p>You know that software needs to be updated and fixed. The reasons for this deserve it’s own article and won’t be covered here. I’ll just say that to meet users’ expectations (and market requirements) software developers need to continuously update their source code.</p>
+<p>But how do developers know when they need to update or fix things? What is the artifact that drives development, shows product improvements, and the team’s work pace? Yes, you’re right. It’s the list of issues and bugs reported/created by users, customers, Product Owners or any other project stakeholder.</p>
+<h3><a name="how-to-deal-with-issues" class="anchor">
+<a name="how-to-deal-with-issues" href="#how-to-deal-with-issues" class="no_external_ico">How to deal with issues?</a></h3>
+<p>Let’s face it. The list of features requested by stakeholders and bugs reported can be intimidatingly long. In addition, the quality of what’s inside tends to be very different, so we, as developers, have to spend a significant amount of time managing those reports. Obviously, there are software engineering approaches to address these issues, such as backlog refinement meetings, specific roles that review and prioritize tasks (i.e., Product Owners), QA best practices, templates, and a long etc. However, at some point, your valuable time will be needed to at least give your “expert opinion”.</p>
+<p>For these reasons, in the last decade or so, several research works have proposed/developed automated solutions to prioritize requested changes <a href="https://paperpile.com/c/IrEa0I/bU7h">(Lamkanfi et al. 2011)</a>, <a href="https://paperpile.com/c/IrEa0I/UgG3">(Tian, Lo, and Sun 2013)</a>, find out “who should fix bugs” <a href="https://paperpile.com/c/IrEa0I/lyUu">(Anvik, Hiew, and Murphy 2006)</a>, figure out whether am issue “is a bug or an enhancement” <a href="https://paperpile.com/c/IrEa0I/Xwt0">(Antoniol et al. 2008)</a>, detect issues misclassifications or bug duplication. Believe it or not, nobody investigated why we discard issues following costly processes until the work named <em>“Won’t We Fix this Issue?” Qualitative Characterization and Automated Identification of Wontfix Issues on GitHub</em> <a href="https://paperpile.com/c/IrEa0I/ebmm">(Panichella, Canfora, and Di Sorbo 2021)</a> did it.</p>
+<p>What if we could automate the process of ruling out issues without losing too much time on the process? Panichella et al. have just published an article in which they use machine learning to train a model which proved to be very accurate (statistically speaking) in identifying potentially wontfix issues. In addition, they generate a lot of related information, such as a list of reasons why stakeholders open issues or a list of why community members of OSS projects discard issues. Let’s review the latter:</p>
+<p><picture>
+              <source srcset="/assets/reasons-for-discard-issues.webp" type="image/webp">
+  
+              <img src="/assets/reasons-for-discard-issues.jpg#center" alt=""></picture></p>
+<p>This list was constructed by analyzing 667 closed issues (wontfix) from 97 different projects on Github. As the authors of the article explain, the sum of the percentage values in the table is greater than 100% due to issues that have been assigned to more than one reason.</p>
+<h3><a name="machine-learning" class="anchor">
+<a name="machine-learning" href="#machine-learning" class="no_external_ico">Machine Learning? 🤔</a></h3>
+<p>What is the second-best thing we can do if we don’t know how to train a model but also don’t want to wait for a commercial tool to be developed? We can use the information that Panichella et al. make available to us and extrapolate it to our own projects to make educated guesses about issues that will never be solved and should be quickly discarded</p>
+<p>The first reason on the list for rejecting an issue seems to be that the requested new features/enhancements are already implemented, are not needed at all or are not a relevant change. Therefore, we can build a template for requesting new features/enhancements by asking questions to avoid creating potential issues that are not going to be solved. If you think for a moment, you will see that change requests are like small business cases, so we can ask them to contain, more or less, the same elements as business cases.</p>
+<ol>
+<li>A <strong>one-line summary</strong>: <em>Add a tooltip over the call-to-action (CTA) button to increase conversion.</em></li>
+<li><strong>Problem statement</strong>: <em>Users let us know that many times they identify the CTA but the action goal isn’t clear.</em></li>
+<li><strong>Options</strong>: <em>Besides adding a tooltip, other options are changing the color of each CTA button (CR-323) or re-think buttons’ texts (CR-324).</em></li>
+<li><strong>Solution description</strong>: <em>On every CTA according to the attached table, add a tooltip to reinforce the message that stays open 3-5 seconds (also stated on the table).</em></li>
+<li><strong>Cost-benefit analysis</strong>: _This task will cost 10-14 development hours, but preliminary tests show an increase of 3-5% of conversion with the new tooltips. Extrapolating linearly that percentage to all the CTAs we will start seeing net benefits one week after we put it in production.<br />
+_</li>
+</ol>
+<p>Many change requests only state the summary, some the problem statement, but then quickly jump to the solution. They forget to sell the change to the decision maker tying it to a business benefit, which makes this person’s job very difficult. Panichella et al. state that developers spend an average of five months deciding whether a problem should be labeled as a wontfix.</p>
+<h3><a name="final-thoughts" class="anchor">
+<a name="final-thoughts" href="#final-thoughts" class="no_external_ico">Final thoughts</a></h3>
+<p>Panichella et al. did an amazing job researching a novel topic that is a real problem for everyday developers. They discovered a list of reasons that could lead to flagging problems as wontfix faster and used that information to train a model and automate the detection of those problems. We analyzed the most frequent reason, but the rest of the reasons are also important and can be worked on in the same way as we did with the first one (i.e. we can build templates to write better bug reports by adding replication steps, expected and actual outputs). We encourage you to use this information in your current projects, generating new tools that will serve your teams and, why not, the rest of the industry.</p>
+<h3><a name="references" class="anchor">
+<a name="references" href="#references" class="no_external_ico">References</a></h3>
+<ul>
+<li>S. Panichella, G. Canfora and A. Di Sorbo, “<em>Won’t We Fix this Issue?</em>”Qualitative characterization and automated identification of wontfix issues on GitHub, <em>Information and Software Technology</em> (2021), doi: <a href="https://doi.org/10.1016/j.infsof.2021.106665">https://doi.org/10.1016/j.infsof.2021.106665</a>.</li>
+</ul>
+
+                </section>
+
+                  <section>
+                    <h2 id="Acknowledgments">Acknowledgments</h2>
+                      <p>This post, originally on <a href="https://www.howdy.com/blog/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it/">https://www.howdy.com/blog/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it/</a>, was written for <a href="https://www.howdy.com">Howdy™</a>, so I want to thank them for letting me share it with you on my website.</p>
 
                   </section>
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    <p><em>Jul 05, 2021</em>: Original publication on howdy.com</p>
 
+                  </section>
+                
+                  <section class="backlinks">
+                    <h2>Mentioned in</h2>
+                        <ul>
+                            <li>
+                              <a href="/howdy-software-engineer">Software Engineer</a>
+                            </li>
+                        </ul>
+                  </section>
               </div>
             </div>
-              <div class="row splitter">
-                <div class="col-md-12 text-center">Projects/Activities</div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <section class="projects">
-                    <h2><a name="writing-projects" class="anchor">
-<a name="writing-projects" href="#writing-projects" class="no_external_ico">Writing projects</a></h2>
-<ul>
-<li>20220412 - <a href="/covid19-the-van-helsing-of-zombies-orcs-scrum-team">Covid 19: the Van Helsing of Zombies &amp; Orcs Scrum team</a> </li>
-<li>20210705 - <a href="/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it">Detecting &quot;Wont Fix&quot; Issues with Machine Learning</a> </li>
-<li>20210513 - <a href="/pull-requests-far-away-from-heaven">What Science Says About Getting Your PR Accepted</a> </li>
-</ul>
-<h2><a name="company-visibility-tasks" class="anchor">
-<a name="company-visibility-tasks" href="#company-visibility-tasks" class="no_external_ico">Company visibility tasks</a></h2>
-<ul>
-<li>20220127 - <a href="/meetup-python-chile-quality-in-agile-contexts">Meetup Python Chile: Quality in Agile Contexts</a></li>
-<li>20210727 - <a href="/as-talk-the-last-productivity-hack-youll-ever-need">AS Talk: The last productivity hack you'll ever need</a> </li>
-</ul>
-<h2><a name="internal-initiatives" class="anchor">
-<a name="internal-initiatives" href="#internal-initiatives" class="no_external_ico">Internal initiatives</a></h2>
-<ul>
-<li>20211125 - Partner introduction to all the company and workshop/demo</li>
-<li>20210429 - Earth Day Happy Hour - How to grow a tree from seed and convert it into a bonsai tree</li>
-</ul>
-
-                  </section>
-                </div>
-              </div>
-          </article>
         </div> <!-- container-fluid dm-board -->
 
         <a href="/" class="logo">
@@ -452,7 +607,7 @@
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
-
+    
     <div class="footer" style="text-align:center; width:100%;">
       <div style="text-align:center; width:100%">
       <ul>
