@@ -5,14 +5,14 @@
   "layout": "experience",
   "card": {
     "color": "#000000",
-    "columnid": "progress_2",
+    "columnid": "done_3",
     "content": "[title]",
-    "datebox": "Nov 2020 – Now",
+    "datebox": "Nov 2020 – Nov 2023",
     "extlink": null,
     "laneid": "Experience",
     "leftbox": null,
     "linkto": "[link_to]",
-    "position": "20201115",
+    "position": "20231115",
     "subtaskdetails": [],
     "tags": null,
     "title": "Stagger.com"
@@ -28,7 +28,7 @@
 Software Engineer at Stagger.com
 
 [duration:string]
-Nov 2020 - Now
+Nov 2020 - Nov 2023
 
 [place_url:string]
 https://stagger.com/
@@ -39,6 +39,8 @@ Stagger
 [content:md]
 Stagger is a visual storytelling platform designed to assist small business owners, who may lack experience with complex design software, in creating more effective digital marketing content. Its unique selling point lies in its machine learning capabilities that offer actionable insights into the types of content that generate the most customer engagement, allowing business owners to make data-driven decisions.
 
+![Stagger's logo](/assets/stagger_logo.jpg#center)
+
 The product features a user-friendly graphic drag-and-drop design interface (similar to Canva) developed using React. This allows users to craft social media graphics, presentations, and other types of visual content with ease. The front-end system communicates with a Node.js backend, which serves as a central link to various services including multiple PostgreSQL databases, an exporter service, batch processing operations, and the machine learning component. The entire infrastructure is hosted on Heroku and the Google Cloud Platform (GCP).
 
 In addition to the main technologies mentioned, Stagger employs Cloudinary for image and video management; Mixpanel, Sentry.io, and FullStory for analytics and user experience tracking; Stripe for payment processing; and Sendgrid for email delivery.
@@ -46,7 +48,7 @@ In addition to the main technologies mentioned, Stagger employs Cloudinary for i
 As a software engineer working primarily on the API (Node.js), my responsibilities include enabling other developers to build new features or developing them myself using React. I also handle the automated collection of brand digital assets and the creation of partially completed content through machine learning algorithms. Furthermore, I contribute to data flows and analytics pipelines that transform data from diverse sources into standardized information to provide users with meaningful insights.
 
 [projects:md]
-- Share server: not only did I replace the old one, but I made it more flexible (not tied to slide sizes). 
+- Share server: not only I replaced the old one, but I made it more flexible (not tied to slide sizes). 
 It was also prepared to scale without limit by placing it behind AWS CloudFront.
 - IG/FB integration of insights
 - Embeds analytics
