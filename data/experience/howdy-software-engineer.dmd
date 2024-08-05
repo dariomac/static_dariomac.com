@@ -4,14 +4,14 @@
   "layout": "experience",
   "card": {
     "color": "#003366",
-    "columnid": "progress_2",
+    "columnid": "done_3",
     "content": "[title]",
-    "datebox": "Nov 2020 – Now",
+    "datebox": "Nov 2020 – Nov 2023",
     "extlink": null,
     "laneid": "Experience",
     "leftbox": null,
     "linkto": "[link_to]",
-    "position": "20201115",
+    "position": "20231115",
     "subtaskdetails": [],
     "tags": null,
     "title": "Howdy"
@@ -26,7 +26,7 @@
 [summary:string]
 
 [duration:string]
-Nov 2020 - Now
+Nov 2020 - Nov 2023
 
 [place_url:string]
 https://www.howdy.com/
@@ -35,9 +35,9 @@ https://www.howdy.com/
 Howdy
 
 [content:md]
-At Howdy, I worked full time as a Software Engineer for their partners (until June 2022, when I started doing it part-time). My responsibility as a member of the partner's team is to use all of my experience in software engineering to boost their business. 
+At Howdy, I worked as a full-time software engineer for their partners. As part of the partner team, I used my software engineering skills to help drive the business forward.
 
-In addition, I tried my best to contribute to any internal project or campaign that required it, whether it was writing articles, creating branded material, or speaking. As a result, I started working as a [Developer Advocate in June 2022](/austin-software-developer-advocate).
+In addition, I did my best to contribute to any internal project or campaign that required it, whether it was writing articles, creating branding material or giving talks. As a result, I started working as [Developer Advocate in June 2022](/austin-software-developer-advocate) moving to full-time in Nov 2023.
 
 [projects:md]
 
