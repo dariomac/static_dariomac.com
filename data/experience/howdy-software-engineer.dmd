@@ -13,7 +13,7 @@
     "linkto": "[link_to]",
     "position": "20231115",
     "subtaskdetails": [],
-    "tags": null,
+    "tags": "Software Development, JavaScript, Node.js, React.js",
     "title": "Howdy"
   },
   "jsonld": {},
@@ -40,6 +40,9 @@ At Howdy, I worked as a full-time software engineer for their partners. As part 
 In addition, I did my best to contribute to any internal project or campaign that required it, whether it was writing articles, creating branding material or giving talks. As a result, I started working as [Developer Advocate in June 2022](/austin-software-developer-advocate) moving to full-time in Nov 2023.
 
 [projects:md]
+
+## Howdy partners I worked with
+- [Stagger](/stagger-software-engineer)
 
 ## Writing projects
  - 20220412 - [Covid 19: the Van Helsing of Zombies & Orcs Scrum team](/covid19-the-van-helsing-of-zombies-orcs-scrum-team) {{! /covid19-the-van-helsing-of-zombies-orcs-scrum-team --}}
