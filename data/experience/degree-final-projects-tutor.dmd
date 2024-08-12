@@ -1,11 +1,11 @@
 {
-  "title": "Degree final projects tutor",
+  "title": "End-of-Degree final projects tutor",
   "date": "2018-11-06",
   "layout": "experience",
   "card": {
     "color": "#8C0202",
     "columnid": "progress_2",
-    "content": "Degree final projects tutor",
+    "content": "End-of-Degree final projects tutor",
     "datebox": "Aug 2016 - Now",
     "extlink": "https://fi.ort.edu.uy/72104/17/proyectos-de-fin-de-carrera.html",
     "laneid": "Experience",
@@ -15,7 +15,7 @@
     "position": "20160401",
     "subtasks": "0",
     "subtaskscomplete": "0",
-    "tags": null,
+    "tags": "Software Engineering Practices, Artificial Intelligence, Tutoring",
     "title": "Universidad ORT Uruguay",
     "type": "Experience"
   },
@@ -28,8 +28,7 @@
 ---
 
 [summary:string]
-The end-of-degree-project is a complex task where the undergraduate student has to integrate the concepts, contents, knowledge, procedures, and skills that were developed throughout their studies.
-I think my job as tutor's is to help students to sort things out. As they never faced real situations/problems, I feel that my responsibility is to guide them with advises from my own experience. Also, is always good to keep an eye on the written and oral presentation preparation.
+The end-of-degree project is a complex task where undergraduate students must integrate the concepts, content, knowledge, procedures, and skills they have developed throughout their studies. As a tutor, I believe my job is to help students sort things out. Since they have never faced real situations or problems before, I feel it is my responsibility to guide them with advice from my own experience. Additionally, it's always important to keep an eye on their written and oral presentation preparations.
 
 [duration:string]
 Aug 2016 - Now
