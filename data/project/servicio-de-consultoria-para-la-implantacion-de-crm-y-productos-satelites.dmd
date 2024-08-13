@@ -1,0 +1,61 @@
+{
+  "title": "Servicio de consultoría para la implantación de CRM y productos satélites",
+  "date": "2024-08-13",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "Servicio de consultoría para la implantación de CRM y productos satélites",
+    "datebox": "2022-2023",
+    "extlink": "https://rad.ort.edu.uy/items/5bc15017-9a06-4b34-9637-a8a16e533185/full",
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20231001",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Servicio de consultoría para la implantación de CRM y productos satélites"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+A company that is transitioning from a B2B model to a combined B2B and B2C model has requested research on CRM solutions, followed by the implementation of Odoo CRM.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+https://sisbibliotecas.ort.edu.uy/bib/95092
+
+[platform:string]
+Web
+
+[link:string]
+https://rad.ort.edu.uy/items/5bc15017-9a06-4b34-9637-a8a16e533185/full
+
+[short_description:string]
+A company transitioning from a B2B to a combined B2B and B2C business model faced scalability issues, such as contradictory customer information and ineffective marketing segmentation. To address these challenges, they sought CRM solutions and decided on Odoo CRM after a thorough evaluation. The implementation included enhancements like Amazon SQS for improved system communication and a Google Chrome extension using Javascript, Vue.js, and GPT chat completions API for AI-driven email template generation. These measures successfully streamlined operations and met the company's needs.
+
+[description:md]
+**Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
+
+This project offers a solution for a company that presented its proposal at the Projects Fair of ORT University. The company changed its business model from B2B to a combination of B2B and B2C. However, its architecture and systems were not prepared to scale easily, which caused several issues such as sending contradictory information to customers and lack of segmentation in marketing campaigns, forcing them to manually obtain information.
+
+The client requested an investigation into different CRM options available in the market that met certain characteristics. After evaluating several options, it was decided to implement Odoo CRM. This implementation included improvements with additional products specifically designed to solve key problems:
+
+1. **System Communication**: Amazon SQS was used to improve communication between the client's systems and Odoo CRM.
+2. **Email Template Generation**: A Google Chrome extension was created using Javascript, the Vue.js framework, and the GPT chat completions API to facilitate sending marketing campaigns using artificial intelligence.
+
+The resulting solution met the client's needs and expectations, significantly improving their daily operations.
+
+## Authors
+Bazzano Goldaracena, M. I. | Nervi Pérez, J. A. | Rodriguez Acosta, R. L. | & Mallo Aramburu, G
+
+## Score
+86/100
+
+## Reviewers
+Matalonga Motta, Santiago | Nieves Lema, Ruben Carlos
