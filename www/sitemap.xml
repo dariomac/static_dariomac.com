@@ -920,6 +920,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/monitoreo-de-variables-meteorologicas</loc>
+        <lastmod>2024-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/servicio-de-consultoria-para-la-implantacion-de-crm-y-productos-satelites</loc>
         <lastmod>2024-08-13</lastmod>
         <changefreq>monthly</changefreq>

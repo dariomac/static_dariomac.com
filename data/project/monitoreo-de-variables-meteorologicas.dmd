@@ -1,0 +1,62 @@
+{
+  "title": "Sistema de Variables Meteorológicas",
+  "date": "2024-08-13",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "Sistema de Variables Meteorológicas",
+    "datebox": "2023-2024",
+    "extlink": "https://rad.ort.edu.uy/items/ff794350-ca08-4790-af45-c62531650a81/full",
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20240401",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Sistema de Variables Meteorológicas"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Provide an agricultural establishment owner with accurate meteorological information for optimizing operations and strategic decisions.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+https://sisbibliotecas.ort.edu.uy/bib/94253
+
+[platform:string]
+PWA
+
+[link:string]
+https://sisbibliotecas.ort.edu.uy/bib/94253
+
+[short_description:string]
+The ORT Software Factory Laboratory developed a project to provide an agricultural establishment owner with accurate meteorological information for optimizing operations and strategic decisions. Utilizing SCRUM methodology, the team integrated software and hardware technologies, centralizing data collection, processing, and display. The solution features a weather station with an array of sensors (Ambient Weather model 2902) and a base station that receives data via SDR, stores it locally on a mini PC, and transmits it to a server. The backend system, built in C# .NET with MVC architecture, interacts with an InfluxDB database to deliver real-time information and event notifications in a user-friendly manner. This cost-effective solution significantly enhances the producer's ability to make informed decisions based on real-time meteorological data.
+
+[description:md]
+The following project was developed at the ORT Software Factory Laboratory (ORTsf) to address the need of an agricultural establishment owner to obtain accurate meteorological information in order to optimize their operations and strategic decisions. The solution integrates software and hardware technologies, centralizing the collected information to store, process, display it in a user-friendly manner, and generate notifications for relevant events. The data is stored on a mini PC and transmitted to a server.
+
+For information gathering, the team used document analysis, brainstorming sessions, and interviews. They followed the SCRUM methodology with an iterative incremental cycle to manage the project.
+
+The weather station consists of two main components:
+1. An array of sensors that measures meteorological variables. The team used the Ambient Weather model 2902 as a prototype.
+2. The weather station base, which receives measurements from the array via SDR (Software Defined Radio), stores them locally, and then sends them to the system.
+
+The backend of the system is developed in C# .NET using an MVC (Model-View-Controller) architecture to separate the UI layer, business logic, and interaction with the InfluxDB database.
+
+In summary, the team has built a functional solution that addresses a specific problem in the agricultural industry by integrating low-cost hardware and software to provide real-time information to the producer.
+
+## Authors
+Calvete Steffen, Guillermo Andrés | Camaño Rodríguez, Gonzalo Rafael
+
+## Score
+94/100
+
+## Reviewers
+Garbervetsky, Diego David | Garbarino Alberti, Helena
