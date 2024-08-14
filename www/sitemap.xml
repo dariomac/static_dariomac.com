@@ -920,6 +920,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/coco-sistema-para-fortalecer-vinculos-terapeuticos</loc>
+        <lastmod>&lt;creation_date&gt;</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/monitoreo-de-variables-meteorologicas</loc>
         <lastmod>2024-08-13</lastmod>
         <changefreq>monthly</changefreq>
@@ -1034,8 +1040,20 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/static-website-generator</loc>
+        <lastmod>2019-07-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/inception-workshop-for-entrepreneurs</loc>
         <lastmod>2017-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://www.dariomac.com/raphael-utils</loc>
+        <lastmod>2017-03-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -1054,18 +1072,6 @@
       <url>
         <loc>https://www.dariomac.com/local-read-later</loc>
         <lastmod>2017-07-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>https://www.dariomac.com/static-website-generator</loc>
-        <lastmod>2019-07-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>https://www.dariomac.com/raphael-utils</loc>
-        <lastmod>2017-03-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

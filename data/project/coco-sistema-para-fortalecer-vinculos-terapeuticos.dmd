@@ -1,0 +1,73 @@
+{
+  "title": "Coco - Sistema para fortalecer vínculos terapéuticos",
+  "date": "<creation_date>",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "Coco - Sistema para fortalecer vínculos terapéuticos",
+    "datebox": "2023-2024",
+    "extlink": "https://www.cocoterapia.com/",
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20240401",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Coco - Sistema para fortalecer vínculos terapéuticos"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Coco is a platform designed to enhance cognitive-behavioral therapy by addressing long recovery times and economic barriers.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+
+[platform:string]
+Mobile (native app)
+
+[link:string]
+
+[short_description:string]
+Coco is a platform designed to enhance cognitive-behavioral therapy by addressing long recovery times and economic barriers. It leverages accessible technology and AI to provide psychologists with comprehensive patient data, enabling better diagnoses and tailored treatments. Patients can log details like dreams, emotions, and habits, while psychologists can access these records, take notes, assign tasks, and get summaries. Coco respects the irreplaceable role of health professionals without replacing them or making automatic diagnoses. The platform is available on web and mobile using Next.js, Nest.js, React Native, and integrates OpenAI's GPT model via Fast API. Developed using an agile methodology combining Scrum, Kanban, and Lean principles, Coco adapts to user needs for continuous improvement.
+
+[description:md]
+More and more people are suffering from depression and anxiety. When they seek help through psychotherapy, they often encounter economic barriers and, even if they overcome them, the therapeutic process can be slow.
+
+Coco was born to solve the long recovery times in cognitive-behavioral therapy. Typically, patients rely on their memory or paper notes, leading to the loss of important information. Psychologists also take handwritten notes during sessions, complicating the tracking of patient progress.
+
+The team developed Coco to strengthen therapeutic processes and improve recovery times through accessible technology and artificial intelligence. By providing more information to psychologists, Coco enables better diagnoses and more tailored treatments. Patients can record important details like dreams, emotions, and habits on the platform. Psychologists can access these records, take notes during sessions, assign tasks, and obtain a complete summary of the patient.
+
+Coco is designed to be ethical and non-invasive; it acts as a bridge between therapist and patient without replacing professionals or making automatic diagnoses. The platform values the irreplaceable role of health professionals while leveraging technology to improve patients' lives.
+
+The platform is available both on web and mobile using technologies like Next.js, Nest.js, and React Native. The generative artificial intelligence connects via a Fast API service with OpenAI's GPT model.
+
+The development team employed an agile methodology that combines Scrum and Kanban along with ideas from the Lean framework. This approach allowed adapting to real user needs and continuously improving the product.
+
+The project even had an impact on different media and social networks.
+
+
+## Authors
+De Angelis, Tomás | Rodríguez Sotto, Juan Pablo | Secinaro, María Fernando
+
+## Score
+100/100
+
+[related_images:json]
+  [{
+    "filename": "twitter-telemundo2.jpg"
+  },{
+    "filename": "twitter-telemundo3.jpg"
+  },{
+    "filename": "twitter-telemundo4.jpg"
+  },{
+    "filename": "ort-post.jpg"
+  },{
+    "filename": "desayunos-informales.jpg"
+  }]
