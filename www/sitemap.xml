@@ -668,6 +668,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/software-quality-techniques-for-agile-and-traditional-projects</loc>
+        <lastmod>2019-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/big-o-101</loc>
         <lastmod>2022-10-19</lastmod>
         <changefreq>monthly</changefreq>
@@ -736,12 +742,6 @@
       <url>
         <loc>https://www.dariomac.com/vix-scrum-master-project-manager</loc>
         <lastmod>2019-03-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>https://www.dariomac.com/software-quality-techniques-for-agile-and-traditional-projects</loc>
-        <lastmod>2019-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
