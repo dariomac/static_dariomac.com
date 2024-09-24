@@ -491,10 +491,10 @@
                     <p>Disclaimer: The following document is heavily based on the Mozilla Code Review FAQ <a href="http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf" title="Rigby, C., German, D. (2006). &quot;A preliminary examination of code review processes in open source projects.&quot; University of Victoria Technical Report: DCS-305-IR. Retrieved from http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf.">[1]</a>. But my team at <a href="http://vairix.com/" title="VAIRIX">VAIRIX</a> has made many adaptations in order to reflect the two-level review process that is part of our development methodology.</p>
 <h2><a name="what-is-code-review" class="anchor">
 <a name="what-is-code-review" href="#what-is-code-review" class="no_external_ico">What is code review?</a></h2>
-<p>As Wikipedia puts it, “<a href="https://en.wikipedia.org/wiki/Code_review" title="What is code review?">Code review</a> is systematic examination … of computer source code. It is intended to find and fix mistakes overlooked in the initial development phase, improving both the overall quality of software and the developers' skills.&quot;</p>
+<p>As Wikipedia puts it, “<a href="https://en.wikipedia.org/wiki/Code_review" title="What is code review?">Code review</a> is systematic examination … of computer source code. It is intended to find and fix mistakes overlooked in the initial development phase, improving both the overall <strong>quality</strong> of software and the developers' skills."</p>
 <h2><a name="what-is-the-purpose-of-code-review" class="anchor">
 <a name="what-is-the-purpose-of-code-review" href="#what-is-the-purpose-of-code-review" class="no_external_ico">What is the purpose of code review?</a></h2>
-<p>Code review is the most commonly used procedure for validating the design and implementation of features. It helps developers to maintain consistency between design and implementation “styles&quot; across many team members and between various projects on which the company is working. If you want to know more benefits of code reviews and how it saves time, money and minimize technical debt, check out <a href="https://themodestack.com/how-code-audit-saves-time-money-and-makes-things-better/?utm_medium=email&amp;utm_source=blog">MODESTACK's article on Code Audits</a>.</p>
+<p>Code review is the most commonly used procedure for validating the design and implementation of features. It helps developers to maintain consistency between design and implementation “styles" across many team members and between various projects on which the company is working. If you want to know more benefits of code reviews and how it saves time, money and minimize technical debt, check out <a href="https://themodestack.com/how-code-audit-saves-time-money-and-makes-things-better/?utm_medium=email&amp;utm_source=blog">MODESTACK's article on Code Audits</a>.</p>
 <p>We perform code review in two levels. The first is known as <strong>peer review</strong> and the second is <strong>external review</strong>.</p>
 <p>The code review process doesn't begin working instantaneously (especially with external review), and our process is far from being perfect — although we have done some serious research around the topic <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197" title="Macchi, D., &amp; Solari, M. (2012). Software inspection adoption: A mapping study - https://dariomac.com/software-inspection-adoption--a-mapping-study. In Conferencia Latinoamericana de Informática (CLEI 2012).">[3]</a>. So, we are always open to suggestions for improvement.</p>
 <p>Having said that, let's dig into peer reviews.</p>
@@ -533,15 +533,15 @@
 <p>The reviewer will assess whether there are any simpler or more elegant alternatives available.</p>
 <h3><a name="reuse-of-existing-code" class="anchor">
 <a name="reuse-of-existing-code" href="#reuse-of-existing-code" class="no_external_ico">Reuse of Existing Code</a></h3>
-<p>The reviewer will check to see if the functionality can be implemented using some of the existing code. Code has to be aggressively “DRYed&quot; (as in, Don't Repeat Yourself) during development.</p>
+<p>The reviewer will check to see if the functionality can be implemented using some of the existing code. Code has to be aggressively “DRYed" (as in, Don't Repeat Yourself) during development.</p>
 <h3><a name="test-cases" class="anchor">
 <a name="test-cases" href="#test-cases" class="no_external_ico">Test Cases</a></h3>
 <p>Finally, the reviewer will ensure the presence of enough test cases to go through all the possible execution paths. All tests have to pass before the code can be merged into the shared repository.</p>
 <p><img src="/assets/Peer-Review-1.gif#center" alt="Code review process"></picture></p>
 <h2><a name="what-is-an-external-review" class="anchor">
 <a name="what-is-an-external-review" href="#what-is-an-external-review" class="no_external_ico">What is an external review?</a></h2>
-<p>An external review addresses different issues than peer reviews. Specifically, external reviews focus on how to increase code quality, promote best practices, and remove “code smells.&quot;</p>
-<p>This level of review will look at the quality of the code itself, its potential effects on other areas of the project, and its adherence with company coding guidelines.</p>
+<p>An external review addresses different issues than peer reviews. Specifically, external reviews focus on how to increase code <strong>quality</strong>, promote best practices, and remove “code smells."</p>
+<p>This level of review will look at the <strong>quality</strong> of the code itself, its potential effects on other areas of the project, and its adherence with company coding guidelines.</p>
 <p>Although external reviewers may not have domain expertise, they do have discretion to raise red flags related to both the design and code and to suggest ways to solve problems and refactor code as necessary.</p>
 <h2><a name="what-do-external-reviewers-look-for" class="anchor">
 <a name="what-do-external-reviewers-look-for" href="#what-do-external-reviewers-look-for" class="no_external_ico">What do external reviewers look for?</a></h2>
@@ -554,9 +554,9 @@
 <h3><a name="code-smells" class="anchor">
 <a name="code-smells" href="#code-smells" class="no_external_ico">Code Smells</a></h3>
 <p>Finally, the reviewer will keep an eye out (or should that be a nose out?) for code smells and make suggestions for how to avoid them.</p>
-<p>In case the term is new to you, a <a href="http://c2.com/cgi/wiki?CodeSmell" title="What is a code smell?">code smell</a> is “a hint that something has gone wrong somewhere in your code. Use the smell to track down the problem.&quot;</p>
+<p>In case the term is new to you, a <a href="http://c2.com/cgi/wiki?CodeSmell" title="What is a code smell?">code smell</a> is “a hint that something has gone wrong somewhere in your code. Use the smell to track down the problem."</p>
 <h2><a name="must-external-reviewers-be" class="anchor">
-<a name="must-external-reviewers-be" href="#must-external-reviewers-be" class="no_external_ico">Must external reviewers be &quot;domain experts&quot;?</a></h2>
+<a name="must-external-reviewers-be" href="#must-external-reviewers-be" class="no_external_ico">Must external reviewers be "domain experts"?</a></h2>
 <p>External reviewers don't have to have domain knowledge of the code that they will be reviewing. <a href="https://web.archive.org/web/20171130002853/https://www.mozilla.org/en-US/about/governance/policies/reviewers/" title="Mozilla (2012). Retrieved from https://web.archive.org/web/20171130002853/https://www.mozilla.org/en-US/about/governance/policies/reviewers/.">[4]</a>.</p>
 <p>If they know about the domain, they will feel tempted to review it at a functional level, which could lead to burnout. However, if they have some business knowledge, they can estimate more easily how complex the review will be and can quickly complete the review, providing a more comprehensive evaluation of the code.</p>
 <p>So, domain expertise is a bonus, not a requirement.</p>
@@ -586,13 +586,13 @@
 <h2><a name="references" class="anchor">
 <a name="references" href="#references" class="no_external_ico">References</a></h2>
 <blockquote>
-<p>[1] Knous, M. &amp; Dbaron, A. (2005). Code Review FAQ. Mozilla Development Network. Retrieved from <a href="https://developer.mozilla.org/en/docs/Code_Review_FAQ">https://developer.mozilla.org/en/docs/Code_Review_FAQ</a>.</p>
+<p>[1] Knous, M. & Dbaron, A. (2005). Code Review FAQ. Mozilla Development Network. Retrieved from <a href="https://developer.mozilla.org/en/docs/Code_Review_FAQ">https://developer.mozilla.org/en/docs/Code_Review_FAQ</a>.</p>
 </blockquote>
 <blockquote>
-<p>[2] Rigby, C., German, D. (2006). “A preliminary examination of code review processes in open source projects.&quot; University of Victoria Technical Report: DCS-305-IR. Retrieved from <a href="http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf">http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf</a>.</p>
+<p>[2] Rigby, C., German, D. (2006). “A preliminary examination of code review processes in open source projects." University of Victoria Technical Report: DCS-305-IR. Retrieved from <a href="http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf">http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf</a>.</p>
 </blockquote>
 <blockquote>
-<p>[3] Macchi, D., &amp; Solari, M. (2012). <a href="https://dariomac.com/software-inspection-adoption--a-mapping-study">Software inspection adoption: A mapping study</a>. In Conferencia Latinoamericana de Informática (CLEI 2012).<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197">http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197</a>.</p>
+<p>[3] Macchi, D., & Solari, M. (2012). <a href="https://dariomac.com/software-inspection-adoption--a-mapping-study">Software inspection adoption: A mapping study</a>. In Conferencia Latinoamericana de Informática (<strong>CLEI</strong> 2012).<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197">http://ieeexplore.ieee.org/xpl/articleDetails.<strong>jsp</strong>?arnumber=6427197</a>.</p>
 </blockquote>
 <blockquote>
 <p>[4] Mozilla (2012). Retrieved from <a href="https://web.archive.org/web/20171130002853/https://www.mozilla.org/en-US/about/governance/policies/reviewers/">https://web.archive.org/web/20171130002853/https://www.mozilla.org/en-US/about/governance/policies/reviewers/</a>.</p>

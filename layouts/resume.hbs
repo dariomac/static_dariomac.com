@@ -120,7 +120,7 @@
           <p>
             {{#with (resumeGrep laneContent.Me this.frontmatter.params.resumeTag this.frontmatter.params.job)}}
               {{#forEach this}}
-                {{{highlighter this.content.content}}}
+                {{{this.content.content}}}
               {{/forEach}}
             {{/with}}
           </p>

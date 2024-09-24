@@ -488,7 +488,7 @@
                 </section>
 
                 <section>
-                    <p>Last week we have found an odd behaviour in some website that drove us crazy for a while. The bug was related with the append of jQuery that is used to insert content to the end of the matched elements and the height method used to get the computed height of an element. Look at this code:</p>
+                    <p>Last week we have found an odd behaviour in some website that drove us crazy for a while. The bug was related with the append of <strong>jQuery</strong> that is used to insert content to the end of the matched elements and the height method used to get the computed height of an element. Look at this code:</p>
 <pre class="brush: javascript; toolbar: false;">
 //divSong is created with jQuery, added to the (DOM) in the next line
 $('.song-list .songs').append(divSong);
@@ -504,8 +504,8 @@ setTimeout(function(){
     currentPlaying.css('height', divSong.height());
 }, 0);
 </pre>
-<p>Because in Vairix we have an “always look for evidence&quot; culture we made a search looking for something that supports (or not) this theory. We have found that many people reports similar situations, although most of them were related with other problems like asynchronous ajax callbacks or other environmental errors. Besides those false positive results, we found two questions in StackOverflow (<a href="http://www.google.com/url?q=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F5017923%2Fdiv-width-immediately-after-append-is-calculating-wrong&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHCjQ70kysaH3Bu04VtKaQsOJ41Fw">link1</a>, <a href="http://www.google.com/url?q=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F6132141%2Fjquery-why-does-width-sometimes-return-0-after-inserting-elements-with-html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHelN_XY-QE0yf0KbANE4WI0UTt6Q">link2</a>) that describe the same situation that we have. Both answers lead to the same solution as we had found (we rocks!).</p>
-<p>Remember: this solutions works, but it is not due to the fact of running in a different thread (JavaScript runs in a single thread); it is because setTimeout let the browser continue with the next execution block in the queue that is the html render one.</p>
+<p>Because in Vairix we have an “always look for evidence" culture we made a search looking for something that supports (or not) this theory. We have found that many people reports similar situations, although most of them were related with other problems like asynchronous ajax callbacks or other environmental errors. Besides those false positive results, we found two questions in StackOverflow (<a href="http://www.google.com/url?q=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F5017923%2Fdiv-width-immediately-after-append-is-calculating-wrong&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHCjQ70kysaH3Bu04VtKaQsOJ41Fw">link1</a>, <a href="http://www.google.com/url?q=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F6132141%2Fjquery-why-does-width-sometimes-return-0-after-inserting-elements-with-html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHelN_XY-QE0yf0KbANE4WI0UTt6Q">link2</a>) that describe the same situation that we have. Both answers lead to the same solution as we had found (we rocks!).</p>
+<p>Remember: this solutions works, but it is not due to the fact of running in a different thread (<strong>JavaScript</strong> runs in a single thread); it is because setTimeout let the browser continue with the next execution block in the queue that is the <strong>html</strong> render one.</p>
 
                 </section>
 

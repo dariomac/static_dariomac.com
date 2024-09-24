@@ -413,19 +413,19 @@
 </ul>
 <p>Global command execution:</p>
 <p><img src="/assets/wincommand.gif#center" alt="IMG"></picture></p>
-<p>If you put some command inside this textbox and press Ctrl+Enter, or click in the green arrow or click in Tools - Exec Global Cmd. Useful when you want to execute the same command continuously, like a function defintion or, in my situation, repetitive commands like (load &quot;foo&quot;) when you are working foo.clj</p>
+<p>If you put some command inside this textbox and press Ctrl+Enter, or click in the green arrow or click in Tools - Exec Global Cmd. Useful when you want to execute the same command continuously, like a function defintion or, in my situation, repetitive commands like (load "foo") when you are working foo.clj</p>
 <p>WinCommand.ini is the file that let you configure WinCommand.</p>
 <p>First you have an application area that let you add more applications to WinCommand.</p>
 <p>[applications]</p>
 <p>e.g.:</p>
-<p>Clojure|$JAVA_HOME\bin\java.exe|-server -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8888 -cp $BOX-HOME\usr\bin\clojure\clojure.jar;$BOX-HOME\usr\etc;$BOX-HOME\usr\lib\clojure-contrib.jar;$BOX-HOME\usr\src\ clojure.lang.Repl|(System/exit 0)</p>
+<p>Clojure|$<strong>JAVA</strong>_HOME\bin\<strong>java</strong>.exe|-server -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8888 -cp $BOX-HOME\usr\bin\clojure\clojure.jar;$BOX-HOME\usr\etc;$BOX-HOME\usr\lib\clojure-contrib.jar;$BOX-HOME\usr\src\ clojure.lang.Repl|(System/exit 0)</p>
 <p>This is the format of each application line definition:</p>
 <p>App Name | App executable path | App parameters | internal command to leave the repl environment and exit the App</p>
 <p>The next area that you will find is the environment area.</p>
 <p>[environment]</p>
 <p>Here you can add environment variables that will be set to the Application environment only. For example, BOX-HOME is set with the value $WCMD-HOME that is an internal variable defined in runtime that contains WinCommand execution path.</p>
-<p>You can change JAVA_HOME=C:\Sun\SDK\jdk to your J2SE JDK default location.</p>
-<p>If you want to use some of this variables in you Application definition you must put the &quot;main.system.command-prefix&quot; before the variable name.</p>
+<p>You can change <strong>JAVA</strong>_HOME=C:\Sun\SDK\jdk to your J2SE JDK default location.</p>
+<p>If you want to use some of this variables in you Application definition you must put the "main.system.command-prefix" before the variable name.</p>
 <p>Finally you will find the setup area that let you change the global behaviour of WinCommand.</p>
 <p>[setup]</p>
 <p>History:

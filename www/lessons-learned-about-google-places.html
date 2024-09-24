@@ -493,10 +493,10 @@
 <pre class="brush: javascript; toolbar: false;">
 https://maps.googleapis.com/maps/api/place/textsearch/json?query=Power%20Properties,%20Live%20Oak&amp;key=AddYourOwnKeyHere
 </pre>
-<p>This query would return a json (could be a xml if you ask for) with the results. You will see many results, depending of the query parameter, so you will need to look what it the establishment that you want to get more detailed and then get the place_id of it.</p>
+<p>This query would return a <strong>json</strong> (could be a xml if you ask for) with the results. You will see many results, depending of the query parameter, so you will need to look what it the establishment that you want to get more detailed and then get the place_id of it.</p>
 <p>See more documentation here: <a href="https://developers.google.com/places/documentation/search">https://developers.google.com/places/documentation/search</a></p>
 <p>As an alternative, you can configure a Google Map SearchBox so, as soon as you start writing and address or place name, it shows alternatives directly from Google Maps.</p>
-<p>HTML CODE</p>
+<p><strong>HTML</strong> CODE</p>
 <pre class="brush: javascript; toolbar: false;">
 &lt;script src="http://maps.googleapis.com/maps/api/js?v=3&amp;amp;libraries=places&amp;amp;sensor=false"&gt;&lt;/script&gt;
 &lt;input class="form-control" id="place" name="place" placeholder="apartment name" type="text" value="" /&gt; &lt;output&gt;&lt;/output&gt;
@@ -513,13 +513,13 @@ google.maps.event.addListener(autocomplete, 'places_changed', function() {
   alert(firstPlace.place_id);
 });
 </pre>
-<p>In the places_changed event you will get the places (hopefully one) that match your search query and then you can get it's place_id (e.g. <code>ChIJr8fiNUufToYROMv7EDCpIuY</code>). You can see more about SearchBox class here: <a href="https://developers.google.com/maps/documentation/javascript/reference#SearchBox">https://developers.google.com/maps/documentation/javascript/reference#SearchBox</a></p>
+<p>In the places_changed event you will get the places (hopefully one) that match your search query and then you can get it's place_id (e.g. <code>ChIJr8fiNUufToYROMv7EDCpIuY</code>). You can see more about SearchBox class here: <a href="https://developers.google.com/maps/documentation/javascript/reference#SearchBox">https://developers.google.com/maps/documentation/<strong>javascript</strong>/reference#SearchBox</a></p>
 <p>To get the details of a place (once you have the <code>place_id</code>) you have to call other REST API like this:</p>
-<p><a href="https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJr8fiNUufToYROMv7EDCpIuY&amp;key=AddYourOwnKeyHeremA">https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJr8fiNUufToYROMv7EDCpIuY&amp;key=AddYourOwnKeyHeremA</a></p>
-<p>This query will return a new json with the details of the placed represented by that placeid. In our case, we get the reviews of that place.</p>
+<p><a href="https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJr8fiNUufToYROMv7EDCpIuY&amp;key=AddYourOwnKeyHeremA">https://maps.googleapis.com/maps/api/place/details/<strong>json</strong>?placeid=ChIJr8fiNUufToYROMv7EDCpIuY&key=AddYourOwnKeyHeremA</a></p>
+<p>This query will return a new <strong>json</strong> with the details of the placed represented by that placeid. In our case, we get the reviews of that place.</p>
 <p>Some limitations of Place Details:</p>
 <ul>
-<li>The REST API let you grab only the latest 5 &quot;most useful&quot; 5 reviews of a place (although it has many more). Many people <a href="https://code.google.com/p/gmaps-api-issues/issues/detail?id=4258&amp;q=apitype%3APlacesAPI%20type%3AEnhancement%20reviews&amp;sort=-stars&amp;colspec=ID%20Type%20Status%20Introduced%20Fixed%20Summary%20Internal%20Stars">reported this issue</a>.</li>
+<li>The REST API let you grab only the latest 5 "most useful" 5 reviews of a place (although it has many more). Many people <a href="https://code.google.com/p/gmaps-api-issues/issues/detail?id=4258&amp;q=apitype%3APlacesAPI%20type%3AEnhancement%20reviews&amp;sort=-stars&amp;colspec=ID%20Type%20Status%20Introduced%20Fixed%20Summary%20Internal%20Stars">reported this issue</a>.</li>
 <li>If some place has less than 5 reviews, the API don't get the overall rating, so if you want it, you will need to iterate over the individual reviews and calculate the average of them.</li>
 </ul>
 <p>You can see more information about Place Details here:</p>

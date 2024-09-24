@@ -398,7 +398,7 @@
                   <section style="clear:both" class="content">
                     <p>Sep, 2009</p>
 <p><strong>Why Another Clojure Box?</strong></p>
-<p>Well, I love Scite, so I use it to experiment with Clojure. Later I integrate WinCommand and <del>JSwat</del> to the set so I thought to share this &quot;package&quot; with everybody.</p>
+<p>Well, I love Scite, so I use it to experiment with Clojure. Later I integrate WinCommand and <del>JSwat</del> to the set so I thought to share this "package" with everybody.</p>
 <p>All the source code of the tools are in the package, so you can hack every tool in order to make it more useful for you (or report bugs!!).</p>
 <p><picture>
               <source srcset="/assets/ACB_1.3_full-workplace.webp" type="image/webp">
@@ -413,8 +413,8 @@
 <li>Select enclosing form pressing Ctrl+B inside a clojure form. Continue pressing Ctrl+B if you want to select the form that is inmediately outside the first selection.</li>
 <li>expand-resource attribute in WinCommand.ini useful when you have a lot of jars inside lib folder and want to add it to the classpath without specify one by one.</li>
 <li>Snippets manager.</li>
-<li>Call editor from the REPL using function (ed &quot;filename-without-clj&quot;).</li>
-<li>Call debugger from the REPL using function (dbg &quot;filename-without-clj&quot; true), where the third parameter set if you want to load the file first.</li>
+<li>Call editor from the REPL using function (ed "filename-without-clj").</li>
+<li>Call debugger from the REPL using function (dbg "filename-without-clj" true), where the third parameter set if you want to load the file first.</li>
 </ul>
 </li>
 <li>Editor (Customized version of Scite 2.01)
@@ -423,7 +423,7 @@
 <li>Code completion</li>
 <li>Inline help while you are writing clojure form (function arguments, etc).</li>
 <li>Select enclosing form pressing Ctrl+B inside a clojure form. Continue pressing Ctrl+B if you want to select the form that is inmediately outside the first selection.</li>
-<li>Other tools specially developed to work with lisp like languages (through &quot;Tools&quot; menu).</li>
+<li>Other tools specially developed to work with lisp like languages (through "Tools" menu).</li>
 <li>Help form Clojure website pressing F1 over a form (now it run locally).</li>
 <li>Send selection to REPL selecting and pressing Ctrl+Alt+E.</li>
 <li>Form documentation (where available) in the Outout Window pressing Ctrl+1 over a form.</li>
@@ -526,14 +526,14 @@
 <p>First you have an application area that let you add more applications to WinCommand.</p>
 <p>[applications]</p>
 <p>e.g.:</p>
-<p>Clojure|$JAVA_HOME\bin\java.exe|-server -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8888 -cp $BOX-HOME\usr\bin\clojure\clojure.jar;$BOX-HOME\usr\etc;$BOX-HOME\usr\lib\clojure-contrib.jar;$BOX-HOME\usr\src\ clojure.lang.Repl|(System/exit 0)</p>
+<p>Clojure|$<strong>JAVA</strong>_HOME\bin\<strong>java</strong>.exe|-server -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8888 -cp $BOX-HOME\usr\bin\clojure\clojure.jar;$BOX-HOME\usr\etc;$BOX-HOME\usr\lib\clojure-contrib.jar;$BOX-HOME\usr\src\ clojure.lang.Repl|(System/exit 0)</p>
 <p>This is the format of each application line definition:</p>
 <p>App Name | App executable path | App parameters | internal command to leave the repl environment and exit the App</p>
 <p>The next area that you will find is the environment area.</p>
 <p>[environment]</p>
 <p>Here you can add environment variables that will be set to the Application environment only. For example, BOX-HOME is set with the value $WCMD-HOME that is an internal variable defined in runtime that contains WinCommand execution path.</p>
-<p>You can change JAVA_HOME=C:\Sun\SDK\jdk to your J2SE JDK default location.</p>
-<p>If you want to use some of this variables in you Application definition you must put the &quot;main.system.command-prefix&quot; before the variable name.</p>
+<p>You can change <strong>JAVA</strong>_HOME=C:\Sun\SDK\jdk to your J2SE JDK default location.</p>
+<p>If you want to use some of this variables in you Application definition you must put the "main.system.command-prefix" before the variable name.</p>
 <p>Finally you will find the setup area that let you change the global behaviour of WinCommand.</p>
 <p>[setup]</p>
 </li>

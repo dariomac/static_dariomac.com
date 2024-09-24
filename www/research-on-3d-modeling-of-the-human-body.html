@@ -407,12 +407,12 @@
 <p>They based their research on previous ones so that their work is a refinement of those discussed below.</p>
 <p>Valentina Filova <strong>[1]</strong> presented an approach to generate a model based on video footage taken from an orthogonal perspective.</p>
 <p>Chen and Lee <strong>[2]</strong> presented a method for determining the 3D location of the joints of the human body based on videos of people walking. The physiological variable were taken to determine the movement restrictions. Then use graph theory to determine a single interpretation of the data.</p>
-<p>Robert Holt <strong>[3]</strong> adopted the technique of Divide &amp; Conquer to decompose each articulated object into primitive (rigid or articulated), estimating the motion of these simple parts. Decompositions and estimates then spread to the body recursively. This solution does not exploits the fact that parts belong to the same individual and are interrelated.</p>
+<p>Robert Holt <strong>[3]</strong> adopted the technique of Divide & Conquer to decompose each articulated object into primitive (rigid or articulated), estimating the motion of these simple parts. Decompositions and estimates then spread to the body recursively. This solution does not exploits the fact that parts belong to the same individual and are interrelated.</p>
 <p>Xiaoming Liu <strong>[4]</strong> used the correspondence between the 3D model and 2D image to calibrate the camera and to construct a sequence of movements in 3D perspective. The effectiveness of the model has yet to be tested in random positions of the body, especially those in which the triangle formed by the shoulders and chest are melted.</p>
 <p>Camillo J. Taylor <strong>[5]</strong> does not assume that the images are taken with a calibrated camera which means that the system can be used in photos obtained from the web or scanned. The method assumes that the relationship between points of the scene and its corresponding image can be modeled as a scale orthographic projection. Not suitable for use in situations where there are significant perspective effects. It also requires the user to specify which segment is the closest to the camera.</p>
 <p>The novelty of the approach proposed by Zhao and Li is based on a hierarchical model for the reconstruction of human body posture based on images captured using a single camera. Was decided to explore this last solution because of the various problems presented earlier. We also managed to contact the project leaders who provided additional information to that found on the web.</p>
 <p>This model uses a human skeleton with encoded biomechanical constraints on the various joints.</p>
-<p>The angular change of the joints in the same coordinate system is obtained between consecutive segments in a hierarchical manner through matrix transformations.</p>
+<p>The <strong>angular</strong> change of the joints in the same coordinate system is obtained between consecutive segments in a hierarchical manner through matrix transformations.</p>
 <p>The skeleton used contains 17 joints and 16 segments. It is assumed that we have geometric information of the individual (eg. length of each body segment).</p>
 <p>The body can be represented as a tree of rigid parts connected by specific joints. Each rigid part is allowed to move freely in their own domain on its immediate ancestor.</p>
 <div class="table-container">
@@ -424,7 +424,7 @@
   </table>
 </div>
 <p>Each joint has three biomechanical constraints representing the angles of rotation about the axes X, Y, Z in its local coordinate system (a,b,g).</p>
-<p>Biomechanical constraints are important to construct the model since it decreases the solution space, but is not sufficient to determine the exact position of the body. For these reason we will user the concept of &quot;Criterion function&quot;.</p>
+<p>Biomechanical constraints are important to construct the model since it decreases the solution space, but is not sufficient to determine the exact position of the body. For these reason we will user the concept of "Criterion function".</p>
 <p>To define this concept will use the following notation:</p>
 <ul>
 <li>segment_img<sub>i</sub> is the vector representing the body segment i in the 2D image.</li>
@@ -436,7 +436,7 @@
 <li><img src="/assets/SI_Annex-E-4.gif" alt="SI_Annex-E-4.gif"></picture></li>
 <li><img src="/assets/SI_Annex-E-5.gif" alt="SI_Annex-E-5.gif"></picture></li>
 </ul>
-<p>This set of definitions lead to the &quot;Criterion function&quot;:</p>
+<p>This set of definitions lead to the "Criterion function":</p>
 <p><img src="/assets/SI_Annex-E-6.gif" alt="SI_Annex-E-6.gif"></picture></p>
 <p>where scale (n) are weight parameters that alter the result by segment and the joint on which you are working. Sometimes the movement of a segment or other affected joint so that the formula should be applied to the entire branch of the tree that is affected (may even come to affect the whole tree).</p>
 <p><img src="/assets/SI_Annex-E-7.gif" alt="SI_Annex-E-7.gif"></picture></p>
