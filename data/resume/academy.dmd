@@ -3,7 +3,7 @@
   "layout": "resume",
   "mode": "collection",
   "params": {
-    "resumeType": "academy",
+    "resumeTag": "academy",
     "noIndex": true
   }
 }

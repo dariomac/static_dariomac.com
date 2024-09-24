@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /academy
+Disallow: /devrel
 Disallow: /industry
 Disallow: /make-jobs-collaborate
 Disallow: /senior-juniorism

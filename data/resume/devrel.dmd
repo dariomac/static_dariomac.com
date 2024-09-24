@@ -3,7 +3,7 @@
   "layout": "resume",
   "mode": "collection",
   "params": {
-    "resumeTag": "industry",
+    "resumeType": "devrel",
     "noIndex": true
   }
 }

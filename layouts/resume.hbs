@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <title>Resume-{{capitalize (concat this.frontmatter.params.resumeType "-" this.frontmatter.params.job)}}</title>
+    <title>Resume-{{capitalize (concat this.frontmatter.params.resumeTag "-" this.frontmatter.params.job)}}</title>
 
     <script src="https://kit.fontawesome.com/cd808f9989.js" crossorigin="anonymous"></script>
 
@@ -118,7 +118,7 @@
                 
         <div id="objective">
           <p>
-            {{#with (resumeGrep laneContent.Me this.frontmatter.params.resumeType this.frontmatter.params.job)}}
+            {{#with (resumeGrep laneContent.Me this.frontmatter.params.resumeTag this.frontmatter.params.job)}}
               {{#forEach this}}
                 {{{highlighter this.content.content}}}
               {{/forEach}}
@@ -129,13 +129,13 @@
       
       <div class="clear"></div>
 
-      {{#with (resumeGrep laneContent.Experience this.frontmatter.params.resumeType this.frontmatter.params.job)}}
+      {{#with (resumeGrep laneContent.Experience this.frontmatter.params.resumeTag this.frontmatter.params.job)}}
       <section>
         <dl>
           <dt>Experience</dt>
           <dd>
           {{#forEach this}}
-            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeType) ~}}
+            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeTag) ~}}
               class="featured"
             {{/if~}}>
               <h2>{{this.frontmatter.card.content}}</h2>
@@ -162,13 +162,13 @@
       </section>
       {{/with}}
 
-      {{#with (resumeGrep laneContent.Education this.frontmatter.params.resumeType this.frontmatter.params.job)}}
+      {{#with (resumeGrep laneContent.Education this.frontmatter.params.resumeTag this.frontmatter.params.job)}}
       <section>
         <dl>
           <dt>Education</dt>
           <dd>
           {{#forEach this}}
-            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeType) ~}}
+            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeTag) ~}}
               class="featured"
             {{/if~}}>
               <h2>{{this.frontmatter.card.content}}</h2>
@@ -193,13 +193,13 @@
       </section>
       {{/with}}
 
-      {{#with (resumeGrep laneContent.Article this.frontmatter.params.resumeType this.frontmatter.params.job)}}
+      {{#with (resumeGrep laneContent.Article this.frontmatter.params.resumeTag this.frontmatter.params.job)}}
       <section>
         <dl>
           <dt>Articles</dt>
           <dd>
           {{#forEach this}}
-            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeType) ~}}
+            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeTag) ~}}
               class="featured"
             {{/if~}}>
               <h2>{{this.frontmatter.title}}</h2>
@@ -218,13 +218,13 @@
       </section>
       {{/with}}
 
-      {{#with (resumeGrep laneContent.Essay this.frontmatter.params.resumeType this.frontmatter.params.job)}}
+      {{#with (resumeGrep laneContent.Essay this.frontmatter.params.resumeTag this.frontmatter.params.job)}}
       <section>
         <dl>
           <dt>Essays</dt>
           <dd>
           {{#forEach this}}
-            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeType) ~}}
+            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeTag) ~}}
               class="featured"
             {{/if~}}>
               <h2>{{this.frontmatter.title}}</h2>
@@ -242,13 +242,13 @@
       </section>
       {{/with}}
 
-      {{#with (resumeGrep laneContent.Research this.frontmatter.params.resumeType this.frontmatter.params.job)}}
+      {{#with (resumeGrep laneContent.Research this.frontmatter.params.resumeTag this.frontmatter.params.job)}}
       <section>
         <dl>
           <dt>Researches</dt>
           <dd>
           {{#forEach this}}
-            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeType) ~}}
+            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeTag) ~}}
               class="featured"
             {{/if~}}>
               <h2>{{this.frontmatter.title}}</h2>
@@ -266,13 +266,13 @@
       </section>
       {{/with}}
 
-      {{#with (resumeGrep laneContent.Project this.frontmatter.params.resumeType this.frontmatter.params.job)}}
+      {{#with (resumeGrep laneContent.Project this.frontmatter.params.resumeTag this.frontmatter.params.job)}}
       <section>
         <dl>
           <dt>Projects</dt>
           <dd>
           {{#forEach this}}
-            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeType) ~}}
+            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeTag) ~}}
               class="featured"
             {{/if~}}>
               <h2>{{this.frontmatter.title}}</h2>
@@ -296,7 +296,7 @@
           <dt>Languages</dt>
           <dd>
           {{#forEach this}}
-            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeType) ~}}
+            <article {{#if (isFeatured this.frontmatter.resume.featured ../../this.frontmatter.params.resumeTag) ~}}
               class="featured"
             {{/if~}}>
               <h2>{{this.frontmatter.card.content}}</h2>
