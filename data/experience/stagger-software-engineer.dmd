@@ -19,13 +19,16 @@
   },
   "jsonld": {},
   "canonical": "",
-  "custom_header": ""
+  "custom_header": "",
+  "resume": {
+    "tags": "industry"
+  }
 }
 
 ---
 
 [summary:string]
-Software Engineer at Stagger.com
+Software Engineer at Stagger.com. Working primarily on the server side (TypeScript/Node.js), I also contributed to the front-end (JavaScript/React) and machine learning services. 
 
 [duration:string]
 Nov 2020 - Nov 2023

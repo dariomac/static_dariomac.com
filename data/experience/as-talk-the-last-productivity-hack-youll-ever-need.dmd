@@ -18,7 +18,10 @@
   },
   "jsonld": {},
   "canonical": "https://www.howdy.com/blog/as-talk-the-last-productivity-hack-youll-ever-by-dario-macchi",
-  "custom_header": ""
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
 }
 
 ---

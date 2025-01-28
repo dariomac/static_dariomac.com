@@ -20,8 +20,8 @@
     "type": "Experience"
   },
   "resume": {
-    "tags": "academy,industry",
-    "featured": "academy,industry"
+    "tags": "academy,industry,devrel",
+    "featured": "academy,industry,devrel"
   }
 }
 

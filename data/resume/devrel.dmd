@@ -3,10 +3,11 @@
   "layout": "resume",
   "mode": "collection",
   "params": {
-    "resumeType": "devrel",
+    "resumeTag": "devrel",
     "noIndex": true
   }
 }
 
 ---
-
+[link]
+Only the devrel-related stuff

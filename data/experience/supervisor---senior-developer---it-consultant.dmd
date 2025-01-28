@@ -21,7 +21,7 @@
     "type":"Experience"
   },
   "resume": {
-    "tags": "academy,industry",
+    "tags": "industry",
     "featured": "industry"
   },
   "custom_header": "<style>.details_content img { border: 1px solid #ccc; margin: 6px 0px !important; } </style>"

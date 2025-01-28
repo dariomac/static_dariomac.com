@@ -21,7 +21,8 @@
     "type": "0"
   },
   "resume": {
-    "tags": "industry"
+    "tags": "industry,devrel",
+    "featured": "devrel"
   }
 }
 

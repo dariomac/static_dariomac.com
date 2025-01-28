@@ -1,11 +1,11 @@
 {
-  "title": "Master in Engineering",
+  "title": "Master (MSc) in Engineering",
   "date": "2017-11-10",
   "layout": "education",
   "card": {
     "color": "#AD4647",
     "columnid": "done_3",
-    "content": "Master in Engineering",
+    "content": "Master (MSc) in Engineering",
     "datebox": "2010 - 2013",
     "extlink": "http://www.ort.edu.uy/fi/masteringenieria",
     "laneid": "Education",
@@ -21,15 +21,15 @@
     "type":"Education"
   },
   "resume": {
-    "tags": "academy,industry",
-    "featured": "academy,industry"
+    "tags": "academy,industry,devrel",
+    "featured": "academy,industry,devrel"
   }
 }
 
 ---
 
 [summary:string]
-This master aims to provide basic education in scientific and technological research. Candidates achieve their education primarily through research activities, which lead to the development of a final thesis under the supervision of active researchers within a research group of the university. This master is supported by the National Agency for Innovation and Research (ANII) in a national request for proposals for graduate study programs.
+This MSc program focuses on providing a foundational education in scientific and technological research. Students mainly learn through hands-on research, eventually producing a final thesis with guidance from experienced researchers in a university research group. The program is supported by the National Agency for Innovation and Research (ANII) as part of a national initiative to promote graduate study programs.
 
 [duration:string]
 Aug 2010 - March 2013 (2 years 3 months)
@@ -60,7 +60,7 @@ This draft must be approved before the student begins work on the thesis itself,
 
 The research groups belong to the different branches of Engineering that operate in the Faculty: Electronics, Telecommunications or Systems.
 
-Our students will obtain a degree of Master in Engineering (by research), with specialization in the field covered by the final thesis and the major chosen by the student.
+Our students will obtain a degree of Master (MSc) in Engineering (by research), with specialization in the field covered by the final thesis and the major chosen by the student.
 
 In addition to his research activities, the student must take advanced subjects and take part in other similar activities in order to cover different areas of knowledge.
 
@@ -74,7 +74,7 @@ Furthermore, the graduates of this program will have developed learning skills t
 
 **Accreditation**
 
-The Master in Engineering (by research) is a graduate program, which started the recognition process at the Ministry of Education and Culture in January 2, 2009.
+The Master (MSc) in Engineering (by research) is a graduate program, which started the recognition process at the Ministry of Education and Culture in January 2, 2009.
 
 **Master thesis defense**
 

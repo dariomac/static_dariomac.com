@@ -18,13 +18,16 @@
   },
   "jsonld": {},
   "canonical": "",
-  "custom_header": ""
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
 }
 
 ---
 
 [summary:string]
-An interview with Agencia EFE about Soft Skills and how they are important for developers.
+An interview with Agencia EFE about Soft Skills and how they are important for developers, delving into the essential interpersonal and communication abilities that complement technical expertise.
 
 [duration:string]
 Nov 2022 - 1hr

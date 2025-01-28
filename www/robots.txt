@@ -1,7 +1,9 @@
 User-agent: *
+Disallow: /24offerfit-director
 Disallow: /academy
 Disallow: /devrel
 Disallow: /industry
+Disallow: /soft-eng
 Disallow: /make-jobs-collaborate
 Disallow: /senior-juniorism
 Disallow: /focused-conversation

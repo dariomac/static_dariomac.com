@@ -18,12 +18,16 @@
   },
   "jsonld": {},
   "canonical": "",
-  "custom_header": ""
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
 }
 
 ---
 
 [summary:string]
+In this talk I explore how employability has become a key competence for all professionals in today's technology-driven world; I discuss what employability is and why it is important to consciously develop it. In addition, we talk about how a strong and well-defined personal brand can showcase one's employability and can be used as a strategic tool to stand out in a competitive job market. Finally, I integrate practical examples from the Fintech sector to illustrate these concepts.
 
 [duration:string]
 Jun 13, 2023 (30 minutes)

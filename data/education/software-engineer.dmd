@@ -21,7 +21,8 @@
     "type":"Education"
   },
   "resume": {
-    "tags": "academy,industry"
+    "tags": "academy,industry,devrel",
+    "featured": "academy,devrel"
   }
 }
 

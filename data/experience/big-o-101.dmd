@@ -18,7 +18,10 @@
   },
   "jsonld": {},
   "canonical": "",
-  "custom_header": ""
+  "custom_header": "",
+  "resume": {
+    "tags": "industry,devrel"
+  }
 }
 
 ---

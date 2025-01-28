@@ -18,13 +18,16 @@
   },
   "jsonld": {},
   "canonical": "",
-  "custom_header": ""
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
 }
 
 ---
 
 [summary:string]
-Chat with NodeCO community to share opinions about how artificial intelligence is or will affect software development processes.
+Engage in a public conversation with the NodeCO (Colombia) community to exchange perspectives and insights on how artificial intelligence (AI) is currently influencing or is expected to transform various aspects of software development processes, including coding efficiency, project management, quality assurance, and innovation in development methodologies.
 
 [duration:string]
 Jan 17, 2023 (1:11hrs)

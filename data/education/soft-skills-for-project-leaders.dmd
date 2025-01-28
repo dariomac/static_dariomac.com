@@ -19,6 +19,10 @@
     "tags": "soft skills",
     "title": "Commitment",
     "type":"Education"
+  },
+  "resume": {
+    "tags": "industry,academy,devrel",
+    "featured": ""
   }
 }
 

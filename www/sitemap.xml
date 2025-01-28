@@ -608,6 +608,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://www.dariomac.com/howdy-developer-advocate</loc>
+        <lastmod>2022-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://www.dariomac.com/software-estimation-demystifying-challenges-beyond-engineering-ruby-uy</loc>
         <lastmod>2024-03-12</lastmod>
         <changefreq>monthly</changefreq>
@@ -694,12 +700,6 @@
       <url>
         <loc>https://www.dariomac.com/meetup-frontend-peru-quality-in-agile-contexts</loc>
         <lastmod>2022-11-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>https://www.dariomac.com/howdy-developer-advocate</loc>
-        <lastmod>2022-11-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

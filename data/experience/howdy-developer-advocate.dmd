@@ -11,7 +11,7 @@
     "laneid": "Experience",
     "leftbox": null,
     "linkto": "[link_to]",
-    "position": "20220601",
+    "position": "20300101",
     "subtaskdetails": [],
     "tags": "DevRel, Communication, Soft Skills",
     "title": "Howdy"
@@ -20,14 +20,15 @@
   "canonical": "",
   "custom_header": "",
   "resume": {
-    "tags": "devrel"
+    "tags": "industry,devrel",
+    "featured": "devrel"
   }
 }
 
 ---
 
 [summary:string]
-As a developer relations professional, I bridge product, engineering, and marketing by writing documentation and blog posts, gathering developer feedback, engaging in communities, speaking at events, and coding with the JavaScript stack including Next.js, Sanity, and Vercel.
+As a developer relations professional, I bridge product, engineering, and marketing by writing documentation and blog posts, gathering developer feedback, engaging in communities, speaking at events, and coding with the JavaScript stack, including Next.js, Sanity, and Vercel.
 
 [duration:string]
 Jun 2022 - Now

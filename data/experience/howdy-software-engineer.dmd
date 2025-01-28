@@ -18,12 +18,17 @@
   },
   "jsonld": {},
   "canonical": "",
-  "custom_header": ""
+  "custom_header": "",
+  "resume": {
+    "tags": "industry"
+  }
 }
 
 ---
 
 [summary:string]
+At Howdy, I worked as a full-time software engineer for their partners. As part of the partner team, I used my software engineering skills to help drive the business forward.
+During my time as Howdy Software Engineer I worked as a Full Stack Developer, using JavaScript, Node.js, and React.js
 
 [duration:string]
 Nov 2020 - Nov 2023

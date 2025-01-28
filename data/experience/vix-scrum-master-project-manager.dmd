@@ -21,7 +21,7 @@
     "type": "0"
   },
   "resume": {
-    "tags": "academy,industry",
+    "tags": "industry",
     "featured": "industry"
   }
 }
@@ -29,7 +29,7 @@
 ---
 
 [summary:string]
-I was the Scrum Master of the uruguayan development team focused on Product Development's support and new tools generation. Our content delivery system (of which I was its Node.js architect) convert legacy HTML articles to a JSON intermediate format for later send them through several channels. We also maintain the editorial tool (Drupal) used to generate and admin articles. The automation of the management of both was performed by a DevOps team.
+I was the Scrum Master of the uruguayan development team focused on Product Development's support and new tools generation for VIX, the largest independent digital media company. Our content delivery system (of which I was its Node.js architect) convert legacy HTML articles to a JSON intermediate format for later send them through several channels (supporting millons of visits monthly). We also maintain the editorial tool (Drupal) used to generate and admin articles.
 
 [duration:string]
 Nov 2016 – Jun 2019 (2 years 7 months)

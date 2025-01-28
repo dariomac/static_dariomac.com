@@ -18,13 +18,16 @@
   },
   "jsonld": {},
   "canonical": "",
-  "custom_header": ""
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
 }
 
 ---
 
 [summary:string]
-This short talk was about what we should do to detect defects soon after their introduction.
+This short talk was about how working in an agile way can help ensure quality. Most of the discussion was around the idea of "shift left" and how to avoid pushing defects to the end of the engineering process. It was a good way to get started with these topics and show how quality can be improved during the preplanning, planning, and implementation phases.
 
 [duration:string]
 Jan 27, 2022 (20 minutes)
