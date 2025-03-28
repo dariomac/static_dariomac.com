@@ -1,0 +1,46 @@
+{
+  "title": "Software Estimates: No Longer an Engineering Problem",
+  "date": "2025-03-28",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Dic 2023",
+    "extlink": "https://www.meetup.com/es/angular-mvd/events/296109989/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20231213",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy <> Angular MVD"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+In this talk, we examined common pitfalls in IT project estimates and discussed how communication gaps between engineers and clients often lead to inaccuracies. We also explored strategies to bridge these gaps, such as using the Cone of Uncertainty and offering ranges instead of fixed deadlines. Additionally, we clarified the distinctions between predictions, estimations, and forecasts in software engineering to provide a comprehensive understanding of each concept's role in project management.
+
+[duration:string]
+Dic 13, 2023 (30 minutes)
+
+[place_url:string]
+
+[place:string]
+Howdy House - Angular MVD
+
+[content:md]
+This is [the same talk](/software-estimates-no-longer-engineering-problem-mis-uy) I gave for the MIS.uy meetup, but this time I was invited to speak at the Angular Montevideo meetup. The content is the same, but I made some changes to the slides and added some new examples.
+
+![](/assets/software-estimates-angular-mvd-1.jpg#center)
+
+
+[related_images:json]
+  [{
+    "filename": "software-estimates-angular-mvd-2.jpg"
+  }]
