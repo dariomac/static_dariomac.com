@@ -39,6 +39,8 @@ Howdy House - MIS.uy
 [content:md]
 The talk discusses the persistent challenges and inherent issues faced by software engineering in the realm of estimation for IT projects. It refers to a McKinsey study that found IT projects to be 45% over budget and 7% behind schedule on average, as well as research by Philip E. Tetlock, who found that expert predictions across various fields were often no better than random guesses.
 
+![](/assets/software-estimates-mis-uy.jpg#center)
+
 The author suggests that despite having sophisticated estimation techniques in engineering, the recurring problems with estimates might not be solely due to technical or mathematical challenges. Barry Boehm is quoted emphasizing that an estimation technique cannot compensate for a lack of understanding of the software work to be done.
 
 The author then speculates that the root cause of estimation issues might lie in communication and understanding between engineers and clients. The talk points out how clients often don't know how to interpret estimates or don't fully understand what they want, which leads to inaccurate estimations.
