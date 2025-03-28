@@ -1,0 +1,41 @@
+{
+  "title": "Quality is not a fairy tale",
+  "date": "2023-10-05",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Oct 2023",
+    "extlink": "https://www.meetup.com/uruguayjs/events/296355984/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20231005",
+    "subtaskdetails": [],
+    "tags": "Agile Software Quality, Cone of Uncertainty",
+    "title": "Montevideo JS Meetup"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+The talk review some methods for early defect detection and risk assessment, showing how useful the Cone of Uncertainty is to manage software quality.
+
+[duration:string]
+Oct 5, 2023 (30 minutes)
+
+[place_url:string]
+https://maps.app.goo.gl/UtvCVe4VY9SMNAfYA
+
+[place:string]
+Howdy House - Montevideo, Uruguay
+
+[content:md]
+This talk is a short version of the one I gave in La Plata, Argentina (you can see it [here](/software-quality-asteroids-and-the-cone-of-uncertainty)).
+
+The talk begins by discussing how we can detect and protect the Earth against space objects that might impact us. I show the audience the options available and then quickly shift the focus to the world of software using the analogy between the Earth and a software product that needs protection. The aim is to establish the idea of the need for an organised quality system to detect defects early and assess the risk they pose to the code. The talk concludes with a discussion of the Cone of Uncertainty and how it can be used to determine the risk associated with a defect.

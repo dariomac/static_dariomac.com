@@ -9,7 +9,7 @@
     "datebox": "Aug, 2022",
     "extlink": null,
     "laneid": "Experience",
-    "leftbox": null,
+    "leftbox": "La Plata - Argentina",
     "linkto": "[link_to]",
     "position": "20220823",
     "subtaskdetails": [],
@@ -27,7 +27,7 @@
 ---
 
 [summary:string]
-The talk focuses on the software world and how to map the Earth to a software product that needs protection by an early detection (bug) barrier system.
+The talk focuses on methods for early defect detection and risk assessment, utilizing the Cone of Uncertainty to manage software quality.
 
 [duration:string]
 Aug 23, 2022 (60 minutes)
@@ -41,7 +41,9 @@ La Plata, Argentina
 [content:md]
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Zd1RlmWFQ9Q#center" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-The purpose of the talk is to discuss the issue of detecting and protecting the Earth against space objects that may impact it. I present the three options available: do nothing, build something to prevent the effects of impact (bunkers/space stations), or build a barrier to detect and protect against such objects. Later, the talk focuses on the software world and how we can map the Earth to a software product that needs protection by an early detection (bug) barrier system. The goal is to have an organized quality system for the early detection of defects and to determine the risk they pose to the code. The talk ends with a discussion of the Cone of Uncertainty and how it can be used to determine the risk of a defect.
+The talk begins by discussing how we can detect and protect the Earth against space objects that may impact us. I presented three options available: do nothing, build something to prevent the effects of impact (like bunkers or space stations), or construct a barrier to detect and protect against such objects.
+Later, the talk shifts focus to the software world using the analogy between the Earth and a software product that needs protection through an early detection (bug) barrier system. The goal is to establish an organized quality system for the early detection of defects and to assess the risk they pose to the code. The talk concludes with a discussion of the Cone of Uncertainty and how it can be utilized to determine the risk associated with a defect.
+
 
 [related_images:json]
   [{
