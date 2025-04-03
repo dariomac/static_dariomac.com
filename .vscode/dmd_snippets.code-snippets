@@ -26,6 +26,11 @@
     "prefix": "color.ort-light",
     "body": "#AD4647"
   },
+  "color-ort": {
+    "scope": "markdown",
+    "prefix": "color.ort",
+    "body": "#8C0202"
+  },
   "color-industry": {
     "scope": "markdown",
     "prefix": "color.industry",

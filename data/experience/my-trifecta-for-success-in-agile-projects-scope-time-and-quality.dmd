@@ -1,0 +1,49 @@
+{
+  "title": "My trifecta for success in agile projects - scope, time and quality",
+  "date": "2025-04-02",
+  "layout": "experience",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Apr 2024",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20240411",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Universidad ORT Uruguay"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Exploring the trifecta of scope, time, and quality in project management to navigate complexities and enhance success amid uncertainties.
+
+[duration:string]
+Apr 11, 2024 (1 hour)
+
+[place_url:string]
+https://www.ort.edu.uy/
+
+[place:string]
+Universidad ORT Uruguay
+
+[content:md]
+This talk was about exploring the multifaceted concept of a "trifecta" and its application in project management, particularly focusing on the trifecta of scope, time, and quality. The speaker explored the definition of a trifecta, contrasting its traditional use in horse racing with its broader application as a successful combination of three key elements. Additionally, the talk revisited the well-known "triple constraint" theory in project management and compared it with an extended version that incorporates additional factors.
+
+The speaker then presented their personal trifecta diagram, illustrating their unique perspective on balancing various aspects of a project. This section highlighted the importance of understanding that managing projects is akin to making complex bets where no one can definitively dictate what is right or wrong.
+
+In discussing project scope, time, and quality, the talk emphasized that estimation is no longer purely an engineering problem. It introduced theoretical techniques for estimation and discussed setting realistic expectations to manage time effectively within projects. The concept of the "Cone of Uncertainty" was explored as a tip for improving estimation accuracy.
+
+Furthermore, another tip discussed was removing branding to focus more on core concepts rather than specific companies or products. In terms of quality, the origin and discovery of defects were examined as critical factors that can significantly impact project outcomes.
+
+Overall, this presentation provided insights into how understanding and managing these interconnected elements can lead to successful projects while acknowledging inherent uncertainties and complexities.
+
+[projects:md]
