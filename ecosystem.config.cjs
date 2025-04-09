@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   /**
    * Application configuration section
    * http://pm2.keymetrics.io/docs/usage/application-declaration/
@@ -8,7 +8,7 @@ export default {
     // First application
     {
       name      : 'dm.com',
-      script    : 'server.js',
+      script    : 'server.mjs',
       watch     : true,
       exec_mode : "cluster",
       env: {
@@ -31,7 +31,7 @@ export default {
       ref  : 'origin/master',
       repo : 'git@github.com:repo.git',
       path : '/var/www/production',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.cjs --env production'
     },
     dev : {
       key  : '/home/dmacchi/.ssh/id_rsa_dm.com.pub',
@@ -40,10 +40,10 @@ export default {
       ref  : 'origin/master',
       repo : 'git@bitbucket.org:dariomac/static_dariomac.com.git',
       path : '.',
-      'post-deploy' : 'yarn install && pm2 reload ecosystem.config.js --env dev',
+      'post-deploy' : 'yarn install && pm2 reload ecosystem.config.cjs --env dev',
       env  : {
         NODE_ENV: 'dev'
       }
     }
   }
-};
+}

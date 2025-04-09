@@ -5,8 +5,11 @@ import { exec } from 'child_process';
 import url from 'url';
 import pino from 'express-pino-logger';
 
+const __dirname = import.meta.dirname;
+
 const publicDir = path.join(__dirname, '/www');
 const rootDir = path.join(__dirname, '/root');
+
 const logger = pino({
   serializers: {
     req: (req) => ({
@@ -71,7 +74,7 @@ for (let i=0; i < origins.length; i++) {
   });
 }
 
-app.get('/static/*', function (req, res) {
+app.get('/static/*static-files', function (req, res) {
   res.redirect(301, `/assets/build/static/${req.params[0]}`);
 });
 
