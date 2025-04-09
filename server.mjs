@@ -1,12 +1,13 @@
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
-const { exec } = require('child_process');
+import express from 'express';
+import fs from 'fs';
+import path from 'path';
+import { exec } from 'child_process';
+import url from 'url';
+import pino from 'express-pino-logger';
 
 const publicDir = path.join(__dirname, '/www');
-const rootDir = path.join(__dirname, '/root')
-const url = require('url');
-const pino = require('express-pino-logger')({
+const rootDir = path.join(__dirname, '/root');
+const logger = pino({
   serializers: {
     req: (req) => ({
       method: req.method,
@@ -42,7 +43,7 @@ app.use(function (req, res, next) {
   }
 });
 
-app.use(pino);
+app.use(logger);
 app.use(express.static(publicDir));
 app.use('/', express.static(rootDir));
 

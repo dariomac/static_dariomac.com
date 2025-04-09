@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "English studies (First Certificate Level)",
     "datebox": "1993 - 1999",
-    "extlink": "http://www.anglo.edu.uy/portal/hgxpp001.aspx?101",
+    "extlink": "https://www.anglo.edu.uy/cursos-preparacion-cambridge/first-certificate-in-english-fce/",
     "laneid": "Education",
     "leftbox": "",
     "leftmsg": "",
@@ -36,7 +36,7 @@
 [dictated_by:string]
 
 [place_url:string]
-http://www.anglo.edu.uy/portal/hgxpp001.aspx?101
+https://www.anglo.edu.uy/cursos-preparacion-cambridge/first-certificate-in-english-fce/
 
 [place:string]
 Instituto Cultural Anglo Uruguayo

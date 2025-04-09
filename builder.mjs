@@ -1,6 +1,6 @@
-const toS = require('./lib/2static');
-const toZ = require('./lib/2zettelkasten');
-const cmdArgs = require('command-line-args');
+import * as toS from './lib/2static.mjs';
+import * as toZ from './lib/2zettelkasten.mjs';
+import cmdArgs from 'command-line-args';
 
 const settings = [
   { name: 'paths', multiple: true, defaultOption: true },
@@ -25,7 +25,6 @@ function ensureSlashTermination (somePath) {
 }
 
 (async function () {
-
   const backlinks = await toZ.buildBacklinks(mainOptions, paths);
   console.log(backlinks);
   toS.initialize(mainOptions, paths, backlinks);

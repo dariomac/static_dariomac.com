@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "Certified ScrumMaster",
     "datebox": "Jun 2, 2014 - Jun 3, 2014",
-    "extlink": "http://www.cpainnovation.com/",
+    "extlink": "",
     "laneid": "Education",
     "leftbox": 0,
     "leftmsg": null,
@@ -37,7 +37,6 @@ June 2th-3th, 2014 (16 hs)
 Alan Cyment
 
 [place_url:string]
-http://www.cpainnovation.com/
 
 [place:string]
 CPA Innovation (Hotel Palladium)

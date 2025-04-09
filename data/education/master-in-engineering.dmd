@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "Master (MSc) in Engineering",
     "datebox": "2010 - 2013",
-    "extlink": "http://www.ort.edu.uy/fi/masteringenieria",
+    "extlink": "https://fi.ort.edu.uy/master-en-ingenieria-por-investigacion",
     "laneid": "Education",
     "leftbox": "",
     "leftmsg": "",
@@ -37,7 +37,7 @@ Aug 2010 - March 2013 (2 years 3 months)
 [dictated_by:string]
 
 [place_url:string]
-http://www.ort.edu.uy/fi/masteringenieria
+https://fi.ort.edu.uy/master-en-ingenieria-por-investigacion
 
 [place:string]
 Universidad ORT Uruguay

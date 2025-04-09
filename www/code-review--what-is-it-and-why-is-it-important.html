@@ -328,7 +328,7 @@
     <script type="text/javascript">
       function afterContentDraw () {
         setTimeout(function () {
-          var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+          var aList = $('a').not('a[href^="/"]').not('a[href*="dariomac.com"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
           aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
           $.each(aList,
             function (k, v) {
@@ -358,8 +358,6 @@
     
     <link rel="shortcut icon" href="/favicon.ico" />
     
-    <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
-    
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta property="og:url" content="/code-review--what-is-it-and-why-is-it-important" />
     <meta property="og:title" content="Code Review: What Is It and Why Is It Important?" />
@@ -383,7 +381,7 @@
       {
         "@context": "http://schema.org",
         "@type": "Person",
-        "@id": "https://www.dariomac.com/me",
+        "@id": "https://dariomac.com/me",
         "image": "https://dariomac.com/assets/aboutme-me.jpg",
         "jobTitle": "Computer Engineering, MSc",
         "name": "Darío Macchi",
@@ -399,7 +397,7 @@
         "height": "1.72 meters",
         "gender": "male",
         "nationality": "Uruguayan",
-        "url": "https://www.dariomac.com",
+        "url": "https://dariomac.com",
         "sameAs" : [
           "https://twitter.com/_dariomac",
           "https://uy.linkedin.com/in/dariomac",
@@ -413,13 +411,13 @@
       {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "@id": "https://www.dariomac.com/software-engineering-advisor-consultant",
+        "@id": "https://dariomac.com/software-engineering-advisor-consultant",
         "name": "Darío Macchi",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.dariomac.com/assets/images/d.png"
+          "url": "https://dariomac.com/assets/images/d.png"
         },
-        "url": "https://www.dariomac.com"
+        "url": "https://dariomac.com"
       }
     </script>
     
@@ -435,19 +433,19 @@
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.dariomac.com/"
+            "@id": "https://dariomac.com/"
           },
           "headline": "Code Review: What Is It and Why Is It Important?",
           "alternativeHeadline": "New to the concept of code review? This post explains what code review is and why it’s important.",
-          "url": "https://www.dariomac.com/",
+          "url": "https://dariomac.com/",
           "datePublished": "2015-09-22",
           "dateCreated": "2018-03-03",
           "description": "This article is about what code reviews are and what they are for. Then I explain how to do revisions on two levels: a first level of peers and a second level involving an external reviewer.",
           "author": {
-            "@id": "https://www.dariomac.com/me"
+            "@id": "https://dariomac.com/me"
           },
           "publisher": {
-            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+            "@id": "https://dariomac.com/software-engineering-advisor-consultant"
           }
         } 
     </script>
@@ -488,15 +486,15 @@
                 </section>
 
                 <section>
-                    <p>Disclaimer: The following document is heavily based on the Mozilla Code Review FAQ <a href="http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf" title="Rigby, C., German, D. (2006). &quot;A preliminary examination of code review processes in open source projects.&quot; University of Victoria Technical Report: DCS-305-IR. Retrieved from http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf.">[1]</a>. But my team at <a href="http://vairix.com/" title="VAIRIX">VAIRIX</a> has made many adaptations in order to reflect the two-level review process that is part of our development methodology.</p>
+                    <p>Disclaimer: The following document is heavily based on the Mozilla Code Review FAQ <a href="http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf" title="AAAAA Rigby, C., German, D. (2006). &quot;A preliminary examination of code review processes in open source projects.&quot; University of Victoria Technical Report: DCS-305-IR. Retrieved from http://users.encs.concordia.ca/~pcr/paper/Rigby2006TechReport.pdf.">[1]</a>. But my team at <a href="http://vairix.com/" title="AAAAA VAIRIX">VAIRIX</a> has made many adaptations in order to reflect the two-level review process that is part of our development methodology.</p>
 <h2><a name="what-is-code-review" class="anchor">
 <a name="what-is-code-review" href="#what-is-code-review" class="no_external_ico">What is code review?</a></h2>
-<p>As Wikipedia puts it, “<a href="https://en.wikipedia.org/wiki/Code_review" title="What is code review?">Code review</a> is systematic examination … of computer source code. It is intended to find and fix mistakes overlooked in the initial development phase, improving both the overall <strong>quality</strong> of software and the developers' skills."</p>
+<p>As Wikipedia puts it, “<a href="https://en.wikipedia.org/wiki/Code_review" title="AAAAA What is code review?">Code review</a> is systematic examination … of computer source code. It is intended to find and fix mistakes overlooked in the initial development phase, improving both the overall <strong>quality</strong> of software and the developers' skills."</p>
 <h2><a name="what-is-the-purpose-of-code-review" class="anchor">
 <a name="what-is-the-purpose-of-code-review" href="#what-is-the-purpose-of-code-review" class="no_external_ico">What is the purpose of code review?</a></h2>
 <p>Code review is the most commonly used procedure for validating the design and implementation of features. It helps developers to maintain consistency between design and implementation “styles" across many team members and between various projects on which the company is working. If you want to know more benefits of code reviews and how it saves time, money and minimize technical debt, check out <a href="https://themodestack.com/how-code-audit-saves-time-money-and-makes-things-better/?utm_medium=email&amp;utm_source=blog">MODESTACK's article on Code Audits</a>.</p>
 <p>We perform code review in two levels. The first is known as <strong>peer review</strong> and the second is <strong>external review</strong>.</p>
-<p>The code review process doesn't begin working instantaneously (especially with external review), and our process is far from being perfect — although we have done some serious research around the topic <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197" title="Macchi, D., &amp; Solari, M. (2012). Software inspection adoption: A mapping study - https://dariomac.com/software-inspection-adoption--a-mapping-study. In Conferencia Latinoamericana de Informática (CLEI 2012).">[3]</a>. So, we are always open to suggestions for improvement.</p>
+<p>The code review process doesn't begin working instantaneously (especially with external review), and our process is far from being perfect — although we have done some serious research around the topic <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6427197" title="AAAAA Macchi, D., &amp; Solari, M. (2012). Software inspection adoption: A mapping study - https://dariomac.com/software-inspection-adoption--a-mapping-study. In Conferencia Latinoamericana de Informática (CLEI 2012).">[3]</a>. So, we are always open to suggestions for improvement.</p>
 <p>Having said that, let's dig into peer reviews.</p>
 <p><picture>
               <source srcset="/assets/20150819_162103-1.webp" type="image/webp">
@@ -518,7 +516,7 @@
 <p>The reviewer will check to see whether the changed code causes any issues in other features.</p>
 <h3><a name="readability-and-maintenance" class="anchor">
 <a name="readability-and-maintenance" href="#readability-and-maintenance" class="no_external_ico">Readability and Maintenance</a></h3>
-<p>The reviewer will make sure the code is readable and is not too complicated for someone completely new to the project. Model and variable names should be immediately obvious (again, even to new developers) and as short as possible without <a href="http://thinkapps.com/blog/development/mobile-app-development-glossary-for-founders-and-product-managers/" title="Mobile App Development Glossary">using abbreviations</a>.</p>
+<p>The reviewer will make sure the code is readable and is not too complicated for someone completely new to the project. Model and variable names should be immediately obvious (again, even to new developers) and as short as possible without <a href="http://thinkapps.com/blog/development/mobile-app-development-glossary-for-founders-and-product-managers/" title="AAAAA Mobile App Development Glossary">using abbreviations</a>.</p>
 <h3><a name="consistency" class="anchor">
 <a name="consistency" href="#consistency" class="no_external_ico">Consistency</a></h3>
 <p>Conducting peer reviews is the best approach for achieving consistency across all company projects. Define a code style with the team and then stick to it.</p>
@@ -554,10 +552,10 @@
 <h3><a name="code-smells" class="anchor">
 <a name="code-smells" href="#code-smells" class="no_external_ico">Code Smells</a></h3>
 <p>Finally, the reviewer will keep an eye out (or should that be a nose out?) for code smells and make suggestions for how to avoid them.</p>
-<p>In case the term is new to you, a <a href="http://c2.com/cgi/wiki?CodeSmell" title="What is a code smell?">code smell</a> is “a hint that something has gone wrong somewhere in your code. Use the smell to track down the problem."</p>
+<p>In case the term is new to you, a <a href="http://c2.com/cgi/wiki?CodeSmell" title="AAAAA What is a code smell?">code smell</a> is “a hint that something has gone wrong somewhere in your code. Use the smell to track down the problem."</p>
 <h2><a name="must-external-reviewers-be" class="anchor">
 <a name="must-external-reviewers-be" href="#must-external-reviewers-be" class="no_external_ico">Must external reviewers be "domain experts"?</a></h2>
-<p>External reviewers don't have to have domain knowledge of the code that they will be reviewing. <a href="https://web.archive.org/web/20171130002853/https://www.mozilla.org/en-US/about/governance/policies/reviewers/" title="Mozilla (2012). Retrieved from https://web.archive.org/web/20171130002853/https://www.mozilla.org/en-US/about/governance/policies/reviewers/.">[4]</a>.</p>
+<p>External reviewers don't have to have domain knowledge of the code that they will be reviewing. <a href="https://web.archive.org/web/20171130002853/https://www.mozilla.org/en-US/about/governance/policies/reviewers/" title="AAAAA Mozilla (2012). Retrieved from https://web.archive.org/web/20171130002853/https://www.mozilla.org/en-US/about/governance/policies/reviewers/.">[4]</a>.</p>
 <p>If they know about the domain, they will feel tempted to review it at a functional level, which could lead to burnout. However, if they have some business knowledge, they can estimate more easily how complex the review will be and can quickly complete the review, providing a more comprehensive evaluation of the code.</p>
 <p>So, domain expertise is a bonus, not a requirement.</p>
 <p><picture>
@@ -731,7 +729,7 @@
     
     <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
     <!-- Default Statcounter code for Dariomac.com
-    http://www.dariomac.com -->
+    http://dariomac.com -->
     <script type="text/javascript">
       var sc_project=9186547; 
       var sc_invisible=1; 

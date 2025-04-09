@@ -101,22 +101,22 @@
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.dariomac.com/{{frontmatter.slug}}"
+            "@id": "https://dariomac.com/{{frontmatter.slug}}"
           },
           "headline": {{{json frontmatter.title}}},
           "alternativeHeadline": {{{json frontmatter.card.content}}},
           {{#if content.related_images}}
-          "image": [{{#forEach content.related_images}}"https://www.dariomac.com/assets/{{filename}}"{{#unless isLast~}}, {{/unless}}{{/forEach}}],
+          "image": [{{#forEach content.related_images}}"https://dariomac.com/assets/{{filename}}"{{#unless isLast~}}, {{/unless}}{{/forEach}}],
           {{/if}}
-          "url": "https://www.dariomac.com/{{frontmatter.slug}}",
+          "url": "https://dariomac.com/{{frontmatter.slug}}",
           "datePublished": "{{content.pub_date}}",
           "dateCreated": "{{frontmatter.date}}",
           "description": {{{json content.summary}}},
           "author": {
-            "@id": "https://www.dariomac.com/me"
+            "@id": "https://dariomac.com/me"
           },
           "publisher": {
-            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+            "@id": "https://dariomac.com/software-engineering-advisor-consultant"
           }
         } 
       {{/if}}

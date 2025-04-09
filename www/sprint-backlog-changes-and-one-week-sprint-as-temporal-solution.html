@@ -328,7 +328,7 @@
     <script type="text/javascript">
       function afterContentDraw () {
         setTimeout(function () {
-          var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+          var aList = $('a').not('a[href^="/"]').not('a[href*="dariomac.com"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
           aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
           $.each(aList,
             function (k, v) {
@@ -358,8 +358,6 @@
     
     <link rel="shortcut icon" href="/favicon.ico" />
     
-    <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
-    
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta property="og:url" content="/sprint-backlog-changes-and-one-week-sprint-as-temporal-solution" />
     <meta property="og:title" content="Sprint backlog changes and one-week sprint as temporal solution" />
@@ -383,7 +381,7 @@
       {
         "@context": "http://schema.org",
         "@type": "Person",
-        "@id": "https://www.dariomac.com/me",
+        "@id": "https://dariomac.com/me",
         "image": "https://dariomac.com/assets/aboutme-me.jpg",
         "jobTitle": "Computer Engineering, MSc",
         "name": "Darío Macchi",
@@ -399,7 +397,7 @@
         "height": "1.72 meters",
         "gender": "male",
         "nationality": "Uruguayan",
-        "url": "https://www.dariomac.com",
+        "url": "https://dariomac.com",
         "sameAs" : [
           "https://twitter.com/_dariomac",
           "https://uy.linkedin.com/in/dariomac",
@@ -413,13 +411,13 @@
       {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "@id": "https://www.dariomac.com/software-engineering-advisor-consultant",
+        "@id": "https://dariomac.com/software-engineering-advisor-consultant",
         "name": "Darío Macchi",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.dariomac.com/assets/images/d.png"
+          "url": "https://dariomac.com/assets/images/d.png"
         },
-        "url": "https://www.dariomac.com"
+        "url": "https://dariomac.com"
       }
     </script>
     
@@ -435,19 +433,19 @@
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.dariomac.com/"
+            "@id": "https://dariomac.com/"
           },
           "headline": "Sprint backlog changes and one-week sprint as temporal solution",
           "alternativeHeadline": "One-week scrum sprint evaluation for prevent sprint backlog changes during sprint",
-          "url": "https://www.dariomac.com/",
+          "url": "https://dariomac.com/",
           "datePublished": "2014-04-07",
           "dateCreated": "2018-01-22",
           "description": "Article to show the experience to use one-week scrum sprint evaluation for prevent sprint backlog changes during sprint.",
           "author": {
-            "@id": "https://www.dariomac.com/me"
+            "@id": "https://dariomac.com/me"
           },
           "publisher": {
-            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+            "@id": "https://dariomac.com/software-engineering-advisor-consultant"
           }
         } 
     </script>
@@ -488,9 +486,9 @@
                 </section>
 
                 <section>
-                    <p>There are some cases where ideal or recommended practices are not what a team needs. Let me explain this a bit further. Imagine a <strong>scrum</strong> team that has worked for several months with two-weeks sprints. According to the literature and the opinion of many experienced authors, this sprint length is the ideal <a href="http://goodagile.com/scrumprimer/scrumprimer.pdf" title="Deemer, P., Benefield, G., &amp; Larman, C. (2010). The Scrum Primer. (J. Sutherland, Ed.) Development, 1285931497(1.2), 1-22. The Scrum Training Institute.">[1]</a>. Now, what happens to this team if the client, for reasonable business causes, slow down the rhythm of story generation? What happens with this team if they find themselves without the number of stories needed to fill the next sprint? What if this team decided to start the next sprint anyway and, once the client start again to write down stories, add them to the current sprint backlog?</p>
-<p>Although the sprint backlog change during the sprint should be resisted, the whole point of <strong>scrum</strong> is to allow you to adapt to the situation <a href="http://programmers.stackexchange.com/a/149892" title="Loki Astari. (2012). Confused about modifying the sprint backlog during a sprint.">[2]</a>, so this was taken as an one-time solution. Anyway, the <strong>scrum master</strong> and the managers have to start to think about a more long-time solution if the situation repeats again in a following sprint. Now, one of the managers suggested that if the team makes the sprint shorter (one week sprint), then the new stories could being added to the next sprint and current sprint backlog will keep unchanged. Although this idea sounds promising, we decided to make a little research before making the decision.</p>
-<p>About the sprint backlog change, we have found that others professionals have done the same questions as us and have reached to similar thoughts about this. The sprint backlog change (during the sprint) have to be exceptional, and should be taken as a learning moment for the team. As Andrej Ruckij said, this is a common problem for teams who are new to agile and it's ok to reduce the length of a the sprint <a href="https://groups.google.com/forum/#!topic/scrumalliance/nw7GJ_UPkxs" title="ScrumAlliance forum at groups.google.com. (2010). Can Sprint backlog change during Sprint?">[3]</a>. About the one week sprint we have found the following pros and cons.</p>
+                    <p>There are some cases where ideal or recommended practices are not what a team needs. Let me explain this a bit further. Imagine a <strong>scrum</strong> team that has worked for several months with two-weeks sprints. According to the literature and the opinion of many experienced authors, this sprint length is the ideal <a href="http://goodagile.com/scrumprimer/scrumprimer.pdf" title="AAAAA Deemer, P., Benefield, G., &amp; Larman, C. (2010). The Scrum Primer. (J. Sutherland, Ed.) Development, 1285931497(1.2), 1-22. The Scrum Training Institute.">[1]</a>. Now, what happens to this team if the client, for reasonable business causes, slow down the rhythm of story generation? What happens with this team if they find themselves without the number of stories needed to fill the next sprint? What if this team decided to start the next sprint anyway and, once the client start again to write down stories, add them to the current sprint backlog?</p>
+<p>Although the sprint backlog change during the sprint should be resisted, the whole point of <strong>scrum</strong> is to allow you to adapt to the situation <a href="http://programmers.stackexchange.com/a/149892" title="AAAAA Loki Astari. (2012). Confused about modifying the sprint backlog during a sprint.">[2]</a>, so this was taken as an one-time solution. Anyway, the <strong>scrum master</strong> and the managers have to start to think about a more long-time solution if the situation repeats again in a following sprint. Now, one of the managers suggested that if the team makes the sprint shorter (one week sprint), then the new stories could being added to the next sprint and current sprint backlog will keep unchanged. Although this idea sounds promising, we decided to make a little research before making the decision.</p>
+<p>About the sprint backlog change, we have found that others professionals have done the same questions as us and have reached to similar thoughts about this. The sprint backlog change (during the sprint) have to be exceptional, and should be taken as a learning moment for the team. As Andrej Ruckij said, this is a common problem for teams who are new to agile and it's ok to reduce the length of a the sprint <a href="https://groups.google.com/forum/#!topic/scrumalliance/nw7GJ_UPkxs" title="AAAAA ScrumAlliance forum at groups.google.com. (2010). Can Sprint backlog change during Sprint?">[3]</a>. About the one week sprint we have found the following pros and cons.</p>
 <p>Pros:</p>
 <ul>
 <li>Fast turnaround time. Worst case, a new idea has to wait just a week to start development and a week after that for the first product output. That first week will fly by just trying to flesh out the idea and confirm its prioritization. Most of the time you'll have scant days or hours to plan an idea before the next sprint starts.</li>
@@ -505,7 +503,7 @@
 <li>Story chunking. Every story should ship code by the end of the sprint. But it can be awkward to chop up large projects into chunks that are small enough to fit into a week.</li>
 <li>one-week sprint still needs estimation, tasking, demo, etc. Relative to the size of the sprint those fixed time costs will now be high so they have to get rushed.</li>
 </ul>
-<p>Also, we have found the following table which compares one to four weeks sprint lengths showing several challenges for each one <a href="https://www.cognizant.com/InsightsWhitepapers/Agile-Scrum-Sprint-Length-Whats-Right-for-You.pdf" title="Haughton, B. (2011). Cognizant. Agile Scrum Sprint Length: What's Right for You? Cognizant 20-20 Insights.">[4]</a>.</p>
+<p>Also, we have found the following table which compares one to four weeks sprint lengths showing several challenges for each one <a href="https://www.cognizant.com/InsightsWhitepapers/Agile-Scrum-Sprint-Length-Whats-Right-for-You.pdf" title="AAAAA Haughton, B. (2011). Cognizant. Agile Scrum Sprint Length: What's Right for You? Cognizant 20-20 Insights.">[4]</a>.</p>
 <h4><a name="sprint-length-comparison" class="anchor">
 <a name="sprint-length-comparison" href="#sprint-length-comparison" class="no_external_ico">Sprint length comparison</a></h4>
 <div class="table-container">
@@ -752,7 +750,7 @@ Although this is not a systematic research about the topic, it should be taken a
     
     <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
     <!-- Default Statcounter code for Dariomac.com
-    http://www.dariomac.com -->
+    http://dariomac.com -->
     <script type="text/javascript">
       var sc_project=9186547; 
       var sc_invisible=1; 

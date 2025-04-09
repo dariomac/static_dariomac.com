@@ -22,21 +22,21 @@
           "@type": "Article",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.dariomac.com/{{frontmatter.slug}}"
+            "@id": "https://dariomac.com/{{frontmatter.slug}}"
           },
           "headline": "{{{frontmatter.title}}}",
           {{#if content.related_images}}
-          "image": [{{#forEach content.related_images}}"https://www.dariomac.com/assets/{{filename}}"{{#unless isLast~}}, {{/unless}}{{/forEach}}],
+          "image": [{{#forEach content.related_images}}"https://dariomac.com/assets/{{filename}}"{{#unless isLast~}}, {{/unless}}{{/forEach}}],
           {{/if}}
-          "url": "https://www.dariomac.com/{{frontmatter.slug}}",
+          "url": "https://dariomac.com/{{frontmatter.slug}}",
           "datePublished": "{{frontmatter.date}}",
           "dateCreated": "{{frontmatter.date}}",
           "abstract": "{{{content.summary}}}",
           "author": {
-            "@id": "https://www.dariomac.com/me"
+            "@id": "https://dariomac.com/me"
           },
           "publisher": {
-            "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+            "@id": "https://dariomac.com/software-engineering-advisor-consultant"
           }
         } 
       {{/if}}

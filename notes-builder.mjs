@@ -1,10 +1,10 @@
-const { readVault } = require('obsidian-vault-parser');
-const fs = require('fs');
-const fsx = require('fs-extra');
-const path = require('path');
-const urlSlug = require('url-slug');
-const cmdArgs = require('command-line-args');
-const webp = require('webp-converter');
+import { readVault } from 'obsidian-vault-parser';
+import fs from 'fs';
+import fsx from 'fs-extra';
+import path from 'path';
+import urlSlug from 'url-slug';
+import cmdArgs from 'command-line-args';
+import webp from 'webp-converter';
 
 // this will grant 755 permission to webp executables
 webp.grant_permission();
@@ -184,4 +184,3 @@ const processLinks = async (content, files) => {
 function ensureSlashTermination (somePath) {
   return (somePath.lastIndexOf('/') === somePath.length - 1) ? somePath : `${somePath}/`;
 }
-      

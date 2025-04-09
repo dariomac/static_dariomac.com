@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "SVG importer (and other utilities)",
     "datebox": null,
-    "extlink": "https://www.dariomac.com/raphael-utils-doc",
+    "extlink": "https://dariomac.com/raphael-utils-doc",
     "laneid": "Project",
     "leftbox": 0,
     "leftmsg": null,
@@ -34,7 +34,7 @@ SVG importer (and other utilities) to read SVG directly from file and convert to
 Javascript
 
 [link:string]
-https://www.dariomac.com/raphael-utils-doc
+https://dariomac.com/raphael-utils-doc
 
 [short_description:string]
 SVG importer (and other utilities)
@@ -42,4 +42,4 @@ SVG importer (and other utilities)
 [description:md]
 Mar 14, 2013
 
-SVG importer (and other utilities) to read SVG directly from file and convert to Raphaël primitives to draw elements (see more [here](https://www.dariomac.com/raphael-utils-doc)).
+SVG importer (and other utilities) to read SVG directly from file and convert to Raphaël primitives to draw elements (see more [here](https://dariomac.com/raphael-utils-doc)).

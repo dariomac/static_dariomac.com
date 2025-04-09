@@ -1,0 +1,50 @@
+{
+  "title": "Give me my AI, I don't want to be left behind!",
+  "date": "2025-04-03",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Aug 2024",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20240820",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy <> AngularJS"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Discover the nuances of Large Language Models (LLMs) and their optimization through fine-tuning and embeddings. Learn about Retrieval Augmented Generation (RAG) and its role in enhancing LLM responses with precise, query-based information, ideal for niche topics like bonsai care.
+
+[duration:string]
+Aug 2024 - 30 mins.
+
+[place_url:string]
+https://www.howdy.com/cities/montevideo
+
+[place:string]
+Howdy House Montevideo
+
+[content:md]
+This talk explores the widespread fascination and demand for artificial intelligence (AI), particularly in the realm of language models and their practical applications. The speaker shares their journey of attending numerous discussions centered around AI, which often left them feeling that many participants lacked a deep understanding of the subject. This led to a personal quest to explore AI more thoroughly, focusing on its functionality rather than its intricate details, with an emphasis on practical, accessible applications that don't require extensive development expertise.
+
+The core of the presentation is a Proof of Concept (PoC) for a system called Retrieval Augmented Generation (RAG), implemented in TypeScript. This system is designed to create a chatbot capable of providing precise answers to bonsai-related questions, outperforming generic language models like ChatGPT. The concept of RAG is introduced as a sophisticated technique in natural language processing that combines text generation with information retrieval. This method enhances the accuracy and relevance of responses by leveraging a vast and specific data corpus.
+
+The talk further explores the mechanics and benefits of RAG systems. It outlines a typical process involving user queries, information retrieval from an extensive database, text generation using advanced models like GPT-3 or BERT, and optional post-processing to refine responses. The advantages include improved precision, flexibility across various topics, and personalized answers based on context. However, challenges such as computational complexity and dependency on the quality of the underlying corpus are also discussed. Ultimately, Retrieval Augmented Generation emerges as a powerful tool for enhancing automated response systems by integrating robust search capabilities with advanced text generation techniques.
+
+[related_images:json]
+  [{
+    "filename": "angularmvd-page-post.png"
+  }]
+
+[projects:md]

@@ -249,7 +249,7 @@
     <script type="text/javascript">
       function afterContentDraw () {
         setTimeout(function () {
-          var aList = $('a').not('a[href^="/"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+          var aList = $('a').not('a[href^="/"]').not('a[href*="dariomac.com"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
           aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
           $.each(aList,
             function (k, v) {
@@ -279,8 +279,6 @@
     
     <link rel="shortcut icon" href="/favicon.ico" />
     
-    <link href="https://plus.google.com/101333970265292795022" rel="publisher" />
-    
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta property="og:url" content="/tdd-failures" />
     <meta property="og:title" content="TDD Failures" />
@@ -304,7 +302,7 @@
       {
         "@context": "http://schema.org",
         "@type": "Person",
-        "@id": "https://www.dariomac.com/me",
+        "@id": "https://dariomac.com/me",
         "image": "https://dariomac.com/assets/aboutme-me.jpg",
         "jobTitle": "Computer Engineering, MSc",
         "name": "Darío Macchi",
@@ -320,7 +318,7 @@
         "height": "1.72 meters",
         "gender": "male",
         "nationality": "Uruguayan",
-        "url": "https://www.dariomac.com",
+        "url": "https://dariomac.com",
         "sameAs" : [
           "https://twitter.com/_dariomac",
           "https://uy.linkedin.com/in/dariomac",
@@ -334,13 +332,13 @@
       {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "@id": "https://www.dariomac.com/software-engineering-advisor-consultant",
+        "@id": "https://dariomac.com/software-engineering-advisor-consultant",
         "name": "Darío Macchi",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.dariomac.com/assets/images/d.png"
+          "url": "https://dariomac.com/assets/images/d.png"
         },
-        "url": "https://www.dariomac.com"
+        "url": "https://dariomac.com"
       }
     </script>
     
@@ -391,29 +389,29 @@
 
 
 
-                <div class="row splitter">
-                  <div class="col-md-12 text-center">Knowledge - Products - Facts</div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <section class="content">
-                      <p>May, 2006</p>
-<p>David Weller (2004) published an article about the difficulty of implementing <a href="http://en.wikipedia.org/wiki/Test-driven_development" title="Test-driven development">TDD</a> as a design methodology in <a href="http://en.wikipedia.org/wiki/Video_game_development" title="Video game development">game development</a> using <a href="http://en.wikipedia.org/wiki/DirectX" title="DirectX">DirectX</a>.</p>
-<p>While our project is not a <a href="http://en.wikipedia.org/wiki/Video_game" title="Video game">video game</a>, some of the issues raised in the article are applicable and were confimed by the development team during the early stages of this <a href="/swingimprover">project</a>.</p>
+              <div class="row splitter">
+                <div class="col-md-12 text-center">Knowledge - Products - Facts</div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <section class="content">
+                    <p>May, 2006</p>
+<p>David Weller (2004) published an article about the difficulty of implementing <a href="http://en.wikipedia.org/wiki/Test-driven_development" title="AAAAA Test-driven development">TDD</a> as a design methodology in <a href="http://en.wikipedia.org/wiki/Video_game_development" title="AAAAA Video game development">game development</a> using <a href="http://en.wikipedia.org/wiki/DirectX" title="AAAAA DirectX">DirectX</a>.</p>
+<p>While our project is not a <a href="http://en.wikipedia.org/wiki/Video_game123" title="AAAAA Video game">video game</a>, some of the issues raised in the article are applicable and were confimed by the development team during the early stages of this <a href="/swingimprover">project</a>.</p>
 <p>The main problem experienced using TDD is that certain things are extremely difficult to prove, although we find it very appropriate to use when the code was designed to be called in a specific order or whose result is expected.</p>
-<p>About this, the article says that to make the <a href="http://en.wikipedia.org/wiki/Test_case" title="Test case">test cases</a> automatic and repeatable it should not require the user interaction during their execution. This was not the case of the application developed by the team where a difference of one frame back or forth, the stages of the swing, angles or paths lead to different code execution.</p>
+<p>About this, the article says that to make the <a href="http://en.wikipedia.org/wiki/Test_case" title="AAAAA Test case">test cases</a> automatic and repeatable it should not require the user interaction during their execution. This was not the case of the application developed by the team where a difference of one frame back or forth, the stages of the swing, angles or paths lead to different code execution.</p>
 <p>One solution posed by the article is the use of "mock objects", by which we can simulate the environment and the conditions of implementation to test certain features.</p>
-<p>The team began developing a "<a href="http://en.wikipedia.org/wiki/Mock_object" title="Mock object">mock object</a>" to test the video playback capabilities trying to simulate the DirectX runtime environment.</p>
+<p>The team began developing a "<a href="http://en.wikipedia.org/wiki/Mock_object" title="AAAAA Mock object">mock object</a>" to test the video playback capabilities trying to simulate the DirectX runtime environment.</p>
 <p>We quickly reached the same conclusion as the author of the article. The "mock objects" never behave exactly like the original, regardless of the effort made.</p>
-<p>Our problem was that DirectX set a serie of <a href="http://en.wikipedia.org/wiki/Environment_variable" title="Environment variable">environment variables</a> defined by the device, which are not defined when running a <a href="http://en.wikipedia.org/wiki/Unit_testing" title="Unit testing">unit test</a> by <a href="http://www.nunit.org/" title="NUnit">Nunit</a>.</p>
+<p>Our problem was that DirectX set a serie of <a href="http://en.wikipedia.org/wiki/Environment_variable" title="AAAAA Environment variable">environment variables</a> defined by the device, which are not defined when running a <a href="http://en.wikipedia.org/wiki/Unit_testing" title="AAAAA Unit testing">unit test</a> by <a href="http://www.nunit.org/" title="AAAAA NUnit">Nunit</a>.</p>
 <p>We conducted a brief research into that matter, seeing some solutions that add more complexity in the development of each test case than the team was ready to face.</p>
 <p>It fact, the team's idea about TDD is that it is only useful if it make the design tasks more simple and clear. The fact of having to implement major design solutions to develop test cases was rejected by the team.</p>
 <p>Instead it was decided to make checklists with test items to be followed at the end of each iteration, so we will always perform the same tests to ensure proper operation of each functionality.</p>
 <p>WELLER, David 2004. The Random Musings of David Weller [online]</p>
 
-                    </section>
-                  </div>
+                  </section>
                 </div>
+              </div>
             
               <div class="row splitter">
                 <div class="col-md-12 text-center">Mentioned in</div>
@@ -499,7 +497,7 @@
     
     <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
     <!-- Default Statcounter code for Dariomac.com
-    http://www.dariomac.com -->
+    http://dariomac.com -->
     <script type="text/javascript">
       var sc_project=9186547; 
       var sc_invisible=1; 

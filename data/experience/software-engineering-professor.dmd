@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "Software Engineering Professor",
     "datebox": "Mar 2013 - Feb 2022",
-    "extlink": "https://docentes.ort.edu.uy/perfil.jsp?docenteId=43265",
+    "extlink": "https://fi.ort.edu.uy/escuela-de-ingenieria/docentes",
     "laneid": "Experience",
     "leftbox": "",
     "leftmsg": "",
@@ -49,4 +49,4 @@ The third course (ISA) covered agile methodologies, focusing mainly on Scrum and
 Each course adhered to the spirit of the SWEBOK in its intention and rationale, whether following a traditional or agile approach.
 
 [projects:md]
-In addition to my curricular classes, I coached teams of students working on their final grade projects, involving real clients, disruptive challenges, and bleeding-edge technology. See more in ["Degree final projects tutor"](degree-final-projects-tutor "Degree final projects tutor").
+In addition to my curricular classes, I coached teams of students working on their final grade projects, involving real clients, disruptive challenges, and bleeding-edge technology. See more in ["Degree final projects tutor"](/degree-final-projects-tutor "Degree final projects tutor").

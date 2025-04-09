@@ -70,35 +70,31 @@
               </div>
             {{/if}}
 
-            {{#ifIsOrWasInProgress frontmatter.card.columnid }}
-              {{#if ../content.speculations}}
-                <div class="row splitter">
-                  <div class="col-md-12 text-center">Speculations - Prototypes</div>
+            {{#if content.speculations}}
+              <div class="row splitter">
+                <div class="col-md-12 text-center">Speculations - Prototypes</div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <section class="content">
+                    {{{ content.speculations }}}
+                  </section>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <section class="content">
-                      {{{ ../content.speculations }}}
-                    </section>
-                  </div>
-                </div>
-              {{/if}}
-            {{/ifIsOrWasInProgress}}
+              </div>
+            {{/if}}
 
-            {{#ifOrWasDone frontmatter.card.columnid }}
-              {{#if ../content.knowledge}}
-                <div class="row splitter">
-                  <div class="col-md-12 text-center">Knowledge - Products - Facts</div>
+            {{#if content.knowledge}}
+              <div class="row splitter">
+                <div class="col-md-12 text-center">Knowledge - Products - Facts</div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <section class="content">
+                    {{{ content.knowledge }}}
+                  </section>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <section class="content">
-                      {{{ ../content.knowledge }}}
-                    </section>
-                  </div>
-                </div>
-              {{/if}}
-            {{/ifOrWasDone}}
+              </div>
+            {{/if}}
             {{> _entry-gallery }}
             {{> _entry-attachments }}
             {{> _entry-related-topics }}

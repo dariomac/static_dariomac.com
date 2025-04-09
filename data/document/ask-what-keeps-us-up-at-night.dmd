@@ -21,23 +21,23 @@
     "@type": "BlogPosting",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.dariomac.com/ask-what-keeps-us-up-at-night"
+      "@id": "https://dariomac.com/ask-what-keeps-us-up-at-night"
     },
     "headline": "How to identify risks",
     "alternativeHeadline": "",
     "genre": "research", 
     "keywords": "inception deck agile mvp startup", 
     "wordcount": "826",
-    "url": "https://www.dariomac.com/ask-what-keeps-us-up-at-night",
+    "url": "https://dariomac.com/ask-what-keeps-us-up-at-night",
     "datePublished": "2021-06-15",
     "dateCreated": "2015-03-03",
     "dateModified": "2021-06-15",
     "description": "Exercise to identify the risks that are worth worrying about.",
     "author": {
-      "@id": "https://www.dariomac.com/me"
+      "@id": "https://dariomac.com/me"
     },
     "publisher": {
-      "@id": "https://www.dariomac.com/software-engineering-advisor-consultant"
+      "@id": "https://dariomac.com/software-engineering-advisor-consultant"
     } 
   },
   "canonical": "",

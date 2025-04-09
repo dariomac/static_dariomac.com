@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "Software Engineer",
     "datebox": "2000 - 2008",
-    "extlink": "http://www.ort.edu.uy/index.php?id=AAAHAGAC",
+    "extlink": "https://fi.ort.edu.uy/ingenieria-en-sistemas",
     "laneid": "Education",
     "leftbox": "",
     "leftmsg": "",
@@ -37,7 +37,7 @@ An undergraduate program that provides solid knowledge of advanced programming, 
 [dictated_by:string]
 
 [place_url:string]
-http://www.ort.edu.uy/index.php?id=AAAHAGAC
+https://fi.ort.edu.uy/ingenieria-en-sistemas
 
 [place:string]
 Universidad ORT Uruguay
