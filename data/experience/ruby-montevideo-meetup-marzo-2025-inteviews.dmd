@@ -1,0 +1,45 @@
+{
+  "title": "Ruby Montevideo meetup - March 2025 interviews",
+  "date": "20250411",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Mar 2025",
+    "extlink": "https://www.meetup.com/ruby-montevideo/events/306636509/?eventOrigin=group_past_events",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250325",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy <> Ruby Montevideo"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Ruby Montevideo brought together experts in a face-to-face meeting, exploring the impact of AI on Ruby and the development of skills with advanced tools.
+
+[duration:string]
+Mar 2025 - 1hr
+
+[place_url:string]
+https://www.howdy.com/cities/montevideo
+
+[place:string]
+Howdy House Montevideo
+
+[content:md]
+The Ruby Montevideo event was a great success, bringing together software development enthusiasts in a face-to-face meeting full of learning and camaraderie. In this edition, we had the outstanding presence of two international experts: Marco Roth, from Switzerland, and Seth Horsley, from the United States. Both shared their vast knowledge in the field of Ruby and emerging technologies during their talks of approximately 30 minutes each. 
+
+During the event, we had the opportunity to conduct a short interview with Marco and Seth to share on our social media. We asked them about the impact artificial intelligence is having on the Ruby environment and how they are using AI-based tools to improve their skills as developers. We also explored whether they believe a junior developer could reach a level close to that of a senior developer when working with AI-powered tools. The responses offered valuable insights into the future of Ruby development, highlighting how these technologies are transforming the skills needed for modern developers.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EiOxna2cvUE?si=qH_r2atjUTZvpGUG#center" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
+
+[projects:md]
