@@ -25,7 +25,6 @@
     "lint": "semistandard '*.mjs' --env node --verbose | snazzy",
     "findup": "echo && find data/*/assets -maxdepth 1 -type f -printf '%f\\n' | sort | uniq -d | xargs -I[filename] -n1 sh -c \"find data/ -name [filename] -printf 'data/%P\\n' && echo\"",
     "update-searcher": "rm -rf assets/build && cp -r ../dm-searcher/build/ assets/build && rm assets/build/inventory.json",
-    "broken-bkp": "linkinator --concurrency 10 --recurse --timeout 100 --skip '^/*.fonts.googleapis.*|.*dariomac.com/.*' ",
     "broken-links": "octopus "
   },
   "dependencies": {
@@ -39,7 +38,6 @@
     "fs-extra": "11.3.0",
     "handlebars": "4.7.8",
     "handlebars-helpers": "^0.10.0",
-    "linkinator": "^6.1.2",
     "lodash": "^4.17.21",
     "moment": "2.30.1",
     "obsidian-vault-parser": "^0.4.1",

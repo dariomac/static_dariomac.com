@@ -41,21 +41,21 @@
     "prefix": "color.rip",
     "body": "#767782"
   },
-  "color-vairix": {
-    "scope": "markdown",
-    "prefix": "color.vairix",
-    "body": "#00A651"
-  },
-  "color-vix": {
-    "scope": "markdown",
-    "prefix": "color.vix",
-    "body": "#6EA4D4"
-  },
-  "color-as": {
-    "scope": "markdown",
-    "prefix": "color.as",
-    "body": "#5E9D9F"
-  },
+  // "color-vairix": {
+  //   "scope": "markdown",
+  //   "prefix": "color.vairix",
+  //   "body": "#00A651"
+  // },
+  // "color-vix": {
+  //   "scope": "markdown",
+  //   "prefix": "color.vix",
+  //   "body": "#6EA4D4"
+  // },
+  // "color-as": {
+  //   "scope": "markdown",
+  //   "prefix": "color.as",
+  //   "body": "#5E9D9F"
+  // },
   "color-howdy": {
     "scope": "markdown",
     "prefix": "color.howdy",

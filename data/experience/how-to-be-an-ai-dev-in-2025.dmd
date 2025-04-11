@@ -1,0 +1,58 @@
+{
+  "title": "How to be an AI dev in 2025",
+  "date": "2025-04-10",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Mar 2025",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250307",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy Sessions"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Interview with Francisco Erramuspe on AI tools in software development, reliability, security concerns, and integrating AI into projects efficiently.
+
+[duration:string]
+Mar 2025 - 1hr
+
+[place_url:string]
+https://www.howdy.com/cities/montevideo
+
+[place:string]
+Howdy House Montevideo
+
+[content:md]
+The interview, conducted by Darío Macchi with Francisco Erramuspe at the Howdy House, dives into the evolving landscape of software development in the context of Artificial Intelligence (AI). Francisco Erramuspe, an Uruguayan developer living in the US, shares insights into his use of AI tools such as Copilot, Claude/DeepSeek, and Cursor. He discusses how these tools aid him in tasks like code completion, bug fixing, and frontend development. A key point emphasized is the importance of developing skills for writing effective AI prompts and understanding the fundamental workings of Large Language Models (LLMs) to apply AI-generated suggestions with common sense.
+
+The conversation further explores the reliability and security concerns surrounding AI-generated code. Francisco expresses skepticism about fully trusting any AI tool for code generation without a thorough understanding of its training data and context. He highlights the necessity for traditional verification methods like code reviews to ensure accuracy. The discussion also touches on productivity improvements brought by AI assistants, referencing a study indicating significant time savings in development processes.
+
+Security and data protection emerge as critical issues, with Francisco noting that some companies are creating their own LLM instances to safely leverage AI tools without risking sensitive information. The interview then shifts focus to developers creating AI solutions themselves. Francisco outlines essential knowledge areas such as Retrieval Augmented Generation (RAG), embeddings, and fine-tuning models for niche applications. He voices caution against the trend of indiscriminately incorporating AI into products without clear purpose.
+
+Finally, challenges in integrating AI into products are discussed, particularly around data processing and testing non-deterministic systems akin to video games. At the end we've talked about project management for AI-based solutions that often involves short experimental cycles rather than traditional construction phases. This experimental approach highlights both the opportunities and complexities developers face when embracing AI technologies in their work.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8MVs8AVnIXA?si=3akB5cAS6EeKtY9_#center" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
+
+[related_images:json]
+  [{
+    "filename": "ai-dev-in-2025-1.png"
+  },{
+    "filename": "ai-dev-in-2025-2.jpg"
+  },{
+    "filename": "ai-dev-in-2025-3.jpg"
+  }]
+
+[projects:md]
