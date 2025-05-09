@@ -1,0 +1,65 @@
+{
+  "title": "PostSharp Technologies - Content Writer",
+  "date": "2025-05-07",
+  "layout": "experience",
+  "card": {
+    "color": "#983bfc",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Oct 2024 - Dic 2024",
+    "extlink": "https://www.postsharp.net/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20241001",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "PostSharp Technologies"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+During this short period of time I wrote several (very challenging) articles for the PostSharp blog, including a series of posts on how to reduce boilerplate code using Metalama, a .NET AOP framework.
+
+[duration:string]
+Oct 2024 - Dic 2024 (3 months)
+
+[place_url:string]
+https://www.postsharp.net/
+
+[place:string]
+PostSharp Technologies
+
+[content:md]
+PostSharp Technologies is a company that builds meta-programming frameworks for .NET developers to simplify and improve their code. They are known for their Aspect-Oriented Programming (AOP) frameworks, which allows developers to reduce boilerplate code and improve maintainability.
+
+I wrote several articles for their blog, focusing on how to use Metalama (the most modern of their AOP frameworks), to reduce boilerplate code in C# applications. The articles covered various topics, including implementing INotifyPropertyChanged, ICommand, and Dependency Properties with Metalama, as well as best practices for WPF development.
+
+I also wrote articles on the Factory and Abstract Factory design patterns, which are commonly used in software development to create objects without specifying the exact class of object that will be created.
+
+The articles were well-received and helped to showcase the capabilities of Metalama and the benefits of using AOP in .NET development.
+
+[projects:md]
+The articles I wrote include:
+
+1. [Implement INotifyPropertyChanged with Metalama](https://blog.postsharp.net/inotifypropertychanged-metalama)
+<!-- assets/implement-inotifypropertychanged-with-metalama.pdf -->
+2. [4 Ways to Implement INotifyPropertyChanged](https://blog.postsharp.net/inotifypropertychanged)
+<!-- assets/4-ways-to-implement-inotifypropertychanged.pdf-->
+3. [Implement ICommand with Metalama](https://blog.postsharp.net/wpf-command-metalama)
+<!-- assets/implement-icommand-with-metalama.pdf -->
+4. [4 Ways to Implement ICommand](https://blog.postsharp.net/wpf-command)
+<!-- assets/4-ways-to-implement-icommand.pdf -->
+5. [WPF Best Practices](https://blog.postsharp.net/wpf-best-practices-2024)
+<!-- assets/10-wpf-best-practices-2024.pdf -->
+6. [Implement Dependency Properties with Metalama](https://blog.postsharp.net/wpf-dependency-property-metalama)
+<!--  assets/implementing-wpf-dependency-properties-with-metalama.pdf -->
+7. [Implement Dependency Properties Manually](https://blog.postsharp.net/wpf-dependency-property)
+<!-- assets/implementing-custom-dependency-properties-in-wpf.pdf -->
+8.  WPF Pillar
+9.  Factory and Abstract Factory Pattern
