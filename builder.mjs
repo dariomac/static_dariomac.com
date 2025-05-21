@@ -5,12 +5,14 @@ import cmdArgs from 'command-line-args';
 const settings = [
   { name: 'paths', multiple: true, defaultOption: true },
   { name: 'clear-all', alias: 'c', type: Boolean },
-  { name: 'verbose', alias: 'v', type: Boolean }];
+  { name: 'verbose', alias: 'v', type: Boolean },
+  { name: 'file', alias: 'f', type: String }];
 
 const mainOptions = cmdArgs(settings, { stopAtFirstUnknown: true });
     
+// Ensure that the three main path arguments are always provided.
 if (!mainOptions.paths || mainOptions.paths.length !== 3) {
-  throw new Error('Invalid number of parameters: you should provide input, output and layout paths as first 3 parameters.');
+  throw new Error('Invalid number of parameters: you must provide input, output, and layout paths.');
 }
 
 const paths = {
