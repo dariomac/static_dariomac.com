@@ -1,0 +1,44 @@
+{
+  "title": "3 reasons why you won't be replaced by IA",
+  "date": "2025-06-11",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Jun 2025",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250605",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy Sessions"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Explore why AI won't replace human roles, its lasting impact on development methodologies, and the importance of adaptive workflows, clear requirements, and quality assurance in AI projects.
+
+[duration:string]
+1 hour
+
+[place_url:string]
+
+[place:string]
+Howdy Sessions - Buenos Aires, Argentina
+
+[content:md]
+This presentation talks about why artificial intelligence (AI) will not take away human jobs, especially in software development. It says that AI is very important and will change many things, but it is not just a temporary trend like some past technologies (for example, Silverlight or Blockchain). Instead of replacing everything, we need to change how we work and improve our methods.
+
+The talk explains how AI affects important parts of software engineering, like planning projects, managing what the software needs to do, and checking the quality of the work. It goes beyond just using AI to write code or help in coding tools. The speaker says that even if AI can help with coding and testing tasks, people still need clear plans and good communication.
+
+Finally, the presentation gives advice on how to work well with AI. It suggests using flexible ways of working, like Popcorn Flow or Lean Startup methods. It also says it is very important to have clear requirements for the software. AI can even help us create better requirements together. When it comes to quality, the presentation reminds us that clean code, good tools (like linters), code reviews by humans, and careful testing are still very important—even with AI.
+
+[projects:md]
