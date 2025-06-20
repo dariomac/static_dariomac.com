@@ -106,7 +106,10 @@ async function generateImageHTML(title, url, description, screenshotPath) {
   <small style="color: #666;"><a href="${url}">${url}</a></small>
   <img src="${imageSrc}" style="width: 100%; max-height: 400px; object-fit: cover; border: 1px solid #FF6E19; margin: 15px 0;" />
   <p style="font-style: italic; text-align: center; margin: 10px 0; color: #444;">"${description}"</p>
-  ${logoSrc ? `<img src="${logoSrc}" style="position: absolute; bottom: 10px; right: 10px; width: 24px; height: 24px;" />` : ''}
+  ${logoSrc ? `<div style="position: absolute; bottom: 5px; right: 10px; display: flex; align-items: center; gap: 6px;">
+    <img src="${logoSrc}" style="width: 24px; height: 24px;" />
+    <span style="color: #333; font-size: 14px; font-weight: 500;">dariomac.com</span>
+  </div>` : ''}
 </div>`;
 }
 
