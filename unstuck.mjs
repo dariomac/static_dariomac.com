@@ -95,7 +95,7 @@ async function generateImageHTML(title, url, description, screenshotPath) {
   }
   
   return `<div style="
-    width: 600px;
+    width: 800px;
     padding: 20px; 
     font-family: sans-serif;
     background: linear-gradient(135deg, #FF6E19 0%, #ffffff 100%);
@@ -104,10 +104,123 @@ async function generateImageHTML(title, url, description, screenshotPath) {
   ">
   <h1 style="margin: 0 0 10px 0; color: #333;">${title}</h1>
   <small style="color: #666;"><a href="${url}">${url}</a></small>
-  <img src="${imageSrc}" style="width: 100%; max-height: 200px; object-fit: cover; border: 1px solid #FF6E19; margin: 15px 0;" />
+  <img src="${imageSrc}" style="width: 100%; max-height: 400px; object-fit: cover; border: 1px solid #FF6E19; margin: 15px 0;" />
   <p style="font-style: italic; text-align: center; margin: 10px 0; color: #444;">"${description}"</p>
   ${logoSrc ? `<img src="${logoSrc}" style="position: absolute; bottom: 10px; right: 10px; width: 24px; height: 24px;" />` : ''}
 </div>`;
+}
+
+async function generateLinkedInCarouselPDF(imagePaths, week) {
+  const pdfPath = path.join(__dirname, 'data', 'document', 'assets', `stuck-in-the-filter-w${week}-carousel.pdf`);
+  
+  let browser;
+  try {
+    browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    const page = await browser.newPage();
+    
+    await page.setViewport({ width: 1080, height: 1080 });
+    
+    // Create HTML with all pages for multi-page PDF
+    let allPagesHTML = '';
+    
+    for (let i = 0; i < imagePaths.length; i++) {
+      const imagePath = imagePaths[i];
+      
+      // Convert image to base64 data URL
+      let imageSrc = '';
+      try {
+        if (await fs.pathExists(imagePath)) {
+          const imageBuffer = await fs.readFile(imagePath);
+          const base64Image = imageBuffer.toString('base64');
+          const mimeType = imagePath.endsWith('.png') ? 'image/png' : 'image/jpeg';
+          imageSrc = `data:${mimeType};base64,${base64Image}`;
+        }
+      } catch (error) {
+        console.warn(`Failed to read image ${imagePath}:`, error.message);
+        continue;
+      }
+      
+      allPagesHTML += `
+        <div style="
+          width: 1080px;
+          height: 1080px;
+          background-color: #FF6E19;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: Arial, sans-serif;
+          position: relative;
+          page-break-after: always;
+          box-sizing: border-box;
+        ">
+          <div style="
+            max-width: 90%;
+            max-height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          ">
+            <img src="${imageSrc}" style="
+              max-width: 100%;
+              max-height: 100%;
+              object-fit: contain;
+              border-radius: 8px;
+              box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            " alt="Carousel slide ${i + 1}" />
+          </div>
+          <div style="
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.9);
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+          ">${i + 1}/${imagePaths.length}</div>
+        </div>
+      `;
+    }
+    
+    const completeHTML = `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LinkedIn Carousel</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    @page {
+      size: 1080px 1080px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  ${allPagesHTML}
+</body>
+</html>`;
+    
+    await page.setContent(completeHTML, { waitUntil: 'networkidle0' });
+    
+    await page.pdf({
+      path: pdfPath,
+      width: '1080px',
+      height: '1080px',
+      printBackground: true,
+      margin: { top: 0, right: 0, bottom: 0, left: 0 }
+    });
+    
+    console.log(`Generated LinkedIn carousel PDF: ${path.basename(pdfPath)}`);
+    return pdfPath;
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
+  }
 }
 
 async function convertHTMLToImage(html, outputPath) {
@@ -136,7 +249,7 @@ ${html}
 </body>
 </html>`);
     
-    await page.setViewport({ width: 600, height: 400 });
+    await page.setViewport({ width: 800, height: 600 });
     
     const element = await page.$('div');
     await element.screenshot({ path: outputPath });
@@ -284,9 +397,16 @@ async function main() {
     
     await fs.writeFile(documentPath, documentContent);
     
+    // Generate LinkedIn carousel PDF
+    const imagePaths = processedUrls.map(url => 
+      path.join(__dirname, 'data', 'document', 'assets', url.imagePath)
+    );
+    const carouselPDFPath = await generateLinkedInCarouselPDF(imagePaths, week);
+    
     console.log(`\nGenerated:`);
     console.log(`- Document: ${documentPath}`);
     console.log(`- Images: ${processedUrls.length} files in data/document/assets/`);
+    console.log(`- LinkedIn Carousel PDF: ${carouselPDFPath}`);
     
     // Clean up temp directory
     if (await fs.pathExists(tempDir)) {
