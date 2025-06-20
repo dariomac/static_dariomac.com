@@ -10,6 +10,26 @@ import webp from 'webp-converter';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+async function takeScreenshotWithTimeout(url) {
+  let browser;
+  try {
+    browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    const page = await browser.newPage();
+    await page.setViewport({ width: 1200, height: 800 });
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
+    
+    const screenshotPath = path.join(__dirname, 'temp', `screenshot-${Date.now()}-${Math.random().toString(36).substr(2, 9)}.png`);
+    await fs.ensureDir(path.dirname(screenshotPath));
+    await page.screenshot({ path: screenshotPath, fullPage: false });
+    
+    return screenshotPath;
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
+  }
+}
+
 async function fetchPageData(url) {
   try {
     const microlinkUrl = `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true`;
@@ -28,16 +48,12 @@ async function fetchPageData(url) {
     // Take the screenshot with Puppeteer
     console.log(`Taking screenshot with Puppeteer for ${url}...`);
     try {
-      const browser = await puppeteer.launch();
-      const page = await browser.newPage();
-      await page.setViewport({ width: 1200, height: 800 });
-      await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
-      
-      screenshotPath = path.join(__dirname, 'temp', `screenshot-${Date.now()}-${Math.random().toString(36).substr(2, 9)}.png`);
-      await fs.ensureDir(path.dirname(screenshotPath));
-      await page.screenshot({ path: screenshotPath, fullPage: false });
-      
-      await browser.close();
+      screenshotPath = await Promise.race([
+        takeScreenshotWithTimeout(url),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Screenshot timeout after 45 seconds')), 45000)
+        )
+      ]);
     } catch (puppeteerError) {
       console.error(`Failed to take screenshot with Puppeteer for ${url}:`, puppeteerError.message);
     }
@@ -67,19 +83,49 @@ async function generateImageHTML(title, url, description, screenshotPath) {
     }
   }
   
-  return `<div style="width: 600px; border: 1px solid #ccc; padding: 20px; font-family: sans-serif;">
-  <h1>${title}</h1>
-  <small><a href="${url}">${url}</a></small>
-  <img src="${imageSrc}" style="width: 100%; max-height: 200px; object-fit: cover; border: 1px solid #ccc;" />
-  <p style="font-style: italic; text-align: center;">"${description}"</p>
+  // Read and encode the d.png logo
+  let logoSrc = '';
+  try {
+    const logoPath = path.join(__dirname, 'assets', 'images', 'd.png');
+    const logoBuffer = await fs.readFile(logoPath);
+    const base64Logo = logoBuffer.toString('base64');
+    logoSrc = `data:image/png;base64,${base64Logo}`;
+  } catch (error) {
+    console.warn('Failed to read d.png logo:', error.message);
+  }
+  
+  return `<div style="
+    width: 600px;
+    padding: 20px; 
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #FF6E19 0%, #ffffff 100%);
+    position: relative;
+    box-sizing: border-box;
+  ">
+  <h1 style="margin: 0 0 10px 0; color: #333;">${title}</h1>
+  <small style="color: #666;"><a href="${url}">${url}</a></small>
+  <img src="${imageSrc}" style="width: 100%; max-height: 200px; object-fit: cover; border: 1px solid #FF6E19; margin: 15px 0;" />
+  <p style="font-style: italic; text-align: center; margin: 10px 0; color: #444;">"${description}"</p>
+  ${logoSrc ? `<img src="${logoSrc}" style="position: absolute; bottom: 10px; right: 10px; width: 24px; height: 24px;" />` : ''}
 </div>`;
 }
 
 async function convertHTMLToImage(html, outputPath) {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  
-  await page.setContent(`<!DOCTYPE html>
+  return await Promise.race([
+    convertHTMLToImageWithTimeout(html, outputPath),
+    new Promise((_, reject) => 
+      setTimeout(() => reject(new Error('HTML to image conversion timeout after 30 seconds')), 30000)
+    )
+  ]);
+}
+
+async function convertHTMLToImageWithTimeout(html, outputPath) {
+  let browser;
+  try {
+    browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    const page = await browser.newPage();
+    
+    await page.setContent(`<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -89,23 +135,27 @@ async function convertHTMLToImage(html, outputPath) {
 ${html}
 </body>
 </html>`);
-  
-  await page.setViewport({ width: 600, height: 400 });
-  
-  const element = await page.$('div');
-  await element.screenshot({ path: outputPath });
-  
-  // Generate WebP version
-  const webpPath = outputPath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
-  try {
-    await webp.cwebp(outputPath, webpPath, '-q 80');
-    console.log(`Generated WebP version: ${path.basename(webpPath)}`);
-  } catch (webpError) {
-    console.warn(`Failed to generate WebP version for ${path.basename(outputPath)}:`, webpError.message);
+    
+    await page.setViewport({ width: 600, height: 400 });
+    
+    const element = await page.$('div');
+    await element.screenshot({ path: outputPath });
+    
+    // Generate WebP version
+    const webpPath = outputPath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    try {
+      await webp.cwebp(outputPath, webpPath, '-q 80');
+      console.log(`Generated WebP version: ${path.basename(webpPath)}`);
+    } catch (webpError) {
+      console.warn(`Failed to generate WebP version for ${path.basename(outputPath)}:`, webpError.message);
+    }
+    
+    return outputPath;
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
   }
-  
-  await browser.close();
-  return outputPath;
 }
 
 async function generateDocument(filterData, urls, week) {
@@ -119,12 +169,14 @@ async function generateDocument(filterData, urls, week) {
   // Read the template
   const templatePath = path.join(__dirname, 'layouts', 'document.dmd');
   let template = await fs.readFile(templatePath, 'utf8');
+
+  const currentYear = new Date().getFullYear();
   
   // Replace template placeholders
-  template = template.replace('<title>', 'Stuck in the Filter');
+  template = template.replace('<title>', `Stuck in the Filter - W${week}`);
   template = template.replace('<creation_date>', currentDate);
   template = template.replace('<column>', 'done_3');
-  template = template.replace('<short_description>', 'These are the notes I couldn\'t process during this week.');
+  template = template.replace('<short_description>', `Links I couldn\'t process during the week ${week} of ${currentYear}.`);
   template = template.replace('<pub_date>', formattedDate);
   template = template.replace('<position>', currentDate.replace(/-/g, ''));
   
@@ -138,17 +190,18 @@ async function generateDocument(filterData, urls, week) {
     bodyContent += `## ${item.title}\n`;
     bodyContent += `[${item.url}](${item.url})\n\n`;
     bodyContent += `${item.description}\n\n`;
-    bodyContent += `![${item.title} page screenshot](/assets/${imageFilename}#center)\n\n`;
+    bodyContent += `[![${item.title} page screenshot](/assets/${imageFilename}#center)](${item.url})\n<br /><hr />\n`;
   }
   
   // Replace content sections
   const sections = template.split('---');
   let content = sections[1];
-  
-  content = content.replace('[summary:string]', '[summary:string]\nThese are the notes I couldn\'t process during this week. I didn\'t created the idea... all the credit goes to the AMG crew (as I explained here https://www.angrymetalguy.com/category/stuck-in-the-filter/).');
+
+  content = content.replace('[summary:string]', `[summary:string]\nLinks I couldn\'t process during the week ${week} of ${currentYear}.`);
   content = content.replace('[pub_date:string]', `[pub_date:string]\n${currentDate}`);
-  content = content.replace('[short_description:string]', '[short_description:string]\nA collection of notes and thoughts that didn\'t make it into my main articles this week, inspired by the "Stuck in the Filter" concept from AMG.');
+  content = content.replace('[short_description:string]', '[short_description:string]\nThese links for various reasons didn\'t make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn\'t fit the overall flow, these links are still valuable resources for some reason they caught my attention.');
   content = content.replace('[body:md]', `[body:md]\n${bodyContent}`);
+  content = content.replace('[acknowledgments:md]', '[acknowledgments:md]\nI didn\'t invented the idea of grabbing everything I couldn\'t process and putting it in a document. I just borrowed it (the idea and the name) from the \'Angry Metal Guy\' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.');
   
   return sections[0] + '\n---\n' + content;
 }
@@ -184,7 +237,7 @@ async function main() {
       process.exit(1);
     }
     
-    console.log(`Processing ${stucked.length} URLs for week ${week}...`);
+    console.log(`\n\nProcessing ${stucked.length} URLs for week ${week}...`);
     
     // Process each URL
     const processedUrls = [];

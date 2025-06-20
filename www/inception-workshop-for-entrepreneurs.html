@@ -179,6 +179,17 @@
         overflow-wrap: break-word;
       }
       
+      /* Reset styles for links that only contain images */
+      article a:not(.no_external_ico):has(> img:only-child),
+      article a:not(.no_external_ico):has(> picture:only-child),
+      section a:not(.no_external_ico):has(> img:only-child),
+      section a:not(.no_external_ico):has(> picture:only-child) {
+        font-weight: normal;
+        color: inherit;
+        background: none;
+        padding-right: 0;
+      }
+      
       article a:not([href]) {
         background: inherit;
         padding-right: inherit;

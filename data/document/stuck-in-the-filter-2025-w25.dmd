@@ -1,11 +1,11 @@
 {
-  "title": "Stuck in the Filter",
+  "title": "Stuck in the Filter - W25",
   "date": "2025-06-20",
   "layout": "document",
   "card": {
     "color": "#99b399",
     "columnid": "done_3",
-    "content": "These are the notes I couldn't process during this week.",
+    "content": "Links I couldn't process during the week 25 of 2025.",
     "datebox": "June 20, 2025",
     "extlink": null,
     "laneid": "Essay",
@@ -26,13 +26,13 @@
 
 
 [summary:string]
-These are the notes I couldn't process during this week. I didn't created the idea... all the credit goes to the AMG crew (as I explained here https://www.angrymetalguy.com/category/stuck-in-the-filter/).
+Links I couldn't process during the week 25 of 2025.
 
 [pub_date:string]
 2025-06-20
 
 [short_description:string]
-A collection of notes and thoughts that didn't make it into my main articles this week, inspired by the "Stuck in the Filter" concept from AMG.
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
 
 [body:md]
 ## Waiting by Zachary Kai
@@ -40,81 +40,26 @@ A collection of notes and thoughts that didn't make it into my main articles thi
 
 A poetic exploration of patience, presence, and the relationship with time.
 
-![Waiting by Zachary Kai page screenshot](/assets/stucked-w25-1.jpg#center)
-
+[![Waiting by Zachary Kai page screenshot](/assets/stucked-w25-1.jpg#center)](https://zacharykai.net/notes/waiting)
+<br /><hr />
 ## 5 Things That Work for Me • Austin Kleon
 [https://austinkleon.substack.com/p/5-things-that-work-for-me](https://austinkleon.substack.com/p/5-things-that-work-for-me)
 
 Austin Kleon shares five simple practices that help him stay creative and grounded.
 
-![5 Things That Work for Me • Austin Kleon page screenshot](/assets/stucked-w25-2.jpg#center)
-
+[![5 Things That Work for Me • Austin Kleon page screenshot](/assets/stucked-w25-2.jpg#center)](https://austinkleon.substack.com/p/5-things-that-work-for-me)
+<br /><hr />
 ## AI coding trackers are here. Proceed with caution
 [https://leaddev.com/reporting/ai-coding-tool-trackers-proceed-with-caution](https://leaddev.com/reporting/ai-coding-tool-trackers-proceed-with-caution)
 
 Companies are finally starting to track AI usage within their engineering orgs. Should we be worried or remain cautiously optimistic?
 
-![AI coding trackers are here. Proceed with caution page screenshot](/assets/stucked-w25-3.jpg#center)
-
-## MIT Study: Using ChatGPT Won’t Make You Dumb (Unless You Do It Wrong)
-[https://www.thealgorithmicbridge.com/p/mit-study-using-chatgpt-wont-make](https://www.thealgorithmicbridge.com/p/mit-study-using-chatgpt-wont-make)
-
-A nuanced AI study, you’ve got to love it!
-
-![MIT Study: Using ChatGPT Won’t Make You Dumb (Unless You Do It Wrong) page screenshot](/assets/stucked-w25-4.jpg#center)
-
-## Expert Generalists
-[https://martinfowler.com/articles/expert-generalist.html](https://martinfowler.com/articles/expert-generalist.html)
-
-Being an Expert Generalist should be treated as a first-class skill, one that can be assessed and taught.
-
-![Expert Generalists page screenshot](/assets/stucked-w25-5.jpg#center)
-
-## Trusting your own judgement on ‘AI’ is a huge risk
-[https://clicks.stackoverflow.email/f/a/WdIXZx9Qb0TZm10zGsa5yw~~/AAQRxRA~/RrNBEgZz8uofpfS6VPB6N02AZX5mFUacQrMaEYlMRONIC6MvWGHUr1Sem4pUbUY8QvDlzuyyaflP6CB5Qm-wJnlajc6jvE-AGe9FiHTdQhfEHyW5EAvJ-vKXJC-T02odec2UpRSwOhiAA1kkWeZr8emqtb9iDGXYOCcswNSIce-gpi4mZb0W9e6ITErUIPXI](https://clicks.stackoverflow.email/f/a/WdIXZx9Qb0TZm10zGsa5yw~~/AAQRxRA~/RrNBEgZz8uofpfS6VPB6N02AZX5mFUacQrMaEYlMRONIC6MvWGHUr1Sem4pUbUY8QvDlzuyyaflP6CB5Qm-wJnlajc6jvE-AGe9FiHTdQhfEHyW5EAvJ-vKXJC-T02odec2UpRSwOhiAA1kkWeZr8emqtb9iDGXYOCcswNSIce-gpi4mZb0W9e6ITErUIPXI)
-
-Web dev at the end of the world, from Hveragerði, Iceland
-
-![Trusting your own judgement on ‘AI’ is a huge risk page screenshot](/assets/stucked-w25-6.jpg#center)
-
-## Navigating the Complexity of Generative AI Adoption in Software Engineering—RCR Report - R Discovery
-[https://discovery.researcher.life/article/navigating-the-complexity-of-generative-ai-adoption-in-software-engineering-rcr-report/472f7571d58e387a86f2b698df02bb17](https://discovery.researcher.life/article/navigating-the-complexity-of-generative-ai-adoption-in-software-engineering-rcr-report/472f7571d58e387a86f2b698df02bb17)
-
-Article on Navigating the Complexity of Generative AI Adoption in Software Engineering—RCR Report, published in ACM Transactions on Software Engineering and Methodology 33 on 2024-11-30 by Daniel Russo. Read the article Navigating the Complexity of Generative AI Adoption in Software Engineering—RCR Report on R Discovery, your go-to avenue for effective literature search.
-
-![Navigating the Complexity of Generative AI Adoption in Software Engineering—RCR Report - R Discovery page screenshot](/assets/stucked-w25-7.jpg#center)
-
-## Another Day And You Have Nothing to Show For It?
-[https://alifeengineered.substack.com/p/another-day-and-you-have-nothing](https://alifeengineered.substack.com/p/another-day-and-you-have-nothing)
-
-A Guide to Recognizing “Zero Days” and Turning Them Into High-Impact Work.
-
-![Another Day And You Have Nothing to Show For It? page screenshot](/assets/stucked-w25-8.jpg#center)
-
-## Why Claude Code feels like magic?
-[https://omarabid.com/claude-magic](https://omarabid.com/claude-magic)
-
-It takes these very simple-minded instructions - ‘Go fetch a number, add it to this number, put the result there, perceive if it’s greater than this other number’ - but executes them at a rate of, let’s say, 1,000,000 per second. At 1,000,000 per second, the results appear to be magic. — Steve Jobs
-
-![Why Claude Code feels like magic? page screenshot](/assets/stucked-w25-9.jpg#center)
-
-## 3 brilliant critical thinking tools used by Daniel Dennett
-[https://bigthink.com/the-learning-curve/3-brilliant-critical-thinking-tools-used-by-daniel-dennett/](https://bigthink.com/the-learning-curve/3-brilliant-critical-thinking-tools-used-by-daniel-dennett/)
-
-The late philosopher suggested adding a couple of “Occam’s heuristics” to your critical thinking toolbox.
-
-![3 brilliant critical thinking tools used by Daniel Dennett page screenshot](/assets/stucked-w25-10.jpg#center)
-
-## Asking What—When—Where—Why—Who—How… and Then Some… for the Toyota Practical Problem Solving – AllAboutLean.com
-[https://www.allaboutlean.com/what-when-where-why-who-how/](https://www.allaboutlean.com/what-when-where-why-who-how/)
-
-The Toyota Practical Problem Solving is a very structured approach to solve problems. The underlying PDCA is broken down into multiple steps, where the “Plan” part especially is divided into Clarify the Problem, Break Down the Problem, Set a Target, and a Root-Cause Analysis. In this post I will look at the What—When—Where—Why—Who—How structure, also known as the 5W1H, that can help you when clarifying the problem. This structure was used in journalism starting around 1913, but may originate from Greek antiquity. It is also a useful structure for problem solving.
-
-![Asking What—When—Where—Why—Who—How… and Then Some… for the Toyota Practical Problem Solving – AllAboutLean.com page screenshot](/assets/stucked-w25-11.jpg#center)
-
+[![AI coding trackers are here. Proceed with caution page screenshot](/assets/stucked-w25-3.jpg#center)](https://leaddev.com/reporting/ai-coding-tool-trackers-proceed-with-caution)
+<br /><hr />
 
 
 [acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
 
 [further_reading:md]
 
