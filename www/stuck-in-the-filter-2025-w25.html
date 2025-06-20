@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>How to be an AI dev in 2025 | Darío Macchi</title>
+    <title>Stuck in the Filter | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -205,15 +205,94 @@
         padding: 5px;
       }
 
+      .essay {
+        background-color: #f2f2f2;
+        border: 0px !important;
+        margin-left: inherit;
+      }
+
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
+      }
+
+      .essay p, .essay li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: inherit;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h4 {
+        font-weight: bold;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .further-reading {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
+      }
+
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
-
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="Interview with Francisco Erramuspe on AI tools in software development, reliability, security concerns, and integrating AI into projects efficiently." />
+    <meta name="description" content="These are the notes I couldn't process during this week. I didn't created the idea... all the credit goes to the AMG crew (as I explained here https://www.angrymetalguy.com/category/stuck-in-the-filter/)." />
     <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
     <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -234,7 +313,7 @@
     <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
     <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
     
-    <link rel="canonical" href="https://dariomac.com/how-to-be-an-ai-dev-in-2025" />
+    <link rel="canonical" href="https://dariomac.com/stuck-in-the-filter-2025-w25" />
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
@@ -280,9 +359,9 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta property="og:url" content="/how-to-be-an-ai-dev-in-2025" />
-    <meta property="og:title" content="How to be an AI dev in 2025" />
-    <meta property="og:description" content="Interview with Francisco Erramuspe on AI tools in software development, reliability, security concerns, and integrating AI into projects efficiently." />
+    <meta property="og:url" content="/stuck-in-the-filter-2025-w25" />
+    <meta property="og:title" content="Stuck in the Filter" />
+    <meta property="og:description" content="These are the notes I couldn't process during this week. I didn't created the idea... all the credit goes to the AMG crew (as I explained here https://www.angrymetalguy.com/category/stuck-in-the-filter/)." />
     <meta property="og:site_name" content="Darío Macchi personal website" />
     <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
     <meta property="og:image:type" content="image/png">
@@ -290,8 +369,8 @@
     
     <meta name="twitter:site" content="@_dariomac">
     <meta name="twitter:creator" content="@_dariomac">
-    <meta name="twitter:title" content="How to be an AI dev in 2025">
-    <meta name="twitter:description" content="Interview with Francisco Erramuspe on AI tools in software development, reliability, security concerns, and integrating AI into projects efficiently.">
+    <meta name="twitter:title" content="Stuck in the Filter">
+    <meta name="twitter:description" content="These are the notes I couldn't process during this week. I didn't created the idea... all the credit goes to the AMG crew (as I explained here https://www.angrymetalguy.com/category/stuck-in-the-filter/).">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:widgets:new-embed-design" content="on">
     <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
@@ -348,9 +427,28 @@
             })
     </script>
 
-      <script type="application/ld+json">
-        {}
-      </script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://dariomac.com/"
+          },
+          "headline": "Stuck in the Filter",
+          "alternativeHeadline": "These are the notes I couldn't process during this week.",
+          "url": "https://dariomac.com/",
+          "datePublished": "2025-06-20",
+          "dateCreated": "2025-06-20",
+          "description": "These are the notes I couldn't process during this week. I didn't created the idea... all the credit goes to the AMG crew (as I explained here https://www.angrymetalguy.com/category/stuck-in-the-filter/).",
+          "author": {
+            "@id": "https://dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
   </head>
   <body>
     <div class="board_view details">
@@ -371,76 +469,116 @@
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board">
+        <div class="dm-board essay">
           <article>
-            <div class="row splitter">
-              <div class="col-md-12 text-center">Details</div>
-            </div>
             <div class="row featured">
-              <div class="col-md-12">
+              <div class="offset-md-3 col-md-6 sheet">
                 <header>
-                  <h1>How to be an AI dev in 2025</h1>
-                  <p class="duration">March 7, 2025 - 1hr</p>
-                  <p><a href="https://www.howdy.com/cities/montevideo">Howdy House Montevideo</a></p>
+                  <h1>Stuck in the Filter</h1>
+                  <p class="date">2025-06-20</p>
                 </header>
-                
-                  <section class="summary">
-                    <p>
-                      Interview with Francisco Erramuspe on AI tools in software development, reliability, security concerns, and integrating AI into projects efficiently.
-                    </p>
-                  </section>
-                
-                  <section class="content">
-                    <p>The interview, conducted by Darío Macchi with Francisco Erramuspe at the Howdy House, dives into the evolving landscape of software development in the context of <strong>Artificial Intelligence</strong> (<strong>AI</strong>). Francisco Erramuspe, an Uruguayan developer living in the US, shares insights into his use of <strong>AI</strong> tools such as Copilot, Claude/DeepSeek, and Cursor. He discusses how these tools aid him in tasks like code completion, bug fixing, and frontend development. A key point emphasized is the importance of developing skills for writing effective <strong>AI</strong> prompts and understanding the fundamental workings of Large Language Models (LLMs) to apply <strong>AI</strong>-generated suggestions with common sense.</p>
-<p>The conversation further explores the reliability and security concerns surrounding <strong>AI</strong>-generated code. Francisco expresses skepticism about fully trusting any <strong>AI</strong> tool for code generation without a thorough understanding of its training data and context. He highlights the necessity for traditional verification methods like code reviews to ensure accuracy. The discussion also touches on productivity improvements brought by <strong>AI</strong> assistants, referencing a study indicating significant time savings in development processes.</p>
-<p>Security and data protection emerge as critical issues, with Francisco noting that some companies are creating their own <strong>LLM</strong> instances to safely leverage <strong>AI</strong> tools without risking sensitive information. The interview then shifts focus to developers creating <strong>AI</strong> solutions themselves. Francisco outlines essential knowledge areas such as Retrieval Augmented Generation (<strong>RAG</strong>), embeddings, and fine-tuning models for niche applications. He voices caution against the trend of indiscriminately incorporating <strong>AI</strong> into products without clear purpose.</p>
-<p>Finally, challenges in integrating <strong>AI</strong> into products are discussed, particularly around data processing and testing non-deterministic systems akin to video games. At the end we've talked about project management for <strong>AI</strong>-based solutions that often involves short experimental cycles rather than traditional construction phases. This experimental approach highlights both the opportunities and complexities developers face when embracing <strong>AI</strong> technologies in their work.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8MVs8AVnIXA?si=3akB5cAS6EeKtY9_#center" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
 
-                  </section>
+                
+                <section class="description">
+                  <p>
+                    A collection of notes and thoughts that didn&#x27;t make it into my main articles this week, inspired by the &quot;Stuck in the Filter&quot; concept from AMG.
+                  </p>
+                </section>
 
-                  <section class="image_gallery">
-                    <link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/ai-dev-in-2025-1.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/ai-dev-in-2025-1.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/ai-dev-in-2025-1.png" alt="ai-dev-in-2025-1.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/ai-dev-in-2025-2.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/ai-dev-in-2025-2.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/ai-dev-in-2025-2.jpg" alt="ai-dev-in-2025-2.jpg" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/ai-dev-in-2025-3.jpg" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/ai-dev-in-2025-3.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/ai-dev-in-2025-3.jpg" alt="ai-dev-in-2025-3.jpg" />
-                      </picture>
-                    </a>
-                  </section>
+                <section>
+                    <h2><a name="waiting-by-zachary-kai" class="anchor">
+<a name="waiting-by-zachary-kai" href="#waiting-by-zachary-kai" class="no_external_ico">Waiting by Zachary Kai</a></h2>
+<p><a href="https://zacharykai.net/notes/waiting">https://zacharykai.net/notes/waiting</a></p>
+<p>A poetic exploration of patience, presence, and the relationship with time.</p>
+<p><picture>
+              <source srcset="/assets/stucked-w25-1.webp" type="image/webp">
+  
+              <img src="/assets/stucked-w25-1.jpg#center" alt="Waiting by Zachary Kai page screenshot"></picture></p>
+<h2><a name="5-things-that-work-for-me-austin-kleon" class="anchor">
+<a name="5-things-that-work-for-me-austin-kleon" href="#5-things-that-work-for-me-austin-kleon" class="no_external_ico">5 Things That Work for Me • Austin Kleon</a></h2>
+<p><a href="https://austinkleon.substack.com/p/5-things-that-work-for-me">https://austinkleon.substack.com/p/5-things-that-work-for-me</a></p>
+<p>Austin Kleon shares five simple practices that help him stay creative and grounded.</p>
+<p><picture>
+              <source srcset="/assets/stucked-w25-2.webp" type="image/webp">
+  
+              <img src="/assets/stucked-w25-2.jpg#center" alt="5 Things That Work for Me • Austin Kleon page screenshot"></picture></p>
+<h2><a name="ai-coding-trackers-are-here-proceed-with-caution" class="anchor">
+<a name="ai-coding-trackers-are-here-proceed-with-caution" href="#ai-coding-trackers-are-here-proceed-with-caution" class="no_external_ico"><strong>AI</strong> coding trackers are here. Proceed with caution</a></h2>
+<p><a href="https://leaddev.com/reporting/ai-coding-tool-trackers-proceed-with-caution">https://leaddev.com/reporting/<strong>ai</strong>-coding-tool-trackers-proceed-with-caution</a></p>
+<p>Companies are finally starting to track <strong>AI</strong> usage within their engineering orgs. Should we be worried or remain cautiously optimistic?</p>
+<p><picture>
+              <source srcset="/assets/stucked-w25-3.webp" type="image/webp">
+  
+              <img src="/assets/stucked-w25-3.jpg#center" alt="<strong>AI</strong> coding trackers are here. Proceed with caution page screenshot"></picture></p>
+<h2><a name="mit-study-using-chatgpt-wont-make-you-dumb-unless-you-do-it-wrong" class="anchor">
+<a name="mit-study-using-chatgpt-wont-make-you-dumb-unless-you-do-it-wrong" href="#mit-study-using-chatgpt-wont-make-you-dumb-unless-you-do-it-wrong" class="no_external_ico">MIT Study: Using ChatGPT Won’t Make You Dumb (Unless You Do It Wrong)</a></h2>
+<p><a href="https://www.thealgorithmicbridge.com/p/mit-study-using-chatgpt-wont-make">https://www.thealgorithmicbridge.com/p/mit-study-using-chatgpt-wont-make</a></p>
+<p>A nuanced <strong>AI</strong> study, you’ve got to love it!</p>
+<p><picture>
+              <source srcset="/assets/stucked-w25-4.webp" type="image/webp">
+  
+              <img src="/assets/stucked-w25-4.jpg#center" alt="MIT Study: Using ChatGPT Won’t Make You Dumb (Unless You Do It Wrong) page screenshot"></picture></p>
+<h2><a name="expert-generalists" class="anchor">
+<a name="expert-generalists" href="#expert-generalists" class="no_external_ico">Expert Generalists</a></h2>
+<p><a href="https://martinfowler.com/articles/expert-generalist.html">https://martinfowler.com/articles/expert-generalist.<strong>html</strong></a></p>
+<p>Being an Expert Generalist should be treated as a first-class skill, one that can be assessed and taught.</p>
+<p><picture>
+              <source srcset="/assets/stucked-w25-5.webp" type="image/webp">
+  
+              <img src="/assets/stucked-w25-5.jpg#center" alt="Expert Generalists page screenshot"></picture></p>
+<h2><a name="trusting-your-own-judgement-on-ai-is-a-huge-risk" class="anchor">
+<a name="trusting-your-own-judgement-on-ai-is-a-huge-risk" href="#trusting-your-own-judgement-on-ai-is-a-huge-risk" class="no_external_ico">Trusting your own judgement on ‘<strong>AI</strong>’ is a huge risk</a></h2>
+<p><a href="https://clicks.stackoverflow.email/f/a/WdIXZx9Qb0TZm10zGsa5yw~~/AAQRxRA~/RrNBEgZz8uofpfS6VPB6N02AZX5mFUacQrMaEYlMRONIC6MvWGHUr1Sem4pUbUY8QvDlzuyyaflP6CB5Qm-wJnlajc6jvE-AGe9FiHTdQhfEHyW5EAvJ-vKXJC-T02odec2UpRSwOhiAA1kkWeZr8emqtb9iDGXYOCcswNSIce-gpi4mZb0W9e6ITErUIPXI">https://clicks.stackoverflow.email/f/a/WdIXZx9Qb0TZm10zGsa5yw~~/AAQRxRA~/RrNBEgZz8uofpfS6VPB6N02AZX5mFUacQrMaEYlMRONIC6MvWGHUr1Sem4pUbUY8QvDlzuyyaflP6CB5Qm-wJnlajc6jvE-AGe9FiHTdQhfEHyW5EAvJ-vKXJC-T02odec2UpRSwOhiAA1kkWeZr8emqtb9iDGXYOCcswNSIce-gpi4mZb0W9e6ITErUIPXI</a></p>
+<p>Web dev at the end of the world, from Hveragerði, Iceland</p>
+<p><picture>
+              <source srcset="/assets/stucked-w25-6.webp" type="image/webp">
+  
+              <img src="/assets/stucked-w25-6.jpg#center" alt="Trusting your own judgement on ‘<strong>AI</strong>’ is a huge risk page screenshot"></picture></p>
+<h2><a name="navigating-the-complexity-of-generative-ai-adoption-in-software-engineeringrcr-r" class="anchor">
+<a name="navigating-the-complexity-of-generative-ai-adoption-in-software-engineeringrcr-r" href="#navigating-the-complexity-of-generative-ai-adoption-in-software-engineeringrcr-r" class="no_external_ico">Navigating the Complexity of Generative <strong>AI</strong> Adoption in Software Engineering—RCR Report - R Discovery</a></h2>
+<p><a href="https://discovery.researcher.life/article/navigating-the-complexity-of-generative-ai-adoption-in-software-engineering-rcr-report/472f7571d58e387a86f2b698df02bb17">https://discovery.researcher.life/article/navigating-the-complexity-of-generative-<strong>ai</strong>-adoption-in-software-engineering-rcr-report/472f7571d58e387a86f2b698df02bb17</a></p>
+<p>Article on Navigating the Complexity of Generative <strong>AI</strong> Adoption in Software Engineering—RCR Report, published in ACM Transactions on Software Engineering and Methodology 33 on 2024-11-30 by Daniel Russo. Read the article Navigating the Complexity of Generative <strong>AI</strong> Adoption in Software Engineering—RCR Report on R Discovery, your go-to avenue for effective literature search.</p>
+<p><picture>
+              <source srcset="/assets/stucked-w25-7.webp" type="image/webp">
+  
+              <img src="/assets/stucked-w25-7.jpg#center" alt="Navigating the Complexity of Generative <strong>AI</strong> Adoption in Software Engineering—RCR Report - R Discovery page screenshot"></picture></p>
+<h2><a name="another-day-and-you-have-nothing-to-show-for-it" class="anchor">
+<a name="another-day-and-you-have-nothing-to-show-for-it" href="#another-day-and-you-have-nothing-to-show-for-it" class="no_external_ico">Another Day And You Have Nothing to Show For It?</a></h2>
+<p><a href="https://alifeengineered.substack.com/p/another-day-and-you-have-nothing">https://alifeengineered.substack.com/p/another-day-and-you-have-nothing</a></p>
+<p>A Guide to Recognizing “Zero Days” and Turning Them Into High-Impact Work.</p>
+<p><picture>
+              <source srcset="/assets/stucked-w25-8.webp" type="image/webp">
+  
+              <img src="/assets/stucked-w25-8.jpg#center" alt="Another Day And You Have Nothing to Show For It? page screenshot"></picture></p>
+<h2><a name="why-claude-code-feels-like-magic" class="anchor">
+<a name="why-claude-code-feels-like-magic" href="#why-claude-code-feels-like-magic" class="no_external_ico">Why Claude Code feels like magic?</a></h2>
+<p><a href="https://omarabid.com/claude-magic">https://omarabid.com/claude-magic</a></p>
+<p>It takes these very simple-minded instructions - ‘Go fetch a number, add it to this number, put the result there, perceive if it’s greater than this other number’ - but executes them at a rate of, let’s say, 1,000,000 per second. At 1,000,000 per second, the results appear to be magic. — Steve Jobs</p>
+<p><picture>
+              <source srcset="/assets/stucked-w25-9.webp" type="image/webp">
+  
+              <img src="/assets/stucked-w25-9.jpg#center" alt="Why Claude Code feels like magic? page screenshot"></picture></p>
+<h2><a name="3-brilliant-critical-thinking-tools-used-by-daniel-dennett" class="anchor">
+<a name="3-brilliant-critical-thinking-tools-used-by-daniel-dennett" href="#3-brilliant-critical-thinking-tools-used-by-daniel-dennett" class="no_external_ico">3 brilliant critical thinking tools used by Daniel Dennett</a></h2>
+<p><a href="https://bigthink.com/the-learning-curve/3-brilliant-critical-thinking-tools-used-by-daniel-dennett/">https://bigthink.com/the-learning-curve/3-brilliant-critical-thinking-tools-used-by-daniel-dennett/</a></p>
+<p>The late philosopher suggested adding a couple of “Occam’s heuristics” to your critical thinking toolbox.</p>
+<p><picture>
+              <source srcset="/assets/stucked-w25-10.webp" type="image/webp">
+  
+              <img src="/assets/stucked-w25-10.jpg#center" alt="3 brilliant critical thinking tools used by Daniel Dennett page screenshot"></picture></p>
+<h2><a name="asking-whatwhenwherewhywhohow-and-then-some-for-the-toyota-practical-problem-sol" class="anchor">
+<a name="asking-whatwhenwherewhywhohow-and-then-some-for-the-toyota-practical-problem-sol" href="#asking-whatwhenwherewhywhohow-and-then-some-for-the-toyota-practical-problem-sol" class="no_external_ico">Asking What—When—Where—Why—Who—How… and Then Some… for the Toyota Practical Problem Solving – AllAboutLean.com</a></h2>
+<p><a href="https://www.allaboutlean.com/what-when-where-why-who-how/">https://www.allaboutlean.com/what-when-where-why-who-how/</a></p>
+<p>The Toyota Practical Problem Solving is a very structured approach to solve problems. The underlying PDCA is broken down into multiple steps, where the “Plan” part especially is divided into Clarify the Problem, Break Down the Problem, Set a Target, and a Root-Cause Analysis. In this post I will look at the What—When—Where—Why—Who—How structure, also known as the 5W1H, that can help you when clarifying the problem. This structure was used in journalism starting around 1913, but may originate from Greek antiquity. It is also a useful structure for problem solving.</p>
+<p><picture>
+              <source srcset="/assets/stucked-w25-11.webp" type="image/webp">
+  
+              <img src="/assets/stucked-w25-11.jpg#center" alt="Asking What—When—Where—Why—Who—How… and Then Some… for the Toyota Practical Problem Solving – AllAboutLean.com page screenshot"></picture></p>
+
+                </section>
+
               </div>
             </div>
-            
-              <div class="row splitter">
-                <div class="col-md-12 text-center">Mentioned in</div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <section class="backlinks">
-                        <ul>
-                            <li>
-                              <a href="/howdy-developer-advocate">Developer Advocate - Howdy</a>
-                            </li>
-                        </ul>
-                  </section>
-                </div>
-              </div>
-          </article>
         </div> <!-- container-fluid dm-board -->
 
         <a href="/" class="logo">
@@ -474,7 +612,7 @@
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
-
+    
     <div class="footer" style="text-align:center; width:100%;">
       <div style="text-align:center; width:100%">
       <ul>
