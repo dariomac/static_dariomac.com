@@ -275,6 +275,83 @@ ${html}
   }
 }
 
+async function resizeImage(imagePath, maxWidth = 600) {
+  let browser;
+  try {
+    browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    const page = await browser.newPage();
+
+    // Read the original image
+    const imageBuffer = await fs.readFile(imagePath);
+    const base64Image = imageBuffer.toString('base64');
+    const mimeType = imagePath.endsWith('.png') ? 'image/png' : 'image/jpeg';
+    const imageSrc = `data:${mimeType};base64,${base64Image}`;
+
+    // Create HTML with canvas to resize the image
+    const resizeHTML = `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Resize</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <img id="image" src="${imageSrc}" style="display: none;" />
+  <script>
+    const img = document.getElementById('image');
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    img.onload = function() {
+      const aspectRatio = img.height / img.width;
+      const newWidth = Math.min(img.width, ${maxWidth});
+      const newHeight = newWidth * aspectRatio;
+      
+      canvas.width = newWidth;
+      canvas.height = newHeight;
+      
+      ctx.drawImage(img, 0, 0, newWidth, newHeight);
+      
+      // Mark as ready
+      document.body.setAttribute('data-ready', 'true');
+    };
+  </script>
+</body>
+</html>`;
+
+    await page.setContent(resizeHTML);
+    await page.waitForFunction(() => document.body.getAttribute('data-ready') === 'true');
+
+    // Get the canvas element and take a screenshot of it
+    const canvas = await page.$('#canvas');
+    await canvas.screenshot({ path: imagePath });
+
+    return imagePath;
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
+  }
+}
+
+async function resizeAllImages(imagePaths) {
+  console.log(`\nResizing images to max 600px width...`);
+  for (let i = 0; i < imagePaths.length; i++) {
+    const imagePath = imagePaths[i];
+    console.log(`Resizing ${i + 1}/${imagePaths.length}: ${path.basename(imagePath)}`);
+    await resizeImage(imagePath, 600);
+    
+    // Regenerate WebP version after resizing
+    const webpPath = imagePath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    try {
+      await webp.cwebp(imagePath, webpPath, '-q 80');
+      console.log(`Regenerated WebP version: ${path.basename(webpPath)}`);
+    } catch (webpError) {
+      console.warn(`Failed to regenerate WebP version for ${path.basename(imagePath)}:`, webpError.message);
+    }
+  }
+}
+
 async function generateDocument(filterData, urls, week) {
   const currentDate = new Date().toISOString().split('T')[0];
   const formattedDate = new Date().toLocaleDateString('en-US', { 
@@ -407,6 +484,9 @@ async function main() {
       path.join(__dirname, 'data', 'document', 'assets', url.imagePath)
     );
     const carouselPDFPath = await generateLinkedInCarouselPDF(imagePaths, week);
+    
+    // Resize all generated images to max 600px width
+    // await resizeAllImages(imagePaths);
     
     console.log(`\nGenerated:`);
     console.log(`- Document: ${documentPath}`);
