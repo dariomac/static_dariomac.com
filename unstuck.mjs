@@ -95,7 +95,7 @@ async function generateImageHTML(title, url, description, screenshotPath) {
   }
   
   return `<div style="
-    width: 800px;
+    width: 1000px;
     padding: 20px; 
     font-family: sans-serif;
     background: linear-gradient(135deg, #FF6E19 0%, #ffffff 100%);
@@ -114,7 +114,8 @@ async function generateImageHTML(title, url, description, screenshotPath) {
 }
 
 async function generateLinkedInCarouselPDF(imagePaths, week) {
-  const pdfPath = path.join(__dirname, 'data', 'document', 'assets', `stuck-in-the-filter-w${week}-carousel.pdf`);
+  const currentYear = new Date().getFullYear();
+  const pdfPath = path.join(__dirname, 'data', 'document', 'assets', `stuck-in-the-filter-${currentYear}-w${week}-carousel.pdf`);
   
   let browser;
   try {
@@ -301,7 +302,7 @@ async function generateDocument(filterData, urls, week) {
   
   for (let i = 0; i < urls.length; i++) {
     const item = urls[i];
-    const imageFilename = `stucked-w${week}-${i + 1}.jpg`;
+    const imageFilename = `stuck-${currentYear}-w${week}-${i + 1}.jpg`;
     
     bodyContent += `## ${item.title}\n`;
     bodyContent += `[${item.url}](${item.url})\n\n`;
@@ -346,21 +347,21 @@ async function main() {
     
     // Read filter.json
     const filterData = await fs.readJson(filterPath);
-    const { week, stucked } = filterData;
+    const { week, stuck } = filterData;
     
-    if (!week || !stucked || !Array.isArray(stucked)) {
-      console.error('Invalid filter.json format. Expected: { week: number, stucked: array }');
+    if (!week || !stuck || !Array.isArray(stuck)) {
+      console.error('Invalid filter.json format. Expected: { week: number, stuck: array }');
       process.exit(1);
     }
     
-    console.log(`\n\nProcessing ${stucked.length} URLs for week ${week}...`);
+    console.log(`\n\nProcessing ${stuck.length} URLs for week ${week}...`);
     
     // Process each URL
     const processedUrls = [];
     
-    for (let i = 0; i < stucked.length; i++) {
-      const item = stucked[i];
-      console.log(`Processing ${i + 1}/${stucked.length}: ${item.url}`);
+    for (let i = 0; i < stuck.length; i++) {
+      const item = stuck[i];
+      console.log(`Processing ${i + 1}/${stuck.length}: ${item.url}`);
       
       // Fetch page data and screenshot
       const pageData = await fetchPageData(item.url);
@@ -369,7 +370,8 @@ async function main() {
       const tempScreenshotPath = pageData.screenshot;
       
       // Generate image
-      const imageFilename = `stucked-w${week}-${i + 1}.jpg`;
+      const currentYear = new Date().getFullYear();
+      const imageFilename = `stuck-${currentYear}-w${week}-${i + 1}.jpg`;
       const imagePath = path.join(__dirname, 'data', 'document', 'assets', imageFilename);
       
       const html = await generateImageHTML(title, item.url, description, tempScreenshotPath || 'placeholder-screenshot.png');
