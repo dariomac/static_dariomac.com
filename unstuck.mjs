@@ -119,10 +119,25 @@ async function generateLinkedInCarouselPDF(imagePaths, week) {
   
   let browser;
   try {
-    browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    browser = await puppeteer.launch({ 
+      args: [
+        '--no-sandbox', 
+        '--disable-setuid-sandbox',
+        '--force-device-scale-factor=3',
+        '--disable-web-security',
+        '--disable-features=VizDisplayCompositor',
+        '--run-all-compositor-stages-before-draw',
+        '--disable-backgrounding-occluded-windows',
+        '--disable-renderer-backgrounding'
+      ]
+    });
     const page = await browser.newPage();
     
-    await page.setViewport({ width: 1080, height: 1080 });
+    await page.setViewport({ 
+      width: 1080, 
+      height: 1080, 
+      deviceScaleFactor: 3
+    });
     
     // Create HTML with all pages for multi-page PDF
     let allPagesHTML = '';
@@ -157,16 +172,18 @@ async function generateLinkedInCarouselPDF(imagePaths, week) {
           box-sizing: border-box;
         ">
           <div style="
-            max-width: 90%;
-            max-height: 90%;
             display: flex;
             align-items: center;
             justify-content: center;
           ">
             <img src="${imageSrc}" style="
-              max-width: 100%;
-              max-height: 100%;
-              object-fit: contain;
+              width: 1000px;
+              height: auto;
+              image-rendering: -webkit-optimize-contrast;
+              image-rendering: -moz-crisp-edges;
+              image-rendering: crisp-edges;
+              image-rendering: pixelated;
+              -ms-interpolation-mode: nearest-neighbor;
               border-radius: 8px;
               box-shadow: 0 4px 20px rgba(0,0,0,0.3);
             " alt="Carousel slide ${i + 1}" />
@@ -200,6 +217,19 @@ async function generateLinkedInCarouselPDF(imagePaths, week) {
       size: 1080px 1080px;
       margin: 0;
     }
+    @media print {
+      body { 
+        -webkit-print-color-adjust: exact; 
+        color-adjust: exact;
+      }
+      img { 
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+      }
+    }
   </style>
 </head>
 <body>
@@ -214,7 +244,12 @@ async function generateLinkedInCarouselPDF(imagePaths, week) {
       width: '1080px',
       height: '1080px',
       printBackground: true,
-      margin: { top: 0, right: 0, bottom: 0, left: 0 }
+      margin: { top: 0, right: 0, bottom: 0, left: 0 },
+      preferCSSPageSize: true,
+      displayHeaderFooter: false,
+      format: 'A4',
+      quality: 100,
+      omitBackground: false
     });
     
     console.log(`Generated LinkedIn carousel PDF: ${path.basename(pdfPath)}`);

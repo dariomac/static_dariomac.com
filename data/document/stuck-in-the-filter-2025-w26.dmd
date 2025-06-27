@@ -1,0 +1,102 @@
+{
+  "title": "Stuck in the Filter - W26",
+  "date": "2025-06-27",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Links I couldn't process during the week 26 of 2025.",
+    "datebox": "June 27, 2025",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250627",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+
+---
+
+
+[summary:string]
+Links I couldn't process during the week 26 of 2025.
+
+[pub_date:string]
+2025-06-27
+
+[short_description:string]
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
+
+[body:md]
+## How a 91-year-old vibe coded a complex event management system using Claude and Replit | John Blackman
+[https://www.lennysnewsletter.com/p/how-a-91-year-old-vibe-coded-a-complex](https://www.lennysnewsletter.com/p/how-a-91-year-old-vibe-coded-a-complex)
+
+Watch now | Learn the AI workflow John Blackman used to build a full event platform for his church
+
+[![How a 91-year-old vibe coded a complex event management system using Claude and Replit | John Blackman page screenshot](/assets/stuck-2025-w26-1.jpg#center)](https://www.lennysnewsletter.com/p/how-a-91-year-old-vibe-coded-a-complex)
+<br /><hr />
+## State of Devs 2025
+[https://2025.stateofdevs.com/en-US](https://2025.stateofdevs.com/en-US)
+
+“These questions feel really personal”; ”This is going to be too controversial”; “You should stick to programming surveys”.
+
+[![State of Devs 2025 page screenshot](/assets/stuck-2025-w26-2.jpg#center)](https://2025.stateofdevs.com/en-US)
+<br /><hr />
+## The Generalist Engineer | Daniel Garcia | Substack
+[https://generalistengineer.substack.com](https://generalistengineer.substack.com)
+
+The Generalist engineer role in a startup is rare and complex; this is your guide. Click to read The Generalist Engineer, a Substack publication with hundreds of subscribers.
+
+[![The Generalist Engineer | Daniel Garcia | Substack page screenshot](/assets/stuck-2025-w26-3.jpg#center)](https://generalistengineer.substack.com)
+<br /><hr />
+## ?url=https%3A%2F%2Fwww.lesswrong.com%2Fposts%2FwfZW39du3tST2gnWs%2Fthe-limits-of-automation
+[https://www.lesswrong.com/posts/wfZW39du3tST2gnWs/the-limits-of-automation](https://www.lesswrong.com/posts/wfZW39du3tST2gnWs/the-limits-of-automation)
+
+
+
+[![?url=https%3A%2F%2Fwww.lesswrong.com%2Fposts%2FwfZW39du3tST2gnWs%2Fthe-limits-of-automation page screenshot](/assets/stuck-2025-w26-4.jpg#center)](https://www.lesswrong.com/posts/wfZW39du3tST2gnWs/the-limits-of-automation)
+<br /><hr />
+## Learn like a lurker: Gen Z’s digital-first lifestyle and the future of knowledge - Stack Overflow
+[https://stackoverflow.blog/2025/06/18/learn-like-a-lurker-gen-z-s-digital-first-lifestyle-and-the-future-of-knowledge](https://stackoverflow.blog/2025/06/18/learn-like-a-lurker-gen-z-s-digital-first-lifestyle-and-the-future-of-knowledge)
+
+Every generation receives some level of get-off-my-lawn-ism—the unavoidable battering of older generations upon the young about work ethic, lifestyle, and morality. As Gen Z myself, I’ve become well-adjusted to it. And not to be a generation traitor, I do think I’m a bit brain rotted. The prevalence of fingerwagging at Gen Z doesn’t surprise me anymore, so when I started at Stack, I wasn’t surprised by the 415th episode of the Stack Overflow Podcast, entitled “Gen Z doesn’t understand file structures.” The title makes the episode sound more critical than it is—the conversation is a fun ride through getting ratio’d by KPop Twitter and how age-old institutions like higher education are having to adjust to the way Gen Z thinks. But it highlights a reality: that Zoomers navigate the technical world very differently than generations past.
+
+[![Learn like a lurker: Gen Z’s digital-first lifestyle and the future of knowledge - Stack Overflow page screenshot](/assets/stuck-2025-w26-5.jpg#center)](https://stackoverflow.blog/2025/06/18/learn-like-a-lurker-gen-z-s-digital-first-lifestyle-and-the-future-of-knowledge)
+<br /><hr />
+## cubic – Cursor for code review
+[https://mrge-home.framer.website/blog/learnings-from-building-ai-agents](https://mrge-home.framer.website/blog/learnings-from-building-ai-agents)
+
+Code review for the AI era. cubic helps modern software teams ship higher-quality code at record speed.
+
+[![cubic – Cursor for code review page screenshot](/assets/stuck-2025-w26-6.jpg#center)](https://mrge-home.framer.website/blog/learnings-from-building-ai-agents)
+<br /><hr />
+## Learnings from two years of using AI tools for software engineering
+[https://newsletter.pragmaticengineer.com/p/two-years-of-using-ai](https://newsletter.pragmaticengineer.com/p/two-years-of-using-ai)
+
+How to think about today’s AI tools, approaches that work well, and concerns about using them for development. Guest post by Birgitta Böckeler, Distinguished Engineer at Thoughtworks
+
+[![Learnings from two years of using AI tools for software engineering page screenshot](/assets/stuck-2025-w26-7.jpg#center)](https://newsletter.pragmaticengineer.com/p/two-years-of-using-ai)
+<br /><hr />
+## Que el LLM no te tape el bosque #2 - ese gran malentendido llamado user stories
+[https://www.linkedin.com/pulse/que-el-llm-te-tape-bosque-2-ese-gran-malentendido-llamado-cyment-nbizf](https://www.linkedin.com/pulse/que-el-llm-te-tape-bosque-2-ese-gran-malentendido-llamado-cyment-nbizf)
+
+Nunca conocí personalmente a Kent Beck. Lo que voy a contar está basado en algo que le escuché Alistair Cockburn, quien supuestamente lo charló con el bueno de Kent.
+
+[![Que el LLM no te tape el bosque #2 - ese gran malentendido llamado user stories page screenshot](/assets/stuck-2025-w26-8.jpg#center)](https://www.linkedin.com/pulse/que-el-llm-te-tape-bosque-2-ese-gran-malentendido-llamado-cyment-nbizf)
+<br /><hr />
+
+
+[acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
+
+[further_reading:md]
+
+[significant_revisions:md]
+
