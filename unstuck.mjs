@@ -478,7 +478,7 @@ async function main() {
       const pageData = await fetchPageData(item.url);
       const title = item.title || pageData.title;
       const description = item.description || pageData.description;
-      const tempScreenshotPath = pageData.screenshot;
+      const tempScreenshotPath = item.screenshot || pageData.screenshot;
       
       // Generate image
       const currentYear = new Date().getFullYear();
