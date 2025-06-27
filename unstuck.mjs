@@ -148,7 +148,6 @@ async function generateLinkedInCarouselPDF(imagePaths, week) {
         <div style="
           width: 1080px;
           height: 1080px;
-          background-color: #FF6E19;
           display: flex;
           align-items: center;
           justify-content: center;
