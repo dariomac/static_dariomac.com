@@ -1,0 +1,95 @@
+{
+  "title": "Stuck in the Filter - W29",
+  "date": "2025-07-21",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Links I couldn't process during the week 29 of 2025.",
+    "datebox": "July 21, 2025",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250721",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+
+---
+
+
+[summary:string]
+Links I couldn't process during the week 29 of 2025.
+
+[pub_date:string]
+2025-07-21
+
+[short_description:string]
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
+
+[body:md]
+## The Pragmatic Engineer 2025 Survey: What’s in your tech stack?
+[https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-2025-survey](https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-2025-survey)
+
+Which tools do software engineers use for backend development, frontend, infrastructure, AI tooling, and more, today? Reader survey, with feedback and analysis, based on 3,000+ responses
+
+[![The Pragmatic Engineer 2025 Survey: What’s in your tech stack? page screenshot](/assets/stuck-2025-w29-1.jpg#center)](https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-2025-survey)
+<br /><hr />
+## To be a better programmer, write little proofs in your head
+[https://the-nerve-blog.ghost.io/to-be-a-better-programmer-write-little-proofs-in-your-head/](https://the-nerve-blog.ghost.io/to-be-a-better-programmer-write-little-proofs-in-your-head/)
+
+This is a brief write-up of a trick I learned that helps me write code faster and more accurately. I say “trick”, but it’s really something I started to do without noticing as I moved further into my career. When you’re working on something difficult, sketch a proof in your
+
+[![To be a better programmer, write little proofs in your head page screenshot](/assets/stuck-2025-w29-2.jpg#center)](https://the-nerve-blog.ghost.io/to-be-a-better-programmer-write-little-proofs-in-your-head/)
+<br /><hr />
+## A new era of Stack Overflow - Stack Overflow
+[https://stackoverflow.blog/2025/07/10/a-new-era-of-stack-overflow](https://stackoverflow.blog/2025/07/10/a-new-era-of-stack-overflow)
+
+Every year for the last three years, we’ve shared major announcements from the mainstage of WeAreDevelopers World Congress in Berlin at pivotal moments in our journey. In 2023, we launched OverflowAI, our flagship AI initiative for our users and enterprise customers, while last year, we revealed our vision for the Knowledge as a Service model and high-quality, trusted data as the currency that will define the new era of the internet. 2025 so far has been a year marked by significant experimentation and evolution for us as a company and exploration of how we can continue to be of service to the world’s technologists. At the beginning of the year, we along with our Head of Community Philippe Beaudette held our first ever live AMA (‘Ask Me Anything’) session, when we shared our plans to introduce new features and formats of engagement for our users, and hear directly from some of our community members. In that same spirit, today on the WeAreDevelopers stage we unveiled our new vision, mission statement, and the latest product updates for our public platform users and enterprise customers. We wanted to provide a bit of a peek behind the curtain on our future and why Stack Overflow remains the most vital source for technology enthusiasts around the world.
+
+[![A new era of Stack Overflow - Stack Overflow page screenshot](/assets/stuck-2025-w29-3.jpg#center)](https://stackoverflow.blog/2025/07/10/a-new-era-of-stack-overflow)
+<br /><hr />
+## Why I’m Not Proud of My 170,000 YouTube Subscribers
+[https://alifeengineered.substack.com/p/why-im-not-proud-of-my-170000-youtube](https://alifeengineered.substack.com/p/why-im-not-proud-of-my-170000-youtube)
+
+Success is an output you can’t control. Here’s what to focus on instead.
+
+[![Why I’m Not Proud of My 170,000 YouTube Subscribers page screenshot](/assets/stuck-2025-w29-4.jpg#center)](https://alifeengineered.substack.com/p/why-im-not-proud-of-my-170000-youtube)
+<br /><hr />
+## Thread by @sundarpichai on Thread Reader App
+[https://threadreaderapp.com/thread/1945109878990627106.html](https://threadreaderapp.com/thread/1945109878990627106.html)
+
+@sundarpichai: New from our security teams: Our AI agent Big Sleep helped us detect and foil an imminent exploit. We believe this is a first for an AI agent - definitely not the last - giving…
+
+[![Thread by @sundarpichai on Thread Reader App page screenshot](/assets/stuck-2025-w29-5.jpg#center)](https://threadreaderapp.com/thread/1945109878990627106.html)
+<br /><hr />
+## Reflections on OpenAI
+[https://calv.info/openai-reflections](https://calv.info/openai-reflections)
+
+I left OpenAI three weeks ago. I had joined the company back in May 2024.
+
+[![Reflections on OpenAI page screenshot](/assets/stuck-2025-w29-6.jpg#center)](https://calv.info/openai-reflections)
+<br /><hr />
+## AI coding tools are shifting to a surprising place: The terminal | TechCrunch
+[https://techcrunch.com/2025/07/15/ai-coding-tools-are-shifting-to-a-surprising-place-the-terminal](https://techcrunch.com/2025/07/15/ai-coding-tools-are-shifting-to-a-surprising-place-the-terminal)
+
+For years, code-editing tools like Cursor, Windsurf, and GitHub’s Copilot have been the standard for AI-powered software development. But as agentic AI grows more powerful and vibe-coding takes off, a subtle shift has changed how AI systems are interacting with software.
+
+[![AI coding tools are shifting to a surprising place: The terminal | TechCrunch page screenshot](/assets/stuck-2025-w29-7.jpg#center)](https://techcrunch.com/2025/07/15/ai-coding-tools-are-shifting-to-a-surprising-place-the-terminal)
+<br /><hr />
+
+
+[acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
+
+[further_reading:md]
+
+[significant_revisions:md]
+
