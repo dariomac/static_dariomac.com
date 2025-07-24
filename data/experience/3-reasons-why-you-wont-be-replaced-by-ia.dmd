@@ -39,6 +39,29 @@ This presentation talks about why artificial intelligence (AI) will not take awa
 
 The talk explains how AI affects important parts of software engineering, like planning projects, managing what the software needs to do, and checking the quality of the work. It goes beyond just using AI to write code or help in coding tools. The speaker says that even if AI can help with coding and testing tasks, people still need clear plans and good communication.
 
-Finally, the presentation gives advice on how to work well with AI. It suggests using flexible ways of working, like Popcorn Flow or Lean Startup methods. It also says it is very important to have clear requirements for the software. AI can even help us create better requirements together. When it comes to quality, the presentation reminds us that clean code, good tools (like linters), code reviews by humans, and careful testing are still very important—even with AI.
+Finally, the presentation gives advice on how to work well with AI. It suggests using flexible ways of working, like Popcorn Flow or Lean Startup methods. It also says it is very important to have clear requirements for the software. AI can even help us create better requirements together. When it comes to quality, the presentation reminds us that clean code, good tools (like linters), code reviews by humans, and careful testing are still very important, even with AI.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h4F-uMp0Rbk?si=rcsoe3jpAG7Pw-x8#center" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [projects:md]
+
+[related_images:json]
+  [{
+    "filename": "3-reasons-1.png"
+  },{
+    "filename": "3-reasons-2.jpg"
+  },{
+    "filename": "3-reasons-3.jpg"
+  },{
+    "filename": "3-reasons-4.jpg"
+  },{
+    "filename": "3-reasons-5.jpg"
+  },{
+    "filename": "3-reasons-6.jpg"
+  },{
+    "filename": "3-reasons-7.jpg"
+  },{
+    "filename": "3-reasons-8.jpg"
+  },{
+    "filename": "3-reasons-9.jpg"
+  }]
