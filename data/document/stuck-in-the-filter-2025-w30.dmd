@@ -1,0 +1,81 @@
+{
+  "title": "Stuck in the Filter - W30",
+  "date": "2025-07-25",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Links I couldn't process during the week 30 of 2025.",
+    "datebox": "July 25, 2025",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250725",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+
+---
+
+
+[summary:string]
+Links I couldn't process during the week 30 of 2025.
+
+[pub_date:string]
+2025-07-25
+
+[short_description:string]
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
+
+[body:md]
+## I wasted 600 days chasing the wrong kind of growth. Here’s what I learned
+[https://theindiepreneur.substack.com/p/wrong-kind-of-growth](https://theindiepreneur.substack.com/p/wrong-kind-of-growth)
+
+Why focusing on the wrong metrics nearly killed my business
+
+[![I wasted 600 days chasing the wrong kind of growth. Here’s what I learned page screenshot](/assets/stuck-2025-w30-1.jpg#center)](https://theindiepreneur.substack.com/p/wrong-kind-of-growth)
+<br /><hr />
+## Measuring the impact of AI on software engineering – with Laura Tacho
+[https://newsletter.pragmaticengineer.com/p/measuring-the-impact-of-ai-on-software](https://newsletter.pragmaticengineer.com/p/measuring-the-impact-of-ai-on-software)
+
+Laura Tacho, CTO of DX, shares findings from 180+ companies on how AI is really impacting dev productivity, what most teams get wrong, and why measuring dev experience first is critical.
+
+[![Measuring the impact of AI on software engineering – with Laura Tacho page screenshot](/assets/stuck-2025-w30-2.jpg#center)](https://newsletter.pragmaticengineer.com/p/measuring-the-impact-of-ai-on-software)
+<br /><hr />
+## The Art Of Showing Up
+[https://alifeengineered.substack.com/p/the-art-of-showing-up](https://alifeengineered.substack.com/p/the-art-of-showing-up)
+
+The fastest way to get things done is to forget the finish line.
+
+[![The Art Of Showing Up page screenshot](/assets/stuck-2025-w30-3.jpg#center)](https://alifeengineered.substack.com/p/the-art-of-showing-up)
+<br /><hr />
+## METR’s study on how AI affects developer productivity
+[https://newsletter.getdx.com/p/metr-study-on-how-ai-affects-developer-productivity](https://newsletter.getdx.com/p/metr-study-on-how-ai-affects-developer-productivity)
+
+In this study, developers were 19% slower when using AI.
+
+[![METR’s study on how AI affects developer productivity page screenshot](/assets/stuck-2025-w30-4.jpg#center)](https://newsletter.getdx.com/p/metr-study-on-how-ai-affects-developer-productivity)
+<br /><hr />
+## OpenAI’s GPT-5 is coming in early August, per sources
+[https://www.axios.com/2025/07/24/openai-gpt-5-august-2025](https://www.axios.com/2025/07/24/openai-gpt-5-august-2025)
+
+Signs of early testing in the wild hint that the new model is coming soon.
+
+[![OpenAI’s GPT-5 is coming in early August, per sources page screenshot](/assets/stuck-2025-w30-5.jpg#center)](https://www.axios.com/2025/07/24/openai-gpt-5-august-2025)
+<br /><hr />
+
+
+[acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
+
+[further_reading:md]
+
+[significant_revisions:md]
+
