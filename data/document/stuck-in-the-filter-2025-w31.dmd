@@ -1,0 +1,158 @@
+{
+  "title": "Stuck in the Filter - W31",
+  "date": "2025-08-01",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Links I couldn't process during the week 31 of 2025.",
+    "datebox": "August 1, 2025",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250801",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+
+---
+
+
+[summary:string]
+Links I couldn't process during the week 31 of 2025.
+
+[pub_date:string]
+2025-08-01
+
+[short_description:string]
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
+
+[body:md]
+## How Cursor Serves Billions of AI Code Completions Every Day
+[https://blog.bytebytego.com/p/how-cursor-serves-billions-of-ai](https://blog.bytebytego.com/p/how-cursor-serves-billions-of-ai)
+
+In this article, we will take a look at the key features of Cursor, how those features work, and the infrastructure stack that powers it.
+
+[![How Cursor Serves Billions of AI Code Completions Every Day page screenshot](/assets/stuck-2025-w31-1.jpg#center)](https://blog.bytebytego.com/p/how-cursor-serves-billions-of-ai)
+<br /><hr />
+## Building great SDKs
+[https://newsletter.pragmaticengineer.com/p/building-great-sdks](https://newsletter.pragmaticengineer.com/p/building-great-sdks)
+
+A guide to creating SDKs that devs – and LLMs – will find a breeze to use, plus an overview of modern approaches for building and maintaining SDKs. By veteran SDK engineer, Quentin Pradet
+
+[![Building great SDKs page screenshot](/assets/stuck-2025-w31-2.jpg#center)](https://newsletter.pragmaticengineer.com/p/building-great-sdks)
+<br /><hr />
+## The Sequence Radar #693: A New Series About Interpretability in Foundation Models
+[https://thesequence.substack.com/p/the-sequence-radar-a-new-series-about](https://thesequence.substack.com/p/the-sequence-radar-a-new-series-about)
+
+What are our best chances to understand AI black boxes ?
+
+[![The Sequence Radar #693: A New Series About Interpretability in Foundation Models page screenshot](/assets/stuck-2025-w31-3.jpg#center)](https://thesequence.substack.com/p/the-sequence-radar-a-new-series-about)
+<br /><hr />
+## AI is eating the Internet
+[https://fika.bar/paoramen/ai-is-eating-the-internet-01K10JG1SHGZQHN61HPGWPXN60](https://fika.bar/paoramen/ai-is-eating-the-internet-01K10JG1SHGZQHN61HPGWPXN60)
+
+An exploration of the Internet to come
+
+[![AI is eating the Internet page screenshot](/assets/stuck-2025-w31-4.jpg#center)](https://fika.bar/paoramen/ai-is-eating-the-internet-01K10JG1SHGZQHN61HPGWPXN60)
+<br /><hr />
+## Surprising no one, new research says AI Overviews cause massive drop in search clicks
+[https://arstechnica.com/ai/2025/07/research-shows-google-ai-overviews-reduce-website-clicks-by-almost-half/](https://arstechnica.com/ai/2025/07/research-shows-google-ai-overviews-reduce-website-clicks-by-almost-half/)
+
+The Pew Research Center analysis shows how hard AI is hitting web traffic.
+
+[![Surprising no one, new research says AI Overviews cause massive drop in search clicks page screenshot](/assets/stuck-2025-w31-5.jpg#center)](https://arstechnica.com/ai/2025/07/research-shows-google-ai-overviews-reduce-website-clicks-by-almost-half/)
+<br /><hr />
+## Working Effectively with AI Coding Tools like Claude Code
+[https://sajalsharma.com/posts/effective-ai-coding/](https://sajalsharma.com/posts/effective-ai-coding/)
+
+A practical guide to working effectively with AI coding tools like Claude Code, covering mindset shifts, quality control strategies, and team collaboration workflows for modern software development.
+
+[![Working Effectively with AI Coding Tools like Claude Code page screenshot](/assets/stuck-2025-w31-6.jpg#center)](https://sajalsharma.com/posts/effective-ai-coding/)
+<br /><hr />
+## jola.dev - When Software Engineers Think They Need More Focus Time
+[https://jola.dev/posts/enough-focus-time](https://jola.dev/posts/enough-focus-time)
+
+Johanna Larsson is a software engineer, manager, writer, speaker. With over 14 years of experience in software development and management, she has worked with clients from various industries, including finance, healthcare, and education. She is passionate about creating innovative solutions that solve real-world problems. She is also an advocate for diversity and inclusion in the tech industry. She believes that technology can be a force for good and strives to make a positive impact in the world. She is committed to using her skills and expertise to create a better future for all.
+
+[![jola.dev - When Software Engineers Think They Need More Focus Time page screenshot](/assets/stuck-2025-w31-7.jpg#center)](https://jola.dev/posts/enough-focus-time)
+<br /><hr />
+## Stop Solving Problems. Start Anticipating Them.
+[https://alifeengineered.substack.com/p/stop-solving-problems-start-anticipating](https://alifeengineered.substack.com/p/stop-solving-problems-start-anticipating)
+
+A practical guide to looking around corners, at work, in your career, and with your life.
+
+[![Stop Solving Problems. Start Anticipating Them. page screenshot](/assets/stuck-2025-w31-8.jpg#center)](https://alifeengineered.substack.com/p/stop-solving-problems-start-anticipating)
+<br /><hr />
+## Measuring engineering productivity in the AI era
+[https://newsletter.getdx.com/p/measuring-engineering-productivity-in-the-ai-era](https://newsletter.getdx.com/p/measuring-engineering-productivity-in-the-ai-era)
+
+How to track AI’s impact, keep an eye on quality, and use metrics to drive action.
+
+[![Measuring engineering productivity in the AI era page screenshot](/assets/stuck-2025-w31-9.jpg#center)](https://newsletter.getdx.com/p/measuring-engineering-productivity-in-the-ai-era)
+<br /><hr />
+## Context Engineering for Agents
+[https://rlancemartin.github.io/2025/06/23/context_engineering](https://rlancemartin.github.io/2025/06/23/context_engineering)
+
+Patterns for managing agent context.
+
+[![Context Engineering for Agents page screenshot](/assets/stuck-2025-w31-10.jpg#center)](https://rlancemartin.github.io/2025/06/23/context_engineering)
+<br /><hr />
+## AI Is Wrecking an Already Fragile Job Market for College Graduates
+[https://www.wsj.com/lifestyle/careers/ai-entry-level-jobs-graduates-b224d624](https://www.wsj.com/lifestyle/careers/ai-entry-level-jobs-graduates-b224d624)
+
+Companies have long leaned on entry-level workers to do grunt work that doubles as on-the-job training. Now ChatGPT and other bots can do many of those chores.
+
+[![AI Is Wrecking an Already Fragile Job Market for College Graduates page screenshot](/assets/stuck-2025-w31-11.jpg#center)](https://www.wsj.com/lifestyle/careers/ai-entry-level-jobs-graduates-b224d624)
+<br /><hr />
+## I Know When You’re Vibe Coding
+[https://alexkondov.com/i-know-when-youre-vibe-coding](https://alexkondov.com/i-know-when-youre-vibe-coding)
+
+I shouldn’t have to care about this. I don’t want to care about how someone’s code gets into the IDE. Whether you wrote it by hand, copied it from a forum…
+
+[![I Know When You’re Vibe Coding page screenshot](/assets/stuck-2025-w31-12.jpg#center)](https://alexkondov.com/i-know-when-youre-vibe-coding)
+<br /><hr />
+## Vibe code is legacy code
+[https://blog.val.town/vibe-code](https://blog.val.town/vibe-code)
+
+Updates and articles from the Val Town team
+
+[![Vibe code is legacy code page screenshot](/assets/stuck-2025-w31-13.jpg#center)](https://blog.val.town/vibe-code)
+<br /><hr />
+## 📛 Why most engineers fail at knowledge sharing (6 habits that make you stand out)
+[https://strategizeyourcareer.com/p/why-most-engineers-fail-at-knowledge](https://strategizeyourcareer.com/p/why-most-engineers-fail-at-knowledge)
+
+Most engineers fail at knowledge sharing, hurting their growth. Learn 6 habits to share knowledge like a senior and stand out in your team.
+
+[![📛 Why most engineers fail at knowledge sharing (6 habits that make you stand out) page screenshot](/assets/stuck-2025-w31-14.jpg#center)](https://strategizeyourcareer.com/p/why-most-engineers-fail-at-knowledge)
+<br /><hr />
+## Choose Boring Technology, Revisited | Aaron Brethorst
+[https://www.brethorsting.com/blog/2025/07/choose-boring-technology,-revisited](https://www.brethorsting.com/blog/2025/07/choose-boring-technology,-revisited)
+
+Personal website for Aaron Brethorst - Seattleite, technology leader, photographer, transit enthusiast, erstwhile non-runner.
+
+[![Choose Boring Technology, Revisited | Aaron Brethorst page screenshot](/assets/stuck-2025-w31-15.jpg#center)](https://www.brethorsting.com/blog/2025/07/choose-boring-technology,-revisited)
+<br /><hr />
+## Agentic Coding Things That Didn’t Work
+[https://lucumr.pocoo.org/2025/7/30/things-that-didnt-work](https://lucumr.pocoo.org/2025/7/30/things-that-didnt-work)
+
+Some of my attempts to make agents work better that just didn’t work.
+
+[![Agentic Coding Things That Didn’t Work page screenshot](/assets/stuck-2025-w31-16.jpg#center)](https://lucumr.pocoo.org/2025/7/30/things-that-didnt-work)
+<br /><hr />
+
+
+[acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
+
+[further_reading:md]
+
+[significant_revisions:md]
+

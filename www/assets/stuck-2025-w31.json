@@ -1,0 +1,53 @@
+{
+  "week": 31,
+  "stuck": [
+    {
+      "url": "https://blog.bytebytego.com/p/how-cursor-serves-billions-of-ai"
+    },
+    {
+      "url": "https://newsletter.pragmaticengineer.com/p/building-great-sdks"
+    },
+    {
+      "url": "https://thesequence.substack.com/p/the-sequence-radar-a-new-series-about"
+    },
+    {
+      "url": "https://fika.bar/paoramen/ai-is-eating-the-internet-01K10JG1SHGZQHN61HPGWPXN60"
+    },
+    {
+      "url": "https://arstechnica.com/ai/2025/07/research-shows-google-ai-overviews-reduce-website-clicks-by-almost-half/"
+    },
+    {
+      "url": "https://sajalsharma.com/posts/effective-ai-coding/"
+    },
+    {
+      "url": "https://jola.dev/posts/enough-focus-time"
+    },
+    {
+      "url": "https://alifeengineered.substack.com/p/stop-solving-problems-start-anticipating"
+    },
+    {
+      "url": "https://newsletter.getdx.com/p/measuring-engineering-productivity-in-the-ai-era"
+    },
+    {
+      "url": "https://rlancemartin.github.io/2025/06/23/context_engineering"
+    },
+    {
+      "url": "https://www.wsj.com/lifestyle/careers/ai-entry-level-jobs-graduates-b224d624"
+    },
+    {
+      "url":"https://alexkondov.com/i-know-when-youre-vibe-coding"
+    },
+    {
+      "url":"https://blog.val.town/vibe-code"
+    },
+    {
+      "url":"https://strategizeyourcareer.com/p/why-most-engineers-fail-at-knowledge"
+    },  
+    {
+      "url":"https://www.brethorsting.com/blog/2025/07/choose-boring-technology,-revisited"  
+    },  
+    {
+      "url":"https://lucumr.pocoo.org/2025/7/30/things-that-didnt-work" 
+    }
+  ]
+}
