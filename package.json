@@ -16,6 +16,7 @@
     "build": "find . -name '.DS_Store' -type f -delete && node builder.mjs data/ www/ layouts/ --clear-all",
     "build-notes": "find . -name '.DS_Store' -type f -delete && node notes-builder.mjs ../bra1n data/",
     "build-all": "npm run build-notes && npm run build",
+    "build-file": "node builder.mjs data www-test layouts --file",
     "dev": "PORT=7007 node server.mjs",
     "start": "node server.mjs",
     "deploy": "timeout 15 bash -c 'while [[ \"$(curl -s -o /dev/null -X OPTIONS -w ''%{http_code}'' https://dariomac.com/pullit)\" != \"204\" ]]; do sleep 1; done'",
