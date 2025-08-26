@@ -1,0 +1,47 @@
+{
+  "title": "Speed isn't Enough - How to Code with Velocity Using AI",
+  "date": "2025-08-21",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "progress_2",
+    "content": "[title]",
+    "datebox": "Aug 2025",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250827",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy Meetups"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+This talk explores how coding with AI can feel chaotic, much like navigating a first-person shooter without instructions. We will delve into strategies to transform this chaos into an effective process by utilizing the OODA loop mental model.
+
+[duration:string]
+40 minutes
+
+[place_url:string]
+https://maps.app.goo.gl/suFgTY9aETzJtZSQ8
+
+[place:string]
+Público Coworking – Lomas de Chapultepec, Ciudad de México, México
+
+[content:md]
+This meetup called "Working with AI is easy; understanding it, not so much" will have two talks. These talks explores the challenges and strategies for effectively integrating AI into workflows, emphasizing the importance of comprehension over mere usage.
+
+![Invitation to the Howdy Meetup in CDMX with both speakers](/assets/howdy-meetup-cdmx-invite.jpeg#center)
+
+In the first talk, “Rápido no es suficiente: cómo ser veloz codificando con IA" ("Speed is not enough: How to code with speed using AI”), I will discuss the chaotic landscape of AI-assisted coding and how it can often feel like navigating a first-person shooter game without a manual. We will dig into strategies for transforming this chaos into an organized and efficient coding process through the use of the OODA loop. Attendees will learn how to maintain control and direction in their development projects while utilizing AI to its full potential.
+
+In the second talk, “IA para desarrolladores: de los conceptos clave a un proyecto real” ("AI for Developers: From Key Concepts to a Real Project”), another speaker Daniel [Enriquez @DevCaress](https://www.linkedin.com/in/daniel-enriquez-lucas/) will focus on practical approaches for integrating AI into real projects. He will share insights on how to bridge the gap between theoretical knowledge and hands-on implementation, ensuring that developers can effectively leverage AI tools in their work.
+
+[projects:md]
