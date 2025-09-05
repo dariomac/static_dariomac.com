@@ -1,0 +1,25 @@
+{
+  "week": 36,
+  "stuck": [
+    {
+      "title": "The cost of compute: A $7 trillion race to scale data centers",
+      "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-cost-of-compute-a-7-trillion-dollar-race-to-scale-data-centers",
+      "screenshot": "data/document/assets/stuck-2025-w36-7-trillion-data-centers.png"
+    },
+    {
+      "url": "https://agents.md/"
+    },
+    {
+      "url": "https://blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/"
+    },
+    {
+      "url": "https://drayseozturk.org/2025/02/05/prompting/"
+    },
+    {
+      "url": "https://beyond.addy.ie/"
+    },
+    {
+      "url": "https://pivot-to-ai.com/2025/09/04/openai-is-using-legal-threats-to-harass-its-critics/"
+    }
+  ]
+}

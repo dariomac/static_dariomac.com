@@ -1,0 +1,88 @@
+{
+  "title": "Stuck in the Filter - W36",
+  "date": "2025-09-05",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Links I couldn't process during the week 36 of 2025.",
+    "datebox": "September 5, 2025",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250905",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+
+---
+
+
+[summary:string]
+Links I couldn't process during the week 36 of 2025.
+
+[pub_date:string]
+2025-09-05
+
+[short_description:string]
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
+
+[body:md]
+## The cost of compute: A $7 trillion race to scale data centers
+[https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-cost-of-compute-a-7-trillion-dollar-race-to-scale-data-centers](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-cost-of-compute-a-7-trillion-dollar-race-to-scale-data-centers)
+
+AI is fueling high demand for compute power, with companies investing billions in infrastructure. We look at how to approach this growing challenge.
+
+[![The cost of compute: A $7 trillion race to scale data centers page screenshot](/assets/stuck-2025-w36-1.jpg#center)](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-cost-of-compute-a-7-trillion-dollar-race-to-scale-data-centers)
+<br /><hr />
+## AGENTS.md
+[https://agents.md/](https://agents.md/)
+
+AGENTS.md is a simple, open format for guiding coding agents. Think of it as a README for agents.
+
+[![AGENTS.md page screenshot](/assets/stuck-2025-w36-2.jpg#center)](https://agents.md/)
+<br /><hr />
+## Weaponizing image scaling against production AI systems
+[https://blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/](https://blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/)
+
+In this blog post, we’ll detail how attackers can exploit image scaling on Gemini CLI, Vertex AI Studio, Gemini’s web and API interfaces, Google Assistant, Genspark, and other production AI systems. We’ll also explain how to mitigate and defend against these attacks, and we’ll introduce Anamorpher, our open-source tool that lets you explore and generate these crafted images.
+
+[![Weaponizing image scaling against production AI systems page screenshot](/assets/stuck-2025-w36-3.jpg#center)](https://blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/)
+<br /><hr />
+## Prompt Engineering: Enhance AI Outputs with TCREI Simplified
+[https://drayseozturk.org/2025/02/05/prompting/](https://drayseozturk.org/2025/02/05/prompting/)
+
+What is Prompting? First, what is prompting? Prompting, or prompt engineering, is the practice of designing clear, structured inputs to guide AI in generating accurate and useful responses. Instead…
+
+[![Prompt Engineering: Enhance AI Outputs with TCREI Simplified page screenshot](/assets/stuck-2025-w36-4.jpg#center)](https://drayseozturk.org/2025/02/05/prompting/)
+<br /><hr />
+## Beyond Vibe Coding - A Guide To AI-Assisted Development
+[https://beyond.addy.ie/](https://beyond.addy.ie/)
+
+Transform your development workflow with AI. Learn from Google Chrome’s Engineering Leader how to master AI-assisted development and build better software.
+
+[![Beyond Vibe Coding - A Guide To AI-Assisted Development page screenshot](/assets/stuck-2025-w36-5.jpg#center)](https://beyond.addy.ie/)
+<br /><hr />
+## OpenAI is using legal threats to harass its critics
+[https://pivot-to-ai.com/2025/09/04/openai-is-using-legal-threats-to-harass-its-critics/](https://pivot-to-ai.com/2025/09/04/openai-is-using-legal-threats-to-harass-its-critics/)
+
+OpenAI has found a new way to suck: harassing its critics with spurious legal threats and subpoenas! The paper-thin justification for this is that OpenAI thinks anyone hampering it in any way from …
+
+[![OpenAI is using legal threats to harass its critics page screenshot](/assets/stuck-2025-w36-6.jpg#center)](https://pivot-to-ai.com/2025/09/04/openai-is-using-legal-threats-to-harass-its-critics/)
+<br /><hr />
+
+
+[acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
+
+[further_reading:md]
+
+[significant_revisions:md]
+
