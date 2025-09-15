@@ -1,0 +1,53 @@
+{
+  "title": "Prompt Engineering and the Future of Programming",
+  "date": "2025-09-15",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Sep 2025",
+    "extlink": "https://www.youtube.com/live/I7fjLxwwl28",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250915",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy Dev Day 2025"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+
+[duration:string]
+ Friday, September 12th (1 hr)
+
+[place_url:string]
+https://www.youtube.com/live/I7fjLxwwl28
+
+[place:string]
+Remote
+
+[content:md]
+How is AI changing the way we code? In this talk, we’ll dive into the essentials of prompt engineering, explore practical frameworks for building with Large Language Models, and discover how concepts like _“vibe coding”_ are reshaping software development. Together, we’ll look ahead at what this shift means for the future of programming — moving from a purely technical discipline to one that’s more collaborative, creative, and AI-powered.
+
+This talk traces the evolution of software paradigms: from traditional human-written code (Software 1.0), to neural networks trained on data (Software 2.0), and now to Large Language Models (Software 3.0) that can be programmed through natural language. We cover the fundamentals of prompt engineering, including practical prompting frameworks and a Custom Agent framework for building conversational AI systems.
+The presentation also introduces “vibe coding,” an emerging programming approach where LLMs assist in code generation, along with strategies for using it responsibly in production environments. Finally, we explore the possible future of programming — shifting from primarily an engineering discipline toward an educational and collaborative one — and briefly consider how advances in LLMs and world models may connect to longer-term paths toward more general AI.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I7fjLxwwl28?si=pq6xDVqqnlnmFWZL#center" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Meet the Speakers:
+
+**Darío Macchi** – Senior Software Engineer & Developer Advocate at Howdy, with 20+ years of coding experience across JavaScript, Ruby, .Net, and Java. Darío also teaches Software Engineering at Universidad ORT Uruguay and is passionate about building high-performance architectures and mentoring new talent.
+ 
+**Felipe Ortiz Huerta** – AI Specialist at Howdy, with a PhD in Quantum Photonics and over 7 years of academic research experience. Felipe has applied Machine Learning to quantum optics research and now brings his expertise to building practical AI solutions.
+
+![Darío Macchi && Felipe Ortiz Huerta picture as speakers](assets/dev-day-2025-invite.png#center)
+
+[projects:md]
