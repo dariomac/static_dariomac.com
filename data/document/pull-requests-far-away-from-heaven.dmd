@@ -17,7 +17,7 @@
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "https://www.howdy.com/blog/pull-requests-far-away-from-heaven/",
+  "canonical": "",
   "custom_header": ""
 }
 
@@ -98,7 +98,7 @@ It should be integrated with the CD/CI pipeline so contributors can validate the
 Finally, spread the culture of objective quality patterns  regarding clean code. Avoid well documented code smells, or anti-patterns in the context of pull requests approval processes. At least until researchers find how to make the PR process more quality-centered again!
 
 [acknowledgments:md]
-This post, originally on [https://www.howdy.com/blog/pull-requests-far-away-from-heaven/](https://www.howdy.com/blog/pull-requests-far-away-from-heaven/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+This post, originally on `https://www.howdy.com/blog/pull-requests-far-away-from-heaven/`, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 

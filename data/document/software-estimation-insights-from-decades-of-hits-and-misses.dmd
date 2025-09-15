@@ -17,7 +17,7 @@
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "https://www.howdy.com/blog/software-estimation-insights-from-decades-of-hits-and-misses/",
+  "canonical": "",
   "custom_header": ""
 }
 
@@ -132,7 +132,7 @@ AI can assist in various areas of estimation, but it cannot replace the need for
 So let’s enhance our estimation skills by learning from past projects, seeking expert opinions when needed, conducting research to mitigate uncertainties, and utilizing techniques like spikes or budget allocation for better planning.
 
 [acknowledgments:md]
-This post, originally on [https://www.howdy.com/blog/software-estimation-insights-from-decades-of-hits-and-misses/](https://www.howdy.com/blog/software-estimation-insights-from-decades-of-hits-and-misses/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+This post, originally on `https://www.howdy.com/blog/software-estimation-insights-from-decades-of-hits-and-misses/`, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 

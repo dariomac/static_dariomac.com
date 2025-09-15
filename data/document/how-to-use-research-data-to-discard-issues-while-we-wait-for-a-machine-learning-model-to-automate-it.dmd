@@ -17,7 +17,7 @@
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "https://www.howdy.com/blog/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it/",
+  "canonical": "",
   "custom_header": ""
 }
 
@@ -118,7 +118,7 @@ Panichella et al. did an amazing job researching a novel topic that is a real pr
 -   S. Panichella, G. Canfora and A. Di Sorbo, “_Won’t We Fix this Issue?_”Qualitative characterization and automated identification of wontfix issues on GitHub, _Information and Software Technology_ (2021), doi: [https://doi.org/10.1016/j.infsof.2021.106665](https://doi.org/10.1016/j.infsof.2021.106665).
 
 [acknowledgments:md]
-This post, originally on [https://www.howdy.com/blog/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it/](https://www.howdy.com/blog/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+This post, originally on `https://www.howdy.com/blog/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it/`, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 

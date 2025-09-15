@@ -17,7 +17,7 @@
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "https://www.howdy.com/blog/unearthing-user-needs-for-true-innovation/",
+  "canonical": "",
   "custom_header": ""
 }
 
@@ -44,7 +44,7 @@ UX researchers and product managers emphasize understanding these deeper needs t
 
 ### **Avoiding Suboptimal Solutions**
 
-Teams may inadvertently settle into local maxima—points where incremental improvements no longer lead to significant gains—if they focus solely on enhancing features without reevaluating underlying needs. This situation can prevent organizations from reaching their [full potential in innovation](https://www.howdy.com/blog/how-generative-ai-can-accelerate-innovation/) (global maxima).
+Teams may inadvertently settle into local maxima—points where incremental improvements no longer lead to significant gains—if they focus solely on enhancing features without reevaluating underlying needs. This situation can prevent organizations from reaching their full potential in innovation (global maxima).
 
 A historical example is how the Wright brothers approached powered flight. They didn’t just focus on adding power or enlarging wings (features); they realized stable control (a need) was vital. Their invention of three-axis control revolutionized aviation by addressing this essential requirement for stable flight.
 
@@ -84,7 +84,7 @@ Sometimes embracing simplicity—symbolized by choosing pencils over pens—can 
 Let us continue with this lesson: addressing real-world problems often involves returning to basic principles while looking for innovative opportunities.
 
 [acknowledgments:md]
-This post, originally on [https://www.howdy.com/blog/unearthing-user-needs-for-true-innovation/](https://www.howdy.com/blog/unearthing-user-needs-for-true-innovation/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+This post, originally on `https://www.howdy.com/blog/unearthing-user-needs-for-true-innovation/`, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 

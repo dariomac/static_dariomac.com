@@ -17,7 +17,7 @@
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "https://www.howdy.com/blog/do-software-developers-procrastinate-more/",
+  "canonical": "",
   "custom_header": ""
 }
 
@@ -43,7 +43,7 @@ Ok, maybe we need to take a break from police tv-shows, but while we go to a 10-
 
 ### **Why do yo procrastinate? – the _motive_**
 
-There are a ton of reasons why a developer might procrastinate, but instead of listing them, let us analyze just the opposite to get a different perspective: [what gets you motivated to keep working?](https://www.howdy.com/blog/take-the-best-out-of-your-software-team-%f0%9f%a7%91%f0%9f%92%bb%f0%9f%9a%80/)
+There are a ton of reasons why a developer might procrastinate, but instead of listing them, let us analyze just the opposite to get a different perspective: what gets you motivated to keep working?
 
 As a software developer, have you ever experienced the sensation of time whizzing by? That everything aligns seamlessly? You are aware of this feeling: You’re engaged in a task and there’s an innate belief that it’s going to be exceptional. There’s a sense of expertise.
 
@@ -96,7 +96,7 @@ However, understanding these triggers and acknowledging that they exist is the f
 Finally, it’s important for developers to remember that everyone experiences moments of procrastination. Luckily, it’s not a crime but human nature. The key is not to beat oneself up  but rather identify the cause and take steps towards managing it effectively. After all, productivity isn’t about being busy all the time; it’s about working smarter, not harder. Procrastination might be a tough nut to crack but with determination and perseverance, developers can achieve their full potential.
 
 [acknowledgments:md]
-This post, originally on [https://www.howdy.com/blog/do-software-developers-procrastinate-more/](https://www.howdy.com/blog/do-software-developers-procrastinate-more/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+This post, originally on `https://www.howdy.com/blog/do-software-developers-procrastinate-more/`, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 
