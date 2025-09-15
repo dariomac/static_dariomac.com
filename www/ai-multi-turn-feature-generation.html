@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Essays | Darío Macchi</title>
+    <title>AI Multi-Turn Feature Generation | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -216,15 +216,94 @@
         padding: 5px;
       }
 
+      .essay {
+        background-color: #f2f2f2;
+        border: 0px !important;
+        margin-left: inherit;
+      }
+
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
+      }
+
+      .essay p, .essay li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: inherit;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h4 {
+        font-weight: bold;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .further-reading {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
+      }
+
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
-
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="All the eassays I wrote. Generally, they are piece of writing that gives my own argument, but in some cases, they can be papers, articles, or short stories." />
+    <meta name="description" content="This document describes a technique I use to implement features with the help of AI tools, such as Claude Code, in a controlled and iterative manner. The goal is to ensure that the generated code aligns closely with my expectations and requirements." />
     <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
     <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -245,7 +324,7 @@
     <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
     <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
     
-    <link rel="canonical" href="https://dariomac.com/essays" />
+    <link rel="canonical" href="https://dariomac.com/ai-multi-turn-feature-generation" />
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
@@ -291,9 +370,9 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta property="og:url" content="/essays" />
-    <meta property="og:title" content="Essays" />
-    <meta property="og:description" content="" />
+    <meta property="og:url" content="/ai-multi-turn-feature-generation" />
+    <meta property="og:title" content="AI Multi-Turn Feature Generation" />
+    <meta property="og:description" content="This document describes a technique I use to implement features with the help of AI tools, such as Claude Code, in a controlled and iterative manner. The goal is to ensure that the generated code aligns closely with my expectations and requirements." />
     <meta property="og:site_name" content="Darío Macchi personal website" />
     <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
     <meta property="og:image:type" content="image/png">
@@ -301,8 +380,8 @@
     
     <meta name="twitter:site" content="@_dariomac">
     <meta name="twitter:creator" content="@_dariomac">
-    <meta name="twitter:title" content="Essays">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="AI Multi-Turn Feature Generation">
+    <meta name="twitter:description" content="This document describes a technique I use to implement features with the help of AI tools, such as Claude Code, in a controlled and iterative manner. The goal is to ensure that the generated code aligns closely with my expectations and requirements.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:widgets:new-embed-design" content="on">
     <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
@@ -359,6 +438,28 @@
             })
     </script>
 
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://dariomac.com/"
+          },
+          "headline": "AI Multi-Turn Feature Generation",
+          "alternativeHeadline": "Technique to implement features with AI in a controlled and iterative manner.",
+          "url": "https://dariomac.com/",
+          "datePublished": "2025-09-12",
+          "dateCreated": "2025-09-12",
+          "description": "This document describes a technique I use to implement features with the help of AI tools, such as Claude Code, in a controlled and iterative manner. The goal is to ensure that the generated code aligns closely with my expectations and requirements.",
+          "author": {
+            "@id": "https://dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
   </head>
   <body>
     <div class="board_view details">
@@ -379,441 +480,104 @@
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board">
+        <div class="dm-board essay">
           <article>
-            <div class="row splitter">
-              <div class="col-md-12 text-center">Details</div>
-            </div>
             <div class="row featured">
-              <div class="col-md-12">
+              <div class="offset-md-3 col-md-6 sheet">
                 <header>
-                  <h1>Essays</h1>
+                  <h1>AI Multi-Turn Feature Generation</h1>
+                  <p class="date">2025-09-12</p>
                 </header>
-                <section class="content">
-                  
-                  <ul>
-                      <li>
-                        <a href="/ai-multi-turn-feature-generation">
-                            AI Multi-Turn Feature Generation
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/stuck-in-the-filter-2025-w36">
-                            Stuck in the Filter - W36
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/stuck-in-the-filter-2025-w32">
-                            Stuck in the Filter - W32
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/stuck-in-the-filter-2025-w31">
-                            Stuck in the Filter - W31
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/stuck-in-the-filter-2025-w30">
-                            Stuck in the Filter - W30
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/stuck-in-the-filter-2025-w29">
-                            Stuck in the Filter - W29
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/stuck-in-the-filter-2025-w26">
-                            Stuck in the Filter - W26
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/stuck-in-the-filter-2025-w25">
-                            Stuck in the Filter - W25
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/do-software-developers-procrastinate-more">
-                            Do software developers procrastinate more?
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/strategies-to-make-smart-choices-in-technology">
-                            Strategies to Make Smart Choices in Technology
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/unearthing-user-needs-for-true-innovation">
-                            Unearthing User Needs for True Innovation
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/code-like-a-pro-mental-models-for-dev-success">
-                            Code Like a Pro: Mental Models for Dev Success
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/redefining-seniority-from-ticket-closers-to-problem-framers">
-                            Redefining Seniority: From Ticket Closers to Problem Framers
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/costs-of-delay-why-timely-delivery-matters">
-                            Hidden Costs of Delay: Why Timely Delivery Matters
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/adapting-to-the-era-of-ai-challenges-and-opportunities-for-experienced-developers">
-                            The era of AI: Challenges and opportunities for developers
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/software-estimation-insights-from-decades-of-hits-and-misses">
-                            Software Estimation: Insights from Decades of Hits and Misses
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/make-jobs-collaborate">
-                            Make jobs collaborate
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/from-developer-to-brand-how-personal-branding-can-skyrocket-your-career">
-                            From developer to brand: How personal branding can skyrocket your career
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/senior-juniorism">
-                            Senior juniorism
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/coding-in-the-age-of-ai-embracing-the-developers-evolution">
-                            Coding in the Age of AI: Embracing the Developer’s Evolution
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/focused-conversation">
-                            Focused Conversation
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/the-crucial-role-of-software-communities-in-developers-growth">
-                            The crucial role of Software Communities in developers’s growth
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/the-pac-man-rule">
-                            The Pac-Man rule
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/circular-growth-loops">
-                            Circular growth loops
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/not-another-cheat-sheet-about-technical-interviews">
-                            Not another cheat sheet about technical interviews
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/the-dos-and-donts-of-asking-for-help-in-software-development">
-                            The Do’s and Don’ts of Asking for Help in Software Development
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/how-chatgpt-helps-to-solve-coding-challenges">
-                            How ChatGPT helps to solve coding challenges
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/es/documinding">
-                            Documinding
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/es/problemas-sobre-documentacion">
-                            Problemas sobre documentación
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/be-the-goat-software-engineer-know-your-clients">
-                            Be the GOAT software engineer: Know your clients
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/questions-to-ask-your-interviewer">
-                            Questions to ask your interviewer
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/crypto-how-it-started">
-                            Crypto: How it started
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/how-the-covid-pandemic-changed-the-world-of-work">
-                            How the COVID pandemic changed the world of work
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/mythbusting-the-word-process-introduction">
-                            Mythbusting: the word process
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/covid19-the-van-helsing-of-zombies-orcs-scrum-team">
-                            Covid 19: the Van Helsing of Zombies &amp; Orcs Scrum Team
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/dmarc">
-                            DMARC
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/how-to-improve-the-seo-of-a-react-application">
-                            SEO &amp; React
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/things-to-take-into-account-before-a-massive-email-campaign">
-                            Before massive email campaigns
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/mock">
-                            Mock
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/how-to-use-research-data-to-discard-issues-while-we-wait-for-a-machine-learning-model-to-automate-it">
-                            Detecting “Wont Fix” Issues with Machine Learning
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/pull-requests-far-away-from-heaven">
-                            Learn about what makes your PR accepted/rejected
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/back-to-the-roots-of-agile">
-                            Back to the roots of agile
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/software-development-process-for-it-product-based-startups">
-                            Software development process for IT product based startups
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/rescued-by-kanban-a-real-life-story-of-using-scrum-and-kanban-together">
-                            Rescued by Kanban: A Real-Life Story of Using Scrum and Kanban Together
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/why-I-decided-to-do-research-digests">
-                            Why I decided to do research digests
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/changeset-based-approach-to-improve-adoption-of-agile-code-review">
-                            Changeset-based approach to improve adoption of agile code review
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/doomsayer">
-                            Doomsayer
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/react-native-notes">
-                            React Native Notes
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/behind-the-scenes-of-ethereum-pet-shop-tutorial">
-                            Behind the scenes of Ethereum Pet Shop tutorial
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/blockchain-101-an-introduction">
-                            Blockchain 101 An Introduction
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/hipaa-for-software-developers">
-                            HIPAA for Software Developers
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/how-bullet-journal-changed-my-work-routine">
-                            How bullet journal changed my work routine
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/nodejs-logging-solutions">
-                            Node.js logging solutions
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/agile-principles">
-                            Agile Principles
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/scrum-zombies-and-orcs-teams">
-                            Scrum Zombies &amp; Orcs teams
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/ways-to-be-productive-when-your-brain-is-dead">
-                            Ways to be productive when your brain is dead
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/html-to-json">
-                            HTML to JSON Intermediate representation
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/minimum-viable-product">
-                            Minimum Viable Product
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/constant-comparisons">
-                            Constant Comparisons
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/personal-kanban-with-kanbanize">
-                            Personal Kanban with Kanbanize
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/first-two-weeks-rest-flow-e-life">
-                            The First Two Weeks Of The Rest Of My Flow-e Life
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/dot-voting">
-                            Dot voting
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/code-review--what-is-it-and-why-is-it-important">
-                            Code Review: What Is It and Why Is It Important?
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/es/niveles-de-abstracción">
-                            Niveles de Abstracción
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/ask-what-keeps-us-up-at-night">
-                            Ask what keeps us up at night
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/are-you-hot-enough">
-                            Are you HOT enough?
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/mobile-mvps-using-cordova">
-                            Mobile MVPs using Cordova
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/customerio-service-and-how-to-use-it-from-ruby">
-                            Customer.io service and how to use it from Ruby
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/swagger--easy-api-interface">
-                            Swagger: easy API interface
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/better-errors-railspanel--development-aids">
-                            Better Errors &amp; RailsPanel: development aids
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/lessons-learned-about-google-places">
-                            Lessons learned about Google Places
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/helping-a-startup-in-troubles-to-reach-on-time-to-an-investors-meeting">
-                            Helping a startup in troubles to reach on time to an investors meeting
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/what-is-an-mvp">
-                            What is an MVP?
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/agile-open-space-2014">
-                            Agile Open Space 2014
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/picoresearchs">
-                            Pico-Researchs (p-researchs)
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/railsconf2014">
-                            RailsConf2014
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/jquery-append-into-heavy-loaded-dom-trees">
-                            JQuery append into heavy loaded DOM trees
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/sprint-backlog-changes-and-one-week-sprint-as-temporal-solution">
-                            Sprint backlog changes and one-week sprint as temporal solution
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/jsconf2014">
-                            JSConf 2014 Virtual Covering - Montevideo - Uruguay
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/software-engineering-and-strandbeests">
-                            Software Engineering and Strandbeests
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/ie-vs-eg">
-                            i.e vs. e.g
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/raphael-utils-doc">
-                            Raphaël Utilities
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/swingimprover-manual">
-                            SwingImprover manual
-                        </a>
-                      </li>
-                  </ul>
+
+                
+                <section class="description">
+                  <p>
+                    This document describes a technique I use to implement features with the help of AI tools, such as Claude Code, in a controlled and iterative manner. The goal is to ensure that the generated code aligns closely with my expectations and requirements.
+                  </p>
+                </section>
+
+                <section>
+                    <h3><a name="rationale-behind-the-need-for-ai-multi-turn-feature-generation" class="anchor">
+<a name="rationale-behind-the-need-for-ai-multi-turn-feature-generation" href="#rationale-behind-the-need-for-ai-multi-turn-feature-generation" class="no_external_ico">Rationale behind the Need for <strong>AI</strong> Multi-Turn Feature Generation</a></h3>
+<p>The rationale behind this technique is:</p>
+<ul>
+<li>I often felt lost and overwhelmed while using <strong>AI</strong> tools to assist me with code generation. There were many instances where I asked the <strong>AI</strong> to develop a feature A, but ended up with a feature A*. When the <strong>AI</strong> got it right, that extra * was something great—an unexpected yet valuable addition to the feature. However, when the <strong>AI</strong> didn't get it right, that extra bit of undesired code became noise, obscuring the useful code and making maintenance more difficult.</li>
+<li>I wanted the opportunity to make small corrections during the feature generation process. This would help me feel more in control, but mainly because I find that about 10-15% of the <strong>AI</strong>'s code output doesn't meet my preferences (I might be a bit OCD about it). These moments of intervention also allow me to steer the development towards the exact feature I want (A), rather than the slightly different version (A*) that the <strong>AI</strong> assumes I want.</li>
+<li>I wanted a method to commit <strong>AI</strong> changes immediately after the generation loop concludes, creating a checkpoint. This would allow me to review and revert to a previous known state if I'm not satisfied with the <strong>AI</strong>-generated features (code).</li>
+</ul>
+<h3><a name="how-it-works" class="anchor">
+<a name="how-it-works" href="#how-it-works" class="no_external_ico">How it works</a></h3>
+<p><strong><strong>AI</strong></strong>: duh, obviously, the technique depends on <strong>AI</strong>.</br>
+<strong>Multi-Turn</strong>: as I said, I need to implement a feature on short iterations (turns) doing small corrections.</br>
+<strong>Feature</strong>: the feature I want, not the one the <strong>AI</strong> want.</br>
+<strong>Generation</strong>: code generated by <strong>AI</strong>.</br></p>
+<p>The process:</p>
+<ol>
+<li>
+<p><strong>Choose a bit of Feature A</strong>: We need to develop Feature A, so we start an <strong>OODA</strong> loop (<strong>O</strong>bserve-<strong>O</strong>rient-<strong>D</strong>ecide-<strong>A</strong>ct). Begins by <strong>O</strong>bserving everything related to the feature, including the business needs and technical context. In the <strong>O</strong>rient step, choose a small part of the feature that, based on your observations, is needed first.</p>
+</li>
+<li>
+<p><strong>Create a Precise Prompt</strong>: After <strong>D</strong>eciding what you want to do, write a clear prompt that representing it. Specify the non-negotiable parts of the functionality, while allowing some flexibility for the <strong>AI</strong> to be creative in other areas.</p>
+</li>
+<li>
+<p><strong>Generate Code</strong>: Run the prompt through an <strong>AI</strong> tool (<strong>A</strong>ct) to generate the corresponding code.</p>
+</li>
+<li>
+<p><strong>Commit Changes</strong>: Create an automatic commit using the prompt that initiated the change as its description.</p>
+</li>
+<li>
+<p><strong>Review and Adjust</strong> (for the next OODA loop): Review the generated code and make any necessary adjustments or improvements. Update any relevant documentation files (.md files) if needed.</p>
+</li>
+</ol>
+<h3><a name="example" class="anchor">
+<a name="example" href="#example" class="no_external_ico">Example</a></h3>
+<p>Let's say we have a corporate website that is focused on SEO to help our website appear higher in search results, making it easier for people to find us online. Our website also focuses on providing content about our company and the events we organize. This includes news, articles, and updates that keep our audience informed about what we are doing. The website is managed by marketing users who are not technical experts, but they are skilled in creating great content and promoting our events effectively.</p>
+<p>Now, I need to implement this feature:</p>
+<blockquote>
+<p>To see information about the company's events and marketing campaigns.</br>
+As an anonymous visitor to the site</br>
+I want to go to a URL and have the page build dynamically based on its slug.</br></p>
+</blockquote>
+<p>So, instead of asking Claude Code to do all that in a single prompt like this:</p>
+<p><code>&gt; I want you to build a dynamic landing page that will take data to fill each part of the template from the database using the slug as a key.</code></p>
+</br>
+<p>You can do this (following the OODA loop pattern), where the Act part is writing that prompt to Claude Code:</p>
+<p><strong>O</strong>: I read the user story; I think about the business and the importance of the feature.</br>
+<strong>O</strong>: The URL is very important for the business (SEO, ads, banners, etc.)</br>
+<strong>D</strong>: I'm going to solve the routes issue first.</br>
+<strong>A</strong>: <code>&gt; I want you to add a page under the route /landing/[slug] that shows the [slug] (the dynamic part of the route) in a span.</code></br></br></p>
+<p><strong>O</strong>: Test the page at /landing/[slug], compare expectations with reality, adjust context.</br>
+<strong>O</strong>: The slug is important because behavior changes if it exists in the database or not.</br>
+<strong>D</strong>: Take slug, check against database; if it exists, show landing info; if not, redirect to a 404 page.</br>
+<strong>A</strong>: <code>&gt; I want you to show the landing title in a span if the slug exists in the database (using the landing pages client); otherwise, redirect to a 404 page.</code></br></br></p>
+<p><strong>O</strong>: Test. Does it align with the user story and business? What else is needed in terms of new pages and SEO?</br>
+<strong>O</strong>: I need to add metadata for search engines and social media.</br>
+<strong>D</strong>: Add META tags, OG tags with images, title, and description to the page.</br>
+<strong>A</strong>: <code>&gt; I want you to add meta tags for search engines and OG meta tags using all available information from the landing_page object. If you have doubts about using a specific property of this object, ask me whether it's convenient or not.</code></br></p>
+<p><strong>O</strong>: Test. Share page on social media and check fields. Now, next important thing is that it looks nice!</br>
+<strong>O</strong>: I want it to use an existing landing as a template.</br>
+<strong>D</strong>: Use an existing page as a template and replace content with content from the landing page fetched from database.</br>
+<strong>A</strong>: <code>&gt; I want you to use &quot;the-mentor-meetup.tsx&quot; page as a template for our dynamic landings page. Replace each section's information with corresponding properties from landing_page object. If you're unsure about making any changes, ask before doing so.</code></br></p>
+<h3><a name="what-about-the-automatic-commit-process-after-each-loop" class="anchor">
+<a name="what-about-the-automatic-commit-process-after-each-loop" href="#what-about-the-automatic-commit-process-after-each-loop" class="no_external_ico">What about the automatic commit process after each loop?</a></h3>
+<p>I have set up a safety system using Hooks (at least with Claude Code).</p>
+<script src="https://gist.github.com/dariomac/dd83676b9a3d172a0738906b9cbdbd93.js"></script>
+<p>I use the <code>UserPromptSubmit</code> hook to save the current prompt temporarily (improvable code, but you get the idea):</p>
+<script src="https://gist.github.com/dariomac/b0bdd3a055a9121aedf5e86c1837fe04.js"></script>
+<p>Then, I use the <code>Stop</code> hook to save or "commit" it, using the saved prompt as the description of that commit.</p>
+<script src="https://gist.github.com/dariomac/4b0b51edc7ebcfb10be834c25d90fe19.js"></script>
 
                 </section>
+
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    <p><em>Set 15, 2025</em>: Original publication on dariomac.com</p>
+
+                  </section>
               </div>
             </div>
-          </article>
-        </div>
+        </div> <!-- container-fluid dm-board -->
+
         <a href="/" class="logo">
           <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
         </a>
@@ -845,7 +609,7 @@
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
-
+    
     <div class="footer" style="text-align:center; width:100%;">
       <div style="text-align:center; width:100%">
       <ul>
@@ -896,6 +660,8 @@
       src="https://c.statcounter.com/9186547/0/dce954c9/1/"
       alt="web counter"></a></div></noscript>
     <!-- End of Statcounter Code -->
+
+
     <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
