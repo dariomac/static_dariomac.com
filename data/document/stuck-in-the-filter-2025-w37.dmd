@@ -1,0 +1,109 @@
+{
+  "title": "Stuck in the Filter - W37",
+  "date": "2025-09-12",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Links I couldn't process during the week 37 of 2025.",
+    "datebox": "September 12, 2025",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250912",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+
+---
+
+
+[summary:string]
+Links I couldn't process during the week 37 of 2025.
+
+[pub_date:string]
+2025-09-12
+
+[short_description:string]
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
+
+[body:md]
+## Scott Wu
+[https://www.lennysnewsletter.com/p/how-devin-replaces-your-junior-engineers](https://www.lennysnewsletter.com/p/how-devin-replaces-your-junior-engineers)
+
+Watch now | 🎙️Cognition Labs’ CEO shares how his team uses their AI coding agent Devin as a first-line responder for engineering tasks, multiplayer problem-solving, and asynchronous development
+
+[![Scott Wu page screenshot](/assets/stuck-2025-w37-1.jpg#center)](https://www.lennysnewsletter.com/p/how-devin-replaces-your-junior-engineers)
+<br /><hr />
+## Engineering excellence starts on edge
+[https://world.hey.com/dhh/engineering-excellence-starts-on-edge-c36e4c59](https://world.hey.com/dhh/engineering-excellence-starts-on-edge-c36e4c59)
+
+The best engineering teams take control of their tools. They help develop the frameworks and libraries they depend on, and they do this by running production code on edge — the unreleased next version. That’s where progress is made, that’s where participation matters most. This sounds scary at first. Edge? Isn’t that just another word…
+
+[![Engineering excellence starts on edge page screenshot](/assets/stuck-2025-w37-2.jpg#center)](https://world.hey.com/dhh/engineering-excellence-starts-on-edge-c36e4c59)
+<br /><hr />
+## Being good isn’t enough
+[https://joshs.bearblog.dev/being-good-isnt-enough](https://joshs.bearblog.dev/being-good-isnt-enough)
+
+Giving good career advice is hard. Maybe it’s because careers can look more alike than they really are. Two people can have the same title but what helps one…
+
+[![Being good isn’t enough page screenshot](/assets/stuck-2025-w37-3.jpg#center)](https://joshs.bearblog.dev/being-good-isnt-enough)
+<br /><hr />
+## GitHub - Varietyz/Disciplined-AI-Software-Development: This methodology provides a structured approach for collaborating with AI systems on software development projects. It addresses common issues like code bloat, architectural drift, and context dilution through systematic constraints and validation checkpoints.
+[https://github.com/Varietyz/Disciplined-AI-Software-Development](https://github.com/Varietyz/Disciplined-AI-Software-Development)
+
+This methodology provides a structured approach for collaborating with AI systems on software development projects. It addresses common issues like code bloat, architectural drift, and context dilu…
+
+[![GitHub - Varietyz/Disciplined-AI-Software-Development: This methodology provides a structured approach for collaborating with AI systems on software development projects. It addresses common issues like code bloat, architectural drift, and context dilution through systematic constraints and validation checkpoints. page screenshot](/assets/stuck-2025-w37-4.jpg#center)](https://github.com/Varietyz/Disciplined-AI-Software-Development)
+<br /><hr />
+## Ad/no: Procrastination Rabbit Hole Finder
+[https://wgx.github.io/adno/](https://wgx.github.io/adno/)
+
+New! Now with 20,000 Words!
+
+[![Ad/no: Procrastination Rabbit Hole Finder page screenshot](/assets/stuck-2025-w37-5.jpg#center)](https://wgx.github.io/adno/)
+<br /><hr />
+## The Philosophy of Software Design – with John Ousterhout
+[https://newsletter.pragmaticengineer.com/p/the-philosophy-of-software-design](https://newsletter.pragmaticengineer.com/p/the-philosophy-of-software-design)
+
+Stanford professor John Ousterhout explains why thoughtful software design matters more than ever as AI tools transform coding practices and developer workflows.
+
+[![The Philosophy of Software Design – with John Ousterhout page screenshot](/assets/stuck-2025-w37-6.jpg#center)](https://newsletter.pragmaticengineer.com/p/the-philosophy-of-software-design)
+<br /><hr />
+## AI tools for software engineers, but without the hype – with Simon Willison (DataSette, Lanyrd, Eventbrite)
+[https://newsletter.pragmaticengineer.com/p/ai-tools-for-software-engineers-simon-willison](https://newsletter.pragmaticengineer.com/p/ai-tools-for-software-engineers-simon-willison)
+
+Simon is one of the best-known software engineers experimenting with LLMs to boost his own productivity: he’s been doing this for more than three years, blogging about it in the open.
+
+[![AI tools for software engineers, but without the hype – with Simon Willison (DataSette, Lanyrd, Eventbrite) page screenshot](/assets/stuck-2025-w37-7.jpg#center)](https://newsletter.pragmaticengineer.com/p/ai-tools-for-software-engineers-simon-willison)
+<br /><hr />
+## Kent Beck
+[https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent](https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent)
+
+Kent Beck—creator of Extreme Programming and co-author of the Agile Manifesto—reflects on decades of coding, from the birth of TDD to his experiments with AI tools shaping software’s future.
+
+[![Kent Beck page screenshot](/assets/stuck-2025-w37-8.jpg#center)](https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent)
+<br /><hr />
+## AI cuts onboarding time in half for new hires in the enterprise
+[https://newsletter.getdx.com/p/ai-cuts-developer-onboarding-time-in-half](https://newsletter.getdx.com/p/ai-cuts-developer-onboarding-time-in-half)
+
+Data from DX shows that engineers who use AI daily reach onboarding milestones nearly twice as fast as non-users.
+
+[![AI cuts onboarding time in half for new hires in the enterprise page screenshot](/assets/stuck-2025-w37-9.jpg#center)](https://newsletter.getdx.com/p/ai-cuts-developer-onboarding-time-in-half)
+<br /><hr />
+
+
+[acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
+
+[further_reading:md]
+
+[significant_revisions:md]
+
