@@ -57,7 +57,7 @@ Application to show marketing activities filtered by event type, month, line of 
 
 ### US CBG Corporate Director Survey (Benchmarking tool)
 
-Collaboration in the development of this tool that allow users to compare themselves with the results of the [PwC's 2012 Annual Corporate Directors Survey](http://www.pwc.com/us/en/corporate-governance/publications/annual-corporate-directors-survey.jhtml). Users select the desired theme/subject and their company size, and then can compare their answers to some of the questions to the corresponding results. (**jQuery, HighchartsJs**)
+Collaboration in the development of this tool that allow users to compare themselves with the results of the [PwC's 2012 Annual Corporate Directors Survey](https://www.pwc.es/es/publicaciones/auditoria/assets/pwc-annual-corporate-directors-survey.pdf). Users select the desired theme/subject and their company size, and then can compare their answers to some of the questions to the corresponding results. (**jQuery, HighchartsJs**)
 
 {{{ exp_pwc-us-cbg1 }}}
 
@@ -69,7 +69,7 @@ Requirement elicitation, design and implementation of a Data driven benchmarking
 
 ### PwC Gage
 
-Collaboration in the development of a tool that helps with the creation of gauge charts inside the PwC CMS. It was designed as a wrapper plugin for [justgage](http://www.justgage.com/) to create gauges following PwC branding guidelines displaying correctly on a wide variety of browsers and devices. The editor was intended to provide basic configuration options for the gauge, although further customization can be done editing the generated code. (**jQuery, JustGageJs**)
+Collaboration in the development of a tool that helps with the creation of gauge charts inside the PwC CMS. It was designed as a wrapper plugin for justgage to create gauges following PwC branding guidelines displaying correctly on a wide variety of browsers and devices. The editor was intended to provide basic configuration options for the gauge, although further customization can be done editing the generated code. (**jQuery, JustGageJs**)
 
 {{{ exp_pwc-gage }}}
 

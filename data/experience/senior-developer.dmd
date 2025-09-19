@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "Senior Developer",
     "datebox": "Jul 2003 – Nov 2004",
-    "extlink": "http://www.innovaage.com/",
+    "extlink": "https://www.innovaage.com/",
     "laneid": "Experience",
     "leftbox": "",
     "leftmsg": "",
@@ -33,7 +33,7 @@ I worked with Innovaportal, a CMS that can handle various types of content (surv
 Jul 2003 – Nov 2004 (1 year 5 months)
 
 [place_url:string]
-http://www.innovaage.com/
+https://www.innovaage.com/
 
 [place:string]
 InnovaAge

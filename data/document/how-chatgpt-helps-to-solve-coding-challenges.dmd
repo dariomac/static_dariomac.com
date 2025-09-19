@@ -17,7 +17,7 @@
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges",
+  "canonical": "",
   "custom_header": ""
 }
 
@@ -35,7 +35,7 @@ ChatGPT is a programming language that can write text that sounds like it was wr
 [body:md]
 Hey there! I don’t know about you, but I’m always looking for new tools and techniques to make my coding life more manageable. Recently, I’ve been curious about using ChatGPT to solve code challenges, so I tried it with the [Advent of Code 2022](https://adventofcode.com/2022). 
 
-For those unfamiliar, [ChatGPT](https://chat.openai.com/) is a state-of-the-art language model developed by OpenAI that can generate human-like text. I thought it might be interesting to see if it could help me tackle some coding problems, so I decided to try it. In this article, I’ll share my experiences using ChatGPT and what I learned along the way.
+For those unfamiliar, [ChatGPT](https://chatgpt.com/) is a state-of-the-art language model developed by OpenAI that can generate human-like text. I thought it might be interesting to see if it could help me tackle some coding problems, so I decided to try it. In this article, I’ll share my experiences using ChatGPT and what I learned along the way.
 
 ___
 
@@ -87,7 +87,7 @@ _The reason was to try to find if it could solve challenges written in natural l
 In conclusion, ChatGPT successfully generated a complete article using a simple prompt. The resulting article could accurately capture the prompt’s main points and expand upon them coherently and logically. This demonstrates the potential of large language models like ChatGPT to assist with various writing and coding tasks.
 
 [acknowledgments:md]
-This post, originally on [https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges](https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+This post, originally on https://www.howdy.com/how-chatgpt-helps-to-solve-coding-challenges, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 

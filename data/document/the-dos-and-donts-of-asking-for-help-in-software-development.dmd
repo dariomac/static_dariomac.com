@@ -17,7 +17,7 @@
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "https://www.howdy.com/the-dos-and-donts-of-asking-for-help-in-software-development/",
+  "canonical": "",
   "custom_header": ""
 }
 
@@ -77,7 +77,7 @@ Remember that if the people you are asking for help are volunteers, they won’t
 And once you’ve solved your problem, please share it on the same channel where you asked for help (if you’re in a community), write a blog post, reply on StackOverflow, or put up a sign on the street. Do whatever you think will help other developers find your solution the next time they need help with the same thing.
 
 [acknowledgments:md]
-This post, originally on [https://www.howdy.com/the-dos-and-donts-of-asking-for-help-in-software-development/](https://www.howdy.com/the-dos-and-donts-of-asking-for-help-in-software-development/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+This post, originally on https://www.howdy.com/the-dos-and-donts-of-asking-for-help-in-software-development/, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 

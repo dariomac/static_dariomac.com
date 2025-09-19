@@ -17,7 +17,7 @@
     "title": "[title]"
   },
   "jsonld": {},
-  "canonical": "https://www.howdy.com/crypto-how-it-started/",
+  "canonical": "",
   "custom_header": ""
 }
 
@@ -80,7 +80,7 @@ Since World War II, the tools used for encryption and decryption have changed: i
 As we will discuss in the next article, the computer has made it easier to break codes, which is why several ciphers have been used over the last 50 years (DES, public-private keys, RSA). The history of cryptography is a cycle in which the invention of a new algorithm is followed by the creation of a new decryption method. Maybe the last step in this evolution is quantum cryptography, which will use the angle of oscillation of a photon to receive encrypted data. Only time will tell…
 
 [acknowledgments:md]
-This post, originally on [https://www.howdy.com/crypto-how-it-started/](https://www.howdy.com/crypto-how-it-started/), was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+This post, originally on https://www.howdy.com/crypto-how-it-started/, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
 
 [further_reading:md]
 

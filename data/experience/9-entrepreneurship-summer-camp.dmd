@@ -7,7 +7,7 @@
     "columnid": "done_3",
     "content": "9° Entrepreneurship Summer Camp",
     "datebox": "Mar 2015",
-    "extlink": "https://www.eafit.edu.co/institucional/english/about-eafit/Paginas/english-version-eafit-llanogrande.aspx",
+    "extlink": "https://www.eafit.edu.co/en/eafit-llanogrande",
     "laneid": "Experience",
     "leftbox": "Medellín - Colombia",
     "leftmsg": null,
@@ -34,7 +34,7 @@ Talk in the 9th Summer Camp on Entrepreneurship in EAFIT University, Medellín, 
 March 25th-27th, 2015 (24 hs)
 
 [place_url:string]
-https://www.eafit.edu.co/institucional/english/about-eafit/Paginas/english-version-eafit-llanogrande.aspx
+https://www.eafit.edu.co/en/eafit-llanogrande
 
 [place:string]
 Universidad EAFIT

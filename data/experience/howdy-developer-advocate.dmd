@@ -63,9 +63,9 @@ As a developer relations professional, I work at the intersection of product, en
  - 20230530 - [Coding in the Age of AI: Embracing the Developer’s Evolution](/coding-in-the-age-of-ai-embracing-the-developers-evolution) {{! /coding-in-the-age-of-ai-embracing-the-developers-evolution}}
  - 20230510 - [The crucial role of Software Communities in developers’s growth](/the-crucial-role-of-software-communities-in-developers-growth) {{! /the-crucial-role-of-software-communities-in-developers-growth}}
  - 20230207 - [Not another cheat sheet about technical interviews](/not-another-cheat-sheet-about-technical-interviews) {{! /not-another-cheat-sheet-about-technical-interviews}}
- - 20230105 - *just as reviewer* - [Pros and Cons of Working in Startups](https://www.howdy.com/blog/pros-cons-working-startups/)
+ - 20230105 - *just as reviewer* - Pros and Cons of Working in Startups - https://www.howdy.com/blog/pros-cons-working-startups/
  - 20221209 - [The Do’s and Don’ts of Asking for Help in Software Development](/the-dos-and-donts-of-asking-for-help-in-software-development) {{! /the-dos-and-donts-of-asking-for-help-in-software-development --}}
- - 20221206 - *just as reviewer* - [How to Improve Knowledge Sharing in a New Role](https://www.howdy.com/how-to-improve-knowledge-sharing-in-a-new-role/)
+ - 20221206 - *just as reviewer* - How to Improve Knowledge Sharing in a New Role - https://www.howdy.com/how-to-improve-knowledge-sharing-in-a-new-role/
  - 20221205 - [How ChatGPT helps to solve coding challenges](/how-chatgpt-helps-to-solve-coding-challenges) {{! /how-chatgpt-helps-to-solve-coding-challenges --}}
  - 20221107 - [Soy desarrollador de software, ¿para qué necesito habilidades blandas?](https://www.canal-uy.com/65-Soy-desarrollador-de-software-para-que-necesito-habilidades-blandas.html) {{! /es/soy-desarrollador-de-software-¿para-que-necesito-habilidades-blandas --}}
  - 20221004 - [Be the GOAT software engineer: Know your clients](/be-the-goat-software-engineer-know-your-clients) {{! /be-the-goat-software-engineer-know-your-clients --}}
@@ -77,10 +77,10 @@ As a developer relations professional, I work at the intersection of product, en
  ## Brand awareness tasks
  - 20250912 - [Prompt Engineering and the Future of Programming](/prompt-engineering-and-the-future-of-programming)
  - 20250827 - [Speed isn't Enough - How to Code with Velocity Using AI](/speed-isnt-enough-how-to-code-with-velocity-using-ai)
- - 20250605 - [3 Reasons Why Software Developers Should Embrace AI](/3-reasons-why-software-developers-should-embrace-ai)
+ - 20250605 - [3 reasons why you won't be replaced by AI](/3-reasons-why-you-wont-be-replaced-by-ia)
  - 20250325 - [Ruby Montevideo meetup - March 2025 interviews](/ruby-montevideo-meetup-marzo-2025-inteviews)
  - 20250307 - [How to be an AI dev in 2025](/how-to-be-an-ai-dev-in-2025)
- - 20240820 - [Give me my AI, I don't want to be left behind!](/give-me-my-ai-i-dont-want-to-be-left-behind-angularjs)
+ - 20240820 - [Give me my AI, I don't want to be left behind!](/give-me-my-ai-i-dont-want-to-be-left-behind)
  - 20240306 - [Software Estimation: Demystifying Challenges Beyond Engineering](/software-estimation-demystifying-challenges-beyond-engineering-ruby-uy)
  - 20231213 - [Software Estimates: No Longer an Engineering Problem](/software-estimates-no-longer-engineering-problem-angular-mvd)
  - 20231005 - [Quality is not a fairy tale](/quality-is-not-a-fairy-tale-montevideo-js-meetup)
@@ -99,7 +99,7 @@ Also, before I officially started in this role, I was doing different activities
 
 [related_images:json]
   [{
-    "filename": "awareness1.jpg"
+    "filename": "awareness1.png"
   },{
     "filename": "awareness2.png"
   },{
@@ -107,7 +107,7 @@ Also, before I officially started in this role, I was doing different activities
   },{
     "filename": "awareness4.png"
   },{
-    "filename": "awareness5.jpg"
+    "filename": "awareness5.png"
   },{
     "filename": "awareness6.png"
   },{

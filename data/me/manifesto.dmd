@@ -73,7 +73,7 @@ Just because we're building bad-ass infrastructure and tools doesn't mean it can
 
 Before Heroku (and a few others, like Slack, Github and Atlassian), developer-facing products were almost always stodgy, ugly, and completely lacking in style or fun.
 
-We're part of the [consumerization of IT](http://www.infoworld.com/t/consumerization-of-it/consumerization-of-it-190132).
+We're part of the [consumerization of IT](https://www.techtarget.com/searchmobilecomputing/definition/IT-consumerization-information-technology-consumerization).
 
 ### Intuition-driven balances data-driven
 
@@ -216,7 +216,7 @@ See:
 
 Have a strong opinion and argue passionately for it. But when you encounter new information, be willing to change your mind.
 
-See: [Strong Opinions, Weakly Held](http://bobsutton.typepad.com/my_weblog/2006/07/strong_opinions.html)
+See: [Strong Opinions, Weakly Held](https://bobsutton.typepad.com/my_weblog/2006/07/strong_opinions.html)
 
 ### Candor
 
@@ -254,7 +254,7 @@ Temp (folder on GDrive) for "files downloaded to scan and classify or read soon"
 
 * * *
 
-[Kanbanize](http://kanbanize.com) for everyday project tasks management using [Kanban](http://en.wikipedia.org/wiki/Kanban) and [Personal Kanban](http://www.personalkanban.com/pk/personal-kanban-101/).
+[Kanbanize](https://businessmap.io/) for everyday project tasks management using [Kanban](http://en.wikipedia.org/wiki/Kanban) and [Personal Kanban](https://www.personalkanban.com/pk/personal-kanban-101/).
 
 #### Columns
 
@@ -274,12 +274,12 @@ Temp (folder on GDrive) for "files downloaded to scan and classify or read soon"
 
 #### Task Types
 
-*   ![](https://lh5.googleusercontent.com/KVXmmRSZE2EqYkeWqrd3cC_mzQt54kIasxcTxcC2nC1UCOg8AQbSkC9NAY90Wjea4UYzFKmjwEiX_B8Du-qp9qRGXTuYLmHJ9U20_jfcZGfO-N-58FWESLR1c_DOVBKZHwxxS1_j)Idea: self explanatory
-*   ![](https://lh6.googleusercontent.com/_kFvDZJgOvjhetpKyU30CD1Hy98SJFkqyviVOx3fYQ_5c8oxWF7Tpj9iRXUCdsv2vK6bSZWXNsqJ01D59WpVqUhMuTwyxCKb-MaWvbaUiqBP7SKVafhyXH87P603mI4fCRdNMNcG)Todo: self explanatory
-*   ![](https://lh5.googleusercontent.com/gddDKXYXmEMUdMOXRnRTjPZQqTSVkygr4wiKrKSnQT3W8hJs4u1JP4wEAKFpfgf4AzQ3cWBB_3BrzwYG0-61L2x8ER6p6Q528Sfbeq3Wfp6TruEqdG0Oy0z3dKA9DT32W7kZ75PT)Monkey: Those tasks that require very little brain activity.
-*   ![](https://lh5.googleusercontent.com/TEcfS4GGq6D-AUzYcQv5l-9b2T2achtcBkcc6BU_5Hx1fFYiaLRmV7SEvTD267z_9UHu4GYvYE6Fw9CECfYPX2gSKYebJvGV1qmqT3bUNl-MtXSgzCNNrh3rY3WbpAK5JIPSz39k)Q1: Urgent + Important = Crisis
-*   ![](https://lh6.googleusercontent.com/qv5F2LblHNmjiQuMRy1TVKVldnkViy_tu29OH1tufyyC6dJQDO9SVDZD22Kr_NvYekTok8afK0HZexT5aGG832Z-qM4QwJNJZaRoh_KtSUrrlnhrFuNHjnNUQXM8BfQCnH6WjUQf)Q2: Not Urgent + Important = Planning
-*   ![](https://lh4.googleusercontent.com/Zbn-AoFLEqi8dhegxSteYtr5zcqD-0DWFVWkEzYa9sIuuuv0G1je2v2sfENldGPsTnKtgqFd511vKapQ5XR6Lm203QpC6C6m8S6jyEpuk3zGSim_dHp0ZpRxkS89JPYG2GYi4It0)Q3: Urgent + Not Important = Interruptions
-*   ![](https://lh6.googleusercontent.com/amQYy0mNWS9KtSZjH6aVOerEvcQ9iUpmRp-R9v-x6m2Idk7NZmHdi7khrS1JMKgXfZwBKIk2O8P0Hz5evhYldVKPZoDRxpcSLRznbV5myl4FWA75gHmbr_Tr64h1MwdVo26-vKtD)Q4: Not Urgent + Not Important = Time waster
+*   Idea: self explanatory
+*   Todo: self explanatory
+*   Monkey: Those tasks that require very little brain activity.
+*   Q1: Urgent + Important = Crisis
+*   Q2: Not Urgent + Important = Planning
+*   Q3: Urgent + Not Important = Interruptions
+*   Q4: Not Urgent + Not Important = Time waster
 
 * * *

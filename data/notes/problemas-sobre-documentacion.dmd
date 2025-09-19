@@ -35,7 +35,7 @@
 [short_description:string]
 
 [body:md]
-Esta breve nota surge por comentarios que me hicieron en los espacios de networking el pasado 18 de noviembre durante la WebConf Latam 2022 ([https://webconf.tech/](https://webconf.tech/)).
+Esta breve nota surge por comentarios que me hicieron en los espacios de networking el pasado 18 de noviembre durante la WebConf Latam 2022 (https://webconf.tech/).
 
 Durante mi charla en la conferencia, entre otras cosas, introduje el concepto de [Documinding](/es/documinding), hablando de documentación ágil y de los problemas que plantea. 
 
