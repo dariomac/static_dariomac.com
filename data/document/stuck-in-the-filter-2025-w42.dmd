@@ -1,0 +1,123 @@
+{
+  "title": "Stuck in the Filter - W42",
+  "date": "2025-10-17",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Links I couldn't process during the week 42 of 2025.",
+    "datebox": "October 17, 2025",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20251017",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+
+---
+
+
+[summary:string]
+Links I couldn't process during the week 42 of 2025.
+
+[pub_date:string]
+2025-10-17
+
+[short_description:string]
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
+
+[body:md]
+## Superpowers: How I’m using coding agents in October 2025
+[https://blog.fsck.com/2025/10/09/superpowers](https://blog.fsck.com/2025/10/09/superpowers)
+
+I used to write more
+
+[![Superpowers: How I’m using coding agents in October 2025 page screenshot](/assets/stuck-2025-w42-1.jpg#center)](https://blog.fsck.com/2025/10/09/superpowers)
+<br /><hr />
+## The Grand AGI Delusion
+[https://garymarcus.substack.com/p/the-grand-agi-delusion](https://garymarcus.substack.com/p/the-grand-agi-delusion)
+
+and a fantastic symposium on AI and society at The Royal Society
+
+[![The Grand AGI Delusion page screenshot](/assets/stuck-2025-w42-2.jpg#center)](https://garymarcus.substack.com/p/the-grand-agi-delusion)
+<br /><hr />
+## Inside Google’s AI turnaround: The rise of AI Mode, strategy behind AI Overviews, and their vision for AI-powered search | Robby Stein (VP of Product, Google Search)
+[https://www.lennysnewsletter.com/p/fc235f0b-992e-483c-a391-4ef905208357](https://www.lennysnewsletter.com/p/fc235f0b-992e-483c-a391-4ef905208357)
+
+Robby Stein on Google’s AI comeback: Gemini hits #1 beating ChatGPT, why AI is expanding the pie for search, and his frameworks behind two billion-user products
+
+[![Inside Google’s AI turnaround: The rise of AI Mode, strategy behind AI Overviews, and their vision for AI-powered search | Robby Stein (VP of Product, Google Search) page screenshot](/assets/stuck-2025-w42-3.jpg#center)](https://www.lennysnewsletter.com/p/fc235f0b-992e-483c-a391-4ef905208357)
+<br /><hr />
+## On the Psychology of AI People
+[https://www.thealgorithmicbridge.com/p/on-the-psychology-of-ai-people](https://www.thealgorithmicbridge.com/p/on-the-psychology-of-ai-people)
+
+To them, we face the existence of ‘mysterious creatures’ not an AI bubble
+
+[![On the Psychology of AI People page screenshot](/assets/stuck-2025-w42-4.jpg#center)](https://www.thealgorithmicbridge.com/p/on-the-psychology-of-ai-people)
+<br /><hr />
+## FOD#122: What Are Thinking Tokens
+[https://www.turingpost.com/p/fod122](https://www.turingpost.com/p/fod122)
+
+and how they might be fueling the AI bubble
+
+[![FOD#122: What Are Thinking Tokens page screenshot](/assets/stuck-2025-w42-5.jpg#center)](https://www.turingpost.com/p/fod122)
+<br /><hr />
+## 996 Just Means You Have No Leverage
+[https://www.joanwestenberg.com/p/996-just-means-you-have-no-leverage](https://www.joanwestenberg.com/p/996-just-means-you-have-no-leverage)
+
+The Performance of Work Is Not Work
+
+[![996 Just Means You Have No Leverage page screenshot](/assets/stuck-2025-w42-6.jpg#center)](https://www.joanwestenberg.com/p/996-just-means-you-have-no-leverage)
+<br /><hr />
+## An AI chatbot’s feedback style can alter your brain activity during learning
+[https://www.psypost.org/an-ai-chatbots-feedback-style-can-alter-your-brain-activity-during-learning](https://www.psypost.org/an-ai-chatbots-feedback-style-can-alter-your-brain-activity-during-learning)
+
+A new study shows the type of feedback a chatbot gives affects learning and brain activity. Reflective feedback boosts problem-solving, while encouraging feedback improves memory.
+
+[![An AI chatbot’s feedback style can alter your brain activity during learning page screenshot](/assets/stuck-2025-w42-7.jpg#center)](https://www.psypost.org/an-ai-chatbots-feedback-style-can-alter-your-brain-activity-during-learning)
+<br /><hr />
+## Claude Skills are awesome, maybe a bigger deal than MCP
+[https://simonwillison.net/2025/Oct/16/claude-skills/](https://simonwillison.net/2025/Oct/16/claude-skills/)
+
+Anthropic this morning introduced Claude Skills, a new pattern for making new abilities available to their models: Claude can now use Skills to improve how it performs specific tasks. Skills …
+
+[![Claude Skills are awesome, maybe a bigger deal than MCP page screenshot](/assets/stuck-2025-w42-8.jpg#center)](https://simonwillison.net/2025/Oct/16/claude-skills/)
+<br /><hr />
+## The 6 Hidden Productivity Killers - A Guide for Leaders
+[https://www.gitkraken.com/the-6-hidden-productivity-killers-2025](https://www.gitkraken.com/the-6-hidden-productivity-killers-2025)
+
+Stop flying blind on team productivity. Discover the 6 hidden killers draining 30% of engineering capacity and practical frameworks to eliminate them.
+
+[![The 6 Hidden Productivity Killers - A Guide for Leaders page screenshot](/assets/stuck-2025-w42-9.jpg#center)](https://www.gitkraken.com/the-6-hidden-productivity-killers-2025)
+<br /><hr />
+## You Still Need to Think
+[https://calv.info/you-still-need-to-think](https://calv.info/you-still-need-to-think)
+
+As coding agents become more capable and long-running, they don’t remove the human job of thinking. Someone still has to direct the work—set goals, choose constraints, and judge outputs.
+
+[![You Still Need to Think page screenshot](/assets/stuck-2025-w42-10.jpg#center)](https://calv.info/you-still-need-to-think)
+<br /><hr />
+## Don’t Waste Your 20s Not Taking Big Risks
+[https://blog.nateliason.com/p/dont-waste-your-20s-not-taking-big](https://blog.nateliason.com/p/dont-waste-your-20s-not-taking-big)
+
+You have it so easy, and so little time
+
+[![Don’t Waste Your 20s Not Taking Big Risks page screenshot](/assets/stuck-2025-w42-11.jpg#center)](https://blog.nateliason.com/p/dont-waste-your-20s-not-taking-big)
+<br /><hr />
+
+
+[acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
+
+[further_reading:md]
+
+[significant_revisions:md]
+
