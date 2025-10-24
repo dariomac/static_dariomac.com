@@ -1,0 +1,95 @@
+{
+  "title": "Stuck in the Filter - W43",
+  "date": "2025-10-24",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Links I couldn't process during the week 43 of 2025.",
+    "datebox": "October 24, 2025",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20251024",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+
+---
+
+
+[summary:string]
+Links I couldn't process during the week 43 of 2025.
+
+[pub_date:string]
+2025-10-24
+
+[short_description:string]
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
+
+[body:md]
+## Hatching Growth #12: AEO in Practice: Memory Hacks, Prompt Injection Experiments, and Honest Results
+[https://read.glasp.co/p/hatching-growth-12-aeo-in-practice](https://read.glasp.co/p/hatching-growth-12-aeo-in-practice)
+
+Glasp’s note: This is Hatching Growth, a series of articles about how Glasp organically reached millions of users.
+
+[![Hatching Growth #12: AEO in Practice: Memory Hacks, Prompt Injection Experiments, and Honest Results page screenshot](/assets/stuck-2025-w43-1.jpg#center)](https://read.glasp.co/p/hatching-growth-12-aeo-in-practice)
+<br /><hr />
+## How this Yelp AI PM works backward from “golden conversations” to create high-quality prototypes using Claude Artifacts and Magic Patterns
+[https://www.lennysnewsletter.com/p/how-this-yelp-ai-pm-works-backward](https://www.lennysnewsletter.com/p/how-this-yelp-ai-pm-works-backward)
+
+Watch now | 🎙️ Yelp’s product manager on prototyping AI conversations with Claude, designing interfaces with Magic Patterns, and why starting with example dialogues creates better AI products
+
+[![How this Yelp AI PM works backward from “golden conversations” to create high-quality prototypes using Claude Artifacts and Magic Patterns page screenshot](/assets/stuck-2025-w43-2.jpg#center)](https://www.lennysnewsletter.com/p/how-this-yelp-ai-pm-works-backward)
+<br /><hr />
+## Knowledge creates technical debt - lukeplant.me.uk
+[https://lukeplant.me.uk/blog/posts/knowledge-creates-technical-debt](https://lukeplant.me.uk/blog/posts/knowledge-creates-technical-debt)
+
+Some history on term “technical debt” and on better language to use when communicating about it.
+
+[![Knowledge creates technical debt - lukeplant.me.uk page screenshot](/assets/stuck-2025-w43-3.jpg#center)](https://lukeplant.me.uk/blog/posts/knowledge-creates-technical-debt)
+<br /><hr />
+## The Memory Problem: Why LLMs Sometimes Forget Your Conversation
+[https://blog.bytebytego.com/p/the-memory-problem-why-llms-sometimes](https://blog.bytebytego.com/p/the-memory-problem-why-llms-sometimes)
+
+In this article, we will try to understand why LLMs don’t actually remember anything in the traditional sense, what context windows are, and why they create hard limits on conversation length.
+
+[![The Memory Problem: Why LLMs Sometimes Forget Your Conversation page screenshot](/assets/stuck-2025-w43-4.jpg#center)](https://blog.bytebytego.com/p/the-memory-problem-why-llms-sometimes)
+<br /><hr />
+## The 3 Levels of Influence (And Why You’re Stuck on Level 1)
+[https://alifeengineered.substack.com/p/the-3-levels-of-influence-and-why](https://alifeengineered.substack.com/p/the-3-levels-of-influence-and-why)
+
+The 3-Step Algorithm for Building Influence That Lasts.
+
+[![The 3 Levels of Influence (And Why You’re Stuck on Level 1) page screenshot](/assets/stuck-2025-w43-5.jpg#center)](https://alifeengineered.substack.com/p/the-3-levels-of-influence-and-why)
+<br /><hr />
+## Is vibe coding dying?
+[https://garymarcus.substack.com/p/is-vibe-coding-dying](https://garymarcus.substack.com/p/is-vibe-coding-dying)
+
+Amateurs might not be replacing teams of coders, after all
+
+[![Is vibe coding dying? page screenshot](/assets/stuck-2025-w43-6.jpg#center)](https://garymarcus.substack.com/p/is-vibe-coding-dying)
+<br /><hr />
+## Andrej Karpathy — “We're summoning ghosts, not building animals”
+[https://www.youtube.com/watch?v=lXUZvyajciY](https://www.youtube.com/watch?v=lXUZvyajciY)
+
+
+
+[![Andrej Karpathy — “We're summoning ghosts, not building animals” page screenshot](/assets/stuck-2025-w43-7.jpg#center)](https://www.youtube.com/watch?v=lXUZvyajciY)
+<br /><hr />
+
+
+[acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
+
+[further_reading:md]
+
+[significant_revisions:md]
+
