@@ -1,0 +1,55 @@
+{
+  "title": "OWU - La Meetup III - Open Space",
+  "date": "2025-11-10",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Nov 1, 2025",
+    "extlink": "https://www.owu.uy/la-meetup",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20251101",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Howdy, OWU La Meetup III sponsor"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+
+[duration:string]
+Saturday, November 1st (All day)
+
+[place_url:string]
+https://maps.app.goo.gl/PWsJEYZGZdzGkmaRA?utm_source=la-meetup&utm_medium=owu
+
+[place:string]
+Sinergia Faro, Víctor Soliño 349, Montevideo
+
+[content:md]
+I've participated in “La Meetup III” organized by OWU Uruguay, an IT (Information Technology) community in Uruguay.
+
+La Meetup it is the meeting point for professionals, students, and technology enthusiasts from across the country. It is a great opportunity to exchange ideas, share experiences, and build relationships that foster growth and unity within the Uruguayan technology community.
+
+![](assets/la-meetup-iii-ticket.png#center)
+
+During the event, I was one of the speakers in a session on the “Open Space” agenda, where I gave a talk on “Personal Branding for Devs (not influencers).” 
+
+![](assets/la-meetup-iii-schedule-of-talks.png#center)
+
+[projects:md]
+
+[related_images:json]
+  [{
+    "filename": "la-meetup-iii-talk-proposal.jpg"
+  },{
+    "filename": "la-meetup-iii-banner.jpg"
+  }]
