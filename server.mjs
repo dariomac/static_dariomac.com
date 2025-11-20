@@ -1,9 +1,13 @@
+import 'dotenv/config';
 import express from 'express';
 import fs from 'fs';
 import path from 'path';
 import { exec } from 'child_process';
 import url from 'url';
 import pino from 'express-pino-logger';
+import { decrypt } from './lib/encryptor.mjs';
+import { generateRedirectPage } from './lib/redirect-template.mjs';
+import { fetchOGTags } from './lib/og-fetcher.mjs';
 
 const __dirname = import.meta.dirname;
 
@@ -76,6 +80,34 @@ for (let i=0; i < origins.length; i++) {
 
 app.get('/static/*static-files', function (req, res) {
   res.redirect(301, `/assets/build/static/${req.params[0]}`);
+});
+
+// Encrypted URL redirector with Open Graph mirroring
+app.get('/go/:slug', async function (req, res) {
+  const { slug } = req.params;
+
+  try {
+    const destinationUrl = decrypt(slug);
+
+    // Log the redirect for server-side tracking
+    console.log(`Redirecting /go/${slug.substring(0, 20)}... -> ${destinationUrl}`);
+
+    // Fetch Open Graph tags from destination URL
+    // This is cached and has a timeout, so it won't block for long
+    const ogTags = await fetchOGTags(destinationUrl);
+
+    // Serve HTML page with analytics tracking and OG tags
+    // This allows:
+    // 1. Social networks to see the correct preview when crawling
+    // 2. Google Analytics and PostHog to fire before redirect
+    const html = generateRedirectPage(destinationUrl, slug, ogTags);
+    res.type('html').send(html);
+  } catch (error) {
+    console.error(`Failed to decrypt slug: ${error.message}`);
+
+    // Return 400 Bad Request for invalid/tampered slugs
+    res.status(400).send('Invalid or tampered redirect link');
+  }
 });
 
 const fetchAndReset = () => {
