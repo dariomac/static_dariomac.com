@@ -11,6 +11,8 @@ The Go Links service allows you to create trackable short links like `https://da
 - ✅ **No Database Required** - URLs are encrypted in the slug itself
 - ✅ **Tamper-Proof** - Uses AES-256-GCM authenticated encryption
 - ✅ **Full Analytics Tracking** - Google Analytics 4 & PostHog track every click
+- ✅ **Social Media Previews** - Automatically fetches and mirrors Open Graph tags
+- ✅ **OG Tag Caching** - 24-hour cache for fast performance
 - ✅ **URL Integrity** - Automatically detects if links have been tampered with
 - ✅ **Fast Redirects** - Sub-second redirect with analytics firing (100-500ms)
 - ✅ **Fallback Support** - Works even without JavaScript (meta refresh)
@@ -21,12 +23,14 @@ The Go Links service allows you to create trackable short links like `https://da
 1. **Encryption**: The destination URL is encrypted using AES-256-GCM
 2. **Encoding**: The encrypted data (IV + ciphertext + auth tag) is base64url-encoded
 3. **Slug Creation**: The encoded string becomes the slug in `/go/:slug`
-4. **User Clicks**: When a user clicks the link, they hit `/go/:slug` on your server
+4. **User Clicks**: When a user or bot clicks the link, they hit `/go/:slug` on your server
 5. **Decryption**: The server decrypts and verifies the slug
-6. **Tracking Page**: Server returns an HTML page with Google Analytics and PostHog
-7. **Analytics Fire**: GA and PostHog track the pageview event with destination metadata
-8. **Redirect**: After ~100-500ms, JavaScript redirects to the destination URL
-9. **Result**: You get full analytics on who clicked, when, and where they went
+6. **OG Tag Fetching**: Server fetches Open Graph tags from the destination (cached for 24h)
+7. **Page Generation**: Server returns HTML with mirrored OG tags, GA, and PostHog
+8. **Social Crawlers**: Social network bots see the correct preview (title, image, description)
+9. **Analytics Fire**: GA and PostHog track the pageview event with destination metadata
+10. **Redirect**: After ~100-500ms, JavaScript redirects to the destination URL
+11. **Result**: You get full analytics + proper social media previews
 
 ## Setup
 
@@ -145,6 +149,29 @@ Check that:
 2. The same encryption key is used in all environments
 3. The `/go/:slug` route is not blocked by other middleware
 
+### Social media not showing preview
+
+If social networks aren't showing the correct preview:
+
+1. **Wait for cache**: Social networks cache OG tags for hours/days. Clear the cache using their debugging tools.
+2. **Check OG tags**: Visit your `/go/` link and view source. Make sure OG tags are present.
+3. **Destination site issues**: If the destination site has no OG tags or is blocking bots, we can't fetch them.
+4. **Timeout**: If the destination site is very slow (>5s), the fetch will timeout and use fallback tags.
+5. **Force refresh**: Use the social network's validator/debugger to force a refresh of the preview.
+
+### OG tags not appearing
+
+Check server logs for:
+- `[OG Fetch] Fetching tags for...` - Should appear on first request
+- `[OG Cache] Hit for...` - Should appear on subsequent requests
+- `[OG Fetch] Error fetching...` - Indicates a problem fetching the destination
+
+Common causes:
+- Destination site is blocking your server's IP or user agent
+- Destination site requires authentication
+- Destination site has no OG tags (will use fallback tags)
+- Network issues or timeouts
+
 ## API Reference
 
 ### Encryption Module (`lib/encryptor.mjs`)
@@ -197,6 +224,51 @@ You can customize the redirect page styling, timing, or messages by editing `lib
 - **Styling**: Edit the CSS in the `<style>` block
 - **Message**: Change the "Redirecting..." text
 - **Branding**: Add your logo or brand colors
+
+## Testing Social Media Previews
+
+Before sharing your links on social networks, test that the Open Graph tags are working correctly:
+
+### 1. Facebook/Meta Sharing Debugger
+```
+https://developers.facebook.com/tools/debug/
+```
+Enter your `/go/` link and click "Debug". You should see:
+- The destination page's title, description, and image
+- No errors or warnings
+
+### 2. Twitter Card Validator
+```
+https://cards-dev.twitter.com/validator
+```
+Enter your `/go/` link to preview how it will look as a Twitter card.
+
+### 3. LinkedIn Post Inspector
+```
+https://www.linkedin.com/post-inspector/
+```
+Test how your link will appear when shared on LinkedIn.
+
+### 4. Manual Testing
+
+You can also test locally by viewing the HTML source:
+
+```bash
+# Generate a test link
+node generate-go-link.mjs "https://dev.to/some-article"
+
+# Start the server
+npm run dev
+
+# Visit http://localhost:7007/go/[slug] in your browser
+# View source (Cmd+U or Ctrl+U) to see the OG tags
+```
+
+Look for these tags in the `<head>`:
+- `<meta property="og:title" content="...">`
+- `<meta property="og:description" content="...">`
+- `<meta property="og:image" content="...">`
+- `<meta property="og:url" content="...">`
 
 ## Examples
 
