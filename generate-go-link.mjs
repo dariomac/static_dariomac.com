@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import 'dotenv/config';
 import { encrypt, generateKey } from './lib/encryptor.mjs';
 
 const args = process.argv.slice(2);

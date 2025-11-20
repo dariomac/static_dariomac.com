@@ -12,7 +12,7 @@ module.exports = {
       watch     : true,
       exec_mode : "cluster",
       env: {
-
+        
       },
       env_production : {
         NODE_ENV: 'production'
