@@ -4,6 +4,7 @@ import path from 'path';
 import { exec } from 'child_process';
 import url from 'url';
 import pino from 'express-pino-logger';
+import { decrypt } from './lib/encryptor.mjs';
 
 const __dirname = import.meta.dirname;
 
@@ -76,6 +77,27 @@ for (let i=0; i < origins.length; i++) {
 
 app.get('/static/*static-files', function (req, res) {
   res.redirect(301, `/assets/build/static/${req.params[0]}`);
+});
+
+// Encrypted URL redirector
+app.get('/go/:slug', function (req, res) {
+  const { slug } = req.params;
+
+  try {
+    const destinationUrl = decrypt(slug);
+
+    // Log the redirect for analytics
+    console.log(`Redirecting /go/${slug.substring(0, 20)}... -> ${destinationUrl}`);
+
+    // Use 302 (temporary redirect) since the destination URL is not permanent
+    // This ensures analytics tools track the redirect properly
+    res.redirect(302, destinationUrl);
+  } catch (error) {
+    console.error(`Failed to decrypt slug: ${error.message}`);
+
+    // Return 400 Bad Request for invalid/tampered slugs
+    res.status(400).send('Invalid or tampered redirect link');
+  }
 });
 
 const fetchAndReset = () => {
