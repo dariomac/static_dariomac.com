@@ -10,8 +10,10 @@ The Go Links service allows you to create trackable short links like `https://da
 
 - ✅ **No Database Required** - URLs are encrypted in the slug itself
 - ✅ **Tamper-Proof** - Uses AES-256-GCM authenticated encryption
-- ✅ **Analytics Tracking** - All `/go/*` hits are tracked by your analytics
+- ✅ **Full Analytics Tracking** - Google Analytics 4 & PostHog track every click
 - ✅ **URL Integrity** - Automatically detects if links have been tampered with
+- ✅ **Fast Redirects** - Sub-second redirect with analytics firing (100-500ms)
+- ✅ **Fallback Support** - Works even without JavaScript (meta refresh)
 - ✅ **Simple CLI** - Easy-to-use command-line tool for generating links
 
 ## How It Works
@@ -19,9 +21,12 @@ The Go Links service allows you to create trackable short links like `https://da
 1. **Encryption**: The destination URL is encrypted using AES-256-GCM
 2. **Encoding**: The encrypted data (IV + ciphertext + auth tag) is base64url-encoded
 3. **Slug Creation**: The encoded string becomes the slug in `/go/:slug`
-4. **Decryption**: When accessed, the server decrypts and verifies the slug
-5. **Redirect**: If valid, redirects (302) to the destination URL
-6. **Tracking**: Your analytics capture the `/go/:slug` hit before redirect
+4. **User Clicks**: When a user clicks the link, they hit `/go/:slug` on your server
+5. **Decryption**: The server decrypts and verifies the slug
+6. **Tracking Page**: Server returns an HTML page with Google Analytics and PostHog
+7. **Analytics Fire**: GA and PostHog track the pageview event with destination metadata
+8. **Redirect**: After ~100-500ms, JavaScript redirects to the destination URL
+9. **Result**: You get full analytics on who clicked, when, and where they went
 
 ## Setup
 
@@ -166,10 +171,32 @@ Generates a new 256-bit encryption key.
 GET /go/:slug
 ```
 
-Decrypts and redirects to the destination URL.
+Decrypts the slug and serves an intermediate HTML page with analytics tracking.
 
-- **Response**: 302 redirect to destination
+- **Response**: HTML page with analytics + JavaScript redirect
+- **Redirect Timing**: 100-500ms delay to allow analytics to fire
+- **Fallback**: Meta refresh tag for browsers without JavaScript
 - **Error Response**: 400 if slug is invalid/tampered
+
+## User Experience
+
+When someone clicks a `/go/` link:
+
+1. **Fast Redirect**: Users see a brief "Redirecting..." page (0.1-0.5 seconds)
+2. **Smooth Transition**: The page has a clean loading spinner
+3. **Fallback Support**: Works even if JavaScript is disabled (via meta refresh)
+4. **Mobile Friendly**: Responsive design works on all devices
+
+The redirect is fast enough that users barely notice, but slow enough for analytics to fire reliably. Modern browsers with `sendBeacon` support redirect in ~100ms, while older browsers wait ~500ms.
+
+### Customizing the Redirect Page
+
+You can customize the redirect page styling, timing, or messages by editing `lib/redirect-template.mjs`:
+
+- **Delay**: Change the `setTimeout` values (100ms or 500ms)
+- **Styling**: Edit the CSS in the `<style>` block
+- **Message**: Change the "Redirecting..." text
+- **Branding**: Add your logo or brand colors
 
 ## Examples
 

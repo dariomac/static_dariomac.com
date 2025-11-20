@@ -5,6 +5,7 @@ import { exec } from 'child_process';
 import url from 'url';
 import pino from 'express-pino-logger';
 import { decrypt } from './lib/encryptor.mjs';
+import { generateRedirectPage } from './lib/redirect-template.mjs';
 
 const __dirname = import.meta.dirname;
 
@@ -86,12 +87,13 @@ app.get('/go/:slug', function (req, res) {
   try {
     const destinationUrl = decrypt(slug);
 
-    // Log the redirect for analytics
+    // Log the redirect for server-side tracking
     console.log(`Redirecting /go/${slug.substring(0, 20)}... -> ${destinationUrl}`);
 
-    // Use 302 (temporary redirect) since the destination URL is not permanent
-    // This ensures analytics tools track the redirect properly
-    res.redirect(302, destinationUrl);
+    // Serve HTML page with analytics tracking
+    // This allows Google Analytics and PostHog to fire before redirect
+    const html = generateRedirectPage(destinationUrl, slug);
+    res.type('html').send(html);
   } catch (error) {
     console.error(`Failed to decrypt slug: ${error.message}`);
 
