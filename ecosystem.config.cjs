@@ -12,7 +12,7 @@ module.exports = {
       watch     : true,
       exec_mode : "cluster",
       env: {
-        
+
       },
       env_production : {
         NODE_ENV: 'production'
@@ -23,7 +23,7 @@ module.exports = {
   /**
    * Deployment section
    * http://pm2.keymetrics.io/docs/usage/deployment/
-   */
+  
   deploy : {
     production : {
       user : 'node',
@@ -46,4 +46,5 @@ module.exports = {
       }
     }
   }
+  */
 }
