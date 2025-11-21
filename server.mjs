@@ -5,7 +5,7 @@ import path from 'path';
 import { exec } from 'child_process';
 import url from 'url';
 import pino from 'express-pino-logger';
-import { getLink, incrementClicks } from './lib/link-db.mjs';
+import { getLink } from './lib/link-db.mjs';
 import { generateRedirectPage } from './lib/redirect-template.mjs';
 import { fetchOGTags } from './lib/og-fetcher.mjs';
 
@@ -101,10 +101,7 @@ app.get('/go/:slug', async function (req, res) {
     }
 
     // Log the redirect for server-side tracking
-    console.log(`Redirecting /go/${slug} -> ${link.url} (created: ${new Date(link.createdAt).toISOString()}, clicks: ${link.clicks})`);
-
-    // Increment click counter
-    incrementClicks(slug);
+    console.log(`Redirecting /go/${slug} -> ${link.url} (created: ${new Date(link.createdAt).toISOString()})`);
 
     // Fetch Open Graph tags from destination URL
     // This is cached and has a timeout, so it won't block for long
