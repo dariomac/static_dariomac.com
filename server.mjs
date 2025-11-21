@@ -5,7 +5,7 @@ import path from 'path';
 import { exec } from 'child_process';
 import url from 'url';
 import pino from 'express-pino-logger';
-import { decrypt } from './lib/encryptor.mjs';
+import { getLink, incrementClicks } from './lib/link-db.mjs';
 import { generateRedirectPage } from './lib/redirect-template.mjs';
 import { fetchOGTags } from './lib/og-fetcher.mjs';
 
@@ -82,45 +82,43 @@ app.get('/static/*static-files', function (req, res) {
   res.redirect(301, `/assets/build/static/${req.params[0]}`);
 });
 
-// Encrypted URL redirector with Open Graph mirroring
+// Database-backed URL redirector with Open Graph mirroring
 app.get('/go/:slug', async function (req, res) {
   const { slug } = req.params;
 
   try {
-    const result = decrypt(slug);
-    const destinationUrl = result.url;
+    // Look up link in database
+    const link = getLink(slug);
 
-    // Log the redirect for server-side tracking (with generation date if available)
-    if (result.genDate) {
-      console.log(`Redirecting /go/${slug.substring(0, 20)}... -> ${destinationUrl} (generated: ${result.genDate.toISOString()})`);
-    } else {
-      console.log(`Redirecting /go/${slug.substring(0, 20)}... -> ${destinationUrl} (legacy link)`);
+    if (!link) {
+      console.log(`Link not found: /go/${slug}`);
+      return res.status(404).send('Link not found');
     }
+
+    if (link.isExpired) {
+      console.log(`Expired link accessed: /go/${slug} (expired: ${new Date(link.expiresAt).toISOString()})`);
+      return res.status(410).send('This link has expired');
+    }
+
+    // Log the redirect for server-side tracking
+    console.log(`Redirecting /go/${slug} -> ${link.url} (created: ${new Date(link.createdAt).toISOString()}, clicks: ${link.clicks})`);
+
+    // Increment click counter
+    incrementClicks(slug);
 
     // Fetch Open Graph tags from destination URL
     // This is cached and has a timeout, so it won't block for long
-    const ogTags = await fetchOGTags(destinationUrl);
+    const ogTags = await fetchOGTags(link.url);
 
     // Serve HTML page with analytics tracking and OG tags
     // This allows:
     // 1. Social networks to see the correct preview when crawling
     // 2. Google Analytics and PostHog to fire before redirect
-    const html = generateRedirectPage(destinationUrl, slug, ogTags);
+    const html = generateRedirectPage(link.url, slug, ogTags);
     res.type('html').send(html);
   } catch (error) {
-    console.error(`Failed to decrypt slug: ${error.message}`);
-
-    // Return appropriate status code based on error type
-    if (error.message.includes('expired')) {
-      // Return 410 Gone for expired links (more semantic than 404)
-      res.status(410).send('This link has expired');
-    } else if (error.message.includes('Invalid or tampered')) {
-      // Return 400 Bad Request for invalid/tampered slugs
-      res.status(400).send('Invalid or tampered redirect link');
-    } else {
-      // Generic error
-      res.status(500).send('Unable to process redirect link');
-    }
+    console.error(`Failed to process link: ${error.message}`);
+    res.status(500).send('Unable to process redirect link');
   }
 });
 
