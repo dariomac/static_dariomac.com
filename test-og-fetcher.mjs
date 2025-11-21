@@ -20,6 +20,11 @@ try {
     console.log(`    - ${key}: ${displayValue}`);
   }
 
+  // Highlight favicon extraction
+  if (ogTags.favicon) {
+    console.log(`\n  🎨 Favicon URL: ${ogTags.favicon}`);
+  }
+
   console.log('\n✅ Test 1 PASSED\n');
 } catch (error) {
   console.log(`\n❌ Test 1 FAILED: ${error.message}\n`);
@@ -62,6 +67,8 @@ try {
     { test: html.includes('og:url'), desc: 'Has og:url' },
     { test: html.includes('property="og:'), desc: 'Has OG meta tags' },
     { test: html.includes('canonical'), desc: 'Has canonical link' },
+    { test: html.includes('rel="icon"'), desc: 'Has favicon link' },
+    { test: ogTags.favicon !== undefined, desc: 'Extracted favicon URL' },
   ];
 
   let passed = 0;
