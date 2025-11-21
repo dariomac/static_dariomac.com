@@ -9,16 +9,14 @@ const args = process.argv.slice(2);
 if (args.length === 0 || args[0] === '--help' || args[0] === '-h') {
   console.log('\n📎 Add Go Link - Database-backed URL shortener\n');
   console.log('Usage:');
-  console.log('  node add-go-link.mjs <url> [--expires <date>] [--external-db <path>]\n');
+  console.log('  node add-go-link.mjs <url> [--expires <date>]\n');
   console.log('Examples:');
   console.log('  node add-go-link.mjs https://example.com/blog/post');
   console.log('  node add-go-link.mjs https://example.com --expires 2025-12-31');
-  console.log('  node add-go-link.mjs https://example.com --expires "2025-12-31 23:59:59"');
-  console.log('  node add-go-link.mjs https://example.com --external-db /path/to/external.db\n');
+  console.log('  node add-go-link.mjs https://example.com --expires "2025-12-31 23:59:59"\n');
   console.log('Options:');
-  console.log('  --expires <date>       Set expiration date (ISO 8601 format)');
-  console.log('  --external-db <path>   Also add to external database file');
-  console.log('  -h, --help             Show this help message\n');
+  console.log('  --expires <date>    Set expiration date (ISO 8601 format)');
+  console.log('  -h, --help          Show this help message\n');
   process.exit(0);
 }
 
@@ -48,13 +46,6 @@ if (expiresIndex !== -1 && args[expiresIndex + 1]) {
   }
 }
 
-// Parse optional external database path
-let externalDbPath = null;
-const externalDbIndex = args.indexOf('--external-db');
-if (externalDbIndex !== -1 && args[externalDbIndex + 1]) {
-  externalDbPath = args[externalDbIndex + 1];
-}
-
 // Validate URL
 try {
   new URL(url);
@@ -66,7 +57,7 @@ try {
 
 // Add link to database
 try {
-  const link = addLink(url, expiresAt, externalDbPath);
+  const link = addLink(url, expiresAt);
 
   const domain = process.env.GO_LINK_DOMAIN || 'dariomac.com';
   const protocol = process.env.GO_LINK_PROTOCOL || 'https';
@@ -83,13 +74,8 @@ try {
     console.log(`Expires:      Never`);
   }
 
-  console.log(`Full link:    ${fullUrl}`);
-
-  if (externalDbPath) {
-    console.log(`\n🔗 Synced to:  Local database + ${externalDbPath}`);
-  }
-
-  console.log('\n📋 Copy this link to share:\n');
+  console.log(`Full link:    ${fullUrl}\n`);
+  console.log('📋 Copy this link to share:\n');
   console.log(`   ${fullUrl}\n`);
 } catch (error) {
   console.error(`\n❌ Error: ${error.message}\n`);
