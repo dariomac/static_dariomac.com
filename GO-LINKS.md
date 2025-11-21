@@ -13,6 +13,8 @@ The Go Links service allows you to create trackable short links like `https://da
 - ✅ **Full Analytics Tracking** - Google Analytics 4 & PostHog track every click
 - ✅ **Social Media Previews** - Automatically fetches and mirrors Open Graph tags
 - ✅ **OG Tag Caching** - 24-hour cache for fast performance
+- ✅ **Key Rotation** - Zero-downtime key rotation with multi-key support
+- ✅ **Link Expiration** - Time-based auto-expiration with generation dates
 - ✅ **URL Integrity** - Automatically detects if links have been tampered with
 - ✅ **Fast Redirects** - Sub-second redirect with analytics firing (100-500ms)
 - ✅ **Fallback Support** - Works even without JavaScript (meta refresh)
@@ -306,6 +308,17 @@ Then use:
 npm run go:key
 npm run go:generate "https://example.com/post"
 ```
+
+## Additional Documentation
+
+### Advanced Features
+
+- **[KEY-ROTATION-GUIDE.md](./KEY-ROTATION-GUIDE.md)** - Complete guide to rotating encryption keys without breaking existing links
+- **[LINK-EXPIRATION-GUIDE.md](./LINK-EXPIRATION-GUIDE.md)** - Time-based link expiration with generation dates
+
+### Implementation Details
+
+- **[GO-LINKS-SUMMARY.md](./GO-LINKS-SUMMARY.md)** - Technical implementation overview and architecture
 
 ## License
 

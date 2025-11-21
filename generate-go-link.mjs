@@ -26,9 +26,9 @@ if (args.length === 0) {
 
 const url = args[0];
 
-// Validate that GO_LINK_SECRET_KEY is set
-if (!process.env.GO_LINK_SECRET_KEY) {
-  console.error('\n❌ Error: GO_LINK_SECRET_KEY environment variable is not set\n');
+// Validate that GO_LINK_SECRET_KEY or GO_LINK_SECRET_KEYS is set
+if (!process.env.GO_LINK_SECRET_KEY && !process.env.GO_LINK_SECRET_KEYS) {
+  console.error('\n❌ Error: GO_LINK_SECRET_KEY or GO_LINK_SECRET_KEYS environment variable is not set\n');
   console.log('Steps to fix:');
   console.log('1. Generate a key: node generate-go-link.mjs --generate-key');
   console.log('2. Add it to your .env file');

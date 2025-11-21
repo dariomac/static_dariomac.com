@@ -87,10 +87,15 @@ app.get('/go/:slug', async function (req, res) {
   const { slug } = req.params;
 
   try {
-    const destinationUrl = decrypt(slug);
+    const result = decrypt(slug);
+    const destinationUrl = result.url;
 
-    // Log the redirect for server-side tracking
-    console.log(`Redirecting /go/${slug.substring(0, 20)}... -> ${destinationUrl}`);
+    // Log the redirect for server-side tracking (with generation date if available)
+    if (result.genDate) {
+      console.log(`Redirecting /go/${slug.substring(0, 20)}... -> ${destinationUrl} (generated: ${result.genDate.toISOString()})`);
+    } else {
+      console.log(`Redirecting /go/${slug.substring(0, 20)}... -> ${destinationUrl} (legacy link)`);
+    }
 
     // Fetch Open Graph tags from destination URL
     // This is cached and has a timeout, so it won't block for long
@@ -105,8 +110,17 @@ app.get('/go/:slug', async function (req, res) {
   } catch (error) {
     console.error(`Failed to decrypt slug: ${error.message}`);
 
-    // Return 400 Bad Request for invalid/tampered slugs
-    res.status(400).send('Invalid or tampered redirect link');
+    // Return appropriate status code based on error type
+    if (error.message.includes('expired')) {
+      // Return 410 Gone for expired links (more semantic than 404)
+      res.status(410).send('This link has expired');
+    } else if (error.message.includes('Invalid or tampered')) {
+      // Return 400 Bad Request for invalid/tampered slugs
+      res.status(400).send('Invalid or tampered redirect link');
+    } else {
+      // Generic error
+      res.status(500).send('Unable to process redirect link');
+    }
   }
 });
 
