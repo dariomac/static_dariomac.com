@@ -85,6 +85,7 @@ app.get('/static/*static-files', function (req, res) {
 // Database-backed URL redirector with Open Graph mirroring
 app.get('/go/:slug', async function (req, res) {
   const { slug } = req.params;
+  const debug = req.query.debug === 'true';
 
   try {
     // Look up link in database
@@ -111,7 +112,7 @@ app.get('/go/:slug', async function (req, res) {
     // This allows:
     // 1. Social networks to see the correct preview when crawling
     // 2. Google Analytics and PostHog to fire before redirect
-    const html = generateRedirectPage(link.url, slug, ogTags);
+    const html = generateRedirectPage(link.url, slug, ogTags, debug);
     res.type('html').send(html);
   } catch (error) {
     console.error(`Failed to process link: ${error.message}`);
