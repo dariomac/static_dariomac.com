@@ -27,7 +27,7 @@
     "update-searcher": "rm -rf assets/build && cp -r ../dm-searcher/build/ assets/build && rm assets/build/inventory.json",
     "broken-links": "octopus ",
     "unstuck": "node unstuck.mjs",
-    "golink": "node generate-go-link.mjs"
+    "addlink": "node add-go-link.mjs"
   },
   "dependencies": {
     "@deptagency/octopus": "^1.5.1",
