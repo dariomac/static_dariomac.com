@@ -218,7 +218,7 @@ dm_map3.model.Chart = function () {
         },
         credits: {
             enabled: true,
-        text: '\u003cb\u003eSource:\u003c/b\u003e <a href="http://dariomac.com">Dar\u00EDo Macchi</a>.',
+        text: '\u003cb\u003eSource:\u003c/b\u003e <a href="https://dariomac.com">Dar\u00EDo Macchi</a>.',
         href: '',
         position: {
             align: 'left',

@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /go/*
-
 Disallow: /24offerfit-director
 Disallow: /academy
 Disallow: /devrel
