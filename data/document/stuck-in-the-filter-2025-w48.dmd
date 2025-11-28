@@ -1,0 +1,166 @@
+{
+  "title": "Stuck in the Filter - W48",
+  "date": "2025-11-28",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Links I couldn't process during the week 48 of 2025.",
+    "datebox": "November 28, 2025",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20251128",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+
+---
+
+
+[summary:string]
+Links I couldn't process during the week 48 of 2025.
+
+[pub_date:string]
+2025-11-28
+
+[short_description:string]
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
+
+[body:md]
+## AI trained on bacterial genomes produces never-before-seen proteins
+[https://arstechnica.com/science/2025/11/generative-ai-meets-the-genome](https://arstechnica.com/science/2025/11/generative-ai-meets-the-genome)
+
+Genes with related functions cluster together, and the AI uses that.
+
+[![AI trained on bacterial genomes produces never-before-seen proteins page screenshot](/assets/stuck-2025-w48-1.jpg#center)](https://arstechnica.com/science/2025/11/generative-ai-meets-the-genome)
+<br /><hr />
+## We stopped roadmap work for a week and fixed 189 bugs
+[https://dariomac.com/go/GOXuNcJfY3](https://dariomac.com/go/GOXuNcJfY3)
+
+Discussed on Hacker News, lobste.rs and r/programming
+It’s Friday at 4pm. I’ve just closed my 12th bug of the week. My brain is completely fried. And I’m staring at the bug leaderboard, genuinely sad that Monday means going back to regular work. Which is weird because I love regular work. But fixit weeks have a special place in my heart.
+What’s a fixit, you ask? Once a quarter or so, my org with ~45 software engineers stops all regular work for a week. That means no roadmap work, no design work, no meetings or standups.
+Instead, we fix the small things that have been annoying us and our users:
+an error message that’s been unclear for two years a weird glitch when the user scrolls and zooms at the same time a test which runs slower than it should, slowing down CI for everyone The rules are simple: 1) no bug should take over 2 days and 2) all work should focus on either small end-user bugs/features or developer productivity.
+
+[![We stopped roadmap work for a week and fixed 189 bugs page screenshot](/assets/stuck-2025-w48-2.jpg#center)](https://dariomac.com/go/GOXuNcJfY3)
+<br /><hr />
+## Gemini 3 For UI Design - AI & Data Sci. - yoDEV
+[https://www.yodev.dev/t/gemini-3-for-ui-design/736](https://www.yodev.dev/t/gemini-3-for-ui-design/736)
+
+Gemini 3 For UI Design Nick Babich Gemini 3 is the latest state-of-the-art LLM from Google. It is not just an incremental update it’s a radical shift toward an agentic-first experience. The model is optimized for multimodality and long-horizon planning. In other words, it doesn’t just answer prompts better; it can think, plan, and act more autonomously across different modalities. In this article, I want to show you 5 cases of using Gemini 3 for UI design tasks 1. Wireframing You can use G…
+
+[![Gemini 3 For UI Design - AI & Data Sci. - yoDEV page screenshot](/assets/stuck-2025-w48-3.jpg#center)](https://www.yodev.dev/t/gemini-3-for-ui-design/736)
+<br /><hr />
+## State of AI Coding: Context, Trust, and Subagents
+[https://www.turingpost.com/p/aisoftwarestack](https://www.turingpost.com/p/aisoftwarestack)
+
+Emerging playbook beyond IDE
+
+[![State of AI Coding: Context, Trust, and Subagents page screenshot](/assets/stuck-2025-w48-4.jpg#center)](https://www.turingpost.com/p/aisoftwarestack)
+<br /><hr />
+## Google Antigravity
+[https://antigravity.google/](https://antigravity.google/)
+
+Google Antigravity - Build the new way
+
+[![Google Antigravity page screenshot](/assets/stuck-2025-w48-5.jpg#center)](https://antigravity.google/)
+<br /><hr />
+## Dropstone - First Generational Self-Learning AI Development Platform
+[https://www.dropstone.io/](https://www.dropstone.io/)
+
+World’s first generational recursive self-improvement AI for autonomous programming. Desktop application with MCP Server, Computer Use API, unlimited Ollama models, Claude Code integration, and Agent Mode.
+
+[![Dropstone - First Generational Self-Learning AI Development Platform page screenshot](/assets/stuck-2025-w48-6.jpg#center)](https://www.dropstone.io/)
+<br /><hr />
+## The Hidden Cost of Saying Yes to Everyone (And how wrong-fit work destroys confidence and growth)
+[https://newsletter.essentialistceo.com/p/the-hidden-cost-of-saying-yes-to-everyone-and-how-wrong-fit-work-destroys-confidence-and-growth](https://newsletter.essentialistceo.com/p/the-hidden-cost-of-saying-yes-to-everyone-and-how-wrong-fit-work-destroys-confidence-and-growth)
+
+The hidden cost isn’t just time. It’s your confidence, your systems, and every opportunity you don’t have space for
+
+[![The Hidden Cost of Saying Yes to Everyone (And how wrong-fit work destroys confidence and growth) page screenshot](/assets/stuck-2025-w48-7.jpg#center)](https://newsletter.essentialistceo.com/p/the-hidden-cost-of-saying-yes-to-everyone-and-how-wrong-fit-work-destroys-confidence-and-growth)
+<br /><hr />
+## High-Agency Engineering: Why You Want To Be Blocked
+[https://alifeengineered.substack.com/p/high-agency-engineering-why-you-want](https://alifeengineered.substack.com/p/high-agency-engineering-why-you-want)
+
+Why You Should Run Into The Wall On Day One
+
+[![High-Agency Engineering: Why You Want To Be Blocked page screenshot](/assets/stuck-2025-w48-8.jpg#center)](https://alifeengineered.substack.com/p/high-agency-engineering-why-you-want)
+<br /><hr />
+## The Math of Why You Can't Focus at Work | Off by One
+[https://justoffbyone.com/posts/math-of-why-you-cant-focus-at-work/](https://justoffbyone.com/posts/math-of-why-you-cant-focus-at-work/)
+
+Interruptions, recovery time, and task size: three numbers that determine if you’ll get real work done. Interactive visualizations show the math behind bad days.
+
+[![The Math of Why You Can't Focus at Work | Off by One page screenshot](/assets/stuck-2025-w48-9.jpg#center)](https://justoffbyone.com/posts/math-of-why-you-cant-focus-at-work/)
+<br /><hr />
+## Applying AI where it matters
+[https://newsletter.getdx.com/p/applying-ai-where-it-matters](https://newsletter.getdx.com/p/applying-ai-where-it-matters)
+
+Microsoft’s recent study offers a path to target AI investments based on what developers actually need.
+
+[![Applying AI where it matters page screenshot](/assets/stuck-2025-w48-10.jpg#center)](https://newsletter.getdx.com/p/applying-ai-where-it-matters)
+<br /><hr />
+## Technical Deflation
+[https://benanderson.work/blog/technical-deflation](https://benanderson.work/blog/technical-deflation)
+
+Let’s buy the fridge next month, honey.
+
+[![Technical Deflation page screenshot](/assets/stuck-2025-w48-11.jpg#center)](https://benanderson.work/blog/technical-deflation)
+<br /><hr />
+## Internet Handle
+[http://internethandle.org](http://internethandle.org)
+
+Every time you sign up for a new social app, you have to rush to claim your username. If someone else got there first, too bad. And that username only works on that one app anyway.
+
+[![Internet Handle page screenshot](/assets/stuck-2025-w48-12.jpg#center)](http://internethandle.org)
+<br /><hr />
+## hyper content negotiation | AI Focus
+[https://aifoc.us/hyper-content-negotiation](https://aifoc.us/hyper-content-negotiation)
+
+I fondly remember sitting with my friend Chris learning how to make HTTP requests so that we more quickly check if our web pages were rendering as we expected without the need to load the browser.
+We would use:
+c:\telnet.exe pcbware.com 80 Then blindly type:
+GET /index.shtml HTTP/1.0 The keys I typed weren’t echoed back to me, but if we got it right it would return:
+200 OK Content-Type: text/html <! ....... Huh. What’s Content-Type?
+
+[![hyper content negotiation | AI Focus page screenshot](/assets/stuck-2025-w48-13.jpg#center)](https://aifoc.us/hyper-content-negotiation)
+<br /><hr />
+## More Articles Are Now Created by AI Than Humans
+[https://graphite.io/five-percent/more-articles-are-now-created-by-ai-than-humans](https://graphite.io/five-percent/more-articles-are-now-created-by-ai-than-humans)
+
+AI-generated content is as good or better than content written by humans. It is often hard to distinguish whether content is created by AI vs. a human. We seek to evaluate the prevalence of article content generated by AI.
+
+[![More Articles Are Now Created by AI Than Humans page screenshot](/assets/stuck-2025-w48-14.jpg#center)](https://graphite.io/five-percent/more-articles-are-now-created-by-ai-than-humans)
+<br /><hr />
+## The modern-day Trojan
+[https://www.yodev.dev/t/the-modern-day-trojan-horse-you-need-to-watch-out-for-when-using-ai-products/743](https://www.yodev.dev/t/the-modern-day-trojan-horse-you-need-to-watch-out-for-when-using-ai-products/743)
+
+The modern-day Trojan Horse you need to watch out for when using AI products Made with Midjourney AI has growing benefits…and risks. AI tools have evolved from conversational chatbots to agentic assistants that can now act on your behalf. For busy professionals, the productivity gains are hard to ignore. But there’s a catch: Whenever you delegate a task to AI, you’re at risk of a prompt injection. What’s a prompt injection? They’re malicious instructions that are hidden inside everyday cont…
+
+[![The modern-day Trojan page screenshot](/assets/stuck-2025-w48-15.jpg#center)](https://www.yodev.dev/t/the-modern-day-trojan-horse-you-need-to-watch-out-for-when-using-ai-products/743)
+<br /><hr />
+## A trillion dollars is a terrible thing to waste
+[https://garymarcus.substack.com/p/a-trillion-dollars-is-a-terrible](https://garymarcus.substack.com/p/a-trillion-dollars-is-a-terrible)
+
+The machine learning community is finally waking up to the madness, but the detour of the last few years has been costly.
+
+[![A trillion dollars is a terrible thing to waste page screenshot](/assets/stuck-2025-w48-16.jpg#center)](https://garymarcus.substack.com/p/a-trillion-dollars-is-a-terrible)
+<br /><hr />
+
+
+[acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
+
+[further_reading:md]
+
+[significant_revisions:md]
+
