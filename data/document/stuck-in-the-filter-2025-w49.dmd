@@ -1,0 +1,123 @@
+{
+  "title": "Stuck in the Filter - W49",
+  "date": "2025-12-05",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Links I couldn't process during the week 49 of 2025.",
+    "datebox": "December 5, 2025",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20251205",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+
+---
+
+
+[summary:string]
+Links I couldn't process during the week 49 of 2025.
+
+[pub_date:string]
+2025-12-05
+
+[short_description:string]
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
+
+[body:md]
+## AI trained on bacterial genomes produces never-before-seen proteins
+[https://arstechnica.com/science/2025/11/generative-ai-meets-the-genome](https://arstechnica.com/science/2025/11/generative-ai-meets-the-genome)
+
+Genes with related functions cluster together, and the AI uses that.
+
+[![AI trained on bacterial genomes produces never-before-seen proteins page screenshot](/assets/stuck-2025-w49-1.jpg#center)](https://arstechnica.com/science/2025/11/generative-ai-meets-the-genome)
+<br /><hr />
+## New Artificial Intelligence Model Could Speed Rare Disease Diagnosis
+[https://hms.harvard.edu/news/new-artificial-intelligence-model-could-speed-rare-disease-diagnosis](https://hms.harvard.edu/news/new-artificial-intelligence-model-could-speed-rare-disease-diagnosis)
+
+PopEVE can identify genetic variants most likely to cause severe disease, death
+
+[![New Artificial Intelligence Model Could Speed Rare Disease Diagnosis page screenshot](/assets/stuck-2025-w49-2.jpg#center)](https://hms.harvard.edu/news/new-artificial-intelligence-model-could-speed-rare-disease-diagnosis)
+<br /><hr />
+## A father’s quest for diagnosis inspired a disruptive AI solution - Source EMEA
+[https://news.microsoft.com/source/emea/features/a-fathers-quest-for-diagnosis-inspired-a-disruptive-ai-solution/](https://news.microsoft.com/source/emea/features/a-fathers-quest-for-diagnosis-inspired-a-disruptive-ai-solution/)
+
+Three months after Julián Isla’s son Sergio was born, the infant’s arms and legs suddenly began to shake and his body stiffened during a routine bath.
+
+[![A father’s quest for diagnosis inspired a disruptive AI solution - Source EMEA page screenshot](/assets/stuck-2025-w49-3.jpg#center)](https://news.microsoft.com/source/emea/features/a-fathers-quest-for-diagnosis-inspired-a-disruptive-ai-solution/)
+<br /><hr />
+## How good engineers write bad code at big companies
+[https://www.seangoedecke.com/bad-code-at-big-companies](https://www.seangoedecke.com/bad-code-at-big-companies)
+
+--
+
+[![How good engineers write bad code at big companies page screenshot](/assets/stuck-2025-w49-4.jpg#center)](https://www.seangoedecke.com/bad-code-at-big-companies)
+<br /><hr />
+## wsj.com
+[https://www.wsj.com/tech/ai/openais-altman-declares-code-red-to-improve-chatgpt-as-google-threatens-ai-lead-7faf5ea6](https://www.wsj.com/tech/ai/openais-altman-declares-code-red-to-improve-chatgpt-as-google-threatens-ai-lead-7faf5ea6)
+
+
+
+[![wsj.com page screenshot](/assets/stuck-2025-w49-5.jpg#center)](https://www.wsj.com/tech/ai/openais-altman-declares-code-red-to-improve-chatgpt-as-google-threatens-ai-lead-7faf5ea6)
+<br /><hr />
+## OpenAI’s “Code Red”
+[https://garymarcus.substack.com/p/openais-code-red](https://garymarcus.substack.com/p/openais-code-red)
+
+Maybe people should have seen this coming?
+
+[![OpenAI’s “Code Red” page screenshot](/assets/stuck-2025-w49-6.jpg#center)](https://garymarcus.substack.com/p/openais-code-red)
+<br /><hr />
+## The Junior Hiring Crisis | People Work
+[https://people-work.io/blog/junior-hiring-crisis](https://people-work.io/blog/junior-hiring-crisis)
+
+AI isn’t replacing everyone. It’s removing the apprenticeship ladder. Here’s what that means for students, early-career professionals, and the tech industry’s future.
+
+[![The Junior Hiring Crisis | People Work page screenshot](/assets/stuck-2025-w49-7.jpg#center)](https://people-work.io/blog/junior-hiring-crisis)
+<br /><hr />
+## Users scramble as critical open source project left to die • The Register
+[https://www.theregister.com/2025/12/02/ingress_nginx_opinion](https://www.theregister.com/2025/12/02/ingress_nginx_opinion)
+
+Opinion: Paying Ingress NGINX maintainers for their work might have avoided this outcome
+
+[![Users scramble as critical open source project left to die • The Register page screenshot](/assets/stuck-2025-w49-8.jpg#center)](https://www.theregister.com/2025/12/02/ingress_nginx_opinion)
+<br /><hr />
+## Bun is joining Anthropic | Bun Blog
+[https://bun.com/blog/bun-joins-anthropic](https://bun.com/blog/bun-joins-anthropic)
+
+Bun has been acquired by Anthropic. Anthropic is betting on Bun as the infrastructure powering Claude Code, Claude Agent SDK, and future AI coding products & tools.
+
+[![Bun is joining Anthropic | Bun Blog page screenshot](/assets/stuck-2025-w49-9.jpg#center)](https://bun.com/blog/bun-joins-anthropic)
+<br /><hr />
+## Using AI to accelerate hiring and productivity at Zapier
+[https://newsletter.getdx.com/p/using-ai-to-accelerate-hiring-and-productivity-at-zapier](https://newsletter.getdx.com/p/using-ai-to-accelerate-hiring-and-productivity-at-zapier)
+
+Lessons from Zapier’s experience building hundreds of internal AI agents to reduce engineering friction.
+
+[![Using AI to accelerate hiring and productivity at Zapier page screenshot](/assets/stuck-2025-w49-10.jpg#center)](https://newsletter.getdx.com/p/using-ai-to-accelerate-hiring-and-productivity-at-zapier)
+<br /><hr />
+## Generative AI’s Real Impact on Workforce Productivity in 2025—What Gartner & the Fed Data Really Say - AI & Data Sci. - yoDEV
+[https://www.yodev.dev/t/generative-ai-s-real-impact-on-workforce-productivity-in-2025-what-gartner-the-fed-data-really-say/752](https://www.yodev.dev/t/generative-ai-s-real-impact-on-workforce-productivity-in-2025-what-gartner-the-fed-data-really-say/752)
+
+Generative AI’s Real Impact on Workforce Productivity in 2025—What Gartner & the Fed Data Really Say Introduction The generative AI productivity debate has reached a fever pitch in 2025. While headlines scream about revolutionary gains, executives demand hard numbers. The reality? AI’s impact on workforce productivity is both more nuanced and more measurable than the hype suggests. Cutting through the noise requires triangulating multiple data sources: Gartner’s latest surveys revealing the…
+
+[![Generative AI’s Real Impact on Workforce Productivity in 2025—What Gartner & the Fed Data Really Say - AI & Data Sci. - yoDEV page screenshot](/assets/stuck-2025-w49-11.jpg#center)](https://www.yodev.dev/t/generative-ai-s-real-impact-on-workforce-productivity-in-2025-what-gartner-the-fed-data-really-say/752)
+<br /><hr />
+
+
+[acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
+
+[further_reading:md]
+
+[significant_revisions:md]
+

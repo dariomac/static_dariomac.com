@@ -1,0 +1,43 @@
+{
+  "week": "49",
+  "stuck": [
+    {
+        "url": "https://arstechnica.com/science/2025/11/generative-ai-meets-the-genome"
+    },
+    {
+        "url": "https://hms.harvard.edu/news/new-artificial-intelligence-model-could-speed-rare-disease-diagnosis"
+    },
+    {
+        "url": "https://news.microsoft.com/source/emea/features/a-fathers-quest-for-diagnosis-inspired-a-disruptive-ai-solution/"
+    },
+    {
+        "url": "https://www.seangoedecke.com/bad-code-at-big-companies"
+    },
+    {
+        "url": "https://www.wsj.com/tech/ai/openais-altman-declares-code-red-to-improve-chatgpt-as-google-threatens-ai-lead-7faf5ea6",
+        "screenshot": "data/document/assets/stuck-2025-w49-wsj-code-red.png"
+    },
+    {
+        "url": "https://garymarcus.substack.com/p/openais-code-red"
+    },
+    {
+        "url": "https://people-work.io/blog/junior-hiring-crisis",
+        "title": "The Junior Hiring Crisis | People Work"
+    },
+    {
+        "url": "https://www.theregister.com/2025/12/02/ingress_nginx_opinion",
+        "title": "Users scramble as critical open source project left to die • The Register"
+    },
+    {
+        "url": "https://bun.com/blog/bun-joins-anthropic",
+        "title": "Bun is joining Anthropic | Bun Blog"
+    },
+    {
+        "url": "https://newsletter.getdx.com/p/using-ai-to-accelerate-hiring-and-productivity-at-zapier"
+    },
+    {
+        "url": "https://www.yodev.dev/t/generative-ai-s-real-impact-on-workforce-productivity-in-2025-what-gartner-the-fed-data-really-say/752",
+        "title": "Generative AI’s Real Impact on Workforce Productivity in 2025—What Gartner & the Fed Data Really Say - AI & Data Sci. - yoDEV"
+    }
+  ]
+}
