@@ -333,7 +333,7 @@ dm-board
 }
 
 .splitter {
-  background-color: #F0F0F0;
+  background-color: #FCF1E7;
   border: #d8d7d7 1px solid;
   font-size: 1.1rem;
   height: 2.2rem;
@@ -827,4 +827,9 @@ article blockquote::after{
 
 .syntaxhighlighter table {
   margin: inherit;
+}
+
+section table th {
+  background-color: #FCF1E7;
+  border-bottom: solid #FF6E19;
 }

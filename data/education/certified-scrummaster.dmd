@@ -121,6 +121,10 @@ This two-day course teaches the principles and practices that make Scrum Masters
 
 [attachments:json]
   [{
+    "filename": "edu-CSM-certificate.pdf",
+    "description": "This is my Certified ScrumMaster certificate."
+  }
+  ,{
     "filename": "edu-CSM-notes.pdf",
     "description": "These are the notes from the course."
   }]
