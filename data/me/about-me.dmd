@@ -5,7 +5,7 @@
   "card": {
     "color": "#99b399",
     "columnid": "done_3",
-    "content": "Empirical Software Engineer. Systematic but flexible. Agile patterns fan. A bit literalist. Doomsayer.",
+    "content": "Working in Developer Relations ⬩ MSc in Software Engineer ⬩ Speaker & Professor ⬩ Building bridges across communities, “routing” information among them ⬩ Systematic yet flexible ⬩ A bit literalist ⬩ Doomsayer",
     "datebox": "",
     "extlink": "https://www.linkedin.com/in/dariomac/",
     "laneid": "Me",
@@ -31,18 +31,18 @@
 I believe that the curriculum vitae (CV) or resume should be something alive rather than a static document that looks like a biography. For this reason I choose to make my own resume in a way I called KanbanCV. Here I introduce myself, I write about experiences, education, other activities, as in a regular resume but with additional information.
 
 [short_description:string]
-Empirical Software Engineer. Systematic but flexible. Agile patterns fan. A bit literalist. Doomsayer.
+Working in Developer Relations ⬩ MSc in Software Engineer ⬩ Speaker & Professor ⬩ Building bridges across communities, “routing” information among them ⬩ Systematic yet flexible ⬩ A bit literalist ⬩ Doomsayer.
 
 [content:md]
-My profile can be defined as an elastic one, mostly because of my adaptive capacity.
+I specialize in bridging the gap between code, products, and communities. My profile is defined by its elasticity: while my foundation is deeply technical, my passion lies in sharing knowledge. This versatility is what led me to Developer Relations before the term even existed.
 
-I can lead projects (as PM or Scrum Master) following agile methodologies (Scrum, XP) or more traditional ones, taking care of the complete SDLC (mainly requirement elicitation/specification and quality assurance). In my role as a final-year project tutor at Universidad ORT Uruguay, I constantly face new challenges, but more than anything, new teams of people. I believe in self-managed teams and feel satisfied knowing that during our time working together, we grew individually and as a team.
+Leveraging my background as a Software Engineering professor at Universidad ORT Uruguay, I act as a technical storyteller. I improve organizational visibility through conference speaking, blogging, and social engagement, translating complex engineering concepts into content that truly resonates with developers.
 
-Also, I love coding. My management skills are complemented by in-depth technical knowledge, ranging from defining high-performance architectures (NGINX, PM2, Redis, in-memory or database caches) to the use of backend technologies (JavaScript, Ruby, .Net, Java), databases (MySql, PostgreSQL, Oracle, SQL Server), web frameworks (ASP.NET MVC, Ruby on Rails) and frontend ones (JavaScript, React, Handlebars, jQuery, Highcharts JS, SVG). 
+My ability to connect with the community stems from the fact that I am part of it. I have worked extensively with high-performance architectures (NGINX, Redis) and diverse stacks (JavaScript, Ruby, .Net, and Java). Whether I am tuning a database or optimizing a frontend, I speak the language of developers because I am actively building alongside them.
 
-Besides this, and perhaps because I am a Software Engineering professor at Universidad ORT Uruguay, I feel very comfortable speaking in public. For this reason, I usually contribute to improving the visibility of the companies where I work by participating in conferences as a speaker, writing articles in blogs and even adding content to Twitter (and other social networks). You could say I was doing DevRel before it even had a name.
+This technical empathy extends to my management style. Having served as a Project Manager and Scrum Master, I believe in self-managed teams and the growth that comes from collective effort.
 
-Finally, I am interested in conducting scientific research in the field of Software Engineering to add value to its body of knowledge. At the same time, I want to satisfy some practical needs of the industry, especially those related to quality assurance and decision making. I think it may be helpful to bring tools from the scientific environment closer to the daily activities of software development. In order to achieve this objective and to make a first approximation to the scientific field, I did a Master in Engineering at Universidad ORT Uruguay.
+Finally, I ground my work in rigor. My Master's degree in Engineering allows me to bring scientific methods into daily development activities—using research not just for theory, but to solve practical industry needs regarding quality assurance and decision-making.
 
 [related_topics:json]
   [{
