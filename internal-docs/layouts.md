@@ -41,6 +41,21 @@ These layouts are typically used to render specific types of content or detail p
 *   **Helpers**: Custom Handlebars helpers (e.g., `resumeGrep`, `fullname`, `json`) are used to process data, format strings, and handle logic within the templates.
 *   **Frontmatter**: Layouts rely on data provided via frontmatter in the content files (defined in the corresponding `.dmd` schemas).
 
-## `.dmd` Files
+## .dmd Files (Templates)
 
-Files with the `.dmd` extension (e.g., `article.dmd`, `project.dmd`) located alongside layouts typically define the **schema** or **scaffolding template** for that content type. They specify the default frontmatter fields (title, date, layout, etc.) required for the layout to function correctly.
+Files with the `.dmd` extension (e.g., `article.dmd`) located in the `layouts/` directory serve as **scaffolding templates**. They contain the required frontmatter structure and section headers for their corresponding layout.
+
+**Template Mapping:**
+
+| Layout (`.hbs`)  | Template (`.dmd`) | Documentation                                  |
+|:-----------------|:------------------|:-----------------------------------------------|
+| `article.hbs`    | `article.dmd`     | [Article Docs](dmd-templates/article.md)       |
+| `project.hbs`    | `project.dmd`     | [Project Docs](dmd-templates/project.md)       |
+| `document.hbs`   | `document.dmd`    | [Document Docs](dmd-templates/document.md)     |
+| `education.hbs`  | `education.dmd`   | [Education Docs](dmd-templates/education.md)   |
+| `experience.hbs` | `experience.dmd`  | [Experience Docs](dmd-templates/experience.md) |
+| `me.hbs`         | `me.dmd`          | [Me Docs](dmd-templates/me.md)                 |
+| `quote.hbs`      | `quote.dmd`       | [Quote Docs](dmd-templates/quote.md)           |
+| `research.hbs`   | `research.dmd`    | [Research Docs](dmd-templates/research.md)     |
+
+Refer to the specific documentation in `internal-docs/dmd-templates/` for details on how to fill out the frontmatter and content sections for each type.
