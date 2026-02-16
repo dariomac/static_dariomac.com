@@ -1,0 +1,61 @@
+{
+  "title": "The relationship between a Junior and his current AI",
+  "date": "20250722",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "The use of AI poses a new dilemma: Are junior developers actually learning or just executing?",
+    "datebox": "2025-07-22",
+    "extlink": "https://www.howdylatam.com/en/blog/la-relacion-entre-un-junior-y-su-ai-de-turno",
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250722",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "https://www.howdylatam.com/en/blog/la-relacion-entre-un-junior-y-su-ai-de-turno",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+The use of AI poses a new dilemma: Are junior developers actually learning or just executing? We explore the future of learning in the age of AI.
+
+[pub_date:string]
+2025-07-22
+
+[short_description:string]
+The use of AI poses a new dilemma: Are junior developers actually learning or just executing? We explore the future of learning in the age of AI.
+
+[body:md]
+The rise of artificial intelligence (AI) in software development has sparked a deep debate about the role of junior developers in the tech industry and the very nature of learning. In teams where juniors increasingly rely on tools like ChatGPT or Copilot to tackle tasks, some uncomfortable questions emerge: Are they truly learning? Are they building the essential foundations for professional growth, or is AI replacing the critical experience gained from making mistakes and solving them independently?
+
+In day-to-day practice, some team leaders notice that juniors tend to delegate their work to AI, merely copying and pasting results without fully understanding what they're doing. This creates a sense of frustration: if a junior’s only contribution is funneling prompts into an AI model, why not have a senior developer do it, who likely would guide the AI more effectively? Although pragmatic, this perspective questions the very purpose of entry-level roles in software development and hints at a potential displacement in the job market.
+
+However, reducing the issue to just tools oversimplifies things. Some argue that the essential factor is still the quality of the delivered work, regardless of the process. If a developer, junior or senior, produces robust, well-designed code and can explain their decisions, does it really matter if they used AI, Stack Overflow, or their own ingenuity? This viewpoint advocates for a results-oriented approach, suggesting evaluations should focus on the value brought to the team rather than the path taken to get there.
+
+But reality shows nuances. Often, juniors' indiscriminate use of AI increases the volume of code, but not necessarily its quality. The result? Lengthier and more tedious code reviews for seniors, who must fix basic mistakes or misguided decisions—issues that, if tackled traditionally, would have served as valuable learning opportunities. This raises the concern that AI might, rather than accelerating professional growth, generate the opposite effect: if juniors never pause to understand why something works or doesn't, they're unlikely to develop the critical thinking needed for sound future decisions.
+
+This dilemma isn't new. Throughout the history of technology, whenever a new tool has simplified complex tasks, there's been debate about whether this impoverishes learning. A classic example is calculators in math education: should students learn to add and subtract manually before using a calculator? Or is it more efficient to teach them how to solve complex problems, trusting basic operations to machines? The difference in software development is that problems rarely have a single correct solution. Software engineering involves decision-making, weighing alternatives, and understanding the impacts of each choice—skills difficult to cultivate if all reasoning is delegated to AI.
+
+On the other hand, AI can also be a powerful learning tool if used wisely. A junior who uses AI as a "pair programmer" can get explanations, receive suggestions for improvement, and even uncover patterns that would otherwise take years to learn. The risk lies in passive use: accepting the model’s first response without questioning or adapting the solution to the project’s actual context.
+
+The discussion becomes even more complicated when considering the business context. Many organizations actively encourage AI use to boost productivity, pushing teams to deliver more in less time. In such an environment, juniors might feel tempted (or even forced) to prioritize speed over comprehension, perpetuating a vicious cycle where deep learning takes a backseat. At the extreme, some teams have even automated code reviews with AI, leading to critical mistakes and highlighting the current limits of the technology.
+
+There's no shortage of voices warning about the long-term consequences: if today’s junior developers don't develop the necessary skills to become tomorrow's seniors, who will take over in a decade? The industry could face a shortage of genuinely qualified talent, alongside a mass of developers unable to grasp the systems they maintain. Others, however, see AI as an opportunity to redefine learning and collaboration, betting that those who learn to engage critically with these models will become the most valuable professionals of the future.
+
+Given this scenario, the central question seems less about the tool itself and more about the attitude with which it's used. Can AI serve as a catalyst for learning when paired with a culture of responsibility and curiosity? Or are we at risk of creating a generation of "prompt operators" who may never master the fundamentals of their craft?
+
+The future of junior developers—and, by extension, the entire industry—depends on how we balance leveraging AI's power while preserving the value of active learning. For now, the answer remains open, and perhaps the real transformation is yet to be seen.
+
+[acknowledgments:md]
+This post, originally on `https://www.howdylatam.com/en/blog/la-relacion-entre-un-junior-y-su-ai-de-turno`, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
