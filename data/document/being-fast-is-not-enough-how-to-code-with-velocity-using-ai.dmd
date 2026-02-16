@@ -1,0 +1,189 @@
+{
+  "title": "Being fast is not enough: how to code with velocity using AI",
+  "date": "20250923",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Discover how to use artificial intelligence in software development without falling into the trap of just generating code quickly.",
+    "datebox": "2025-09-23",
+    "extlink": "https://www.howdylatam.com/en/blog/ser-rapido-no-es-suficiente-como-programar-con-velocidad-utilizando-la-ia",
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250923",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "https://www.howdylatam.com/en/blog/ser-rapido-no-es-suficiente-como-programar-con-velocidad-utilizando-la-ia",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Discover how to use artificial intelligence in software development without falling into the trap of just generating code quickly. This article explores the difference between speed and velocity, and proposes the OODA loop as a mental model to code with AI at controlled velocity.
+
+[pub_date:string]
+2025-09-23
+
+[short_description:string]
+Discover how to use artificial intelligence in software development without falling into the trap of just generating code quickly. This article explores the difference between speed and velocity, and proposes the OODA loop as a mental model to code with AI at controlled velocity.
+
+[body:md]
+In the current landscape of software development, artificial intelligence (AI) has become an invaluable tool that is transforming the way developers approach their projects.
+
+## There are two ways to use AI in software development
+
+Establishing maxims in Software Engineering is a risky practice, mainly due to the rebellious and challenging nature of professionals in this industry; we're tempted to try to refute them, simply to put them to the test.
+
+When it comes to AI, this risk is amplified. AI-related maxims can become obsolete quickly due to the accelerated pace at which the technology evolves, even before anyone tries to challenge them.
+
+Despite that, I'm going to take the risk and assert that there are two ways to use artificial intelligence in development:
+
+1. AI is used to optimize and improve existing processes within the development cycle. This includes tasks such as automatic error detection, code improvement recommendations, and other tasks that facilitate and streamline the developer's work.
+2. AI is integrated directly into the final product as a fundamental part of its value proposition for the customer. Examples of this can be personalized recommendation systems that improve the user experience, large language models (LLMs) that have been fine-tuned for specific tasks, or innovative solutions based on retrieval-augmented generation (RAG).
+
+Corollary: the second group is usually almost entirely contained within the first.
+
+This article is intended to be useful for both groups of professionals. However, we will focus primarily on the first group due to its larger size and general relevance within the field of software development.
+
+## "Everyone" talks about being fast
+
+It's common to find posts on social media, such as LinkedIn, talking about how "productive" AI makes them. I could paste numerous examples from different networks, but instead, to avoid issues, I'll paraphrase them.
+
+"I can't believe it only took me 20 minutes to revolutionize how I track expenses for my farm LLC!
+
+As someone who's been leading tech initiatives for years, I could have hired developers, bought enterprise software, or kept doing it manually in spreadsheets.
+
+Instead, I spent 20 minutes with AI and built exactly what I needed.
+
+This is how I (a non-technical person) vibe-coded a fully functional app in four hours using Claude Code with several API integrations.
+
+It took me 2 hours of vibecoding using an AI tool to build...
+
+It's over...
+
+This new AI agent called [insert whatever name you want here] can now create full-stack products, websites, and games, turning simple ideas into full-stack apps within minutes—no experience required"
+
+What do all these examples have in common? They all talk about how fast I can generate a new app, MVP, or feature.
+
+"20 minutes" seems to be the average time it takes to do anything revolutionary with AI, followed by the magical "2 hours" or "4 hours."
+
+Everyone is faster and saves time. What used to take X now takes a tenth. Everyone seems to be "in a rush" to generate code; it appears to be the only important metric, one we must take on faith because its evidence is very scarce.
+
+Setting social media aside for a moment and turning to the industry, we can see reports with more empirical support, like the one conducted by [McKinsey back in 2023](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/unleashing-developer-productivity-with-generative-ai). Although much has happened in the last year and a half in terms of models, speed of code generation, and new features, the results already spoke of "speed."
+
+(...) generative AI-based tools provide impressive speed gains for many common developer tasks.
+
+That study mentioned that documentation would be 45%-50% faster, coding 35%-45%, and refactoring 20%-30%.
+
+As a conclusion, we could say that:
+
+- Software developers are generating code with AI consistently (whether through simple autocompletions or using multiple agents).
+- AI allows us to generate code faster.
+- Generating code faster doesn't always mean that code adds value to the final product.
+
+## Don't confuse speed with velocity
+
+In this section, we'll draw an analogy between the concepts of speed and velocity from physics, obviously without adhering to the rigor of that science, but making simplifications that serve our scenario.
+
+**What is speed?** Speed is the "distance that 'something' travels in a given time." The problem with speed is that I can be fast in multiple directions; I can even be fast while moving in a circle (no one can say a satellite doesn't move fast).
+
+For physics, that's fine, but in the previous section, we talked about speed as a productivity metric. So, while we instinctively know that metric can't be right, we confirm it when we think that we generate code fast but not in a specific direction.
+
+Generating code fast brings the following problems:
+
+- **Increases technical debt**: cases outside the context where the prompt that originates the code creation is given remain unattended.
+- **Decreases code clarity**: often the generated code functionally solves what we asked for, but the code isn't clear (at least for a human).
+- **Decreases maintainability**: the two previous points obviously negatively affect maintainability, since code with technical debt that's hard to understand can never be maintainable.
+- **Decreases testability**: the previous problems make it very difficult to ensure that all business scenarios can be properly tested.
+
+The massive use of AI for code generation has opened the debate about whether code is still relevant or has simply become another abstraction layer, similar to intermediate language in .NET or Java. However, even assuming this, even more serious problems arise with this rapid feature generation:
+
+- Do the developed features add value to the customer/product?
+- Are they aligned with the business?
+- Do they offer the product/customer a competitive advantage?
+- Do they create dependency on unstable, poorly defined, or poorly maintained solutions (code)?
+
+I know what you're thinking: "Darío, but we had these problems before AI; there's nothing new in this list!" And that's true.
+
+But as we established earlier, we're generating code faster and faster using AI, and now we're capable of flooding a product with new functionalities. This fact exponentially increases the probability of the aforementioned risks materializing.
+
+This is where the concept of velocity comes into play. **What is velocity?**
+
+Velocity is how fast and in what direction 'something' moves. In other words, it's not enough to be fast; we need to have a direction to achieve velocity!
+
+To close this section, a conclusion: it's not "good enough" to generate functionalities (code) just because it's cheap, fast, and cool; we need to generate code with AI at controlled velocity.
+
+## How to generate code with AI at controlled velocity?
+
+To explain this part of the article, we'll use an analogy. Do you know what a First Person Shooter (FPS) is? Maybe not by that name, but if I mention games like Call of Duty, The Last of Us, Doom, or Duke Nukem 3D (my favorite), you know what I'm talking about.
+
+Now, let's suppose we're playing The Last of Us (if you haven't played it, do yourself a favor and play it) and we find ourselves in the following situation:
+
+![Fast is not enough - Last Of Us game screenshot](/assets/fast-is-not-enough-1.png#center)
+
+In this type of situation, I have 2 options:
+
+- Rush into the room guns blazing (and risk whatever might happen)
+- Observe everything. Since I have a door covering me on the left, I can slowly enter hugging the wall to the right, next to the door; observe again and decide our next move.
+
+Without a doubt, while we've all gone with option 1 at some point seeking an adrenaline rush, we know that option 2 is the safest if we want to have a chance of success.
+
+What we described above as option 2 can be generalized as follows:
+
+- **Observe**
+- **Orient**
+- **Decide**
+- **Act**
+
+This formalization was first described in the mid-20th century by John Boyd as a decision-making model in highly changing contexts, primarily used in fighter jet aerial combat (dogfighting). Its name is the OODA loop, after the initials of each stage.
+
+Here we see how this mental model adapts perfectly to the gaming situation we presented earlier.
+
+![Fast is not enough - OODA loop](/assets/fast-is-not-enough-2.png#center)
+
+And we can see how the loop repeats with each move as we progress through the game.
+
+![Fast is not enough - OODA loop](/assets/fast-is-not-enough-3.png#center)
+
+Now, how does this answer the question of how to generate code with AI at controlled velocity?
+
+Well, from the first section of the article, we can conclude that we are indeed generating code very fast using AI. From the second section, that we need direction so that the speed we achieve gives us velocity.
+
+Therefore, the way to generate code with AI at controlled velocity is to use the OODA loop as part of our workflow when generating code with AI.
+
+## Does this work in practice? How?
+
+tl;dr: yes, it works.
+
+Since I started using Claude Code as an agentic tool for code generation, I experienced a certain discomfort. It wasn't about the tool itself, which from the beginning I considered superior in terms of interface and results, but about the process I followed to develop new functionalities.
+
+Initially, I tried using very detailed prompts, providing enough context to avoid any doubt or ambiguity. However, I felt something was missing. Then I tried giving precise instructions through the CLAUDE.md file. Combining this with detailed prompts, I got initially promising results. But over time, as I refined the code, I lost control and direction, ending up generating features very different from what I had imagined.
+
+That's when I realized I needed to advance through micro-iterations: short but precise steps in the right direction. I experimented with more specific and focused prompts, and began to improve my results. I started calling this process of making small iterative improvements, each initiated by a prompt, "AI multi-turn feature generation." This name came from an expression Andrew Chan used in his article "[Vibecoding a high performance system](https://andrewkchan.dev/posts/systems.html)" to describe part of his vibe-coding process.
+
+Then I incorporated the OODA loop mental model to ensure that each small improvement moved in the desired direction. Finally, I implemented a definitive change in my workflow using some Claude Code hooks: after each code generation cycle, a commit was automatically generated with the prompt used as the commit description. This finally gave me the comfort and control I needed over my development process.
+
+![Fast is not enough - AI multi-turn feature generation](/assets/fast-is-not-enough-4.png#center)
+
+## Conclusion
+
+In the current context of software development, artificial intelligence has become an essential tool that allows developers to generate code at unprecedented speed. However, it is crucial not to confuse speed with effective velocity. Through the implementation of the OODA cycle (Observe, Orient, Decide, Act), developers can ensure that their speed translates into significant and directional progress. This approach not only helps avoid common problems such as technical debt and lack of code clarity but also ensures that the generated functionalities provide real value to the final product.
+
+Personally, I have found that this approach has significantly improved my development process when using AI-based code generation tools. The multi-turn feature generation methodology along with the OODA model have provided a clear structure for advancing my projects. This framework is based on solid and proven principles like "divide and conquer" and continuous improvement cycles, which reinforces my confidence in its effectiveness. However, I am open to feedback and suggestions from other professionals to continue refining this approach.
+
+Finally, I encourage all developers not to settle for processes that generate discomfort or frustration. Just as I transformed my initial discomfort with AI tools into a more efficient and satisfying process, everyone should look for proactive ways to optimize their workflow. The key is to adapt the available tools and methodologies to meet our specific needs and improve our daily productivity.
+
+[acknowledgments:md]
+This post, originally on `https://www.howdylatam.com/en/blog/ser-rapido-no-es-suficiente-como-programar-con-velocidad-utilizando-la-ia`, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+- Unleashing developer productivity with generative AI. McKinsey. [https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/unleashing-developer-productivity-with-generative-ai](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/unleashing-developer-productivity-with-generative-ai)
+- [https://www.youtube.com/watch?v=tbDDYKRFjhk](https://www.youtube.com/watch?v=tbDDYKRFjhk)
+- [https://arxiv.org/abs/2409.15152](https://arxiv.org/abs/2409.15152)
+
+[significant_revisions:md]
