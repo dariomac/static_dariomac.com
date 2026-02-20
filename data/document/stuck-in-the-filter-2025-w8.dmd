@@ -1,0 +1,88 @@
+{
+  "title": "Stuck in the Filter - W8",
+  "date": "2026-02-20",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_3",
+    "content": "Links I couldn't process during the week 8 of 2026.",
+    "datebox": "February 20, 2026",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260220",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+
+---
+
+
+[summary:string]
+Links I couldn't process during the week 8 of 2026.
+
+[pub_date:string]
+2026-02-20
+
+[short_description:string]
+These links for various reasons didn't make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn't fit the overall flow, these links are still valuable resources for some reason they caught my attention.
+
+[body:md]
+## Paul Sufka, MD (@psufka) on X
+[https://x.com/psufka/status/2023873523047952626](https://x.com/psufka/status/2023873523047952626)
+
+How to Make Claude Code Aware of Its Own Context Limit
+
+[![Paul Sufka, MD (@psufka) on X page screenshot](/assets/stuck-2026-w8-1.jpg#center)](https://x.com/psufka/status/2023873523047952626)
+<br /><hr />
+## Egregore — Shared Cognition for Teams and Agents
+[https://egregore.xyz/](https://egregore.xyz/)
+
+A terminal-native platform where humans and AI agents share persistent context and work together as a single organizational mind.
+
+[![Egregore — Shared Cognition for Teams and Agents page screenshot](/assets/stuck-2026-w8-2.jpg#center)](https://egregore.xyz/)
+<br /><hr />
+## Entire · A new developer platform is coming
+[https://entire.io/](https://entire.io/)
+
+We are going beyond repositories, building a developer platform where agents and humans can collaborate, interact, and grow. The birth of a new galaxy in this universe draws near.
+
+[![Entire · A new developer platform is coming page screenshot](/assets/stuck-2026-w8-3.jpg#center)](https://entire.io/)
+<br /><hr />
+## recuerd0 — The knowledge base your AI tools deserve
+[https://recuerd0.ai/](https://recuerd0.ai/)
+
+Organize, version, and serve project context to any LLM — from Claude Code to Cursor to ChatGPT. Human-curated memory, instantly accessible via REST API.
+
+[![recuerd0 — The knowledge base your AI tools deserve page screenshot](/assets/stuck-2026-w8-4.jpg#center)](https://recuerd0.ai/)
+<br /><hr />
+## braindump by mohganji/braindump
+[https://skills.sh/mohganji/braindump/braindump](https://skills.sh/mohganji/braindump/braindump)
+
+Discover and install skills for AI agents.
+
+[![braindump by mohganji/braindump page screenshot](/assets/stuck-2026-w8-5.jpg#center)](https://skills.sh/mohganji/braindump/braindump)
+<br /><hr />
+## Context Engineering with Threadlinking for Claude Code
+[https://byemarianne.substack.com/p/context-engineering-with-threadlinking](https://byemarianne.substack.com/p/context-engineering-with-threadlinking)
+
+Preserving Conversation Context and Decision History
+
+[![Context Engineering with Threadlinking for Claude Code page screenshot](/assets/stuck-2026-w8-6.jpg#center)](https://byemarianne.substack.com/p/context-engineering-with-threadlinking)
+<br /><hr />
+
+
+[acknowledgments:md]
+I didn't invented the idea of grabbing everything I couldn't process and putting it in a document. I just borrowed it (the idea and the name) from the 'Angry Metal Guy' website, which has been doing this for years. You can check their [Stuck in the Filter](https://www.angrymetalguy.com/category/stuck-in-the-filter/) series for more details.
+
+[further_reading:md]
+
+[significant_revisions:md]
+
