@@ -1,17 +1,17 @@
 {
   "title": "Being fast is not enough: how to code with velocity using AI",
-  "date": "20250923",
+  "date": "20260213",
   "layout": "document",
   "card": {
     "color": "#003366",
     "columnid": "done_3",
     "content": "Discover how to use artificial intelligence in software development without falling into the trap of just generating code quickly.",
-    "datebox": "2025-09-23",
+    "datebox": "2025-09-12",
     "extlink": "https://www.howdylatam.com/en/blog/ser-rapido-no-es-suficiente-como-programar-con-velocidad-utilizando-la-ia",
     "laneid": "Essay",
     "leftbox": null,
     "linkto": "[link_to]",
-    "position": "20250923",
+    "position": "20250912",
     "subtaskdetails": [],
     "tags": null,
     "title": "[title]"
@@ -27,7 +27,7 @@
 Discover how to use artificial intelligence in software development without falling into the trap of just generating code quickly. This article explores the difference between speed and velocity, and proposes the OODA loop as a mental model to code with AI at controlled velocity.
 
 [pub_date:string]
-2025-09-23
+2025-09-12
 
 [short_description:string]
 Discover how to use artificial intelligence in software development without falling into the trap of just generating code quickly. This article explores the difference between speed and velocity, and proposes the OODA loop as a mental model to code with AI at controlled velocity.

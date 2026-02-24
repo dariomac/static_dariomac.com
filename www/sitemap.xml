@@ -74,12 +74,6 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://dariomac.com/being-fast-is-not-enough-how-to-code-with-velocity-using-ai</loc>
-        <lastmod>20250923</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
         <loc>https://dariomac.com/stuck-in-the-filter-2025-w37</loc>
         <lastmod>2025-09-19</lastmod>
         <changefreq>monthly</changefreq>
@@ -94,6 +88,12 @@
       <url>
         <loc>https://dariomac.com/ai-multi-turn-feature-generation</loc>
         <lastmod>2025-09-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://dariomac.com/being-fast-is-not-enough-how-to-code-with-velocity-using-ai</loc>
+        <lastmod>20260213</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
