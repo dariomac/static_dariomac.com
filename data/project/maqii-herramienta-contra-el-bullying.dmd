@@ -1,20 +1,20 @@
 {
-  "title": "Maqii - Herramienta contra el Bullying",
-  "date": "2022-08-30",
+  "title": "Maqii - Herramienta contra el bullying",
+  "date": "2021-08-01",
   "layout": "project",
   "card": {
     "color": "#AD4647",
     "columnid": "done_3",
-    "content": "Tool to support specialists in the treatment of bullying in schools",
+    "content": "Maqii - Herramienta contra el bullying",
     "datebox": "2020-2021",
-    "extlink": null,
+    "extlink": "",
     "laneid": "Project",
     "leftbox": null,
     "linkto": "[link_to]",
-    "position": "20210420",
+    "position": "20210801",
     "subtaskdetails": [],
     "tags": null,
-    "title": "Maqii - Herramienta contra el Bullying"
+    "title": "Maqii - Herramienta contra el bullying"
   },
   "jsonld": {},
   "canonical": "",
@@ -24,44 +24,32 @@
 ---
 
 [summary:string]
-Maqii is a tool for specialists to accompany the treatment of children who may be experiencing or suffering from bullying.
+Maqii is a tool developed to help specialists detect and treat bullying through a mobile video game for children and a web platform for tracking patient progress.
 *Disclaimer*: I've participated in this project *only* on my role of tutor.
 
 [download_link:string]
+https://rad.ort.edu.uy/bitstreams/cc3c7ecb-be18-4aca-a47a-a731eda6352d/download
 
 [platform:string]
+Mobile (Android) and Web
 
 [link:string]
+https://rad.ort.edu.uy/items/20e3f66c-9f4d-4250-ba40-420fcaee828b/full
 
 [short_description:string]
-Maqii is a comprehensive solution designed to address the serious issue of bullying among children. It consists of a mobile educational video game, developed using Unity, which aims to accompany children in the detection and treatment of bullying through interactive mini-games and virtual pet interactions. Additionally, specialists can utilize a web platform to monitor assigned patients, analyze their progress, and access reports generated from the child's interactions with the game. The system communicates with a server that handles database manipulation and report generation, utilizing .Net Core for the web application and MySQL for the database.
+Maqii is a tool used by specialists to detect and treat bullying. It consists of a mobile educational video game for children centering around a virtual pet, and a web platform for specialists to manage their patients and track treatment progress based on the data collected from the child's interactions with the game.
 
 [description:md]
-**Disclaimer**: _I've participated in this project **only** on my role of [Tutor](/degree-final-projects-tutor)_
+Bullying has a profound and lifelong impact on its victims, leading to issues with relationships, concentration, panic disorders, poor school performance, depression, and even suicide. Currently, specialists rely mostly on traditional therapies which may not be fully sufficient on their own.
 
-Bullying , is defined by the RAE as:
+Maqii provides professionals with an innovative tool to complement the treatment of children who might be suffering from or engaging in bullying behaviors. The project consists of two main components:
+1. **Mobile Educational Video Game**: Built using Unity for Android, this game centers around a virtual pet. Through minigames and interaction, it helps accompany children in the detection and treatment of bullying, working on areas of improvement through a medium that is highly attractive to a child.
+2. **Web Platform**: Developed in .NET Core with a MySQL database, this platform allows specialists to manage their assigned patients and view reports generated from the child's interactions with the video game. This allows the therapist to track the child's progress, convey concepts, and analyze the child's evolution over time.
 
-"A behavior contrary to the identity of the student in relation to his race, color, nationality, disability, religion, sexual orientation or any other circumstance".
+Both applications communicate with a centralized server that handles data manipulation and report generation. The Minimum Viable Product (MVP) was successfully validated with 30 children and received positive feedback from an expert in the field, confirming its utility for specialists.
 
-In the medium and long term, having suffered bullying generates post-traumas for life, causing serious inconveniences to the student when relating to others, causing loss of concentration, panic disorders, poor school performance, depression, low self-esteem, even suicide.
-
-There is no awareness of the magnitude of this problem causing no corrective or preventive measures to be taken, normalizing bullying.
-
-A UNICEF study conducted in 2014 concluded that 78% of suicides in children are related to bullying.
-
-Currently, specialists such as psychiatrists, psychologists and pediatricians treat victims through therapies. But these methods are not enough.
-
-Maqii arises from this problem, providing the specialists who treat the victims with a tool accompanies the treatment of children who may be suffering from, or experiencing, bullying.
-
-On the one hand, it is a mobile educational video game based on a virtual pet, which through "mini-games" and interaction with them, tries to accompany the child in the treatment and detection of bullying. On the other hand, it works in areas that want to improve the patient through a video game, making it a super attractive tool for the child.
-
-The game was developed using the Unity video game engine; generated for Android, allowing in the future to be easily converted to other systems such as IOS.
-
-On the other hand, the expert can, through a web visualize the assigned patients and get reports to assign and get reports to visualize the information collected from the child's interactions with the video game. In this way, the expert can monitor the child, transmit concepts and analyze its evolution. The web has been developed in .Net Core.
-
-Both applications communicate with a server in charge of manipulating the database, as well as generating reports. Being the application developed in .Net Core, and the database in MySQL.
-
-Finally, "Maqii" is a tool used by specialists to detect and treat bullying. It consists of a mobile video game for children, and a web page for specialists to manage their patients and track detection and/or treatment. The MVP was validated with 30 children and presented to an expert in the field indicating that the result was useful.
+## Authors
+Blanco Djamgochian, Nicolás | Martínez Barón, Karen Lucía
 
 [related_images:json]
   [{
@@ -69,3 +57,4 @@ Finally, "Maqii" is a tool used by specialists to detect and treat bullying. It 
   },{
     "filename": "maqii-nicolas.png"
   }]
+
