@@ -1,0 +1,106 @@
+{
+  "title": "Scaling development with AI using Git Worktree for agents",
+  "date": "20260223",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Learn how Git worktree allows you to work with multiple AI agents, isolating branches, reducing friction and improving your development workflow.",
+    "datebox": "2026-01-20",
+    "extlink": "https://www.howdylatam.com/blog/escalando-el-desarrollo-con-ia-usando-git-worktree-para-agentes",
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260120",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "https://www.howdylatam.com/en/blog/escalando-el-desarrollo-con-ia-usando-git-worktree-para-agentes",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Learn how Git worktree allows you to work with multiple AI agents, isolating branches, reducing friction and improving your development workflow. The article explores how to separate AI tasks in Git worktrees for safe parallelism.
+
+[pub_date:string]
+2026-01-20
+
+[short_description:string]
+Learn how Git worktree allows you to work with multiple AI agents, isolating branches, reducing friction and improving your development workflow. The article explores how to separate AI tasks in Git worktrees for safe parallelism.
+
+[body:md]
+Git worktree allows a single repository to have multiple working directories. Each directory is checked out on a different branch, but they all share the same Git history. You keep your main repo intact and create additional folders that reference the same `.git` data. Each worktree contains actual and executable files. There is no stashing or repeated checkouts.
+
+## Understanding Git Worktree
+
+### How is it different from cloning?
+- Cloning creates a complete and independent copy of the repository, including its own `.git` directory. This duplicates the history and consumes more disk space.
+- Worktrees reuse the same Git history, making them lighter, faster to create, and easier to manage.
+
+### How is it different from traditional branching?
+With traditional branching in a single folder, changing a branch rewrites the working directory. This usually involves stashing changes, reinstalling dependencies, and additionally, prevents you from having several branches open at the same time.
+
+## Benefits of using Git Worktree
+Git worktree reduces overhead by avoiding complete clones and disruptive checkouts, while allowing you to work on multiple branches at the same time. Since each branch lives in its own folder, you can switch tasks without stashing or reconfiguring the environment. This keeps your setup stable and lowers cognitive load.
+
+Separate worktrees also facilitate comparison and experimentation. You can open each branch in its own editor or terminal, run different test suites in parallel, and prototype ideas without risking your main workspace.
+
+### What do you gain in practice?
+- **Independent working copies**: each worktree maintains its own state of files and build artifacts.
+- **Shared commits**: commits made in any worktree go to the same repository history.
+- **Safer isolation**: experimental or AI-generated changes never interfere with your main branch.
+
+### Key commands (just what's necessary)
+
+- Create a new worktree for a new branch:
+```
+git worktree add ../project-feature-a -b feature/a
+```
+- Create a worktree for an existing branch:
+```
+git worktree add ../project-pr-123 pr-123
+```
+- List worktrees:
+```
+git worktree list
+```
+- Remove a worktree:
+```
+git worktree remove ../project-feature-a
+```
+
+## Integrating Git Worktree with AI code generation
+AI agents are very good at bounded tasks: refactors, fixing failing tests, security reviews, or documentation updates. Because they work fast and often touch similar parts of the code, running several agents in the same directory can cause clashes and confusion.
+
+Git worktree solves this by setting clear boundaries. Each agent runs in its own folder and on its own branch, keeping changes isolated but sharing the same repo history. This allows you to review results side by side without breaking your main workspace and keeps merges and pull requests simple.
+
+In practice, the workflow is straightforward. You create a worktree per agent or line of work, whether it's a feature, a hotfix, or a review task. Each worktree has its own files, dependencies, and build artifacts, while all commits flow into a single shared history. You can open multiple editors, run tests independently, and compare results without stashing or consistently checking out. Parallel work becomes predictable and low-risk.
+
+## Practical scenarios
+
+**Scenario 1: Rapid prototyping**
+Create two worktrees, `approach-a` and `approach-b`. Run agents in both, compare results, and keep the best one. Without changing branches and without resetting environments.
+
+**Scenario 2: Parallel feature development**
+Work simultaneously on hotfixes, new features, and pull request reviews. Isolated flows reduce interference between branches, help keep CI green, and make merges much cleaner.
+
+## Best practices
+**Organize your worktrees**: Use clear and descriptive names like `repo-feature-auth`, `repo-pr-1234`, or `repo-hotfix-critical`. Keep them close to the main repo so they are easy to find and manage.
+
+**Avoid common mistakes**: Monitor disk usage and remove old worktrees with `git worktree prune`. Reconfigure environments per worktree, such as `node_modules` or virtual environments. If you use submodules, verify branch alignment and update them recursively to avoid empty or inconsistent directories.
+
+## Conclusion
+Git worktree transforms AI development and multiple agent juggling into orchestration. You gain true parallelism, fewer context switches, safer experimentation, and smoother integration. Start with one worktree per agent or per feature, adjust the setup, and let it become a natural part of your daily workflow.
+
+In short: AI accelerates development, but it needs clear separation. Git worktree offers that separation without adding complexity.
+
+[acknowledgments:md]
+This post, originally on `https://www.howdylatam.com/blog/escalando-el-desarrollo-con-ia-usando-git-worktree-para-agentes`, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]

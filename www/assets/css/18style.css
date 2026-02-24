@@ -833,3 +833,8 @@ section table th {
   background-color: #FCF1E7;
   border-bottom: solid #FF6E19;
 }
+
+code {
+  color: #e83e8c !important;
+  word-wrap: break-word !important;
+}
