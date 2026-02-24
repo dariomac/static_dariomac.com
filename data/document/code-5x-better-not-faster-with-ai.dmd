@@ -1,0 +1,201 @@
+{
+  "title": "Code 5X BETTER (not faster) with AI",
+  "date": "20260223",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "Five tactics for using AI like Claude Code to write higher-quality, maintainable, and well-designed code. More than speed: better decisions.",
+    "datebox": "2026-01-12",
+    "extlink": "https://www.howdylatam.com/en/blog/codea-5x-mejor-no-mas-rapido-con-ia",
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260112",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "https://www.howdylatam.com/en/blog/codea-5x-mejor-no-mas-rapido-con-ia",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Five tactics for using AI like Claude Code to write higher-quality, maintainable, and well-designed code. More than speed: better decisions.
+
+[pub_date:string]
+2026-01-12
+
+[short_description:string]
+Five tactics for using AI like Claude Code to write higher-quality, maintainable, and well-designed code. More than speed: better decisions.
+
+[body:md]
+This article aims to explore how coding with AI assistance, particularly using Claude Code, can lead to better code, rather than simply faster code. While AI can certainly accelerate development, our focus here is on improving the quality, maintainability, and overall effectiveness of the code produced.
+
+Don’t misunderstand me: I think you will be faster anyway, because AI writes code faster than any human... but the goal here is not to be faster, but to get better results. Speed will come as a side effect of the use of an AI.
+
+If you search Google (or ask your favorite AI), you'll find a ton of best practices for working with AI, full of strategies to follow, tips on how to configure it, the logic and philosophy behind each guide, etc. And yes, this is another one of those articles.
+
+The only thing that differentiates it from other AI guide repositories out there is that I don't promise it's the best. In fact, I'm pretty sure that as soon as this article is published, I'll want to make some updates here and there... at least I won't want to rewrite it completely!
+
+Things are changing pretty fast, so it’s important to think about how we want to work, but we shouldn't become too attached to our processes.
+
+## Personal tactics
+
+Inspired by an email from Shaw Talebi titled "5 Tips That Help Me Code 5X Faster with AI," I took some time to reflect on my own journey and strategies in AI-assisted code generation. Interestingly, each of the five tactics Talebi described aligns perfectly with the methods I've been using in recent months, which I’ve described earlier [4]. I've also compared these approaches with other sources, which further supports my perspective on this topic.
+
+### Tactic 1: Incorporate LLM directly into your code base to improve productivity
+
+**TL;DR:** integrating LLMs directly within your workflow means treating them like a junior teammate embedded in your repo rather than just chat assistants. This strategy not only enhances productivity but also accelerates familiar patterns through automation while fostering collaboration between human intelligence and artificial intelligence.
+
+Incorporating large language models (LLMs) directly into your coding environment can significantly enhance your development process. Instead of the ”traditional” method of copying and pasting code between an AI like ChatGPT and your integrated development environment (IDE), consider using an AI-powered IDE that integrates LLMs directly into your codebase. This approach allows the model to access and understand the context of your entire project, making its suggestions more relevant and accurate.
+
+Simon Willison (Co-Creator of Django), an advocate for embedding LLMs into tools and workflows, emphasizes the importance of treating these models not as external assistants but as integral parts of your engineering toolkit. He highlights:
+
+> “What’s really exciting is wiring these models into your own systems — having them run queries against your own data or code. That’s where they start becoming genuinely useful engineering tools.” [1]
+
+By integrating LLMs directly into your systems, you move beyond mere conversation, enabling smarter software that adapts dynamically to your project needs. This approach transforms LLMs from standalone chatbots into powerful accelerators when treated as programmable components.
+
+The key to operationalizing AI effectively lies in embedding these models within your development loop. By wiring them to the repository context, you allow them to act like a senior engineer paired with you:
+
+> “Treat AI as a senior engineer paired with you: specify, review, iterate.” [2]
+
+Maintaining context is crucial; persisting ideas, specifications, architecture, and rules within the repository ensures that every AI prompt benefits from this rich background.
+
+To implement this tactic efficiently:
+- Use existing documentation from previous projects such as `docs/convention.md` and `docs/workflow.md`, and integrate them into new projects by copying them into a `.cursor/rules` directory [2].
+- Establish clear boundaries and guidelines for how AI agents will interact with the codebase.
+- Create strong architectural patterns that agents can work within to ensure consistency.
+- Develop effective feedback loops between human developers and AI capabilities.
+
+As highlighted in The Pragmatic Engineer's newsletter:
+
+> “AI excels at helping us implement patterns we already understand. It's like having an infinitely patient pair programmer who can type really fast.” [3]
+
+By embedding LLMs in the codebase, teams can automate scaffolding, refactoring, and testing while maintaining architectural consistency. The most effective teams in new years will likely be those that learn to leverage these capabilities effectively.
+
+### Tactic 2: Write Project-Level Specifications
+
+**TL;DR:** Integrating this tactic into your workflow by writing comprehensive, project-level specifications creates an environment where human creativity and AI-generated solutions can thrive together to achieve your project's goals.
+
+Speaking of AI-assisted coding, one of the most effective strategies is to begin with detailed project-level specifications. By employing tools like Claude Code's `CLAUDE.md` file to meticulously outline aspects such as tech stack, architecture, scope, and target users, you can significantly enhance the alignment between your project's vision and the responses generated by Large Language Models (LLMs). This approach minimizes errors that often arise from incorrect assumptions made by AI.
+
+Simon Willison emphasizes that engineers achieve superior results when they provide structured context. As he puts it:
+
+> “If you tell the model, ‘here’s what we’re trying to achieve,’ it performs way better. Don’t just dump code — describe the intent behind it.” [1]
+
+This underscores the importance of not skipping the planning phase. Most people jump directly to crafting prompts, but LLMs excel when given detailed specs. By providing clarity upfront, you reduce surprises later in development.
+
+The idea is that project-level specs serve as a "north star" for both humans and AI tools. They guide subsequent actions and ensure everyone is aligned with a shared vision.
+
+According to the “Vibe-Coding Done Right” guide [2] the specification should be “a concise technical spec” which acts as a “single source of truth.”
+
+> “Write a concise, implementable technical specification that will act as the roadmap and documentation… include technical stack, project architecture, domain and data model, API, testing strategy, storage, security, performance budgets, observability & logging strategy, feature flags, i18n/a11y, analytics, non-goals, deployment strategy.” [2]
+
+This document acts as a reference point for all AI interactions: each prompt should align with this spec.
+
+Furthermore, there's a meta-prompt guidance on generating specs with LLMs:
+
+> “Ask questions if something is unclear or multiple options [are] possible. But don’t over-engineer. Focus on a production-ready MVP.” [2]
+
+A well-documented project specification provides crucial context for generating high-quality and consistent code from AI. Without this shared "north star," both AI systems and human developers risk optimizing for misguided goals.
+
+To truly leverage AI in coding more effectively—five times better—it’s essential to invest time in planning and design at the outset. This ensures that every subsequent step is informed by clear objectives rather than diving into code prematurely without direction.
+
+> “AI isn't making our software dramatically better because software quality was (perhaps) never primarily limited by coding speed. The hard parts of software development — understanding requirements, designing maintainable systems, handling edge cases — still require human judgment.” [3]
+
+### Tactic 3: Provide Docs
+
+**TL;DR:** A common challenge arises when a team wants to integrate AI into their workflow is that AI models lack familiarity with new or obscure libraries and SDKs. The solution? Comprehensive documentation.
+
+An effective strategy is to create a dedicated folder within your project to store relevant documents or text about new, internal, or obscure tools. This folder becomes a treasure mine of information that helps the AI understand and work effectively with unfamiliar technologies. As Simon frequently emphasizes, documentation acts as the fuel for effective AI assistance:
+
+> “The best results I get come from feeding my own documentation — README files, API docs, architectural notes — into the model. It suddenly knows my world.” [1]
+
+The magic happens when the AI understands your project's specific jargon and context. The key to unlocking this understanding is to provide it with comprehensive context through well-structured documentation.
+
+Retrieval-augmented generation (RAG) is the most practical approach for engineers looking to use AI efficiently.
+
+> “RAG is the unsung hero. You don’t need to fine-tune; you just need to give the model access to your docs.” [1]
+
+This tactic underscores how structured documentation lays the groundwork for all future actions in a project. In fact, frameworks like Vibe Coding Guide are built around docs as the backbone [2], with every stage outputting Markdown files.
+
+Documentation not only helps AI, but also serves developers by acting as a memory repository that, at least for me, is inherently lacking. Your AI assistant will offer contextually relevant suggestions, significantly boosting productivity and minimizing "context drift" because it has detailed architecture notes, API documentation, and design decisions. Addy Osmani highlights this importance:
+
+> “The ‘AI first draft’ pattern: Let AI generate a basic implementation, then manually review and refactor for modularity, add comprehensive error handling, write thorough tests, and document key decisions.” [3]
+
+Starting new AI chats for each task helps maintain focus and minimize context. This approach ensures frequent reviews and commitments, creating tight feedback loops.
+
+### Tactic 4: Iterate on Plans, Not Code
+
+**TL;DR:** AI tools empower developers to not only address current challenges but also strategically navigate future ones with precision and confidence. This is achieved by effectively iterating on plans, rather than solely focusing on code generation.
+
+Jumping into coding during software development inevitably leads to a mess of debugging and architectural problems. Instead, leveraging AI to first generate a comprehensive plan can significantly streamline the development process. This tactic improves planning efficiency and understanding of the desired software functionality by clarifying the task and identifying underspecified requests upfront.
+
+#### The Power of Planning
+A well-thought-out plan acts as a blueprint that guides subsequent coding efforts. Dedicating time upfront to articulate detailed plans is the only way to avoid spending days later on architectural rectification. This method emphasizes the importance of "planning saves debugging time,[2]" which is not just a catchy phrase but a guiding principle in efficient software development.
+
+Simon Willison’s insights further illuminate this tactic:
+
+> “People think the model should write perfect code. It shouldn’t. It should help you explore possible solutions — the real engineering happens afterward.” [1]
+
+By using AI as a brainstorming partner rather than merely a code generator, developers can sketch outlines and iteratively refine their approaches before writing production code. This reflects a crucial mindset shift: employing LLMs for thinking and planning iterations rather than just generating syntax.
+
+#### Structured Planning Approach
+To effectively implement this tactic, it is essential to plan, simulate, and validate architecture and tasks before generating or editing files. The strategy involves enforcing tight feedback loops before coding [2]:
+- **Determinism Over Vibes**: Establish clear checklists and acceptance criteria upfront. Make AI confirm the plan before starting the coding process.
+- **Tight Loops**: Follow a structured cycle (I suggest the AI multi-turn feature generation we talked about in [this article](/being-fast-is-not-enough-how-to-code-with-velocity-using-ai)).
+
+As detailed in Section 7 — Architecture Plan from Vadim Ivanov’s guide:
+
+> “Write a staged implementation plan… For each step provide a copy-pastable instruction that tells the AI exactly what files to create, types/interfaces/routes, migrations, tests, and acceptance criteria.” [2]
+
+#### Avoiding Whack-a-Mole Debugging
+The tendency to endlessly iterate at the code level without revisiting higher-level assumptions can lead to "whack-a-mole debugging [3]." Rather than repeatedly prompting for minor bug fixes that could introduce new problems (effectively taking "two steps back" with each correction) a more efficient approach is to pause, assess, and refine the overall strategy.
+
+The article from Pragmatic Engineer named “How AI-assisted coding will change software engineering: hard truths” articulates this well:
+
+> “The ‘two steps back’ pattern: You try to fix a small bug. The AI suggests a change that seems reasonable. This fix breaks something else… rinse and repeat.” [3]
+
+As we said in our article “Being fast is not enough: how to code with velocity using AI”, developers should start small with isolated tasks and gradually build up to larger features. They should also review every line of generated code meticulously. By following these steps, developers can take advantage of AI's strengths in accelerating known tasks, exploring possibilities, and automating routine activities.
+
+Ultimately, understanding what AI excels at allows developers to guide its output deliberately — reducing compounding errors through thoughtful design or test strategies.
+
+### Tactic 5: Commit Little and Often
+
+**TL;DR:** Starting new AI chats for distinct tasks helps maintain focused context while reviewing and committing changes frequently ensures alignment with engineering standards. Use AI to accelerate your work — not replace your judgment— by questioning generated code that seems off or inconsistent with your standards.
+
+In the realm of AI-assisted coding, the practice of committing small and frequent changes is invaluable. This strategy facilitates easy rollback in case of errors and enhances understanding of how each change impacts the overall codebase. Also, commit messages clearly articulate what each change does, reinforcing comprehension and accountability.
+
+Simon Willison advocates for treating AI coding like rapid prototyping, emphasizing tight feedback loops through small experiments. As he puts it, “prompt small, commit small”. This is a philosophy that encourages building incrementally while maintaining control over the development process. By frequently checking in working ideas, you mitigate the risk of losing track of what's valuable and maintain a clear development trajectory.
+
+Adopting this approach aligns with best practices outlined in various workflow guidelines and conventions. For instance, maintaining atomic, observable, and reviewable work ensures clarity for both humans and AI.
+
+Frequent commits allow for verification of AI-generated changes in isolation. This mirrors Addy Ossimani's "constant conversation" pattern involving tight loops between generation, review, and validation [3]. Each commit acts as a checkpoint where you can "trust but verify," ensuring that AI speed doesn't compromise quality or understanding.
+
+## Wrapping up
+
+This article emphasizes coding better with AI assistance, not just faster, with speed being a beneficial side effect. While many guides exist, this one acknowledges the rapid pace of change in AI, advocating for adaptability over rigid processes.
+
+To achieve better results, five key tactics are presented:
+1. **Embed LLMs Directly into Your Codebase for Enhanced Productivity**: Treat LLMs as an integral junior teammate within your repository, not just chat assistants, to enhance productivity, automate familiar patterns, and foster collaboration.
+2. **Write Project-Level Specifications**: Integrate comprehensive, project-level specifications from the outset to align human creativity and AI-generated solutions, minimizing errors and ensuring a shared vision.
+3. **Provide Docs**: Combat AI's unfamiliarity with new or obscure libraries by providing comprehensive documentation within your project, acting as fuel for effective AI assistance through Retrieval-Augmented Generation (RAG).
+4. **Iterate on Plans, Not Code**: Leverage AI to generate and refine comprehensive plans before writing code, strategically navigating challenges and avoiding time-consuming debugging by focusing on thoughtful design and architecture.
+5. **Commit Little and Often**: Maintain focused context by starting new AI chats for distinct tasks, and frequently review and commit changes to ensure alignment with engineering standards, accelerating work without replacing human judgment.
+
+By adopting these strategies, developers can leverage AI to not only improve coding efficiency but also to elevate the quality and maintainability of their software.
+
+[acknowledgments:md]
+This post, originally on `https://www.howdylatam.com/en/blog/codea-5x-mejor-no-mas-rapido-con-ia`, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+- [1] AI tools for software engineers, but without the hype – with Simon Willison (Co-Creator of Django) - [https://www.youtube.com/watch?v=uRuLgar5XZw](https://www.youtube.com/watch?v=uRuLgar5XZw)
+- [2] Vibe-Coding Done Right: Engineering Manager's Guide to Building Production-Ready AI Apps - [https://github.com/vadim-givola/vibe-coding-guide](https://github.com/vadim-givola/vibe-coding-guide)
+- [3] How AI-assisted coding will change software engineering: hard truths - [https://newsletter.pragmaticengineer.com/p/how-ai-will-change-software-engineering](https://newsletter.pragmaticengineer.com/p/how-ai-will-change-software-engineering)
+- [4] Being fast is not enough: how to code with velocity using AI - [/being-fast-is-not-enough-how-to-code-with-velocity-using-ai](/being-fast-is-not-enough-how-to-code-with-velocity-using-ai)
+
+[significant_revisions:md]
