@@ -68,6 +68,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://dariomac.com/the-metamorphosis-of-programming-a-journey-through-the-ai-revolution-and-its-dilemmas</loc>
+        <lastmod>20260223</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://dariomac.com/being-fast-is-not-enough-how-to-code-with-velocity-using-ai</loc>
         <lastmod>20250923</lastmod>
         <changefreq>monthly</changefreq>

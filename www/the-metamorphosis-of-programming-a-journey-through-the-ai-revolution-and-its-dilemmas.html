@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Developer Advocate | Darío Macchi</title>
+    <title>The metamorphosis of programming: a journey through the AI revolution and its dilemmas | Darío Macchi</title>
     <style>
       
       @charset "UTF-8";
@@ -217,15 +217,94 @@
         padding: 5px;
       }
 
+      .essay {
+        background-color: #f2f2f2;
+        border: 0px !important;
+        margin-left: inherit;
+      }
+
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
+      }
+
+      .essay p, .essay li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: inherit;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h4 {
+        font-weight: bold;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .further-reading {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
+      }
+
     </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
-
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="As a developer relations professional, I bridge product, engineering, and marketing by writing documentation and blog posts, gathering developer feedback, engaging in communities, speaking at events, and coding with the JavaScript stack, including Next.js, Sanity, and Vercel." />
+    <meta name="description" content="What remains of human work when code is written by a machine? We explore the dilemmas of trust, quality, and purpose in the AI-assisted era." />
     <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
     <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -246,7 +325,7 @@
     <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
     <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
     
-    <link rel="canonical" href="https://dariomac.com/howdy-developer-advocate" />
+    <link rel="canonical" href="https://www.howdylatam.com/en/blog/la-metamorfosis-de-la-programacion" />
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
@@ -292,9 +371,9 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta property="og:url" content="/howdy-developer-advocate" />
-    <meta property="og:title" content="Developer Advocate" />
-    <meta property="og:description" content="As a developer relations professional, I bridge product, engineering, and marketing by writing documentation and blog posts, gathering developer feedback, engaging in communities, speaking at events, and coding with the JavaScript stack, including Next.js, Sanity, and Vercel." />
+    <meta property="og:url" content="/the-metamorphosis-of-programming-a-journey-through-the-ai-revolution-and-its-dilemmas" />
+    <meta property="og:title" content="The metamorphosis of programming: a journey through the AI revolution and its dilemmas" />
+    <meta property="og:description" content="What remains of human work when code is written by a machine? We explore the dilemmas of trust, quality, and purpose in the AI-assisted era." />
     <meta property="og:site_name" content="Darío Macchi personal website" />
     <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
     <meta property="og:image:type" content="image/png">
@@ -302,8 +381,8 @@
     
     <meta name="twitter:site" content="@_dariomac">
     <meta name="twitter:creator" content="@_dariomac">
-    <meta name="twitter:title" content="Developer Advocate">
-    <meta name="twitter:description" content="As a developer relations professional, I bridge product, engineering, and marketing by writing documentation and blog posts, gathering developer feedback, engaging in communities, speaking at events, and coding with the JavaScript stack, including Next.js, Sanity, and Vercel.">
+    <meta name="twitter:title" content="The metamorphosis of programming: a journey through the AI revolution and its dilemmas">
+    <meta name="twitter:description" content="What remains of human work when code is written by a machine? We explore the dilemmas of trust, quality, and purpose in the AI-assisted era.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:widgets:new-embed-design" content="on">
     <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
@@ -360,9 +439,28 @@
             })
     </script>
 
-      <script type="application/ld+json">
-        {}
-      </script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://dariomac.com/"
+          },
+          "headline": "The metamorphosis of programming: a journey through the AI revolution and its dilemmas",
+          "alternativeHeadline": "What remains of human work when code is written by a machine? We explore the dilemmas of trust, quality, and purpose in the AI-assisted era.",
+          "url": "https://dariomac.com/",
+          "datePublished": "2025-10-17",
+          "dateCreated": "20260223",
+          "description": "What remains of human work when code is written by a machine? We explore the dilemmas of trust, quality, and purpose in the AI-assisted era.",
+          "author": {
+            "@id": "https://dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
   </head>
   <body>
     <div class="board_view details">
@@ -383,228 +481,61 @@
           <div class="container-fluid float-left"></div>
         </div> <!-- dm-tab-filter-wrapper -->
 
-        <div class="container-fluid dm-board">
+        <div class="dm-board essay">
           <article>
-            <div class="row splitter">
-              <div class="col-md-12 text-center">Details</div>
-            </div>
             <div class="row featured">
-              <div class="col-md-12">
+              <div class="offset-md-3 col-md-6 sheet">
                 <header>
-                  <h1>Developer Advocate</h1>
-                  <p class="duration">Jun 2022 - Now</p>
-                  <p><a href="https://www.howdy.com/">Howdy</a></p>
+                  <h1>The metamorphosis of programming: a journey through the AI revolution and its dilemmas</h1>
+                  <p class="date">2025-10-17</p>
                 </header>
+
                 
-                  <section class="summary">
-                    <p>
-                      As a developer relations professional, I bridge product, engineering, and marketing by writing documentation and blog posts, gathering developer feedback, engaging in communities, speaking at events, and coding with the JavaScript stack, including Next.js, Sanity, and Vercel.
-                    </p>
-                  </section>
-                
-                  <section class="content">
-                    <p>As a developer relations professional, I work at the intersection of product, engineering and marketing. My daily tasks include writing documentation and <strong>blog posts</strong>, collecting and sharing developer feedback, participating in (lots of) developer communities and speaking at events. In addition, I continue to code using the <strong>JavaScript</strong> stack with <strong>Next.js</strong>, <strong>Sanity</strong> and <strong>Vercel</strong>.</p>
+                <section class="description">
+                  <p>
+                    What remains of human work when code is written by a machine? We explore the dilemmas of trust, quality, and purpose in the AI-assisted era.
+                  </p>
+                </section>
+
+                <section>
+                    <p>In recent years, the emergence of generative <strong>artificial intelligence</strong> in software development has changed the tone of both technical and philosophical discussions. A quick look at the virality of the LinkedIn post <a href="https://www.linkedin.com/posts/danielmoka_coding-as-we-know-it-is-dead-two-years-activity-7341343530675572736-B8rz?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAAnbs8B7k__H0CmjCLOKAN6aMtNoE64V2o">“Coding as we know it is dead”</a> and the flood of responses it sparked is enough to realize that the profession is going through a moment of deep redefinition. Beneath the surface, however, there are tensions that go far beyond productivity or nostalgia: they touch on trust, responsibility, the nature of knowledge, and ultimately the relationship between humans and machines.</p>
+<p>The original LinkedIn post puts forward a provocation: today, <strong>AI</strong> writes 90% of the code, and those who resist using it are labeled ignorant or selfish. Beyond how debatable that percentage is, the reaction was immediate and polarized.</p>
+<p>Some celebrate the evolutionary leap: they see <strong>AI</strong> as a tool that frees developers from repetitive tasks and pushes them toward strategic thinking, decision-making, and translating business needs into technological solutions. It is the shift from “code monkey” to “product-minded engineer,” from executor to orchestrator.</p>
+<p>Others, on the other hand, are skeptical or even alarmed. They question the <strong>quality</strong> of <strong>AI</strong>-generated code, the growing dependency, the loss of fundamental skills, and the lack of evidence behind the supposed gains in speed or efficiency. These technical objections are far from trivial. Many experienced developers point out that reviewing someone else’s code—whether produced by an <strong>AI</strong> or a human collaborator—often takes as much time, or more, than writing it from scratch. Code review is not a formality: it involves understanding intent, anticipating consequences, ensuring maintainability, and, above all, assuming responsibility for the outcome. In professional contexts, where contracts, money, and reputation are at stake, tolerance for errors or opacity in <strong>AI</strong>-generated code is minimal. <strong>AI</strong> does not take risks nor is it accountable for failures; humans are.</p>
+<h2><a name="uncanny-valley-and-reliability" class="anchor">
+<a name="uncanny-valley-and-reliability" href="#uncanny-valley-and-reliability" class="no_external_ico">Uncanny valley and reliability</a></h2>
+<p>Added to this is the phenomenon of the “uncanny valley” of code. Some developers report that when reviewing <strong>AI</strong>-generated contributions, they sense a kind of strangeness that is hard to define: the code works, but it lacks clear intent, that “human signature” that allows one to anticipate how it will evolve, how it will integrate with the rest of the system, or how it will respond to new requirements. This feeling is amplified when <strong>AI</strong> makes subtle mistakes or introduces suboptimal patterns, forcing constant vigilance and, paradoxically, potentially slowing the process down.</p>
+<p>From a broader perspective, other concerns emerge: reliability and systemic risk. Gary Marcus, in his critical analysis of LLMs (Large Language Models), warns that these systems are inherently unpredictable and, at times, dangerous. It’s not that they “lie” in a human sense, but they do confabulate, improvise plausible-sounding answers even when they are incorrect, and can be manipulated to bypass ethical or legal constraints. Control over these systems is limited, and their behavior can vary drastically depending on context or incentives. Marcus poses a dilemma: do we keep moving forward in the hope that wisdom and honesty will emerge from ever-larger and more complex models, or should we slow down and rethink the very architecture of these technologies before delegating critical tasks to them?</p>
+<h2><a name="what-happens-in-day-to-day-practice" class="anchor">
+<a name="what-happens-in-day-to-day-practice" href="#what-happens-in-day-to-day-practice" class="no_external_ico">What happens in day-to-day practice?</a></h2>
+<p>At the day-to-day level, there are even more nuances. Among software developers, some describe how <strong>AI</strong> has allowed them to explore new languages or patterns, accelerate prototyping, or solve tasks that previously required external help. But even among these enthusiasts, there is consensus that human oversight remains indispensable: <strong>AI</strong> can suggest, but judgment, integration, and <strong>quality assurance</strong> remain human prerogatives.</p>
+<p>Other developers, by contrast, are concerned about the potential “atrophy” of skills: If <strong>AI</strong> takes care of the basics, <a href="/the-relationship-between-a-junior-and-his-current-ai">how will new programmers be trained?</a> Aren’t we at risk of becoming dependent on a black box that, if it fails, leaves us without the tools to understand or fix the problem?</p>
+<p>Equally relevant is the social and economic impact. Unequal access to advanced tools, the displacement of entry-level roles, and the concentration of power among those who can afford the best models raise questions about the true democratization of technology. Are we creating a more inclusive ecosystem, or simply raising new barriers to entry? What happens to diversity of approaches and innovation when most code is generated from the same models and datasets?</p>
+<p>In this context, the analogy between <strong>AI</strong> and an “intern” is revealing—but limited. As Marcus warns, the temptation to anthropomorphize <strong>AI</strong> can lead us to overestimate its understanding and underestimate the risks of alignment and control. Unlike a human, <strong>AI</strong> does not learn from experience nor improve over time within a specific context. It is true that it learns within the thread in which I am interacting with it; it is true that this learning can “migrate” to my user profile and increasingly feel as though the <strong>AI</strong> “knows me.” But the <strong>AI</strong>—the underlying model—is trained on a fixed core of data and is the same for everyone, whether you are a user who has used it daily since day one or someone brand new.</p>
+<h2><a name="is-everything-bad-then" class="anchor">
+<a name="is-everything-bad-then" href="#is-everything-bad-then" class="no_external_ico">Is everything bad, then?</a></h2>
+<p>No, not everything is pessimistic. Some see <strong>AI</strong> as an opportunity to rethink the developer’s role: less focused on writing code and more on architecture, strategy, and solving complex problems. When used well, <strong>AI</strong> can be an impact multiplier, a catalyst for creativity, and a platform for new forms of collaboration. But that potential is only realized when combined with critical vigilance, robust ethics, and a commitment to continuous learning.</p>
+<p><strong>AI</strong>-assisted engineering (as this more structured approach is known) combines the creativity of vibrant coding with the rigor of traditional engineering practices. It involves specifications, discipline, and an emphasis on collaboration between human developers and <strong>AI</strong> tools, ensuring that the final product is not only functional, but also maintainable and secure.</p>
+<p>Ultimately, the debate about the “death” of traditional programming is really an invitation to rethink what programming means and what it is for. Is <strong>AI</strong> the end of the road or the beginning of a new stage? Will we be able to tame the unpredictability and risks of LLMs, or will we need more transparent and controllable alternatives? What skills and values should we cultivate in the next generations of software developers? The future, as always, will depend less on the tool and more on how we choose to use it, regulate it, and understand it. The ending is far from being written.</p>
+
+                </section>
+
+                  <section>
+                    <h2 id="Acknowledgments">Acknowledgments</h2>
+                      <p>This post, originally on <code>https://www.howdylatam.com/en/blog/la-metamorfosis-de-la-programacion</code>, was written for <a href="https://www.howdy.com">Howdy™</a>, so I want to thank them for letting me share it with you on my website.</p>
 
                   </section>
-
-                  <section class="image_gallery">
-                    <link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness1.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness1.webp" type="image/webp">
                 
-                        <img src="/assets/thumbs/awareness1.png" alt="awareness1.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness2.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness2.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness2.png" alt="awareness2.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness3.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness3.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness3.png" alt="awareness3.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness4.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness4.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness4.png" alt="awareness4.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness5.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness5.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness5.png" alt="awareness5.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness6.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness6.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness6.png" alt="awareness6.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness7.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness7.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness7.png" alt="awareness7.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness8.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness8.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness8.png" alt="awareness8.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness9.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness9.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness9.png" alt="awareness9.png" />
-                      </picture>
-                    </a>
-                    <a itemprop="image" data-fancybox="gallery" href="/assets/awareness10.png" class="fancybox no_external_ico" rel="challenge" title="">
-                      <picture>
-                        <source srcset="/assets/thumbs/awareness10.webp" type="image/webp">
-                
-                        <img src="/assets/thumbs/awareness10.png" alt="awareness10.png" />
-                      </picture>
-                    </a>
+                  <section class="backlinks">
+                    <h2>Mentioned in</h2>
+                        <ul>
+                            <li>
+                              <a href="/howdy-developer-advocate">Developer Advocate - Howdy</a>
+                            </li>
+                        </ul>
                   </section>
               </div>
             </div>
-              <div class="row splitter">
-                <div class="col-md-12 text-center">Projects/Activities</div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <section class="projects">
-                    <h2><a name="content-generation-projects" class="anchor">
-<a name="content-generation-projects" href="#content-generation-projects" class="no_external_ico">Content generation projects</a></h2>
-<ul>
-<li>
-<p>20260120 - <a href="/scaling-development-with-ai-using-git-worktree-for-agents">Scaling development with <strong>AI</strong> using Git Worktree for agents</a></p>
-</li>
-<li>
-<p>20260112 - <a href="/code-5x-better-not-faster-with-ai">Code 5X BETTER (not faster) with <strong>AI</strong></a></p>
-</li>
-<li>
-<p>20251017 - <a href="/the-metamorphosis-of-programming-a-journey-through-the-ai-revolution-and-its-dilemmas">The metamorphosis of programming: a journey through the <strong>AI</strong> revolution and its dilemmas</a></p>
-</li>
-<li>
-<p>20250923 - <a href="/being-fast-is-not-enough-how-to-code-with-velocity-using-ai">Being fast is not enough: how to code with velocity using <strong>AI</strong></a></p>
-</li>
-<li>
-<p>20250804 - <a href="/towards-real-productivity">Towards Real Productivity</a></p>
-</li>
-<li>
-<p>20250722 - <a href="/the-relationship-between-a-junior-and-his-current-ai">The relationship between a Junior and his current <strong>AI</strong></a></p>
-</li>
-<li>
-<p>20240123 - <a href="/unearthing-user-needs-for-true-innovation">Unearthing User Needs for True Innovation</a> </p>
-</li>
-<li>
-<p>20240123 - <a href="/strategies-to-make-smart-choices-in-technology">Strategies to Make Smart Choices in Technology</a> </p>
-</li>
-<li>
-<p>20230929 - <a href="/code-like-a-pro-mental-models-for-dev-success">Code Like a Pro: Mental Models for Dev Success</a> </p>
-</li>
-<li>
-<p>20230918 - <a href="/redefining-seniority-from-ticket-closers-to-problem-framers">Redefining Seniority: From Ticket Closers to Problem Framers</a> </p>
-</li>
-<li>
-<p>20230829 - <a href="/do-software-developers-procrastinate-more">Do software developers procrastinate more?</a> </p>
-</li>
-<li>
-<p>20230825 - <a href="/costs-of-delay-why-timely-delivery-matters">Hidden Costs of Delay: Why Timely Delivery Matters</a> </p>
-</li>
-<li>
-<p>20230801 - <a href="/adapting-to-the-era-of-ai-challenges-and-opportunities-for-experienced-developers">Adapting to the era of <strong>AI</strong>: Challenges and opportunities for experienced developers</a> </p>
-</li>
-<li>
-<p>20230720 - <a href="/software-estimation-insights-from-decades-of-hits-and-misses">Software Estimation: Insights from Decades of Hits and Misses</a> </p>
-</li>
-<li>
-<p>20230615 - <a href="/from-developer-to-brand-how-personal-branding-can-skyrocket-your-career">From developer to brand: How personal branding can skyrocket your career</a> </p>
-</li>
-<li>
-<p>20230530 - <a href="/coding-in-the-age-of-ai-embracing-the-developers-evolution">Coding in the Age of <strong>AI</strong>: Embracing the Developer’s Evolution</a></p>
-</li>
-<li>
-<p>20230510 - <a href="/the-crucial-role-of-software-communities-in-developers-growth">The crucial role of Software Communities in developers’s growth</a> </p>
-</li>
-<li>
-<p>20230207 - <a href="/not-another-cheat-sheet-about-technical-interviews">Not another cheat sheet about technical interviews</a> </p>
-</li>
-<li>
-<p>20230105 - <em>just as reviewer</em> - Pros and Cons of Working in Startups - https://www.howdy.com/blog/pros-cons-working-startups/</p>
-</li>
-<li>
-<p>20221209 - <a href="/the-dos-and-donts-of-asking-for-help-in-software-development">The Do’s and Don’ts of Asking for Help in Software Development</a> </p>
-</li>
-<li>
-<p>20221206 - <em>just as reviewer</em> - How to Improve Knowledge Sharing in a New Role - https://www.howdy.com/how-to-improve-knowledge-sharing-in-a-new-role/</p>
-</li>
-<li>
-<p>20221205 - <a href="/how-chatgpt-helps-to-solve-coding-challenges">How ChatGPT helps to solve coding challenges</a> </p>
-</li>
-<li>
-<p>20221107 - <a href="https://www.canal-uy.com/65-Soy-desarrollador-de-software-para-que-necesito-habilidades-blandas.html">Soy desarrollador de software, ¿para qué necesito habilidades blandas?</a> </p>
-</li>
-<li>
-<p>20221004 - <a href="/be-the-goat-software-engineer-know-your-clients">Be the GOAT software engineer: Know your clients</a> </p>
-</li>
-<li>
-<p>20220929 - <a href="/questions-to-ask-your-interviewer">Questions to ask your interviewer</a> </p>
-</li>
-<li>
-<p>20220929 - <a href="/crypto-how-it-started">Crypto: How it started</a> </p>
-</li>
-<li>
-<p>20220824 - <a href="/how-the-covid-pandemic-changed-the-world-of-work">How the COVID pandemic changed the world of work.</a></p>
-</li>
-<li>
-<p>20220819 - <a href="/mythbusting-the-word-process-introduction">Process mythbusting</a></p>
-</li>
-</ul>
-<h2><a name="brand-awareness-tasks" class="anchor">
-<a name="brand-awareness-tasks" href="#brand-awareness-tasks" class="no_external_ico">Brand awareness tasks</a></h2>
-<ul>
-<li>20250912 - <a href="/prompt-engineering-and-the-future-of-programming">Prompt Engineering and the Future of Programming</a></li>
-<li>20250827 - <a href="/speed-isnt-enough-how-to-code-with-velocity-using-ai">Speed isn't Enough - How to Code with Velocity Using <strong>AI</strong></a></li>
-<li>20250605 - <a href="/3-reasons-why-you-wont-be-replaced-by-ia">3 reasons why you won't be replaced by <strong>AI</strong></a></li>
-<li>20250325 - <a href="/ruby-montevideo-meetup-marzo-2025-inteviews"><strong>Ruby</strong> Montevideo meetup - March 2025 interviews</a></li>
-<li>20250307 - <a href="/how-to-be-an-ai-dev-in-2025">How to be an <strong>AI</strong> dev in 2025</a></li>
-<li>20240820 - <a href="/give-me-my-ai-i-dont-want-to-be-left-behind">Give me my <strong>AI</strong>, I don't want to be left behind!</a></li>
-<li>20240306 - <a href="/software-estimation-demystifying-challenges-beyond-engineering-ruby-uy">Software Estimation: Demystifying Challenges Beyond Engineering</a></li>
-<li>20231213 - <a href="/software-estimates-no-longer-engineering-problem-angular-mvd">Software Estimates: No Longer an Engineering Problem</a></li>
-<li>20231005 - <a href="/quality-is-not-a-fairy-tale-montevideo-js-meetup"><strong>Quality</strong> is not a fairy tale</a></li>
-<li>20230907 - <a href="/software-estimates-no-longer-engineering-problem-mis-uy">Software Estimates: No Longer an Engineering Problem</a></li>
-<li>20230613 - <a href="/employability-and-personal-brand">Employability and Personal Brand</a></li>
-<li>20230323 - <a href="/personal-brand-and-learn-in-public">Howdy<>Tribu Latam Tech - Personal Brand & Learn in public</a></li>
-<li>20230228 - <a href="/the-realities-of-software-development">Howdy - The realities of Software Development</a></li>
-<li>20230117 - <a href="/how-does-ai-affect-software-developers">Howdy <> NodeCO - How does <strong>AI</strong> affect software developers?</a></li>
-<li>20221129 - <a href="/interview-agencia-efe-soft-skills">Interview with Agencia EFE about Soft Skills</a></li>
-<li>20221118 - <a href="/webconf-latam-2022-dont-panic">WebConf LATAM 2022 - Don’t panic!</a></li>
-<li>20220823 - <a href="/software-quality-asteroids-and-the-cone-of-uncertainty">Software <strong>Quality</strong>, Asteroids and the <strong>Cone of Uncertainty</strong></a></li>
-<li>20220817 - <a href="/employability-what-is-it-and-why-should-it-be-important">Employability: what is it and why should it be important?</a></li>
-<li>20220630 - <a href="/meetup-frontend-peru-quality-in-agile-contexts"><strong>Quality</strong> in Agile Contexts</a></li>
-</ul>
-<p>Also, before I officially started in this role, I was doing different activities while working as <a href="/austin-software-software-engineer#writing-projects">Software Engineer</a>.</p>
-
-                  </section>
-                </div>
-              </div>
-          </article>
         </div> <!-- container-fluid dm-board -->
 
         <a href="/" class="logo">
@@ -638,7 +569,7 @@
       </main> <!-- dm-main-content -->
     </div>
     <!--</div>-->
-
+    
     <div class="footer" style="text-align:center; width:100%;">
       <div style="text-align:center; width:100%">
       <ul>

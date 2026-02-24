@@ -1,0 +1,70 @@
+{
+  "title": "The metamorphosis of programming: a journey through the AI revolution and its dilemmas",
+  "date": "20260223",
+  "layout": "document",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "What remains of human work when code is written by a machine? We explore the dilemmas of trust, quality, and purpose in the AI-assisted era.",
+    "datebox": "2025-10-17",
+    "extlink": "https://www.howdylatam.com/en/blog/la-metamorfosis-de-la-programacion",
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20251017",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "https://www.howdylatam.com/en/blog/la-metamorfosis-de-la-programacion",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+What remains of human work when code is written by a machine? We explore the dilemmas of trust, quality, and purpose in the AI-assisted era.
+
+[pub_date:string]
+2025-10-17
+
+[short_description:string]
+What remains of human work when code is written by a machine? We explore the dilemmas of trust, quality, and purpose in the AI-assisted era.
+
+[body:md]
+In recent years, the emergence of generative artificial intelligence in software development has changed the tone of both technical and philosophical discussions. A quick look at the virality of the LinkedIn post [“Coding as we know it is dead”](https://www.linkedin.com/posts/danielmoka_coding-as-we-know-it-is-dead-two-years-activity-7341343530675572736-B8rz?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAnbs8B7k__H0CmjCLOKAN6aMtNoE64V2o) and the flood of responses it sparked is enough to realize that the profession is going through a moment of deep redefinition. Beneath the surface, however, there are tensions that go far beyond productivity or nostalgia: they touch on trust, responsibility, the nature of knowledge, and ultimately the relationship between humans and machines.
+
+The original LinkedIn post puts forward a provocation: today, AI writes 90% of the code, and those who resist using it are labeled ignorant or selfish. Beyond how debatable that percentage is, the reaction was immediate and polarized.
+
+Some celebrate the evolutionary leap: they see AI as a tool that frees developers from repetitive tasks and pushes them toward strategic thinking, decision-making, and translating business needs into technological solutions. It is the shift from “code monkey” to “product-minded engineer,” from executor to orchestrator.
+
+Others, on the other hand, are skeptical or even alarmed. They question the quality of AI-generated code, the growing dependency, the loss of fundamental skills, and the lack of evidence behind the supposed gains in speed or efficiency. These technical objections are far from trivial. Many experienced developers point out that reviewing someone else’s code—whether produced by an AI or a human collaborator—often takes as much time, or more, than writing it from scratch. Code review is not a formality: it involves understanding intent, anticipating consequences, ensuring maintainability, and, above all, assuming responsibility for the outcome. In professional contexts, where contracts, money, and reputation are at stake, tolerance for errors or opacity in AI-generated code is minimal. AI does not take risks nor is it accountable for failures; humans are.
+
+## Uncanny valley and reliability
+Added to this is the phenomenon of the “uncanny valley” of code. Some developers report that when reviewing AI-generated contributions, they sense a kind of strangeness that is hard to define: the code works, but it lacks clear intent, that “human signature” that allows one to anticipate how it will evolve, how it will integrate with the rest of the system, or how it will respond to new requirements. This feeling is amplified when AI makes subtle mistakes or introduces suboptimal patterns, forcing constant vigilance and, paradoxically, potentially slowing the process down.
+
+From a broader perspective, other concerns emerge: reliability and systemic risk. Gary Marcus, in his critical analysis of LLMs (Large Language Models), warns that these systems are inherently unpredictable and, at times, dangerous. It’s not that they “lie” in a human sense, but they do confabulate, improvise plausible-sounding answers even when they are incorrect, and can be manipulated to bypass ethical or legal constraints. Control over these systems is limited, and their behavior can vary drastically depending on context or incentives. Marcus poses a dilemma: do we keep moving forward in the hope that wisdom and honesty will emerge from ever-larger and more complex models, or should we slow down and rethink the very architecture of these technologies before delegating critical tasks to them?
+
+## What happens in day-to-day practice?
+At the day-to-day level, there are even more nuances. Among software developers, some describe how AI has allowed them to explore new languages or patterns, accelerate prototyping, or solve tasks that previously required external help. But even among these enthusiasts, there is consensus that human oversight remains indispensable: AI can suggest, but judgment, integration, and quality assurance remain human prerogatives.
+
+Other developers, by contrast, are concerned about the potential “atrophy” of skills: If AI takes care of the basics, [how will new programmers be trained?](/the-relationship-between-a-junior-and-his-current-ai) Aren’t we at risk of becoming dependent on a black box that, if it fails, leaves us without the tools to understand or fix the problem?
+
+Equally relevant is the social and economic impact. Unequal access to advanced tools, the displacement of entry-level roles, and the concentration of power among those who can afford the best models raise questions about the true democratization of technology. Are we creating a more inclusive ecosystem, or simply raising new barriers to entry? What happens to diversity of approaches and innovation when most code is generated from the same models and datasets?
+
+In this context, the analogy between AI and an “intern” is revealing—but limited. As Marcus warns, the temptation to anthropomorphize AI can lead us to overestimate its understanding and underestimate the risks of alignment and control. Unlike a human, AI does not learn from experience nor improve over time within a specific context. It is true that it learns within the thread in which I am interacting with it; it is true that this learning can “migrate” to my user profile and increasingly feel as though the AI “knows me.” But the AI—the underlying model—is trained on a fixed core of data and is the same for everyone, whether you are a user who has used it daily since day one or someone brand new.
+
+## Is everything bad, then?
+No, not everything is pessimistic. Some see AI as an opportunity to rethink the developer’s role: less focused on writing code and more on architecture, strategy, and solving complex problems. When used well, AI can be an impact multiplier, a catalyst for creativity, and a platform for new forms of collaboration. But that potential is only realized when combined with critical vigilance, robust ethics, and a commitment to continuous learning.
+
+AI-assisted engineering (as this more structured approach is known) combines the creativity of vibrant coding with the rigor of traditional engineering practices. It involves specifications, discipline, and an emphasis on collaboration between human developers and AI tools, ensuring that the final product is not only functional, but also maintainable and secure.
+
+Ultimately, the debate about the “death” of traditional programming is really an invitation to rethink what programming means and what it is for. Is AI the end of the road or the beginning of a new stage? Will we be able to tame the unpredictability and risks of LLMs, or will we need more transparent and controllable alternatives? What skills and values should we cultivate in the next generations of software developers? The future, as always, will depend less on the tool and more on how we choose to use it, regulate it, and understand it. The ending is far from being written.
+
+[acknowledgments:md]
+This post, originally on `https://www.howdylatam.com/en/blog/la-metamorfosis-de-la-programacion`, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
