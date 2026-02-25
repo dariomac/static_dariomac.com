@@ -1,0 +1,57 @@
+{
+  "title": "Dynamic Creative Optimization for AdTech",
+  "date": "2026-02-25",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "Dynamic Creative Optimization for AdTech",
+    "datebox": "2023-2024",
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20231001",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Dynamic Creative Optimization for AdTech"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+This project analyzes the technical feasibility of applying generative artificial intelligence technologies in the AdTech field through a proof of concept, focused on automating visual content creation for advertisements.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-retrieve-file.pl?id=b8706a805428c6f4cd610dad600f7f40
+
+[platform:string]
+Web (Cloud-based AI)
+
+[link:string]
+https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=96647
+https://rad.ort.edu.uy/items/8143f5ba-c4c2-4c53-ba8e-ebca991bf31b
+
+[short_description:string]
+The project addresses the automation of advertisement image generation using generative AI. It utilizes fine-tuning techniques, specifically Dreambooth for Stable Diffusion, to teach models about new products. A low-cost, scalable cloud architecture was developed on AWS to ensure an efficient and economical solution.
+
+[description:md]
+The creation of visual content for online advertising is often a manual and expensive process. This project explores the use of generative AI to automate this workflow, enabling the quick generation of high-quality product assets.
+
+A significant challenge identified was the generative models' lack of prior information regarding new products. To overcome this, the team employed fine-tuning techniques, notably Dreambooth with Stable Diffusion, allowing the models to learn from specific product images and data. This approach significantly improved the precision and relevance of the generated visuals.
+
+To ensure the solution is both scalable and cost-effective, a cloud architecture was implemented using Amazon Web Services (AWS). The result is an efficient infrastructure that maintains high quality without high costs. The project concludes that developing such a system to streamline creative production is viable, provided the discussed implementation challenges are addressed.
+
+## Authors
+Disiot Mendizabal, Agustina | Monjardin López, Iván Rodrigo | Diaz Hugo, Santiago
+
+## Reviewers
+Nieves Lema, Ruben Carlos | Matalonga Motta, Santiago
+
+## Score
+100/100

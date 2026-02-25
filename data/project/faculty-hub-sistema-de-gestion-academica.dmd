@@ -1,0 +1,60 @@
+{
+  "title": "Faculty-Hub - Sistema de gestión académica",
+  "date": "2026-02-25",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "Faculty-Hub - Sistema de gestión académica",
+    "datebox": "2024-2025",
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20240401",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "Faculty-Hub - Sistema de gestión académica"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Faculty-Hub is a cloud-based web platform designed to optimize and centralize academic planning, reducing administrative load through automated teacher assignment and streamlined semester management.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-retrieve-file.pl?id=9c4de5b13ca8e46bf13e7ddc92d507bc
+
+[platform:string]
+Web (React, TypeScript, Node.js, Python, AWS)
+
+[link:string]
+https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=97364
+https://rad.ort.edu.uy/items/c635a203-d626-4937-a931-7f35802f5cf0
+
+[short_description:string]
+Faculty-Hub is a centralized platform for academic planning developed to minimize errors and administrative overhead. It features a responsive React/TypeScript frontend, a Node.js backend, and a specialized Python module for teacher assignment, all deployed on AWS for maximum scalability and efficiency.
+
+[description:md]
+Academic planning in higher education often involves complex coordination across multiple dimensions: semesters, subjects, schedules, and faculty availability. **Faculty-Hub** was developed as a comprehensive cloud-based solution to centralize and optimize these processes.
+
+The primary goal of the platform is to reduce the administrative burden on coordinators by providing tools that facilitate decision-making and minimize human error. Key features include:
+- **Centralized Management**: Unified tracking of semesters, subjects, and course deliveries.
+- **Automated Assignment**: A specialized Python module designed to optimize the allocation of faculty members to specific course dictations.
+- **Cloud Infrastructure**: Fully deployed on Amazon Web Services (AWS) to ensure high availability and scalability.
+
+The system was built with a modern stack consisting of a responsive React frontend using TypeScript for type safety, and a robust Node.js backend to handle data orchestration. Faculty-Hub represents a significant step forward in academic management, improving the operational flow for both coordinators and faculty members.
+
+## Authors
+Appel Zlotejablko, Denise | Wilchinski Hirschfeld, Andrés | Blanco Veiga, Federica Victoria
+
+## Reviewers
+Garbervetsky, Diego David | Saavedra González, María Jimena
+
+## Score
+95/100

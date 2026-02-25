@@ -1124,8 +1124,26 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://dariomac.com/damap-generacion-de-reportes-por-ia</loc>
+        <lastmod>2025-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://dariomac.com/faculty-hub-sistema-de-gestion-academica</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://dariomac.com/monitoreo-de-variables-meteorologicas</loc>
         <lastmod>2024-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://dariomac.com/dynamic-creative-optimization-for-adtech</loc>
+        <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -1155,7 +1173,7 @@
       </url>
       <url>
         <loc>https://dariomac.com/maqii-herramienta-contra-el-bullying</loc>
-        <lastmod>2021-08-01</lastmod>
+        <lastmod>2026-02-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

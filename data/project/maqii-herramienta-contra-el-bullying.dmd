@@ -1,6 +1,6 @@
 {
   "title": "Maqii - Herramienta contra el bullying",
-  "date": "2021-08-01",
+  "date": "2026-02-24",
   "layout": "project",
   "card": {
     "color": "#AD4647",
@@ -34,6 +34,7 @@ https://rad.ort.edu.uy/bitstreams/cc3c7ecb-be18-4aca-a47a-a731eda6352d/download
 Mobile (Android) and Web
 
 [link:string]
+https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=91453
 https://rad.ort.edu.uy/items/20e3f66c-9f4d-4250-ba40-420fcaee828b/full
 
 [short_description:string]
@@ -50,6 +51,12 @@ Both applications communicate with a centralized server that handles data manipu
 
 ## Authors
 Blanco Djamgochian, Nicolás | Martínez Barón, Karen Lucía
+
+## Score
+100/100
+
+## Reviewers
+Olsina Santos, Luis Antonio | Lasarte Borreani, Mariana Lourdes
 
 [related_images:json]
   [{

@@ -1,0 +1,62 @@
+{
+  "title": "DaMap - Generación de reportes por IA",
+  "date": "2025-02-25",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "DaMap - Generación de reportes por IA",
+    "datebox": "2024-2025",
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20240401",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "DaMap - Generación de reportes por IA"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+SQLGen is an innovative solution developed for DaMap that automatically generates SQL queries from natural language requests using AI, significantly optimizing the reporting workflow for financial reconciliation platforms.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-retrieve-file.pl?id=c2fc97aa04afdd7f72a90c4ae5180559
+
+[platform:string]
+Web (React, Node.js, Python, GPT/Vertex AI)
+
+[link:string]
+https://sisbibliotecas.ort.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=97365
+https://rad.ort.edu.uy/items/16f624e5-ccea-4450-a603-cc9a7934e078
+
+[short_description:string]
+Developed for DaMap, SQLGen automates the creation of custom SQL reports using generative AI. The system allows users to request information in natural language, which is then translated into precise SQL queries based on the database schema. The solution features a React frontend, a Node.js backend, and a specialized Python module for AI integration with GPT and Vertex AI.
+
+[description:md]
+The client company, DaMap, offers a SaaS platform for automating financial reconciliations. As the company grew, the demand for custom reports increased, leading to a bottleneck where the technical team had to manually craft SQL queries for clients.
+
+This project developed **SQLGen**, a product designed to solve this problem by automatically generating SQL queries from a database schema and a natural language request. The project started with an extensive research phase to evaluate various AI models based on precision, efficiency, and cost to find the optimal fit for the client's needs.
+
+The final system is built with a modern, modular architecture:
+- **Frontend**: A React-based web application.
+- **Backend**: A Node.js service managing the core application logic.
+- **AI Module**: A Python-based service specifically for interacting with GPT and Vertex AI to dynamically generate SQL queries.
+
+The modular design also exposes an independent API, allowing the query generator to be integrated into other systems without the frontend. SQLGen represents an innovative leap that improves operational efficiency and streamlines the workflow for DaMap's financial services.
+
+## Authors
+Eyheralde Vidart, Alfredo | Gulla Perez, Martín Federico | Barreto Ladereche, Sofía
+
+## Reviewers
+Garbervetsky, Diego David | Nieves Lema, Ruben Carlos
+
+## Score
+92/100
