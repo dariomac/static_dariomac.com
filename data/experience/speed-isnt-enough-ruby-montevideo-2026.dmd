@@ -1,0 +1,64 @@
+{
+  "title": "Speed isn't Enough - How to Code with Velocity Using AI (Ruby Montevideo)",
+  "date": "2026-03-04",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "progress_2",
+    "content": "[title]",
+    "datebox": "Mar 2026",
+    "extlink": "https://www.meetup.com/ruby-montevideo/events/313411079/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260304",
+    "subtaskdetails": [],
+    "tags": "AI, Velocity, Ruby, Software Development",
+    "title": "Ruby Montevideo"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+In this updated talk for Ruby Montevideo, I explore why coding with AI requires more than just speed—it requires velocity (speed with direction). I delve into how the latest advancements in AI agents and reasoning models are reshaping the development workflow for 2026.
+
+[duration:string]
+30 minutes
+
+[place_url:string]
+https://maps.app.goo.gl/suFgTY9aETzJtZSQ8
+
+[place:string]
+Howdy, F García Cortinas 2357, Piso 3, Montevideo, Uruguay
+
+[content:md]
+This Ruby Montevideo meetup features talks on the intersection of Ruby, Rails, and modern development practices. In this session, I will be presenting an updated version of my talk "Speed isn’t Enough," specifically tailored to the rapid developments we've seen in the first months of 2026.
+
+![Ruby Montevideo Meetup March 2026](/assets/ruby-montevideo-2026-invite.png#center)
+
+### Speed vs. Velocity
+While AI can generate code at incredible speeds, the real challenge for developers is maintaining **velocity**—which is speed with a clear direction. Without a structured process, using AI can feel like navigating a first-person shooter without instructions. We will delve into how to use the **OODA loop** (Observe, Orient, Decide, Act) mental model to stay in control of the AI-augmented development process.
+
+### What's New in 2026?
+The landscape has changed significantly since the original version of this talk. This update includes:
+*   **The Age of Agents**: How OpenAI's multi-agent systems and Anthropic's "Computer Use" are shifting AI from reactive chat interfaces to proactive digital collaborators that can navigate entire development environments.
+*   **Advanced Reasoning & Deep Thinking**: A look at the **Gemini 3.1 Pro** and **Deep Think** modes, and how they help solve complex architectural problems that simpler models struggle with.
+*   **Autonomous Security and Patching**: Discussing how tools like **Claude Code Security** are autonomously identifying and fixing vulnerabilities, and what this means for the future of code reviews.
+*   **Modernizing with AI**: Strategies for using AI to tackle technical debt and modernize legacy codebases while maintaining the high standards expected in the Ruby community.
+
+The goal is to provide developers with a practical framework to integrate these power tools into their Ruby and Rails workflows while increasing both speed and quality.
+
+![Random image Antigravity created for me 😎](/assets/ruby-montevideo-2026-talk.png#center)
+
+[related_images:json]
+  [{
+    "filename": "ruby-montevideo-2026-talk-story-01.png"
+  },{
+    "filename": "ruby-montevideo-2026-talk-story-02.png"
+  }]
+
+[projects:md]
