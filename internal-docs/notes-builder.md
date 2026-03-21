@@ -11,15 +11,23 @@ node notes-builder.mjs [inputPath] [outputPath]
 - `inputPath`: The path to the Obsidian Vault.
 - `outputPath`: The directory where the generated `.dmd` files and extracted assets should be placed (outputs to `[outputPath]notes/` directory). 
 
+## Prerequisites
+
+The **Obsidian CLI** must be installed and registered before running this script. Enable it inside Obsidian via:
+
+> Settings → General → Command line interface → Register CLI
+
+Once registered, Obsidian adds the `obsidian` binary to your system PATH. The script invokes it with `--format=json` and `--format=markdown` flags to query vault data without opening the GUI.
+
 ## Dependencies
 
 The script relies on several external packages defined in `package.json`:
-- `obsidian-vault-parser`: Parses the Obsidian vault files and frontmatter.
+- `js-yaml`: Parses the YAML frontmatter block. Trailing commas (which Obsidian sometimes writes) are stripped before parsing. Using js-yaml instead of a JSON5 parser ensures that YAML-native constructs (e.g. `|` in unquoted scalars, block scalars) are handled correctly.
 - `fs-extra`: Extended file system operations.
 - `url-slug`: Used for generating URL-friendly slugs for filenames.
 - `command-line-args`: Used for parsing arguments.
 - `webp-converter`: Used via the `cwebp` command to convert images into `.webp` versions to heavily optimize them.
-- `fs` and `path`: Built-in Node modules.
+- `fs`, `path`, and `child_process`: Built-in Node modules.
 
 ## How it works
 

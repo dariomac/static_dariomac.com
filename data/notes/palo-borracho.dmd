@@ -1,6 +1,6 @@
 {
     "date": "2022-03-21",
-    "updated_date": "2024-01-24",
+    "updated_date": "2025-12-26",
     "layout": "document",
     "title": "Palo borracho",
     "jsonld": {},
@@ -34,29 +34,28 @@ Deciduous tree native to the tropical forests of South America
 [short_description:string]
 
 [body:md]
-## Description
-Order: Malvales
-Family: Malvaceae
-Genus: Ceiba
-Specie: Ceiba speciosa
+## General
+![Palo borracho - general - nomenclator](/palo-borracho-general-nomenclator)
 
 Link: https://www.google.com/search?q=Ceiba+speciosa
 
-Árbol caduco que pierde sus hojas con la llegada del frío (mediados de otoño o invierno)
+Árbol [caduco](/deciduous) que pierde sus hojas con la llegada del frío (mediados de otoño o [invierno](/winter-for-bonsai-trees))
 
-## Position
+## Cultivo
+### Sustrato
+### Riego
+### Ubicación
+### Temperatura
 
-## Watering
+## Fertilización
+![Palo borracho - fertilización](/palo-borracho-fertilizacion)
 
-## Feeding
+## Poda
+![Palo borracho - poda - defoliado](/palo-borracho-poda-defoliado)
 
-## Pruning
-Al defoliar, cortar hojas dejando el tallito.
+![Palo borracho - poda - cuidados](/palo-borracho-poda-cuidados)
 
-> En diciembre, cortale todas las ramas, a la altura q buscas, lo dejas a la sombra, sin regar x.15/20 dias, y va a rebrotar x varios lados. Ademas , siempre es d tendencia apical, una rama  siempre va a salir disparada para arriba, esa hay q ir cortandola
-> Es fundamental *NO regarlos*, por 20/30 días, cero agua.
-> Antes y después [de los cortes] y si se hace en pleno verano mejor aun. Aunque parezca que se van a secar, es muy importante para que peguen los injertos.
-
+![Palo borracho - poda - rama apical](/palo-borracho-poda-rama-apical)
 
 ### Ramificar
 <hr/>
@@ -66,28 +65,33 @@ Al defoliar, cortar hojas dejando el tallito.
 
 <hr/>
 
-Visto y comprobado el fuerte crecimiento apical, esta es una forma de hacer crecer ramas a gusto. 
+![Palo borracho - poda - ramificar 1](/palo-borracho-poda-ramificar-1)
+![Palo borracho - poda - ramificar 2](/palo-borracho-poda-ramificar-2)
 
-La técnica busca que crezcan brotes de la parte de arriba de las ramas. Para eso se intentará que las mismas queden los más horizontales posibles.
-
-Este es un ejemplo extremo de lo anterior. Consiste en bajar la rama de forma que el ápice quede por debajo del punto donde se desea la rama, en este caso marcado con un círculo rojo (foto). 
+En el caso de la imagen, marcado con un círculo rojo (foto). 
 
 ![pb-ramif-1.jpg](/assets/pb-ramif-1.jpg#center)
 
 Y el resultado después de algunos días. Se puede seguir con esa como nuevo ápice o dejarla tal cual como rama (foto).
 
 ![pb-ramif-2.jpg](/assets/pb-ramif-2.jpg#center)
+
 [Referencia](http://edugranbonsai.blogspot.com/2013/06/chorissia-insignis-speciosa-palo.html)
 
 En videos de Victor Segundo, podemos ver que realiza cortes de cuña en la base de las ramas antes de redireccionarlas. Luego le coloca cinta de papel para "tapar" el corte.
 
-## Wiring
+## Alambrado
+## Trasplante
+## Propagación
+¿Cuándo y cómo hacer [Esqueje](/esqueje)s de Palo Borracho (Ceiba speciosa)? 
+![Palo borracho - propagación - cuándo](/palo-borracho-propagacion-cuando)
 
-## Repotting
+![Palo borracho - propagación - cómo](/palo-borracho-propagacion-como)
 
-## Notes
-**Esqueje**
-¿Cuándo y cómo hacer **esquejes** de **Palo Borracho** (Ceiba speciosa)? Los **esquejes** deben realizarse en verano sobre madera semidura, preferiblemente utilizando las puntas. Trasplantar en recipientes después de remojarlos en una hormona, hundiendo cada **Esqueje** 3 cm en una mezcla ligera de turba y arena.
+## Enfermedades
+## Diseño
+
+## Notas
 
 <hr/>
 
@@ -102,7 +106,7 @@ Victor Segundo es un referente en esta especie. Realiza injertos (básicamente c
 <hr/>
 
 
-## My trees
+## Mis árboles
 ### #dm_pb1
 Palo borracho plantado ~mitad de 2020 (hermano de #dm_pb2). Siempre tuvo el tronco más grueso que el otro.
 [Fotos](https://photos.app.goo.gl/X8PX1uuusBGaDgko6)
@@ -113,7 +117,20 @@ Palo borracho plantado ~mitad de 2020 (hermano de #dm_pb1).
 ### #dm_pb3
 Palo borracho comprado de 1.70 de alto... tronco grueso como el brazo, con 3 ramas apicales gruesas.
 
-## Log
+## Bitácora
+
+### 2025-SPRING
+#dm_pb1 le hice una poda fuerte de arriba porque secó ramas bajas en el invierno. 
+#dm_pb2 y #dm_pb3 por este ciclo no se tocan.
+
+### 2025-02-xx
+Volví a trasplantar #dm_pb1 como hace 1 año. Esta vez probé colocarlo en un colador a ver si produce raíces finas y no las zanahorias.
+
+### 2024-04-20
+Construí un cajón de madera. En ella puse #dm_pb2 como si hubiera caído en una tormenta contra otro palo borracho donde había hecho la prueba de la bolita. El árbol expulsó la bolita, pero quedó con panza y el tronco rajado en 3 partes. Hice que la punta del árbol acostado coincida con la rotura y una rama del árbol acostado "nació" de la punta y atravesó la rajadura.
+
+### 2024-02-24
+Tuve que transplantar de nuevo a #dm_pb1. Noté que estaba creciendo poco, y cuando lo saqué de la maceta... De nuevo 3 raíces como zanahoria. Esta vez las corte de "raíz"... Jejejeje... Ahora creo que va a andar bien por un tiempo porque le quedaron montones de raíces finas. También lo moví para la huerta junto con los demás tropicales.
 
 ### 2024-01-23
 Podé #dm_pb2. Lo bajé un poco de altura y curvé hacia "adentro" una rama de la punta de la canoa. No me convence el tronco vertical... No se si comer un poco más del tronco horizontal a ver si se fusiona... Dejarlo apretado a ver qué pasa o cortarlo a 10cm de altura y que ramifique bajo 🤷‍♂️
@@ -128,7 +145,7 @@ Transplanté #dm_pb1. Las raíces estaban levantando el árbol de la maceta y ex
 Cambié de maceta a #dm_pb2 y recorte algunas raíces de la vieja parte de abajo.
 
 ### 2023-01-16
-Hice un desfoliado total de #dm_pb2 simplemente para ver qué hace.
+Hice un [Defoliado](/defoliado) total de #dm_pb2 simplemente para ver qué hace.
 
 ### 2022-11-19
 pb1 aguantó el trasplante y 12 días después ya está normal, con todas sus hojas levantadas y sin retirar savia de ninguna rama.
@@ -147,7 +164,7 @@ También se podría intentar hacer algo [así](http://3.bp.blogspot.com/--21UFM7
 Compré #dm_pb3... no sé qué voy a hacer con él 🤷🏻‍♂️... Las 3 ramas apicales son tan gruesas como 3 troncos... y son las que tienen las espinas más grandes (el atractivo del árbol).
 
 ### 2022-02-26
-#dm_pb2 - lo llevé a un estilo Raft.
+#dm_pb2 - lo llevé a un estilo [Raft](/raft).
 [Fotos](https://photos.app.goo.gl/nuokVvdeKJBHNUib7)
 
 ### 2022-02-19
@@ -157,7 +174,7 @@ Compré #dm_pb3... no sé qué voy a hacer con él 🤷🏻‍♂️... Las 3 ra
 #dm_pb2 - autoinjerto no agarró
 
 ### 2022-01-12
-#dm_pb1 - corte de tronco principal a ~20cm (Poda drástica opción 1)
+#dm_pb1 - corte de tronco principal a ~20cm ([Poda drástica](/poda-drastica) opción 1)
 [Fotos](https://photos.app.goo.gl/X8PX1uuusBGaDgko6)
 
 ### 2022-01-02

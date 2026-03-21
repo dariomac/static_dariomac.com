@@ -1,6 +1,6 @@
 {
     "date": "2022-04-03",
-    "updated_date": "2022-05-25",
+    "updated_date": "2025-01-24",
     "layout": "document",
     "title": "SEO & React",
     "jsonld": {},
@@ -40,11 +40,11 @@ How to improve the SEO of a React application
 This is a screenshot taken from here: [https://www.youtube.com/watch?v=3B7gBVTsEaE](https://www.youtube.com/watch?v=3B7gBVTsEaE)
 ![pasted-image-20220214145136.png](/assets/pasted-image-20220214145136.png#center)
 
-!GoogleBot vs Caffeine
+![GoogleBot vs Caffeine](/google-bot-vs-caffeine)
 
  That is why websites built on React (and other JavaScript platforms) perform worse in Google than websites that primarily serve plain HTML to the crawler.
  
- The best solution is to opt for Server Side Rendering (SSR) or Server Side Generation (SSG) mainly due to:
+ The best solution is to opt in for Server Side Rendering (SSR) or Server Side Generation (SSG) mainly due to:
 
 > -   Faster initial renders.
 > -   Not having to rely on search engine crawlers to render content.

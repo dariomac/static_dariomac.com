@@ -1,6 +1,6 @@
 {
     "date": "2022-03-27",
-    "updated_date": "2024-01-27",
+    "updated_date": "2025-12-17",
     "layout": "document",
     "title": "Arrayán",
     "jsonld": {},
@@ -34,48 +34,49 @@ Tree of little height. Thick, dark trunk, finely cracked bark.
 [short_description:string]
 
 [body:md]
-## Description
-Order: Myrtales
-Family: Myrtaceae
-Genus: Blepharocalyx O.Berg
-Specie: Blepharocalyx salicifolius
+## General
+![Arrayán - general - nomenclator](/arrayan-general-nomenclator)
 
-Link: https://www.google.com/search?q=Blepharocalyx+salicifolius)
-
-Antes era llamado *blepharocalyx tweediei*.
+Link: https://www.google.com/search?q=Blepharocalyx+salicifolius
 
 ![arrayan-sample-1.png](/assets/arrayan-sample-1.png#center)
 ![arrayan-sample-2.jpg](/assets/arrayan-sample-2.jpg#center)
 
-**Nombres vulgares**: "Arrayán".  
-**Familia**: Myrtaceae.  
 **Porte**:  Arbol de poca altura. Tronco grueso, oscuro, corteza finamente agrietada. 
-**Follaje**: Perenne, color verde brillante, que desde lejos parece gris plateado.  
+**Follaje**: [Perenne](/evergreen), color verde brillante, que desde lejos parece gris plateado.  
 **Hojas**:  Simples, opuestas, lanceoladas. De 3,5 a 5,5 cm de largo. Apice acuminado o apiculado. Borde íntegro. Más claras en el envés.  
 **Flores**: De color blanco amarillento, de 1 cm de diámetro. Dispuestas en inflorescencias di o tri floras, Cuatro pétalos y cuatro sépalos, numerosos estambres. Florece en primavera.  
 **Fruto**: Baya globosa, pequeña de 5 mm de diámetro. La maduración de los frutos es gradual, observándose frutos que van del amarillo al rojo-púrpura al mismo tiempo. Presentan cuatro semillas en su interior.  
 **Area de dispersión**: Sur de Brasil, Argentina, Paraguay y Uruguay.  
 **Usos**: Sus frutos son comestibles.
 
-## Position
-El arrayán, a diferencia del [espinillo](/espinillo) que crece en las afueras del monte, prefiere sitios húmedos y sombríos, donde la protección de los demás árboles pueda evitarle el rigor directo del sol y de los vientos. 
+## Cultivo
+### Sustrato
+### Riego
+![Arrayán - cultivo - riego](/arrayan-cultivo-riego)
 
-Al igual que el sarandí y el sauce, es de naturaleza hidrófila, y por eso se desarrolla con mayor fuerza en las márgenes de los ríos y arroyos, cuya proximidad busca siempre
+### Ubicación
+![Arrayán - cultivo - ubicación - 2](/arrayan-cultivo-ubicacion-2)
 
-## Watering
-Suelo profundo y buen contenido de humedad.
+![Arrayán - cultivo - ubicación - 1](/arrayan-cultivo-ubicacion-1)
 
-## Feeding
+### Temperatura
 
-## Pruning
+## Fertilización
 
-## Wiring
+## Poda
+![Arrayán - poda -  brotación](/arrayan-poda-brotacion)
+## Alambrado
+![Arrayán - alambrado - ramas](/arrayan-alambrado-ramas)
 
-## Repotting
+## Trasplante
+## Propagación
+## Enfermedades
+## Diseño
 
-## Notes
+## Notas
 
-## My trees
+## Mis árboles
 #dm_ar1 - árbol con base ancha, ramificación baja abundante y 2 ramas principales ([Foto](https://photos.app.goo.gl/LY7t84YmcYtuKQsx7)).
 
 ## References
@@ -83,9 +84,29 @@ Suelo profundo y buen contenido de humedad.
 - [http://www.worldfloraonline.org/taxon/wfo-0000344092](http://www.worldfloraonline.org/taxon/wfo-0000344092)
 - [https://www.buenosaires.gob.ar/jefaturadegabinete/atencion-y-gestion-ciudadana/gestion-comunal/arbopedia/anacahuitaarrayan](https://www.buenosaires.gob.ar/jefaturadegabinete/atencion-y-gestion-ciudadana/gestion-comunal/arbopedia/anacahuitaarrayan)
 
-## Log
+## Bitácora
+
+### 2025-SPRING
+No hice nada de lo que dije. En su lugar simplemente volví a podar bien corto y seguir ramificando. Capaz que dejo esto para 2026-spring: *Cambiar sustrato y reducir pan de raíces... antes de continuar con ramificación secundaria y terciaria. El árbol no muestra problemas de crecimiento y está sano.* 
+
+### 2025-04-09
+Hace tiempo que no registro nada acá... pero seguimos con la la misma idea que en [[#2024-03-30]]. hice alguna poda alrededor del final del 24. Bajé algunas ramas, y corté fuerte otras. Voy a probar de [pinzar](/pinching) a ver si logro un crecimiento hacia atrás que me vendría bien en ciertas ramas.
+
+### 2024-04-14
+La rama auto injertada que parecía con buena salud se murió. Creo que la corte muy rápido en lugar de ir disminuyendo el flujo de savia por esa rama para que empiece a usar el injerto 😔
+
+### 2024-03-30
+Estaba pensando en que podríamos ir por algo así: ![arrayan-design-1.png](/assets/arrayan-design-1.png#center)
+Para ir por esta opción tendría que acodar las 2 ramas gruesas.
+
+### 2024-03-10
+Corté el auto injerto que hice hace 1 año y funcionó todo bárbaro. No hubo ninguna señal de que la rama injertada no pueda seguir por cuenta propia así que fue un éxito.
+
+### 2024-02-14
+A 3 semanas de haberlo podado corto, está todo lleno de brotes por todos lados: a pleno sol con buena agua.
+
 ### 2024-01-27
-Bueno. Me decidí y lo convertí en lo que siempre quise que sea: un Shohin. Lo corte re corto, incluso con ramas sin hojas (recuerdo que el [[Arrayan#2022-04-17]] corte una rama gruesa y salieron muchos brotes de ella). También saque el auto injerto de rama. Está unido... Pero todavía no corté la rama original. Voy a dejar que se reponga un poco y lo hago.
+Bueno. Me decidí y lo convertí en lo que siempre quise que sea: un [Shohin](/shohin). Lo corte re corto, incluso con ramas sin hojas (recuerdo que el [[Arrayan#2022-04-17]] corté una rama gruesa y salieron muchos brotes de ella). También saque el auto injerto de rama. Está unido... Pero todavía no corté la rama original. Voy a dejar que se reponga un poco y lo hago.
 
 ### 2023-11-xx
 Increíble la vitalidad que tomó una vez puesto al sol directo. Había leído que no era muy del sol directo... Pero en mi caso explotó en hojas y por primera vez dió flores!
@@ -98,7 +119,9 @@ Autoinjerto de una rama sobre uno de los troncos. Le puse Aloe en las "uniones".
 
 ### 2023-01-14
 Cambié un poquito de idea. Si bien sigo con la idea de usar las 2 ramas como continuación del tronco, quiero llegar a este diseño: 
-!arrayan-design-1.jpg
+
+*deleted*
+
 Creo que de esa forma usamos las 2 ramas para generar esos 2 volúmenes y luego un volúmen central, bajo, con las ramas finas. Ya corté y alambré las finas y curvé la rama gruesa baja.
 
 ### 2022-06-17

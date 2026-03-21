@@ -1,8 +1,10 @@
-import { readVault } from 'obsidian-vault-parser';
+import { execSync } from 'child_process';
+import yaml from 'js-yaml';
 import fs from 'fs';
 import fsx from 'fs-extra';
 import path from 'path';
-import urlSlug from 'url-slug';
+import urlSlugPkg from 'url-slug';
+const urlSlug = urlSlugPkg.convert;
 import cmdArgs from 'command-line-args';
 import webp from 'webp-converter';
 
@@ -19,47 +21,99 @@ const inputPath = ensureSlashTermination(mainOptions.paths[0]);
 const outputPath = `${ensureSlashTermination(mainOptions.paths[1])}notes/`;
 const assetsPath = `./${outputPath}assets/`;
 
+// Execute an obsidian CLI command that returns JSON output.
+function obsidianJSON (command) {
+  return JSON.parse(execSync(`obsidian ${command} format=json`, { encoding: 'utf8' }));
+}
+
+// Parse a raw .md file into { frontMatter: { tags, json }, content }.
+// Replicates the shape that obsidian-vault-parser used to return:
+//   frontMatter.tags  — the YAML `tags:` array
+//   frontMatter.json  — the YAML `json:` block value (card, lang, title, etc.)
+//   content           — body text after the closing ---
+//
+// Uses js-yaml so that YAML-native constructs (| block scalars, unquoted plain
+// scalars containing |, unquoted keys) all parse correctly. Trailing commas,
+// which Obsidian sometimes writes in flow mappings, are stripped before parsing.
+function parseNote (rawContent) {
+  const fmMatch = rawContent.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
+  if (!fmMatch) return { frontMatter: { tags: [], json: {} }, content: rawContent };
+
+  const fmRaw = fmMatch[1];
+  const content = rawContent.slice(fmMatch[0].length);
+
+  // Strip trailing commas from YAML flow mappings/sequences before parsing.
+  const cleaned = fmRaw.replace(/,(\s*[}\]])/g, '$1');
+
+  let tags = [];
+  let jsonValue = {};
+
+  try {
+    const parsed = yaml.load(cleaned);
+    if (parsed && typeof parsed === 'object') {
+      tags = Array.isArray(parsed.tags) ? parsed.tags : (parsed.tags ? [parsed.tags] : []);
+      jsonValue = (parsed.json && typeof parsed.json === 'object') ? parsed.json : {};
+    }
+  } catch (e) {
+    console.error(`Failed to parse frontmatter — ${e.message}`);
+  }
+
+  return { frontMatter: { tags, json: jsonValue }, content };
+}
+
 (async () => {
   fsx.removeSync(outputPath);
   await fsx.ensureDir(outputPath);
   await fsx.ensureDir(assetsPath);
 
-  const vault = await readVault(inputPath, {
-    isPublished: (file) => {
-      let getIt = false;
-      
-      getIt = file.frontMatter != null && file.frontMatter.tags;
-      
-      if (getIt && Array.isArray(file.frontMatter.tags)) {
-        getIt = file.frontMatter.tags.includes('dm.com');
-      } else {
-        getIt = false;
-      }
-      
-      getIt &= !file.path.includes('/Templates/');
-      
-      return getIt;
-    }
-  });
-  
-  await Promise.all(
-    Object.keys(vault.files).map(async (noteKey) => {
-      const note = vault.files[noteKey];
-      note.casedName = path.basename(note.path).replace(/\.md$/,'');
+  // Find all notes tagged with dm.com via CLI, then exclude Templates.
+  const searchResults = obsidianJSON('search query="tag:dm.com"');
+  const publishedPaths = searchResults.filter(p => !p.includes('/Templates/'));
 
-      const createdAt = new Date(note.createdAt).toISOString().replace(/T.*/,'')
-      
-      const dmdFrontmatter = {    
+  // Eagerly build a lookup map of all vault .md files for wiki-link resolution.
+  // The `obsidian files` command returns plain text (one path per line).
+  // The first entry may have a leading '+' marker — strip it.
+  // Keys are lowercase note names without extension, matching the original shape.
+  const allFilesRaw = execSync('obsidian files', { encoding: 'utf8' });
+  const filesMap = {};
+  for (const line of allFilesRaw.split('\n')) {
+    const relativePath = line.trim().replace(/^\+/, '');
+    if (!relativePath.endsWith('.md')) continue;
+    const name = path.basename(relativePath, '.md');
+    try {
+      const raw = fs.readFileSync(path.join(inputPath, relativePath), 'utf8');
+      const { frontMatter } = parseNote(raw);
+      filesMap[name.toLowerCase()] = { path: relativePath, frontMatter };
+    } catch {
+      // Skip files that cannot be read or parsed
+    }
+  }
+
+  await Promise.all(
+    publishedPaths.map(async (relativePath) => {
+      const casedName = path.basename(relativePath, '.md');
+
+      const raw = fs.readFileSync(path.join(inputPath, relativePath), 'utf8');
+      const { frontMatter, content } = parseNote(raw);
+
+      // Use filesystem timestamps. birthtime may be 0 on some Linux filesystems;
+      // fall back to mtime in that case.
+      const stat = fs.statSync(path.join(inputPath, relativePath));
+      const createdAt = (stat.birthtimeMs > 0 ? stat.birthtime : stat.mtime)
+        .toISOString().replace(/T.*/, '');
+      const updatedAt = stat.mtime.toISOString().replace(/T.*/, '');
+
+      const dmdFrontmatter = {
         date: createdAt,
-        updated_date: new Date(note.updatedAt).toISOString().replace(/T.*/,''),
+        updated_date: updatedAt,
         layout: 'document',
-        title: note.frontMatter.json.title || note.casedName,
+        title: frontMatter.json.title || casedName,
         jsonld: {},
         canonical: '',
         custom_header: '',
-        ...note.frontMatter.json
+        ...frontMatter.json
       };
-      
+
       dmdFrontmatter.card = {
         color: '#99b399',
         columnid: 'progress_2',
@@ -70,50 +124,50 @@ const assetsPath = `./${outputPath}assets/`;
         position: dmdFrontmatter.date.replace(/-/g, ''),
         tags: null,
         ...dmdFrontmatter.card,
-        linkto: "[link_to]",
-        title: "[title]",
-        subtaskdetails: [],
-      }
+        linkto: '[link_to]',
+        title: '[title]',
+        subtaskdetails: []
+      };
 
-      if (dmdFrontmatter.card.laneid === 'Essay' && 
+      if (dmdFrontmatter.card.laneid === 'Essay' &&
         ['requested_1', 'progress_2'].includes(dmdFrontmatter.card.columnid)
-      ){
+      ) {
         dmdFrontmatter.params = {
-          "noIndex": true,
+          noIndex: true
         };
       }
-      
+
       let dmdNote = JSON.stringify(dmdFrontmatter, null, 4);
       dmdNote += '\n\n---\n\n';
-      
+
       dmdNote += '[summary:string]\n';
-      dmdNote += `${note.frontMatter.json.card.content}\n\n`;
-      
+      dmdNote += `${frontMatter.json.card?.content ?? ''}\n\n`;
+
       dmdNote += '[pub_date:string]\n';
       dmdNote += `${dmdFrontmatter.date}\n\n`;
-      
+
       dmdNote += '[short_description:string]\n\n';
-      
+
       dmdNote += '[body:md]\n';
-      let modifiedContent = await processImages(note.content);
-      modifiedContent = await processLinks(modifiedContent, vault.files);
+      let modifiedContent = await processImages(content);
+      modifiedContent = await processLinks(modifiedContent, filesMap);
       modifiedContent = modifiedContent.replace(/---/g, '<hr/>\n');
       dmdNote += `${modifiedContent.trim()}\n\n`;
-      
+
       dmdNote += '[acknowledgments:md]\n\n';
-      
+
       dmdNote += '[further_reading:md]\n\n';
-      
+
       dmdNote += '[significant_revisions:md]\n';
       dmdNote += `_${new Date(`${createdAt} GMT-0300`).toLocaleString('en-US', {
-        month: 'short', // numeric, 2-digit, long, short, narrow
-        day: 'numeric', // numeric, 2-digit
-        year: 'numeric', // numeric, 2-digit
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
       })}_: Original publication on dariomac.com\n`;
 
-      fs.writeFileSync(path.resolve(`${outputPath}${urlSlug(note.name)}.dmd`), dmdNote, 'utf8');
+      fs.writeFileSync(path.resolve(`${outputPath}${urlSlug(casedName)}.dmd`), dmdNote, 'utf8');
     })
-  );    
+  );
 })().catch(e => {
   console.log(e);
 });
@@ -122,14 +176,13 @@ const processImages = async (content) => {
   let processedContent = content;
   const regex = /!\[\[([a-zA-Z0-9\s\.-]+\|?[a-zA-Z0-9\s]*)\]\]/g;
   let m;
-  
+
   while ((m = regex.exec(content)) !== null) {
     // This is necessary to avoid infinite loops with zero-width matches
     if (m.index === regex.lastIndex) {
       regex.lastIndex++;
     }
-    
-    // The result can be accessed through the `m`-variable.
+
     const originalString = m[0];
     const originalImageNameWithExtension = m[1].split('|')[0];
     const newImageName = urlSlug(originalImageNameWithExtension.replace(/\.[^/.]+$/, ''));
@@ -137,15 +190,15 @@ const processImages = async (content) => {
 
     if (fs.existsSync(`${inputPath}Organization/Attachments/${originalImageNameWithExtension}`)) {
       const newImageNameWithExtension = `${newImageName}.${extension}`;
-  
+
       fs.copyFileSync(`${inputPath}Organization/Attachments/${originalImageNameWithExtension}`, `${assetsPath}${newImageNameWithExtension}`);
-      
+
       await webp.cwebp(
         `${assetsPath}${newImageNameWithExtension}`,
         `${assetsPath}${newImageName}.webp`,
         '-q 80',
-        logging='-v');
-        
+        '-v');
+
       processedContent = processedContent.replace(originalString, `![${newImageNameWithExtension}](/assets/${newImageNameWithExtension}#center)`);
     }
   }
@@ -156,17 +209,16 @@ const processLinks = async (content, files) => {
   let processedContent = content;
   const regex = /\[\[([a-zA-ZÀ-ú0-9\s\.-]+\|?[a-zA-ZÀ-ú0-9\s]*)\]\]/g;
   let m;
-  
+
   while ((m = regex.exec(content)) !== null) {
     // This is necessary to avoid infinite loops with zero-width matches
     if (m.index === regex.lastIndex) {
       regex.lastIndex++;
     }
-    
-    // The result can be accessed through the `m`-variable.
+
     const originalString = m[0];
     const dobleSquareBracketContent = m[1];
-    
+
     const [pageName, pipedText] = dobleSquareBracketContent.split('|');
 
     const linkedNote = files[pageName.toLowerCase()];

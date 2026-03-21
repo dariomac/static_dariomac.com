@@ -1,6 +1,6 @@
 {
     "date": "2021-08-27",
-    "updated_date": "2023-12-28",
+    "updated_date": "2024-06-09",
     "layout": "document",
     "title": "Espinillo",
     "jsonld": {},
@@ -34,34 +34,59 @@ Acacia caven
 [short_description:string]
 
 [body:md]
-## Description
-Order: Fabales
-Family: Fabaceae
-Genus: Vachellia
-Specie: Acacia vachellia
+## General
+![Espinillo - general - nomenclator](/espinillo-general-nomenclator)
 
-Link: https://www.google.com/search?q=Acacia+vachellia
+Link: https://www.google.com/search?q=Vachellia+caven
 Antes, Acacia caven
 
-## Position
+## Cultivo
+### Sustrato
+### Riego
+### Ubicación
+El Vachellia caven prefiere el sol pleno.
 
-## Watering
+### Temperatura
+![Espinillo - temperatura - no problemas](/espinillo-temperatura-no-problemas)
 
-## Feeding
+## Fertilización
 
-## Pruning
+## Poda
+## Alambrado
+![Espinillo - alambrado - soportan bien](/espinillo-alambrado-soportan-bien)
 
-## Wiring
+![Espinillo - alambrado - pinzado](/espinillo-alambrado-pinzado)
 
-## Repotting
+## Trasplante
+## Propagación
+![Espinillo - propagación - semillas](/espinillo-propagacion-semillas)
 
-## Notes
+## Enfermedades
+## Diseño
+![Espinillo - diseño - grosor de tronco](/espinillo-diseno-grosor-de-tronco)
 
-## My trees
+![Espinillo - diseño - nebari](/espinillo-diseno-nebari)
+
+![Espinillo - diseño - curvas](/espinillo-diseno-curvas)
+
+![Vachellia - diseño - floración](/vachellia-diseno-floracion)
+
+## Notas
+
+## Mis árboles
+
 #dm_es1💀: espinillo yamadori 💀
 #dm_es2: multitronco de 2m de alto.
 
-## Log
+## Bitácora
+
+### 2024-06-08
+Podríamos ir por algo así:
+![](https://i.imgur.com/iwavN0i.png)
+![](https://i.imgur.com/0ix7Rtg.png)
+
+### 2024-05-15
+Hoy subi el tacho a un estante para que le de sol casi todo el día
 
 ### 2023-10-21
 Hoy cale un canal en la madera muerta para colocar el brote de marzo. Curé la zona debajo del tronco con líquido de Jin y aseguré el tronquito de 0.5 cm al canal.
@@ -85,13 +110,13 @@ Compré #dm_es2. La idea es esperar que brote y luego hacer varios hijos (acodos
 es1 brotó todo, luego estos 4 meses de inactividad.
 
 ### 2021-08-08
-Este fue mi primer Yamadori. [Fotos](https://photos.app.goo.gl/WYMhipZ3C2MYRy83A) de #dm_es1💀.
+Este fue mi primer [Yamadori MOC](/yamadori-moc). [Fotos](https://photos.app.goo.gl/WYMhipZ3C2MYRy83A) de #dm_es1💀.
 
 Es una [Acacia Caven](https://en.m.wikipedia.org/wiki/Vachellia_caven) (Espinillo).
 
 Lo extraje usando un Lesche Digging Tool
 ![lesche-digging-tool.jpeg](/assets/lesche-digging-tool.jpeg#center) 
-y un Hori-Hori Nisaku NJP650
+y un [Hori-Hori](/hori-hori) Nisaku NJP650
 ![nisaku-njp650.jpeg](/assets/nisaku-njp650.jpeg#center)
 
 [acknowledgments:md]

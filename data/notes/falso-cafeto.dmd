@@ -1,6 +1,6 @@
 {
     "date": "2022-02-11",
-    "updated_date": "2023-12-28",
+    "updated_date": "2026-01-18",
     "layout": "document",
     "title": "Falso cafeto",
     "jsonld": {},
@@ -33,11 +33,8 @@ Manihot Grahamii, also known as Mandioca Brava
 [short_description:string]
 
 [body:md]
-## Description
-Order: Malpighiales
-Family: Euphorbiaceae
-Genus: Manihot
-Specie: Manihot grahamii
+## General
+![Falso cafeto - general - nomenclator](/falso-cafeto-general-nomenclator)
 
 Link: https://www.google.com/search?q=Manihot+grahamii
 
@@ -45,31 +42,51 @@ Arbusto o árbol bajo, [laticífero](https://es.m.wikipedia.org/wiki/Latic%C3%AD
 
 Flores dispuestas en cimas laxas, con corola ausente. Fruto tricoco de 3 cm. de diámetro que se abre ruidosa y violentamente lanzando las semillas lejos del pie del árbol.
 
-Follaje caduco, se quema fácilmente por las heladas. Floración en diciembre. Especie propia de la Argentina y el sur del Brasil; en nuestro país se le encuentra mucho en estado subespontáneo, poco común en estado silvestre para distintos departamentos del norte y el litoral.
+Follaje [caduco](/deciduous), se quema fácilmente por las heladas. Floración en diciembre. Especie propia de la Argentina y el sur del Brasil; en nuestro país se le encuentra mucho en estado subespontáneo, poco común en estado silvestre para distintos departamentos del norte y el litoral.
 
-## Position
+## Cultivo
+### Sustrato
+### Riego
+### Ubicación
+### Temperatura
 
-## Watering
+## Fertilización
 
-## Feeding
-
-## Pruning
-
-## Wiring
-
-## Repotting
-
-## Notes
+## Poda
+## Alambrado
+## Trasplante
+## Propagación
 Propagación por semillas.
 
-## My trees
+## Enfermedades
+## Diseño
+
+## Notas
+
+## Mis árboles
 ### #dm_fc1
 Luego de la separación del 2022-02-19,  la parte original se convirtió en este nuevo árbol.
 
 ### #dm_fc2
 Luego de la separación del 2022-02-19,  la parte ramificada se convirtió en este nuevo árbol.
 
+## Bitácora
+
 ## Log
+
+### 202512xx
+La rama que uní en 20240220 se murió. Corté toda la rama porque en la unión está naciendo otra rama. Veremos.
+
+### 2025-SPRING
+La maceta ta toda podrida. Si no la tocamos....zafa otro ciclo. Sino, a cajón de madera.
+
+### 2024-06-08
+Revisé la unión rama-tronco y parece estar soldada. Cambié la cinta por cinta nueva y lo dejé apretado. Veremos, ya que este árbol me a dado sorpresas (malas) al secar ramas que brotaron en setiembre pero se secaron más cerca de verano.
+
+### 20240220
+
+Se me ocurrió "unir" una rama de #dm_fc1 en el tronco de #dm_fc2 en un lugar donde necesitaba una rama. Para eso, hice una mueca en ambos y los encastré, uniendo todo con cinta aisladora bien apretada.
+
 ### 2022-02-24
 #dm_fc2 Secó el tronco en todos los lugares quebrados, pero para abajo sigue vivo y se formó un segundo tronco.
 
@@ -78,14 +95,14 @@ Hace unos días ví que #dm_fc2 increíblemente está rebrotando luego los event
 Hoy le saqué el film que tenía alrededor del tronco y la cinta aisladora. Como los cortes siguen super separados, decidí colocarle un tensor para curvar el tronco en el sentido de los cortes a ver si cierra.
 
 ### 2022-04-07
-Intenté hacerle una curva a #dm_fc2 y quebré el tronco a unos 12cm de altura. Ya que estaba, corté una cuña y le hice la curva que quería inicialmente en el punto en el que quebró. Aprovechando que el quiebre fue bajo, y dado que si no suelda, pierdo todo para arriba, hice varias cuñas/dobleces más.
+Intenté hacerle una curva a #dm_fc2 y quebré el tronco a unos 12cm de altura. Ya que estaba, corté una cuña y le hice la curva que quería inicialmente en el punto en el que quebró. Aprovechando que el quiebre fue bajo, y dado que si no suelda, pierdo todo para arriba, hice varias cuñas/[dobleces](/notching) más.
 
 ### 2022-02-19
 Verificamos que había una buena cantidad de raíces así que separamos el acodo. La parte acodada (con raíces nuevas) lo plantamos en una maceta chica (con muchos agujeros) y pusimos todo dentro una más grande.
 [Fotos](https://photos.app.goo.gl/x1tnMHoJ2538vRTH7)
 
 ### 2022-01-02
-#dm_fc1 - acodo aéreo porque se fue muy alto ([Fotos](https://photos.app.goo.gl/7sXBXR4qRDfqc5UH7)).
+#dm_fc1 - [acodo aéreo](/air-layering) porque se fue muy alto ([Fotos](https://photos.app.goo.gl/7sXBXR4qRDfqc5UH7)).
 
 ### 2021-01-17
 Se plantó en una maceta chica dentro de otra más grande ([foto](https://photos.app.goo.gl/kML6RhpKwhh7QpLaA))

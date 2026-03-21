@@ -1,6 +1,6 @@
 {
     "date": "2022-03-27",
-    "updated_date": "2023-12-27",
+    "updated_date": "2025-10-08",
     "layout": "document",
     "title": "Boj",
     "jsonld": {},
@@ -34,44 +34,56 @@ Buxus is a family of about seventy species in the family Buxaceae.
 [short_description:string]
 
 [body:md]
-## Description
-Order: Buxales
-Family: Buxaceae
-Genus: Buxus
-Specie: Buxus sempervirens
+## General
+![Boj - general - nomenclator](/boj-general-nomenclator)
 
 Link: https://www.google.com/search?q=Buxus+sempervirens)
 
-## Position
-Sunny or semi-shaded place.
-El Boj Común debe colocarse en el exterior en una posición soleada o de semisombra. En el invierno un invernadero frío es ideal para la protección que requiere en esta estación.
+## Cultivo
+### Sustrato
+![Boj - cultivo - sustrato](/boj-cultivo-sustrato)
 
-## Watering
-In summer the boxwood needs a lot of water, but it can withstand short dry periods.
+### Riego
+![Boj - cultivo - riego](/boj-cultivo-riego)
 
-## Feeding
-Nothing special. The soil should have a PH 7-8.
+### Ubicación
+![Boj - cultivo - ubicación](/boj-cultivo-ubicacion)
 
-## Pruning
-Don't leave branches without leaves. Also prevent the inner twigs from dying and encourage back-budding. It tolerates hard pruning.
+### Temperatura
+
+## Fertilización
+
+## Poda
+![Boj - poda - ramas sin hojas](/boj-poda-ramas-sin-hojas)
+
 ![boj-ramification-1.png](/assets/boj-ramification-1.png#center)
 ![boj-ramification-2.png](/assets/boj-ramification-2.png#center)
 ![boj-ramification-3.png](/assets/boj-ramification-3.png#center)
 
 [source](http://bonsai4me.com/SpeciesGuide/Buxus%20Indepth%20page%202.html)
 
-## Wiring
-Hard wood, difficult to wire. Also the beige bark is very easy to damage with wires.
+## Alambrado
+![Boj - alambrado - madera](/boj-alambrado-madera)
 
-## Repotting
-Every 2-5 years.
+## Trasplante
 
-## Notes
+## Propagación
+## Enfermedades
+## Diseño
 
-## My trees
+## Notas
+
+## Mis árboles
 #dm_bj1: boj comprado de Carmelo el 2022-02-07
 
-## Log
+## Bitácora
+
+### 2025-SPRING
+Nada... dejar que siga creciendo, recuperándose... y no seque más ramas.
+
+### 2025-01-14
+Vivió. Secó un montón de ramas que hice madera muerta. Trate con [líquido de jin](/liquido-de-jin).
+
 ### 2023-11-29
 Siguió perdiendo hojas. Así que lo que hice fue sumergir toda la copa en agua jabonosa con algo de mata hongos a ver si se salva... Perdió pila de hojas y ramas :-(
 

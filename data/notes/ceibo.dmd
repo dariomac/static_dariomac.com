@@ -1,6 +1,6 @@
 {
     "date": "2022-03-21",
-    "updated_date": "2023-12-28",
+    "updated_date": "2025-10-08",
     "layout": "document",
     "title": "Ceibo",
     "jsonld": {},
@@ -34,27 +34,28 @@ National flower of Uruguay and Argentina
 [short_description:string]
 
 [body:md]
-## Description
-Order: Fabales
-Family: Fabaceae
-Genus: Erythrina
-Specie: Erythrina crista-galli
+## General
+![Ceibo - general - nomenclator](/ceibo-general-nomenclator)
 
 Link: https://www.google.com/search?q=Erythrina+crista-galli
 
 Arbol nativo de follaje caduco. Florece en primavera-verano. Se reproduce fácilmente por semillas que se cosechan de su fruto en los meses de Enero y Marzo. Su semilla grande y oscura se siembran la primavera siguiente.
 
-## Position
+## Cultivo
+### Sustrato
+![Ceibo - cultivo - sustrato](/ceibo-cultivo-sustrato)
+### Riego
+### Ubicación
+### Temperatura
 
-## Watering
+## Fertilización
 
-## Feeding
+## Poda
+![Ceibo - poda - cuándo](/ceibo-poda-cuando)
 
-## Pruning
-Las podas son una vez ya entrada la primavera y luego no se toca más ya que las ramas que volverán a despertar a la siguiente temporada son las que lleguen a lignificar, todo lo demás se seca.
+![Ceibo - poda - tipos](/ceibo-poda-tipos)
 
-Romper la rama, esperar que se necrose y cortar.  
-Elegida la rama que se necesita achicar, se dobla con fuerza y se deja doblada hasta que se seque el "doblés". Luego se corta y la rama no retrocede el secado, problema que tienen estos árboles al momento de podar, sino que se frena en ese sector. 
+![Ceibo - poda - quebrar ramas](/ceibo-poda-quebrar-ramas)
   
 [![](http://bp0.blogger.com/_4YO_oVhWayw/R235rRc4znI/AAAAAAAAAK8/KO_zDTW-eyw/s400/ceibodoblar.jpg)](http://bp0.blogger.com/_4YO_oVhWayw/R235rRc4znI/AAAAAAAAAK8/KO_zDTW-eyw/s1600-h/ceibodoblar.jpg)  
 [![](http://bp2.blogger.com/_4YO_oVhWayw/R2360xc4zpI/AAAAAAAAALM/7BWHXJmKPzg/s400/ceibo3.jpg)](http://bp2.blogger.com/_4YO_oVhWayw/R2360xc4zpI/AAAAAAAAALM/7BWHXJmKPzg/s1600-h/ceibo3.jpg)
@@ -62,24 +63,44 @@ Si bien la rama está doblada, no muere, y sigue estando verde por un largo tiem
 [![](http://bp2.blogger.com/_4YO_oVhWayw/R237ixc4zqI/AAAAAAAAALU/CLXtEeFyUyQ/s400/ceibo1.jpg)](http://bp2.blogger.com/_4YO_oVhWayw/R237ixc4zqI/AAAAAAAAALU/CLXtEeFyUyQ/s1600-h/ceibo1.jpg)
 Un Antes y un después del "doblado". Sólo hay que esperar que se seque y se cierre ese sector doblado de la rama a podar y se corta.
 
-Otra técnica es cortar 2cm por encima de donde queremos cortar para que retire savia y luego cortar la parte seca.
+![Ceibo - poda - 2cm](/ceibo-poda-2cm)
 
-Al desfoliar, nunca cortar toda una hoja, porque eso casi siempre termina en que se seque toda la rama. Se pueden cortar hojas completas mientras quede una en la punta que "tire la savia".
+![Ceibo - poda - defoliado](/ceibo-poda-defoliado)
 
-## Wiring
+## Alambrado
+![Ceibo - alambrado - no alambrar](/ceibo-alambrado-no-alambrar)
 
-## Repotting
+## Trasplante
+## Propagación
+## Enfermedades
+## Diseño
+![Ceibo - diseño - dificultad-1](/ceibo-diseno-dificultad-1)
+![Ceibo - diseño - dificultad-2](/ceibo-diseno-dificultad-2)
 
-## Notes
+![Ceibo - diseño - tronco](/ceibo-diseno-tronco)
 
-## My trees
+![Ceibo - diseño - nebari](/ceibo-diseno-nebari)
+
+## Notas
+
+## Mis árboles
 #dm_ce1💀: Tronco torcido, medio botella, chico.[Fotos](https://photos.app.goo.gl/cB76Twn3RuytrS3g6)
 #dm_ce2: Tronco doble.[Fotos](https://photos.app.goo.gl/cB76Twn3RuytrS3g6)
 #dm_ce3💀: Palito largo sin características especiales. [Fotos](https://photos.app.goo.gl/cB76Twn3RuytrS3g6) 💀
 #dm_ce4: Tronco grueso, doble. [Fotos](https://photos.app.goo.gl/cQ29iA5FHzZYBQbFA)
 #dm_ce5: uní #dm_ce4 y #dm_ce2 para formar una composición.
 
+## Bitácora
+
 ## Log
+
+### 2025-SPRING
+Ma parece que no hay nada para hacerle. Mantiene 3 o 4 ramas del verano pasado... Pero en el tronco joven. El gordo sigue secando todo...
+
+### 2024-06-03
+Se me ocurre que podríamos ir por acá (auque con algo más de follaje)
+![](https://i.imgur.com/cTudm4g.png)
+
 ### 2023-08-25
 Al crear #dm_ce5, encontré que hay un buen nebari que tiene que empezar a aparecer una vez que se estabilice.
 

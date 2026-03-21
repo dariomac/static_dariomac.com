@@ -1,6 +1,6 @@
 {
     "date": "2022-04-03",
-    "updated_date": "2024-01-06",
+    "updated_date": "2025-08-31",
     "layout": "document",
     "title": "Pino negro",
     "jsonld": {},
@@ -15,7 +15,7 @@
         "leftbox": "",
         "position": "20220403",
         "tags": "pn1",
-        "content": "Pinus uncinata, also knonw as Black pine",
+        "content": "Pinus thunbergii, also knonw as Black pine",
         "linkto": "[link_to]",
         "title": "[title]",
         "subtaskdetails": []
@@ -25,7 +25,7 @@
 ---
 
 [summary:string]
-Pinus uncinata, also knonw as Black pine
+Pinus thunbergii, also knonw as Black pine
 
 [pub_date:string]
 2022-04-03
@@ -33,37 +33,39 @@ Pinus uncinata, also knonw as Black pine
 [short_description:string]
 
 [body:md]
-## Description
+## General
+![Pino negro - general - nomenclator](/pino-negro-general-nomenclator)
 
-Order: Pinales
-Family: Pinaceae
-Genus: Pinus
-Specie: Pinus uncinata
+Link: https://www.google.com/search?q=Pinus+thunbergii
 
-Link: https://www.google.com/search?q=Pinus+uncinata
+## Cultivo
+### Sustrato
+### Riego
+### Ubicación
+### Temperatura
 
+## Fertilización
 
-## Position
-
-## Watering
-
-## Feeding
-
-## Pruning
+## Poda
 Hagari: se hace en otoño y consiste en sacar las acículas viejas.
 [How to prune and decandle](https://youtu.be/8JWRenbHNys)
 
-#Monje Q: Cuál sería la técnica para reducir el tamaño de las agujas?
-A: No se abona durante el proceso de crecimiento de velas, se reduce el largo de las velas justo antes de que abran, mientras se riega lo mínimo necesario. El proceso se puede programar desde inicios del otoño o desde que se corta el crecimiento que desarrolló el árbol durante el verano. Desde ahí se programa la quita de abono y se controla el riego hasta la primavera, donde se hace el corte/reducción de velas... se continúa con el control de riego con buen sol. Una vez maduras las agujas, volvemos al abono y riego normal.
-
-## Wiring
-
-## Repotting
+## Alambrado
+## Trasplante
 El transplante se realiza en invierno.
 
-## Notes
-![trabajos-anuales-en-pinos-negros.png](/assets/trabajos-anuales-en-pinos-negros.png#center)
+## Propagación
+## Enfermedades
+## Diseño
+#Monje Q: Cuál sería la técnica para reducir el tamaño de las agujas?
+A: No se abona durante el proceso de crecimiento de velas, se reduce el largo de las velas justo antes de que abran, mientras se riega lo mínimo necesario. El proceso se puede programar desde inicios del [otoño](/autumn-in-bonsai) o desde que se corta el crecimiento que desarrolló el árbol durante el [verano](/summer-for-bonsai-trees). Desde ahí se programa la quita de abono y se controla el riego hasta la primavera, donde se hace el corte/reducción de velas... se continúa con el control de riego con buen sol. Una vez maduras las agujas, volvemos al abono y riego normal.
+
+## Notas
+![[pinus thunbergii - trabajos (sur).jpg]]
+{{!-- Archivo para editar: https://docs.google.com/drawings/d/1I2G0igAOOxVVbTYyiDNQ2F80pEcGhQZSbju5sg1n9Kw/edit }}
+
 {{!--
+![trabajos-anuales-en-pinos-negros.png](/assets/trabajos-anuales-en-pinos-negros.png#center)
 Calendario de trabajo de pinos negros, PARA URUGUAY, corregido por el maestro Sergio Luciani. Recordar que estos trabajos no deben hacerse si el árbol fue transplantado ese año, esto se hará en el siguiente siempre que el árbol este fuerte (esto es una guía básica para ir rumbiando no es absoluto)
 --}}
 
@@ -71,10 +73,18 @@ Buena charla de Nyco Dalton sobre sustrato, corte de velas, pinzado y engrosar t
 
 Acá hay un pino negro chiquito como el mío: [https://www.instagram.com/reel/CbGJgNrD9Lc](https://www.instagram.com/reel/CbGJgNrD9Lc)
 
-## My trees
-#dm_pn1 - [Foto](https://photos.app.goo.gl/ArEXqPQebJVgLQqc6)
+Consejos para [Ramificar pinos](https://youtu.be/7A9eTWgIXwE).
+
+
+## Mis árboles
+#dm_pn1💀 - [Foto](https://photos.app.goo.gl/ArEXqPQebJVgLQqc6)
+
+## Bitácora
 
 ## Log
+### 2024-08-04
+Trasplante a un colador. Las raíces estaban bastante enredadas y circulares. Las raíces las "peiné" para afuera y lo mandé al colador. Veremos luego de una temporada cómo reacciona.
+
 ### 2023-11-13
 Esta con varias ramas pequeñas de las velas que tiro en el último  crecimiento. Decidí darle una vuelta alrededor de una piedra (me gustó la idea y el resultado).
 
@@ -85,7 +95,7 @@ Le quite bastantes acículas como se puede ver en la [foto](https://photos.app.g
 Quité algunas acículas de la base de las ramas nuevas y acículas viejas. Todavía salía bastante savia al sacar las acículas así que no seguí.
 
 ### 20210927
-Vino #dm_pn1 como regalo cuándo compré el Timbó.
+Vino #dm_pn1💀 como regalo cuándo compré el [Timbó](/timbo).
 
 [acknowledgments:md]
 

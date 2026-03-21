@@ -1,6 +1,6 @@
 {
     "date": "2022-04-20",
-    "updated_date": "2023-12-29",
+    "updated_date": "2025-12-27",
     "layout": "document",
     "title": "Jazmín del país",
     "jsonld": {},
@@ -34,40 +34,43 @@ Jasminum officinale (Common Jasmine) is a large semi-evergreen or deciduous clim
 [short_description:string]
 
 [body:md]
-## Description
-
-Order: Lamiales
-Family: Oleaceae 
-Genus: Jasminum
-Specie: Jasminum officinale
+## General
+![Jazmín del país - general - nomenclator](/jazmin-del-pais-general-nomenclator)
 
 Link: https://www.google.com/search?q=jasminum+officinale
 
 https://identify.plantnet.org/the-plant-list/species/Jasminum%20officinale%20L./data
 
-## Position
-Lugar soleado para que de flores.
+## Cultivo
+### Sustrato
+### Riego
+### Ubicación
+![Jazmín del país - cultivo - ubicación](/jazmin-del-pais-cultivo-ubicacion)
 
-## Watering
+### Temperatura
 
-## Feeding
+## Fertilización
 
-## Pruning
+## Poda
+## Alambrado
+![Jazmín del país - alambrado - ramas](/jazmin-del-pais-alambrado-ramas)
 
-## Wiring
-Soporta alambre fino en ramas no lignificadas. Una vez lignificada una rama es difícil de trabajar.
+## Trasplante
+## Propagación
+## Enfermedades
+## Diseño
 
-## Repotting
+## Notas
 
-## Notes
-
-## My trees
+## Mis árboles
 #dm_ja1: un Jazmín que estaba para tirar pero tenía un tronco lignificado...
 
-## Log
+## Bitácora
+### 2025-SPRING
+Nada... Mantenimiento.
 
 ### 2023-02-03
-Le di el primer diseño. Alambre unas ramas (ya tenía otras alambradas y lignifico bien). Deje una rama de sacrificio para ensanchar una rama.
+Le di el primer diseño. Alambre unas ramas (ya tenía otras alambradas y lignificó bien). Dejé una rama de sacrificio para ensanchar una rama.
 
 ### 2021-xx-yy
 No se muy bien que quiero con #dm_ja1 pero creo que puede ser un lindo experimento para luego conseguir uno con mejor tronco y lograr algo interesante, como este
