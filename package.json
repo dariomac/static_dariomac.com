@@ -46,10 +46,10 @@
     "lodash": "^4.17.21",
     "moment": "2.30.1",
     "puppeteer": "^23.9.0",
+    "sharp": "^0.34.5",
     "tiny-ssi": "0.0.2",
     "url-exist": "^3.0.1",
-    "url-slug": "^4.0.1",
-    "webp-converter": "^2.3.3"
+    "url-slug": "^4.0.1"
   },
   "devdepedencies": {
     "snazzy": "^9.0.0",

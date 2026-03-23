@@ -6,10 +6,10 @@ import path from 'path';
 import urlSlugPkg from 'url-slug';
 const urlSlug = urlSlugPkg.convert;
 import cmdArgs from 'command-line-args';
-import webp from 'webp-converter';
+import { initConverter, convertToWebp } from './image-converter.mjs';
 
-// this will grant 755 permission to webp executables
-webp.grant_permission();
+// this will grant 755 permission to webp executables (or init converter)
+initConverter();
 
 const settings = [
   { name: 'paths', multiple: true, defaultOption: true }
@@ -35,7 +35,7 @@ function obsidianJSON (command) {
 // Uses js-yaml so that YAML-native constructs (| block scalars, unquoted plain
 // scalars containing |, unquoted keys) all parse correctly. Trailing commas,
 // which Obsidian sometimes writes in flow mappings, are stripped before parsing.
-function parseNote (rawContent) {
+function parseNote (rawContent, filename = '') {
   const fmMatch = rawContent.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
   if (!fmMatch) return { frontMatter: { tags: [], json: {} }, content: rawContent };
 
@@ -55,7 +55,7 @@ function parseNote (rawContent) {
       jsonValue = (parsed.json && typeof parsed.json === 'object') ? parsed.json : {};
     }
   } catch (e) {
-    console.error(`Failed to parse frontmatter — ${e.message}`);
+    console.error(`Failed to parse frontmatter in "${filename}" — ${e.message}`);
   }
 
   return { frontMatter: { tags, json: jsonValue }, content };
@@ -82,92 +82,109 @@ function parseNote (rawContent) {
     const name = path.basename(relativePath, '.md');
     try {
       const raw = fs.readFileSync(path.join(inputPath, relativePath), 'utf8');
-      const { frontMatter } = parseNote(raw);
+      const { frontMatter } = parseNote(raw, relativePath);
       filesMap[name.toLowerCase()] = { path: relativePath, frontMatter };
     } catch {
       // Skip files that cannot be read or parsed
     }
   }
 
-  await Promise.all(
+  const RED = '\x1b[31m';
+  const GREEN = '\x1b[32m';
+  const RESET = '\x1b[0m';
+
+  const results = await Promise.all(
     publishedPaths.map(async (relativePath) => {
       const casedName = path.basename(relativePath, '.md');
+      try {
+        const raw = fs.readFileSync(path.join(inputPath, relativePath), 'utf8');
+        const { frontMatter, content } = parseNote(raw, relativePath);
 
-      const raw = fs.readFileSync(path.join(inputPath, relativePath), 'utf8');
-      const { frontMatter, content } = parseNote(raw);
+        // Use filesystem timestamps. birthtime may be 0 on some Linux filesystems;
+        // fall back to mtime in that case.
+        const stat = fs.statSync(path.join(inputPath, relativePath));
+        const createdAt = (stat.birthtimeMs > 0 ? stat.birthtime : stat.mtime)
+          .toISOString().replace(/T.*/, '');
+        const updatedAt = stat.mtime.toISOString().replace(/T.*/, '');
 
-      // Use filesystem timestamps. birthtime may be 0 on some Linux filesystems;
-      // fall back to mtime in that case.
-      const stat = fs.statSync(path.join(inputPath, relativePath));
-      const createdAt = (stat.birthtimeMs > 0 ? stat.birthtime : stat.mtime)
-        .toISOString().replace(/T.*/, '');
-      const updatedAt = stat.mtime.toISOString().replace(/T.*/, '');
-
-      const dmdFrontmatter = {
-        date: createdAt,
-        updated_date: updatedAt,
-        layout: 'document',
-        title: frontMatter.json.title || casedName,
-        jsonld: {},
-        canonical: '',
-        custom_header: '',
-        ...frontMatter.json
-      };
-
-      dmdFrontmatter.card = {
-        color: '#99b399',
-        columnid: 'progress_2',
-        datebox: '',
-        extlink: null,
-        laneid: 'Essay',
-        leftbox: '',
-        position: dmdFrontmatter.date.replace(/-/g, ''),
-        tags: null,
-        ...dmdFrontmatter.card,
-        linkto: '[link_to]',
-        title: '[title]',
-        subtaskdetails: []
-      };
-
-      if (dmdFrontmatter.card.laneid === 'Essay' &&
-        ['requested_1', 'progress_2'].includes(dmdFrontmatter.card.columnid)
-      ) {
-        dmdFrontmatter.params = {
-          noIndex: true
+        const dmdFrontmatter = {
+          date: createdAt,
+          updated_date: updatedAt,
+          layout: 'document',
+          title: frontMatter.json.title || casedName,
+          jsonld: {},
+          canonical: '',
+          custom_header: '',
+          ...frontMatter.json
         };
+
+        dmdFrontmatter.card = {
+          color: '#99b399',
+          columnid: 'progress_2',
+          datebox: '',
+          extlink: null,
+          laneid: 'Essay',
+          leftbox: '',
+          position: dmdFrontmatter.date.replace(/-/g, ''),
+          tags: null,
+          ...dmdFrontmatter.card,
+          linkto: '[link_to]',
+          title: '[title]',
+          subtaskdetails: []
+        };
+
+        if (dmdFrontmatter.card.laneid === 'Essay' &&
+          ['requested_1', 'progress_2'].includes(dmdFrontmatter.card.columnid)
+        ) {
+          dmdFrontmatter.params = {
+            noIndex: true
+          };
+        }
+
+        let dmdNote = JSON.stringify(dmdFrontmatter, null, 4);
+        dmdNote += '\n\n---\n\n';
+
+        dmdNote += '[summary:string]\n';
+        dmdNote += `${frontMatter.json.card?.content ?? ''}\n\n`;
+
+        dmdNote += '[pub_date:string]\n';
+        dmdNote += `${dmdFrontmatter.date}\n\n`;
+
+        dmdNote += '[short_description:string]\n\n';
+
+        dmdNote += '[body:md]\n';
+        let modifiedContent = await processImages(content);
+        modifiedContent = await processLinks(modifiedContent, filesMap);
+        modifiedContent = modifiedContent.replace(/---/g, '<hr/>\n');
+        dmdNote += `${modifiedContent.trim()}\n\n`;
+
+        dmdNote += '[acknowledgments:md]\n\n';
+
+        dmdNote += '[further_reading:md]\n\n';
+
+        dmdNote += '[significant_revisions:md]\n';
+        dmdNote += `_${new Date(`${createdAt} GMT-0300`).toLocaleString('en-US', {
+          month: 'short',
+          day: 'numeric',
+          year: 'numeric'
+        })}_: Original publication on dariomac.com\n`;
+
+        fs.writeFileSync(path.resolve(`${outputPath}${urlSlug(casedName)}.dmd`), dmdNote, 'utf8');
+        return { name: casedName, ok: true };
+      } catch (e) {
+        return { name: casedName, ok: false, error: String(e) };
       }
-
-      let dmdNote = JSON.stringify(dmdFrontmatter, null, 4);
-      dmdNote += '\n\n---\n\n';
-
-      dmdNote += '[summary:string]\n';
-      dmdNote += `${frontMatter.json.card?.content ?? ''}\n\n`;
-
-      dmdNote += '[pub_date:string]\n';
-      dmdNote += `${dmdFrontmatter.date}\n\n`;
-
-      dmdNote += '[short_description:string]\n\n';
-
-      dmdNote += '[body:md]\n';
-      let modifiedContent = await processImages(content);
-      modifiedContent = await processLinks(modifiedContent, filesMap);
-      modifiedContent = modifiedContent.replace(/---/g, '<hr/>\n');
-      dmdNote += `${modifiedContent.trim()}\n\n`;
-
-      dmdNote += '[acknowledgments:md]\n\n';
-
-      dmdNote += '[further_reading:md]\n\n';
-
-      dmdNote += '[significant_revisions:md]\n';
-      dmdNote += `_${new Date(`${createdAt} GMT-0300`).toLocaleString('en-US', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric'
-      })}_: Original publication on dariomac.com\n`;
-
-      fs.writeFileSync(path.resolve(`${outputPath}${urlSlug(casedName)}.dmd`), dmdNote, 'utf8');
     })
   );
+
+  // Print ordered summary after all notes are processed.
+  for (const r of results) {
+    if (r.ok) {
+      console.log(`${GREEN}  ✓${RESET} ${r.name}`);
+    } else {
+      console.error(`${RED}  ✗ ${r.name}: ${r.error}${RESET}`);
+    }
+  }
 })().catch(e => {
   console.log(e);
 });
@@ -193,11 +210,11 @@ const processImages = async (content) => {
 
       fs.copyFileSync(`${inputPath}Organization/Attachments/${originalImageNameWithExtension}`, `${assetsPath}${newImageNameWithExtension}`);
 
-      await webp.cwebp(
+      await convertToWebp(
         `${assetsPath}${newImageNameWithExtension}`,
         `${assetsPath}${newImageName}.webp`,
-        '-q 80',
-        '-v');
+        80,
+        true);
 
       processedContent = processedContent.replace(originalString, `![${newImageNameWithExtension}](/assets/${newImageNameWithExtension}#center)`);
     }

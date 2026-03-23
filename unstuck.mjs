@@ -5,7 +5,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import puppeteer from 'puppeteer';
-import webp from 'webp-converter';
+import { convertToWebp } from './image-converter.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -295,7 +295,7 @@ ${html}
     // Generate WebP version
     const webpPath = outputPath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
     try {
-      await webp.cwebp(outputPath, webpPath, '-q 80');
+      await convertToWebp(outputPath, webpPath, 80);
       console.log(`Generated WebP version: ${path.basename(webpPath)}`);
     } catch (webpError) {
       console.warn(`Failed to generate WebP version for ${path.basename(outputPath)}:`, webpError.message);
@@ -378,7 +378,7 @@ async function resizeAllImages(imagePaths) {
     // Regenerate WebP version after resizing
     const webpPath = imagePath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
     try {
-      await webp.cwebp(imagePath, webpPath, '-q 80');
+      await convertToWebp(imagePath, webpPath, 80);
       console.log(`Regenerated WebP version: ${path.basename(webpPath)}`);
     } catch (webpError) {
       console.warn(`Failed to regenerate WebP version for ${path.basename(imagePath)}:`, webpError.message);
