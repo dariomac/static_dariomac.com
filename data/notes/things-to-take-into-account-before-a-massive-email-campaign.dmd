@@ -1,11 +1,17 @@
 {
     "date": "2022-04-03",
-    "updated_date": "2022-04-03",
+    "updated_date": "2026-03-23",
     "layout": "document",
     "title": "Before massive email campaigns",
     "jsonld": {},
     "canonical": "",
     "custom_header": "",
+    "card\"": {
+        "content": "Things to take into account before a massive email compaign",
+        "laneid": "Essay",
+        "tags": "email,SPG,DKIM,DMARC"
+    },
+    "fieldNote": "true,",
     "card": {
         "color": "#99b399",
         "columnid": "progress_2",
@@ -14,13 +20,11 @@
         "laneid": "Essay",
         "leftbox": "",
         "position": "20220403",
-        "tags": "email,SPG,DKIM,DMARC",
-        "content": "Things to take into account before a massive email compaign",
+        "tags": null,
         "linkto": "[link_to]",
         "title": "[title]",
         "subtaskdetails": []
     },
-    "fieldNote": true,
     "params": {
         "noIndex": true
     }
@@ -29,7 +33,7 @@
 ---
 
 [summary:string]
-Things to take into account before a massive email compaign
+
 
 [pub_date:string]
 2022-04-03

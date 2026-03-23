@@ -1,6 +1,6 @@
 {
     "date": "2023-05-18",
-    "updated_date": "2023-05-18",
+    "updated_date": "2026-03-23",
     "layout": "document",
     "title": "Focused Conversation",
     "jsonld": {},
@@ -38,7 +38,6 @@ Conversation structuring tool with 4 stages
 
 [body:md]
 Is a tool that can be used to structure a conversation.
-
 ## Stages
 It states that conversations should have four phases: objective, reflective, interpretive and decisional [^1].
 > You don’t have to spend an hour on each category of question, but ignoring facts to jump to a decision or devaluing reflective questions because you just want to talk about data will not necessarily get you better results. [^2]

@@ -26,6 +26,11 @@ function obsidianJSON (command) {
   return JSON.parse(execSync(`obsidian ${command} format=json`, { encoding: 'utf8' }));
 }
 
+// Read a vault file's raw content via the Obsidian CLI.
+function obsidianRead (relativePath) {
+  return execSync(`obsidian read path="${relativePath}"`, { encoding: 'utf8' });
+}
+
 // Parse a raw .md file into { frontMatter: { tags, json }, content }.
 // Replicates the shape that obsidian-vault-parser used to return:
 //   frontMatter.tags  — the YAML `tags:` array
@@ -97,7 +102,7 @@ function parseNote (rawContent, filename = '') {
     publishedPaths.map(async (relativePath) => {
       const casedName = path.basename(relativePath, '.md');
       try {
-        const raw = fs.readFileSync(path.join(inputPath, relativePath), 'utf8');
+        const raw = obsidianRead(relativePath);
         const { frontMatter, content } = parseNote(raw, relativePath);
 
         // Use filesystem timestamps. birthtime may be 0 on some Linux filesystems;
@@ -153,7 +158,9 @@ function parseNote (rawContent, filename = '') {
         dmdNote += '[short_description:string]\n\n';
 
         dmdNote += '[body:md]\n';
-        let modifiedContent = await processImages(content);
+        let modifiedContent = content.replace(/\{\{!--[\s\S]*?\}\}/g, '');
+        modifiedContent = await processEmbeds(modifiedContent, filesMap);
+        modifiedContent = await processImages(modifiedContent);
         modifiedContent = await processLinks(modifiedContent, filesMap);
         modifiedContent = modifiedContent.replace(/---/g, '<hr/>\n');
         dmdNote += `${modifiedContent.trim()}\n\n`;
@@ -189,9 +196,45 @@ function parseNote (rawContent, filename = '') {
   console.log(e);
 });
 
+const IMAGE_EXTENSIONS = new Set(['png', 'jpg', 'jpeg', 'gif', 'webp', 'svg', 'bmp', 'tiff', 'avif']);
+
+const processEmbeds = async (content, files, depth = 0) => {
+  if (depth >= 3) return content;
+
+  let processedContent = content;
+  const regex = /!\[\[([^\]]+)\]\]/g;
+  let m;
+
+  while ((m = regex.exec(content)) !== null) {
+    if (m.index === regex.lastIndex) {
+      regex.lastIndex++;
+    }
+
+    const originalString = m[0];
+    const noteName = m[1].split('|')[0].trim();
+    const ext = noteName.includes('.') ? noteName.split('.').pop().toLowerCase() : '';
+
+    if (IMAGE_EXTENSIONS.has(ext)) continue; // handled by processImages
+
+    const linkedNote = files[noteName.toLowerCase()];
+    if (!linkedNote) continue;
+
+    try {
+      const raw = obsidianRead(linkedNote.path);
+      const { content: embeddedContent } = parseNote(raw, linkedNote.path);
+      const resolved = await processEmbeds(embeddedContent.trim(), files, depth + 1);
+      processedContent = processedContent.replace(originalString, resolved);
+    } catch {
+      processedContent = processedContent.replace(originalString, '');
+    }
+  }
+
+  return processedContent;
+};
+
 const processImages = async (content) => {
   let processedContent = content;
-  const regex = /!\[\[([a-zA-Z0-9\s\.-]+\|?[a-zA-Z0-9\s]*)\]\]/g;
+  const regex = /!\[\[([^\]]+)\]\]/g;
   let m;
 
   while ((m = regex.exec(content)) !== null) {
@@ -239,7 +282,8 @@ const processLinks = async (content, files) => {
     const [pageName, pipedText] = dobleSquareBracketContent.split('|');
 
     const linkedNote = files[pageName.toLowerCase()];
-    if (linkedNote) {
+    const isPublished = linkedNote?.frontMatter.tags.includes('dm.com');
+    if (linkedNote && isPublished) {
       const lang = linkedNote.frontMatter.json.lang;
       const langFolder = lang ? `/${lang}` : '';
       processedContent = processedContent.replace(originalString, `[${pipedText || pageName}](${langFolder}/${urlSlug(pageName)})`);

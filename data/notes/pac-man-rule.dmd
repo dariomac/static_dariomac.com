@@ -1,6 +1,6 @@
 {
     "date": "2023-05-09",
-    "updated_date": "2023-05-13",
+    "updated_date": "2026-03-23",
     "layout": "document",
     "title": "Pac-Man rule",
     "jsonld": {},
@@ -15,12 +15,12 @@
         "leftbox": "",
         "position": "20230509",
         "tags": "inclusivity, community, events",
-        "content": "The Pac-Man Rule at Conferences",
+        "content\"": "The Pac-Man Rule at Conferences",
         "linkto": "[link_to]",
         "title": "[title]",
         "subtaskdetails": []
     },
-    "fieldNote": true,
+    "fieldNote": "true,",
     "params": {
         "noIndex": true
     }
@@ -29,7 +29,7 @@
 ---
 
 [summary:string]
-The Pac-Man Rule at Conferences
+
 
 [pub_date:string]
 2023-05-09

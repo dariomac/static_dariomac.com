@@ -7,8 +7,9 @@ Disallow: /soft-eng
 Disallow: /make-jobs-collaborate
 Disallow: /senior-juniorism
 Disallow: /focused-conversation
-Disallow: /the-pac-man-rule
+Disallow: /pac-man-rule
 Disallow: /circular-growth-loops
+Disallow: /sombra-de-toro
 Disallow: /dmarc
 Disallow: /how-to-improve-the-seo-of-a-react-application
 Disallow: /things-to-take-into-account-before-a-massive-email-campaign
