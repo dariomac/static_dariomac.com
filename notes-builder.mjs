@@ -162,6 +162,9 @@ function parseNote (rawContent, filename = '') {
         modifiedContent = await processEmbeds(modifiedContent, filesMap);
         modifiedContent = await processImages(modifiedContent);
         modifiedContent = await processLinks(modifiedContent, filesMap);
+        // Unwrap linked images [![](img)](link) → ![](img), then add #center to all images without a fragment
+        modifiedContent = modifiedContent.replace(/\[!\[([^\]]*)\]\(([^)]+)\)\]\([^)]+\)/g, '![$1]($2)');
+        modifiedContent = modifiedContent.replace(/!\[([^\]]*)\]\(([^)#]+)\)/g, '![$1]($2#center)');
         modifiedContent = modifiedContent.replace(/---/g, '<hr/>\n');
         dmdNote += `${modifiedContent.trim()}\n\n`;
 
@@ -259,7 +262,7 @@ const processImages = async (content) => {
         80,
         true);
 
-      processedContent = processedContent.replace(originalString, `![${newImageNameWithExtension}](/assets/${newImageNameWithExtension}#center)`);
+      processedContent = processedContent.replace(originalString, `![](/assets/${newImageNameWithExtension}#center)`);
     }
   }
   return processedContent;
