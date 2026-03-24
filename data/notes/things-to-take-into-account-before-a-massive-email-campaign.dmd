@@ -1,6 +1,6 @@
 {
     "date": "2022-04-03",
-    "updated_date": "2026-03-23",
+    "updated_date": "2026-03-24",
     "layout": "document",
     "title": "Before massive email campaigns",
     "jsonld": {},
@@ -11,7 +11,7 @@
         "laneid": "Essay",
         "tags": "email,SPG,DKIM,DMARC"
     },
-    "fieldNote": "true,",
+    "fieldNote": true,
     "card": {
         "color": "#99b399",
         "columnid": "progress_2",

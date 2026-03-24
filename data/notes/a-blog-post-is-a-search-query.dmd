@@ -1,0 +1,57 @@
+{
+    "date": "2023-04-04",
+    "updated_date": "2026-03-24",
+    "layout": "document",
+    "title": "A blog post is a search query",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
+    "card": {
+        "color": "#99b399",
+        "columnid": "done_3",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20230404",
+        "tags": "content, SEO, community",
+        "content": "Biased summary of the article \"A blog post is a very long and complex search query to find fascinating people and make them route interesting stuff to your inbox\"",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true
+}
+
+---
+
+[summary:string]
+Biased summary of the article "A blog post is a very long and complex search query to find fascinating people and make them route interesting stuff to your inbox"
+
+[pub_date:string]
+2023-04-04
+
+[short_description:string]
+
+[body:md]
+This is a summary (of what I was interested in, only) of the article "A blog post is a very long and complex search query to find fascinating people and make them route interesting stuff to your inbox" [^1]
+
+Why do you write?
+> You write to find your tribe
+
+What do you want to write?
+> You ask yourself: What would have made me jump off my chair if I had read it six months ago (or a week ago, or however fast you write)? If you have figured out something that made you ecstatic, this is what you should write.[^1]
+
+How do you want to write?
+> (...) longish and detailed
+> 
+> (...) don’t just talk in the abstract but show you with examples, preferably many examples, and preferably taken from the real world so they are messy.
+
+[^1]: A blog post is a very long and complex search query to find fascinating people and make them route interesting stuff to your inbox - https://escapingflatland.substack.com/p/search-query
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Apr 4, 2023_: Original publication on dariomac.com

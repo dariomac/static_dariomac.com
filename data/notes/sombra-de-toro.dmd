@@ -1,6 +1,6 @@
 {
     "date": "2022-05-02",
-    "updated_date": "2026-03-23",
+    "updated_date": "2026-03-24",
     "layout": "document",
     "title": "Sombra de toro",
     "jsonld": {},
@@ -16,7 +16,7 @@
         "position": "20220502",
         "tags": "Card tags",
         "content": "Card content",
-        "laneid\"": "Essay | Bonsai",
+        "laneid\"": "Bonsai",
         "linkto": "[link_to]",
         "title": "[title]",
         "subtaskdetails": []

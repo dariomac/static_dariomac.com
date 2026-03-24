@@ -218,6 +218,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://dariomac.com/a-blog-post-is-a-search-query</loc>
+        <lastmod>2026-03-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://dariomac.com/not-another-cheat-sheet-about-technical-interviews</loc>
         <lastmod>2923-09-25</lastmod>
         <changefreq>monthly</changefreq>
@@ -237,7 +243,7 @@
       </url>
       <url>
         <loc>https://dariomac.com/es/documinding</loc>
-        <lastmod>2025-01-22</lastmod>
+        <lastmod>2026-03-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

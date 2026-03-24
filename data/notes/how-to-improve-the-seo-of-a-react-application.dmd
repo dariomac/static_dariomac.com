@@ -1,6 +1,6 @@
 {
     "date": "2022-04-03",
-    "updated_date": "2026-03-23",
+    "updated_date": "2026-03-24",
     "layout": "document",
     "title": "SEO & React",
     "jsonld": {},
@@ -20,7 +20,7 @@
         "title": "[title]",
         "subtaskdetails": []
     },
-    "fieldNote": "true,",
+    "fieldNote": true,
     "params": {
         "noIndex": true
     }
