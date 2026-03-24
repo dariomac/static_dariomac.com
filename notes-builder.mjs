@@ -67,7 +67,10 @@ function parseNote (rawContent, filename = '') {
 }
 
 (async () => {
-  fsx.removeSync(outputPath);
+  // I'll will keep all previously generated notes because of SEO.
+  // If I want to delete something, I'll have to do it manually and add a redirection or just hide it.
+  // fsx.removeSync(outputPath);
+
   await fsx.ensureDir(outputPath);
   await fsx.ensureDir(assetsPath);
 
