@@ -1,0 +1,122 @@
+{
+  "title": "AI Impact on Software Engineering: Which Areas Can Be Automated",
+  "date": "2026-03-30",
+  "layout": "document",
+  "card": {
+    "color": "#99b399",
+    "columnid": "done_2",
+    "content": "Explore how artificial intelligence is transforming 12 key software engineering areas and which tasks can truly be automated, based on SWEBOK.",
+    "datebox": "Mar 2026",
+    "extlink": null,
+    "laneid": "Essay",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260319",
+    "subtaskdetails": [],
+    "tags": "AI, Software Engineering, SWEBOK, Automation",
+    "title": "[title]"
+  },
+  "jsonld": {},
+  "canonical": "https://www.howdylatam.com/en/blog/ai-impact-software-engineering-areas-automation",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+Explore how artificial intelligence is transforming 12 key software engineering areas and which tasks can truly be automated, based on SWEBOK.
+
+[pub_date:string]
+Mar 19, 2026
+
+[short_description:string]
+A.K.A. "Stop crying and move on". Explore how artificial intelligence is transforming 12 key software engineering areas and which tasks can truly be automated, based on SWEBOK.
+
+[body:md]
+According to the latest version of the SWEBOK, there are 18 different Software Engineering Knowledge Areas (KAs).
+Although not all of them are directly related to the technical aspects of software engineering, there are at least 12 technical areas. Let's analyze them:
+1. Software Requirements: management of requirements to define the behavior and constraints of software systems.
+2. Software Architecture: high-level structuring of software systems and their interactions.
+3. Software Design: definition of components, interfaces, and other characteristics necessary for implementing a software solution.
+4. Software Construction: creation of working software.
+5. Software Testing: Software execution to ensure it meets specified requirements and identifies defects.
+6. Software Engineering Operations: Deploying software in its operational environment and providing services to keep it working.
+7. Software Maintenance: modify existing software to correct faults, improve performance, or adapt it to a changed environment after delivery.
+8. Software Configuration Management: Manages changes in software artifacts.
+9. Software Quality: Ensure a product meets specified requirements while satisfying customer needs through quality assurance practices.
+10. Software Security: Protect information systems against unauthorized access.
+11. Computing Foundations: Fundamental computing concepts essential for understanding broader computing contexts
+12. Mathematical Foundations: Fundamental mathematical principles behind the technical aspects related to model analysis verification tasks.
+Perhaps number 12 is a bit of a stretch and doesn't apply to everyone's daily work, but it's certainly close enough to what we do to list it here.
+
+## Great information for trivia... but why is this important?
+Well... I don't want to beat around the bush, so I'll get straight to the point:
+Are software engineers from around the world complaining on the Internet that one in 12 software engineering areas might be fully automated soon?
+Just STOP CRYING and MOVE ON!
+
+## Time to stand by my position.
+Let's take it one bite at a time. To do that, I'll analyze the impact of AI in each of the 12 areas of software engineering we mentioned. I will give a “replaceability” score, where:
+- 10/10 = the work in that area can be performed end-to-end by AI tools most of the time, with minimal human involvement (humans might still “approve,” but they’re not doing much thinking or decision-making).
+- 0/10 = AI is mostly a helper, but humans still do the core reasoning, tradeoffs, accountability, and coordination that make the work “real.”
+
+## 1) Software Requirements - 4/10
+AI will get very good at turning messy notes into clean artifacts: user stories, acceptance criteria, PRDs, use cases, edge-case lists, even draft UI copy and workflow diagrams. It can detect inconsistencies (“you said X but also Y”), propose clarifying questions, and maintain traceability across documents and tickets (basically acting as a tireless requirements-analysis assistant).
+But the hard core of requirements is human alignment under constraints: conflicting stakeholders, political tradeoffs, hidden incentives, budget reality, and deciding what “success” means when nobody fully agrees. Requirements are also where liability and ethics quietly live. AI can draft, but it can’t own the consequences of “we’re doing this” vs “we’re not doing this,” and it doesn’t naturally have privileged access to the real-world context that stakeholders carry in their heads (or choose not to share).
+
+## 2) Software Architecture - 3/10
+AI can propose architectures fast: “use event-driven,” “split into these services,” “choose Postgres + Redis,” “here’s a reference diagram,” “apply CQRS,” etc. It’s also great at enumerating tradeoffs, listing failure modes, suggesting observability patterns, and generating architecture documentation that humans are usually too busy to write.
+But architecture is less about knowing patterns and more about choosing which pain you’ll accept: latency vs. consistency, cost vs. redundancy, shipping speed vs. correctness, autonomy vs. governance. Those decisions depend on roadmap volatility, team maturity, operational capability, regulatory constraints, and the organization’s tolerance for outages. AI can suggest; humans still have to commit and live with the consequences months later when reality collides with the diagram.
+
+## 3) Software Design - 6/10
+Design sits closer to implementation than architecture does, so it’s more automatable. AI can generate module boundaries, class models, API shapes, database schemas, state machines, interface contracts, and even propose refactors toward cleaner abstractions. If you give it clear constraints (“we need idempotent endpoints,” “support offline mode,” “avoid breaking changes”), it can produce strong first drafts.
+But design still contains lots of “silent requirements”: maintainability, future change patterns, ergonomics, how the system fails, and the difference between “technically correct” and “pleasant to work with for years.” AI tends to optimize for local elegance and patterns it has seen before; humans have to optimize for this product’s evolving mess. So design is highly assisted, but not fully replaceable.
+
+## 4) Software Construction - 10/10 (my anchor)
+Here, I’m assuming the strongest version of my premise (AI “replaces” engineers in construction). Code generation, refactoring, translation between languages, scaffolding services, implementing well-specified features, and wiring integrations are all tasks where inputs and outputs are representable as text + tests + build results. That’s AI-friendly terrain.
+Even then, the caveat is important: construction is never just typing code. It includes micro-decisions, interpreting ambiguity, and debugging in real environments. But if I had to choose a single area as the “10,” it would be construction, because it is the most readable for automation and the easiest to evaluate mechanically (does it compile, tests pass, lint passes, benchmarks hit targets, etc.).
+
+## 5) Software Testing - 7/10
+Testing is surprisingly automatable because so much of it is pattern-driven: generate unit tests from code paths, fuzz inputs, build regression suites from bug reports, create mocks, propose boundary cases, and run large configuration matrices. AI is also good at reading failures and offering likely causes (“this is a flaky timing issue,” “mock mismatch,” “off-by-one edge case”), which reduces the “human time per failure.”
+But two big things resist full automation. First is the oracle problem: determining the correct behavior when requirements are incomplete or contradictory. Second is prioritization under risk: what to test, what not to test, where failure is catastrophic, and when “green tests” are giving false confidence. AI can generate mountains of tests; humans still need to design a strategy that proves something meaningful rather than producing a comforting illusion.
+
+## 6) Software Engineering Operations - 7/10
+Operations has a lot of automatable surface area: deployment pipelines, auto-recovery for known failure patterns, anomaly detection, log/trace summarization, incident timelines, runbook execution, capacity forecasting, and “what changed?” diffing across configs and releases. AI will increasingly act as an always-on SRE assistant that quickly triages and suggests actions.
+But ops is where the cost of mistakes is immediate. Automated recovery can take down production faster than any human ever could if it’s wrong. Also, incidents often involve novel combinations of failures: partial outages, third-party issues, cascading timeouts, corrupted state, and human decision-making under uncertainty (“do we roll back?”, “do we disable feature flags?”, “do we page legal/compliance?”). AI will greatly reduce the amount of work, but humans will continue to be involved in decision-making, coordination, and accountability.
+
+## 7) Software Maintenance - 7/10
+Maintenance is a great target for AI because it’s full of repetitive, time-consuming work: dependency updates, API migrations, refactoring to new patterns, paying down obvious tech debt, porting legacy code, updating documentation, and fixing common classes of bugs. AI can read a codebase and propose safe incremental changes faster than most humans, especially when guided by tests and static analysis.
+But the difficult part of maintenance is not breaking the business while changing the code. Legacy systems encode business rules that may exist nowhere else, and the “right behavior” is often defined by years of production quirks. Maintenance requires deep context, risk management, and careful rollout planning. AI can do a lot of the edits, but humans still need to decide what’s safe, what’s worth it, and what the blast radius looks like.
+
+## 8) Software Configuration Management - 8/10
+SCM has a strong automation profile: version control workflows, branch management, merge conflict resolution (especially mechanical conflicts), release tagging, automated changelogs, dependency pinning, environment parity checks, CI/CD enforcement, policy-as-code, and auditing. Many SCM activities are already structured processes with clear rules, perfect for tools.
+The things that are hard to replace are governance and intent: what changes are allowed, who approves them, how risk is assessed, and how exceptions are handled when reality doesn’t match policy. Also, “configuration” in modern systems includes secrets, infra, feature flags, and permissions (where mistakes are expensive). AI can execute and recommend, but humans will retain ownership of policy, approvals, and accountability.
+
+## 9) Software Quality - 5/10
+AI can help a lot with quality practices: define checklists, enforce standards, spot code smells, detect inconsistencies between docs and behavior, suggest metrics, and continuously review artifacts (PRs, designs, tests) for common failure patterns. It can also raise the baseline by making “good hygiene” cheap and constant.
+But “quality” is ultimately a value judgment tied to users and business outcomes, not just defect counts. Humans decide what quality means here: performance targets, accessibility expectations, reliability SLOs, UX tolerances, and where the team is willing to accept imperfection to ship. Quality is also cultural: how teams handle feedback, how they respond to bugs, and how they trade speed for correctness. AI can enhance good systems, but it cannot create discipline on its own.
+
+## 10) Software Security - 5/10
+AI will be extremely useful in security: code scanning, dependency risk analysis, misconfiguration detection, secure coding suggestions, policy generation, and even writing safer default implementations for authentication, encryption, and input validation. It can also help with threat modeling by listing plausible attacker paths and common abuse cases.
+But security remains adversarial and contextual. Attackers invent new chains, and defenders must understand real-world constraints: usability, business workflows, compliance requirements, and incident response. The hardest work is prioritization and architecture-level decisions (“what do we trust?”, “what do we isolate?”, “how do we do key management?”). AI can catch a ton of issues, but humans still need to define the security posture and make risk decisions with legal and reputational consequences.
+
+## 11) Computing Foundations - 3/10
+If we treat this area as “the foundational CS knowledge engineers apply,” AI will absolutely reduce the need to memorize details. You can ask it for algorithm options, complexity tradeoffs, concurrency models, database indexing strategies, language/runtime behaviors, and typical pitfalls. That makes it feel “replaceable” because access to knowledge becomes commoditized.
+But foundations are less about reciting facts and more about thinking clearly when things go wrong: diagnosing performance collapse, understanding distributed failure modes, choosing the correct data structure under constraints, and spotting when a system is violating a fundamental principle. AI can advise, but humans who understand foundations can judge whether the advice applies, detect subtle wrongness, and reason under uncertainty, especially when the environment is novel or the constraints are non-obvious.
+
+## 12) Mathematical Foundations - 3/10
+AI can offload much of the math execution: deriving formulas, checking logic, performing statistical reasoning, assisting with proofs, and explaining concepts such as probability, graph theory, and formal verification. For many engineers who only use math occasionally, this will feel like a superpower: you get “math on demand” without re-learning everything from scratch.
+But when math matters, it matters because you’re building something where small reasoning errors become big real-world errors: risk models, ML evaluation, cryptography-adjacent decisions, distributed consistency arguments, scheduling/optimization, or correctness proofs. In those cases, humans still need to understand the assumptions, validate the reasoning, and interpret the results responsibly. AI can accelerate the work, but you don’t want a world where nobody on the team can double-check the math.
+
+Our job is being upgraded. If automation eats software construction alive, that doesn't make you obsolete; it makes “writing code” no longer a personality trait. The world isn't running out of software problems; it's running out of people who can define the right problem, design a sensible solution, and keep it alive in production without turning every incident into mythology.
+AI isn’t replacing engineers; it’s replacing excuses. No more hiding behind “I didn’t have time to write tests,” “we can’t document this,” “we’ll clean it up later,” “security will review it,” “ops will handle it.” When drafting, scaffolding, test generation, config hygiene, and basic triage become cheap, the bar rises. The profession shifts from “I can build” to “I can be trusted.” And trust is built in the areas that are hardest to automate: requirements clarity, architectural tradeoffs, a meaningful testing strategy, a security posture, operational judgment, and safe maintenance.
+AI buys you time, and time is not a perk; it’s a mandate. You can spend it producing more features faster (and shipping more garbage faster), or you can spend it doing the work that actually makes systems succeed: ask better questions, kill bad ideas early, design for change, verify behavior instead of hoping, model failure modes, reduce incident blast radius, and make security and quality real instead of ceremonial.
+So yes: Stop crying and move on. Move on from measuring your worth in lines of code. Move on from thinking “engineering” means “implementation.” Move on to the parts of the craft that don’t compress into autocomplete: judgment, tradeoffs, accountability, and taste.
+Let AI do the mechanical work; you do the consequential work.
+
+[acknowledgments:md]
+This post, originally on `https://www.howdylatam.com/en/blog/ai-impact-software-engineering-areas-automation`, was written for [Howdy™](https://www.howdy.com), so I want to thank them for letting me share it with you on my website.
+
+[further_reading:md]
+
+[significant_revisions:md]
+Mar 19, 2026: Original publication on howdy.com

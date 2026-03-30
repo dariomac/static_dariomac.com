@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>AI Impact on Software Engineering: Which Areas Can Be Automated | Darío Macchi</title>
+    <style>
+      
+      @charset "UTF-8";
+      html {
+        height: 100%;
+      }
+      
+      body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        color: #414141;
+        font-size: 11px;
+      }
+      
+      article a {
+        text-decoration: none;
+        color: #000;
+      }
+      
+      a img {
+        border: 0px;
+      }
+      
+      .submenu {
+        float: right;
+        padding-top: 7px;
+      }
+      
+      .orange_box {
+        padding: 0px 0px 0px 10px;
+        font-weight: bold;
+        background: #ff922c;
+        border: #ff922c 1px solid;
+        border-radius: 12px;
+        float: left;
+        color: #fff;
+        margin-right: 10px;
+      }
+      
+      .orange_box div.username {
+        padding: 0px 10px 0px 34px;
+        background: url('data:image/png;base64,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') no-repeat 0px 3px;
+        float: left;
+        height: 35px;
+        line-height: 35px;
+      }
+      
+      .orange_box ul {
+        border-left: #ec6100 1px solid;
+        padding: 0px 10px 0px 5px;
+        float: left;
+        overflow: hidden;
+        list-style-type: none;
+        list-style-image: none;
+        margin: 0px;
+      }
+      
+      .orange_box ul li {
+        padding: 10px 0px 8px 0px;
+        float: left;
+      }
+      
+      .orange_box ul li a {
+        border-left: #ff922c 1px solid;
+        font-weight: bold;
+        padding: 0px 0px 0px 5px;
+      }
+      
+      .orange_box ul li a {
+        padding: 0px;
+      }
+      
+      /* Footer style {*/
+      .footer {
+        background-color: #00445c; height: 20px; color: #ffffff; overflow: hidden;
+      }
+      .footer a {
+        color: #ffffff
+      }
+      .footer a:hover {
+        text-decoration: underline
+      }
+      .footer ul {
+        float: right;
+        list-style-type: none;
+        margin-top: 2px;
+      }
+      .footer li {
+        border-left: #ffffff 1px solid; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; float: left; padding-top: 0px; height:16px; margin-top:0px;
+      }
+      .footer li:first-child {
+        border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px; height:16px; margin-top:1px;
+      }
+      .clearfix:after {
+        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+      }
+      .footer ul:after {
+        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
+      }
+      
+      @media only screen and (min-width: 1170px) {
+        .details .dm-main-content.is-fixed .dm-board {
+          padding-top: 50px;
+        }
+      
+        .container-fluid.dm-board {
+          max-width: 800px;
+          border: #d8d7d7 1px solid;
+        }
+      }
+      
+      .details .dm-main-content.is-fixed .dm-board {
+        margin-bottom: 20px;
+      }
+      
+      .details .container-fluid.dm-board h1 {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+      
+      .details .container-fluid.dm-board h2 {
+        font-size: 18px;
+        margin-bottom: 6px;
+        color: #000;
+      }
+      
+      .details .container-fluid.dm-board h3 {
+        font-size: 16px;
+        margin-bottom: 2px;
+        text-decoration: underline;
+      }
+      
+      .details .container-fluid.dm-board h4 {
+        font-size: 14px;
+        font-style: italic;
+      }
+      
+      article li {
+        margin-bottom: 4px;
+      }
+      
+      article, section {
+        color: #414141;
+        font-size: 14px;
+        text-align: justify;
+      }
+      
+      header, section {
+        margin: 0px 20px;
+      }
+      
+      header p {
+        text-align: left;
+      }
+      
+      header p:not(:last-child) {
+        margin-bottom: 0px;
+      }
+      
+      .anchor {
+        display: block;
+        position: relative;
+        top: -54px;
+      }
+      
+      article a:not(.no_external_ico), section a:not(.no_external_ico) {
+        font-weight: bold;
+        color: #069;
+        background: url(/assets/images/external.png) right 50% no-repeat;
+        padding-right: 12px;
+        overflow-wrap: break-word;
+      }
+      
+      /* Reset styles for links that only contain images */
+      article a:not(.no_external_ico):has(> img:only-child),
+      article a:not(.no_external_ico):has(> picture:only-child),
+      section a:not(.no_external_ico):has(> img:only-child),
+      section a:not(.no_external_ico):has(> picture:only-child) {
+        font-weight: normal;
+        color: inherit;
+        background: none;
+        padding-right: 0;
+      }
+      
+      article a:not([href]) {
+        background: inherit;
+        padding-right: inherit;
+      }
+      
+      article .duration {
+        margin-bottom: 0px;
+      }
+      
+      section table {
+        margin: 0 auto;
+        width: 100%;
+        border: solid #FF6E19;
+      }
+      
+      .summary {
+        font-style: italic;
+        padding-top: 8px;
+        cursor: none !important;
+        margin-bottom: 1rem;
+      }
+      
+      table td, table th {
+        border: #d8d7d7 1px solid;
+        padding: 5px;
+      }
+
+      .essay {
+        background-color: #f2f2f2;
+        border: 0px !important;
+        margin-left: inherit;
+      }
+
+      .essay .date {
+        width: 100%;
+        border-top: 1px solid;
+        text-align: right;
+      }
+
+      .essay p, .essay li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        color: #4c4c4c;
+        font-weight: 500;
+      }
+
+      .details .dm-board h1 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0px 0px 0px;
+        margin: 0px 0px 6px 0px;
+      }
+
+      .details .dm-board h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: inherit;
+        padding-top: 8px;
+      }
+
+      .details .dm-board h4 {
+        font-weight: bold;
+      }
+
+      article .essay h3 {
+        font-weight: bold !important;
+        text-decoration: inherit !important;
+      }
+
+      article .essay li {
+        font-size: 14px;
+      }
+
+      .description > p {
+        font-size: 19px;
+        padding-bottom: 15px;
+        font-style: italic;
+        color: #414141;
+        text-align: left;
+      }
+
+      .essay .sheet {
+        background-color: #fff;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .further-reading {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .essay .sheet {
+          padding: 0px 65px;
+        } 
+      }
+
+    </style>
+
+    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="author" content="Darío Macchi" />
+    <meta name="description" content="Explore how artificial intelligence is transforming 12 key software engineering areas and which tasks can truly be automated, based on SWEBOK." />
+    <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
+    
+    <link rel="dns-prefetch" href="//dariomac.com"/>
+    <link rel="dns-prefetch" href="//gstatic.com"/>
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
+    <link rel="dns-prefetch" href="//www.googletagmanager.com"/>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+    <link rel="dns-prefetch" href="//google.com"/>
+    <link rel="dns-prefetch" href="//c.statcounter.com"/>
+    <link rel="dns-prefetch" href="//statcounter.com"/>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+    <link rel="dns-prefetch" href="//yui.yahooapis.com"/>
+    
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+    <!-- <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/pure-min.css" type='text/css'> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/18style.css" type="text/css" >
+    <link rel="stylesheet" href="/assets/css/18style_desktop.css" media='screen and (min-width: 768px)' type="text/css">
+    
+    <link rel="canonical" href="https://www.howdylatam.com/en/blog/ai-impact-software-engineering-areas-automation" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NBDFJZDVV3');
+    </script>
+    
+    <script type="text/javascript">
+      function afterContentDraw () {
+        setTimeout(function () {
+          var aList = $('a').not('a[href^="/"]').not('a[href*="dariomac.com"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+          aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+          $.each(aList,
+            function (k, v) {
+              var $v = $(v);
+    
+              $v.click(function () {
+                _gaq.push(['_trackPageview', $v.attr('href')]);
+              });
+              // $v.css('color','red');
+            });
+          
+          preloadImages($('a.fancybox'));
+        }, 1000);
+      }
+    
+      function preloadImages (array) {
+        if (!preloadImages.list) {
+          preloadImages.list = [];
+        }
+        for (var i = 0; i < array.length; i++) {
+          var img = new Image();
+          img.src = $(array[i]).attr('href');
+          preloadImages.list.push(img);
+        }
+      }
+    </script>
+    
+    <link rel="shortcut icon" href="/favicon.ico" />
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="og:url" content="/ai-impact-software-engineering-areas-automation" />
+    <meta property="og:title" content="AI Impact on Software Engineering: Which Areas Can Be Automated" />
+    <meta property="og:description" content="Explore how artificial intelligence is transforming 12 key software engineering areas and which tasks can truly be automated, based on SWEBOK." />
+    <meta property="og:site_name" content="Darío Macchi personal website" />
+    <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
+    <meta property="og:image:type" content="image/png">
+    
+    
+    <meta name="twitter:site" content="@_dariomac">
+    <meta name="twitter:creator" content="@_dariomac">
+    <meta name="twitter:title" content="AI Impact on Software Engineering: Which Areas Can Be Automated">
+    <meta name="twitter:description" content="Explore how artificial intelligence is transforming 12 key software engineering areas and which tasks can truly be automated, based on SWEBOK.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:widgets:new-embed-design" content="on">
+    <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
+    
+    
+    
+    <script type='application/ld+json'> 
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "@id": "https://dariomac.com/me",
+        "image": "https://dariomac.com/assets/aboutme-me.jpg",
+        "jobTitle": "Computer Engineering, MSc",
+        "name": "Darío Macchi",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Universidad_ORT_Uruguay_-_Logo.jpg/220px-Universidad_ORT_Uruguay_-_Logo.jpg",
+          "name": "Universidad ORT Uruguay",
+          "sameAs": "https://en.wikipedia.org/wiki/Universidad_ORT_Uruguay",
+          "url": "https://www.ort.edu.uy/"
+        },
+        "birthPlace": "Paysandú, Uruguay",
+        "birthDate": "1981.08.12",
+        "height": "1.72 meters",
+        "gender": "male",
+        "nationality": "Uruguayan",
+        "url": "https://dariomac.com",
+        "sameAs" : [
+          "https://twitter.com/_dariomac",
+          "https://uy.linkedin.com/in/dariomac",
+          "https://www.researchgate.net/profile/Dario-Macchi",
+          "https://ort-uy.academia.edu/Dar%C3%ADoMacchi",
+          "https://www.informatik.uni-trier.de/~ley/pers/hd/m/Macchi:Dario"
+        ]
+      }
+    </script>
+    <script type='application/ld+json'>
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "@id": "https://dariomac.com/software-engineering-advisor-consultant",
+        "name": "Darío Macchi",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://dariomac.com/assets/images/d.png"
+        },
+        "url": "https://dariomac.com"
+      }
+    </script>
+    
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_Ip4X0TpkPZOdNVhcXCAvn8IyeT7qymmjRMs0BURjKmm',{api_host:'https://us.i.posthog.com', person_profiles: 'always' // or 'identified_only'
+            })
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://dariomac.com/"
+          },
+          "headline": "AI Impact on Software Engineering: Which Areas Can Be Automated",
+          "alternativeHeadline": "Explore how artificial intelligence is transforming 12 key software engineering areas and which tasks can truly be automated, based on SWEBOK.",
+          "url": "https://dariomac.com/",
+          "datePublished": "Mar 19, 2026",
+          "dateCreated": "2026-03-30",
+          "description": "Explore how artificial intelligence is transforming 12 key software engineering areas and which tasks can truly be automated, based on SWEBOK.",
+          "author": {
+            "@id": "https://dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
+  </head>
+  <body>
+    <div class="board_view details">
+      <main class="dm-main-content is-fixed">
+        <div class="dm-tab-filter-wrapper">
+          <div class="dm-tab-filter">
+            <ul class="dm-filters d-block d-md-none">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+              </li>
+              <li class="filter"><a class="selected" href="#0">All</a></li>
+              <li class="filter"><a href="/">Home</a></li>
+              <li class="filter"><a href="/about-me">About Me</a></li>
+              <li class="filter"><a href="/kanbancv">What is KanbanCV</a></li>
+            </ul> <!-- dm-filters -->
+          </div> <!-- dm-tab-filter -->
+
+          <div class="container-fluid float-left"></div>
+        </div> <!-- dm-tab-filter-wrapper -->
+
+        <div class="dm-board essay">
+          <article>
+            <div class="row featured">
+              <div class="offset-md-3 col-md-6 sheet">
+                <header>
+                  <h1>AI Impact on Software Engineering: Which Areas Can Be Automated</h1>
+                  <p class="date">Mar 19, 2026</p>
+                </header>
+
+                
+                <section class="description">
+                  <p>
+                    A.K.A. &quot;Stop crying and move on&quot;. Explore how artificial intelligence is transforming 12 key software engineering areas and which tasks can truly be automated, based on SWEBOK.
+                  </p>
+                </section>
+
+                <section>
+                    <p>According to the latest version of the <strong>SWEBOK</strong>, there are 18 different Software Engineering Knowledge Areas (KAs).
+Although not all of them are directly related to the technical aspects of software engineering, there are at least 12 technical areas. Let's analyze them:</p>
+<ol>
+<li>Software Requirements: management of requirements to define the behavior and constraints of software systems.</li>
+<li>Software Architecture: high-level structuring of software systems and their interactions.</li>
+<li>Software Design: definition of components, interfaces, and other characteristics necessary for implementing a software solution.</li>
+<li>Software Construction: creation of working software.</li>
+<li>Software Testing: Software execution to ensure it meets specified requirements and identifies defects.</li>
+<li>Software Engineering Operations: Deploying software in its operational environment and providing services to keep it working.</li>
+<li>Software Maintenance: modify existing software to correct faults, improve performance, or adapt it to a changed environment after delivery.</li>
+<li>Software Configuration Management: Manages changes in software artifacts.</li>
+<li>Software <strong>Quality</strong>: Ensure a product meets specified requirements while satisfying customer needs through <strong>quality assurance</strong> practices.</li>
+<li>Software Security: Protect information systems against unauthorized access.</li>
+<li>Computing Foundations: Fundamental computing concepts essential for understanding broader computing contexts</li>
+<li>Mathematical Foundations: Fundamental mathematical principles behind the technical aspects related to model analysis verification tasks.
+Perhaps number 12 is a bit of a stretch and doesn't apply to everyone's daily work, but it's certainly close enough to what we do to list it here.</li>
+</ol>
+<h2><a name="great-information-for-trivia-but-why-is-this-important" class="anchor">
+<a name="great-information-for-trivia-but-why-is-this-important" href="#great-information-for-trivia-but-why-is-this-important" class="no_external_ico">Great information for trivia... but why is this important?</a></h2>
+<p>Well... I don't want to beat around the bush, so I'll get straight to the point:
+Are software engineers from around the world complaining on the Internet that one in 12 software engineering areas might be fully automated soon?
+Just STOP CRYING and MOVE ON!</p>
+<h2><a name="time-to-stand-by-my-position" class="anchor">
+<a name="time-to-stand-by-my-position" href="#time-to-stand-by-my-position" class="no_external_ico">Time to stand by my position.</a></h2>
+<p>Let's take it one bite at a time. To do that, I'll analyze the impact of <strong>AI</strong> in each of the 12 areas of software engineering we mentioned. I will give a “replaceability” score, where:</p>
+<ul>
+<li>10/10 = the work in that area can be performed end-to-end by <strong>AI</strong> tools most of the time, with minimal human involvement (humans might still “approve,” but they’re not doing much thinking or decision-making).</li>
+<li>0/10 = <strong>AI</strong> is mostly a helper, but humans still do the core reasoning, tradeoffs, accountability, and coordination that make the work “real.”</li>
+</ul>
+<h2><a name="1-software-requirements-4-10" class="anchor">
+<a name="1-software-requirements-4-10" href="#1-software-requirements-4-10" class="no_external_ico">1) Software Requirements - 4/10</a></h2>
+<p><strong>AI</strong> will get very good at turning messy notes into clean artifacts: user stories, acceptance criteria, PRDs, use cases, edge-case lists, even draft UI copy and workflow diagrams. It can detect inconsistencies (“you said X but also Y”), propose clarifying questions, and maintain traceability across documents and tickets (basically acting as a tireless requirements-analysis assistant).
+But the hard core of requirements is human alignment under constraints: conflicting stakeholders, political tradeoffs, hidden incentives, budget reality, and deciding what “success” means when nobody fully agrees. Requirements are also where liability and ethics quietly live. <strong>AI</strong> can draft, but it can’t own the consequences of “we’re doing this” vs “we’re not doing this,” and it doesn’t naturally have privileged access to the real-world context that stakeholders carry in their heads (or choose not to share).</p>
+<h2><a name="2-software-architecture-3-10" class="anchor">
+<a name="2-software-architecture-3-10" href="#2-software-architecture-3-10" class="no_external_ico">2) Software Architecture - 3/10</a></h2>
+<p><strong>AI</strong> can propose architectures fast: “use event-driven,” “split into these services,” “choose Postgres + <strong>Redis</strong>,” “here’s a reference diagram,” “apply CQRS,” etc. It’s also great at enumerating tradeoffs, listing failure modes, suggesting observability patterns, and generating architecture documentation that humans are usually too busy to write.
+But architecture is less about knowing patterns and more about choosing which pain you’ll accept: latency vs. consistency, cost vs. redundancy, shipping speed vs. correctness, autonomy vs. governance. Those decisions depend on roadmap volatility, team maturity, operational capability, regulatory constraints, and the organization’s tolerance for outages. <strong>AI</strong> can suggest; humans still have to commit and live with the consequences months later when reality collides with the diagram.</p>
+<h2><a name="3-software-design-6-10" class="anchor">
+<a name="3-software-design-6-10" href="#3-software-design-6-10" class="no_external_ico">3) Software Design - 6/10</a></h2>
+<p>Design sits closer to implementation than architecture does, so it’s more automatable. <strong>AI</strong> can generate module boundaries, class models, API shapes, database schemas, state machines, interface contracts, and even propose refactors toward cleaner abstractions. If you give it clear constraints (“we need idempotent endpoints,” “support offline mode,” “avoid breaking changes”), it can produce strong first drafts.
+But design still contains lots of “silent requirements”: maintainability, future change patterns, ergonomics, how the system fails, and the difference between “technically correct” and “pleasant to work with for years.” <strong>AI</strong> tends to optimize for local elegance and patterns it has seen before; humans have to optimize for this product’s evolving mess. So design is highly assisted, but not fully replaceable.</p>
+<h2><a name="4-software-construction-10-10-my-anchor" class="anchor">
+<a name="4-software-construction-10-10-my-anchor" href="#4-software-construction-10-10-my-anchor" class="no_external_ico">4) Software Construction - 10/10 (my anchor)</a></h2>
+<p>Here, I’m assuming the strongest version of my premise (<strong>AI</strong> “replaces” engineers in construction). Code generation, refactoring, translation between languages, scaffolding services, implementing well-specified features, and wiring integrations are all tasks where inputs and outputs are representable as text + tests + build results. That’s <strong>AI</strong>-friendly terrain.
+Even then, the caveat is important: construction is never just typing code. It includes micro-decisions, interpreting ambiguity, and debugging in real environments. But if I had to choose a single area as the “10,” it would be construction, because it is the most readable for automation and the easiest to evaluate mechanically (does it compile, tests pass, lint passes, benchmarks hit targets, etc.).</p>
+<h2><a name="5-software-testing-7-10" class="anchor">
+<a name="5-software-testing-7-10" href="#5-software-testing-7-10" class="no_external_ico">5) Software Testing - 7/10</a></h2>
+<p>Testing is surprisingly automatable because so much of it is pattern-driven: generate unit tests from code paths, fuzz inputs, build regression suites from bug reports, create mocks, propose boundary cases, and run large configuration matrices. <strong>AI</strong> is also good at reading failures and offering likely causes (“this is a flaky timing issue,” “mock mismatch,” “off-by-one edge case”), which reduces the “human time per failure.”
+But two big things resist full automation. First is the <strong>oracle</strong> problem: determining the correct behavior when requirements are incomplete or contradictory. Second is prioritization under risk: what to test, what not to test, where failure is catastrophic, and when “green tests” are giving false confidence. <strong>AI</strong> can generate mountains of tests; humans still need to design a strategy that proves something meaningful rather than producing a comforting illusion.</p>
+<h2><a name="6-software-engineering-operations-7-10" class="anchor">
+<a name="6-software-engineering-operations-7-10" href="#6-software-engineering-operations-7-10" class="no_external_ico">6) Software Engineering Operations - 7/10</a></h2>
+<p>Operations has a lot of automatable surface area: deployment pipelines, auto-recovery for known failure patterns, anomaly detection, log/trace summarization, incident timelines, runbook execution, capacity forecasting, and “what changed?” diffing across configs and releases. <strong>AI</strong> will increasingly act as an always-on SRE assistant that quickly triages and suggests actions.
+But ops is where the cost of mistakes is immediate. Automated recovery can take down production faster than any human ever could if it’s wrong. Also, incidents often involve novel combinations of failures: partial outages, third-party issues, cascading timeouts, corrupted state, and human decision-making under uncertainty (“do we roll back?”, “do we disable feature flags?”, “do we page legal/compliance?”). <strong>AI</strong> will greatly reduce the amount of work, but humans will continue to be involved in decision-making, coordination, and accountability.</p>
+<h2><a name="7-software-maintenance-7-10" class="anchor">
+<a name="7-software-maintenance-7-10" href="#7-software-maintenance-7-10" class="no_external_ico">7) Software Maintenance - 7/10</a></h2>
+<p>Maintenance is a great target for <strong>AI</strong> because it’s full of repetitive, time-consuming work: dependency updates, API migrations, refactoring to new patterns, paying down obvious tech debt, porting legacy code, updating documentation, and fixing common classes of bugs. <strong>AI</strong> can read a codebase and propose safe incremental changes faster than most humans, especially when guided by tests and static analysis.
+But the difficult part of maintenance is not breaking the business while changing the code. Legacy systems encode business rules that may exist nowhere else, and the “right behavior” is often defined by years of production quirks. Maintenance requires deep context, risk management, and careful rollout planning. <strong>AI</strong> can do a lot of the edits, but humans still need to decide what’s safe, what’s worth it, and what the blast radius looks like.</p>
+<h2><a name="8-software-configuration-management-8-10" class="anchor">
+<a name="8-software-configuration-management-8-10" href="#8-software-configuration-management-8-10" class="no_external_ico">8) Software Configuration Management - 8/10</a></h2>
+<p>SCM has a strong automation profile: version control workflows, branch management, merge conflict resolution (especially mechanical conflicts), release tagging, automated changelogs, dependency pinning, environment parity checks, CI/CD enforcement, policy-as-code, and auditing. Many SCM activities are already structured processes with clear rules, perfect for tools.
+The things that are hard to replace are governance and intent: what changes are allowed, who approves them, how risk is assessed, and how exceptions are handled when reality doesn’t match policy. Also, “configuration” in modern systems includes secrets, infra, feature flags, and permissions (where mistakes are expensive). <strong>AI</strong> can execute and recommend, but humans will retain ownership of policy, approvals, and accountability.</p>
+<h2><a name="9-software-quality-5-10" class="anchor">
+<a name="9-software-quality-5-10" href="#9-software-quality-5-10" class="no_external_ico">9) Software <strong>Quality</strong> - 5/10</a></h2>
+<p><strong>AI</strong> can help a lot with <strong>quality</strong> practices: define checklists, enforce standards, spot code smells, detect inconsistencies between docs and behavior, suggest metrics, and continuously review artifacts (PRs, designs, tests) for common failure patterns. It can also raise the baseline by making “good hygiene” cheap and constant.
+But “<strong>quality</strong>” is ultimately a value judgment tied to users and business outcomes, not just defect counts. Humans decide what <strong>quality</strong> means here: performance targets, accessibility expectations, reliability SLOs, UX tolerances, and where the team is willing to accept imperfection to ship. <strong>Quality</strong> is also cultural: how teams handle feedback, how they respond to bugs, and how they trade speed for correctness. <strong>AI</strong> can enhance good systems, but it cannot create discipline on its own.</p>
+<h2><a name="10-software-security-5-10" class="anchor">
+<a name="10-software-security-5-10" href="#10-software-security-5-10" class="no_external_ico">10) Software Security - 5/10</a></h2>
+<p><strong>AI</strong> will be extremely useful in security: code scanning, dependency risk analysis, misconfiguration detection, secure coding suggestions, policy generation, and even writing safer default implementations for authentication, encryption, and input validation. It can also help with threat modeling by listing plausible attacker paths and common abuse cases.
+But security remains adversarial and contextual. Attackers invent new chains, and defenders must understand real-world constraints: usability, business workflows, compliance requirements, and incident response. The hardest work is prioritization and architecture-level decisions (“what do we trust?”, “what do we isolate?”, “how do we do key management?”). <strong>AI</strong> can catch a ton of issues, but humans still need to define the security posture and make risk decisions with legal and reputational consequences.</p>
+<h2><a name="11-computing-foundations-3-10" class="anchor">
+<a name="11-computing-foundations-3-10" href="#11-computing-foundations-3-10" class="no_external_ico">11) Computing Foundations - 3/10</a></h2>
+<p>If we treat this area as “the foundational CS knowledge engineers apply,” <strong>AI</strong> will absolutely reduce the need to memorize details. You can ask it for algorithm options, complexity tradeoffs, concurrency models, database indexing strategies, language/runtime behaviors, and typical pitfalls. That makes it feel “replaceable” because access to knowledge becomes commoditized.
+But foundations are less about reciting facts and more about thinking clearly when things go wrong: diagnosing performance collapse, understanding distributed failure modes, choosing the correct data structure under constraints, and spotting when a system is violating a fundamental principle. <strong>AI</strong> can advise, but humans who understand foundations can judge whether the advice applies, detect subtle wrongness, and reason under uncertainty, especially when the environment is novel or the constraints are non-obvious.</p>
+<h2><a name="12-mathematical-foundations-3-10" class="anchor">
+<a name="12-mathematical-foundations-3-10" href="#12-mathematical-foundations-3-10" class="no_external_ico">12) Mathematical Foundations - 3/10</a></h2>
+<p><strong>AI</strong> can offload much of the math execution: deriving formulas, checking logic, performing statistical reasoning, assisting with proofs, and explaining concepts such as probability, graph theory, and formal verification. For many engineers who only use math occasionally, this will feel like a superpower: you get “math on demand” without re-learning everything from scratch.
+But when math matters, it matters because you’re building something where small reasoning errors become big real-world errors: risk models, ML evaluation, cryptography-adjacent decisions, distributed consistency arguments, scheduling/optimization, or correctness proofs. In those cases, humans still need to understand the assumptions, validate the reasoning, and interpret the results responsibly. <strong>AI</strong> can accelerate the work, but you don’t want a world where nobody on the team can double-check the math.</p>
+<p>Our job is being upgraded. If automation eats software construction alive, that doesn't make you obsolete; it makes “writing code” no longer a personality trait. The world isn't running out of software problems; it's running out of people who can define the right problem, design a sensible solution, and keep it alive in production without turning every incident into mythology.
+<strong>AI</strong> isn’t replacing engineers; it’s replacing excuses. No more hiding behind “I didn’t have time to write tests,” “we can’t document this,” “we’ll clean it up later,” “security will review it,” “ops will handle it.” When drafting, scaffolding, test generation, config hygiene, and basic triage become cheap, the bar rises. The profession shifts from “I can build” to “I can be trusted.” And trust is built in the areas that are hardest to automate: requirements clarity, architectural tradeoffs, a meaningful testing strategy, a security posture, operational judgment, and safe maintenance.
+<strong>AI</strong> buys you time, and time is not a perk; it’s a mandate. You can spend it producing more features faster (and shipping more garbage faster), or you can spend it doing the work that actually makes systems succeed: ask better questions, kill bad ideas early, design for change, verify behavior instead of hoping, model failure modes, reduce incident blast radius, and make security and <strong>quality</strong> real instead of ceremonial.
+So yes: Stop crying and move on. Move on from measuring your worth in lines of code. Move on from thinking “engineering” means “implementation.” Move on to the parts of the craft that don’t compress into autocomplete: judgment, tradeoffs, accountability, and taste.
+Let <strong>AI</strong> do the mechanical work; you do the consequential work.</p>
+
+                </section>
+
+                  <section>
+                    <h2 id="Acknowledgments">Acknowledgments</h2>
+                      <p>This post, originally on <code>https://www.howdylatam.com/en/blog/ai-impact-software-engineering-areas-automation</code>, was written for <a href="https://www.howdy.com">Howdy™</a>, so I want to thank them for letting me share it with you on my website.</p>
+
+                  </section>
+                  <section>
+                    <h2>Significant Revisions</h2>
+                    <p>Mar 19, 2026: Original publication on howdy.com</p>
+
+                  </section>
+                
+                  <section class="backlinks">
+                    <h2>Mentioned in</h2>
+                        <ul>
+                            <li>
+                              <a href="/howdy-developer-advocate">Developer Advocate - Howdy</a>
+                            </li>
+                        </ul>
+                  </section>
+              </div>
+            </div>
+        </div> <!-- container-fluid dm-board -->
+
+        <a href="/" class="logo">
+          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+        </a>
+        <div class="submenu" style="position: fixed; top: 0; right: 0; z-index: 10;">
+          <div class="orange_box">
+            <a class="url" href="/about-me">
+                <div class="username">
+                    Darío Macchi
+                </div>
+            </a>
+            <ul>
+              <li id="geo">
+                <a rel="noreferrer" href="https://www.google.com/maps/place/Montevideo,+Montevideo+Department/@-34.8207772,-56.5166263,10z/data=!3m1!4b1!4m5!3m4!1s0x959f80ffc63bf7d3:0x6b321b2e355bec99!8m2!3d-34.9011127!4d-56.1645314?hl=en" itemprop="url">
+                    Montevideo
+                </a><span>-</span>
+                <a rel="noreferrer" href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&amp;ie=UTF-8&amp;hq=&amp;hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&amp;gl=uy&amp;ei=KiKjU6fpE-HNsQSlqYGoCg&amp;ved=0CBsQ8gEwAA" itemprop="url">
+                  Uruguay
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li id="common_cv"><strong><a href="/kanbancv" style="color:#FFF">What is this?</a></strong></li>
+            </ul>
+            <ul>
+              <li><a href="/contact-me">Contact me</a></strong></li>
+            </ul>
+          </div>
+        </div>
+      </main> <!-- dm-main-content -->
+    </div>
+    <!--</div>-->
+    
+    <div class="footer" style="text-align:center; width:100%;">
+      <div style="text-align:center; width:100%">
+      <ul>
+        <li style="margin-top: 0px;" class="d-none d-lg-block">
+          <a href="javascript:void(0);" onclick="window.open('https://www.copyscape.com/?q=' + escape(window.location) + '&src=front'); return false;">
+            <IMG src="/assets/images/cs-wh-3d-234x16.gif" alt="Protected by Copyscape Duplicate Content Detector" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." width="234" height="16" border="0">
+          </A>
+        </li>
+        <li><a style="padding-top:1px" href="/kanbancv">KanbanCV</a> © 2011-2026 <a style="padding-top:1px" href="/sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i> Sitemap</a></li>
+        <li>
+          <a href="https://uy.linkedin.com/in/dariomac" style="text-decoration:none;" target="_blank" rel="noreferrer">
+            <img src="/assets/linkedin.svg" width="16" height="15" alt="View Darío Macchi's LinkedIn profile" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/_dariomac" target="_blank" rel="noreferrer">
+            <img src="/assets/twitter.svg" width="16" height="16" alt="View my twitter"/>
+          </a>
+        </li>
+        <li class="d-none d-lg-block">
+          <a href="https://www.researchgate.net/profile/Dario-Macchi" target="_blank" rel="noreferrer">
+            <img src="/assets/researchgate.png" width="15" height="15" alt="View my ResearchGate profile"/>
+          </a>
+        </li>
+        <li style="margin-top: 0px" class="d-none d-lg-block">
+          <a href="http://humanstxt.org" target="_black" rel="noreferrer">
+            <img src="/assets/images/humanstxt-transparent-color.png" width="84" height="15" alt="View humans.txt file"/>
+          </a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Default Statcounter code for Dariomac.com
+    https://dariomac.com -->
+    <script type="text/javascript">
+      var sc_project=9186547; 
+      var sc_invisible=1; 
+      var sc_security="dce954c9"; 
+      </script>
+      <script type="text/javascript"
+      src="https://www.statcounter.com/counter/counter.js"
+      async></script>
+      <noscript><div class="statcounter"><a title="web counter"
+      href="https://statcounter.com/" target="_blank"><img
+      class="statcounter"
+      src="https://c.statcounter.com/9186547/0/dce954c9/1/"
+      alt="web counter"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+
+
+    <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+    <script>
+      $(".fancybox").fancybox({
+        arrows: true,
+        loop: true,
+        keyboard: true
+      });
+    </script>
+  </body>
+</html>
