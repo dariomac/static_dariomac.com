@@ -3,8 +3,8 @@
   "date": "2026-03-30",
   "layout": "document",
   "card": {
-    "color": "#99b399",
-    "columnid": "done_2",
+    "color": "#003366",
+    "columnid": "done_3",
     "content": "Explore how artificial intelligence is transforming 12 key software engineering areas and which tasks can truly be automated, based on SWEBOK.",
     "datebox": "Mar 2026",
     "extlink": null,
