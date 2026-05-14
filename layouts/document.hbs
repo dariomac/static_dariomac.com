@@ -1,98 +1,101 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ fullTitle frontmatter.title }}</title>
-    <style>
-      
-      {{> _critical-css }}
 
-      .essay {
-        background-color: #f2f2f2;
-        border: 0px !important;
-        margin-left: inherit;
+<head>
+  <meta charset="UTF-8">
+  <title>{{ fullTitle frontmatter.title }}</title>
+  <style>
+    {
+        {
+        >_critical-css
       }
+    }
 
-      .essay .date {
-        width: 100%;
-        border-top: 1px solid;
-        text-align: right;
-      }
+    .essay {
+      border: 0px !important;
+      margin-left: inherit;
+    }
 
-      .essay p, .essay li {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 17px;
-        color: #4c4c4c;
-        font-weight: 500;
-      }
+    .essay .date {
+      width: 100%;
+      border-top: 1px solid;
+      text-align: right;
+    }
 
-      .details .dm-board h1 {
-        font-size: 24px;
-        font-weight: bold;
-        padding: 20px 0px 0px 0px;
-        margin: 0px 0px 6px 0px;
-      }
+    .essay p,
+    .essay li {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      color: #4c4c4c;
+      font-weight: 500;
+    }
 
-      .details .dm-board h2 {
-        font-size: 20px;
-        margin-bottom: 2px;
-        font-weight: bold;
-        padding-top: 8px;
-      }
+    .details .dm-board h1 {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 20px 0px 0px 0px;
+      margin: 0px 0px 6px 0px;
+    }
 
-      .details .dm-board h3 {
-        font-size: 17px;
-        font-weight: bold;
-        text-decoration: inherit;
-        padding-top: 8px;
-      }
+    .details .dm-board h2 {
+      font-size: 20px;
+      margin-bottom: 2px;
+      font-weight: bold;
+      padding-top: 8px;
+    }
 
-      .details .dm-board h4 {
-        font-weight: bold;
-      }
+    .details .dm-board h3 {
+      font-size: 17px;
+      font-weight: bold;
+      text-decoration: inherit;
+      padding-top: 8px;
+    }
 
-      article .essay h3 {
-        font-weight: bold !important;
-        text-decoration: inherit !important;
-      }
+    .details .dm-board h4 {
+      font-weight: bold;
+    }
 
-      article .essay li {
-        font-size: 14px;
-      }
+    article .essay h3 {
+      font-weight: bold !important;
+      text-decoration: inherit !important;
+    }
 
-      .description > p {
-        font-size: 19px;
-        padding-bottom: 15px;
-        font-style: italic;
-        color: #414141;
-        text-align: left;
-      }
+    article .essay li {
+      font-size: 14px;
+    }
 
+    .description>p {
+      font-size: 19px;
+      padding-bottom: 15px;
+      font-style: italic;
+      color: #414141;
+      text-align: left;
+    }
+
+    .essay .sheet {
+      background-color: #fff;
+      border: 1px solid #d9d9d9;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 0 10px;
+    }
+
+    .further-reading {
+      text-align: left;
+    }
+
+    @media only screen and (min-width: 1170px) {
       .essay .sheet {
-        background-color: #fff;
-        border-left: 1px solid #d9d9d9;
-        border-right: 1px solid #d9d9d9;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        padding: 0px 65px;
       }
+    }
+  </style>
 
-      .further-reading {
-        text-align: left;
-      }
+  <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
-      @media only screen and (min-width: 1170px) {
-        .essay .sheet {
-          padding: 0px 65px;
-        } 
-      }
+  {{> _common-html-header }}
 
-    </style>
-
-    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
-  
-    {{> _common-html-header }}
-
-    <script type="application/ld+json">
+  <script type="application/ld+json">
       {{#if (hasJsonLd frontmatter.jsonld) }}
         {{{json frontmatter.jsonld}}}
       {{else}}
@@ -121,124 +124,130 @@
         } 
       {{/if}}
     </script>
-  </head>
-  <body>
-    <div class="board_view details">
-      {{> _page-header }}
-      <main class="dm-main-content is-fixed">
-        <div class="dm-tab-filter-wrapper">
-          <div class="dm-tab-filter">
-            <ul class="dm-filters d-block d-md-none">
-              <li class="placeholder">
-                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-              </li>
-              {{> _mobile-menu }}
-            </ul> <!-- dm-filters -->
-          </div> <!-- dm-tab-filter -->
+</head>
 
-          <div class="container-fluid float-left"></div>
-        </div> <!-- dm-tab-filter-wrapper -->
+<body>
+  <div class="board_view details">
+    {{> _page-header }}
+    <main class="dm-main-content is-fixed">
+      <div class="dm-tab-filter-wrapper">
+        <div class="dm-tab-filter">
+          <ul class="dm-filters d-block d-md-none">
+            <li class="placeholder">
+              <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+            </li>
+            {{> _mobile-menu }}
+          </ul> <!-- dm-filters -->
+        </div> <!-- dm-tab-filter -->
 
-        <div class="dm-board essay">
-          <article>
-            <div class="row featured">
-              <div class="offset-md-3 col-md-6 sheet">
-                <header>
-                  <h1>{{ frontmatter.title }}</h1>
-                  <p class="date">{{ content.pub_date }}</p>
-                </header>
+        <div class="container-fluid float-left"></div>
+      </div> <!-- dm-tab-filter-wrapper -->
 
-                {{#if (or content.bodyurl frontmatter.fieldNote)}}
-                <section>
-                  <p style="border: 1px solid #ccc; padding: 3px 8px;">
-                    <i>
-                      Please have in mind these are field notes organized in a common structure that I use for myself or for my students, university classes and industrial activities. They may be messy, with errors and in some cases, <b>without proper references</b>. If you find your work (or part of it) here without proper acknowledgement, <a href="/contact-me"><b></b>please let me know</b></a> so I can fix it as soon as possible.
-                    </i>
-                  </p>
-                </section>
-                {{/if}}
-                
-                <section class="description">
-                  <p>
-                    {{ content.short_description }}
-                  </p>
-                </section>
+      <div class="container-fluid dm-board essay">
+        <article>
+          <div class="row featured">
+            <div class="col-md-12 sheet">
+              <header>
+                <h1>{{ frontmatter.title }}</h1>
+                <p class="date">{{ content.pub_date }}</p>
+              </header>
 
-                <section>
-                  {{#if content.body }}
-                    {{{ content.body }}}
-                  {{else}}
-                    <script>
-                      function get_information(link, callback) {
-                        var xhr = new XMLHttpRequest();
-                        xhr.open("GET", link, true);
-                        xhr.onreadystatechange = function() {
-                          if (xhr.readyState === 4) {
-                            callback(xhr.responseText);
-                          }
-                        };
-                        xhr.send(null);
+              {{#if (or content.bodyurl frontmatter.fieldNote)}}
+              <section>
+                <p style="border: 1px solid #ccc; padding: 3px 8px;">
+                  <i>
+                    Please have in mind these are field notes organized in a common structure that I use for myself or
+                    for my students, university classes and industrial activities. They may be messy, with errors and in
+                    some cases, <b>without proper references</b>. If you find your work (or part of it) here without
+                    proper acknowledgement, <a href="/contact-me"><b></b>please let me know</b></a> so I can fix it as
+                    soon as possible.
+                  </i>
+                </p>
+              </section>
+              {{/if}}
+
+              <section class="description">
+                <p>
+                  {{ content.short_description }}
+                </p>
+              </section>
+
+              <section>
+                {{#if content.body }}
+                {{{ content.body }}}
+                {{else}}
+                <script>
+                  function get_information(link, callback) {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", link, true);
+                    xhr.onreadystatechange = function () {
+                      if (xhr.readyState === 4) {
+                        callback(xhr.responseText);
                       }
+                    };
+                    xhr.send(null);
+                  }
 
-                      get_information(
-                        "{{{ content.bodyurl }}}",
-                        function(text) {
-                          var div = document.getElementById('gdoc');
-                          div.innerHTML = text;
-                          
-                          // Remove css that comes with Google Doc embeds
-                          // If you want the Google Doc styling, comment these out
-                          div.removeChild(div.childNodes[1]);
-                          div.removeChild(div.childNodes[0]);
-                          div.querySelector('h1').remove();
-                        }
-                      );
-                    </script>
-                    <div id="gdoc"></div>
-                  {{/if}}
-                </section>
+                  get_information(
+                    "{{{ content.bodyurl }}}",
+                    function (text) {
+                      var div = document.getElementById('gdoc');
+                      div.innerHTML = text;
 
-                {{#if content.acknowledgments}}
-                  <section>
-                    <h2 id="Acknowledgments">Acknowledgments</h2>
-                      {{{ content.acknowledgments }}}
-                  </section>
+                      // Remove css that comes with Google Doc embeds
+                      // If you want the Google Doc styling, comment these out
+                      div.removeChild(div.childNodes[1]);
+                      div.removeChild(div.childNodes[0]);
+                      div.querySelector('h1').remove();
+                    }
+                  );
+                </script>
+                <div id="gdoc"></div>
                 {{/if}}
-                {{#if content.further_reading}}
-                  <section class="further-reading">
-                    <h2 id="FurtherReading">Further Reading</h2>
-                    {{{ content.further_reading }}}
-                  </section>
-                {{/if}}
-                {{#if content.significant_revisions}}
-                  <section>
-                    <h2>Significant Revisions</h2>
-                    {{{ content.significant_revisions }}}
-                  </section>
-                {{/if}}
-                {{> _entry-gallery }}
-                {{> _entry-attachments }}
-                {{> _entry-related-topics }}
-                {{> _entry-backlinks }}
-              </div>
+              </section>
+
+              {{#if content.acknowledgments}}
+              <section>
+                <h2 id="Acknowledgments">Acknowledgments</h2>
+                {{{ content.acknowledgments }}}
+              </section>
+              {{/if}}
+              {{#if content.further_reading}}
+              <section class="further-reading">
+                <h2 id="FurtherReading">Further Reading</h2>
+                {{{ content.further_reading }}}
+              </section>
+              {{/if}}
+              {{#if content.significant_revisions}}
+              <section>
+                <h2>Significant Revisions</h2>
+                {{{ content.significant_revisions }}}
+              </section>
+              {{/if}}
+              {{> _entry-gallery }}
+              {{> _entry-attachments }}
+              {{> _entry-related-topics }}
+              {{> _entry-backlinks }}
             </div>
-        </div> <!-- container-fluid dm-board -->
+          </div>
+      </div> <!-- container-fluid dm-board -->
 
-        <a href="/" class="logo">
-          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
-        </a>
-        {{> _orange-box }}
-        {{!-- <a href="#0" class="dm-filter-trigger"></a> --}}
-      </main> <!-- dm-main-content -->
-    </div>
-    <!--</div>-->
-    
-    {{> _page-footer }}
+      <a href="/" class="logo">
+        <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+      </a>
+      {{> _orange-box }}
+      {{!-- <a href="#0" class="dm-filter-trigger"></a> --}}
+    </main> <!-- dm-main-content -->
+  </div>
+  <!--</div>-->
 
-    {{#if frontmatter.has_code}}
-      {{> _code-styler }}
-    {{/if}}
+  {{> _page-footer }}
 
-    {{> _common-html-footer }}
-  </body>
+  {{#if frontmatter.has_code}}
+  {{> _code-styler }}
+  {{/if}}
+
+  {{> _common-html-footer }}
+</body>
+
 </html>

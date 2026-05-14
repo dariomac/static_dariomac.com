@@ -53,9 +53,9 @@
                       <li>
                         <a href="{{this.frontmatter.card.linkto}}">
                           {{#ifNotEq this.frontmatter.title ''}}
-                            {{../this.frontmatter.title}}
+                            {{this.frontmatter.title}}
                           {{else}}
-                            {{../this.frontmatter.card.title}}
+                            {{this.frontmatter.card.title}}
                           {{/ifNotEq}}
                         </a>
                       </li>

@@ -84,6 +84,52 @@ hr { border: 0; border-top: 1px solid var(--color-border); margin: var(--space-8
   .col-md-10 { grid-column: span 10; }
   .col-md-11 { grid-column: span 11; }
   .col-md-12 { grid-column: span 12; }
+
+  /* Bootstrap-compatible offset utilities. `offset-md-N` combined with
+     `col-md-M` shifts the column N tracks to the right by setting its
+     explicit start position (track N+1) and span (M tracks). Used by
+     document.hbs (`offset-md-3 col-md-6`) to center sheet-style content. */
+  .offset-md-1.col-md-1   { grid-column: 2 / span 1; }
+  .offset-md-1.col-md-2   { grid-column: 2 / span 2; }
+  .offset-md-1.col-md-3   { grid-column: 2 / span 3; }
+  .offset-md-1.col-md-4   { grid-column: 2 / span 4; }
+  .offset-md-1.col-md-5   { grid-column: 2 / span 5; }
+  .offset-md-1.col-md-6   { grid-column: 2 / span 6; }
+  .offset-md-1.col-md-7   { grid-column: 2 / span 7; }
+  .offset-md-1.col-md-8   { grid-column: 2 / span 8; }
+  .offset-md-1.col-md-9   { grid-column: 2 / span 9; }
+  .offset-md-1.col-md-10  { grid-column: 2 / span 10; }
+  .offset-md-1.col-md-11  { grid-column: 2 / span 11; }
+
+  .offset-md-2.col-md-1   { grid-column: 3 / span 1; }
+  .offset-md-2.col-md-2   { grid-column: 3 / span 2; }
+  .offset-md-2.col-md-3   { grid-column: 3 / span 3; }
+  .offset-md-2.col-md-4   { grid-column: 3 / span 4; }
+  .offset-md-2.col-md-5   { grid-column: 3 / span 5; }
+  .offset-md-2.col-md-6   { grid-column: 3 / span 6; }
+  .offset-md-2.col-md-7   { grid-column: 3 / span 7; }
+  .offset-md-2.col-md-8   { grid-column: 3 / span 8; }
+  .offset-md-2.col-md-9   { grid-column: 3 / span 9; }
+  .offset-md-2.col-md-10  { grid-column: 3 / span 10; }
+
+  .offset-md-3.col-md-1   { grid-column: 4 / span 1; }
+  .offset-md-3.col-md-2   { grid-column: 4 / span 2; }
+  .offset-md-3.col-md-3   { grid-column: 4 / span 3; }
+  .offset-md-3.col-md-4   { grid-column: 4 / span 4; }
+  .offset-md-3.col-md-5   { grid-column: 4 / span 5; }
+  .offset-md-3.col-md-6   { grid-column: 4 / span 6; }
+  .offset-md-3.col-md-7   { grid-column: 4 / span 7; }
+  .offset-md-3.col-md-8   { grid-column: 4 / span 8; }
+  .offset-md-3.col-md-9   { grid-column: 4 / span 9; }
+
+  .offset-md-4.col-md-1   { grid-column: 5 / span 1; }
+  .offset-md-4.col-md-2   { grid-column: 5 / span 2; }
+  .offset-md-4.col-md-3   { grid-column: 5 / span 3; }
+  .offset-md-4.col-md-4   { grid-column: 5 / span 4; }
+  .offset-md-4.col-md-5   { grid-column: 5 / span 5; }
+  .offset-md-4.col-md-6   { grid-column: 5 / span 6; }
+  .offset-md-4.col-md-7   { grid-column: 5 / span 7; }
+  .offset-md-4.col-md-8   { grid-column: 5 / span 8; }
 }
 
 /* Display utilities */
