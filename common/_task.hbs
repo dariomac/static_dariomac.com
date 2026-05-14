@@ -1,5 +1,5 @@
 {{#with this.frontmatter}}
-  <div class="card task" style="color: {{getTextColor card.color}}; border: 1px solid {{card.color}};" data-order={{card.position}}>
+  <div class="card task" style="border-left-color: {{card.color}}; border-right-color: {{card.color}}; border-bottom-color: {{card.color}};" data-order={{card.position}}>
     <a href="{{card.linkto}}" title="{{card.title}}" style="color: {{getTextColor card.color}}">
       <h2 class="card-header ellipsis" style="background-color: {{card.color}};">
         {{card.title}}
@@ -34,12 +34,12 @@
       {{/or}}
       {{#and card.tags (compare card.tags "!=" "")}}
         <li class="list-group-item">
-          <span class="task_tag">Tags: </span>{{card.tags}}
+          <span class="task_tag" aria-label="Tags"></span>{{card.tags}}
         </li>
       {{/and}}
       {{#and card.extlink (compare card.extlink "!=" "")}}
         <li class="list-group-item ellipsis">
-          <span class="task_external_link">External link: </span><a href="{{card.extlink}}" class="card-link">{{card.extlink}}</a>
+          <span class="task_external_link" aria-label="External link"></span><a href="{{card.extlink}}" class="card-link">{{card.extlink}}</a>
         </li>
       {{/and}}
     </ul>

@@ -1,110 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>{{ frontmatter.title }}</title>
-    <style>
-      @charset "UTF-8";
-      html {
-        height: 100%;
-      }
-
-      body {
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        font-family: "Open Sans", arial, sans-serif;
-        color: #414141;
-        font-size: 11px;
-      }
-
-      a {
-        text-decoration: none;
-        color: #000;
-      }
-
-      a img {
-        border: 0px;
-      }
-
-      .submenu {
-        float: right;
-        padding-top: 7px;
-      }
-
-      .orange_box {
-        padding: 0px 0px 0px 10px;
-        font-weight: bold;
-        background: #ff922c;
-        border: #ff922c 1px solid;
-        border-radius: 12px;
-        float: left;
-        color: #fff;
-        margin-right: 10px;
-      }
-
-      .orange_box div.username {
-        padding: 0px 10px 0px 34px;
-        background: url('data:image/png;base64,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') no-repeat 0px 3px;
-        float: left;
-        height: 35px;
-        line-height: 35px;
-      }
-
-      .orange_box ul {
-        border-left: #ec6100 1px solid;
-        padding: 0px 10px 0px 5px;
-        float: left;
-        overflow: hidden;
-        list-style-type: none;
-        list-style-image: none;
-        margin: 0px;
-      }
-
-      .orange_box ul li {
-        padding: 10px 0px 8px 0px;
-        float: left;
-      }
-
-      .orange_box ul li a {
-        border-left: #ff922c 1px solid;
-        font-weight: bold;
-        padding: 0px 0px 0px 5px;
-      }
-
-      .orange_box ul li a {
-        padding: 0px;
-      }
-
-      /* Footer style {*/
-      .footer {
-        background-color: #00445c; height: 20px; color: #ffffff; overflow: hidden;
-      }
-      .footer a {
-        color: #ffffff
-      }
-      .footer a:hover {
-        text-decoration: underline
-      }
-      .footer ul {
-        float: right;
-        list-style-type: none;
-        margin-top: 2px;
-      }
-      .footer li {
-        border-left: #ffffff 1px solid; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; float: left; padding-top: 0px; height:16px; margin-top:1px;
-      }
-      .footer li:first-child {
-        border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px; height:16px; margin-top:1px;
-      }
-      .clearfix:after {
-        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
-      }
-      .footer ul:after {
-        display: block; height: 0pt; visibility: hidden; clear: both; content: "."
-      }
-
-    </style>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
@@ -454,9 +352,7 @@
 
     {{> _page-footer }}
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-
-    <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

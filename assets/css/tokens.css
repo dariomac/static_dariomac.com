@@ -1,0 +1,110 @@
+/* --------------------------------------------------------------
+   Design tokens — single source of truth for the visual system
+   -------------------------------------------------------------- */
+
+:root {
+  /* Color: text & surface */
+  --color-text: #1a0f1c;
+  --color-text-muted: #5a4a5d;
+  --color-text-inverse: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f7f5f3;
+  --color-surface-sunken: #efebed;
+  --color-border: #e4dfe1;
+  --color-border-strong: #cdc4c8;
+
+  /* Color: brand */
+  --color-accent: #41307c;
+  --color-accent-hover: #32255f;
+  --color-brand: #ff922c;
+  --color-brand-deep: #FF6E19;
+  --color-footer-bg: #00445c;
+  --color-link: #41307c;
+  --color-link-external: #2c5d8f;
+
+  /* Color: kanban status */
+  --status-plan: #64ade3;
+  --status-progress: #ffc34a;
+  --status-done: #7da623;
+  --status-plan-tint: #eaf3fb;
+  --status-progress-tint: #fff5dd;
+  --status-done-tint: #eef4dc;
+
+  /* Color: code & misc */
+  --color-code: #c2185b;
+  --color-code-bg: #fff0f5;
+
+  /* Typography */
+  --font-sans: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-md: 1.0625rem;   /* 17px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.375rem;    /* 22px */
+  --text-2xl: clamp(1.625rem, 2.5vw, 2.125rem);  /* 26→34px */
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --tracking-wide: 0.06em;
+  --tracking-wider: 0.12em;
+
+  /* Spacing scale (4px base) */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(26, 15, 28, 0.06), 0 1px 1px rgba(26, 15, 28, 0.04);
+  --shadow-md: 0 4px 12px rgba(26, 15, 28, 0.08), 0 2px 4px rgba(26, 15, 28, 0.05);
+  --shadow-lg: 0 12px 28px rgba(26, 15, 28, 0.12), 0 4px 8px rgba(26, 15, 28, 0.06);
+  --shadow-focus: 0 0 0 3px rgba(65, 48, 124, 0.35);
+
+  /* Motion */
+  --motion-fast: 120ms ease-out;
+  --motion-base: 200ms ease-out;
+  --motion-slow: 320ms ease-out;
+
+  /* Layout */
+  --content-max-width: 1280px;
+  --reading-max-width: 72ch;
+  --topbar-height: 0px;          /* mobile: no top chrome row */
+  --board-pin-offset: 72px;      /* mobile: just the dropdown */
+  --footer-height: 44px;
+}
+
+/* On desktop the floating D-logo (left) and the orange identity pill (right)
+   sit in a "top chrome" row above the chip header. Reserve room for them so
+   the chips don't slide underneath. */
+@media (min-width: 768px) {
+  :root {
+    --topbar-height: 64px;
+    /* topbar 64 + chip margin-top 8 + chip row 33 + 2 + desc row 30
+       + chip margin-bottom 8 + wrapper border 1 + cushion */
+    --board-pin-offset: 160px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-base: 0ms;
+    --motion-slow: 0ms;
+  }
+}

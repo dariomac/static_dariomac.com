@@ -1,0 +1,1396 @@
+/* --------------------------------------------------------------
+   site.css — visual refresh, mobile-first
+   Depends on tokens.css. Replaces 18style.css, 18style_desktop.css,
+   Bootstrap 4 CSS, and the inline blocks in index.hbs / _critical-css.hbs.
+   -------------------------------------------------------------- */
+
+/* --------------------------------------------------------------
+   Reset & base
+   -------------------------------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+img, picture, svg, video { max-width: 100%; height: auto; }
+img { border: 0; }
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color var(--motion-fast);
+}
+a:hover, a:focus-visible { color: var(--color-accent-hover); }
+a:focus-visible { outline: none; box-shadow: var(--shadow-focus); border-radius: var(--radius-sm); }
+
+h1, h2, h3, h4, h5, h6 { margin: 0 0 var(--space-3); line-height: var(--leading-tight); }
+
+ul, ol { padding-left: var(--space-6); }
+
+hr { border: 0; border-top: 1px solid var(--color-border); margin: var(--space-8) 0; }
+
+::selection { background: rgba(65, 48, 124, 0.18); }
+
+/* --------------------------------------------------------------
+   Layout primitives (Bootstrap-compatible class names)
+   -------------------------------------------------------------- */
+
+.container-fluid {
+  width: 100%;
+  /* No max-width by default. The kanban board on the homepage needs to grow
+     with the viewport so all "Done" cards fit horizontally. Detail pages
+     (the `.details` wrapper) tighten this to a reading-width via the
+     `.details .dm-board` rule. */
+  margin: 0 auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0;
+}
+
+/* Mobile: every col stacks full-width by default */
+[class*="col-md-"] { grid-column: 1 / -1; }
+
+@media (min-width: 768px) {
+  .col-md-1  { grid-column: span 1; }
+  .col-md-2  { grid-column: span 2; }
+  .col-md-3  { grid-column: span 3; }
+  .col-md-4  { grid-column: span 4; }
+  .col-md-5  { grid-column: span 5; }
+  .col-md-6  { grid-column: span 6; }
+  .col-md-7  { grid-column: span 7; }
+  .col-md-8  { grid-column: span 8; }
+  .col-md-9  { grid-column: span 9; }
+  .col-md-10 { grid-column: span 10; }
+  .col-md-11 { grid-column: span 11; }
+  .col-md-12 { grid-column: span 12; }
+}
+
+/* Display utilities */
+.d-none { display: none !important; }
+.d-block { display: block !important; }
+.d-flex { display: flex !important; }
+
+@media (min-width: 768px) {
+  .d-md-none { display: none !important; }
+  .d-md-block { display: block !important; }
+  .d-md-flex { display: flex !important; }
+  .d-md-inline-block { display: inline-block !important; }
+
+  /* Rows are grid by default. The `d-md-flex`/`d-md-block` utilities in the
+     markup (e.g. `class="row d-none d-md-flex"`) are only meant to control
+     mobile-vs-desktop *visibility*, not to actually swap layout. Without this
+     override, the chip headers and desc row fall back to flex items at
+     content width, clustering to the left and breaking column alignment. */
+  .row.d-md-flex,
+  .row.d-md-block { display: grid !important; }
+}
+
+@media (min-width: 992px) {
+  .d-lg-none { display: none !important; }
+  .d-lg-block { display: block !important; }
+  .d-lg-flex { display: flex !important; }
+}
+
+/* Float & text utilities (still referenced from layouts/partials) */
+.float-left { float: left; }
+.float-right { float: right; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.clearfix::after { content: ""; display: table; clear: both; }
+
+/* --------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------- */
+
+article, section { color: var(--color-text); }
+
+article header h1 {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-4);
+}
+
+article header p {
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-sm);
+}
+
+article h2, .details h2 {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-3);
+}
+
+article h3, .details h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-2);
+}
+
+article h4, .details h4 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  font-style: italic;
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+article p,
+article li,
+section p,
+section li {
+  font-size: var(--text-md);
+  line-height: var(--leading-relaxed);
+}
+
+article li { margin-bottom: var(--space-1); }
+
+article a:not(.no_external_ico),
+section a:not(.no_external_ico) {
+  font-weight: 600;
+  color: var(--color-link-external);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  background: url(/assets/images/external.png) right 50% no-repeat;
+  padding-right: 12px;
+  overflow-wrap: break-word;
+}
+
+article a:not(.no_external_ico):has(> img:only-child),
+article a:not(.no_external_ico):has(> picture:only-child),
+section a:not(.no_external_ico):has(> img:only-child),
+section a:not(.no_external_ico):has(> picture:only-child) {
+  font-weight: normal;
+  color: inherit;
+  background: none;
+  padding-right: 0;
+  text-decoration: none;
+}
+
+article a:not([href]) {
+  background: inherit;
+  padding-right: inherit;
+  text-decoration: none;
+}
+
+article img[src*="#center"],
+article iframe[src*="#center"],
+article .center {
+  display: block;
+  margin: var(--space-4) auto;
+  max-width: 100%;
+  text-align: center;
+  border-radius: var(--radius-md);
+}
+
+article .description { font-style: italic; color: var(--color-text-muted); }
+article .duration {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  margin: 0 0 var(--space-3);
+}
+
+/* Summary block on detail pages */
+.summary {
+  font-style: italic;
+  color: var(--color-text-muted);
+  padding: var(--space-3) var(--space-4);
+  margin: 0 0 var(--space-6);
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-surface-alt);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.summary p:last-child { margin-bottom: 0; }
+
+/* Code */
+code {
+  color: var(--color-code);
+  background: var(--color-code-bg);
+  padding: 0.125em 0.375em;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  word-wrap: break-word;
+}
+
+pre code { padding: 0; background: transparent; }
+
+/* Blockquote (keep the orange-rail identity, refresh the proportions) */
+article blockquote {
+  font-size: var(--text-lg);
+  width: auto;
+  margin: var(--space-6) 0;
+  font-family: var(--font-sans);
+  font-style: italic;
+  color: var(--color-text-muted);
+  padding: var(--space-5) var(--space-6) var(--space-5) var(--space-10);
+  border-left: 6px solid var(--color-brand-deep);
+  line-height: var(--leading-relaxed);
+  position: relative;
+  background: var(--color-surface-alt);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+article blockquote::before {
+  font-family: Georgia, "Times New Roman", serif;
+  content: "\201C";
+  color: var(--color-brand-deep);
+  font-size: 3.5em;
+  line-height: 1;
+  position: absolute;
+  left: var(--space-3);
+  top: -0.1em;
+}
+
+article blockquote::after { content: ""; }
+
+/* --------------------------------------------------------------
+   Tables (article tables, attachments)
+   -------------------------------------------------------------- */
+
+section table,
+article table {
+  width: 100%;
+  margin: var(--space-4) 0;
+  border-collapse: collapse;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  font-size: var(--text-sm);
+}
+
+section table th,
+article table th {
+  background: var(--color-surface-alt);
+  border-bottom: 2px solid var(--color-brand-deep);
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  font-weight: 600;
+}
+
+section table td,
+article table td {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-2) var(--space-3);
+}
+
+.table-container { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+/* Attachments-specific tweaks */
+.attachments { margin: var(--space-6) 0; }
+.attachments .filename { display: none; }
+@media (min-width: 768px) {
+  .attachments .filename { display: table-cell; }
+}
+
+/* --------------------------------------------------------------
+   Image gallery
+   -------------------------------------------------------------- */
+
+.image_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  margin: var(--space-6) 0;
+  padding: 0;
+  text-align: center;
+}
+
+.image_gallery a {
+  flex: 0 0 auto;
+  background: none;
+  padding-right: 0;
+}
+
+.image_gallery a img {
+  display: block;
+  border-radius: var(--radius-sm);
+  transition: transform var(--motion-base), box-shadow var(--motion-base);
+}
+
+.image_gallery a:hover img {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.download {
+  background: url(/assets/images/download.png) 0 0 no-repeat !important;
+  float: right;
+  width: 100px;
+  height: 16px;
+  padding-right: 0 !important;
+}
+
+/* --------------------------------------------------------------
+   Anchor offset for in-page links
+   -------------------------------------------------------------- */
+
+.anchor {
+  display: block;
+  position: relative;
+  top: calc(-1 * var(--board-pin-offset) - var(--space-2));
+}
+
+/* --------------------------------------------------------------
+   Main shell
+   -------------------------------------------------------------- */
+
+.board_view { overflow-x: hidden; }
+
+.dm-main-content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.dm-main-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dm-main-content .logo {
+  position: fixed;
+  top: var(--space-2);
+  left: var(--space-2);
+  display: block;
+  width: auto;
+  z-index: 20;
+  background: var(--color-surface);
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--motion-base), transform var(--motion-base);
+}
+
+.dm-main-content .logo:hover {
+  box-shadow: var(--shadow-md);
+  transform: scale(1.05);
+}
+
+.dm-main-content .logo img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  float: none !important;
+}
+
+@media (min-width: 768px) {
+  .dm-main-content .logo {
+    top: var(--space-3);
+    left: var(--space-3);
+  }
+  .dm-main-content .logo img { width: 50px; height: 50px; }
+}
+
+/* Pinned filter bar when scrolled past top (toggled by main.js).
+   Anchored at top:0 so the wrapper's white background also covers the topbar
+   zone where the floating logo + orange-box live (otherwise that strip is
+   transparent and page content scrolls visibly underneath the chrome).
+   `padding-top: var(--topbar-height)` reserves space inside the wrapper for
+   those floating elements. */
+.dm-main-content.is-fixed .dm-tab-filter-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  padding-top: var(--topbar-height);
+}
+
+.dm-main-content.is-fixed .dm-board {
+  padding-top: var(--board-pin-offset);
+}
+
+.dm-main-content.is-fixed .dm-filter {
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dm-main-content.is-fixed .dm-filter form {
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dm-main-content.is-fixed .dm-filter-trigger { position: fixed; }
+
+/* --------------------------------------------------------------
+   Filter bar (top): mobile dropdown -> desktop pill tabs
+   -------------------------------------------------------------- */
+
+.dm-tab-filter-wrapper {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 1px 2px rgba(26, 15, 28, 0.04);
+  position: relative;
+  z-index: 1;
+}
+
+.dm-tab-filter-wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Mobile: behaves as a dropdown — only first <li> is shown until .is-open */
+.dm-tab-filter {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  height: var(--board-pin-offset);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dm-tab-filter::after {
+  content: "";
+  position: absolute;
+  right: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: url("../images/dm-icon-arrow.svg") no-repeat center / contain;
+  pointer-events: none;
+  transition: transform var(--motion-base);
+}
+
+.dm-tab-filter.is-open::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.dm-tab-filter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - var(--space-8));
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.dm-tab-filter li { display: none; }
+.dm-tab-filter li:first-child { display: block; }
+.dm-tab-filter.is-open li { display: block; }
+
+.dm-tab-filter.is-open ul {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border-strong);
+}
+
+.dm-tab-filter a {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  border-radius: var(--radius-sm);
+}
+
+.dm-tab-filter a.selected {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.dm-tab-filter.is-open .placeholder a { opacity: 0.45; }
+
+/* Desktop: pill bar */
+@media (min-width: 768px) {
+  /* On desktop the `<ul class="dm-filters d-block d-md-none">` inside
+     .dm-tab-filter is hidden, so the wrapper has no content. Collapse it
+     completely so the pinned bar only contains the chip header + desc row
+     (~63px tall, fits inside --board-pin-offset and stops covering the
+     first board row). */
+  .dm-tab-filter {
+    height: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    max-width: none;
+    cursor: auto;
+    overflow: visible;
+  }
+
+  .dm-tab-filter::after { display: none; }
+
+  .dm-tab-filter ul {
+    position: static;
+    transform: none;
+    width: auto;
+    display: flex;
+    gap: var(--space-1);
+    background: transparent;
+    border: 0;
+    padding: var(--space-1);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-alt);
+  }
+
+  .dm-tab-filter li { display: inline-block; }
+  .dm-tab-filter li.placeholder { display: none !important; }
+  .dm-tab-filter.is-open ul { box-shadow: none; }
+
+  .dm-tab-filter a {
+    display: inline-block;
+    padding: var(--space-2) var(--space-4);
+    color: var(--color-text-muted);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    border-radius: var(--radius-pill);
+    white-space: nowrap;
+    transition: background var(--motion-fast), color var(--motion-fast);
+  }
+
+  .dm-tab-filter a:hover { color: var(--color-accent); background: var(--color-surface); }
+
+  .dm-tab-filter a.selected {
+    background: var(--color-accent);
+    color: var(--color-text-inverse);
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+/* --------------------------------------------------------------
+   Board: section heading splitter + column header chips
+   -------------------------------------------------------------- */
+
+.dm-board {
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-12);
+}
+
+/* The board header container is floated in the HBS markup; neutralize that
+   so it auto-centers like .dm-board. Otherwise the header sits at left:0
+   while the cards center, misaligning columns at wide viewports. */
+.dm-tab-filter-wrapper .container-fluid { float: none; }
+
+/* Splitter — section heading between swimlanes */
+.splitter {
+  display: block;
+  position: relative;
+  margin: var(--space-8) 0 var(--space-4);
+  padding: 0;
+  background: none;
+  border: 0;
+  font-size: var(--text-sm);
+  height: auto;
+  text-align: center;
+}
+
+.splitter:first-of-type { margin-top: var(--space-4); }
+
+.splitter::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--color-border);
+  z-index: 0;
+}
+
+.splitter > div,
+.splitter > h1 {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background: var(--color-surface);
+  padding: 0 var(--space-4);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Featured pre-board row */
+.row.featured { margin-bottom: var(--space-4); }
+
+#new_essay {
+  text-align: center;
+  padding: var(--space-3);
+  background: var(--color-surface-alt);
+  border-radius: var(--radius-md);
+}
+
+#new_essay span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-surface);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
+}
+
+#new_essay i {
+  color: var(--color-brand-deep);
+  font-size: 0.95rem;
+}
+
+#new_essay a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Board column headers (the kanban status chips replacing the GIF sprites) */
+#dm-board-header {
+  margin-top: var(--space-2);
+  margin-bottom: 2px;
+}
+
+#dm-board-header > div {
+  padding: var(--space-2);
+  text-align: center;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+#dm-board-header .plan {
+  background: var(--status-plan-tint);
+  color: #1f5a8a;
+  border-top: 3px solid var(--status-plan);
+}
+
+#dm-board-header .in_progress {
+  background: var(--status-progress-tint);
+  color: #8a5a00;
+  border-top: 3px solid var(--status-progress);
+}
+
+#dm-board-header .done {
+  background: var(--status-done-tint);
+  color: #4a6313;
+  border-top: 3px solid var(--status-done);
+}
+
+#dm-board-header span { display: inline-block; }
+
+#dm-board-header-descs {
+  margin-bottom: var(--space-2);
+}
+
+#dm-board-header-descs > div {
+  background: var(--color-surface-alt);
+  color: var(--color-text-muted);
+  padding: var(--space-2);
+  font-size: var(--text-xs);
+  text-align: center;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+}
+
+/* --------------------------------------------------------------
+   Swimlane rows
+   -------------------------------------------------------------- */
+
+.row.me, .row.experience, .row.education, .row.essay,
+.row.project, .row.research, .row.article, .row.bonsai, .row.quote {
+  margin-bottom: var(--space-6);
+}
+
+/* Each swimlane column body (the .iso containers).
+   Padding is tiny so Isotope's absolute-positioned cards (170px wide,
+   no internal gutter) fit cleanly inside the narrowest column (col-md-2). */
+.iso {
+  padding: 0 var(--space-1);
+  min-height: var(--space-8);
+}
+
+/* Board header chips and desc row need the same horizontal padding as .iso
+   so their text aligns with the cards inside the columns below. */
+#dm-board-header > div,
+#dm-board-header-descs > div {
+  margin: 0 var(--space-1);
+}
+
+/* Mobile: columns stack via the grid (grid-column: 1 / -1). Isotope still
+   manages each .iso container, so cards keep their 170px width and pack
+   2-per-row at typical mobile widths. */
+
+/* --------------------------------------------------------------
+   Task card (the heart of the board)
+
+   Contract: _task.hbs emits inline style="color: <textColor>;
+   border-left-color: <card.color>;" plus the card-header has
+   inline background-color: <card.color>. We provide the rest.
+   -------------------------------------------------------------- */
+
+/* Single card size across all viewports — matches Isotope `columnWidth: 170`
+   from main.js. Isotope absolutely positions items and packs them with
+   `gutter: 10` horizontally; on narrower viewports it just fits fewer cards
+   per row. Mobile-specific overrides (full-width cards) fight Isotope's
+   layout and break the visual frame, so we keep the same 170px everywhere.
+   DO NOT change this without also editing main.js Isotope config.
+   `margin-bottom: 10px` matches the horizontal gutter so vertical row
+   spacing equals horizontal card spacing — Isotope reads outerHeight when
+   stacking rows. */
+.task.card {
+  position: relative;
+  width: 170px;
+  margin: 0 0 10px 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  font-size: 0.8125rem; /* 13px — one step below --text-sm */
+  transition:
+    transform var(--motion-base),
+    box-shadow var(--motion-base);
+}
+
+.task.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.task.card > a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.task.card a:hover { text-decoration: none; }
+
+.task .card-header {
+  /* background-color is inline (frontmatter card.color); color is inline too */
+  padding: var(--space-2) var(--space-3);
+  margin: 0;
+  font-size: 0.8125rem; /* 13px */
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  border: 0;
+}
+
+.task .card-header.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task .card-body {
+  padding: var(--space-2) var(--space-3);
+  margin: 0;
+  font-size: 0.8125rem; /* 13px */
+  font-weight: 400;
+  color: var(--color-text);
+  line-height: var(--leading-normal);
+}
+
+.task .list-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.task .list-group-item {
+  list-style: none;
+  padding: var(--space-2) var(--space-1);
+  font-size: 0.6875rem; /* 11px — one step below --text-xs */
+  color: var(--color-text-muted);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.task .list-group-item:last-child { border-bottom: 0; }
+
+.task .list-group-item a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.task .subtasks label {
+  display: block;
+  margin: 0;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  cursor: default;
+}
+
+.task .subtasks input[type="checkbox"] {
+  margin-right: var(--space-1);
+  pointer-events: none;
+}
+
+.task .badge {
+  display: inline-block;
+  font-size: 0.5rem; /* ~8px */
+  font-weight: 600;
+  padding: 0.25em 0.55em;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.02em;
+  /* background-color & color are inline from frontmatter */
+}
+
+/* Many cards have an empty card.leftbox value that still renders an empty
+   floated <span class="badge float-left">. Hide it so it doesn't show as a
+   tiny orphan pill above the date. */
+.task .badge:empty { display: none; }
+
+/* The badge row in _task.hbs contains two floated badges (leftbox + datebox).
+   Floats inside a li-only-with-floats container don't reliably share a
+   baseline. Treat the row as a flex container instead so badges align on
+   the same horizontal line, with empty/single-badge cases handled by
+   justify-content. */
+.task .list-group-item:has(> .badge) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* When only the right badge is present, push it to the right with an
+   auto-margin so it still hugs the right edge. */
+.task .list-group-item:has(> .badge.float-right:only-child) { justify-content: flex-end; }
+.task .list-group-item:has(> .badge.float-left:only-child) { justify-content: flex-start; }
+
+.task .task_tag,
+.task .task_external_link {
+  background: none;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 var(--space-1) 0 0;
+  overflow: visible;
+  text-indent: 0;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.task .task_tag::before,
+.task .task_external_link::before {
+  font-family: FontAwesome;
+  margin-right: 0.35em;
+  color: var(--color-accent);
+}
+
+.task .task_tag::before { content: "\f02b"; }              /* fa-tag */
+.task .task_external_link::before { content: "\f08e"; }   /* fa-external-link */
+
+.task .card-link { color: var(--color-link); }
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --------------------------------------------------------------
+   Lateral filter (currently hidden via markup; styles preserved
+   for completeness and for the slide-in behavior).
+   -------------------------------------------------------------- */
+
+.dm-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background: var(--color-surface);
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: transform var(--motion-slow), box-shadow var(--motion-slow);
+}
+
+.dm-filter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background: var(--color-accent);
+  z-index: 2;
+}
+
+.dm-filter form { padding: 70px var(--space-5); }
+
+.dm-filter .dm-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  width: 60px;
+  color: var(--color-text-inverse);
+  font-size: var(--text-sm);
+  text-align: center;
+  background: var(--color-accent-hover);
+  opacity: 0;
+  transition: opacity var(--motion-base);
+  z-index: 3;
+}
+
+.dm-filter.filter-is-visible {
+  transform: translateX(0);
+  box-shadow: var(--shadow-lg);
+}
+
+.dm-filter.filter-is-visible .dm-close { opacity: 1; }
+
+.dm-filter-trigger {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  height: 50px;
+  line-height: 50px;
+  width: 60px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+  background: transparent url("../images/dm-icon-filter.svg") no-repeat center;
+  z-index: 3;
+}
+
+.dm-filter-trigger.filter-is-visible { pointer-events: none; }
+
+@media (min-width: 1170px) {
+  .dm-filter { width: 20%; }
+  .dm-filter form { padding: 70px 10%; }
+}
+
+/* Lateral filter form blocks */
+.dm-filter-block { margin-bottom: var(--space-6); }
+
+.dm-filter-block h4 {
+  position: relative;
+  margin-bottom: var(--space-1);
+  padding: var(--space-2) 0 var(--space-2) var(--space-5);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--text-sm);
+  user-select: none;
+  cursor: pointer;
+  letter-spacing: var(--tracking-wide);
+}
+
+.dm-filter-block h4:hover { color: var(--color-accent); }
+
+.dm-filter-block h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  background: url("../images/dm-icon-arrow.svg") no-repeat center / contain;
+  transform: translateY(-50%);
+  transition: transform var(--motion-base);
+}
+
+.dm-filter-block h4.closed::before { transform: translateY(-50%) rotate(-90deg); }
+
+.dm-filter-block input,
+.dm-filter-block select,
+.dm-filter-block .radio-label::before,
+.dm-filter-block .checkbox-label::before {
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+}
+
+.dm-filter-block input[type='search'],
+.dm-filter-block input[type='text'],
+.dm-filter-block select {
+  width: 100%;
+  padding: var(--space-3);
+  appearance: none;
+  box-shadow: none;
+}
+
+.dm-filter-block input[type='search']:focus,
+.dm-filter-block input[type='text']:focus,
+.dm-filter-block select:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.dm-filter-block input[type='search'] {
+  border-color: transparent;
+  background: var(--color-surface-alt);
+  font-size: var(--text-base) !important;
+}
+
+.dm-filter-block input[type='search']::-webkit-search-cancel-button { display: none; }
+
+.dm-filter-block .dm-select { position: relative; }
+.dm-filter-block .dm-select::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: url("../images/dm-icon-arrow.svg") no-repeat center / contain;
+  pointer-events: none;
+}
+
+.dm-filter-block select { cursor: pointer; font-size: var(--text-sm); }
+.dm-filter-block select::-ms-expand { display: none; }
+
+.dm-filter-block .list li {
+  position: relative;
+  margin-bottom: var(--space-2);
+}
+
+.dm-filter-block input[type=radio],
+.dm-filter-block input[type=checkbox] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+.dm-filter-block .checkbox-label,
+.dm-filter-block .radio-label {
+  padding-left: var(--space-6);
+  font-size: var(--text-sm);
+  user-select: none;
+}
+
+.dm-filter-block .checkbox-label::before,
+.dm-filter-block .checkbox-label::after,
+.dm-filter-block .radio-label::before,
+.dm-filter-block .radio-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dm-filter-block .checkbox-label::before,
+.dm-filter-block .radio-label::before {
+  width: 16px;
+  height: 16px;
+  left: 0;
+}
+
+.dm-filter-block .checkbox-label::after,
+.dm-filter-block .radio-label::after { display: none; }
+
+.dm-filter-block .checkbox-label::after {
+  width: 16px;
+  height: 16px;
+  background: url("../images/dm-icon-check.svg") no-repeat center;
+}
+
+.dm-filter-block .radio-label::before,
+.dm-filter-block .radio-label::after { border-radius: 50%; }
+
+.dm-filter-block .radio-label::after {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-surface);
+  left: 5px;
+}
+
+.dm-filter-block input[type=radio]:checked + label::before,
+.dm-filter-block input[type=checkbox]:checked + label::before {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+}
+
+.dm-filter-block input[type=radio]:checked + label::after,
+.dm-filter-block input[type=checkbox]:checked + label::after { display: block; }
+
+@-moz-document url-prefix() {
+  .dm-filter-block .dm-select::after { display: none; }
+}
+
+/* --------------------------------------------------------------
+   Orange box (floating identity chip — top-right)
+   -------------------------------------------------------------- */
+
+.orange_box {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .orange_box {
+    display: inline-flex;
+    align-items: stretch;
+    overflow: hidden;
+    background: var(--color-brand);
+    color: var(--color-text-inverse);
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-md);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    line-height: 1.1;
+    padding: 0;
+    margin-right: var(--space-3);
+  }
+
+  .orange_box a {
+    color: var(--color-text-inverse);
+    transition: background var(--motion-fast);
+  }
+
+  .orange_box a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--color-text-inverse);
+  }
+
+  .orange_box .username {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    font-weight: 700;
+  }
+
+  .orange_box .username::before {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url("/assets/images/orange-box-avatar.png");
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-surface);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    flex-shrink: 0;
+  }
+
+  .orange_box ul {
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .orange_box ul li {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .orange_box ul li + li,
+  .orange_box ul + ul li:first-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .orange_box ul li a {
+    color: var(--color-text-inverse);
+  }
+}
+
+.submenu {
+  position: fixed;
+  top: var(--space-3);
+  right: var(--space-3);
+  /* Above the pinned filter bar (z-index 15 when .is-fixed) so the
+     orange identity chip stays visible on scroll. */
+  z-index: 20;
+}
+
+/* --------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------- */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: var(--footer-height);
+  background: var(--color-footer-bg);
+  color: var(--color-text-inverse);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-xs);
+  padding: 0 var(--space-3);
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer li { padding: 0; margin: 0; }
+
+.footer a {
+  color: var(--color-text-inverse);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: background var(--motion-fast);
+}
+
+.footer a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.footer img { display: inline-block; vertical-align: middle; }
+
+/* Make the body leave room for the fixed footer */
+body { padding-bottom: var(--footer-height); }
+
+/* --------------------------------------------------------------
+   About-me specific (promoted from inline)
+   -------------------------------------------------------------- */
+
+.me-effect {
+  border: 2px solid var(--color-surface);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-lg);
+}
+
+.aboutme-photo {
+  text-align: center;
+  margin: var(--space-4) 0;
+}
+
+.aboutme-photo img { max-width: min(360px, 100%); }
+
+/* --------------------------------------------------------------
+   Project / Education entry header layouts
+   (promoted from inline float:left/right)
+   -------------------------------------------------------------- */
+
+.entry-header-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.entry-header-meta .meta-info { flex: 1 1 auto; }
+.entry-header-meta .meta-actions { flex: 0 0 auto; }
+.entry-header-meta p { margin: 0 0 var(--space-1); }
+
+/* --------------------------------------------------------------
+   Detail page board container
+   -------------------------------------------------------------- */
+
+.details .dm-board {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4) var(--space-12);
+}
+
+.details .dm-main-content.is-fixed .dm-board {
+  padding-top: calc(var(--board-pin-offset) + var(--space-4));
+}
+
+@media (min-width: 1170px) {
+  .details .dm-board {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Backlinks & related-topics */
+.backlinks,
+.related-topics {
+  background: var(--color-surface-alt);
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  margin: var(--space-6) 0;
+}
+
+.backlinks h2,
+.related-topics h2 {
+  margin-top: 0;
+  font-size: var(--text-lg);
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--color-text);
+}
+
+.backlinks ul,
+.related-topics ul {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------
+   Print
+   -------------------------------------------------------------- */
+
+@media print {
+  .submenu,
+  .orange_box,
+  .footer,
+  .dm-tab-filter-wrapper,
+  .dm-filter,
+  .dm-filter-trigger,
+  .logo,
+  .image_gallery { display: none !important; }
+
+  body { padding-bottom: 0; }
+
+  .dm-main-content.is-fixed .dm-board { padding-top: 0; }
+
+  article a { color: var(--color-text) !important; background: none !important; }
+}

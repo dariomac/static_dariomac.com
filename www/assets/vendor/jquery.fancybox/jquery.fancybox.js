@@ -1949,7 +1949,15 @@
         .attr("src", slide.src)
         .appendTo($picture);
       
-      $('<source srcset="' + slide.src.replace(/\.[^/.]+$/, ".webp") + '" type="image/webp">').prependTo($picture);
+      // dariomac.com patch: the upstream behaviour here prepends a <source>
+      // for `<orig>.webp` derived from slide.src by extension swap, but this
+      // site does not ship full-size webp variants (only thumbs). When the
+      // browser picks the webp source and gets a 404 (e.g. animated GIFs),
+      // FancyBox fires the <img>'s error handler and shows
+      // "The requested content cannot be loaded". Skipping the injection
+      // makes FancyBox always load the actual file referenced by href.
+      // Original line:
+      // $('<source srcset="' + slide.src.replace(/\.[^/.]+$/, ".webp") + '" type="image/webp">').prependTo($picture);
       $picture.appendTo(slide.$content);
       slide.$image = $picture;
       

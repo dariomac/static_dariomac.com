@@ -1,18 +1,18 @@
 User-agent: *
-Disallow: /24offerfit-director
-Disallow: /academy
-Disallow: /devrel
-Disallow: /industry
-Disallow: /soft-eng
-Disallow: /make-jobs-collaborate
-Disallow: /senior-juniorism
-Disallow: /focused-conversation
-Disallow: /pac-man-rule
-Disallow: /circular-growth-loops
-Disallow: /sombra-de-toro
-Disallow: /dmarc
-Disallow: /how-to-improve-the-seo-of-a-react-application
-Disallow: /things-to-take-into-account-before-a-massive-email-campaign
-Disallow: /mock
-Disallow: /basecamp-application-2020
+Disallow: /robots
+Disallow: /robots
+Disallow: /robots
+Disallow: /robots
+Disallow: /robots
+Disallow: 
+Disallow: 
+Disallow: 
+Disallow: 
+Disallow: 
+Disallow: 
+Disallow: 
+Disallow: 
+Disallow: 
+Disallow: 
+Disallow: 
 Sitemap: https://dariomac.com/sitemap.xml

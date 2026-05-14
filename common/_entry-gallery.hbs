@@ -1,14 +1,19 @@
 {{#if content.related_images}}
-  <section class="image_gallery">
-    <link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
+<section class="image_gallery">
+  <link rel="stylesheet" href="/assets/vendor/jquery.fancybox/jquery.fancybox.css" type='text/css'>
   {{#each content.related_images}}
-    <a itemprop="image" data-fancybox="gallery" href="/assets/{{filename}}" class="fancybox no_external_ico" rel="challenge" title="{{title}}">
-      <picture>
-        <source srcset="/assets/thumbs/{{getFileName filename}}.webp" type="image/webp">
-
-        <img src="/assets/thumbs/{{filename}}" alt="{{filename}}" />
-      </picture>
-    </a>
+  <a itemprop="image" data-fancybox="gallery" href="/assets/{{filename}}" class="fancybox no_external_ico"
+    rel="challenge" title="{{title}}">
+    <picture>
+      {{#ifEq (getFileIcon filename) "gif"}}
+      <source srcset="/assets/thumbs/{{filename}}" type="image/gif">
+      <img src="/assets/thumbs/{{filename}}" alt="{{filename}}" />
+      {{else}}
+      <source srcset="/assets/thumbs/{{getFileName filename}}.webp" type="image/webp">
+      <img src="/assets/thumbs/{{getFileName filename}}.webp" alt="{{filename}}" />
+      {{/ifEq}}
+    </picture>
+  </a>
   {{/each}}
-  </section>
+</section>
 {{/if}}

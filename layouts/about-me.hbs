@@ -2,21 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>{{ fullTitle frontmatter.title }} </title>
-    <style>
-      
-      {{> _critical-css }}
-
-      .me-effect {
-        border: 2px solid #fff;
-        -moz-box-shadow: 10px 10px 5px #ccc;
-        -webkit-box-shadow: 10px 10px 5px #ccc;
-        box-shadow: 2px 2px 7px #ccc;
-        -moz-border-radius: 25px;
-        -webkit-border-radius: 25px;
-        border-radius: 25px;
-      }
-    </style>
+    <title>{{ fullTitle frontmatter.title }}</title>
 
     <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
@@ -67,7 +53,7 @@
                 
                 {{#if content.content}}
                   <section class="content">
-                    <p style="text-align: center; width: 100%;">
+                    <p class="aboutme-photo">
                       <img src="/assets/aboutme-me.jpg#center" alt="My photograph" class="me-effect">
                     </p>
                     <p>
@@ -80,10 +66,10 @@
 
                     {{{ highlighter content.content }}}
 
-                    <p style="text-align: justify;">
+                    <p>
                       I think that curriculum vitae (CV) or resume must be something alive more than a static document that looks as a biography.
                     </p>
-                    <p style="text-align: justify;">
+                    <p>
                       For these reason I decide to make my own resume in a way that I called
                       <a href="https://dariomac.com/kanbancv">KanbanCV</a>. Here I introduce myself, write about experiences, education, other activities, just as in a regular resume but with additional information.
                     </p>

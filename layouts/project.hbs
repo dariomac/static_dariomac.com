@@ -45,38 +45,33 @@
               <div class="col-md-12">
                 <header>
                   <h1>{{ frontmatter.title }}</h1>
-                  <div style="float:left">
-                    {{#if content.platform}}
-                      <p>
-                        Platform: <span itemprop="operatingSystem">{{ content.platform }}</span>
-                      </p>
-                    {{/if}}
-                    {{#if content.link}}
-                      <p>
-                        Project url:
-                        <a itemprop="url" href="{{ content.link }}">
-                          {{ content.link }}
-                        </a>
-                      </p>
-                    {{/if}}
-                  </div>
-                  <div style="float:right">
-                    {{#if content.download_link}}
-                      <a itemprop="downloadUrl" class="download" download href="{{ content.download_link }}"></a>
-                    {{/if}}
+                  <div class="entry-header-meta">
+                    <div class="meta-info">
+                      {{#if content.platform}}
+                        <p>Platform: <span itemprop="operatingSystem">{{ content.platform }}</span></p>
+                      {{/if}}
+                      {{#if content.link}}
+                        <p>Project url: <a itemprop="url" href="{{ content.link }}">{{ content.link }}</a></p>
+                      {{/if}}
+                    </div>
+                    <div class="meta-actions">
+                      {{#if content.download_link}}
+                        <a itemprop="downloadUrl" class="download" download href="{{ content.download_link }}"></a>
+                      {{/if}}
+                    </div>
                   </div>
                 </header>
 
                 {{#if content.summary}}
-                  <section style="clear:both" class="summary">
+                  <section class="summary">
                     <p>
                       {{ content.summary }}
                     </p>
                   </section>
                 {{/if}}
-                
+
                 {{#if content.description}}
-                  <section style="clear:both" class="content">
+                  <section class="content">
                     {{{ content.description }}}
                   </section>
                 {{/if}}

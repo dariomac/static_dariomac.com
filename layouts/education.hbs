@@ -47,12 +47,7 @@
                   <h1>{{ frontmatter.title }}</h1>
                   <p class="duration">{{ content.duration }}</p>
                   <p>
-                  {{#if content.dictated_by}}
-                    <span style="float:left">Dictated by {{ content.dictated_by }} at&nbsp;</span>
-                  {{/if}}
-                    <a itemprop="url" href="{{ content.place_url }}">
-                      {{ content.place }}
-                    </a>
+                    {{#if content.dictated_by}}Dictated by {{ content.dictated_by }} at {{/if}}<a itemprop="url" href="{{ content.place_url }}">{{ content.place }}</a>
                   </p>
                 </header>
                 

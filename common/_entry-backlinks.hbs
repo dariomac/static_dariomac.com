@@ -12,7 +12,7 @@
   {{#ifEq frontmatter.card.laneid "Essay"}}
   <section class="backlinks">
     <h2>Mentioned in</h2>
-    {{> backlinkList backlinks=../backlinks}}
+    {{> backlinkList backlinks=backlinks}}
   </section>
   {{else}}
   <div class="row splitter">
@@ -21,7 +21,7 @@
   <div class="row">
     <div class="col-md-12">
       <section class="backlinks">
-        {{> backlinkList backlinks=../backlinks}}
+        {{> backlinkList backlinks=backlinks}}
       </section>
     </div>
   </div>
