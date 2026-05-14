@@ -86,7 +86,7 @@
   --reading-max-width: 72ch;
   --topbar-height: 0px;          /* mobile: no top chrome row */
   --board-pin-offset: 72px;      /* mobile: just the dropdown */
-  --footer-height: 44px;
+  --footer-height: 28px;
 }
 
 /* On desktop the floating D-logo (left) and the orange identity pill (right)

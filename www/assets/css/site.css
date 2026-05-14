@@ -449,8 +449,12 @@ article table td {
 }
 
 @media (min-width: 768px) {
+  /* Align the D-logo's vertical center with the orange identity pill on the
+     right. The pill (.submenu) sits at top: var(--space-3) and is ~44px tall;
+     its center is at y ≈ 34. The 58px-tall logo at the same top would land
+     7px lower; setting top to var(--space-1) puts both centers in line. */
   .dm-main-content .logo {
-    top: var(--space-3);
+    top: var(--space-1);
     left: var(--space-3);
   }
   .dm-main-content .logo img { width: 50px; height: 50px; }
@@ -522,15 +526,18 @@ article table td {
 .dm-tab-filter::after {
   content: "";
   position: absolute;
-  right: var(--space-3);
+  right: var(--space-6);
   top: 50%;
   transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   background: url("../images/dm-icon-arrow.svg") no-repeat center / contain;
   pointer-events: none;
-  transition: transform var(--motion-base);
+  opacity: 0.7;
+  transition: transform var(--motion-base), opacity var(--motion-fast);
 }
+
+.dm-tab-filter:hover::after { opacity: 1; }
 
 .dm-tab-filter.is-open::after {
   transform: translateY(-50%) rotate(-180deg);
@@ -544,7 +551,8 @@ article table td {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: calc(100% - var(--space-8));
+  width: 288px;
+  max-width: calc(76vw - var(--space-6));
   background: var(--color-surface);
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
@@ -554,7 +562,17 @@ article table td {
 .dm-tab-filter li:first-child { display: block; }
 .dm-tab-filter.is-open li { display: block; }
 
+/* When the dropdown is open, anchor it to the top of the filter bar so it
+   always grows *downward*. With ~10 menu items the UL is taller than the
+   72px bar, so the previous centered positioning pushed the first items
+   above the viewport. Also constrain max-height + scroll so the menu never
+   exceeds the visible area. */
 .dm-tab-filter.is-open ul {
+  top: 0;
+  transform: translate(-50%, 0);
+  max-height: calc(100vh - var(--space-8));
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   box-shadow: var(--shadow-md);
   border-color: var(--color-border-strong);
 }
@@ -687,9 +705,6 @@ article table td {
   margin: 0;
 }
 
-/* Featured pre-board row */
-.row.featured { margin-bottom: var(--space-4); }
-
 #new_essay {
   text-align: center;
   padding: var(--space-3);
@@ -724,7 +739,7 @@ article table td {
 }
 
 #dm-board-header > div {
-  padding: var(--space-2);
+  padding: var(--space-1);
   text-align: center;
   font-size: var(--text-xs);
   font-weight: 700;
@@ -760,7 +775,7 @@ article table td {
 #dm-board-header-descs > div {
   background: var(--color-surface-alt);
   color: var(--color-text-muted);
-  padding: var(--space-2);
+  padding: var(--space-1);
   font-size: var(--text-xs);
   text-align: center;
   border-radius: 0 0 var(--radius-md) var(--radius-md);
@@ -777,10 +792,12 @@ article table td {
 
 /* Each swimlane column body (the .iso containers).
    Padding is tiny so Isotope's absolute-positioned cards (170px wide,
-   no internal gutter) fit cleanly inside the narrowest column (col-md-2). */
+   no internal gutter) fit cleanly inside the narrowest column (col-md-2).                                      
+   No `min-height`: on mobile the plan/in_progress/done columns stack                                           
+   vertically via the grid, and an empty column with a min-height adds                                          
+   wasted blank space before the next non-empty column's cards. */
 .iso {
   padding: 0 var(--space-1);
-  min-height: var(--space-8);
 }
 
 /* Board header chips and desc row need the same horizontal padding as .iso
@@ -813,7 +830,7 @@ article table td {
    stacking rows. */
 .task.card {
   position: relative;
-  width: 170px;
+  width: 180px;
   margin: 0 0 10px 0;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
