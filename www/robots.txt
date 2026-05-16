@@ -15,4 +15,6 @@ Disallow:
 Disallow: 
 Disallow: 
 Disallow: 
+Disallow: 
+Disallow: 
 Sitemap: https://dariomac.com/sitemap.xml

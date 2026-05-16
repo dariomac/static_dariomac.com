@@ -113,9 +113,8 @@ async function generateImageHTML(title, url, description, screenshotPath) {
 </div>`;
 }
 
-async function generateLinkedInCarouselPDF(imagePaths, week) {
-  const currentYear = new Date().getFullYear();
-  const pdfPath = path.join(__dirname, 'data', 'document', 'assets', `stuck-in-the-filter-${currentYear}-w${week}-carousel.pdf`);
+async function generateLinkedInCarouselPDF(imagePaths, week, year) {
+  const pdfPath = path.join(__dirname, 'data', 'document', 'assets', `stuck-in-the-filter-${year}-w${week}-carousel.pdf`);
   
   let browser;
   try {
@@ -386,46 +385,44 @@ async function resizeAllImages(imagePaths) {
   }
 }
 
-async function generateDocument(filterData, urls, week) {
+async function generateDocument(filterData, urls, week, year) {
   const currentDate = new Date().toISOString().split('T')[0];
-  const formattedDate = new Date().toLocaleDateString('en-US', { 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
+  const formattedDate = new Date().toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
   });
-  
+
   // Read the template
   const templatePath = path.join(__dirname, 'layouts', 'document.dmd');
   let template = await fs.readFile(templatePath, 'utf8');
 
-  const currentYear = new Date().getFullYear();
-  
   // Replace template placeholders
-  template = template.replace('<title>', `Stuck in the Filter - W${week}`);
+  template = template.replace('<title>', `Stuck in the Filter - ${year} W${week}`);
   template = template.replace('<creation_date>', currentDate);
   template = template.replace('<column>', 'done_3');
-  template = template.replace('<short_description>', `Links I couldn\'t process during the week ${week} of ${currentYear}.`);
+  template = template.replace('<short_description>', `Links I couldn\'t process during the week ${week} of ${year}.`);
   template = template.replace('<pub_date>', formattedDate);
   template = template.replace('<position>', currentDate.replace(/-/g, ''));
-  
+
   // Generate body content
   let bodyContent = '';
-  
+
   for (let i = 0; i < urls.length; i++) {
     const item = urls[i];
-    const imageFilename = `stuck-${currentYear}-w${week}-${i + 1}.jpg`;
-    
+    const imageFilename = `stuck-${year}-w${week}-${i + 1}.jpg`;
+
     bodyContent += `## ${item.title}\n`;
     bodyContent += `[${item.url}](${item.url})\n\n`;
     bodyContent += `${item.description}\n\n`;
     bodyContent += `[![${item.title} page screenshot](/assets/${imageFilename}#center)](${item.url})\n<br /><hr />\n`;
   }
-  
+
   // Replace content sections
   const sections = template.split('---');
   let content = sections[1];
 
-  content = content.replace('[summary:string]', `[summary:string]\nLinks I couldn\'t process during the week ${week} of ${currentYear}.`);
+  content = content.replace('[summary:string]', `[summary:string]\nLinks I couldn\'t process during the week ${week} of ${year}.`);
   content = content.replace('[pub_date:string]', `[pub_date:string]\n${currentDate}`);
   content = content.replace('[short_description:string]', '[short_description:string]\nThese links for various reasons didn\'t make it into my public content. They come in many different formats and cover a range of topics that I found interesting or useful. Whether they were too niche, incomplete, or simply didn\'t fit the overall flow, these links are still valuable resources for some reason they caught my attention.');
   content = content.replace('[body:md]', `[body:md]\n${bodyContent}`);
@@ -459,13 +456,17 @@ async function main() {
     // Read filter.json
     const filterData = await fs.readJson(filterPath);
     const { week, stuck } = filterData;
-    
+    // Year comes from the filter file so we can backfill / regenerate past
+    // weeks without depending on today's date. Falls back to current year
+    // for older filter files that pre-date the field.
+    const year = filterData.year || new Date().getFullYear();
+
     if (!week || !stuck || !Array.isArray(stuck)) {
-      console.error('Invalid filter.json format. Expected: { week: number, stuck: array }');
+      console.error('Invalid filter.json format. Expected: { year?: number, week: number, stuck: array }');
       process.exit(1);
     }
-    
-    console.log(`\n\nProcessing ${stuck.length} URLs for week ${week}...`);
+
+    console.log(`\n\nProcessing ${stuck.length} URLs for week ${week} of ${year}...`);
     
     // Process each URL
     const processedUrls = [];
@@ -481,8 +482,7 @@ async function main() {
       const tempScreenshotPath = item.screenshot || pageData.screenshot;
       
       // Generate image
-      const currentYear = new Date().getFullYear();
-      const imageFilename = `stuck-${currentYear}-w${week}-${i + 1}.jpg`;
+      const imageFilename = `stuck-${year}-w${week}-${i + 1}.jpg`;
       const imagePath = path.join(__dirname, 'data', 'document', 'assets', imageFilename);
       
       const html = await generateImageHTML(title, item.url, description, tempScreenshotPath || 'placeholder-screenshot.png');
@@ -508,16 +508,16 @@ async function main() {
     }
     
     // Generate document
-    const documentContent = await generateDocument(filterData, processedUrls, week);
-    const documentPath = path.join(__dirname, 'data', 'document', `stuck-in-the-filter-2025-w${week}.dmd`);
-    
+    const documentContent = await generateDocument(filterData, processedUrls, week, year);
+    const documentPath = path.join(__dirname, 'data', 'document', `stuck-in-the-filter-${year}-w${week}.dmd`);
+
     await fs.writeFile(documentPath, documentContent);
-    
+
     // Generate LinkedIn carousel PDF
-    const imagePaths = processedUrls.map(url => 
+    const imagePaths = processedUrls.map(url =>
       path.join(__dirname, 'data', 'document', 'assets', url.imagePath)
     );
-    const carouselPDFPath = await generateLinkedInCarouselPDF(imagePaths, week);
+    const carouselPDFPath = await generateLinkedInCarouselPDF(imagePaths, week, year);
     
     // Resize all generated images to max 600px width
     // await resizeAllImages(imagePaths);

@@ -1,0 +1,102 @@
+{
+    "date": "2023-03-23",
+    "updated_date": "2026-05-16",
+    "layout": "document",
+    "title": "Constant Conparisons",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20230323",
+        "tags": "research, methodology",
+        "content": "Data analyzed several times to make the results 'emerge'",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "params": {
+        "noIndex": true
+    }
+}
+
+---
+
+[summary:string]
+Data analyzed several times to make the results 'emerge'
+
+[pub_date:string]
+2023-03-23
+
+[short_description:string]
+
+[body:md]
+It's a process where the data are analyzed over and over again, and the results "emerge" from the data and from comparing them to the results from the last time.
+
+## Intent
+*A description of the goal behind the pattern and the reason for using it. [^1]*
+
+## Motivation / Forces / Applicability
+*A scenario consisting of a problem and a context in which this pattern can be used. Situations in which this pattern is usable; the context for the pattern.*
+
+## Structure / Implementation
+![](/assets/pasted-image-20230327212512.png#center)
+
+The first step, as I see it, is to set your research question(s) or at least a short description of what you want to start looking for in the data. Most of the time, this question or description will be wrong or not complete, but that's the point of this method: to find information hidden in the data and bring it out.
+
+### Open coding
+Open coding is a research method that helps researchers analyze data by breaking it down into small pieces and asking questions about what is happening in those pieces. The researcher starts with line-by-line coding of data and compares incidents (interesting "things") to each other in the data. The researcher then codes the data in every possible way and asks a set of questions to help guide their analysis.
+
+These questions help the researcher to focus on the main concern being faced by the participants and to identify the patterns and categories that emerge from the data. By coding the data in this way, the researcher is able to verify and saturate categories, minimize missing an important category, and ensure relevance by generating codes with emergent fit to the substantive area under study.
+
+Line-by-line coding forces the researcher to pay attention to the details and helps them to see which direction to take in theoretically sampling before becoming too selective and focused on a particular problem. The result is a rich, dense theory that takes into account all the relevant information from the data [^1].
+
+### Memoing
+> Memos are theoretical notes about the data and the conceptual connections between categories. [^1]
+
+While we code, we can write emerging concepts (memo), cluster incidents into concepts or aggregate concepts into categories.
+
+The upper right parte (Memo) is composed by indicators, concepts and categories.
+
+### Selective coding
+Selective coding is a research method that helps researchers analyze data by focusing only on the information that is relevant to their research topic. This method involves identifying a core variable that the researcher wants to study, and then collecting data that is related to that variable. By focusing on the core variable and its related categories, the researcher can quickly collect and analyze data without getting bogged down with irrelevant information.
+
+As the researcher collects more data, they continue to refine their conceptual framework by integrating new categories into their theory. They also work to clarify the relationships between different categories and the core variable. Through this process, the researcher begins to see patterns and similarities in the data, which allows them to further refine their theory.
+
+Selective coding involves two levels of delimiting: first, the researcher solidifies the theory with fewer modifications, and later, they clarify the logic of the theory and integrate elaborating details of properties into the major outline of interrelated categories. As the theory becomes more defined, the researcher is able to commit to it and delimit the list of categories for subsequent collecting and selective coding of additional data.
+
+Overall, selective coding helps researchers to focus on the most important information related to their research topic and to develop a clear and comprehensive conceptual framework.
+
+The process of constant comparison continues until no new properties or dimensions are emerging. At this point, a concept has been theoretically saturated.
+
+<hr/>
+
+
+
+## Samples
+*An illustration of how the pattern can be used.*
+
+## Consequences
+*A description of the results, side effects, and trade offs caused by using the pattern.*
+
+## Known Uses
+*Examples of real usages of the pattern.*
+
+## Related Patterns
+*Other patterns that have some relationship with this pattern; discussion of the differences between this pattern and similar patterns.*
+
+## References
+[^1]: A. Bryant and K. Charmaz, Eds., "The SAGE Handbook of Grounded Theory," SAGE Publications Ltd., 2007. [Online]. Available: https://methods.sagepub.com/book/the-sage-handbook-of-grounded-theory. [Accessed: Mar. 27, 2023]. Chapter 13.
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Mar 23, 2023_: Original publication on dariomac.com

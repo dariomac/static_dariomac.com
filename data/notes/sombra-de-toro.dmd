@@ -11,18 +11,14 @@
         "columnid": "progress_2",
         "datebox": "",
         "extlink": null,
-        "laneid": "Essay",
+        "laneid": "Bonsai",
         "leftbox": "",
         "position": "20220502",
         "tags": "Card tags",
         "content": "Card content",
-        "laneid\"": "Bonsai",
         "linkto": "[link_to]",
         "title": "[title]",
         "subtaskdetails": []
-    },
-    "params": {
-        "noIndex": true
     }
 }
 

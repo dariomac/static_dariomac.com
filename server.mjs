@@ -67,6 +67,8 @@ const destinations = {
   '/austin-software-developer-advocate': '/howdy-developer-advocate',
   '/krooping-procesamiento-de-im%C3%A1genes-satelitales-para-generaci%C3%B3n-de-%C3%ADndices-agron%C3%B3micos': '/krooping-procesamiento-de-imagenes-satelitales-para-generacion-de-indices-agronomicos',
   '/software-estimates-no-longer-engineering-problem': '/software-estimates-no-longer-engineering-problem-mis-uy',
+  '/agile-principles': '/vix-scrum-master-project-manager',
+  '/minimum-viable-product': '/what-is-an-mvp'
 }
 
 const origins = Object.keys(destinations);

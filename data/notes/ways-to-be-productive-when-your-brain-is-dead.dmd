@@ -1,0 +1,94 @@
+{
+    "date": "2021-10-08",
+    "updated_date": "2026-05-16",
+    "layout": "document",
+    "title": "Ways to be productive when your brain is dead",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20211008",
+        "tags": "productivity",
+        "content": "What to do when you wake up but your brain doesn't",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "params": {
+        "noIndex": true
+    }
+}
+
+---
+
+[summary:string]
+What to do when you wake up but your brain doesn't
+
+[pub_date:string]
+2021-10-08
+
+[short_description:string]
+
+[body:md]
+What to do when you wake up but your brain doesn't.
+
+## Intent
+
+A description of the goal behind the pattern and the reason for using it.
+
+## Also Known As
+
+Other names for the pattern.
+
+## Motivation / Forces / Applicability
+
+When you wake up but your brain doesn't or when your brain just die in the middle of the day you've four choices: don't do anything, try to continue working and screw it up, exercise or adjust.
+
+I decided long ago to find ways to adjust, to make the most of those days while my brain's on autopilot.
+
+## Structure / Implementation
+There are certain types of tasks that most of us either have to do or should do that don't require you to be at the top of your game (what I call *monkey tasks*).
+
+1.  Work on the graphics, special effects, or slide show timing of a PowerPoint presentation. Creative work that doesn't require intense thought.
+2.  Hold one-on-one meetings with your staff or peers, ask them how you can improve, and really listen to what they have to say.
+3.  Let your mind wonder and brainstorm. You see, when you're conscious mind is tired, your subconscious sort of kicks in and takes up the slack. You'd be amazed at what you can tap into. I get some of my best ideas when I'm half asleep or not even thinking.
+4.  Walk around, talk to people, let your guard down, be yourself.
+5.  If you happen to be writing something, do an outline. The final product always turns out better that way, and outlining is methodical work that doesn't require a lot of brainpower.
+6.  Check out what the competition is doing. Do a little digging. Call some contacts to get some competitive G2.
+7.  Try a change of scenery, like working outside for a change.
+8.  Schmooze with some vendors or partners. No, I'm not saying completely waste people's time, I'm talking about checking in and asking open questions you usually don't ask.
+9.  Take your administrative assistant or favorite employee out for a long lunch and really get to know them.
+10.  Do your expense reports. Yes, my least favorite too, but it is more or less brainless work.
+11.  Clean off your desk. Granted, this one really sucks, but you feel such a sense of accomplishment when you're done, it almost makes it worthwhile.
+
+## Samples
+*An illustration of how the pattern can be used.*
+
+## Consequences
+Tasks that most of us either have to do or should do, done. (psst, without screw it up)
+
+## Known Uses
+
+Examples of real usages of the pattern.
+
+## Related Patterns
+
+When you brain is not dead, you can say you are *[[Are you HOT enough?|hot enough]]!*
+
+## References
+
+Use this format for references (here and inline)
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Oct 8, 2021_: Original publication on dariomac.com

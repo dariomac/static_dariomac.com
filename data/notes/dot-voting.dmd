@@ -1,0 +1,102 @@
+{
+    "date": "2023-04-12",
+    "updated_date": "2026-05-16",
+    "layout": "document",
+    "title": "Dot voting",
+    "jsonld": {},
+    "canonical": "",
+    "custom_header": "",
+    "card": {
+        "color": "#99b399",
+        "columnid": "progress_2",
+        "datebox": "",
+        "extlink": null,
+        "laneid": "Essay",
+        "leftbox": "",
+        "position": "20230412",
+        "tags": "agile, team, decisions",
+        "content": "Highly effective way of choosing between options",
+        "linkto": "[link_to]",
+        "title": "[title]",
+        "subtaskdetails": []
+    },
+    "fieldNote": true,
+    "params": {
+        "noIndex": true
+    }
+}
+
+---
+
+[summary:string]
+Highly effective way of choosing between options
+
+[pub_date:string]
+2023-04-12
+
+[short_description:string]
+
+[body:md]
+Highly effective way of choosing between options, mostly when there is a lack of enough votes to share.
+
+
+## Keywords
+
+agile;scrum;vote;voting;dots;prioritize;game;votar;puntos;priorizar
+
+
+## Intent
+
+What you're looking for is some clear groupings: a few items with twice as many votes as there are voters, another grouping with about 1/2 to 2/3 that number, another grouping with one to three votes, and those that didn't get any. If you don't get clear breakpoints that show which are the obvious high-priority items, you might revote on the top half, or start over with a different number of votes (usually to get the spread, more votes are needed to provide people with enough to give a vote to each of the ones they think are important and a lot of votes to their top choice -- hmm, that starts to sound like a rationale!!), or start over with a different prioritization technique like pairwise ranking, advantage/disadvantage identification, nominal group technique (the limited definition favored by TQM consultants, not the full-blown technique), force field analysis, or weighting and prioritizing.
+
+
+## Also Known As
+
+_Other names for the pattern._
+
+
+## Motivation / Forces / Applicability
+
+Useful in Agile Retrospective meetings, when agile teams need to make choices and are stuck between several options, etc.
+
+
+## Structure / Implementation
+
+Assign dots according to a formula called the 1/3 plus one rule. Regardless of the number of people, each person gets dots based on the number of items on the options list. 
+
+* 6 items, for example, 1/3 of 6 is 2 plus 1 equals 3 dots. 
+* 9 items - 1/3 equals 3 plus 1 equals 4 dots. 
+
+People vote for the items most important to them, one dot per item. (You cannot give all your dots to one item. What really makes this work is to have a brief discussion of each item before the voting begins; when the voting is concluded there are generally several items that everyone has selected. It makes it fairly easy to accept these unanimously as priorities. With those off the list you can then further discuss the remaining items to choose additional priorities.
+
+
+## Samples
+
+_An illustration of how the pattern can be used._
+
+
+## Consequences
+
+_A description of the results, side effects, and trade offs caused by using the pattern._
+
+
+## Known Uses
+
+_Examples of real usages of the pattern._
+
+
+## Related Patterns
+
+_Other patterns that have some relationship with the pattern; discussion of the differences between the pattern and similar patterns._
+
+## References
+
+- Voting With Dots [http://www.albany.edu/cpr/gf/resources/Voting_with_dots.html](http://www.albany.edu/cpr/gf/resources/Voting_with_dots.html)
+- Creative Training Techniques Handbook: Tips, Tactics, and How-To's for Delivering Effective Training [https://www.amazon.com/Creative-Training-Techniques-Handbook-Delivering/dp/0874257239/](https://www.amazon.com/Creative-Training-Techniques-Handbook-Delivering/dp/0874257239/)
+
+[acknowledgments:md]
+
+[further_reading:md]
+
+[significant_revisions:md]
+_Apr 12, 2023_: Original publication on dariomac.com

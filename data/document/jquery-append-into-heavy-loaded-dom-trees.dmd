@@ -5,7 +5,7 @@
   "has_code": true,
   "card": {
     "color": "#99b399",
-    "columnid": "done_3",
+    "columnid": "archive_6",
     "content": "Describe odd behaviour when you append DOM element into heavy loaded DOM tree",
     "datebox": "2014-04-14",
     "extlink": null,
