@@ -68,7 +68,8 @@ const destinations = {
   '/krooping-procesamiento-de-im%C3%A1genes-satelitales-para-generaci%C3%B3n-de-%C3%ADndices-agron%C3%B3micos': '/krooping-procesamiento-de-imagenes-satelitales-para-generacion-de-indices-agronomicos',
   '/software-estimates-no-longer-engineering-problem': '/software-estimates-no-longer-engineering-problem-mis-uy',
   '/agile-principles': '/vix-scrum-master-project-manager',
-  '/minimum-viable-product': '/what-is-an-mvp'
+  '/minimum-viable-product': '/what-is-an-mvp',
+  '/gxreq-herramienta-de-trazabilidad-de-requerimientos-para-genexus': '/gxreq-requirement-traceability-tool-for-genexus'
 }
 
 const origins = Object.keys(destinations);

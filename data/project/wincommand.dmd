@@ -5,7 +5,7 @@
   "layout": "project",
   "card": {
     "color": "#767782",
-    "columnid": "done_3",
+    "columnid": "archive_6",
     "content": "Run console apps (e.g. CLisp or cmd) in a window to work more confortable.",
     "datebox": null,
     "extlink": "",
@@ -13,7 +13,7 @@
     "leftbox": "",
     "leftmsg": "",
     "linkto": "/wincommand",
-    "position": "",
+    "position": "20060901",
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",

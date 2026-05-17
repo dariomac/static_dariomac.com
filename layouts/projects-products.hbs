@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ fullTitle frontmatter.title }}</title>
+  <style>
+    {
+        {
+        >_critical-css
+      }
+    }
+  </style>
+
+  <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+
+  {{> _common-html-header }}
+
+  {{#if frontmatter.jsonld}}
+  <script type="application/ld+json">
+        {{{json frontmatter.jsonld}}}
+      </script>
+  {{/if}}
+</head>
+
+<body>
+  <div class="board_view details">
+    {{> _page-header }}
+    <main class="dm-main-content is-fixed">
+      <div class="dm-tab-filter-wrapper">
+        <div class="dm-tab-filter">
+          <ul class="dm-filters d-block d-md-none">
+            <li class="placeholder">
+              <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+            </li>
+            {{> _mobile-menu }}
+          </ul> <!-- dm-filters -->
+        </div> <!-- dm-tab-filter -->
+
+        <div class="container-fluid float-left"></div>
+      </div> <!-- dm-tab-filter-wrapper -->
+
+      <div class="container-fluid dm-board">
+        <article>
+          <div class="row splitter">
+            <div class="col-md-12 text-center">Details</div>
+          </div>
+          <div class="row featured">
+            <div class="col-md-12">
+              <header>
+                <h1>Projects / Products</h1>
+              </header>
+              <section class="content">
+
+                <ul>
+                  {{#each laneContent.Project}}
+                  <li>
+                    <a href="{{this.frontmatter.card.linkto}}">
+                      {{#ifNotEq this.frontmatter.title ''}}
+                      {{this.frontmatter.title}}
+                      {{else}}
+                      {{this.frontmatter.card.title}}
+                      {{/ifNotEq}}
+                    </a>
+                  </li>
+                  {{/each}}
+                </ul>
+
+              </section>
+            </div>
+          </div>
+          {{> _entry-backlinks }}
+        </article>
+      </div>
+      <a href="/" class="logo">
+        <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+      </a>
+      {{> _orange-box }}
+      {{!-- <a href="#0" class="dm-filter-trigger"></a> --}}
+    </main> <!-- dm-main-content -->
+  </div>
+  <!--</div>-->
+
+  {{> _page-footer }}
+  {{> _common-html-footer }}
+</body>
+
+</html>

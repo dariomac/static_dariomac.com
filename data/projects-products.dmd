@@ -1,0 +1,13 @@
+{
+  "date": "2006-09-01",
+  "layout": "projects-products",
+  "mode": "collection",
+  "title": "Projects & Products",
+  "summary": "All the software I built or I've participated in the creation of. From small utilities to full featured apps, open source and closed source. All of them taught me something valuable.",
+  "card": {
+    "linkto": "/projects-products"
+  }
+}
+
+---
+

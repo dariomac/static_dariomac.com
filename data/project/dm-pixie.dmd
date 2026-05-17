@@ -5,7 +5,7 @@
   "layout": "project",
   "card": {
     "color": "#767782",
-    "columnid": "done_3",
+    "columnid": "archive_6",
     "content": "It's a color picker with extra goodies.",
     "datebox": null,
     "extlink": "",
@@ -13,7 +13,7 @@
     "leftbox": "",
     "leftmsg": "",
     "linkto": "/dm-pixie",
-    "position": "0",
+    "position": "20100501",
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",

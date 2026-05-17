@@ -5,7 +5,7 @@
   "layout": "project",
   "card": {
     "color": "#767782",
-    "columnid": "done_3",
+    "columnid": "archive_6",
     "content": "Software that allows the analysis of a golf player swing movement against theory and professionals.",
     "datebox": "2016",
     "extlink": "",
@@ -13,7 +13,7 @@
     "leftbox": "",
     "leftmsg": "",
     "linkto": "/swingimprover",
-    "position": "",
+    "position": "20060301",
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",

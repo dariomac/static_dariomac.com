@@ -1,358 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ frontmatter.title }}</title>
 
-    <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+<head>
+  <meta charset="UTF-8">
+  <title>{{ frontmatter.title }}</title>
 
-    {{> _common-html-header }}
-  </head>
-  <body>
-    <div class="board_view">
-      {{> _page-header }}
-      <main class="dm-main-content is-fixed">
-        <div class="dm-tab-filter-wrapper">
-          <div class="dm-tab-filter">
-            <ul class="dm-filters d-block d-md-none">
-              <li class="placeholder">
-                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-              </li>
-              <li class="filter"><a class="selected" href="#0" data-filter="*">All</a></li>
-              <li class="filter"><a href="#1" data-filter=".me .card">Me</a></li>
-              <li class="filter"><a href="#2" data-filter=".experience .card">Experience</a></li>
-              <li class="filter"><a href="#3" data-filter=".education .card">Education</a></li>
-              <li class="filter"><a href="#6" data-filter=".essay .card">Essays</a></li>
-              <li class="filter"><a href="#7" data-filter=".project .card">Projects</a></li>
-              <li class="filter"><a href="#4" data-filter=".research .card">Research</a></li>
-              <li class="filter"><a href="#5" data-filter=".article .card">Articles</a></li>
-              <li class="filter"><a href="#9" data-filter=".bonsai .card">Bonsai</a></li>
-              <li class="filter"><a href="#8" data-filter=".quote .card">Quotes</a></li>
-            </ul> <!-- dm-filters -->
-          </div> <!-- dm-tab-filter -->
+  <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
 
-          <div class="container-fluid float-left">
-            <div id="dm-board-header" class="row d-none d-md-flex">
-              <div class="plan col-md-{{ frontmatter.plan_cols }}"><span>PLAN</span></div>
-              <div class="in_progress col-md-{{ frontmatter.in_progress_cols }}"><span>IN PROGRESS</span></div>
-              <div class="done col-md-{{ frontmatter.done_cols }}"><span>DONE</span></div>
-            </div>
-            <div id="dm-board-header-descs" class="row d-none d-md-flex">
-              <div class="col-md-{{ frontmatter.plan_cols }}">Intentions · Ideas · Next Steps</div>
-              <div class="col-md-{{ frontmatter.in_progress_cols }}">Focus · Current Efforts · Momentum</div>
-              <div class="col-md-{{ frontmatter.done_cols }}">Outcomes · Experience · Insights</div>
-            </div>
-          </div>
-        </div> <!-- dm-tab-filter-wrapper -->
+  {{> _common-html-header }}
+</head>
 
-        <div class="container-fluid dm-board">
-          <div class="row splitter">
-            <div class="col-md-12 text-center">Featured</div>
-          </div>
-          <div class="row featured">
-            <div class="plan col-md-12">
-              <div id="new_essay">
-                <span class="transition">
-                  <i class="fa fa-heartbeat" aria-hidden="true"></i>
-                  <a href='/ai-multi-turn-feature-generation' style='text-decoration: underline;'>
-                    AI Multi-Turn Feature Generation
-                  </a>
-                </span>
-                |
-                <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
-              </div>
-            </div>
-          </div>
-          <div class="row splitter">
-            <h1 class="col-md-12 text-center">Me</h1>
-          </div>
-          <div class="row me">
-            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
-              {{#each (getPlannedTasks laneContent.Me)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
-              {{#each (getInProgressTasks laneContent.Me)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="done iso col-md-{{ frontmatter.done_cols }}">
-              {{#each (getDoneTasks laneContent.Me)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-          </div>
+<body>
+  <div class="board_view">
+    {{> _page-header }}
+    <main class="dm-main-content is-fixed">
+      <div class="dm-tab-filter-wrapper">
+        <div class="dm-tab-filter">
+          <ul class="dm-filters d-block d-md-none">
+            <li class="placeholder">
+              <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+            </li>
+            <li class="filter"><a class="selected" href="#0" data-filter="*">All</a></li>
+            <li class="filter"><a href="#1" data-filter=".me .card">Me</a></li>
+            <li class="filter"><a href="#2" data-filter=".experience .card">Experience</a></li>
+            <li class="filter"><a href="#3" data-filter=".education .card">Education</a></li>
+            <li class="filter"><a href="#6" data-filter=".essay .card">Essays</a></li>
+            <li class="filter"><a href="#7" data-filter=".project .card">Projects</a></li>
+            <li class="filter"><a href="#4" data-filter=".research .card">Research</a></li>
+            <li class="filter"><a href="#5" data-filter=".article .card">Articles</a></li>
+            <li class="filter"><a href="#9" data-filter=".bonsai .card">Bonsai</a></li>
+            <li class="filter"><a href="#8" data-filter=".quote .card">Quotes</a></li>
+          </ul> <!-- dm-filters -->
+        </div> <!-- dm-tab-filter -->
 
-          <div class="row splitter">
-            <h1 class="col-md-12 text-center">Experience</h1>
+        <div class="container-fluid float-left">
+          <div id="dm-board-header" class="row d-none d-md-flex">
+            <div class="plan col-md-{{ frontmatter.plan_cols }}"><span>PLAN</span></div>
+            <div class="in_progress col-md-{{ frontmatter.in_progress_cols }}"><span>IN PROGRESS</span></div>
+            <div class="done col-md-{{ frontmatter.done_cols }}"><span>DONE</span></div>
           </div>
-          <div class="row experience">
-            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
-              {{#each (getPlannedTasks laneContent.Experience)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
-              {{#each (getInProgressTasks laneContent.Experience)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="done iso col-md-{{ frontmatter.done_cols }}">
-              {{#each (getDoneTasks laneContent.Experience)}}
-                {{> _task }}
-              {{/each}}
-            </div>
+          <div id="dm-board-header-descs" class="row d-none d-md-flex">
+            <div class="col-md-{{ frontmatter.plan_cols }}">Intentions · Ideas · Next Steps</div>
+            <div class="col-md-{{ frontmatter.in_progress_cols }}">Focus · Current Efforts · Momentum</div>
+            <div class="col-md-{{ frontmatter.done_cols }}">Outcomes · Experience · Insights</div>
           </div>
+        </div>
+      </div> <!-- dm-tab-filter-wrapper -->
 
-          <div class="row splitter">
-            <h1 class="col-md-12 text-center">Education</h1>
-          </div>
-          <div class="row education">
-            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
-              {{#each (getPlannedTasks laneContent.Education)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
-              {{#each (getInProgressTasks laneContent.Education)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="done iso col-md-{{ frontmatter.done_cols }}">
-              {{#each (getDoneTasks laneContent.Education)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-          </div>
-
-          <div class="row splitter">
-            <h1 class="col-md-12 text-center">Essays &amp; Field Notes</h1>
-          </div>
-          <div class="row essay">
-            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
-              {{#each (getPlannedTasks laneContent.Essay)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
-              {{#each (getInProgressTasks laneContent.Essay)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="done iso col-md-{{ frontmatter.done_cols }}">
-              {{#each (getDoneTasks laneContent.Essay)}}
-                {{> _task }}
-              {{/each}}
-              <div class="card task" style="background-color: #FFEA99; color: {{getTextColor '#FFEA99'}}">
-                <a href="/essays" title="Archive of essays" style="color: {{getTextColor '#FFEA99'}}">
-                  <h2 class="card-header ellipsis">
-                    Archive of essays
-                  </h2>
-                  <h3 class="card-body card-text">List of all my essays written to help the companies I have worked for, to consolidate knowledge, share my opinions or disseminate scientific information in a consumable format.</h3>
+      <div class="container-fluid dm-board">
+        <div class="row splitter">
+          <div class="col-md-12 text-center">Featured</div>
+        </div>
+        <div class="row featured">
+          <div class="plan col-md-12">
+            <div id="new_essay">
+              <span class="transition">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <a href='/ai-multi-turn-feature-generation' style='text-decoration: underline;'>
+                  AI Multi-Turn Feature Generation
                 </a>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                      <span class="badge float-right" style="background-color: #FFEA99; color: {{getTextColor '#FFEA99'}}">2013 - Now</span>
-                  </li>
-                </ul>
-              </div>
+              </span>
+              |
+              <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
             </div>
           </div>
+        </div>
+        <div class="row splitter">
+          <h1 class="col-md-12 text-center">Me</h1>
+        </div>
+        <div class="row me">
+          <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
+            {{#each (getPlannedTasks laneContent.Me)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
+            {{#each (getInProgressTasks laneContent.Me)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="done iso col-md-{{ frontmatter.done_cols }}">
+            {{#each (getDoneTasks laneContent.Me)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+        </div>
 
-          <div class="row splitter">
-            <h1 class="col-md-12 text-center">Projects/Products</dih1v>
+        <div class="row splitter">
+          <h1 class="col-md-12 text-center">Experience</h1>
+        </div>
+        <div class="row experience">
+          <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
+            {{#each (getPlannedTasks laneContent.Experience)}}
+            {{> _task }}
+            {{/each}}
           </div>
-          <div class="row project">
-            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
-              {{#each (getPlannedTasks laneContent.Project)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
-              {{#each (getInProgressTasks laneContent.Project)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="done iso col-md-{{ frontmatter.done_cols }}">
-              {{#each (getDoneTasks laneContent.Project)}}
-                {{> _task }}
-              {{/each}}
-            </div>
+          <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
+            {{#each (getInProgressTasks laneContent.Experience)}}
+            {{> _task }}
+            {{/each}}
           </div>
+          <div class="done iso col-md-{{ frontmatter.done_cols }}">
+            {{#each (getDoneTasks laneContent.Experience)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+        </div>
 
-          <div class="row splitter">
-            <h1 class="col-md-12 text-center">Research</h1>
+        <div class="row splitter">
+          <h1 class="col-md-12 text-center">Education</h1>
+        </div>
+        <div class="row education">
+          <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
+            {{#each (getPlannedTasks laneContent.Education)}}
+            {{> _task }}
+            {{/each}}
           </div>
-          <div class="row research">
-            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
-              {{#each (getPlannedTasks laneContent.Research)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
-              {{#each (getInProgressTasks laneContent.Research)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="done iso col-md-{{ frontmatter.done_cols }}">
-              {{#each (getDoneTasks laneContent.Research)}}
-                {{> _task }}
-              {{/each}}
-            </div>
+          <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
+            {{#each (getInProgressTasks laneContent.Education)}}
+            {{> _task }}
+            {{/each}}
           </div>
-
-          <div class="row splitter">
-            <h1 class="col-md-12 text-center">Articles</h1>
+          <div class="done iso col-md-{{ frontmatter.done_cols }}">
+            {{#each (getDoneTasks laneContent.Education)}}
+            {{> _task }}
+            {{/each}}
           </div>
-          <div class="row article">
-            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
-              {{#each (getPlannedTasks laneContent.Article)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
-              {{#each (getInProgressTasks laneContent.Article)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="done iso col-md-{{ frontmatter.done_cols }}">
-              {{#each (getDoneTasks laneContent.Article)}}
-                {{> _task }}
-              {{/each}}
-            </div>
+        </div>
+
+        <div class="row splitter">
+          <h1 class="col-md-12 text-center">Essays &amp; Field Notes</h1>
+        </div>
+        <div class="row essay">
+          <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
+            {{#each (getPlannedTasks laneContent.Essay)}}
+            {{> _task }}
+            {{/each}}
           </div>
-
-          <div class="row splitter">
-            <h1 class="col-md-12 text-center">Bonsai</h1>
+          <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
+            {{#each (getInProgressTasks laneContent.Essay)}}
+            {{> _task }}
+            {{/each}}
           </div>
-          <div class="row bonsai">
-            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
-              {{#each (getPlannedTasks laneContent.Bonsai)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
-              {{#each (getInProgressTasks laneContent.Bonsai)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="done iso col-md-{{ frontmatter.done_cols }}">
-              {{#each (getDoneTasks laneContent.Bonsai)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-          </div>
-
-          <div class="row splitter">
-            <h1 class="col-md-12 text-center">Quotes</h1>
-          </div>
-          <div class="row quote">
-            <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
-              {{#each (getPlannedTasks laneContent.Quote)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
-              {{#each (getInProgressTasks laneContent.Quote)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-            <div class="done iso col-md-{{ frontmatter.done_cols }}">
-              {{#each (getDoneTasks laneContent.Quote)}}
-                {{> _task }}
-              {{/each}}
-            </div>
-          </div>
-
-          {{!-- <div class="dm-fail-message">No results found</div> --}}
-        </div> <!-- container-fluid dm-boar -->
-
-        {{!--
-        <div class="dm-filter">
-          <form>
-            <div class="dm-filter-block">
-              <h4>Search</h4>
-
-              <div class="dm-filter-content">
-                <input type="search" placeholder="Try color-1...">
-              </div> <!-- dm-filter-content -->
-            </div> <!-- dm-filter-block -->
-
-            <div class="dm-filter-block">
-              <h4>Check boxes</h4>
-
-              <ul class="dm-filter-content dm-filters list">
-                <li>
-                  <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-                  <label class="checkbox-label" for="checkbox1">Option 1</label>
+          <div class="done iso col-md-{{ frontmatter.done_cols }}">
+            {{#each (getDoneTasks laneContent.Essay)}}
+            {{> _task }}
+            {{/each}}
+            <div class="card task" style="background-color: #FFEA99; color: {{getTextColor '#FFEA99'}}">
+              <a href="/essays" title="Archive of essays" style="color: {{getTextColor '#FFEA99'}}">
+                <h2 class="card-header ellipsis">
+                  Archive of essays
+                </h2>
+                <h3 class="card-body card-text">List of all my essays written to help the companies I have worked for,
+                  to consolidate knowledge, share my opinions or disseminate scientific information in a consumable
+                  format.</h3>
+              </a>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="badge float-right"
+                    style="background-color: #FFEA99; color: {{getTextColor '#FFEA99'}}">2013 - Now</span>
                 </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-                <li>
-                  <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-                  <label class="checkbox-label" for="checkbox2">Option 2</label>
+        <div class="row splitter">
+          <h1 class="col-md-12 text-center">Projects/Products</dih1v>
+        </div>
+        <div class="row project">
+          <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
+            {{#each (getPlannedTasks laneContent.Project)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
+            {{#each (getInProgressTasks laneContent.Project)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="done iso col-md-{{ frontmatter.done_cols }}">
+            {{#each (getDoneTasks laneContent.Project)}}
+            {{> _task }}
+            {{/each}}
+            <div class="card task" style="background-color: #FFEA99; color: {{getTextColor '#FFEA99'}}">
+              <a href="/projects-products" title="Archive of Projects/Products"
+                style="color: {{getTextColor '#FFEA99'}}">
+                <h2 class="card-header ellipsis">
+                  Archive of Projects/Products
+                </h2>
+                <h3 class="card-body card-text">List of all my projects and products that I have worked on.</h3>
+              </a>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="badge float-right"
+                    style="background-color: #FFEA99; color: {{getTextColor '#FFEA99'}}">2009 - Now</span>
                 </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-                <li>
-                  <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox3">Option 3</label>
-                </li>
-              </ul> <!-- dm-filter-content -->
-            </div> <!-- dm-filter-block -->
+        <div class="row splitter">
+          <h1 class="col-md-12 text-center">Research</h1>
+        </div>
+        <div class="row research">
+          <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
+            {{#each (getPlannedTasks laneContent.Research)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
+            {{#each (getInProgressTasks laneContent.Research)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="done iso col-md-{{ frontmatter.done_cols }}">
+            {{#each (getDoneTasks laneContent.Research)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+        </div>
 
-            <div class="dm-filter-block">
-              <h4>Select</h4>
+        <div class="row splitter">
+          <h1 class="col-md-12 text-center">Articles</h1>
+        </div>
+        <div class="row article">
+          <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
+            {{#each (getPlannedTasks laneContent.Article)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
+            {{#each (getInProgressTasks laneContent.Article)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="done iso col-md-{{ frontmatter.done_cols }}">
+            {{#each (getDoneTasks laneContent.Article)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+        </div>
 
-              <div class="dm-filter-content">
-                <div class="dm-select dm-filters">
-                  <select class="filter" name="selectThis" id="selectThis">
-                    <option value="">Choose an option</option>
-                    <option value=".option1">Option 1</option>
-                    <option value=".option2">Option 2</option>
-                    <option value=".option3">Option 3</option>
-                    <option value=".option4">Option 4</option>
-                  </select>
-                </div> <!-- dm-select -->
-              </div> <!-- dm-filter-content -->
-            </div> <!-- dm-filter-block -->
+        <div class="row splitter">
+          <h1 class="col-md-12 text-center">Bonsai</h1>
+        </div>
+        <div class="row bonsai">
+          <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
+            {{#each (getPlannedTasks laneContent.Bonsai)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
+            {{#each (getInProgressTasks laneContent.Bonsai)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="done iso col-md-{{ frontmatter.done_cols }}">
+            {{#each (getDoneTasks laneContent.Bonsai)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+        </div>
 
-            <div class="dm-filter-block">
-              <h4>Radio buttons</h4>
+        <div class="row splitter">
+          <h1 class="col-md-12 text-center">Quotes</h1>
+        </div>
+        <div class="row quote">
+          <div class="plan iso col-md-{{ frontmatter.plan_cols }}">
+            {{#each (getPlannedTasks laneContent.Quote)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="in_progress iso col-md-{{ frontmatter.in_progress_cols }}">
+            {{#each (getInProgressTasks laneContent.Quote)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+          <div class="done iso col-md-{{ frontmatter.done_cols }}">
+            {{#each (getDoneTasks laneContent.Quote)}}
+            {{> _task }}
+            {{/each}}
+          </div>
+        </div>
 
-              <ul class="dm-filter-content dm-filters list">
-                <li>
-                  <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-                  <label class="radio-label" for="radio1">All</label>
-                </li>
+        {{!-- <div class="dm-fail-message">No results found</div> --}}
+      </div> <!-- container-fluid dm-boar -->
 
-                <li>
-                  <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
-                  <label class="radio-label" for="radio2">Choice 2</label>
-                </li>
+      {{!--
+      <div class="dm-filter">
+        <form>
+          <div class="dm-filter-block">
+            <h4>Search</h4>
 
-                <li>
-                  <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
-                  <label class="radio-label" for="radio3">Choice 3</label>
-                </li>
-              </ul> <!-- dm-filter-content -->
-            </div> <!-- dm-filter-block -->
-          </form>
+            <div class="dm-filter-content">
+              <input type="search" placeholder="Try color-1...">
+            </div> <!-- dm-filter-content -->
+          </div> <!-- dm-filter-block -->
 
-          <a href="#0" class="dm-close">Close</a>
-        </div> <!-- dm-filter -->
-        --}}
-        <a href="/" class="logo">
-          <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
-        </a>
-        {{> _orange-box }}
-        {{!-- <a href="#0" class="dm-filter-trigger"></a> --}}
-      </main> <!-- dm-main-content -->
-    </div>
-    <!--</div>-->
+          <div class="dm-filter-block">
+            <h4>Check boxes</h4>
 
-    {{> _page-footer }}
+            <ul class="dm-filter-content dm-filters list">
+              <li>
+                <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+                <label class="checkbox-label" for="checkbox1">Option 1</label>
+              </li>
 
-    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-    <script src="/assets/js/main.js"></script>
-  </body>
+              <li>
+                <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+                <label class="checkbox-label" for="checkbox2">Option 2</label>
+              </li>
+
+              <li>
+                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                <label class="checkbox-label" for="checkbox3">Option 3</label>
+              </li>
+            </ul> <!-- dm-filter-content -->
+          </div> <!-- dm-filter-block -->
+
+          <div class="dm-filter-block">
+            <h4>Select</h4>
+
+            <div class="dm-filter-content">
+              <div class="dm-select dm-filters">
+                <select class="filter" name="selectThis" id="selectThis">
+                  <option value="">Choose an option</option>
+                  <option value=".option1">Option 1</option>
+                  <option value=".option2">Option 2</option>
+                  <option value=".option3">Option 3</option>
+                  <option value=".option4">Option 4</option>
+                </select>
+              </div> <!-- dm-select -->
+            </div> <!-- dm-filter-content -->
+          </div> <!-- dm-filter-block -->
+
+          <div class="dm-filter-block">
+            <h4>Radio buttons</h4>
+
+            <ul class="dm-filter-content dm-filters list">
+              <li>
+                <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+                <label class="radio-label" for="radio1">All</label>
+              </li>
+
+              <li>
+                <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+                <label class="radio-label" for="radio2">Choice 2</label>
+              </li>
+
+              <li>
+                <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+                <label class="radio-label" for="radio3">Choice 3</label>
+              </li>
+            </ul> <!-- dm-filter-content -->
+          </div> <!-- dm-filter-block -->
+        </form>
+
+        <a href="#0" class="dm-close">Close</a>
+      </div> <!-- dm-filter -->
+      --}}
+      <a href="/" class="logo">
+        <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+      </a>
+      {{> _orange-box }}
+      {{!-- <a href="#0" class="dm-filter-trigger"></a> --}}
+    </main> <!-- dm-main-content -->
+  </div>
+  <!--</div>-->
+
+  {{> _page-footer }}
+
+  <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
 </html>

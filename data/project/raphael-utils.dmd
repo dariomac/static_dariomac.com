@@ -4,7 +4,7 @@
   "layout": "project",
   "card": {
     "color": "#767782",
-    "columnid": "done_3",
+    "columnid": "archive_6",
     "content": "SVG importer (and other utilities)",
     "datebox": null,
     "extlink": "https://dariomac.com/raphael-utils-doc",

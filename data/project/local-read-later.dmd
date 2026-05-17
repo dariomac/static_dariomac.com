@@ -4,7 +4,7 @@
   "layout": "project",
   "card": {
     "color": "#767782",
-    "columnid": "done_3",
+    "columnid": "archive_6",
     "content": "Similar as Read It Later service but runs locally.",
     "datebox": null,
     "extlink": "",
@@ -12,7 +12,7 @@
     "leftbox": "",
     "leftmsg": "",
     "linkto": "/local-read-later",
-    "position": "",
+    "position": "20110601",
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
