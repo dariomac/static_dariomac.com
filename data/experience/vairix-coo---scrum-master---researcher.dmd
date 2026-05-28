@@ -85,8 +85,6 @@ VAIRIX Software Development
     Assessment Tool to measure the maturity level of high-impact entrepreneurship. This information system is used by different roles as entrepreneurs, mentors, universities, investors and government entities. The rationale of the software relies on a series of models created by researchers (PhDs) in the entrepreneurship field.
 *   **Drug logistic management system**
     The system allows patients to receive drugs directly to their home in the right moment they need them. The software coordinate hospitals, warehouses and pharmacies. Coordination is done through call-center operators that access the system and connect the different actors. In addition, other roles have access to the system (e.g. pharmacists, transporters, store managers and patients). Not only ensures the access of patients to prescribed doses at home but also allows pharmaco-vigilance with an alert system paying attention to negative effects (changes in the dose, frequency of administration, etc.)
-*   **PLNyze**
-    A real estate website aimed to provide information about apartments from multiple sources. Mostly front-end development, it makes intensive use of Google Maps & Places API, besides doing some scrapping over other sources. For data display, it uses several charts showing different representations of the gathered information.
 *   **CommunityScore**
     A real estate website aimed to provide information about apartments from multiple sources. Mostly front-end development, it makes intensive use of Google Maps & Places API, besides doing some scrapping over other sources. For data display, it uses several charts showing different representations of the gathered information.
 *   **Fuzzrocket**

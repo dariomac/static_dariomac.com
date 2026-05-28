@@ -42,40 +42,40 @@ http://www.pwc.com
 PricewaterhouseCoopers
 
 [content:md]
-I worked as a **Software Engineer** in **.NET** technologies during many years, gaining experience in software development using Microsoft® environments. During those 10 years, I used my skills with **.NET MVC**, **C#**, **SQL Server** and **TFS**, my sharp eye for details & **quality** and my knowledge to work throughout all the **software life cycle**. Finally, in the last four years at PwC, I helped in project management and **cost estimation** tasks.
+I worked as a **Software Engineer** in **.NET** technologies for many years, gaining experience in software development using Microsoft® environments. During those 10 years, I used my skills with **.NET MVC**, **C#**, **SQL Server** and **TFS**, my sharp eye for detail & **quality** and my knowledge to work through the entire **software lifecycle**. Finally, in the last four years at PwC, I helped in project management and **cost estimation** tasks.
 
 [projects:md]
 ## Web development & support for PwC US online marketing team, PwC Global and PwC UK
 
-Development of web projects that includes intensive **[Javascript](http://en.wikipedia.org/wiki/JavaScript "JavaScript")** usage, **[JQuery](http://jquery.com/ "JQuery")**, **[SVG](http://www.w3.org/Graphics/SVG/ "Scalable Vector Graphics")** interaction and animations. Some of these projects are benchmark tools and small surveys with animated charts (almost always **[Highcharts](http://www.highcharts.com/ "Highcharts")** charts). Other projects have complex interfaces with **SVG** maps with different layers of information over it. Those complex solutions usually interact with other page elements, so most of the time they are a mix of **SVG** , **JQuery** , **[Raphaël](http://raphaeljs.com/ "Raphaël (JavaScript library)")** all together glued by Javascript. As this kind of projects are client side and usually involve some kind of external data, they are based in **[JSON](http://json.org/ "JSON")** data files. This data files may be rendered as a chart or in some cases, binded to [**HTML** elements](http://en.wikipedia.org/wiki/HTML_element "HTML element") through **[KnockoutJS](http://knockoutjs.com/ "KnockoutJS")**.
+Development of web projects that includes intensive **[Javascript](http://en.wikipedia.org/wiki/JavaScript "JavaScript")** usage, **[JQuery](http://jquery.com/ "JQuery")**, **[SVG](http://www.w3.org/Graphics/SVG/ "Scalable Vector Graphics")** interaction and animations. Some of these projects are benchmark tools and small surveys with animated charts (almost always **[Highcharts](http://www.highcharts.com/ "Highcharts")** charts). Other projects have complex interfaces with **SVG** maps with different layers of information over it. Those complex solutions usually interact with other page elements, so most of the time they are a mix of **SVG** , **JQuery** , **[Raphaël](http://raphaeljs.com/ "Raphaël (JavaScript library)")** all together glued by Javascript. As these kinds of projects are client-side and usually involve some kind of external data, they are based on **[JSON](http://json.org/ "JSON")** data files. These data files may be rendered as a chart or in some cases, bound to [**HTML** elements](http://en.wikipedia.org/wiki/HTML_element "HTML element") through **[KnockoutJS](http://knockoutjs.com/ "KnockoutJS")**.
 
 ### Marketing Calendar
 
-Application to show marketing activities filtered by event type, month, line of service and economic sector. Also let the user sort the activities by title and date. Lead to high profile users inside the firm. ( **jQuery, UnderscoreJs, FilterJs**)
+Application to show marketing activities filtered by event type, month, line of service and economic sector. It also lets the user sort the activities by title and date. Led to high-profile users inside the firm. ( **jQuery, UnderscoreJs, FilterJs**)
 
 {{{ exp_pwc-mam }}}
 
 ### US CBG Corporate Director Survey (Benchmarking tool)
 
-Collaboration in the development of this tool that allow users to compare themselves with the results of the [PwC's 2012 Annual Corporate Directors Survey](https://www.pwc.es/es/publicaciones/auditoria/assets/pwc-annual-corporate-directors-survey.pdf). Users select the desired theme/subject and their company size, and then can compare their answers to some of the questions to the corresponding results. (**jQuery, HighchartsJs**)
+Collaboration in the development of this tool that allows users to compare themselves with the results of the [PwC's 2012 Annual Corporate Directors Survey](https://www.pwc.es/es/publicaciones/auditoria/assets/pwc-annual-corporate-directors-survey.pdf). Users select the desired theme/subject and their company size, and then can compare their answers to some of the questions to the corresponding results. (**jQuery, HighchartsJs**)
 
 {{{ exp_pwc-us-cbg1 }}}
 
 ### Benchmarking Tool
 
-Requirement elicitation, design and implementation of a Data driven benchmarking tool which was developed for the Digital IQ publication. This application allows the creation of complex online benchmarks based on standard templates. ( **KnockoutJs**, **jQuery, ASP.NET MVC, eXpress Persistent Objects, DevExpress Snap Report**)
+Requirement elicitation, design and implementation of a data-driven benchmarking tool which was developed for the Digital IQ publication. This application allows the creation of complex online benchmarks based on standard templates. ( **KnockoutJs**, **jQuery, ASP.NET MVC, eXpress Persistent Objects, DevExpress Snap Report**)
 
 {{{ exp_pwc-bench }}}
 
 ### PwC Gage
 
-Collaboration in the development of a tool that helps with the creation of gauge charts inside the PwC CMS. It was designed as a wrapper plugin for justgage to create gauges following PwC branding guidelines displaying correctly on a wide variety of browsers and devices. The editor was intended to provide basic configuration options for the gauge, although further customization can be done editing the generated code. (**jQuery, JustGageJs**)
+Collaboration in the development of a tool that helps with the creation of gauge charts inside the PwC CMS. It was designed as a wrapper plugin for justgage to create gauges following PwC branding guidelines that display correctly on a wide variety of browsers and devices. The editor was intended to provide basic configuration options for the gauge, although further customization can be done by editing the generated code. (**jQuery, JustGageJs**)
 
 {{{ exp_pwc-gage }}}
 
 ### TIMM Scenario Wheel
 
-Requirement elicitation, design and implementation of a "Polar chart" animation that shows twenty impact values of one of two available options. This interactive scenario model shows the [PwC TIMM Framework](http://www.youtube.com/watch?v=CyE5BC1B3y0#t=113) in action. Under the hood it's a SVG animation with a set of value (positives or negatives) with smooth animated transitions between the two options. The animation was built with a SVG/HTML animation engine also developed by me. (**jQuery, RaphaëlJs, SVG**)
+Requirement elicitation, design and implementation of a "Polar chart" animation that shows twenty impact values of one of two available options. This interactive scenario model shows the [PwC TIMM Framework](http://www.youtube.com/watch?v=CyE5BC1B3y0#t=113) in action. Under the hood it's a SVG animation with a set of values (positive or negative) with smooth animated transitions between the two options. The animation was built with a SVG/HTML animation engine also developed by me. (**jQuery, RaphaëlJs, SVG**)
 
 {{{ exp_pwc-timm }}}
 
@@ -88,18 +88,18 @@ Depending on local determination, some paying taxes indicators are loaded and th
 
 ### Aviation Paper Data Modeler
 
-Colaboration in the development of a tool to show the commercial aircraft manufacturing attractiveness ranking indices for US states using weighted averages of different variables.
-The states of the map are shaded according to their overall manufacturing attractiveness ranking composed of the three variables described above of it. The toolbar of the right is to explore the US aviation manufacturing attractiveness index by selecting US states to find rankings in each of the three variables, plus an overall composite ranking. ( **jQuery, **jQueryUI, TimJs,** RaphaëlJs, SVG**)
+Collaboration in the development of a tool to show the commercial aircraft manufacturing attractiveness ranking indices for US states using weighted averages of different variables.
+The states of the map are shaded according to their overall manufacturing attractiveness ranking composed of the three variables described above. The toolbar on the right allows exploring the US aviation manufacturing attractiveness index by selecting US states to find rankings in each of the three variables, plus an overall composite ranking. ( **jQuery**, **jQueryUI**, **TimJs**, **RaphaëlJs**, **SVG**)
 
 {{{ exp_pwc-aviation }}}
 
 ### Tweetable content
 
-Requirement elicitation, design and implementation of a reusable module that enable site users to share via twitter paragraphs/phrases previously tagged as tweetable by site developers. This module transform paragraphs or phrases tagged into tweetable chunks of texts. There are two styles, one inline, suitable for short phrases, and other for paragraphs with a quote style. ( **jQuery**)
+Requirement elicitation, design and implementation of a reusable module that enables site users to share via Twitter paragraphs/phrases previously tagged as tweetable by site developers. This module transforms paragraphs or phrases tagged into tweetable chunks of text. There are two styles, one inline, suitable for short phrases, and another for paragraphs with a quote style. ( **jQuery**)
 
 {{{ exp_pwc-tweetable }}}
 
-### Cities of Opportunity 2012: ' Where the jobs are…'
+### Cities of Opportunity 2012: 'Where the jobs are…'
 
 Requirement elicitation, design and implementation of an interactive map, which allows users to navigate the data results from a survey. This tool integrates both SVG mapping capabilities with the PwC Charting tool. Users can select up to three cities from a world map, then they can select the indicators they want to compare, and finally they can access an animated chart with the results. ( **KnockoutJs**, **JQuery**, **HighchartsJs**, **RaphaëlJs**, **SVG**)
 
@@ -107,13 +107,13 @@ Requirement elicitation, design and implementation of an interactive map, which 
 
 ### Paying Taxes: Comparative modeller 2012-2013
 
-Requirement elicitation, design and implementation of a tool to make PwC latest comparative global tax study available for the user. It lets explore nearly a decade of data through a powerful and interactive modeller, analysing and comparing the differents business tax systems, across numerous geographies, themes and trends of 189 global economies. The user can choose between economies or regions and compare their on total tax rate, the time to comply and number and types of payments. ( **KnockoutJs**, **jQuery**, **HighchartsJs**, **RaphaëlJs**, **SVG**)
+Requirement elicitation, design and implementation of a tool to make PwC's latest comparative global tax study available for the user. It lets users explore nearly a decade of data through a powerful and interactive modeller, analysing and comparing the different business tax systems, across numerous geographies, themes and trends of 189 global economies. The user can choose between economies or regions and compare them on total tax rate, the time to comply and number and types of payments. ( **KnockoutJs**, **jQuery**, **HighchartsJs**, **RaphaëlJs**, **SVG**)
 
 {{{ exp_pwc-pt-modeller }}}
 
 ### US Careers Maps
 
-Requirement elicitation, design and implementation of an interactive maps for the US careers site. Simple SVG map interaction, allowing the users to expand information from different states. ( **jQuery**, **RaphaëlJs**, **SVG**)
+Requirement elicitation, design and implementation of interactive maps for the US careers site. Simple SVG map interaction, allowing the users to expand information from different states. ( **jQuery**, **RaphaëlJs**, **SVG**)
 
 {{{ exp_pwc-uscareers }}}
 
@@ -125,34 +125,34 @@ Coaching and collaboration in the development of a US map that shows the health 
 
 ## eSirem - Salary survey
 
-Requirement elicitation, architecture, design and implementation of a **Salary Survey** system that provides comprehensive measures of **occupational wages**; employment cost **trends**, benefit incidence and detailed plan provisions. Also detailed the occupational earnings that are available for metropolitan and non-metropolitan areas, broad geographic regions, and on a national basis. Salaries are provided only as means of reference taking in consideration a wide range of factors that affect the salary that a professional is entitled to, including prior experience and education, industry, and specific skills and attributes. The system let the users **perform comparisons** between their companies and the rest of it market sector. Now it's used by **several south american countries** because it has the flexibility to adapt to the standards and pay rules for every country being very highly configurable due to its versatile architecture. (**ASP.NET**, **Oracle 10**).
+Requirement elicitation, architecture, design and implementation of a **Salary Survey** system that provides comprehensive measures of **occupational wages**; employment cost **trends**, benefit incidence and detailed plan provisions. It also details the occupational earnings that are available for metropolitan and non-metropolitan areas, broad geographic regions, and on a national basis. Salaries are provided only as means of reference taking into consideration a wide range of factors that affect the salary that a professional is entitled to, including prior experience and education, industry, and specific skills and attributes. The system lets the users **perform comparisons** between their companies and the rest of its market sector. Now it's used by **several South American countries** because it has the flexibility to adapt to the standards and pay rules for every country being very highly configurable due to its versatile architecture. (**ASP.NET**, **Oracle 10**).
 
 ## Client profitability and financial information report system
 
-Development and maintenance of a regional **[business intelligence](http://en.wikipedia.org/wiki/Business_intelligence "Business intelligence") tool** to support a [client](http://en.wikipedia.org/wiki/Client_%28computing%29 "Client (computing)") centric approach strategy that allow **partners** and **managers** to: i) measure client profitability within various business dimensions (LoS; Industries; Offices; individual portfolios; [CRM](http://en.wikipedia.org/wiki/Customer_relationship_management "Customer relationship management") programs; etc.) under a consistent pattern; ii) analyze clients by size and **profitability**; iii) access to all client's basic and contact information; and iv) project opportunities profitability
+Development and maintenance of a regional **[business intelligence](http://en.wikipedia.org/wiki/Business_intelligence "Business intelligence") tool** to support a [client](http://en.wikipedia.org/wiki/Client_%28computing%29 "Client (computing)") centric approach strategy that allows **partners** and **managers** to: i) measure client profitability within various business dimensions (LoS; Industries; Offices; individual portfolios; [CRM](http://en.wikipedia.org/wiki/Customer_relationship_management "Customer relationship management") programs; etc.) under a consistent pattern; ii) analyze clients by size and **profitability**; iii) access to all client's basic and contact information; and iv) project opportunities profitability
 
 The system is based on two main modules:
 
-1.  the public site, available to most partners and managers from most south american countries, allow them to analyze their [business management](http://en.wikipedia.org/wiki/Management "Management") data in a series of drill-down reports. It also provides an advanced clients/deals search engine and a proposal fees calculator. This site has a strong **security schema** based on roles, so the access to data is defined according to the user's role under the premise that each user must have access only to the data of his/her responsibility. Users have at least one role by default for all engagement partners and managers. Users that have more than one role are able to switch between them on the site home page. The reports are displayed for each chosen role, allowing him/her to concentrate the attention on that of his/her interest at the time.
+1.  the public site, available to most partners and managers from most South American countries, allows them to analyze their [business management](http://en.wikipedia.org/wiki/Management "Management") data in a series of drill-down reports. It also provides an advanced clients/deals search engine and a proposal fees calculator. This site has a strong **security schema** based on roles, so the access to data is defined according to the user's role under the premise that each user must have access only to the data of his/her responsibility. Users have at least one role by default for all engagement partners and managers. Users that have more than one role are able to switch between them on the site home page. The reports are displayed for each chosen role, allowing him/her to concentrate the attention on that of his/her interest at the time.
 2.  a back-end application which is used to normalize the data entered by the participating countries. It provides **data quality** management tools and [access control list](http://en.wikipedia.org/wiki/Access_control_list "Access control list") management, among others. The database is based on each client's project/job initially stored in their local [accounting systems](http://en.wikipedia.org/wiki/Accounting_software "Accounting software") and then exported to a file to be synchronized with the main system (using the [backend](http://en.wikipedia.org/wiki/Front_and_back_ends "Front and back ends") application) (**ASP.NET**, **Oracle 10**).
 
 {{{ exp_pwc-icpr }}}
 
 ## Client Feedback management tool
 
-Collaboration in the development of Client Feedback, a software for managing [PwC](http://maps.google.com/maps?ll=51.5079833333,-0.124663888889&spn=0.01,0.01&q=51.5079833333,-0.124663888889%20(PricewaterhouseCoopers)&t=h "PricewaterhouseCoopers") client satisfaction surveys cycle. Based on the [Net Promoter Score](http://en.wikipedia.org/wiki/Net_Promoter "Net Promoter") approach, it allows mailing survey's requests to relevant PwC clients avoiding duplicate requests for each client. It also provides a simple to dashboard for managers and partners to review their promoters/detractors information. Clients receive their email requests together with access information to an online form which automatically updates our internal databases. Today it is used mainly in [Brazil](http://maps.google.com/maps?ll=-15.7833333333,-47.8666666667&spn=10.0,10.0&q=-15.7833333333,-47.8666666667%20(Brazil)&t=h "Brazil") and [Argentina](http://maps.google.com/maps?ll=-34.6,-58.3833333333&spn=10.0,10.0&q=-34.6,-58.3833333333%20(Argentina)&t=h "Argentina") . (**ASP.NET**, **Oracle 10**)
+Collaboration in the development of Client Feedback, a software for managing [PwC](http://maps.google.com/maps?ll=51.5079833333,-0.124663888889&spn=0.01,0.01&q=51.5079833333,-0.124663888889%20(PricewaterhouseCoopers)&t=h "PricewaterhouseCoopers") client satisfaction surveys cycle. Based on the [Net Promoter Score](http://en.wikipedia.org/wiki/Net_Promoter "Net Promoter") approach, it allows mailing survey's requests to relevant PwC clients avoiding duplicate requests for each client. It also provides a simple dashboard for managers and partners to review their promoters/detractors information. Clients receive their email requests together with access information to an online form which automatically updates our internal databases. Today it is used mainly in [Brazil](http://maps.google.com/maps?ll=-15.7833333333,-47.8666666667&spn=10.0,10.0&q=-15.7833333333,-47.8666666667%20(Brazil)&t=h "Brazil") and [Argentina](http://maps.google.com/maps?ll=-34.6,-58.3833333333&spn=10.0,10.0&q=-34.6,-58.3833333333%20(Argentina)&t=h "Argentina") . (**ASP.NET**, **Oracle 10**)
 
 ## Charting Tool
 
-Collaboration in the development of PwC Charting Tool, a web charts creation tool for webmaster. PwC Charting Tool allows webmasters to easily create web animated/interactive charts to be embedded in web pages. The user is able to copy data from an Excel spreadsheet, paste it into the tool and configure the chart in minutes. User can create charts from a list of available chart types, customize them, share and get the source code needed for the chart to work in PwC internal CMS or other similar environments. The charts are generated following PwC branding guidelines and have been developed so they display correctly on an ample variety of browsers and devices. ( **ASP.NET**, **eXpress Persistent Objects**, **SQL Server**, **HighchartsJs**, **jQuery**)
+Collaboration in the development of PwC Charting Tool, a web charts creation tool for webmasters. PwC Charting Tool allows webmasters to easily create web animated/interactive charts to be embedded in web pages. The user is able to copy data from an Excel spreadsheet, paste it into the tool and configure the chart in minutes. User can create charts from a list of available chart types, customize them, share and get the source code needed for the chart to work in PwC internal CMS or other similar environments. The charts are generated following PwC branding guidelines and have been developed so they display correctly on a wide variety of browsers and devices. ( **ASP.NET**, **eXpress Persistent Objects**, **SQL Server**, **HighchartsJs**, **jQuery**)
 
 {{{ exp_pwc-charting }}}
 
 ## Twitter Cache
 
-Requirement elicitation, design and implementation of a service that supports an internal cache for Twitter widgets on PwC sites. We created what we call a Twitter cache, using the new Twiter API (v.2) because old Twitter API (v.1) was discontinued by Twitter after a series of previous "blackouts". They encourage users to use their new embeded timelines, which are huge, and cannot be styled to make it comply with PwC brand guidelines.
+Requirement elicitation, design and implementation of a service that supports an internal cache for Twitter widgets on PwC sites. We created what we call a Twitter cache, using the new Twitter API (v.2) because the old Twitter API (v.1) was discontinued by Twitter after a series of previous "blackouts". They encouraged users to use their new embedded timelines, which are huge, and cannot be styled to make it comply with PwC brand guidelines.
 
-In simple terms, our cache service runs on one of our own servers, updating from Twitter the latest tweets of our accounts. On the other side, the twitter widget connect to that cache instead of connecting to the Twitter API solveing the API limit of request per hour. ( **ASP.NET MVC**, **LinkToTwitter**, **eXpress** **Persistent** **Object**, **jQuery**)
+In simple terms, our cache service runs on one of our own servers, updating from Twitter the latest tweets of our accounts. On the other side, the Twitter widget connects to that cache instead of connecting to the Twitter API, solving the API limit of requests per hour. ( **ASP.NET MVC**, **LinkToTwitter**, **eXpress** **Persistent** **Object**, **jQuery**)
 
 ## Penca
 
@@ -172,20 +172,20 @@ Architecture, design and implementation of a fully configurable **online survey 
 
 ## Image bank
 
-Architecture, design and implementation of an image bank for the **marketing department across Latin America**. It has several forms for search, great detail in the presentation of the photographs (intensive use of **AJAX**), handling of different formats depending on the final use of the photos (print, PowerPoint, etc.). As a added value, the system automatically categorize the photographs to the more precise approximation of the corporate visual identity, which allows you to find photos that match the colors used in proposals, banners, etc.. (**ASP.NET** , **Oracle 10**, **AJAX**)
+Architecture, design and implementation of an image bank for the **marketing department across Latin America**. It has several forms for search, great detail in the presentation of the photographs (intensive use of **AJAX**), handling of different formats depending on the final use of the photos (print, PowerPoint, etc.). As an added value, the system automatically categorizes the photographs to the most precise approximation of the corporate visual identity, which allows you to find photos that match the colors used in proposals, banners, etc. (**ASP.NET** , **Oracle 10**, **AJAX**)
 
 ## Alumni
 
-Development and maintenance of a basic **CMS** with multiple users for several south american countries (**[Brazil](http://maps.google.com/maps?ll=-15.7833333333,-47.8666666667&spn=10.0,10.0&q=-15.7833333333,-47.8666666667%20(Brazil)&t=h "Brazil")**, **[Chile](http://maps.google.com/maps?ll=-33.4333333333,-70.6666666667&spn=10.0,10.0&q=-33.4333333333,-70.6666666667%20(Chile)&t=h "Chile")**, **[Colombia](http://maps.google.com/maps?ll=4.58333333333,-74.0666666667&spn=10.0,10.0&q=4.58333333333,-74.0666666667%20(Colombia)&t=h "Colombia")**, **[Perú](http://maps.google.com/maps?ll=-12.0433333333,-77.0283333333&spn=10.0,10.0&q=-12.0433333333,-77.0283333333%20(Peru)&t=h "Peru")**) aimed to provide content for the PwC [alumni](http://en.wikipedia.org/wiki/Alumnus "Alumnus") network to keep in touch with their former colleagues and friends. Also they can stay in touch with the firm through learning and networking programs, social media and newsletters. (**ASP.NET**, **SQLServer**)
+Development and maintenance of a basic **CMS** with multiple users for several South American countries (**[Brazil](http://maps.google.com/maps?ll=-15.7833333333,-47.8666666667&spn=10.0,10.0&q=-15.7833333333,-47.8666666667%20(Brazil)&t=h "Brazil")**, **[Chile](http://maps.google.com/maps?ll=-33.4333333333,-70.6666666667&spn=10.0,10.0&q=-33.4333333333,-70.6666666667%20(Chile)&t=h "Chile")**, **[Colombia](http://maps.google.com/maps?ll=4.58333333333,-74.0666666667&spn=10.0,10.0&q=4.58333333333,-74.0666666667%20(Colombia)&t=h "Colombia")**, **[Perú](http://maps.google.com/maps?ll=-12.0433333333,-77.0283333333&spn=10.0,10.0&q=-12.0433333333,-77.0283333333%20(Peru)&t=h "Peru")**) aimed to provide content for the PwC [alumni](http://en.wikipedia.org/wiki/Alumnus "Alumnus") network to keep in touch with their former colleagues and friends. Also they can stay in touch with the firm through learning and networking programs, social media and newsletters. (**ASP.NET**, **SQLServer**)
 
-## BCPOOrganizer
+## BCPOrganizer
 
-Collaboration in the development of BCPOrganizer, a tool to assists companies in the integrated management of their [business continuity](http://en.wikipedia.org/wiki/Business_continuity "Business continuity") . It's a centralized repository that allows controlled access to [contingency plans](http://en.wikipedia.org/wiki/Contingency_plan "Contingency plan") and preventive plans, while at the same time it automates most of the administration and maintenance tasks for these plans. It make it easy the communication between different teams and outside entities because of an automated [notification system](http://en.wikipedia.org/wiki/Notification_system "Notification system") . This software was commercialized by PwC Uruguay Advisory IT area ( **ASP.NET** , **eXpress Persistent Objects** , **AJAX** )
+Collaboration in the development of BCPOrganizer, a tool to assist companies in the integrated management of their [business continuity](http://en.wikipedia.org/wiki/Business_continuity "Business continuity"). It's a centralized repository that allows controlled access to [contingency plans](http://en.wikipedia.org/wiki/Contingency_plan "Contingency plan") and preventive plans, while at the same time it automates most of the administration and maintenance tasks for these plans. It facilitates communication between different teams and outside entities through an automated [notification system](http://en.wikipedia.org/wiki/Notification_system "Notification system"). This software was commercialized by PwC Uruguay Advisory IT area ( **ASP.NET** , **eXpress Persistent Objects** , **AJAX** )
 
 ## RiskOrganizer
 
 Collaboration in the development of a risk evaluation software. RiskOrganizer provides a streamlined solution to document, evaluate and report risks for any unit, project or component within an organization.
-Following the international COSO II standard, the system lets multiple users record objectives, risks and controls in matrices, and document action and monitoring plans based on risk exposures. Reporting functions include risk consolidation, color/heat maps and detailed risk reports, with powerful filtering and analysis tools. This oftware is commercialized by PwC Uruguay's Advisory IT area. ( **ASP.NET**, **eXpress Persistent Objects**, **AJAX**)
+Following the international COSO II standard, the system lets multiple users record objectives, risks and controls in matrices, and document action and monitoring plans based on risk exposures. Reporting functions include risk consolidation, color/heat maps and detailed risk reports, with powerful filtering and analysis tools. This software is commercialized by PwC Uruguay's Advisory IT area. ( **ASP.NET**, **eXpress Persistent Objects**, **AJAX**)
 
 ## MetricsOrganizer
 
