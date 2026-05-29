@@ -1,0 +1,53 @@
+{
+  "title": "Planificar antes de codear (+ aún en tiempos de AI) (React Buenos Aires)",
+  "date": "2026-06-04",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "progress_2",
+    "content": "[title]",
+    "datebox": "Jun 2026",
+    "extlink": "https://www.meetup.com/es-es/react-en-buenos-aires/events/314977342/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260604",
+    "subtaskdetails": [],
+    "tags": "AI, Planning, React, Software Development",
+    "title": "React Buenos Aires"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
+}
+
+---
+
+[summary:string]
+A talk for the React Buenos Aires meetup (a special June edition co-hosted with Howdy) about technical planning *before* writing code. In React projects, many tasks start with too many implicit decisions—structure, state, component boundaries, effects, data, edge cases. I share an upfront planning approach that makes those decisions visible before implementing, and that lets you feed AI better context from the start: less friction, lower cognitive load, and better technical conversations in the team.
+
+[duration:string]
+Jun 4, 2026 (30 minutes)
+
+[place_url:string]
+https://www.google.com/maps/search/?api=1&query=La+Maquinita+Niceto+Vega+4736+Palermo+Buenos+Aires
+
+[place:string]
+La Maquinita - Innovation Lab, Niceto Vega 4736, Palermo, Buenos Aires, Argentina
+
+[content:md]
+This is a special June edition of the **React Buenos Aires** meetup, co-hosted with the Howdy team, dedicated to software development and community. Doors open at 6:30 PM and talks start at 7:00 PM sharp.
+
+![Meetup Junio — React Buenos Aires + Howdy](/assets/react-buenos-aires-2026-cover.jpg#center)
+
+### Planificar antes de codear (+ aún en tiempos de AI)
+In React projects, many tasks kick off with too many *implicit* decisions: structure, state, the boundaries between components, effects, data, edge cases. In this talk I share an approach to **upfront technical planning** that makes those decisions visible before implementing—and that lets you use AI with better context from the very beginning.
+
+The payoff is concrete: less friction, lower cognitive load, and higher-quality technical conversations within the team. Far from being made obsolete by AI, deliberate planning is what gives an AI assistant the context it needs to actually help.
+
+This is one of two talks of the evening, alongside Raúl Ahumada's "¿Y si tu backend fuera tan reactivo como tu frontend?" about reactive backends for React apps with Convex.
+
+[projects:md]
