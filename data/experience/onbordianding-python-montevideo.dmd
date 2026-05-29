@@ -1,0 +1,68 @@
+{
+  "title": "OnboardIAnding nuevos recursos (Python Montevideo)",
+  "date": "2026-05-29",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "May 2026",
+    "extlink": "https://www.meetup.com/es-es/py-mvd/events/314783839/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260528",
+    "subtaskdetails": [],
+    "tags": "AI, Onboarding, Python",
+    "title": "Python Montevideo"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
+}
+
+---
+
+[summary:string]
+A short talk for the Python Montevideo meetup about rethinking onboarding: what if it didn't start on day one, but the day before? I shared an approach I used on a real JavaScript project—preparing "Day 0 for task 1" Markdown documents that gave a new teammate (and their AI) all the context needed to be productive from the very first day.
+
+[duration:string]
+May 28, 2026 (30 minutes)
+
+[place_url:string]
+https://maps.app.goo.gl/suFgTY9aETzJtZSQ8
+
+[place:string]
+Howdy, F García Cortinas 2357, Piso 3, Montevideo, Uruguay
+
+[content:md]
+What if onboarding didn't start on day one, but the day before? In this talk for the Python Montevideo meetup I shared an approach I used on a JavaScript project to get a new teammate productive from day one: preparing **"Day 0 for task 1"** documents in Markdown, packed with the context their AI needed to actually move the task forward.
+
+![Python Montevideo meetup at the Howdy offices](/assets/python-montevideo-2026-cover.jpg#center)
+
+### The problem: onboarding that doesn't scale
+On a project where integrating new members was critical to the team's progress, we faced the all-too-common problem of ineffective onboarding. Traditionally, knowledge and processes were transmitted verbally, which led to inconsistent and misinterpreted information.
+
+### The approach: documenting context in Markdown
+To tackle this, I started documenting everything in a `.md` file. Each new task was handed off together with its own document, providing clear, detailed instructions and the surrounding context. Delivering this `.md` alongside the assigned work significantly reduced ambiguity and the cognitive load of learning new procedures—making the ramp-up into the team far smoother.
+
+### Why it matters with AI
+These "Day 0" documents do double duty: they orient the human *and* feed the person's AI assistant the context it needs to advance the task. Good onboarding context is, increasingly, good AI context.
+
+This was one of two talks of the evening, alongside Riccardo Inojosa's "De CoT y MCP a agentes: roadmap de IA para devs Python".
+
+[related_images:json]
+  [{
+    "filename": "python-montevideo-2026-talk.jpg"
+  },{
+    "filename": "python-montevideo-2026-video.mp4"
+  },{
+    "filename": "python-montevideo-2026-group.jpg"
+  },{
+    "filename": "python-montevideo-2026-howdy.jpg"
+  }]
+
+[projects:md]
