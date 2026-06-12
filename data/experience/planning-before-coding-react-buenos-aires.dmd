@@ -4,7 +4,7 @@
   "layout": "experience",
   "card": {
     "color": "#003366",
-    "columnid": "progress_2",
+    "columnid": "done_3",
     "content": "[title]",
     "datebox": "Jun 2026",
     "extlink": "https://www.meetup.com/es-es/react-en-buenos-aires/events/314977342/",
@@ -49,5 +49,20 @@ In React projects, many tasks kick off with too many *implicit* decisions: struc
 The payoff is concrete: less friction, lower cognitive load, and higher-quality technical conversations within the team. Far from being made obsolete by AI, deliberate planning is what gives an AI assistant the context it needs to actually help.
 
 This is one of two talks of the evening, alongside Raúl Ahumada's "¿Y si tu backend fuera tan reactivo como tu frontend?" about reactive backends for React apps with Convex.
+
+[related_images:json]
+  [{
+    "filename": "react-buenos-aires-2026-5.jpg"
+  },{
+    "filename": "react-buenos-aires-2026-video.mp4"
+  },{
+    "filename": "react-buenos-aires-2026-4.jpg"
+  },{
+    "filename": "react-buenos-aires-2026-2.jpg"
+  },{
+    "filename": "react-buenos-aires-2026-3.jpg"
+  },{
+    "filename": "react-buenos-aires-2026-1.jpg"
+  }]
 
 [projects:md]
