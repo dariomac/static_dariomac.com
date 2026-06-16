@@ -1,0 +1,57 @@
+{
+  "title": "Vibe Coding vs. Vibe Engineering (Midudev interview)",
+  "date": "2025-06-25",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Jun 2025",
+    "extlink": "https://www.howdylatam.com/es/blog/vibe-coding-vs-vibe-engineering-con-midudev",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250625",
+    "subtaskdetails": [],
+    "tags": "AI, Vibe Coding, Vibe Engineering, Software Development",
+    "title": "Howdy <> Midudev"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
+}
+
+---
+
+[summary:string]
+A conversation with Miguel Ángel Durán (Midudev) for the Howdy blog about the line between *vibe coding* and *vibe engineering*. We talked about how AI changes the way we build software: where letting AI run free is genuinely useful, where it becomes dangerous, and why human judgment—deciding what to build, how, and why—is still the part that can't be delegated.
+
+[duration:string]
+Jun 25, 2025
+
+[place_url:string]
+https://www.youtube.com/watch?v=i5cwEIIdZIE
+
+[place:string]
+Remote
+
+[content:md]
+Miguel Ángel Durán, better known as **Midudev**, is one of the most influential Spanish-speaking programming educators. A full-stack JavaScript developer with over 15 years of experience, he is recognized as a Google Developer Expert, Microsoft MVP and GitHub Star, and reaches a massive audience through his Twitch and YouTube channels, where he teaches programming, web development and AI.
+
+In this conversation for the Howdy blog we explored the difference between two ways of building software with AI:
+
+### Vibe coding: fast, fun… and risky if you stay there
+*Vibe coding*—letting the AI drive while you describe the vibe—is great for prototyping and exploring ideas quickly. The problem starts when that experimental code slips into production without architecture, tests or anyone taking technical responsibility for it.
+
+### Vibe engineering: pairing AI's speed with engineering discipline
+*Vibe engineering* keeps the velocity of AI but puts design, architecture, testing and technical accountability back in the loop. The key skill becomes **asking well**: giving the model the right context so it can actually help, instead of delegating the thinking entirely.
+
+### Human judgment is still the differentiator
+The takeaway is reassuring and demanding at the same time: AI iterates incredibly fast, but the criteria for deciding *what* to build, *how* and *why* remain human. The developers who get ahead are the ones who use AI with intention—neither fearing it nor handing everything over to it.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i5cwEIIdZIE#center" title="Vibe Coding vs. Vibe Engineering con Midudev" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
+
+[projects:md]
