@@ -1,0 +1,55 @@
+{
+  "title": "Cómo convertirse en un excelente DevRel (Productos increíbles, ep. 33)",
+  "date": "2025-07-05",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Jul 05",
+    "extlink": "https://www.youtube.com/watch?v=SPRWCFh-FvQ&list=PLmbZU755YaRM3osITshqT5h0sYUd8n_U1",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250705",
+    "subtaskdetails": [],
+    "tags": "DevRel, Developer Advocate, Communication, Career",
+    "title": "Productos increíbles"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
+}
+
+---
+
+[summary:string]
+A guest appearance on the *Productos increíbles* podcast (episode 33) to talk about how to become an excellent DevRel. We explored what Developer Relations really is, the mix of engineering and communication skills the role demands, and the path I took from software engineer to Developer Advocate.
+
+[duration:string]
+July 05, 2025
+
+[place_url:string]
+https://www.youtube.com/watch?v=SPRWCFh-FvQ&list=PLmbZU755YaRM3osITshqT5h0sYUd8n_U1
+
+[place:string]
+Remote
+
+[content:md]
+I joined the *Productos increíbles* podcast as a guest for episode 33, a conversation about how to become an excellent **DevRel** (Developer Relations) professional.
+
+### What DevRel actually is
+Developer Relations sits at the intersection of product, engineering and marketing. In the conversation I unpacked what the role involves day to day—writing documentation and content, gathering and channeling developer feedback, participating in communities and speaking at events—and why it's much more than "marketing for developers."
+
+### The skills that make a great DevRel
+Being an excellent DevRel means staying a credible engineer *and* being an effective communicator. We talked about the balance between technical depth and empathy, how to build trust with a developer audience, and why genuinely caring about the community is what separates good DevRel from great DevRel.
+
+### From software engineer to Developer Advocate
+I also shared my own path—how decades of building software, teaching and writing led me into the Developer Advocate role at Howdy—and practical advice for engineers who want to move into the field.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SPRWCFh-FvQ#center" title="Cómo convertirse en un excelente DevRel con Darío Macchi | Productos increíbles ep. 33" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
+
+[projects:md]
