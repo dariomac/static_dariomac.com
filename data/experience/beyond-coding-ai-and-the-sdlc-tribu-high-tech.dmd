@@ -1,0 +1,70 @@
+{
+  "title": "Beyond Coding: AI and the Software Lifecycle (Tribu High Tech)",
+  "date": "2026-02-09",
+  "layout": "experience",
+  "card": {
+    "color": "#FF6E19",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Feb 09",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260209",
+    "subtaskdetails": [],
+    "tags": "AI, Software Development, SDLC, Spec-Driven Development",
+    "title": "Tribu High Tech"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
+}
+
+---
+
+[summary:string]
+A short tech talk for the Tribu High Tech community on why AI isn't about to replace software engineers. The core argument: writing code is only one of the seven areas of the software development lifecycle, so AI tools mostly augment a single slice while humans still own the rest. I paired that with some honest skepticism about spec-driven development and practical advice on where developers should really put their attention.
+
+[duration:string]
+Feb 9, 2026 (15 minutes)
+
+[place_url:string]
+
+
+[place:string]
+Remote
+
+[content:md]
+A 15-minute talk for the Tribu High Tech community, part of an evening where a small group each shared what we've been trying with AI, what's working, and how we plan to keep going.
+
+### The error that brought us here
+The hook was a widely-shared claim from the head of a major AI lab: engineers saying "I don't write code anymore" anymore, and the prediction that models will soon do most—maybe all—of what software engineers do, end to end. That last part is where it falls apart. As a colleague at Howdy put it the other day: **"code was never the problem."** Unlike the viral take, he understood what a software engineer actually does.
+
+### Coding is one of seven areas, not the whole job
+The software development lifecycle has four main areas and three supporting ones—seven in total. Only **one** of them is coding. So the most AI tools can do is improve, automate, and (in very special circumstances) maybe replace that single area. Across the rest of the SDLC, there are still humans doing the work.
+
+### What I recommend to my students
+- **Don't obsess over how to generate the code.** One way or another, you'll manage it. Tools come and go, and you are not a beta tester for them. Start a project, commit to one tool, and ride it to the finish—like an F1 driver who doesn't swap cars mid-season. Good drivers have won championships in average cars.
+- **Learn to communicate—to speak and to write.** Choosing the tone, the form, the channel, deciding what to document and what to leave out: an AI can't do that for you.
+
+### My current strategy with tools
+Orchestrating more than two agents running in parallel quickly becomes a genuinely complex task—one nobody was trained for, with no established working patterns and no serious research behind it, yet we're starting to trust our software products to it. Bet, or Russian roulette? Roughly, the way I think about it:
+
+- *productivity* grows with the agentic tooling I run multiplied by git worktrees, divided by the time I spend manually reviewing artifacts.
+- *quality* comes from solid chore and feature planning, plus multi-turn feature generation, divided by the manual review it still demands.
+
+### A devil's-advocate take on spec-driven development
+Assume we could write an entire feature with a level of detail that leaves no doubt and no ambiguity (utopian—beautiful, but utopian). Even then: how do you maintain that product? Do you edit the specs? How do you guarantee a change produced a real increment over the previous version, given the non-determinism of regeneration? And if you only care about behavior and not the code, why are you versioning the generated code at all?
+
+There's also a longer-running doubt. Natural-language ambiguity didn't disappear—a foundational 1978 essay on the foolishness of "natural-language programming" flagged it decades ago. We went from writing prompts, to skills, to documentation, to specs—but what actually changed in *how well we write* in natural language to make us believe we can specify better now than before? It echoes the moment when agile "defeated" the dinosaurs of heavy up-front requirements. **Verschlimmbesserung**: are we making something worse in the attempt to make it better? As always, a spec is one more tool—the work is understanding when to use it, and formalizing it at least a little (we could start by defining what a spec even *is*).
+
+### Resources mentioned
+- The [BMAD method](https://github.com/bmad-code-org/BMAD-METHOD) as a development process
+- Microsoft's SpecKit
+- InfoQ's overview of [spec-driven development](https://www.infoq.com/articles/spec-driven-development/)
+
+[projects:md]
