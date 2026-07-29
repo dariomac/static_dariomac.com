@@ -1,0 +1,67 @@
+{
+  "title": "Benchmarking Node.js: What Works, What Doesn't (Rafael Gonzaga interview)",
+  "date": "2026-03-20",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Mar 20",
+    "extlink": "https://www.youtube.com/watch?v=gisfCFu0Z6Y",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260320",
+    "subtaskdetails": [],
+    "tags": "Node.js, Performance, Benchmarking, Open Source",
+    "title": "Howdy <> Rafael Gonzaga"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
+}
+
+---
+
+[summary:string]
+An interview I hosted at the Howdy House in Montevideo with Rafael Gonzaga—Principal Open Source Engineer at NodeSource and a member of the Node.js Technical Steering Committee—about Node.js performance and the surprisingly hard craft of benchmarking: why so many benchmarks mislead even when they look careful, and how to design, run and interpret them responsibly.
+
+[duration:string]
+Mar 20, 2026
+
+[place_url:string]
+https://www.howdy.com/cities/montevideo
+
+[place:string]
+Howdy House Montevideo
+
+[content:md]
+For this conversation I welcomed **Rafael Gonzaga** to the Howdy House in Montevideo. Rafael is a Principal Open Source Engineer at NodeSource and part of the **Node.js Technical Steering Committee**, and he has spent years working on the performance and security layers of Node's core. We sat down to talk about performance—specifically, why benchmarking Node.js looks simple but is genuinely hard to get right.
+
+### Why so many benchmarks are still wrong
+Benchmarking Node.js looks straightforward, yet meaningful results remain surprisingly elusive. Many benchmarks keep producing misleading conclusions even when they appear careful and well-intentioned. The usual culprits:
+
+- **Unrealistic workloads** that don't reflect how real applications actually behave.
+- **Unstable environments**, where lab conditions and noise quietly distort the numbers.
+- **Overreliance on microbenchmarks**, where JIT compilation and engine optimizations make quick results look better than they are.
+- **Misuse of statistics**, where small methodological choices dramatically change the outcome.
+
+The danger is that these mistakes lead teams to optimize the wrong things, or to draw confident-but-incorrect conclusions about performance.
+
+### Toward a healthier mental model
+Rafael also walked through better approaches: designing benchmarks that stay close to real applications, controlling noise, validating results with basic statistical techniques (running configurations enough times to actually prove significance), and reasoning about performance changes responsibly. The goal is to turn benchmarks into a useful tool rather than a source of confusion—and although the examples are in Node.js, the mental model carries over to developers on any stack.
+
+### The questions I brought to the table
+Throughout the talk I jumped in with a few questions for the audience's benefit:
+
+- Where do you draw the line between a benchmark that's *realistic enough* and one that's *practically maintainable*, especially for teams without dedicated performance engineers?
+- Is the real problem the microbenchmark *tool* itself, or the *mental model* developers use to interpret it?
+- Given that every benchmark is flawed to some degree, what sanity checks do you personally run before trusting a result enough to act on it?
+- Is performance optimization a luxury you can solve by throwing more hardware at it—or is it better seen as a resource-management problem and a financial priority?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gisfCFu0Z6Y#center" title="Benchmarking Node.js: What Works, What Doesn't" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
+
+[projects:md]
