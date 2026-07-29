@@ -52,13 +52,38 @@ Provides a list of files attached to the document.
 ```
 
 **Related Images `[related_images:json]`**
-Provides a list of images that are related to the entry.
+Provides a list of images that are related to the entry, rendered as a gallery by the `_entry-gallery.hbs` partial.
 ```json
 [related_images:json]
 [{
   "filename": "image.png"
 }]
 ```
+
+## Image Assets (WebP + Thumbnails)
+
+Neither `builder.mjs` nor `notes-builder.mjs` generate WebP or thumbnail files automatically for images added to `data/<lane>/assets/` — they must be created manually (e.g. with a one-off `sharp`/`image-converter.mjs` script) and committed alongside the source image. There are two separate cases:
+
+1.  **Inline images in `[content:md]`** (`![alt](/assets/image.jpg)`): the Markdown renderer (`htmlrenderer.image` in `lib/utils.mjs`) automatically wraps these in a `<picture>` tag with a `<source srcset="/assets/image.webp" type="image/webp">` and the original as `<img>` fallback. This only requires a same-named `.webp` file next to the original in `data/<lane>/assets/` — no resizing needed.
+    ```bash
+    node -e "import('./image-converter.mjs').then(({convertToWebp}) => convertToWebp('data/<lane>/assets/image.jpg', 'data/<lane>/assets/image.webp', 80))"
+    ```
+
+2.  **`[related_images:json]` gallery entries**: `common/_entry-gallery.hbs` always links to `/assets/thumbs/<name>.webp` (or `/assets/thumbs/<name>.gif` for gifs), never the full-size image or a fallback format. So for each `related_images` entry you need, in `data/<lane>/assets/thumbs/`:
+    *   A thumbnail resized to **100px height** (aspect ratio preserved) in the original format.
+    *   A `.webp` version of that same thumbnail.
+
+    The full-size original (and its `.webp` counterpart, for consistency with other entries) still belongs in `data/<lane>/assets/` even though the gallery itself only renders the thumb.
+    ```bash
+    node -e "
+    import('sharp').then(async ({default: sharp}) => {
+      const { convertToWebp } = await import('./image-converter.mjs');
+      await sharp('data/<lane>/assets/image.jpg').resize({ height: 100 }).toFile('data/<lane>/assets/thumbs/image.jpg');
+      await convertToWebp('data/<lane>/assets/thumbs/image.jpg', 'data/<lane>/assets/thumbs/image.webp', 80);
+    });"
+    ```
+
+A regular `npm run build` copies `data/<lane>/assets/**` (including `thumbs/`) into `www/assets/`, so these files must exist under `data/` before building.
 
 **Related Topics `[related_topics:json]`**
 Defines related links or suggested content.

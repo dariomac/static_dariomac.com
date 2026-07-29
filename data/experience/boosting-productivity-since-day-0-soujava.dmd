@@ -1,0 +1,61 @@
+{
+  "title": "Boosting Productivity Since Day 0 (+ Other Benefits) (SouJava São Paulo)",
+  "date": "2026-07-31",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "requested_1",
+    "content": "[title]",
+    "datebox": "Jul 31",
+    "extlink": "https://encontros.soujava.org.br/talks/july-2026/",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260731",
+    "subtaskdetails": [],
+    "tags": "Java, Onboarding, Documentation, AI, Software Development",
+    "title": "SouJava São Paulo"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
+}
+
+---
+
+[summary:string]
+An upcoming talk for SouJava (the Brazilian Java Users Society), hosted in partnership with Howdy at Limma Café in São Paulo. I'll present "Boosting productivity since day 0 (+ other benefits)": combining a "Day 0 for Task 1" documentation strategy with upfront technical planning in Java projects, to smooth onboarding, cut friction, and make AI tools more useful from the very first task.
+
+[duration:string]
+Jul 31, 2026, starting at 6:30 PM
+
+[place_url:string]
+https://www.google.com/maps/search/?api=1&query=Av.+Brigadeiro+Faria+Lima+3244+Audi+Comark+Sao+Paulo+Brazil
+
+[place:string]
+Limma Café, Inside Audi Comark, Av. Brigadeiro Faria Lima 3244, São Paulo, Brazil
+
+[content:md]
+This is a **SouJava** meeting hosted in partnership with **Howdy**, at Limma Café inside the Audi Comark showroom in São Paulo. The evening features two talks plus networking, hosted by Luiz Real (SouJava Lead). It's an international event, so all talks will be presented in English—seats are limited to 50 spots in person, with live streaming on SouJava's YouTube channel.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tz_ZQGAjwSA#center" title="Boosting Productivity Since Day 0 (+ Other Benefits)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
+
+### Boosting productivity since day 0 (+ other benefits)
+In this talk I combine two ideas I've been refining: **"Day 0 for Task 1"**, a strategy for writing detailed Markdown documentation *before* a new team member's or a new task's clock starts, and **upfront technical planning** in Java projects, where structural, state, and design decisions are made explicit before implementation begins.
+
+Together, these practices smooth team onboarding, reduce friction, and give AI coding assistants the context they need to actually help from the first task—rather than guessing at implicit decisions. The result is higher developer productivity and satisfaction, with fewer surprises down the line.
+
+### Also on the agenda
+The event also includes **"International Career - the 7 steps to build the best career ever"** by Bruno Souza (Code4Life), an interactive session on building an international tech career, from landing an initial position to reaching top global roles.
+
+[related_images:json]
+  [{
+    "filename": "soujava-2026-banner.jpg"
+  },{
+    "filename": "soujava-2026-invite.png"
+  }]
+
+[projects:md]

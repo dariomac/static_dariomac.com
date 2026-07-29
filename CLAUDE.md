@@ -13,5 +13,5 @@ I'll list some particular files so can get a better idea of what is there.
 - `internal-docs/builder.md` contains a detailed explanation of how the static website generator works.
 - `internal-docs/layouts.md` contains information about the layouts used in the project.
 - `internal-docs/dmd-templates` contains information about the dmd templates used in the project, one file per dmd template.
-- `internal-docs/dmd-format.md` contains information about the dmd format.
+- `internal-docs/dmd-format.md` contains information about the dmd format, including the "Image Assets (WebP + Thumbnails)" section — read that before adding any image to a dmd file's `[content:md]` or `[related_images:json]`, since WebP files and gallery thumbnails are never generated automatically by the build and must be created and committed by hand.
 - `internal-docs/notes-builder.md` contains an explanation of how `notes-builder.mjs` works.
