@@ -4,7 +4,7 @@
   "layout": "experience",
   "card": {
     "color": "#003366",
-    "columnid": "requested_1",
+    "columnid": "done_3",
     "content": "[title]",
     "datebox": "Jul 31",
     "extlink": "https://encontros.soujava.org.br/talks/july-2026/",
@@ -27,7 +27,7 @@
 ---
 
 [summary:string]
-An upcoming talk for SouJava (the Brazilian Java Users Society), hosted in partnership with Howdy at Limma Café in São Paulo. I'll present "Boosting productivity since day 0 (+ other benefits)": combining a "Day 0 for Task 1" documentation strategy with upfront technical planning in Java projects, to smooth onboarding, cut friction, and make AI tools more useful from the very first task.
+A talk for SouJava (the Brazilian Java Users Society), hosted in partnership with Howdy at Limma Café in São Paulo. I presented "Boosting productivity since day 0 (+ other benefits)": a "day zero" Markdown documentation strategy that onboards both new team members and the AI tools they use from the very first task—leading to sharper questions, fewer interruptions, and more focused code reviews.
 
 [duration:string]
 Jul 31, 2026, starting at 6:30 PM
@@ -39,23 +39,34 @@ https://www.google.com/maps/search/?api=1&query=Av.+Brigadeiro+Faria+Lima+3244+A
 Limma Café, Inside Audi Comark, Av. Brigadeiro Faria Lima 3244, São Paulo, Brazil
 
 [content:md]
-This is a **SouJava** meeting hosted in partnership with **Howdy**, at Limma Café inside the Audi Comark showroom in São Paulo. The evening features two talks plus networking, hosted by Luiz Real (SouJava Lead). It's an international event, so all talks will be presented in English—seats are limited to 50 spots in person, with live streaming on SouJava's YouTube channel.
+This **SouJava** meeting, hosted in partnership with **Howdy** at Limma Café inside the Audi showroom on Faria Lima Avenue, São Paulo, was an international, English-language edition of the meetup: 50 people attended in person, with additional reach through the livestream. About 70% of attendees were unfamiliar with Howdy beforehand, and the evening extended into networking at the café afterward—Sou Java rated the event highly for organization and clarity.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tz_ZQGAjwSA#center" title="Boosting Productivity Since Day 0 (+ Other Benefits)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
 
 ### Boosting productivity since day 0 (+ other benefits)
-In this talk I combine two ideas I've been refining: **"Day 0 for Task 1"**, a strategy for writing detailed Markdown documentation *before* a new team member's or a new task's clock starts, and **upfront technical planning** in Java projects, where structural, state, and design decisions are made explicit before implementation begins.
+My talk centered on writing a Markdown "day zero" document—essential, task-specific context prepared *before* a new team member's or a new task's clock starts, rather than dumping the entire project's documentation on them. The core insight: this isn't just onboarding a new person, it's also onboarding the AI tool that person will use for the task.
 
-Together, these practices smooth team onboarding, reduce friction, and give AI coding assistants the context they need to actually help from the first task—rather than guessing at implicit decisions. The result is higher developer productivity and satisfaction, with fewer surprises down the line.
+The payoff showed up concretely: sharper questions, fewer interruptions, more focused code reviews, and an unexpected side benefit—the day zero documents end up becoming real, lasting project documentation.
 
 ### Also on the agenda
-The event also includes **"International Career - the 7 steps to build the best career ever"** by Bruno Souza (Code4Life), an interactive session on building an international tech career, from landing an initial position to reaching top global roles.
+The event also featured **Bruno Souza** (Java Champion, President of SouJava), who spoke about career development using a GPS metaphor: set the destination—the big goal—rather than plotting every street along the way, and let the route adjust naturally as you go. His core message was that small, compounding actions build a career more reliably than a handful of major decisions.
+
+### Takeaway
+A recurring theme of the night: practicing English in real technical settings is what turns it from an optional skill into the thing that actually unlocks international career opportunities. The talks generated strong LinkedIn engagement afterward, with several thank-you posts from attendees.
 
 [related_images:json]
   [{
     "filename": "soujava-2026-banner.jpg"
   },{
     "filename": "soujava-2026-invite.png"
+  },{
+    "filename": "soujava-2026-1.jpg"
+  },{
+    "filename": "soujava-2026-2.jpg"
+  },{
+    "filename": "soujava-2026-3.jpg"
+  },{
+    "filename": "soujava-2026-4.jpg"
   }]
 
 [projects:md]
