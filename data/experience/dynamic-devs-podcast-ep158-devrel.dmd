@@ -3,7 +3,7 @@
   "date": "2026-08-19",
   "layout": "experience",
   "card": {
-    "color": "#FF6E19",
+    "color": "#003366",
     "columnid": "done_3",
     "content": "[title]",
     "datebox": "Aug 19",
@@ -40,6 +40,8 @@ Remote
 
 [content:md]
 I joined **Jonathan González** on the *Dynamic Devs* podcast for episode 158, "La tecnología también se construye en comunidad" (Technology is also built in community).
+
+![Episode 158 - La tecnología también se construye en comunidad, with Darío Macchi](/assets/dynamic-devs-podcast-ep158-cover.jpg#center)
 
 ### Developers decide what to trust
 Companies build technology, but it's developers who decide what to trust and what to adopt. We talked about what that means for DevRel: the role isn't to push a product, it's to earn the credibility that makes developers want to use it in the first place.
