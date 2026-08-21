@@ -1,0 +1,55 @@
+{
+  "title": "La tecnología también se construye en comunidad (Dynamic Devs, ep. 158)",
+  "date": "2026-08-19",
+  "layout": "experience",
+  "card": {
+    "color": "#FF6E19",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Aug 19",
+    "extlink": "https://www.youtube.com/watch?v=Ap3DQPEzkk0",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260819",
+    "subtaskdetails": [],
+    "tags": "DevRel, Community, Podcast, Career",
+    "title": "Dynamic Devs"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
+}
+
+---
+
+[summary:string]
+A guest appearance on the *Dynamic Devs* podcast (episode 158), where host Jonathan González and I talked about DevRel, developer communities, and the people behind the technologies we use—and how those communities end up shaping products, adoption, and the way companies relate to developers.
+
+[duration:string]
+Aug 19, 2026
+
+[place_url:string]
+https://www.youtube.com/watch?v=Ap3DQPEzkk0
+
+[place:string]
+Remote
+
+[content:md]
+I joined **Jonathan González** on the *Dynamic Devs* podcast for episode 158, "La tecnología también se construye en comunidad" (Technology is also built in community).
+
+### Developers decide what to trust
+Companies build technology, but it's developers who decide what to trust and what to adopt. We talked about what that means for DevRel: the role isn't to push a product, it's to earn the credibility that makes developers want to use it in the first place.
+
+### The people behind the tech
+We dug into the human side of Developer Relations—the people behind the tools and platforms we use every day—and why that human layer matters as much as the technology itself.
+
+### How community shapes the product
+We also explored how developer communities feed back into the product itself, influence adoption, and change the way companies end up relating to the developers they're trying to reach.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ap3DQPEzkk0#center" title="Episodio 158 - La tecnología también se construye en comunidad con Dario Macchi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
+
+[projects:md]
