@@ -4,8 +4,8 @@
   {{#each content}}
     {{#ifNotEq this.frontmatter.params.noIndex true}}
       <url>
-        <loc>https://dariomac.com{{../frontmatter.card.linkto}}</loc>
-        <lastmod>{{default ../frontmatter.updated_date ../frontmatter.date}}</lastmod>
+        <loc>https://dariomac.com{{frontmatter.card.linkto}}</loc>
+        <lastmod>{{default frontmatter.updated_date frontmatter.date}}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
