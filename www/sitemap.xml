@@ -722,12 +722,6 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://dariomac.com/howdy-developer-advocate</loc>
-        <lastmod>2022-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
         <loc>https://dariomac.com/tdc-2026-sao-paulo-ai-back-to-fundamentals</loc>
         <lastmod>2026-09-25</lastmod>
         <changefreq>monthly</changefreq>
@@ -952,6 +946,12 @@
       <url>
         <loc>https://dariomac.com/meetup-python-chile-quality-in-agile-contexts</loc>
         <lastmod>2022-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://dariomac.com/howdy-developer-advocate</loc>
+        <lastmod>2022-11-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

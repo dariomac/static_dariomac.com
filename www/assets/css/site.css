@@ -712,6 +712,29 @@ article table td {
   border-radius: var(--radius-md);
 }
 
+#new_essay .new_essay-label {
+  display: inline;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 700;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-text-muted);
+  margin-right: var(--space-3);
+}
+
+#new_essay .new_essay-sep {
+  display: inline;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--color-text-muted);
+}
+
 #new_essay span {
   display: inline-flex;
   align-items: center;

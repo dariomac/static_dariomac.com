@@ -182,19 +182,17 @@
       </div> <!-- dm-tab-filter-wrapper -->
 
       <div class="container-fluid dm-board">
-        <div class="row splitter">
-          <div class="col-md-12 text-center">Featured</div>
-        </div>
         <div class="row featured">
           <div class="plan col-md-12">
             <div id="new_essay">
+              <span class="new_essay-label">Featured</span>
               <span class="transition">
                 <i class="fa fa-heartbeat" aria-hidden="true"></i>
                 <a href='/ai-multi-turn-feature-generation' style='text-decoration: underline;'>
                   AI Multi-Turn Feature Generation
                 </a>
               </span>
-              |
+              <span class="new_essay-sep d-none d-md-inline-block">|</span>
               <a href="/essays" style="text-decoration: underline; padding: 1px 2px;">More essays</a>
             </div>
           </div>
@@ -229,6 +227,21 @@
                 <ul class="list-group list-group-flush">
                 </ul>
               </div>
+          </div>
+          <div class="done iso col-md-7">
+              <div class="card task" style="border-left-color: #99b399; border-right-color: #99b399; border-bottom-color: #99b399;" data-order=5>
+                <a href="/me-elsewhere" title="Me elsewhere" style="color: #000000">
+                  <h2 class="card-header ellipsis" style="background-color: #99b399;">
+                    Me elsewhere
+                  </h2>
+                  <h3 class="card-body card-text">These are links to my profile on several online services.</h3>
+                </a>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <span class="task_tag" aria-label="Tags"></span>pln,social,networking
+                    </li>
+                </ul>
+              </div>
               <div class="card task" style="border-left-color: #FF6E19; border-right-color: #FF6E19; border-bottom-color: #FF6E19;" data-order=4>
                 <a href="/finish-this-website" title="Finish this website" style="color: #ffffff">
                   <h2 class="card-header ellipsis" style="background-color: #FF6E19;">
@@ -246,21 +259,6 @@
                 </ul>
               </div>
           </div>
-          <div class="done iso col-md-7">
-              <div class="card task" style="border-left-color: #99b399; border-right-color: #99b399; border-bottom-color: #99b399;" data-order=5>
-                <a href="/me-elsewhere" title="Me elsewhere" style="color: #000000">
-                  <h2 class="card-header ellipsis" style="background-color: #99b399;">
-                    Me elsewhere
-                  </h2>
-                  <h3 class="card-body card-text">These are links to my profile on several online services.</h3>
-                </a>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <span class="task_tag" aria-label="Tags"></span>pln,social,networking
-                    </li>
-                </ul>
-              </div>
-          </div>
         </div>
 
         <div class="row splitter">
@@ -268,6 +266,8 @@
         </div>
         <div class="row experience">
           <div class="plan iso col-md-2">
+          </div>
+          <div class="in_progress iso col-md-3">
               <div class="card task" style="border-left-color: #003366; border-right-color: #003366; border-bottom-color: #003366;" data-order=20260925>
                 <a href="/tdc-2026-sao-paulo-ai-back-to-fundamentals" title="TDC São Paulo" style="color: #ffffff">
                   <h2 class="card-header ellipsis" style="background-color: #003366;">
@@ -288,9 +288,7 @@
                     </li>
                 </ul>
               </div>
-          </div>
-          <div class="in_progress iso col-md-3">
-              <div class="card task" style="border-left-color: #003366; border-right-color: #003366; border-bottom-color: #003366;" data-order=20300101>
+              <div class="card task" style="border-left-color: #003366; border-right-color: #003366; border-bottom-color: #003366;" data-order=20220101>
                 <a href="/howdy-developer-advocate" title="Howdy" style="color: #ffffff">
                   <h2 class="card-header ellipsis" style="background-color: #003366;">
                     Howdy
