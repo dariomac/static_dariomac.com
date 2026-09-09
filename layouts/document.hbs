@@ -112,8 +112,8 @@
           "image": [{{#forEach content.related_images}}"https://dariomac.com/assets/{{filename}}"{{#unless isLast~}}, {{/unless}}{{/forEach}}],
           {{/if}}
           "url": "https://dariomac.com/{{meta.slug}}",
-          "datePublished": "{{content.pub_date}}",
-          "dateCreated": "{{frontmatter.date}}",
+          "datePublished": "{{isoDate content.pub_date frontmatter.date}}",
+          "dateCreated": "{{isoDate frontmatter.date}}",
           "description": {{{json content.summary}}},
           "author": {
             "@id": "https://dariomac.com/me"
