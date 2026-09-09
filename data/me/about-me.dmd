@@ -4,15 +4,15 @@
   "layout": "about-me",
   "card": {
     "color": "#99b399",
-    "columnid": "done_3",
-    "content": "Working in Developer Relations ⬩ MSc in Software Engineer ⬩ Speaker & Professor ⬩ Building bridges across communities, “routing” information among them ⬩ Systematic yet flexible ⬩ A bit literalist ⬩ Doomsayer",
+    "columnid": "progress_2",
+    "content": "Developer Relations ⬩ MSc in Software Engineering ⬩ Speaker & Professor ⬩ Doomsayer",
     "datebox": "",
     "extlink": "https://www.linkedin.com/in/dariomac/",
     "laneid": "Me",
     "leftbox": "",
     "leftmsg": "",
     "linkto": "/about-me",
-    "position": "4",
+    "position": "10",
     "subtaskdetails": [],
     "subtasks": "0",
     "subtaskscomplete": "0",
@@ -31,7 +31,7 @@
 I believe that the curriculum vitae (CV) or resume should be something alive rather than a static document that looks like a biography. For this reason I choose to make my own resume in a way I called KanbanCV. Here I introduce myself, I write about experiences, education, other activities, as in a regular resume but with additional information.
 
 [short_description:string]
-Working in Developer Relations ⬩ MSc in Software Engineer ⬩ Speaker & Professor ⬩ Building bridges across communities, “routing” information among them ⬩ Systematic yet flexible ⬩ A bit literalist ⬩ Doomsayer.
+Developer Relations ⬩ MSc in Software Engineering ⬩ Speaker & Professor ⬩ Doomsayer.
 
 [content:md]
 I specialize in bridging the gap between code, products, and communities. My profile is defined by its elasticity: while my foundation is deeply technical, my passion lies in sharing knowledge. This versatility is what led me to Developer Relations before the term even existed.
