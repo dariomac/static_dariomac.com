@@ -1082,32 +1082,14 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://dariomac.com/agile-profile</loc>
-        <lastmod>2020-08-29</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>https://dariomac.com/contact-me</loc>
-        <lastmod>2019-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
         <loc>https://dariomac.com/about-me</loc>
         <lastmod>2017-03-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://dariomac.com/finish-this-website</loc>
-        <lastmod>2017-05-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>https://dariomac.com/favorite-drinks</loc>
-        <lastmod>2017-05-13</lastmod>
+        <loc>https://dariomac.com/contact-me</loc>
+        <lastmod>2019-10-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -1124,19 +1106,37 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://dariomac.com/agile-profile</loc>
+        <lastmod>2020-08-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://dariomac.com/me-elsewhere</loc>
         <lastmod>2017-05-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://dariomac.com/my-marriage</loc>
-        <lastmod>2017-05-20</lastmod>
+        <loc>https://dariomac.com/finish-this-website</loc>
+        <lastmod>2017-05-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://dariomac.com/favorite-drinks</loc>
+        <lastmod>2017-05-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
         <loc>https://dariomac.com/what-happened-on-august-12--1981</loc>
+        <lastmod>2017-05-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://dariomac.com/my-marriage</loc>
         <lastmod>2017-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
