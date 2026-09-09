@@ -1,0 +1,33 @@
+# Darío Macchi
+
+> Personal website of Darío Macchi — Developer Relations engineer, MSc in Software Engineering, speaker, and professor at Universidad ORT Uruguay. Presented as a "KanbanCV": a living, kanban-style resume covering experience, education, research, and projects, alongside essays on AI, software engineering practice, and developer careers.
+
+Based in Montevideo, Uruguay.
+
+## About
+
+- [About me](https://dariomac.com/about-me): Bio, background, and current focus in Developer Relations, speaking, and teaching.
+- [KanbanCV introduction](https://dariomac.com/kanbancv): Explanation of the kanban-board format used to present this resume.
+- [Full KanbanCV](https://dariomac.com/): Complete resume board — experience, education, research, projects, and quotes.
+
+## Essays: AI & software engineering
+
+- [AI Multi-Turn Feature Generation](https://dariomac.com/ai-multi-turn-feature-generation)
+- [The era of AI: Challenges and opportunities for developers](https://dariomac.com/adapting-to-the-era-of-ai-challenges-and-opportunities-for-experienced-developers)
+- [How ChatGPT helps to solve coding challenges](https://dariomac.com/how-chatgpt-helps-to-solve-coding-challenges)
+
+## Essays: software engineering practice & careers
+
+- [Software Estimation: Insights from Decades of Hits and Misses](https://dariomac.com/software-estimation-insights-from-decades-of-hits-and-misses)
+- [Strategies to Make Smart Choices in Technology](https://dariomac.com/strategies-to-make-smart-choices-in-technology)
+- [Be the GOAT software engineer: Know your clients](https://dariomac.com/be-the-goat-software-engineer-know-your-clients)
+- [From developer to brand: How personal branding can skyrocket your career](https://dariomac.com/from-developer-to-brand-how-personal-branding-can-skyrocket-your-career)
+- [The crucial role of Software Communities in developers' growth](https://dariomac.com/the-crucial-role-of-software-communities-in-developers-growth)
+- [Do software developers procrastinate more?](https://dariomac.com/do-software-developers-procrastinate-more)
+- [Not another cheat sheet about technical interviews](https://dariomac.com/not-another-cheat-sheet-about-technical-interviews)
+
+## More
+
+- [Essays & field notes index](https://dariomac.com/essays): Full archive of essays, including weekly "Stuck in the Filter" notes.
+- [Projects & Products](https://dariomac.com/projects-products): Software projects and products built or contributed to.
+- [Sitemap](https://dariomac.com/sitemap.xml): Complete list of every page on the site.
