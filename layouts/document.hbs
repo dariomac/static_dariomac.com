@@ -104,14 +104,14 @@
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://dariomac.com/{{frontmatter.slug}}"
+            "@id": "https://dariomac.com/{{meta.slug}}"
           },
           "headline": {{{json frontmatter.title}}},
           "alternativeHeadline": {{{json frontmatter.card.content}}},
           {{#if content.related_images}}
           "image": [{{#forEach content.related_images}}"https://dariomac.com/assets/{{filename}}"{{#unless isLast~}}, {{/unless}}{{/forEach}}],
           {{/if}}
-          "url": "https://dariomac.com/{{frontmatter.slug}}",
+          "url": "https://dariomac.com/{{meta.slug}}",
           "datePublished": "{{content.pub_date}}",
           "dateCreated": "{{frontmatter.date}}",
           "description": {{{json content.summary}}},
