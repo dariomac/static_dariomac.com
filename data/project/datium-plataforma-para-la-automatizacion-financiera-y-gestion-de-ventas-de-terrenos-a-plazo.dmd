@@ -1,0 +1,58 @@
+{
+  "title": "DATIUM - Plataforma para la automatización financiera y gestión de ventas de terrenos a plazo",
+  "date": "2026-09-09",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "DATIUM - Plataforma para la automatización financiera y gestión de ventas de terrenos a plazo",
+    "datebox": "2025-2026",
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250401",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "DATIUM - Plataforma para la automatización financiera y gestión de ventas de terrenos a plazo"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+DATIUM is a web platform designed to centralize and automate the sale of land plots through installment financing contracts, replacing error-prone spreadsheet tracking with automated payment, currency conversion, and reporting workflows.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+https://rad.ort.edu.uy/server/api/core/bitstreams/0361cf7c-7098-40c8-8968-06d445e6a3ad/content
+
+[platform:string]
+Web (FastAPI, React, AWS, Terraform)
+
+[link:string]
+https://rad.ort.edu.uy/items/c3bb8717-3336-40bc-b425-334677c8fac3
+
+[short_description:string]
+DATIUM centralizes and automates the financial and contractual management of land sales through installment plans. It features a multi-currency calculation engine (USD, UI, UR) integrated with Banco Central del Uruguay data, a WhatsApp self-service channel for buyers, an AI-assisted analytics module, and a monitoring dashboard—built with FastAPI, React, and AWS infrastructure managed via Terraform.
+
+[description:md]
+DATIUM is a web platform built to centralize and automate the operational workflow behind selling land plots through installment financing contracts. It replaces a spreadsheet-based process that scattered information across files and introduced risk into manual calculations—payment schedules, currency conversions, and late-payment surcharges.
+
+At the core of the system is a financial engine capable of operating across the different monetary units used in this type of business in Uruguay—US Dollars (USD), Unidad Indexada (UI), and Unidad Reajustable (UR)—automatically integrating with official Banco Central del Uruguay (BCU) data to keep historical calculations accurate and traceable.
+
+Beyond contract and payment management, DATIUM adds a self-service WhatsApp channel for buyers, a generative-AI-assisted analytics query module, an interactive dashboard for tracking key business indicators, and automated email notifications.
+
+The system was built with a modern stack: **FastAPI** for the backend, **React** for the frontend, and infrastructure on **AWS** managed as code with **Terraform**.
+
+## Authors
+González Nollenberger, Mateo Rafael | Cabrera Doglio, Federica | Gutman Kalichman, Ana | Wildbaum Zolkwer, Matías Nicolás
+
+## Score
+93/100
+
+## Reviewers
+Rossa Hauck, Jean Carlo | Cagnani Oña, Marcelo Fabián
