@@ -1,0 +1,58 @@
+{
+  "title": "EasyCharge - Plataforma de gestión de puntos de carga para vehículos eléctricos",
+  "date": "2026-09-10",
+  "layout": "project",
+  "card": {
+    "color": "#AD4647",
+    "columnid": "done_3",
+    "content": "EasyCharge - Plataforma de gestión de puntos de carga para vehículos eléctricos",
+    "datebox": "2025-2026",
+    "extlink": "",
+    "laneid": "Project",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20250401",
+    "subtaskdetails": [],
+    "tags": null,
+    "title": "EasyCharge - Plataforma de gestión de puntos de carga para vehículos eléctricos"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": ""
+}
+
+---
+
+[summary:string]
+EasyCharge is a service-oriented platform for managing electric-vehicle charging networks, built with a client company to reduce reliance on third-party charging platforms and support the growth of their charger network.
+*Disclaimer*: I've participated in this project *only* on my role of tutor.
+
+[download_link:string]
+https://rad.ort.edu.uy/server/api/core/bitstreams/72d144b5-3add-4de7-9627-3784360002fb/content
+
+[platform:string]
+Web & Mobile (OCPP)
+
+[link:string]
+https://rad.ort.edu.uy/items/ce8bc8d3-fd18-4719-8d3c-bf3047630cb6
+
+[short_description:string]
+EasyCharge is a platform for managing electric-vehicle charging networks, developed with a charging-solutions company to reduce dependency on third-party platforms. It uses a service-oriented architecture with OCPP for charger communication, a mobile app for drivers to locate chargers and manage charging sessions and payments, and a web admin panel for centralized network monitoring.
+
+[description:md]
+EasyCharge is a platform prototype for managing electric-vehicle charging networks, developed in collaboration with a client company specialized in EV charging solutions. The project responds to the company's need to scale its charger network while reducing dependence on third-party platforms, whose limitations constrained process automation, feature customization, and the user experience.
+
+The solution is built on a service-oriented architecture that manages charging infrastructure, monitors charger status, and handles user charging sessions. Communication with physical chargers uses the **Open Charge Point Protocol (OCPP)**, while integrated digital payment mechanisms enable monetizing the service.
+
+On top of this platform, the team built a mobile app for drivers—to locate chargers, manage charging sessions, and handle payments—and a web admin panel for internal staff to centrally monitor and manage the network.
+
+The project followed a full software engineering process, from requirements gathering through architecture, development, and quality management, using agile methodologies (Scrum and Kanban). The result is a functional prototype that provides a solid technical foundation for evolving toward a production system.
+
+## Authors
+Cooper Golubchin, Andrew Ronald | Crosa Labat, Felipe | Martinicorena Iriarte, Guillermo | Bañales Casarone, María Mercedes
+
+## Score
+95/100
+
+## Reviewers
+Matalonga Motta, Santiago | Nieves Lema, Ruben Carlos
