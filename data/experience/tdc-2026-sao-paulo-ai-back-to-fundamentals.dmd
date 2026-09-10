@@ -30,7 +30,7 @@
 An upcoming talk for the "AI & Emerging Tech" (international) track at TDC São Paulo 2026: "AI: Back to Fundamentals (the ones you least expect)". I'll argue that the software engineering fundamentals we're tempted to skip in the age of AI—not algorithms and data structures, but the practices that keep AI-generated code trustworthy—matter more than ever, precisely because AI has collapsed their cost.
 
 [duration:string]
-Sep 25, 2026, 11:10 AM - 11:45 AM
+Sep 23-25, 2026
 
 [place_url:string]
 https://www.google.com/maps/search/?api=1&query=ProMagno+Avenida+Professora+Ida+Kolb+513+Sao+Paulo+Brazil
@@ -39,7 +39,7 @@ https://www.google.com/maps/search/?api=1&query=ProMagno+Avenida+Professora+Ida+
 ProMagno, Avenida Professora Ida Kolb 513, São Paulo, Brazil
 
 [content:md]
-[**TDC São Paulo 2026**](https://thedevconf.com/tdc/2026/sao-paulo/) ([The Developer's Conference](https://thedevconf.com/tdc/2026/index.html)) runs September 23–25 at ProMagno, in person and online. My talk is part of the "[AI & Emerging Tech](https://thedevconf.com/tdc/2026/sao-paulo/trilha-ai-e-emerging-tech)" track—an English-language, international track—on September 25, alongside speakers like Edson Yanaga (Google), Csilla Szántó (MeteoSwiss), Nyah Macklin (Neo4j), Bruno Borges (Microsoft), Bharat Ahuja (Jeeves), and David Parry (Qodo). I'm also running a workshop on **Personal Brand** during the conference.
+[**TDC São Paulo 2026**](https://thedevconf.com/tdc/2026/sao-paulo/) ([The Developer's Conference](https://thedevconf.com/tdc/2026/index.html)) runs September 23–25 at ProMagno, in person and online. My talk is part of the "[AI & Emerging Tech](https://thedevconf.com/tdc/2026/sao-paulo/trilha-ai-e-emerging-tech)" track—an English-language, international track—on September 25, alongside speakers like Edson Yanaga (Google), Csilla Szántó (MeteoSwiss), Nyah Macklin (Neo4j), Bruno Borges (Microsoft), Bharat Ahuja (Jeeves), and David Parry (Qodo). I'm also running mentoring sessions between September 23-25: **Define your personal brand, or people will define it for you.**
 
 ### AI: Back to Fundamentals (the ones you least expect)
 When a developer hears "fundamentals," they think of algorithms and data structures. This talk argues for a different set: fundamentals that matter just as much in the age of AI—the ones rooted in software engineering. AI doesn't make them irrelevant; it collapses their cost—which is exactly why they now matter more, not less.
@@ -47,6 +47,15 @@ When a developer hears "fundamentals," they think of algorithms and data structu
 We'll start with a bit of discomfort, looking at how we review AI-generated code today: as the output grows longer, the reviews grow shallower—skimmed, handed off to another AI, or approved almost unseen. Uncle Bob put it bluntly: he doesn't read his agents' code anymore. He trusts the constraints he surrounds them with, not the act of reading.
 
 From there, the talk shifts to the constructive side: how do we design those constraints? Many software engineering practices that used to be prohibitively expensive are now cheap, thanks to AI. The most complete set is the one built around an outer BDD loop (Spec → Gherkin) wrapping an inner TDD loop. But how do we make sure all those artifacts actually add up to a quality product?
+
+### Define your personal brand, or people will define it for you.
+*Sep 23, 2026, 15:00 - 15:50 · ProMagno, São Paulo*
+
+Most developers do great work that nobody outside their team ever sees (the industry calls them **"Dark Matter Developers"**). This workshop isn't about self-promotion; it's a hands-on session, and you leave with an actual plan.
+
+We'll cover what a personal brand actually is (it's not marketing, it's perception), why every developer already has one whether they built it or not, and what it costs you (job searches starting from zero, resumes filtered out by opaque algorithms, learning alone instead of in public).
+
+Then we'll make it real. Everyone leaves with the first concrete step of a plan (what to share, where, and how often) so you walk out of TDC São Paulo with something to act on.
 
 [related_images:json]
   [{
