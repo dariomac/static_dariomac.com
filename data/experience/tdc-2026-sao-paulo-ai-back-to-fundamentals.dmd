@@ -4,7 +4,7 @@
   "layout": "experience",
   "card": {
     "color": "#003366",
-    "columnid": "progress_2",
+    "columnid": "done_3",
     "content": "[title]",
     "datebox": "Sep 25",
     "extlink": "https://thedevconf.com/tdc/2026/sao-paulo/trilha-ai-e-emerging-tech",
@@ -66,6 +66,18 @@ Then we'll make it real. Everyone leaves with the first concrete step of a plan 
     "filename": "tdc-sao-paulo-2026-4.jpg"
   },{
     "filename": "tdc-sao-paulo-2026-3.jpg"
+  },{
+    "filename": "TDC-SP-2026-1.jpg"
+  },{
+    "filename": "TDC-SP-2026-2.jpg"
+  },{
+    "filename": "TDC-SP-2026-3.jpg"
+  }]
+
+[attachments:json]
+  [{
+    "filename": "tdc-sao-paulo-2026-ai-back-to-fundamentals.pdf",
+    "description": "Slides for \"AI: Back to Fundamentals (the ones you least expect)\"."
   }]
 
 [projects:md]
