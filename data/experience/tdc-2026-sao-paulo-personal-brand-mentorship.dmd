@@ -1,0 +1,69 @@
+{
+  "title": "Define your personal brand, or people will define it for you",
+  "date": "2026-09-23",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Sep 23-25",
+    "extlink": "https://thedevconf.com/tdc/2026/sao-paulo/hub-mentorias",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260923",
+    "subtaskdetails": [],
+    "tags": "Personal Branding, Career, Mentoring, DevRel",
+    "title": "TDC São Paulo Mentoring Hub"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
+}
+
+---
+
+[summary:string]
+Three small-group mentoring sessions at the TDC São Paulo 2026 Mentoring Hub, one per day of the conference: "Define your personal brand, or people will define it for you." A hands-on session for developers whose work goes unseen outside their team, where everyone leaves with the first concrete step of a personal brand plan.
+
+[duration:string]
+Sep 23-25, 2026
+
+[place_url:string]
+https://www.google.com/maps/search/?api=1&query=ProMagno+Avenida+Professora+Ida+Kolb+513+Sao+Paulo+Brazil
+
+[place:string]
+ProMagno, Avenida Professora Ida Kolb 513, São Paulo, Brazil
+
+[content:md]
+[**TDC São Paulo 2026**](https://thedevconf.com/tdc/2026/sao-paulo/) ([The Developer's Conference](https://thedevconf.com/tdc/2026/index.html)) ran September 23–25 at ProMagno, in person and online. Besides my talk, [AI: Back to Fundamentals (the ones you least expect)](/tdc-2026-sao-paulo-ai-back-to-fundamentals), I was a mentor at the conference's [Mentoring Hub](https://thedevconf.com/tdc/2026/sao-paulo/hub-mentorias).
+
+### The Mentoring Hub
+The Hub de Mentorias is a space for small-group conversations—up to 6 people per table—where attendees sit down with experienced professionals to discuss real career questions. Each session lasts about 40 minutes and happens in person, across the three days of the conference.
+
+Topics are published in advance, so attendees pick the ones that fit where they are in their careers, bring their own question, and leave with direction rather than another page of notes. Access is included with any in-person ticket (even the Expo pass), but seats are limited and must be booked in advance: one mentoring per person per day, or up to two for VIP and Executive ticket holders. The mentor roster spans more than fifty professionals, covering subjects like careers in AI, landing an international job, architecture, leadership, and personal branding.
+
+2026 was also the first edition with tables run entirely in English, open to every attendee—a chance to practice technical English and grow a network beyond Brazil.
+
+### Define your personal brand, or people will define it for you.
+*Sep 23, 24 and 25, 2026, 15:00 - 15:50 · ProMagno, São Paulo*
+
+Most developers do great work that nobody outside their team ever sees (the industry calls them **"Dark Matter Developers"**). This workshop isn't about self-promotion; it's a hands-on session, and you leave with an actual plan.
+
+We'll cover what a personal brand actually is (it's not marketing, it's perception), why every developer already has one whether they built it or not, and what it costs you (job searches starting from zero, resumes filtered out by opaque algorithms, learning alone instead of in public).
+
+Then we'll make it real. Everyone leaves with the first concrete step of a plan (what to share, where, and how often) so you walk out of TDC São Paulo with something to act on.
+
+[related_images:json]
+  [{
+    "filename": "tdc-sao-paulo-2026-mentoring-1.jpg"
+  },{
+    "filename": "tdc-sao-paulo-2026-mentoring-2.jpg"
+  },{
+    "filename": "tdc-sao-paulo-2026-mentoring-3.jpg"
+  }]
+
+[projects:md]
