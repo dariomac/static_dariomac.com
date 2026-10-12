@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Darío Macchi" />
-    <meta name="description" content="An upcoming talk for the "AI & Emerging Tech" (international) track at TDC São Paulo 2026: "AI: Back to Fundamentals (the ones you least expect)". I'll argue that the software engineering fundamentals we're tempted to skip in the age of AI—not algorithms and data structures, but the practices that keep AI-generated code trustworthy—matter more than ever, precisely because AI has collapsed their cost." />
+    <meta name="description" content="A talk for the "AI & Emerging Tech" (international) track at TDC São Paulo 2026: "AI: Back to Fundamentals (the ones you least expect)". I argued that when agents write the code, the reading we used to do on code has to move up to the spec, and that we need an engineering way of reading it. The fundamental I brought back for that is Perspective-Based Reading (Basili et al., 1994–95), a spec-reading technique that used to be too expensive to run and that AI has now made affordable." />
     <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
     
     <link rel="dns-prefetch" href="//dariomac.com"/>
@@ -81,7 +81,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta property="og:url" content="/tdc-2026-sao-paulo-ai-back-to-fundamentals" />
     <meta property="og:title" content="AI: Back to Fundamentals (the ones you least expect) (TDC São Paulo)" />
-    <meta property="og:description" content="An upcoming talk for the "AI & Emerging Tech" (international) track at TDC São Paulo 2026: "AI: Back to Fundamentals (the ones you least expect)". I'll argue that the software engineering fundamentals we're tempted to skip in the age of AI—not algorithms and data structures, but the practices that keep AI-generated code trustworthy—matter more than ever, precisely because AI has collapsed their cost." />
+    <meta property="og:description" content="A talk for the "AI & Emerging Tech" (international) track at TDC São Paulo 2026: "AI: Back to Fundamentals (the ones you least expect)". I argued that when agents write the code, the reading we used to do on code has to move up to the spec, and that we need an engineering way of reading it. The fundamental I brought back for that is Perspective-Based Reading (Basili et al., 1994–95), a spec-reading technique that used to be too expensive to run and that AI has now made affordable." />
     <meta property="og:site_name" content="Darío Macchi personal website" />
     <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
     <meta property="og:image:type" content="image/png">
@@ -90,7 +90,7 @@
     <meta name="twitter:site" content="@_dariomac">
     <meta name="twitter:creator" content="@_dariomac">
     <meta name="twitter:title" content="AI: Back to Fundamentals (the ones you least expect) (TDC São Paulo)">
-    <meta name="twitter:description" content="An upcoming talk for the "AI & Emerging Tech" (international) track at TDC São Paulo 2026: "AI: Back to Fundamentals (the ones you least expect)". I'll argue that the software engineering fundamentals we're tempted to skip in the age of AI—not algorithms and data structures, but the practices that keep AI-generated code trustworthy—matter more than ever, precisely because AI has collapsed their cost.">
+    <meta name="twitter:description" content="A talk for the "AI & Emerging Tech" (international) track at TDC São Paulo 2026: "AI: Back to Fundamentals (the ones you least expect)". I argued that when agents write the code, the reading we used to do on code has to move up to the spec, and that we need an engineering way of reading it. The fundamental I brought back for that is Perspective-Based Reading (Basili et al., 1994–95), a spec-reading technique that used to be too expensive to run and that AI has now made affordable.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:widgets:new-embed-design" content="on">
     <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
@@ -185,17 +185,26 @@
                 
                   <section class="summary">
                     <p>
-                      An upcoming talk for the &quot;AI &amp; Emerging Tech&quot; (international) track at TDC São Paulo 2026: &quot;AI: Back to Fundamentals (the ones you least expect)&quot;. I&#x27;ll argue that the software engineering fundamentals we&#x27;re tempted to skip in the age of AI—not algorithms and data structures, but the practices that keep AI-generated code trustworthy—matter more than ever, precisely because AI has collapsed their cost.
+                      A talk for the &quot;AI &amp; Emerging Tech&quot; (international) track at TDC São Paulo 2026: &quot;AI: Back to Fundamentals (the ones you least expect)&quot;. I argued that when agents write the code, the reading we used to do on code has to move up to the spec, and that we need an engineering way of reading it. The fundamental I brought back for that is Perspective-Based Reading (Basili et al., 1994–95), a spec-reading technique that used to be too expensive to run and that AI has now made affordable.
                     </p>
                   </section>
                 
                   <section class="content">
-                    <p><a href="https://thedevconf.com/tdc/2026/sao-paulo/"><strong>TDC São Paulo 2026</strong></a> (<a href="https://thedevconf.com/tdc/2026/index.html">The Developer's Conference</a>) runs September 23–25 at ProMagno, in person and online. My talk is part of the "<a href="https://thedevconf.com/tdc/2026/sao-paulo/trilha-ai-e-emerging-tech"><strong>AI</strong> & Emerging Tech</a>" track—an English-language, international track—on September 25, alongside speakers like Edson Yanaga (Google), Csilla Szántó (MeteoSwiss), Nyah Macklin (Neo4j), Bruno Borges (Microsoft), Bharat Ahuja (Jeeves), and David Parry (Qodo). I also ran personal brand mentoring sessions at the conference's Mentoring Hub: <a href="/tdc-2026-sao-paulo-personal-brand-mentorship">Define your personal brand, or people will define it for you</a>.</p>
-<h3><a name="ai-back-to-fundamentals-the-ones-you-least-expect" class="anchor">
-<a name="ai-back-to-fundamentals-the-ones-you-least-expect" href="#ai-back-to-fundamentals-the-ones-you-least-expect" class="no_external_ico"><strong>AI</strong>: Back to Fundamentals (the ones you least expect)</a></h3>
-<p>When a developer hears "fundamentals," they think of algorithms and data structures. This talk argues for a different set: fundamentals that matter just as much in the age of <strong>AI</strong>—the ones rooted in software engineering. <strong>AI</strong> doesn't make them irrelevant; it collapses their cost—which is exactly why they now matter more, not less.</p>
-<p>We'll start with a bit of discomfort, looking at how we review <strong>AI</strong>-generated code today: as the output grows longer, the reviews grow shallower—skimmed, handed off to another <strong>AI</strong>, or approved almost unseen. Uncle Bob put it bluntly: he doesn't read his agents' code anymore. He trusts the constraints he surrounds them with, not the act of reading.</p>
-<p>From there, the talk shifts to the constructive side: how do we design those constraints? Many software engineering practices that used to be prohibitively expensive are now cheap, thanks to <strong>AI</strong>. The most complete set is the one built around an outer BDD loop (Spec → Gherkin) wrapping an inner TDD loop. But how do we make sure all those artifacts actually add up to a <strong>quality</strong> product?</p>
+                    <p><a href="https://thedevconf.com/tdc/2026/sao-paulo/"><strong>TDC São Paulo 2026</strong></a> (<a href="https://thedevconf.com/tdc/2026/index.html">The Developer's Conference</a>) ran September 23–25 at ProMagno, in person and online. My talk was part of the "<a href="https://thedevconf.com/tdc/2026/sao-paulo/trilha-ai-e-emerging-tech"><strong>AI</strong> & Emerging Tech</a>" track—an English-language, international track—on September 25, alongside speakers like Edson Yanaga (Google), Csilla Szántó (MeteoSwiss), Nyah Macklin (Neo4j), Bruno Borges (Microsoft), Bharat Ahuja (Jeeves), and David Parry (Qodo). I also ran personal brand mentoring sessions at the conference's Mentoring Hub: <a href="/tdc-2026-sao-paulo-personal-brand-mentorship">Define your personal brand, or people will define it for you</a>.</p>
+<h2><a name="summary-of-the-talk" class="anchor">
+<a name="summary-of-the-talk" href="#summary-of-the-talk" class="no_external_ico">Summary of the talk <code>AI: Back to Fundamentals (the ones you least expect)</code></a></h2>
+<p>When developers hear "fundamentals," they think of algorithms and data structures. This talk is about a different set: the <strong>software engineering</strong> fundamentals. The IEEE describes software engineering as a <em>systematic, disciplined, quantifiable</em> approach to building software, and the definition never mentions writing code.</p>
+<p>As <strong>AI</strong>-generated output grows, our reviews get shallower. Uncle Bob says he no longer reads his agents' code. He trusts the constraints around them instead: an outer BDD loop (Spec → Gherkin) wrapping an inner TDD loop. That's the first fundamental to go back to. It's not new, just suddenly cheap.</p>
+<h3><a name="the-hole-in-the-gauntlet" class="anchor">
+<a name="the-hole-in-the-gauntlet" href="#the-hole-in-the-gauntlet" class="no_external_ico">The hole in the gauntlet</a></h3>
+<p>Every one of those checks asks whether the code does what the spec says. None of them asks whether <em>the spec is right</em>. When an agent writes the spec, the tests and the code, the judge is grading its own work, and you end up with a green suite and the wrong product. Reading didn't disappear; it moved up from the code to the spec. But we still read specs the old way: top to bottom, "looks fine to me," approve.</p>
+<h3><a name="perspective-based-reading-the-one-you-least-expect" class="anchor">
+<a name="perspective-based-reading-the-one-you-least-expect" href="#perspective-based-reading-the-one-you-least-expect" class="no_external_ico">Perspective-Based Reading: the one you least expect</a></h3>
+<p><strong>Perspective-Based Reading</strong> (Basili et al., NASA/GSFC, 1994–95) gives us an engineering way to read a spec. You don't just read it; you <em>produce something from it</em>: test cases as a tester, a design as a designer, documentation as a user. Reading lets you skip over a gap. Producing something makes the gap visible. In the demo, a three-sentence requirement that everyone agreed was fine raised 14 open questions, and an agent's Gherkin had silently "answered" every one of them.</p>
+<h3><a name="what-ai-changes" class="anchor">
+<a name="what-ai-changes" href="#what-ai-changes" class="no_external_ico">What <strong>AI</strong> changes</a></h3>
+<p>PBR didn't fall out of use because it didn't work. It fell out of use because it was expensive: trained readers, hours each, and a meeting, for every requirement. <strong>AI</strong> makes it affordable, and it adds perspectives nobody could staff before, such as security, privacy or accessibility. <em>Agents find ambiguity; humans resolve it.</em> PBR becomes a gate at the spec level, before any code exists. The tooling is in <a href="https://github.com/dariomac/pbr-for-specs">pbr-for-specs</a> and <a href="https://github.com/dariomac/agentic-pbr">agentic-pbr</a>.</p>
+<p><strong>AI</strong> didn't make the fundamentals obsolete. It made them affordable.</p>
 
                   </section>
 
@@ -326,6 +335,9 @@
                         <ul>
                             <li>
                               <a href="/howdy-developer-advocate">Developer Advocate - Howdy</a>
+                            </li>
+                            <li>
+                              <a href="/itau-ai-forum-2026-ai-back-to-fundamentals">AI: Back to Fundamentals (the ones you least expect) (Itaú AI Forum) - Itaú AI Forum</a>
                             </li>
                             <li>
                               <a href="/tdc-2026-sao-paulo-personal-brand-mentorship">Define your personal brand, or people will define it for you - TDC São Paulo Mentoring Hub</a>
