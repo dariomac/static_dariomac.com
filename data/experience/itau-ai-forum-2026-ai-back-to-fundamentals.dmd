@@ -1,0 +1,69 @@
+{
+  "title": "AI: Back to Fundamentals (the ones you least expect) (Itaú AI Forum)",
+  "date": "2026-10-09",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "Oct 09",
+    "extlink": null,
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20261009",
+    "subtaskdetails": [],
+    "tags": "AI, Software Engineering, Perspective-Based Reading, Requirements, BDD, TDD",
+    "title": "Itaú AI Forum"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
+}
+
+---
+
+[summary:string]
+An invited, remote encore of "AI: Back to Fundamentals (the ones you least expect)" for the AI Forum – Capital Markets, Itaú Unibanco's weekly internal forum. The talk makes the case for Perspective-Based Reading of specs as the forgotten software engineering fundamental of the AI era. Around 190 people followed the talk live (peaking at 215), and the Q&A ran for more than 40 minutes, well past the scheduled end.
+
+[duration:string]
+Oct 9, 2026, starting at 2 PM (BRT)
+
+[place_url:string]
+
+
+[place:string]
+Remote
+
+[content:md]
+After attending my talk at [TDC São Paulo 2026](/tdc-2026-sao-paulo-ai-back-to-fundamentals), **Lucas Fagundes dos Santos**, Chief Architect at **Itaú Unibanco**, the largest private bank in Latin America, invited me to present it again at the bank's **AI Forum – Capital Markets**. The forum is a weekly internal session held every Friday on Microsoft Teams, under the "Futuro Colaborativo com IA" banner.
+
+The forum usually invites around 800 people and gets about 200 live attendees. For this session the invitation went out to roughly 2,200 people. While I was presenting, an average of about 190 people were connected, with a peak of 215. The talk was in English, with Teams live translation available to follow it in Portuguese, and attendees were welcome to ask their questions in Portuguese.
+
+### AI: Back to Fundamentals (the ones you least expect)
+It was the same talk as at TDC ([full write-up here](/tdc-2026-sao-paulo-ai-back-to-fundamentals)). The fundamentals it's about aren't algorithms and data structures but **software engineering** ones. As agents write more of our code, our reviews get shallower, and Spec → BDD → TDD loops become the constraints we trust instead. But every one of those checks asks whether the code does what the spec says. None of them asks whether the spec is right, and when an agent writes the spec, the Gherkin, the code and the tests, the judge is grading its own work. Green suite, wrong product.
+
+So reading didn't disappear; it moved up from code to spec. The fundamental I proposed for reading specs properly is **Perspective-Based Reading** (Basili et al., 1994–95): you don't just read the spec, you produce something from it (test cases as a tester, a design as a designer, documentation as a user) and the gaps become impossible to ignore. In the demo, a three-sentence requirement everyone agreed was fine turned into 14 open questions and zero coding defects, all of which the agent's Gherkin had silently "answered." PBR was always effective but too expensive to staff. AI made it affordable, and it opened up perspectives like security, fraud, privacy and accessibility that nobody could staff in 1995. Agents find ambiguity; humans resolve it.
+
+### The Q&A
+The best part came after the slides. The Q&A ran for more than 40 minutes, finishing about 15 minutes after the session's scheduled end, and the questions kept coming. That says a lot about how relevant the topic is for teams building software with AI today, and about the community of professionals at Itaú.
+
+[related_images:json]
+  [{
+    "filename": "itau-ai-forum-2026-invite.png"
+  },{
+    "filename": "itau-ai-forum-2026-1.jpg"
+  },{
+    "filename": "itau-ai-forum-2026-2.jpg"
+  }]
+
+[attachments:json]
+  [{
+    "filename": "tdc-sao-paulo-2026-ai-back-to-fundamentals.pdf",
+    "description": "Slides for \"AI: Back to Fundamentals (the ones you least expect)\"."
+  }]
+
+[projects:md]
