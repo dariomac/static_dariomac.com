@@ -2,6 +2,12 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
+        <loc>https://dariomac.com/software-inspection-adoption--a-mapping-study</loc>
+        <lastmod>2017-05-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://dariomac.com/comparing-technical-debt-in-student-exercises-using-test-driven-development-test-last-and-ad-hoc-programming</loc>
         <lastmod>2016-10-10</lastmod>
         <changefreq>monthly</changefreq>
@@ -10,12 +16,6 @@
       <url>
         <loc>https://dariomac.com/diagnostico-del-uso-de-tecnicas-de-revision-de-software-en-uruguay</loc>
         <lastmod>2017-03-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>https://dariomac.com/software-inspection-adoption--a-mapping-study</loc>
-        <lastmod>2017-05-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
