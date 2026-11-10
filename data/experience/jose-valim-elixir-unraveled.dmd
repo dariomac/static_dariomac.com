@@ -1,0 +1,58 @@
+{
+  "title": "Elixir, Unraveled (José Valim interview)",
+  "date": "2026-05-15",
+  "layout": "experience",
+  "card": {
+    "color": "#003366",
+    "columnid": "done_3",
+    "content": "[title]",
+    "datebox": "May 15",
+    "extlink": "https://l.howdylatam.com/l/jose-valim-tech-talk",
+    "laneid": "Experience",
+    "leftbox": null,
+    "linkto": "[link_to]",
+    "position": "20260515",
+    "subtaskdetails": [],
+    "tags": "Elixir, Erlang, BEAM, Concurrency, Functional Programming, AI Coding Agents",
+    "title": "Howdy <> José Valim"
+  },
+  "jsonld": {},
+  "canonical": "",
+  "custom_header": "",
+  "resume": {
+    "tags": "devrel"
+  }
+}
+
+---
+
+[summary:string]
+A Howdy Tech Talk where I interviewed José Valim—creator of Elixir, former Ruby on Rails core team member and founder of Dashbit—about how a race condition he couldn't fix in Rails led him to functional programming, Erlang and, eventually, to creating Elixir; what senior engineers still get wrong about concurrency; and his honest take on AI coding agents.
+
+[duration:string]
+May 15, 2026
+
+[place_url:string]
+
+
+[place:string]
+Remote
+
+[content:md]
+For this edition of **Howdy Tech Talks** I sat down (remotely) with **José Valim**, the creator of [Elixir](https://elixir-lang.org/). Before Elixir, José was a member of the Ruby on Rails core team; today he leads Dashbit, his own consultancy, and remains a key voice in the high-scale, functional programming community. The conversation was published as **Elixir, Unraveled**: [watch the full interview on Howdy's site](https://l.howdylatam.com/l/jose-valim-video-page).
+
+### The bug that became a programming language
+In 2010, José was deep inside Ruby on Rails, chasing a race condition he couldn't reproduce and couldn't prove he'd fixed. That single, stubborn bug pushed him toward functional programming, then Erlang, and eventually toward building something new entirely: Elixir. Today Elixir runs the backend of companies operating at massive scale, such as Discord and Pinterest, from real-time platforms to global logistics, on the same BEAM virtual machine that powers WhatsApp's Erlang backend.
+
+> The best way of solving your problem is disappearing the problem.
+> — José Valim
+
+### What we talked about
+- **The origin story**, from that unfixable Rails bug to shipping a new language.
+- **The design decisions behind the BEAM**, the Erlang virtual machine that makes millions of concurrent connections on a single server possible, with the reliability it inherited from its telecom roots.
+- **What senior engineers still get wrong about concurrency.**
+- **His unfiltered take on AI coding agents** and what building software looks like in the AI era.
+
+<!-- A copy of this Youtube video is stored here as a backup: https://drive.google.com/file/d/1x7XLlr2NwVKtpKmWwSNj8i4xklqoXc9G/view?usp=drive_link -->
+
+[projects:md]
