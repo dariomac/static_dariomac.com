@@ -614,32 +614,8 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://dariomac.com/research-commercialization---introductory-course</loc>
-        <lastmod>2017-10-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>https://dariomac.com/technical-debt--basic-concepts--research-methods-and-study-design-tutorial</loc>
-        <lastmod>2017-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>https://dariomac.com/systematic-literature-reviews-tutorial</loc>
-        <lastmod>2017-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
         <loc>https://dariomac.com/formalizing-software-processes-conference</loc>
         <lastmod>2017-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>https://dariomac.com/software-product-lines-tutorial</loc>
-        <lastmod>2017-10-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -662,8 +638,32 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://dariomac.com/research-commercialization---introductory-course</loc>
+        <lastmod>2017-10-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://dariomac.com/technical-debt--basic-concepts--research-methods-and-study-design-tutorial</loc>
+        <lastmod>2017-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://dariomac.com/think-again--how-to-reason-and-argue-course</loc>
         <lastmod>2017-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://dariomac.com/systematic-literature-reviews-tutorial</loc>
+        <lastmod>2017-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://dariomac.com/software-product-lines-tutorial</loc>
+        <lastmod>2017-10-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -760,6 +760,12 @@
       <url>
         <loc>https://dariomac.com/onbordianding-python-montevideo</loc>
         <lastmod>2026-05-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>https://dariomac.com/jose-valim-elixir-unraveled</loc>
+        <lastmod>2026-05-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
