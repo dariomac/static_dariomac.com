@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>What Elixir Actually Is: A Field Guide for JS, Java, and .NET Developers | Darío Macchi</title>
+  <style>
+    {
+        {
+        >_critical-css
+      }
+    }
+
+    .essay {
+      border: 0px !important;
+      margin-left: inherit;
+    }
+
+    .essay .date {
+      width: 100%;
+      border-top: 1px solid;
+      text-align: right;
+    }
+
+    .essay p,
+    .essay li {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      color: #4c4c4c;
+      font-weight: 500;
+    }
+
+    .details .dm-board h1 {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 20px 0px 0px 0px;
+      margin: 0px 0px 6px 0px;
+    }
+
+    .details .dm-board h2 {
+      font-size: 20px;
+      margin-bottom: 2px;
+      font-weight: bold;
+      padding-top: 8px;
+    }
+
+    .details .dm-board h3 {
+      font-size: 17px;
+      font-weight: bold;
+      text-decoration: inherit;
+      padding-top: 8px;
+    }
+
+    .details .dm-board h4 {
+      font-weight: bold;
+    }
+
+    article .essay h3 {
+      font-weight: bold !important;
+      text-decoration: inherit !important;
+    }
+
+    article .essay li {
+      font-size: 14px;
+    }
+
+    .description>p {
+      font-size: 19px;
+      padding-bottom: 15px;
+      font-style: italic;
+      color: #414141;
+      text-align: left;
+    }
+
+    .essay .sheet {
+      background-color: #fff;
+      border: 1px solid #d9d9d9;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 0 10px;
+    }
+
+    .further-reading {
+      text-align: left;
+    }
+
+    @media only screen and (min-width: 1170px) {
+      .essay .sheet {
+        padding: 0px 65px;
+      }
+    }
+  </style>
+
+  <meta name="google-site-verification" content="46a7V_NIglu9MvjEX4267RGvXUGqYaic6LPWM6eQ824" />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="author" content="Darío Macchi" />
+  <meta name="description" content="A practical look at what Elixir really is: a Ruby-flavored language running on Erlang's battle-tested BEAM virtual machine. Written for senior JavaScript, Java, and .NET developers evaluating its concurrency and fault-tolerance model, and for the CTOs who would have to approve the bet." />
+  <meta name="keywords" content="kanbancv,resume,kanban,curriculum vitae,me,experience,education,research,projects,software engineer,PwC,InnovaAge,Universidad ORT Uruguay" />
+  
+  <link rel="dns-prefetch" href="//dariomac.com"/>
+  <link rel="dns-prefetch" href="//gstatic.com"/>
+  <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
+  <link rel="dns-prefetch" href="//www.googletagmanager.com"/>
+  <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+  <link rel="dns-prefetch" href="//google.com"/>
+  <link rel="dns-prefetch" href="//c.statcounter.com"/>
+  <link rel="dns-prefetch" href="//statcounter.com"/>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+  <link rel="dns-prefetch" href="//yui.yahooapis.com"/>
+  
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/tokens.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/site.css" type="text/css">
+  
+  <link rel="canonical" href="https://www.howdylatam.com/blog/what-elixir-actually-is" />
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDFJZDVV3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-NBDFJZDVV3');
+  </script>
+  
+  <script type="text/javascript">
+    function afterContentDraw () {
+      setTimeout(function () {
+        var aList = $('a').not('a[href^="/"]').not('a[href*="dariomac.com"]').not('a[href*="www.dariomac.com"]').not('a[href*="javascript:void(0)"]');
+        aList = aList.add($('a[href$=".pdf"],a[href$=".zip"],a[href$=".txt"]'));
+        $.each(aList,
+          function (k, v) {
+            var $v = $(v);
+  
+            $v.click(function () {
+              _gaq.push(['_trackPageview', $v.attr('href')]);
+            });
+            // $v.css('color','red');
+          });
+        
+        preloadImages($('a.fancybox'));
+      }, 1000);
+    }
+  
+    function preloadImages (array) {
+      if (!preloadImages.list) {
+        preloadImages.list = [];
+      }
+      for (var i = 0; i < array.length; i++) {
+        var img = new Image();
+        img.src = $(array[i]).attr('href');
+        preloadImages.list.push(img);
+      }
+    }
+  </script>
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta property="og:url" content="/what-elixir-actually-is" />
+  <meta property="og:title" content="What Elixir Actually Is: A Field Guide for JS, Java, and .NET Developers" />
+  <meta property="og:description" content="A practical look at what Elixir really is: a Ruby-flavored language running on Erlang's battle-tested BEAM virtual machine. Written for senior JavaScript, Java, and .NET developers evaluating its concurrency and fault-tolerance model, and for the CTOs who would have to approve the bet." />
+  <meta property="og:site_name" content="Darío Macchi personal website" />
+  <meta property="og:image" content="https://dariomac.com/assets/images/d_social.png">
+  <meta property="og:image:type" content="image/png">
+  
+  
+  <meta name="twitter:site" content="@_dariomac">
+  <meta name="twitter:creator" content="@_dariomac">
+  <meta name="twitter:title" content="What Elixir Actually Is: A Field Guide for JS, Java, and .NET Developers">
+  <meta name="twitter:description" content="A practical look at what Elixir really is: a Ruby-flavored language running on Erlang's battle-tested BEAM virtual machine. Written for senior JavaScript, Java, and .NET developers evaluating its concurrency and fault-tolerance model, and for the CTOs who would have to approve the bet.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:widgets:new-embed-design" content="on">
+  <meta name="twitter:image:src" content="https://dariomac.com/assets/images/d_social.png">
+  
+  
+  
+  <script type='application/ld+json'> 
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "@id": "https://dariomac.com/me",
+      "image": "https://dariomac.com/assets/aboutme-me.jpg",
+      "jobTitle": "Computer Engineering, MSc",
+      "name": "Darío Macchi",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Universidad_ORT_Uruguay_-_Logo.jpg/220px-Universidad_ORT_Uruguay_-_Logo.jpg",
+        "name": "Universidad ORT Uruguay",
+        "sameAs": "https://en.wikipedia.org/wiki/Universidad_ORT_Uruguay",
+        "url": "https://www.ort.edu.uy/"
+      },
+      "birthPlace": "Paysandú, Uruguay",
+      "birthDate": "1981.08.12",
+      "height": "1.72 meters",
+      "gender": "male",
+      "nationality": "Uruguayan",
+      "url": "https://dariomac.com",
+      "sameAs" : [
+        "https://twitter.com/_dariomac",
+        "https://uy.linkedin.com/in/dariomac",
+        "https://www.researchgate.net/profile/Dario-Macchi",
+        "https://ort-uy.academia.edu/Dar%C3%ADoMacchi",
+        "https://www.informatik.uni-trier.de/~ley/pers/hd/m/Macchi:Dario"
+      ]
+    }
+  </script>
+  <script type='application/ld+json'>
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "@id": "https://dariomac.com/software-engineering-advisor-consultant",
+      "name": "Darío Macchi",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dariomac.com/assets/images/d.png"
+      },
+      "url": "https://dariomac.com"
+    }
+  </script>
+  
+  <script>
+      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+      posthog.init('phc_Ip4X0TpkPZOdNVhcXCAvn8IyeT7qymmjRMs0BURjKmm',{api_host:'https://us.i.posthog.com', person_profiles: 'always' // or 'identified_only'
+          })
+  </script>
+
+  <script type="application/ld+json">
+        {
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://dariomac.com/what-elixir-actually-is"
+          },
+          "headline": "What Elixir Actually Is: A Field Guide for JS, Java, and .NET Developers",
+          "alternativeHeadline": "A practical look at what Elixir really is: a Ruby-flavored language running on Erlang's battle-tested BEAM virtual machine.",
+          "url": "https://dariomac.com/what-elixir-actually-is",
+          "datePublished": "2026-08-11",
+          "dateCreated": "2026-11-09",
+          "description": "A practical look at what Elixir really is: a Ruby-flavored language running on Erlang's battle-tested BEAM virtual machine. Written for senior JavaScript, Java, and .NET developers evaluating its concurrency and fault-tolerance model, and for the CTOs who would have to approve the bet.",
+          "author": {
+            "@id": "https://dariomac.com/me"
+          },
+          "publisher": {
+            "@id": "https://dariomac.com/software-engineering-advisor-consultant"
+          }
+        } 
+    </script>
+</head>
+
+<body>
+  <div class="board_view details">
+    <main class="dm-main-content is-fixed">
+      <div class="dm-tab-filter-wrapper">
+        <div class="dm-tab-filter">
+          <ul class="dm-filters d-block d-md-none">
+            <li class="placeholder">
+              <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+            </li>
+            <li class="filter"><a class="selected" href="#0">All</a></li>
+            <li class="filter"><a href="/">Home</a></li>
+            <li class="filter"><a href="/about-me">About Me</a></li>
+            <li class="filter"><a href="/kanbancv">What is KanbanCV</a></li>
+          </ul> <!-- dm-filters -->
+        </div> <!-- dm-tab-filter -->
+
+        <div class="container-fluid float-left"></div>
+      </div> <!-- dm-tab-filter-wrapper -->
+
+      <div class="container-fluid dm-board essay">
+        <article>
+          <div class="row featured">
+            <div class="col-md-12 sheet">
+              <header>
+                <h1>What Elixir Actually Is: A Field Guide for JS, Java, and .NET Developers</h1>
+                <p class="date">Aug 11, 2026</p>
+              </header>
+
+
+              <section class="description">
+                <p>
+                  A field guide for senior JavaScript, Java, and .NET developers, and for the CTOs who have to sign off on the bet.
+                </p>
+              </section>
+
+              <section>
+                <h2><a name="tldr" class="anchor">
+<a name="tldr" href="#tldr" class="no_external_ico">TL;DR</a></h2>
+<p>Elixir is a functional, dynamically-typed language with a friendly, <strong>Ruby</strong>-flavored syntax that compiles down to run on <a href="https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)">the BEAM</a>, the virtual machine built for Erlang in the 1980s to run telephone switches that were not allowed to go down. You write code that looks approachable and modern; underneath, you inherit three decades of hard-won engineering around concurrency, fault tolerance, and distribution.</p>
+<p>That's the trade in one sentence: modern developer ergonomics on top of battle-tested concurrency infrastructure. Everything else is detail.</p>
+<p>You've shipped production systems. You've debugged race conditions at 2 a.m., scaled a service until the database cried, and rewritten the same "fan out a hundred requests and don't fall over" code in three different languages. You don't need another "hello world" tour.</p>
+<p>Here is what Elixir actually is, why a language that runs on a 39-year-old virtual machine keeps showing up in serious infrastructure, and how to think about it if you've spent your career in the <strong>JavaScript</strong> / <strong>Java</strong> / <strong>.NET</strong> world.</p>
+<p>We're publishing this ahead of <a href="/jose-valim-elixir-unraveled">our interview with José Valim</a>, the creator of Elixir. Consider it the warm-up: the context you'll want in your head before you hear it straight from the source.</p>
+<h2><a name="the-problem-elixir-is-actually-solving" class="anchor">
+<a name="the-problem-elixir-is-actually-solving" href="#the-problem-elixir-is-actually-solving" class="no_external_ico">The problem Elixir is actually solving</a></h2>
+<p>Most languages you know were designed in a world where one program meant one thread of execution, and concurrency was bolted on later.</p>
+<ul>
+<li><strong>JavaScript</strong> went all-in on a single-threaded event loop. Brilliant for I/O, but the moment you need real parallelism you reach for worker threads, child processes, or a queue, and shared state gets awkward fast.</li>
+<li><strong>Java</strong> and <strong>.NET</strong> give you real threads and excellent thread pools, but threads are heavyweight, and shared mutable memory protected by locks is one of the most reliable sources of production bugs ever invented. Deadlocks, race conditions, and "it only happens under load" are the genre.</li>
+</ul>
+<p>Elixir takes a different stance: thousands to millions of tiny, isolated processes, each with its own private memory, that never share state and communicate only by passing messages. These aren't OS threads. They're scheduled by the BEAM and cost almost nothing to spin up. If one crashes, it crashes alone; it can't corrupt the memory of its neighbors, because it has no access to their memory in the first place.</p>
+<p>If you've ever admired the idea of Go's goroutines or the actor model in Akka, this is the lineage, except on the BEAM it isn't a library you opt into, it's the ground floor the whole language is built on.</p>
+<p>The practical payoff for a senior engineer: a huge class of concurrency bugs you've learned to fear simply doesn't have a place to occur. There's no shared mutable state to guard, so there are no locks to forget.</p>
+<h2><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico">"Let it crash" is not recklessness, it's a strategy</a></h2>
+<p>This is the part that tends to break people's brains coming from defensive-programming cultures.</p>
+<p>In a typical <strong>Java</strong>/<strong>.NET</strong>/Node service, you wrap risky code in try/catch and try to anticipate every failure, because an unhandled exception can take down the whole process. The instinct is: never let anything fail.</p>
+<p>The BEAM world inverts this. Processes are cheap and isolated, and they're organized into supervision trees: a process whose only job is to watch other processes and restart them in a known-good state when they die. So instead of defensively coding around every possible failure, you let a misbehaving process crash, clean and fast, and let its supervisor bring up a fresh one.</p>
+<p>The result is systems that self-heal. A transient failure (a bad message, a flaky downstream call) kills one tiny process and gets restarted in microseconds, while the other 200,000 processes never notice. This is the same philosophy that kept telecom switches at "nine nines" of availability (about 31 milliseconds of downtime per year). You're not buying a syntax. You're buying an operational model.</p>
+<h2><a name="what-it-actually-looks-like" class="anchor">
+<a name="what-it-actually-looks-like" href="#what-it-actually-looks-like" class="no_external_ico">What it actually looks like</a></h2>
+<p>You don't need to read fluent Elixir to get the flavor. Three things stand out to newcomers:</p>
+<h3><a name="the-pipe-operator" class="anchor">
+<a name="the-pipe-operator" href="#the-pipe-operator" class="no_external_ico">The pipe operator</a></h3>
+<p>Data transformation reads top-to-bottom, like a Unix pipeline:</p>
+<pre><code class="language-elixir">&quot;hello world&quot;
+|&gt; String.split()
+|&gt; Enum.map(&amp;String.capitalize/1)
+|&gt; Enum.join(&quot; &quot;)
+# =&gt; &quot;Hello World&quot;
+</code></pre>
+<p>If you've ever written <code>array.map().filter().reduce()</code> chains in JS, this will feel instantly familiar, except it generalizes to any function, not just methods on an object.</p>
+<h3><a name="pattern-matching-instead-of-branching" class="anchor">
+<a name="pattern-matching-instead-of-branching" href="#pattern-matching-instead-of-branching" class="no_external_ico">Pattern matching instead of branching</a></h3>
+<p>The <code>=</code> sign isn't assignment, it's an assertion that two shapes match, and you destructure as you go. This replaces a startling amount of if/switch boilerplate and null-checking.</p>
+<h3><a name="immutability-everywhere" class="anchor">
+<a name="immutability-everywhere" href="#immutability-everywhere" class="no_external_ico">Immutability everywhere</a></h3>
+<p>Data doesn't change in place; you transform it into new data. Coming from functional-leaning <strong>JavaScript</strong> (think Redux reducers, <code>const</code>, spread operators) this is a difference of degree, not kind. Elixir just makes it the default instead of a discipline you have to enforce by code review.</p>
+<h2><a name="" class="anchor">
+<a name="" href="#" class="no_external_ico">"Is the ecosystem actually there?", the CTO's real question</a></h2>
+<p>A beautiful language with no libraries is a hobby. Here's the honest landscape:</p>
+<ul>
+<li><strong>Phoenix</strong> is the web framework, and it's mature, fast, and productive. If you're coming from Rails, Django, or Spring, you'll recognize the shape of it immediately: routing, controllers, views, the works.</li>
+<li><strong>Ecto</strong> is the database layer. It's not quite an ORM in the ActiveRecord sense; it's more explicit and more composable, which senior engineers tend to prefer once they get over the initial "where's the magic?" reaction.</li>
+<li><strong>Phoenix LiveView</strong> is the genuinely novel one. It lets you build rich, real-time, interactive UIs with server-rendered state and almost no hand-written <strong>JavaScript</strong>. For a lot of CRUD-heavy and dashboard-style products, it collapses the front-end/back-end split into one codebase. Teams that adopt it often describe it as their unfair advantage on shipping speed.</li>
+</ul>
+<p>Is the ecosystem as vast as npm or Maven Central? No, and anyone who tells you otherwise is selling something. There are fewer packages, fewer Stack Overflow answers, and a smaller hiring pool. But the libraries that exist tend to be high-<strong>quality</strong>, and the gaps are in breadth (some niche third-party SDK might not have an official client) rather than in the fundamentals. The core story (web, APIs, real-time, background jobs, clustering) is solidly covered.</p>
+<h2><a name="where-elixir-genuinely-shines" class="anchor">
+<a name="where-elixir-genuinely-shines" href="#where-elixir-genuinely-shines" class="no_external_ico">Where Elixir genuinely shines</a></h2>
+<p>Be honest about fit. Elixir is not the universal answer, and pretending otherwise does it a disservice. It earns its keep when your problem looks like one of these:</p>
+<ul>
+<li><strong>Massive concurrent connections:</strong> chat, messaging, presence, multiplayer, live collaboration, IoT fleets. The canonical brag is <a href="https://blog.whatsapp.com/1-million-is-so-2011">WhatsApp handling millions of connections per server</a> (on Erlang, the BEAM's other language). This is the home-field advantage.</li>
+<li><strong>Real-time and soft-real-time systems:</strong> live dashboards, financial tickers, notifications, anything where "push" matters more than "poll."</li>
+<li><strong>High-availability backends</strong> where downtime is genuinely expensive and you'd otherwise be assembling resilience out of Kubernetes, retries, circuit breakers, and prayer.</li>
+<li><strong>Data pipelines and orchestration:</strong> coordinating thousands of concurrent jobs with backpressure (the GenStage/Broadway story) is something the runtime is built for.</li>
+</ul>
+<p>Where it's not the obvious pick: heavy CPU-bound number crunching (the BEAM isn't optimized for raw single-threaded compute, though there's interesting work happening with native compilation and ML), tiny scripts where the runtime is overkill, or a team and codebase where the entire org's gravity is in another stack and the problem doesn't demand concurrency.</p>
+<h2><a name="the-honest-take-on-learning-curves" class="anchor">
+<a name="the-honest-take-on-learning-curves" href="#the-honest-take-on-learning-curves" class="no_external_ico">The honest take on learning curves</a></h2>
+<ul>
+<li><strong>For a <strong>JavaScript</strong> developer:</strong> the syntax is easy and the tooling is pleasant. The genuine hurdle is the mental model. You'll spend the first weeks unlearning loops (you'll use recursion and Enum functions), unlearning mutable variables, and rewiring your instinct to reach for shared state. The good news: a lot of modern JS (immutable data, <code>.map</code>/<code>.filter</code>/<code>.reduce</code>, async patterns) has been quietly preparing you for this. The functional ideas land faster than you'd expect.</li>
+<li><strong>For <strong>Java</strong>/<strong>.NET</strong> developers:</strong> you already respect strong engineering and you've felt the pain of threads and locks, so the value proposition lands immediately. The adjustment is going from static typing and class hierarchies to dynamic typing and data-plus-functions. (If static typing is non-negotiable for you, note that Elixir is actively gaining a gradual type system, a real, ongoing effort, not vaporware.)</li>
+</ul>
+<p>The pattern across both: the language takes a few days; the paradigm takes a few weeks; and most people who push through report it permanently changed how they think about all their code, including the code they write back in their day-job language.</p>
+<h2><a name="so-should-you-bet-on-it" class="anchor">
+<a name="so-should-you-bet-on-it" href="#so-should-you-bet-on-it" class="no_external_ico">So, should you bet on it?</a></h2>
+<p>If you're a CTO or staff engineer, the framing isn't "is Elixir good?" (it is). It's "does my problem match its strengths, and can I sustain the team?" Reach for it when concurrency, real-time behavior, or uptime are central to the product rather than incidental. That's where it pays for the smaller hiring pool many times over. Be more cautious when you'd be adopting it purely for novelty, or when your problem is plainly CPU-bound or trivially served by the stack you already run. One underrated detail: Elixir teams are frequently small, and the developers it attracts tend to be the curious, senior kind, which is its own kind of hiring filter.</p>
+<p>If you're an individual developer, the bet is cheaper and the upside is real. Even if you never ship Elixir to production, learning it will make you a measurably better engineer in whatever language pays your bills, because it forces a clean understanding of immutability, message-passing concurrency, and designing for failure. Few languages teach those as directly.</p>
+<h2><a name="what" class="anchor">
+<a name="what" href="#what" class="no_external_ico">What's next</a></h2>
+<p>This article is the on-ramp. The deeper questions (why build a whole new language in 2011 instead of fixing what existed? Why the Erlang VM and not the JVM? Why not just write Erlang directly? Does Elixir really solve every concurrency problem, or is that marketing?) are exactly what we put to José Valim himself.</p>
+<p>We also got into the parts you can't read in a docs site: what it's actually like to design a programming language, how he thinks about top-down versus bottom-up when tackling genuinely hard problems, where <strong>AI</strong> fits into the Elixir story, and what an ordinary working day looks like for someone who created a language thousands of teams now depend on.</p>
+<p>The full interview is now out: <a href="/jose-valim-elixir-unraveled">Elixir, Unraveled (José Valim interview)</a>.</p>
+
+              </section>
+
+              <section>
+                <h2 id="Acknowledgments">Acknowledgments</h2>
+                <p>This post, originally on <code>https://www.howdylatam.com/blog/what-elixir-actually-is</code>, was written for <a href="https://www.howdy.com">Howdy™</a>, so I want to thank them for letting me share it with you on my website.</p>
+
+              </section>
+              <section class="further-reading">
+                <h2 id="FurtherReading">Further Reading</h2>
+                <ul>
+<li><a href="/jose-valim-elixir-unraveled">Elixir, Unraveled (José Valim interview)</a></li>
+</ul>
+
+              </section>
+              <section>
+                <h2>Significant Revisions</h2>
+                <p>Aug 11, 2026: Original publication on howdylatam.com
+Aug 14, 2026: Updated on howdylatam.com</p>
+
+              </section>
+              
+                <section class="backlinks">
+                  <h2>Mentioned in</h2>
+                      <ul>
+                          <li>
+                            <a href="/howdy-developer-advocate">Developer Advocate - Howdy</a>
+                          </li>
+                      </ul>
+                </section>
+            </div>
+          </div>
+      </div> <!-- container-fluid dm-board -->
+
+      <a href="/" class="logo">
+        <img style="float:left;" width="50" height="50" src="/assets/images/d.png" alt="Orange D inside a circle">
+      </a>
+      <div class="submenu">
+        <div class="orange_box">
+          <a class="url" href="/about-me">
+            <div class="username">Darío Macchi</div>
+          </a>
+          <ul>
+            <li id="geo">
+              <a rel="noreferrer" href="https://www.google.com/maps/place/Montevideo,+Montevideo+Department/@-34.8207772,-56.5166263,10z/data=!3m1!4b1!4m5!3m4!1s0x959f80ffc63bf7d3:0x6b321b2e355bec99!8m2!3d-34.9011127!4d-56.1645314?hl=en" itemprop="url">Montevideo</a><span>&middot;</span><a rel="noreferrer" href="https://www.google.com.uy/maps/preview?q=google+maps+uruguay&amp;ie=UTF-8&amp;hq=&amp;hnear=0x9575073afb5fde09:0x4a5596616016524a,Uruguay&amp;gl=uy&amp;ei=KiKjU6fpE-HNsQSlqYGoCg&amp;ved=0CBsQ8gEwAA" itemprop="url">Uruguay</a>
+            </li>
+          </ul>
+          <ul>
+            <li id="common_cv"><a href="/kanbancv">What is this?</a></li>
+          </ul>
+          <ul>
+            <li><a href="/contact-me">Contact me</a></li>
+          </ul>
+        </div>
+      </div>
+    </main> <!-- dm-main-content -->
+  </div>
+  <!--</div>-->
+
+  <div class="footer">
+    <ul>
+      <li>
+        <a href="/kanbancv">KanbanCV</a>
+        <span class="footer-sep">&copy; 2011&ndash;2026</span>
+      </li>
+      <li>
+        <a href="/sitemap" title="Sitemap"><i class="fa fa-sitemap" aria-hidden="true"></i><span class="d-none d-md-inline-block">&nbsp;Sitemap</span></a>
+      </li>
+      <li>
+        <a href="https://uy.linkedin.com/in/dariomac" target="_blank" rel="noreferrer" title="LinkedIn">
+          <img src="/assets/linkedin.svg" width="16" height="16" alt="LinkedIn" />
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com/_dariomac" target="_blank" rel="noreferrer" title="X">
+          <img src="/assets/x.svg" width="16" height="16" alt="X" />
+        </a>
+      </li>
+      <li class="d-none d-lg-block">
+        <a href="https://www.researchgate.net/profile/Dario-Macchi" target="_blank" rel="noreferrer" title="ResearchGate">
+          <img src="/assets/researchgate.svg" width="16" height="16" alt="ResearchGate" />
+        </a>
+      </li>
+      <li class="d-none d-lg-block">
+        <a href="http://humanstxt.org" target="_blank" rel="noreferrer" title="humans.txt">
+          <img src="/assets/images/humanstxt.svg" width="84" height="15" alt="humans.txt" />
+        </a>
+      </li>
+      <li class="d-none d-lg-block">
+        <a href="javascript:void(0);" onclick="window.open('https://www.copyscape.com/?q=' + escape(window.location) + '&src=front'); return false;" title="Copyscape">
+          <img src="/assets/images/cs-wh-3d-234x16.gif" alt="Protected by Copyscape" width="100" height="16">
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+  <!-- Default Statcounter code for Dariomac.com
+  https://dariomac.com -->
+  <script type="text/javascript">
+    var sc_project=9186547; 
+    var sc_invisible=1; 
+    var sc_security="dce954c9"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="web counter"
+    href="https://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="https://c.statcounter.com/9186547/0/dce954c9/1/"
+    alt="web counter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
+
+
+  <script src="/assets/vendor/jquery.fancybox/jquery.fancybox.js"></script>
+  
+  <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+  
+  <script src="/assets/js/main.js"></script>
+  <script>
+    $(".fancybox").fancybox({
+      arrows: true,
+      loop: true,
+      keyboard: true
+    });
+  </script>
+</body>
+
+</html>

@@ -20,6 +20,12 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>https://dariomac.com/what-elixir-actually-is</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>https://dariomac.com/stuck-in-the-filter-2026-w8</loc>
         <lastmod>2026-05-15</lastmod>
         <changefreq>monthly</changefreq>
