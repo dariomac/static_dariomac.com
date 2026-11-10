@@ -1,6 +1,6 @@
 {
   "title": "Ruby Montevideo meetup - March 2025 interviews",
-  "date": "20250411",
+  "date": "2025-04-11",
   "layout": "experience",
   "card": {
     "color": "#003366",
@@ -40,6 +40,7 @@ The Ruby Montevideo event was a great success, bringing together software develo
 
 During the event, we had the opportunity to conduct a short interview with Marco and Seth to share on our social media. We asked them about the impact artificial intelligence is having on the Ruby environment and how they are using AI-based tools to improve their skills as developers. We also explored whether they believe a junior developer could reach a level close to that of a senior developer when working with AI-powered tools. The responses offered valuable insights into the future of Ruby development, highlighting how these technologies are transforming the skills needed for modern developers.
 
+<!-- A copy of this Youtube video is stored here as a backup: https://drive.google.com/file/d/18TWGhz6SPKHNEcpeDzsd7sBT8HetBSCn/view?usp=drive_link -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EiOxna2cvUE?si=qH_r2atjUTZvpGUG#center" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
 
 [projects:md]

@@ -41,6 +41,7 @@ The talk explains how AI affects important parts of software engineering, like p
 
 Finally, the presentation gives advice on how to work well with AI. It suggests using flexible ways of working, like Popcorn Flow or Lean Startup methods. It also says it is very important to have clear requirements for the software. AI can even help us create better requirements together. When it comes to quality, the presentation reminds us that clean code, good tools (like linters), code reviews by humans, and careful testing are still very important, even with AI.
 
+<!-- A copy of this Youtube video is stored here as a backup: https://drive.google.com/file/d/1TOjxvCbnkK1l66Sx0cnK2AhG-7eP_Zsh/view?usp=drive_link -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h4F-uMp0Rbk?si=rcsoe3jpAG7Pw-x8#center" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [projects:md]
